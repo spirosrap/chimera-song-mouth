@@ -50,6 +50,17 @@ bun run build
 
 `build` rebuilds the Rust engine; `build:static` uses the tracked WebAssembly binary. After changing Rust, commit the rebuilt `src/wasm/chimera.wasm` alongside its source. Do not reuse a `target/` directory from another checkout. See [AGENTS.md](AGENTS.md) for engine and animation contracts.
 
+## Prepare a MusicXML arrangement
+
+The upstream score converter reads `.mxl` or `.musicxml` files and prepares a part for `chimera render notes`:
+
+```sh
+bun tools/musicxml-to-notes.ts score.mxl                  # list the score's parts
+bun tools/musicxml-to-notes.ts score.mxl P1 --out p1.json  # convert one part
+```
+
+It uses the included WebAssembly engine and pronunciation dictionary. Repeats, alternate endings and tied notes are handled; `--spell word=respelling` resolves lyrics that do not fit the notes. This is an arrangement-preparation tool, separate from the website's MIDI importer. See the tool's introductory comments for its supported score features.
+
 ## Media storage
 
 All 186 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
