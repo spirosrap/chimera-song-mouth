@@ -30,6 +30,9 @@ export const BAND_SONGS:BandSong[]=[
   {id:"ta-paidia-tou-peiraia",name:"Τα παιδιά του Πειραιά · 3:19 · robotic voice & fingers",arrangementUrl:"/band/ta-paidia-tou-peiraia/arrangement.json",arrangement:{
     title:"Τα παιδιά του Πειραιά · Μελίνα Μερκούρη",description:"The original instrumental music, a robotic Greek singer and an animated hand recreating the recording’s finger clicks.",bpm:120,duration:199.3,presentation:"backed-solo",parts:[],sections:[],
   }},
+  {id:"rodehihi-den-xanakano-fylaki",name:"Rodehihi — Δεν ξανακάνω φυλακή · 3:12",arrangementUrl:"/band/rodehihi-den-xanakano-fylaki/arrangement.json",arrangement:{
+    title:"Δεν ξανακάνω φυλακή · Rodehihi",description:"Rodehihi’s full recording with its original instrumental backing and a robotic Greek singer following the vocal melody and phrasing.",bpm:120,duration:192.68,presentation:"backed-solo",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */

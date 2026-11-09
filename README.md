@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **nine songs, two movie scenes, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **ten songs, two movie scenes, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account.
 
@@ -34,7 +34,7 @@ bun run build:static
 
 Publish **all of `dist/`** at the root of an HTTPS website. No backend, API key, database, paid voice service, or separate media bucket is required. Media comes from this repository, not GitHub raw-file URLs. Importing a song in the single-mouth player stays in the visitor’s browser.
 
-A ready-built `chimera-website.zip` is also attached to the initial GitHub release. Unzip it and deploy its contents directly if the hosting service accepts prebuilt websites.
+A ready-built `chimera-website.zip` is also attached to the latest GitHub release. Unzip it and deploy its contents directly if the hosting service accepts prebuilt websites.
 
 ## Change the engine or run the full tests
 
@@ -52,7 +52,7 @@ bun run build
 
 ## Media storage
 
-All 181 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
+All 186 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
 
 After intentionally adding or replacing public assets, run `bun run content:manifest`, inspect the changes, and commit the new manifest with the files. Do not regenerate the manifest to conceal missing assets.
 
@@ -61,3 +61,13 @@ Original source recordings from the Music/Videos folders, temporary processing f
 ## License and credits
 
 The software retains the upstream [MIT license](LICENSE) and Jameson Hodge’s copyright notice. Included third-party fonts and dictionary retain their own license files. Song and movie material is separately credited and is not relicensed as MIT; see [MEDIA-RIGHTS.md](MEDIA-RIGHTS.md).
+
+## Rodehihi — Δεν ξανακάνω φυλακή
+
+The tenth selection, `?song=rodehihi-den-xanakano-fylaki`, adds the complete 3:12 supplied Rodehihi performance. The original stereo instrumental backing, breaks and long ending remain at their original speed. Vocal separation is used only around the sung phrases; the instrumental intro and ending use the source mix directly, with a common gain for headroom. No original lead vocal is intentionally mixed in; faint separation remnants may remain.
+
+A CHIMERA mouth sings the three verses and repeated refrains in Greek. Corrected word alignment and estimated source pitch supply 182 syllables and 256 notes, including fractional pitches and held syllables. Timing and vowel lengths follow the supplied performance. Pronunciation and the accented delivery are approximate; this is physical robotic singing, not a copy of the singer’s voice. The existing Greek phoneme set is used. Singer and backing have independent mute/solo and level controls, and the full mix can be downloaded as WAV.
+
+The prepared score, two MP3 channels, compressed mouth telemetry and credits are in `public/band/rodehihi-den-xanakano-fylaki/`. All nine earlier songs, the default selection and both movie scenes remain.
+
+For the existing Sites host’s archive limit, builds can set `CHIMERA_EXTERNAL_MOVIE_DOWNLOAD=https://github.com/spirosrap/chimera-song-mouth/releases/download/v1.0.0/for-x.mp4`. This makes the existing courtroom video download use the identical, checksum-verified release attachment and omits that duplicate MP4 from the hosted archive. Ordinary builds retain the local MP4 and are self-contained. Song playback always uses the local prepared assets.

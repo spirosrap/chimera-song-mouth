@@ -7,6 +7,7 @@ import {Transport} from '../../show/transport.ts';
 import {formatTime} from '../../song/melody.ts';
 import {MovieStage} from './MovieStage.tsx';
 import {recordSceneVideo,type SceneStage} from '../../scene/video.ts';
+import {sceneVideoUrl} from '../../scene/download.ts';
 import '../scene.css';
 
 const read=async(base:string,name:string)=>{const r=await fetch(base+name);if(!r.ok)throw Error(`The scene could not load (${r.status}). Reload and try again.`);return r;};
@@ -62,7 +63,7 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
         <input aria-label="Position in the movie scene" type="range" min={0} max={state.duration||1} step={.05} value={state.time} disabled={!loaded||exporting} onChange={e=>transport?.seek(Number(e.target.value))}/>
         <span>{formatTime(state.time)} / {formatTime(state.duration)}</span>
         <button className="chip" disabled={!loaded||!stage||exporting} onClick={()=>void downloadVideo()}>Record a new video</button>
-        {scene&&entry.readyVideo&&<a className="chip" href={BASE+entry.readyVideo} download={`${sceneId}-with-subtitles-X-ready.mp4`}>Download MP4 for X</a>}
+        {scene&&entry.readyVideo&&<a className="chip" href={sceneVideoUrl(BASE,entry.readyVideo)} download={`${sceneId}-with-subtitles-X-ready.mp4`}>Download MP4 for X</a>}
         {scene&&<a className="chip" href={BASE+scene.audio} download={`${sceneId}-chimera.mp3`}>Download audio</a>}
       </div>
       {exporting&&<div className="scene-export" role="status"><div><strong>Preparing your video · {formatTime(exportTime)} / {formatTime(scene?.duration??0)}</strong><p>Keep this tab open. The full scene is being saved with sound and subtitles.</p></div><progress value={exportTime} max={scene?.duration||1}/><button className="chip" onClick={()=>exportJob.current?.abort()}>Cancel</button></div>}

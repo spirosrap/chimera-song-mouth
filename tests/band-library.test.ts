@@ -43,8 +43,17 @@ test('Apricots is an additional full electronic choir and keeps the existing def
 
 
 test('the second Greek song adds a backed singer and hand without replacing existing songs',()=>{
- expect(BAND_SONGS).toHaveLength(9);const song=BAND_SONGS.at(-1)!;
+ const song=BAND_SONGS[8];
  expect(song.id).toBe('ta-paidia-tou-peiraia');expect(song.arrangement.presentation).toBe('backed-solo');
  expect(song.arrangement.duration).toBeGreaterThan(198);expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
  expect(BAND_SONGS.slice(0,8).map(s=>s.id)).toEqual(['house-of-the-rising-sun','all-made-of-air','neon-current','bicep-glue','night-train-quartet','synnefoula','megalovania','bicep-apricots']);
+});
+
+
+test('Rodehihi adds a full backed Greek singer while keeping all previous songs',async()=>{
+ const song=BAND_SONGS[9];expect(BAND_SONGS).toHaveLength(10);
+ expect(song.id).toBe('rodehihi-den-xanakano-fylaki');expect(song.arrangement.presentation).toBe('backed-solo');
+ expect(song.arrangement.duration).toBeGreaterThan(192);expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
+ expect(BAND_SONGS[8].id).toBe('ta-paidia-tou-peiraia');
+ expect((await loadBandArrangement(song,request(fixture()))).title).toBe('Loaded arrangement');
 });

@@ -24,7 +24,7 @@ Cloudflare Pages is one suitable option for the current assets: its documented [
 
 ## Deploy without a build environment
 
-Download `chimera-website.zip` from this repository’s initial release, verify its checksum against `SHA256SUMS.txt`, and extract it. Upload the **contents**, with `index.html` at the web root. It already contains all compiled JavaScript/WASM, nine songs and both scenes. Do not upload the ZIP itself as the website or omit its `band/`, `scenes/`, `fonts/`, `data/` and `assets/` directories.
+Download `chimera-website.zip` from this repository’s latest release, verify its checksum against `SHA256SUMS.txt`, and extract it. Upload the **contents**, with `index.html` at the web root. It already contains all compiled JavaScript/WASM, nine songs and both scenes. Do not upload the ZIP itself as the website or omit its `band/`, `scenes/`, `fonts/`, `data/` and `assets/` directories.
 
 Keep the website and media on the same origin. Correct MIME types include `text/javascript` for JS and `application/wasm` for WASM. Serve `.tele.gz` as binary; if a host transparently decompresses it, the loader can detect the already-decompressed data. Avoid rewriting missing media to `index.html`; missing media should return 404. Query-string routes such as `?song=megalovania` need no special rewrite.
 
@@ -35,3 +35,5 @@ The next practical split is **GitHub for code + Cloudflare R2 for prepared media
 ## Check after deployment
 
 Open the root page and every link in `CONTENT.md`. Start playback with a user click. Check the solo voice, all 24 MEGALOVANIA heads, both Greek backings, the whistle and snapping hand, both movie scenes and their captions, WAV downloads and the ready MP4. Record a short scene test in the target browser; real-time recording support depends on the browser’s encoders. The Princess Bride has live recording, not a pre-encoded MP4.
+
+The Rodehihi addition brings the library to ten songs. Standard builds still include every media file locally. The older Sites deployment uses the optional `CHIMERA_EXTERNAL_MOVIE_DOWNLOAD` build setting described in the README to keep its archive under 256 MiB; the courtroom MP4 remains in this repository and its original release attachment.

@@ -16,11 +16,11 @@ bun run verify:content
 bun run build:static
 ```
 
-This uses the included precompiled WASM engine. Publish the entire generated `dist/` folder; see [DEPLOYMENT.md](DEPLOYMENT.md). The initial release also has a prebuilt website ZIP. A hosting account connection is a separate step from repository access.
+This uses the included precompiled WASM engine. Publish the entire generated `dist/` folder; see [DEPLOYMENT.md](DEPLOYMENT.md). The latest release also has a prebuilt website ZIP. A hosting account connection is a separate step from repository access.
 
 ## Preserve
 
-- Nine songs in `src/band/library.ts`, including all prepared files in `public/band/`.
+- Ten songs in `src/band/library.ts`, including all prepared files in `public/band/`.
 - Both movies in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.

@@ -46,7 +46,7 @@ and the CLI) under a React UI. See the README.
 - **Recorded band heads own model leases for their mounted lifetime.** Do not hold an evictable live-preview model in a recorded feed; MEGALOVANIA has 13 body blends, beyond the eight-entry cache. Check: `bun test tests/model-leases.test.ts`.
 - **DOM content flows in `.screen-body`, never absolutely positioned.** Check: `bun run lint:layout`.
 - **This handoff explicitly includes the user-requested prepared music/movie assets.**
-  Keep all nine songs and both scenes in `public/`; read `CONTENT.md` and `MEDIA-RIGHTS.md`.
+  Keep all ten songs and both scenes in `public/`; read `CONTENT.md` and `MEDIA-RIGHTS.md`.
   The upstream copyright exclusion does not apply to this explicitly requested export. CSD
   datasets, original input recordings and analysis caches are not included. Do not add them.
   After intentionally changing public assets, run `bun run content:manifest` and commit the
