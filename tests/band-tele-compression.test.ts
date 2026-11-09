@@ -10,13 +10,16 @@ test('compressed prepared mouth movement restores identical samples and leaves a
  const values=new Float32Array(raw,48);for(let i=0;i<values.length;i++)values[i]=Math.sin(i)*.2;
  const part:BandPart={id:'voice',name:'Voice',role:'Choir',body:{female:0,child:0},volume:1,pan:0,telemetryEncoding:'gzip'};
  for(const alreadyDecoded of [false,true]){
+ for(const assetVersion of [undefined,"performance-2"]){
+ part.assetVersion=assetVersion;const suffix=assetVersion?"?v="+assetVersion:"";
  const requests:string[]=[];const audio=Uint8Array.of(1,2,3),buffer={} as AudioBuffer;
  const result=await loadBandAssets('test',[part],async bytes=>{expect(new Uint8Array(bytes)).toEqual(audio);return buffer;},async url=>{
-  requests.push(url);return new Response(url.endsWith('.mp3')?audio:alreadyDecoded?new Uint8Array(raw):Bun.gzipSync(new Uint8Array(raw)));
+  requests.push(url);return new Response(url.includes('.mp3')?audio:alreadyDecoded?new Uint8Array(raw):Bun.gzipSync(new Uint8Array(raw)));
  });
- expect(requests).toEqual(['/band/test/voice.mp3','/band/test/voice.tele.gz']);expect(result[0].buffer).toBe(buffer);
+ expect(requests).toEqual(['/band/test/voice.mp3'+suffix,'/band/test/voice.tele.gz'+suffix]);expect(result[0].buffer).toBe(buffer);
  const reference=new TeleTrack(raw),track=result[0].track!;expect(track.duration).toBe(reference.duration);expect(track.frames).toBe(reference.frames);
  for(let i=0;i<frames;i++)expect(track.message(i).t).toEqual(reference.message(i).t);
+ }
  }
 });
 

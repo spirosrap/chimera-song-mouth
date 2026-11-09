@@ -5,6 +5,12 @@ export const MAX_BAND_VOICES = 24;
 
 export interface BeatHit { time: number; id: string; accent?: number }
 export interface SpokenLine { time: number; text: string }
+/** Source-performance controls use absolute audio time, including consonant onsets. */
+export interface VocalPerformance {
+  lyrics: string;
+  phrases: {start:number; phones:{ipa:string;duration:number}[]}[];
+  contour: {time:number;hz:number;breath:number}[];
+}
 export interface VocalEffects {
   bpm: number;
   lowpassHz?: number;
@@ -23,12 +29,14 @@ export interface BandPart {
   snaps?: {time:number;accent:number}[];
   delivery?: "sing" | "whistle";
   telemetryEncoding?: "gzip";
+  assetVersion?: string;
   name: string;
   role: string;
   body: BodyMix;
   volume: number;
   pan: number;
   melody?: Melody;
+  performance?: VocalPerformance;
   /** Original recorded whistle passages, at their actual pitch and timestamps. */
   whistleMelody?: Melody;
   beats?: BeatHit[];

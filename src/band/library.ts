@@ -2,6 +2,7 @@ import { originalBand } from "./original.ts";
 import { risingSunBand } from "./risingSun.ts";
 import { neonCurrentBand } from "./neonCurrent.ts";
 import { MAX_BAND_VOICES, type Arrangement } from "./types.ts";
+import {validPerformance} from './performance.ts';
 
 export interface BandSong { id:string; name:string; arrangement:Arrangement; arrangementUrl?:string }
 
@@ -30,7 +31,7 @@ export const BAND_SONGS:BandSong[]=[
   {id:"ta-paidia-tou-peiraia",name:"Τα παιδιά του Πειραιά · 3:19 · robotic voice & fingers",arrangementUrl:"/band/ta-paidia-tou-peiraia/arrangement.json",arrangement:{
     title:"Τα παιδιά του Πειραιά · Μελίνα Μερκούρη",description:"The original instrumental music, a robotic Greek singer and an animated hand recreating the recording’s finger clicks.",bpm:120,duration:199.3,presentation:"backed-solo",parts:[],sections:[],
   }},
-  {id:"rodehihi-den-xanakano-fylaki",name:"Rodehihi — Δεν ξανακάνω φυλακή · 3:12",arrangementUrl:"/band/rodehihi-den-xanakano-fylaki/arrangement.json",arrangement:{
+  {id:"rodehihi-den-xanakano-fylaki",name:"Rodehihi — Δεν ξανακάνω φυλακή · 3:12",arrangementUrl:"/band/rodehihi-den-xanakano-fylaki/arrangement.json?v=performance-2",arrangement:{
     title:"Δεν ξανακάνω φυλακή · Rodehihi",description:"Rodehihi’s full recording with its original instrumental backing and a robotic Greek singer following the vocal melody and phrasing.",bpm:120,duration:192.68,presentation:"backed-solo",parts:[],sections:[],
   }},
 ];
@@ -55,6 +56,8 @@ export async function loadBandArrangement(song:BandSong,request:(url:string)=>Pr
       let last=-1;
       for(const snap of part.snaps){if(!snap||!Number.isFinite(snap.time)||snap.time<0||snap.time<last||snap.time>=data.duration||!Number.isFinite(snap.accent)||snap.accent<0||snap.accent>1.4)throw new Error('The finger-click rhythm is invalid.');last=snap.time;}
     }
+    if(part.performance&&!validPerformance(part.performance,data.duration))throw new Error('The vocal performance data is invalid.');
+    if(part.assetVersion!==undefined&&(typeof part.assetVersion!=='string'||!/^[a-z0-9-]{1,64}$/.test(part.assetVersion)))throw new Error('The song asset version is invalid.');
     ids.add(part.id);
   }
   return data;

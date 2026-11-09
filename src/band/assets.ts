@@ -7,7 +7,8 @@ export async function loadBandAssets(id:string,parts:BandPart[],decode:(data:Arr
   const read=async(url:string)=>{const r=await request(url);if(!r.ok)throw new Error(`A song file could not load (${r.status}). Reload and try again.`);return r.arrayBuffer();};
   return Promise.all(parts.map(async part=>{
     const base=`/band/${id}/${part.id}`;
-    const [audio,tele]=await Promise.all([read(base+".mp3"),!isVoicePart(part)?Promise.resolve(null):read(base+(part.telemetryEncoding==="gzip"?".tele.gz":".tele"))]);
+    const version=part.assetVersion?`?v=${encodeURIComponent(part.assetVersion)}`:'';
+    const [audio,tele]=await Promise.all([read(base+".mp3"+version),!isVoicePart(part)?Promise.resolve(null):read(base+(part.telemetryEncoding==="gzip"?".tele.gz":".tele")+version)]);
     const raw=tele?await unpackTelemetry(tele):null;
     return {buffer:await decode(audio),track:raw?new TeleTrack(raw):null};
   }));

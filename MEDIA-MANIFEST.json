@@ -748,8 +748,8 @@
     },
     {
       "path": "public/band/rodehihi-den-xanakano-fylaki/arrangement.json",
-      "bytes": 20894,
-      "sha256": "138d1923a10ceb89a509a278c495d99f616c5e1c2e8bff188b99c06ef78d4379"
+      "bytes": 178809,
+      "sha256": "072c0eedb010f5341fcea73c7315396a32503518d963b2354a0ee3eea804c5b0"
     },
     {
       "path": "public/band/rodehihi-den-xanakano-fylaki/backing.mp3",
@@ -758,18 +758,18 @@
     },
     {
       "path": "public/band/rodehihi-den-xanakano-fylaki/credits.txt",
-      "bytes": 670,
-      "sha256": "60563bddf910138fe630fca6981cab0677baaa71baedd60a44b9fd7a518db78f"
+      "bytes": 952,
+      "sha256": "9c31bb6f724fef510f4e8bba7f66475c4deeb7d0945eef112ed1f96aff779952"
     },
     {
       "path": "public/band/rodehihi-den-xanakano-fylaki/lead.mp3",
       "bytes": 2312972,
-      "sha256": "60098753e488b9e15a4dd68c94f25427c3348fbf2e3c41cd7a5d1519388e5e6b"
+      "sha256": "16324ebb487a72147afcde4b74e4f92aed1e533afaca7c66fa938c5d771ab207"
     },
     {
       "path": "public/band/rodehihi-den-xanakano-fylaki/lead.tele.gz",
-      "bytes": 1306838,
-      "sha256": "8ebb4cd60b4c52480435e1aa8e38dff7cfac6d5b184e7e14e317eaf511a6db5c"
+      "bytes": 1277760,
+      "sha256": "e70e070e885e1478d45cddb874dbcadf8fb74bbcfe926ad67d9c75a42b7c9438"
     },
     {
       "path": "public/band/synnefoula/arrangement.json",

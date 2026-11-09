@@ -17,3 +17,7 @@ Browser playback, visual layout, live recording and upload to X were not exercis
 ## Rodehihi addition
 
 Full native checks, all 103 Bun tests (11,309 assertions), typecheck and production builds passed. The new track has 84 aligned words, 182 syllables and 256 notes across 192.681 seconds. Both MP3 channels decode fully and the mouth telemetry matches the audio clock. The decoded backing has 25.87 dB signal-to-error ratio against its prepared WAV. The instrumental intro and long ending match the gain-adjusted source before encoding within 1.2e-7. The mix peaks at 0.92. The full library asset check now loads all ten songs. Browser listening/layout verification remains unavailable.
+
+## Rodehihi source pronunciation revision
+
+The existing track now uses 400 estimated source phones over 15 phrases and 3,238 continuous pitch/emphasis points. Native tests and all 106 Bun tests (11,344 assertions) passed, along with typecheck, both build modes, and all ten prepared-song asset checks. All 15 sung phrases have signal; instrumental gaps are silent in the generated lead. The 3,854 mouth frames match the 192.681-second audio clock. The decoded full mix peaks at 0.883. Backing MP3 SHA-256 and backing level are identical to the previous release. Only the Rodehihi score, lead MP3, mouth telemetry and credits changed among the 186 public assets. The physical engine is unchanged. Source pronunciation was estimated automatically; no listening or browser verification was available.
