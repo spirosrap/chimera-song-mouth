@@ -1,3 +1,4 @@
+import {BASE_PATH} from "../base.ts";
 /**
  * The engine as the UI uses it: constants, planners, G2P, the anatomy model and the creature
  * catalogue, all from the Rust engine (crates/chimera) through its JSON interface. Import only
@@ -74,7 +75,7 @@ export class EnglishG2P {
   }
 
   /** Load the gzipped dictionary ("word\tPHONES" lines). */
-  load(url = "/data/cmudict.txt.gz"): Promise<void> {
+  load(url = BASE_PATH + "data/cmudict.txt.gz"): Promise<void> {
     if (this.isLoaded) return Promise.resolve();
     if (this.loading) return this.loading;
     this.loading = (async () => {

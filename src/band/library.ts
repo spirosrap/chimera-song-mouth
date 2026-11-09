@@ -1,3 +1,4 @@
+import {BASE_PATH} from "../base.ts";
 import { originalBand } from "./original.ts";
 import { risingSunBand } from "./risingSun.ts";
 import { neonCurrentBand } from "./neonCurrent.ts";
@@ -13,25 +14,25 @@ export const BAND_SONGS:BandSong[]=[
   {id:"house-of-the-rising-sun",name:"House of the Rising Sun · 2:49",arrangement:prepared(risingSunBand())},
   {id:"all-made-of-air",name:"All Made of Air · 0:35",arrangement:prepared(originalBand())},
   {id:"neon-current",name:"Neon Current · 3:03 · wordless electronic",arrangement:prepared(neonCurrentBand())},
-  {id:"bicep-glue",name:"BICEP — Glue · 4:30 · vocal remake",arrangementUrl:"/band/bicep-glue/arrangement.json",arrangement:{
+  {id:"bicep-glue",name:"BICEP — Glue · 4:30 · vocal remake",arrangementUrl:BASE_PATH+"band/bicep-glue/arrangement.json",arrangement:{
     title:"Glue · BICEP",description:"BICEP’s Glue, reimagined as eight wordless mouths: a repeating hook, layered choir, deep bass and a shuffling mouth beat.",bpm:130,duration:270.8,wordless:true,parts:[],sections:[],
   }},
-  {id:"night-train-quartet",name:"Night Train Radio · 2:26 · new-lyrics quartet",arrangementUrl:"/band/night-train-quartet/arrangement.json",arrangement:{
+  {id:"night-train-quartet",name:"Night Train Radio · 2:26 · new-lyrics quartet",arrangementUrl:BASE_PATH+"band/night-train-quartet/arrangement.json",arrangement:{
     title:"Night Train Radio",description:"The Mr. Sandman tune with newly written words about a night train and a waking city. Bass, tenor, alto and soprano sing the full piece, with close harmonies and a changing lead.",bpm:112.5,duration:146.3,presentation:"quartet",parts:[],sections:[],
   }},
-  {id:"synnefoula",name:"Συννεφούλα · singing & original whistle passages",arrangementUrl:"/band/synnefoula/arrangement.json",arrangement:{
+  {id:"synnefoula",name:"Συννεφούλα · singing & original whistle passages",arrangementUrl:BASE_PATH+"band/synnefoula/arrangement.json",arrangement:{
     title:"Συννεφούλα · Διονύσης Σαββόπουλος",description:"One mouth sings the Greek vocal sections and whistles the recording's original whistle passages, over the original instrumental backing.",bpm:120,duration:135.43,presentation:"backed-solo",parts:[],sections:[],
   }},
-  {id:"megalovania",name:"MEGALOVANIA · 2:36 · 24 mouths",arrangementUrl:"/band/megalovania/arrangement.json",arrangement:{
+  {id:"megalovania",name:"MEGALOVANIA · 2:36 · 24 mouths",arrangementUrl:BASE_PATH+"band/megalovania/arrangement.json",arrangement:{
     title:"MEGALOVANIA · 24 mouths",description:"The full Undertale track, performed by 24 simulated mouths. The riff, layered choir, bass and beatboxing are all voices. No recorded instruments.",bpm:120,duration:157,wordless:true,presentation:"ensemble",parts:[],sections:[],
   }},
-  {id:"bicep-apricots",name:"BICEP — Apricots · 4:09 · 12 mouths",arrangementUrl:"/band/bicep-apricots/arrangement.json",arrangement:{
+  {id:"bicep-apricots",name:"BICEP — Apricots · 4:09 · 12 mouths",arrangementUrl:BASE_PATH+"band/bicep-apricots/arrangement.json",arrangement:{
     title:"Apricots · BICEP",description:"The full supplied Apricots recording reimagined as a wordless mouth choir, with layered vocal hooks, warm harmonies, bass and beatboxing.",bpm:128,duration:249.412,wordless:true,presentation:"ensemble",parts:[],sections:[],
   }},
-  {id:"ta-paidia-tou-peiraia",name:"Τα παιδιά του Πειραιά · 3:19 · robotic voice & fingers",arrangementUrl:"/band/ta-paidia-tou-peiraia/arrangement.json",arrangement:{
+  {id:"ta-paidia-tou-peiraia",name:"Τα παιδιά του Πειραιά · 3:19 · robotic voice & fingers",arrangementUrl:BASE_PATH+"band/ta-paidia-tou-peiraia/arrangement.json",arrangement:{
     title:"Τα παιδιά του Πειραιά · Μελίνα Μερκούρη",description:"The original instrumental music, a robotic Greek singer and an animated hand recreating the recording’s finger clicks.",bpm:120,duration:199.3,presentation:"backed-solo",parts:[],sections:[],
   }},
-  {id:"rodehihi-den-xanakano-fylaki",name:"Rodehihi — Δεν ξανακάνω φυλακή · 3:12",arrangementUrl:"/band/rodehihi-den-xanakano-fylaki/arrangement.json?v=performance-2",arrangement:{
+  {id:"rodehihi-den-xanakano-fylaki",name:"Rodehihi — Δεν ξανακάνω φυλακή · 3:12",arrangementUrl:BASE_PATH+"band/rodehihi-den-xanakano-fylaki/arrangement.json?v=performance-2",arrangement:{
     title:"Δεν ξανακάνω φυλακή · Rodehihi",description:"Rodehihi’s full recording with its original instrumental backing and a robotic Greek singer following the vocal melody and phrasing.",bpm:120,duration:192.68,presentation:"backed-solo",parts:[],sections:[],
   }},
 ];

@@ -1,3 +1,4 @@
+import {BASE_PATH} from "../../base.ts";
 import {unpackTelemetry} from "../../show/unpackTelemetry.ts";
 import {MOVIE_SCENES,movieScene,type MovieSceneId} from '../../scene/library.ts';
 import {useEffect,useState,useRef} from 'react';
@@ -13,7 +14,7 @@ import '../scene.css';
 const read=async(base:string,name:string)=>{const r=await fetch(base+name);if(!r.ok)throw Error(`The scene could not load (${r.status}). Reload and try again.`);return r;};
 interface LoadedScene{scene:SceneFile;tracks:TeleTrack[]}
 export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
-  const entry=movieScene(sceneId)!,BASE=`/scenes/${sceneId}/`;
+  const entry=movieScene(sceneId)!,BASE=`${BASE_PATH}scenes/${sceneId}/`;
   const [transport,setTransport]=useState<Transport|null>(null),[loaded,setLoaded]=useState<LoadedScene|null>(null),[error,setError]=useState('');
   const [camera,setCamera]=useState<CameraChoice>('auto'),[subtitles,setSubtitles]=useState(true),[,tick]=useState(0),[retry,setRetry]=useState(0);
   const [stage,setStage]=useState<SceneStage|null>(null),[exporting,setExporting]=useState(false),[exportTime,setExportTime]=useState(0),[exportError,setExportError]=useState('');

@@ -1,3 +1,4 @@
+import {BASE_PATH} from "../base.ts";
 import {unpackTelemetry} from "../show/unpackTelemetry.ts";
 import {TeleTrack} from "../show/tele.ts";
 import {isVoicePart,type BandPart} from "./types.ts";
@@ -6,7 +7,7 @@ import {isVoicePart,type BandPart} from "./types.ts";
 export async function loadBandAssets(id:string,parts:BandPart[],decode:(data:ArrayBuffer)=>Promise<AudioBuffer>,request:(url:string)=>Promise<Response>=fetch){
   const read=async(url:string)=>{const r=await request(url);if(!r.ok)throw new Error(`A song file could not load (${r.status}). Reload and try again.`);return r.arrayBuffer();};
   return Promise.all(parts.map(async part=>{
-    const base=`/band/${id}/${part.id}`;
+    const base=`${BASE_PATH}band/${id}/${part.id}`;
     const version=part.assetVersion?`?v=${encodeURIComponent(part.assetVersion)}`:'';
     const [audio,tele]=await Promise.all([read(base+".mp3"+version),!isVoicePart(part)?Promise.resolve(null):read(base+(part.telemetryEncoding==="gzip"?".tele.gz":".tele")+version)]);
     const raw=tele?await unpackTelemetry(tele):null;
