@@ -15,4 +15,4 @@ target/
 public/shows/
 
 # Prepared public/band and public/scenes assets, plus the precompiled WASM,
-# are intentionally tracked for this complete, private hosting handoff.
+# are intentionally tracked for this complete hosting handoff.

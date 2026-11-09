@@ -2,7 +2,7 @@
 
 ## Recommended setup
 
-Keep source and the current prepared media together in this private GitHub repository. Connect the new host to it and publish the static output. At the initial export, public assets total **263,166,339 bytes (250.97 MiB)**; the largest file is the 23,264,211-byte subtitled MP4. All files fit regular GitHub storage, so Git LFS and an external storage account are unnecessary.
+Keep source and the current prepared media together in this public GitHub repository. Connect the new host to it and publish the static output. At the initial export, public assets total **263,166,339 bytes (250.97 MiB)**; the largest file is the 23,264,211-byte subtitled MP4. All files fit regular GitHub storage, so Git LFS and an external storage account are unnecessary.
 
 GitHub [blocks individual Git files above 100 MiB and recommends repositories under 1 GB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github). Repeatedly replacing large media will grow Git history; use an external media store if that becomes significant.
 
@@ -20,7 +20,7 @@ GitHub [blocks individual Git files above 100 MiB and recommends repositories un
 
 If the host only has one build-command box, use `bun install --frozen-lockfile && bun run build:static`. Select/install Bun in its build environment. The `vercel.json` includes these commands; other hosts can use the same settings. Rust is only needed when rebuilding the engine from source.
 
-Cloudflare Pages is one suitable option for the current assets: its documented [25 MiB per-file limit](https://developers.cloudflare.com/pages/platform/limits/) is above the largest current file, and this site is far below its file-count limit. Grant the host’s GitHub integration access to this private repository. Account setup and deployment remain for the next agent; this handoff does not change the existing live website.
+Cloudflare Pages is one suitable option for the current assets: its documented [25 MiB per-file limit](https://developers.cloudflare.com/pages/platform/limits/) is above the largest current file, and this site is far below its file-count limit. Connect the host’s GitHub integration to this repository for automatic builds. Account setup and deployment remain for the next agent; this handoff does not change the existing live website.
 
 ## Deploy without a build environment
 

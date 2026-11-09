@@ -6,7 +6,7 @@ Host this complete CHIMERA edition on a new independent hosting account, preserv
 
 ## Access
 
-This repository is private. On the owner’s computer, the existing GitHub login can clone it. For an agent running elsewhere, connect the owner’s GitHub account and grant access to this repository, or invite that agent’s human collaborator under GitHub Settings → Collaborators. A private repository URL alone does not grant access. No credentials are stored in the project.
+This repository is public. Anyone can view, clone or download it without signing in. Another agent only needs the repository URL to read the code and media. Pushing changes still requires the owner’s GitHub connection or a collaborator invitation under Settings → Collaborators. No credentials are stored in the project.
 
 ## First commands
 
