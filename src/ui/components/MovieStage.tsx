@@ -3,6 +3,7 @@ import {useEffect,useRef,useState} from 'react';
 import * as THREE from 'three';
 import {headRendererPool} from '../render/sharedHeadRenderer.ts';
 import {Courtroom} from '../render/courtroom.ts';
+import {MemoryCore} from '../render/core.ts';
 import {getModel} from '../useModel.ts';
 import {sceneCamera,sceneCue,type CameraChoice,type SceneFile,type CourtCharacterId} from '../../scene/scene.ts';
 import type {TeleTrack} from '../../show/tele.ts';
@@ -19,7 +20,9 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
     gl.outputColorSpace=THREE.LinearSRGBColorSpace;
     gl.setPixelRatio(Math.min(1.5,window.devicePixelRatio||1));
     const people=scene.characters.flatMap((c,i)=>c.id==='ross'||c.id==='judge'?[]:[{id:c.id,track:tracks[i],model:getModel(tracks[i].body,tracks[i].sampleRate)}]);
-    const room=scene.setting==='cliffs'
+    const room=scene.setting==='core'
+      ?new MemoryCore(people.flatMap(c=>c.id==='hal'||c.id==='dave'?[{...c,id:c.id}]:[]),scene.duration)
+      :scene.setting==='cliffs'
       ?new Cliffs(people.flatMap(c=>c.id==='vizzini'||c.id==='inigo'||c.id==='fezzik'?[{...c,id:c.id}]:[]))
       :new Courtroom(people.flatMap(c=>c.id==='kaffee'||c.id==='jessep'?[{...c,id:c.id as CourtCharacterId}]:[]));
     let capturing=false,alive=true;
@@ -45,5 +48,5 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
     raf=requestAnimationFrame(frame);
     return()=>{alive=false;onReady(null);cancelAnimationFrame(raf);observer.disconnect();visibility.disconnect();room.dispose();release();};
   },[scene,tracks,transport,onReady]);
-  return <div ref={wrapRef} className="courtroom-stage">{error?<p role="status">{error}</p>:<canvas ref={canvasRef} role="img" aria-label={scene.setting==='cliffs'?'The Cliffs of Insanity with three wireframe characters and a masked climber. Their simulated mouths follow the dialogue.':'A cinematic courtroom with two wireframe characters. The simulated mouths follow the spoken dialogue.'}/>}</div>;
+  return <div ref={wrapRef} className={`courtroom-stage${scene.setting==='core'?' core-stage':''}`}>{error?<p role="status">{error}</p>:<canvas ref={canvasRef} role="img" aria-label={scene.setting==='core'?'A dark red memory core. A simulated mouth speaks from the computer’s eye while an astronaut removes glowing modules from the wall, and the room dims.':scene.setting==='cliffs'?'The Cliffs of Insanity with three wireframe characters and a masked climber. Their simulated mouths follow the dialogue.':'A cinematic courtroom with two wireframe characters. The simulated mouths follow the spoken dialogue.'}/>}</div>;
 }

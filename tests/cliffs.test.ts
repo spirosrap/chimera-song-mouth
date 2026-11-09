@@ -16,7 +16,7 @@ test('the cliff climb, arrival and rope cut restore their positions on backwards
  expect(cliffActorPose('fezzik',0)).toEqual(start);
 });
 test('the new movie is an addition and only the existing finished capture has a direct MP4',()=>{
- expect(MOVIE_SCENES.map(m=>m.id)).toEqual(['a-few-good-men','princess-bride']);
+ expect(MOVIE_SCENES.map(m=>m.id).slice(0,2)).toEqual(['a-few-good-men','princess-bride']);
  expect(movieScene('a-few-good-men')?.readyVideo).toBe('for-x.mp4');
  expect(movieScene('princess-bride')?.readyVideo).toBeUndefined();expect(movieScene('../invalid')).toBeUndefined();
 });

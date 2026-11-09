@@ -45,3 +45,24 @@
 .scene-export-saved a { color: #ffe0af; }
 
 .scene-picker { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+
+/* The memory core: one colour, and captions that arrive and leave quietly. */
+.scene-core { color: #eadfdc; }
+.scene-core .scene-top,.scene-core .scene-transport { border-color: #3a1512; }
+.scene-core .scene-top a,.scene-core .scene-eyebrow,.scene-core .scene-transport > span { color: #e0705c; }
+.scene-core .scene-top > span,.scene-core .scene-runtime small,.scene-core .scene-options legend,.scene-core .scene-cast span { color: #94605a; }
+.scene-core .scene-intro p:last-child,.scene-core .scene-cast p,.scene-core .scene-credit { color: #a89490; }
+.scene-core .scene-film { border-color: #2c0f0c; }
+.scene-core .scene-cast { border-color: #3a1512; }
+.scene-core .scene-cast strong { color: #ecd8d3; }
+.scene-core .primary { background: #d8442c; color: #140403; border-color: #f0705a; }
+.scene-core .chip { color: #d9b1a9; border-color: #55231d; }
+.scene-core .chip.on { color: #ffe1da; border-color: #d8442c; background: #33100c; }
+.scene-core .scene-transport input,.scene-core .scene-options input,.scene-core .scene-export progress { accent-color: #d8442c; }
+.scene-core .scene-export { border-color: #55231d; background: #1b0907; }
+.core-stage { background: #050101; }
+.scene-caption.quiet { opacity: 0; transition: opacity 1.6s ease; }
+.scene-caption.quiet.on { opacity: 1; transition: opacity .9s ease; }
+.scene-caption.quiet > span { color: #b0584b; }
+.scene-caption.quiet p { font-weight: 400; font-size: clamp(13px,1.15vw,16px); letter-spacing: .04em; color: #e9dcd8; }
+@media (prefers-reduced-motion: reduce) { .scene-caption.quiet,.scene-caption.quiet.on { transition: none; } }

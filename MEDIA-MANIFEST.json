@@ -902,6 +902,31 @@
       "sha256": "09d34a031ba5833d5d831c5d937c668c2073faa99397476593732510bdaf4548"
     },
     {
+      "path": "public/scenes/hal-9000/credits.txt",
+      "bytes": 494,
+      "sha256": "7faa7c3c86642899f0e9eae00c6cf51e4b17c83bdd6949ae67b92556b52d5a20"
+    },
+    {
+      "path": "public/scenes/hal-9000/dave.tele.gz",
+      "bytes": 1513153,
+      "sha256": "392a52c56d78d63c7ac4f9872bad261a843b3cb8dd2a9ddfc495ebd50315dc99"
+    },
+    {
+      "path": "public/scenes/hal-9000/hal.tele.gz",
+      "bytes": 1951256,
+      "sha256": "c98c56fb081f19719fb0a002b243634f03370a3a741b2aadbd8bd5f624252391"
+    },
+    {
+      "path": "public/scenes/hal-9000/mix.mp3",
+      "bytes": 4501440,
+      "sha256": "deefcdc6c9b22b8f9b0538b6f8547529b8a5e822fe6160a3a4c2e31ac2ca2098"
+    },
+    {
+      "path": "public/scenes/hal-9000/scene.json",
+      "bytes": 4393,
+      "sha256": "5536c80207f0106103e558ff4faab5314ccb6386988d451d5c6c4bb97d69cbc6"
+    },
+    {
       "path": "public/scenes/princess-bride/credits.txt",
       "bytes": 446,
       "sha256": "a4cb80955a845c243252e3ea7923ee384259d1427b94c963431f25847ad174e1"

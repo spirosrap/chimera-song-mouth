@@ -25,8 +25,11 @@ Each song’s `public/band/<id>/` directory contains the prepared score, MP3 cha
 | --- | --- | --- | --- |
 | A Few Good Men — courtroom | 2:08 | `?scene=a-few-good-men` | Synthetic dialogue mix, four voice telemetry tracks, captions, shots, scene data and existing subtitled H.264/AAC `for-x.mp4` |
 | The Princess Bride — Cliffs of Insanity | 2:20 | `?scene=princess-bride` | Synthetic dialogue mix, three voice telemetry tracks, captions, shots and scene data |
+| 2001: A Space Odyssey — HAL 9000’s memory core | 3:07 | `?scene=hal-9000` | Synthetic dialogue and song mix, two voice telemetry tracks, captions, shots and scene data |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. Both scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download. Original movie source video/audio is not needed for playback and is not served.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All three scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+
+The HAL 9000 scene has no source clip: its line starts are timed by hand from the script and every line’s end is the engine’s own. `bun tools/render-hal-scene.ts` (needs ffmpeg) rebuilds its mix, telemetry, captions and shots from the engine; the room’s modules, light and cameras follow `src/scene/core.ts`. “Daisy Bell” is entered as notes and slows and falls in pitch as it is sung. Original movie source video/audio is not needed for playback and is not served.
 
 ## Single-mouth player
 
