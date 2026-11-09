@@ -1,0 +1,910 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "public/band/all-made-of-air/alto.mp3",
+      "bytes": 424268,
+      "sha256": "39ca5e046584c8460e9c532c9d40d91b13b796afd2b6f0b9a58766a0f442dd41"
+    },
+    {
+      "path": "public/band/all-made-of-air/alto.tele.gz",
+      "bytes": 199213,
+      "sha256": "294c9f7a408b25b9573af8cb8cc9fdeb54f506c412aa867f5dd1ac3776120428"
+    },
+    {
+      "path": "public/band/all-made-of-air/answer.mp3",
+      "bytes": 424268,
+      "sha256": "966421c8afe6854f7217280bdb517fb8203ce6f303c08f8a13b182d595bc863c"
+    },
+    {
+      "path": "public/band/all-made-of-air/answer.tele.gz",
+      "bytes": 233342,
+      "sha256": "f2556d42e28e78ebdb3c6ccfa7b54c89931f0c8c47aa7076ac176bb8338859e1"
+    },
+    {
+      "path": "public/band/all-made-of-air/arrangement.json",
+      "bytes": 19767,
+      "sha256": "b94678d296ac71de7c66e98d0acaf0b2492d15734ad67864eca4cb44b24667bd"
+    },
+    {
+      "path": "public/band/all-made-of-air/bass.mp3",
+      "bytes": 424268,
+      "sha256": "a68e1cca96ebc25fe01d60b856f788a5d52e816296e0b9f174b627c2e5726214"
+    },
+    {
+      "path": "public/band/all-made-of-air/bass.tele.gz",
+      "bytes": 460608,
+      "sha256": "e5d288d4514eef979cf55724f39f170fc39068c420080f78c81c97c46ea212d2"
+    },
+    {
+      "path": "public/band/all-made-of-air/lead.mp3",
+      "bytes": 424268,
+      "sha256": "5c35314c2d6e7f872fac448a332900ac1634f91c0eb8753700491de2107ab54f"
+    },
+    {
+      "path": "public/band/all-made-of-air/lead.tele.gz",
+      "bytes": 338045,
+      "sha256": "2006518660e5e2a29d277778f9a67e7ac907e4a4c594ee0b861ad92262826961"
+    },
+    {
+      "path": "public/band/all-made-of-air/percussion.mp3",
+      "bytes": 424268,
+      "sha256": "b4859e69d33edafa4e4d728da2fefa3bab7c15a4e707540ad30c69e618ea061d"
+    },
+    {
+      "path": "public/band/all-made-of-air/percussion.tele.gz",
+      "bytes": 407472,
+      "sha256": "34fa4230b0ceb6c77d2efbb721427bdc33e318843c0f41efa98a5a534b71cbd2"
+    },
+    {
+      "path": "public/band/all-made-of-air/spoken.mp3",
+      "bytes": 424268,
+      "sha256": "00b9f7b602de32fa790335d08cfd898c52eae1b3e6f6f78b2f1cc58f2d422e43"
+    },
+    {
+      "path": "public/band/all-made-of-air/spoken.tele.gz",
+      "bytes": 57220,
+      "sha256": "bd9174f711251c5043c3282bc604282c273b054d67aca44ca4ec65c625fb8831"
+    },
+    {
+      "path": "public/band/all-made-of-air/tenor.mp3",
+      "bytes": 424268,
+      "sha256": "5f3131e43ab2ad583186ec378b1dd0c67eba68a44fd043a5e03e21b6fd0f0546"
+    },
+    {
+      "path": "public/band/all-made-of-air/tenor.tele.gz",
+      "bytes": 370875,
+      "sha256": "c5bb3f97ce3a571fe9345d98091c3a96f84e3439d94fbe897c7ac879820e3691"
+    },
+    {
+      "path": "public/band/bicep-apricots/air.mp3",
+      "bytes": 1496972,
+      "sha256": "2ea61b04b10b7d544c96f020d33a90aac513feff7d61c414522aa43efe213497"
+    },
+    {
+      "path": "public/band/bicep-apricots/air.tele.gz",
+      "bytes": 1873109,
+      "sha256": "a9b8e0f54cc40f2baf4c8a2d767f1b647f228b6625a30712a77c90640c891e7a"
+    },
+    {
+      "path": "public/band/bicep-apricots/arrangement.json",
+      "bytes": 498587,
+      "sha256": "76849c84801aaa2246e51559aec3e18b0154896caee27cee7cd5c2950f2f9044"
+    },
+    {
+      "path": "public/band/bicep-apricots/bass.mp3",
+      "bytes": 1496972,
+      "sha256": "78d20253b98e1a0793f7ec97ff7ad5a13464c026d14e91249f371fa23da1859c"
+    },
+    {
+      "path": "public/band/bicep-apricots/bass.tele.gz",
+      "bytes": 2408995,
+      "sha256": "4782740f983310d314f20f106350025aa26248c655ab5bfb1de8d0162419ac33"
+    },
+    {
+      "path": "public/band/bicep-apricots/choir-high.mp3",
+      "bytes": 1496972,
+      "sha256": "34569fbeed842c4ff2281e709a8af39ea9a7c707efbd8afb6bc355a3a0f96bfe"
+    },
+    {
+      "path": "public/band/bicep-apricots/choir-high.tele.gz",
+      "bytes": 2102359,
+      "sha256": "3a153b6223f7df67ce65d0d19c98a9857fb5213fe599cff683ae6989413108f3"
+    },
+    {
+      "path": "public/band/bicep-apricots/choir-low.mp3",
+      "bytes": 1496972,
+      "sha256": "5f08010c6a804a0ce72d614c20f81deef79054b53e15db3470a0fb87e8648e5e"
+    },
+    {
+      "path": "public/band/bicep-apricots/choir-low.tele.gz",
+      "bytes": 2400467,
+      "sha256": "024ca55b87ab0b17ed337411e82130c4cbdd24e25b19cc3989c782f0af512a1d"
+    },
+    {
+      "path": "public/band/bicep-apricots/credits.txt",
+      "bytes": 538,
+      "sha256": "f001d4d9a0dc8a3961f51c710818d7ed81b587b966426e4de9ede53597be6362"
+    },
+    {
+      "path": "public/band/bicep-apricots/harmony-high.mp3",
+      "bytes": 1496972,
+      "sha256": "5ebc6611c651a19776d589fced689e897491f4b62f32fc11bbb031e1550ce5f7"
+    },
+    {
+      "path": "public/band/bicep-apricots/harmony-high.tele.gz",
+      "bytes": 2707577,
+      "sha256": "03b81de97e7959c3d77c3d1edfc114ea3021a15db5407fdb8e3893358f2cfddf"
+    },
+    {
+      "path": "public/band/bicep-apricots/harmony-low.mp3",
+      "bytes": 1496972,
+      "sha256": "0324c8ffbad97cc7658689bf33b9e44b2f3156dbc39794eba6a34c669fb77dac"
+    },
+    {
+      "path": "public/band/bicep-apricots/harmony-low.tele.gz",
+      "bytes": 2780565,
+      "sha256": "8f27692416208c14b86a56ef7e001cf6ef96d4415278e82c0f56a8913d582af9"
+    },
+    {
+      "path": "public/band/bicep-apricots/harmony-mid.mp3",
+      "bytes": 1496972,
+      "sha256": "5ebf3d1e6cc81d2da0385bde272d88c13f99f74b88eac3f0c0e71fd24b314eca"
+    },
+    {
+      "path": "public/band/bicep-apricots/harmony-mid.tele.gz",
+      "bytes": 2710799,
+      "sha256": "4ae24e488fa9c96c62072e11c16444aae6f993a0097d3a64e00ef1f48e60ec64"
+    },
+    {
+      "path": "public/band/bicep-apricots/hats.mp3",
+      "bytes": 1496972,
+      "sha256": "8365a7c17b7a409951e9964fca43f7edf58e6858ae590c52a7264c8063f4bd63"
+    },
+    {
+      "path": "public/band/bicep-apricots/hats.tele.gz",
+      "bytes": 2092722,
+      "sha256": "1ab9cd24f45ec2146c5890696d290c0ceb3e23cbbaf4fb586f451be78ef1f38b"
+    },
+    {
+      "path": "public/band/bicep-apricots/hook.mp3",
+      "bytes": 1995884,
+      "sha256": "74d7ee80093259c1323f717b7e9c50798b87e4a11d3ba6baaf819539bbc68f8f"
+    },
+    {
+      "path": "public/band/bicep-apricots/hook.tele.gz",
+      "bytes": 2165531,
+      "sha256": "a632863c56105a2901a14913a00d53100e73dcc693fcfe644bbac1650be3c283"
+    },
+    {
+      "path": "public/band/bicep-apricots/kick.mp3",
+      "bytes": 1496972,
+      "sha256": "b12d749cad6dd1bcbe0096fc4d6c0a2ba89411c2033c2c5b0adbc14ead03ee18"
+    },
+    {
+      "path": "public/band/bicep-apricots/kick.tele.gz",
+      "bytes": 1718989,
+      "sha256": "bceb07882a379de8c3b5a9ef0480b90025c479daecc384cd1c531792e863f5d2"
+    },
+    {
+      "path": "public/band/bicep-apricots/shimmer.mp3",
+      "bytes": 1995884,
+      "sha256": "f707b4b4bfdbf896cf9dabfde10a328892d30d835363948e19fa6075f1eb5c95"
+    },
+    {
+      "path": "public/band/bicep-apricots/shimmer.tele.gz",
+      "bytes": 1548533,
+      "sha256": "afa1dcce6d00dd0a0aad439432c6467ac8745a4540dddadb1f77e5e9964af089"
+    },
+    {
+      "path": "public/band/bicep-apricots/snare.mp3",
+      "bytes": 1496972,
+      "sha256": "25ca6062e7f162a87697763fe63c097cb509ad9c7f91655140f8f1a635770394"
+    },
+    {
+      "path": "public/band/bicep-apricots/snare.tele.gz",
+      "bytes": 1975292,
+      "sha256": "2b08fcc7608c9a4d24915c63c8995b4f822a72bb7193761d3e5f558bbb428c0a"
+    },
+    {
+      "path": "public/band/bicep-glue/arrangement.json",
+      "bytes": 381836,
+      "sha256": "2b071c7c14b9b629a4f25adea2aef0e8db5311d839bca7cb1683c9a4a4bc46a8"
+    },
+    {
+      "path": "public/band/bicep-glue/bass.mp3",
+      "bytes": 3250412,
+      "sha256": "620f5347e21e51875c2bbbc1a97fb6ac7929071a611003d84481e019c105ee31"
+    },
+    {
+      "path": "public/band/bicep-glue/bass.tele.gz",
+      "bytes": 1429419,
+      "sha256": "e84e58a1b1525375e2bbfbba7de9fbbb41941d09e1fddd9e3916f335bda450b1"
+    },
+    {
+      "path": "public/band/bicep-glue/drums.mp3",
+      "bytes": 3250412,
+      "sha256": "202db0baa6ce48add7ea861138f1ac49ca828a3a2c506b1d92c9346f9261b177"
+    },
+    {
+      "path": "public/band/bicep-glue/drums.tele.gz",
+      "bytes": 2514820,
+      "sha256": "a5ce663294a9a8f3c247f8d3db9298b0ded1a5a9b4f9c93df37e3be5dae5698d"
+    },
+    {
+      "path": "public/band/bicep-glue/hats.mp3",
+      "bytes": 3250412,
+      "sha256": "d43dd177cbf551d6a1f640859e3e05042696299c9c0afa3c0fa76a8436cb3a8d"
+    },
+    {
+      "path": "public/band/bicep-glue/hats.tele.gz",
+      "bytes": 2698599,
+      "sha256": "fd8f50d176e4580219f4be68b7878aedc98b17f1f1c1b199cf2853f958984ff0"
+    },
+    {
+      "path": "public/band/bicep-glue/high.mp3",
+      "bytes": 3250412,
+      "sha256": "8ebe66170bf609d1a9d12c8afeff06d0730eec3dc7a07f32704b171c66b5b924"
+    },
+    {
+      "path": "public/band/bicep-glue/high.tele.gz",
+      "bytes": 2374865,
+      "sha256": "7bd964da86d2c380125e8cdabff8bc38bf4e9961490b9e89dee82c9403958a9b"
+    },
+    {
+      "path": "public/band/bicep-glue/lead.mp3",
+      "bytes": 3250412,
+      "sha256": "b5ea8c3da41c403ece83890ad40d5185f6658919a137c2df3d0a3c579da22885"
+    },
+    {
+      "path": "public/band/bicep-glue/lead.tele.gz",
+      "bytes": 1795105,
+      "sha256": "daadc1d5fd59cff460da4dcb7605405af0fa666f91648e0436c742fbddd00c9f"
+    },
+    {
+      "path": "public/band/bicep-glue/low.mp3",
+      "bytes": 3250412,
+      "sha256": "a2e2acba5513a9a12f2411e2a8b83829493384212c48ccbcb381a626dd822d4e"
+    },
+    {
+      "path": "public/band/bicep-glue/low.tele.gz",
+      "bytes": 2544289,
+      "sha256": "6e6a2da62efa56065eaabc59fb9a3ed35af795ceff92560ffa4100dc45a975b3"
+    },
+    {
+      "path": "public/band/bicep-glue/mid.mp3",
+      "bytes": 3250412,
+      "sha256": "ec821239ddebd883d937cd374a08c426091544b5d1c10191beba05f843f27b58"
+    },
+    {
+      "path": "public/band/bicep-glue/mid.tele.gz",
+      "bytes": 2458271,
+      "sha256": "ca9e23a659371536edee01f66bff58d6405e05d6ff89d2c709c44e7401c328fe"
+    },
+    {
+      "path": "public/band/bicep-glue/vocal.mp3",
+      "bytes": 3250412,
+      "sha256": "0b1fd2a8a980b84ad64c0087ffa8303fdb2da8ff975a6d7b7add12ba62d280f1"
+    },
+    {
+      "path": "public/band/bicep-glue/vocal.tele.gz",
+      "bytes": 1822800,
+      "sha256": "396dc688813b0eb0298b32d183f2847ba7f46652440af8464e4cf359654142de"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/alto.mp3",
+      "bytes": 2031596,
+      "sha256": "6f7ba48b32eb340b13921caac2c6c22f351abf259d6ef66ceda2f941efa526ad"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/alto.tele.gz",
+      "bytes": 1576614,
+      "sha256": "21aa59f04b923f4afdc1dd3e27033fbce4fb28604952413782bddc3bf822b3f2"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/answer.mp3",
+      "bytes": 2031596,
+      "sha256": "53a2c82402ccf8bfddacae70be977210a39f77da0e558da8036b8ab6aa8d058a"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/answer.tele.gz",
+      "bytes": 716550,
+      "sha256": "babeafe3944741ae8e39cdc9bcf69089577205c6acec7191868d5294ff24dce0"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/arrangement.json",
+      "bytes": 83841,
+      "sha256": "2cd104d367cf85b7e1db4df872b05510a7d21f3cfa6776b4df958d865dff6170"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/bass.mp3",
+      "bytes": 2031596,
+      "sha256": "84d7efce2dfa47fa72716d83b5564d83d166e8ac5bfb482073e7f4d0e7ab6826"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/bass.tele.gz",
+      "bytes": 2072544,
+      "sha256": "7f18e083b8f5267a89933c2fe4263c1fe81485759a3f86c314da859c556f827f"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/lead.mp3",
+      "bytes": 2031596,
+      "sha256": "fe69e0978371f0ba88005a7ea0dcd736ccfbb1d9e28a6e7479fccab8313189ae"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/lead.tele.gz",
+      "bytes": 1531513,
+      "sha256": "02e044e0f7ae7954217c243393ab6b34835b992d9039df8691e17aab0217c8df"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/percussion.mp3",
+      "bytes": 2031596,
+      "sha256": "9841d5e5bcac2292a2ede868d2fe2dfd081f53b2fafab0fa920aa3d11bfab469"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/percussion.tele.gz",
+      "bytes": 1901820,
+      "sha256": "f35edb396e6d8551d3ebcc734a0b59ecb3b389a815aeb35b9c4b0899552e320f"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/soprano.mp3",
+      "bytes": 2031596,
+      "sha256": "270fca097a07b8614bcbed348559b73753231db4b62846966e1b2151be54f44f"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/soprano.tele.gz",
+      "bytes": 1078446,
+      "sha256": "ae784b566fbe785ad17ce04b79011f99e9e34a6038c2fac49207a2b85e1887d5"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/tenor.mp3",
+      "bytes": 2031596,
+      "sha256": "026c348c40ba9fd5eb073483d85750eec5f2242188158fe3cf8f8fbff487bb00"
+    },
+    {
+      "path": "public/band/house-of-the-rising-sun/tenor.tele.gz",
+      "bytes": 2140927,
+      "sha256": "efe2beae351bceb5bb214a0d0f4b61e0edcb4ad24b30d46f26aeab128cdea9e5"
+    },
+    {
+      "path": "public/band/megalovania/arrangement.json",
+      "bytes": 253776,
+      "sha256": "dac790cf92f5f6ca948121a60e25e77fdd7ce35a6aec77d4f12d67989bd574f2"
+    },
+    {
+      "path": "public/band/megalovania/credits.txt",
+      "bytes": 417,
+      "sha256": "b22774909b0066116082dc420c84fa297db77a4dea3e999ae91a735f7d83e34a"
+    },
+    {
+      "path": "public/band/megalovania/voice-01.mp3",
+      "bytes": 1884716,
+      "sha256": "c5eea4f15e9de7a1952fa44288f473ba3a8b2b08e27ccbdba78ab4e807b7f000"
+    },
+    {
+      "path": "public/band/megalovania/voice-01.tele.gz",
+      "bytes": 894115,
+      "sha256": "9ae7d6eb9aaa0226b1e313e6fc7f9e6909a1adf9ca34acf4b2cd9af94ee4f332"
+    },
+    {
+      "path": "public/band/megalovania/voice-02.mp3",
+      "bytes": 1884716,
+      "sha256": "29ae9078847902ff03fd8c371f85df9b99b70d7f34c299404550e3835da17c37"
+    },
+    {
+      "path": "public/band/megalovania/voice-02.tele.gz",
+      "bytes": 424528,
+      "sha256": "b26bbf83312bf28810af7fb85de25bffbd57d32b50c744edf8246c02d749846b"
+    },
+    {
+      "path": "public/band/megalovania/voice-03.mp3",
+      "bytes": 1884716,
+      "sha256": "525a3496432697182d6cd0181e1eeee9a95ddb0a742e052027dba46b11e8a1ec"
+    },
+    {
+      "path": "public/band/megalovania/voice-03.tele.gz",
+      "bytes": 445149,
+      "sha256": "33f501fb07b469284946fac9f8e3a860e2bb31d8542a508cdb0a9a840e9c0222"
+    },
+    {
+      "path": "public/band/megalovania/voice-04.mp3",
+      "bytes": 1884716,
+      "sha256": "77ce0797ef49e450a50715f89f2876cf9914a9882fd42d8c4457f0e0c108781d"
+    },
+    {
+      "path": "public/band/megalovania/voice-04.tele.gz",
+      "bytes": 433864,
+      "sha256": "b900fc4de9a3deb83394d19c0139486dd0fc67ac7e2ec9dfedcf9ba63d92ceaa"
+    },
+    {
+      "path": "public/band/megalovania/voice-05.mp3",
+      "bytes": 1740428,
+      "sha256": "b42f70c9bb8ada5d72eda0a18d993b5d702cb7de3c8fac2f9fcb02021eb9389b"
+    },
+    {
+      "path": "public/band/megalovania/voice-05.tele.gz",
+      "bytes": 1335922,
+      "sha256": "5080c36fa02f9580223853173634d9efb029a01d70d49d0d82619477c9d3c3c0"
+    },
+    {
+      "path": "public/band/megalovania/voice-06.mp3",
+      "bytes": 1740428,
+      "sha256": "0a03b32f641d841e030b533bf0d7c8cac9966c4ba0e8654bc8d6312750e2fb65"
+    },
+    {
+      "path": "public/band/megalovania/voice-06.tele.gz",
+      "bytes": 1248183,
+      "sha256": "86f3115c0e22bc738eb0dfd7dfef2b8e1eb3612a8940ac779181d01bb697701f"
+    },
+    {
+      "path": "public/band/megalovania/voice-07.mp3",
+      "bytes": 1740428,
+      "sha256": "faca97eb157efb2f9f1389f6bd5486e371672591a2c47ca0663cb850b33995ac"
+    },
+    {
+      "path": "public/band/megalovania/voice-07.tele.gz",
+      "bytes": 1334010,
+      "sha256": "7627b7a04eba0476d8e3528cc930dfd593f44bac7ea908e1f4f574e8ff88f136"
+    },
+    {
+      "path": "public/band/megalovania/voice-08.mp3",
+      "bytes": 588428,
+      "sha256": "3a3c9f99eaea1202baa0e62043174bdc2ca266f0cf7871434e048b0bd528b8a6"
+    },
+    {
+      "path": "public/band/megalovania/voice-08.tele.gz",
+      "bytes": 274956,
+      "sha256": "2d30a4f8149117d921109c6242249186b1c46148493480d3e0ec0af89cc56e12"
+    },
+    {
+      "path": "public/band/megalovania/voice-09.mp3",
+      "bytes": 1261772,
+      "sha256": "747863540467a0f098092123e746a862e35218aabdfbb609b4a6955cb11936d0"
+    },
+    {
+      "path": "public/band/megalovania/voice-09.tele.gz",
+      "bytes": 275188,
+      "sha256": "c12f92df000c75af8ee0d1a8aff104afe4457a63a3e37bfbcc25e2d18dda19f5"
+    },
+    {
+      "path": "public/band/megalovania/voice-10.mp3",
+      "bytes": 1258316,
+      "sha256": "66abb0104956cefc96a1bf3c68d1d666d7b827c693ffe012ea6f2b25c4023c99"
+    },
+    {
+      "path": "public/band/megalovania/voice-10.tele.gz",
+      "bytes": 116090,
+      "sha256": "19605d6a87a0c71d4f29258bf875b456b47ce7509241f512f6ea2c3d721ef665"
+    },
+    {
+      "path": "public/band/megalovania/voice-11.mp3",
+      "bytes": 492236,
+      "sha256": "b56add4fb83eafbe343bf5caa20295725db76f4042be61023365a0367b9433b3"
+    },
+    {
+      "path": "public/band/megalovania/voice-11.tele.gz",
+      "bytes": 23540,
+      "sha256": "ccdf48edb8bcc909093afc482a94fda4c9271e5e15ebb2d9e851ddb74120150c"
+    },
+    {
+      "path": "public/band/megalovania/voice-12.mp3",
+      "bytes": 492236,
+      "sha256": "4dd08eefc74e04ff0fba05ecfbd85869f68a86c2fdc2cdf4cef16fc32563a6e9"
+    },
+    {
+      "path": "public/band/megalovania/voice-12.tele.gz",
+      "bytes": 24300,
+      "sha256": "d9b866442a3b37fc344674b5e054556d05f87e99e96d12b908afe35bc0caf199"
+    },
+    {
+      "path": "public/band/megalovania/voice-13.mp3",
+      "bytes": 492236,
+      "sha256": "41b6d5e14a2ce023271d0f7bd19ab27ebb6fc3c2a00c8070a6190fcb0047b9b7"
+    },
+    {
+      "path": "public/band/megalovania/voice-13.tele.gz",
+      "bytes": 24511,
+      "sha256": "d101b5ec5013c6fcd2f8700f00c2ce7dd631eaed45a6067c1bf47d04d2feae1b"
+    },
+    {
+      "path": "public/band/megalovania/voice-14.mp3",
+      "bytes": 959660,
+      "sha256": "295809654eec2c04b201b89b2dd128490afd4d42aba4a2d956ebcdec03c74a69"
+    },
+    {
+      "path": "public/band/megalovania/voice-14.tele.gz",
+      "bytes": 333242,
+      "sha256": "97f7b679c76c235b69409bb8723d31a702fa9c7f4c426347644c7953f84d0eca"
+    },
+    {
+      "path": "public/band/megalovania/voice-15.mp3",
+      "bytes": 971468,
+      "sha256": "bfef46ad9ec5bcfdc71dfa629f600ea94351ddbd47ef89e1c305396c78d34935"
+    },
+    {
+      "path": "public/band/megalovania/voice-15.tele.gz",
+      "bytes": 203228,
+      "sha256": "07403cce0c83d28c5bb9c527e91ab8c9947b60f326ae1f2871162d4c8728c586"
+    },
+    {
+      "path": "public/band/megalovania/voice-16.mp3",
+      "bytes": 1295468,
+      "sha256": "b636fb04cda516eea46e09519ea9aaec90eba277ff81e5ac5ce1c548d748f27e"
+    },
+    {
+      "path": "public/band/megalovania/voice-16.tele.gz",
+      "bytes": 273020,
+      "sha256": "75e7eaebe7e93fcd609b71716d48f38ac9638d9ab0f343988aee137bb6c72612"
+    },
+    {
+      "path": "public/band/megalovania/voice-17.mp3",
+      "bytes": 1295468,
+      "sha256": "7d848e4809b794f595c86fe36247ef6f658a92b384fc03b30671efd31613f8cc"
+    },
+    {
+      "path": "public/band/megalovania/voice-17.tele.gz",
+      "bytes": 285859,
+      "sha256": "b4d3ee1aa22e1520e51a5abf6b8b19e449bdece22f4929f68aa7ef150d59aecf"
+    },
+    {
+      "path": "public/band/megalovania/voice-18.mp3",
+      "bytes": 1355948,
+      "sha256": "829f4c3574859b9cf49ebb71a19619bf6bb391a203bf17818aa5567cbb9bb881"
+    },
+    {
+      "path": "public/band/megalovania/voice-18.tele.gz",
+      "bytes": 218073,
+      "sha256": "511587bc7661473cfb75d5b6622a8b65f4ec0eeb20fb4640955d416cde0ec7f1"
+    },
+    {
+      "path": "public/band/megalovania/voice-19.mp3",
+      "bytes": 1355948,
+      "sha256": "f7bd8bdf778ece925f95dde7c3dd8999ed725e766c6e1228b19a6d772d4baba5"
+    },
+    {
+      "path": "public/band/megalovania/voice-19.tele.gz",
+      "bytes": 206784,
+      "sha256": "0a7e6a28d396f1349340ab99bcd8266af98fb33dc45b4ad38db661db8ac593f0"
+    },
+    {
+      "path": "public/band/megalovania/voice-20.mp3",
+      "bytes": 1726028,
+      "sha256": "8c5476daf58fd67f34766168a41964bf7117e4690e7ea3b42b21f86c1abd315f"
+    },
+    {
+      "path": "public/band/megalovania/voice-20.tele.gz",
+      "bytes": 653141,
+      "sha256": "d54012fadb55bfcd3c68d3b8b507fb70af2ddf86b1708d55248cb312bea50942"
+    },
+    {
+      "path": "public/band/megalovania/voice-21.mp3",
+      "bytes": 1741580,
+      "sha256": "30dcf3152c216c74c548709893ad41f83236f43a42ae49019974331b5f6c03da"
+    },
+    {
+      "path": "public/band/megalovania/voice-21.tele.gz",
+      "bytes": 1001328,
+      "sha256": "8d3ed9c11e117cb3477035bbf5c5481000c06d474dd202389c9454ec091955c8"
+    },
+    {
+      "path": "public/band/megalovania/voice-22.mp3",
+      "bytes": 1742732,
+      "sha256": "c4abcecf2f9cd0d3afe7e7ebe3da98646be2f2fa0152c9d381baf5851a51c68f"
+    },
+    {
+      "path": "public/band/megalovania/voice-22.tele.gz",
+      "bytes": 1156103,
+      "sha256": "96566e4e20ad56a5a1ff2736cf11855655041671cd07f4895782adf629d3102a"
+    },
+    {
+      "path": "public/band/megalovania/voice-23.mp3",
+      "bytes": 1741580,
+      "sha256": "5231443dccf257afdeb598ac2a8c80cbb44f3c9f434c6e9d391d8bd6d1f5fa9e"
+    },
+    {
+      "path": "public/band/megalovania/voice-23.tele.gz",
+      "bytes": 1011649,
+      "sha256": "74ca032eec2b85782d65e75cfe313a33f075610a5b40965a1742329b13415e51"
+    },
+    {
+      "path": "public/band/megalovania/voice-24.mp3",
+      "bytes": 1742732,
+      "sha256": "4a628fccb1608ec2e30ce8628bbb7095c7fd80d21d504e928f3d094763bcd6f3"
+    },
+    {
+      "path": "public/band/megalovania/voice-24.tele.gz",
+      "bytes": 919704,
+      "sha256": "274ece84222e0a4be537bc4fef0e2b8cda1ce9eed71284dd6460ad928bd3fdfc"
+    },
+    {
+      "path": "public/band/neon-current/answer.mp3",
+      "bytes": 2196620,
+      "sha256": "c08f51fe81bafbe0e5567b51e306e582a3ff8a37befebefcf856002f0999eb36"
+    },
+    {
+      "path": "public/band/neon-current/answer.tele.gz",
+      "bytes": 1365504,
+      "sha256": "f1b3e14de821cfffa8577ba9c3efe1789461c9413512ff5997c327ea07b694da"
+    },
+    {
+      "path": "public/band/neon-current/arp.mp3",
+      "bytes": 2196620,
+      "sha256": "9859e8ed300b409b63818971dd673892fd7b99da5213b831048de776969cd769"
+    },
+    {
+      "path": "public/band/neon-current/arp.tele.gz",
+      "bytes": 2040127,
+      "sha256": "dad5dfb4d40a02f92e52a18c5395227199b48eca6b86b386b0a70469d51d0fec"
+    },
+    {
+      "path": "public/band/neon-current/arrangement.json",
+      "bytes": 166898,
+      "sha256": "c62a9b0f93022ffbbf5e92287a6653183f7437e8a7df786a77bc8e37d550b7ee"
+    },
+    {
+      "path": "public/band/neon-current/bass.mp3",
+      "bytes": 2196620,
+      "sha256": "d095add56a516e2fcb2258f45d5e1c7434d15dc4d176d16d056da5a50e168409"
+    },
+    {
+      "path": "public/band/neon-current/bass.tele.gz",
+      "bytes": 2193810,
+      "sha256": "be7be323e9634dce4cdadfda9607df1d99c8c5ac414b866cb794c9871580120d"
+    },
+    {
+      "path": "public/band/neon-current/drums.mp3",
+      "bytes": 2196620,
+      "sha256": "276c5e8cad1ae1035fa0a9f442f146f569b18e536264dcd097a362a3877d788e"
+    },
+    {
+      "path": "public/band/neon-current/drums.tele.gz",
+      "bytes": 1550083,
+      "sha256": "94bec4ea54e1d768e9f35ce50f240d5568cb2d9b22db7ff8ba728e5bbcfff252"
+    },
+    {
+      "path": "public/band/neon-current/hats.mp3",
+      "bytes": 2196620,
+      "sha256": "54128efee2df6f8250fb43c8bb8771c929046b65771939aa7764601fdc6c1337"
+    },
+    {
+      "path": "public/band/neon-current/hats.tele.gz",
+      "bytes": 1808346,
+      "sha256": "b35d3bb17b9bcad7f142a1176813c543f8b1eb0be7cc74fac166d88e4c8a129e"
+    },
+    {
+      "path": "public/band/neon-current/high.mp3",
+      "bytes": 2196620,
+      "sha256": "702250478e087071da058c92dbd60dd481d376afd993e1034ca5ea7438cf5491"
+    },
+    {
+      "path": "public/band/neon-current/high.tele.gz",
+      "bytes": 1669125,
+      "sha256": "9c30ed55dde6f1942f616efbacae75bac8f8806892980ec0f9c674879e1ac7eb"
+    },
+    {
+      "path": "public/band/neon-current/lead.mp3",
+      "bytes": 2196620,
+      "sha256": "dd18b1e3ab132d5d4b8a7f9027990616b5c722ea9d5564b210e535aff8eacfbd"
+    },
+    {
+      "path": "public/band/neon-current/lead.tele.gz",
+      "bytes": 1826786,
+      "sha256": "37dc2c4aa67469c10d1f9dec1542d8dbcf51c588196f09028153a4e0cb8f757d"
+    },
+    {
+      "path": "public/band/neon-current/low.mp3",
+      "bytes": 2196620,
+      "sha256": "87b96397afb856afe3b306c67c0dc4703d3fa75a8a32d87d5977048db2e0a5a7"
+    },
+    {
+      "path": "public/band/neon-current/low.tele.gz",
+      "bytes": 1736289,
+      "sha256": "3e5711990c6b76c4fe02a3d82866f2558ac0da91a9fc6077ccbb3573ac218344"
+    },
+    {
+      "path": "public/band/night-train-quartet/alto.mp3",
+      "bytes": 1756268,
+      "sha256": "dc8b718f856f9996f9ad7f268ae6b64fe7ece48a084c55bb00bdda4c2d0b1503"
+    },
+    {
+      "path": "public/band/night-train-quartet/alto.tele.gz",
+      "bytes": 1738588,
+      "sha256": "1e716a9422d9b26c759be7a58a8bfe0fdc03ffe01d0a6d65d10803e2dfc8f69a"
+    },
+    {
+      "path": "public/band/night-train-quartet/arrangement.json",
+      "bytes": 103663,
+      "sha256": "befcb51dad087cdfccfa8e97e78a3e9b128856a14f3850b3c67df7bd6ffb71d8"
+    },
+    {
+      "path": "public/band/night-train-quartet/bass.mp3",
+      "bytes": 1756268,
+      "sha256": "4368594e4d5c6ecfc67597fe5ed6e3dd8a92aa21f223fd6d83e28d3cef218912"
+    },
+    {
+      "path": "public/band/night-train-quartet/bass.tele.gz",
+      "bytes": 1868309,
+      "sha256": "a87bb720a17fee380b33c53a347172517fb203d282afaeccd780144deeed6335"
+    },
+    {
+      "path": "public/band/night-train-quartet/lead.mp3",
+      "bytes": 1756268,
+      "sha256": "0d706cd687539eaadf04c4ab748b310b52e8debda617df469d06646e5e2f1867"
+    },
+    {
+      "path": "public/band/night-train-quartet/lead.tele.gz",
+      "bytes": 1795168,
+      "sha256": "5a22a513e5b03b2c6cf5337929950c80774be1bddececb62eb7a0303a42361a0"
+    },
+    {
+      "path": "public/band/night-train-quartet/soprano.mp3",
+      "bytes": 1756268,
+      "sha256": "051893ecaa76fd86744371cfe9724acf53c42f900359eb3931b7dd09e5ca9d24"
+    },
+    {
+      "path": "public/band/night-train-quartet/soprano.tele.gz",
+      "bytes": 1670378,
+      "sha256": "7ebbaed781604a405e12b398928a93797804ccbb28e19933aa3291cbeb17d858"
+    },
+    {
+      "path": "public/band/synnefoula/arrangement.json",
+      "bytes": 31279,
+      "sha256": "d575830d515a1c61d7f0a2a388211ed3c03f8b0801367a4ec0a065c4e2187150"
+    },
+    {
+      "path": "public/band/synnefoula/backing.mp3",
+      "bytes": 3251668,
+      "sha256": "24411a8216d1073d24390dc3056af899d4853f77b42e8e2934e52085e41a0fbc"
+    },
+    {
+      "path": "public/band/synnefoula/lead.mp3",
+      "bytes": 2167724,
+      "sha256": "20b72108cb3e3c0133e81947dfcd9b8e5ea1228fcdcb36db55a4d4f3dad89507"
+    },
+    {
+      "path": "public/band/synnefoula/lead.tele.gz",
+      "bytes": 1466470,
+      "sha256": "1af8f3656a6f5cdcb28dab25b48f8644c0d05696ce5ef5decff33f266cfb00bd"
+    },
+    {
+      "path": "public/band/ta-paidia-tou-peiraia/arrangement.json",
+      "bytes": 30353,
+      "sha256": "c99d1448370d17770b449f00a76323aa63114c3577b2c03b2bd8f5fb4a5732c2"
+    },
+    {
+      "path": "public/band/ta-paidia-tou-peiraia/backing.mp3",
+      "bytes": 4783724,
+      "sha256": "ff890c596db423ed8464879cfa0c3b9630a64fb7c06c08e6053c8f6b13fed014"
+    },
+    {
+      "path": "public/band/ta-paidia-tou-peiraia/credits.txt",
+      "bytes": 567,
+      "sha256": "13c76f66755846cfdfa72ab7ad28b357d21d6d96f7c3fe22b902fd2e5e645100"
+    },
+    {
+      "path": "public/band/ta-paidia-tou-peiraia/lead.mp3",
+      "bytes": 2391884,
+      "sha256": "34520f81f148e673f6de5b0134ff81a45e1fab9021795388f8f228445d69da7e"
+    },
+    {
+      "path": "public/band/ta-paidia-tou-peiraia/lead.tele.gz",
+      "bytes": 1622362,
+      "sha256": "51ac333802f5427efd070f060d5b9c68be9a1d109623a5404d50bb3e04ff3d98"
+    },
+    {
+      "path": "public/band/ta-paidia-tou-peiraia/snaps.mp3",
+      "bytes": 220460,
+      "sha256": "3e87d6937019dd03b253d822635b73851f64dd625983e1accdbaf32eb60cb252"
+    },
+    {
+      "path": "public/data/CMUDICT-LICENSE.txt",
+      "bytes": 1754,
+      "sha256": "bd4ce8e44170a5f9f481310ca85c51de3c4f851a65e679b40e603b143bd3542a"
+    },
+    {
+      "path": "public/data/cmudict.txt.gz",
+      "bytes": 868793,
+      "sha256": "336293a10a93c3ba183483308a22eab8e2b6a5e1ac91262dd0d3d4b85da285b5"
+    },
+    {
+      "path": "public/fonts/AVHERSHEY-LICENSE.txt",
+      "bytes": 380,
+      "sha256": "d27b30a1f3903dbecc7fa72cf507459ac2638049f987a9bde857df5fa9e4ba08"
+    },
+    {
+      "path": "public/fonts/AVHersheySimplexLight.otf",
+      "bytes": 11540,
+      "sha256": "e20a7cbafa2f84cb21cbeec109b488d00c9bb588f0e526011dd0a35336664cfd"
+    },
+    {
+      "path": "public/fonts/AVHersheySimplexMedium.otf",
+      "bytes": 13564,
+      "sha256": "919ae9cf082647290104861d305390268b55933c9fd8929fb852143377fbf7ea"
+    },
+    {
+      "path": "public/fonts/OFL.txt",
+      "bytes": 4388,
+      "sha256": "108b4e57c9c796d3d38d0428ca7ee39de47ad93187302718d9b2d8864b9b716b"
+    },
+    {
+      "path": "public/fonts/archivo-latin-ext.woff2",
+      "bytes": 86240,
+      "sha256": "5717f37059660ca5c899bad6c48ee22c3ac55cb3c484055241689d0f905a1a86"
+    },
+    {
+      "path": "public/fonts/archivo-latin.woff2",
+      "bytes": 90104,
+      "sha256": "e3a28eade21a900c7155a247757f4b2834c07bb7ef07ad7efa55cebaac1e8f5e"
+    },
+    {
+      "path": "public/scenes/a-few-good-men/credits.txt",
+      "bytes": 367,
+      "sha256": "3dfd573b2797b753dade335462d6e1721714fc3d59bea5561d560dd753af4bb9"
+    },
+    {
+      "path": "public/scenes/a-few-good-men/for-x.mp4",
+      "bytes": 23264211,
+      "sha256": "b04eba683ddce1b687c1e861b4d4c41bfb3ca7b87a31706466ce8de22b2bae9a"
+    },
+    {
+      "path": "public/scenes/a-few-good-men/jessep.tele.gz",
+      "bytes": 1268315,
+      "sha256": "a069e677617e25c5691483b3e03a6514575105b72b803bcd780218c738129445"
+    },
+    {
+      "path": "public/scenes/a-few-good-men/judge.tele.gz",
+      "bytes": 163369,
+      "sha256": "5a14ebacfebf26cb9536a32ae3cc0588025b9ed0bb81af3fec5a7e9ff48df215"
+    },
+    {
+      "path": "public/scenes/a-few-good-men/kaffee.tele.gz",
+      "bytes": 575644,
+      "sha256": "9ccc9096ed286c721422fff60c9e9d732d41e84e648a173995719f9d01504741"
+    },
+    {
+      "path": "public/scenes/a-few-good-men/mix.mp3",
+      "bytes": 3085759,
+      "sha256": "ee2fc0344bbebb915136345f5dbff85cbe04a00f2ad562678d5678cfaedaf86b"
+    },
+    {
+      "path": "public/scenes/a-few-good-men/ross.tele.gz",
+      "bytes": 251674,
+      "sha256": "0a19d7472e053ae2540ab87ee4879d4c6b35a34154884250b6677da9eace99bf"
+    },
+    {
+      "path": "public/scenes/a-few-good-men/scene.json",
+      "bytes": 7605,
+      "sha256": "09d34a031ba5833d5d831c5d937c668c2073faa99397476593732510bdaf4548"
+    },
+    {
+      "path": "public/scenes/princess-bride/credits.txt",
+      "bytes": 446,
+      "sha256": "a4cb80955a845c243252e3ea7923ee384259d1427b94c963431f25847ad174e1"
+    },
+    {
+      "path": "public/scenes/princess-bride/fezzik.tele.gz",
+      "bytes": 314863,
+      "sha256": "a4aafdbd68e56b37cde5a1814b5386a1a9122e3b4912dde3c9fd499e707a02f7"
+    },
+    {
+      "path": "public/scenes/princess-bride/inigo.tele.gz",
+      "bytes": 227068,
+      "sha256": "e844d7a68ee47e1493b3534fa6e1bf8f0df246d404fd79015387faeea11f71ad"
+    },
+    {
+      "path": "public/scenes/princess-bride/mix.mp3",
+      "bytes": 3373771,
+      "sha256": "00c467fcaff70b747b561939b5dfdd6338a3b5d6df4c0d845296fe42e55d8455"
+    },
+    {
+      "path": "public/scenes/princess-bride/scene.json",
+      "bytes": 3541,
+      "sha256": "1009dd3e8854080eb3ea0a882789a73248c0c170cb45178a261ed3db4f512528"
+    },
+    {
+      "path": "public/scenes/princess-bride/vizzini.tele.gz",
+      "bytes": 461986,
+      "sha256": "7edc0431dbbcd661afbee378e1a40b54b1639b569e1b98afa31d861d31676aa9"
+    }
+  ]
+}

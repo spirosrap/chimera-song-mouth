@@ -1,0 +1,63 @@
+# CHIMERA · Vocal Band & Movie Scenes
+
+Complete portable edition of the CHIMERA mouth app: **nine songs, two movie scenes, the single-mouth player, and all prepared media used by the website**.
+
+Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account.
+
+## Start here
+
+- **Another agent taking over:** read [HANDOFF.md](HANDOFF.md).
+- **Move to a new host:** read [DEPLOYMENT.md](DEPLOYMENT.md).
+- **Included songs, scenes and media:** see [CONTENT.md](CONTENT.md).
+- **Earlier implementation notes:** see [EDITION-NOTES.md](EDITION-NOTES.md). References there to media being ignored describe the earlier workspace; this repository tracks the complete prepared media.
+
+## Run locally — Bun only
+
+Install [Bun](https://bun.sh/), then:
+
+```sh
+gh repo clone spirosrap/chimera-song-mouth
+cd chimera-song-mouth
+bun install --frozen-lockfile
+bun run verify:content
+bun run dev:static
+```
+
+Open the address printed by Vite (normally `http://127.0.0.1:5317`). The precompiled voice engine is included, so Rust is unnecessary when running or deploying the current edition.
+
+## Build for any static host
+
+```sh
+bun install --frozen-lockfile
+bun run build:static
+```
+
+Publish **all of `dist/`** at the root of an HTTPS website. No backend, API key, database, paid voice service, or separate media bucket is required. Media comes from this repository, not GitHub raw-file URLs. Importing a song in the single-mouth player stays in the visitor’s browser.
+
+A ready-built `chimera-website.zip` is also attached to the initial GitHub release. Unzip it and deploy its contents directly if the hosting service accepts prebuilt websites.
+
+## Change the engine or run the full tests
+
+Install Rust/Rustup as well as Bun, then:
+
+```sh
+rustup target add wasm32-unknown-unknown
+bun install --frozen-lockfile
+bun run test
+bun run typecheck
+bun run build
+```
+
+`build` rebuilds the Rust engine; `build:static` uses the tracked WebAssembly binary. After changing Rust, commit the rebuilt `src/wasm/chimera.wasm` alongside its source. Do not reuse a `target/` directory from another checkout. See [AGENTS.md](AGENTS.md) for engine and animation contracts.
+
+## Media storage
+
+All 181 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
+
+After intentionally adding or replacing public assets, run `bun run content:manifest`, inspect the changes, and commit the new manifest with the files. Do not regenerate the manifest to conceal missing assets.
+
+Original source recordings from the Music/Videos folders, temporary processing files, model downloads and caches are not required to run the site and are not included. All content currently available through the app is included.
+
+## License and credits
+
+The software retains the upstream [MIT license](LICENSE) and Jameson Hodge’s copyright notice. Included third-party fonts and dictionary retain their own license files. Song and movie material is separately credited and is not relicensed as MIT; see [MEDIA-RIGHTS.md](MEDIA-RIGHTS.md).

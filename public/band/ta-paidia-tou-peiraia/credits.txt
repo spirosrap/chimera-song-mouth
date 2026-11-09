@@ -1,0 +1,4 @@
+Τα παιδιά του Πειραιά — supplied Μελίνα Μερκούρη recording.
+Original instrumental music is retained from locally separated source stems. The original singing and finger clicks are reduced; traces and separation artifacts may remain.
+CHIMERA synthesizes the Greek singing using timed Greek phonemes and estimated source pitch. A procedural robotic hand performs newly synthesized finger clicks at detected source timings.
+The full recording, instrumental passages and ending are retained. Pronunciation and alignment are approximate.

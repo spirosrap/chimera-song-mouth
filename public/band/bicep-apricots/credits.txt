@@ -1,0 +1,5 @@
+Apricots by BICEP (Matt McBriar and Andy Ferguson), from Isles (2021), Ninja Tune.
+Full wordless physical-voice reconstruction based on the user-supplied official-video MP3.
+No original recording or separated stems are served. Melodies, chord lanes, rhythm, octave choices and timing are approximate.
+Twelve CHIMERA mouths: eight pitched voices and four mouth percussionists. Effects apply only to synthesized mouth audio.
+Supporting choir harmonies are newly arranged from the detected source chord tones and original vocal-hook timing.

@@ -1,0 +1,42 @@
+export type CourtCharacterId = 'kaffee' | 'jessep';
+export type CliffCharacterId = 'vizzini' | 'inigo' | 'fezzik';
+export type MainCharacterId = CourtCharacterId | CliffCharacterId;
+export type CharacterId = MainCharacterId | 'ross' | 'judge';
+export type CameraView = 'wide' | 'climber' | MainCharacterId;
+export type CameraChoice = 'auto' | CameraView;
+export interface SceneCue { start:number; end:number; speaker:CharacterId; text:string; intensity:number }
+export interface SceneShot { time:number; view:CameraView }
+export interface SceneFile {
+  setting?:'courtroom'|'cliffs'; title:string; description:string; duration:number; audio:string;
+  characters:{id:CharacterId;name:string;role:string;tele:string;telemetryEncoding?:'gzip'}[];
+  cues:SceneCue[];shots:SceneShot[];
+}
+const character=(id:unknown):id is CharacterId=>id==='kaffee'||id==='jessep'||id==='ross'||id==='judge'||id==='vizzini'||id==='inigo'||id==='fezzik';
+const file=(name:unknown)=>typeof name==='string'&&/^[a-z0-9-]+\.(mp3|tele)$/.test(name);
+export function validateScene(data:unknown):SceneFile {
+  const s=data as SceneFile;
+  if(!s||typeof s.title!=='string'||typeof s.description!=='string'||!Number.isFinite(s.duration)||s.duration<=0||s.duration>600||!file(s.audio)||!s.audio.endsWith('.mp3')||!Array.isArray(s.characters)||s.characters.length<2||s.characters.length>4||!Array.isArray(s.cues)||!s.cues.length||!Array.isArray(s.shots)||!s.shots.length)throw Error('The scene is incomplete. Reload and try again.');
+  if(s.setting!==undefined&&s.setting!=='courtroom'&&s.setting!=='cliffs')throw Error('The scene setting is invalid.');
+  const cliff=s.setting==='cliffs';
+  const cast=cliff?['vizzini','inigo','fezzik']:['kaffee','jessep','ross','judge'];
+  const cameras=cliff?['wide','climber','vizzini','inigo','fezzik']:['wide','kaffee','jessep'];
+  const ids=new Set<string>();
+  for(const c of s.characters){if(!c||!character(c.id)||!cast.includes(c.id)||ids.has(c.id)||(c.telemetryEncoding!==undefined&&c.telemetryEncoding!=='gzip')||!file(c.tele)||!c.tele.endsWith('.tele')||typeof c.name!=='string'||typeof c.role!=='string')throw Error('A scene character is invalid.');ids.add(c.id);}
+  if((cliff?['vizzini','inigo','fezzik']:['kaffee','jessep']).some(id=>!ids.has(id)))throw Error('The main scene characters are missing.');
+  let last=-1;
+  for(const c of s.cues){if(!c||(!character(c.speaker)||!ids.has(c.speaker))||!Number.isFinite(c.start)||!Number.isFinite(c.end)||c.start<0||c.start<last||c.end<=c.start||c.end>s.duration||typeof c.text!=='string'||!Number.isFinite(c.intensity)||c.intensity<0||c.intensity>1)throw Error('The scene dialogue is invalid.');last=c.start;}
+  last=-1;
+  for(const c of s.shots){if(!c||!Number.isFinite(c.time)||c.time<0||c.time<last||c.time>s.duration||!cameras.includes(c.view))throw Error('A scene camera cue is invalid.');last=c.time;}
+  return s;
+}
+export function sceneCue(scene:SceneFile,time:number):SceneCue|undefined {return scene.cues.find(c=>c.start<=time&&time<c.end);}
+export function sceneCamera(scene:SceneFile,time:number,choice:CameraChoice):CameraView {
+  return choice==='auto'?(scene.shots.filter(s=>s.time<=time).at(-1)?.view??'wide'):choice;
+}
+/** Camera and focus in centimetres: consistent framing across playback, pause and backwards seeks. */
+export function courtCamera(view:CameraView,aspect:number):{position:[number,number,number];target:[number,number,number];fov:number}{
+  const narrow=aspect<1;
+  if(view==='kaffee')return {position:[-9,140,-69],target:[55,132,5],fov:narrow?43:29};
+  if(view==='jessep')return {position:[-35,137,39],target:[-62,132,-70],fov:narrow?43:29};
+  return {position:narrow?[200,180,360]:[170,160,270],target:[0,95,-45],fov:narrow?48:43};
+}

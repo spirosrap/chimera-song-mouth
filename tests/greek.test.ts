@@ -1,0 +1,34 @@
+import {expect,test} from "bun:test";
+import {greekWord,greekSyllables,greekPhrases} from "../src/phonetics/greek.ts";
+import {initEngine,wasmModule} from "./harness.ts";
+import {renderPart} from "../src/band/render.ts";
+const ipa=(w:string)=>greekWord(w).map(s=>s.ipa).join("");
+test("Greek spelling preserves vowel pairs, stress, diaeresis, palatals and dental sounds",()=>{
+  expect(ipa("Συννεφούλα")).toBe("sinefula");
+  expect(greekSyllables("Συννεφούλα").map(s=>s.nucleus.ipa)).toEqual(["i","e","u","a"]);
+  expect(greekSyllables("Συννεφούλα")[2].nucleus.stress).toBe(1);
+  expect(ipa("αυτή")).toBe("afti");expect(ipa("αύριο")).toBe("avɾio");
+  expect(ipa("και")).toBe("ce");expect(ipa("γεια")).toBe("ʝa");
+  expect(ipa("παιδιά")).toBe("peðja");expect(ipa("Πειραιά")).toBe("piɾea");expect(greekSyllables("Πειραιά")).toHaveLength(3);expect(ipa("νιώθω")).toBe("ɲoθo");
+  expect(greekSyllables("μ' αρέσει")[0].onset[0].ipa).toBe("m");
+  expect(greekSyllables("αύριο").map(s=>s.text)).toEqual(["αύ","ρι","ο"]);
+  expect(greekSyllables("Μαΐου")).toHaveLength(3);
+  expect(greekSyllables("καλημέρα")).toEqual(greekSyllables("καλημέρα"));
+  const s=greekSyllables("Παιδιά, καλημέρα!");expect(s.map(x=>x.text).join("")).toBe("παιδιάκαλημέρα");expect(s[1].phraseEnd).toBe(true);expect(s.at(-1)!.phraseEnd).toBe(true);
+  expect(greekPhrases("Καλημέρα. Γεια!").map(p=>p.words)).toEqual([["Καλημέρα"],["Γεια"]]);
+});
+await initEngine();
+const {EnglishG2P,lyricsToSyllables}=await import("../src/wasm/engine.ts");
+const {planPart}=await import("../src/band/planning.ts");
+test("speech and singing automatically route Greek text to real supported airway gestures",()=>{
+  expect(new EnglishG2P().word("θάλασσα")[0].ipa).toBe("θ");
+  expect(lyricsToSyllables("καλημέρα")).toHaveLength(4);
+  expect(lyricsToSyllables("ah")).toHaveLength(1);
+  expect(lyricsToSyllables("γεια ah")).toHaveLength(2);
+  expect(new EnglishG2P().toPhrases("γεια hello")[0].words).toEqual(["γεια","hello"]);
+  const part={id:"lead",name:"Greek singer",role:"test",body:{female:.1,child:0},volume:1,pan:0,melody:{name:"test",source:"test",lyrics:"γεια σου",duration:1.8,notes:[{start:.1,duration:.5,midi:55,lyricIndex:0},{start:.8,duration:.5,midi:57,lyricIndex:1}]}};
+  const gestures=planPart(part);expect(gestures.length).toBeGreaterThan(10);
+  const r=renderPart(wasmModule,part,1.8,gestures);let energy=0;
+  expect(r.samples.every(Number.isFinite)).toBe(true);for(const s of r.samples)energy+=s*s;
+  expect(energy/r.samples.length).toBeGreaterThan(.00001);
+});

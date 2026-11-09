@@ -1,0 +1,18 @@
+node_modules/
+dist/
+out/
+target/
+*.wav
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+.openai/
+.vercel/
+.netlify/
+.wrangler/
+public/shows/
+
+# Prepared public/band and public/scenes assets, plus the precompiled WASM,
+# are intentionally tracked for this complete, private hosting handoff.

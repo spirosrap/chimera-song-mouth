@@ -1,0 +1,47 @@
+.scene-page { max-width: 1560px; margin: 0 auto; padding: 26px clamp(16px,4vw,64px) 44px; color: #f0e6d8; font-family: "Archivo",system-ui,sans-serif; }
+.scene-top { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; padding-bottom: 22px; border-bottom: 1px solid #4e3d2b; }
+.scene-top a { color: #d6b786; text-decoration: none; }
+.scene-top .wordmark { font-family: "Hershey",sans-serif; font-size: 27px; }
+.scene-top > span { font-size: 10px; letter-spacing: .2em; color: #a78d70; }
+.scene-top > a:last-child { margin-left: auto; font-size: 12px; }
+.scene-intro { display: flex; justify-content: space-between; gap: 24px; align-items: center; margin: 30px 0 25px; }
+.scene-eyebrow { font-size: 10px; letter-spacing: .18em; color: #c5a778; }
+.scene-intro h1 { font-size: clamp(32px,5vw,62px); font-weight: 450; letter-spacing: -.045em; line-height: 1.1; margin: 10px 0 13px; }
+.scene-intro p:last-child { max-width: 70ch; color: #baaa98; line-height: 1.6; font-size: 13px; }
+.scene-runtime { font-size: 27px; font-variant-numeric: tabular-nums; text-align: right; }
+.scene-runtime small { display: block; font-size: 9px; letter-spacing: .2em; margin-top: 9px; color: #aa9379; white-space: nowrap; }
+.scene-film { margin: 0; background: #000; border: 1px solid #443320; }
+.courtroom-stage { aspect-ratio: 16/9; width: 100%; overflow: hidden; background: #100d0b; }
+.courtroom-stage canvas { width: 100%; height: 100%; display: block; }
+.courtroom-stage > p { padding: 40px; font-size: 14px; line-height: 1.7; }
+.scene-caption { min-height: 93px; padding: 14px 28px 18px; text-align: center; box-sizing: border-box; display: grid; align-content: center; gap: 7px; }
+.scene-caption > span { color: #c6a77c; font-size: 9px; text-transform: uppercase; letter-spacing: .17em; }
+.scene-caption p { font: 500 clamp(15px,1.6vw,21px)/1.5 "Archivo",system-ui,sans-serif; margin: 0 auto; max-width: 85ch; overflow-wrap: anywhere; color: #f3eee6; }
+.scene-loading { min-height: 350px; display: grid; align-content: center; justify-items: center; padding: 24px; text-align: center; }
+.scene-loading p { font-size: 14px; line-height: 1.7; }
+.scene-transport { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; padding: 20px 0; border-bottom: 1px solid #443320; }
+.scene-transport input { flex: 1 1 150px; min-width: 70px; accent-color: #d9b477; }
+.scene-transport > span { font-size: 12px; font-variant-numeric: tabular-nums; color: #d1b58e; }
+.scene-page .primary { background: #d2b07c; color: #17120c; border-color: #e3c89b; }
+.scene-page .chip { color: #d5bd9d; border-color: #5c4831; text-decoration: none; }
+.scene-page .chip.on { color: #ffe7bb; border-color: #d3af78; background: #382b1d; }
+.scene-options { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; padding: 21px 0; }
+.scene-options fieldset { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; border: 0; }
+.scene-options legend { padding: 0 0 10px; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #ac967d; }
+.scene-options label { display: flex; align-items: center; gap: 8px; font-size: 12px; margin-left: auto; }
+.scene-options input { accent-color: #d9b477; }
+.scene-cast { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-top: 23px; border-top: 1px solid #443320; }
+.scene-cast span { display: block; color: #a68b6b; font-size: 9px; letter-spacing: .15em; margin-bottom: 10px; }
+.scene-cast strong { font-weight: 500; color: #e0cdb3; }
+.scene-cast p,.scene-credit { color: #aa9986; font-size: 11px; line-height: 1.8; }
+.scene-credit { max-width: 110ch; margin-top: 26px; }
+@media(max-width:600px) { .scene-top { gap: 14px; } .scene-top > a:last-child { flex-basis: 100%; margin: 0; } .scene-intro { margin: 23px 0 18px; } .scene-runtime { font-size: 21px; } .scene-transport .primary { flex-basis: 100%; } .scene-caption { padding: 12px 14px; min-height: 110px; } .scene-options label { margin-left: 0; } .scene-options .chip { font-size: 11px; padding: 9px; } }
+.scene-export { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; border: 1px solid #675033; background: #201a12; padding: 18px; margin: 16px 0; }
+.scene-export strong { font-size: 13px; font-weight: 500; }
+.scene-export p { color: #c6b39a; font-size: 12px; line-height: 1.6; margin-bottom: 0; }
+.scene-export progress { flex: 1 1 130px; accent-color: #d9b477; }
+.scene-export-error { color: #ffb39a; font-size: 13px; line-height: 1.7; }
+.scene-export-saved { color: #d6c3a8; font-size: 13px; line-height: 1.7; }
+.scene-export-saved a { color: #ffe0af; }
+
+.scene-picker { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
