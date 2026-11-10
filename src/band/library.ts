@@ -46,6 +46,9 @@ export const BAND_SONGS:BandSong[]=[
   {id:"mr-sandman-quartet",name:"Mr. Sandman · 2:26 · original-lyrics quartet",arrangementUrl:BASE_PATH+"band/mr-sandman-quartet/arrangement.json?v=sandman-quartet-20261110",arrangement:{
     title:"Mr. Sandman · the mouth quartet",description:"The complete song with its original words, sung by bass, tenor, alto and soprano. Four simulated mouths supply every melody, close harmony, bum-bum passage and playful response.",bpm:112.5,duration:146.3,presentation:"quartet",parts:[],sections:[],
   }},
+  {id:"be-my-baby",name:"Be My Baby — The Ronettes · 2:40 · lead & backing singers",arrangementUrl:BASE_PATH+"band/be-my-baby/arrangement.json?v=be-my-baby-20261110",arrangement:{
+    title:"Be My Baby · The Ronettes",description:"The full original instrumental recording with a robotic lead and two backing mouths singing the familiar responses. Each mouth follows its own vocal part and words.",bpm:129,duration:160.71897959183673,presentation:"backed-ensemble",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */

@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 243 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 252 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -20,6 +20,7 @@ Every prepared media file below is tracked in this repository. All 243 public fi
 | Country Roads | 3:15 | `?song=country-roads` | One robotic singer, original instrumental backing and synchronized melody graph |
 | Blue Moon — Frank Sinatra | 2:52 | `?song=blue-moon` | One physical mouth singing a timed phonetic score, original orchestral backing and synchronized captions |
 | Mr. Sandman | 2:26 | `?song=mr-sandman-quartet` | Original-lyrics quartet with physical mouth voices, rhythmic bum-bum bass, captions, microphone and four harmonic graphs |
+| Be My Baby — The Ronettes | 2:40 | `?song=be-my-baby` | Original instrumental recording, one physical lead and two answering mouths with separate lyrics |
 
 Each song’s `public/band/<id>/` directory contains the prepared score, MP3 channels and compressed mouth telemetry as applicable. Non-voice channels such as the instrumental backing and finger clicks do not need telemetry. Credits accompany the adapted content. Small Hours has no source recording: its score is written in `src/band/smallHours.ts`, and `bun tools/render-band-song.ts small-hours` (needs ffmpeg; about seven minutes on 16 cores) rebuilds its twelve channels and telemetry from the engine. Mr. Sandman is the newly requested original-lyrics quartet; Night Train Radio remains a separate selection with its newly written words.
 
@@ -47,6 +48,10 @@ Mr. Sandman uses four physical singers and a complete prepared phonetic score.
 See [the quartet notes](docs/mr-sandman-quartet.md) before regenerating it; the
 opening must retain each distinct bum-bum attack and the bass continues under
 the words. All previous prepared media remain unchanged.
+
+Be My Baby adds three physical singers over the original instrumental recording.
+See [the song notes](docs/be-my-baby.md) for the independent lead and backing
+phrases, source timing, fading ending and regeneration instructions.
 
 ## Movie scenes and speeches
 

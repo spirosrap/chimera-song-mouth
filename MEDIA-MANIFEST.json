@@ -77,6 +77,51 @@
       "sha256": "c5bb3f97ce3a571fe9345d98091c3a96f84e3439d94fbe897c7ac879820e3691"
     },
     {
+      "path": "public/band/be-my-baby/arrangement.json",
+      "bytes": 362507,
+      "sha256": "e24d1442479391bd882823a982b9a800136c0b21cca3fb80c20fecb2922c41b2"
+    },
+    {
+      "path": "public/band/be-my-baby/backing.mp3",
+      "bytes": 5144876,
+      "sha256": "61c0ba6fb846175928c31f92c43d33bec687c61946b5b4a2fdbab1c5747997cd"
+    },
+    {
+      "path": "public/band/be-my-baby/credits.txt",
+      "bytes": 1086,
+      "sha256": "108d7ed5fec2d6db7b7024f81e00db01b4e23df83cb85bc48030766c1d681dce"
+    },
+    {
+      "path": "public/band/be-my-baby/harmony-high.mp3",
+      "bytes": 3215564,
+      "sha256": "e3f97a96d0757a75656a2448663585f27446c9be07d2c122819a1f24f53dd7a1"
+    },
+    {
+      "path": "public/band/be-my-baby/harmony-high.tele.gz",
+      "bytes": 961832,
+      "sha256": "5f54f87f4943d4086701acb65ae9f78ff45cad920548e50b0a40fb402c90cf20"
+    },
+    {
+      "path": "public/band/be-my-baby/harmony-low.mp3",
+      "bytes": 3215564,
+      "sha256": "c1e03519791fb054d2841581dabee2a4f68666631bad174a1b0ba80e1ee7787c"
+    },
+    {
+      "path": "public/band/be-my-baby/harmony-low.tele.gz",
+      "bytes": 995523,
+      "sha256": "6d0ee50d6d060179f80d00844d46e6072872607477aab74e56bf9a5af9deeb96"
+    },
+    {
+      "path": "public/band/be-my-baby/lead.mp3",
+      "bytes": 3215564,
+      "sha256": "129e9b438a21b30d63bef7ef4b7815bd370833ba2ee98b6e404cea9529cd2ab4"
+    },
+    {
+      "path": "public/band/be-my-baby/lead.tele.gz",
+      "bytes": 1409428,
+      "sha256": "ec04ce38ca9c2052d8291371263a606869a05f539299a504612883d26ac58c11"
+    },
+    {
       "path": "public/band/bicep-apricots/air.mp3",
       "bytes": 5987564,
       "sha256": "cce87d8079a45cc1a80a1d81fca487c53d436ab640cb61458d44fe24ef6180c3"

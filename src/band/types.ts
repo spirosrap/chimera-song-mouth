@@ -56,7 +56,7 @@ export interface Arrangement {
   wordless?: boolean;
   /** Show scat syllables at the lips even when the song has no lyric text. */
   showSyllables?: boolean;
-  presentation?: "quartet" | "backed-solo" | "ensemble" | "solo-roll";
+  presentation?: "quartet" | "backed-solo" | "backed-ensemble" | "ensemble" | "solo-roll";
   spotlights?: {time:number;partId:string}[];
   captions?: {time:number;end:number;text:string}[];
 }

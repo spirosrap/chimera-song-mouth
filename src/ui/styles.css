@@ -3039,3 +3039,19 @@ input[type="range"]::-moz-range-thumb {
 .folk-singer-stage p { margin: 12px; }
 
 .folk-singer-caption { min-height: 3em; margin: 0; padding: 12px 20px 18px; text-align: center; color: var(--white); font: 500 clamp(17px,2vw,25px)/1.5 "Archivo",system-ui,sans-serif; }
+
+
+/* A featured lead and two answering singers over the original recording. */
+.band-heads.band-backed-solo.band-backed-ensemble { grid-template-columns: minmax(0,1.5fr) repeat(2,minmax(0,1fr)); max-width: none; align-items: end; }
+.band-backed-ensemble .band-head .screen-body { height: 330px; }
+.band-backed-ensemble .band-channel:first-child .screen-body { height: 430px; }
+.ensemble-lyrics { white-space: pre-line; }
+@media (max-width: 900px) {
+  .band-heads.band-backed-solo.band-backed-ensemble { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .band-backed-ensemble .band-channel:first-child { grid-column: 1 / -1; width: 100%; max-width: 700px; justify-self: center; }
+  .band-backed-ensemble .band-channel:first-child .screen-body { height: 360px; }
+}
+@media (max-width: 550px) {
+  .band-heads.band-backed-solo.band-backed-ensemble { grid-template-columns: minmax(0,1fr); }
+  .band-backed-ensemble .band-head .screen-body { height: 300px; }
+}
