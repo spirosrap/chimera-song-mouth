@@ -15,8 +15,8 @@ export const BAND_SONGS:BandSong[]=[
   {id:"house-of-the-rising-sun",name:"House of the Rising Sun · 2:49",arrangementUrl:BASE_PATH+"band/house-of-the-rising-sun/arrangement.json?v=phrasing-20261110",arrangement:prepared(risingSunBand())},
   {id:"all-made-of-air",name:"All Made of Air · 0:35",arrangementUrl:BASE_PATH+"band/all-made-of-air/arrangement.json?v=phrasing-20261110",arrangement:prepared(originalBand())},
   {id:"neon-current",name:"Neon Current · 3:03 · wordless electronic",arrangement:prepared(neonCurrentBand())},
-  {id:"bicep-glue",name:"BICEP — Glue · 4:30 · vocal remake",arrangementUrl:BASE_PATH+"band/bicep-glue/arrangement.json",arrangement:{
-    title:"Glue · BICEP",description:"BICEP’s Glue, reimagined as eight wordless mouths: a repeating hook, layered choir, deep bass and a shuffling mouth beat.",bpm:130,duration:270.8,wordless:true,parts:[],sections:[],
+  {id:"bicep-glue",name:"BICEP — Glue · 4:30 · 9 mouths",arrangementUrl:BASE_PATH+"band/bicep-glue/arrangement.json?v=glue-refined-20261110",arrangement:{
+    title:"Glue · BICEP · 9 mouths",description:"The full Glue arrangement performed entirely by nine simulated mouths: connected vocal and synth phrases, deep bass, and the recording’s shuffling breakbeat. Every voice and percussion sound is synthesized; no original recording is mixed in.",bpm:130,duration:270.8,wordless:true,presentation:"ensemble",parts:[],sections:[],
   }},
   {id:"night-train-quartet",name:"Night Train Radio · 2:26 · new-lyrics quartet",arrangementUrl:BASE_PATH+"band/night-train-quartet/arrangement.json?v=phrasing-20261110",arrangement:{
     title:"Night Train Radio",description:"The Mr. Sandman tune with newly written words about a night train and a waking city. Bass, tenor, alto and soprano sing the full piece, with close harmonies and a changing lead.",bpm:112.5,duration:146.3,presentation:"quartet",parts:[],sections:[],

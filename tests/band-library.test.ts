@@ -7,7 +7,7 @@ const request=(body:unknown,status=200)=>(async()=>new Response(JSON.stringify(b
 
 test('cover is an addition with a separately loaded score; existing default stays intact',async()=>{
  expect(BAND_SONGS.slice(0,4).map(s=>s.id)).toEqual(['house-of-the-rising-sun','all-made-of-air','neon-current','bicep-glue']);expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
- expect(cover.arrangementUrl).toBe('/band/bicep-glue/arrangement.json');
+ expect(cover.arrangementUrl).toBe('/band/bicep-glue/arrangement.json?v=glue-refined-20261110');
  expect((await loadBandArrangement(cover,request(fixture()))).title).toBe('Loaded arrangement');
  expect(DEFAULT_BAND.arrangementUrl).toBe('/band/house-of-the-rising-sun/arrangement.json?v=phrasing-20261110');
  expect((await loadBandArrangement(DEFAULT_BAND,request(fixture()))).title).toBe('Loaded arrangement');

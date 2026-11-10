@@ -1,0 +1,4 @@
+BICEP — Glue. Full wordless reconstruction from the user-supplied recording.
+All nine parts, including the vocal melody, are synthesized by the CHIMERA physical mouth engine. No original recorded vocal or instrument is mixed into playback.
+The selected revision uses connected OO vocal phrases, stable synth/bass pitch lanes, source amplitude movement, separate kick and short clap mouths, and short shuffled breath ticks.
+Source transcription remains approximate. Original recordings and analysis stems are not included in this repository.

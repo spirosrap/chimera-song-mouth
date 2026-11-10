@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 221 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 224 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -9,7 +9,7 @@ Every prepared media file below is tracked in this repository. All 221 public fi
 | House of the Rising Sun | 2:49 | `?song=house-of-the-rising-sun` | Seven voices; default |
 | All Made of Air | 0:35 | `?song=all-made-of-air` | Original seven-voice piece |
 | Neon Current | 3:03 | `?song=neon-current` | Original wordless electronic choir |
-| BICEP — Glue | 4:30 | `?song=bicep-glue` | Eight-mouth wordless remake |
+| BICEP — Glue | 4:30 | `?song=bicep-glue` | Nine-mouth wordless remake; synthesized vocal, connected harmonies and shuffled percussion |
 | Night Train Radio | 2:26 | `?song=night-train-quartet` | Mr. Sandman tune; newly written words; quartet |
 | Συννεφούλα | 2:15 | `?song=synnefoula` | Wireframe singer with hat, guitar and microphone; Greek vocals and mouth whistles over original instrumental backing |
 | MEGALOVANIA | 2:36 | `?song=megalovania` | 24 pitched mouths following the reference's singers, octaves and DA/DUM/OOH syllables |
@@ -32,6 +32,10 @@ before rebuilding its voices; the older fakt13 arrangement had different parts.
 Apricots retains the original stereo vocal sample selected by the user, with nine
 physical mouths providing the accompaniment. See [the arrangement notes](docs/apricots-arrangement.md)
 for the source timing, preserved recording and regeneration instructions.
+
+Glue keeps its vocal and every instrument synthesized by the mouths, as selected
+by the user. See [the Glue arrangement notes](docs/glue-arrangement.md) for the
+connected vocal, stable pitch lanes and separate kick/clap parts.
 
 ## Movie scenes
 
