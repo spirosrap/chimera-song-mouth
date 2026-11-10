@@ -22,6 +22,21 @@ amplitude curves retain the electronic pulse. Kick, snare and hat attacks are
 separated, and the rhythm is brought forward in the mix. No invented choir
 harmonies or synthesized lead are mixed into the accepted version.
 
+The percussion timing correction compensates for the live beat pad's physical
+mouth setup time before rendering each prepared hit (106–137 ms for these
+sounds). Audio and mouth telemetry are rendered together on the same clock.
+The reference drum attacks also exposed late kick-tail detections: 36 kick
+triggers needed corrections greater than 70 ms, including eleven duplicate
+detections that are now merged. Twenty-five unsupported hi-hat tail triggers
+are removed. The score retains 205 kicks and 389 hats, following source attack
+times rather than imposing a straight four-on-the-floor pattern.
+
+The kick's score times include a 28 ms adjustment measured against the reference
+low-frequency attack envelope; the mouth kick's energy otherwise arrived early.
+The snare pattern and quiet breath layer retain their score times. Only the four
+percussion audio/telemetry pairs were regenerated. The original vocal, five
+pitched accompaniment stems, their levels and all other songs are unchanged.
+
 The unused former `choir-low`/`choir-high` audio and telemetry, and `hook.tele.gz`,
 remain in the portable media archive. The current arrangement never requests
 them. All twelve songs, three scenes and 221 public assets remain present.
@@ -42,5 +57,8 @@ MP3, separated analysis WAVs and experimental previews are not included here.
 
 After an intentional regeneration, update `MEDIA-MANIFEST.json` and run the
 content verification, audio/animation checks, full tests and static build.
+`tests/band-beat-timing.test.ts` checks that rendered drum attacks no longer
+inherit the live pad's setup delay; `tests/apricots.test.ts` retains the
+source-checked second-kick and false-tail regressions.
 Browser interaction and visual QA were unavailable because browser access was
 declined in the source session.

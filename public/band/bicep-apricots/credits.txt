@@ -5,3 +5,4 @@ The five pitched accompaniment voices and four mouth-percussion parts are synthe
 Source separation can leave faint instrumental traces within the vocal sample. Quiet leakage outside the vocal passage is removed; its tail and the song’s full instrumental ending are retained.
 Melodies, rhythm and source pitch-lane transcription remain approximate. Effects apply to synthesized mouth audio.
 The former choir-low/choir-high files and hook telemetry remain in the portable archive for preservation, but are not loaded by this arrangement.
+Prepared percussion compensates for physical-mouth setup time. Source-checked kick attacks replace late tail detections, duplicate kicks and unsupported hi-hat tail triggers are removed; the original vocal and pitched accompaniment are unchanged.

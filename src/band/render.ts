@@ -1,4 +1,5 @@
 import { writeGestures, writeSteps, CONTROL_KEYS } from "../wasm/wire.ts";
+import { call } from "../wasm/chimera.ts";
 import type { Gesture, VoiceSource, HumanArtic } from "../wasm/types.ts";
 import type { BandPart, RenderedPart } from "./types.ts";
 import { processVocalEffects } from "./effects.ts";
@@ -55,7 +56,13 @@ export function renderPart(module:WebAssembly.Module,part:BandPart,duration:numb
       const at=16+body.length;
       for(let side=0;side<2;side++)for(let j=0;j<nScope;j++)data[o++]=raw[at+side*scope+Math.floor(j*scope/nScope)];
     };
-    const beats=(part.beats??[]).map(b=>({...b,time:b.time+.35})).sort((a,b)=>a.time-b.time);
+    // beat_hit is a live pad press: the engine adds the mouth's setup time.
+    // Prepared score times are acoustic onsets, so press each pad that much early.
+    const leadIns=new Map<string,number>();
+    const beats=(part.beats??[]).map(b=>{
+      if(!leadIns.has(b.id))leadIns.set(b.id,call<number>("leadIn",{id:b.id,body:part.body}));
+      return {...b,time:Math.max(0,b.time+.35-leadIns.get(b.id)!)};
+    }).sort((a,b)=>a.time-b.time);
     const mixedWhistles=!!part.whistleMelody&&part.delivery!=="sing"&&part.delivery!=="whistle";
     const ranges=mixedWhistles?whistleSpans(part).map(s=>({start:Math.round(s.start*BAND_RATE),end:Math.round(s.end*BAND_RATE)})):[];
     const sungVoicing=settings?.source.voiced??(part.voice?.voiced!==false);

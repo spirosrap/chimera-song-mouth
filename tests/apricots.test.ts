@@ -46,3 +46,18 @@ test('Apricots sustained accompaniment does not restart at adjacent detector fra
  // Hats previously duplicated snare transients instead of following their own rhythm.
  expect(hats.every(h=>snare.every(s=>Math.abs(h.time-s.time)>.07))).toBe(true);
 });
+
+test('Apricots percussion follows source attacks without duplicate kick or hat tails',()=>{
+ const kick=score.parts.find(p=>p.id==='kick')!.beats!,hats=score.parts.find(p=>p.id==='hats')!.beats!;
+ // Source second-kick clicks, measured independently from the drum waveform.
+ // The mouth's shorter kick envelope needs 28 ms to align its audible energy.
+ for(const source of [1.016,31.017,38.516,46.017,121.015,166.017,179.141,207.267,211.016,218.517]){
+  const hits=kick.filter(b=>Math.abs(b.time-(source+.028))<.01);
+  expect(hits).toHaveLength(1);
+  expect(kick.some(b=>b.time>source+.075&&b.time<source+.16)).toBe(false);
+ }
+ // These old hi-hat triggers had no corresponding high-band source attack.
+ for(const time of [33.738,35.618,37.488,44.988,48.738]){
+  expect(hats.some(b=>Math.abs(b.time-time)<.03)).toBe(false);
+ }
+});
