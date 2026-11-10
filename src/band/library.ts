@@ -37,7 +37,7 @@ export const BAND_SONGS:BandSong[]=[
     title:"Δεν ξανακάνω φυλακή · Rodehihi",description:"Rodehihi’s full recording with its original instrumental backing and a robotic Greek singer following the vocal melody and phrasing.",bpm:120,duration:192.68,presentation:"backed-solo",parts:[],sections:[],
   }},
   {id:"small-hours",name:"Small Hours · 3:31 · original electronic",arrangement:prepared(smallHoursBand())},
-  {id:"country-roads",name:"Country Roads · 3:15 · one voice & score",arrangementUrl:BASE_PATH+"band/country-roads/arrangement.json",arrangement:{
+  {id:"country-roads",name:"Country Roads · 3:15 · one voice & score",arrangementUrl:BASE_PATH+"band/country-roads/arrangement.json?v=phonetics-2",arrangement:{
     title:"Take Me Home, Country Roads",description:"The full song, with one robotic singer over the original instrumental music and a scrolling melody and pitch graph.",bpm:82,duration:195.8504375,presentation:"solo-roll",parts:[],sections:[],
   }},
 ];
