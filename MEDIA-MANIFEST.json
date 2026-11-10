@@ -14,17 +14,17 @@
     {
       "path": "public/band/all-made-of-air/answer.mp3",
       "bytes": 424268,
-      "sha256": "966421c8afe6854f7217280bdb517fb8203ce6f303c08f8a13b182d595bc863c"
+      "sha256": "4de9ea81f8183757ab2dca3315f71b9bae5fe9c1af05dc72af3bf759eb9a9c12"
     },
     {
       "path": "public/band/all-made-of-air/answer.tele.gz",
-      "bytes": 233342,
-      "sha256": "f2556d42e28e78ebdb3c6ccfa7b54c89931f0c8c47aa7076ac176bb8338859e1"
+      "bytes": 234348,
+      "sha256": "76a2719347c6e4777c84599438040cbab1c76f737e4edf0bf1d6fe01211ab9e3"
     },
     {
       "path": "public/band/all-made-of-air/arrangement.json",
-      "bytes": 19767,
-      "sha256": "b94678d296ac71de7c66e98d0acaf0b2492d15734ad67864eca4cb44b24667bd"
+      "bytes": 60154,
+      "sha256": "eaee01218390abe124d3d3ee82ca3db3acf70bf74740001ab9bfeacae5f6a7ef"
     },
     {
       "path": "public/band/all-made-of-air/bass.mp3",
@@ -39,12 +39,12 @@
     {
       "path": "public/band/all-made-of-air/lead.mp3",
       "bytes": 424268,
-      "sha256": "5c35314c2d6e7f872fac448a332900ac1634f91c0eb8753700491de2107ab54f"
+      "sha256": "b2f774cd3f94920276a37fb93f6402f1df8f792e01bb30407fd1a2c42513fa3e"
     },
     {
       "path": "public/band/all-made-of-air/lead.tele.gz",
-      "bytes": 338045,
-      "sha256": "2006518660e5e2a29d277778f9a67e7ac907e4a4c594ee0b861ad92262826961"
+      "bytes": 336556,
+      "sha256": "5cf71241d123504660f1e055546962d370085ee7749bd2aa8bb887fa1968fe57"
     },
     {
       "path": "public/band/all-made-of-air/percussion.mp3",
@@ -329,17 +329,17 @@
     {
       "path": "public/band/house-of-the-rising-sun/answer.mp3",
       "bytes": 2031596,
-      "sha256": "53a2c82402ccf8bfddacae70be977210a39f77da0e558da8036b8ab6aa8d058a"
+      "sha256": "eb98943f78f06c02161890f4c511e8b7f723f13d46e9d83ae519121290256a7e"
     },
     {
       "path": "public/band/house-of-the-rising-sun/answer.tele.gz",
-      "bytes": 716550,
-      "sha256": "babeafe3944741ae8e39cdc9bcf69089577205c6acec7191868d5294ff24dce0"
+      "bytes": 720851,
+      "sha256": "79e0eac9721c23044d047887f63cde88d24e06ae0d5dd492c3bf654f6be9d48e"
     },
     {
       "path": "public/band/house-of-the-rising-sun/arrangement.json",
-      "bytes": 83841,
-      "sha256": "2cd104d367cf85b7e1db4df872b05510a7d21f3cfa6776b4df958d865dff6170"
+      "bytes": 247419,
+      "sha256": "10bb2d7f371417db81bb4b5a029f6d7b7d38a90d0a839f7c3440ec433de2e9ef"
     },
     {
       "path": "public/band/house-of-the-rising-sun/bass.mp3",
@@ -354,12 +354,12 @@
     {
       "path": "public/band/house-of-the-rising-sun/lead.mp3",
       "bytes": 2031596,
-      "sha256": "fe69e0978371f0ba88005a7ea0dcd736ccfbb1d9e28a6e7479fccab8313189ae"
+      "sha256": "1134002ecf73bf7a0762a0405e91b2fc982a7bc294cdcecdb4a9e25d5335d509"
     },
     {
       "path": "public/band/house-of-the-rising-sun/lead.tele.gz",
-      "bytes": 1531513,
-      "sha256": "02e044e0f7ae7954217c243393ab6b34835b992d9039df8691e17aab0217c8df"
+      "bytes": 1506672,
+      "sha256": "ad34105a246432219d4a8e5f3fd01e5c9c7718daabbeb349a372ba0b198933fa"
     },
     {
       "path": "public/band/house-of-the-rising-sun/percussion.mp3",
@@ -729,52 +729,52 @@
     {
       "path": "public/band/night-train-quartet/alto.mp3",
       "bytes": 1756268,
-      "sha256": "dc8b718f856f9996f9ad7f268ae6b64fe7ece48a084c55bb00bdda4c2d0b1503"
+      "sha256": "768642de26d77af2c6f41791b2790a8843277b020c68b8b50d9e9acff2c8eb94"
     },
     {
       "path": "public/band/night-train-quartet/alto.tele.gz",
-      "bytes": 1738588,
-      "sha256": "1e716a9422d9b26c759be7a58a8bfe0fdc03ffe01d0a6d65d10803e2dfc8f69a"
+      "bytes": 1719479,
+      "sha256": "1ca4589dce88129631071383b957565b26be8add355cd99c65257b0feada7377"
     },
     {
       "path": "public/band/night-train-quartet/arrangement.json",
-      "bytes": 103663,
-      "sha256": "befcb51dad087cdfccfa8e97e78a3e9b128856a14f3850b3c67df7bd6ffb71d8"
+      "bytes": 721030,
+      "sha256": "1f5f6edcc67b6330e6a04bd455e65ec93230c67c7abb53052c239bdfd5f8ac09"
     },
     {
       "path": "public/band/night-train-quartet/bass.mp3",
       "bytes": 1756268,
-      "sha256": "4368594e4d5c6ecfc67597fe5ed6e3dd8a92aa21f223fd6d83e28d3cef218912"
+      "sha256": "f70e47ed62ead26924cb7e2fab46524091d4b4f3a125c95209cec3deb0dca2f0"
     },
     {
       "path": "public/band/night-train-quartet/bass.tele.gz",
-      "bytes": 1868309,
-      "sha256": "a87bb720a17fee380b33c53a347172517fb203d282afaeccd780144deeed6335"
+      "bytes": 1805546,
+      "sha256": "4f11cdbc591d92561e2c5cab5122f41a705a875dd1a40a16177b18efdf1319b6"
     },
     {
       "path": "public/band/night-train-quartet/lead.mp3",
       "bytes": 1756268,
-      "sha256": "0d706cd687539eaadf04c4ab748b310b52e8debda617df469d06646e5e2f1867"
+      "sha256": "b153bfac8b88da43616af4651c5109ab0cfb469fd9c6bb96b7fbd1da299f791b"
     },
     {
       "path": "public/band/night-train-quartet/lead.tele.gz",
-      "bytes": 1795168,
-      "sha256": "5a22a513e5b03b2c6cf5337929950c80774be1bddececb62eb7a0303a42361a0"
+      "bytes": 1777390,
+      "sha256": "349ef0fe80fc579a0389d6dc55cb9d1b3135f4724e9a941e625ecfbf8591ae1f"
     },
     {
       "path": "public/band/night-train-quartet/soprano.mp3",
       "bytes": 1756268,
-      "sha256": "051893ecaa76fd86744371cfe9724acf53c42f900359eb3931b7dd09e5ca9d24"
+      "sha256": "b3cda1237c7ba61f72ef8f27bd586cef0345814b9a2a7b97ba1661f79197cff7"
     },
     {
       "path": "public/band/night-train-quartet/soprano.tele.gz",
-      "bytes": 1670378,
-      "sha256": "7ebbaed781604a405e12b398928a93797804ccbb28e19933aa3291cbeb17d858"
+      "bytes": 1654931,
+      "sha256": "4933562c414fdfd45df8c1341b4b4025f7bd98aee4a784908f4ed206eabc0e38"
     },
     {
       "path": "public/band/rodehihi-den-xanakano-fylaki/arrangement.json",
-      "bytes": 178809,
-      "sha256": "072c0eedb010f5341fcea73c7315396a32503518d963b2354a0ee3eea804c5b0"
+      "bytes": 178916,
+      "sha256": "c1080d7408170dd62071cffbf51d6e5c6e519a9ffd2cadfbb2c2ad2a8e321d2e"
     },
     {
       "path": "public/band/rodehihi-den-xanakano-fylaki/backing.mp3",
@@ -789,12 +789,12 @@
     {
       "path": "public/band/rodehihi-den-xanakano-fylaki/lead.mp3",
       "bytes": 2312972,
-      "sha256": "16324ebb487a72147afcde4b74e4f92aed1e533afaca7c66fa938c5d771ab207"
+      "sha256": "919bcb3dfa026d565d12187af842b17d6614a831eb092f1982e24ac776e7b830"
     },
     {
       "path": "public/band/rodehihi-den-xanakano-fylaki/lead.tele.gz",
-      "bytes": 1277760,
-      "sha256": "e70e070e885e1478d45cddb874dbcadf8fb74bbcfe926ad67d9c75a42b7c9438"
+      "bytes": 1276388,
+      "sha256": "7c21d455ec0a0dd50b46637242064beb4b460318507e2807f6ece2b780e5ea02"
     },
     {
       "path": "public/band/small-hours/alone.mp3",
@@ -923,8 +923,8 @@
     },
     {
       "path": "public/band/synnefoula/arrangement.json",
-      "bytes": 31279,
-      "sha256": "d575830d515a1c61d7f0a2a388211ed3c03f8b0801367a4ec0a065c4e2187150"
+      "bytes": 107442,
+      "sha256": "97ad9d08baedfe620c63f2d65f554a411fb83f76de0dc9b9809c6f630d38405e"
     },
     {
       "path": "public/band/synnefoula/backing.mp3",
@@ -934,17 +934,17 @@
     {
       "path": "public/band/synnefoula/lead.mp3",
       "bytes": 2167724,
-      "sha256": "20b72108cb3e3c0133e81947dfcd9b8e5ea1228fcdcb36db55a4d4f3dad89507"
+      "sha256": "05552415be6756e61591f8e59b977c16e2edbb713d46a98238cb058f1d055c24"
     },
     {
       "path": "public/band/synnefoula/lead.tele.gz",
-      "bytes": 1466470,
-      "sha256": "1af8f3656a6f5cdcb28dab25b48f8644c0d05696ce5ef5decff33f266cfb00bd"
+      "bytes": 1444858,
+      "sha256": "8b5522ce6cb2a9eb1e2be15cb844012c3205037c5ff24ea6b49f21b91c2e2fcb"
     },
     {
       "path": "public/band/ta-paidia-tou-peiraia/arrangement.json",
-      "bytes": 30353,
-      "sha256": "c99d1448370d17770b449f00a76323aa63114c3577b2c03b2bd8f5fb4a5732c2"
+      "bytes": 140673,
+      "sha256": "bfba75aadbbd99497dc69d61a2a2044c600b84281b696d0fbab460ee7b0f761e"
     },
     {
       "path": "public/band/ta-paidia-tou-peiraia/backing.mp3",
@@ -959,12 +959,12 @@
     {
       "path": "public/band/ta-paidia-tou-peiraia/lead.mp3",
       "bytes": 2391884,
-      "sha256": "34520f81f148e673f6de5b0134ff81a45e1fab9021795388f8f228445d69da7e"
+      "sha256": "e1de79fa5b3aa78c9fc1df134b188b883908689fa3bb5c1a7c7ea45e3eb78a4e"
     },
     {
       "path": "public/band/ta-paidia-tou-peiraia/lead.tele.gz",
-      "bytes": 1622362,
-      "sha256": "51ac333802f5427efd070f060d5b9c68be9a1d109623a5404d50bb3e04ff3d98"
+      "bytes": 1597897,
+      "sha256": "52978de2e6d0a10cc87c8dfdf2b80bff11041b086561e6f8806ef6fe87d8e732"
     },
     {
       "path": "public/band/ta-paidia-tou-peiraia/snaps.mp3",

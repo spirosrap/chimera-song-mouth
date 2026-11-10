@@ -9,7 +9,10 @@ test('cover is an addition with a separately loaded score; existing default stay
  expect(BAND_SONGS.slice(0,4).map(s=>s.id)).toEqual(['house-of-the-rising-sun','all-made-of-air','neon-current','bicep-glue']);expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
  expect(cover.arrangementUrl).toBe('/band/bicep-glue/arrangement.json');
  expect((await loadBandArrangement(cover,request(fixture()))).title).toBe('Loaded arrangement');
- expect(await loadBandArrangement(DEFAULT_BAND,()=>{throw new Error('must not fetch');})).toBe(DEFAULT_BAND.arrangement);
+ expect(DEFAULT_BAND.arrangementUrl).toBe('/band/house-of-the-rising-sun/arrangement.json?v=phrasing-20261110');
+ expect((await loadBandArrangement(DEFAULT_BAND,request(fixture()))).title).toBe('Loaded arrangement');
+ const inline=BAND_SONGS.find(s=>s.id==='neon-current')!;
+ expect(await loadBandArrangement(inline,()=>{throw new Error('must not fetch');})).toBe(inline.arrangement);
 });
 
 test('missing or incomplete external scores fail before fetching voice assets',async()=>{

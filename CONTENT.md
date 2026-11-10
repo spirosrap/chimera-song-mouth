@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 216 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 221 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -17,8 +17,13 @@ Every prepared media file below is tracked in this repository. All 216 public fi
 | Τα παιδιά του Πειραιά | 3:19 | `?song=ta-paidia-tou-peiraia` | Greek robotic singer, instrumental backing and animated finger clicks |
 | Rodehihi — Δεν ξανακάνω φυλακή | 3:12 | `?song=rodehihi-den-xanakano-fylaki` | Robotic Greek singer following the source phrasing, original instrumental backing and complete ending |
 | Small Hours | 3:31 | `?song=small-hours` | Original wordless electronic piece for twelve mouths |
+| Country Roads | 3:15 | `?song=country-roads` | One robotic singer, original instrumental backing and synchronized melody graph |
 
 Each song’s `public/band/<id>/` directory contains the prepared score, MP3 channels and compressed mouth telemetry as applicable. Non-voice channels such as the instrumental backing and finger clicks do not need telemetry. Credits accompany the adapted content. Small Hours has no source recording: its score is written in `src/band/smallHours.ts`, and `bun tools/render-band-song.ts small-hours` (needs ffmpeg; about seven minutes on 16 cores) rebuilds its twelve channels and telemetry from the engine. The original full-lyrics Mr. Sandman version was declined and is not in the app; Night Train Radio is the accepted new-lyrics version.
+
+The six other songs with lyrics now use explicit sung phoneme timing following
+the Country Roads refinement. See [the phrasing notes](docs/lyric-song-phrasing.md)
+for the preserved accompaniment, Greek accent and whistle behavior.
 
 ## Movie scenes
 
@@ -39,5 +44,3 @@ The HAL 9000 scene has no source clip: its line starts are timed by hand from th
 ## Scope of the export
 
 This is the complete content of the running app, rather than a backup of the computer’s Music and Videos folders. Raw input recordings, source-separation stems used only for analysis, ASR models, temporary render files, development toolchains and caches are excluded. No external source recording is required to replay the prepared songs or scenes.
-
-- `?song=country-roads` — full Country Roads, one robotic singer, original instrumental backing, and a synchronized scrolling melody/pitch graph.

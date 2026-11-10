@@ -45,3 +45,8 @@ Read `AGENTS.md` before changing the engine. `EDITION-NOTES.md` retains detailed
 Read `UPSTREAM.md` when importing changes from the original CHIMERA repository.
 The last imported upstream revision is recorded in `PROVENANCE.json`; this
 independent export uses reviewed cherry-picks rather than an unrelated-history merge.
+
+The six other lyric songs now use prepared phoneme timing like Country Roads.
+Read `docs/lyric-song-phrasing.md` before regenerating them: retain the prepared
+JSON, Rodehihi's accent phones, Συννεφούλα's whistle gestures and the unchanged
+instrumental/finger-click channels.
