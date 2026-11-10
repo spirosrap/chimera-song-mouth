@@ -676,6 +676,11 @@ export class Anatomy3D {
     this.beams.dispose();
   }
 
+  /** Accessories share the head's nod/tilt; their creator owns their resources. */
+  attachAccessory(object: THREE.Object3D): void {
+    this.beams.group.add(object);
+  }
+
   /** forget the motion so far (a replay jumped): the face's springs and held-note time, the
    *  outline echoes, the airflow's particle trails and the vocal folds' strobe phase */
   resetMotion(): void {

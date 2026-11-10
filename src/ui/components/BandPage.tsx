@@ -1,4 +1,5 @@
 import {PerformanceRoll} from "./PerformanceRoll.tsx";
+import {FolkSinger} from "./FolkSinger.tsx";
 import {SnapHand} from "./SnapHand.tsx";
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { BAND_SONGS, findBandSong, loadBandArrangement } from "../../band/library.ts";
@@ -133,6 +134,7 @@ export function BandPage(){
   const displayedDuration=loaded?(mixer?.duration??arrangement.duration):arrangement.duration;
   const ensemble=arrangement.presentation==="ensemble"||(loaded?.parts.filter(p=>isVoicePart(p)).length??0)>8;
   const soloRoll=arrangement.presentation==="solo-roll";
+  const folkSinger=songId==="synnefoula";
   const backed=arrangement.presentation==="backed-solo"||soloRoll;
   const hasHand=!!loaded?.parts.some(p=>p.kind==="hand");
   const quartet=arrangement.presentation==="quartet",featured=featuredVoice(arrangement,time);
@@ -155,9 +157,9 @@ export function BandPage(){
       {error&&<p role="alert" className="error band-error">{error}</p>}
       {!loaded&&!busy&&!stale&&songId&&<button className="chip" onClick={()=>mixer&&void loadSong(mixer,songId)}>Reload song</button>}
       {stale&&!busy&&<div className="band-status"><span>Your selected parts are ready to render. This can take a few minutes for a long song.</span><button className="primary" onClick={render}>Render selected voices ({selected.length})</button></div>}
-      {loaded&&mixer&&<div className={`band-heads${quartet?" band-quartet":""}${backed?" band-backed-solo":""}${hasHand?" band-with-hand":""}${ensemble?" band-ensemble":""}${soloRoll?" band-solo-roll":""}`} style={quartet?{"--quartet-columns":loaded.parts.map(p=>`minmax(0,${p.id===featured?1.65:1}fr)`).join(" ")} as CSSProperties:undefined}>
-        {loaded.parts.map((part,i)=>part.kind==="backing"?null:<div className={`band-channel${quartet?(part.id===featured?" quartet-featured":""):(!soloRoll&&!ensemble&&!hasHand&&part.id==="lead"?" band-lead":"")}`} key={`${version}:${part.id}`}>
-          <>{part.kind==="hand"?<SnapHand part={part} mixer={mixer} index={i}/>:<BandHead part={part} track={loaded.tracks[i]!} mixer={mixer} index={i} bpm={arrangement.bpm} wordless={arrangement.wordless} quartet={quartet} ensemble={ensemble}/>}</>
+      {loaded&&mixer&&<div className={`band-heads${quartet?" band-quartet":""}${backed?" band-backed-solo":""}${hasHand?" band-with-hand":""}${ensemble?" band-ensemble":""}${soloRoll?" band-solo-roll":""}${folkSinger?" band-folk-singer":""}`} style={quartet?{"--quartet-columns":loaded.parts.map(p=>`minmax(0,${p.id===featured?1.65:1}fr)`).join(" ")} as CSSProperties:undefined}>
+        {loaded.parts.map((part,i)=>part.kind==="backing"?null:<div className={`band-channel${quartet?(part.id===featured?" quartet-featured":""):(!folkSinger&&!soloRoll&&!ensemble&&!hasHand&&part.id==="lead"?" band-lead":"")}`} key={`${version}:${part.id}`}>
+          <>{part.kind==="hand"?<SnapHand part={part} mixer={mixer} index={i}/>:folkSinger&&part.id==="lead"?<FolkSinger track={loaded.tracks[i]!} mixer={mixer} index={i} bpm={arrangement.bpm}/>:<BandHead part={part} track={loaded.tracks[i]!} mixer={mixer} index={i} bpm={arrangement.bpm} wordless={arrangement.wordless} quartet={quartet} ensemble={ensemble}/>}</>
           <div className="band-channel-controls"><button className={`chip${muted[i]?" on":""}`} aria-pressed={!!muted[i]} onClick={()=>changeMix(i,{mute:!muted[i]})} aria-label={`Mute ${part.name}`}>{ensemble?"Mute":`Mute ${part.name}`}</button><button className={`chip${solo[i]?" on":""}`} aria-pressed={!!solo[i]} aria-label={`Solo ${part.name}`} onClick={()=>changeMix(i,{solo:!solo[i]})}>Solo</button><label>Level <input aria-label={`${part.name} level`} type="range" min={0} max={part.effects?2:1} step={.01} value={part.volume} onChange={e=>changeMix(i,{volume:Number(e.target.value)})}/></label></div>
         </div>)}
         {soloRoll&&loaded.parts.map((part,i)=>isVoicePart(part)&&loaded.tracks[i]&&<PerformanceRoll key={`roll:${version}:${part.id}`} part={part} track={loaded.tracks[i]!} mixer={mixer} duration={displayedDuration}/>)}

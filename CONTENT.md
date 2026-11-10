@@ -11,7 +11,7 @@ Every prepared media file below is tracked in this repository. All 221 public fi
 | Neon Current | 3:03 | `?song=neon-current` | Original wordless electronic choir |
 | BICEP — Glue | 4:30 | `?song=bicep-glue` | Eight-mouth wordless remake |
 | Night Train Radio | 2:26 | `?song=night-train-quartet` | Mr. Sandman tune; newly written words; quartet |
-| Συννεφούλα | 2:15 | `?song=synnefoula` | Robotic Greek singer and mouth whistles; original instrumental backing |
+| Συννεφούλα | 2:15 | `?song=synnefoula` | Wireframe singer with hat, guitar and microphone; Greek vocals and mouth whistles over original instrumental backing |
 | MEGALOVANIA | 2:37 | `?song=megalovania` | All 24 mouths, including beatboxing |
 | BICEP — Apricots | 4:09 | `?song=bicep-apricots` | Twelve-mouth wordless remake |
 | Τα παιδιά του Πειραιά | 3:19 | `?song=ta-paidia-tou-peiraia` | Greek robotic singer, instrumental backing and animated finger clicks |

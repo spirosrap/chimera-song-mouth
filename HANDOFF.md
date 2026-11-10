@@ -50,3 +50,7 @@ The six other lyric songs now use prepared phoneme timing like Country Roads.
 Read `docs/lyric-song-phrasing.md` before regenerating them: retain the prepared
 JSON, Rodehihi's accent phones, Συννεφούλα's whistle gestures and the unchanged
 instrumental/finger-click channels.
+
+Συννεφούλα now has a wireframe singer with a hat, guitar, moving hands and a
+microphone. Read `docs/synnefoula-singer.md` before changing its presentation;
+it reuses the existing vocal/whistle telemetry and preserves every audio asset.
