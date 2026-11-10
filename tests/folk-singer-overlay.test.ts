@@ -40,4 +40,3 @@ test('mouth overlay draws Greek words, clears old words on seek, and draws notes
     draw(...args,{time:0,epoch:2,audible:true});expect(text).toEqual([]);expect(musicalNotes).toBe(0);
   }finally{if(previous)Object.defineProperty(globalThis,'Path2D',previous);else Reflect.deleteProperty(globalThis,'Path2D');}
 });
-
