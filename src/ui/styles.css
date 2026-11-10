@@ -2980,6 +2980,13 @@ input[type="range"]::-moz-range-thumb {
 .band-quartet .band-channel:nth-child(2) .screen-title { color: var(--blue); }
 .band-quartet .band-channel:nth-child(3) .screen-title { color: #c2a4d8; }
 .band-quartet .band-channel:nth-child(4) .screen-title { color: var(--green); }
+.quartet-harmonics { display: grid; grid-template-columns: 70px minmax(0,1fr); align-items: center; gap: 18px; padding: 12px; margin-top: 20px; border: 1px solid var(--frame); }
+.quartet-microphone { display: block; width: 70px; height: 145px; color: var(--blue); }
+.quartet-harmonics canvas { display: block; width: 100%; min-width: 0; }
+@media (max-width: 550px) {
+  .quartet-harmonics { grid-template-columns: 42px minmax(0,1fr); gap: 6px; padding: 8px; }
+  .quartet-microphone { width: 42px; height: 100px; }
+}
 @media (min-width: 1001px) {
   .band-heads.band-quartet { grid-template-columns: var(--quartet-columns); align-items: end; gap: 14px; }
   .band-quartet .band-head .screen-body { height: 330px; }

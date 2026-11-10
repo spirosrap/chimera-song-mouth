@@ -682,6 +682,56 @@
       "sha256": "1ecd4ab982bba2759a7010d37152c924b71955229029c6de038a44775dfaecc4"
     },
     {
+      "path": "public/band/mr-sandman-quartet/alto.mp3",
+      "bytes": 2927084,
+      "sha256": "79af2d78d8c8a116f8f91275ea1ceea808b1a8c1196062a9c7dcc1d30565c3df"
+    },
+    {
+      "path": "public/band/mr-sandman-quartet/alto.tele.gz",
+      "bytes": 1691512,
+      "sha256": "9412444687638d4a08c0ebbcd0e0ac12cd2b1502bf6c451bf6d81af93694bf17"
+    },
+    {
+      "path": "public/band/mr-sandman-quartet/arrangement.json",
+      "bytes": 652881,
+      "sha256": "726ca71ceeda126410e0b9e831701216e25eeb4f1bd48eda99ede31730b6b2bd"
+    },
+    {
+      "path": "public/band/mr-sandman-quartet/bass.mp3",
+      "bytes": 2927084,
+      "sha256": "7a24468946b9adc5309a243a150699e2826c51cacbf734c218ee7ce703b678a6"
+    },
+    {
+      "path": "public/band/mr-sandman-quartet/bass.tele.gz",
+      "bytes": 1804776,
+      "sha256": "c4ea218dcde0c3f37375a88567f858bedf62c28cff52ecfc04a59b08b44fc758"
+    },
+    {
+      "path": "public/band/mr-sandman-quartet/credits.txt",
+      "bytes": 889,
+      "sha256": "07ec777302b743aa09ae2f11c0a8d0de02d94be40968cd391a540de8aa999351"
+    },
+    {
+      "path": "public/band/mr-sandman-quartet/lead.mp3",
+      "bytes": 2927084,
+      "sha256": "8129e3c853d7b15052f3a7593c5f8017d8a0b9d643e8197cf3037573c714c67c"
+    },
+    {
+      "path": "public/band/mr-sandman-quartet/lead.tele.gz",
+      "bytes": 1748611,
+      "sha256": "501ef9def526e69a4fcb873281cf9f1fb3aca627ebbde4c40fdfca15e7a7f11b"
+    },
+    {
+      "path": "public/band/mr-sandman-quartet/soprano.mp3",
+      "bytes": 2927084,
+      "sha256": "f77bebc4bb100295b3d2a4ad1d2996be3a015c07a6c027401d2b176a1291f2ec"
+    },
+    {
+      "path": "public/band/mr-sandman-quartet/soprano.tele.gz",
+      "bytes": 1629664,
+      "sha256": "f5a7156391c1dc2401e366285d69b6d72d0d8d5d75aa2767415b0293a1884e12"
+    },
+    {
       "path": "public/band/neon-current/answer.mp3",
       "bytes": 2196620,
       "sha256": "c08f51fe81bafbe0e5567b51e306e582a3ff8a37befebefcf856002f0999eb36"

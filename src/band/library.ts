@@ -43,6 +43,9 @@ export const BAND_SONGS:BandSong[]=[
   {id:"blue-moon",name:"Blue Moon — Frank Sinatra · 2:52 · robotic singer",arrangementUrl:BASE_PATH+"band/blue-moon/arrangement.json?v=phonetic-mouth-20261110",arrangement:{
     title:"Blue Moon · Frank Sinatra",description:"The full Sinatra recording’s orchestral music with one robotic mouth singing the words, following his swing timing, held notes and phrasing.",bpm:120,duration:172.23573696145124,presentation:"backed-solo",parts:[],sections:[],
   }},
+  {id:"mr-sandman-quartet",name:"Mr. Sandman · 2:26 · original-lyrics quartet",arrangementUrl:BASE_PATH+"band/mr-sandman-quartet/arrangement.json?v=sandman-quartet-20261110",arrangement:{
+    title:"Mr. Sandman · the mouth quartet",description:"The complete song with its original words, sung by bass, tenor, alto and soprano. Four simulated mouths supply every melody, close harmony, bum-bum passage and playful response.",bpm:112.5,duration:146.3,presentation:"quartet",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */
