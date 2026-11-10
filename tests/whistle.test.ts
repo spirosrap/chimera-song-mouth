@@ -48,3 +48,12 @@ test("the same mouth whistles at the original pitch and then sings the vocal not
   expect(rms(out.samples.slice(60000,80000))).toBeLessThan(.001);
   expect(rms(out.samples.slice(100000,110000))).toBeGreaterThan(.005);
 });
+
+test('prepared phoneme timing keeps the whistle gestures and pursed mouth',()=>{
+  const mixed:BandPart={...part,delivery:undefined,melody:{...part.melody!,lyrics:'α',notes:[{start:1.6,duration:.7,midi:55}]},whistleMelody:{...part.melody!,notes:[{start:.1,duration:.6,midi:89}]},performance:{lyrics:'α',phrases:[{start:1.95,phones:[{ipa:'a',duration:.7}]}],contour:Array.from({length:14},(_,i)=>({time:1.95+i*.05,hz:196,breath:.9}))}};
+  const out=renderPart(wasmModule,mixed,2.8,planPart(mixed)),track=new TeleTrack(out.tele);
+  const whistle=track.message(track.indexAt(.6)).t,singing=track.message(track.indexAt(2.2)).t;
+  expect(whistle.voicing).toBe(0);expect(whistle.artic[8]).toBeGreaterThan(1);
+  expect(whistle.artic[7]).toBeLessThan(.35);expect(whistle.outRms).toBeGreaterThan(.05);
+  expect(singing.f0).toBeCloseTo(196,0);expect(singing.outRms).toBeGreaterThan(.005);
+},15000);
