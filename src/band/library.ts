@@ -27,8 +27,8 @@ export const BAND_SONGS:BandSong[]=[
   {id:"megalovania",name:"MEGALOVANIA · 2:36 · 24 mouths",arrangementUrl:BASE_PATH+"band/megalovania/arrangement.json?v=reference-20261110",arrangement:{
     title:"MEGALOVANIA · 24 mouths",description:"The full Undertale track as a 24-mouth vocal orchestra, following the reference video's singers and octaves. Connected DA riffs, DUM pulses and a rounded OOH bass keep the music flowing — every sound comes from a simulated mouth.",bpm:120,duration:156.9,wordless:true,showSyllables:true,presentation:"ensemble",parts:[],sections:[],
   }},
-  {id:"bicep-apricots",name:"BICEP — Apricots · 4:09 · 12 mouths",arrangementUrl:BASE_PATH+"band/bicep-apricots/arrangement.json",arrangement:{
-    title:"Apricots · BICEP",description:"The full supplied Apricots recording reimagined as a wordless mouth choir, with layered vocal hooks, warm harmonies, bass and beatboxing.",bpm:128,duration:249.412,wordless:true,presentation:"ensemble",parts:[],sections:[],
+  {id:"bicep-apricots",name:"BICEP — Apricots · 4:09 · original vocal + 9 mouths",arrangementUrl:BASE_PATH+"band/bicep-apricots/arrangement.json?v=apricots-original-vocal-20261110",arrangement:{
+    title:"Apricots · BICEP · original vocal + 9 mouths",description:"The full song with its original vocal sample and nine simulated mouths playing the music. Sustained harmonies, a deep bass line and a stronger beat follow the recording’s electronic groove.",bpm:128,duration:249.412,wordless:true,presentation:"ensemble",parts:[],sections:[],
   }},
   {id:"ta-paidia-tou-peiraia",name:"Τα παιδιά του Πειραιά · 3:19 · robotic voice & fingers",arrangementUrl:BASE_PATH+"band/ta-paidia-tou-peiraia/arrangement.json?v=phrasing-20261110",arrangement:{
     title:"Τα παιδιά του Πειραιά · Μελίνα Μερκούρη",description:"The original instrumental music, a robotic Greek singer and an animated hand recreating the recording’s finger clicks.",bpm:120,duration:199.3,presentation:"backed-solo",parts:[],sections:[],
@@ -63,6 +63,7 @@ export async function loadBandArrangement(song:BandSong,request:(url:string)=>Pr
       for(const snap of part.snaps){if(!snap||!Number.isFinite(snap.time)||snap.time<0||snap.time<last||snap.time>=data.duration||!Number.isFinite(snap.accent)||snap.accent<0||snap.accent>1.4)throw new Error('The finger-click rhythm is invalid.');last=snap.time;}
     }
     if(part.performance&&!validPerformance(part.performance,data.duration))throw new Error('The vocal performance data is invalid.');
+    if(part.recordingType!==undefined&&(part.kind!=='backing'||!['vocal','instrumental'].includes(part.recordingType)))throw new Error('The recorded audio type is invalid.');
     if(part.assetVersion!==undefined&&(typeof part.assetVersion!=='string'||!/^[a-z0-9-]{1,64}$/.test(part.assetVersion)))throw new Error('The song asset version is invalid.');
     ids.add(part.id);
   }

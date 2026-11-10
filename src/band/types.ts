@@ -26,6 +26,7 @@ export interface VocalEffects {
 export interface BandPart {
   id: string;
   kind?: "voice" | "backing" | "hand";
+  recordingType?: "vocal" | "instrumental";
   snaps?: {time:number;accent:number}[];
   delivery?: "sing" | "whistle";
   telemetryEncoding?: "gzip";

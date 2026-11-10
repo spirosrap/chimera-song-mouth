@@ -78,28 +78,28 @@
     },
     {
       "path": "public/band/bicep-apricots/air.mp3",
-      "bytes": 1496972,
-      "sha256": "2ea61b04b10b7d544c96f020d33a90aac513feff7d61c414522aa43efe213497"
+      "bytes": 2993804,
+      "sha256": "37b6d3c79f4406eae4a97223da37cbce9761d0ed5a3774ddf114464994051d45"
     },
     {
       "path": "public/band/bicep-apricots/air.tele.gz",
-      "bytes": 1873109,
-      "sha256": "a9b8e0f54cc40f2baf4c8a2d767f1b647f228b6625a30712a77c90640c891e7a"
+      "bytes": 2015939,
+      "sha256": "ef4b365a1f5bdad92adf977cf7555c1da2d3dba99f35c96c2d6fbad11cba1e63"
     },
     {
       "path": "public/band/bicep-apricots/arrangement.json",
-      "bytes": 498587,
-      "sha256": "76849c84801aaa2246e51559aec3e18b0154896caee27cee7cd5c2950f2f9044"
+      "bytes": 1517031,
+      "sha256": "b3c233176cca9fe930a6153c330bbe7a7be180ce2b600d1992fbc6c695114f87"
     },
     {
       "path": "public/band/bicep-apricots/bass.mp3",
-      "bytes": 1496972,
-      "sha256": "78d20253b98e1a0793f7ec97ff7ad5a13464c026d14e91249f371fa23da1859c"
+      "bytes": 2993804,
+      "sha256": "7311953dd85fea43188442c4b9da0bd7483d2f679b166f918e2e9a6da947b57b"
     },
     {
       "path": "public/band/bicep-apricots/bass.tele.gz",
-      "bytes": 2408995,
-      "sha256": "4782740f983310d314f20f106350025aa26248c655ab5bfb1de8d0162419ac33"
+      "bytes": 2242179,
+      "sha256": "2fdfb56ce9da248f7b689065453110fade993b961bada5e36a43823ef4dcbef8"
     },
     {
       "path": "public/band/bicep-apricots/choir-high.mp3",
@@ -123,53 +123,53 @@
     },
     {
       "path": "public/band/bicep-apricots/credits.txt",
-      "bytes": 538,
-      "sha256": "f001d4d9a0dc8a3961f51c710818d7ed81b587b966426e4de9ede53597be6362"
+      "bytes": 1031,
+      "sha256": "fe5e33445c901690054dca1c3da1e04d10517aedb104cba50e708007f71332e2"
     },
     {
       "path": "public/band/bicep-apricots/harmony-high.mp3",
-      "bytes": 1496972,
-      "sha256": "5ebc6611c651a19776d589fced689e897491f4b62f32fc11bbb031e1550ce5f7"
+      "bytes": 2993804,
+      "sha256": "1b9a13406d2fd549dbd05790ddb318abfd1bcf8220511c99062b99d7c0607762"
     },
     {
       "path": "public/band/bicep-apricots/harmony-high.tele.gz",
-      "bytes": 2707577,
-      "sha256": "03b81de97e7959c3d77c3d1edfc114ea3021a15db5407fdb8e3893358f2cfddf"
+      "bytes": 2320276,
+      "sha256": "f2297a8e50aaa30f66ff1277f314a020b264827c36b8bcbceb46a299495f7f93"
     },
     {
       "path": "public/band/bicep-apricots/harmony-low.mp3",
-      "bytes": 1496972,
-      "sha256": "0324c8ffbad97cc7658689bf33b9e44b2f3156dbc39794eba6a34c669fb77dac"
+      "bytes": 2993804,
+      "sha256": "d34f15e947aee8a1ef0f7d30f04302c0f581cc223eb550f84bd1ce955b6a239a"
     },
     {
       "path": "public/band/bicep-apricots/harmony-low.tele.gz",
-      "bytes": 2780565,
-      "sha256": "8f27692416208c14b86a56ef7e001cf6ef96d4415278e82c0f56a8913d582af9"
+      "bytes": 2450468,
+      "sha256": "dee5d643f3a88ccd450b9dda1417f58251d1dea0f25173da3001b5f82c8cde51"
     },
     {
       "path": "public/band/bicep-apricots/harmony-mid.mp3",
-      "bytes": 1496972,
-      "sha256": "5ebf3d1e6cc81d2da0385bde272d88c13f99f74b88eac3f0c0e71fd24b314eca"
+      "bytes": 2993804,
+      "sha256": "6649a0dd1dc49ae270dbe14f67ac9b57aca3e70e43e94584dcd49974ab5aee8a"
     },
     {
       "path": "public/band/bicep-apricots/harmony-mid.tele.gz",
-      "bytes": 2710799,
-      "sha256": "4ae24e488fa9c96c62072e11c16444aae6f993a0097d3a64e00ef1f48e60ec64"
+      "bytes": 2499337,
+      "sha256": "5d98a524adda1d3dfe2f419cd85b8d7aa96f644c61419a59e9fcc4a9115b5695"
     },
     {
       "path": "public/band/bicep-apricots/hats.mp3",
-      "bytes": 1496972,
-      "sha256": "8365a7c17b7a409951e9964fca43f7edf58e6858ae590c52a7264c8063f4bd63"
+      "bytes": 2993804,
+      "sha256": "2b23a8353d28d00a341a4540b595a4c4bc948e61f27cd57be4402e147a690f7d"
     },
     {
       "path": "public/band/bicep-apricots/hats.tele.gz",
-      "bytes": 2092722,
-      "sha256": "1ab9cd24f45ec2146c5890696d290c0ceb3e23cbbaf4fb586f451be78ef1f38b"
+      "bytes": 1763495,
+      "sha256": "0fedeba28aa0df8a71ca4f72cd027ecfee3663cdb80462dd5ec4d34094ce91a5"
     },
     {
       "path": "public/band/bicep-apricots/hook.mp3",
-      "bytes": 1995884,
-      "sha256": "74d7ee80093259c1323f717b7e9c50798b87e4a11d3ba6baaf819539bbc68f8f"
+      "bytes": 5987564,
+      "sha256": "61f0e3d053026eb083635da0e742de7ce5ac8ffd4f0c332463caa83b58005fd5"
     },
     {
       "path": "public/band/bicep-apricots/hook.tele.gz",
@@ -178,33 +178,33 @@
     },
     {
       "path": "public/band/bicep-apricots/kick.mp3",
-      "bytes": 1496972,
-      "sha256": "b12d749cad6dd1bcbe0096fc4d6c0a2ba89411c2033c2c5b0adbc14ead03ee18"
+      "bytes": 2993804,
+      "sha256": "a989a668d75fa7c8108efd4fec9faabddef126d384d055ff262d68d7c1442121"
     },
     {
       "path": "public/band/bicep-apricots/kick.tele.gz",
-      "bytes": 1718989,
-      "sha256": "bceb07882a379de8c3b5a9ef0480b90025c479daecc384cd1c531792e863f5d2"
+      "bytes": 1689391,
+      "sha256": "cca5fa506cae12b5c20a9d816ba69ecddf731dcd3462c51e7dfaea6e284e3caa"
     },
     {
       "path": "public/band/bicep-apricots/shimmer.mp3",
-      "bytes": 1995884,
-      "sha256": "f707b4b4bfdbf896cf9dabfde10a328892d30d835363948e19fa6075f1eb5c95"
+      "bytes": 2993804,
+      "sha256": "7cf61a4dc4eefafbc05f8756aac747567251afacd23ca099d48a03cc4613456f"
     },
     {
       "path": "public/band/bicep-apricots/shimmer.tele.gz",
-      "bytes": 1548533,
-      "sha256": "afa1dcce6d00dd0a0aad439432c6467ac8745a4540dddadb1f77e5e9964af089"
+      "bytes": 1425806,
+      "sha256": "d32b4f98db83b0c01ba9c609802b97e8eed3ad8873aee6f597cd5a04cd161376"
     },
     {
       "path": "public/band/bicep-apricots/snare.mp3",
-      "bytes": 1496972,
-      "sha256": "25ca6062e7f162a87697763fe63c097cb509ad9c7f91655140f8f1a635770394"
+      "bytes": 2993804,
+      "sha256": "7cd989696a88b30bcaa16d9ec333bf13b4499284eb4040ad3beaa8e54719f99c"
     },
     {
       "path": "public/band/bicep-apricots/snare.tele.gz",
-      "bytes": 1975292,
-      "sha256": "2b08fcc7608c9a4d24915c63c8995b4f822a72bb7193761d3e5f558bbb428c0a"
+      "bytes": 1914984,
+      "sha256": "f9b41bd85f95ba114272c9899e4402a391cb7b2a6da7d34a776f3405eb423d5f"
     },
     {
       "path": "public/band/bicep-glue/arrangement.json",
