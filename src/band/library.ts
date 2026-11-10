@@ -40,6 +40,9 @@ export const BAND_SONGS:BandSong[]=[
   {id:"country-roads",name:"Country Roads · 3:15 · one voice & score",arrangementUrl:BASE_PATH+"band/country-roads/arrangement.json?v=melody-3",arrangement:{
     title:"Take Me Home, Country Roads",description:"The full song, with one robotic singer over the original instrumental music and a scrolling melody and pitch graph.",bpm:82,duration:195.8504375,presentation:"solo-roll",parts:[],sections:[],
   }},
+  {id:"blue-moon",name:"Blue Moon — Frank Sinatra · 2:52 · robotic singer",arrangementUrl:BASE_PATH+"band/blue-moon/arrangement.json?v=phonetic-mouth-20261110",arrangement:{
+    title:"Blue Moon · Frank Sinatra",description:"The full Sinatra recording’s orchestral music with one robotic mouth singing the words, following his swing timing, held notes and phrasing.",bpm:120,duration:172.23573696145124,presentation:"backed-solo",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */

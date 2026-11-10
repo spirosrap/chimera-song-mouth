@@ -54,7 +54,7 @@ test('the second Greek song adds a backed singer and hand without replacing exis
 
 
 test('Rodehihi adds a full backed Greek singer while keeping all previous songs',async()=>{
- const song=BAND_SONGS[9];expect(BAND_SONGS).toHaveLength(12);
+ const song=BAND_SONGS[9];expect(BAND_SONGS).toHaveLength(13);
  expect(song.id).toBe('rodehihi-den-xanakano-fylaki');expect(song.arrangement.presentation).toBe('backed-solo');
  expect(song.arrangement.duration).toBeGreaterThan(192);expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
  expect(BAND_SONGS[8].id).toBe('ta-paidia-tou-peiraia');
@@ -64,7 +64,7 @@ test('Rodehihi adds a full backed Greek singer while keeping all previous songs'
 
 test('Country Roads adds one singer and a score view after the complete existing library',async()=>{
  const song=BAND_SONGS.find(s=>s.id==='country-roads')!;
- expect(BAND_SONGS.at(-1)).toBe(song);expect(BAND_SONGS.at(-2)!.id).toBe('small-hours');
+ expect(BAND_SONGS[11]).toBe(song);expect(BAND_SONGS[10].id).toBe('small-hours');
  expect(song.arrangement.presentation).toBe('solo-roll');expect(song.arrangement.duration).toBeGreaterThan(195);
  const score={...song.arrangement,parts:[{...DEFAULT_BAND.arrangement.parts[0]}]};
  expect((await loadBandArrangement(song,request(score))).parts).toHaveLength(1);

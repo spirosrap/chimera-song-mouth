@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 228 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 233 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -18,6 +18,7 @@ Every prepared media file below is tracked in this repository. All 228 public fi
 | Rodehihi — Δεν ξανακάνω φυλακή | 3:12 | `?song=rodehihi-den-xanakano-fylaki` | Robotic Greek singer following the source phrasing, original instrumental backing and complete ending |
 | Small Hours | 3:31 | `?song=small-hours` | Original wordless electronic piece for twelve mouths |
 | Country Roads | 3:15 | `?song=country-roads` | One robotic singer, original instrumental backing and synchronized melody graph |
+| Blue Moon — Frank Sinatra | 2:52 | `?song=blue-moon` | One physical mouth singing a timed phonetic score, original orchestral backing and synchronized captions |
 
 Each song’s `public/band/<id>/` directory contains the prepared score, MP3 channels and compressed mouth telemetry as applicable. Non-voice channels such as the instrumental backing and finger clicks do not need telemetry. Credits accompany the adapted content. Small Hours has no source recording: its score is written in `src/band/smallHours.ts`, and `bun tools/render-band-song.ts small-hours` (needs ffmpeg; about seven minutes on 16 cores) rebuilds its twelve channels and telemetry from the engine. The original full-lyrics Mr. Sandman version was declined and is not in the app; Night Train Radio is the accepted new-lyrics version.
 
@@ -36,6 +37,10 @@ for the source timing, preserved recording and regeneration instructions.
 Glue keeps its vocal and every instrument synthesized by the mouths, as selected
 by the user. See [the Glue arrangement notes](docs/glue-arrangement.md) for the
 connected vocal, stable pitch lanes and separate kick/clap parts.
+
+Blue Moon uses the same prepared phonetic singing path as Country Roads.
+Its lead and animation come from the physical engine; its original orchestral
+backing stays on the recording’s clock. See [the song notes](docs/blue-moon.md).
 
 ## Movie scenes and speeches
 

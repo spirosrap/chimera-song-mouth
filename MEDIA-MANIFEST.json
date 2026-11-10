@@ -307,6 +307,31 @@
       "sha256": "0f6124a036ccb58dec6cf6ced8994d785e2c1be96b4824519424092aa2116243"
     },
     {
+      "path": "public/band/blue-moon/arrangement.json",
+      "bytes": 147965,
+      "sha256": "0a8f3f8484ad64f4e4dc4579ef332431a9f71d28387ff9a5715ffae21a6f43eb"
+    },
+    {
+      "path": "public/band/blue-moon/backing.mp3",
+      "bytes": 5513516,
+      "sha256": "babc89c80b46fd6b6a405e53a60d79066969216ec1a4e2a3ea039c6dda9b03cf"
+    },
+    {
+      "path": "public/band/blue-moon/credits.txt",
+      "bytes": 760,
+      "sha256": "1dcf6af81edecef45fafd5556764971f7458f78c4d89fda76f21a187c93fdd96"
+    },
+    {
+      "path": "public/band/blue-moon/lead.mp3",
+      "bytes": 3445964,
+      "sha256": "915c841de9b8b3c9af15ec25939e07e1b01c2d627b304118d3f523c2d78e1e8e"
+    },
+    {
+      "path": "public/band/blue-moon/lead.tele.gz",
+      "bytes": 1503542,
+      "sha256": "86eaee8b5a35703b773e94f80f0e48b32c1042228874353aa106015165273d78"
+    },
+    {
       "path": "public/band/country-roads/arrangement.json",
       "bytes": 198138,
       "sha256": "4972830dd0854de7193bcbc8de59dcb8c266d43d3794081e9eea617005335c9e"
