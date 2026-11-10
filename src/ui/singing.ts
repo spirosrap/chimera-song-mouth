@@ -243,6 +243,21 @@ let demoRun: DemoRun | null = null;
 /** bumped by every stop: a demo still waiting for audio or the dictionary then gives up */
 let demoToken = 0;
 let cancelRender:(()=>void)|null=null;
+/**
+ * The player's own lyrics and cursor while a demo shows the song's words: given back when the
+ * demo ends or stops, so a demo never costs anyone the words they typed.
+ */
+let ownWords: { lyrics: string; cursor: number } | null = null;
+
+/** `elapsed` is what the song clock shows afterwards: 0 when stopped, the song's length when it ran out. */
+function endDemo(elapsed: number): void {
+  demoRun = null;
+  const w = ownWords;
+  ownWords = null;
+  if (!w) return void useSing.setState({ demo: null, demoAt: -1, elapsed });
+  const syllables = lyricsToSyllables(w.lyrics);
+  useSing.setState({ demo: null, demoAt: -1, elapsed, lyrics: w.lyrics, syllables, cursor: Math.min(w.cursor, Math.max(0, syllables.length - 1)) });
+}
 
 engine.onPlanned((m) => {
   const d = demoRun;
@@ -254,7 +269,10 @@ engine.onPlanned((m) => {
   })));
 });
 
-/** Sing a demo song (after `ready`, e.g. audio startup, resolves; unless stopped meanwhile). */
+/**
+ * Sing a demo song (after `ready`, e.g. audio startup, resolves; unless stopped meanwhile). The
+ * lyrics show the song's words while it plays; the player's own come back when it ends or stops.
+ */
 export async function playDemo(name: string, body: BodyMix, ready?: () => Promise<void>): Promise<void> {
   const song = DEMO_SONGS.find((s) => s.name === name);
   if (!song) return;
@@ -285,6 +303,8 @@ export async function playDemo(name: string, body: BodyMix, ready?: () => Promis
   notes.forEach((n, i) => parent.push(n.syl.melisma && i > 0 ? parent[i - 1] : i));
   const shown = parent.map((p) => written(notes[p].syl));
   demoRun = { id, times, midi: notes.map((n) => n.midi), text: notes.map((n) => n.syl.text), shown, parent, end: plan.end, offset: null };
+  const s = useSing.getState();
+  ownWords ??= { lyrics: s.lyrics, cursor: s.cursor };
   useSing.setState({ lyrics: song.lyrics, syllables: syl, cursor: 0, demo: song.name, demoAt: -1, elapsed: 0, duration: plan.end });
 }
 
@@ -335,12 +355,11 @@ function stopDemo(): void {
   }
   const d = demoRun;
   if (!d) return;
-  demoRun = null;
   engine.stopSpeech();
   // notes not yet sung leave the roll; the one sounding ends now
   roll.notes = roll.notes.filter((n) => !(n.demo && n.t0 > t));
   for (const n of roll.notes) if (n.demo && n.t1 !== null && n.t1 > t) n.t1 = t;
-  useSing.setState({ demo: null, demoAt: -1, elapsed: 0 });
+  endDemo(0);
 }
 
 /** Called every frame while Sing mode is shown: follow the demo's progress. */
@@ -349,11 +368,7 @@ export function tickSinging(): void {
   if (!d || d.offset === null) return;
   const t = now() - d.offset;
   if(roll.notes[0] && (roll.notes[0].t1 ?? now()) < now()-60) roll.notes=roll.notes.filter(n=>(n.t1??now())>=now()-60);
-  if (t > d.end + 0.4) {
-    demoRun = null;
-    useSing.setState({ demo: null, demoAt: -1, elapsed: d.end });
-    return;
-  }
+  if (t > d.end + 0.4) return endDemo(d.end);
   let k = -1;
   while (k + 1 < d.times.length && d.times[k + 1][0] <= t) k++;
   const elapsed=Math.floor(Math.max(0,Math.min(d.end,t))*10)/10;
