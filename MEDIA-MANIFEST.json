@@ -393,253 +393,253 @@
     },
     {
       "path": "public/band/megalovania/arrangement.json",
-      "bytes": 253776,
-      "sha256": "dac790cf92f5f6ca948121a60e25e77fdd7ce35a6aec77d4f12d67989bd574f2"
+      "bytes": 157474,
+      "sha256": "b472072fa81b059bea678fa5b48f987af8a83f1b9eecbf1db9bedc9cc8c91e35"
     },
     {
       "path": "public/band/megalovania/credits.txt",
-      "bytes": 417,
-      "sha256": "b22774909b0066116082dc420c84fa297db77a4dea3e999ae91a735f7d83e34a"
+      "bytes": 1200,
+      "sha256": "0bac2c53dcd4d2ff49ada19cba63bbf6347f923041def9b7cf679d7257afc674"
     },
     {
       "path": "public/band/megalovania/voice-01.mp3",
-      "bytes": 1884716,
-      "sha256": "c5eea4f15e9de7a1952fa44288f473ba3a8b2b08e27ccbdba78ab4e807b7f000"
+      "bytes": 1883564,
+      "sha256": "a2af133a65c31668de3060071ea78d471f9327149cb0e4ac215545cdc25d8b39"
     },
     {
       "path": "public/band/megalovania/voice-01.tele.gz",
-      "bytes": 894115,
-      "sha256": "9ae7d6eb9aaa0226b1e313e6fc7f9e6909a1adf9ca34acf4b2cd9af94ee4f332"
+      "bytes": 690578,
+      "sha256": "c82d1027c0404ae1778b849092fe21cb488d967a1856ff852439ee0061240a9f"
     },
     {
       "path": "public/band/megalovania/voice-02.mp3",
-      "bytes": 1884716,
-      "sha256": "29ae9078847902ff03fd8c371f85df9b99b70d7f34c299404550e3835da17c37"
+      "bytes": 1880684,
+      "sha256": "cd8ad7c4a1efeddcbcba6e01ac9ad467d99eb96fa8eb1276d99037b4079f80b3"
     },
     {
       "path": "public/band/megalovania/voice-02.tele.gz",
-      "bytes": 424528,
-      "sha256": "b26bbf83312bf28810af7fb85de25bffbd57d32b50c744edf8246c02d749846b"
+      "bytes": 236265,
+      "sha256": "1a880f34a510356ec57aa595b40ac446fb8d6fa8f87280728154411045f469b9"
     },
     {
       "path": "public/band/megalovania/voice-03.mp3",
-      "bytes": 1884716,
-      "sha256": "525a3496432697182d6cd0181e1eeee9a95ddb0a742e052027dba46b11e8a1ec"
+      "bytes": 1355660,
+      "sha256": "af51a905d3b2e9581489e79b8045ee818112eab358811a4f82c458954ca4dca8"
     },
     {
       "path": "public/band/megalovania/voice-03.tele.gz",
-      "bytes": 445149,
-      "sha256": "33f501fb07b469284946fac9f8e3a860e2bb31d8542a508cdb0a9a840e9c0222"
+      "bytes": 75574,
+      "sha256": "52cc972e1877918861325d17f0f84f97861fbcd22e7767aa5d26f99fcf7a396f"
     },
     {
       "path": "public/band/megalovania/voice-04.mp3",
-      "bytes": 1884716,
-      "sha256": "77ce0797ef49e450a50715f89f2876cf9914a9882fd42d8c4457f0e0c108781d"
+      "bytes": 1258892,
+      "sha256": "b83ab3fa32039b17d7ba4b7d2ea04720816fafb87f1f89f27020495bf15bf291"
     },
     {
       "path": "public/band/megalovania/voice-04.tele.gz",
-      "bytes": 433864,
-      "sha256": "b900fc4de9a3deb83394d19c0139486dd0fc67ac7e2ec9dfedcf9ba63d92ceaa"
+      "bytes": 47364,
+      "sha256": "737aa3103448152f11c5af03ac8f9f28cfc59924e3224438a270380f29376eb5"
     },
     {
       "path": "public/band/megalovania/voice-05.mp3",
-      "bytes": 1740428,
-      "sha256": "b42f70c9bb8ada5d72eda0a18d993b5d702cb7de3c8fac2f9fcb02021eb9389b"
+      "bytes": 586988,
+      "sha256": "bc0ef44ce245ed2686e204aaf56224fc1545b573d4d507c2922f6e685221aba7"
     },
     {
       "path": "public/band/megalovania/voice-05.tele.gz",
-      "bytes": 1335922,
-      "sha256": "5080c36fa02f9580223853173634d9efb029a01d70d49d0d82619477c9d3c3c0"
+      "bytes": 200856,
+      "sha256": "274567b6f6f90b85c239c399672befd3da2f671e817b93b11b9f7df39daa1798"
     },
     {
       "path": "public/band/megalovania/voice-06.mp3",
-      "bytes": 1740428,
-      "sha256": "0a03b32f641d841e030b533bf0d7c8cac9966c4ba0e8654bc8d6312750e2fb65"
+      "bytes": 586988,
+      "sha256": "b7b7c442ef6751b1a219338eb10d7365ce203ec7d88fa55c995a9d1b07aec03e"
     },
     {
       "path": "public/band/megalovania/voice-06.tele.gz",
-      "bytes": 1248183,
-      "sha256": "86f3115c0e22bc738eb0dfd7dfef2b8e1eb3612a8940ac779181d01bb697701f"
+      "bytes": 94231,
+      "sha256": "90b319c7d4212e18b335dd86548580f635406c5906b0ef8e0263bf0f9ca350cd"
     },
     {
       "path": "public/band/megalovania/voice-07.mp3",
-      "bytes": 1740428,
-      "sha256": "faca97eb157efb2f9f1389f6bd5486e371672591a2c47ca0663cb850b33995ac"
+      "bytes": 374444,
+      "sha256": "6c5aacece63ecf1cb2681f13f820a42a15049cf86f43138dcb81f942d4413e04"
     },
     {
       "path": "public/band/megalovania/voice-07.tele.gz",
-      "bytes": 1334010,
-      "sha256": "7627b7a04eba0476d8e3528cc930dfd593f44bac7ea908e1f4f574e8ff88f136"
+      "bytes": 70818,
+      "sha256": "c8d9387b1e0625bf8b29dbb8c3de74bd3fa6aa614d0e8c7c134b2da5629133c3"
     },
     {
       "path": "public/band/megalovania/voice-08.mp3",
-      "bytes": 588428,
-      "sha256": "3a3c9f99eaea1202baa0e62043174bdc2ca266f0cf7871434e048b0bd528b8a6"
+      "bytes": 1355660,
+      "sha256": "9b7a5f2968a3e949d5db8fac2efb0601791a99f56567a09511713ebbf436145a"
     },
     {
       "path": "public/band/megalovania/voice-08.tele.gz",
-      "bytes": 274956,
-      "sha256": "2d30a4f8149117d921109c6242249186b1c46148493480d3e0ec0af89cc56e12"
+      "bytes": 609521,
+      "sha256": "c43894c464c6044617ba3bffd70ca761acbaac6d835d3444a3f2c904fd1d778e"
     },
     {
       "path": "public/band/megalovania/voice-09.mp3",
-      "bytes": 1261772,
-      "sha256": "747863540467a0f098092123e746a862e35218aabdfbb609b4a6955cb11936d0"
+      "bytes": 971468,
+      "sha256": "65b6ea9c5532f7fcc3434cb81852b3e02ca29791c24d5d7235e2e4bf95134c2a"
     },
     {
       "path": "public/band/megalovania/voice-09.tele.gz",
-      "bytes": 275188,
-      "sha256": "c12f92df000c75af8ee0d1a8aff104afe4457a63a3e37bfbcc25e2d18dda19f5"
+      "bytes": 313546,
+      "sha256": "e2c3b16cd668078c1a3d2678a739351f770a5d9b1ab7d4a71e3324f4a3a6fd80"
     },
     {
       "path": "public/band/megalovania/voice-10.mp3",
-      "bytes": 1258316,
-      "sha256": "66abb0104956cefc96a1bf3c68d1d666d7b827c693ffe012ea6f2b25c4023c99"
+      "bytes": 971468,
+      "sha256": "2c556bd741dab343b2727cbd022f3eb2416148c2ee1eb354a6040dbbde92067d"
     },
     {
       "path": "public/band/megalovania/voice-10.tele.gz",
-      "bytes": 116090,
-      "sha256": "19605d6a87a0c71d4f29258bf875b456b47ce7509241f512f6ea2c3d721ef665"
+      "bytes": 521167,
+      "sha256": "8cb92b33b3014a8676c9692884a6a9244bb7556b3b951c5b71b10999390b1393"
     },
     {
       "path": "public/band/megalovania/voice-11.mp3",
-      "bytes": 492236,
-      "sha256": "b56add4fb83eafbe343bf5caa20295725db76f4042be61023365a0367b9433b3"
+      "bytes": 1355660,
+      "sha256": "66b572c4241b9366d3f8999658170ca7f8adbba1397b4172f40226a679ea54a8"
     },
     {
       "path": "public/band/megalovania/voice-11.tele.gz",
-      "bytes": 23540,
-      "sha256": "ccdf48edb8bcc909093afc482a94fda4c9271e5e15ebb2d9e851ddb74120150c"
+      "bytes": 1029705,
+      "sha256": "8eb451956de1d8f2d6e1a6bd6bbf5008b2e8f17e051d23704fd750c3137d9554"
     },
     {
       "path": "public/band/megalovania/voice-12.mp3",
-      "bytes": 492236,
-      "sha256": "4dd08eefc74e04ff0fba05ecfbd85869f68a86c2fdc2cdf4cef16fc32563a6e9"
+      "bytes": 1355660,
+      "sha256": "1f284bdb862352a0d2076c56a16f5016db4d99563df3dd56effaa06c341c0429"
     },
     {
       "path": "public/band/megalovania/voice-12.tele.gz",
-      "bytes": 24300,
-      "sha256": "d9b866442a3b37fc344674b5e054556d05f87e99e96d12b908afe35bc0caf199"
+      "bytes": 313368,
+      "sha256": "4c8bcc207b25ed29d3c5bd902d2138fa9271c5b77beafeb441ca97cc050a2b4b"
     },
     {
       "path": "public/band/megalovania/voice-13.mp3",
-      "bytes": 492236,
-      "sha256": "41b6d5e14a2ce023271d0f7bd19ab27ebb6fc3c2a00c8070a6190fcb0047b9b7"
+      "bytes": 1355660,
+      "sha256": "af51a905d3b2e9581489e79b8045ee818112eab358811a4f82c458954ca4dca8"
     },
     {
       "path": "public/band/megalovania/voice-13.tele.gz",
-      "bytes": 24511,
-      "sha256": "d101b5ec5013c6fcd2f8700f00c2ce7dd631eaed45a6067c1bf47d04d2feae1b"
+      "bytes": 75574,
+      "sha256": "52cc972e1877918861325d17f0f84f97861fbcd22e7767aa5d26f99fcf7a396f"
     },
     {
       "path": "public/band/megalovania/voice-14.mp3",
-      "bytes": 959660,
-      "sha256": "295809654eec2c04b201b89b2dd128490afd4d42aba4a2d956ebcdec03c74a69"
+      "bytes": 1739564,
+      "sha256": "b84cf8076317834dc2acac37c396ddd07005372bafe996666e56d53a91c3d13b"
     },
     {
       "path": "public/band/megalovania/voice-14.tele.gz",
-      "bytes": 333242,
-      "sha256": "97f7b679c76c235b69409bb8723d31a702fa9c7f4c426347644c7953f84d0eca"
+      "bytes": 1372767,
+      "sha256": "7c46153ed5c9cb9a8b0b90fc76c3a1fbcdb98977e9a72ddfdc8da405ad8c03d9"
     },
     {
       "path": "public/band/megalovania/voice-15.mp3",
-      "bytes": 971468,
-      "sha256": "bfef46ad9ec5bcfdc71dfa629f600ea94351ddbd47ef89e1c305396c78d34935"
+      "bytes": 1355660,
+      "sha256": "def7b73109b5557eb5fc042721bde33094861b1bdea358c642bce9db6441d427"
     },
     {
       "path": "public/band/megalovania/voice-15.tele.gz",
-      "bytes": 203228,
-      "sha256": "07403cce0c83d28c5bb9c527e91ab8c9947b60f326ae1f2871162d4c8728c586"
+      "bytes": 662177,
+      "sha256": "944cd380ece060cd81cf918380cef9b68c0f3ba865871036f8d49da978839f98"
     },
     {
       "path": "public/band/megalovania/voice-16.mp3",
-      "bytes": 1295468,
-      "sha256": "b636fb04cda516eea46e09519ea9aaec90eba277ff81e5ac5ce1c548d748f27e"
+      "bytes": 1355660,
+      "sha256": "c5476c1ebc65b25064d1624fc5f311cdc2b8d958ec9bccfb582f59c02404ca54"
     },
     {
       "path": "public/band/megalovania/voice-16.tele.gz",
-      "bytes": 273020,
-      "sha256": "75e7eaebe7e93fcd609b71716d48f38ac9638d9ab0f343988aee137bb6c72612"
+      "bytes": 925282,
+      "sha256": "f6545802899886483f08a9bb3b59a089b6bcb2fd7192cd33da5e19ae0ab103bb"
     },
     {
       "path": "public/band/megalovania/voice-17.mp3",
-      "bytes": 1295468,
-      "sha256": "7d848e4809b794f595c86fe36247ef6f658a92b384fc03b30671efd31613f8cc"
+      "bytes": 1355660,
+      "sha256": "9a8568a83efd378cbf4d6a0c5a4fff2748d350d0451fb4bcbbdb30fcb86065a1"
     },
     {
       "path": "public/band/megalovania/voice-17.tele.gz",
-      "bytes": 285859,
-      "sha256": "b4d3ee1aa22e1520e51a5abf6b8b19e449bdece22f4929f68aa7ef150d59aecf"
+      "bytes": 982215,
+      "sha256": "e10b5d8c790e13994c37719a0c92bec07ca5fc2cc7043d470f659fbaca0f5f6e"
     },
     {
       "path": "public/band/megalovania/voice-18.mp3",
-      "bytes": 1355948,
-      "sha256": "829f4c3574859b9cf49ebb71a19619bf6bb391a203bf17818aa5567cbb9bb881"
+      "bytes": 1355660,
+      "sha256": "bb4a699504ecbd663276871198bbe4af4f2c967889dcea453ea232d65455b2ad"
     },
     {
       "path": "public/band/megalovania/voice-18.tele.gz",
-      "bytes": 218073,
-      "sha256": "511587bc7661473cfb75d5b6622a8b65f4ec0eeb20fb4640955d416cde0ec7f1"
+      "bytes": 339413,
+      "sha256": "8cc72c4c68414ce235e555c4b357b399314d6b91398081550dadf867fd76f186"
     },
     {
       "path": "public/band/megalovania/voice-19.mp3",
-      "bytes": 1355948,
-      "sha256": "f7bd8bdf778ece925f95dde7c3dd8999ed725e766c6e1228b19a6d772d4baba5"
+      "bytes": 1355660,
+      "sha256": "3490de53e4ed7034cb42a222c367da976179ec8381f80017b9891828a15d0b4d"
     },
     {
       "path": "public/band/megalovania/voice-19.tele.gz",
-      "bytes": 206784,
-      "sha256": "0a7e6a28d396f1349340ab99bcd8266af98fb33dc45b4ad38db661db8ac593f0"
+      "bytes": 610192,
+      "sha256": "f6d9a76cd5977f4eea6fbfb9ce7e8ee0839d2a1196c2a3afb226e1a15bb763c9"
     },
     {
       "path": "public/band/megalovania/voice-20.mp3",
-      "bytes": 1726028,
-      "sha256": "8c5476daf58fd67f34766168a41964bf7117e4690e7ea3b42b21f86c1abd315f"
+      "bytes": 1355660,
+      "sha256": "8c151a40c6ad34720219961c5bd09f6790024b65994d30317b4118fc7a4cc064"
     },
     {
       "path": "public/band/megalovania/voice-20.tele.gz",
-      "bytes": 653141,
-      "sha256": "d54012fadb55bfcd3c68d3b8b507fb70af2ddf86b1708d55248cb312bea50942"
+      "bytes": 64879,
+      "sha256": "7645514565efeb92c342af74a03fc53be4bc8db6048f5057718a31284544e9cd"
     },
     {
       "path": "public/band/megalovania/voice-21.mp3",
-      "bytes": 1741580,
-      "sha256": "30dcf3152c216c74c548709893ad41f83236f43a42ae49019974331b5f6c03da"
+      "bytes": 491660,
+      "sha256": "9fc06bd6b3ba739dd93e30e4fc3497f33d8ae3d23d273d25a90c631cc52f62f2"
     },
     {
       "path": "public/band/megalovania/voice-21.tele.gz",
-      "bytes": 1001328,
-      "sha256": "8d3ed9c11e117cb3477035bbf5c5481000c06d474dd202389c9454ec091955c8"
+      "bytes": 22570,
+      "sha256": "02d37211705a25510eb38933e5c6861bd5144c29af93b36911d70216e5884195"
     },
     {
       "path": "public/band/megalovania/voice-22.mp3",
-      "bytes": 1742732,
-      "sha256": "c4abcecf2f9cd0d3afe7e7ebe3da98646be2f2fa0152c9d381baf5851a51c68f"
+      "bytes": 374444,
+      "sha256": "6c5aacece63ecf1cb2681f13f820a42a15049cf86f43138dcb81f942d4413e04"
     },
     {
       "path": "public/band/megalovania/voice-22.tele.gz",
-      "bytes": 1156103,
-      "sha256": "96566e4e20ad56a5a1ff2736cf11855655041671cd07f4895782adf629d3102a"
+      "bytes": 70818,
+      "sha256": "c8d9387b1e0625bf8b29dbb8c3de74bd3fa6aa614d0e8c7c134b2da5629133c3"
     },
     {
       "path": "public/band/megalovania/voice-23.mp3",
-      "bytes": 1741580,
-      "sha256": "5231443dccf257afdeb598ac2a8c80cbb44f3c9f434c6e9d391d8bd6d1f5fa9e"
+      "bytes": 1355660,
+      "sha256": "a911c31ac170db2621ddf06de0491b2a4249d1432192e40eff0e9934c5617fc2"
     },
     {
       "path": "public/band/megalovania/voice-23.tele.gz",
-      "bytes": 1011649,
-      "sha256": "74ca032eec2b85782d65e75cfe313a33f075610a5b40965a1742329b13415e51"
+      "bytes": 71496,
+      "sha256": "1ecd4ab982bba2759a7010d37152c924b71955229029c6de038a44775dfaecc4"
     },
     {
       "path": "public/band/megalovania/voice-24.mp3",
-      "bytes": 1742732,
-      "sha256": "4a628fccb1608ec2e30ce8628bbb7095c7fd80d21d504e928f3d094763bcd6f3"
+      "bytes": 1355660,
+      "sha256": "a911c31ac170db2621ddf06de0491b2a4249d1432192e40eff0e9934c5617fc2"
     },
     {
       "path": "public/band/megalovania/voice-24.tele.gz",
-      "bytes": 919704,
-      "sha256": "274ece84222e0a4be537bc4fef0e2b8cda1ce9eed71284dd6460ad928bd3fdfc"
+      "bytes": 71496,
+      "sha256": "1ecd4ab982bba2759a7010d37152c924b71955229029c6de038a44775dfaecc4"
     },
     {
       "path": "public/band/neon-current/answer.mp3",

@@ -42,7 +42,7 @@ export interface BandPart {
   beats?: BeatHit[];
   speech?: SpokenLine[];
   vibrato?: number;
-  voice?: { breathiness?: number; brightness?: number; tension?: number; voiced?: boolean };
+  voice?: { breathiness?: number; brightness?: number; tension?: number; voiced?: boolean; pressure?: number; drift?: number };
   effects?: VocalEffects;
 }
 export interface Arrangement {
@@ -53,6 +53,8 @@ export interface Arrangement {
   parts: BandPart[];
   sections: {name: string; time: number}[];
   wordless?: boolean;
+  /** Show scat syllables at the lips even when the song has no lyric text. */
+  showSyllables?: boolean;
   presentation?: "quartet" | "backed-solo" | "ensemble" | "solo-roll";
   spotlights?: {time:number;partId:string}[];
   captions?: {time:number;end:number;text:string}[];

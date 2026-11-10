@@ -1,6 +1,17 @@
 MEGALOVANIA — Toby Fox, Undertale.
-Full MIDI transcription: fakt13. Please credit if used!
-Source: https://www.vgmusic.com/file/3e64559c315f11156bf8f8d5ccad635c.html
-MIDI: https://www.vgmusic.com/music/computer/microsoft/windows/megalovania_by_fakt13.mid
-Wordless 24-mouth adaptation: CHIMERA. Register changes for vocal range.
-This is a full fan arrangement; the exact MIDI used by the reference video is unknown.
+MIDI transcription: MIDIlovania by Radixán.
+Author: https://soundcloud.com/radixan/midilovania-undertale-megalovania
+Source: https://www.vgmusic.com/file/c34b241fbbe60516bca9773fc98df333.html
+MIDI: https://www.vgmusic.com/new-files/MIDIlovania.mid
+Source SHA-256: 7b307071cddf8f781daefe5b705b48ef74a64b9db7dd3eec3e947e6861892123
+Wordless 24-mouth adaptation: CHIMERA, revised 2026-11-10.
+Follows the supplied 24-mouth reference's track labels, male/female/child singers,
+octave controls and DA/DUM/OOH syllables. This MIDI matches the visible track
+structure; the original post does not identify its source file explicitly.
+All 3,239 unique pitched notes are retained. Sixteen duplicate unisons are merged;
+17 note tails are shortened by at most 15.625 ms to avoid spurious extra singers.
+Drum Kit is omitted, as in the reference's 24 pitched-mouth layout.
+Vocal phrasing carries the vowel through 44 ornaments and connects 1,435 short
+MIDI gate gaps (at most 140 ms) without moving any pitch or attack. Longer rests
+are retained. The voices use CHIMERA's softer default voice color.
+No recorded instruments or reference-video audio are used in the performance.

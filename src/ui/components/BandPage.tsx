@@ -159,7 +159,7 @@ export function BandPage(){
       {stale&&!busy&&<div className="band-status"><span>Your selected parts are ready to render. This can take a few minutes for a long song.</span><button className="primary" onClick={render}>Render selected voices ({selected.length})</button></div>}
       {loaded&&mixer&&<div className={`band-heads${quartet?" band-quartet":""}${backed?" band-backed-solo":""}${hasHand?" band-with-hand":""}${ensemble?" band-ensemble":""}${soloRoll?" band-solo-roll":""}${folkSinger?" band-folk-singer":""}`} style={quartet?{"--quartet-columns":loaded.parts.map(p=>`minmax(0,${p.id===featured?1.65:1}fr)`).join(" ")} as CSSProperties:undefined}>
         {loaded.parts.map((part,i)=>part.kind==="backing"?null:<div className={`band-channel${quartet?(part.id===featured?" quartet-featured":""):(!folkSinger&&!soloRoll&&!ensemble&&!hasHand&&part.id==="lead"?" band-lead":"")}`} key={`${version}:${part.id}`}>
-          <>{part.kind==="hand"?<SnapHand part={part} mixer={mixer} index={i}/>:folkSinger&&part.id==="lead"?<FolkSinger part={part} caption={songCaption(arrangement,time)} track={loaded.tracks[i]!} mixer={mixer} index={i} bpm={arrangement.bpm}/>:<BandHead part={part} track={loaded.tracks[i]!} mixer={mixer} index={i} bpm={arrangement.bpm} wordless={arrangement.wordless} quartet={quartet} ensemble={ensemble}/>}</>
+          <>{part.kind==="hand"?<SnapHand part={part} mixer={mixer} index={i}/>:folkSinger&&part.id==="lead"?<FolkSinger part={part} caption={songCaption(arrangement,time)} track={loaded.tracks[i]!} mixer={mixer} index={i} bpm={arrangement.bpm}/>:<BandHead part={part} track={loaded.tracks[i]!} mixer={mixer} index={i} bpm={arrangement.bpm} showWords={!arrangement.wordless||arrangement.showSyllables===true} quartet={quartet} ensemble={ensemble}/>}</>
           <div className="band-channel-controls"><button className={`chip${muted[i]?" on":""}`} aria-pressed={!!muted[i]} onClick={()=>changeMix(i,{mute:!muted[i]})} aria-label={`Mute ${part.name}`}>{ensemble?"Mute":`Mute ${part.name}`}</button><button className={`chip${solo[i]?" on":""}`} aria-pressed={!!solo[i]} aria-label={`Solo ${part.name}`} onClick={()=>changeMix(i,{solo:!solo[i]})}>Solo</button><label>Level <input aria-label={`${part.name} level`} type="range" min={0} max={part.effects?2:1} step={.01} value={part.volume} onChange={e=>changeMix(i,{volume:Number(e.target.value)})}/></label></div>
         </div>)}
         {soloRoll&&loaded.parts.map((part,i)=>isVoicePart(part)&&loaded.tracks[i]&&<PerformanceRoll key={`roll:${version}:${part.id}`} part={part} track={loaded.tracks[i]!} mixer={mixer} duration={displayedDuration}/>)}
@@ -183,12 +183,12 @@ export function BandPage(){
         <button className="primary" disabled={!!busy||selected.length<1||selected.length>MAX_BAND_VOICES} onClick={render}>{soloRoll?"Render singer":`Render selected voices (${selected.length}/${MAX_BAND_VOICES})`}</button>
         </fieldset>
       </details>
-      <p className="band-note">“MEGALOVANIA” by Toby Fox (Undertale) is a full wordless adaptation of fakt13’s MIDI transcription for 19 pitched mouths and five mouth percussionists. The exact MIDI used in the reference video is unknown. “Τα παιδιά του Πειραιά” uses the supplied Μελίνα Μερκούρη recording’s instruments, a synthesized Greek lead and generated finger clicks synchronized to a robotic hand. The original clicks are reduced in the backing. “Συννεφούλα” by Διονύσης Σαββόπουλος uses instrumental audio separated from the supplied recording and a simulated Greek singer. The mouth sings its vocal sections and recreates the original whistle passages with pursed lips. Recorded whistles are reduced in the backing so the mouth performs them. Some original vocal traces may remain in the backing. “Night Train Radio” uses the Mr. Sandman tune (Pat Ballard) with newly written lyrics and a quartet adaptation of F. Montero’s musical-note reference. “Glue” and “Apricots” by BICEP are wordless vocal remakes prepared from supplied recordings. “House of the Rising Sun” uses a traditional folk tune and opening lines, new verse words and a new vocal arrangement. “All Made of Air” and “Neon Current” are original. The other songs use CHIMERA’s simulated airways for every sound; the electronic tracks add effects to the voices. MIDI files stay on your device. To work from MP3 audio, use the <a href="?solo=1">single-mouth player</a>; automatic separation into a full vocal arrangement is not included.</p>
+      <p className="band-note">“MEGALOVANIA” by Toby Fox (Undertale) uses Radixán’s MIDIlovania transcription, arranged for 24 pitched mouths with the singer types, octave settings and scat syllables shown in the supplied reference video. “Τα παιδιά του Πειραιά” uses the supplied Μελίνα Μερκούρη recording’s instruments, a synthesized Greek lead and generated finger clicks synchronized to a robotic hand. The original clicks are reduced in the backing. “Συννεφούλα” by Διονύσης Σαββόπουλος uses instrumental audio separated from the supplied recording and a simulated Greek singer. The mouth sings its vocal sections and recreates the original whistle passages with pursed lips. Recorded whistles are reduced in the backing so the mouth performs them. Some original vocal traces may remain in the backing. “Night Train Radio” uses the Mr. Sandman tune (Pat Ballard) with newly written lyrics and a quartet adaptation of F. Montero’s musical-note reference. “Glue” and “Apricots” by BICEP are wordless vocal remakes prepared from supplied recordings. “House of the Rising Sun” uses a traditional folk tune and opening lines, new verse words and a new vocal arrangement. “All Made of Air” and “Neon Current” are original. The other songs use CHIMERA’s simulated airways for every sound; the electronic tracks add effects to the voices. MIDI files stay on your device. To work from MP3 audio, use the <a href="?solo=1">single-mouth player</a>; automatic separation into a full vocal arrangement is not included.</p>
     </main>
   </div>;
 }
 
-function BandHead({part,track,mixer,index,bpm,wordless,quartet,ensemble}:{part:BandPart;track:TeleTrack;mixer:BandMixer;index:number;bpm:number;wordless?:boolean;quartet?:boolean;ensemble?:boolean}){
+function BandHead({part,track,mixer,index,bpm,showWords,quartet,ensemble}:{part:BandPart;track:TeleTrack;mixer:BandMixer;index:number;bpm:number;showWords:boolean;quartet?:boolean;ensemble?:boolean}){
   const model=useRetainedModel(track.body,track.sampleRate);
   const {feed,overlay}=useMemo(()=>{
     if(!model)return {feed:undefined,overlay:undefined};
@@ -199,13 +199,13 @@ function BandHead({part,track,mixer,index,bpm,wordless,quartet,ensemble}:{part:B
         return {tele:mixer.isPlaying&&mixer.audible(index)?tele:null,artic:VoiceModel.articFromArray(tele.t.artic),epoch:mixer.epoch};
       }};
     const overlay=mouthWords(()=>{
-      if(wordless||part.delivery==="whistle"||!mixer.isPlaying||!mixer.audible(index)||!part.melody)return null;
+      if(!showWords||part.delivery==="whistle"||!mixer.isPlaying||!mixer.audible(index)||!part.melody)return null;
       const time=mixer.time()-.35,k=part.melody.notes.findIndex(n=>time>=n.start&&time<n.start+n.duration);
       const lyric=k>=0?(part.melody.notes[k].lyricIndex??k):-1;
       return k>=0?{key:lyric,text:syllables[lyric%syllables.length]?.text??""}:null;
     },V.green,feed.facing);
     return {feed,overlay};
-  },[model,part.id,track,mixer,index,bpm,wordless,quartet,ensemble]);
+  },[model,part.id,track,mixer,index,bpm,showWords,quartet,ensemble]);
   return <Screen className="band-head" title={part.name} sub={part.role} label={`${part.name} mouth`}>{feed&&<AnatomyView3D feed={feed} overlay={overlay} readouts={false}/>}</Screen>;
 }
 function message(e:unknown):string{return e instanceof Error?e.message:String(e);}

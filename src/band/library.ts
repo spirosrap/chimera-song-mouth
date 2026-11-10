@@ -24,8 +24,8 @@ export const BAND_SONGS:BandSong[]=[
   {id:"synnefoula",name:"Συννεφούλα · singing & original whistle passages",arrangementUrl:BASE_PATH+"band/synnefoula/arrangement.json?v=phrasing-20261110",arrangement:{
     title:"Συννεφούλα · Διονύσης Σαββόπουλος",description:"One mouth sings the Greek vocal sections and whistles the recording's original whistle passages, over the original instrumental backing.",bpm:120,duration:135.43,presentation:"backed-solo",parts:[],sections:[],
   }},
-  {id:"megalovania",name:"MEGALOVANIA · 2:36 · 24 mouths",arrangementUrl:BASE_PATH+"band/megalovania/arrangement.json",arrangement:{
-    title:"MEGALOVANIA · 24 mouths",description:"The full Undertale track, performed by 24 simulated mouths. The riff, layered choir, bass and beatboxing are all voices. No recorded instruments.",bpm:120,duration:157,wordless:true,presentation:"ensemble",parts:[],sections:[],
+  {id:"megalovania",name:"MEGALOVANIA · 2:36 · 24 mouths",arrangementUrl:BASE_PATH+"band/megalovania/arrangement.json?v=reference-20261110",arrangement:{
+    title:"MEGALOVANIA · 24 mouths",description:"The full Undertale track as a 24-mouth vocal orchestra, following the reference video's singers and octaves. Connected DA riffs, DUM pulses and a rounded OOH bass keep the music flowing — every sound comes from a simulated mouth.",bpm:120,duration:156.9,wordless:true,showSyllables:true,presentation:"ensemble",parts:[],sections:[],
   }},
   {id:"bicep-apricots",name:"BICEP — Apricots · 4:09 · 12 mouths",arrangementUrl:BASE_PATH+"band/bicep-apricots/arrangement.json",arrangement:{
     title:"Apricots · BICEP",description:"The full supplied Apricots recording reimagined as a wordless mouth choir, with layered vocal hooks, warm harmonies, bass and beatboxing.",bpm:128,duration:249.412,wordless:true,presentation:"ensemble",parts:[],sections:[],

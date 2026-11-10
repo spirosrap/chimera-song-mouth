@@ -12,7 +12,7 @@ Every prepared media file below is tracked in this repository. All 221 public fi
 | BICEP — Glue | 4:30 | `?song=bicep-glue` | Eight-mouth wordless remake |
 | Night Train Radio | 2:26 | `?song=night-train-quartet` | Mr. Sandman tune; newly written words; quartet |
 | Συννεφούλα | 2:15 | `?song=synnefoula` | Wireframe singer with hat, guitar and microphone; Greek vocals and mouth whistles over original instrumental backing |
-| MEGALOVANIA | 2:37 | `?song=megalovania` | All 24 mouths, including beatboxing |
+| MEGALOVANIA | 2:36 | `?song=megalovania` | 24 pitched mouths following the reference's singers, octaves and DA/DUM/OOH syllables |
 | BICEP — Apricots | 4:09 | `?song=bicep-apricots` | Twelve-mouth wordless remake |
 | Τα παιδιά του Πειραιά | 3:19 | `?song=ta-paidia-tou-peiraia` | Greek robotic singer, instrumental backing and animated finger clicks |
 | Rodehihi — Δεν ξανακάνω φυλακή | 3:12 | `?song=rodehihi-den-xanakano-fylaki` | Robotic Greek singer following the source phrasing, original instrumental backing and complete ending |
@@ -24,6 +24,10 @@ Each song’s `public/band/<id>/` directory contains the prepared score, MP3 cha
 The six other songs with lyrics now use explicit sung phoneme timing following
 the Country Roads refinement. See [the phrasing notes](docs/lyric-song-phrasing.md)
 for the preserved accompaniment, Greek accent and whistle behavior.
+
+MEGALOVANIA now follows Radixán's MIDIlovania score and the supplied video's
+24-mouth settings. See [the arrangement notes](docs/megalovania-reference.md)
+before rebuilding its voices; the older fakt13 arrangement had different parts.
 
 ## Movie scenes
 

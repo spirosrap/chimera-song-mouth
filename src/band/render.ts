@@ -18,7 +18,7 @@ export function renderPart(module:WebAssembly.Module,part:BandPart,duration:numb
   try{
     x.engine_set_body(h,part.body.female,part.body.child);
     const source=new Float64Array(x.memory.buffer,x.engine_values(h),32).fill(NaN);
-    source[2]=9;source[4]=part.voice?.tension??.55;source[8]=5;source[9]=.004;source[10]=part.delivery==="whistle"||part.voice?.voiced===false?0:1;
+    source[2]=part.voice?.pressure??9;source[4]=part.voice?.tension??.55;source[8]=5;source[9]=part.voice?.drift??.004;source[10]=part.delivery==="whistle"||part.voice?.voiced===false?0:1;
     if(part.voice?.breathiness!==undefined)source[3]=part.voice.breathiness;
     if(part.voice?.brightness!==undefined)source[11]=part.voice.brightness;
     if(part.vibrato!==undefined)source[7]=part.vibrato;

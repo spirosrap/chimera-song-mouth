@@ -3,6 +3,7 @@
  *
  *   bun tools/render-band-song.ts small-hours              # every part, one process each; needs ffmpeg
  *   bun tools/render-band-song.ts small-hours --mix x.wav  # also write the stereo mix, for checking
+ *   bun tools/render-band-song.ts megalovania --score public/band/megalovania/arrangement.json
  *
  * Each part is a CHIMERA airway rendered with the same code as the app's own "Render" button,
  * so the prepared files are what the app would produce.
@@ -14,13 +15,19 @@ import {cpus} from 'node:os';
 import {initEngine,wasmModule} from '../tests/harness.ts';
 import {BAND_SONGS} from '../src/band/library.ts';
 import {mixWave} from '../src/band/mixer.ts';
+import {isVoicePart,type Arrangement} from '../src/band/types.ts';
+import {resolve} from 'node:path';
 
 const [id,...flags]=process.argv.slice(2);
 const song=BAND_SONGS.find(s=>s.id===id);
-if(!song||song.arrangementUrl)throw Error(`"${id}" is not a song with a score in src/band/.`);
-const root=new URL('../',import.meta.url).pathname,out=`${root}public/band/${id}/`;
-const {parts,duration}=song.arrangement;
 const flag=(name:string)=>flags.includes(name)?flags[flags.indexOf(name)+1]:undefined;
+const scorePath=flag('--score')?resolve(flag('--score')!):undefined;
+if(!song||song.arrangementUrl&&!scorePath)throw Error(`"${id}" needs an explicit --score path to its prepared arrangement.`);
+const score:Arrangement=scorePath?JSON.parse(readFileSync(scorePath,'utf8')):song.arrangement;
+if(!Number.isFinite(score.duration)||score.duration<=0||!Array.isArray(score.parts)||score.parts.some(p=>!p||!/^[-a-z0-9]+$/.test(p.id))||new Set(score.parts.map(p=>p.id)).size!==score.parts.length)throw Error('The score needs a positive duration and unique, safe part IDs.');
+if(!score.parts.length||!score.parts.every(isVoicePart))throw Error('This renderer requires a voice-only score; recorded backing and finger clicks must be preserved.');
+const root=new URL('../',import.meta.url).pathname,out=`${root}public/band/${id}/`;
+const {parts,duration}=score;
 const raw=(part:string)=>`${out}${part}.f32`;
 
 const only=flag('--part');
@@ -45,12 +52,12 @@ const pending=[...queue];
 await Promise.all(Array.from({length:Math.min(pending.length,Math.max(1,cpus().length-2))},async()=>{
   for(let part=pending.shift();part;part=pending.shift()){
     const partId=part.id,started=Date.now();
-    const code=await new Promise<number>(done=>spawn(process.execPath,[import.meta.path,id,'--part',partId],{stdio:'inherit'}).on('exit',c=>done(c??1)));
+    const code=await new Promise<number>(done=>spawn(process.execPath,[import.meta.path,id,'--part',partId,...(scorePath?['--score',scorePath]:[])],{stdio:'inherit'}).on('exit',c=>done(c??1)));
     if(code!==0)throw Error(`${partId} did not render.`);
     console.log(`${partId} ${((Date.now()-started)/1000).toFixed(0)} s`);
   }
 }));
-writeFileSync(out+'arrangement.json',JSON.stringify(song.arrangement));
+writeFileSync(out+'arrangement.json',JSON.stringify(score));
 const mix=flag('--mix');
 if(mix){
   const samples=parts.map(p=>{const b=readFileSync(raw(p.id));return new Float32Array(b.buffer,b.byteOffset,b.byteLength/4);});
