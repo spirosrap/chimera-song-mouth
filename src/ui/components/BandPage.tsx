@@ -19,6 +19,7 @@ import { V } from "../colors.ts";
 import { lyricsToSyllables } from "../../wasm/engine.ts";
 import { g2p } from "../speech.ts";
 import {featuredVoice,songCaption} from "../../band/presentation.ts";
+import {HomeLink} from "./HomeLink.tsx";
 
 interface LoadedBand { parts: BandPart[]; buffers: AudioBuffer[]; tracks: (TeleTrack|null)[] }
 const INITIAL_SONG=findBandSong(typeof window==="undefined"?null:new URLSearchParams(window.location.search).get("song"));
@@ -147,7 +148,7 @@ export function BandPage(){
         <button className="chip" disabled={!canPlay} onClick={download}>Download WAV</button>
       </div>);
   return <div className={`band-page${soloRoll?" band-performance-page":""}`}>
-    <header className="band-top"><a className="wordmark" href="?band=1">Chimera</a><span className="band-badge">{soloRoll?"SOLO PERFORMANCE":"THE VOCAL BAND"}</span><a className="band-solo" href="?scene=a-few-good-men">Movie scenes ↗</a><a className="band-solo" href="?solo=1">Single-mouth player ↗</a></header>
+    <header className="band-top"><HomeLink/><a className="wordmark" href="?band=1">Chimera</a><span className="band-badge">{soloRoll?"SOLO PERFORMANCE":"THE VOCAL BAND"}</span><a className="band-solo" href="?scene=a-few-good-men">Movie scenes ↗</a><a className="band-solo" href="?solo=1">Single-mouth player ↗</a></header>
     <main>
       <div className="band-intro"><div><p className="band-eyebrow">{backed?"Original music · a new lead":"Every instrument is a voice"}</p><h1>{arrangement.title}</h1><p>{arrangement.description}</p></div>
         <div className="band-choices"><label>Choose a song<select aria-label="Choose a choir song" value={songId} disabled={!!busy} onChange={e=>mixer&&void loadSong(mixer,e.target.value)}>{BAND_SONGS.map(s=><option key={s.id} value={s.id}>{s.name}</option>)}{!songId&&<option value="">Your MIDI arrangement</option>}</select></label><button className="chip" disabled={!!busy} onClick={()=>file.current?.click()}>Import a MIDI arrangement</button><input ref={file} className="song-file" type="file" accept=".mid,.midi" aria-label="Import a band MIDI" onChange={e=>{const f=e.target.files?.[0];e.target.value="";if(f)void importMidi(f);}}/></div>

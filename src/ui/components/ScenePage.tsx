@@ -1,3 +1,4 @@
+import {HomeLink} from "./HomeLink.tsx";
 import {BASE_PATH} from "../../base.ts";
 import {unpackTelemetry} from "../../show/unpackTelemetry.ts";
 import {MOVIE_SCENES,movieScene,type MovieSceneId} from '../../scene/library.ts';
@@ -53,7 +54,7 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
   if(cue)shown.current=cue;
   const quiet=core?shown.current:undefined,quietSpeaker=scene?.characters.find(c=>c.id===quiet?.speaker);
   return <div className={`scene-page${core?' scene-core':''}`}>
-    <header className="scene-top"><a className="wordmark" href="?band=1">Chimera</a><span>MOVIE SCENES</span><a href="?band=1">Back to the songs ↗</a></header>
+    <header className="scene-top"><HomeLink/><a className="wordmark" href="?band=1">Chimera</a><span>MOVIE SCENES</span><a href="?band=1">Back to the songs ↗</a></header>
     <main>
       <nav className="scene-picker" aria-label="Movie scenes">{MOVIE_SCENES.map(m=><a key={m.id} className={`chip${m.id===sceneId?' on':''}`} href={`?scene=${m.id}`} aria-current={m.id===sceneId?'page':undefined}>{m.title}</a>)}</nav>
       <div className="scene-intro"><div><p className="scene-eyebrow">{entry.eyebrow}</p><h1>{entry.title}</h1><p>{entry.description}</p></div><span className="scene-runtime">{formatTime(scene?.duration??0)}<small>FULL SCENE</small></span></div>

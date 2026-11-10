@@ -2923,6 +2923,8 @@ input[type="range"]::-moz-range-thumb {
 .band-top .wordmark { font-family: "Hershey", sans-serif; color: var(--blue); text-decoration: none; }
 .band-badge, .band-eyebrow { color: var(--green); font-size: 10px; letter-spacing: .18em; }
 .band-solo { margin-left: auto; font-size: 12px; color: var(--blue); }
+.home-link { flex-basis: 100%; font-size: 12px; color: var(--blue); text-decoration: none; opacity: .8; }
+.home-link:hover, .home-link:focus-visible { opacity: 1; text-decoration: underline; }
 .band-intro { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin: 28px 0 22px; }
 .band-intro h1 { font-size: clamp(30px,4vw,54px); font-weight: 450; letter-spacing: -.04em; line-height: 1.1; margin: 10px 0; }
 .band-intro p:not(.band-eyebrow) { max-width: 64ch; font-size: 13px; color: #a1b8c8; line-height: 1.7; margin: 0; }
