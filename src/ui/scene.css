@@ -66,3 +66,19 @@
 .scene-caption.quiet > span { color: #b0584b; }
 .scene-caption.quiet p { font-weight: 400; font-size: clamp(13px,1.15vw,16px); letter-spacing: .04em; color: #e9dcd8; }
 @media (prefers-reduced-motion: reduce) { .scene-caption.quiet,.scene-caption.quiet.on { transition: none; } }
+
+/* A wireframe speech stage, matching the original mouth display. */
+.scene-press { color:#eaf7ff; }
+.scene-press .scene-top,.scene-press .scene-transport,.scene-press .scene-cast { border-color:#153e56; }
+.scene-press .scene-top a,.scene-press .scene-eyebrow,.scene-press .scene-transport > span { color:#4fb6f2; }
+.scene-press .scene-top > span,.scene-press .scene-runtime small,.scene-press .scene-options legend,.scene-press .scene-cast span { color:#5be381; }
+.scene-press .scene-intro p:last-child,.scene-press .scene-credit,.scene-press .scene-cast p { color:#a4bdca; }
+.scene-press .scene-film { border-color:#17455e; }
+.scene-press .scene-caption > span { color:#5be381; }
+.scene-press .scene-caption p,.scene-press .scene-cast strong { color:#effbff; }
+.scene-press .primary { background:#102a22; color:#5be381; border-color:#5be381; }
+.scene-press .chip { color:#4fb6f2; border-color:#17455e; }
+.scene-press .chip.on { color:#5be381; border-color:#5be381; background:#10251d; }
+.scene-press .scene-transport input,.scene-press .scene-options input { accent-color:#4fb6f2; }
+.scene-press .scene-cast { grid-template-columns:1fr; }
+.press-stage { background:#000; }

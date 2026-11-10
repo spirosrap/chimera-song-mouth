@@ -4,7 +4,8 @@ import * as THREE from 'three';
 import {headRendererPool} from '../render/sharedHeadRenderer.ts';
 import {Courtroom} from '../render/courtroom.ts';
 import {MemoryCore} from '../render/core.ts';
-import {getModel} from '../useModel.ts';
+import {PressConference} from '../render/pressConference.ts';
+import {acquireModel} from '../useModel.ts';
 import {sceneCamera,sceneCue,type CameraChoice,type SceneFile,type CourtCharacterId} from '../../scene/scene.ts';
 import type {TeleTrack} from '../../show/tele.ts';
 import type {Transport} from '../../show/transport.ts';
@@ -19,8 +20,15 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
     try{const lease=headRendererPool.acquire();gl=lease.renderer;release=lease.release;}catch{setError('The scene needs WebGL. You can still play and download the scene audio.');return;}
     gl.outputColorSpace=THREE.LinearSRGBColorSpace;
     gl.setPixelRatio(Math.min(1.5,window.devicePixelRatio||1));
-    const people=scene.characters.flatMap((c,i)=>c.id==='ross'||c.id==='judge'?[]:[{id:c.id,track:tracks[i],model:getModel(tracks[i].body,tracks[i].sampleRate)}]);
-    const room=scene.setting==='core'
+    const leases:(()=>void)[]=[];
+    const people=scene.characters.flatMap((c,i)=>{
+      if(c.id==='ross'||c.id==='judge')return [];
+      const held=acquireModel(tracks[i].body,tracks[i].sampleRate);leases.push(held.release);
+      return [{id:c.id,track:tracks[i],model:held.model}];
+    });
+    const room=scene.setting==='press'
+      ?new PressConference(people[0].model,people[0].track)
+      :scene.setting==='core'
       ?new MemoryCore(people.flatMap(c=>c.id==='hal'||c.id==='dave'?[{...c,id:c.id}]:[]),scene.duration)
       :scene.setting==='cliffs'
       ?new Cliffs(people.flatMap(c=>c.id==='vizzini'||c.id==='inigo'||c.id==='fezzik'?[{...c,id:c.id}]:[]))
@@ -46,7 +54,7 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
       raf=requestAnimationFrame(frame);if(capturing||!visible||now-last<1000/30)return;last=now;draw(transport.time());
     };
     raf=requestAnimationFrame(frame);
-    return()=>{alive=false;onReady(null);cancelAnimationFrame(raf);observer.disconnect();visibility.disconnect();room.dispose();release();};
+    return()=>{alive=false;onReady(null);cancelAnimationFrame(raf);observer.disconnect();visibility.disconnect();room.dispose();leases.forEach(off=>off());release();};
   },[scene,tracks,transport,onReady]);
-  return <div ref={wrapRef} className={`courtroom-stage${scene.setting==='core'?' core-stage':''}`}>{error?<p role="status">{error}</p>:<canvas ref={canvasRef} role="img" aria-label={scene.setting==='core'?'A dark red memory core. A simulated mouth speaks from the computer’s eye while an astronaut removes glowing modules from the wall, and the room dims.':scene.setting==='cliffs'?'The Cliffs of Insanity with three wireframe characters and a masked climber. Their simulated mouths follow the dialogue.':'A cinematic courtroom with two wireframe characters. The simulated mouths follow the spoken dialogue.'}/>}</div>;
+  return <div ref={wrapRef} className={`courtroom-stage${scene.setting==='core'?' core-stage':scene.setting==='press'?' press-stage':''}`}>{error?<p role="status">{error}</p>:<canvas ref={canvasRef} role="img" aria-label={scene.setting==='press'?'A robotic speaker in a wireframe suit and red tie, behind a lectern with two microphones and an American flag. His mouth, head and hand follow the speech.':scene.setting==='core'?'A dark red memory core. A simulated mouth speaks from the computer’s eye while an astronaut removes glowing modules from the wall, and the room dims.':scene.setting==='cliffs'?'The Cliffs of Insanity with three wireframe characters and a masked climber. Their simulated mouths follow the dialogue.':'A cinematic courtroom with two wireframe characters. The simulated mouths follow the spoken dialogue.'}/>}</div>;
 }

@@ -1,29 +1,30 @@
 export type CourtCharacterId = 'kaffee' | 'jessep';
 export type CliffCharacterId = 'vizzini' | 'inigo' | 'fezzik';
 export type CoreCharacterId = 'hal' | 'dave';
-export type MainCharacterId = CourtCharacterId | CliffCharacterId | CoreCharacterId;
+export type MainCharacterId = CourtCharacterId | CliffCharacterId | CoreCharacterId | 'bush';
 export type CharacterId = MainCharacterId | 'ross' | 'judge';
 export type CameraView = 'wide' | 'climber' | 'modules' | MainCharacterId;
 export type CameraChoice = 'auto' | CameraView;
 export interface SceneCue { start:number; end:number; speaker:CharacterId; text:string; intensity:number }
 export interface SceneShot { time:number; view:CameraView }
-export type SceneSetting='courtroom'|'cliffs'|'core';
+export type SceneSetting='courtroom'|'cliffs'|'core'|'press';
 /** Each film has its own cast and cameras; a score cannot borrow another film's. */
 export const SCENE_SETTINGS:Record<SceneSetting,{cast:CharacterId[];main:CharacterId[];cameras:CameraView[]}>={
   courtroom:{cast:['kaffee','jessep','ross','judge'],main:['kaffee','jessep'],cameras:['wide','kaffee','jessep']},
   cliffs:{cast:['vizzini','inigo','fezzik'],main:['vizzini','inigo','fezzik'],cameras:['wide','climber','vizzini','inigo','fezzik']},
   core:{cast:['hal','dave'],main:['hal','dave'],cameras:['wide','hal','dave','modules']},
+  press:{cast:['bush'],main:['bush'],cameras:['wide','bush']},
 };
 export interface SceneFile {
   setting?:SceneSetting; title:string; description:string; duration:number; audio:string;
   characters:{id:CharacterId;name:string;role:string;tele:string;telemetryEncoding?:'gzip'}[];
   cues:SceneCue[];shots:SceneShot[];
 }
-const character=(id:unknown):id is CharacterId=>id==='kaffee'||id==='jessep'||id==='ross'||id==='judge'||id==='vizzini'||id==='inigo'||id==='fezzik'||id==='hal'||id==='dave';
+const character=(id:unknown):id is CharacterId=>id==='kaffee'||id==='jessep'||id==='ross'||id==='judge'||id==='vizzini'||id==='inigo'||id==='fezzik'||id==='hal'||id==='dave'||id==='bush';
 const file=(name:unknown)=>typeof name==='string'&&/^[a-z0-9-]+\.(mp3|tele)$/.test(name);
 export function validateScene(data:unknown):SceneFile {
   const s=data as SceneFile;
-  if(!s||typeof s.title!=='string'||typeof s.description!=='string'||!Number.isFinite(s.duration)||s.duration<=0||s.duration>600||!file(s.audio)||!s.audio.endsWith('.mp3')||!Array.isArray(s.characters)||s.characters.length<2||s.characters.length>4||!Array.isArray(s.cues)||!s.cues.length||!Array.isArray(s.shots)||!s.shots.length)throw Error('The scene is incomplete. Reload and try again.');
+  if(!s||typeof s.title!=='string'||typeof s.description!=='string'||!Number.isFinite(s.duration)||s.duration<=0||s.duration>600||!file(s.audio)||!s.audio.endsWith('.mp3')||!Array.isArray(s.characters)||s.characters.length<(s.setting==='press'?1:2)||s.characters.length>4||!Array.isArray(s.cues)||!s.cues.length||!Array.isArray(s.shots)||!s.shots.length)throw Error('The scene is incomplete. Reload and try again.');
   if(s.setting!==undefined&&!Object.hasOwn(SCENE_SETTINGS,s.setting))throw Error('The scene setting is invalid.');
   const {cast,main,cameras}=SCENE_SETTINGS[s.setting??'courtroom'];
   const ids=new Set<string>();

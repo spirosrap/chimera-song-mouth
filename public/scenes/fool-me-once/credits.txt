@@ -1,0 +1,7 @@
+George W. Bush, remarks at East Literature Magnet School, Nashville, Tennessee, 17 September 2002.
+Excerpt from an official U.S. presidential speech. Public-domain federal-government text.
+Transcript: https://georgewbush-whitehouse.archives.gov/news/releases/2002/09/20020917-7.html
+Government publication: https://www.govinfo.gov/content/pkg/PPP-2002-book2/pdf/PPP-2002-book2-doc-pg1607.pdf
+CHIMERA generates the entire speech through its physical airway. No original recorded speech or news footage is played or bundled.
+The voice is a robotic reconstruction, not a cloned voice. Timing, gestures, facial appearance and the press-conference set are stylized and approximate.
+Wireframe staging inspired by the user-supplied Jacob Matson press-conference demo; suit, red tie and flag reference the White House event photograph.

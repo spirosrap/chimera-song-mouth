@@ -1067,6 +1067,26 @@
       "sha256": "09d34a031ba5833d5d831c5d937c668c2073faa99397476593732510bdaf4548"
     },
     {
+      "path": "public/scenes/fool-me-once/bush.tele.gz",
+      "bytes": 299158,
+      "sha256": "fa197175849d493690c8d997beac7c6629746042425dd4ca76b021acc57b3b98"
+    },
+    {
+      "path": "public/scenes/fool-me-once/credits.txt",
+      "bytes": 828,
+      "sha256": "305bdac2b27a5ddfb5df6c21c3df0360dfc28788aa059d2f2849672d75ce6096"
+    },
+    {
+      "path": "public/scenes/fool-me-once/mix.mp3",
+      "bytes": 613484,
+      "sha256": "f84495cebf0e0a224ae6cfd40470e552e292b4f3c6e9cf73ae45160365a7ea06"
+    },
+    {
+      "path": "public/scenes/fool-me-once/scene.json",
+      "bytes": 1273,
+      "sha256": "c3d1ad446f7f0c2915eefa543275abb2af467e159e033c970d62c929383afa49"
+    },
+    {
       "path": "public/scenes/hal-9000/credits.txt",
       "bytes": 494,
       "sha256": "7faa7c3c86642899f0e9eae00c6cf51e4b17c83bdd6949ae67b92556b52d5a20"

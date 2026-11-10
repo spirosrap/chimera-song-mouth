@@ -50,14 +50,14 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
   useEffect(()=>{if(!transport)return;const off=transport.subscribe(()=>tick(n=>n+1));const timer=setInterval(()=>{if(transport.isPlaying)tick(n=>n+1);},80);return()=>{off();clearInterval(timer);};},[transport]);
   const state=transport?.state??{playing:false,time:0,duration:0},scene=loaded?.scene,cue=scene?sceneCue(scene,state.time):undefined;
   const speaker=scene?.characters.find(c=>c.id===cue?.speaker),shown=useRef<typeof cue>(undefined);
-  const core=sceneId==='hal-9000';
+  const core=sceneId==='hal-9000',press=sceneId==='fool-me-once';
   if(cue)shown.current=cue;
   const quiet=core?shown.current:undefined,quietSpeaker=scene?.characters.find(c=>c.id===quiet?.speaker);
-  return <div className={`scene-page${core?' scene-core':''}`}>
-    <header className="scene-top"><HomeLink/><a className="wordmark" href="?band=1">Chimera</a><span>MOVIE SCENES</span><a href="?band=1">Back to the songs ↗</a></header>
+  return <div className={`scene-page${core?' scene-core':press?' scene-press':''}`}>
+    <header className="scene-top"><HomeLink/><a className="wordmark" href="?band=1">Chimera</a><span>SCENES & SPEECHES</span><a href="?band=1">Back to the songs ↗</a></header>
     <main>
-      <nav className="scene-picker" aria-label="Movie scenes">{MOVIE_SCENES.map(m=><a key={m.id} className={`chip${m.id===sceneId?' on':''}`} href={`?scene=${m.id}`} aria-current={m.id===sceneId?'page':undefined}>{m.title}</a>)}</nav>
-      <div className="scene-intro"><div><p className="scene-eyebrow">{entry.eyebrow}</p><h1>{entry.title}</h1><p>{entry.description}</p></div><span className="scene-runtime">{formatTime(scene?.duration??0)}<small>FULL SCENE</small></span></div>
+      <nav className="scene-picker" aria-label="Scenes and speeches">{MOVIE_SCENES.map(m=><a key={m.id} className={`chip${m.id===sceneId?' on':''}`} href={`?scene=${m.id}`} aria-current={m.id===sceneId?'page':undefined}>{m.title}</a>)}</nav>
+      <div className="scene-intro"><div><p className="scene-eyebrow">{entry.eyebrow}</p><h1>{entry.title}</h1><p>{entry.description}</p></div><span className="scene-runtime">{formatTime(scene?.duration??0)}<small>{press?'SPEECH EXCERPT':'FULL SCENE'}</small></span></div>
       <figure className="scene-film">
         {loaded&&transport?<MovieStage scene={loaded.scene} tracks={loaded.tracks} transport={transport} camera={camera} onReady={setStage}/>:<div className="scene-loading"><p role={error?'alert':'status'}>{error||'Preparing the scene…'}</p>{error&&<button className="chip" onClick={()=>setRetry(n=>n+1)}>Reload scene</button>}</div>}
         {core
@@ -76,9 +76,9 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
       {exporting&&<div className="scene-export" role="status"><div><strong>Preparing your video · {formatTime(exportTime)} / {formatTime(scene?.duration??0)}</strong><p>Keep this tab open. The full scene is being saved with sound and subtitles.</p></div><progress value={exportTime} max={scene?.duration||1}/><button className="chip" onClick={()=>exportJob.current?.abort()}>Cancel</button></div>}
       {exportError&&<p className="scene-export-error" role="alert">{exportError}</p>}
       {savedVideo&&<p className="scene-export-saved">Video ready. <a href={savedVideo.url} download={savedVideo.name}>Save video</a></p>}
-      <div className="scene-options"><fieldset disabled={exporting}><legend>Camera</legend>{(['auto','wide',...(scene?.setting==='core'?['hal','dave','modules']:scene?.setting==='cliffs'?['climber','vizzini','inigo','fezzik']:['jessep','kaffee'])] as CameraChoice[]).map(v=><button key={v} className={`chip${camera===v?' on':''}`} aria-pressed={camera===v} onClick={()=>setCamera(v)}>{v==='auto'?'Movie cuts':v==='wide'?'Whole scene':v==='climber'?'The pursuer':v==='modules'?'The memory':scene?.characters.find(c=>c.id===v)?.name??v}</button>)}</fieldset><label><input type="checkbox" disabled={exporting} checked={subtitles} onChange={e=>setSubtitles(e.target.checked)}/>Subtitles</label></div>
-      <div className="scene-cast">{scene?.characters.map(c=><div key={c.id}><span>{c.id==='hal'?'IN THE WALL':c.id==='dave'?'IN THE MEMORY CORE':c.id==='jessep'?'ON THE STAND':c.id==='kaffee'?'AT THE LECTERN':scene.setting==='cliffs'?'ON THE CLIFFS':'OFF CAMERA'}</span><strong>{c.name}</strong><p>{c.role}</p></div>)}</div>
-      <p className="scene-credit">{entry.credit} The dialogue is synthesized through CHIMERA’s simulated airways; the original actors’ audio is not played. Dialogue timing and pronunciation are approximate.</p>
+      <div className="scene-options"><fieldset disabled={exporting}><legend>Camera</legend>{(['auto','wide',...(scene?.setting==='press'?['bush']:scene?.setting==='core'?['hal','dave','modules']:scene?.setting==='cliffs'?['climber','vizzini','inigo','fezzik']:['jessep','kaffee'])] as CameraChoice[]).map(v=><button key={v} className={`chip${camera===v?' on':''}`} aria-pressed={camera===v} onClick={()=>setCamera(v)}>{v==='auto'?'Automatic cuts':v==='wide'?'Whole scene':v==='climber'?'The pursuer':v==='modules'?'The memory':scene?.characters.find(c=>c.id===v)?.name??v}</button>)}</fieldset><label><input type="checkbox" disabled={exporting} checked={subtitles} onChange={e=>setSubtitles(e.target.checked)}/>Subtitles</label></div>
+      <div className="scene-cast">{scene?.characters.map(c=><div key={c.id}><span>{c.id==='bush'?'AT THE MICROPHONES':c.id==='hal'?'IN THE WALL':c.id==='dave'?'IN THE MEMORY CORE':c.id==='jessep'?'ON THE STAND':c.id==='kaffee'?'AT THE LECTERN':scene.setting==='cliffs'?'ON THE CLIFFS':'OFF CAMERA'}</span><strong>{c.name}</strong><p>{c.role}</p></div>)}</div>
+      <p className="scene-credit">{entry.credit} The voices are synthesized through CHIMERA’s simulated airways; original recorded speech is not played. Timing and pronunciation are approximate.</p>
     </main>
   </div>;
 }
