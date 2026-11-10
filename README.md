@@ -12,6 +12,23 @@ Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-
 - **Included songs, scenes and media:** see [CONTENT.md](CONTENT.md).
 - **Earlier implementation notes:** see [EDITION-NOTES.md](EDITION-NOTES.md). References there to media being ignored describe the earlier workspace; this repository tracks the complete prepared media.
 
+## The original project’s vision & scope
+
+From upstream’s README. It governs the engine and the single-mouth app. This edition deliberately goes beyond points 6 and 7: it tracks the prepared song and scene media the owner asked for (see [MEDIA-RIGHTS.md](MEDIA-RIGHTS.md)) and stages multi-voice scenes.
+
+1. **One instrument**: a physically modeled voice (lungs, vocal folds, throat, mouth). No
+   samples, no neural audio.
+2. **The web app is the primary surface**: anyone should be able to make songs in it without
+   an LLM's help. Mobile is the likely next surface. The plugin (CLAP/VST3/AU) still ships, but
+   it's secondary.
+3. **More realistic without losing what it is**: the robotic, primitive sound people like today
+   stays available, and every realism change is checked by ear against it.
+4. **Languages enter through one shared front-end design**, not one-off hacks. Each needs a
+   native speaker's check and must leave English unchanged.
+5. **The design language (the vector display) is settled**; the look within it can still evolve.
+6. **Nothing copyrighted in git**; MIT; a deterministic, real-time-safe engine.
+7. **Not now**: a DAW or sequencer, a light theme, MPE, multi-voice dialogue.
+
 ## Run locally — Bun only
 
 Install [Bun](https://bun.sh/), then:
