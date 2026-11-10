@@ -39,3 +39,5 @@ The HAL 9000 scene has no source clip: its line starts are timed by hand from th
 ## Scope of the export
 
 This is the complete content of the running app, rather than a backup of the computer’s Music and Videos folders. Raw input recordings, source-separation stems used only for analysis, ASR models, temporary render files, development toolchains and caches are excluded. No external source recording is required to replay the prepared songs or scenes.
+
+- `?song=country-roads` — full Country Roads, one robotic singer, original instrumental backing, and a synchronized scrolling melody/pitch graph.

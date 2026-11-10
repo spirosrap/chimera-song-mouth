@@ -3,7 +3,7 @@ import { originalBand } from "./original.ts";
 import { risingSunBand } from "./risingSun.ts";
 import { neonCurrentBand } from "./neonCurrent.ts";
 import { smallHoursBand } from "./smallHours.ts";
-import { MAX_BAND_VOICES, type Arrangement } from "./types.ts";
+import { MAX_BAND_VOICES, isVoicePart, type Arrangement } from "./types.ts";
 import {validPerformance} from './performance.ts';
 
 export interface BandSong { id:string; name:string; arrangement:Arrangement; arrangementUrl?:string }
@@ -37,6 +37,9 @@ export const BAND_SONGS:BandSong[]=[
     title:"Δεν ξανακάνω φυλακή · Rodehihi",description:"Rodehihi’s full recording with its original instrumental backing and a robotic Greek singer following the vocal melody and phrasing.",bpm:120,duration:192.68,presentation:"backed-solo",parts:[],sections:[],
   }},
   {id:"small-hours",name:"Small Hours · 3:31 · original electronic",arrangement:prepared(smallHoursBand())},
+  {id:"country-roads",name:"Country Roads · 3:15 · one voice & score",arrangementUrl:BASE_PATH+"band/country-roads/arrangement.json",arrangement:{
+    title:"Take Me Home, Country Roads",description:"The full song, with one robotic singer over the original instrumental music and a scrolling melody and pitch graph.",bpm:82,duration:195.8504375,presentation:"solo-roll",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */
@@ -63,5 +66,6 @@ export async function loadBandArrangement(song:BandSong,request:(url:string)=>Pr
     if(part.assetVersion!==undefined&&(typeof part.assetVersion!=='string'||!/^[a-z0-9-]{1,64}$/.test(part.assetVersion)))throw new Error('The song asset version is invalid.');
     ids.add(part.id);
   }
+  if(data.presentation==="solo-roll"&&data.parts.filter(isVoicePart).length!==1)throw new Error("The solo performance needs exactly one singer.");
   return data;
 }

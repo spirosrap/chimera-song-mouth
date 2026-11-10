@@ -53,7 +53,7 @@ export interface Arrangement {
   parts: BandPart[];
   sections: {name: string; time: number}[];
   wordless?: boolean;
-  presentation?: "quartet" | "backed-solo" | "ensemble";
+  presentation?: "quartet" | "backed-solo" | "ensemble" | "solo-roll";
   spotlights?: {time:number;partId:string}[];
   captions?: {time:number;end:number;text:string}[];
 }

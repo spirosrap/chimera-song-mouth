@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **eleven songs, three movie scenes, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twelve songs, three movie scenes, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account.
 
@@ -71,3 +71,7 @@ A CHIMERA mouth sings the three verses and repeated refrains. The updated perfor
 The prepared score, two MP3 channels, compressed mouth telemetry and credits are in `public/band/rodehihi-den-xanakano-fylaki/`. All nine earlier songs, the default selection and both movie scenes remain.
 
 For the existing Sites host’s archive limit, builds can set `CHIMERA_EXTERNAL_MOVIE_DOWNLOAD=https://github.com/spirosrap/chimera-song-mouth/releases/download/v1.0.0/for-x.mp4`. This makes the existing courtroom video download use the identical, checksum-verified release attachment and omits that duplicate MP4 from the hosted archive. Ordinary builds retain the local MP4 and are self-contained. Song playback always uses the local prepared assets.
+
+## Country Roads
+
+`?song=country-roads` adds the complete supplied 3:15 John Denver recording as one generated singer over separated original instrumental music. It uses the CMUdict pronunciation, timed syllable and held-vowel approach described in the quoted demo, with source-aligned words and melody. The large head and scrolling green notes/yellow rendered-pitch trace share the actual audio clock, including pause and seek. All eleven earlier songs and three scenes remain.

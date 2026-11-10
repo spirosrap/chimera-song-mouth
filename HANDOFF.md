@@ -20,7 +20,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 
 ## Preserve
 
-- Eleven songs in `src/band/library.ts`, including all prepared files in `public/band/`.
+- Twelve songs in `src/band/library.ts`, including all prepared files in `public/band/`.
 - All three movies in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
@@ -32,7 +32,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 
 This is a static React/Vite site with a Rust engine already compiled to WebAssembly. There is no server component and no service credential requirement for playback. The previous `.openai/hosting.json` was omitted intentionally: do not reattach this copy to the old Site. Deployment to a new host should create a separate website.
 
-Absolute asset URLs assume hosting at the root of an origin. Do not deploy under `/chimera-song-mouth/` without adapting every asset URL. HTTPS or localhost is required for browser media/worker features. Preserve MIME types and ordinary binary delivery of `.wasm` and `.tele.gz` files.
+Prepared media and dictionary URLs resolve from the Vite base path. The existing agenticspiros.com installation uses `/chimera-song-mouth/`; build it with `bun run build:static --base=/chimera-song-mouth/`. HTTPS or localhost is required for browser media/worker features. Preserve MIME types and ordinary binary delivery of `.wasm` and `.tele.gz` files.
 
 ## Verification and limits
 

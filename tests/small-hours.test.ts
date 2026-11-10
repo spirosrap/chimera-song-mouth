@@ -5,8 +5,8 @@ import {MAX_BAND_VOICES} from '../src/band/types.ts';
 
 const song=smallHoursBand(),bar=240/song.bpm;
 
-test('Small Hours is the last song, wordless, for twelve mouths, and fits its stated length',()=>{
- expect(BAND_SONGS.at(-1)!.id).toBe('small-hours');
+test('Small Hours keeps its library slot, wordless, for twelve mouths, and fits its stated length',()=>{
+ expect(BAND_SONGS[10].id).toBe('small-hours');
  expect(song.wordless).toBe(true);expect(song.parts).toHaveLength(12);expect(song.parts.length).toBeLessThanOrEqual(MAX_BAND_VOICES);
  expect(song.duration).toBe(211);expect(SMALL_HOURS_BARS*bar).toBeLessThan(song.duration-3);
  expect(song.sections.map(s=>s.name)).toEqual(['Streetlight','Stirring','Two-step','Lift','Drop','Alone','Build','Second drop','Together','First light']);

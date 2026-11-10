@@ -21,3 +21,9 @@ Full native checks, all 103 Bun tests (11,309 assertions), typecheck and product
 ## Rodehihi source pronunciation revision
 
 The existing track now uses 400 estimated source phones over 15 phrases and 3,238 continuous pitch/emphasis points. Native tests and all 106 Bun tests (11,344 assertions) passed, along with typecheck, both build modes, and all ten prepared-song asset checks. All 15 sung phrases have signal; instrumental gaps are silent in the generated lead. The 3,854 mouth frames match the 192.681-second audio clock. The decoded full mix peaks at 0.883. Backing MP3 SHA-256 and backing level are identical to the previous release. Only the Rodehihi score, lead MP3, mouth telemetry and credits changed among the 186 public assets. The physical engine is unchanged. Source pronunciation was estimated automatically; no listening or browser verification was available.
+
+## Country Roads addition
+
+The full 195.850-second performance has one generated singer, 241 CMUdict syllables, 355 melody notes and 3,918 synchronized mouth/pitch frames. Both MP3 channels decode fully; every verse, chorus, bridge and ending has a non-silent generated vocal, and the intro/instrumental ending stay silent in that channel. The stereo mix peaks at 0.846. Instrumental intro/ending samples match the source before MP3 encoding within 1.2e-7. All previous prepared media are byte-for-byte unchanged.
+
+All 112 native tests and 119 Bun tests (24,492 assertions) pass, with typecheck and checks of all twelve prepared song arrangements. The new score view checks the 350 ms note/audio offset, viewport boundaries through seeks and different widths, and visible pitch range. Browser/layout-listening checks remain unavailable; the browser-based layout lint was not run.

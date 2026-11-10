@@ -1,0 +1,7 @@
+Take Me Home, Country Roads — John Denver recording supplied by the user. Songwriters: Bill Danoff, Taffy Nivert and John Denver.
+The complete supplied recording is the timing and melodic reference. Original music is retained through local vocal separation; faint vocal remnants and separation artifacts may remain.
+One generated CHIMERA airway sings the lyrics, using CMUdict pronunciation (letter-to-sound fallback), explicit syllable timing and held-vowel notes. Pronunciation, pitch estimation and timing are approximate. The original lead vocal is not intentionally mixed into the generated voice.
+The scrolling green note boxes show the melody; the yellow trace comes from the rendered singer telemetry on the same clock as playback.
+Presentation reference: https://x.com/fvderop/status/2119353695771193624
+Quoted pronunciation/timing method: https://x.com/CupOJoseph/status/2119260104641900595 and https://github.com/cupOJoseph/chimera-vocal-synth/tree/main/tools/performance
+All eleven earlier songs and all three movie scenes are retained.

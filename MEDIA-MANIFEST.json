@@ -292,6 +292,31 @@
       "sha256": "396dc688813b0eb0298b32d183f2847ba7f46652440af8464e4cf359654142de"
     },
     {
+      "path": "public/band/country-roads/arrangement.json",
+      "bytes": 27953,
+      "sha256": "fd97f7e6d4d3349148ee684e41dea3caed6c7a8ccab58f824b3fda7d47628f62"
+    },
+    {
+      "path": "public/band/country-roads/backing.mp3",
+      "bytes": 4701932,
+      "sha256": "03343b776009d62e10b207e136a863416d6bd4074413be0e5a49190e82d3c357"
+    },
+    {
+      "path": "public/band/country-roads/credits.txt",
+      "bytes": 1051,
+      "sha256": "cdd1a11799ff64ca43fa7ac0ffc3d08d4f75d17dceedbdc573874006328ab9a8"
+    },
+    {
+      "path": "public/band/country-roads/lead.mp3",
+      "bytes": 2350988,
+      "sha256": "e158969ece14829352a338a4eede87c4db0cd44a25fe2f22c44e0544b93bea21"
+    },
+    {
+      "path": "public/band/country-roads/lead.tele.gz",
+      "bytes": 2252212,
+      "sha256": "76bc939b124981f0b01c98fc9c03e0a2158a05401e855bc29a4b69045fccaefa"
+    },
+    {
       "path": "public/band/house-of-the-rising-sun/alto.mp3",
       "bytes": 2031596,
       "sha256": "6f7ba48b32eb340b13921caac2c6c22f351abf259d6ef66ceda2f941efa526ad"

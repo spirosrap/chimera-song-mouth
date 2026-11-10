@@ -37,3 +37,7 @@ The next practical split is **GitHub for code + Cloudflare R2 for prepared media
 Open the root page and every link in `CONTENT.md`. Start playback with a user click. Check the solo voice, all 24 MEGALOVANIA heads, both Greek backings, the whistle and snapping hand, both movie scenes and their captions, WAV downloads and the ready MP4. Record a short scene test in the target browser; real-time recording support depends on the browser’s encoders. The Princess Bride has live recording, not a pre-encoded MP4.
 
 The Rodehihi addition brings the library to ten songs. Standard builds still include every media file locally. The older Sites deployment uses the optional `CHIMERA_EXTERNAL_MOVIE_DOWNLOAD` build setting described in the README to keep its archive under 256 MiB; the courtroom MP4 remains in this repository and its original release attachment.
+
+## Existing agenticspiros.com installation
+
+The current independent installation is at `https://agenticspiros.com/chimera-song-mouth/`. Build with `bun run build:static --base=/chimera-song-mouth/`; `BASE_PATH` resolves prepared song/scene and dictionary URLs under that prefix. Upload new media and hashed bundles before `index.html`, preserving unrelated files and prior assets. The established upload helper is on the owner's Mac mini at `/Users/spiros/Projects/chimera-song-mouth-deploy/publish.sh`, with its connection secret kept in Keychain. Its source directory is `/Users/spiros/Projects/chimera-song-mouth-dist`; an optional path-list argument limits uploads. No hosting secrets are in this repository.

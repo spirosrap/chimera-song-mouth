@@ -3002,3 +3002,22 @@ input[type="range"]::-moz-range-thumb {
 .snap-hand-stage canvas { display:block; width:100%; height:100%; }
 .snap-hand-stage p { color:var(--text-dim); padding:24px; line-height:1.6; }
 @media(max-width:650px) { .band-heads.band-backed-solo.band-with-hand { grid-template-columns:minmax(0,1fr); } .band-with-hand .band-head .screen-body { height:330px; } }
+
+/* One source-aligned singer and a scrolling score, following the Country Roads reference. */
+.band-performance-page { max-width:2000px; }
+.band-performance-page .band-intro { margin-block:16px; gap:20px; }
+.band-performance-page .band-eyebrow { display:none; }
+.band-performance-page .band-intro p { margin-block:6px; font-size:13px; }
+.band-performance-page .band-intro h1 { font-size:clamp(26px,3.2vw,44px); }
+.band-heads.band-backed-solo.band-solo-roll { grid-template-columns:minmax(240px,1fr) minmax(0,2fr); max-width:none; align-items:start; gap:12px; }
+.band-solo-roll .band-head .screen-body, .performance-roll .screen-body { height:clamp(390px,59vh,720px); min-height:390px; }
+.performance-roll .screen-head { min-height:42px; padding-bottom:8px; }
+.performance-roll .screen-body { display:flex; }
+.performance-roll canvas { display:block; width:100%; height:100%; min-width:0; }
+.band-performance-page .band-backing { margin-block:12px; padding:12px; }
+.band-performance-page .quartet-lyrics { margin-block:16px; }
+@media(max-width:760px) {
+  .band-heads.band-backed-solo.band-solo-roll { grid-template-columns:minmax(0,1fr); }
+  .band-solo-roll .band-head .screen-body { height:340px; min-height:340px; }
+  .performance-roll .screen-body { height:330px; min-height:330px; }
+}

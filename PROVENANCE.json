@@ -4,11 +4,12 @@
   "upstream": "https://github.com/jamesondh/chimera-vocal-synth",
   "sourceWorkspaceRevision": "acdc47f30904c147408c7a931d42a79aad13775d",
   "previousSite": "https://chimera-song-mouth-spiros.animatedbear.chatgpt.site/",
-  "preparedSongs": 10,
-  "preparedMovieScenes": 2,
-  "publicAssetCount": 186,
-  "publicAssetBytes": 271562732,
+  "preparedSongs": 12,
+  "preparedMovieScenes": 3,
+  "publicAssetCount": 221,
+  "publicAssetBytes": 340812142,
   "precompiledWasmSha256": "94191911084e30732c54e4db5adb1b42b9f317389b30e8431cae0a6bc082e040",
   "mediaStorage": "ordinary Git; full public asset payload included",
-  "previousSiteConfigurationIncluded": false
+  "previousSiteConfigurationIncluded": false,
+  "currentSite": "https://agenticspiros.com/chimera-song-mouth/"
 }
