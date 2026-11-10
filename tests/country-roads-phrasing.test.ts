@@ -3,6 +3,7 @@ import {test,expect} from 'bun:test';
 import {validPerformance} from '../src/band/performance.ts';
 import {noteAudioSpan} from '../src/band/roll.ts';
 import {renderPart,BAND_RATE} from '../src/band/render.ts';
+import {TeleTrack} from '../src/show/tele.ts';
 import type {Arrangement} from '../src/band/types.ts';
 import {initEngine,wasmModule} from './harness.ts';
 
@@ -33,6 +34,27 @@ test('Country Roads keeps prepared phonetics, the full outro and a score coverin
 
 await initEngine();
 const {planPart}=await import('../src/band/planning.ts');
+test('Country Roads follows the lead melody instead of falling onto lower chorus harmonies',()=>{
+ // The source tracker formerly put "long" at MIDI 58.5 or 54 instead of F#4.
+ // Every chorus must retain the C#4 -> E4 -> F#4 rise shown in the user's demo.
+ for(const first of [47,112,187,213]){
+  const rise=lead.melody!.notes.filter(n=>n.lyricIndex!>=first&&n.lyricIndex!<=first+2);
+  expect(rise.map(n=>n.midi)).toEqual([61,64,66]);
+  const sustain=noteAudioSpan(rise[2]);
+  const middle=lead.performance!.contour.filter(c=>c.time>sustain.start+.35&&c.time<sustain.end-.25);
+  expect(middle.length).toBeGreaterThan(10);
+  for(const c of middle)expect(Math.abs(69+12*Math.log2(c.hz/440)-66)).toBeLessThan(.20);
+ }
+ expect(lead.melody!.notes.filter(n=>n.lyricIndex!>=22&&n.lyricIndex!<=26).map(n=>n.midi)).toEqual([54,57,57,61,61]);
+ // A control/score agreement alone cannot catch a render that ignores pitch.
+ const gestures=planPart(lead).filter(g=>g.t1>=39&&g.t0<42.5).map(g=>({...g,t0:g.t0-39,t1:g.t1-39}));
+ const track=new TeleTrack(renderPart(wasmModule,lead,3.5,gestures).tele);
+ for(const time of [1.7,2,2.4]){
+  const state=track.message(track.indexAt(time)).t;
+  expect(Math.abs(69+12*Math.log2(state.f0/440)-66)).toBeLessThan(.35);
+  expect(state.outRms).toBeGreaterThan(.01);
+ }
+});
 test('the actual mouth remains audible through Virginia and Mama instead of dropping to silence',()=>{
  const gestures=planPart(lead).filter(g=>g.t1>=42&&g.t0<48).map(g=>({...g,t0:g.t0-42,t1:g.t1-42}));
  const {samples}=renderPart(wasmModule,lead,6,gestures);
