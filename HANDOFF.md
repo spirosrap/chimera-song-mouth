@@ -41,3 +41,7 @@ Prepared media and dictionary URLs resolve from the Vite base path. The existing
 The exported code and assets were checked with unit/native tests, a static production build, full asset checksums and source/export byte comparisons. Browser interaction, visual layout and recording QA were unavailable in the source session because browser access was declined. Do not describe those as verified; inspect playback and downloads after the new deployment.
 
 Read `AGENTS.md` before changing the engine. `EDITION-NOTES.md` retains detailed implementation history and prior validation limitations.
+
+Read `UPSTREAM.md` when importing changes from the original CHIMERA repository.
+The last imported upstream revision is recorded in `PROVENANCE.json`; this
+independent export uses reviewed cherry-picks rather than an unrelated-history merge.

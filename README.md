@@ -8,6 +8,7 @@ Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-
 
 - **Another agent taking over:** read [HANDOFF.md](HANDOFF.md).
 - **Move to a new host:** read [DEPLOYMENT.md](DEPLOYMENT.md).
+- **Update from the original CHIMERA:** read [UPSTREAM.md](UPSTREAM.md).
 - **Included songs, scenes and media:** see [CONTENT.md](CONTENT.md).
 - **Earlier implementation notes:** see [EDITION-NOTES.md](EDITION-NOTES.md). References there to media being ignored describe the earlier workspace; this repository tracks the complete prepared media.
 
@@ -63,7 +64,7 @@ It uses the included WebAssembly engine and pronunciation dictionary. Repeats, a
 
 ## Media storage
 
-All 186 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
+All 221 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
 
 After intentionally adding or replacing public assets, run `bun run content:manifest`, inspect the changes, and commit the new manifest with the files. Do not regenerate the manifest to conceal missing assets.
 
