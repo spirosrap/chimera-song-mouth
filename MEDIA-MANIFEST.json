@@ -772,6 +772,131 @@
       "sha256": "e70e070e885e1478d45cddb874dbcadf8fb74bbcfe926ad67d9c75a42b7c9438"
     },
     {
+      "path": "public/band/small-hours/alone.mp3",
+      "bytes": 2532672,
+      "sha256": "8e4e0e9c2c86110cab3447b548022ec7fb2a901b70b96da052575cc1bbed1a9d"
+    },
+    {
+      "path": "public/band/small-hours/alone.tele.gz",
+      "bytes": 846418,
+      "sha256": "b3b4068161547fa353e28bc746db513c2bfbac3857e5fe92e2f93dc51abe240e"
+    },
+    {
+      "path": "public/band/small-hours/arp.mp3",
+      "bytes": 2532672,
+      "sha256": "a8be8b7b385d6504532e714e82d8b4f6f11a0fb38930e220179f4b39ef58605f"
+    },
+    {
+      "path": "public/band/small-hours/arp.tele.gz",
+      "bytes": 2395970,
+      "sha256": "f917aef26826bb29ba4faef915cc9bdb354fb7f6f592640ee1d298921ac52829"
+    },
+    {
+      "path": "public/band/small-hours/arrangement.json",
+      "bytes": 253561,
+      "sha256": "2419602eaf185f5fabf0d2a5a1839520241b93688ce42a400ad9c4fa78d2f51c"
+    },
+    {
+      "path": "public/band/small-hours/bass.mp3",
+      "bytes": 2532672,
+      "sha256": "6fe75de41ce6c3f014a5da194814429ff1bf5f849b2454db65e1ecad336c2d3c"
+    },
+    {
+      "path": "public/band/small-hours/bass.tele.gz",
+      "bytes": 2231040,
+      "sha256": "86ac2f2a812362ceb7b92fa7ec096cb61f744a377e2ba81c59a9de39c1ef4947"
+    },
+    {
+      "path": "public/band/small-hours/chop.mp3",
+      "bytes": 2532672,
+      "sha256": "209fc348d0d58d29322e113c2cead867e3323569c27b2773341c73ee7a2f74d4"
+    },
+    {
+      "path": "public/band/small-hours/chop.tele.gz",
+      "bytes": 1735300,
+      "sha256": "df9f68057392f345e7096bdb877caa19a6be722b073fad28690cdd42e8f3cf03"
+    },
+    {
+      "path": "public/band/small-hours/hats.mp3",
+      "bytes": 2532672,
+      "sha256": "05fe23f5665a7d8472abd562a866b5d2360c93e94d497cdab2c7d2fdd6668fe2"
+    },
+    {
+      "path": "public/band/small-hours/hats.tele.gz",
+      "bytes": 1953100,
+      "sha256": "d99b66076de82ca2e480cc96a5e606bcbb58b16a995dce8d25f46d5e304f7fa9"
+    },
+    {
+      "path": "public/band/small-hours/kick.mp3",
+      "bytes": 2532672,
+      "sha256": "b48a7cdc9da09baf1205681483fe13e87b95e65107f662fcaa6b9ede6929414f"
+    },
+    {
+      "path": "public/band/small-hours/kick.tele.gz",
+      "bytes": 1593686,
+      "sha256": "dc09a428d0413dc41a7c2fd12cd7e53666497f067a46ea26a027f887d8d32da0"
+    },
+    {
+      "path": "public/band/small-hours/lead.mp3",
+      "bytes": 2532672,
+      "sha256": "51969c02e807331524ba6ac3ea495c875b9f4230bd7a115c6f34c29f13b7bfd8"
+    },
+    {
+      "path": "public/band/small-hours/lead.tele.gz",
+      "bytes": 1721990,
+      "sha256": "b927a8be628ef38c1fb0beb91da5b2517ce2f9c5cd7fd7b0814e77750428094b"
+    },
+    {
+      "path": "public/band/small-hours/pad-high.mp3",
+      "bytes": 2532672,
+      "sha256": "a97af9467d9525ee1923554e23c44ad66c9016ed85960f461314af488ebf8b8f"
+    },
+    {
+      "path": "public/band/small-hours/pad-high.tele.gz",
+      "bytes": 1928822,
+      "sha256": "1794e6b3d68d44c7be8c8023320f169c036c9f84cc0c54c0db579754d531e4b3"
+    },
+    {
+      "path": "public/band/small-hours/pad-low.mp3",
+      "bytes": 2532672,
+      "sha256": "17e7f303d1a3ee030b6bed98d8fd08528b5137c0bb2d56794cb0104a59b8aee6"
+    },
+    {
+      "path": "public/band/small-hours/pad-low.tele.gz",
+      "bytes": 2012464,
+      "sha256": "fabda1e8a380ebbfbf149ba450659a30ee0cb7ffe6fb6613e834097b8dc81997"
+    },
+    {
+      "path": "public/band/small-hours/pad-mid.mp3",
+      "bytes": 2532672,
+      "sha256": "ec20980a0858a3c92afede06c49ab22c58de068b64866598517d00623c42416f"
+    },
+    {
+      "path": "public/band/small-hours/pad-mid.tele.gz",
+      "bytes": 2086886,
+      "sha256": "56282c18d8ba3460103b11adf32e67b55ed4a454d6660e3495eec169977b0c98"
+    },
+    {
+      "path": "public/band/small-hours/perc.mp3",
+      "bytes": 2532672,
+      "sha256": "587bd6cb71ceb40bacbfe06e9887b9dedc7250bbb13c261fc125bf685a1c8883"
+    },
+    {
+      "path": "public/band/small-hours/perc.tele.gz",
+      "bytes": 1197853,
+      "sha256": "3512380ad786869fd054b459fc4162ce944a88cbe55a86fde651c2d19c5b1eeb"
+    },
+    {
+      "path": "public/band/small-hours/snare.mp3",
+      "bytes": 2532672,
+      "sha256": "43b0efe57fbf223354f7c9916fd87a52e82f3e24c60d6238fdc0754f3f4cc686"
+    },
+    {
+      "path": "public/band/small-hours/snare.tele.gz",
+      "bytes": 1595384,
+      "sha256": "af2582a1b09533e1f9ec502a08ff223dae5135ee07750e55e807dec714d9c26c"
+    },
+    {
       "path": "public/band/synnefoula/arrangement.json",
       "bytes": 31279,
       "sha256": "d575830d515a1c61d7f0a2a388211ed3c03f8b0801367a4ec0a065c4e2187150"

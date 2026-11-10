@@ -2,6 +2,7 @@ import {BASE_PATH} from "../base.ts";
 import { originalBand } from "./original.ts";
 import { risingSunBand } from "./risingSun.ts";
 import { neonCurrentBand } from "./neonCurrent.ts";
+import { smallHoursBand } from "./smallHours.ts";
 import { MAX_BAND_VOICES, type Arrangement } from "./types.ts";
 import {validPerformance} from './performance.ts';
 
@@ -35,6 +36,7 @@ export const BAND_SONGS:BandSong[]=[
   {id:"rodehihi-den-xanakano-fylaki",name:"Rodehihi — Δεν ξανακάνω φυλακή · 3:12",arrangementUrl:BASE_PATH+"band/rodehihi-den-xanakano-fylaki/arrangement.json?v=performance-2",arrangement:{
     title:"Δεν ξανακάνω φυλακή · Rodehihi",description:"Rodehihi’s full recording with its original instrumental backing and a robotic Greek singer following the vocal melody and phrasing.",bpm:120,duration:192.68,presentation:"backed-solo",parts:[],sections:[],
   }},
+  {id:"small-hours",name:"Small Hours · 3:31 · original electronic",arrangement:prepared(smallHoursBand())},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */
