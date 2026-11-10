@@ -78,18 +78,18 @@
     },
     {
       "path": "public/band/bicep-apricots/air.mp3",
-      "bytes": 2993804,
-      "sha256": "0be57e6e8176dea912eb324da376b3bf39176e1d2214c67f678158bb79a45f57"
+      "bytes": 5987564,
+      "sha256": "cce87d8079a45cc1a80a1d81fca487c53d436ab640cb61458d44fe24ef6180c3"
     },
     {
       "path": "public/band/bicep-apricots/air.tele.gz",
-      "bytes": 2018848,
-      "sha256": "e714ebc554c9009f5a7e186d9d121748b48f3e11f431564001aacb6826d59e1d"
+      "bytes": 1937416,
+      "sha256": "07b3addf4e7d2355bd6beaa5e0d4bd03e1dd553991a706ed9ccaafedb05d0f5a"
     },
     {
       "path": "public/band/bicep-apricots/arrangement.json",
-      "bytes": 1515578,
-      "sha256": "a09253800bf8bdf23eebaef567e7a2ed25b0d98cdf28b21a7d523b52de19282e"
+      "bytes": 1513102,
+      "sha256": "f1c6942ab1e414fcd3f25efa6eb6805fe77c685fc500ab0ee45dc9d8572d13a8"
     },
     {
       "path": "public/band/bicep-apricots/bass.mp3",
@@ -123,8 +123,8 @@
     },
     {
       "path": "public/band/bicep-apricots/credits.txt",
-      "bytes": 1278,
-      "sha256": "6b1b856219aed5a2a3316d30b1e130d956f7d38b56563d16562161800dfac622"
+      "bytes": 1521,
+      "sha256": "ec9f33037524b5645458ba7f3d9915a4a2ef5d20cb8cf767ebe95d5f6a154c98"
     },
     {
       "path": "public/band/bicep-apricots/harmony-high.mp3",
@@ -158,13 +158,13 @@
     },
     {
       "path": "public/band/bicep-apricots/hats.mp3",
-      "bytes": 2993804,
-      "sha256": "a671a04f789723db0fd0eca0da8aeb4a215a190d7a6ae4be1c865aaa1819fdf4"
+      "bytes": 5987564,
+      "sha256": "f5004e325734037ae74f0e6308a1659f0118ff32151007de97114269b51d50af"
     },
     {
       "path": "public/band/bicep-apricots/hats.tele.gz",
-      "bytes": 1749443,
-      "sha256": "13e61176416ea7b8f3501e61aa28cc3b14f2d95912489db4d553270c48d8879e"
+      "bytes": 1759412,
+      "sha256": "af73049d716ff13d60e5f4fd76355716faa56830a5d105b0385e2843fd93ce1a"
     },
     {
       "path": "public/band/bicep-apricots/hook.mp3",
@@ -198,13 +198,13 @@
     },
     {
       "path": "public/band/bicep-apricots/snare.mp3",
-      "bytes": 2993804,
-      "sha256": "dcc8c5c502ed59d1bafe68c50aca8c407663fe7472118b5b4822ce7d022cedaf"
+      "bytes": 5987564,
+      "sha256": "7ef89ace5b6d2cb3acd542f59531d06a60c7ae6ceaaf6f3ae438c493bf7e3b21"
     },
     {
       "path": "public/band/bicep-apricots/snare.tele.gz",
-      "bytes": 1915573,
-      "sha256": "2a699564efb7b600c34e74afb497be8a2d17d1d52d6169aa7eb4d173d72a5427"
+      "bytes": 2004529,
+      "sha256": "f2ffd559c20973a5e0f7a33f0fe8608df6fa1f083428320926fe8c642f325a8d"
     },
     {
       "path": "public/band/bicep-glue/arrangement.json",

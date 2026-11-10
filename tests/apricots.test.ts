@@ -4,7 +4,8 @@ import type {Arrangement} from '../src/band/types.ts';
 import {isVoicePart} from '../src/band/types.ts';
 import {BAND_SONGS,loadBandArrangement} from '../src/band/library.ts';
 import {loadBandAssets} from '../src/band/assets.ts';
-import {initEngine} from './harness.ts';
+import {initEngine,wasmModule} from './harness.ts';
+import {renderPart,BAND_RATE} from '../src/band/render.ts';
 
 const score:Arrangement=JSON.parse(readFileSync(new URL('../public/band/bicep-apricots/arrangement.json',import.meta.url),'utf8'));
 
@@ -61,3 +62,28 @@ test('Apricots percussion follows source attacks without duplicate kick or hat t
   expect(hats.some(b=>Math.abs(b.time-time)<.03)).toBe(false);
  }
 });
+
+test('Apricots has one short aligned clap and keeps bright offbeat ticks out of the clap lane',async()=>{
+ const snare=score.parts.find(p=>p.id==='snare')!,air=score.parts.find(p=>p.id==='air')!,hats=score.parts.find(p=>p.id==='hats')!;
+ // These source transients have weak mid-band energy and were mislabelled as claps.
+ for(const time of [124.728,192.948,196.218,232.788]){
+  expect(snare.beats!.some(b=>Math.abs(b.time-time)<.07)).toBe(false);
+  expect(hats.beats!.some(b=>Math.abs(b.time-time)<.01&&b.accent!<=.25)).toBe(true);
+ }
+ await initEngine();
+ const duration=2.6,mixed=new Float32Array(Math.ceil(duration*BAND_RATE));
+ for(const part of [snare,air]){
+  const first={...part,beats:part.beats!.slice(0,1)};
+  const {samples}=renderPart(wasmModule,first,duration,[]);
+  for(let i=0;i<samples.length;i++)mixed[i]+=samples[i]*part.volume;
+ }
+ // The first source clap's measured acoustic peak is 1.487 s, plus the common lead-in.
+ const peakTime=1.487+.35;let total=0,attack=0;
+ for(let i=Math.round((peakTime-.08)*BAND_RATE);i<(peakTime+.25)*BAND_RATE;i++){
+  const energy=mixed[i]*mixed[i];total+=energy;
+  if(i>=(peakTime-.025)*BAND_RATE&&i<=(peakTime+.04)*BAND_RATE)attack+=energy;
+ }
+ expect(total).toBeGreaterThan(.01);
+ // The previous Pf + tss pair spread energy across early and late bursts.
+ expect(attack/total).toBeGreaterThan(.8);
+},15000);

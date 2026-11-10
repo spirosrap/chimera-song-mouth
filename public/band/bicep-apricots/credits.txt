@@ -6,3 +6,4 @@ Source separation can leave faint instrumental traces within the vocal sample. Q
 Melodies, rhythm and source pitch-lane transcription remain approximate. Effects apply to synthesized mouth audio.
 The former choir-low/choir-high files and hook telemetry remain in the portable archive for preservation, but are not loaded by this arrangement.
 Prepared percussion compensates for physical-mouth setup time. Source-checked kick attacks replace late tail detections, duplicate kicks and unsupported hi-hat tail triggers are removed; the original vocal and pitched accompaniment are unchanged.
+The user-approved short-clap revision uses aligned K mouth bursts and short t breath releases for 208 true claps; 29 bright ticks are reassigned to the quiet hat part. The existing kick, original vocal and pitched accompaniment are preserved.

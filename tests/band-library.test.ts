@@ -38,7 +38,7 @@ test('24-mouth song is an addition and a full ensemble can load',async()=>{
 test('Apricots retains its place in the library with refreshed percussion assets',async()=>{
  const song=BAND_SONGS.find(s=>s.id==='bicep-apricots')!;
  expect(BAND_SONGS[7]).toBe(song);expect(BAND_SONGS.slice(0,8)).toHaveLength(8);
- expect(song.arrangementUrl).toBe('/band/bicep-apricots/arrangement.json?v=apricots-timing-20261110');
+ expect(song.arrangementUrl).toBe('/band/bicep-apricots/arrangement.json?v=apricots-claps-20261110');
  expect(song.arrangement.wordless).toBe(true);expect(song.arrangement.presentation).toBe('ensemble');
  expect(song.arrangement.duration).toBeGreaterThan(248);expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
  expect((await loadBandArrangement(song,request(fixture()))).title).toBe('Loaded arrangement');

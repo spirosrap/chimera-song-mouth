@@ -28,14 +28,28 @@ sounds). Audio and mouth telemetry are rendered together on the same clock.
 The reference drum attacks also exposed late kick-tail detections: 36 kick
 triggers needed corrections greater than 70 ms, including eleven duplicate
 detections that are now merged. Twenty-five unsupported hi-hat tail triggers
-are removed. The score retains 205 kicks and 389 hats, following source attack
+are removed. The corrected kick lane retains 205 hits, following source attack
 times rather than imposing a straight four-on-the-floor pattern.
 
 The kick's score times include a 28 ms adjustment measured against the reference
 low-frequency attack envelope; the mouth kick's energy otherwise arrived early.
-The snare pattern and quiet breath layer retain their score times. Only the four
-percussion audio/telemetry pairs were regenerated. The original vocal, five
-pitched accompaniment stems, their levels and all other songs are unchanged.
+The original vocal, five pitched accompaniment stems, their levels and all
+other songs are unchanged.
+
+The user subsequently approved a shorter clap preview. The former `Pf` sound
+produced two separated bursts, and the added open-hat `tss` lasted much longer
+than the source clap. The clap now combines a short `K` mouth burst and a short
+`t` breath release, timed so their audible attacks coincide with the recording.
+These are existing engine sounds; the shared engine is unchanged. In the
+reviewed section, the combined attack peak moves from roughly 50 ms late to
+within 1 ms of the average source peak.
+
+Twenty-nine bright ticks had also been classified as loud claps. Their source
+mid-band attacks are much weaker than the true claps, and they fall between
+the regular clap hits. They now play in the quiet hat lane. The final score has
+208 claps, 208 short breath releases and 418 hats. Only those three mouth
+audio/telemetry pairs were regenerated for this follow-up; the corrected kick
+is preserved. All nine accompaniment mouths remain active.
 
 The unused former `choir-low`/`choir-high` audio and telemetry, and `hook.tele.gz`,
 remain in the portable media archive. The current arrangement never requests
