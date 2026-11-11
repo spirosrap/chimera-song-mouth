@@ -1,0 +1,4 @@
+Arrival — the complete supplied Ian ‘meeting you’ clip.
+CHIMERA’s physical vocal engine generates Ian’s dialogue. His mouth replays the actual synthesis movements. Louise is a silent, animated listener. The original background audio is retained, using separated accompaniment around speech; separation may leave faint dialogue traces. No recorded actor voice or voice-cloning filter is used in the generated voice channel.
+The prepared pronunciation balances source timing with natural phoneme spacing. The dusk sky, hills, field camp, hair, jackets and reactions are stylized reconstructions. Timing, pronunciation and appearance remain approximate.
+Underlying film, composition, performance and recording rights remain with their respective holders. The original input video, separation stems, models and analysis caches are not included.

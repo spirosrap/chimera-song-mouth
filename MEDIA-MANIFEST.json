@@ -1272,6 +1272,36 @@
       "sha256": "09d34a031ba5833d5d831c5d937c668c2073faa99397476593732510bdaf4548"
     },
     {
+      "path": "public/scenes/arrival/backing.mp3",
+      "bytes": 951596,
+      "sha256": "676658d11b8805b020dc395982c0161a8a45db0f1c2c77af4efc3023559bc957"
+    },
+    {
+      "path": "public/scenes/arrival/credits.txt",
+      "bytes": 851,
+      "sha256": "3d1272c47533ae9b8aa39b91b06718805bb0a3a28e24c76eca71a2dfb55db938"
+    },
+    {
+      "path": "public/scenes/arrival/ian.tele.gz",
+      "bytes": 256348,
+      "sha256": "9851eba3099f0f43be6bbe09596831759d9a505ddd0f2998382a65d29524bfa8"
+    },
+    {
+      "path": "public/scenes/arrival/mix.mp3",
+      "bytes": 951596,
+      "sha256": "761c73f7b11b6504766747d19e5b1ce079e33756a4a40794d0be5122fcf6c827"
+    },
+    {
+      "path": "public/scenes/arrival/performance.json",
+      "bytes": 6253,
+      "sha256": "649b64b1969add443e3c9cfa5418d4e2503b1ed5bc584ae189b32d84a4241c95"
+    },
+    {
+      "path": "public/scenes/arrival/scene.json",
+      "bytes": 934,
+      "sha256": "5e1988a2d1b49b62b548933590e20b1683c7c12b74866f5867835db2255e6c5c"
+    },
+    {
       "path": "public/scenes/contact/backing.mp3",
       "bytes": 9576236,
       "sha256": "870862f52a6ef6c4c8296027b6246fae6afa5163bf84943de6bf164f26a1ca86"
