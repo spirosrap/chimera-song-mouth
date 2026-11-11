@@ -49,6 +49,9 @@ export const BAND_SONGS:BandSong[]=[
   {id:"be-my-baby",name:"Be My Baby — The Ronettes · 2:40 · lead & backing singers",arrangementUrl:BASE_PATH+"band/be-my-baby/arrangement.json?v=be-my-baby-20261110",arrangement:{
     title:"Be My Baby · The Ronettes",description:"The full original instrumental recording with a robotic lead and two backing mouths singing the familiar responses. Each mouth follows its own vocal part and words.",bpm:129,duration:160.71897959183673,presentation:"backed-ensemble",parts:[],sections:[],
   }},
+  {id:"life-on-mars",name:"Life on Mars? — David Bowie · 4:03 · robotic singer",arrangementUrl:BASE_PATH+"band/life-on-mars/arrangement.json?v=life-on-mars-20261111",arrangement:{
+    title:"Life on Mars? · David Bowie",description:"The full supplied recording’s original music, with one physical mouth singing the words, following the rising melody, held notes and phrasing.",bpm:123,duration:243.31283446712018,presentation:"backed-solo",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */

@@ -14,7 +14,7 @@ const score:Arrangement=JSON.parse(file('arrangement.json').toString());
 const song=BAND_SONGS.find(s=>s.id==='blue-moon')!;
 
 test('Blue Moon appends a full physical singer and original orchestra without changing the previous selections',async()=>{
-  expect(BAND_SONGS.map(s=>s.id)).toEqual(['house-of-the-rising-sun','all-made-of-air','neon-current','bicep-glue','night-train-quartet','synnefoula','megalovania','bicep-apricots','ta-paidia-tou-peiraia','rodehihi-den-xanakano-fylaki','small-hours','country-roads','blue-moon','mr-sandman-quartet','be-my-baby']);
+  expect(BAND_SONGS.map(s=>s.id)).toEqual(['house-of-the-rising-sun','all-made-of-air','neon-current','bicep-glue','night-train-quartet','synnefoula','megalovania','bicep-apricots','ta-paidia-tou-peiraia','rodehihi-den-xanakano-fylaki','small-hours','country-roads','blue-moon','mr-sandman-quartet','be-my-baby','life-on-mars']);
   expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
   const a=await loadBandArrangement(song,async()=>new Response(JSON.stringify(score)));
   expect(a.duration).toBeGreaterThan(171);expect(a.duration).toBeLessThan(173);

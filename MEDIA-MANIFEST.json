@@ -477,6 +477,31 @@
       "sha256": "efe2beae351bceb5bb214a0d0f4b61e0edcb4ad24b30d46f26aeab128cdea9e5"
     },
     {
+      "path": "public/band/life-on-mars/arrangement.json",
+      "bytes": 206855,
+      "sha256": "5acd7ab018c7187da2834a81d59c4e8ab2fe0e81a166395d479a4f4f1d232334"
+    },
+    {
+      "path": "public/band/life-on-mars/backing.mp3",
+      "bytes": 7788332,
+      "sha256": "703d1be493f019f865b78cb25a791c770f1e464b7a79609596d7028ba0308294"
+    },
+    {
+      "path": "public/band/life-on-mars/credits.txt",
+      "bytes": 1105,
+      "sha256": "feb0a5e9c8050f6d8f158f6e72570431a80fb00bee641c40096321807a48d8b6"
+    },
+    {
+      "path": "public/band/life-on-mars/lead.mp3",
+      "bytes": 4867724,
+      "sha256": "1f222cff0e0b25c782d2cca0b20df4400315baa0901f216c4c449b85cf663613"
+    },
+    {
+      "path": "public/band/life-on-mars/lead.tele.gz",
+      "bytes": 2222089,
+      "sha256": "0baa0f8f8fcb091cdc8cf44adbfd441b58663e877017d5edc86005089909532a"
+    },
+    {
       "path": "public/band/megalovania/arrangement.json",
       "bytes": 157474,
       "sha256": "b472072fa81b059bea678fa5b48f987af8a83f1b9eecbf1db9bedc9cc8c91e35"

@@ -20,7 +20,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 
 ## Preserve
 
-- Fifteen songs in `src/band/library.ts`, including all prepared files in `public/band/`.
+- Sixteen songs in `src/band/library.ts`, including all prepared files in `public/band/`.
 - All three movies and the Fool me once speech in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
