@@ -55,6 +55,9 @@ export const BAND_SONGS:BandSong[]=[
   {id:"starman",name:"Starman — David Bowie · 4:18 · robotic singer",arrangementUrl:BASE_PATH+"band/starman/arrangement.json?v=starman-tuned-20261111",arrangement:{
     title:"Starman · David Bowie",description:"The full original instrumental music with a physical mouth singing the verses, choruses and the complete la-la ending, with synchronized words.",bpm:100,duration:258.24244897959187,presentation:"backed-solo",parts:[],sections:[],
   }},
+  {id:"space-oddity",name:"Space Oddity — David Bowie · 5:05 · singer & countdown",arrangementUrl:BASE_PATH+"band/space-oddity/arrangement.json?v=space-oddity-20261111",arrangement:{
+    title:"Space Oddity · David Bowie",description:"The full original music with a physical mouth singing the words, and a second mouth speaking the overlapping launch countdown. Both follow the recording with synchronized words and mouth animation.",bpm:68,duration:305.32090702947846,presentation:"backed-ensemble",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */

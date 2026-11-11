@@ -14,7 +14,7 @@ const score:Arrangement=JSON.parse(file('arrangement.json').toString());
 const song=BAND_SONGS.find(s=>s.id==='mr-sandman-quartet')!;
 
 test('Mr Sandman adds a full original-lyrics physical quartet alongside Night Train and Blue Moon',async()=>{
- expect(BAND_SONGS[13]).toBe(song);expect(BAND_SONGS).toHaveLength(17);
+ expect(BAND_SONGS[13]).toBe(song);expect(BAND_SONGS).toHaveLength(18);
  expect(BAND_SONGS[4].id).toBe('night-train-quartet');expect(BAND_SONGS[12].id).toBe('blue-moon');
  const a=await loadBandArrangement(song,async()=>new Response(JSON.stringify(score)));
  expect(a.presentation).toBe('quartet');expect(a.duration).toBeGreaterThan(145);expect(a.duration).toBeLessThan(147);

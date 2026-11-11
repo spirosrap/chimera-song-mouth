@@ -1082,6 +1082,41 @@
       "sha256": "af2582a1b09533e1f9ec502a08ff223dae5135ee07750e55e807dec714d9c26c"
     },
     {
+      "path": "public/band/space-oddity/arrangement.json",
+      "bytes": 226534,
+      "sha256": "ab2f5faf262dbfcda7038c8d001d86eabfd16bf8f6e3be267174f95beeb43f6d"
+    },
+    {
+      "path": "public/band/space-oddity/backing.mp3",
+      "bytes": 9772076,
+      "sha256": "3cbda17047d8835c45da68e3e6404649527dbb4e3ab5f2992a7175a0990f4117"
+    },
+    {
+      "path": "public/band/space-oddity/countdown.mp3",
+      "bytes": 6107564,
+      "sha256": "1951145c41ea1dc03a8cdb23f25d7ab603b3c865bf35ee6b032bf22044f1ed8a"
+    },
+    {
+      "path": "public/band/space-oddity/countdown.tele.gz",
+      "bytes": 297578,
+      "sha256": "af2f17ce420f9acfe85ac7ab7e62fb6b3c8523e7f33fa29983980573ac992b14"
+    },
+    {
+      "path": "public/band/space-oddity/credits.txt",
+      "bytes": 1175,
+      "sha256": "68f2eca03eb5534980f832444f22fef69ed302f463e9488088556d93b8b30722"
+    },
+    {
+      "path": "public/band/space-oddity/lead.mp3",
+      "bytes": 6107564,
+      "sha256": "e3f88e6ff0b8261df22a08980fcf1bc010efb315c349fdd532236453019026b1"
+    },
+    {
+      "path": "public/band/space-oddity/lead.tele.gz",
+      "bytes": 2300963,
+      "sha256": "f73704dba183d580f5a739802f596b4ce1b4271fa304d0012a041369dfbe97b5"
+    },
+    {
       "path": "public/band/starman/arrangement.json",
       "bytes": 291047,
       "sha256": "62eeb6083642520210d4a49afe2d13f3935824eefdbe2dafcffc555a4f1f205a"
