@@ -1,3 +1,4 @@
+import {KaraokeRoom} from '../render/karaoke.ts';
 import {Cliffs} from '../render/cliffs.ts';
 import {useEffect,useRef,useState} from 'react';
 import * as THREE from 'three';
@@ -26,7 +27,9 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
       const held=acquireModel(tracks[i].body,tracks[i].sampleRate);leases.push(held.release);
       return [{id:c.id,track:tracks[i],model:held.model}];
     });
-    const room=scene.setting==='press'
+    const room=scene.setting==='karaoke'
+      ?new KaraokeRoom(people[0].model,people[0].track)
+      :scene.setting==='press'
       ?new PressConference(people[0].model,people[0].track)
       :scene.setting==='core'
       ?new MemoryCore(people.flatMap(c=>c.id==='hal'||c.id==='dave'?[{...c,id:c.id}]:[]),scene.duration)
@@ -56,5 +59,5 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
     raf=requestAnimationFrame(frame);
     return()=>{alive=false;onReady(null);cancelAnimationFrame(raf);observer.disconnect();visibility.disconnect();room.dispose();leases.forEach(off=>off());release();};
   },[scene,tracks,transport,onReady]);
-  return <div ref={wrapRef} className={`courtroom-stage${scene.setting==='core'?' core-stage':scene.setting==='press'?' press-stage':''}`}>{error?<p role="status">{error}</p>:<canvas ref={canvasRef} role="img" aria-label={scene.setting==='press'?'A robotic speaker in a wireframe suit and red tie, behind a lectern with two microphones and an American flag. His mouth, head and hand follow the speech.':scene.setting==='core'?'A dark red memory core. A simulated mouth speaks from the computer’s eye while an astronaut removes glowing modules from the wall, and the room dims.':scene.setting==='cliffs'?'The Cliffs of Insanity with three wireframe characters and a masked climber. Their simulated mouths follow the dialogue.':'A cinematic courtroom with two wireframe characters. The simulated mouths follow the spoken dialogue.'}/>}</div>;
+  return <div ref={wrapRef} className={`courtroom-stage${scene.setting==='core'?' core-stage':scene.setting==='press'?' press-stage':''}`}>{error?<p role="status">{error}</p>:<canvas ref={canvasRef} role="img" aria-label={scene.setting==='karaoke'?'A wireframe singer with shoulder-length hair and a handheld microphone in a warm karaoke room. A seated listener in glasses and a cardigan watches and joins the applause. The mouth follows the physical singing.':scene.setting==='press'?'A robotic speaker in a wireframe suit and red tie, behind a lectern with two microphones and an American flag. His mouth, head and hand follow the speech.':scene.setting==='core'?'A dark red memory core. A simulated mouth speaks from the computer’s eye while an astronaut removes glowing modules from the wall, and the room dims.':scene.setting==='cliffs'?'The Cliffs of Insanity with three wireframe characters and a masked climber. Their simulated mouths follow the dialogue.':'A cinematic courtroom with two wireframe characters. The simulated mouths follow the spoken dialogue.'}/>}</div>;
 }

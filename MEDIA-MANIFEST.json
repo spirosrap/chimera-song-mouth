@@ -1345,6 +1345,36 @@
       "path": "public/scenes/princess-bride/vizzini.tele.gz",
       "bytes": 461986,
       "sha256": "7edc0431dbbcd661afbee378e1a40b54b1639b569e1b98afa31d861d31676aa9"
+    },
+    {
+      "path": "public/scenes/project-hail-mary/backing.mp3",
+      "bytes": 4581932,
+      "sha256": "91cc55d9aec8804ba7e360ff7ce3e890db7d96cfeaaf40018a3fee0457d796f4"
+    },
+    {
+      "path": "public/scenes/project-hail-mary/credits.txt",
+      "bytes": 963,
+      "sha256": "cefc89fa4c21d68741070593362a242c290f3e71c6420a8429fc5d15b4628a6b"
+    },
+    {
+      "path": "public/scenes/project-hail-mary/mix.mp3",
+      "bytes": 4581932,
+      "sha256": "96e39ff70c171d3605efc57db5b4700a63e4ab748d3f5821ea3de50ef3273264"
+    },
+    {
+      "path": "public/scenes/project-hail-mary/performance.json",
+      "bytes": 117225,
+      "sha256": "79437a875c4925e092b8da44a1152a819b39a0b3e4324accfb73c5259eeafed1"
+    },
+    {
+      "path": "public/scenes/project-hail-mary/scene.json",
+      "bytes": 3227,
+      "sha256": "0a93d805a9222973f03311bb55ebf23940bab955d8a53aed9d666d473d16b1dd"
+    },
+    {
+      "path": "public/scenes/project-hail-mary/singer.tele.gz",
+      "bytes": 1304765,
+      "sha256": "fcf34c256617f9b8f85feb1591960a2c3302d59bec40f57942b6ceaf432a3cc3"
     }
   ]
 }

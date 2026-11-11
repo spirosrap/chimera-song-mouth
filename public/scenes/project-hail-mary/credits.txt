@@ -1,0 +1,4 @@
+Project Hail Mary — the supplied karaoke scene featuring Sign of the Times.
+The complete supplied clip supplies the music, nonverbal room ambience and reference staging. CHIMERA’s physical vocal engine generates all of the featured singer’s words, including the final spoken line. No recorded singer audio or voice-cloning filter is used in the generated vocal channel. Separation may leave faint vocal traces in the accompaniment.
+Timed phonetics, held vowels, late diphthong glides and reviewed pitch targets follow the source performance. The mouth animation is captured from that synthesis. The singer, listener, hair, clothing, microphone, room, audience and gestures are stylized reconstructions. Timing, pronunciation and appearance remain approximate.
+Underlying film, composition, performance and recording rights remain with their respective holders. The original input video, source-separation stems, models and analysis caches are not included.

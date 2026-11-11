@@ -21,13 +21,14 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Eighteen songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All three movies and the Fool me once speech in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All four movies and the Fool me once speech in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
 - Gzipped `.tele.gz` assets, stereo instrumental backing and independent mixer controls.
 - Existing song IDs, scene IDs and default selection. Complete links are in `CONTENT.md`.
 - The speech's single-speaker `press` setting, synchronized gestures and original excerpt pauses; see `docs/fool-me-once.md`.
+- The Project Hail Mary karaoke setting, prepared singing, original accompaniment and silent listener; see `docs/project-hail-mary.md`.
 
 ## Platform independence
 
