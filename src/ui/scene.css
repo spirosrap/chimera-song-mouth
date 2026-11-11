@@ -82,3 +82,19 @@
 .scene-press .scene-transport input,.scene-press .scene-options input { accent-color:#4fb6f2; }
 .scene-press .scene-cast { grid-template-columns:1fr; }
 .press-stage { background:#000; }
+
+/* The Emerald City's throne room: everything is green until the screen falls, and after. */
+.scene-throne { color: #e2f1e6; }
+.scene-throne .scene-top,.scene-throne .scene-transport,.scene-throne .scene-cast { border-color: #17402c; }
+.scene-throne .scene-top a,.scene-throne .scene-eyebrow,.scene-throne .scene-transport > span { color: #5fd59a; }
+.scene-throne .scene-top > span,.scene-throne .scene-runtime small,.scene-throne .scene-options legend,.scene-throne .scene-cast span { color: #6f9a80; }
+.scene-throne .scene-intro p:last-child,.scene-throne .scene-cast p,.scene-throne .scene-credit { color: #a3bbab; }
+.scene-throne .scene-film { border-color: #17402c; }
+.scene-throne .scene-caption > span { color: #5fd59a; }
+.scene-throne .scene-cast strong { color: #eefaf1; }
+.scene-throne .primary { background: #2fae74; color: #04140c; border-color: #8dffc4; }
+.scene-throne .chip { color: #a9d9bf; border-color: #1f5a3d; }
+.scene-throne .chip.on { color: #eafff3; border-color: #2fae74; background: #0e2e1f; }
+.scene-throne .scene-transport input,.scene-throne .scene-options input,.scene-throne .scene-export progress { accent-color: #2fae74; }
+.scene-throne .scene-export { border-color: #1f5a3d; background: #08170f; }
+.throne-stage { background: #030b07; }

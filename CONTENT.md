@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 305 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 313 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -76,8 +76,9 @@ Space Oddity preserves the full original music, with separate physical mouths fo
 | Arrival — meeting you | 0:30 | `?scene=arrival` | Physical dialogue over original background audio, synchronized captions, dusk field camp, Ian’s turn and Louise’s silent reaction |
 | The Matrix — there is no spoon | 1:11 | `?scene=matrix-spoon` | Three physical voices over original background audio, synchronized captions, green waiting room, bending spoon, handoff and reflected face |
 | One Flew Over the Cuckoo’s Nest — you’re not crazy | 1:03 | `?scene=cuckoos-nest` | Four physical voices over original room ambience, synchronized captions, nine seated characters, ward, gestures and nurses’ reaction |
+| The Wonderful Wizard of Oz — the discovery of Oz, the Terrible | 2:50 | `?scene=wizard-of-oz` | Five physical voices with no source clip, the great Voice as the little man’s enlarged airway, synthetic hall, roar and falling screen, captions, shots and scene data |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All nine scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All ten scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 
 Project Hail Mary recreates the complete supplied karaoke clip. The physical singer
 performs Sign of the Times and the closing spoken line, while the original music
@@ -91,6 +92,9 @@ closing line and pauses. See [the scene notes](docs/arrival.md).
 
 The Matrix recreates the complete supplied spoon scene, including the boy’s
 demonstration, Neo’s attempt and the final invitation. See [the scene notes](docs/matrix-spoon.md).
+
+The Wonderful Wizard of Oz is staged from the public-domain book, not from any film.
+See [the scene notes](docs/wizard-of-oz.md) for how one airway speaks at two sizes.
 
 One Flew Over the Cuckoo’s Nest recreates the complete supplied ward conversation,
 including its brief replies and final reaction. See [the scene notes](docs/cuckoos-nest.md).

@@ -1525,6 +1525,46 @@
       "path": "public/scenes/project-hail-mary/singer.tele.gz",
       "bytes": 1304765,
       "sha256": "fcf34c256617f9b8f85feb1591960a2c3302d59bec40f57942b6ceaf432a3cc3"
+    },
+    {
+      "path": "public/scenes/wizard-of-oz/credits.txt",
+      "bytes": 532,
+      "sha256": "21d917c9cba154bfc786ad545b4c19f907f0808b38415241c03cb2407fd15e5d"
+    },
+    {
+      "path": "public/scenes/wizard-of-oz/dorothy.tele.gz",
+      "bytes": 760641,
+      "sha256": "0fccc7475b0abe4395c8c28a0e22751f6f87c751b998cf66e554978a0fa8e586"
+    },
+    {
+      "path": "public/scenes/wizard-of-oz/lion.tele.gz",
+      "bytes": 256170,
+      "sha256": "711a1689c40ebf478e48bddb7407ceca3ec731c96772388cdc9edfb371468ca6"
+    },
+    {
+      "path": "public/scenes/wizard-of-oz/mix.mp3",
+      "bytes": 4081536,
+      "sha256": "c80fbc883b3890e509b3c938a5bf190a37a13e4d14d5fe81768ad278fdd4f7ee"
+    },
+    {
+      "path": "public/scenes/wizard-of-oz/oz.tele.gz",
+      "bytes": 1238455,
+      "sha256": "e9af5617b1db0bfd743ba186678c660317f40e2be496468edc91b608f295a163"
+    },
+    {
+      "path": "public/scenes/wizard-of-oz/scarecrow.tele.gz",
+      "bytes": 322514,
+      "sha256": "97a59a9562c363c05cf1bdfdfd33d0487b5f5e4217f990340cfdf2cb38df50b5"
+    },
+    {
+      "path": "public/scenes/wizard-of-oz/scene.json",
+      "bytes": 7069,
+      "sha256": "df81fcad7d20ee457e2a72330d1d4283fb5a3f591593dff48d330d62ecf7ab44"
+    },
+    {
+      "path": "public/scenes/wizard-of-oz/tin-woodman.tele.gz",
+      "bytes": 313277,
+      "sha256": "65da6e0a3c987c4fe995028cf7f4bbe7d96b2573e78a8f44a6d0f657a57c18d7"
     }
   ]
 }
