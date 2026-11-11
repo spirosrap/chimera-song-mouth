@@ -30,7 +30,7 @@ fn render_speech_writes_a_sounding_wav_of_the_planned_length() {
     let stem = tmp("hello");
     let stdout = chimera(&["render", "speech", &stem, "ˈhɛloʊ"]);
     assert!(
-        stdout.starts_with(&format!("wrote {stem}.wav  1.10 s  peak ")),
+        stdout.starts_with(&format!("wrote {stem}.wav  1.27 s  peak ")),
         "{stdout}"
     );
 
@@ -50,7 +50,8 @@ fn render_speech_writes_a_sounding_wav_of_the_planned_length() {
         .collect();
     assert_eq!(u32_at(40) as usize, samples.len() * 2);
 
-    // the tool renders until 0.35 s + 0.2 s after the plan's end (TS wrote 52 692 samples)
+    // the tool renders until 0.35 s + 0.2 s after the plan's end (52 692 samples under Klatt's
+    // fluent-speech vowel lengths, as the TS wrote; 60 749 at clear-speech lengths)
     let plan = plan_utterance(
         &tokenize_ipa("ˈhɛloʊ"),
         &PlanOptions {
@@ -62,7 +63,7 @@ fn render_speech_writes_a_sounding_wav_of_the_planned_length() {
     );
     let expected = js_round(48000.0 * (plan.end + 0.35 + 0.2)) as usize;
     assert_eq!(samples.len(), expected);
-    assert_eq!(samples.len(), 52692);
+    assert_eq!(samples.len(), 60749);
 
     let peak = samples.iter().map(|s| s.unsigned_abs()).max().unwrap();
     assert!(peak > 3000, "peak {peak}");

@@ -1407,3 +1407,69 @@ No batch uses it yet: whether it decides the next batch, and Whisper guards, is 
   - **The male /ʃ/ centroid**, overshot by batch 2 (3.48 kHz, men 3.13).
   - **A diagnostic:** the voice lacks 1–4 kHz presence after batch 1 (female 1–2 kHz −16.1 dB re
     0–8 kHz, women −10.8). That is a spectral shape to fix, not a tilt.
+
+## Batch 3: clear speech (2026-11-11, this edition; branch `consonant-clarity`)
+
+The owner of this edition minds unclear words most. Batch 2's rules apply (speech decides, the
+singer guards). The judges were rebuilt here: `out/hill/baseline` is this edition's main at
+`a05e96a` with the engine imported through upstream `e33221d`. Speech 39.07 % training, 45.33 %
+held-out. Singer 0.587 training, 0.811 held-out, note MCD 8.614 dB. Bench `os=2` 25–27 %.
+
+### 21. Vowels are spoken at clear-speech length (kept)
+
+- Hypothesis: Klatt's rules are for fluent read speech and leave a reduced vowel 55–70 ms. With
+  consonants as imperfect as these, the words around those vowels are the ones lost ("of a",
+  "and", "the", "me a"). A talker who needs to be understood lengthens vowels, the reduced ones
+  most, and leaves consonants about as they are (Picheny, Durlach & Braida 1986). Measured first
+  above the engine, on 81 sentences rendered through the wasm build and heard by Whisper
+  ([../speech-clarity.md](../speech-clarity.md)): as planned 29.0 % of 697 words wrong;
+  unstressed 1.7× and stressed 1.4× 17.1 %; every consonant 1.4× longer 31.3 %; the voice's
+  breathiness, brightness or pressure 27–31 %; +8 dB of treble no change; all vowels 2× no
+  better than 1.7×; the whole line slowed to the same length 21 %.
+- Change: `crates/chimera/src/phonetics/durations.rs`: a vowel's Klatt duration is multiplied by
+  1.7 (unstressed) or 1.4 (stressed). Explicit `dur` values are untouched. Singing does not use
+  these rules. One value pair tried in the engine, the one the bench chose.
+- Speech: 39.07 → **26.49 %** (training, BETTER), 45.33 → 38.67 % (held-out). Harvard male
+  31.25 → 21.25, female 43.75 → 30.0; nonsense male 45.07 → 25.35, female 36.62 → 29.58. Moved
+  right, among others: "chicken leg" (both), "the hogs were fed" (male), "steady work", "sings
+  the dark rope", "paints the sweet stone" (male), "eats the black" (male). Still wrong: sheet,
+  chair, chain, birch, "a" heard as "the" (six sentences), "fork reads a" as "far greater".
+- Singer: 0.587 → 0.587, held-out 0.811 → 0.811, every guard identical (note MCD 8.614 dB). The
+  song goldens pass unblessed: singing is bit-identical.
+- Speed: 26.5 and 29.5 % against 26.8 and 26.0 % back to back; a planner constant.
+- Tests: blessed twice; only `planning.json` changes (utterance, phrase and duration plans).
+  `crates/chimera-cli/tests/cli.rs` holds the planned length of "ˈhɛloʊ" as two literals (1.10 s,
+  52 692 samples): they are now 1.27 s and 60 749, the same snapshot in another file. 144 native
+  tests pass; 240 Bun tests pass on the rebuilt wasm. Prepared media are not re-rendered.
+- Commit: `93f7e25` (engine), then the fixtures, wasm and this entry.
+- Next: `src/scene/clarity.ts` no longer scales vowels (the planner does); it keeps only the
+  affricate floor and a tight setting for lines timed to a clip. With vowels long enough, what
+  Whisper gets wrong is consonants (below) and the article "a".
+
+### 22. Sibilants 6 dB louder: experiment 13 again, on top of 21 (reverted)
+
+- Hypothesis: experiment 13's (in real speech sibilants are about 10 dB above /f/; here /ʃ/ is
+  no louder), retried now that the short vowels it kept tripping over are longer.
+- Change: `NoiseGains.teeth` 3.0e-6 → 6.0e-6.
+- Speech: 26.49 → 26.49 % (training, NO CLEAR CHANGE), 38.67 → 37.0 % (held-out).
+- Verdict: reverted; not BETTER.
+
+### 23. An affricate's frication held to voicing: experiment 15's patch on top of 21 and 22 (reverted)
+
+- Hypothesis: experiment 15's, with its "Next" followed: retried on top of a louder /ʃ/.
+- Change: the patch logged under experiment 15 (A + the aspiration allowance), with the VOT rule
+  in two helpers that now take upstream's `Segment.aspirated`.
+- Speech: 26.49 → 27.81 % (training, NO CLEAR CHANGE), 38.67 → 35.33 % (held-out). The words the
+  two changes aim at move: the male "sheet" and the female "juice" are heard, the male "birch"
+  sentence 7 → 4, "hears a loud milk" right. Against that, Whisper returns a truncated
+  transcript for the male "green chair" ("The Green", 1 → 5) and the female "four hours"
+  (6 → 7), and "garbage" becomes "cabbage" in both voices. The truncations alone outweigh the
+  gains: the judge cannot resolve a change this size.
+- Singer (22 + 23): 0.587 → 0.602, held-out 0.811 → 0.827, note MCD 8.614 → 8.631 dB. Inside
+  batch 2's allowance (+0.05, MCD +0.1), though `compare csd` prints WORSE for the rise.
+- Verdict: reverted; not BETTER. Both changes are on branch `consonant-clarity-sibilants` (one
+  commit on top of 21) so the owner can hear them beside 21: his ear is the judge these two need.
+- Next: a consonant change is worth about one word in three hundred here, and the judge's noise
+  is two to four. Either the sentences are doubled (the open proposal above, the owner's call),
+  or consonant work is judged per target word and by ear, as the artifact rule already does for
+  pops and clicks.

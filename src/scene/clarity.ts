@@ -5,17 +5,20 @@ type Phrase={segments:Segment[];intonation?:'statement'|'question'|'flat';pause?
 /** Multipliers on the planner's own vowel lengths, and minimum lengths (s) for a kind of consonant. */
 export interface Clarity{unstressed:number;stressed:number;floors?:Record<string,number>}
 /**
- * Measured with Whisper on 81 sentences (the speech judge's training sentences in both adult
- * bodies, and the Wizard of Oz lines): word errors 29 % as planned, 17 % with these, for 25 % more
- * time. The planner's reduced vowels last 55–70 ms and the words around them are the ones lost.
- * Longer consonants, a brighter or drier voice and treble did nothing; see docs/speech-clarity.md.
+ * The planner itself now speaks vowels at clear-speech length (crates/chimera, durations.rs:
+ * unstressed 1.7x and stressed 1.4x Klatt's fluent-speech rules), which is what this helper used
+ * to add: measured with Whisper, word errors 29 % -> 17 % on 81 sentences for 25 % more time; see
+ * docs/speech-clarity.md. What is left here is that an affricate is never under 90 ms.
  */
-export const CLEAR_SPEECH:Clarity={unstressed:1.7,stressed:1.4,floors:{affricate:.09}};
-/** For a line that must fit a slot: most of the gain (29 → 21 %) for 8 % more time. */
-export const CLEAR_SPEECH_TIGHT:Clarity={unstressed:1.5,stressed:1};
+export const CLEAR_SPEECH:Clarity={unstressed:1,stressed:1,floors:{affricate:.09}};
+/**
+ * For a line that must fit a slot in a source clip: vowels part of the way back toward fluent
+ * speech (unstressed 1.5x Klatt, stressed 1x), which kept most of the gain for 8 % more time.
+ */
+export const CLEAR_SPEECH_TIGHT:Clarity={unstressed:1.5/1.7,stressed:1/1.4};
 
 /**
- * Gives vowels the time a listener needs, before planning. Sounds that already carry an explicit
+ * Adjusts the planner's own sound lengths before planning. Sounds that already carry an explicit
  * `dur` are left as they are, so a hand-timed line keeps its timing; a later `rate` still scales
  * everything.
  */
@@ -30,7 +33,7 @@ export function clearPhrases<P extends Phrase>(phrases:P[],body:BodyMix,clarity:
    if(s.dur!==undefined||!first||!last)return s;
    const natural=last.t1-first.t0,vowel=first.kind==='vowel';
    const wanted=vowel?natural*(s.stress?clarity.stressed:clarity.unstressed):Math.max(natural,clarity.floors?.[first.kind]??0);
-   return wanted>natural+1e-9?{...s,dur:wanted}:s;
+   return Math.abs(wanted-natural)>1e-9?{...s,dur:wanted}:s;
   })};
  });
 }

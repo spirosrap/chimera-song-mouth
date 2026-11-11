@@ -29,6 +29,16 @@ a", "and", "the", "me a"). Lengthening consonants does nothing, the voice's timb
 and slowing the whole line buys less per second than lengthening its vowels. Past 1.7× nothing more
 is gained.
 
+## In the engine (2026-11-12, branch `consonant-clarity`)
+
+The vowel lengths above are now the planner's own (`crates/chimera/src/phonetics/durations.rs`,
+hill-climb experiment 21): by the repo's speech judge, 39.07 → 26.49 % on the training sentences
+and 45.33 → 38.67 % held-out, with singing bit-identical. `clearPhrases` therefore no longer
+scales vowels; it keeps the affricate floor, and `CLEAR_SPEECH_TIGHT` takes vowels part of the way
+back for lines that must fit a clip. All speech gets it, including the single-mouth player.
+Prepared scenes keep their audio until re-rendered. The rest of this note describes the helper as
+it was first added, on main before that branch.
+
 ## What was added
 
 - `src/scene/clarity.ts`: `clearPhrases(phrases, body)` multiplies the planner's own vowel lengths
