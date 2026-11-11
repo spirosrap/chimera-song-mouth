@@ -1272,6 +1272,41 @@
       "sha256": "09d34a031ba5833d5d831c5d937c668c2073faa99397476593732510bdaf4548"
     },
     {
+      "path": "public/scenes/contact/backing.mp3",
+      "bytes": 9576236,
+      "sha256": "870862f52a6ef6c4c8296027b6246fae6afa5163bf84943de6bf164f26a1ca86"
+    },
+    {
+      "path": "public/scenes/contact/credits.txt",
+      "bytes": 907,
+      "sha256": "1af01e18bb72ee094039deec92b527647fb2aabc6d704ef4db0bd592a256c158"
+    },
+    {
+      "path": "public/scenes/contact/ellie.tele.gz",
+      "bytes": 899210,
+      "sha256": "3665acd76914f105afc7ada1a9ca075f64cca1159686353a280c47bf8babd1b5"
+    },
+    {
+      "path": "public/scenes/contact/father.tele.gz",
+      "bytes": 1442964,
+      "sha256": "7d93d588b40aae8243c8ad876787ff17a80c0e51a8775abeb8dd9b845ddb2a41"
+    },
+    {
+      "path": "public/scenes/contact/mix.mp3",
+      "bytes": 9576236,
+      "sha256": "33b8ced5c3f00d24a1f223c4fe6ee7e0928bd548d9bfa283a9cd50b001abfe9f"
+    },
+    {
+      "path": "public/scenes/contact/performance.json",
+      "bytes": 42145,
+      "sha256": "d2112dbebf84b528f7c1be677fc8b5ac164f2969e680b3841f7ba98e41b50e85"
+    },
+    {
+      "path": "public/scenes/contact/scene.json",
+      "bytes": 6670,
+      "sha256": "f7d5f27cc586552e6690a750dde95a8553dd28e5cdc762ef99a18b454e54bae7"
+    },
+    {
       "path": "public/scenes/fool-me-once/bush.tele.gz",
       "bytes": 299158,
       "sha256": "fa197175849d493690c8d997beac7c6629746042425dd4ca76b021acc57b3b98"

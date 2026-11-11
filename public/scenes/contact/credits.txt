@@ -1,0 +1,4 @@
+Contact — the complete supplied first-contact beach scene.
+CHIMERA’s physical vocal engine generates Ellie’s and the visitor’s dialogue. The mouths replay the actual synthesis movements. The original music, surf and ambience are retained, using separated accompaniment around speech; separation may leave faint dialogue traces. No recorded actor audio or voice-cloning filter is used in either generated voice channel.
+The prepared pronunciation balances source timing with natural phoneme spacing. The beach, galaxy, palms, clothing, headset, braid, approach, embrace, seated conversation, falling sand and hand gestures are stylized reconstructions. Timing, pronunciation and appearance remain approximate.
+Underlying film, composition, performance and recording rights remain with their respective holders. The original input video, separation stems, models and analysis caches are not included.
