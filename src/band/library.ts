@@ -61,6 +61,9 @@ export const BAND_SONGS:BandSong[]=[
   {id:"cry-me-a-river",name:"Cry Me a River — Julie London · 2:58 · robotic singer",arrangementUrl:BASE_PATH+"band/cry-me-a-river/arrangement.json?v=cry-me-a-river-20261111",arrangement:{
     title:"Cry Me a River · Julie London",description:"The full original guitar and bass accompaniment with one physical mouth singing the words, following the recording’s melody, held notes and relaxed phrasing.",bpm:75,duration:178.92333333333332,presentation:"backed-solo",parts:[],sections:[],
   }},
+  {id:"smile",name:"Smile — Nat King Cole · 2:56 · robotic singer",arrangementUrl:BASE_PATH+"band/smile/arrangement.json?v=smile-20261111",arrangement:{
+    title:"Smile · Nat King Cole",description:"The full original orchestral accompaniment with one physical mouth singing the words, following the recording’s melody, held notes and phrasing.",bpm:78,duration:176.56625850340134,presentation:"backed-solo",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */

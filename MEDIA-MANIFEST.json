@@ -1107,6 +1107,31 @@
       "sha256": "af2582a1b09533e1f9ec502a08ff223dae5135ee07750e55e807dec714d9c26c"
     },
     {
+      "path": "public/band/smile/arrangement.json",
+      "bytes": 151223,
+      "sha256": "5b1a19bc9c9a0e70c03401f7ae8b0ee02348afc04a6cf01ec43b862909d24352"
+    },
+    {
+      "path": "public/band/smile/backing.mp3",
+      "bytes": 5651756,
+      "sha256": "dc3237ee4a8723bed13a92bb76cde731c0cdf758d5b725390941be2021d0238a"
+    },
+    {
+      "path": "public/band/smile/credits.txt",
+      "bytes": 875,
+      "sha256": "92be449be89c681cdc0229da5371745b771d5396c627614eb2c06a08162e8213"
+    },
+    {
+      "path": "public/band/smile/lead.mp3",
+      "bytes": 3532364,
+      "sha256": "9d6cdb3374c714624f89159a8e4c53f7f74e7811732344660ec5fb0783a78ff8"
+    },
+    {
+      "path": "public/band/smile/lead.tele.gz",
+      "bytes": 1642385,
+      "sha256": "8dac99d8b1c2124eb4e6f6763d045d5f0511811d20af68340da34594933c64c1"
+    },
+    {
       "path": "public/band/space-oddity/arrangement.json",
       "bytes": 226534,
       "sha256": "ab2f5faf262dbfcda7038c8d001d86eabfd16bf8f6e3be267174f95beeb43f6d"

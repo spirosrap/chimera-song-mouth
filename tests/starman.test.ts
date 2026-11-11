@@ -12,7 +12,7 @@ const score:Arrangement=JSON.parse(file('arrangement.json').toString());
 const song=BAND_SONGS.find(s=>s.id==='starman')!;
 
 test('Starman adds the complete recording as the seventeenth selection with one physical singer',async()=>{
- expect(BAND_SONGS).toHaveLength(19);expect(BAND_SONGS[16]).toBe(song);
+ expect(BAND_SONGS).toHaveLength(20);expect(BAND_SONGS[16]).toBe(song);
  expect(BAND_SONGS[15].id).toBe('life-on-mars');expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
  const a=await loadBandArrangement(song,async()=>new Response(JSON.stringify(score)));
  expect(a.presentation).toBe('backed-solo');expect(a.duration).toBeGreaterThan(258);expect(a.duration).toBeLessThan(259);

@@ -12,7 +12,7 @@ const score:Arrangement=JSON.parse(file('arrangement.json').toString());
 const song=BAND_SONGS.find(s=>s.id==='cry-me-a-river')!;
 
 test('Cry Me a River appends the complete Julie London recording with a physical singer',async()=>{
- expect(BAND_SONGS.at(-1)).toBe(song);
+ expect(BAND_SONGS[18]).toBe(song);
  expect(BAND_SONGS[17].id).toBe('space-oddity');
  expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
  const a=await loadBandArrangement(song,async()=>new Response(JSON.stringify(score)));

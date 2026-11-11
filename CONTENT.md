@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 330 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 335 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -25,6 +25,7 @@ Every prepared media file below is tracked in this repository. All 330 public fi
 | Starman — David Bowie | 4:18 | `?song=starman` | Original instrumental recording, physical singer, full sung ending and synchronized words |
 | Space Oddity — David Bowie | 5:05 | `?song=space-oddity` | Original instrumental recording, physical singer and overlapping robotic launch countdown |
 | Cry Me a River — Julie London | 2:58 | `?song=cry-me-a-river` | Original guitar and bass accompaniment, physical singer and synchronized words |
+| Smile — Nat King Cole | 2:56 | `?song=smile` | Original orchestral accompaniment, physical singer and synchronized words |
 
 Each song’s `public/band/<id>/` directory contains the prepared score, MP3 channels and compressed mouth telemetry as applicable. Non-voice channels such as the instrumental backing and finger clicks do not need telemetry. Credits accompany the adapted content. Small Hours has no source recording: its score is written in `src/band/smallHours.ts`, and `bun tools/render-band-song.ts small-hours` (needs ffmpeg; about seven minutes on 16 cores) rebuilds its twelve channels and telemetry from the engine. Mr. Sandman is the newly requested original-lyrics quartet; Night Train Radio remains a separate selection with its newly written words.
 
@@ -65,6 +66,8 @@ Starman retains the full instrumental recording with one physical singer and all
 Space Oddity preserves the full original music, with separate physical mouths for the singer and overlapping launch countdown. See [the song notes](docs/space-oddity.md).
 
 Cry Me a River retains the complete supplied Julie London recording’s accompaniment, with one physical singer following its melody and phrasing. See [the song notes](docs/cry-me-a-river.md).
+
+Smile preserves the complete supplied Nat King Cole recording’s original orchestra, with one physical mouth singing the words. See [the song notes](docs/smile.md).
 
 ## Movie scenes and speeches
 
