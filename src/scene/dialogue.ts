@@ -1,7 +1,7 @@
 import {planUtterance} from '../wasm/engine.ts';
 import type {Gesture,Segment} from '../wasm/types.ts';
 import type {BandPart} from '../band/types.ts';
-export interface DialogueLine<Id extends string=string>{speaker:Id;text:string;start:number;end:number;pitch:number;accent?:number;sourceEnd:number;timingWeight:number;words:{text:string;start:number;end:number}[];segments:Segment[]}
+export interface DialogueLine<Id extends string=string>{speaker:Id;text:string;start:number;end:number;pitch:number;accent?:number;humming?:boolean;sourceEnd:number;timingWeight:number;words:{text:string;start:number;end:number}[];segments:Segment[]}
 export interface DialoguePerformance<Id extends string=string>{duration:number;backingVolume:number;parts:BandPart[];lines:DialogueLine<Id>[]}
 const diphthongs=new Set(['aɪ','aʊ','ɔɪ','eɪ','oʊ']);
 /** Blend source word anchors with natural phone durations so short detected words stay intelligible. */
@@ -9,6 +9,18 @@ export function planDialoguePart<Id extends string>(score:DialoguePerformance<Id
  const part=score.parts.find(p=>p.id===id);if(!part)throw Error('Missing Dialogue speaker.');
  const out:Gesture[]=[];
  for(const line of score.lines.filter(l=>l.speaker===id)){
+  if(line.humming){
+   // A nonverbal assent has two nasal pulses. Keep the lips sealed through the gap so it cannot become "muh-mam".
+   const start=line.start,end=line.end,split=start+(end-start)*.42;
+   const add=(t0:number,t1:number,targets:Gesture['targets'],rampIn:number,rampOut:number)=>out.push({t0,t1,targets,rampIn,rampOut,strength:1});
+   add(start-.10,end+.10,{jaw:.2,lipAp:-.2,lipProt:0,lipWidth:0,velum:.45},.04,.08);
+   add(start-.08,end+.12,{abduction:.015},.03,.06);
+   add(start,split-.035,{breath:.75},.035,.035);
+   add(split+.065,end,{breath:1},.04,.055);
+   add(start-.08,split,{f0:line.pitch},.025,.03);
+   add(split,end+.08,{f0:line.pitch*(1+(line.accent??.2))},.06,.05);
+   continue;
+  }
   const plan=planUtterance(line.segments,{body:part.body,t0:0,f0:line.pitch,rate:1,intonation:line.text.trim().endsWith('?')?'question':'statement',accent:line.accent??.11});
   const input=[0],output=[line.start-.06];let cursor=0,word=0;
   for(const [index,segment] of line.segments.entries()){

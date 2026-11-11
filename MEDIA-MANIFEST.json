@@ -1337,6 +1337,51 @@
       "sha256": "f7d5f27cc586552e6690a750dde95a8553dd28e5cdc762ef99a18b454e54bae7"
     },
     {
+      "path": "public/scenes/cuckoos-nest/backing.mp3",
+      "bytes": 2002988,
+      "sha256": "a47705948b77f2c86ae818e0797e0314cfcf2d0bc167a76e8237531f973e5af9"
+    },
+    {
+      "path": "public/scenes/cuckoos-nest/billy.tele.gz",
+      "bytes": 82246,
+      "sha256": "9893213dc20ac288de6ad139dd040d783cb85456d86c0ba37bd2eab3e9f6d259"
+    },
+    {
+      "path": "public/scenes/cuckoos-nest/cheswick.tele.gz",
+      "bytes": 62565,
+      "sha256": "db41f0bd58e2ec2971d82ddda29bd85d792d2c077d8e63b7006d2ef4df8e399c"
+    },
+    {
+      "path": "public/scenes/cuckoos-nest/credits.txt",
+      "bytes": 956,
+      "sha256": "82e42437d99c0c01c8dc08d3db9e04fa2fd5fdf6d67dfdacc7a89aca5cbe4784"
+    },
+    {
+      "path": "public/scenes/cuckoos-nest/martini.tele.gz",
+      "bytes": 60624,
+      "sha256": "926814ed9fe5202e91736038811d7e08c041a3d43cbc76bcffb0e6df03edd741"
+    },
+    {
+      "path": "public/scenes/cuckoos-nest/mcmurphy.tele.gz",
+      "bytes": 711926,
+      "sha256": "621128548bf98f2226d7cc9a954e635004e5dfec8384537ea4d314a1d2b57673"
+    },
+    {
+      "path": "public/scenes/cuckoos-nest/mix.mp3",
+      "bytes": 2002988,
+      "sha256": "f56ceff4e66d7a9d55108ef0dbea2ad03831e68fef1fe9a08c3925f02a00bbd1"
+    },
+    {
+      "path": "public/scenes/cuckoos-nest/performance.json",
+      "bytes": 27588,
+      "sha256": "e92f1df78b1dbb3a849aa92326345427075a513a292e780eec766309742173a9"
+    },
+    {
+      "path": "public/scenes/cuckoos-nest/scene.json",
+      "bytes": 3868,
+      "sha256": "4e47b70766c241381198ec07a228691354d0bbb48937c7c6ef8ed1c974bad6a5"
+    },
+    {
       "path": "public/scenes/fool-me-once/bush.tele.gz",
       "bytes": 299158,
       "sha256": "fa197175849d493690c8d997beac7c6629746042425dd4ca76b021acc57b3b98"
