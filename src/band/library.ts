@@ -52,7 +52,7 @@ export const BAND_SONGS:BandSong[]=[
   {id:"life-on-mars",name:"Life on Mars? — David Bowie · 4:03 · robotic singer",arrangementUrl:BASE_PATH+"band/life-on-mars/arrangement.json?v=life-on-mars-20261111",arrangement:{
     title:"Life on Mars? · David Bowie",description:"The full supplied recording’s original music, with one physical mouth singing the words, following the rising melody, held notes and phrasing.",bpm:123,duration:243.31283446712018,presentation:"backed-solo",parts:[],sections:[],
   }},
-  {id:"starman",name:"Starman — David Bowie · 4:18 · robotic singer",arrangementUrl:BASE_PATH+"band/starman/arrangement.json?v=starman-20261111",arrangement:{
+  {id:"starman",name:"Starman — David Bowie · 4:18 · robotic singer",arrangementUrl:BASE_PATH+"band/starman/arrangement.json?v=starman-tuned-20261111",arrangement:{
     title:"Starman · David Bowie",description:"The full original instrumental music with a physical mouth singing the verses, choruses and the complete la-la ending, with synchronized words.",bpm:100,duration:258.24244897959187,presentation:"backed-solo",parts:[],sections:[],
   }},
 ];

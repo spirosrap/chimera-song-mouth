@@ -41,7 +41,7 @@ test('complete mouth telemetry seeks on the audio clock and the original music h
  const loaded=await loadBandAssets(song.id,score.parts,async()=>({duration:score.duration}) as AudioBuffer,async url=>{
   urls.push(url);return new Response(file(url.split('/').at(-1)!.split('?')[0]));
  });
- expect(urls).toHaveLength(3);expect(urls.every(u=>u.endsWith('?v=starman-20261111'))).toBe(true);
+ expect(urls).toHaveLength(3);expect(urls.every(u=>u.endsWith('?v=starman-tuned-20261111'))).toBe(true);
  expect(loaded[1].track).toBeNull();expect(urls.some(u=>u.includes('backing.tele'))).toBe(false);
  const raw=gunzipSync(file('lead.tele.gz')),track=loaded[0].track!;
  expect(Math.abs(track.duration-score.duration)).toBeLessThan(.051);
@@ -70,4 +70,15 @@ test('every syllable rebuilds through physical closures, airflow and the tuned m
  for(const [time,note] of [[57.5,53],[58.7,65],[68.5,65],[137.5,65],[173.5,65],[198.5,62],[203.1,64]]){
   expect(Math.abs(midiAt(time)-(note+.065))).toBeLessThan(.16);
  }
+});
+
+
+test('the repeated chorus ending uses the recording’s me and children notes',()=>{
+ const c=score.parts[0].performance!.contour;
+ const noteAt=(t:number)=>{const p=c.reduce((a,b)=>Math.abs(a.time-t)<Math.abs(b.time-t)?a:b);return 69+12*Math.log2(p.hz/440);};
+ for(const [time,note] of [[76.5,65],[77.5,67],[77.9,65],[78.2,67],[82.72,60],[83.12,62],[83.45,55],[83.82,53],[155.2,65],[156.1,67],[156.4,65],[156.8,67],[181.5,65],[182.4,67],[182.8,65],[183.08,67]]){
+  expect(Math.abs(noteAt(time)-(note+.065))).toBeLessThan(.16);
+ }
+ const phrases=score.parts[0].performance!.phrases;
+ for(const end of [79.18,81.5,157.79,160.06,184.08,186.42])expect(phrases.some(p=>Math.abs(p.start+p.phones.reduce((s,n)=>s+n.duration,0)-end)<.002)).toBe(true);
 });

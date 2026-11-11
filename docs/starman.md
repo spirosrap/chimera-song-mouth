@@ -25,6 +25,14 @@ measure tuning offsets of +5.7, +8.7, +4.8 and +6.9 cents; the singer uses +6.5 
 This avoids copying unreliable pitch-tracker slides, octave errors and unvoiced
 frames directly into sung notes. Delayed vibrato is restrained to 14 cents.
 
+The chorus ending was revised after the user identified wrong notes in the first
+preview. The recording takes `me` down to F4, alternates F4/G4 across the first
+children line, and uses a different final descent from the flute transcription.
+All three refrains now follow those recorded notes. Earlier vowel anchors and
+short falling releases prevent the final `it` syllables from hanging into the
+next pickup. The user approved the corrected ending preview. These entries and
+phrase endings have dedicated regression checks.
+
 The physical voice uses the softer Life on Mars settings: a male body, pressure
 7.2, brightness 0.46, breathiness 0.04 and no random pitch drift. Higher held rounded
 vowels use a more open mouth shape. `planPart` and `renderPart` synthesize the voice
@@ -54,7 +62,7 @@ bun run build:static --base=/chimera-song-mouth/
 
 The committed score includes the timed phonetics, melody, ending and fade.
 Rebuilding requires ffmpeg but no original recording, transcription model or
-analysis cache. The asset version is `starman-20261111`.
+analysis cache. The asset version is `starman-tuned-20261111`.
 
 Validation covers all vocal phrases and the complete ending, silent instrumental
 rests, the octave leap, source-clock pitch following, finite moving telemetry,
