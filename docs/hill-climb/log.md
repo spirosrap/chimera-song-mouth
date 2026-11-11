@@ -1473,3 +1473,9 @@ held-out. Singer 0.587 training, 0.811 held-out, note MCD 8.614 dB. Bench `os=2`
   is two to four. Either the sentences are doubled (the open proposal above, the owner's call),
   or consonant work is judged per target word and by ear, as the artifact rule already does for
   pops and clicks.
+
+### Listening result (2026-11-12)
+
+The owner listened to ten sentences three ways (main, experiment 21, 21 + 22 + 23) and approved the
+result. Experiment 21 is merged to main and deployed. 22 and 23 were not singled out and stay on
+`consonant-clarity-sibilants`, unmerged: the judge could not confirm them and they change singing.
