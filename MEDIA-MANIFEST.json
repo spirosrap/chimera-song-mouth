@@ -1082,6 +1082,31 @@
       "sha256": "af2582a1b09533e1f9ec502a08ff223dae5135ee07750e55e807dec714d9c26c"
     },
     {
+      "path": "public/band/starman/arrangement.json",
+      "bytes": 292552,
+      "sha256": "ec8d5f913f603df4f1d468ff29cfda5f1489061b2c88630bce3a1c7e2b717e11"
+    },
+    {
+      "path": "public/band/starman/backing.mp3",
+      "bytes": 8266028,
+      "sha256": "a0d5da297ecacdadc55bd4ebacd5dc3bb5866132621136bf1a40a6b77a1ca6d8"
+    },
+    {
+      "path": "public/band/starman/credits.txt",
+      "bytes": 970,
+      "sha256": "bef2a62345a7dbd01b8a0965bfbc2cd16d383de52b021363f3db4a602ddb69f4"
+    },
+    {
+      "path": "public/band/starman/lead.mp3",
+      "bytes": 5166284,
+      "sha256": "83f118390332b50ca3b5eb7d999a9409c39fba6d41fc1e1709bb1a6c0a981361"
+    },
+    {
+      "path": "public/band/starman/lead.tele.gz",
+      "bytes": 2719072,
+      "sha256": "5634134ad1ebfa05f4ba1bc3feb379a51075bea1529573e602684111eace7cd4"
+    },
+    {
       "path": "public/band/synnefoula/arrangement.json",
       "bytes": 107442,
       "sha256": "97ad9d08baedfe620c63f2d65f554a411fb83f76de0dc9b9809c6f630d38405e"

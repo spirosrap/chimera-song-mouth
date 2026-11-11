@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 257 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 262 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -22,6 +22,7 @@ Every prepared media file below is tracked in this repository. All 257 public fi
 | Mr. Sandman | 2:26 | `?song=mr-sandman-quartet` | Original-lyrics quartet with physical mouth voices, rhythmic bum-bum bass, captions, microphone and four harmonic graphs |
 | Be My Baby — The Ronettes | 2:40 | `?song=be-my-baby` | Original instrumental recording, one physical lead and two answering mouths with separate lyrics |
 | Life on Mars? — David Bowie | 4:03 | `?song=life-on-mars` | Original instrumental recording, one physical singer, source-timed melody and synchronized words |
+| Starman — David Bowie | 4:18 | `?song=starman` | Original instrumental recording, physical singer, full sung ending and synchronized words |
 
 Each song’s `public/band/<id>/` directory contains the prepared score, MP3 channels and compressed mouth telemetry as applicable. Non-voice channels such as the instrumental backing and finger clicks do not need telemetry. Credits accompany the adapted content. Small Hours has no source recording: its score is written in `src/band/smallHours.ts`, and `bun tools/render-band-song.ts small-hours` (needs ffmpeg; about seven minutes on 16 cores) rebuilds its twelve channels and telemetry from the engine. Mr. Sandman is the newly requested original-lyrics quartet; Night Train Radio remains a separate selection with its newly written words.
 
@@ -56,6 +57,8 @@ phrases, source timing, fading ending and regeneration instructions.
 
 Life on Mars? retains the full supplied recording and adds a physical singer with
 source-aligned phonetics and continuous pitch. See [the song notes](docs/life-on-mars.md).
+
+Starman retains the full instrumental recording with one physical singer and all six cycles of the sung ending. See [the song notes](docs/starman.md).
 
 ## Movie scenes and speeches
 
