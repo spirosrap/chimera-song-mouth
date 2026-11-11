@@ -6,13 +6,13 @@ const ease=(a:number,b:number,t:number)=>{const x=clamp((t-a)/(b-a));return x*x*
 const pulse=(a:number,b:number,t:number,edge=.4)=>ease(a,a+edge,t)*(1-ease(b-edge,b,t));
 
 /** The scene's fixed moments. tools/render-oz-scene.ts lays the dialogue out around them and refuses to drift. */
-export const THRONE_ROAR=70.5;
+export const THRONE_ROAR=78.48;
 /** The screen lands. Everything before this is the show; everything after is the man. */
 export const THRONE_CRASH=THRONE_ROAR+2.3;
 /** The Tin Woodman's challenge, axe raised. */
 export const THRONE_AXE=THRONE_CRASH+2.2;
 /** "I pulled a thread, to make the eyes move and the mouth open": the dead Head moves once more. */
-export const THRONE_DEMO:[number,number]=[139.12,143.8];
+export const THRONE_DEMO:[number,number]=[156.28,161.83];
 
 /** The great Head hangs over the throne by a wire. Centimetres; the travellers face -z. */
 export const THRONE_HEAD:ThronePoint=[0,212,-150];

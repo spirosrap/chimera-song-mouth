@@ -52,6 +52,10 @@ and the CLI) under a React UI. See the README.
   After intentionally changing public assets, run `bun run content:manifest` and commit the
   manifest together with the assets. `bun run verify:content` must pass before a static build.
 - **Voice tuning follows `docs/hill-climb/README.md`** and never edits its judges.
+- **Spoken scene lines go through `clearPhrases` (`src/scene/clarity.ts`) before planning**, or the
+  planner's 55–70 ms reduced vowels swallow the words around them (`docs/speech-clarity.md`). A line
+  timed to a source clip uses `CLEAR_SPEECH_TIGHT`. Check a finished scene with
+  `~/.cache/chimera-asr/.venv/bin/python tools/scene-clarity.py <scene-id>` and listen to what it lists.
 
 ## Checks
 

@@ -76,7 +76,7 @@ Space Oddity preserves the full original music, with separate physical mouths fo
 | Arrival — meeting you | 0:30 | `?scene=arrival` | Physical dialogue over original background audio, synchronized captions, dusk field camp, Ian’s turn and Louise’s silent reaction |
 | The Matrix — there is no spoon | 1:11 | `?scene=matrix-spoon` | Three physical voices over original background audio, synchronized captions, green waiting room, bending spoon, handoff and reflected face |
 | One Flew Over the Cuckoo’s Nest — you’re not crazy | 1:03 | `?scene=cuckoos-nest` | Four physical voices over original room ambience, synchronized captions, nine seated characters, ward, gestures and nurses’ reaction |
-| The Wonderful Wizard of Oz — the discovery of Oz, the Terrible | 2:50 | `?scene=wizard-of-oz` | Five physical voices with no source clip, the great Voice as the little man’s enlarged airway, synthetic hall, roar and falling screen, captions, shots and scene data |
+| The Wonderful Wizard of Oz — the discovery of Oz, the Terrible | 3:12 | `?scene=wizard-of-oz` | Five physical voices with no source clip, the great Voice as the little man’s enlarged airway, synthetic hall, roar and falling screen, captions, shots and scene data |
 
 The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All ten scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 

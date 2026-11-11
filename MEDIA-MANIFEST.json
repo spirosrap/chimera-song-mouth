@@ -1533,38 +1533,38 @@
     },
     {
       "path": "public/scenes/wizard-of-oz/dorothy.tele.gz",
-      "bytes": 760641,
-      "sha256": "0fccc7475b0abe4395c8c28a0e22751f6f87c751b998cf66e554978a0fa8e586"
+      "bytes": 823847,
+      "sha256": "2deb3140864f46440afc1d4d80f5dd4597b6992d47b619106618171630c6d035"
     },
     {
       "path": "public/scenes/wizard-of-oz/lion.tele.gz",
-      "bytes": 256170,
-      "sha256": "711a1689c40ebf478e48bddb7407ceca3ec731c96772388cdc9edfb371468ca6"
+      "bytes": 273240,
+      "sha256": "a5521078941741b5825183ef7de183639b52c2f2b4ddca2c62588ca127b07aab"
     },
     {
       "path": "public/scenes/wizard-of-oz/mix.mp3",
-      "bytes": 4081536,
-      "sha256": "c80fbc883b3890e509b3c938a5bf190a37a13e4d14d5fe81768ad278fdd4f7ee"
+      "bytes": 4609152,
+      "sha256": "72d3b05eb079205b8bfdccc465d22785971b6352952fabc4172e22be4aee4295"
     },
     {
       "path": "public/scenes/wizard-of-oz/oz.tele.gz",
-      "bytes": 1238455,
-      "sha256": "e9af5617b1db0bfd743ba186678c660317f40e2be496468edc91b608f295a163"
+      "bytes": 1400582,
+      "sha256": "552d0efe2dae5a4415ff7709b317f558c14882e6e43db44fd32cb9a9a4c5808b"
     },
     {
       "path": "public/scenes/wizard-of-oz/scarecrow.tele.gz",
-      "bytes": 322514,
-      "sha256": "97a59a9562c363c05cf1bdfdfd33d0487b5f5e4217f990340cfdf2cb38df50b5"
+      "bytes": 346661,
+      "sha256": "4ab66f115d1c49e4d890ff986f2743b8836dae59a565ca78c86414410edc318b"
     },
     {
       "path": "public/scenes/wizard-of-oz/scene.json",
-      "bytes": 7069,
-      "sha256": "df81fcad7d20ee457e2a72330d1d4283fb5a3f591593dff48d330d62ecf7ab44"
+      "bytes": 7087,
+      "sha256": "5ed619c4cdb32ed0fefd489d2466e7cb2a32889d33e3bef65c0a1182118cb73e"
     },
     {
       "path": "public/scenes/wizard-of-oz/tin-woodman.tele.gz",
-      "bytes": 313277,
-      "sha256": "65da6e0a3c987c4fe995028cf7f4bbe7d96b2573e78a8f44a6d0f657a57c18d7"
+      "bytes": 337378,
+      "sha256": "d8315a6211c2f0da1bb7889cfac36d40725ce4274ac7612edc5800157f22dd85"
     }
   ]
 }

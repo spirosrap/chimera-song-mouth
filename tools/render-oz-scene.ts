@@ -20,6 +20,7 @@ import {THRONE_ROAR,THRONE_CRASH,THRONE_AXE,THRONE_DEMO,thronePose,type ThroneSp
 await initEngine();
 const {EnglishG2P,planPhrases,planUtterance}=await import('../src/wasm/engine.ts');
 const {renderPart,BAND_RATE,BAND_HOP}=await import('../src/band/render.ts');
+const {clearPhrases}=await import('../src/scene/clarity.ts');
 const root=new URL('../',import.meta.url).pathname,out=root+'public/scenes/wizard-of-oz/';
 const g2p=new EnglishG2P();g2p.setDictionaryText(gunzipSync(readFileSync(root+'public/data/cmudict.txt.gz')).toString());
 const RATE=BAND_RATE,planOnly=process.argv.includes('--plan');
@@ -32,14 +33,14 @@ const parts:Record<ThroneSpeaker,BandPart>={
  'tin-woodman':part('tin-woodman','The Tin Woodman',{female:0,child:0},{breathiness:.12,tension:.72,brightness:.6}),
  lion:part('lion','The Cowardly Lion',{female:0,child:0},{breathiness:.36,tension:.46}),
 };
-const manner:Record<ThroneSpeaker,{f0:number;rate:number}>={oz:{f0:172,rate:1.02},dorothy:{f0:262,rate:.95},scarecrow:{f0:152,rate:.97},'tin-woodman':{f0:112,rate:.9},lion:{f0:94,rate:.84}};
+const manner:Record<ThroneSpeaker,{f0:number;rate:number}>={oz:{f0:172,rate:1.08},dorothy:{f0:262,rate:1.02},scarecrow:{f0:152,rate:1.02},'tin-woodman':{f0:112,rate:.97},lion:{f0:94,rate:.92}};
 
 /**
  * `size` is how many times larger than the man the Voice's throat is; `say` is what the dictionary
  * reads when the caption's spelling would be mispronounced; `gap` is the silence before the line.
  */
 interface Line{who:ThroneSpeaker;text:string;say?:string;size?:number;f0?:number;rate?:number;gap?:number;intensity:number;mark?:'axe'|'demo'}
-const GREAT={size:1.38,f0:66,rate:.7,intensity:.9},SHAKEN={size:1.22,f0:86,rate:.8,intensity:.6};
+const GREAT={size:1.38,f0:66,rate:.8,intensity:.9},SHAKEN={size:1.22,f0:86,rate:.9,intensity:.6};
 const before:Line[]=[
  {who:'oz',text:'I am Oz, the Great and Terrible. Why do you seek me?',...GREAT,gap:3.2},
  {who:'dorothy',text:'Where are you?',gap:1.3,intensity:.4},
@@ -61,8 +62,8 @@ const before:Line[]=[
 ];
 const after:Line[]=[
  {who:'tin-woodman',text:'Who are you?',f0:128,intensity:.85,mark:'axe'},
- {who:'oz',text:'I am Oz, the Great and Terrible.',f0:186,rate:.92,gap:1.1,intensity:.3},
- {who:'oz',text:'But don’t strike me, please don’t, and I’ll do anything you want me to.',f0:192,rate:1.12,gap:.5,intensity:.35},
+ {who:'oz',text:'I am Oz, the Great and Terrible.',f0:186,rate:1,gap:1.1,intensity:.3},
+ {who:'oz',text:'But don’t strike me, please don’t, and I’ll do anything you want me to.',f0:192,rate:1.16,gap:.5,intensity:.35},
  {who:'dorothy',text:'I thought Oz was a great Head.',gap:1.3,intensity:.45},
  {who:'scarecrow',text:'And I thought Oz was a lovely Lady.',intensity:.45},
  {who:'tin-woodman',text:'And I thought Oz was a terrible Beast.',intensity:.45},
@@ -71,10 +72,10 @@ const after:Line[]=[
  {who:'dorothy',text:'Making believe! Are you not a Great Wizard?',f0:280,intensity:.7},
  {who:'oz',text:'Hush, my dear. Don’t speak so loud, or you will be overheard, and I should be ruined.',f0:160,gap:.4,intensity:.25},
  {who:'oz',text:'I’m supposed to be a Great Wizard.',f0:160,gap:.5,intensity:.25},
- {who:'dorothy',text:'And aren’t you?',rate:.85,intensity:.5},
+ {who:'dorothy',text:'And aren’t you?',rate:.95,intensity:.5},
  {who:'oz',text:'Not a bit of it, my dear. I’m just a common man.',intensity:.3},
- {who:'scarecrow',text:'You’re more than that. You’re a humbug.',rate:.86,gap:.7,intensity:.55},
- {who:'oz',text:'Exactly so! I am a humbug.',rate:.92,intensity:.45},
+ {who:'scarecrow',text:'You’re more than that. You’re a humbug.',rate:.95,gap:.7,intensity:.55},
+ {who:'oz',text:'Exactly so! I am a humbug.',rate:1,intensity:.45},
  {who:'dorothy',text:'But I don’t understand. How was it that you appeared to me as a great Head?',gap:.9,intensity:.45},
  {who:'oz',text:'That was one of my tricks. This I hung from the ceiling by a wire.',gap:.6,intensity:.35},
  {who:'oz',text:'I stood behind the screen and pulled a thread, to make the eyes move and the mouth open.',gap:.45,intensity:.35,mark:'demo'},
@@ -82,7 +83,7 @@ const after:Line[]=[
  {who:'oz',text:'Oh, I am a ventriloquist.',say:'Oh, I am a ven trill uh quist.',gap:.5,intensity:.4},
  {who:'oz',text:'I can throw the sound of my voice wherever I wish, so that you thought it was coming out of the Head.',gap:.4,intensity:.4},
  {who:'dorothy',text:'I think you are a very bad man.',gap:1.2,intensity:.6},
- {who:'oz',text:'Oh, no, my dear. I’m really a very good man, but I’m a very bad Wizard, I must admit.',f0:164,rate:.94,gap:.8,intensity:.3},
+ {who:'oz',text:'Oh, no, my dear. I’m really a very good man, but I’m a very bad Wizard, I must admit.',f0:164,rate:1,gap:.8,intensity:.3},
 ];
 
 const round=(v:number)=>Math.round(v*100)/100;
@@ -92,7 +93,8 @@ const gestures:Record<ThroneSpeaker,Gesture[]>={oz:[],dorothy:[],scarecrow:[],'t
 const great=new Map<number,Gesture[]>(),placed:Placed[]=[];
 function place(line:Line,at:number):Placed{
  const size=line.size??1,m=manner[line.who];
- const phrases=g2p.toPhrases((line.say??line.text).replaceAll('’',"'"));
+ // Vowels get the time a listener needs (src/scene/clarity.ts); the lines run about a quarter longer for it.
+ const phrases=clearPhrases(g2p.toPhrases((line.say??line.text).replaceAll('’',"'")),parts[line.who].body);
  const plan=planPhrases(phrases,{body:parts[line.who].body,t0:at/size,f0:(line.f0??m.f0)*size,rate:(line.rate??m.rate)*size});
  if(size===1)gestures[line.who].push(...plan.gestures);else great.set(size,[...(great.get(size)??[]),...plan.gestures]);
  const p={...line,start:round(at),end:round(plan.end*size+.2)};placed.push(p);return p;
