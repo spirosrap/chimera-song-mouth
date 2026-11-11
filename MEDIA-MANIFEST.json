@@ -1527,6 +1527,36 @@
       "sha256": "fcf34c256617f9b8f85feb1591960a2c3302d59bec40f57942b6ceaf432a3cc3"
     },
     {
+      "path": "public/scenes/sagan-dimensions/backing.mp3",
+      "bytes": 14196524,
+      "sha256": "e937c2fdad7f596916519f7cb9f1c61d82462babf5a77837539470caec3bfd8b"
+    },
+    {
+      "path": "public/scenes/sagan-dimensions/credits.txt",
+      "bytes": 870,
+      "sha256": "e1dfb6b8ea03560ff762ec7607dedb453ee4268585ab9eb927482940478f02a8"
+    },
+    {
+      "path": "public/scenes/sagan-dimensions/mix.mp3",
+      "bytes": 14196524,
+      "sha256": "21003af19f4905e7a377d0b86332d5eeb007e97c3db6656c355c1d81367d368c"
+    },
+    {
+      "path": "public/scenes/sagan-dimensions/performance.json",
+      "bytes": 201794,
+      "sha256": "11ff4fa701eed12f3b219c048c16a51577c7a8d53e9c3b116fac4148e0c3c3d0"
+    },
+    {
+      "path": "public/scenes/sagan-dimensions/sagan.tele.gz",
+      "bytes": 5861466,
+      "sha256": "e9e449ed68eebd66a355fc6b77efea07261c6f3b1f630a74f295fc1eeea5990f"
+    },
+    {
+      "path": "public/scenes/sagan-dimensions/scene.json",
+      "bytes": 15643,
+      "sha256": "ba9b95867580d0baa490cdb00e143a47dc887403eef00e5334729c6d493397d8"
+    },
+    {
       "path": "public/scenes/wizard-of-oz/credits.txt",
       "bytes": 532,
       "sha256": "21d917c9cba154bfc786ad545b4c19f907f0808b38415241c03cb2407fd15e5d"

@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Eighteen songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All nine movies and the Fool me once speech in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All ten film and TV scenes and the Fool me once speech in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -29,6 +29,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 - Existing song IDs, scene IDs and default selection. Complete links are in `CONTENT.md`.
 - The speech's single-speaker `press` setting, synchronized gestures and original excerpt pauses; see `docs/fool-me-once.md`.
 - The Wizard of Oz throne room, five mouths, staged from the public-domain book; the great Voice is the little man’s airway enlarged; see `docs/wizard-of-oz.md`.
+- The complete Sagan explanation, Flatland figures and dimensional models; see `docs/sagan-dimensions.md`.
 - The Cuckoo’s Nest ward, four speaking mouths, seated group and nurses’ closing reaction; see `docs/cuckoos-nest.md`.
 - The Matrix waiting room, three physical voices, bending spoon and handoff; see `docs/matrix-spoon.md`.
 - The Arrival dusk field, Ian’s physical dialogue and Louise’s silent reaction; see `docs/arrival.md`.
