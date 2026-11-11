@@ -12,7 +12,7 @@ const score:Arrangement=JSON.parse(file('arrangement.json').toString());
 const song=BAND_SONGS.find(s=>s.id==='be-my-baby')!;
 
 test('Be My Baby appends three physical singers and the original music without replacing another selection',async()=>{
- expect(BAND_SONGS).toHaveLength(18);expect(BAND_SONGS[14]).toBe(song);
+ expect(BAND_SONGS).toHaveLength(19);expect(BAND_SONGS[14]).toBe(song);
  expect(BAND_SONGS[13].id).toBe('mr-sandman-quartet');expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
  const a=await loadBandArrangement(song,async()=>new Response(JSON.stringify(score)));
  expect(a.presentation).toBe('backed-ensemble');expect(a.duration).toBeGreaterThan(160);expect(a.duration).toBeLessThan(161);

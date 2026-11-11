@@ -402,6 +402,31 @@
       "sha256": "84158aa95269b4845593eb394d279802e514230f50f2c629d7861e5899707d35"
     },
     {
+      "path": "public/band/cry-me-a-river/arrangement.json",
+      "bytes": 183322,
+      "sha256": "bade6fe16f993a33398a44adb8b37d8381e1faaaa7578adbd357ac9c811a4c14"
+    },
+    {
+      "path": "public/band/cry-me-a-river/backing.mp3",
+      "bytes": 5727788,
+      "sha256": "fc971581249a3e91fbe220917f095cf666f6e46aca910eb74faa7e93d9394926"
+    },
+    {
+      "path": "public/band/cry-me-a-river/credits.txt",
+      "bytes": 830,
+      "sha256": "28679121cc0e80fc901c092cc3dcf4fed380f49fce8c833de03cdb31c69e56f9"
+    },
+    {
+      "path": "public/band/cry-me-a-river/lead.mp3",
+      "bytes": 3579884,
+      "sha256": "4dd34227a87553549121084c6574368500f68a440f216c6a132fc6ee433cf165"
+    },
+    {
+      "path": "public/band/cry-me-a-river/lead.tele.gz",
+      "bytes": 1725248,
+      "sha256": "6fd1b23c7f56af0eade340b776996c66afab093923b231384eaa3e0c435bfdb3"
+    },
+    {
       "path": "public/band/house-of-the-rising-sun/alto.mp3",
       "bytes": 2031596,
       "sha256": "6f7ba48b32eb340b13921caac2c6c22f351abf259d6ef66ceda2f941efa526ad"

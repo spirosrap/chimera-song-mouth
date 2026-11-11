@@ -58,6 +58,9 @@ export const BAND_SONGS:BandSong[]=[
   {id:"space-oddity",name:"Space Oddity — David Bowie · 5:05 · singer & countdown",arrangementUrl:BASE_PATH+"band/space-oddity/arrangement.json?v=space-oddity-20261111",arrangement:{
     title:"Space Oddity · David Bowie",description:"The full original music with a physical mouth singing the words, and a second mouth speaking the overlapping launch countdown. Both follow the recording with synchronized words and mouth animation.",bpm:68,duration:305.32090702947846,presentation:"backed-ensemble",parts:[],sections:[],
   }},
+  {id:"cry-me-a-river",name:"Cry Me a River — Julie London · 2:58 · robotic singer",arrangementUrl:BASE_PATH+"band/cry-me-a-river/arrangement.json?v=cry-me-a-river-20261111",arrangement:{
+    title:"Cry Me a River · Julie London",description:"The full original guitar and bass accompaniment with one physical mouth singing the words, following the recording’s melody, held notes and relaxed phrasing.",bpm:75,duration:178.92333333333332,presentation:"backed-solo",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */

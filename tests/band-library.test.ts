@@ -54,7 +54,7 @@ test('the second Greek song adds a backed singer and hand without replacing exis
 
 
 test('Rodehihi adds a full backed Greek singer while keeping all previous songs',async()=>{
- const song=BAND_SONGS[9];expect(BAND_SONGS).toHaveLength(18);
+ const song=BAND_SONGS[9];expect(BAND_SONGS).toHaveLength(19);
  expect(song.id).toBe('rodehihi-den-xanakano-fylaki');expect(song.arrangement.presentation).toBe('backed-solo');
  expect(song.arrangement.duration).toBeGreaterThan(192);expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
  expect(BAND_SONGS[8].id).toBe('ta-paidia-tou-peiraia');
