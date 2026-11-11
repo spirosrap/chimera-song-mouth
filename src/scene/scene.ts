@@ -1,13 +1,13 @@
 export type CourtCharacterId = 'kaffee' | 'jessep';
 export type CliffCharacterId = 'vizzini' | 'inigo' | 'fezzik';
 export type CoreCharacterId = 'hal' | 'dave';
-export type MainCharacterId = CourtCharacterId | CliffCharacterId | CoreCharacterId | 'bush' | 'karaoke-singer' | 'ellie' | 'father' | 'ian';
+export type MainCharacterId = CourtCharacterId | CliffCharacterId | CoreCharacterId | 'bush' | 'karaoke-singer' | 'ellie' | 'father' | 'ian' | 'neo' | 'spoon-boy' | 'oracle-assistant';
 export type CharacterId = MainCharacterId | 'ross' | 'judge';
-export type CameraView = 'wide' | 'climber' | 'modules' | 'listener' | 'contact-sky' | 'contact-hands' | 'louise' | MainCharacterId;
+export type CameraView = 'wide' | 'climber' | 'modules' | 'listener' | 'contact-sky' | 'contact-hands' | 'louise' | 'matrix-floor' | 'matrix-spoon' | MainCharacterId;
 export type CameraChoice = 'auto' | CameraView;
 export interface SceneCue { start:number; end:number; speaker:CharacterId; text:string; intensity:number }
 export interface SceneShot { time:number; view:CameraView }
-export type SceneSetting='courtroom'|'cliffs'|'core'|'press'|'karaoke'|'beach'|'arrival';
+export type SceneSetting='courtroom'|'cliffs'|'core'|'press'|'karaoke'|'beach'|'arrival'|'matrix';
 /** Each film has its own cast and cameras; a score cannot borrow another film's. */
 export const SCENE_SETTINGS:Record<SceneSetting,{cast:CharacterId[];main:CharacterId[];cameras:CameraView[]}>={
   courtroom:{cast:['kaffee','jessep','ross','judge'],main:['kaffee','jessep'],cameras:['wide','kaffee','jessep']},
@@ -15,6 +15,7 @@ export const SCENE_SETTINGS:Record<SceneSetting,{cast:CharacterId[];main:Charact
   core:{cast:['hal','dave'],main:['hal','dave'],cameras:['wide','hal','dave','modules']},
   press:{cast:['bush'],main:['bush'],cameras:['wide','bush']},
   beach:{cast:['ellie','father'],main:['ellie','father'],cameras:['wide','ellie','father','contact-sky','contact-hands']},
+  matrix:{cast:['neo','spoon-boy','oracle-assistant'],main:['neo','spoon-boy','oracle-assistant'],cameras:['wide','neo','spoon-boy','oracle-assistant','matrix-floor','matrix-spoon']},
   arrival:{cast:['ian'],main:['ian'],cameras:['wide','ian','louise']},
   karaoke:{cast:['karaoke-singer'],main:['karaoke-singer'],cameras:['wide','karaoke-singer','listener']},
 };
@@ -23,7 +24,7 @@ export interface SceneFile {
   characters:{id:CharacterId;name:string;role:string;tele:string;telemetryEncoding?:'gzip'}[];
   cues:SceneCue[];shots:SceneShot[];
 }
-const character=(id:unknown):id is CharacterId=>id==='kaffee'||id==='jessep'||id==='ross'||id==='judge'||id==='vizzini'||id==='inigo'||id==='fezzik'||id==='hal'||id==='dave'||id==='bush'||id==='karaoke-singer'||id==='ellie'||id==='father'||id==='ian';
+const character=(id:unknown):id is CharacterId=>id==='kaffee'||id==='jessep'||id==='ross'||id==='judge'||id==='vizzini'||id==='inigo'||id==='fezzik'||id==='hal'||id==='dave'||id==='bush'||id==='karaoke-singer'||id==='ellie'||id==='father'||id==='ian'||id==='neo'||id==='spoon-boy'||id==='oracle-assistant';
 const file=(name:unknown)=>typeof name==='string'&&/^[a-z0-9-]+\.(mp3|tele)$/.test(name);
 export function validateScene(data:unknown):SceneFile {
   const s=data as SceneFile;

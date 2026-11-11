@@ -1382,6 +1382,46 @@
       "sha256": "5536c80207f0106103e558ff4faab5314ccb6386988d451d5c6c4bb97d69cbc6"
     },
     {
+      "path": "public/scenes/matrix-spoon/backing.mp3",
+      "bytes": 2275628,
+      "sha256": "7a667de809d8d2a573de944d641958a477e30c0488dd2a51e609b96b647c447f"
+    },
+    {
+      "path": "public/scenes/matrix-spoon/credits.txt",
+      "bytes": 981,
+      "sha256": "20c0b828817ed699a04dbb333f69187ea35e98e55965028919f28a5c34d2190d"
+    },
+    {
+      "path": "public/scenes/matrix-spoon/mix.mp3",
+      "bytes": 2275628,
+      "sha256": "9f5b18b3944ec6c420075c2a470acd425ef2e7ecb4d02b870e06fd0db83d7f9c"
+    },
+    {
+      "path": "public/scenes/matrix-spoon/neo.tele.gz",
+      "bytes": 119373,
+      "sha256": "454ab01b39e673e1fdd1b3fcc82005774fb9b2cbcead330e3ecfc447cddec955"
+    },
+    {
+      "path": "public/scenes/matrix-spoon/oracle-assistant.tele.gz",
+      "bytes": 73613,
+      "sha256": "c300d8e72621c927eca8641dcbb17742dfa4ed962b61edf767dac22e7a2141d8"
+    },
+    {
+      "path": "public/scenes/matrix-spoon/performance.json",
+      "bytes": 9910,
+      "sha256": "9cc9f7387e1cae8291f378a71f8e9f9f4118b31b7f6f2ce1d6e80ad9be9472f9"
+    },
+    {
+      "path": "public/scenes/matrix-spoon/scene.json",
+      "bytes": 2188,
+      "sha256": "1660563827253eea7c5fd12973ca44409c30bcce1612c13f74fdee9e330c1324"
+    },
+    {
+      "path": "public/scenes/matrix-spoon/spoon-boy.tele.gz",
+      "bytes": 272193,
+      "sha256": "f8b6bb59a637784744a0529dee86fc0be00a85d59c28e334c948f61e2ee43b04"
+    },
+    {
       "path": "public/scenes/princess-bride/credits.txt",
       "bytes": 446,
       "sha256": "a4cb80955a845c243252e3ea7923ee384259d1427b94c963431f25847ad174e1"

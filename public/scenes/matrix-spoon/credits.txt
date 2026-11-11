@@ -1,0 +1,4 @@
+The Matrix — the complete supplied ‘There is no spoon’ scene.
+CHIMERA’s physical vocal engine generates Neo, the spoon boy and the Oracle’s assistant. Their mouths replay the actual synthesis movements. Original background audio is retained with separated accompaniment around speech; separation may leave faint dialogue traces. No recorded actor audio or voice-cloning filter is used in the generated voice channels.
+The prepared pronunciation balances source word anchors with natural phoneme spacing and explicit consonants. The waiting room, rug, furniture, clothing, handoff, bending spoon and reflected wireframe face are stylized reconstructions. The reflection is an animated visual echo, not an optical simulation. Timing, pronunciation and appearance remain approximate.
+Underlying film, composition, performance and recording rights remain with their respective holders. The original input video, separation stems, models and analysis caches are not included.
