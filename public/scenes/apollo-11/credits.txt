@@ -1,0 +1,6 @@
+Apollo 11, 20 July 1969: the landing of the lunar module Eagle, 102:42:08 to 102:46:16 ground elapsed time.
+The words are Neil Armstrong's, Buzz Aldrin's and CapCom Charlie Duke's, from NASA's air-to-ground and onboard voice transcripts
+as collected in the Apollo Lunar Surface Journal (public record). A few asides are left out; nothing is added.
+Each line starts at its mission time or just after. The lander follows the altitudes and speeds called out; speeds before "58 forward" are estimates.
+Physical voices, radio sound, Quindar tones and engine rumble: CHIMERA. No recording of the mission is used.
+Timing and pronunciation are approximate.

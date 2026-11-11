@@ -1,13 +1,13 @@
 export type CourtCharacterId = 'kaffee' | 'jessep';
 export type CliffCharacterId = 'vizzini' | 'inigo' | 'fezzik';
 export type CoreCharacterId = 'hal' | 'dave';
-export type MainCharacterId = CourtCharacterId | CliffCharacterId | CoreCharacterId | 'bush' | 'karaoke-singer' | 'ellie' | 'father' | 'ian' | 'neo' | 'spoon-boy' | 'oracle-assistant' | 'mcmurphy' | 'cheswick' | 'billy' | 'martini' | 'oz' | 'dorothy' | 'scarecrow' | 'tin-woodman' | 'lion' | 'sagan';
+export type MainCharacterId = CourtCharacterId | CliffCharacterId | CoreCharacterId | 'bush' | 'karaoke-singer' | 'ellie' | 'father' | 'ian' | 'neo' | 'spoon-boy' | 'oracle-assistant' | 'mcmurphy' | 'cheswick' | 'billy' | 'martini' | 'oz' | 'dorothy' | 'scarecrow' | 'tin-woodman' | 'lion' | 'sagan' | 'armstrong' | 'aldrin' | 'capcom';
 export type CharacterId = MainCharacterId | 'ross' | 'judge';
-export type CameraView = 'wide' | 'climber' | 'modules' | 'listener' | 'contact-sky' | 'contact-hands' | 'louise' | 'matrix-floor' | 'matrix-spoon' | 'ward-pair' | 'ward-group' | 'ward-laughter' | 'ward-nurses' | 'throne-head' | 'throne-row' | 'flatland' | 'dimension-model' | MainCharacterId;
+export type CameraView = 'wide' | 'climber' | 'modules' | 'listener' | 'contact-sky' | 'contact-hands' | 'louise' | 'matrix-floor' | 'matrix-spoon' | 'ward-pair' | 'ward-group' | 'ward-laughter' | 'ward-nurses' | 'throne-head' | 'throne-row' | 'flatland' | 'dimension-model' | 'landing-above' | 'landing-ground' | 'landing-crew' | MainCharacterId;
 export type CameraChoice = 'auto' | CameraView;
 export interface SceneCue { start:number; end:number; speaker:CharacterId; text:string; intensity:number }
 export interface SceneShot { time:number; view:CameraView }
-export type SceneSetting='courtroom'|'cliffs'|'core'|'press'|'karaoke'|'beach'|'arrival'|'matrix'|'ward'|'throne'|'cosmos';
+export type SceneSetting='courtroom'|'cliffs'|'core'|'press'|'karaoke'|'beach'|'arrival'|'matrix'|'ward'|'throne'|'cosmos'|'moon';
 /** Each film has its own cast and cameras; a score cannot borrow another film's. */
 export const SCENE_SETTINGS:Record<SceneSetting,{cast:CharacterId[];main:CharacterId[];cameras:CameraView[]}>={
   courtroom:{cast:['kaffee','jessep','ross','judge'],main:['kaffee','jessep'],cameras:['wide','kaffee','jessep']},
@@ -17,6 +17,7 @@ export const SCENE_SETTINGS:Record<SceneSetting,{cast:CharacterId[];main:Charact
   beach:{cast:['ellie','father'],main:['ellie','father'],cameras:['wide','ellie','father','contact-sky','contact-hands']},
   matrix:{cast:['neo','spoon-boy','oracle-assistant'],main:['neo','spoon-boy','oracle-assistant'],cameras:['wide','neo','spoon-boy','oracle-assistant','matrix-floor','matrix-spoon']},
   ward:{cast:['mcmurphy','cheswick','billy','martini'],main:['mcmurphy','cheswick','billy','martini'],cameras:['wide','mcmurphy','cheswick','billy','martini','ward-pair','ward-group','ward-laughter','ward-nurses']},
+  moon:{cast:['armstrong','aldrin','capcom'],main:['armstrong','aldrin','capcom'],cameras:['wide','landing-above','landing-ground','landing-crew','armstrong','aldrin','capcom']},
   cosmos:{cast:['sagan'],main:['sagan'],cameras:['wide','sagan','flatland','dimension-model']},
   throne:{cast:['oz','dorothy','scarecrow','tin-woodman','lion'],main:['oz','dorothy','scarecrow','tin-woodman','lion'],cameras:['wide','throne-head','oz','dorothy','scarecrow','tin-woodman','lion','throne-row']},
   arrival:{cast:['ian'],main:['ian'],cameras:['wide','ian','louise']},
@@ -27,7 +28,7 @@ export interface SceneFile {
   characters:{id:CharacterId;name:string;role:string;tele:string;telemetryEncoding?:'gzip'}[];
   cues:SceneCue[];shots:SceneShot[];
 }
-const character=(id:unknown):id is CharacterId=>id==='kaffee'||id==='jessep'||id==='ross'||id==='judge'||id==='vizzini'||id==='inigo'||id==='fezzik'||id==='hal'||id==='dave'||id==='bush'||id==='karaoke-singer'||id==='ellie'||id==='father'||id==='ian'||id==='neo'||id==='spoon-boy'||id==='oracle-assistant'||id==='mcmurphy'||id==='cheswick'||id==='billy'||id==='martini'||id==='oz'||id==='dorothy'||id==='scarecrow'||id==='tin-woodman'||id==='lion'||id==='sagan';
+const character=(id:unknown):id is CharacterId=>id==='kaffee'||id==='jessep'||id==='ross'||id==='judge'||id==='vizzini'||id==='inigo'||id==='fezzik'||id==='hal'||id==='dave'||id==='bush'||id==='karaoke-singer'||id==='ellie'||id==='father'||id==='ian'||id==='neo'||id==='spoon-boy'||id==='oracle-assistant'||id==='mcmurphy'||id==='cheswick'||id==='billy'||id==='martini'||id==='oz'||id==='dorothy'||id==='scarecrow'||id==='tin-woodman'||id==='lion'||id==='sagan'||id==='armstrong'||id==='aldrin'||id==='capcom';
 const file=(name:unknown)=>typeof name==='string'&&/^[a-z0-9-]+\.(mp3|tele)$/.test(name);
 export function validateScene(data:unknown):SceneFile {
   const s=data as SceneFile;

@@ -98,3 +98,19 @@
 .scene-throne .scene-transport input,.scene-throne .scene-options input,.scene-throne .scene-export progress { accent-color: #2fae74; }
 .scene-throne .scene-export { border-color: #1f5a3d; background: #08170f; }
 .throne-stage { background: #030b07; }
+
+/* The Moon: grey ground, black sky, and the amber of the instruments. */
+.scene-moon { color: #e6e9eb; }
+.scene-moon .scene-top,.scene-moon .scene-transport,.scene-moon .scene-cast { border-color: #2c3237; }
+.scene-moon .scene-top a,.scene-moon .scene-eyebrow,.scene-moon .scene-transport > span { color: #ffb648; }
+.scene-moon .scene-top > span,.scene-moon .scene-runtime small,.scene-moon .scene-options legend,.scene-moon .scene-cast span { color: #8a949b; }
+.scene-moon .scene-intro p:last-child,.scene-moon .scene-cast p,.scene-moon .scene-credit { color: #a9b1b6; }
+.scene-moon .scene-film { border-color: #2c3237; }
+.scene-moon .scene-caption > span { color: #ffb648; }
+.scene-moon .scene-cast strong { color: #f3f5f6; }
+.scene-moon .primary { background: #e9edef; color: #0a0c0d; border-color: #ffffff; }
+.scene-moon .chip { color: #c3cad0; border-color: #3a4248; }
+.scene-moon .chip.on { color: #ffe3b5; border-color: #ffb648; background: #241a0a; }
+.scene-moon .scene-transport input,.scene-moon .scene-options input,.scene-moon .scene-export progress { accent-color: #ffb648; }
+.scene-moon .scene-export { border-color: #3a4248; background: #101214; }
+.moon-stage { background: #020304; }

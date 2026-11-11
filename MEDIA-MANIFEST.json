@@ -1297,6 +1297,36 @@
       "sha256": "09d34a031ba5833d5d831c5d937c668c2073faa99397476593732510bdaf4548"
     },
     {
+      "path": "public/scenes/apollo-11/aldrin.tele.gz",
+      "bytes": 2436682,
+      "sha256": "cb9daa646880a4896907ceb41594f0fd6a921894e053ea356e3d2f098d5f2705"
+    },
+    {
+      "path": "public/scenes/apollo-11/armstrong.tele.gz",
+      "bytes": 903257,
+      "sha256": "310701d38e0ff299f7e5777ece3b0a6d619cdc7c4196e8907b97b346b81b8e79"
+    },
+    {
+      "path": "public/scenes/apollo-11/capcom.tele.gz",
+      "bytes": 856401,
+      "sha256": "516ab10c1243f3291892d4abb9e27ce79fce70e96c24c5e269a3627b4a95d99f"
+    },
+    {
+      "path": "public/scenes/apollo-11/credits.txt",
+      "bytes": 649,
+      "sha256": "5ddaa88f480120c0bf675c54cba9ecba5af549549a7cb368354525a7f5c4f516"
+    },
+    {
+      "path": "public/scenes/apollo-11/mix.mp3",
+      "bytes": 5191200,
+      "sha256": "1367056287a11dd09fea966fc856dfcf48fc8f55fe390dfba9eac4f211a2dd09"
+    },
+    {
+      "path": "public/scenes/apollo-11/scene.json",
+      "bytes": 8459,
+      "sha256": "4be17654f24d4d30f75fa644e85177621e03e240aa42ea6fe1021b89ddd2cb7c"
+    },
+    {
       "path": "public/scenes/arrival/backing.mp3",
       "bytes": 951596,
       "sha256": "676658d11b8805b020dc395982c0161a8a45db0f1c2c77af4efc3023559bc957"

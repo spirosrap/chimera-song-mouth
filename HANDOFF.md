@@ -21,13 +21,14 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Nineteen songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All ten film and TV scenes and the Fool me once speech in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All ten film and TV scenes, the Fool me once speech and the Apollo 11 landing in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
 - Gzipped `.tele.gz` assets, stereo instrumental backing and independent mixer controls.
 - Existing song IDs, scene IDs and default selection. Complete links are in `CONTENT.md`.
 - The speech's single-speaker `press` setting, synchronized gestures and original excerpt pauses; see `docs/fool-me-once.md`.
+- The Apollo 11 landing on the mission clock, three radio voices from NASA’s transcripts, the lander driven by the called heights and speeds; see `docs/apollo-11.md`.
 - The Wizard of Oz throne room, five mouths, staged from the public-domain book; the great Voice is the little man’s airway enlarged; see `docs/wizard-of-oz.md`.
 - The complete Sagan explanation, Flatland figures and dimensional models; see `docs/sagan-dimensions.md`.
 - The Cuckoo’s Nest ward, four speaking mouths, seated group and nurses’ closing reaction; see `docs/cuckoos-nest.md`.

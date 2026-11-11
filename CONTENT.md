@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 324 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 330 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -81,8 +81,9 @@ Cry Me a River retains the complete supplied Julie London recording’s accompan
 | One Flew Over the Cuckoo’s Nest — you’re not crazy | 1:03 | `?scene=cuckoos-nest` | Four physical voices over original room ambience, synchronized captions, nine seated characters, ward, gestures and nurses’ reaction |
 | The Wonderful Wizard of Oz — the discovery of Oz, the Terrible | 3:12 | `?scene=wizard-of-oz` | Five physical voices with no source clip, the great Voice as the little man’s enlarged airway, synthetic hall, roar and falling screen, captions, shots and scene data |
 | Cosmos — Carl Sagan’s fourth dimension | 7:24 | `?scene=sagan-dimensions` | Physical narration, original background, captions, desk, Flatland shapes, apple sections, cube and tesseract |
+| Apollo 11 — the Eagle has landed | 4:20 | `?scene=apollo-11` | Three physical radio voices with no source recording, lines on the mission clock, the lander following the called heights and speeds, lunar surface, cabin and Houston sets, captions, shots and scene data |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All eleven scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All twelve scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 
 Project Hail Mary recreates the complete supplied karaoke clip. The physical singer
 performs Sign of the Times and the closing spoken line, while the original music
@@ -96,6 +97,9 @@ closing line and pauses. See [the scene notes](docs/arrival.md).
 
 The Matrix recreates the complete supplied spoon scene, including the boy’s
 demonstration, Neo’s attempt and the final invitation. See [the scene notes](docs/matrix-spoon.md).
+
+The Apollo 11 landing uses NASA’s transcripts of the crew and CapCom, not a recording.
+See [the scene notes](docs/apollo-11.md) for the mission clock and what drives the picture.
 
 The Wonderful Wizard of Oz is staged from the public-domain book, not from any film.
 See [the scene notes](docs/wizard-of-oz.md) for how one airway speaks at two sizes.
