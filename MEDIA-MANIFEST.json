@@ -1352,6 +1352,46 @@
       "sha256": "4be17654f24d4d30f75fa644e85177621e03e240aa42ea6fe1021b89ddd2cb7c"
     },
     {
+      "path": "public/scenes/apollo-13/capcom.tele.gz",
+      "bytes": 1069449,
+      "sha256": "916a37fa8d9556683543c70ce2e17162b97dab2388e851bd5841d7014896f19d"
+    },
+    {
+      "path": "public/scenes/apollo-13/credits.txt",
+      "bytes": 645,
+      "sha256": "ce2861de9381a19c0eee79ba44fbece19d78aa8ba7e9d371d8463c45af984f46"
+    },
+    {
+      "path": "public/scenes/apollo-13/haise.tele.gz",
+      "bytes": 882548,
+      "sha256": "9295b311bfdc39f6e5414cbe78be9dc0afcc0e5c95af6b4d9d42c7a4fd4380d2"
+    },
+    {
+      "path": "public/scenes/apollo-13/kranz.tele.gz",
+      "bytes": 267972,
+      "sha256": "4f15afc4bde4d615fb44d406485c08186e92c9f3df939d44d570a9d7001181aa"
+    },
+    {
+      "path": "public/scenes/apollo-13/lovell.tele.gz",
+      "bytes": 661589,
+      "sha256": "cee1dca1f66b743b6a0f624a0a1daa8606e7330021815e9d1cfebf6368025f3c"
+    },
+    {
+      "path": "public/scenes/apollo-13/mix.mp3",
+      "bytes": 4011360,
+      "sha256": "a8dcfa83b566bdc6677b41f11fe23e35950ab4710981abe719760100ae9e44c8"
+    },
+    {
+      "path": "public/scenes/apollo-13/scene.json",
+      "bytes": 6361,
+      "sha256": "ecc763671cbb157079df7c6e3049132a0b50235dc7d507cc7080e976d66b4913"
+    },
+    {
+      "path": "public/scenes/apollo-13/swigert.tele.gz",
+      "bytes": 235165,
+      "sha256": "d74f0e95fcf764f04a77b01a5551f62b4ca049cd522f1d7f178a034257023c26"
+    },
+    {
       "path": "public/scenes/arrival/backing.mp3",
       "bytes": 951596,
       "sha256": "676658d11b8805b020dc395982c0161a8a45db0f1c2c77af4efc3023559bc957"
