@@ -10,6 +10,11 @@ use super::inventory::Manner;
 use serde::{Deserialize, Serialize};
 use std::collections::BTreeMap;
 
+/// How much longer than Klatt's fluent-speech durations a vowel is spoken: unstressed, stressed.
+/// Fluent speech leaves a reduced vowel 55-70 ms, and listeners lose the words around those first.
+const CLEAR_UNSTRESSED: f64 = 1.7;
+const CLEAR_STRESSED: f64 = 1.4;
+
 /// Klatt's inherent / minimum durations (ms).
 fn table(ipa: &str) -> Option<(f64, f64)> {
     Some(match ipa {
@@ -169,6 +174,9 @@ pub fn klatt_durations(segs: &[Segment], info: impl Fn(&Segment) -> SegInfo) -> 
                 if stress > 0 && pv.is_some_and(|pv| pv.manner == Some(Manner::Stop) && pv.voiced != Some(true)) {
                     d += 20.0;
                 }
+                // Clear speech: a talker who needs to be understood lengthens vowels, the reduced
+                // ones most (Picheny, Durlach & Braida 1986), and leaves consonants about as they are.
+                d *= if stress == 0 { CLEAR_UNSTRESSED } else { CLEAR_STRESSED };
                 return d / 1000.0;
             }
             // consonants
