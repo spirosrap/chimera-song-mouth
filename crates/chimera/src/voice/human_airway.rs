@@ -147,7 +147,9 @@ impl HumanAirway {
             ph_len: 8.8,
             or_len: 8.3,
             dx_stable: (C_SOUND / fs) / 0.97,
-            noise_gain: NoiseGains { glottis: 3.2e-6, constriction: 2.2e-6, teeth: 3.0e-6 },
+            // The teeth (obstacle) source is what makes sibilants about 10 dB louder than /f/ and /θ/ in
+            // real speech (Shadle 1985; Jongman et al. 2000); at 3.0e-6 /ʃ/ was no louder than /f/.
+            noise_gain: NoiseGains { glottis: 3.2e-6, constriction: 2.2e-6, teeth: 6.0e-6 },
             max_area_rate: 45.0,
             area_rate_gain: 40.0,
             seal_rate: 5.0,

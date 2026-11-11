@@ -313,7 +313,11 @@ pub fn plan_utterance(input: &[Segment], o: &PlanOptions) -> Plan {
                 add_oral(&def.targets, t0, split, 2.0, def.ipa);
                 let rel = def.release.and_then(|r| phoneme(r, body));
                 if let Some(rel) = rel {
-                    add_oral(&rel.targets, split + 0.008, t1, 1.4, def.ipa);
+                    // A voiceless affricate's frication is its voice onset time: the constriction is
+                    // held while the folds are apart, so no [h] follows it. A fricative constriction
+                    // lets go at once, so the contact release's 20 ms lead is given back.
+                    let open = if def.voicing == Voicing::Voiceless { 0.4 * stop_vot(s.aspirated, next_vowel, prev_seg.map(|p| p.ipa), rate) } else { 0.0 };
+                    add_oral(&rel.targets, split + 0.008, t1 + open + 0.02, 1.4, def.ipa);
                 }
             }
             Manner::Fricative | Manner::Approximant | Manner::Lateral => add_oral(&def.targets, t0, t1, 1.3, def.ipa),
@@ -337,8 +341,8 @@ pub fn plan_utterance(input: &[Segment], o: &PlanOptions) -> Plan {
             if def.manner == Manner::Stop || def.manner == Manner::Affricate {
                 // as the front end says; by default English's rule: aspirated when syllable-initial
                 // before a vowel and not after /s/
-                let aspirated = s.aspirated.unwrap_or_else(|| next_vowel && !prev_seg.is_some_and(|p| p.ipa == "s"));
-                let vot = if aspirated { 0.05 / rate } else { 0.012 };
+                let aspirated = is_aspirated(s.aspirated, next_vowel, prev_seg.map(|p| p.ipa));
+                let vot = stop_vot(s.aspirated, next_vowel, prev_seg.map(|p| p.ipa), rate);
                 let g = Gesture::new(t0 + 0.25 * dur, t1 + vot * 0.4, 0.035, if aspirated { 0.045 } else { 0.02 }, 6.0, one(ControlKey::ABDUCTION, if aspirated { 0.36 } else { 0.22 })).label("aspiration");
                 voiced_again = g.end();
                 gestures.push(g);
@@ -590,4 +594,15 @@ pub fn plan_phrases(phrases: &[PhraseInput], o: &PlanOptions) -> Plan {
         all.end = plan.end;
     }
     all
+}
+
+/// As the front end says; by default English's rule: a voiceless stop or affricate is aspirated
+/// when syllable-initial before a vowel and not after /s/.
+fn is_aspirated(marked: Option<bool>, next_vowel: bool, prev: Option<&str>) -> bool {
+    marked.unwrap_or(next_vowel && prev != Some("s"))
+}
+
+/// Voice onset time (s) after a voiceless stop's or affricate's release.
+fn stop_vot(marked: Option<bool>, next_vowel: bool, prev: Option<&str>, rate: f64) -> f64 {
+    if is_aspirated(marked, next_vowel, prev) { 0.05 / rate } else { 0.012 }
 }
