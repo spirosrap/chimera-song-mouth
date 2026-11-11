@@ -8,27 +8,49 @@ not merge unrelated histories or replace this tree with an upstream checkout.
 
 ## Latest synchronization
 
-Checked on 2026-11-10, through `eed4a5ff2695ad151df2210d012b2a4ab584f099`.
-The original export's upstream base was
-`092b16ce12b927d473c884ca2dfae53ce1b995df`, verified from the source workspace's
-shallow boundary and unchanged Rust source.
+Checked on 2026-11-11, through `e33221d006f44c78849210eb29dd1eb9755dc78e`
+(18 commits after `eed4a5ff`, all imported with `git cherry-pick -x`).
 
-All four intervening commits were imported: the MusicXML-to-notes converter,
-its case-insensitive lyric diagnostics and tests, XML attribute-order fixes,
-and the macOS Metal backend for layout checks. The README addition was adapted
-to this edition's documentation; the three imported code/test files match
-upstream exactly. No voice-engine, runtime UI or prepared-media change was
-present in this range.
+What came in:
 
-Validation: 112 native tests passed (two existing ignored tests); all 127 Bun
-tests passed, including the five new importer tests. The first full test run
-hit the default five-second timeout in an existing Country Roads audio render;
-`bun test tests --timeout 15000` passed without changing assertions or code.
-Typechecking, all 12 prepared song loaders, all 221 media checksums and the
-production build passed. The 242 generated site files were byte-identical to
-the current deployment staging, and all 22 published runtime files were
-downloaded and checksum-verified. No deployment upload was needed. Browser
-QA and the macOS Metal layout path were not exercised.
+- Engine: the voice keeps the airway above 60 kHz at low device rates, a child
+  voice at 16 or 32 kHz no longer rings, and a tongue pressed low no longer
+  shortens the oral tube under its stable length (issue #50, with its review).
+- Front end: `Segment.aspirated`, and IPA marks for nasalization,
+  palatalization and breathy voice, with their tests and docs.
+- App: the audio context runs at 48 kHz whatever the device, a demo song gives
+  the player's own lyrics back, Z and X move the on-screen keys at once, Play's
+  Whisper and Beatbox's ready pose stay in their tabs, the dictionary loads
+  with the Sing panel.
+- Repo: `.gitattributes` (LF text), Windows file-URL paths in tests and tools,
+  the model's references and credits, upstream's Vision & scope.
+
+Adapted rather than taken as written:
+
+- `README.md` keeps this edition's text. Upstream's Vision & scope is included
+  under "The original project's vision & scope", with a note that this edition
+  goes beyond its points 6 and 7 (tracked media, multi-voice scenes); the
+  `AGENTS.md` rule that points at it is worded to match. The credits link was
+  added to the opening paragraph, since this README has no Docs list.
+- `src/ui/singing.ts`: upstream's `endDemo` is merged with this edition's
+  imported-melody player; it takes the elapsed time this edition's song clock
+  shows. `src/ui/store.ts` keeps `threeD: true`. `.gitattributes` keeps
+  `*.mp3` and `*.mp4` binary.
+
+The engine changed, so `src/wasm/chimera.wasm` is rebuilt (Arch `rust` and
+`rust-wasm` 1.99.1; sha256 in `PROVENANCE.json`). Two checks that the rebuild
+is safe: the previous source rebuilt with this compiler renders three test
+utterances (audio, telemetry and plans) bit-identically to the previously
+tracked binary, and so does the new source. The fixes touch low device rates
+and extreme tongue positions, not ordinary 48 kHz speech, so no prepared song
+or scene was re-rendered and all 313 media hashes are unchanged.
+
+Validation: 144 native tests passed (two existing ignored), no golden fixture
+blessed; 222 Bun tests passed; typecheck; content verification. `tools/e2e.ts`
+was run against a local build of the single-mouth player (`?solo=1`, system
+Chromium with software GL): every check passed except "the syllable cursor did
+not move", which fails identically on the tree before this import and is open.
+Before the import the same run also failed the Z/X check, which this range fixes.
 
 ## Next update
 
