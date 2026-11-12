@@ -1,0 +1,34 @@
+import {test,expect,spyOn} from 'bun:test';
+import {readFileSync} from 'node:fs';import {gunzipSync} from 'node:zlib';import * as THREE from 'three';
+import {validateScene,sceneCamera,SCENE_SETTINGS} from '../src/scene/scene.ts';import {movieScene} from '../src/scene/library.ts';
+import {puppetPose,puppetCamera,type PuppetId} from '../src/scene/puppets.ts';import {TeleTrack} from '../src/show/tele.ts';import {validPerformance} from '../src/band/performance.ts';import type {Arrangement} from '../src/band/types.ts';import {initEngine} from './harness.ts';
+await initEngine();const {PuppetStage}=await import('../src/ui/render/puppets.ts');const {VoiceModel}=await import('../src/ui/analysis.ts');const {planPart}=await import('../src/band/planning.ts');
+const file=(name:string)=>readFileSync(new URL(`../public/scenes/mahna-mahna/${name}`,import.meta.url));const scene=validateScene(JSON.parse(file('scene.json').toString())),score:Arrangement=JSON.parse(file('performance.json').toString());const voices=score.parts.filter(p=>p.kind==='voice');
+const tracks=scene.characters.map(c=>{const b=gunzipSync(file(c.tele+'.gz'));return new TeleTrack(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength));});
+test('Mahna Mahna retains the complete trio, presenter, telephone and balcony ending',()=>{
+ expect(movieScene('mahna-mahna')).toBeDefined();expect(scene.setting).toBe('puppets');expect(scene.duration).toBeCloseTo(156.800658,4);expect(scene.characters).toHaveLength(6);expect(scene.shots).toHaveLength(24);expect(scene.cues.length).toBeGreaterThan(60);expect(sceneCamera(scene,0,'auto')).toBe('kermit');expect(sceneCamera(scene,140,'auto')).toBe('puppet-backstage');expect(sceneCamera(scene,151,'auto')).toBe('puppet-balcony');expect(scene.cues.at(-1)!.text.toLowerCase()).toContain('who cares');expect(scene.duration-scene.cues.at(-1)!.end).toBeGreaterThan(1);
+ expect(()=>validateScene({...scene,characters:scene.characters.slice(0,3)})).toThrow();expect(()=>validateScene({...scene,shots:[{time:0,view:'theatre-turtle'}]})).toThrow('camera');expect(file('mix.mp3').length).toBeGreaterThan(4_900_000);expect(file('backing.mp3').length).toBeGreaterThan(4_900_000);
+});
+test('the trio and supporting speakers have separate physical performances and complete telemetry',()=>{
+ expect(voices).toHaveLength(6);expect(new Set(voices.map(p=>p.body.female)).size).toBe(6);expect(score.parts.at(-1)!.recordingType).toBe('instrumental');
+ for(const [i,p]of voices.entries()){
+  expect(p.effects).toBeUndefined();expect(p.recordingType).toBeUndefined();expect(validPerformance(p.performance!,score.duration)).toBe(true);expect(planPart(p).length).toBeGreaterThan(90);const track=tracks[i];expect(track.duration).toBeCloseTo(scene.duration,1);expect(track.body.female).toBeCloseTo(p.body.female,5);
+  for(let f=0;f<track.frames;f++)expect(track.message(f).t.clock).toBeCloseTo(f/20,4);
+  for(const phrase of p.performance!.phrases){const end=phrase.start+phrase.phones.reduce((s,p)=>s+p.duration,0);let peak=0;for(let f=track.indexAt(phrase.start);f<=track.indexAt(end);f++)peak=Math.max(peak,track.message(f).t.outRms);expect(peak).toBeGreaterThan(.001);}
+  if(i<3)for(let t=0;t<15;t+=.1)expect(track.message(track.indexAt(t)).t.outRms).toBeLessThan(.00001);
+ }
+ const left=voices[1].performance!,right=voices[2].performance!;expect(left.phrases).toHaveLength(156);expect(right.phrases).toEqual(left.phrases);expect(left.contour).not.toEqual(right.contour);expect(file('snowth-left.tele.gz')).not.toEqual(file('snowth-right.tele.gz'));
+});
+test('the trio movements and scene cameras retain the reference timeline across seeks',()=>{
+ expect(puppetPose(NaN)).toEqual(puppetPose(0));expect(puppetPose(81).below).toBeGreaterThan(.9);expect(puppetPose(95).away).toBeGreaterThan(.9);expect(puppetPose(110).turn).toBeGreaterThan(.9);expect(puppetPose(140).phone).toBe(true);expect(puppetPose(151).balcony).toBe(true);
+ for(const aspect of [16/9,375/430])for(const view of SCENE_SETTINGS.puppets.cameras){const c=puppetCamera(view,aspect,81);expect([...c.position,...c.target,c.fov].every(Number.isFinite)).toBe(true);}
+});
+test('the costumed physical heads, phone and balcony frame correctly and retain borrowed models',()=>{
+ const cast=scene.characters.map((c,i)=>({id:c.id as PuppetId,track:tracks[i],model:new VoiceModel(tracks[i].body,tracks[i].sampleRate)})),stage=new PuppetStage(cast);const pose=()=>stage.actors.flatMap(a=>[...a.root.matrixWorld.elements,Number(a.root.visible)]);
+ try{
+  expect(stage.actors).toHaveLength(6);stage.frame(18,true,1,'wide',.5);expect(stage.actors.filter(a=>a.root.visible).map(a=>a.id)).toEqual(['mahna','snowth-left','snowth-right']);stage.frame(146,true,1,'wide',.5);expect(stage.actors.filter(a=>a.root.visible).map(a=>a.id)).toEqual(['snowth-left','snowth-right','kermit']);expect(stage.actors.find(a=>a.id==='snowth-left')!.root.position.x-stage.actors.find(a=>a.id==='kermit')!.root.position.x).toBeGreaterThan(80);
+  stage.frame(140,true,1,'puppet-backstage',.5);expect(stage.backstage.visible).toBe(true);expect(stage.telephone.group.visible).toBe(true);stage.frame(151,true,1,'puppet-balcony',.5);expect(stage.balcony.visible).toBe(true);expect(stage.actors.filter(a=>a.root.visible).map(a=>a.id)).toEqual(['statler','waldorf']);
+  for(const [w,h]of [[1280,720],[375,430]]){stage.resize(w,h);for(const id of ['mahna','snowth-left','snowth-right'] as const){stage.frame(19,true,1,id,.5);const actor=stage.actors.find(a=>a.id===id)!;let n=0,inside=true;actor.head.scene.traverseVisible(o=>{const m=o as THREE.Mesh<THREE.InstancedBufferGeometry>,a=m.geometry?.getAttribute('instanceStart');if(a)for(let j=0;j<m.geometry.instanceCount;j++){const v=new THREE.Vector3().fromBufferAttribute(a,j).applyMatrix4(m.matrixWorld).project(stage.camera);n++;inside&&=[v.x,v.y,v.z].every(Number.isFinite)&&Math.abs(v.x)<.99&&Math.abs(v.y)<.99&&Math.abs(v.z)<1;}});expect(n).toBeGreaterThan(1000);expect(inside).toBe(true);}}
+  for(const t of [2,18,24,55,81,95,110,130,140,146,151]){stage.frame(t,true,2,'wide',.5);stage.scene.traverseVisible(o=>{const m=o as THREE.Mesh<THREE.InstancedBufferGeometry>;if(m.geometry?.getAttribute('instanceStart')){expect(Number.isFinite(m.geometry.instanceCount)).toBe(true);expect(m.geometry.instanceCount).toBeLessThanOrEqual(m.geometry.getAttribute('instanceStart').count);}});const before=pose();stage.frame(t,false,2,'wide',0);expect(pose()).toEqual(before);stage.frame(155,true,3,'wide',0);stage.frame(t,true,4,'wide',.5);expect(pose()).toEqual(before);}
+ }finally{let meshes=0,released=0;stage.scene.traverse(o=>{if(o instanceof THREE.Mesh){meshes++;o.geometry.addEventListener('dispose',()=>released++);}});const dispose=spyOn(VoiceModel.prototype,'dispose');stage.dispose();expect(dispose).toHaveBeenCalledTimes(0);dispose.mockRestore();expect(released).toBe(meshes);cast.forEach(c=>c.model.dispose());}
+});

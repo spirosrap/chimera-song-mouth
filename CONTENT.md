@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 430 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 441 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -91,6 +91,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Good Will Hunting — the park bench | 4:48 | `?scene=good-will-hunting` | Two physical voices, original music and park ambience, synchronized subtitles, bench, cap and beard, pond, swans, trees and the walk-away ending |
 | Celentano — Prisencolinensinainciusol | 3:45 | `?scene=celentano` | Two physical singers, original band and harmonica, teacher and answering class, twelve desks, globe, classroom set, clapping and dancing |
 | The Avalanches — Frontier Psychiatrist | 4:18 | `?scene=frontier-psychiatrist` | Six physical sample voices, original music, gold curtains, orchestra, drummer, cowboys, ghosts, human-headed turtle, parrot and scratched-record finale |
+| The Muppet Show — Mahna Mahna | 2:37 | `?scene=mahna-mahna` | Three physical singers, original music, orange-haired lead, two pink Snowths, walk-offs, Kermit and telephone, balcony punchline |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
 | The Big Lebowski — The Jesus | 4:25 | `?scene=big-lebowski` | Four physical voices, original opening song and background, bowling, five characters, doorstep flashback and subtitles |
@@ -163,3 +164,5 @@ The Truman Show includes the complete supplied ending, with seven physical dialo
 Prisencolinensinainciusol includes the complete supplied Formula Due classroom performance, including the instrumental break and harmonica finale. The teacher and answering class use physical mouth voices; captions are an approximate phonetic guide to the nonsense sounds. See [the scene notes](docs/celentano.md).
 
 Frontier Psychiatrist includes the complete supplied music video as a surreal theatre scene. Six physical voices follow the chopped samples on the original music clock; seven foreground heads include the turtle borrowing the active voice. See [the scene notes](docs/frontier-psychiatrist.md).
+
+Mahna Mahna includes the complete supplied trio sketch and its introduction, telephone gag and balcony ending. The Snowths have separate physical voices and synchronized answering syllables. See [the scene notes](docs/mahna-mahna.md).

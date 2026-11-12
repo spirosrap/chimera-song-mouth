@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-one songs, fifteen film and TV scenes, one speech, two Apollo missions, five concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-one songs, fifteen film and TV scenes, one speech, two Apollo missions, six concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -81,7 +81,7 @@ It uses the included WebAssembly engine and pronunciation dictionary. Repeats, a
 
 ## Media storage
 
-All 430 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
+All 441 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
 
 After intentionally adding or replacing public assets, run `bun run content:manifest`, inspect the changes, and commit the new manifest with the files. Do not regenerate the manifest to conceal missing assets.
 
@@ -122,3 +122,5 @@ The complete supplied **The Truman Show — the exit** ending is available at `?
 The complete supplied **Celentano — Prisencolinensinainciusol** classroom performance is available at `?scene=celentano`: physical nonsense singing, original music and harmonica, the teacher with glasses and a blue tie, answering students, desks, globe, clapping and dancing. See [the scene notes](docs/celentano.md).
 
 The complete supplied **The Avalanches — Frontier Psychiatrist** music video is available at `?scene=frontier-psychiatrist`: six physical voices, original music, gold curtains, orchestra, cowboys, ghosts, turtle, parrot and scratched-record finale. See [the scene notes](docs/frontier-psychiatrist.md).
+
+The complete supplied **The Muppet Show — Mahna Mahna** sketch is available at `?scene=mahna-mahna`: a physical singing trio, original accompaniment, orange hair and glasses, two pink Snowths, scat walk-offs, telephone and balcony ending. See [the scene notes](docs/mahna-mahna.md).

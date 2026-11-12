@@ -1782,6 +1782,61 @@
       "sha256": "5536c80207f0106103e558ff4faab5314ccb6386988d451d5c6c4bb97d69cbc6"
     },
     {
+      "path": "public/scenes/mahna-mahna/backing.mp3",
+      "bytes": 5019692,
+      "sha256": "decd50f793dcb059b8172798ed460751c6d7467fa8491517aa8dd22f50d20d6f"
+    },
+    {
+      "path": "public/scenes/mahna-mahna/credits.txt",
+      "bytes": 1526,
+      "sha256": "83a2228967b2c2c48346f1a6ec54edf5dea99626ec32bfde4fc11e2071f30fb6"
+    },
+    {
+      "path": "public/scenes/mahna-mahna/kermit.tele.gz",
+      "bytes": 124102,
+      "sha256": "0891aa3e3644c5c293d7746fcb2563f87dd0461d9c2a2f5e0a04943c4d7e8fe2"
+    },
+    {
+      "path": "public/scenes/mahna-mahna/mahna.tele.gz",
+      "bytes": 725203,
+      "sha256": "0d1bd6460611c982afd5c5c755800dbe885e42e953d1180db433839d6e9fe9ce"
+    },
+    {
+      "path": "public/scenes/mahna-mahna/mix.mp3",
+      "bytes": 5019692,
+      "sha256": "b923ddd8b7c37bb4903840cde9c32e89843825891307887619e970f905c10ab9"
+    },
+    {
+      "path": "public/scenes/mahna-mahna/performance.json",
+      "bytes": 330601,
+      "sha256": "5490f829195b5b043b53ac1ac5a85240198f7a718e8519ff8e8917b08a2200aa"
+    },
+    {
+      "path": "public/scenes/mahna-mahna/scene.json",
+      "bytes": 8896,
+      "sha256": "edcdcb96209ca9816ace5db764834a7f92c633b6ba26b22b0f4059ff982f30f4"
+    },
+    {
+      "path": "public/scenes/mahna-mahna/snowth-left.tele.gz",
+      "bytes": 616525,
+      "sha256": "93b2cb2a9576a4ee4d0411f9ab9d5d35ec2a2ea2ff358ae9feca8f9a800a2b81"
+    },
+    {
+      "path": "public/scenes/mahna-mahna/snowth-right.tele.gz",
+      "bytes": 617294,
+      "sha256": "73faaa6c15b6b8e9e9761c76ed4b805eead26d72bade3370d81c101b6cd5f73b"
+    },
+    {
+      "path": "public/scenes/mahna-mahna/statler.tele.gz",
+      "bytes": 50010,
+      "sha256": "fc67eb4de37bbe6f8bb492a2057c0fa4be5a03c60afb9566c7318e6ea9d57fe8"
+    },
+    {
+      "path": "public/scenes/mahna-mahna/waldorf.tele.gz",
+      "bytes": 52347,
+      "sha256": "c183c5f42cfdb3b7f03fb1295b3a9f0142d469dcd78df6e450254b3e3b9b5a0d"
+    },
+    {
       "path": "public/scenes/matrix-spoon/backing.mp3",
       "bytes": 2275628,
       "sha256": "7a667de809d8d2a573de944d641958a477e30c0488dd2a51e609b96b647c447f"
