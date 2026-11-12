@@ -1807,6 +1807,41 @@
       "sha256": "ba9b95867580d0baa490cdb00e143a47dc887403eef00e5334729c6d493397d8"
     },
     {
+      "path": "public/scenes/tears-in-rain/backing.mp3",
+      "bytes": 7226924,
+      "sha256": "efb33aeae846521f110a379857a2d8823c23a8858cf54f4b125e09ce4faa970c"
+    },
+    {
+      "path": "public/scenes/tears-in-rain/credits.txt",
+      "bytes": 1006,
+      "sha256": "a4035924a78e886d943dc3b5bfcf474aa2f24c63cd615899acccdc3a00d5fa44"
+    },
+    {
+      "path": "public/scenes/tears-in-rain/deckard.tele.gz",
+      "bytes": 25017,
+      "sha256": "166a31399d72af35d5370eb02d2d780a99094cbd89a54e02a80b7909a576096e"
+    },
+    {
+      "path": "public/scenes/tears-in-rain/mix.mp3",
+      "bytes": 7226924,
+      "sha256": "d0c00d63b5b34954f9b517ee1ba8570d01db9ee650bb95e983ca20a45fe47630"
+    },
+    {
+      "path": "public/scenes/tears-in-rain/performance.json",
+      "bytes": 13020,
+      "sha256": "5d853225eebc1a55406c186a84f9b22f2e22b25f2748c619ff98aa2b44415f04"
+    },
+    {
+      "path": "public/scenes/tears-in-rain/roy.tele.gz",
+      "bytes": 750924,
+      "sha256": "d0b0506180d77e7b0a19240af1e32845fd92ae4cbd7ab18311c710656ae4399d"
+    },
+    {
+      "path": "public/scenes/tears-in-rain/scene.json",
+      "bytes": 2607,
+      "sha256": "33b786189aa248d8d4f89a94716d119c2ad55b3880d101d0d14bac47547cb38f"
+    },
+    {
       "path": "public/scenes/wizard-of-oz/credits.txt",
       "bytes": 532,
       "sha256": "21d917c9cba154bfc786ad545b4c19f907f0808b38415241c03cb2407fd15e5d"
