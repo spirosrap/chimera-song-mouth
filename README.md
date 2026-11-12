@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-one songs, fifteen film and TV scenes, one speech, two Apollo missions, three concert performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-one songs, fifteen film and TV scenes, one speech, two Apollo missions, four concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -81,7 +81,7 @@ It uses the included WebAssembly engine and pronunciation dictionary. Repeats, a
 
 ## Media storage
 
-All 221 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
+All 419 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
 
 After intentionally adding or replacing public assets, run `bun run content:manifest`, inspect the changes, and commit the new manifest with the files. Do not regenerate the manifest to conceal missing assets.
 
@@ -118,3 +118,5 @@ The complete supplied **Interstellar — TARS humor setting** scene is available
 The complete supplied **Good Will Hunting — the park bench** conversation is available at `?scene=good-will-hunting`, with two physical voices, original background music and ambience, the pond and swans, Sean’s cap and beard, Will’s reactions and the quiet walk-away ending. See [the scene notes](docs/good-will-hunting.md).
 
 The complete supplied **The Truman Show — the exit** ending is available at `?scene=truman-show`: seven physical dialogue voices, original music and effects, the painted sky, sailboat, staircase, exit door, broadcast control room and viewers. The farewell bow, exit and closing guard exchange remain. See [the scene notes](docs/truman-show.md).
+
+The complete supplied **Celentano — Prisencolinensinainciusol** classroom performance is available at `?scene=celentano`: physical nonsense singing, original music and harmonica, the teacher with glasses and a blue tie, answering students, desks, globe, clapping and dancing. See [the scene notes](docs/celentano.md).

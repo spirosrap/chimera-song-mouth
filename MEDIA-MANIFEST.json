@@ -1502,6 +1502,41 @@
       "sha256": "777edcf05c2dc505015cd862415c662cad4864492f0414d06702baa9c5931942"
     },
     {
+      "path": "public/scenes/celentano/backing.mp3",
+      "bytes": 7208492,
+      "sha256": "dd67ac56f7bb2115a163507822a82152cfe0717e1f1a414d713695cc4ce6b2d7"
+    },
+    {
+      "path": "public/scenes/celentano/chorus.tele.gz",
+      "bytes": 318433,
+      "sha256": "5be65eb1474b9bf0dc281af396186091a34d796e09b88c1f1133c3cb1f2b44ba"
+    },
+    {
+      "path": "public/scenes/celentano/credits.txt",
+      "bytes": 1947,
+      "sha256": "a0b81da223588b5c36a22d2a3f3a06d860b39d8cf8e2d083375a1d53207e2620"
+    },
+    {
+      "path": "public/scenes/celentano/lead.tele.gz",
+      "bytes": 1697673,
+      "sha256": "526e2deb48f1e388ff894c0e4cb227fd7e53a0ab732327226739a70cd6a1ab03"
+    },
+    {
+      "path": "public/scenes/celentano/mix.mp3",
+      "bytes": 7208492,
+      "sha256": "8ac66a4886b9b754973e19a444f90f4f004e6a266fb08d1b7367015320888244"
+    },
+    {
+      "path": "public/scenes/celentano/performance.json",
+      "bytes": 234897,
+      "sha256": "d1433206e80a9c1828c11d50c485e9ed846eca5f63ff54c3ced9e39c8a8b2c00"
+    },
+    {
+      "path": "public/scenes/celentano/scene.json",
+      "bytes": 6610,
+      "sha256": "ca53199526413c216c9188e423d81380dd21a6ab4c5c3522775292b21fb72b8f"
+    },
+    {
       "path": "public/scenes/contact/backing.mp3",
       "bytes": 9576236,
       "sha256": "870862f52a6ef6c4c8296027b6246fae6afa5163bf84943de6bf164f26a1ca86"

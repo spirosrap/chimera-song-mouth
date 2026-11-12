@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-one songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all three concert performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all four concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -29,6 +29,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 - Existing song IDs, scene IDs and default selection. Complete links are in `CONTENT.md`.
 - The speech's single-speaker `press` setting, synchronized gestures and original excerpt pauses; see `docs/fool-me-once.md`.
 - Lose Yourself’s original music, approved clear rap voice, source-timed lyric highlighting and rainy city presentation; see `docs/lose-yourself.md`.
+- Celentano’s complete classroom performance, physical lead and answering voices, original music and harmonica, teacher, students, desks, globe, measured beat, harmonica player and standing finale; see `docs/celentano.md`.
 - The Truman Show’s complete supplied ending, seven physical dialogue voices, shared timing map, painted sky, boat, stairs and door, control room and monitors, viewers, farewell bow, exit and closing guard exchange; see `docs/truman-show.md`.
 - Good Will Hunting’s complete park conversation, approved physical Sean voice, distinct Will voice, shared timing map, original background, cap and beard, bench, pond, swans and walk-away ending; see `docs/good-will-hunting.md`.
 - Interstellar’s TARS humor-setting scene, three physical voices, four helmeted crew, actual robot airway display, joke indicator, 100% → 75% readout and stage separation. Keep its shared source/performance timing map; see `docs/tars.md`.
