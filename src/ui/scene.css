@@ -44,7 +44,27 @@
 .scene-export-saved { color: #d6c3a8; font-size: 13px; line-height: 1.7; }
 .scene-export-saved a { color: #ffe0af; }
 
-.scene-picker { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+/* One line for the scene list and one for the cameras; the full lists open on request. */
+.scene-picker { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 24px; }
+.scene-picker > a { display: inline-flex; align-items: center; gap: 9px; min-width: 0; }
+.scene-picker > a[rel=prev] { margin-left: auto; }
+.scene-picker > a span { max-width: 26ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.scene-picker > a b { display: none; font-weight: inherit; }
+.scene-picker i,.scene-fold i { font-style: normal; }
+.scene-fold i { margin-left: 9px; }
+.scene-index { flex-basis: 100%; list-style: none; margin: 8px 0 0; padding: 16px 0 4px; columns: 4 230px; column-gap: 40px; counter-reset: scene; border-top: 1px solid color-mix(in srgb,currentColor 16%,transparent); }
+.scene-index li { break-inside: avoid; counter-increment: scene; }
+.scene-index a { display: flex; align-items: baseline; gap: 12px; padding: 8px 0; font-size: 13px; line-height: 1.45; color: inherit; opacity: .7; text-decoration: none; }
+.scene-index a::before { content: counter(scene,decimal-leading-zero); flex: none; font-size: 10px; letter-spacing: .1em; font-variant-numeric: tabular-nums; opacity: .6; }
+.scene-index a:hover,.scene-index a[aria-current] { opacity: 1; }
+.scene-index a[aria-current] { font-weight: 600; }
+.scene-options fieldset { display: block; min-width: 0; flex: 1 1 320px; }
+.scene-views,.scene-more > div { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.scene-more { display: grid; gap: 14px; margin-top: 16px; }
+.scene-options { align-items: flex-start; }
+.scene-options label { padding-top: 28px; }
+.scene-more span { flex: 0 0 62px; font-size: 9px; letter-spacing: .15em; text-transform: uppercase; opacity: .55; }
+@media(max-width:600px) { .scene-picker > a span { display: none; } .scene-picker > a b { display: inline; } .scene-index { columns: 1; } .scene-more span { flex-basis: 100%; } .scene-options label { padding-top: 0; } }
 
 /* The memory core: one colour, and captions that arrive and leave quietly. */
 .scene-core { color: #eadfdc; }
