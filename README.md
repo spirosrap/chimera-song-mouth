@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-one songs, fifteen film and TV scenes, one speech, two Apollo missions, eight concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-one songs, fifteen film and TV scenes, one speech, two Apollo missions, nine concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -81,7 +81,7 @@ It uses the included WebAssembly engine and pronunciation dictionary. Repeats, a
 
 ## Media storage
 
-All 454 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
+All 460 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
 
 After intentionally adding or replacing public assets, run `bun run content:manifest`, inspect the changes, and commit the new manifest with the files. Do not regenerate the manifest to conceal missing assets.
 
@@ -128,3 +128,5 @@ The complete supplied **The Muppet Show — Mahna Mahna** sketch is available at
 The complete supplied **Laurie Anderson — O Superman** music video is available at `?scene=o-superman`: physical words and ha pulse, original instrumental bed, circular light, hand shadows, red silhouette, keyboard and abstract ending. See [the scene notes](docs/o-superman.md).
 
 The complete supplied **Céline Dion — It’s All Coming Back to Me Now** extended video is available at `?scene=celine-coming-back`: physical lead, original music, storm, motorcycle, candlelit mansion, bedroom, mirror, flowing curtains, ghostly lover and closing doorway. See [the scene notes](docs/celine-coming-back.md).
+
+The complete supplied **Vitas — The 7th Element** video is available at `?scene=vitas-7th-element`: mouth-engine singing and tongue flutter, original music, silver costume and headpiece, coloured disco circles, checkerboard dancers and audience. See [the scene notes](docs/vitas-7th-element.md).

@@ -2232,6 +2232,36 @@
       "sha256": "b1205f4c4461c7061c5cb1b8a5039196d3700f3669a151e77849252963d47a6d"
     },
     {
+      "path": "public/scenes/vitas-7th-element/backing.mp3",
+      "bytes": 7990316,
+      "sha256": "081eff3d7ac20e6e41bec61f88d8ab2eab09faba63a176025569d01f6a794fac"
+    },
+    {
+      "path": "public/scenes/vitas-7th-element/credits.txt",
+      "bytes": 1348,
+      "sha256": "8deb6bae59b851dafc7d860527ee29f74813c14d1592ae7a35f7c5e41243360d"
+    },
+    {
+      "path": "public/scenes/vitas-7th-element/lead.tele.gz",
+      "bytes": 2719695,
+      "sha256": "17ac0cbeb8165a1b5b6dcc36d04055b77fba8903c288a67e66ebfc52ef9e3c11"
+    },
+    {
+      "path": "public/scenes/vitas-7th-element/mix.mp3",
+      "bytes": 7990316,
+      "sha256": "c0bae77ba8ed0d84372d9890b97c0698fe73cdaa7cf9b966281994342c602120"
+    },
+    {
+      "path": "public/scenes/vitas-7th-element/performance.json",
+      "bytes": 396276,
+      "sha256": "66a9b6125d46b21e0cf20c7e4d96809d7f107d7eb0dbcc58630acff718f91755"
+    },
+    {
+      "path": "public/scenes/vitas-7th-element/scene.json",
+      "bytes": 7484,
+      "sha256": "97699de3952f8ce7de5737e35a5079aacba741634308fe0f2615eb4a5ed2c708"
+    },
+    {
       "path": "public/scenes/wizard-of-oz/credits.txt",
       "bytes": 532,
       "sha256": "21d917c9cba154bfc786ad545b4c19f907f0808b38415241c03cb2407fd15e5d"
