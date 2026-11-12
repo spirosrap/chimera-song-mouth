@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 472 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 478 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -97,6 +97,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Vitas — The 7th Element | 4:10 | `?scene=vitas-7th-element` | Physical Russian phrases, high vocalise and tongue flutter, original music, silver costume, disco circles, checkerboard dancers and audience |
 | Ylvis — Stonehenge | 3:56 | `?scene=stonehenge` | Physical singing, original music, TV studio, kitchen, bedroom, car, stone circle and sunset |
 | Talking Heads — Once in a Lifetime | 3:45 | `?scene=once-in-a-lifetime` | Physical verses and refrains, original music, suit, strange movements, multiplying figures and water |
+| Nat King Cole — Autumn Leaves | 2:39 | `?scene=autumn-leaves` | Physical singer, original music and black-and-white garden performance |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
 | The Big Lebowski — The Jesus | 4:25 | `?scene=big-lebowski` | Four physical voices, original opening song and background, bowling, five characters, doorstep flashback and subtitles |
@@ -181,3 +182,5 @@ Vitas includes the complete supplied video with original accompaniment and physi
 Stonehenge includes the full supplied video with original music, approved physical singing and the domestic-to-monument staging. See [the scene notes](docs/stonehenge.md).
 
 Once in a Lifetime includes the complete supplied official video, with original music and physical spoken verses and sung refrains. The choreography includes a suited performer, repeated figures and the floating ending. See [the scene notes](docs/once-in-a-lifetime.md).
+
+Autumn Leaves includes the complete supplied Nat King Cole television performance, with original music and physical singing in a monochrome garden set. See [the scene notes](docs/autumn-leaves.md).

@@ -1457,6 +1457,36 @@
       "sha256": "5e1988a2d1b49b62b548933590e20b1683c7c12b74866f5867835db2255e6c5c"
     },
     {
+      "path": "public/scenes/autumn-leaves/backing.mp3",
+      "bytes": 5101100,
+      "sha256": "dc83ca2470fcbe7b60bc3869a32ab713282adc375238a65ac075f680a8f996e7"
+    },
+    {
+      "path": "public/scenes/autumn-leaves/credits.txt",
+      "bytes": 1330,
+      "sha256": "96c82cb3d9ef29db2fdac5a76d3481a29b844e2123a24d186f34716bee325970"
+    },
+    {
+      "path": "public/scenes/autumn-leaves/lead.tele.gz",
+      "bytes": 1733288,
+      "sha256": "9bc4ef65964f000a85b6aae38f9b036e73e721fdb8836d2851e5e6f54fcb9db6"
+    },
+    {
+      "path": "public/scenes/autumn-leaves/mix.mp3",
+      "bytes": 5101100,
+      "sha256": "52ba5fdea75974e737bcdaa210aac4b00bcbc0c285893973f9398d6f18ede151"
+    },
+    {
+      "path": "public/scenes/autumn-leaves/performance.json",
+      "bytes": 155780,
+      "sha256": "bdefccdb35025b1c72c3b5373a3a06b9f69e03548321d8225620d7145ec6ec97"
+    },
+    {
+      "path": "public/scenes/autumn-leaves/scene.json",
+      "bytes": 3201,
+      "sha256": "44578a030b6e4342e87bcf18c007654fadc738f2cd56395145faa0f6958f3932"
+    },
+    {
       "path": "public/scenes/big-lebowski/backing.mp3",
       "bytes": 8471084,
       "sha256": "dbfb70ac8448bff4e2285613b8644aeb3e0e8c8b8832d5fedf19640639d51aea"
