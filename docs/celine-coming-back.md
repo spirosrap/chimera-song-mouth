@@ -34,3 +34,7 @@ Validation passed: 144 native tests (two existing ignored tests), 304 Bun tests 
 The unchanged small.en speech diagnostic reports 256 of 637 words misheard (40.2%), spread across 65 of 74 lines. This is a remaining intelligibility limitation and an imperfect speech-recognition measure of high-register singing, not a pronunciation pass. The user-approved chorus is retained without retuning to the recognizer.
 
 Native projected views are inspected. Browser, Playwright and layout-lint access remain declined in this session; browser playback, GPU rendering and recording/download interaction are not verified.
+
+## Published version
+
+Application commit `4ef49fd` was pushed to `main` and deployed on 2026-11-12. The publisher uploaded 16 changed files, with the entry page last, and exited successfully. HTTP verification matched 160 live files to their expected SHA-256 hashes, including the new scene, app bundles and preserved content. The direct `https://agenticspiros.com/chimera-song-mouth/?scene=celine-coming-back` route serves the updated app. This verifies deployment bytes, not browser playback.
