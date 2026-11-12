@@ -1,7 +1,8 @@
 import type {VocalPerformance} from './types.ts';
 
+// Ten minutes of a 150 BPM vocal loop needs up to 1,500 separate breath attacks.
 export function validPerformance(p:VocalPerformance,duration:number):boolean{
-  if(!Number.isFinite(duration)||duration<=0||!p||typeof p.lyrics!=='string'||!Array.isArray(p.phrases)||!p.phrases.length||p.phrases.length>1000||!Array.isArray(p.contour)||p.contour.length<2||p.contour.length>7000)return false;
+  if(!Number.isFinite(duration)||duration<=0||!p||typeof p.lyrics!=='string'||!Array.isArray(p.phrases)||!p.phrases.length||p.phrases.length>1600||!Array.isArray(p.contour)||p.contour.length<2||p.contour.length>7000)return false;
   let end=0,count=0;
   for(const phrase of p.phrases){
     if(!phrase||!Number.isFinite(phrase.start)||phrase.start<end-1e-6||!Array.isArray(phrase.phones)||!phrase.phones.length)return false;

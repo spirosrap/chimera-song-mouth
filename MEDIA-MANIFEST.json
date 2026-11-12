@@ -1912,6 +1912,41 @@
       "sha256": "91f91f75fc8df29f6bcda3b400b1f18b3aa2160de57abdb02f2a4b975b9bf48a"
     },
     {
+      "path": "public/scenes/o-superman/backing.mp3",
+      "bytes": 16244780,
+      "sha256": "372e87f33a8019dca998de1a4aec22798157b157666dc54c15ee8af04ad8003a"
+    },
+    {
+      "path": "public/scenes/o-superman/credits.txt",
+      "bytes": 1091,
+      "sha256": "11cdb711c6e4e420a01e5a9f78d93c5aef5f924ba2d2891559e7f3de591dc46a"
+    },
+    {
+      "path": "public/scenes/o-superman/laurie.tele.gz",
+      "bytes": 2537960,
+      "sha256": "276c92312ddaa8cce11ce95b482ad413c021c4d69cf6eab98ade094a2f3d75d6"
+    },
+    {
+      "path": "public/scenes/o-superman/mix.mp3",
+      "bytes": 16244780,
+      "sha256": "fe2bac56920a3703be3f418df70a35b8fe8044dd8b032469b7c11417d4751038"
+    },
+    {
+      "path": "public/scenes/o-superman/performance.json",
+      "bytes": 434019,
+      "sha256": "a4d0acaa2fec5d9743b5f748b3b0f86f0c3154cf22a768c2c92dc25f5a53e5f2"
+    },
+    {
+      "path": "public/scenes/o-superman/scene.json",
+      "bytes": 10341,
+      "sha256": "90223bc35e6dba30097c9a591f4dc7f6eb906e7b1d7a908c9522ee9a3f676b8b"
+    },
+    {
+      "path": "public/scenes/o-superman/superman-pulse.tele.gz",
+      "bytes": 104237,
+      "sha256": "9d5a1569f0675c3b9d014db35287588d0a620f18ddcd5da5ff7f44b6404a30cf"
+    },
+    {
       "path": "public/scenes/princess-bride/credits.txt",
       "bytes": 446,
       "sha256": "a4cb80955a845c243252e3ea7923ee384259d1427b94c963431f25847ad174e1"

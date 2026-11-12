@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-one songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all six concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seven concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -29,6 +29,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 - Existing song IDs, scene IDs and default selection. Complete links are in `CONTENT.md`.
 - The speech's single-speaker `press` setting, synchronized gestures and original excerpt pauses; see `docs/fool-me-once.md`.
 - Lose Yourself’s original music, approved clear rap voice, source-timed lyric highlighting and rainy city presentation; see `docs/lose-yourself.md`.
+- O Superman’s complete music video, approved physical lead and ha pulse, source-timed repeated engine cells, circular light, masked hand shadows, keyboard, silhouette and long outro. Keep its two model leases and absolute telemetry clock; see `docs/o-superman.md`.
 - Mahna Mahna’s complete trio sketch, three independent physical singers, original music, nonsense calls, all answering syllables, walk-offs, Kermit’s telephone and the balcony ending. Keep its six leased models and explicit source timing; see `docs/mahna-mahna.md`.
 - Frontier Psychiatrist’s complete surreal theatre video, six physical sample voices, original music and nonverbal effects, measured beats, source-aligned chopped samples, approved pronunciation and seven foreground heads. Keep the turtle’s borrowed model ownership; see `docs/frontier-psychiatrist.md`.
 - Celentano’s complete classroom performance, physical lead and answering voices, original music and harmonica, teacher, students, desks, globe, measured beat, harmonica player and standing finale; see `docs/celentano.md`.
