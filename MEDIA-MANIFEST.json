@@ -1537,6 +1537,36 @@
       "sha256": "ca53199526413c216c9188e423d81380dd21a6ab4c5c3522775292b21fb72b8f"
     },
     {
+      "path": "public/scenes/celine-coming-back/backing.mp3",
+      "bytes": 14701100,
+      "sha256": "dcda6e744255b1a117af052928f58e1cf2d950e28704572a7974ddbd7f026a81"
+    },
+    {
+      "path": "public/scenes/celine-coming-back/credits.txt",
+      "bytes": 1304,
+      "sha256": "14bd6b7b97e4e8b8cf6ea80b543bace697b6085265d1c31eb40236512c6e2b64"
+    },
+    {
+      "path": "public/scenes/celine-coming-back/lead.tele.gz",
+      "bytes": 4518135,
+      "sha256": "7b3adc4d1729ad0dd8aa0dbde37883286a8ae55fa24d8307f20ec3cf9d99e864"
+    },
+    {
+      "path": "public/scenes/celine-coming-back/mix.mp3",
+      "bytes": 14701100,
+      "sha256": "4bace6f03459fec3a40895099c253744ed4a6917b660c0d517150b0c7d2a6dec"
+    },
+    {
+      "path": "public/scenes/celine-coming-back/performance.json",
+      "bytes": 363941,
+      "sha256": "c1cf2c19d6ba1247069683140ac398d7862ee95c699948afae03d2d16651b6b0"
+    },
+    {
+      "path": "public/scenes/celine-coming-back/scene.json",
+      "bytes": 10766,
+      "sha256": "565ea48cac8bf84fdf542c2d8488c9dfa16f7b216b1c6cf4ae5e727f35420985"
+    },
+    {
       "path": "public/scenes/contact/backing.mp3",
       "bytes": 9576236,
       "sha256": "870862f52a6ef6c4c8296027b6246fae6afa5163bf84943de6bf164f26a1ca86"

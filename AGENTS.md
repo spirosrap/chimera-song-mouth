@@ -52,12 +52,13 @@ and the CLI) under a React UI. See the README.
 - **Recorded band heads own model leases for their mounted lifetime.** Do not hold an evictable live-preview model in a recorded feed; the original MEGALOVANIA used 13 body blends, beyond the eight-entry cache. Preserve that regression test even when an arrangement changes bodies. Check: `bun test tests/model-leases.test.ts`.
 - **DOM content flows in `.screen-body`, never absolutely positioned.** Check: `bun run lint:layout`.
 - **This handoff explicitly includes the user-requested prepared music/movie assets.**
-  Keep all twenty-one songs, all fifteen film and TV scenes, the speech scene, the two Apollo scenes and all seven concert and music-video performances in `public/`; read `CONTENT.md` and `MEDIA-RIGHTS.md`.
+  Keep all twenty-one songs, all fifteen film and TV scenes, the speech scene, the two Apollo scenes and all eight concert and music-video performances in `public/`; read `CONTENT.md` and `MEDIA-RIGHTS.md`.
   The upstream copyright exclusion does not apply to this explicitly requested export. CSD
   datasets, original input recordings and analysis caches are not included. Do not add them.
   After intentionally changing public assets, run `bun run content:manifest` and commit the
   manifest together with the assets. `bun run verify:content` must pass before a static build.
 - **Voice tuning follows `docs/hill-climb/README.md`** and never edits its judges.
+- **Finish saving an audio preview before sharing its path.** Confirm that the file exists, has the expected duration with `ffprobe`, and decodes with `ffmpeg -v error -i <file> -f null -`. A link shared before encoding completed failed to play; after such a failure, provide a validated MP3 under a fresh filename.
 - **The planner speaks vowels at clear-speech length** (`durations.rs`, hill-climb experiment 21;
   `docs/speech-clarity.md`); shortening them again swallows the words around them. Spoken scene lines
   still go through `clearPhrases` (`src/scene/clarity.ts`) for the affricate floor, and a line timed
