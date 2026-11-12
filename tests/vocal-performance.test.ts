@@ -42,3 +42,12 @@ test('prepared French nasal vowels pass their native velum control instead of an
  expect(actual).not.toEqual(planPart(normal));
  (p.performance!.phrases[0].phones[0] as unknown as {nasalized:string}).nasalized='yes';expect(validPerformance(p.performance!,2)).toBe(false);
 });
+
+test('prepared Russian soft consonants retain the native palatal gesture',()=>{
+ const p=part();p.performance!.phrases[0].phones=[{ipa:'n',duration:.12,palatalized:true},{ipa:'a',duration:.68}];
+ expect(validPerformance(p.performance!,2)).toBe(true);
+ const actual=planPart(p),expected=planUtterance([{ipa:'n',dur:.12,palatalized:true},{ipa:'a',dur:.68}],{body:p.body,t0:.24,rate:1,f0:180,intonation:'flat',sung:true}).gestures.map(g=>{const {f0,breath,vibrato,...targets}=g.targets;return {...g,targets};}).filter(g=>Object.keys(g.targets).length);
+ expect(actual.filter(g=>g.label!=='source performance')).toEqual(expected);
+ const normal=part();normal.performance!.phrases[0].phones=[{ipa:'n',duration:.12},{ipa:'a',duration:.68}];expect(actual).not.toEqual(planPart(normal));
+ (p.performance!.phrases[0].phones[0] as unknown as {palatalized:string}).palatalized='yes';expect(validPerformance(p.performance!,2)).toBe(false);
+});

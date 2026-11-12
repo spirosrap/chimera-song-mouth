@@ -8,7 +8,7 @@ export interface SpokenLine { time: number; text: string }
 /** Source-performance controls use absolute audio time, including consonant onsets. */
 export interface VocalPerformance {
   lyrics: string;
-  phrases: {start:number; phones:{ipa:string;duration:number;nasalized?:boolean}[]}[];
+  phrases: {start:number; phones:{ipa:string;duration:number;nasalized?:boolean;palatalized?:boolean}[]}[];
   contour: {time:number;hz:number;breath:number}[];
 }
 export interface VocalEffects {

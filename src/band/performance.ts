@@ -7,7 +7,7 @@ export function validPerformance(p:VocalPerformance,duration:number):boolean{
     if(!phrase||!Number.isFinite(phrase.start)||phrase.start<end-1e-6||!Array.isArray(phrase.phones)||!phrase.phones.length)return false;
     end=phrase.start;
     for(const phone of phrase.phones){
-      if(!phone||typeof phone.ipa!=='string'||phone.ipa.length<1||phone.ipa.length>12||!Number.isFinite(phone.duration)||phone.duration<.009||phone.duration>10||(phone.nasalized!==undefined&&typeof phone.nasalized!=='boolean'))return false;
+      if(!phone||typeof phone.ipa!=='string'||phone.ipa.length<1||phone.ipa.length>12||!Number.isFinite(phone.duration)||phone.duration<.009||phone.duration>10||(['nasalized','palatalized'] as const).some(k=>phone[k]!==undefined&&typeof phone[k]!=='boolean'))return false;
       // Full rap verses exceed 1800 phones; keep a bounded input size.
       end+=phone.duration;if(++count>6000)return false;
     }

@@ -6,7 +6,7 @@ import type {BandPart,VocalPerformance} from './types.ts';
 export function planPerformance(part:BandPart,p:VocalPerformance):Gesture[]{
   const out:Gesture[]=[];
   for(const phrase of p.phrases){
-    const plan=planUtterance(phrase.phones.map(s=>({ipa:s.ipa,dur:s.duration,...(s.nasalized?{nasalized:true}:{})})),{body:part.body,t0:phrase.start-.06,rate:1,f0:180,intonation:'flat',sung:true});
+    const plan=planUtterance(phrase.phones.map(s=>({ipa:s.ipa,dur:s.duration,...(s.nasalized?{nasalized:true}:{}),...(s.palatalized?{palatalized:true}:{})})),{body:part.body,t0:phrase.start-.06,rate:1,f0:180,intonation:'flat',sung:true});
     for(const gesture of plan.gestures){
       const {f0,breath,vibrato,...targets}=gesture.targets;
       if(Object.keys(targets).length)out.push({...gesture,targets});
