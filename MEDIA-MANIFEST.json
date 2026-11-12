@@ -1977,6 +1977,36 @@
       "sha256": "9d5a1569f0675c3b9d014db35287588d0a620f18ddcd5da5ff7f44b6404a30cf"
     },
     {
+      "path": "public/scenes/once-in-a-lifetime/backing.mp3",
+      "bytes": 7203884,
+      "sha256": "48c2149e8bfb9788f7e495fe7885dccb93bb670baf87d434b89ccb804884ec41"
+    },
+    {
+      "path": "public/scenes/once-in-a-lifetime/credits.txt",
+      "bytes": 1477,
+      "sha256": "ac089adf5eefada4fa5ffc7b097eb0395773f4b0c44acc995a5a6fc23df819fc"
+    },
+    {
+      "path": "public/scenes/once-in-a-lifetime/lead.tele.gz",
+      "bytes": 2581387,
+      "sha256": "d2769fb159a625abc8d5c64414ad09d172c7f70065bc68930b1180d30457d3bf"
+    },
+    {
+      "path": "public/scenes/once-in-a-lifetime/mix.mp3",
+      "bytes": 7203884,
+      "sha256": "bca4084aae5ba049401b2c27f14e663c6c4f7e57557ec18b6f1aaade0f801c26"
+    },
+    {
+      "path": "public/scenes/once-in-a-lifetime/performance.json",
+      "bytes": 212424,
+      "sha256": "76d46a458680baee09cced709052fb71e3735ebe00d9721d14d048f185c337f8"
+    },
+    {
+      "path": "public/scenes/once-in-a-lifetime/scene.json",
+      "bytes": 8379,
+      "sha256": "7fa8fd269275d9e449bf7a1298e008ac8251e049f827f53cb86513e15510e9bd"
+    },
+    {
       "path": "public/scenes/princess-bride/credits.txt",
       "bytes": 446,
       "sha256": "a4cb80955a845c243252e3ea7923ee384259d1427b94c963431f25847ad174e1"
