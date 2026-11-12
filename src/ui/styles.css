@@ -3055,3 +3055,15 @@ input[type="range"]::-moz-range-thumb {
   .band-heads.band-backed-solo.band-backed-ensemble { grid-template-columns: minmax(0,1fr); }
   .band-backed-ensemble .band-head .screen-body { height: 300px; }
 }
+
+/* A lyric video keeps its controls in the fullscreen element and its content in flow. */
+.band-heads.band-backed-solo.band-lyric-video { max-width: none; width: 100%; }
+.lyric-video { display: flex; flex-direction: column; background: #070c12; border: 1px solid #194d50; min-width: 0; }
+.lyric-video-picture { width: 100%; aspect-ratio: 16 / 9; min-width: 0; margin: auto; }
+.lyric-video-picture canvas { display: block; width: 100%; height: 100%; }
+.lyric-video-controls { display: flex; align-items: center; gap: 12px; padding: 10px; flex-wrap: wrap; }
+.lyric-video-controls .band-transport { flex: 1 1 600px; margin: 0; padding: 0; border: 0; }
+.lyric-video > p { margin: 10px; }
+.lyric-video:fullscreen { border: 0; justify-content: center; width: 100%; height: 100%; overflow: auto; }
+.lyric-video:fullscreen .lyric-video-picture { flex: 0 1 auto; width: min(100%, calc((100dvh - 170px) * 16 / 9)); }
+.lyric-video:fullscreen .lyric-video-controls { flex-shrink: 0; }

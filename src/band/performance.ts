@@ -8,7 +8,8 @@ export function validPerformance(p:VocalPerformance,duration:number):boolean{
     end=phrase.start;
     for(const phone of phrase.phones){
       if(!phone||typeof phone.ipa!=='string'||phone.ipa.length<1||phone.ipa.length>12||!Number.isFinite(phone.duration)||phone.duration<.009||phone.duration>10)return false;
-      end+=phone.duration;if(++count>1800)return false;
+      // Full rap verses exceed 1800 phones; keep a bounded input size.
+      end+=phone.duration;if(++count>6000)return false;
     }
     if(end>duration)return false;
   }

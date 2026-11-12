@@ -4,6 +4,7 @@ import { risingSunBand } from "./risingSun.ts";
 import { neonCurrentBand } from "./neonCurrent.ts";
 import { smallHoursBand } from "./smallHours.ts";
 import { MAX_BAND_VOICES, isVoicePart, type Arrangement } from "./types.ts";
+import {validLyricVideo} from './lyricVideo.ts';
 import {validPerformance} from './performance.ts';
 
 export interface BandSong { id:string; name:string; arrangement:Arrangement; arrangementUrl?:string }
@@ -64,6 +65,9 @@ export const BAND_SONGS:BandSong[]=[
   {id:"smile",name:"Smile — Nat King Cole · 2:56 · robotic singer",arrangementUrl:BASE_PATH+"band/smile/arrangement.json?v=smile-20261111",arrangement:{
     title:"Smile · Nat King Cole",description:"The full original orchestral accompaniment with one physical mouth singing the words, following the recording’s melody, held notes and phrasing.",bpm:78,duration:176.56625850340134,presentation:"backed-solo",parts:[],sections:[],
   }},
+  {id:"lose-yourself",name:"Lose Yourself — Eminem · 5:27 · rap & highlighted lyrics",arrangementUrl:BASE_PATH+"band/lose-yourself/arrangement.json?v=lose-yourself-20261112",arrangement:{
+    title:"Lose Yourself · Eminem",description:"The full original music with a physical mouth rapping the words, a rainy city backdrop and lyrics highlighted word by word.",bpm:86,duration:327.84,presentation:"lyric-video",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */
@@ -92,5 +96,6 @@ export async function loadBandArrangement(song:BandSong,request:(url:string)=>Pr
     ids.add(part.id);
   }
   if(data.presentation==="solo-roll"&&data.parts.filter(isVoicePart).length!==1)throw new Error("The solo performance needs exactly one singer.");
+  if(data.presentation==="lyric-video"&&(data.parts.filter(isVoicePart).length!==1||!validLyricVideo(data.lyricVideo,data.duration)))throw new Error("The lyric video needs one voice and valid word timings.");
   return data;
 }

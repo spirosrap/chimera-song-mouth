@@ -46,6 +46,8 @@ export interface BandPart {
   voice?: { breathiness?: number; brightness?: number; tension?: number; voiced?: boolean; pressure?: number; drift?: number };
   effects?: VocalEffects;
 }
+export interface TimedLyricWord {start:number;end:number;text:string;line:number}
+export interface LyricVideoSpec {background:string;words:TimedLyricWord[]}
 export interface Arrangement {
   title: string;
   description: string;
@@ -56,7 +58,8 @@ export interface Arrangement {
   wordless?: boolean;
   /** Show scat syllables at the lips even when the song has no lyric text. */
   showSyllables?: boolean;
-  presentation?: "quartet" | "backed-solo" | "backed-ensemble" | "ensemble" | "solo-roll";
+  presentation?: "quartet" | "backed-solo" | "backed-ensemble" | "ensemble" | "solo-roll" | "lyric-video";
+  lyricVideo?: LyricVideoSpec;
   spotlights?: {time:number;partId:string}[];
   captions?: {time:number;end:number;text:string}[];
 }

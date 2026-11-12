@@ -527,6 +527,41 @@
       "sha256": "0baa0f8f8fcb091cdc8cf44adbfd441b58663e877017d5edc86005089909532a"
     },
     {
+      "path": "public/band/lose-yourself/arrangement.json",
+      "bytes": 433593,
+      "sha256": "f512bf6a84f56cc0239c1988d86a65a0a18bf9e10f1c06b204dc0e3f5b71a11c"
+    },
+    {
+      "path": "public/band/lose-yourself/background-prompt.txt",
+      "bytes": 764,
+      "sha256": "bc7bde9803693ce6b4f628c06fc63bd663fff68822ff2d7c88069d15292fa51e"
+    },
+    {
+      "path": "public/band/lose-yourself/backing.mp3",
+      "bytes": 10493228,
+      "sha256": "9c7ed0031c50df69c059e354727f44756d35b298a002a489ff129d7f473769d3"
+    },
+    {
+      "path": "public/band/lose-yourself/credits.txt",
+      "bytes": 1100,
+      "sha256": "e67194c43a45cb5e0dd7441c3bd71e5acea90f2ae736f1daec728babcfa1eb46"
+    },
+    {
+      "path": "public/band/lose-yourself/lead.mp3",
+      "bytes": 7869932,
+      "sha256": "b6e9d22de6b0eb04a401d51017f45a63a9fa0bcde087ae86070ca4b4bafd0e84"
+    },
+    {
+      "path": "public/band/lose-yourself/lead.tele.gz",
+      "bytes": 3416546,
+      "sha256": "3577edb04a6bec2bc7055f11d0b7c1ea9484a2f6b19f9c8ecfb093ac250d57be"
+    },
+    {
+      "path": "public/band/lose-yourself/rainy-city.png",
+      "bytes": 2486304,
+      "sha256": "46ab2d967d6dd865d564f59e730bd889ad558bf3e2524b633733e83db485f392"
+    },
+    {
       "path": "public/band/megalovania/arrangement.json",
       "bytes": 157474,
       "sha256": "b472072fa81b059bea678fa5b48f987af8a83f1b9eecbf1db9bedc9cc8c91e35"

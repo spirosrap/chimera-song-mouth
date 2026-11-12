@@ -13,7 +13,7 @@ const song=BAND_SONGS.find(s=>s.id==='space-oddity')!;
 const end=(p:{start:number;phones:{duration:number}[]})=>p.start+p.phones.reduce((s,p)=>s+p.duration,0);
 
 test('Space Oddity appends the full recording with physical singer and countdown',async()=>{
- expect(BAND_SONGS).toHaveLength(20);expect(BAND_SONGS[17]).toBe(song);
+ expect(BAND_SONGS).toHaveLength(21);expect(BAND_SONGS[17]).toBe(song);
  expect(BAND_SONGS[16].id).toBe('starman');expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
  const a=await loadBandArrangement(song,async()=>new Response(JSON.stringify(score)));
  expect(a.presentation).toBe('backed-ensemble');expect(a.duration).toBeGreaterThan(305);expect(a.duration).toBeLessThan(306);

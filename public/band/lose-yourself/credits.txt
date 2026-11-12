@@ -1,0 +1,7 @@
+Lose Yourself — Eminem. Full 5:27 recording supplied by the user.
+Original song and recording rights remain with their holders. This is a user-requested physical-mouth adaptation, not a new original composition or an artist voice clone.
+CHIMERA generates the entire rap vocal using source-aligned English phonemes, reference pitch and stress. The generated airway telemetry drives the animated mouth. Original recorded vocals are not used in the generated lead.
+The music is locally separated from the supplied recording and kept at its original speed throughout, including the full intro and outro. Separation can leave faint vocal traces.
+786 word timings, all three verses and repeated hooks, 1008 source-aligned syllables. The user approved the clearer second vocal preview. The transcription and physical pronunciation remain approximate.
+Rainy city background: generated for this edition with the built-in image-generation tool, copied unchanged. Exact prompt: background-prompt.txt.
+Original input recording, separation model files, inference caches and intermediate audio are not included.

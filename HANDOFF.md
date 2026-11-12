@@ -20,7 +20,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 
 ## Preserve
 
-- Twenty songs in `src/band/library.ts`, including all prepared files in `public/band/`.
+- Twenty-one songs in `src/band/library.ts`, including all prepared files in `public/band/`.
 - All ten film and TV scenes, the Fool me once speech, the two Apollo scenes and the opera concert in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
@@ -28,6 +28,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 - Gzipped `.tele.gz` assets, stereo instrumental backing and independent mixer controls.
 - Existing song IDs, scene IDs and default selection. Complete links are in `CONTENT.md`.
 - The speech's single-speaker `press` setting, synchronized gestures and original excerpt pauses; see `docs/fool-me-once.md`.
+- Lose Yourself’s original music, approved clear rap voice, source-timed lyric highlighting and rainy city presentation; see `docs/lose-yourself.md`.
 - Nessun Dorma’s complete concert performance and extended finale, with Italian physical tenor/choir, original orchestra and a populated opera stage; see `docs/nessun-dorma.md`.
 - Apollo 13’s oxygen tank failure, five radio voices from NASA’s transcripts and the flight director’s loop, with the pauses shortened; see `docs/apollo-13.md`.
 - The Apollo 11 landing on the mission clock, three radio voices from NASA’s transcripts, the lander driven by the called heights and speeds; see `docs/apollo-11.md`.
