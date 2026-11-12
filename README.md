@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-one songs, thirteen film and TV scenes, one speech, two Apollo missions, three concert performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-one songs, fourteen film and TV scenes, one speech, two Apollo missions, three concert performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -114,3 +114,5 @@ The complete supplied **Big Lebowski** bowling sequence is available at `?scene=
 The complete supplied **Blade Runner · Tears in Rain** rooftop sequence is available at `?scene=tears-in-rain`, with physical dialogue, the original background soundtrack, a rainy rooftop rescue and the dove’s flight. See [the scene notes](docs/tears-in-rain.md).
 
 The complete supplied **Interstellar — TARS humor setting** scene is available at `?scene=tars`, with three physical voices, four helmeted crew in the Ranger cabin, TARS’s working airway display, joke light, changing humor setting and rocket separation. See [the scene notes](docs/tars.md).
+
+The complete supplied **Good Will Hunting — the park bench** conversation is available at `?scene=good-will-hunting`, with two physical voices, original background music and ambience, the pond and swans, Sean’s cap and beard, Will’s reactions and the quiet walk-away ending. See [the scene notes](docs/good-will-hunting.md).

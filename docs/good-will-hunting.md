@@ -1,0 +1,17 @@
+# Good Will Hunting — the park bench
+
+Open `?scene=good-will-hunting`. The complete supplied film excerpt lasts 4:47.75; the prepared performance is 4:48 with a short release. Only the uploader’s promotional endcard is omitted. Will’s opening comments, Sean’s monologue, the reaction shots and quiet walk-away ending remain. Every earlier song and scene is preserved.
+
+Two actual CHIMERA physical mouths generate Sean Maguire and Will Hunting’s dialogue. The score contains 570 words in 78 speech phrases and 68 subtitle cues. It uses explicit phonemes, clear-speech durations through `CLEAR_SPEECH_TIGHT`, measured word anchors and a restrained source-shaped pitch contour. Voices are synthesized from the airway engine rather than filtered actor recordings. No speech API or voice cloning is used.
+
+Sean has a warm lower register with gentle source inflection; Will has a lighter, brighter voice. The user approved the preview’s clarity and emotion. Phonetic timing gives consonants room and preserves reflective pauses. Adjacent phrases have at least 130 ms between them, including speaker changes. `sourceTimeline` in the score and `PARK_TIMELINE` in `src/scene/park-timing.ts` contain the same monotonic map. Original background, cameras and staging use that map; actual mouth telemetry always uses performance time.
+
+The garden setting includes a backless wooden bench, pond and ripples, five moving swans, willow branches, trees, distant benches and walking figures. Sean wears a soft peaked cap, beard, collared shirt, sweater and watch; Will has a fringe and a brown jacket. Sean’s gaze and gestures accompany the monologue; Will listens, looks down and reacts. At the end Sean stands and walks away while Will remains seated. Close-ups hide the other character to keep the speaking head clear. Camera cuts and movements are approximate wireframe reconstructions.
+
+Original music and park ambience remain beneath the generated dialogue. A continuous separated background replaces the recorded speech passages; faint voice traces may remain. The final quiet passage retains the original background. Raw input video, separation stems, model weights, caches and temporary renders are excluded from the repository.
+
+Prepared files are stereo `mix.mp3`, `backing.mp3`, two `.tele.gz` tracks, `performance.json`, `scene.json` and credits. The usual subtitle, camera, seeking and live video-recording controls are available. Rebuild the physical voices with `bun tools/render-good-will-hunting.ts` and FFmpeg, listen, then regenerate the media manifest. The portable score and backing are sufficient without the source video.
+
+Validation covers the complete film excerpt, all words, separate physical voices and turns, source-shaped inflection, telemetry clocks, quiet ending, matching timing maps, park movement, stand/walk events, camera framing, pause/seek determinism and borrowed-model ownership. Native projected scene images are inspected. Browser playback, browser layout and video recording remain untested because browser access was declined.
+
+Final checks: 144 native tests passed (2 ignored), 279 Bun tests passed across 71 files, and typecheck, media verification and the production subfolder build passed. All 393 earlier public files remain byte-identical; the manifest now covers 400 files. The unchanged isolated-caption Whisper diagnostic misheard 13.0% of words, including short replies, proper nouns and some softer phrases. It is a listening aid rather than a claim of perfect intelligibility; the user approved the physical-voice preview.

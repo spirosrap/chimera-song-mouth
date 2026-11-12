@@ -1632,6 +1632,41 @@
       "sha256": "c3d1ad446f7f0c2915eefa543275abb2af467e159e033c970d62c929383afa49"
     },
     {
+      "path": "public/scenes/good-will-hunting/backing.mp3",
+      "bytes": 9217580,
+      "sha256": "35df0f8604d5b53591a346f9ccb012bc3936591b6b7efc579537a401538ff591"
+    },
+    {
+      "path": "public/scenes/good-will-hunting/credits.txt",
+      "bytes": 1117,
+      "sha256": "4e8a229bfc33f350a290f3d350623c8eae81153f5eabb4065fcbbf4a25fa0cbd"
+    },
+    {
+      "path": "public/scenes/good-will-hunting/mix.mp3",
+      "bytes": 9217580,
+      "sha256": "0c06bf5702107d09e48d48ea872fb6b845eeda46efd5b2659988479768a5bcfc"
+    },
+    {
+      "path": "public/scenes/good-will-hunting/performance.json",
+      "bytes": 180620,
+      "sha256": "9a0cfa326077fc08a12bb0c6d2a9dafe202b05cc076da74f2ccaf6c91b620208"
+    },
+    {
+      "path": "public/scenes/good-will-hunting/scene.json",
+      "bytes": 9697,
+      "sha256": "05a7380a0b3d39ad34f213008adc6946f65a08cd8fcebd20e8cd79a4d0275365"
+    },
+    {
+      "path": "public/scenes/good-will-hunting/sean.tele.gz",
+      "bytes": 3060413,
+      "sha256": "72f0a1347bcd2825e051d40e4db463c47b95d2d0adf4b2f0b2c4e2236c0cb618"
+    },
+    {
+      "path": "public/scenes/good-will-hunting/will.tele.gz",
+      "bytes": 446481,
+      "sha256": "93d87335d5363dd2fa9dc6fce36860aef7acd9c16b119bd914c41b3325ad4f30"
+    },
+    {
       "path": "public/scenes/hal-9000/credits.txt",
       "bytes": 494,
       "sha256": "7faa7c3c86642899f0e9eae00c6cf51e4b17c83bdd6949ae67b92556b52d5a20"

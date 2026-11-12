@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 393 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 400 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -88,13 +88,14 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Apollo 11 — the Eagle has landed | 4:20 | `?scene=apollo-11` | Three physical radio voices with no source recording, lines on the mission clock, the lander following the called heights and speeds, lunar surface, cabin and Houston sets, captions, shots and scene data |
 | Apollo 13 — Houston, we’ve had a problem | 3:20 | `?scene=apollo-13` | Five physical voices with no source recording (crew, CapCom and flight director), the bang, alarm and venting on the scene clock, spacecraft, cabin and Mission Control sets, captions, shots and scene data |
 | Реченька — Diana Ankudinova | 3:48 | `?scene=rechenka` | Physical Russian singer, original accompaniment, captions, patterned dress, dock and boat, forest/water lights, dancers, judges and audience |
+| Good Will Hunting — the park bench | 4:48 | `?scene=good-will-hunting` | Two physical voices, original music and park ambience, synchronized subtitles, bench, cap and beard, pond, swans, trees and the walk-away ending |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
 | The Big Lebowski — The Jesus | 4:25 | `?scene=big-lebowski` | Four physical voices, original opening song and background, bowling, five characters, doorstep flashback and subtitles |
 | Blade Runner — Tears in Rain | 3:45 | `?scene=tears-in-rain` | Physical Roy voice, silent Deckard, original soundtrack, rainy rooftop rescue, dove flight and subtitles |
 | SOS — Dimash concert | 4:05 | `?scene=dimash-sos` | Physical French singer, original music, captions, dark suit, hand microphone, moving lights, band, audience and camera cuts |
 | Nessun Dorma — opera concert | 4:32 | `?scene=nessun-dorma` | Physical Italian tenor and choir, original orchestra, extended finale, captions, conductor, musicians and audience |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All nineteen scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All twenty scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 
 Project Hail Mary recreates the complete supplied karaoke clip. The physical singer
 performs Sign of the Times and the closing spoken line, while the original music
@@ -151,3 +152,5 @@ Blade Runner includes the complete supplied 3:45 Tears in Rain sequence: rooftop
 The Big Lebowski includes the complete 4:25 bowling excerpt, with the uploader’s endcard omitted. Four physical voices take separate turns; staging, original background and cameras follow the adjusted dialogue timing. Open `?scene=big-lebowski`; see [the scene notes](docs/big-lebowski.md).
 
 Interstellar adds the complete supplied TARS humor-setting exchange. Three physical voices take separate turns; the 39.45-second source becomes a 42.14-second performance to give TARS clearer speech. The Ranger cabin, four crew, robot display and launch exterior follow the adjusted dialogue clock. See [the scene notes](docs/tars.md).
+
+Good Will Hunting includes the complete supplied park-bench conversation, with only the promotional endcard removed. Sean and Will speak through two physical mouths; the original background, camera cuts and quiet ending follow their shared timing map. Open `?scene=good-will-hunting`; see [the scene notes](docs/good-will-hunting.md).
