@@ -32,3 +32,13 @@ test('editing lyrics returns to text planning; selecting whistle still overrides
  const p=part();p.melody!.lyrics='γεια';expect(planPart(p).some(g=>g.label==='source performance')).toBe(false);
  const q=part();q.delivery='whistle';expect(planPart(q).some(g=>g.label==='source performance')).toBe(false);
 });
+
+test('prepared French nasal vowels pass their native velum control instead of an unknown decorated vowel',()=>{
+ const p=part();p.performance!.phrases[0].phones=[{ipa:'ɑ',duration:.4,nasalized:true},{ipa:'o',duration:.4}];
+ expect(validPerformance(p.performance!,2)).toBe(true);
+ const actual=planPart(p),expected=planUtterance([{ipa:'ɑ',dur:.4,nasalized:true},{ipa:'o',dur:.4}],{body:p.body,t0:.24,rate:1,f0:180,intonation:'flat',sung:true}).gestures.map(g=>{const {f0,breath,vibrato,...targets}=g.targets;return {...g,targets};}).filter(g=>Object.keys(g.targets).length);
+ expect(actual.filter(g=>g.label!=='source performance')).toEqual(expected);
+ const normal=part();normal.performance!.phrases[0].phones=[{ipa:'ɑ',duration:.4},{ipa:'o',duration:.4}];
+ expect(actual).not.toEqual(planPart(normal));
+ (p.performance!.phrases[0].phones[0] as unknown as {nasalized:string}).nasalized='yes';expect(validPerformance(p.performance!,2)).toBe(false);
+});
