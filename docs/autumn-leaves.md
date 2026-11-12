@@ -37,3 +37,5 @@ The final render contains 7,648,178 stereo frames and 3,187 finite telemetry fra
 The unchanged scene-clarity listening aid completed. On isolated caption excerpts over the accompaniment, English Whisper marked 55 of 117 words as errors (47.0%). Short fragments and some consonants remain limitations of the stylized voice. This is a listening diagnostic, not a pronunciation-quality pass; the full performance retains the voice the user approved.
 
 Validation passed 144 native tests (two existing ignores), 320 Bun tests across 81 files, TypeScript, the 478-file content manifest and the subfolder production build. Local HTTP checks served the direct scene route, app bundles and all six new files with matching bytes.
+
+Deployed on 2026-11-12 from application commit `5650a24` to [Autumn Leaves](https://agenticspiros.com/chimera-song-mouth/?scene=autumn-leaves). All 16 changed files uploaded successfully with the entry page last. HTTP checks matched 184 live files, including all six new assets, application bundles and preserved content. The direct scene route serves the deployed entry page.
