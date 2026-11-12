@@ -1667,6 +1667,61 @@
       "sha256": "c3d1ad446f7f0c2915eefa543275abb2af467e159e033c970d62c929383afa49"
     },
     {
+      "path": "public/scenes/frontier-psychiatrist/backing.mp3",
+      "bytes": 8263724,
+      "sha256": "e57392f5689f4749ba400dca4002db7a26cd84dedfc447c3d7680ed68b734759"
+    },
+    {
+      "path": "public/scenes/frontier-psychiatrist/credits.txt",
+      "bytes": 1336,
+      "sha256": "eeed4a0f9d1c07768d4849c17185d90baf27eb9a0b318decaed93c1a5f15b091"
+    },
+    {
+      "path": "public/scenes/frontier-psychiatrist/frontier-announcer.tele.gz",
+      "bytes": 616858,
+      "sha256": "97c4d14fdc9cf009a2e2d00b8049c061d491f670840ea9dc3b4e59fc8cdb5c88"
+    },
+    {
+      "path": "public/scenes/frontier-psychiatrist/frontier-cowboy.tele.gz",
+      "bytes": 364969,
+      "sha256": "44def0d149307f2147dd3937fc2ac7b545385f45b560a6e30ec8dfa5bf75f518"
+    },
+    {
+      "path": "public/scenes/frontier-psychiatrist/frontier-doctor.tele.gz",
+      "bytes": 208812,
+      "sha256": "987ee4861ca550c073b15f7459919151b1e16bab9a823c7eadcec6c69719d9c7"
+    },
+    {
+      "path": "public/scenes/frontier-psychiatrist/frontier-headmaster.tele.gz",
+      "bytes": 643181,
+      "sha256": "fe292f963b4b633b016bfb65b2e2f6baa6d024f5d1d6279e75161f2ef08da411"
+    },
+    {
+      "path": "public/scenes/frontier-psychiatrist/frontier-mother.tele.gz",
+      "bytes": 169835,
+      "sha256": "9a9169f216d528579896953065f8bc95b379e238a555f438aea7c67224590a50"
+    },
+    {
+      "path": "public/scenes/frontier-psychiatrist/frontier-parrot.tele.gz",
+      "bytes": 240538,
+      "sha256": "19e9d09281d519cb69e90a45ee0a7fbcffbf7d35e9b492a2604f7cd3dc4b2517"
+    },
+    {
+      "path": "public/scenes/frontier-psychiatrist/mix.mp3",
+      "bytes": 8263724,
+      "sha256": "2138826970df4ac3958f76ff3a928bc00ea208adffa01a7938f4a64daea73b8b"
+    },
+    {
+      "path": "public/scenes/frontier-psychiatrist/performance.json",
+      "bytes": 182763,
+      "sha256": "0de86bcba4c897d10cd8d2b28bc0ed3e271ffc3744085120330b94bdff2dad81"
+    },
+    {
+      "path": "public/scenes/frontier-psychiatrist/scene.json",
+      "bytes": 13426,
+      "sha256": "7b32a0303122fce6bb8494f3397f78ede10022178cb2ee490a9d1fbed89b9bfd"
+    },
+    {
       "path": "public/scenes/good-will-hunting/backing.mp3",
       "bytes": 9217580,
       "sha256": "35df0f8604d5b53591a346f9ccb012bc3936591b6b7efc579537a401538ff591"
