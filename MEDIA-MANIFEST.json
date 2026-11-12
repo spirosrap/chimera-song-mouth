@@ -1852,6 +1852,46 @@
       "sha256": "ba9b95867580d0baa490cdb00e143a47dc887403eef00e5334729c6d493397d8"
     },
     {
+      "path": "public/scenes/tars/backing.mp3",
+      "bytes": 1350956,
+      "sha256": "1b9a8fe28c3799026ba883884925566e507ba15c949d0a967bd1b38d3f054c16"
+    },
+    {
+      "path": "public/scenes/tars/cooper.tele.gz",
+      "bytes": 257757,
+      "sha256": "2500ac8e65953ac4e3587a6408d1e4e9630a2b9983f8112b210e7fef1096a2bd"
+    },
+    {
+      "path": "public/scenes/tars/credits.txt",
+      "bytes": 1124,
+      "sha256": "27359dfd4907bac61e07b29ff34062d67e60ac0627555b52b22f020f99bb64b9"
+    },
+    {
+      "path": "public/scenes/tars/doyle.tele.gz",
+      "bytes": 118684,
+      "sha256": "853bbae418b969b0d2af6c24474845e4e186d3f1560dd6eb3abfd15053412355"
+    },
+    {
+      "path": "public/scenes/tars/mix.mp3",
+      "bytes": 1350956,
+      "sha256": "f6ba236e5348ec704531678ed787b3096e4be0e9abd1d5512c5871955c43bdbf"
+    },
+    {
+      "path": "public/scenes/tars/performance.json",
+      "bytes": 22514,
+      "sha256": "d198ad28613aa8ebb6824a43334f5d5813da9e56114aca2651f216ee72685f78"
+    },
+    {
+      "path": "public/scenes/tars/scene.json",
+      "bytes": 2845,
+      "sha256": "9373ad208ceb2474b1272cad70d5b1307ebb41b0bff2078fba61ea9c1e809b6b"
+    },
+    {
+      "path": "public/scenes/tars/tars.tele.gz",
+      "bytes": 391250,
+      "sha256": "bfad393d8068336d9f2021cf45275658999eeac620adf6b5dd2575bbcbd1298c"
+    },
+    {
       "path": "public/scenes/tears-in-rain/backing.mp3",
       "bytes": 7226924,
       "sha256": "efb33aeae846521f110a379857a2d8823c23a8858cf54f4b125e09ce4faa970c"
