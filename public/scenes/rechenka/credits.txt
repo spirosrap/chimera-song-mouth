@@ -1,0 +1,6 @@
+Реченька — the complete supplied Diana Ankudinova live performance.
+CHIMERA's physical vocal engine generates the Russian lead from explicit phonemes and a source-aligned pitch contour. Its soft consonants use the engine's native palatal articulation. The mouth animation is captured from that synthesis. No recorded singer or voice-cloning filter is used in the generated voice channel.
+The supplied recording is the source for the words, repeated phrases, wordless melisma and timing. Local transcription was cross-checked for compounds and repeated words against https://learnsongs.ru/song/diana-ankudinova-rechenka-119047 .
+The original stereo accompaniment is locally separated continuously throughout the singing; original post-song applause returns only after the final vocal release. Separation can leave faint vocal traces. Pronunciation, pitch tracking and staging are approximate.
+The long patterned dress, straight hair, handheld microphone, raised hands, wooden dock and boat, blue weeping branches and water lights, floor mist, six shadow dancers, judges, audience, kneeling ending and camera cuts are a stylized reconstruction. Background figures are decorative, not additional synthesized singers.
+Underlying composition, performance, recording and video rights remain with their holders. Input video, separation stems, models and caches are not included.

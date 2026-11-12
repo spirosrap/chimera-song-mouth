@@ -1747,6 +1747,36 @@
       "sha256": "fcf34c256617f9b8f85feb1591960a2c3302d59bec40f57942b6ceaf432a3cc3"
     },
     {
+      "path": "public/scenes/rechenka/backing.mp3",
+      "bytes": 7311404,
+      "sha256": "7554dd8f8b2271a883d85fcca43e8c094286bd51d6ce5fadfd050d701c7b2e8d"
+    },
+    {
+      "path": "public/scenes/rechenka/credits.txt",
+      "bytes": 1382,
+      "sha256": "3fd31394b50c55276e67ac0a8847f7ef13a0add3d4a1e188560d9a0c6f2d0c88"
+    },
+    {
+      "path": "public/scenes/rechenka/lead.tele.gz",
+      "bytes": 2042055,
+      "sha256": "ba71b2a59708570d7c5b13068580c8ae214b95ae304bec8509301684de7780a4"
+    },
+    {
+      "path": "public/scenes/rechenka/mix.mp3",
+      "bytes": 7311404,
+      "sha256": "598acea08a3b5ed81293a3364b85f94688bc401c5a6ab2bf671cd9e46e5a28cd"
+    },
+    {
+      "path": "public/scenes/rechenka/performance.json",
+      "bytes": 247251,
+      "sha256": "8a082c995c7bff304b18e58defc5ca8967b599892c6bdab18a5cb6ae0bcfe760"
+    },
+    {
+      "path": "public/scenes/rechenka/scene.json",
+      "bytes": 3357,
+      "sha256": "1a64e4b469c62548b6f9af0d5b8e8820c965fb9172e398eb8e2d19f10b2d17e4"
+    },
+    {
       "path": "public/scenes/sagan-dimensions/backing.mp3",
       "bytes": 14196524,
       "sha256": "e937c2fdad7f596916519f7cb9f1c61d82462babf5a77837539470caec3bfd8b"
