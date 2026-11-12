@@ -1537,6 +1537,36 @@
       "sha256": "4e47b70766c241381198ec07a228691354d0bbb48937c7c6ef8ed1c974bad6a5"
     },
     {
+      "path": "public/scenes/dimash-sos/backing.mp3",
+      "bytes": 7868204,
+      "sha256": "a4f8e3330c5744ed1fbb5f48225fb1fa9e437ecbf46d98da2c03d188172a11e7"
+    },
+    {
+      "path": "public/scenes/dimash-sos/credits.txt",
+      "bytes": 1265,
+      "sha256": "bfae6f3dae69b3d5b31bdd0a90361c302d0b783d19d628333de23d19e376228c"
+    },
+    {
+      "path": "public/scenes/dimash-sos/lead.tele.gz",
+      "bytes": 2564575,
+      "sha256": "8ec13a7b7b54efab41a33f16f858762cc925d946119239837e3a9da1f65121cb"
+    },
+    {
+      "path": "public/scenes/dimash-sos/mix.mp3",
+      "bytes": 7868204,
+      "sha256": "664b4d48923ecf194c961f7ef2661b9b6ae1ccfccf0a58edbf0adf6fc2d3ef47"
+    },
+    {
+      "path": "public/scenes/dimash-sos/performance.json",
+      "bytes": 263362,
+      "sha256": "8afb121681bffe71925511a890a695f96dfd1f62d8e5407b6b225aad48c3f0c9"
+    },
+    {
+      "path": "public/scenes/dimash-sos/scene.json",
+      "bytes": 4698,
+      "sha256": "a761d2776c6f5a7e1fac59707c9427004c9a705a80edf3d13f451c714974294a"
+    },
+    {
       "path": "public/scenes/fool-me-once/bush.tele.gz",
       "bytes": 299158,
       "sha256": "fa197175849d493690c8d997beac7c6629746042425dd4ca76b021acc57b3b98"

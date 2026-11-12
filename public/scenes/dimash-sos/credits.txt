@@ -1,0 +1,6 @@
+SOS d'un terrien en détresse — the complete supplied Dimash Kudaibergen concert clip.
+Music by Michel Berger; words by Luc Plamondon, credited in the supplied performance.
+CHIMERA's physical vocal engine generates the French lead from explicit phonemes and a source-aligned pitch contour. The mouth animation is captured from that synthesis. No recorded singer or voice-cloning filter is used in the generated voice channel.
+The original stereo accompaniment is locally separated continuously across the entire clip, including the quiet phrases and final held note; it never switches to the original vocal mix. Separation can leave faint vocal traces. Pronunciation, pitch tracking and staging are approximate.
+The dark suit, swept hair, microphone stand and hand microphone, raised arms, blue/amber/red/white light fans, circular stage, band, backing singers, seated audience and camera cuts are a stylized reconstruction. Background performers are decorative figures, not additional synthesized singers. The supplied excerpt ends during the final held note; no invented bow or final applause is added.
+Underlying composition, performance, recording and video rights remain with their holders. Input video, separation stems, models and caches are not included.

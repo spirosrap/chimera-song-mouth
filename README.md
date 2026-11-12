@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-one songs, ten film and TV scenes, one speech, two Apollo missions, one opera concert, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-one songs, ten film and TV scenes, one speech, two Apollo missions, two concert performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -104,3 +104,5 @@ For the existing Sites host’s archive limit, builds can set `CHIMERA_EXTERNAL_
 ## Country Roads
 
 `?song=country-roads` adds the complete supplied 3:15 John Denver recording as one generated singer over separated original instrumental music. It uses the CMUdict pronunciation, timed syllable and held-vowel approach described in the quoted demo, with source-aligned words and melody. The large head and scrolling green notes/yellow rendered-pitch trace share the actual audio clock, including pause and seek. All eleven earlier songs and three scenes remain.
+
+This edition also includes the full supplied Dimash SOS concert, with an approved French physical singer, original music and a populated stage with synchronized microphone gestures, lights and camera cuts. Open `?scene=dimash-sos`; see [the concert notes](docs/dimash-sos.md).

@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 357 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 363 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -87,9 +87,10 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Cosmos — Carl Sagan’s fourth dimension | 7:24 | `?scene=sagan-dimensions` | Physical narration, original background, captions, desk, Flatland shapes, apple sections, cube and tesseract |
 | Apollo 11 — the Eagle has landed | 4:20 | `?scene=apollo-11` | Three physical radio voices with no source recording, lines on the mission clock, the lander following the called heights and speeds, lunar surface, cabin and Houston sets, captions, shots and scene data |
 | Apollo 13 — Houston, we’ve had a problem | 3:20 | `?scene=apollo-13` | Five physical voices with no source recording (crew, CapCom and flight director), the bang, alarm and venting on the scene clock, spacecraft, cabin and Mission Control sets, captions, shots and scene data |
+| SOS — Dimash concert | 4:05 | `?scene=dimash-sos` | Physical French singer, original music, captions, dark suit, hand microphone, moving lights, band, audience and camera cuts |
 | Nessun Dorma — opera concert | 4:32 | `?scene=nessun-dorma` | Physical Italian tenor and choir, original orchestra, extended finale, captions, conductor, musicians and audience |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All fourteen scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All fifteen scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 
 Project Hail Mary recreates the complete supplied karaoke clip. The physical singer
 performs Sign of the Times and the closing spoken line, while the original music
@@ -136,3 +137,5 @@ The Sagan scene includes the complete supplied 7:23 clip, with a brief final voi
 See [the scene notes](docs/sagan-dimensions.md).
 
 Nessun Dorma includes the full supplied concert video, including the extended Turandot finale and applause. The separate opera setting has blue columns, a tenor at a stand microphone, a conductor, seated strings and brass, a choir and an audience. See [the scene notes](docs/nessun-dorma.md).
+
+SOS adds the complete supplied Dimash concert clip in its own televised stage setting. The approved French physical singer follows the source melody, with original instrumental music, populated stage, gestures, camera cuts and captions. See [the concert notes](docs/dimash-sos.md).
