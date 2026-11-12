@@ -1962,6 +1962,66 @@
       "sha256": "33b786189aa248d8d4f89a94716d119c2ad55b3880d101d0d14bac47547cb38f"
     },
     {
+      "path": "public/scenes/truman-show/backing.mp3",
+      "bytes": 10093100,
+      "sha256": "5a42d864b5615e2821cb8bbc2fb6c346b69836b058d4932da632fca9283dc84a"
+    },
+    {
+      "path": "public/scenes/truman-show/broadcast-director.tele.gz",
+      "bytes": 96905,
+      "sha256": "85edb0769c1f277cfa6a91b92079243566b10c0b75e6c4e961c0e7b7e179841b"
+    },
+    {
+      "path": "public/scenes/truman-show/christof.tele.gz",
+      "bytes": 1709660,
+      "sha256": "7f879b6077232415923449659b32345c4b508a79d40d559323e5e64a86e07f7c"
+    },
+    {
+      "path": "public/scenes/truman-show/credits.txt",
+      "bytes": 1321,
+      "sha256": "11194d4aa994a2f1e6e5d03e15bb365eda897643f65f2fa4af24d1d50f400a23"
+    },
+    {
+      "path": "public/scenes/truman-show/guard-one.tele.gz",
+      "bytes": 225619,
+      "sha256": "ac54b40e3d444285eb0e46c0af95d7b6125eb73188acf34b6793d680e895d0d0"
+    },
+    {
+      "path": "public/scenes/truman-show/guard-two.tele.gz",
+      "bytes": 197370,
+      "sha256": "f619d6e002bbbf32ad5e75b493d8ba13a48c69aaa9c97e26f7e5389b18dacf36"
+    },
+    {
+      "path": "public/scenes/truman-show/mix.mp3",
+      "bytes": 10093100,
+      "sha256": "ddc177d5657942278b68e18d1d34f3cb16519e30f3498622e63b651dcd2aee8b"
+    },
+    {
+      "path": "public/scenes/truman-show/network-exec.tele.gz",
+      "bytes": 95233,
+      "sha256": "5c2b5668a671c9d97bd61e065fa09b45cb378a11d972a34e8b9146bf7ac0e9d8"
+    },
+    {
+      "path": "public/scenes/truman-show/performance.json",
+      "bytes": 81347,
+      "sha256": "582b35f945bbff39fa4e12a6341e3d8de0b2f3c29ab5eb51ccac803fbdbb8f2c"
+    },
+    {
+      "path": "public/scenes/truman-show/scene.json",
+      "bytes": 9415,
+      "sha256": "04ae04fed1d4eb7f951ed02e47a48d0f5e438654474805a9ebc75cecd5b69aae"
+    },
+    {
+      "path": "public/scenes/truman-show/sylvia.tele.gz",
+      "bytes": 181671,
+      "sha256": "a06580eddeac98bbc1b636b2b12be39c022307f589530ccc7d7f5736101f5424"
+    },
+    {
+      "path": "public/scenes/truman-show/truman.tele.gz",
+      "bytes": 383992,
+      "sha256": "b1205f4c4461c7061c5cb1b8a5039196d3700f3669a151e77849252963d47a6d"
+    },
+    {
       "path": "public/scenes/wizard-of-oz/credits.txt",
       "bytes": 532,
       "sha256": "21d917c9cba154bfc786ad545b4c19f907f0808b38415241c03cb2407fd15e5d"
