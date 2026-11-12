@@ -1,7 +1,7 @@
 import {planUtterance} from '../wasm/engine.ts';
 import type {Gesture,Segment} from '../wasm/types.ts';
 import type {BandPart} from '../band/types.ts';
-export interface DialogueLine<Id extends string=string>{speaker:Id;text:string;start:number;end:number;pitch:number;accent?:number;humming?:boolean;sourceEnd:number;timingWeight:number;words:{text:string;start:number;end:number}[];segments:Segment[]}
+export interface DialogueLine<Id extends string=string>{speaker:Id;text:string;start:number;end:number;pitch:number;accent?:number;humming?:boolean;sourceEnd:number;timingWeight:number;pitchContour?:{time:number;hz:number}[];words:{text:string;start:number;end:number}[];segments:Segment[]}
 export interface DialoguePerformance<Id extends string=string>{duration:number;backingVolume:number;parts:BandPart[];lines:DialogueLine<Id>[]}
 const diphthongs=new Set(['aɪ','aʊ','ɔɪ','eɪ','oʊ']);
 /** Blend source word anchors with natural phone durations so short detected words stay intelligible. */
@@ -35,7 +35,15 @@ export function planDialoguePart<Id extends string>(score:DialoguePerformance<Id
   input.push(plan.end);output.push(line.end);
   if(input.some((t,i)=>i>0&&t<=input[i-1])||output.some((t,i)=>i>0&&t<=output[i-1]))throw Error('Dialogue word timing must advance.');
   const warp=(time:number)=>{let k=0;while(k<input.length-2&&input[k+1]<time)k++;return output[k]+(time-input[k])/(input[k+1]-input[k])*(output[k+1]-output[k]);};
-  for(const g of plan.gestures)out.push({...g,t0:warp(g.t0),t1:warp(g.t1),rampIn:warp(g.t0)-warp(g.t0-g.rampIn),rampOut:warp(g.t1+g.rampOut)-warp(g.t1),releaseHold:g.releaseHold===undefined?undefined:warp(g.t1+g.releaseHold)-warp(g.t1)});
+  const contour=line.pitchContour;
+  if(contour?.some((p,i)=>!Number.isFinite(p.time)||!Number.isFinite(p.hz)||p.hz<=0||i>0&&p.time<=contour[i-1].time))throw Error('Invalid dialogue pitch contour.');
+  // An optional source-shaped contour changes pitch only; articulation and word timing are retained.
+  const pitch=(time:number)=>{
+   if(!contour?.length)return undefined;
+   if(time<=contour[0].time)return contour[0].hz;let i=0;while(i<contour.length-2&&contour[i+1].time<time)i++;
+   const a=contour[i],b=contour[i+1]??a;if(time>=b.time)return b.hz;const u=(time-a.time)/(b.time-a.time);return a.hz*(b.hz/a.hz)**u;
+  };
+  for(const g of plan.gestures)out.push({...g,targets:g.targets.f0!==undefined&&line.pitchContour?.length?{...g.targets,f0:pitch((warp(g.t0)+warp(g.t1))/2)}:g.targets,t0:warp(g.t0),t1:warp(g.t1),rampIn:warp(g.t0)-warp(g.t0-g.rampIn),rampOut:warp(g.t1+g.rampOut)-warp(g.t1),releaseHold:g.releaseHold===undefined?undefined:warp(g.t1+g.releaseHold)-warp(g.t1)});
  }
  if(out.some(g=>![g.t0,g.t1,g.rampIn,g.rampOut].every(Number.isFinite)||g.t0<0||g.t1<g.t0||g.t1>score.duration))throw Error('Invalid Dialogue physical score.');
  return out;

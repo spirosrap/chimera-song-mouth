@@ -1,13 +1,13 @@
 export type CourtCharacterId = 'kaffee' | 'jessep';
 export type CliffCharacterId = 'vizzini' | 'inigo' | 'fezzik';
 export type CoreCharacterId = 'hal' | 'dave';
-export type MainCharacterId = CourtCharacterId | CliffCharacterId | CoreCharacterId | 'bush' | 'karaoke-singer' | 'ellie' | 'father' | 'ian' | 'neo' | 'spoon-boy' | 'oracle-assistant' | 'mcmurphy' | 'cheswick' | 'billy' | 'martini' | 'oz' | 'dorothy' | 'scarecrow' | 'tin-woodman' | 'lion' | 'sagan' | 'armstrong' | 'aldrin' | 'capcom' | 'lovell' | 'swigert' | 'haise' | 'kranz' | 'opera-tenor' | 'opera-chorus' | 'dimash' | 'diana' | 'roy' | 'deckard';
+export type MainCharacterId = CourtCharacterId | CliffCharacterId | CoreCharacterId | 'bush' | 'karaoke-singer' | 'ellie' | 'father' | 'ian' | 'neo' | 'spoon-boy' | 'oracle-assistant' | 'mcmurphy' | 'cheswick' | 'billy' | 'martini' | 'oz' | 'dorothy' | 'scarecrow' | 'tin-woodman' | 'lion' | 'sagan' | 'armstrong' | 'aldrin' | 'capcom' | 'lovell' | 'swigert' | 'haise' | 'kranz' | 'opera-tenor' | 'opera-chorus' | 'dimash' | 'diana' | 'roy' | 'deckard' | 'dude' | 'walter' | 'donny' | 'jesus';
 export type CharacterId = MainCharacterId | 'ross' | 'judge';
-export type CameraView = 'wide' | 'climber' | 'modules' | 'listener' | 'contact-sky' | 'contact-hands' | 'louise' | 'matrix-floor' | 'matrix-spoon' | 'ward-pair' | 'ward-group' | 'ward-laughter' | 'ward-nurses' | 'throne-head' | 'throne-row' | 'flatland' | 'dimension-model' | 'landing-above' | 'landing-ground' | 'landing-crew' | 'odyssey-crew' | 'odyssey-vent' | 'opera-orchestra' | 'opera-conductor' | 'opera-choir' | 'concert-singer' | 'concert-band' | 'concert-audience' | 'river-singer' | 'river-dancers' | 'river-judges' | 'river-audience' | 'roof-ledge' | 'roof-dove' | 'roof-sky' | MainCharacterId;
+export type CameraView = 'wide' | 'climber' | 'modules' | 'listener' | 'contact-sky' | 'contact-hands' | 'louise' | 'matrix-floor' | 'matrix-spoon' | 'ward-pair' | 'ward-group' | 'ward-laughter' | 'ward-nurses' | 'throne-head' | 'throne-row' | 'flatland' | 'dimension-model' | 'landing-above' | 'landing-ground' | 'landing-crew' | 'odyssey-crew' | 'odyssey-vent' | 'opera-orchestra' | 'opera-conductor' | 'opera-choir' | 'concert-singer' | 'concert-band' | 'concert-audience' | 'river-singer' | 'river-dancers' | 'river-judges' | 'river-audience' | 'roof-ledge' | 'roof-dove' | 'roof-sky' | 'bowling-lane' | 'bowling-ball' | 'bowling-pair' | 'bowling-rivals' | 'bowling-shoes' | 'bowling-flashback' | MainCharacterId;
 export type CameraChoice = 'auto' | CameraView;
 export interface SceneCue { start:number; end:number; speaker:CharacterId; text:string; intensity:number }
 export interface SceneShot { time:number; view:CameraView }
-export type SceneSetting='courtroom'|'cliffs'|'core'|'press'|'karaoke'|'beach'|'arrival'|'matrix'|'ward'|'throne'|'cosmos'|'moon'|'odyssey'|'opera'|'concert'|'river'|'rooftop';
+export type SceneSetting='courtroom'|'cliffs'|'core'|'press'|'karaoke'|'beach'|'arrival'|'matrix'|'ward'|'throne'|'cosmos'|'moon'|'odyssey'|'opera'|'concert'|'river'|'rooftop'|'bowling';
 /** Each film has its own cast and cameras; a score cannot borrow another film's. */
 export const SCENE_SETTINGS:Record<SceneSetting,{cast:CharacterId[];main:CharacterId[];cameras:CameraView[]}>={
   courtroom:{cast:['kaffee','jessep','ross','judge'],main:['kaffee','jessep'],cameras:['wide','kaffee','jessep']},
@@ -22,6 +22,7 @@ export const SCENE_SETTINGS:Record<SceneSetting,{cast:CharacterId[];main:Charact
   cosmos:{cast:['sagan'],main:['sagan'],cameras:['wide','sagan','flatland','dimension-model']},
   throne:{cast:['oz','dorothy','scarecrow','tin-woodman','lion'],main:['oz','dorothy','scarecrow','tin-woodman','lion'],cameras:['wide','throne-head','oz','dorothy','scarecrow','tin-woodman','lion','throne-row']},
   arrival:{cast:['ian'],main:['ian'],cameras:['wide','ian','louise']},
+  bowling:{cast:['dude','walter','donny','jesus'],main:['dude','walter','donny','jesus'],cameras:['wide','dude','walter','donny','jesus','bowling-lane','bowling-ball','bowling-pair','bowling-rivals','bowling-shoes','bowling-flashback']},
   rooftop:{cast:['roy','deckard'],main:['roy','deckard'],cameras:['wide','roy','deckard','roof-ledge','roof-dove','roof-sky']},
   river:{cast:['diana'],main:['diana'],cameras:['wide','diana','river-singer','river-dancers','river-judges','river-audience']},
   concert:{cast:['dimash'],main:['dimash'],cameras:['wide','dimash','concert-singer','concert-band','concert-audience']},
@@ -33,7 +34,7 @@ export interface SceneFile {
   characters:{id:CharacterId;name:string;role:string;tele:string;telemetryEncoding?:'gzip'}[];
   cues:SceneCue[];shots:SceneShot[];
 }
-const character=(id:unknown):id is CharacterId=>id==='kaffee'||id==='jessep'||id==='ross'||id==='judge'||id==='vizzini'||id==='inigo'||id==='fezzik'||id==='hal'||id==='dave'||id==='bush'||id==='karaoke-singer'||id==='ellie'||id==='father'||id==='ian'||id==='neo'||id==='spoon-boy'||id==='oracle-assistant'||id==='mcmurphy'||id==='cheswick'||id==='billy'||id==='martini'||id==='oz'||id==='dorothy'||id==='scarecrow'||id==='tin-woodman'||id==='lion'||id==='sagan'||id==='armstrong'||id==='aldrin'||id==='capcom'||id==='lovell'||id==='swigert'||id==='haise'||id==='kranz'||id==='opera-tenor'||id==='opera-chorus'||id==='dimash'||id==='diana'||id==='roy'||id==='deckard';
+const character=(id:unknown):id is CharacterId=>id==='kaffee'||id==='jessep'||id==='ross'||id==='judge'||id==='vizzini'||id==='inigo'||id==='fezzik'||id==='hal'||id==='dave'||id==='bush'||id==='karaoke-singer'||id==='ellie'||id==='father'||id==='ian'||id==='neo'||id==='spoon-boy'||id==='oracle-assistant'||id==='mcmurphy'||id==='cheswick'||id==='billy'||id==='martini'||id==='oz'||id==='dorothy'||id==='scarecrow'||id==='tin-woodman'||id==='lion'||id==='sagan'||id==='armstrong'||id==='aldrin'||id==='capcom'||id==='lovell'||id==='swigert'||id==='haise'||id==='kranz'||id==='opera-tenor'||id==='opera-chorus'||id==='dimash'||id==='diana'||id==='roy'||id==='deckard'||id==='dude'||id==='walter'||id==='donny'||id==='jesus';
 const file=(name:unknown)=>typeof name==='string'&&/^[a-z0-9-]+\.(mp3|tele)$/.test(name);
 export function validateScene(data:unknown):SceneFile {
   const s=data as SceneFile;

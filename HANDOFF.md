@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-one songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All eleven film and TV scenes, the Fool me once speech, the two Apollo scenes and all three concert performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All twelve film and TV scenes, the Fool me once speech, the two Apollo scenes and all three concert performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -29,6 +29,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 - Existing song IDs, scene IDs and default selection. Complete links are in `CONTENT.md`.
 - The speech's single-speaker `press` setting, synchronized gestures and original excerpt pauses; see `docs/fool-me-once.md`.
 - Lose Yourself’s original music, approved clear rap voice, source-timed lyric highlighting and rainy city presentation; see `docs/lose-yourself.md`.
+- The Big Lebowski’s four distinct physical voices, separated dialogue turns, original opening song/background, bowling action, five characters and doorstep flashback; keep the shared source/performance timing map. See `docs/big-lebowski.md`.
 - Blade Runner’s full rainy rooftop rescue and monologue, approved physical Roy voice, silent Deckard, dove flight and quiet ending; see `docs/tears-in-rain.md`.
 - Реченька’s complete Russian physical performance, original music, dock and boat, river/forest scenery, dancers and kneeling ending; see `docs/rechenka.md`.
 - SOS’s full Dimash concert clip, approved French physical voice, original music, populated TV stage, gestures and camera cuts; see `docs/dimash-sos.md`.

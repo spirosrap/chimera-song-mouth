@@ -1457,6 +1457,51 @@
       "sha256": "5e1988a2d1b49b62b548933590e20b1683c7c12b74866f5867835db2255e6c5c"
     },
     {
+      "path": "public/scenes/big-lebowski/backing.mp3",
+      "bytes": 8471084,
+      "sha256": "dbfb70ac8448bff4e2285613b8644aeb3e0e8c8b8832d5fedf19640639d51aea"
+    },
+    {
+      "path": "public/scenes/big-lebowski/credits.txt",
+      "bytes": 1242,
+      "sha256": "2c466276092203a623a631db22ec736a9d0138d5c540348ea82c5cee061916b3"
+    },
+    {
+      "path": "public/scenes/big-lebowski/donny.tele.gz",
+      "bytes": 544384,
+      "sha256": "ed5a828495f864e0c06df49dd9582ae233242f58aec95baa17825bc3d6ab63b6"
+    },
+    {
+      "path": "public/scenes/big-lebowski/dude.tele.gz",
+      "bytes": 1358502,
+      "sha256": "6f5e6668dc2397682f6bb6147afbcb8cc91492c6e5d379d5b0a4c384c3fa2909"
+    },
+    {
+      "path": "public/scenes/big-lebowski/jesus.tele.gz",
+      "bytes": 504933,
+      "sha256": "a395c71e60d47a38aadf05d6516695cdbf89f347939d304490efe85f0e01b346"
+    },
+    {
+      "path": "public/scenes/big-lebowski/mix.mp3",
+      "bytes": 8471084,
+      "sha256": "2deaf7b9be08637d593896283db4206c0db0a4a5804a92459d496d6cc461a3df"
+    },
+    {
+      "path": "public/scenes/big-lebowski/performance.json",
+      "bytes": 125895,
+      "sha256": "62304c8085cf10556bed94badb687cfa4cd0ea7d53ed2b0b9ba0aca9ffb8e812"
+    },
+    {
+      "path": "public/scenes/big-lebowski/scene.json",
+      "bytes": 11745,
+      "sha256": "0b3311f9306332bd6fd7ebdfb28e5980fb0407a7c5327f998b723fe41ac18a3f"
+    },
+    {
+      "path": "public/scenes/big-lebowski/walter.tele.gz",
+      "bytes": 1190948,
+      "sha256": "777edcf05c2dc505015cd862415c662cad4864492f0414d06702baa9c5931942"
+    },
+    {
       "path": "public/scenes/contact/backing.mp3",
       "bytes": 9576236,
       "sha256": "870862f52a6ef6c4c8296027b6246fae6afa5163bf84943de6bf164f26a1ca86"

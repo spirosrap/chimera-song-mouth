@@ -14,7 +14,7 @@ const folder=new URL('../public/scenes/hal-9000/',import.meta.url);
 const prepared=()=>validateScene(JSON.parse(readFileSync(new URL('scene.json',folder),'utf8')));
 
 test('the memory core is a third movie beside the two existing ones, without a pre-encoded MP4',()=>{
- expect(MOVIE_SCENES.map(m=>m.id)).toEqual(['a-few-good-men','princess-bride','hal-9000','fool-me-once','project-hail-mary','contact','arrival','matrix-spoon','cuckoos-nest','wizard-of-oz','sagan-dimensions','apollo-11','apollo-13','nessun-dorma','dimash-sos','rechenka','tears-in-rain']);
+ expect(MOVIE_SCENES.map(m=>m.id)).toEqual(['a-few-good-men','princess-bride','hal-9000','fool-me-once','project-hail-mary','contact','arrival','matrix-spoon','cuckoos-nest','wizard-of-oz','sagan-dimensions','apollo-11','apollo-13','nessun-dorma','dimash-sos','rechenka','tears-in-rain','big-lebowski']);
  expect(movieScene('hal-9000')?.readyVideo).toBeUndefined();
 });
 test('the core accepts only its own cast and cameras',()=>{

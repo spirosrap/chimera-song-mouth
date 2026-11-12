@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 376 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 385 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -88,11 +88,12 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Apollo 11 — the Eagle has landed | 4:20 | `?scene=apollo-11` | Three physical radio voices with no source recording, lines on the mission clock, the lander following the called heights and speeds, lunar surface, cabin and Houston sets, captions, shots and scene data |
 | Apollo 13 — Houston, we’ve had a problem | 3:20 | `?scene=apollo-13` | Five physical voices with no source recording (crew, CapCom and flight director), the bang, alarm and venting on the scene clock, spacecraft, cabin and Mission Control sets, captions, shots and scene data |
 | Реченька — Diana Ankudinova | 3:48 | `?scene=rechenka` | Physical Russian singer, original accompaniment, captions, patterned dress, dock and boat, forest/water lights, dancers, judges and audience |
+| The Big Lebowski — The Jesus | 4:25 | `?scene=big-lebowski` | Four physical voices, original opening song and background, bowling, five characters, doorstep flashback and subtitles |
 | Blade Runner — Tears in Rain | 3:45 | `?scene=tears-in-rain` | Physical Roy voice, silent Deckard, original soundtrack, rainy rooftop rescue, dove flight and subtitles |
 | SOS — Dimash concert | 4:05 | `?scene=dimash-sos` | Physical French singer, original music, captions, dark suit, hand microphone, moving lights, band, audience and camera cuts |
 | Nessun Dorma — opera concert | 4:32 | `?scene=nessun-dorma` | Physical Italian tenor and choir, original orchestra, extended finale, captions, conductor, musicians and audience |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All seventeen scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All eighteen scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 
 Project Hail Mary recreates the complete supplied karaoke clip. The physical singer
 performs Sign of the Times and the closing spoken line, while the original music
@@ -145,3 +146,5 @@ SOS adds the complete supplied Dimash concert clip in its own televised stage se
 Реченька includes the full supplied live performance, including the wordless passage, kneeling boat ending and applause, in a new river stage setting. See [the scene notes](docs/rechenka.md).
 
 Blade Runner includes the complete supplied 3:45 Tears in Rain sequence: rooftop rescue, Roy’s physical dialogue, silent Deckard, original soundtrack, rain and dove release. Open `?scene=tears-in-rain`; see [the scene notes](docs/tears-in-rain.md).
+
+The Big Lebowski includes the complete 4:25 bowling excerpt, with the uploader’s endcard omitted. Four physical voices take separate turns; staging, original background and cameras follow the adjusted dialogue timing. Open `?scene=big-lebowski`; see [the scene notes](docs/big-lebowski.md).
