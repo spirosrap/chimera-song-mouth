@@ -1587,6 +1587,41 @@
       "sha256": "f8b6bb59a637784744a0529dee86fc0be00a85d59c28e334c948f61e2ee43b04"
     },
     {
+      "path": "public/scenes/nessun-dorma/backing.mp3",
+      "bytes": 8696108,
+      "sha256": "6c217ec2c646a5db01011aff30773e5739202f207e24c634bebf06a510787cf6"
+    },
+    {
+      "path": "public/scenes/nessun-dorma/chorus.tele.gz",
+      "bytes": 439381,
+      "sha256": "d76fb0bd7f0cfdf144315ea13ea02090cc8f5cb6dc32d63e770f83777b9e8788"
+    },
+    {
+      "path": "public/scenes/nessun-dorma/credits.txt",
+      "bytes": 1311,
+      "sha256": "ffe98b00a6e24dda913a799f9b9536d5f470099bcf995b1278518cce2b64eb9f"
+    },
+    {
+      "path": "public/scenes/nessun-dorma/mix.mp3",
+      "bytes": 8696108,
+      "sha256": "20061041c77e7ec40d72018bf6e797c27405bcacb071936a157a025536891b2d"
+    },
+    {
+      "path": "public/scenes/nessun-dorma/performance.json",
+      "bytes": 263361,
+      "sha256": "e09d00585159c423eca5ef2f01e3f15371f2c2cec08775f99e80839a2ce4bdb9"
+    },
+    {
+      "path": "public/scenes/nessun-dorma/scene.json",
+      "bytes": 3989,
+      "sha256": "eeaff22faef857f504f0ce0882feb54397824a9128a665a77e70f6b17f8b9b3c"
+    },
+    {
+      "path": "public/scenes/nessun-dorma/tenor.tele.gz",
+      "bytes": 2178781,
+      "sha256": "91f91f75fc8df29f6bcda3b400b1f18b3aa2160de57abdb02f2a4b975b9bf48a"
+    },
+    {
       "path": "public/scenes/princess-bride/credits.txt",
       "bytes": 446,
       "sha256": "a4cb80955a845c243252e3ea7923ee384259d1427b94c963431f25847ad174e1"

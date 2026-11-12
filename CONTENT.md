@@ -86,8 +86,9 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Cosmos — Carl Sagan’s fourth dimension | 7:24 | `?scene=sagan-dimensions` | Physical narration, original background, captions, desk, Flatland shapes, apple sections, cube and tesseract |
 | Apollo 11 — the Eagle has landed | 4:20 | `?scene=apollo-11` | Three physical radio voices with no source recording, lines on the mission clock, the lander following the called heights and speeds, lunar surface, cabin and Houston sets, captions, shots and scene data |
 | Apollo 13 — Houston, we’ve had a problem | 3:20 | `?scene=apollo-13` | Five physical voices with no source recording (crew, CapCom and flight director), the bang, alarm and venting on the scene clock, spacecraft, cabin and Mission Control sets, captions, shots and scene data |
+| Nessun Dorma — opera concert | 4:32 | `?scene=nessun-dorma` | Physical Italian tenor and choir, original orchestra, extended finale, captions, conductor, musicians and audience |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All thirteen scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All fourteen scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 
 Project Hail Mary recreates the complete supplied karaoke clip. The physical singer
 performs Sign of the Times and the closing spoken line, while the original music
@@ -130,3 +131,5 @@ This is the complete content of the running app, rather than a backup of the com
 
 The Sagan scene includes the complete supplied 7:23 clip, with a brief final voice release.
 See [the scene notes](docs/sagan-dimensions.md).
+
+Nessun Dorma includes the full supplied concert video, including the extended Turandot finale and applause. The separate opera setting has blue columns, a tenor at a stand microphone, a conductor, seated strings and brass, a choir and an audience. See [the scene notes](docs/nessun-dorma.md).

@@ -1,0 +1,6 @@
+Nessun Dorma — the complete supplied Andrea Bocelli concert video, including the Turandot choral finale and applause.
+Music by Giacomo Puccini; libretto by Giuseppe Adami and Renato Simoni. The Italian concert wording was checked against the PBS Great Performances concert transcript: https://www.pbs.org/video/andrea-bocelli-live-in-central-park-tx6aj8/
+CHIMERA's physical vocal engine generates the tenor and choir channels from explicit Italian phonemes and source-aligned melody. The mouth animation is captured from that synthesis; choir figures share the generated choir articulation level. No recorded singer or voice-cloning filter is used in the generated voice channels.
+The original orchestral accompaniment is locally separated across the entire sung section; it never switches to the original mix between vocal phrases. Original applause returns after the ending. Separation can leave faint vocal traces. Pronunciation, choir texture and staging are approximate.
+The blue columns, singer's suit, stand microphone, conductor, seated strings and brass, score stands, choir, audience, gestures and camera cuts are a stylized reconstruction.
+Underlying composition, performance, recording and video rights remain with their holders. Input video, separation stems, models and caches are not included.
