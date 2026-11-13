@@ -91,7 +91,7 @@ export function SongPanel() {
     <p className="song-intro">Pick a song. Give it a mouth.</p>
     <a className="band-link" href="?band=1">Hear a whole a cappella band →</a>
     <div className="song-source-row">
-      <label className="song-select">Song
+      <label className="song-select">Melody
         <select value={SONGS.includes(song)?song.name:"imported"} disabled={busy} onChange={e=>{
           const s=SONGS.find(x=>x.name===e.target.value);if(s){setParts([]);setOriginal(null);choose(s);}
         }}>

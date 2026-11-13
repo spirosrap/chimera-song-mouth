@@ -8,49 +8,58 @@ not merge unrelated histories or replace this tree with an upstream checkout.
 
 ## Latest synchronization
 
-Checked on 2026-11-11, through `e33221d006f44c78849210eb29dd1eb9755dc78e`
-(18 commits after `eed4a5ff`, all imported with `git cherry-pick -x`).
+Checked on 2026-11-13, through `153c97195ffa44de5ce53f0eadf3ea27c7193c43`
+(30 commits after `e33221d0`, all imported with `git cherry-pick -x`; none skipped).
 
 What came in:
 
-- Engine: the voice keeps the airway above 60 kHz at low device rates, a child
-  voice at 16 or 32 kHz no longer rings, and a tongue pressed low no longer
-  shortens the oral tube under its stable length (issue #50, with its review).
-- Front end: `Segment.aspirated`, and IPA marks for nasalization,
-  palatalization and breathy voice, with their tests and docs.
-- App: the audio context runs at 48 kHz whatever the device, a demo song gives
-  the player's own lyrics back, Z and X move the on-screen keys at once, Play's
-  Whisper and Beatbox's ready pose stay in their tabs, the dictionary loads
-  with the Sing panel.
-- Repo: `.gitattributes` (LF text), Windows file-URL paths in tests and tools,
-  the model's references and credits, upstream's Vision & scope.
+- Languages: a router sends each lyric word to the front end for its script. Korean
+  (Hangul, one block per note, with its sound rules and three-way stops) and Russian
+  (Cyrillic, with a demo song) are new; English is unchanged. New sounds for Korean and
+  Mandarin (ɕ ʑ tɕ dʑ tʂ dʐ ɥ), `Segment.vot`, `chimera syllables`, and
+  `docs/language-front-ends.md`.
+- Single-mouth app: each tab has one main button that also starts the audio (the start
+  overlay is gone), with a retry when the start fails; the body presets, MIDI and the
+  Speak examples moved into headers and menus; the 2D face draws the whole head; grabbing
+  the face before any audio starts it; Speak's IPA mode says which symbols it skipped; an
+  iPhone in silent mode now plays.
+- Tools and docs: the scramble test (`tools/asr/scramble.py`, how intelligible a front
+  end's singing is on sound alone), `CONTRIBUTING.md`, a PR template, and upstream's
+  reworded vision item 3 (realism is the main push; the robotic voice stays as a preset).
 
 Adapted rather than taken as written:
 
-- `README.md` keeps this edition's text. Upstream's Vision & scope is included
-  under "The original project's vision & scope", with a note that this edition
-  goes beyond its points 6 and 7 (tracked media, multi-voice scenes); the
-  `AGENTS.md` rule that points at it is worded to match. The credits link was
-  added to the opening paragraph, since this README has no Docs list.
-- `src/ui/singing.ts`: upstream's `endDemo` is merged with this edition's
-  imported-melody player; it takes the elapsed time this edition's song clock
-  shows. `src/ui/store.ts` keeps `threeD: true`. `.gitattributes` keeps
-  `*.mp3` and `*.mp4` binary.
+- `README.md` keeps this edition's text in six commits that touched upstream's feature
+  list and run instructions; the reworded vision item 3 is taken.
+- Sing tab: upstream's new main button and demo-song menu sit above this edition's song
+  player, which stays (`SingPanel.tsx`, `styles.css`: an extra `song` row). The demo-song
+  chips this edition had in the Lyrics header are replaced by upstream's menu. The song
+  player's own chooser is now labelled "Melody": two menus named "Song" on one tab were
+  ambiguous to a screen reader and to `tools/e2e.ts`.
+- `App.tsx`: the start overlay is removed as upstream does; the song player starts the
+  audio itself.
 
-The engine changed, so `src/wasm/chimera.wasm` is rebuilt (Arch `rust` and
-`rust-wasm` 1.99.1; sha256 in `PROVENANCE.json`). Two checks that the rebuild
-is safe: the previous source rebuilt with this compiler renders three test
-utterances (audio, telemetry and plans) bit-identically to the previously
-tracked binary, and so does the new source. The fixes touch low device rates
-and extreme tongue positions, not ordinary 48 kHz speech, so no prepared song
-or scene was re-rendered and all 313 media hashes are unchanged.
+The engine changed, so `src/wasm/chimera.wasm` is rebuilt (Arch `rust` and `rust-wasm`
+1.99.1; sha256 in `PROVENANCE.json`). No golden fixture was blessed. Rendered with the
+engine before and after: Lovell's voice in the Apollo 13 scene (audio and telemetry) and the
+whole Wizard of Oz scene (five voices, mix and telemetry) are bit-identical, so no prepared
+song or scene was re-rendered and the media manifest is unchanged.
 
-Validation: 144 native tests passed (two existing ignored), no golden fixture
-blessed; 222 Bun tests passed; typecheck; content verification. `tools/e2e.ts`
-was run against a local build of the single-mouth player (`?solo=1`, system
-Chromium with software GL): every check passed except "the syllable cursor did
-not move", which fails identically on the tree before this import and is open.
-Before the import the same run also failed the Z/X check, which this range fixes.
+Validation: 187 native tests passed (two existing ignored); 357 Bun tests; typecheck;
+content verification. Browser checks ran in the system Chromium with software rendering
+against a local server, on the single-mouth player (`?solo=1`), since this edition's root is
+the band page:
+
+- `tools/layout-lint.ts`: the duet page and all five tabs report 0 errors at 8 sizes. One
+  first pass of Sing reported 3 errors at 1280x720 while playing; two reruns reported none
+  and the detail was not kept.
+- `tools/e2e.ts`, desktop and phone sizes: no console errors; every check passed except "the
+  syllable cursor did not move", which was already open before this import. Upstream's new
+  tongue-grab check was not run: it scans the 2D face for the tongue handle, this edition
+  opens on the 3D face, and with the 2D face switched on the scan did not finish in nine
+  minutes under software rendering.
+
+Not tested: a real iPhone in silent mode, Korean or Russian singing by ear, Safari.
 
 ## Next update
 
@@ -81,6 +90,8 @@ Before the import the same run also failed the Z/X check, which this range fixes
 
 This is an on-request update procedure, not a scheduled updater. No workflow
 automatically merges upstream code, re-renders recordings or publishes a site.
-Browser/layout QA was previously declined; do not run a browser or claim that
-coverage without a subsequent change in authorization. The native tests,
+Browser checks run in the system Chromium against a local server only (Playwright's
+own browser is not installed, so `tools/e2e.ts` and `tools/layout-lint.ts` need
+`executablePath: "/usr/bin/chromium"` in a temporary copy); never point a headless
+browser at the live site. The native tests,
 content verification and static build remain available.
