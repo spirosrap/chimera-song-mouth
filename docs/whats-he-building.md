@@ -35,3 +35,5 @@ The full render is 200.669 seconds, with 9,632,091 stereo frames and 4,014 finit
 The unchanged scene-clarity listening aid completed. On isolated caption excerpts over the original soundscape, English Whisper marked 98 of 284 normalized reference words as errors (34.5%). This diagnostic splits hyphenated words, hence its extra reference token. Short fragments and low-register words remain limitations. It is a listening aid rather than a pronunciation-quality pass; the approved preview’s voice is retained.
 
 Validation passed 144 native tests (two existing ignores), 324 Bun tests across 82 files, TypeScript, the 484-file content manifest and the subfolder production build. Local HTTP checks served the direct scene route, app bundles and all six new files with matching bytes.
+
+Deployed on 2026-11-13 from application commit `a076bbe` to [What’s He Building?](https://agenticspiros.com/chimera-song-mouth/?scene=whats-he-building). All 16 changed files uploaded successfully, with the entry page last. HTTP checks matched 190 live files, including all six new assets, application bundles and preserved content. The direct scene route serves the deployed entry page.
