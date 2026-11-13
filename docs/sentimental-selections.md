@@ -13,4 +13,4 @@ The user chose all six suggested selections and asked to start with the first. A
 
 Keep the performances completely earnest. The visual gestures, scenery and escalating emotional delivery should carry the absurdity. Follow the supplied videos, retain their original accompaniment, and generate the featured vocals through the actual CHIMERA mouth engine. Add each completed performance alongside the existing collection. Keep original input files and analysis caches outside the repository.
 
-Current run: **Fade Into You → Je t’aime → I Will Always Love You**. Finish and publish all three additions, keeping each alongside the existing collection.
+Current run: **[Fade Into You — live](https://agenticspiros.com/chimera-song-mouth/?scene=fade-into-you) → Je t’aime → I Will Always Love You**. Finish and publish all three additions, keeping each alongside the existing collection.
