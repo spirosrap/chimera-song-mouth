@@ -68,6 +68,9 @@ export const BAND_SONGS:BandSong[]=[
   {id:"lose-yourself",name:"Lose Yourself — Eminem · 5:27 · rap & highlighted lyrics",arrangementUrl:BASE_PATH+"band/lose-yourself/arrangement.json?v=lose-yourself-20261112",arrangement:{
     title:"Lose Yourself · Eminem",description:"The full original music with a physical mouth rapping the words, a rainy city backdrop and lyrics highlighted word by word.",bpm:86,duration:327.84,presentation:"lyric-video",parts:[],sections:[],
   }},
+  {id:"pame-sti-honolulu",name:"Πάμε στη Χονολουλού · Κώστας Μπέζος · 3:07",arrangementUrl:BASE_PATH+"band/pame-sti-honolulu/arrangement.json?v=honolulu-20261113",arrangement:{
+    title:"Πάμε στη Χονολουλού · Κώστας Μπέζος",description:"The complete supplied recording’s original music with Greek singing and wordless vocal passages made by the physical mouth, synchronized words and a playful island performer.",bpm:136,duration:187.131315,presentation:"backed-solo",parts:[],sections:[],
+  }},
 ];
 export const DEFAULT_BAND=BAND_SONGS[0];
 /** Previous experimental links now open the complete singing-and-whistling performance. */

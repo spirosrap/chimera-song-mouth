@@ -5,6 +5,7 @@ import {V} from '../colors.ts';
 import {VoiceModel} from '../analysis.ts';
 import type {TeleTrack} from '../../show/tele.ts';
 
+export type FolkTheme='folk'|'honolulu';
 type Point=[number,number,number];
 const TAU=Math.PI*2;
 const guitarAngle=-.65;
@@ -36,9 +37,9 @@ export class FolkSinger {
   private epoch=-1;
   private lastTime:number|null=null;
   private readonly scale:number;
-  constructor(readonly model:VoiceModel,readonly track:TeleTrack,readonly bpm:number){
+  constructor(readonly model:VoiceModel,readonly track:TeleTrack,readonly bpm:number,readonly theme:FolkTheme='folk'){
     this.scale=model.tract.scale;
-    this.scene.background=new THREE.Color(0x000000);
+    this.scene.background=new THREE.Color(theme==='honolulu'?'#100d22':0x000000);
     this.scene.add(this.actor,this.microphone.group,this.backdrop.group);
     this.actor.add(this.body.group,this.hands.group,this.instrument.group,this.head.scene);
     this.head.centred=true;this.head.scene.rotation.y=-1.05;this.head.scene.scale.setScalar(1.08);
@@ -77,20 +78,25 @@ export class FolkSinger {
     }
     this.line(b,[[0,-10,10],[0,-25,10.2],[0,-40,9.3],[0,-63,9.1]],V.blueMid,.85,.5);
     for(const y of [-20,-29,-38])this.ellipse(b,[0,y,10.4],[.45,0,0],[0,.45,0],V.blue,.85,.45);
+    if(this.theme==='honolulu')for(const [x,y]of [[-10,-23],[9,-29],[-7,-41],[10,-51]]){
+      for(let i=0;i<5;i++){const q=i/5*TAU;this.ellipse(b,[x+1.3*Math.cos(q),y+1.3*Math.sin(q),10.5],[1,0,0],[0,1.2,0],'#e6a1a6',.85,.72);}
+      this.line(b,[[x-2,y-1,10.5],[x-4,y-4,10.5],[x-1,y-3,10.5]],'#99c6b4',.85,.7);
+    }
     b.end();
   }
   private makeHat(){
-    const b=this.hat;b.begin();
+    const b=this.hat,color=this.theme==='honolulu'?'#ead39a':V.white;b.begin();
     // Coordinates are in the head's sagittal frame: x forward, z across it.
-    this.ellipse(b,[0,21.4,0],[14.2,0,0],[0,0,12.6],V.white,1.3,.8);
-    this.ellipse(b,[0,21.1,0],[13.6,0,0],[0,0,12],V.white,.85,.5);
+    this.ellipse(b,[0,21.4,0],[14.2,0,0],[0,0,12.6],color,1.3,.8);
+    this.ellipse(b,[0,21.1,0],[13.6,0,0],[0,0,12],color,.85,.5);
     for(let i=0;i<16;i++){
-      const a=i/16*TAU;this.line(b,[[8.7*Math.cos(a),21.4,7.9*Math.sin(a)],[14.2*Math.cos(a),21.4,12.6*Math.sin(a)]],V.white,.85,.55);
-      this.line(b,[[8.7*Math.cos(a),21.4,7.9*Math.sin(a)],[8.3*Math.cos(a)-.5,28.2,7.2*Math.sin(a)]],V.white,1,.7);
+      const a=i/16*TAU;this.line(b,[[8.7*Math.cos(a),21.4,7.9*Math.sin(a)],[14.2*Math.cos(a),21.4,12.6*Math.sin(a)]],color,.85,.55);
+      this.line(b,[[8.7*Math.cos(a),21.4,7.9*Math.sin(a)],[8.3*Math.cos(a)-.5,28.2,7.2*Math.sin(a)]],color,1,.7);
     }
-    for(const [y,rx,rz] of [[21.4,8.7,7.9],[24,8.55,7.7],[28.2,8.3,7.2]])this.ellipse(b,[y===28.2?-.5:0,y,0],[rx,0,0],[0,0,rz],V.white,1.05,.8);
+    for(const [y,rx,rz] of [[21.4,8.7,7.9],[24,8.55,7.7],[28.2,8.3,7.2]])this.ellipse(b,[y===28.2?-.5:0,y,0],[rx,0,0],[0,0,rz],color,1.05,.8);
     for(const y of [22,23.3])this.ellipse(b,[0,y,0],[8.8,0,0],[0,0,8],V.amber,1,.8);
-    this.line(b,[[-7,28.2,-2],[-2,28.5,-3],[5,28.2,-2]],V.white,.85,.6);
+    this.line(b,[[-7,28.2,-2],[-2,28.5,-3],[5,28.2,-2]],color,.85,.6);
+    if(this.theme==='honolulu')for(let i=0;i<6;i++){const q=i/6*TAU;this.ellipse(b,[7+1.3*Math.cos(q),24+1.3*Math.sin(q),-8.2],[1.4,0,0],[0,1.4,0],'#f29aa7',1,.9);}
     b.end();
   }
   private makeMicrophone(){
@@ -109,9 +115,24 @@ export class FolkSinger {
     }
     this.line(b,[[14,-68,27],[13,-60,28],[12,-27,28],[14,-10,28]],V.blueDim,.6,.6);b.end();
   }
-  private makeBackdrop(){
+  private makeBackdrop(time=0){
     const b=this.backdrop;b.begin();
-    for(let x=-100;x<=100;x+=14)this.line(b,[[x,55,-25],[x-2,12,-25],[x+1,-35,-25],[x,-90,-25]],V.blueDim,.6,.14);
+    if(this.theme==='honolulu'){
+      const z=0;
+      // A code-drawn island backdrop; all movement follows the song clock.
+      this.ellipse(b,[-31,3,z-5],[19,0,0],[0,19,0],'#c48a78',1.1,.5);
+      for(const side of [-1,1]){const x=side*61,lean=-side*13,top=side<0?31:25;
+        for(const offset of [-1,1])this.line(b,[[x+offset,-79,z],[x+lean*.18+offset,-38,z],[x+lean*.6+offset,0,z],[x+lean,top,z]],'#bca27c',1,.62);
+        for(let i=0;i<8;i++){const q=i/8*TAU,dx=Math.cos(q)*24,dy=Math.sin(q)*11;
+          const leaf=Array.from({length:15},(_,j)=>{const t=j/14;return [x+lean+dx*t,top+dy*t-10*t*t,z+Math.sin(q)*7*t] as Point;});this.line(b,leaf,'#77ab9e',1.05,.65);
+          for(let j=3;j<14;j+=3){const a=leaf[j];this.line(b,[a,[a[0]+Math.cos(q+.8)*5,a[1]-4,a[2]]],'#77ab9e',.7,.5);}}
+      }
+      this.line(b,[[-130,-50,z],[130,-50,z]],'#628797',1,.3);
+      for(let row=0;row<6;row++)this.line(b,Array.from({length:45},(_,i)=>[-130+i*6,-53-row*5+Math.sin(i*.48+time*.9+row)*.7,z+row*.3] as Point),'#568d9f',.8,.25);
+      const x=23+Math.sin(time*.15)*8,y=-53+Math.sin(time*.8)*.7;
+      this.line(b,[[x-9,y,z+2],[x+8,y,z+2],[x+5,y-3,z+2],[x-6,y-3,z+2],[x-9,y,z+2]],'#cbbea0',.9,.55);
+      this.line(b,[[x,y,z+2],[x,y+15,z+2],[x+8,y+2,z+2],[x,y+2,z+2]],'#d4cbaa',.9,.5);
+    }else for(let x=-100;x<=100;x+=14)this.line(b,[[x,55,-25],[x-2,12,-25],[x+1,-35,-25],[x,-90,-25]],V.blueDim,.6,.14);
     b.end();
   }
   private makeGuitar(time:number){
@@ -161,14 +182,19 @@ export class FolkSinger {
     const pose=folkSingerCamera(this.camera.aspect,this.scale);this.camera.fov=pose.fov;this.camera.position.copy(pose.position);this.camera.lookAt(pose.target);this.camera.updateProjectionMatrix();this.camera.updateMatrixWorld();
     this.head.resize(width,height);
     for(const b of [this.body,this.hands,this.instrument,this.hat,this.microphone,this.backdrop])b.setResolution(width,height);
-    const d=this.camera.position.distanceTo(pose.target);this.scene.fog=new THREE.Fog(0x000000,d-20*this.scale,d+100*this.scale);
+    if(this.theme==='honolulu'){
+      this.backdrop.group.quaternion.copy(this.camera.quaternion);
+      this.backdrop.group.position.copy(pose.target).addScaledVector(this.camera.getWorldDirection(new THREE.Vector3()),65*this.scale).addScaledVector(new THREE.Vector3(0,1,0),30*this.scale);
+      this.backdrop.group.traverse(o=>{if(o instanceof THREE.Mesh)(o.material as THREE.Material&{fog:boolean}).fog=false;});
+    }
+    const d=this.camera.position.distanceTo(pose.target);this.scene.fog=new THREE.Fog(this.theme==='honolulu'?'#100d22':0x000000,d-20*this.scale,d+100*this.scale);
   }
   frame(time:number,playing:boolean,epoch:number,audible:boolean){
     const t=Math.max(0,Math.min(this.track.duration,Number.isFinite(time)?time:0));
     if(epoch!==this.epoch||this.lastTime!==null&&Math.abs(t-this.lastTime)>.25)this.head.resetMotion();
     this.epoch=epoch;const dt=this.lastTime===null?0:Math.min(.05,Math.max(0,t-this.lastTime));this.lastTime=t;
     const pose=folkSingerPose(t,this.bpm);this.actor.rotation.y=pose.sway;
-    this.makeGuitar(t);this.makeHands(pose.strum,pose.fret);
+    this.makeGuitar(t);this.makeHands(pose.strum,pose.fret);if(this.theme==='honolulu')this.makeBackdrop(t);
     const message=this.track.message(this.track.indexAt(t)),tele=playing&&audible?message:null;
     this.head.face.update(tele,dt);this.scene.updateMatrixWorld(true);
     this.head.camera.copy(this.camera);this.head.camera.updateMatrixWorld();

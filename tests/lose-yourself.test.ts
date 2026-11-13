@@ -10,7 +10,7 @@ import {initEngine} from './harness.ts';
 const file=(name:string)=>readFileSync(new URL(`../public/band/lose-yourself/${name}`,import.meta.url));
 const score:Arrangement=JSON.parse(file('arrangement.json').toString()),song=BAND_SONGS.find(s=>s.id==='lose-yourself')!;
 test('Lose Yourself adds the full recording with one physical rap voice and independent original music',async()=>{
- expect(BAND_SONGS).toHaveLength(21);expect(BAND_SONGS[20]).toBe(song);expect(BAND_SONGS[19].id).toBe('smile');expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
+ expect(BAND_SONGS).toHaveLength(22);expect(BAND_SONGS[20]).toBe(song);expect(BAND_SONGS[19].id).toBe('smile');expect(DEFAULT_BAND.id).toBe('house-of-the-rising-sun');
  const a=await loadBandArrangement(song,async()=>new Response(JSON.stringify(score)));
  expect(a.duration).toBeGreaterThan(327);expect(a.duration).toBeLessThan(328);expect(a.presentation).toBe('lyric-video');
  expect(a.parts.map(p=>[p.id,p.kind])).toEqual([['lead','voice'],['backing','backing']]);

@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 504 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 509 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -27,6 +27,7 @@ Every prepared media file below is tracked in this repository. All 504 public fi
 | Cry Me a River — Julie London | 2:58 | `?song=cry-me-a-river` | Original guitar and bass accompaniment, physical singer and synchronized words |
 | Smile — Nat King Cole | 2:56 | `?song=smile` | Original orchestral accompaniment, physical singer and synchronized words |
 | Lose Yourself — Eminem | 5:27 | `?song=lose-yourself` | Original music, physical rap voice, rainy city background and word-by-word highlighting |
+| Πάμε στη Χονολουλού — Κώστας Μπέζος | 3:07 | `?song=pame-sti-honolulu` | Original music, Greek mouth-engine singing and wordless calls, island singer, palms, waves and boat |
 
 Each song’s `public/band/<id>/` directory contains the prepared score, MP3 channels and compressed mouth telemetry as applicable. Non-voice channels such as the instrumental backing and finger clicks do not need telemetry. Credits accompany the adapted content. Small Hours has no source recording: its score is written in `src/band/smallHours.ts`, and `bun tools/render-band-song.ts small-hours` (needs ffmpeg; about seven minutes on 16 cores) rebuilds its twelve channels and telemetry from the engine. Mr. Sandman is the newly requested original-lyrics quartet; Night Train Radio remains a separate selection with its newly written words.
 
@@ -192,3 +193,5 @@ Autumn Leaves includes the complete supplied Nat King Cole television performanc
 What’s He Building? stages the full supplied Tom Waits recording as the proposed workshop mystery. The source video is a cover still; the physical narrator and environment are an original procedural interpretation. See [the scene notes](docs/whats-he-building.md).
 
 Said I Loved You…But I Lied includes the complete supplied Michael Bolton video as a staged performance, with original music and physical vocals. See [the scene notes](docs/said-i-loved-you.md).
+
+Πάμε στη Χονολουλού adds the complete supplied recording as a song, with the original accompaniment, physical Greek singing and wordless calls/scat, timed words and an imagined island singer. Open `?song=pame-sti-honolulu`; see [the song notes](docs/pame-sti-honolulu.md).

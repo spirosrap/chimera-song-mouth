@@ -992,6 +992,31 @@
       "sha256": "4933562c414fdfd45df8c1341b4b4025f7bd98aee4a784908f4ed206eabc0e38"
     },
     {
+      "path": "public/band/pame-sti-honolulu/arrangement.json",
+      "bytes": 151331,
+      "sha256": "67020fbab9a734a6f8f23b4633c2e7554ae3d8b22ce0a28428047a807ef00172"
+    },
+    {
+      "path": "public/band/pame-sti-honolulu/backing.mp3",
+      "bytes": 5990444,
+      "sha256": "e191095291fe0b7a85a0a5cfebf9c9c834f6d9b5bf1996712996cfcc2c7cbf3a"
+    },
+    {
+      "path": "public/band/pame-sti-honolulu/credits.txt",
+      "bytes": 1253,
+      "sha256": "4ae357c0204bf7ba572081568b2e9e30ea375cb81e2db1165aef7211ef55a9c7"
+    },
+    {
+      "path": "public/band/pame-sti-honolulu/lead.mp3",
+      "bytes": 5990444,
+      "sha256": "ecb5abc9b1e3c0927e7b9ecc79f7612df1cd412cbd44793fc0e1e3a296b42399"
+    },
+    {
+      "path": "public/band/pame-sti-honolulu/lead.tele.gz",
+      "bytes": 1816718,
+      "sha256": "ec80654ececa7c8c451d45fc2e0717cbebb51678c4e7ecf892a76d6c958cdb74"
+    },
+    {
       "path": "public/band/rodehihi-den-xanakano-fylaki/arrangement.json",
       "bytes": 178916,
       "sha256": "c1080d7408170dd62071cffbf51d6e5c6e519a9ffd2cadfbb2c2ad2a8e321d2e"

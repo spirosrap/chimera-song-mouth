@@ -20,7 +20,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 
 ## Preserve
 
-- Twenty-one songs in `src/band/library.ts`, including all prepared files in `public/band/`.
+- Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
 - All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixteen concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
@@ -28,6 +28,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 - Gzipped `.tele.gz` assets, stereo instrumental backing and independent mixer controls.
 - Existing song IDs, scene IDs and default selection. Complete links are in `CONTENT.md`.
 - The speech's single-speaker `press` setting, synchronized gestures and original excerpt pauses; see `docs/fool-me-once.md`.
+- Πάμε στη Χονολουλού’s complete Greek recording, physical lyric and wordless singing, original music, island singer, palms, waves and boat. Preserve its single borrowed model, source timing and instrumental break; see [the song notes](docs/pame-sti-honolulu.md).
 - Lose Yourself’s original music, approved clear rap voice, source-timed lyric highlighting and rainy city presentation; see `docs/lose-yourself.md`.
 - I’d Do Anything for Love’s complete Meat Loaf video, original music, two physical singers, motorcycle/helicopter chase, forest and castle, cracked mirror, beast-like face and black clothing, woman in white, ornate chair, floating bed, detectives, transformation and sunset escape. The mirror borrows the lead model; retain two model leases and absolute source time. See [the scene notes](docs/anything-for-love.md). Pause after each completed performance before starting the next.
 - Total Eclipse of the Heart’s complete Bonnie Tyler video, original music, two physical singers, gothic school, white dress and blonde curls, balcony, billowing red curtains, twelve clothed dancers, glowing eyes and daylight courtyard. Keep its two borrowed model leases and absolute source clock; see [the scene notes](docs/total-eclipse.md).

@@ -5,3 +5,5 @@
 The user explicitly requested a complete repository for transfer to another host and agent, then requested that the repository be made public. The prepared song/movie assets in `public/band/` and `public/scenes/` are included for that handoff, with existing credits retained. Their underlying rights remain with their respective holders. Newly written lyrics and original pieces do not change the rights status of other material in the collection.
 
 Third-party fonts and the CMU dictionary retain the license notices alongside those files. The export preserves the upstream software attribution and records its source revision in `PROVENANCE.json`.
+
+The Honolulu addition includes prepared original accompaniment from the supplied Κώστας Μπέζος recording and a newly synthesized CHIMERA lead, including the wordless calls/scat. Original recording, composition, lyrics and performance rights remain with their respective holders. The source portrait video itself is not embedded or exported. See [the song notes](docs/pame-sti-honolulu.md).
