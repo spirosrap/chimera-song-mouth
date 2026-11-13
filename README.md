@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-one songs, fifteen film and TV scenes, one speech, two Apollo missions, twelve concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-one songs, fifteen film and TV scenes, one speech, two Apollo missions, thirteen concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -81,7 +81,7 @@ It uses the included WebAssembly engine and pronunciation dictionary. Repeats, a
 
 ## Media storage
 
-All 478 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
+All 484 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
 
 After intentionally adding or replacing public assets, run `bun run content:manifest`, inspect the changes, and commit the new manifest with the files. Do not regenerate the manifest to conceal missing assets.
 
@@ -136,3 +136,5 @@ The complete supplied **Ylvis — Stonehenge** video is available at `?scene=sto
 The complete supplied **Talking Heads — Once in a Lifetime** video is available at `?scene=once-in-a-lifetime`: original music, physical verses and refrains, a dark suit, bow tie and glasses, strange dance movements, repeated figures and flowing water. See [the scene notes](docs/once-in-a-lifetime.md).
 
 The complete supplied **Nat King Cole — Autumn Leaves** performance is available at `?scene=autumn-leaves`: original music and a physical singer, presented in black and white with a suit, patterned tie, garden foliage and a woven chair. See [the scene notes](docs/autumn-leaves.md).
+
+The complete supplied **Tom Waits — What’s He Building?** recording is staged at `?scene=whats-he-building`: physical narration, original eerie soundscape and an imagined flickering workshop with covered machinery and unexplained shadows. See [the scene notes](docs/whats-he-building.md).

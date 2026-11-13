@@ -2352,6 +2352,36 @@
       "sha256": "97699de3952f8ce7de5737e35a5079aacba741634308fe0f2615eb4a5ed2c708"
     },
     {
+      "path": "public/scenes/whats-he-building/backing.mp3",
+      "bytes": 6423596,
+      "sha256": "d1290cb8664f951a01120af0f606ec7a6cadb02d0e42ef4427791745d47b86ae"
+    },
+    {
+      "path": "public/scenes/whats-he-building/credits.txt",
+      "bytes": 1478,
+      "sha256": "12dfdb1c9a8e45ec2a260ff45b4853b0addf31d2bbda5c56bc17e2949edf00ae"
+    },
+    {
+      "path": "public/scenes/whats-he-building/lead.tele.gz",
+      "bytes": 2069475,
+      "sha256": "ff1fe33156a0a8d85c35995633661478fa0ef122152a997a6d4877e4065e3982"
+    },
+    {
+      "path": "public/scenes/whats-he-building/mix.mp3",
+      "bytes": 6423596,
+      "sha256": "aee8b9af5f1a806bc0992a2f091c3ad37301d3ece179211f218f6df177388b1f"
+    },
+    {
+      "path": "public/scenes/whats-he-building/performance.json",
+      "bytes": 131201,
+      "sha256": "2ee769d11ac10f67fcaac8006e0f1437644106534488638a72a3cd180de32cb6"
+    },
+    {
+      "path": "public/scenes/whats-he-building/scene.json",
+      "bytes": 6823,
+      "sha256": "9e4857c9cc3d8c43a7e64d143a8561ee32c79cfd44d9181989ed041cd510fcb4"
+    },
+    {
       "path": "public/scenes/wizard-of-oz/credits.txt",
       "bytes": 532,
       "sha256": "21d917c9cba154bfc786ad545b4c19f907f0808b38415241c03cb2407fd15e5d"
