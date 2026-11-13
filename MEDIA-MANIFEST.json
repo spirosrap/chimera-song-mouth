@@ -1962,6 +1962,51 @@
       "sha256": "5536c80207f0106103e558ff4faab5314ccb6386988d451d5c6c4bb97d69cbc6"
     },
     {
+      "path": "public/scenes/hello/backing.mp3",
+      "bytes": 10449452,
+      "sha256": "fa3d45b992f55e2f4e2588492422cbed009cdcda1b9bd997d29dd78c77be3b41"
+    },
+    {
+      "path": "public/scenes/hello/credits.txt",
+      "bytes": 1227,
+      "sha256": "b9b88249b28892375be3992790041bee00cd57abd3abd2119cade496a83104d8"
+    },
+    {
+      "path": "public/scenes/hello/lead.tele.gz",
+      "bytes": 2549864,
+      "sha256": "1e70ca6f5ba82e6a81b7e26cae396a80dd769b4c8040cb81ab5b6f949b8d3acd"
+    },
+    {
+      "path": "public/scenes/hello/lisa.tele.gz",
+      "bytes": 544943,
+      "sha256": "d02b695b06bc1218a3eec00f1148424f315c11de741ada4a9719ddf8cca5b353"
+    },
+    {
+      "path": "public/scenes/hello/messenger.tele.gz",
+      "bytes": 145699,
+      "sha256": "717947b235b7efc9b17ac5d6d828606106f54f2e7cc8d1c2c31f9d4a58ab3cc4"
+    },
+    {
+      "path": "public/scenes/hello/mix.mp3",
+      "bytes": 10449452,
+      "sha256": "249057368ac201a9566060fb757b1285433db8ca83246c2597092d2a10cfd4c0"
+    },
+    {
+      "path": "public/scenes/hello/performance.json",
+      "bytes": 253216,
+      "sha256": "0c9dcf9baa08fb7db12e2b4dda952862c87f8312e7d1c88889bb619750c981b2"
+    },
+    {
+      "path": "public/scenes/hello/scene.json",
+      "bytes": 8921,
+      "sha256": "1554d0de97c987b043a7a60653edb26ffd0c3618fe7d7c41617d954b690eacde"
+    },
+    {
+      "path": "public/scenes/hello/student.tele.gz",
+      "bytes": 240884,
+      "sha256": "2553c15881b9bd56a59312d99d05dc26237d5c4a19422d56b3efa1bcf42383e2"
+    },
+    {
       "path": "public/scenes/je-taime/backing.mp3",
       "bytes": 9616172,
       "sha256": "b33da5038a476c44d3c71924699c2872e954813056afd313bafcd64d67937fc9"

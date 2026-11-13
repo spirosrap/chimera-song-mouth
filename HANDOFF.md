@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all twenty concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all twenty-one concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -30,6 +30,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 - The speech's single-speaker `press` setting, synchronized gestures and original excerpt pauses; see `docs/fool-me-once.md`.
 - Πάμε στη Χονολουλού’s complete Greek recording, physical lyric and wordless singing, original music, island singer, palms, waves and boat. Preserve its single borrowed model, source timing and instrumental break; see [the song notes](docs/pame-sti-honolulu.md).
 - Lose Yourself’s original music, approved clear rap voice, source-timed lyric highlighting and rainy city presentation; see `docs/lose-yourself.md`.
+- Hello’s full supplied music video, original accompaniment, physical singing and dialogue, performing-arts school, cream jacket, curls and moustache, acting students, corridor, dance and art studios, telephone, grand piano and clay portrait. Keep all four borrowed models, the overlapping dialogue and singing, source clock and final face-touch; see [the scene notes](docs/hello.md).
 - I Will Always Love You’s complete supplied Whitney Houston video, unaccompanied physical opening, original accompaniment, navy suit and short curls, warm microphone, dark theater, seated lounge, cabin, snow and airport farewell. Preserve the full final held vowel and upward run through about 270 seconds, source clock and one borrowed model; see [the scene notes](docs/always-love-you.md).
 - Je t’aime’s complete supplied studio video, French physical lead, green warehouse, updo, hoop earrings, purple feathers, patterned dress, limousine, square light rigs and three visual copies. All three heads borrow one retained voice model; see [the scene notes](docs/je-taime.md).
 - Fade Into You’s full Mazzy Star video, original music and one restrained physical singer, blue-lit band, long hair, desert flannel and sunglasses, railway, car, stairs and birds. Keep its borrowed model and source clock; see [the scene notes](docs/fade-into-you.md). The Mazzy Star interlude and all six sentimental selections are complete and live.
