@@ -41,3 +41,7 @@ Twenty-four stable planned waveform windows were measured independently: the lar
 The unchanged English scene-clarity listening aid misheard 114 of 260 caption words (43.8%). This is not an intelligibility pass; uncry and parts of the later refrain remain difficult for the recognizer. The owner-approved chorus and original sound settings are retained.
 
 Final validation passed 187 native tests (two existing ignored), 387 Bun tests across 96 files, TypeScript, the 555-file content verification, production build and local HTTP checks of all prepared assets, the direct scene route and app bundles. Ten focused Toni/Bon Jovi checks also passed after the closing-curtain cleanup. Native compositions were inspected across all seven sets, portrait views and the fully closed curtain. A regression protects against wire bows remaining visible through the curtain; the actor and physical voice ownership tests remain intact. All 549 preceding public files are byte-identical and the tracked WASM still matches its provenance.
+
+## Live release
+
+Application commit `fd93646` is live at [Un-Break My Heart](https://agenticspiros.com/chimera-song-mouth/?scene=unbreak-my-heart). All seventeen changed files uploaded successfully, with the entry page last. HTTP checks matched 38 live files byte-for-byte, including all six new scene files, application bundles, preserved Bon Jovi/Hello/Whitney media and the direct route. The temporary publish job was removed. Browser playback and real-time recording remain unverified in this chat.

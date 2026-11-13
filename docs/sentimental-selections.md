@@ -23,7 +23,7 @@ This later list follows the original completed six. Pause after each finished pe
 |---|---|---|
 | 1 | Guns N’ Roses — November Rain | Skipped at the owner’s request; private draft unpublished |
 | 2 | Lionel Richie — Hello | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=hello) |
-| 3 | Toni Braxton — Un-Break My Heart | Full performance prepared; release checks in progress |
+| 3 | Toni Braxton — Un-Break My Heart | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=unbreak-my-heart) |
 | 4 | Enrique Iglesias — Hero | Pending |
 | 5 | Céline Dion — My Heart Will Go On | Pending |
 | 6 | Bon Jovi — Always | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=bon-jovi-always), including the visual revision |
