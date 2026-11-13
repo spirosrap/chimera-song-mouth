@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { SONGS, formatTime, type Melody, type MelodyNote } from "../../song/melody.ts";
 import { readMidi } from "../../song/midi.ts";
-import { playMelody, stopSinging, useSing } from "../singing.ts";
+import { DEFAULT_LYRICS, playMelody, stopSinging, useSing } from "../singing.ts";
 import { useStore } from "../store.ts";
 
 export function SongPanel() {
@@ -24,7 +24,8 @@ export function SongPanel() {
   const renderProgress=useSing(s=>s.renderProgress);
   const playing=demo===song.name;
 
-  useEffect(()=>{useSing.getState().setLyrics(SONGS[0].lyrics);return()=>{job.current++;worker.current?.terminate();};},[]);
+  // The first song's words, unless words were kept from the last visit (singing.ts keeps them).
+  useEffect(()=>{const s=useSing.getState();if(s.lyrics===DEFAULT_LYRICS)s.setLyrics(SONGS[0].lyrics);return()=>{job.current++;worker.current?.terminate();};},[]);
   useEffect(()=>()=>{if(original)URL.revokeObjectURL(original);},[original]);
 
   function choose(next:Melody) {

@@ -2057,12 +2057,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* ---------- Sing */
-/* the pitch roll only shows what was sung: a smaller share than it had, so the song's button
-   above it fits a 1280 x 800 window and the keys keep their room */
+/* the words right under the button that sings them; the pitch roll only shows what was sung: a
+   smaller share than it had, so the song's button fits a 1280 x 800 window and the keys keep
+   their room */
 .right-sing {
   grid-template-columns: minmax(0, 342fr) minmax(0, 342fr);
-  grid-template-rows: auto auto minmax(min-content, 240fr) auto auto minmax(min-content, 172fr);
-  grid-template-areas: "act act" "song song" "roll roll" "lyrics lyrics" "spec voice" "keys keys";
+  grid-template-rows: auto auto auto minmax(min-content, 240fr) auto minmax(min-content, 172fr);
+  grid-template-areas: "act act" "lyrics lyrics" "song song" "roll roll" "spec voice" "keys keys";
 }
 
 .s-song { grid-area: song; }
@@ -2085,8 +2086,10 @@ input[type="range"]::-moz-range-thumb {
   min-height: 0;
 }
 
+/* a row per line of the song (up to four) */
 .lyrics textarea {
-  height: 30px;
+  height: auto;
+  min-height: 30px;
   resize: none;
   padding: 5px 10px;
   font-size: 13px;
@@ -2167,7 +2170,7 @@ input[type="range"]::-moz-range-thumb {
 @media (max-width: 1100px) {
   .right-sing {
     grid-template-rows: none;
-    grid-template-areas: "act act" "song song" "roll roll" "lyrics lyrics" "spec voice" "keys keys";
+    grid-template-areas: "act act" "lyrics lyrics" "song song" "roll roll" "spec voice" "keys keys";
   }
   .right-sing .screen-body {
     min-height: 190px;
@@ -2183,7 +2186,11 @@ input[type="range"]::-moz-range-thumb {
 @media (max-width: 640px) {
   .right-sing {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "act" "song" "roll" "lyrics" "spec" "voice" "keys";
+    grid-template-areas: "act" "lyrics" "song" "roll" "spec" "voice" "keys";
+  }
+  /* 16 px: iOS zooms the page into any smaller field it focuses */
+  .lyrics textarea {
+    font-size: 16px;
   }
 }
 
