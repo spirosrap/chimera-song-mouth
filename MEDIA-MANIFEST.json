@@ -1957,6 +1957,41 @@
       "sha256": "c183c5f42cfdb3b7f03fb1295b3a9f0142d469dcd78df6e450254b3e3b9b5a0d"
     },
     {
+      "path": "public/scenes/making-love/answer.tele.gz",
+      "bytes": 1117115,
+      "sha256": "a653ee7ee79104015ef519d4883569453c721123d3ceb040c25f5f4edfdec52c"
+    },
+    {
+      "path": "public/scenes/making-love/backing.mp3",
+      "bytes": 9380396,
+      "sha256": "6ee5f6f0623a3de35750dfec714e907eba28174d7cb06b2ea5676345be260ff8"
+    },
+    {
+      "path": "public/scenes/making-love/credits.txt",
+      "bytes": 1568,
+      "sha256": "892675ccf73923205fb226fa95b8cf926b0e419d4ade2cdf4578a09a162a4b49"
+    },
+    {
+      "path": "public/scenes/making-love/lead.tele.gz",
+      "bytes": 2983583,
+      "sha256": "80b42cec09b2942946ad5e4b1047eca447568a426c44f1bf429f67f841d2cce0"
+    },
+    {
+      "path": "public/scenes/making-love/mix.mp3",
+      "bytes": 9380396,
+      "sha256": "14f9a820943eab58e8e457131a876c103e69cdfa45b9e9fe5bea1d8932243366"
+    },
+    {
+      "path": "public/scenes/making-love/performance.json",
+      "bytes": 288510,
+      "sha256": "cb8dfb8e8c3889cdca1f9a67702bb611fc137791b117743e6e41caf527ee301b"
+    },
+    {
+      "path": "public/scenes/making-love/scene.json",
+      "bytes": 10597,
+      "sha256": "82e4db6a0f42bf8cd8abf6921b3cecf4058bf8c10c12514eb27420a9a428b794"
+    },
+    {
       "path": "public/scenes/matrix-spoon/backing.mp3",
       "bytes": 2275628,
       "sha256": "7a667de809d8d2a573de944d641958a477e30c0488dd2a51e609b96b647c447f"

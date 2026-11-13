@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 509 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 516 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -103,6 +103,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Michael Bolton — Said I Loved You…But I Lied | 5:03 | `?scene=said-i-loved-you` | Physical singing, original music, sunset fire, canyon, cave, lovers and horses |
 | Bonnie Tyler — Total Eclipse of the Heart | 5:34 | `?scene=total-eclipse` | Original music, physical lead and answering mouth, gothic school, staircase and balcony, windblown curtains, glowing-eyed dancers and daylight courtyard |
 | Meat Loaf — I’d Do Anything for Love | 7:41 | `?scene=anything-for-love` | Original music, two physical singers, motorcycle chase, gothic castle, cracked mirror, floating bed, detectives and sunset escape |
+| Air Supply — Making Love Out of Nothing at All | 4:53 | `?scene=making-love` | Full video, original music, two physical voices, blue-lit duo, white car, street, picnic, petrol station, diner and silhouettes |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
 | The Big Lebowski — The Jesus | 4:25 | `?scene=big-lebowski` | Four physical voices, original opening song and background, bowling, five characters, doorstep flashback and subtitles |
@@ -195,3 +196,5 @@ What’s He Building? stages the full supplied Tom Waits recording as the propos
 Said I Loved You…But I Lied includes the complete supplied Michael Bolton video as a staged performance, with original music and physical vocals. See [the scene notes](docs/said-i-loved-you.md).
 
 Πάμε στη Χονολουλού adds the complete supplied recording as a song, with the original accompaniment, physical Greek singing and wordless calls/scat, timed words and an imagined island singer. Open `?song=pame-sti-honolulu`; see [the song notes](docs/pame-sti-honolulu.md).
+
+Air Supply’s complete Making Love Out of Nothing at All video adds two physical singing voices, the original accompaniment and the full romantic montage. See [the performance notes](docs/making-love.md).
