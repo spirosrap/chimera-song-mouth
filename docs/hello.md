@@ -43,3 +43,7 @@ The initial listening diagnostic exposed weak spoken passages despite the approv
 The final unchanged English recognition diagnostic misheard 143 of 436 caption words (32.8%), down from 215 of 433 (49.7%) before the speech repair. Caption boundaries changed to follow the repaired dialogue, so these totals are not a controlled benchmark. The diagnostic remains a listening aid, not an intelligibility pass; short exchanges, names and singing underneath actors remain imperfect.
 
 Final required checks passed: 187 native tests, two existing ignored tests, and 377 Bun tests across 94 files with no failures. TypeScript, the 543-file content verification, production build and local HTTP checks also passed. The direct route, its bundled code and all nine new scene files served with the expected bytes. Browser playback and recording remain unverified.
+
+## Live release
+
+Application commit `29477b8` is live at [Hello on agenticspiros.com](https://agenticspiros.com/chimera-song-mouth/?scene=hello). All 27 changed files uploaded successfully; 257 live files and the direct route matched their expected bytes. This includes previous performances, the new four voices, original backing and source-time mouth movement. The release preserves the concurrent upstream engine import already present in the repository; no engine, judge, calibration or golden files changed for Hello.
