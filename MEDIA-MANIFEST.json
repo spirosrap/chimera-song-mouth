@@ -1357,6 +1357,41 @@
       "sha256": "09d34a031ba5833d5d831c5d937c668c2073faa99397476593732510bdaf4548"
     },
     {
+      "path": "public/scenes/anything-for-love/answer.tele.gz",
+      "bytes": 854739,
+      "sha256": "93966840c61cfde6b56495748a05013b6799ef873094975b761b05ce35bba45a"
+    },
+    {
+      "path": "public/scenes/anything-for-love/backing.mp3",
+      "bytes": 14751788,
+      "sha256": "41752855cac02a7dabfd8369bf91ace5ca7931576ba846c01ff9da305d8333cc"
+    },
+    {
+      "path": "public/scenes/anything-for-love/credits.txt",
+      "bytes": 1666,
+      "sha256": "d86c160d3bb515d798ff6f4eee819b58af5184c9313f14fe23e38415828dc4d1"
+    },
+    {
+      "path": "public/scenes/anything-for-love/lead.tele.gz",
+      "bytes": 4710154,
+      "sha256": "426b26a28edab1f96bab55ab499e4026f32eb18b79b9542d2f8d994c318724aa"
+    },
+    {
+      "path": "public/scenes/anything-for-love/mix.mp3",
+      "bytes": 14751788,
+      "sha256": "aebfd94ddb9a1bd04d7861b2e76b53a64d6a90d085375ce9c8eab1658520cbcc"
+    },
+    {
+      "path": "public/scenes/anything-for-love/performance.json",
+      "bytes": 397604,
+      "sha256": "0e2fe2d3a8f41909fa5478c47c46dea72ccdedf5d758ebb5feabfb9459a9ef34"
+    },
+    {
+      "path": "public/scenes/anything-for-love/scene.json",
+      "bytes": 13046,
+      "sha256": "d84ed453bbcc4643ba6ac0b2627ab2ecd4b3ce59009d98dabd94b275d7a772d8"
+    },
+    {
       "path": "public/scenes/apollo-11/aldrin.tele.gz",
       "bytes": 2436682,
       "sha256": "cb9daa646880a4896907ceb41594f0fd6a921894e053ea356e3d2f098d5f2705"

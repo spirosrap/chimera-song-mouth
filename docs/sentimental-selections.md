@@ -6,7 +6,7 @@ The user chose all six suggested selections and asked to start with the first. A
 |---|---|---|---|
 | 1 | Michael Bolton — Said I Loved You…But I Lied | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=said-i-loved-you) | bv5vMJKBAbo |
 | 2 | Bonnie Tyler — Total Eclipse of the Heart | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=total-eclipse) | lcOxhH8N3Bo |
-| 3 | Meat Loaf — I’d Do Anything for Love | Planned next | 9X_ViIPA-Gc |
+| 3 | Meat Loaf — I’d Do Anything for Love | In preparation | 9X_ViIPA-Gc |
 | 4 | Air Supply — Making Love Out of Nothing at All | Planned | ogoIxkPjRts |
 | 5 | Lara Fabian — Je t’aime | Planned | bVvkcaY5khc |
 | 6 | Whitney Houston — I Will Always Love You | Planned | 3JWTaaS7LdU |

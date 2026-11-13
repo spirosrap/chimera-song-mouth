@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 497 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 504 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -101,6 +101,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Tom Waits — What’s He Building? | 3:21 | `?scene=whats-he-building` | Physical narration, original soundscape, imagined flickering workshop, machinery and shadows |
 | Michael Bolton — Said I Loved You…But I Lied | 5:03 | `?scene=said-i-loved-you` | Physical singing, original music, sunset fire, canyon, cave, lovers and horses |
 | Bonnie Tyler — Total Eclipse of the Heart | 5:34 | `?scene=total-eclipse` | Original music, physical lead and answering mouth, gothic school, staircase and balcony, windblown curtains, glowing-eyed dancers and daylight courtyard |
+| Meat Loaf — I’d Do Anything for Love | 7:41 | `?scene=anything-for-love` | Original music, two physical singers, motorcycle chase, gothic castle, cracked mirror, floating bed, detectives and sunset escape |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
 | The Big Lebowski — The Jesus | 4:25 | `?scene=big-lebowski` | Four physical voices, original opening song and background, bowling, five characters, doorstep flashback and subtitles |
