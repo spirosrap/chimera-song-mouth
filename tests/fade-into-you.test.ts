@@ -18,7 +18,7 @@ const scene=validateScene(JSON.parse(file('scene.json').toString())),score:Arran
 function track(){const b=gunzipSync(file('lead.tele.gz'));return new TeleTrack(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength));}
 
 test('Mazzy Star appends the complete supplied edit with one physical singer and original music',()=>{
- expect(MOVIE_SCENES.at(-1)).toBe(movieScene('fade-into-you'));expect(MOVIE_SCENES.at(-2)!.id).toBe('making-love');
+ const index=MOVIE_SCENES.findIndex(s=>s.id==='fade-into-you');expect(MOVIE_SCENES[index]!).toBe(movieScene('fade-into-you')!);expect(MOVIE_SCENES[index-1]!.id).toBe('making-love');
  expect(scene.setting).toBe('fade');expect(scene.duration).toBeGreaterThan(261.4);expect(scene.duration).toBeLessThan(261.6);
  expect(scene.characters.map(c=>c.id)).toEqual(['hope']);expect(score.parts.map(p=>p.id)).toEqual(['lead','backing']);
  expect(scene.cues.at(-1)!.end).toBeGreaterThan(243);expect(scene.cues.at(-1)!.end).toBeLessThan(251);expect(scene.shots.at(-1)!.view).toBe('fade-poles');

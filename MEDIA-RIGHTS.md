@@ -11,3 +11,5 @@ The Honolulu addition includes prepared original accompaniment from the supplied
 Making Love Out of Nothing at All includes prepared original accompaniment from the supplied Air Supply video and two newly synthesized CHIMERA vocal parts. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original input video is not embedded or exported. See [the performance notes](docs/making-love.md).
 
 Fade Into You includes prepared original accompaniment from the supplied Mazzy Star video and a newly synthesized CHIMERA vocal. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/fade-into-you.md).
+
+Je t’aime includes prepared original accompaniment from the supplied Lara Fabian studio music video and a newly synthesized CHIMERA French lead. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/je-taime.md).

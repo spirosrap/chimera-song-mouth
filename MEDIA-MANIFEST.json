@@ -1932,6 +1932,36 @@
       "sha256": "5536c80207f0106103e558ff4faab5314ccb6386988d451d5c6c4bb97d69cbc6"
     },
     {
+      "path": "public/scenes/je-taime/backing.mp3",
+      "bytes": 9616172,
+      "sha256": "b33da5038a476c44d3c71924699c2872e954813056afd313bafcd64d67937fc9"
+    },
+    {
+      "path": "public/scenes/je-taime/credits.txt",
+      "bytes": 1427,
+      "sha256": "b14d5f71061198d92814729658f8750f93ee9d5b8c10cf6e62307f824aadda3b"
+    },
+    {
+      "path": "public/scenes/je-taime/lead.tele.gz",
+      "bytes": 2452970,
+      "sha256": "0e7de31e30b34471136d38b5530cd8e9ee064ed31d787ad085cc0f1207ecbd79"
+    },
+    {
+      "path": "public/scenes/je-taime/mix.mp3",
+      "bytes": 9616172,
+      "sha256": "eaf0708aed7c77644a271b71cf9156f94b7907a2d3960a19bf1495c49012966b"
+    },
+    {
+      "path": "public/scenes/je-taime/performance.json",
+      "bytes": 169550,
+      "sha256": "d1e5d2a179d8ca12b353292cf4f61361c36a1136d883ab1ba82c525524585ab7"
+    },
+    {
+      "path": "public/scenes/je-taime/scene.json",
+      "bytes": 5145,
+      "sha256": "5f79cc42d616914ccd8251365ceb6a5127648858e7aee6c688e57c9010f10390"
+    },
+    {
       "path": "public/scenes/mahna-mahna/backing.mp3",
       "bytes": 5019692,
       "sha256": "decd50f793dcb059b8172798ed460751c6d7467fa8491517aa8dd22f50d20d6f"
