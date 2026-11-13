@@ -55,7 +55,7 @@ and the CLI) under a React UI. See the README.
 - **DOM content flows in `.screen-body`, never absolutely positioned.** Check: `bun run lint:layout`.
 - **The layout lint's encoder checks target `?solo=1`**; the bare URL intentionally opens the band. Check: `bun run lint:layout`.
 - **This handoff explicitly includes the user-requested prepared music/movie assets.**
-  Keep all twenty-two songs, all fifteen film and TV scenes, the speech scene, the two Apollo scenes and all twenty-two concert and music-video performances in `public/`; read `CONTENT.md` and `MEDIA-RIGHTS.md`.
+  Keep all twenty-two songs, all fifteen film and TV scenes, the speech scene, the two Apollo scenes and all twenty-three concert and music-video performances in `public/`; read `CONTENT.md` and `MEDIA-RIGHTS.md`.
   The upstream copyright exclusion does not apply to this explicitly requested export. CSD
   datasets, original input recordings and analysis caches are not included. Do not add them.
   After intentionally changing public assets, run `bun run content:manifest` and commit the

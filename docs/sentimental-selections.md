@@ -14,3 +14,17 @@ All six suggested sentimental performances are complete and live. The user also 
 Keep the performances completely earnest. The visual gestures, scenery and escalating emotional delivery should carry the absurdity. Follow the supplied videos, retain their original accompaniment, and generate the featured vocals through the actual CHIMERA mouth engine. Add each completed performance alongside the existing collection. Keep original input files and analysis caches outside the repository.
 
 Completed run: **[Fade Into You](https://agenticspiros.com/chimera-song-mouth/?scene=fade-into-you) → [Je t’aime](https://agenticspiros.com/chimera-song-mouth/?scene=je-taime) → [I Will Always Love You](https://agenticspiros.com/chimera-song-mouth/?scene=always-love-you)**. All three full additions are committed, pushed and deployed alongside the existing collection.
+
+## Second seven-video selection
+
+This later list follows the original completed six. Pause after each finished performance.
+
+| Original order | Performance | Status |
+|---|---|---|
+| 1 | Guns N’ Roses — November Rain | Skipped at the owner’s request; private draft unpublished |
+| 2 | Lionel Richie — Hello | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=hello) |
+| 3 | Toni Braxton — Un-Break My Heart | Full performance prepared; release checks in progress |
+| 4 | Enrique Iglesias — Hero | Pending |
+| 5 | Céline Dion — My Heart Will Go On | Pending |
+| 6 | Bon Jovi — Always | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=bon-jovi-always), including the visual revision |
+| 7 | Boyz II Men — I’ll Make Love to You | Pending |

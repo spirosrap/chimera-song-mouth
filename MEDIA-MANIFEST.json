@@ -2647,6 +2647,36 @@
       "sha256": "b1205f4c4461c7061c5cb1b8a5039196d3700f3669a151e77849252963d47a6d"
     },
     {
+      "path": "public/scenes/unbreak-my-heart/backing.mp3",
+      "bytes": 8754476,
+      "sha256": "08cfb7879c1ea844e467e41ad7706d997b62bcd50f7106a3892e72ed14e96b3e"
+    },
+    {
+      "path": "public/scenes/unbreak-my-heart/credits.txt",
+      "bytes": 1360,
+      "sha256": "e77959e871078ba3e2fd22327a2e3914c107a24c0e7615de5c5fb430474a3d78"
+    },
+    {
+      "path": "public/scenes/unbreak-my-heart/lead.tele.gz",
+      "bytes": 2612043,
+      "sha256": "742bfdeab98d8fe30081cef214187acea74226188955f8a917df9ce01a844097"
+    },
+    {
+      "path": "public/scenes/unbreak-my-heart/mix.mp3",
+      "bytes": 8754476,
+      "sha256": "cd1f16be424155dbbd2f104682d8f9e617d2ec9089996753b2a2ceb87e1ad0b7"
+    },
+    {
+      "path": "public/scenes/unbreak-my-heart/performance.json",
+      "bytes": 205906,
+      "sha256": "c1304b31d79c6778fb30aacad16f3c81b7faa0e6cb31f867f229dccb1f7622c3"
+    },
+    {
+      "path": "public/scenes/unbreak-my-heart/scene.json",
+      "bytes": 5808,
+      "sha256": "873a338fb35a077f9aeb07fe9e05dfba302ef7353bf1fb30fbb07c656e67c442"
+    },
+    {
       "path": "public/scenes/vitas-7th-element/backing.mp3",
       "bytes": 7990316,
       "sha256": "081eff3d7ac20e6e41bec61f88d8ab2eab09faba63a176025569d01f6a794fac"
