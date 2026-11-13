@@ -1,6 +1,6 @@
 # Air Supply — Making Love Out of Nothing at All
 
-Open `?scene=making-love`. This addition follows the complete supplied 4:53 official video, retaining its original accompaniment and replacing the featured singing with two physical mouth-engine parts. It is the fourth selection in [the sentimental sequence](sentimental-selections.md). Pause after completion before starting Lara Fabian.
+Open `?scene=making-love`. This addition follows the complete supplied 4:53 official video, retaining its original accompaniment and replacing the featured singing with two physical mouth-engine parts. It is the fourth selection in [the sentimental sequence](sentimental-selections.md). The subsequent request continues through the Mazzy Star interlude, Lara Fabian and Whitney Houston.
 
 The supplied edit runs 292.733968 seconds; the prepared performance adds a 0.35-second release. The source recording, not a longer album version, determines the beginning, repeated refrains and ending. All preceding selections and media remain intact.
 
@@ -42,4 +42,4 @@ The opening transition reaches the continuously separated instrumental at 19.2 s
 
 Validation passed 144 native tests (two existing ignores), 344 Bun tests across 87 files, TypeScript, the 516-file manifest, the subfolder production build and local HTTP checks of every built public asset, the direct scene route, app bundles and all seven new scene files. The four scene tests and asset/build checks passed again after the opening-only backing correction. The compiled WASM provenance is unchanged.
 
-Deployed on 13 November 2026 at [Making Love Out of Nothing at All](https://agenticspiros.com/chimera-song-mouth/?scene=making-love) from application commit `7e50c82`, pushed to `main`. All 17 changed files uploaded with exit status 0. HTTP SHA-256 checks matched 222 live files, including all seven new scene files, current app bundles, the direct scene route and preserved songs/scenes. The temporary publish job was removed. The sequence pauses here before Lara Fabian.
+Deployed on 13 November 2026 at [Making Love Out of Nothing at All](https://agenticspiros.com/chimera-song-mouth/?scene=making-love) from application commit `7e50c82`, pushed to `main`. All 17 changed files uploaded with exit status 0. HTTP SHA-256 checks matched 222 live files, including all seven new scene files, current app bundles, the direct scene route and preserved songs/scenes. The temporary publish job was removed. The earlier pause was superseded by the subsequent request to complete Lara Fabian and Whitney Houston after the Mazzy Star interlude.

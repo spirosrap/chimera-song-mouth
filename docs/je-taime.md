@@ -33,3 +33,7 @@ Twenty-four measurable waveform windows agree with planned fundamental pitch wit
 The unchanged English-only scene-clarity listening aid completed on all 36 French caption excerpts: 243 errors against 244 normalized tokens (99.6%). Its fixed English decoder and ASCII word normalization are unsuitable for evaluating French singing; this is recorded as a diagnostic limitation, not a pronunciation-quality result. The speech judges were not changed.
 
 Validation passed 144 native tests (two existing ignores), 352 Bun tests across 89 files, TypeScript, the 528-file manifest, the subfolder production build and local HTTP checks of all built public media, the direct scene route, app assets and six new scene files. Tracked WASM provenance is unchanged.
+
+A separate local French-language pass on the approved excerpt recognized several chorus phrases but confused sustained declarations. It remains a listening diagnostic, not a perfect-intelligibility claim; the owner-approved voice is preserved.
+
+Deployed on 13 November 2026 from application commit `f03e1ce`, pushed to `main`. All 16 changed files uploaded with exit status 0. HTTP SHA-256 checks verified 234 live files, including all six new scene assets, app bundles, the direct route and preserved songs/scenes. The temporary publish job was removed. [Open Je t’aime](https://agenticspiros.com/chimera-song-mouth/?scene=je-taime).
