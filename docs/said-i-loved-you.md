@@ -37,3 +37,5 @@ The full render is 303.069 seconds, with 14,547,291 stereo frames and 6,062 fini
 The unchanged scene-clarity listening aid completed. On isolated caption excerpts over the original accompaniment, English Whisper marked 95 of 280 words as errors (33.9%). Sustained vowels and some consonants remain limitations for automatic recognition. This is a listening diagnostic rather than a pronunciation-quality pass; the user’s approved chorus voice is retained.
 
 Validation passed 144 native tests (two existing ignores), 328 Bun tests across 83 files, TypeScript, the 490-file content manifest and the subfolder production build. Local HTTP checks served the direct scene route, application bundles and all six new assets with matching bytes.
+
+Deployed on 2026-11-13 from application commit `8064247` to [Said I Loved You…But I Lied](https://agenticspiros.com/chimera-song-mouth/?scene=said-i-loved-you). All 16 changed files uploaded successfully, with the entry page last. HTTP checks matched 196 live files, including all six new assets, app bundles and preserved content. The direct scene route serves the deployed entry page.
