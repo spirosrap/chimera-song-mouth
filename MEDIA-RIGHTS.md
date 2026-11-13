@@ -13,3 +13,5 @@ Making Love Out of Nothing at All includes prepared original accompaniment from 
 Fade Into You includes prepared original accompaniment from the supplied Mazzy Star video and a newly synthesized CHIMERA vocal. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/fade-into-you.md).
 
 Je t’aime includes prepared original accompaniment from the supplied Lara Fabian studio music video and a newly synthesized CHIMERA French lead. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/je-taime.md).
+
+I Will Always Love You includes prepared original accompaniment from the supplied Whitney Houston music video and a newly synthesized CHIMERA lead. Composition, lyrics, recording, performance, film and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/always-love-you.md).

@@ -1382,6 +1382,36 @@
       "sha256": "09d34a031ba5833d5d831c5d937c668c2073faa99397476593732510bdaf4548"
     },
     {
+      "path": "public/scenes/always-love-you/backing.mp3",
+      "bytes": 8782124,
+      "sha256": "7101e9c0fb72f14d0b4347e2c33dbc0581ea6d59738b390dc476d6ad48f79130"
+    },
+    {
+      "path": "public/scenes/always-love-you/credits.txt",
+      "bytes": 1435,
+      "sha256": "708e5ff243eb3ed70b28e9d1c669fe3c47e8ac70bd5cfe37cb1a62f2c5fb5d5e"
+    },
+    {
+      "path": "public/scenes/always-love-you/lead.tele.gz",
+      "bytes": 2457806,
+      "sha256": "9cd1cb7c3818263daa4661b8b799f4c5040eae90e8c733eb232843d2276c31af"
+    },
+    {
+      "path": "public/scenes/always-love-you/mix.mp3",
+      "bytes": 8782124,
+      "sha256": "5f7b55d2c07ee25a3fd22f97eb7a626ed5ff42dab1a6b2458034b99a4fad617a"
+    },
+    {
+      "path": "public/scenes/always-love-you/performance.json",
+      "bytes": 155040,
+      "sha256": "794d1449058322088cec3e3cca679fa3d7c427da2c26d606ec668681c331a61a"
+    },
+    {
+      "path": "public/scenes/always-love-you/scene.json",
+      "bytes": 3906,
+      "sha256": "24042037a1be60fdd7a71b5947a98ed241a317e38c490ae048cd39896b920a28"
+    },
+    {
       "path": "public/scenes/anything-for-love/answer.tele.gz",
       "bytes": 854739,
       "sha256": "93966840c61cfde6b56495748a05013b6799ef873094975b761b05ce35bba45a"

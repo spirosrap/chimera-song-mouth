@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 528 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 534 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -106,6 +106,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Air Supply — Making Love Out of Nothing at All | 4:53 | `?scene=making-love` | Full video, original music, two physical voices, blue-lit duo, white car, street, picnic, petrol station, diner and silhouettes |
 | Mazzy Star — Fade Into You | 4:21 | `?scene=fade-into-you` | Complete blue-stage and desert video scene, restrained physical singer, original accompaniment, railway, car, stairs and birds |
 | Lara Fabian — Je t’aime | 5:00 | `?scene=je-taime` | Complete supplied studio video, original music, physical French singer, green warehouse, limousine and three visual copies |
+| Whitney Houston — I Will Always Love You | 4:34 | `?scene=always-love-you` | Complete supplied video, original music and physical vocal, unaccompanied opening, theater, cabin, snow and airport farewell |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
 | The Big Lebowski — The Jesus | 4:25 | `?scene=big-lebowski` | Four physical voices, original opening song and background, bowling, five characters, doorstep flashback and subtitles |
