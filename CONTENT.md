@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 484 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 490 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -99,6 +99,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Talking Heads — Once in a Lifetime | 3:45 | `?scene=once-in-a-lifetime` | Physical verses and refrains, original music, suit, strange movements, multiplying figures and water |
 | Nat King Cole — Autumn Leaves | 2:39 | `?scene=autumn-leaves` | Physical singer, original music and black-and-white garden performance |
 | Tom Waits — What’s He Building? | 3:21 | `?scene=whats-he-building` | Physical narration, original soundscape, imagined flickering workshop, machinery and shadows |
+| Michael Bolton — Said I Loved You…But I Lied | 5:03 | `?scene=said-i-loved-you` | Physical singing, original music, sunset fire, canyon, cave, lovers and horses |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
 | The Big Lebowski — The Jesus | 4:25 | `?scene=big-lebowski` | Four physical voices, original opening song and background, bowling, five characters, doorstep flashback and subtitles |
@@ -187,3 +188,5 @@ Once in a Lifetime includes the complete supplied official video, with original 
 Autumn Leaves includes the complete supplied Nat King Cole television performance, with original music and physical singing in a monochrome garden set. See [the scene notes](docs/autumn-leaves.md).
 
 What’s He Building? stages the full supplied Tom Waits recording as the proposed workshop mystery. The source video is a cover still; the physical narrator and environment are an original procedural interpretation. See [the scene notes](docs/whats-he-building.md).
+
+Said I Loved You…But I Lied includes the complete supplied Michael Bolton video as a staged performance, with original music and physical vocals. See [the scene notes](docs/said-i-loved-you.md).

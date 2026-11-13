@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-one songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all thirteen concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fourteen concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -29,6 +29,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 - Existing song IDs, scene IDs and default selection. Complete links are in `CONTENT.md`.
 - The speech's single-speaker `press` setting, synchronized gestures and original excerpt pauses; see `docs/fool-me-once.md`.
 - Lose Yourself’s original music, approved clear rap voice, source-timed lyric highlighting and rainy city presentation; see `docs/lose-yourself.md`.
+- Said I Loved You…But I Lied’s full Michael Bolton video, physical singer, original music, windblown curls, three outfits, sunset fire, canyon, cave, lovers and horses. Keep its one retained model and absolute source timing; see [the scene notes](docs/said-i-loved-you.md). The remaining five requested sentimental selections are listed in [the sequence](docs/sentimental-selections.md).
 - What’s He Building?’s complete Tom Waits recording, physical narrator and original soundscape, with the imagined flickering workshop, covered machine and opaque moving shadow. The input video is a cover still; retain the proposed staging and the one borrowed model. See [the scene notes](docs/whats-he-building.md).
 - Autumn Leaves’s complete Nat King Cole television performance, original accompaniment, physical singer and monochrome garden, suit, tie and woven chair. Keep the airway monochrome without changing shared model data; see [the scene notes](docs/autumn-leaves.md).
 - Once in a Lifetime’s full music video, approved physical spoken and sung voice, original music, dark suit, bow tie, glasses, strange choreography, repeated figures and flowing water. Keep its five heads on one retained model and all motion on the source clock; see [the scene notes](docs/once-in-a-lifetime.md).

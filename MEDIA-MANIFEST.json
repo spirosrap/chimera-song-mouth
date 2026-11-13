@@ -2157,6 +2157,36 @@
       "sha256": "ba9b95867580d0baa490cdb00e143a47dc887403eef00e5334729c6d493397d8"
     },
     {
+      "path": "public/scenes/said-i-loved-you/backing.mp3",
+      "bytes": 9699884,
+      "sha256": "be983878c69fe27102994c0e260db976968c09cd614888505ec50ff48ee093ba"
+    },
+    {
+      "path": "public/scenes/said-i-loved-you/credits.txt",
+      "bytes": 1528,
+      "sha256": "7319d070f267418f79fbfdeee835933a6836ba587d88641f4451ce642b982a97"
+    },
+    {
+      "path": "public/scenes/said-i-loved-you/lead.tele.gz",
+      "bytes": 2849781,
+      "sha256": "fb298555b7c6933ce00f00cc7444b1b3ea2e31f1e70196bc4584fdb94b95e6c1"
+    },
+    {
+      "path": "public/scenes/said-i-loved-you/mix.mp3",
+      "bytes": 9699884,
+      "sha256": "de07691759fa8f04ae7affae159b72d4752bc9616dd8821d6fb010dee7e38007"
+    },
+    {
+      "path": "public/scenes/said-i-loved-you/performance.json",
+      "bytes": 186414,
+      "sha256": "ed3c028e5b956871125f5816879542667d15ee696f9085c257084c7eaf5d3ba9"
+    },
+    {
+      "path": "public/scenes/said-i-loved-you/scene.json",
+      "bytes": 5914,
+      "sha256": "d16cf105a3c18c44053b3b13fec6eaf7f3fdc251af2e265a776229c7138d4da9"
+    },
+    {
       "path": "public/scenes/stonehenge/backing.mp3",
       "bytes": 7549484,
       "sha256": "5a02addf2d9a8dd288fdd9dae68a63c9d702ab0f41e92356676a8f3da6c861f3"
