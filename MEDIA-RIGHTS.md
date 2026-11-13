@@ -9,3 +9,5 @@ Third-party fonts and the CMU dictionary retain the license notices alongside th
 The Honolulu addition includes prepared original accompaniment from the supplied Κώστας Μπέζος recording and a newly synthesized CHIMERA lead, including the wordless calls/scat. Original recording, composition, lyrics and performance rights remain with their respective holders. The source portrait video itself is not embedded or exported. See [the song notes](docs/pame-sti-honolulu.md).
 
 Making Love Out of Nothing at All includes prepared original accompaniment from the supplied Air Supply video and two newly synthesized CHIMERA vocal parts. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original input video is not embedded or exported. See [the performance notes](docs/making-love.md).
+
+Fade Into You includes prepared original accompaniment from the supplied Mazzy Star video and a newly synthesized CHIMERA vocal. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/fade-into-you.md).

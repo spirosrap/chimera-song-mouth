@@ -18,7 +18,7 @@ const scene=validateScene(JSON.parse(file('scene.json').toString())),score:Arran
 function track(name:string){const b=gunzipSync(file(name+'.tele.gz'));return new TeleTrack(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength));}
 
 test('Air Supply appends the complete video, duet, source settings and ending',()=>{
- expect(MOVIE_SCENES.at(-1)).toBe(movieScene('making-love'));expect(MOVIE_SCENES.at(-2)!.id).toBe('anything-for-love');
+ const index=MOVIE_SCENES.findIndex(s=>s.id==='making-love');expect(index).toBeGreaterThan(0);expect(MOVIE_SCENES[index-1]!.id).toBe('anything-for-love');
  expect(scene.setting).toBe('airsupply');expect(scene.duration).toBeGreaterThan(293);expect(scene.duration).toBeLessThan(294);
  expect(scene.characters.map(c=>c.id)).toEqual(['air-singer','air-guitarist']);expect(score.parts.map(p=>p.id)).toEqual(['lead','answer','backing']);
  expect(scene.cues.at(-1)!.end).toBeGreaterThan(290);expect(scene.shots.at(-1)!.view).toBe('air-silhouette');

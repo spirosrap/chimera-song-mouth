@@ -1767,6 +1767,36 @@
       "sha256": "a761d2776c6f5a7e1fac59707c9427004c9a705a80edf3d13f451c714974294a"
     },
     {
+      "path": "public/scenes/fade-into-you/backing.mp3",
+      "bytes": 8368940,
+      "sha256": "a742c05f238d2b3c435f6b6628c4013473664c6ed624f02f75d29da4461732ee"
+    },
+    {
+      "path": "public/scenes/fade-into-you/credits.txt",
+      "bytes": 1394,
+      "sha256": "498cc37271e4b0a068cc3c8abc9718ab18127764a4fa21dbf4686eb55c797130"
+    },
+    {
+      "path": "public/scenes/fade-into-you/lead.tele.gz",
+      "bytes": 1777465,
+      "sha256": "770038eeae6cdd90ac01465cd637c3a38e5d1511d071491bf08c2735216f035a"
+    },
+    {
+      "path": "public/scenes/fade-into-you/mix.mp3",
+      "bytes": 8368940,
+      "sha256": "7eb93bc4b8e1dd646aa1826993b508504a5a7aa3834730f5f9089bbc250fdbfa"
+    },
+    {
+      "path": "public/scenes/fade-into-you/performance.json",
+      "bytes": 92167,
+      "sha256": "994f6283dcee7b653f860520705ceec783266fab67cab773aec30e5312606968"
+    },
+    {
+      "path": "public/scenes/fade-into-you/scene.json",
+      "bytes": 3089,
+      "sha256": "9692bead593e5216bdff3cecb483991409ba2503a7c629ac407065b4610e0073"
+    },
+    {
       "path": "public/scenes/fool-me-once/bush.tele.gz",
       "bytes": 299158,
       "sha256": "fa197175849d493690c8d997beac7c6629746042425dd4ca76b021acc57b3b98"

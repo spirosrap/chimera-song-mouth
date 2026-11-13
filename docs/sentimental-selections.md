@@ -1,6 +1,6 @@
 # Sentimental performance sequence
 
-The user chose all six suggested selections and asked to start with the first. All six source videos are already in the local Videos folder. Michael Bolton, Bonnie Tyler, Meat Loaf and Air Supply are complete and live. The remaining performances follow in this order. The user explicitly chose to pause after each finished performance so they can try it before starting the next.
+The user chose all six suggested selections and asked to start with the first. All six source videos are already in the local Videos folder. Michael Bolton, Bonnie Tyler, Meat Loaf and Air Supply are complete and live. The remaining performances follow in this order. The current run adds Mazzy Star’s Fade Into You first, then completes Lara Fabian and Whitney Houston in order, with voice previews along the way.
 
 | Order | Performance | Status | Source video ID |
 |---|---|---|---|
@@ -12,3 +12,5 @@ The user chose all six suggested selections and asked to start with the first. A
 | 6 | Whitney Houston — I Will Always Love You | Planned | 3JWTaaS7LdU |
 
 Keep the performances completely earnest. The visual gestures, scenery and escalating emotional delivery should carry the absurdity. Follow the supplied videos, retain their original accompaniment, and generate the featured vocals through the actual CHIMERA mouth engine. Add each completed performance alongside the existing collection. Keep original input files and analysis caches outside the repository.
+
+Current run: **Fade Into You → Je t’aime → I Will Always Love You**. Finish and publish all three additions, keeping each alongside the existing collection.
