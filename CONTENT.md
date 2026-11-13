@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 543 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 549 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -108,6 +108,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Lara Fabian — Je t’aime | 5:00 | `?scene=je-taime` | Complete supplied studio video, original music, physical French singer, green warehouse, limousine and three visual copies |
 | Whitney Houston — I Will Always Love You | 4:34 | `?scene=always-love-you` | Complete supplied video, original music and physical vocal, unaccompanied opening, theater, cabin, snow and airport farewell |
 | Lionel Richie — Hello | 5:26 | `?scene=hello` | Original music, four physical singing/dialogue voices, performing-arts school, drama class, lockers, dance rehearsal, telephone, piano and clay portrait |
+| Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
 | The Big Lebowski — The Jesus | 4:25 | `?scene=big-lebowski` | Four physical voices, original opening song and background, bowling, five characters, doorstep flashback and subtitles |
@@ -115,7 +116,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | SOS — Dimash concert | 4:05 | `?scene=dimash-sos` | Physical French singer, original music, captions, dark suit, hand microphone, moving lights, band, audience and camera cuts |
 | Nessun Dorma — opera concert | 4:32 | `?scene=nessun-dorma` | Physical Italian tenor and choir, original orchestra, extended finale, captions, conductor, musicians and audience |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All twenty scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All twenty-two scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 
 Project Hail Mary recreates the complete supplied karaoke clip. The physical singer
 performs Sign of the Times and the closing spoken line, while the original music
@@ -204,3 +205,5 @@ Said I Loved You…But I Lied includes the complete supplied Michael Bolton vide
 Air Supply’s complete Making Love Out of Nothing at All video adds two physical singing voices, the original accompaniment and the full romantic montage. See [the performance notes](docs/making-love.md).
 
 Hello includes the complete supplied music video, original accompaniment, physical singing and dialogue, full school story and sculpture reveal. See [the scene notes](docs/hello.md).
+
+Bon Jovi’s complete Always video adds one physical English lead, original accompaniment, source-timed captions and the full procedural romantic montage. See [the performance notes](docs/bon-jovi-always.md).

@@ -1622,6 +1622,36 @@
       "sha256": "777edcf05c2dc505015cd862415c662cad4864492f0414d06702baa9c5931942"
     },
     {
+      "path": "public/scenes/bon-jovi-always/backing.mp3",
+      "bytes": 11720492,
+      "sha256": "982fe6b862541dfd8ca4becf898ed94c404be52a2db4857e0a7c27ec64f12f21"
+    },
+    {
+      "path": "public/scenes/bon-jovi-always/credits.txt",
+      "bytes": 1448,
+      "sha256": "ceb076f4b2e05bf395e996e92fba373ed4b67b502cf2ddc1e358b267e10b74ff"
+    },
+    {
+      "path": "public/scenes/bon-jovi-always/lead.tele.gz",
+      "bytes": 3420702,
+      "sha256": "41d334f44ee7d8ca5dcf4c1cd75f6b67082cef18cb0211cd2ce42598407c83ae"
+    },
+    {
+      "path": "public/scenes/bon-jovi-always/mix.mp3",
+      "bytes": 11720492,
+      "sha256": "1948dc7d1afa7d6da1d604d2fc60949f405c06afa8564cce145f059888e52b67"
+    },
+    {
+      "path": "public/scenes/bon-jovi-always/performance.json",
+      "bytes": 232699,
+      "sha256": "eecf76a7f4bdc2de2bd937c6f4c98bc6c65404a45dc3d03c361e8c292c65e8ce"
+    },
+    {
+      "path": "public/scenes/bon-jovi-always/scene.json",
+      "bytes": 6362,
+      "sha256": "92b4269b2b29c5bd4aadda9901db017fd801950f146810d8994399b9b4b66fae"
+    },
+    {
       "path": "public/scenes/celentano/backing.mp3",
       "bytes": 7208492,
       "sha256": "dd67ac56f7bb2115a163507822a82152cfe0717e1f1a414d713695cc4ce6b2d7"

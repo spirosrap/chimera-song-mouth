@@ -325,7 +325,8 @@ async function main() {
       await page.close();
       continue;
     }
-    await page.goto(url, { waitUntil: "networkidle" });
+    // The bare URL opens the band; the encoder layout checks target the single-mouth player.
+    await page.goto(new URL("?solo=1", url).href, { waitUntil: "networkidle" });
     for (const m of modes) {
       await mode(m);
       await check(m);

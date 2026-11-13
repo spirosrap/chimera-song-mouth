@@ -15,3 +15,5 @@ Fade Into You includes prepared original accompaniment from the supplied Mazzy S
 Je t’aime includes prepared original accompaniment from the supplied Lara Fabian studio music video and a newly synthesized CHIMERA French lead. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/je-taime.md).
 
 I Will Always Love You includes prepared original accompaniment from the supplied Whitney Houston music video and a newly synthesized CHIMERA lead. Composition, lyrics, recording, performance, film and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/always-love-you.md).
+
+Bon Jovi’s Always includes prepared original accompaniment from the supplied official music video and a newly synthesized CHIMERA English lead. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/bon-jovi-always.md).
