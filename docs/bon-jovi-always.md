@@ -37,3 +37,15 @@ The unchanged scene-clarity listening aid completed. On isolated caption excerpt
 Deployed on 2026-11-13 from application commit `641ef44` to [Bon Jovi — Always](https://agenticspiros.com/chimera-song-mouth/?scene=bon-jovi-always). All 26 changed files uploaded successfully, with the entry page last. Live HTTP checks matched 32 files, including all six new assets, Hello, application bundles and preserved Whitney media. The direct scene route serves the deployed entry page. Local Chromium playback passed; the deployed browser connection was refused in this environment, so live browser playback and real-time recording remain unverified.
 
 Likeness, singing and staging remain approximate.
+
+## Visual revision
+
+The owner requested a closer reconstruction after approving the completed singing. This revision preserves the full mix, original backing, vocal score, lyrics, subtitle cues and physical mouth telemetry byte-for-byte. Only camera cuts change within the prepared scene file; all 548 other prepared public files are unchanged.
+
+A retained cast now has solid shaded faces, hair, clothing, hands and shoes, with separate seated, dancing, embracing, argument, grief and painting poses. Story actors look toward each other and restore their hands and posture after seeks. They share scene-local geometry and materials and never allocate voice models. The singer retains the actual CHIMERA head, with shorter asymmetric copper hair, a shaded sleeveless body and bent arms at the vintage microphone.
+
+Thirty-five inspected cuts replace the previous sixteen camera entries. Shorter performance shots and gentle camera moves interleave with the apartment, party, bedroom, loft, band, phone call, explosion, emergency street and final turquoise studio. Furniture, bedding, curtains, wall pictures, the opening photograph, studio clutter, window light, warm key light and cool rim light give the sets more depth. Environment outlines now respect depth so distant wire details do not draw through foreground objects.
+
+The final scene remains a stylized procedural reconstruction; likeness and exact gestures are approximate. Native scene projections check composition rather than GPU lighting or browser playback. Browser and layout-lint access remain declined in this chat, so those checks were not rerun for this revision.
+
+Visual-revision validation passed 187 native tests (two existing ignored), 382 Bun tests across 95 files, TypeScript, the 549-file content verification, production build and local HTTP checks. Twelve final native compositions were inspected across ten locations and both portrait layouts. Tests cover the new painting/argument poses, exact seek restoration, moving close-ups and a bounded retained cast. Full SHA-256 comparisons confirm 548 unchanged public files and unchanged scene fields apart from the camera cuts. The tracked WASM still matches its provenance.
