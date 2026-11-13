@@ -2292,6 +2292,41 @@
       "sha256": "33b786189aa248d8d4f89a94716d119c2ad55b3880d101d0d14bac47547cb38f"
     },
     {
+      "path": "public/scenes/total-eclipse/answer.tele.gz",
+      "bytes": 1238221,
+      "sha256": "1a45072657515036f5ea6fe456337a9d7b04e3fe90e54a630886d660fe875799"
+    },
+    {
+      "path": "public/scenes/total-eclipse/backing.mp3",
+      "bytes": 10699820,
+      "sha256": "8566ca1a15f35bc44440174c5a3368a5cda47d9a949a075852a3b855b70ae79e"
+    },
+    {
+      "path": "public/scenes/total-eclipse/credits.txt",
+      "bytes": 1531,
+      "sha256": "63843effd58c72cf066c5c5dc7e5fe3a3049fc9a8fd434c71a039bc3a0050100"
+    },
+    {
+      "path": "public/scenes/total-eclipse/lead.tele.gz",
+      "bytes": 3098273,
+      "sha256": "d8265f9b2b399ba2e48a335c828ff09bbbfd13c589a419efd52cd7adcfa8cf04"
+    },
+    {
+      "path": "public/scenes/total-eclipse/mix.mp3",
+      "bytes": 10699820,
+      "sha256": "6db7a87511215e1355d98aa3554409cb56d2075fc1f7d82abda850960d1586a6"
+    },
+    {
+      "path": "public/scenes/total-eclipse/performance.json",
+      "bytes": 300166,
+      "sha256": "cda23fb575dc57e3681659730d45fd4a5c3ffc37ecc6a06cdb8f021e8061a5e3"
+    },
+    {
+      "path": "public/scenes/total-eclipse/scene.json",
+      "bytes": 10357,
+      "sha256": "a46cad4374335461ed0294f479a7045c5be210cfa1dbb65075bd618a127109d3"
+    },
+    {
       "path": "public/scenes/truman-show/backing.mp3",
       "bytes": 10093100,
       "sha256": "5a42d864b5615e2821cb8bbc2fb6c346b69836b058d4932da632fca9283dc84a"
