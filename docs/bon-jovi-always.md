@@ -34,4 +34,6 @@ Validation passed all native tests, 381 Bun tests across 95 files, TypeScript, t
 
 The unchanged scene-clarity listening aid completed. On isolated caption excerpts over the original accompaniment, English Whisper reported a 63.3% word-error rate. Sustained vowels and some consonants remain limitations for automatic recognition. This is a listening diagnostic rather than a pronunciation-quality pass; the user’s approved chorus voice is retained.
 
+Deployed on 2026-11-13 from application commit `641ef44` to [Bon Jovi — Always](https://agenticspiros.com/chimera-song-mouth/?scene=bon-jovi-always). All 26 changed files uploaded successfully, with the entry page last. Live HTTP checks matched 32 files, including all six new assets, Hello, application bundles and preserved Whitney media. The direct scene route serves the deployed entry page. Local Chromium playback passed; the deployed browser connection was refused in this environment, so live browser playback and real-time recording remain unverified.
+
 Likeness, singing and staging remain approximate.
