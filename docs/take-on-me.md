@@ -1,6 +1,6 @@
 # a-ha — Take On Me
 
-Open `?scene=take-on-me`. The complete supplied 4:04 official video, including its long opening and closing section, is reconstructed with original instrumental music, physical lead and chorus replies and the colour/comic-book story. The 51–76 second preview includes the first chorus and high ending. Pause after the finished performance before starting another selection.
+Open `?scene=take-on-me`. The complete supplied 4:04 official video, including its long opening and closing section, is reconstructed with original instrumental music, physical lead and chorus replies and the colour/comic-book story. The owner approved the 51–76 second first-chorus/high-ending preview: “Sounds good—use this version.” Pause after the finished performance before starting another selection.
 
 ## Physical singing and melody
 
@@ -40,6 +40,10 @@ Browser, Playwright and layout-lint access remain declined in this chat. Native 
 
 The full performance lasts 244.368503 seconds with 11,729,689 source-clock audio frames and 4,888 mouth snapshots per singer. The decoded mix peaks at 0.9169. Every physical phrase is audible; the generated vocals are silent during the instrumental opening and after the singing. There are 33 subtitle lines and 32 source-time camera cuts.
 
-The unchanged scene-clarity listening aid completed on 33 lead captions over the original music and synthesized replies. It marked 95 of 145 words as errors (65.5%). Overlapping replies, the low calls and sustained upper register are difficult for this recognizer. This is a listening diagnostic, not an intelligibility pass; the preview settings and prepared source phones are retained.
+The unchanged scene-clarity listening aid completed on 33 lead captions over the original music and synthesized replies. It marked 95 of 145 words as errors (65.5%). Overlapping replies, the low calls and sustained upper register are difficult for this recognizer. This is a listening diagnostic, not an intelligibility pass; the owner-approved preview settings and prepared source phones are retained.
 
 Validation passed 187 native tests (two existing ignored), 431 Bun tests across 106 files, five final focused scene checks, TypeScript, all 626 public hashes and unchanged WASM provenance. The subfolder production build and local HTTP checks matched every built media file, the direct scene route, app bundles and all seven new files. Native projections were inspected for the race, café and book, wink, hand contact, pair, window/band, chase and rivals, bin escape, transformation, reunion, cover and mobile framing. Browser/GPU playback and real-time recording remain unverified.
+
+## Live release
+
+Application commit `8977f23` is live at [Take On Me](https://agenticspiros.com/chimera-song-mouth/?scene=take-on-me). All eighteen changed files uploaded successfully, with `index.html` last. HTTP verification matched 115 live files byte-for-byte, including the seven new assets, app bundles and fourteen preserved performances, plus the direct scene route. The temporary publish job was removed. Browser/GPU playback and real-time recording remain unverified in this chat.
