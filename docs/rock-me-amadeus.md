@@ -37,3 +37,9 @@ The prepared score, backing, tracked WASM and ffmpeg suffice to rebuild the voic
 Browser, Playwright and layout-lint access remain declined in this chat. Native projections and geometry checks do not verify browser/GPU playback or real-time recording/export interaction.
 
 Validation passed 187 native tests (two existing ignored), 422 Bun tests across 104 files, TypeScript, all 613 public hashes and the unchanged WASM provenance. The four Falco tests passed again after the final camera/subtitle changes. The subfolder production build and local HTTP checks matched all built media, the direct route, application bundles and eight new scene files. Native projections were inspected for the postcard, costumes, coach, court, bar, prayer and portrait framing. Browser/GPU playback and real-time recording remain unverified.
+
+The unchanged scene-clarity listening aid completed on 55 spoken/sung captions over the original music. Its English-only `small.en` model marked 242 of 258 normalized words as errors (93.8%). That recognizer is unsuitable for the German verses and also misreads the processed repeated chorus. This is recorded as a diagnostic limitation, not an intelligibility pass; the owner-approved preview voice is retained. The judge and its language setting were not modified.
+
+## Live release
+
+Application commit `4e7d051` is live at [Rock Me Amadeus](https://agenticspiros.com/chimera-song-mouth/?scene=rock-me-amadeus). All nineteen changed files uploaded successfully, with `index.html` last. HTTP verification matched 102 live files byte-for-byte, including the eight new assets, app bundles and twelve preserved performances, plus the direct scene route. The temporary publish job was removed. Browser/GPU playback and real-time recording remain unverified in this chat.
