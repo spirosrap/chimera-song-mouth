@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, thirty-three concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, thirty-four concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -151,6 +151,8 @@ The complete supplied **Enrique Iglesias — Hero** video is staged at `?scene=h
 The complete supplied **Céline Dion — My Heart Will Go On** anniversary alternate video is staged at `?scene=my-heart-will-go-on`, with original music, approved physical singing, ivory lace gown, curved ship’s bow, sunset ocean, windblown hair, starry close-ups and overlapping singer images. See [the scene notes](docs/my-heart-will-go-on.md).
 
 The complete supplied **a-ha — Take On Me** video is staged at `?scene=take-on-me`, with original music, physical lead and chorus replies, graphite lines and pencil shading, motorcycle race, colour café and comic book, reaching hand, two-world window, band, wrench-wielding pursuers, paper escape, apartment and sketch-to-human doorway ending. See [the scene notes](docs/take-on-me.md).
+
+The complete supplied **Nick Cave & Kylie Minogue — Where the Wild Roses Grow** video is staged at `?scene=wild-roses`, with original music, two physical singing voices, dark river and reeds, a floating red-haired woman in a white slip dress, Nick kneeling on the bank, rose-filled portraits, hands, snake and the final rose at her lips. See [the scene notes](docs/wild-roses.md).
 
 The complete supplied **Sinéad O’Connor — Nothing Compares 2 U** video is staged at `?scene=nothing-compares`, with original music, a physical singer in an intimate portrait, cropped hair, black high collar, restrained expressions and tears, formal garden paths, fountain, statues, balustrade, walking figure and slow double exposures, including the full long garden outro. See [the scene notes](docs/nothing-compares.md).
 

@@ -3062,6 +3062,41 @@
       "sha256": "9e4857c9cc3d8c43a7e64d143a8561ee32c79cfd44d9181989ed041cd510fcb4"
     },
     {
+      "path": "public/scenes/wild-roses/answer.tele.gz",
+      "bytes": 2153557,
+      "sha256": "4e020e8064678056ccc98e14ee7ac56269324114a8c1ccf7c7e55dfe140e5b5e"
+    },
+    {
+      "path": "public/scenes/wild-roses/backing.mp3",
+      "bytes": 8716844,
+      "sha256": "bfa7cfc3178019d0bddf57308acc28421f58b40a4235fa18ca3b8761411c2307"
+    },
+    {
+      "path": "public/scenes/wild-roses/credits.txt",
+      "bytes": 1958,
+      "sha256": "ca9ce995e028a09c1b60da3fede5a4d5caa2184a6de8187acb6a375575546ad7"
+    },
+    {
+      "path": "public/scenes/wild-roses/lead.tele.gz",
+      "bytes": 2017485,
+      "sha256": "ae8c9b65aeb942dea6a8720724c143bfd288cd63620f6df1c7c4b8463c81c4f8"
+    },
+    {
+      "path": "public/scenes/wild-roses/mix.mp3",
+      "bytes": 8716844,
+      "sha256": "8987108303c7897f65b774919e372e054eb62912ee8eb0ec46da89ae44f4cfa0"
+    },
+    {
+      "path": "public/scenes/wild-roses/performance.json",
+      "bytes": 281743,
+      "sha256": "7f66b7eba6aaa2d57a7d550ba376b7f57957e50a5d31f82395b9b37514bf7621"
+    },
+    {
+      "path": "public/scenes/wild-roses/scene.json",
+      "bytes": 6892,
+      "sha256": "74d3f012f94ba63c8bd8dc13db7d829e658d84c5f1a42e63050314f625cc74e2"
+    },
+    {
       "path": "public/scenes/wizard-of-oz/credits.txt",
       "bytes": 532,
       "sha256": "21d917c9cba154bfc786ad545b4c19f907f0808b38415241c03cb2407fd15e5d"

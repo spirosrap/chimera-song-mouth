@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 626 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 633 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -119,6 +119,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Falco — Rock Me Amadeus | 3:44 | `?scene=rock-me-amadeus` | Complete supplied video, original music, three physical vocal parts, Vienna postcard, black coach, tuxedo, coloured Mozart wig, brocade and cravat, court, biker bar, motorcycles and prayer |
 | Sinéad O’Connor — Nothing Compares 2 U | 5:08 | `?scene=nothing-compares` | Complete supplied video, original music, physical lead, intimate black-background portrait, cropped hair and high collar, tears, formal garden, fountain, statues, balustrade, walking figure, double exposures and full long garden outro |
 | a-ha — Take On Me | 4:04 | `?scene=take-on-me` | Complete supplied video and ending, original music, physical lead and chorus replies, graphite paper world, motorcycle race, café and comic, reaching hand, two-world window, pursuers, paper escape and apartment transformation |
+| Nick Cave & Kylie Minogue — Where the Wild Roses Grow | 4:32 | `?scene=wild-roses` | Complete river video and quiet ending, original music, two physical singers, red hair and white slip dress, kneeling Nick, rose portraits, reeds, snake and rose at her lips |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
@@ -239,3 +240,5 @@ Rock Me Amadeus adds eight prepared files: explicit three-part phonetic score, o
 Nothing Compares 2 U adds six prepared files: explicit phonetic score, original backing, full mix, one compressed mouth track, scene/captions/cameras and credits. Portrait and garden walker share one retained model. Source video, separated stems and analysis stay private. See [the scene notes](docs/nothing-compares.md).
 
 Take On Me adds seven prepared files: explicit two-part phonetic score, original backing, full mix, two compressed mouth tracks, scene/captions/cameras and credits. Four heads borrow two retained models; the girl uses neutral articulation. The local ink renderer preserves every other scene’s neon materials. Raw source, stems and analysis remain private. See [the scene notes](docs/take-on-me.md).
+
+Where the Wild Roses Grow adds seven prepared files: explicit two-part phonetic score, original backing, full mix, two compressed mouth tracks, scene/captions/cameras and credits. Two physical heads borrow two retained models. Raw source, stems and analysis remain private. See [the scene notes](docs/wild-roses.md).
