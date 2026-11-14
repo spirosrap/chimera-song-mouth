@@ -51,3 +51,7 @@ Ninety-six stable singing waveform windows were measured against the prepared co
 The unchanged English scene-clarity listening aid misheard 153 of 411 words (37.2%): 117 of 306 sung words, 28 of 89 male dialogue words and 8 of 16 female dialogue words. The native speech pass reduces the opening’s errors from 85 of 105 to 36 of 105. Proper names, some short replies and several sung phrases remain difficult for the recognizer; this is an imperfect listening aid, not an intelligibility pass. The approved quartet and its physical renders are retained.
 
 Final validation passed 187 native tests (two existing ignored), 406 Bun tests across 100 files, TypeScript, all 586 public content hashes, the production build and local HTTP checks of the direct route, app bundles and all twelve new files. All 574 preceding public assets remain byte-identical and the tracked WASM matches its unchanged provenance. The five focused scene regressions also passed with the finished native dialogue.
+
+## Live release
+
+Application commit `4a52839` is live at [I’ll Make Love to You](https://agenticspiros.com/chimera-song-mouth/?scene=ill-make-love-to-you). All twenty-three changed files uploaded successfully with the entry page last. HTTP checks matched 75 live files byte-for-byte, including all twelve new assets, application bundles, eight preserved performances and the direct scene route. The temporary publish job was removed. Browser playback and real-time recording remain unverified in this chat.

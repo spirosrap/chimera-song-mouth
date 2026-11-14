@@ -27,4 +27,6 @@ This later list follows the original completed six. Pause after each finished pe
 | 4 | Enrique Iglesias — Hero | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=hero) |
 | 5 | Céline Dion — My Heart Will Go On | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=my-heart-will-go-on) |
 | 6 | Bon Jovi — Always | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=bon-jovi-always), including the visual revision |
-| 7 | Boyz II Men — I’ll Make Love to You | Prepared; validated for release |
+| 7 | Boyz II Men — I’ll Make Love to You | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=ill-make-love-to-you) |
+
+All seven performances in the second selection are now live.
