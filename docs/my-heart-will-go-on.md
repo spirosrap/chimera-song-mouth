@@ -39,3 +39,7 @@ Twenty-four stable generated waveform windows were measured independently agains
 The unchanged English scene-clarity listening aid misheard 104 of 172 caption words (60.5%), across all 24 lines. It struggles with several long, high-register vowels and sustained syllables. This is a remaining recognition/intelligibility limitation, not a clarity pass; the owner-approved chorus and voice settings are retained.
 
 Final validation passed 187 native tests (two existing ignored), 401 Bun tests across 99 files, TypeScript, all 574 public content hashes, the production build and local HTTP checks of the direct route, app bundles and all six new files. Ten focused new-scene/Hero regressions also passed. All 568 earlier public assets remain byte-identical and the tracked WASM matches its unchanged provenance.
+
+## Live release
+
+Application commit `404be4e` is live at [My Heart Will Go On](https://agenticspiros.com/chimera-song-mouth/?scene=my-heart-will-go-on). All seventeen changed files uploaded successfully with the entry page last. HTTP checks matched 63 live files byte-for-byte, including all six new assets, app bundles, preserved Hero/Céline mansion/Toni/November Rain/Bon Jovi/Hello/Whitney media and the direct route. The temporary publish job was removed. Browser playback and real-time recording remain unverified in this chat.
