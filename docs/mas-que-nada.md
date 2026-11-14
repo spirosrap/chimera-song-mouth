@@ -34,4 +34,6 @@ Validation passed 410 Bun tests across 101 files, TypeScript, the 592-file conte
 
 The unchanged English-only scene-clarity listening aid reported a 99.3% word-error rate on isolated Portuguese caption excerpts. Its fixed English decoder and normalization are unsuitable for evaluating Portuguese singing; this is recorded as a diagnostic limitation, not a pronunciation-quality result. The user’s approved voice is retained.
 
+Deployed on 2026-11-14 from application commit `39ae919` to [Sérgio Mendes — Mas Que Nada](https://agenticspiros.com/chimera-song-mouth/?scene=mas-que-nada). All 41 changed files uploaded successfully, with the entry page last. Live HTTP checks matched 47 files, including all six new assets, Hero, My Heart Will Go On, Boyz II Men, application bundles and preserved Whitney media. The direct scene route serves the deployed entry page. Local Chromium playback passed; live browser playback and real-time recording were not retested.
+
 Likeness, singing and staging remain approximate.
