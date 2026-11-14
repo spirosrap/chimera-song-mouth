@@ -112,6 +112,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Guns N’ Roses — November Rain | 9:17 | `?scene=november-rain` | Complete supplied film, original instrumental music, physical lead and answering voice, wedding, desert guitar, reception storm, funeral, cemetery and grave roses |
 | Enrique Iglesias — Hero | 4:23 | `?scene=hero` | Physical lead, original accompaniment, red beanie, station, convertible, desert, chapel, lovers, confrontation and rain-soaked cradling ending |
 | Céline Dion — My Heart Will Go On | 4:41 | `?scene=my-heart-will-go-on` | Complete anniversary alternate video, physical lead, original music, ivory lace gown, curved ship’s bow, sunset ocean, windblown hair, stars and overlapping singer images |
+| Boyz II Men — I’ll Make Love to You | 4:20 | `?scene=ill-make-love-to-you` | Full supplied video, original music, four physical singers, two physical opening speakers, security visit, writing desk, ivory outfits, staircase, blue portraits, candles and final letter |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
@@ -120,7 +121,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | SOS — Dimash concert | 4:05 | `?scene=dimash-sos` | Physical French singer, original music, captions, dark suit, hand microphone, moving lights, band, audience and camera cuts |
 | Nessun Dorma — opera concert | 4:32 | `?scene=nessun-dorma` | Physical Italian tenor and choir, original orchestra, extended finale, captions, conductor, musicians and audience |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All twenty-six scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All twenty-seven scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 
 Project Hail Mary recreates the complete supplied karaoke clip. The physical singer
 performs Sign of the Times and the closing spoken line, while the original music
@@ -219,3 +220,5 @@ November Rain includes the complete supplied film, original instrumental music a
 Hero adds the complete supplied film with the approved physical lead and original accompaniment. Its six prepared files contain the full score, backing/mix, synthesized telemetry, scene/captions/camera data and credits. The original video and analysis caches stay local; see [the performance notes](docs/hero.md).
 
 My Heart Will Go On adds the complete supplied anniversary alternate performance. Six prepared files contain the physical score, mix/backing, mouth telemetry, source-timed scene/captions/cameras and credits. Source video and analysis caches remain private; see [the performance notes](docs/my-heart-will-go-on.md).
+
+I’ll Make Love to You adds the complete supplied video with six physical mouths. Twelve prepared files include the four-voice singing score, native dialogue control score, mix/backing, six mouth telemetry tracks, scene/captions/cameras and credits. Input recordings and analysis caches remain private; see [the performance notes](docs/ill-make-love-to-you.md).

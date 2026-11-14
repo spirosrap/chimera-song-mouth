@@ -2067,6 +2067,66 @@
       "sha256": "d8ba8e2151c275869c08f4681664835f2e071b3fda4e732e1287eff2eaf84a1f"
     },
     {
+      "path": "public/scenes/ill-make-love-to-you/backing.mp3",
+      "bytes": 8333612,
+      "sha256": "1b49c6e70f3babc3c84b9eff9a514375345b11a4cb9db1868d9a6ad8550d9f6d"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/baritone.tele.gz",
+      "bytes": 1565233,
+      "sha256": "85b228facc63c760f91fe9f60f4f9e85301a4b293187488e56c75ad4c5df5ccd"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/bass.tele.gz",
+      "bytes": 1563663,
+      "sha256": "ced79fa279edc825601e4039f3ca5d48bd5611808e7c25cf8b1b262efacb026f"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/credits.txt",
+      "bytes": 1651,
+      "sha256": "1f6bd956e61ddb6f93694910a4ba7673e0a2f0f90744334db3ad8ebedad67955"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/dialogue.json",
+      "bytes": 178685,
+      "sha256": "f662cf45a16bbbb1f76e9105900c289ef8bd252a829b8ffd2eda3bb766548179"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/dwayne.tele.gz",
+      "bytes": 567426,
+      "sha256": "76595b0b73014d36468e413dee9d4c1222777e95be2416bfca70bf436a61ea8d"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/lead.tele.gz",
+      "bytes": 2524856,
+      "sha256": "3628d47706e976c21bd8638336f2af3ecc2f41a57eca21931a96a485b779f5b8"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/mix.mp3",
+      "bytes": 8333612,
+      "sha256": "25b30ad1a00c77225c579ea007b814926f9d219a66a3a3ced5022790b51613d1"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/performance.json",
+      "bytes": 533872,
+      "sha256": "b40d9c7a64847b704dddd8ee2fbf1cbc3d5ae56958004ab1713fd38f05cd8fdf"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/scene.json",
+      "bytes": 9346,
+      "sha256": "0a04b0bae9802ed215106428dd1ea4ce77ab8a7fdf2808c844a96568f7d94513"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/sparks.tele.gz",
+      "bytes": 233516,
+      "sha256": "2c5fe2054d557c604f3d8790dd4ee50661e777c36092d8dd985e87f35b8c3375"
+    },
+    {
+      "path": "public/scenes/ill-make-love-to-you/tenor.tele.gz",
+      "bytes": 1539622,
+      "sha256": "97c3da3ba9364cce1bac8c1f61fd873e8206787c3d348d9eaa10866872b4408e"
+    },
+    {
       "path": "public/scenes/je-taime/backing.mp3",
       "bytes": 9616172,
       "sha256": "b33da5038a476c44d3c71924699c2872e954813056afd313bafcd64d67937fc9"
