@@ -1,6 +1,6 @@
 # Sinéad O’Connor — Nothing Compares 2 U
 
-Open `?scene=nothing-compares`. The complete supplied 5:08 official video is reconstructed with original instrumental accompaniment, one physical mouth-engine singer and the intimate portrait/garden presentation. The 55–87 second preview includes the first refrain. Pause after the finished performance before starting another selection.
+Open `?scene=nothing-compares`. The complete supplied 5:08 official video is reconstructed with original instrumental accompaniment, one physical mouth-engine singer and the intimate portrait/garden presentation. The owner approved the 55–87 second first-refrain preview: “Sounds good—use this version.” Pause after the finished performance before starting another selection.
 
 ## Physical singing and source timing
 
@@ -36,6 +36,10 @@ Browser, Playwright and layout-lint access remain declined in this chat. Native 
 
 The full performance lasts 308.502018 seconds, including a 350 ms physical release, with 14,808,097 stereo frames and 6,171 snapshots. The decoded mix peaks at 0.8224; every physical phrase is audible and the voice is silent during the long instrumental ending. The scene has 34 subtitle lines and 15 source-time camera cuts.
 
-The unchanged scene-clarity listening aid completed on 34 captions over the original music and marked 98 of 209 words as errors (46.9%). Sustained sung vowels and isolated short captions are difficult for this recognizer. This is a listening diagnostic, not an intelligibility pass; the supplied phonetic timing and preview settings are retained.
+The unchanged scene-clarity listening aid completed on 34 captions over the original music and marked 98 of 209 words as errors (46.9%). Sustained sung vowels and isolated short captions are difficult for this recognizer. This is a listening diagnostic, not an intelligibility pass; the supplied phonetic timing and owner-approved preview settings are retained.
 
 Validation passed 187 native tests (two existing ignored), 426 Bun tests across 105 files, TypeScript, all 619 public hashes and the unchanged WASM provenance. The subfolder production build and local HTTP checks cover every built media file, the direct route, app bundles and all six new files. Native projections were inspected for the tight portrait, lowered eyes, tears, paths, fountain, terrace, walking figure, statue, double exposure and landscape/portrait ending. Browser/GPU playback and real-time recording remain unverified.
+
+## Live release
+
+Application commit `b20620e` is live at [Nothing Compares 2 U](https://agenticspiros.com/chimera-song-mouth/?scene=nothing-compares). All seventeen changed files uploaded successfully, with `index.html` last. HTTP verification matched 108 live files byte-for-byte, including all six new assets, app bundles and thirteen preserved performances, plus the direct scene route. The temporary publish job was removed. Browser/GPU playback and real-time recording remain unverified in this chat.
