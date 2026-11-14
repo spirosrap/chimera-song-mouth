@@ -34,4 +34,6 @@ Validation passed 391 Bun tests across 97 files, TypeScript, the 562-file conten
 
 The unchanged scene-clarity listening aid reported a 47.9% word-error rate over isolated caption excerpts. Sustained vowels and some consonants remain limitations for automatic recognition. This is a listening diagnostic rather than a pronunciation-quality pass; the user’s approved outro voices are retained.
 
+Deployed on 2026-11-14 from application commit `b189ada` to [Guns N’ Roses — November Rain](https://agenticspiros.com/chimera-song-mouth/?scene=november-rain). All 25 changed files uploaded successfully, with the entry page last. Live HTTP checks matched 31 files, including all seven new assets, Un-Break My Heart, application bundles and preserved Whitney media. The direct scene route serves the deployed entry page. Local Chromium playback passed; live browser playback and real-time recording were not retested.
+
 Likeness, singing and staging remain approximate.
