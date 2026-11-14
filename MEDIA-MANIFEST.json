@@ -2247,6 +2247,36 @@
       "sha256": "82e4db6a0f42bf8cd8abf6921b3cecf4058bf8c10c12514eb27420a9a428b794"
     },
     {
+      "path": "public/scenes/mas-que-nada/backing.mp3",
+      "bytes": 4987436,
+      "sha256": "8b7200c7d60f334e3698504f79e9b02346b75fae85f32db1ecb573135846edbe"
+    },
+    {
+      "path": "public/scenes/mas-que-nada/credits.txt",
+      "bytes": 1412,
+      "sha256": "8879550dc6f901f2f6ade9138afeba212907f091c8093366be29aef37c0f21fd"
+    },
+    {
+      "path": "public/scenes/mas-que-nada/lead.tele.gz",
+      "bytes": 1240094,
+      "sha256": "2e625f4f33e17ce7ee2d7c4fee14126c8cd75b670ebeaa68d05a0f987ac1c5db"
+    },
+    {
+      "path": "public/scenes/mas-que-nada/mix.mp3",
+      "bytes": 4987436,
+      "sha256": "a1fe2fcc9588f839ea71ab8a5b03927c2f840a96b926246d9a8dfa7124a7c4be"
+    },
+    {
+      "path": "public/scenes/mas-que-nada/performance.json",
+      "bytes": 97437,
+      "sha256": "beaac5358e0b10276e668e8c08270fef7be1cb613c00ad32b6134bce7a834b69"
+    },
+    {
+      "path": "public/scenes/mas-que-nada/scene.json",
+      "bytes": 3149,
+      "sha256": "4ec6702927d8ba52a931728e5af5b8e061679ca7695248f5b5d5be6c049242be"
+    },
+    {
       "path": "public/scenes/matrix-spoon/backing.mp3",
       "bytes": 2275628,
       "sha256": "7a667de809d8d2a573de944d641958a477e30c0488dd2a51e609b96b647c447f"

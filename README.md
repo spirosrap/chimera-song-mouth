@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, twenty-seven concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, twenty-eight concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -82,7 +82,7 @@ It uses the included WebAssembly engine and pronunciation dictionary. Repeats, a
 
 ## Media storage
 
-All 562 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
+All 592 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
 
 After intentionally adding or replacing public assets, run `bun run content:manifest`, inspect the changes, and commit the new manifest with the files. Do not regenerate the manifest to conceal missing assets.
 
@@ -151,3 +151,5 @@ The complete supplied **Enrique Iglesias — Hero** video is staged at `?scene=h
 The complete supplied **Céline Dion — My Heart Will Go On** anniversary alternate video is staged at `?scene=my-heart-will-go-on`, with original music, approved physical singing, ivory lace gown, curved ship’s bow, sunset ocean, windblown hair, starry close-ups and overlapping singer images. See [the scene notes](docs/my-heart-will-go-on.md).
 
 The complete supplied **Boyz II Men — I’ll Make Love to You** video is staged at `?scene=ill-make-love-to-you`, with original music, four approved physical chorus voices, a physical spoken opening, security keypad, writing desk and silver lamp, ivory outfits, staircase, blue portraits, candles and final letter reading. See [the scene notes](docs/ill-make-love-to-you.md).
+
+The complete supplied **Sérgio Mendes — Mas Que Nada** performance is staged at `?scene=mas-que-nada`, with original accompaniment, a physical Brazilian Portuguese lead, period singer, vintage microphone, Sérgio at the piano, second singer, jungle foliage and band. See [the scene notes](docs/mas-que-nada.md).
