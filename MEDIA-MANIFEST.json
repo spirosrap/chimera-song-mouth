@@ -2767,6 +2767,41 @@
       "sha256": "3805f1dc8b68b00d73f5a0d0805497dc1def388fa52b24fd9ba910e16b55976e"
     },
     {
+      "path": "public/scenes/take-on-me/answer.tele.gz",
+      "bytes": 573642,
+      "sha256": "34821e4ddd9e80db15303818bdd1ec21cee46e00f712fc29dd6a1374ad5cff5d"
+    },
+    {
+      "path": "public/scenes/take-on-me/backing.mp3",
+      "bytes": 7822124,
+      "sha256": "a00539dc948d69bd7dee69fad5eac96b38c37f174ff5a243cfcaf3c77863c163"
+    },
+    {
+      "path": "public/scenes/take-on-me/credits.txt",
+      "bytes": 1898,
+      "sha256": "6bc1a1eb80a86fdb10ee1bdcadcd44ef6e538a1bc251479c1418aaf5c3236de6"
+    },
+    {
+      "path": "public/scenes/take-on-me/lead.tele.gz",
+      "bytes": 1617151,
+      "sha256": "f1eebb7a09ab64017912499266c475b291f83d918450999a93fb29382ebef3a5"
+    },
+    {
+      "path": "public/scenes/take-on-me/mix.mp3",
+      "bytes": 7822124,
+      "sha256": "75660ecc98d6ea4466ddef3a38918b3e77b54f4c3d131bed8de9319e2d7d467b"
+    },
+    {
+      "path": "public/scenes/take-on-me/performance.json",
+      "bytes": 131312,
+      "sha256": "8078878603d137a9f26d521bd9b7f66c7ab4ed9b30a40e679b700f8c4a57da3a"
+    },
+    {
+      "path": "public/scenes/take-on-me/scene.json",
+      "bytes": 5048,
+      "sha256": "ecdd58ef3a72a825a8bc8baf2c4eab4079c471d5ddbf4907af28df331d63f26a"
+    },
+    {
       "path": "public/scenes/tars/backing.mp3",
       "bytes": 1350956,
       "sha256": "1b9a8fe28c3799026ba883884925566e507ba15c949d0a967bd1b38d3f054c16"
