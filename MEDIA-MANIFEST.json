@@ -2572,6 +2572,46 @@
       "sha256": "1a64e4b469c62548b6f9af0d5b8e8820c965fb9172e398eb8e2d19f10b2d17e4"
     },
     {
+      "path": "public/scenes/rock-me-amadeus/backing.mp3",
+      "bytes": 7190828,
+      "sha256": "d1113e5afab99e8efc8b5ae3a3c1255b0cff00ed66f95a6686dc4dc34ff2d137"
+    },
+    {
+      "path": "public/scenes/rock-me-amadeus/bass.tele.gz",
+      "bytes": 1644118,
+      "sha256": "741d6415dd8bd75929c229fb4a9c1fe4aa9d98a9f4dcb1670a05cfc394d609a0"
+    },
+    {
+      "path": "public/scenes/rock-me-amadeus/credits.txt",
+      "bytes": 1911,
+      "sha256": "0c53427a7cdfbbd7e8ed85e873a6beaceadbc7ea19e356a183bdd9ef0445cef6"
+    },
+    {
+      "path": "public/scenes/rock-me-amadeus/lead.tele.gz",
+      "bytes": 2327064,
+      "sha256": "f7379452fdd7b9bf9a7dcd82ff607c6abe390985b99ed6225373be28352b5056"
+    },
+    {
+      "path": "public/scenes/rock-me-amadeus/mix.mp3",
+      "bytes": 7190828,
+      "sha256": "dfa152ad877517c3982eb284e8ae9313699e66158e6d6030b708d51581fb51e0"
+    },
+    {
+      "path": "public/scenes/rock-me-amadeus/performance.json",
+      "bytes": 465437,
+      "sha256": "768f42e33d89ff1d5f250eef118f099f1a5e513558736d9cefae5d6256bb39f7"
+    },
+    {
+      "path": "public/scenes/rock-me-amadeus/scene.json",
+      "bytes": 7984,
+      "sha256": "3331dd4bdca6c6cc72c4b94ef2049c4d8bbc220772eb45fc6c571822ea2c5bfb"
+    },
+    {
+      "path": "public/scenes/rock-me-amadeus/tenor.tele.gz",
+      "bytes": 1623739,
+      "sha256": "3654113f9730da00ba79426076daf7da1c06bbb86ffbebd0afff612cc694d1f5"
+    },
+    {
       "path": "public/scenes/sagan-dimensions/backing.mp3",
       "bytes": 14196524,
       "sha256": "e937c2fdad7f596916519f7cb9f1c61d82462babf5a77837539470caec3bfd8b"
