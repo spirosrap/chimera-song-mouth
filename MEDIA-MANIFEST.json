@@ -2995,6 +2995,36 @@
       "path": "public/scenes/wizard-of-oz/tin-woodman.tele.gz",
       "bytes": 337378,
       "sha256": "d8315a6211c2f0da1bb7889cfac36d40725ce4274ac7612edc5800157f22dd85"
+    },
+    {
+      "path": "public/scenes/wuthering-heights/backing.mp3",
+      "bytes": 8658476,
+      "sha256": "f8d2f951606ebb7a93a3a68d06a91c80389b114f5cbadcbabab6d92e9af9f857"
+    },
+    {
+      "path": "public/scenes/wuthering-heights/credits.txt",
+      "bytes": 1680,
+      "sha256": "5080cc5c0fda580ed85e4e5e1680b6ce4f4ee99554633a47f8acd9c8668a9c8b"
+    },
+    {
+      "path": "public/scenes/wuthering-heights/lead.tele.gz",
+      "bytes": 2311021,
+      "sha256": "90706189195f7861c5fa43de48f20477dd8ae3fa2a459a7121f76714e8e0fc52"
+    },
+    {
+      "path": "public/scenes/wuthering-heights/mix.mp3",
+      "bytes": 8658476,
+      "sha256": "ae02b82f4ac5fedcdac8db72878434f549e2a93ce966b0922c5925af68fa688b"
+    },
+    {
+      "path": "public/scenes/wuthering-heights/performance.json",
+      "bytes": 176369,
+      "sha256": "44f6d1172eece38ee626185b17cae9033f50611987b8c57b3cc99fedd892ee56"
+    },
+    {
+      "path": "public/scenes/wuthering-heights/scene.json",
+      "bytes": 6556,
+      "sha256": "fceea43d9661b5f8dea1a0fa25ff96cf6268bb6ac1e757e86997eb3711f1673d"
     }
   ]
 }

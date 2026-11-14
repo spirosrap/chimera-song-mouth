@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, twenty-nine concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, thirty concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -149,6 +149,8 @@ The complete supplied **Guns N’ Roses — November Rain** film is staged at `?
 The complete supplied **Enrique Iglesias — Hero** video is staged at `?scene=hero`, with original music, approved physical singing, red beanie and sunglasses, petrol station, cream convertible, golden desert, chapel, lovers, confrontation and rain-soaked final embrace. See [the scene notes](docs/hero.md).
 
 The complete supplied **Céline Dion — My Heart Will Go On** anniversary alternate video is staged at `?scene=my-heart-will-go-on`, with original music, approved physical singing, ivory lace gown, curved ship’s bow, sunset ocean, windblown hair, starry close-ups and overlapping singer images. See [the scene notes](docs/my-heart-will-go-on.md).
+
+The complete supplied **Kate Bush — Wuthering Heights** red-dress video is staged at `?scene=wuthering-heights`, with the approved physical lead, original music, windswept field and pine grove, long hair, face-framing hands, red flowing sleeves and skirt, black belt, turns and full receding dance ending. See [the scene notes](docs/wuthering-heights.md).
 
 The complete supplied **Shakespears Sister — Stay** video is staged at `?scene=shakespears-stay`, with original music, two approved contrasting physical singers, the star-filled bedside room, Earth, brass bed, dark visitor, luminous curtain tunnel, struggle, revival and final embrace. See [the scene notes](docs/shakespears-stay.md).
 
