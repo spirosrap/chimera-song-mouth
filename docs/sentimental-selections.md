@@ -25,6 +25,6 @@ This later list follows the original completed six. Pause after each finished pe
 | 2 | Lionel Richie — Hello | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=hello) |
 | 3 | Toni Braxton — Un-Break My Heart | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=unbreak-my-heart) |
 | 4 | Enrique Iglesias — Hero | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=hero) |
-| 5 | Céline Dion — My Heart Will Go On | Pending |
+| 5 | Céline Dion — My Heart Will Go On | Prepared; validated for release |
 | 6 | Bon Jovi — Always | [Live](https://agenticspiros.com/chimera-song-mouth/?scene=bon-jovi-always), including the visual revision |
 | 7 | Boyz II Men — I’ll Make Love to You | Pending |

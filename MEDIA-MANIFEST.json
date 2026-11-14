@@ -2227,6 +2227,36 @@
       "sha256": "f8b6bb59a637784744a0529dee86fc0be00a85d59c28e334c948f61e2ee43b04"
     },
     {
+      "path": "public/scenes/my-heart-will-go-on/backing.mp3",
+      "bytes": 8991020,
+      "sha256": "874f1d5244d190e91c3edfdf70b6b6bef1ccfcc760814747efbf0c0d6ae33877"
+    },
+    {
+      "path": "public/scenes/my-heart-will-go-on/credits.txt",
+      "bytes": 1345,
+      "sha256": "780121d4531065e3c73f538b5084408b96a6dcc70605795b50f301adb9dea4ae"
+    },
+    {
+      "path": "public/scenes/my-heart-will-go-on/lead.tele.gz",
+      "bytes": 2352338,
+      "sha256": "c103b99269934244ccd17fd75dba0ab6d865c5e6bde9a561887c6422005ece8c"
+    },
+    {
+      "path": "public/scenes/my-heart-will-go-on/mix.mp3",
+      "bytes": 8991020,
+      "sha256": "32cd0384bba98008c31047d57e4689336c514dbb1c23707d1de9a01a70b9c2a7"
+    },
+    {
+      "path": "public/scenes/my-heart-will-go-on/performance.json",
+      "bytes": 169906,
+      "sha256": "56e6b7da1fe98e76a328e20668282a4989b618ff12823b943850936ad870cdf5"
+    },
+    {
+      "path": "public/scenes/my-heart-will-go-on/scene.json",
+      "bytes": 4441,
+      "sha256": "0f923525de5674ea92753b19bf74028d864acd53b0a8ec4ff0d3237a50785a8b"
+    },
+    {
       "path": "public/scenes/nessun-dorma/backing.mp3",
       "bytes": 8696108,
       "sha256": "6c217ec2c646a5db01011aff30773e5739202f207e24c634bebf06a510787cf6"

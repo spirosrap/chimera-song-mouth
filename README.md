@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, twenty-five concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, twenty-six concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -147,3 +147,5 @@ The complete supplied **Bon Jovi — Always** video is staged at `?scene=bon-jov
 The complete supplied **Guns N’ Roses — November Rain** film is staged at `?scene=november-rain`, with original instrumental music, a physical lead and answering outro voice, concert piano, wedding, desert guitar, reception storm, funeral, cemetery and grave roses. See [the scene notes](docs/november-rain.md).
 
 The complete supplied **Enrique Iglesias — Hero** video is staged at `?scene=hero`, with original music, approved physical singing, red beanie and sunglasses, petrol station, cream convertible, golden desert, chapel, lovers, confrontation and rain-soaked final embrace. See [the scene notes](docs/hero.md).
+
+The complete supplied **Céline Dion — My Heart Will Go On** anniversary alternate video is staged at `?scene=my-heart-will-go-on`, with original music, approved physical singing, ivory lace gown, curved ship’s bow, sunset ocean, windblown hair, starry close-ups and overlapping singer images. See [the scene notes](docs/my-heart-will-go-on.md).
