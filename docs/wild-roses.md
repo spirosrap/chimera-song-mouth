@@ -43,3 +43,7 @@ Validation passed 187 native tests (two existing ignored) and 435 Bun tests acro
 Native scene projections were inspected for the rose garden, upright and face-up portraits, kneeling Nick, hands, snake, overhead river tableau, final rose, empty ending and mobile close-ups. These are geometry projections, not browser/GPU screenshots.
 
 TypeScript, all 633 public hashes, unchanged WASM verification, the subfolder production build and local HTTP checks passed. Every built media file matches the manifest, and the direct scene route, application bundles and all seven new scene files serve correctly. All 626 preceding assets remain byte-identical. Browser/GPU playback, layout lint and real-time recording remain unverified because browser access is declined.
+
+## Live release
+
+Application commit `7a6ef67` is live at [Where the Wild Roses Grow](https://agenticspiros.com/chimera-song-mouth/?scene=wild-roses). All eighteen changed files uploaded successfully, with the entry page last. HTTP verification matched 122 live files byte-for-byte, including all seven new assets, app bundles and fifteen preserved performances, plus the direct scene route. The temporary publish job was removed. Browser/GPU playback and real-time recording remain unverified in this chat.
