@@ -2632,6 +2632,41 @@
       "sha256": "d16cf105a3c18c44053b3b13fec6eaf7f3fdc251af2e265a776229c7138d4da9"
     },
     {
+      "path": "public/scenes/shakespears-stay/answer.tele.gz",
+      "bytes": 527936,
+      "sha256": "106a3655564ee7f80a6465c99326589ef0c087205cfacf690fcae7304e09d68f"
+    },
+    {
+      "path": "public/scenes/shakespears-stay/backing.mp3",
+      "bytes": 7627052,
+      "sha256": "18597ad7c016c5daf15cbffa537665e1c79fa9f500110d535debe18212a19dd9"
+    },
+    {
+      "path": "public/scenes/shakespears-stay/credits.txt",
+      "bytes": 1507,
+      "sha256": "5c1cf91a6da9b4746aa4cc52b6449bd4f22df790d42f7b47134310067d67aa70"
+    },
+    {
+      "path": "public/scenes/shakespears-stay/lead.tele.gz",
+      "bytes": 1691295,
+      "sha256": "4b0ad4da315ba6884ce3fae43303efcc53cb190e111184ddd2f655d3140f04ff"
+    },
+    {
+      "path": "public/scenes/shakespears-stay/mix.mp3",
+      "bytes": 7627052,
+      "sha256": "85620d44f91a3737f510fa9b6ad5ab0055b6792fabf95ff292884f299a0b89ce"
+    },
+    {
+      "path": "public/scenes/shakespears-stay/performance.json",
+      "bytes": 144537,
+      "sha256": "86809614f3207aa31b7d5c5e43df193e760a2420b1186240eb7ee2d80b602554"
+    },
+    {
+      "path": "public/scenes/shakespears-stay/scene.json",
+      "bytes": 4681,
+      "sha256": "dd1687443f234eb52a083e4cfb2aba5e974f59cd869af5b1eedbd927b26d3199"
+    },
+    {
       "path": "public/scenes/stonehenge/backing.mp3",
       "bytes": 7549484,
       "sha256": "5a02addf2d9a8dd288fdd9dae68a63c9d702ab0f41e92356676a8f3da6c861f3"

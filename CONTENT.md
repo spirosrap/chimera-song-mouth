@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 592 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 599 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -114,6 +114,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Céline Dion — My Heart Will Go On | 4:41 | `?scene=my-heart-will-go-on` | Complete anniversary alternate video, physical lead, original music, ivory lace gown, curved ship’s bow, sunset ocean, windblown hair, stars and overlapping singer images |
 | Boyz II Men — I’ll Make Love to You | 4:20 | `?scene=ill-make-love-to-you` | Full supplied video, original music, four physical singers, two physical opening speakers, security visit, writing desk, ivory outfits, staircase, blue portraits, candles and final letter |
 | Sérgio Mendes — Mas Que Nada | 2:36 | `?scene=mas-que-nada` | Complete supplied vintage performance, original accompaniment, physical Portuguese lead, period singer, piano, second singer, jungle and band |
+| Shakespears Sister — Stay | 3:58 | `?scene=shakespears-stay` | Full supplied video, original music, two contrasting physical singers, blue bedside chamber, Earth, brass bed, silent patient, curtain tunnel, struggle, revival and embrace |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
@@ -122,7 +123,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | SOS — Dimash concert | 4:05 | `?scene=dimash-sos` | Physical French singer, original music, captions, dark suit, hand microphone, moving lights, band, audience and camera cuts |
 | Nessun Dorma — opera concert | 4:32 | `?scene=nessun-dorma` | Physical Italian tenor and choir, original orchestra, extended finale, captions, conductor, musicians and audience |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All twenty-eight scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All reconstructed scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 
 Project Hail Mary recreates the complete supplied karaoke clip. The physical singer
 performs Sign of the Times and the closing spoken line, while the original music
@@ -225,3 +226,4 @@ My Heart Will Go On adds the complete supplied anniversary alternate performance
 I’ll Make Love to You adds the complete supplied video with six physical mouths. Twelve prepared files include the four-voice singing score, native dialogue control score, mix/backing, six mouth telemetry tracks, scene/captions/cameras and credits. Input recordings and analysis caches remain private; see [the performance notes](docs/ill-make-love-to-you.md).
 
 Mas Que Nada includes the complete supplied vintage performance, original accompaniment, physical Brazilian Portuguese lead, period singer, Sérgio at the piano, second singer, jungle foliage and band. See [the performance notes](docs/mas-que-nada.md).
+Stay adds the complete supplied Shakespears Sister video with two physical singers and seven prepared files: explicit phonetic score, original backing, full mix, two compressed mouth telemetry tracks, scene/captions/cameras and credits. The silent patient shares the lead model. Source recordings and analysis remain private; see [the scene notes](docs/shakespears-stay.md).

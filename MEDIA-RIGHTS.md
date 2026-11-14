@@ -29,3 +29,5 @@ Hero includes prepared original accompaniment from the supplied Enrique Iglesias
 My Heart Will Go On includes prepared original accompaniment from the supplied Céline Dion anniversary alternate video and a newly synthesized CHIMERA lead. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/my-heart-will-go-on.md).
 
 I’ll Make Love to You includes prepared original accompaniment/background from the supplied Boyz II Men video and newly synthesized CHIMERA singers and opening dialogue. Composition, lyrics, recording, performances and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/ill-make-love-to-you.md).
+
+Stay includes prepared original accompaniment from the supplied Shakespears Sister video and two newly synthesized CHIMERA singing voices. Composition, lyrics, recording, performances and video rights remain with their respective holders. The source video itself is not embedded or exported. See [the performance notes](docs/shakespears-stay.md).
