@@ -39,3 +39,7 @@ All 562 previous public files must remain byte-identical. Hero brings the manife
 Native geometry projections cover the seven sets, close-ups, rear escape, final embrace and portrait framing. Browser, Playwright and layout-lint access remain declined in this chat. Native projections and HTTP delivery checks do not verify GPU lighting, browser playback or real-time recording/export interaction.
 
 Final validation passed 187 native tests (two existing ignored), 396 Bun tests across 98 files, TypeScript, the 568-file content verification, production build and local HTTP checks of all prepared assets, the direct scene route and application bundles. All fifteen focused Hero/Toni/Bon Jovi checks passed. All 562 preceding public assets are byte-identical and the tracked WASM matches its unchanged provenance.
+
+## Live release
+
+Application commit `d596a24` is live at [Hero](https://agenticspiros.com/chimera-song-mouth/?scene=hero). All seventeen changed files uploaded successfully with the entry page last. HTTP checks matched 51 live files byte-for-byte, including all six new assets, application bundles, preserved Toni/November Rain/Bon Jovi/Hello/Whitney media and the direct scene route. The temporary publish job was removed. Browser playback and real-time recording remain unverified in this chat.
