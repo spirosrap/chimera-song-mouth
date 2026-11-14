@@ -39,3 +39,7 @@ A waveform diagnostic sampled 24 stable planned vowel windows throughout the ful
 The unchanged scene-clarity listening aid completed on all 51 captions over the original music and marked 178 of 257 words as errors (69.3%). The high register and repeated sustained refrains are difficult for the recognizer, as they were in the source transcription. This is a listening diagnostic, not an intelligibility pass; the owner-approved voice is retained.
 
 Final validation passed 187 native tests (two existing ignored), 418 Bun tests across 103 files, TypeScript, all 605 public hashes/WASM, the subfolder production build and local HTTP checks of the direct route, application bundles and all six new scene files. All 599 preceding public assets remain byte-identical and the tracked WASM matches its unchanged provenance. Native projections were inspected for the full dance, face/hand views, spins, profile and receding ending in landscape and portrait.
+
+## Live release
+
+Application commit `3e492bf` is live at [Wuthering Heights](https://agenticspiros.com/chimera-song-mouth/?scene=wuthering-heights). All seventeen changed files uploaded successfully with `index.html` last. HTTP verification matched 94 live files byte-for-byte, including all six new assets, application bundles and eleven preserved performances, plus the direct scene route. The temporary publish job was removed. Browser/GPU playback and real-time recording remain unverified in this chat.
