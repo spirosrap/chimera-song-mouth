@@ -1,5 +1,6 @@
 import {HelloStage} from '../render/hello.ts';
 import type {HelloId} from '../../scene/hello.ts';
+import {HeroStage} from '../render/hero.ts';
 import {UnbreakStage} from '../render/unbreak-my-heart.ts';
 import {NovemberStage,type RainId} from '../render/november-rain.ts';
 import {BonJoviStage} from '../render/bon-jovi-always.ts';
@@ -70,6 +71,8 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
     });
     const room=scene.setting==='hello'
       ?new HelloStage(people.map(c=>({...c,id:c.id as HelloId})))
+      :scene.setting==='hero'
+      ?new HeroStage(people[0].model,people[0].track)
       :scene.setting==='unbreak'
       ?new UnbreakStage(people[0].model,people[0].track)
       :scene.setting==='november'

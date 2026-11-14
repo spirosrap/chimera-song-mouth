@@ -21,3 +21,5 @@ Bon Jovi’s Always includes prepared original accompaniment from the supplied o
 Un-Break My Heart includes prepared original accompaniment from the supplied Toni Braxton video and a newly synthesized CHIMERA lead. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/unbreak-my-heart.md).
 
 Guns N’ Roses’ November Rain includes prepared original instrumental accompaniment from the supplied official music video and newly synthesized CHIMERA lead and answering voices. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/november-rain.md).
+
+Hero includes prepared original accompaniment from the supplied Enrique Iglesias video and a newly synthesized CHIMERA lead. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/hero.md).

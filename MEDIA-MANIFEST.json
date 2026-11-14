@@ -2037,6 +2037,36 @@
       "sha256": "2553c15881b9bd56a59312d99d05dc26237d5c4a19422d56b3efa1bcf42383e2"
     },
     {
+      "path": "public/scenes/hero/backing.mp3",
+      "bytes": 8416556,
+      "sha256": "12222dff3271d34c42a813614963a0615378f85303b9aaa8ce85e70fbdcde7e5"
+    },
+    {
+      "path": "public/scenes/hero/credits.txt",
+      "bytes": 1334,
+      "sha256": "a68930910336acd55b359d44efc22b56efeb562b5870b0101c1ab8ac13339354"
+    },
+    {
+      "path": "public/scenes/hero/lead.tele.gz",
+      "bytes": 2549470,
+      "sha256": "554011bee3f036cb963377fa501896d59265f3b0d82de2ad80597c35dc749dc5"
+    },
+    {
+      "path": "public/scenes/hero/mix.mp3",
+      "bytes": 8416556,
+      "sha256": "c9044c81a86ec36f0ef76a69c113ff91a7afd8338b3ba177055bae3bc59b1c9b"
+    },
+    {
+      "path": "public/scenes/hero/performance.json",
+      "bytes": 143891,
+      "sha256": "3adf61ce3fcb5410790c617e75e6d4fb31d798ea09aa702db5203f90559b26d6"
+    },
+    {
+      "path": "public/scenes/hero/scene.json",
+      "bytes": 5653,
+      "sha256": "d8ba8e2151c275869c08f4681664835f2e071b3fda4e732e1287eff2eaf84a1f"
+    },
+    {
       "path": "public/scenes/je-taime/backing.mp3",
       "bytes": 9616172,
       "sha256": "b33da5038a476c44d3c71924699c2872e954813056afd313bafcd64d67937fc9"

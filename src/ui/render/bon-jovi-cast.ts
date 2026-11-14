@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 type P=[number,number,number];
-export type StoryPose='stand'|'sit'|'walk'|'dance'|'embrace'|'argue'|'paint'|'grief'|'recline'|'sing'|'ballad'|'violin';
+export type StoryPose='stand'|'sit'|'walk'|'dance'|'embrace'|'argue'|'paint'|'grief'|'recline'|'sing'|'ballad'|'violin'|'cradle';
 export interface StoryAppearance {female?:boolean;blonde?:boolean;shades?:boolean;hat?:boolean;seated?:boolean;gesture?:number;phone?:boolean;yaw?:number;pose?:StoryPose;phase?:number;skin?:string;hairColor?:string;bald?:boolean;trousers?:string;skirt?:boolean}
 type Figure={root:THREE.Group;head:THREE.Group;torso:THREE.Mesh;neck:THREE.Mesh;skirt:THREE.Mesh;face:THREE.Mesh;nose:THREE.Mesh;mouth:THREE.Mesh;eyes:THREE.Mesh[];brows:THREE.Mesh[];hair:THREE.Mesh[];hat:THREE.Mesh[];limbs:THREE.Mesh[];hands:THREE.Mesh[];shoes:THREE.Mesh[]};
 const UP=new THREE.Vector3(0,1,0);
@@ -25,7 +25,7 @@ export class BonJoviCast{
  private link(m:THREE.Mesh,a:P,b:P,r:number,c:string){const start=new THREE.Vector3(...a),end=new THREE.Vector3(...b),d=end.clone().sub(start);m.position.copy(start).add(end).multiplyScalar(.5);m.quaternion.setFromUnitVectors(UP,d.clone().normalize());m.scale.set(r,Math.max(.01,d.length()),r);m.material=this.material(c);}
  begin(){this.count=0;}
  person(x:number,y:number,z:number,color:string,o:StoryAppearance,time:number){
-  const i=this.count++,f=this.figures[i]??this.create(),phase=time+(o.phase??i*.73),pose=o.pose??(o.seated?'sit':'stand'),sit=pose==='sit'||pose==='recline'||pose==='violin',wave=Math.sin(phase*2.8),walk=pose==='walk'?wave:pose==='dance'?wave*.45:0,gesture=o.gesture??0,skin=o.skin??skinColor;
+  const i=this.count++,f=this.figures[i]??this.create(),phase=time+(o.phase??i*.73),pose=o.pose??(o.seated?'sit':'stand'),sit=pose==='sit'||pose==='recline'||pose==='violin'||pose==='cradle',wave=Math.sin(phase*2.8),walk=pose==='walk'?wave:pose==='dance'?wave*.45:0,gesture=o.gesture??0,skin=o.skin??skinColor;
   f.face.material=this.material(skin);f.nose.material=this.material(skin);f.hands.forEach(m=>m.material=this.material(skin));
   f.root.visible=true;f.root.position.set(x,y-135,z);f.root.rotation.set(0,o.yaw??0,pose==='grief'?.12:pose==='dance'?Math.sin(phase*2.8)*.045:0);
   const hipY=sit?54:72,shoulderY=hipY+47,headY=shoulderY+21;
@@ -44,6 +44,7 @@ export class BonJoviCast{
    if(sit)hand=[side*20,hipY-2,32];if(pose==='walk')hand=[side*26,hipY+3,-walk*side*18];if(pose==='dance'){elbow[1]+=12;hand=[side*(33+wave*8),shoulderY-15+side*wave*17,20];}
    if(pose==='violin')hand=side>0?[28,shoulderY+5+Math.sin(phase*2.2)*10,24]:[4,shoulderY+10,20];
    if(pose==='ballad')hand=side>0?[12,shoulderY-12,25]:[-28-gesture*28,shoulderY-31+gesture*38,25];
+   if(pose==='cradle')hand=[-3+side*4,hipY-11,13];
    if(pose==='argue')hand=[side*(35+gesture*9),shoulderY-10+Math.sin(phase*2+n)*8,28];if(pose==='embrace')hand=[-side*8,shoulderY-5,43];if(pose==='grief')hand=[side*5,headY-5,19];if(pose==='paint'&&side>0)hand=[12,shoulderY+4+Math.sin(phase*1.9)*9,62];if(pose==='sing')hand=side>0?[12,headY-9,30]:[-25-gesture*20,hipY+18+gesture*45,22+gesture*8];if(o.phone&&side>0)hand=[12,headY,12];
    this.link(f.limbs[4+n*2],shoulder,elbow,5.3,color);this.link(f.limbs[5+n*2],elbow,hand,3.7,skin);f.hands[n].position.set(...hand);f.hands[n].scale.set(3.3,5,2.7);
   }
