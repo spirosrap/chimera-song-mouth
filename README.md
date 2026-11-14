@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, twenty-three concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, twenty-four concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -82,7 +82,7 @@ It uses the included WebAssembly engine and pronunciation dictionary. Repeats, a
 
 ## Media storage
 
-All 549 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
+All 562 public files are tracked in ordinary Git, including MP3 stems, compressed mouth telemetry, prepared scores, captions, credits, fonts, the dictionary and the existing subtitled MP4. `MEDIA-MANIFEST.json` records their sizes and SHA-256 hashes; a static build verifies it first. No Git LFS setup or secondary download is needed.
 
 After intentionally adding or replacing public assets, run `bun run content:manifest`, inspect the changes, and commit the new manifest with the files. Do not regenerate the manifest to conceal missing assets.
 
@@ -143,3 +143,5 @@ The complete supplied **Tom Waits — What’s He Building?** recording is stage
 The complete supplied **Michael Bolton — Said I Loved You…But I Lied** video is staged at `?scene=said-i-loved-you`, with original accompaniment, a physical singer, sunset fire, canyon rocks, a dark cave, lovers and horses. See [the scene notes](docs/said-i-loved-you.md).
 
 The complete supplied **Bon Jovi — Always** video is staged at `?scene=bon-jovi-always`, with original accompaniment, a physical English lead, vintage microphone, city and dusty-road opening, apartment, party, painting loft, explosion, emergency street and turquoise art studio. See [the scene notes](docs/bon-jovi-always.md).
+
+The complete supplied **Guns N’ Roses — November Rain** film is staged at `?scene=november-rain`, with original instrumental music, a physical lead and answering outro voice, concert piano, wedding, desert guitar, reception storm, funeral, cemetery and grave roses. See [the scene notes](docs/november-rain.md).

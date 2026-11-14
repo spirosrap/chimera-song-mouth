@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 555 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 562 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -109,6 +109,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Whitney Houston — I Will Always Love You | 4:34 | `?scene=always-love-you` | Complete supplied video, original music and physical vocal, unaccompanied opening, theater, cabin, snow and airport farewell |
 | Lionel Richie — Hello | 5:26 | `?scene=hello` | Original music, four physical singing/dialogue voices, performing-arts school, drama class, lockers, dance rehearsal, telephone, piano and clay portrait |
 | Toni Braxton — Un-Break My Heart | 4:33 | `?scene=unbreak-my-heart` | Physical lead, original accompaniment, motorcycle, home memories, pool, mirror, bedroom, staircase, white-gown theatre finale, orchestra, audience and closing curtains |
+| Guns N’ Roses — November Rain | 9:17 | `?scene=november-rain` | Complete supplied film, original instrumental music, physical lead and answering voice, wedding, desert guitar, reception storm, funeral, cemetery and grave roses |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
@@ -117,7 +118,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | SOS — Dimash concert | 4:05 | `?scene=dimash-sos` | Physical French singer, original music, captions, dark suit, hand microphone, moving lights, band, audience and camera cuts |
 | Nessun Dorma — opera concert | 4:32 | `?scene=nessun-dorma` | Physical Italian tenor and choir, original orchestra, extended finale, captions, conductor, musicians and audience |
 
-The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All twenty-two scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
+The 3D environments, characters, camera behavior and browser recording/export code are part of the source. All twenty-four scenes offer live video recording; only A Few Good Men currently has a pre-encoded MP4 download.
 
 Project Hail Mary recreates the complete supplied karaoke clip. The physical singer
 performs Sign of the Times and the closing spoken line, while the original music
@@ -210,3 +211,5 @@ Hello includes the complete supplied music video, original accompaniment, physic
 Bon Jovi’s complete Always video adds one physical English lead, original accompaniment, source-timed captions and the full procedural romantic montage. See [the performance notes](docs/bon-jovi-always.md).
 
 Un-Break My Heart adds the complete supplied video scene with an approved physical lead and unchanged-speed original accompaniment. Its six prepared files include a source-aligned phonetic score, full mix/backing, physical mouth telemetry, scene/caption/camera data and credits. The source video and analysis caches remain local; see [the performance notes](docs/unbreak-my-heart.md).
+
+November Rain includes the complete supplied film, original instrumental music and guitar solos, physical lead and answering outro voice, full wedding/funeral story and grave roses. See [the performance notes](docs/november-rain.md).

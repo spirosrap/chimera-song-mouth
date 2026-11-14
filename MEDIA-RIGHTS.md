@@ -19,3 +19,5 @@ I Will Always Love You includes prepared original accompaniment from the supplie
 Bon Jovi’s Always includes prepared original accompaniment from the supplied official music video and a newly synthesized CHIMERA English lead. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/bon-jovi-always.md).
 
 Un-Break My Heart includes prepared original accompaniment from the supplied Toni Braxton video and a newly synthesized CHIMERA lead. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/unbreak-my-heart.md).
+
+Guns N’ Roses’ November Rain includes prepared original instrumental accompaniment from the supplied official music video and newly synthesized CHIMERA lead and answering voices. Composition, lyrics, recording, performance and video rights remain with their respective holders. The original video is not embedded or exported. See [the performance notes](docs/november-rain.md).

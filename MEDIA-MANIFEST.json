@@ -2232,6 +2232,41 @@
       "sha256": "91f91f75fc8df29f6bcda3b400b1f18b3aa2160de57abdb02f2a4b975b9bf48a"
     },
     {
+      "path": "public/scenes/november-rain/backing.mp3",
+      "bytes": 17833004,
+      "sha256": "e2e50c639815e736a13bab89e3ca5843a1c8ab624ae3f20e3818c6ae13935d8e"
+    },
+    {
+      "path": "public/scenes/november-rain/credits.txt",
+      "bytes": 1507,
+      "sha256": "e3aa2aff9d0516b35768b3e453314373070149db50c157df37d05e033728bba2"
+    },
+    {
+      "path": "public/scenes/november-rain/lead.tele.gz",
+      "bytes": 3349871,
+      "sha256": "0c0efd8e48bbcf96d3a7a5f6feba9a6a64ab13c2b7a80cfc0e9120e651540b85"
+    },
+    {
+      "path": "public/scenes/november-rain/mix.mp3",
+      "bytes": 17833004,
+      "sha256": "7889ebacad86476c9454ddb2db3adacdc2f2f909f4a9e422b57ee6cceda2235f"
+    },
+    {
+      "path": "public/scenes/november-rain/performance.json",
+      "bytes": 220925,
+      "sha256": "9e376100f476c254d9ae6b81879d5c1621d8cd067cde6c95a5af406a51db6d2b"
+    },
+    {
+      "path": "public/scenes/november-rain/rain-chorus.tele.gz",
+      "bytes": 394045,
+      "sha256": "43c7941d3e39b51bb08f825717d8c44d9604ab6d153379e2321af123e91b8ceb"
+    },
+    {
+      "path": "public/scenes/november-rain/scene.json",
+      "bytes": 7016,
+      "sha256": "a2aecd71a63d0c98c109f8a2df6b73acd2264574cf1e004b53bd00530db9328b"
+    },
+    {
       "path": "public/scenes/o-superman/backing.mp3",
       "bytes": 16244780,
       "sha256": "372e87f33a8019dca998de1a4aec22798157b157666dc54c15ee8af04ad8003a"
