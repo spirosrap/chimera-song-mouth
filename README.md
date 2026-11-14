@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, thirty-one concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, thirty-two concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -149,6 +149,8 @@ The complete supplied **Guns N’ Roses — November Rain** film is staged at `?
 The complete supplied **Enrique Iglesias — Hero** video is staged at `?scene=hero`, with original music, approved physical singing, red beanie and sunglasses, petrol station, cream convertible, golden desert, chapel, lovers, confrontation and rain-soaked final embrace. See [the scene notes](docs/hero.md).
 
 The complete supplied **Céline Dion — My Heart Will Go On** anniversary alternate video is staged at `?scene=my-heart-will-go-on`, with original music, approved physical singing, ivory lace gown, curved ship’s bow, sunset ocean, windblown hair, starry close-ups and overlapping singer images. See [the scene notes](docs/my-heart-will-go-on.md).
+
+The complete supplied **Sinéad O’Connor — Nothing Compares 2 U** video is staged at `?scene=nothing-compares`, with original music, a physical singer in an intimate portrait, cropped hair, black high collar, restrained expressions and tears, formal garden paths, fountain, statues, balustrade, walking figure and slow double exposures, including the full long garden outro. See [the scene notes](docs/nothing-compares.md).
 
 The complete supplied **Falco — Rock Me Amadeus** video is staged at `?scene=rock-me-amadeus`, with original music, three physical vocal parts, Vienna postcard, black coach, tuxedo and coloured Mozart wig, brocade coat, white cravat, period courtiers, neon biker bar, motorcycles and final prayer. See [the scene notes](docs/rock-me-amadeus.md).
 

@@ -2382,6 +2382,36 @@
       "sha256": "91f91f75fc8df29f6bcda3b400b1f18b3aa2160de57abdb02f2a4b975b9bf48a"
     },
     {
+      "path": "public/scenes/nothing-compares/backing.mp3",
+      "bytes": 9874220,
+      "sha256": "691352c931a23427c57d75659bf9624b94cba3dac40b56df3243c6d1ec572766"
+    },
+    {
+      "path": "public/scenes/nothing-compares/credits.txt",
+      "bytes": 1595,
+      "sha256": "1c7bbeec859f07be416515d7fed2ac43ce0c32132ec6184558818b9c33e45386"
+    },
+    {
+      "path": "public/scenes/nothing-compares/lead.tele.gz",
+      "bytes": 2443294,
+      "sha256": "faf8dcc116662e5dd3a474af3b897bf086b29a133b4dedc5bd31cad6c89ecbd7"
+    },
+    {
+      "path": "public/scenes/nothing-compares/mix.mp3",
+      "bytes": 9874220,
+      "sha256": "c6e9c71cd7bceb592c2084d0d7d89108298410ee8286516374db34eaa13c78a7"
+    },
+    {
+      "path": "public/scenes/nothing-compares/performance.json",
+      "bytes": 156523,
+      "sha256": "007d5e7a66241a10593684bf925a87b2c564056793f5553a462ef1cad7d55a0b"
+    },
+    {
+      "path": "public/scenes/nothing-compares/scene.json",
+      "bytes": 4849,
+      "sha256": "7ab2ed766fc5429469cb12f8a69600e8f8cdec087c01468191ae4ba38c0e3d92"
+    },
+    {
       "path": "public/scenes/november-rain/backing.mp3",
       "bytes": 17833004,
       "sha256": "e2e50c639815e736a13bab89e3ca5843a1c8ab624ae3f20e3818c6ae13935d8e"

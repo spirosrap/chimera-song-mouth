@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 613 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 619 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -117,6 +117,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Shakespears Sister — Stay | 3:58 | `?scene=shakespears-stay` | Full supplied video, original music, two contrasting physical singers, blue bedside chamber, Earth, brass bed, silent patient, curtain tunnel, struggle, revival and embrace |
 | Kate Bush — Wuthering Heights · red dress | 4:30 | `?scene=wuthering-heights` | Complete supplied Version 2, original music, physical lead, red dress and flowing sleeves, long hair, expressive hands, spins, pine grove, windswept field and full long closing dance |
 | Falco — Rock Me Amadeus | 3:44 | `?scene=rock-me-amadeus` | Complete supplied video, original music, three physical vocal parts, Vienna postcard, black coach, tuxedo, coloured Mozart wig, brocade and cravat, court, biker bar, motorcycles and prayer |
+| Sinéad O’Connor — Nothing Compares 2 U | 5:08 | `?scene=nothing-compares` | Complete supplied video, original music, physical lead, intimate black-background portrait, cropped hair and high collar, tears, formal garden, fountain, statues, balustrade, walking figure, double exposures and full long garden outro |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
@@ -233,3 +234,5 @@ Stay adds the complete supplied Shakespears Sister video with two physical singe
 Wuthering Heights adds the complete supplied red-dress video with six prepared files: explicit phonetic score, original backing, full mix, one compressed mouth telemetry track, scene/captions/cameras and credits. The figure borrows one retained model; source recordings and analysis remain private. See [the scene notes](docs/wuthering-heights.md).
 
 Rock Me Amadeus adds eight prepared files: explicit three-part phonetic score, original backing, full mix, three compressed telemetry tracks, scene/captions/cameras and credits. Three retained models serve four physical heads; the two lead costumes share one model. The German frontend is task-local score preparation, with no shared engine or dictionary changes. Input video, stems and analysis remain private. See [the scene notes](docs/rock-me-amadeus.md).
+
+Nothing Compares 2 U adds six prepared files: explicit phonetic score, original backing, full mix, one compressed mouth track, scene/captions/cameras and credits. Portrait and garden walker share one retained model. Source video, separated stems and analysis stay private. See [the scene notes](docs/nothing-compares.md).
