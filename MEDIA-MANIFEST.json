@@ -3357,6 +3357,36 @@
       "sha256": "9e4857c9cc3d8c43a7e64d143a8561ee32c79cfd44d9181989ed041cd510fcb4"
     },
     {
+      "path": "public/scenes/wild-boys/backing.mp3",
+      "bytes": 8101676,
+      "sha256": "92eabd6a819a2803afb82a19b6966127b68f14e788055bd7559df3a26760f951"
+    },
+    {
+      "path": "public/scenes/wild-boys/credits.txt",
+      "bytes": 1743,
+      "sha256": "85b56e7f3b0d1bd3b8bbf551cf55b928616808c510f2c36a2a4509e97c7cb30b"
+    },
+    {
+      "path": "public/scenes/wild-boys/lead.tele.gz",
+      "bytes": 2707495,
+      "sha256": "f3c2ec6d5ffbf58d5fcc97d4a05ff8eea86e29f84fda2191fe83cb3d8d104c36"
+    },
+    {
+      "path": "public/scenes/wild-boys/mix.mp3",
+      "bytes": 8101676,
+      "sha256": "afe1abf4ac73fa153f99cfea4956fdbb0f9dcc62e8568fef24db6cefcc034c5b"
+    },
+    {
+      "path": "public/scenes/wild-boys/performance.json",
+      "bytes": 185743,
+      "sha256": "acd501fc422d1b2ea631dde1b630d22149a55182f95e975aa1c8f79994c99f8d"
+    },
+    {
+      "path": "public/scenes/wild-boys/scene.json",
+      "bytes": 7234,
+      "sha256": "1a8a565db65375ecd78acbdc44d57820b48789b2fecef3dc2efda8c37cc1759d"
+    },
+    {
       "path": "public/scenes/wild-roses/answer.tele.gz",
       "bytes": 2153557,
       "sha256": "4e020e8064678056ccc98e14ee7ac56269324114a8c1ccf7c7e55dfe140e5b5e"

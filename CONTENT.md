@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 692 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 698 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -128,6 +128,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Björk — Human Behaviour | 4:15 | `?scene=human-behaviour` | Full supplied video, physical singing and wordless calls, original music, miniature forest and giant plush bear, cabin, moth, road, water and moon journey |
 | Eurythmics — Sweet Dreams (Are Made of This) | 3:34 | `?scene=sweet-dreams` | Full supplied video, physical singing and calls, original music, boardroom, cows, synth/monitor, red-dress cellos, field, boat and cassette ending |
 | Annie Lennox — Walking on Broken Glass | 3:59 | `?scene=walking-broken-glass` | Full supplied video, physical singing, original music, red hood and gown, powdered-wig party, jealous guests, corridor quarrel, spiral stairs and carried ending |
+| Duran Duran — The Wild Boys | 4:13 | `?scene=wild-boys` | Full supplied video, physical singing/calls, original music, industrial factory, mechanical head and monitors, rotating windmill, water, cages, band and punk dancers |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -269,3 +270,5 @@ Sweet Dreams adds six prepared files: explicit phonetic score, original backing,
 The Phantom of the Opera adds seven prepared files: explicit duet/vocalise phonetic score, original backing, full mix, two mouth tracks, scene/captions/cameras and credits. Five band heads borrow two retained singers; audience figures are decorative instances. The raw source and analysis remain private. See [the scene notes](docs/nightwish-phantom.md).
 
 Walking on Broken Glass adds six prepared files: explicit phonetic score, original backing, full mix, compressed mouth track, source-timed scene/captions/cameras and credits. One retained physical model drives the singer; seventeen visual guest proxies populate the party and later tableaux. Raw video, stems, recognition models and analysis stay private. All preceding content, including Sweet Dreams and the concurrent Nightwish addition, is preserved. See [the scene notes](docs/walking-broken-glass.md).
+
+The Wild Boys adds six prepared files: explicit phonetic score, original backing, full mix, compressed mouth track, source-timed scene/captions/cameras and credits. Three physical head graphics share one retained singer. Twelve punk/band figures are decorative animated proxies. Raw video, separated stems, recognition models and analysis stay private. See [the scene notes](docs/wild-boys.md).
