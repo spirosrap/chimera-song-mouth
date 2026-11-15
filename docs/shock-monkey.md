@@ -8,8 +8,11 @@ The shared graphics helper `remember-shock-kit.ts` owns local meshes and beam ma
 
 The public directory contains the prepared score, mix, separated original music, exact-clock 20 Hz mouth telemetry, captions/cuts and credits. Raw input, stems, recognition models, alignment data and render intermediates remain outside the repository. `bun tools/render-shock-monkey-scene.ts` rebuilds the physical voice, mix and telemetry from prepared assets without requiring the original input.
 
-Validation includes full MP3 decode and frame counts, finite unclipped samples, audible phrases, genuine silent intervals, matching 20 Hz snapshots, preservation of every pre-existing public hash, TypeScript checks, source-time seek regression tests, desktop/phone head bounds and mouth-clearance rays. Native SVG projections were inspected; browser playback, layout and recording were not retested because browser automation was declined in the parent chat.
+Validation includes full MP3 decode and frame counts, finite unclipped samples, audible phrases, genuine silent intervals, matching 20 Hz snapshots, preservation of every pre-existing public hash, TypeScript checks, source-time seek regression tests, desktop/phone head bounds and mouth-clearance rays. Native SVG projections were inspected; browser playback, layout and recording were not retested because browser automation was declined in the source session.
 
 The owner approved the 51.85-second verse/refrain audition. The final export preserves its controls, phones and melody, with only a common 0.810023947 mix headroom trim. The complete score has 232 words, 288 notes, 60 physical phrases, 55 captions and 34 cuts. Audio lasts 243.523015873 seconds (11,689,105 frames at 48 kHz), with 4,871 finite exact-clock mouth snapshots, no MP3 frame padding, peak 0.920 before encoding and 0.91018 after decoding. All 704 baseline public hashes are unchanged. Four focused tests pass with 10,482 assertions; the preceding catalog tests also pass.
 
-The combined seven-video integration preserves all 737 incoming media hashes and the incoming manifest. All seven new-scene tests plus core/karaoke/press pass together: 40 tests, 182,714 assertions. Global manifest/count publication is performed by the parent integration.
+The combined seven-video integration preserves all 737 incoming media hashes and the incoming manifest. All seven new-scene tests plus core/karaoke/press pass together: 40 tests, 182,714 assertions. The final manifest and publication are recorded in the combined release notes.
+
+See the [combined release notes](music-video-batch-20261115.md) for full regression,
+content-manifest, diagnostic and live-deployment results.

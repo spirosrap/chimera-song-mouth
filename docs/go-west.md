@@ -8,8 +8,11 @@ Six physical head graphics borrow the two retained singer models. The procedural
 
 The stage releases its owned graphics only; MovieStage owns the voice-model leases. The local VideoProps helper initializes unused line buffers to zero instances. Focused tests check finite clocks, audible full phrases, quiet instrumental periods, complete duration, camera isolation, backward seeks, phone/desktop head bounds, clear mouths and retained model ownership. Native projections are geometry-based previews, not browser screenshots.
 
-Prepared files live in `public/scenes/go-west/`. `tools/render-go-west-scene.ts` rebuilds the physical voices, exact-clock mouth recordings and mix from the prepared score and backing. Recognition models, source media, stems and analysis remain private. See MEDIA-RIGHTS.md for retained rights. Browser playback and video-export QA were not repeated because browser access remains declined; the parent release records combined testing and verified deployment.
+Prepared files live in `public/scenes/go-west/`. `tools/render-go-west-scene.ts` rebuilds the physical voices, exact-clock mouth recordings and mix from the prepared score and backing. Recognition models, source media, stems and analysis remain private. See MEDIA-RIGHTS.md for retained rights. Browser playback and video-export QA were not repeated because browser access remains declined; the combined release records combined testing and verified deployment.
 
 The owner approved the validated 45.5-second audition covering Together, the answering chorus and the bridge. The complete export preserves its exact voice controls, phonetics and melody: 349 words, 420 lyric syllables, 107 physical phrases, 110 source caption lines and 30 cuts over 291.683 seconds. Each voice has 5,834 exact-clock telemetry frames. The 48 kHz MP3 decodes to 14,000,785 stereo frames without padding; decoded peak is 0.921463. All 704 baseline public media hashes are unchanged.
 
-The combined focused check passes 20 tests across the two new scenes and three existing catalog/routing files, with 52,292 expectations. Typechecking and git diff whitespace checks pass. Full native/Bun verification, the shared manifest and publication are coordinated by the parent release.
+The combined focused check passes 20 tests across the two new scenes and three existing catalog/routing files, with 52,292 expectations. Typechecking and git diff whitespace checks pass. Full native/Bun verification, the shared manifest and publication are coordinated by the combined release.
+
+See the [combined release notes](music-video-batch-20261115.md) for full regression,
+content-manifest, diagnostic and live-deployment results.

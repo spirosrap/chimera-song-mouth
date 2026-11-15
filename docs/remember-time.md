@@ -10,7 +10,7 @@ Every set, prop, limb and effect follows absolute source time. The overhead view
 
 The public directory holds the prepared score, original-music backing, mix, four exact-clock 20 Hz telemetry tracks, captions/cuts and credits. Raw recording, stems, recognition models and analysis stay private outside the repository. `bun tools/render-remember-time-scene.ts` rebuilds the physical parts and their mix from prepared assets without the original source.
 
-Validation includes complete MP3 decode and sample extent, finite unclipped audio, audible phrases, genuine silent intervals, matching mouth clocks, preserved baseline hashes, TypeScript, focused source-time seek tests, desktop/phone head bounds and unobstructed mouth rays. Native projections were inspected; browser playback, visual layout and recording were not retested because browser automation was declined in the parent chat.
+Validation includes complete MP3 decode and sample extent, finite unclipped audio, audible phrases, genuine silent intervals, matching mouth clocks, preserved baseline hashes, TypeScript, focused source-time seek tests, desktop/phone head bounds and unobstructed mouth rays. Native projections were inspected; browser playback, visual layout and recording were not retested because browser automation was declined in the source session.
 
 The two dense closing adlib runs use estimated source IPA and measured pitch, rather than invented English words; their scene captions identify vocal calls. The recognizable verses, refrains, repeated “I bet you remember” and dialogue remain words. A measured foreground vowel entry is retained at the overlapping bridge/chorus transition, avoiding an early fallback that would make the physical phrases collide. These are source-specific prepared controls; the shared airway and pronunciation tables are unchanged.
 
@@ -18,4 +18,7 @@ The owner approved the complete 61.85-second audition, including all three dialo
 
 The full audio export lasts 558.663015873 seconds (26,815,825 decoded frames at 48 kHz), with four independent 11,174-frame exact-clock telemetry tracks. Every phrase is audible: minimum RMS is 0.09276 for the lead, 0.05769 for the pharaoh, 0.06447 for the queen and 0.14565 for the herald. The mix peak is 0.84774 before MP3 and 0.84598 after decoding, with no clipped samples or padding and no additional headroom trim. There are 66 captions and 43 cuts.
 
-After integrating the other five new videos, all 737 incoming media hashes and the incoming manifest are preserved. Both approved arrangements match their final exports exactly apart from the permitted common Shock the Monkey level trim. All seven new-scene tests and the existing core/karaoke/press catalog tests pass together: 40 tests, 182,714 assertions. The complete collection has 70 scene entries in the agreed selection order. Global manifest/count publication is performed by the parent integration.
+After integrating the other five new videos, all 737 incoming media hashes and the incoming manifest are preserved. Both approved arrangements match their final exports exactly apart from the permitted common Shock the Monkey level trim. All seven new-scene tests and the existing core/karaoke/press catalog tests pass together: 40 tests, 182,714 assertions. The complete collection has 70 scene entries in the agreed selection order. The final manifest and publication are recorded in the combined release notes.
+
+See the [combined release notes](music-video-batch-20261115.md) for full regression,
+content-manifest, diagnostic and live-deployment results.

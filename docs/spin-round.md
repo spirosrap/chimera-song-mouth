@@ -13,3 +13,6 @@ The six prepared files live in `public/scenes/spin-round/`. `bun tools/render-sp
 Native Three.js projections and geometry checks cover the costumes, portrait, eye patch, band, mirror ball, extra arms, flags, ribbons and phone framing. The focused regression checks validate the complete source extent, audible phrases, finite source-clock telemetry, cast/camera isolation, backward seeks, clear lead mouth and retained model ownership. Browser playback, layout and recording QA were not run because browser access remains declined in this chat.
 
 Final checks: all 20 tests across the two scene files and three shared catalog suites pass (19,209 assertions), as does TypeScript checking. The final decoded Spin mix peaks at 0.9218; all 20 generated phrases are audible, all 3,941 snapshots are finite and exact on the source clock, and all 704 preceding public asset hashes are unchanged. Both approved audition files retain their original SHA-256 hashes.
+
+See the [combined release notes](music-video-batch-20261115.md) for full regression,
+content-manifest, diagnostic and live-deployment results.

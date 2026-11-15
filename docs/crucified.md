@@ -10,6 +10,9 @@ The stage owns only its graphics. It must never dispose the borrowed VoiceModels
 
 Prepared files are in `public/scenes/crucified/`. `tools/render-crucified-scene.ts` rebuilds the three physical vocal recordings, exact-clock mouth telemetry and mix from the prepared performances and original backing. Source transcription, stems, model weights and analysis remain private. See MEDIA-RIGHTS.md for retained recording and composition rights.
 
-Validation uses complete MP3 decoding, finite non-clipping physical samples, audible phrase windows, exact 20 Hz telemetry, preserved-asset hashes, native Three.js projections and focused tests. Browser playback and recording QA were not repeated because browser access remains declined. The parent release records the combined full suite, content-manifest and deployment results.
+Validation uses complete MP3 decoding, finite non-clipping physical samples, audible phrase windows, exact 20 Hz telemetry, preserved-asset hashes, native Three.js projections and focused tests. Browser playback and recording QA were not repeated because browser access remains declined. The combined release records the combined full suite, content-manifest and deployment results.
 
 The completed export contains 219 words, 352 lyric syllables, 34 physical phrases, 50 source caption lines and 29 camera cuts over 213.783 seconds. Each voice has 4,276 exact-clock telemetry frames. The 48 kHz mix has 10,261,585 decoded stereo frames with no padding, and a decoded MP3 peak of 0.916864. All 704 baseline public media hashes were preserved. The four focused tests pass; typechecking passes.
+
+See the [combined release notes](music-video-batch-20261115.md) for full regression,
+content-manifest, diagnostic and live-deployment results.

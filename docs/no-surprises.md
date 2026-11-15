@@ -15,3 +15,6 @@ The six prepared files live in `public/scenes/no-surprises/`. `bun tools/render-
 Native Three.js projections inspect the portrait, water rise, submerged state, drain and relieved ending on desktop and phone framing. The focused regression checks cover the complete performance, audible physical phrases, finite telemetry, independent cast/cameras, source-time seeking, water transparency, clear mouth and borrowed-model lifetime. Browser playback, layout and video-recording QA were not run because browser access remains declined in this chat.
 
 Final checks: all 20 tests across the two new scene files and three shared catalog suites pass (19,209 assertions), as does TypeScript checking. Both complete MP3 mixes decode successfully, every physical phrase is audible, exact mouth telemetry remains finite, and all 704 preceding public asset hashes are unchanged. The approved audition file retains its original SHA-256 hash.
+
+See the [combined release notes](music-video-batch-20261115.md) for full regression,
+content-manifest, diagnostic and live-deployment results.

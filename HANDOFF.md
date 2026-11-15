@@ -128,3 +128,5 @@ instrumental/finger-click channels.
 Συννεφούλα now has a wireframe singer with a hat, guitar, moving hands and a
 microphone. Read `docs/synnefoula-singer.md` before changing its presentation;
 it reuses the existing vocal/whistle telemetry and preserves every audio asset.
+
+The seven-video set is complete and live: Darkness, Crucified, Go West, Remember the Time, Shock the Monkey, You Spin Me Round and No Surprises. See [the verified release](docs/music-video-batch-20261115.md) for all approved controls, prepared assets, checks and deployment scope. Preserve the 752-file manifest and the full 52-performance collection.

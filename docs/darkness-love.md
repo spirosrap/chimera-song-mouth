@@ -43,5 +43,5 @@ lines and 33 source-time camera cuts. The mix decodes to exactly 11,153,425 ster
 frames at 48kHz without end-padding or clipping (decoded peak 0.9145); all 21 phrases
 are audible. Its 4,648 captured mouth frames are finite on the exact 20Hz clock.
 The addition preserves all 704 preceding public assets byte-for-byte, bringing the
-manifest to 710 files. The 16 focused scene/catalog tests passed; full combined release
-verification follows after the other six requested performances are integrated.
+manifest to 710 files. The 16 focused scene/catalog tests passed; the [combined release notes](music-video-batch-20261115.md) record full regression,
+production-build and live-delivery verification.
