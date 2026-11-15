@@ -8,58 +8,72 @@ not merge unrelated histories or replace this tree with an upstream checkout.
 
 ## Latest synchronization
 
-Checked on 2026-11-13, through `153c97195ffa44de5ce53f0eadf3ea27c7193c43`
-(30 commits after `e33221d0`, all imported with `git cherry-pick -x`; none skipped).
+Checked on 2026-11-15, through `a5d22bebe7589a031916e67412e365cd2b65aecd`
+(6 commits after `153c9719`, all imported with `git cherry-pick -x`; none skipped).
 
 What came in:
 
-- Languages: a router sends each lyric word to the front end for its script. Korean
-  (Hangul, one block per note, with its sound rules and three-way stops) and Russian
-  (Cyrillic, with a demo song) are new; English is unchanged. New sounds for Korean and
-  Mandarin (ɕ ʑ tɕ dʑ tʂ dʐ ɥ), `Segment.vot`, `chimera syllables`, and
-  `docs/language-front-ends.md`.
-- Single-mouth app: each tab has one main button that also starts the audio (the start
-  overlay is gone), with a retry when the start fails; the body presets, MIDI and the
-  Speak examples moved into headers and menus; the 2D face draws the whole head; grabbing
-  the face before any audio starts it; Speak's IPA mode says which symbols it skipped; an
-  iPhone in silent mode now plays.
-- Tools and docs: the scramble test (`tools/asr/scramble.py`, how intelligible a front
-  end's singing is on sound alone), `CONTRIBUTING.md`, a PR template, and upstream's
-  reworded vision item 3 (realism is the main push; the robotic voice stays as a preset).
+- Sing: the **Sing** button sings the words in the lyrics box to a tune chosen by mood
+  (`src/song/tunes.ts`, `fit.ts`), with Tempo and Key on the Voice screen; the engine's
+  demo songs are in the same Tune menu and bring their own words. **Record video** sings it
+  again into a 9:16 clip to share or save (`src/song/record.ts`). The words, tune, tempo and
+  key are kept on the device.
+- Engine: decayed states are zeroed (in the browser a block took four times as long after a
+  nasal, and the sound could break up); speech planned faster than rate 1 shortens its
+  gesture ramps and release holds with the rate; beatbox patterns play up to 256 steps and
+  240 bpm; one more demo song.
 
 Adapted rather than taken as written:
 
-- `README.md` keeps this edition's text in six commits that touched upstream's feature
-  list and run instructions; the reworded vision item 3 is taken.
-- Sing tab: upstream's new main button and demo-song menu sit above this edition's song
-  player, which stays (`SingPanel.tsx`, `styles.css`: an extra `song` row). The demo-song
-  chips this edition had in the Lyrics header are replaced by upstream's menu. The song
-  player's own chooser is now labelled "Melody": two menus named "Song" on one tab were
-  ambiguous to a screen reader and to `tools/e2e.ts`.
-- `App.tsx`: the start overlay is removed as upstream does; the song player starts the
-  audio itself.
+- `README.md` keeps this edition's text.
+- Sing tab: this edition's song player stays. `singing.ts` keeps `playMelody` and its state
+  (`demo`, `elapsed`, `duration`, `renderProgress`) beside upstream's `tune`, `tempo`, `key`,
+  `playing` and `at`; the lyrics follow whichever is singing, and starting one stops the
+  other. Order on the tab: Sing button, Lyrics, Song player, Pitch (upstream puts the words
+  right under the button that sings them).
+- The song player used to load its first melody's words every time the tab opened, which
+  overwrote the words upstream now keeps. It loads them only when none were kept.
+- `crates/chimera/tests/golden/planning.json` conflicted twice, because this edition's
+  fixture already differs from upstream's (its longer vowels). Each time the edition's
+  fixture was kept and re-blessed twice with the one change applied, then compared field by
+  field with the fixture before: the fast-speech commit moved only `rampIn`, `rampOut` and
+  `releaseHold` in fixtures planned at rate 1.1 to 1.3; the beatbox commit moved only player
+  scenario 1 (the same 73 differences as upstream's own re-bless).
+- `tools/e2e.ts` types words into the lyrics box when it is empty. This edition opens Sing
+  on a melody without words (Ode to Joy), and upstream's checks follow a syllable. This was
+  also the cause of the "syllable cursor did not move" failure recorded at the last sync.
 
 The engine changed, so `src/wasm/chimera.wasm` is rebuilt (Arch `rust` and `rust-wasm`
-1.99.1; sha256 in `PROVENANCE.json`). No golden fixture was blessed. Rendered with the
-engine before and after: Lovell's voice in the Apollo 13 scene (audio and telemetry) and the
-whole Wizard of Oz scene (five voices, mix and telemetry) are bit-identical, so no prepared
-song or scene was re-rendered and the media manifest is unchanged.
+1.99.1; sha256 in `PROVENANCE.json`). Rendered with the engine before and after, Lovell's
+voice in the Apollo 13 scene is no longer identical: his lines are planned at rates above 1,
+so the fast-speech change shortens their ramps (difference 16 dB under the signal). With
+that one change left out the two renders differ by less than 1e-30, so the zeroing is
+inaudible. Lines at rate 1 or slower, and all singing, are unchanged. A search of the
+render scripts for rates above 1 finds Apollo 13, the Wizard of Oz, the Apollo 11 landing, and
+spoken lines in band songs (`src/band/planning.ts`). No prepared song or scene was re-rendered and
+the media manifest is unchanged, so what the site plays is the same; a later re-render of
+those scenes will not reproduce the published audio exactly.
 
-Validation: 187 native tests passed (two existing ignored); 357 Bun tests; typecheck;
-content verification. Browser checks ran in the system Chromium with software rendering
-against a local server, on the single-mouth player (`?solo=1`), since this edition's root is
-the band page:
+Validation: 195 native tests passed (two existing ignored); 493 Bun tests (two needed
+`--timeout 60000` on a busy machine); typecheck; content verification. Browser checks ran
+in the system Chromium with software rendering against a local server, on the single-mouth
+player (`?solo=1`):
 
-- `tools/layout-lint.ts`: the duet page and all five tabs report 0 errors at 8 sizes. One
-  first pass of Sing reported 3 errors at 1280x720 while playing; two reruns reported none
-  and the detail was not kept.
-- `tools/e2e.ts`, desktop and phone sizes: no console errors; every check passed except "the
-  syllable cursor did not move", which was already open before this import. Upstream's new
-  tongue-grab check was not run: it scans the 2D face for the tongue handle, this edition
-  opens on the 3D face, and with the 2D face switched on the scan did not finish in nine
-  minutes under software rendering.
+- `tools/e2e.ts`, desktop and phone sizes: exit 0, no console errors, including the video
+  clip, the words coming back on reload, and the tune singing the lyrics. Upstream's
+  tongue-grab check was again skipped (2D face only, too slow under software rendering).
+- `tools/layout-lint.ts`: Play, Beatbox, Bestiary and the duet page report 0 errors at 8
+  sizes. Sing reports 0 on most passes; two errors come and go between passes (canvas text
+  measured against a canvas that had moved at 1280x720, also seen before this import; the
+  word at the mouth over a readout at 768x1024, once in three passes). Speak reports one
+  error at 375x812 (two "k" labels touching in the gestural score), which the build from
+  before this import reports too.
+- By hand in the same browser: the song player plays a melody with its clock and word
+  highlight, the Sing button sings the same words, and each stops the other.
 
-Not tested: a real iPhone in silent mode, Korean or Russian singing by ear, Safari.
+Not tested: listening to fast speech or to anything else by ear, a real phone, Safari,
+sharing a recorded clip, the lint's "clip to save" view (it looks for a button named
+"Video"; the button is "Record video").
 
 ## Next update
 

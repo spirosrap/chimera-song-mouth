@@ -130,7 +130,7 @@ export function SongPanel() {
       <button className="chip" onClick={()=>{job.current++;worker.current?.terminate();worker.current=null;setBusy(false);}}>Cancel</button>
     </div>}
     {error&&<p className="error" role="alert">{error}</p>}
-    <p className="song-caption">{song.source}. Add words below, or leave lyrics empty for “ah”. Voice changes apply the next time you play.</p>
+    <p className="song-caption">{song.source}. Add words in Lyrics above, or leave them empty for “ah”. Voice changes apply the next time you play.</p>
     <details className="song-help"><summary>About song import</summary>
       <p>Audio import estimates one melody from the recording. Solo vocals or humming work best; a full mix may follow instruments. It does not separate vocals or recognize lyrics. MIDI gives exact notes; choose the melody part if the file has several tracks.</p>
       <p>Files stay on this device. Up to 3 minutes / 50 MB. Spotify and YouTube links are not audio files.</p>

@@ -146,6 +146,13 @@ async function run(viewport: { width: number; height: number }, tag: string) {
   // sing mode: a key sings the marked syllable and moves the cursor; legato; a demo song
   await page.getByRole("radio", { name: "Sing" }).click();
   await page.waitForTimeout(600);
+  // this edition opens Sing on its song player's first melody, which has no words: type some,
+  // or there is no syllable for the checks below to follow
+  const lyricsBox = page.locator(".lyrics textarea");
+  if (!(await lyricsBox.inputValue())) {
+    await lyricsBox.fill("Hello there, I am a voice made of air.");
+    await lyricsBox.blur(); // the keys below are for the instrument, not the box
+  }
   const rms = () =>
     page.evaluate(() => {
       // @ts-expect-error debug handle
