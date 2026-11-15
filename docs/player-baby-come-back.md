@@ -11,3 +11,5 @@ Four independently rendered CHIMERA voices sing the lead and supporting refrains
 Rebuild using `bun tools/render-player-baby-come-back-scene.ts`, then verify the complete audio before updating the content manifest. The rebuild uses the existing instrumental MP3 and physical score; raw recordings, local transcription, separated stems, pitch/phone models and analysis caches stay outside the repository.
 
 Focused checks cover the full duration, independent physical parts, every audible phrase, silent opening/outro, exact telemetry clock, deterministic instruments/cameras, five heads, four model leases, phone/wide framing and borrowed-model ownership. Browser/GPU and recording verification are reported separately from native projections and tests.
+
+The unchanged `scene-clarity.py` listening aid misheard 120 of 239 words (50.2%) in the mixed short-caption excerpts. This is a diagnostic for robotic singing, not a successful intelligibility score; the owner approved the separate 29-second chorus by listening. Do not change the aid or characterize its result as a pass.

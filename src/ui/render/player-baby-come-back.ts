@@ -27,7 +27,7 @@ export class PlayerStage{
    if(index<3){this.guitar(instrument,index===1);const strap=this.box(root,4,100,2,index===0?'#a35c49':'#3d3431',[2,-41,17]);strap.rotation.z=-.45;}
    if(index!==4)this.microphone([person.position[0]+8,person.position[1]+11,person.position[2]+33],index===3);
   }
-  for(let i=0;i<2;i++){const b=this.plane(this.scene,2,2,'#000000',[0,0,0]);b.renderOrder=999;(b.material as THREE.MeshBasicMaterial).depthTest=false;(b.material as THREE.MeshBasicMaterial).depthWrite=false;this.bars.push(b);}
+  for(let i=0;i<2;i++){const b=this.plane(this.scene,2,2,'#000000',[0,0,0]);b.renderOrder=999;(b.material as THREE.MeshBasicMaterial).transparent=true;(b.material as THREE.MeshBasicMaterial).depthTest=false;(b.material as THREE.MeshBasicMaterial).depthWrite=false;this.bars.push(b);}
   this.veil=this.plane(this.scene,2,2,'#000000',[0,0,0]);this.veil.renderOrder=1000;const mat=this.veil.material as THREE.MeshBasicMaterial;mat.transparent=true;mat.depthTest=false;mat.depthWrite=false;for(const ink of this.beams)for(const o of ink.group.children){const mat=(o as THREE.Mesh).material as THREE.Material;mat.depthTest=true;}this.resize(1280,720);this.frame(0,false,0,'player-keyboard',0);
  }
  private mesh(parent:THREE.Object3D,geo:THREE.BufferGeometry,p:P,col:string){const m=new THREE.Mesh(geo,new THREE.MeshBasicMaterial({color:col,side:THREE.DoubleSide}));m.position.set(...p);parent.add(m);this.meshes.push(m);return m;}

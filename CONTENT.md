@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 652 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 661 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -123,6 +123,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Peter Gabriel — Sledgehammer | 5:45 | `?scene=sledgehammer` | Complete supplied video, original music, physical lead and backing calls, stop-motion train, clay and fruit faces, cardboard room, dancing chickens, dance floor, furniture and light figure |
 | David Bowie — Ashes to Ashes | 3:37 | `?scene=ashes-to-ashes` | Complete supplied video, original music, physical singing, ruffled Pierrot, pink shoreline and cliffs, memory cards, dark-clad procession, yellow bulldozer, padded room, astronaut and water, final walk |
 | Απορώ αν αισθάνεσαι tipsy | 2:04 | `?scene=aporo-tipsy` | Complete supplied Greek/English mashup, physical singing and speech, original instrumental music, retro long-haired singer, microphone, organ, guitar, bass, drums and audience |
+| Player — Baby Come Back | 4:10 | `?scene=player-baby-come-back` | Original music, four physical singers, five-player vintage stage, twin keyboards, guitars, drums and source-time camera cuts |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
@@ -251,3 +252,5 @@ Sledgehammer adds seven prepared files: explicit lead/backing phonetic score, or
 Ashes to Ashes adds six prepared files: explicit phonetic score, original instrumental backing, full mix, compressed mouth track, scene/captions/cameras and credits. Four physical looks share one retained singer; other figures and card people are decorative proxies. Original input and analysis stay private. See [the scene notes](docs/ashes-to-ashes.md).
 
 Απορώ αν αισθάνεσαι tipsy adds six prepared files: explicit bilingual phonetic score, original backing, full mix, compressed mouth track, scene/captions/cameras and credits. One retained physical singer performs Greek and English; the other musicians and audience are decorative proxies. The original instrumental break is retained as a continuous source window. Source video, stems, models and analysis stay private. See [the scene notes](docs/aporo-tipsy.md).
+
+Baby Come Back adds nine prepared files: four-part physical phonetic score, original instrumental backing, full mix, four mouth tracks, scene/captions/cameras and credits. Five heads borrow four retained singers; the drummer uses neutral articulation. Supporting harmony paths are estimates. All raw input and analysis remain private. See [the scene notes](docs/player-baby-come-back.md).
