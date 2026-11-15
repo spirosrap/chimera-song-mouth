@@ -12,7 +12,7 @@ export function tipsyCamera(view:CameraView,aspect:number,time:number){const p=t
  else if(view==='tipsy-guitar'||view==='tipsy-guitar-close'){target=[126,view==='tipsy-guitar-close'?83:115,-20];hh=view==='tipsy-guitar-close'?43:77;hw=view==='tipsy-guitar-close'?62:105;dir=[-.2,.09,1];}
  else if(view==='tipsy-bass'){target=[-109,116,-30];hh=78;hw=110;dir=[.2,.07,1];}
  else if(view==='tipsy-keyboard'||view==='tipsy-keys-close'){target=[-170,view==='tipsy-keys-close'?96:122,-113];hh=view==='tipsy-keys-close'?35:74;hw=view==='tipsy-keys-close'?69:108;dir=[.5,.35,1];}
- else if(view==='tipsy-drums'){target=[53,92,-135];hh=94;hw=138;dir=[.25,.2,1];}
+ else if(view==='tipsy-drums'){target=[53,92,-135];hh=94;hw=138;dir=[-.25,.55,1];}
  else if(view==='tipsy-audience'){target=[-230,100,90];hh=92;hw=150;dir=[.25,.12,-1];}
  else if(view==='tipsy-title'||view==='tipsy-credits'){target=[0,10,0];hh=64;hw=110;dir=[0,0,1];}
  else if(view==='tipsy-plane'){target=[0,75,-30];hh=112;hw=220;dir=[0,.08,1];}
