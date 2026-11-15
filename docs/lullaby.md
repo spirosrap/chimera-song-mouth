@@ -43,3 +43,7 @@ The unchanged scene-clarity listening aid reported 119 errors among 198 normaliz
 Validation passed 187 native tests (two existing ignored), 481 Bun tests across 118 files, TypeScript, content/WASM verification and the production build. Four focused tests cover full audible phrases, exact-clock telemetry, long instrumental silence, gradual true-opacity webs, empty early web buffers, direct seeking, three heads sharing one retained model, phone/desktop framing, clear bed mouth rays and overhead-camera restoration. Twenty-six native geometry views were inspected after the web fade fix; these are not browser screenshots. Shared model ownership and other scenes' neon materials remain unchanged.
 
 Local HTTP checks matched all 704 built media files to the manifest and served the direct route, app bundles and six new scene files correctly. All 698 earlier media files remain byte-identical.
+
+## Live release
+
+Application commit `55f2070` is live at [Lullaby](https://agenticspiros.com/chimera-song-mouth/?scene=lullaby). All 17 changed files uploaded with the entry page last. Live verification matched 193 files, including six new scene assets, app bundles and twenty-six preserved performances, plus the direct scene route. The temporary publish job was removed. Browser/GPU playback and real-time recording remain untested for this scene.
