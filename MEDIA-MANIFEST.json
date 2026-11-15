@@ -1842,6 +1842,46 @@
       "sha256": "f7d5f27cc586552e6690a750dde95a8553dd28e5cdc762ef99a18b454e54bae7"
     },
     {
+      "path": "public/scenes/crucified/alexander.tele.gz",
+      "bytes": 481997,
+      "sha256": "6e8edc26f3ba770dadef2fea90b9e9f0133e95d41973d2b76db9df1bbffb6d92"
+    },
+    {
+      "path": "public/scenes/crucified/backing.mp3",
+      "bytes": 6842924,
+      "sha256": "9be989d89904c54d330fc39ac38f2c6bdbac7b1a330c58d056d8fb390d013cad"
+    },
+    {
+      "path": "public/scenes/crucified/credits.txt",
+      "bytes": 1497,
+      "sha256": "1175ce8d747f88d80c7f4d55c006597fdb749f6aa06c48a967ef12e31a14ff5b"
+    },
+    {
+      "path": "public/scenes/crucified/jean.tele.gz",
+      "bytes": 391793,
+      "sha256": "6e82802753ad27d9ac60b92ee05d044f58b64d7f1b91444f30229cc138a5c4fe"
+    },
+    {
+      "path": "public/scenes/crucified/lead.tele.gz",
+      "bytes": 1756804,
+      "sha256": "0232eac6337ab9f74ba31c7bdac4cc3410ecc6dd78e125b9d677185a944b5755"
+    },
+    {
+      "path": "public/scenes/crucified/mix.mp3",
+      "bytes": 6842924,
+      "sha256": "315fc2203260e648028c07db5698e95fdbfcc4b61df36d87933aeb66c0c6afed"
+    },
+    {
+      "path": "public/scenes/crucified/performance.json",
+      "bytes": 193856,
+      "sha256": "c0da78f3ba1cce4c4cf15edecc399c42b852c183698238983e42d8f408be335f"
+    },
+    {
+      "path": "public/scenes/crucified/scene.json",
+      "bytes": 7869,
+      "sha256": "244b8056050483c7546a454921d09e59ddb454d6bc4185ca7ccb3f9f5054e2a9"
+    },
+    {
       "path": "public/scenes/cuckoos-nest/backing.mp3",
       "bytes": 2002988,
       "sha256": "a47705948b77f2c86ae818e0797e0314cfcf2d0bc167a76e8237531f973e5af9"
@@ -2050,6 +2090,41 @@
       "path": "public/scenes/frontier-psychiatrist/scene.json",
       "bytes": 13426,
       "sha256": "7b32a0303122fce6bb8494f3397f78ede10022178cb2ee490a9d1fbed89b9bfd"
+    },
+    {
+      "path": "public/scenes/go-west/backing.mp3",
+      "bytes": 9335852,
+      "sha256": "b1d4e584195635c1ed855ee9a31d6113d54b1fc9d7ccc05de8c117b07d45a77b"
+    },
+    {
+      "path": "public/scenes/go-west/chorus.tele.gz",
+      "bytes": 2097523,
+      "sha256": "c88b16d5609fbe4720db15cbb9bb3f7ab599d4c2d34c26f8b378c3e3e6e68bb2"
+    },
+    {
+      "path": "public/scenes/go-west/credits.txt",
+      "bytes": 1561,
+      "sha256": "1f0b8f7ce6b0e0aba315689bad3566c07d9c455995fb356993ded128b7b726b3"
+    },
+    {
+      "path": "public/scenes/go-west/lead.tele.gz",
+      "bytes": 2443758,
+      "sha256": "320bfbd9d328751b5fd8137fc629a1b1f50aad68eb98407829ecc8b330d5b0be"
+    },
+    {
+      "path": "public/scenes/go-west/mix.mp3",
+      "bytes": 9335852,
+      "sha256": "05129ff8f9998642b708989e153afad6090b7913df4e970e6fe19437187de61a"
+    },
+    {
+      "path": "public/scenes/go-west/performance.json",
+      "bytes": 238017,
+      "sha256": "8ec5b44e13e91b98c5e50489442a53dcb8c8482240b77983b6bcebb588a2d128"
+    },
+    {
+      "path": "public/scenes/go-west/scene.json",
+      "bytes": 12422,
+      "sha256": "c637d0aaf402233c4a19754d3f8e216004fa56aede2e70e6a6af4eea1642223b"
     },
     {
       "path": "public/scenes/good-will-hunting/backing.mp3",
