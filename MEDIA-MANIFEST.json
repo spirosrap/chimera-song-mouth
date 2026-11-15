@@ -2967,6 +2967,36 @@
       "sha256": "3805f1dc8b68b00d73f5a0d0805497dc1def388fa52b24fd9ba910e16b55976e"
     },
     {
+      "path": "public/scenes/sweet-dreams/backing.mp3",
+      "bytes": 6862892,
+      "sha256": "1c03670b1fb1e26d7312cd87a93cf5da3212e476f53a144706591e471a8f562b"
+    },
+    {
+      "path": "public/scenes/sweet-dreams/credits.txt",
+      "bytes": 2151,
+      "sha256": "acbd57c1e8e57f6e63bd9a890c762a7268721066e6132c6e24e03b5a61debee6"
+    },
+    {
+      "path": "public/scenes/sweet-dreams/lead.tele.gz",
+      "bytes": 2338752,
+      "sha256": "77f98a4d88b6998fa346be79c175bec20e7bf7778cc4feb4cdce005992e74935"
+    },
+    {
+      "path": "public/scenes/sweet-dreams/mix.mp3",
+      "bytes": 6862892,
+      "sha256": "3ec3ec8cb8dbdd61cac3ea75d881fc41d7566a6332f472fa2f1fde87aabb1be4"
+    },
+    {
+      "path": "public/scenes/sweet-dreams/performance.json",
+      "bytes": 181007,
+      "sha256": "e03e7198b81e7ac8f7d60453c391f2800a0cd304a4f9ba38a93fa1cfeff9d592"
+    },
+    {
+      "path": "public/scenes/sweet-dreams/scene.json",
+      "bytes": 6962,
+      "sha256": "b69c50ad8638a009405ff6e061b6b5e09a50daa8bb84ab9694b58709e2447209"
+    },
+    {
       "path": "public/scenes/take-on-me/answer.tele.gz",
       "bytes": 573642,
       "sha256": "34821e4ddd9e80db15303818bdd1ec21cee46e00f712fc29dd6a1374ad5cff5d"
