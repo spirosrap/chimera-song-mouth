@@ -2737,6 +2737,41 @@
       "sha256": "dd1687443f234eb52a083e4cfb2aba5e974f59cd869af5b1eedbd927b26d3199"
     },
     {
+      "path": "public/scenes/sledgehammer/answer.tele.gz",
+      "bytes": 952350,
+      "sha256": "cd13e21b31724efd1e89aa89d71f0fc71d55c79553bf76b417cd92adde198f8a"
+    },
+    {
+      "path": "public/scenes/sledgehammer/backing.mp3",
+      "bytes": 11054636,
+      "sha256": "fe15d40ea9a179ac24e684cb000d139b07cfacb42e9b035a6fd6f1d7c57c760e"
+    },
+    {
+      "path": "public/scenes/sledgehammer/credits.txt",
+      "bytes": 1909,
+      "sha256": "19bfb1bf88ccdb8eedfe2debfe9cd78ccdf5e545af48ddf57e680d754de41af1"
+    },
+    {
+      "path": "public/scenes/sledgehammer/lead.tele.gz",
+      "bytes": 2453050,
+      "sha256": "546beb392ac8c498318f39015f56f218887a31ae7587b532ef319591bc3aaf2b"
+    },
+    {
+      "path": "public/scenes/sledgehammer/mix.mp3",
+      "bytes": 11054636,
+      "sha256": "b341312a6d7f7263c2c4fc8ce6a71b033c096831a0de2adc2a9caa3f498b592f"
+    },
+    {
+      "path": "public/scenes/sledgehammer/performance.json",
+      "bytes": 188341,
+      "sha256": "780f80e5a09b8dce00a33fa76cc0b8c8d3f57e3fb092b504e9407904615a7e7c"
+    },
+    {
+      "path": "public/scenes/sledgehammer/scene.json",
+      "bytes": 6963,
+      "sha256": "ee4fb7b58129cdd9a46a97170e3261874463da4f42f7935076aaae662108e5eb"
+    },
+    {
       "path": "public/scenes/stonehenge/backing.mp3",
       "bytes": 7549484,
       "sha256": "5a02addf2d9a8dd288fdd9dae68a63c9d702ab0f41e92356676a8f3da6c861f3"
