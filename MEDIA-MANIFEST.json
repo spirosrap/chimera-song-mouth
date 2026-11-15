@@ -2157,6 +2157,36 @@
       "sha256": "d8ba8e2151c275869c08f4681664835f2e071b3fda4e732e1287eff2eaf84a1f"
     },
     {
+      "path": "public/scenes/human-behaviour/backing.mp3",
+      "bytes": 8174636,
+      "sha256": "de2738d459da540b8d1d92f7261cd31200c49d5827d6a15a81acca59f284dc46"
+    },
+    {
+      "path": "public/scenes/human-behaviour/credits.txt",
+      "bytes": 1804,
+      "sha256": "e0f75e42d5a29afeabb35dff2d5e8d605b4b4de7411f4ba99bfe8ad12fa96b70"
+    },
+    {
+      "path": "public/scenes/human-behaviour/lead.tele.gz",
+      "bytes": 2042112,
+      "sha256": "a25dd9e953eb8940332ac844494b4c350af089db8865d0e5037e88f838f4d489"
+    },
+    {
+      "path": "public/scenes/human-behaviour/mix.mp3",
+      "bytes": 8174636,
+      "sha256": "26890e75b9c5ee00e85272a33f78532c6113897026c01622c5748828b555df0d"
+    },
+    {
+      "path": "public/scenes/human-behaviour/performance.json",
+      "bytes": 136228,
+      "sha256": "a0a3d38723f2274ba7aa0dd2a7411a86b9418fc652408c56cc4c44ece82bfea7"
+    },
+    {
+      "path": "public/scenes/human-behaviour/scene.json",
+      "bytes": 5554,
+      "sha256": "e51fc19ce0e24028d17f230e3cd2d9143e82b5f2ecaca0244981dbc35f15fcfe"
+    },
+    {
       "path": "public/scenes/ill-make-love-to-you/backing.mp3",
       "bytes": 8333612,
       "sha256": "1b49c6e70f3babc3c84b9eff9a514375345b11a4cb9db1868d9a6ad8550d9f6d"

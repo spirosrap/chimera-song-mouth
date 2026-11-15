@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, thirty-nine concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, forty concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -175,3 +175,5 @@ The complete supplied **Sérgio Mendes — Mas Que Nada** performance is staged 
 The complete supplied **Player — Baby Come Back** performance is staged at `?scene=player-baby-come-back`, with original music, four physical singers and five band heads, blue-shirted lead in a dark vest, red bassist, white guitarist, blue keyboard player, blond drummer, twin keyboards, guitars, drums, amplifiers, microphone profiles and source-time camera cuts. See [the scene notes](docs/player-baby-come-back.md).
 
 The complete supplied **Queen — I Want to Break Free** video is staged at `?scene=break-free`, with original music, physical mouth-engine singing, pink sleeveless top, dark bob and moustache, moving upright vacuum cleaner, patterned home and stairs, kitchen, other costumed household figures, blue-lit crowd and central white-box ballet. See [the scene notes](docs/break-free.md).
+
+The complete supplied **Björk — Human Behaviour** video is staged at `?scene=human-behaviour`, with original music, physical singing and unusual wordless calls, miniature night forest and giant plush bear, wooden cabin and cereal bowl, moth and hanging bulb, hunter and road, floating water portrait, moon journey, tiny singer inside the bear and closing little green world. See [the scene notes](docs/human-behaviour.md).

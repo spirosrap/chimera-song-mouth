@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 667 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 673 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -125,6 +125,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Απορώ αν αισθάνεσαι tipsy | 2:04 | `?scene=aporo-tipsy` | Complete supplied Greek/English mashup, physical singing and speech, original instrumental music, retro long-haired singer, microphone, organ, guitar, bass, drums and audience |
 | Player — Baby Come Back | 4:10 | `?scene=player-baby-come-back` | Original music, four physical singers, five-player vintage stage, twin keyboards, guitars, drums and source-time camera cuts |
 | Queen — I Want to Break Free | 4:32 | `?scene=break-free` | Complete supplied video, original music, physical singer, pink top and bob, moving vacuum cleaner, costumed household, kitchen and stairs, blue-lit crowd and central ballet |
+| Björk — Human Behaviour | 4:15 | `?scene=human-behaviour` | Full supplied video, physical singing and wordless calls, original music, miniature forest and giant plush bear, cabin, moth, road, water and moon journey |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
 | Interstellar — TARS humor setting | 0:42 | `?scene=tars` | Three physical voices, original launch background, four helmeted crew, rectangular TARS with working airway display, joke light, humor setting, rocket separation and subtitles |
@@ -257,3 +258,5 @@ Ashes to Ashes adds six prepared files: explicit phonetic score, original instru
 Baby Come Back adds nine prepared files: four-part physical phonetic score, original instrumental backing, full mix, four mouth tracks, scene/captions/cameras and credits. Five heads borrow four retained singers; the drummer uses neutral articulation. Supporting harmony paths are estimates. All raw input and analysis remain private. See [the scene notes](docs/player-baby-come-back.md).
 
 I Want to Break Free adds six prepared files: explicit phonetic score, original backing, full mix, compressed mouth track, source-timed scene/captions/cameras and credits. Three physical head graphics share one retained voice model. Other household, crowd and ballet figures are decorative proxies. The confirmed instrumental dance sequence is preserved directly from the supplied recording. Raw source video, stems, models and analysis stay private. See [the scene notes](docs/break-free.md).
+
+Human Behaviour adds six prepared files: explicit phonetic score, original backing, full mix, compressed mouth track, source-timed scene/captions/cameras and credits. Five physical head graphics share one retained singer. Wordless calls use locally recovered source phones through the unchanged mouth engine. Three bear graphics, hunter and moth are decorative animated figures. Raw video, stems, recognition models and analysis stay private. See [the scene notes](docs/human-behaviour.md).
