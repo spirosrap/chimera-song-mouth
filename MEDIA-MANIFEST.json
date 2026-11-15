@@ -2277,6 +2277,36 @@
       "sha256": "5f79cc42d616914ccd8251365ceb6a5127648858e7aee6c688e57c9010f10390"
     },
     {
+      "path": "public/scenes/lullaby/backing.mp3",
+      "bytes": 8007980,
+      "sha256": "75635bc93663c0f730f7d91d91e571f99447c8671e5ae8d1f518e70bde3939f0"
+    },
+    {
+      "path": "public/scenes/lullaby/credits.txt",
+      "bytes": 1766,
+      "sha256": "645d1add5cd277cc2c61fab27031136c4ee61f5bb80e100abf3e027a6b905b3f"
+    },
+    {
+      "path": "public/scenes/lullaby/lead.tele.gz",
+      "bytes": 1579055,
+      "sha256": "79725cff54daa92f4ab5505b68c59a4cb14478fa869d89443324a857ae095a47"
+    },
+    {
+      "path": "public/scenes/lullaby/mix.mp3",
+      "bytes": 8007980,
+      "sha256": "23e5e364fd4bc3ea5d35c05247fa4c23837535b27720e5f13c2aa9b1d702719f"
+    },
+    {
+      "path": "public/scenes/lullaby/performance.json",
+      "bytes": 119908,
+      "sha256": "c062d2ce3a3927f8212a6e7927c7682585401ee8e084e7638d11b13b2adef5b1"
+    },
+    {
+      "path": "public/scenes/lullaby/scene.json",
+      "bytes": 4944,
+      "sha256": "3a0a0295265bbbce71fe6364935eee1ee9826446edb1904ebcad1e91a42a700f"
+    },
+    {
       "path": "public/scenes/mahna-mahna/backing.mp3",
       "bytes": 5019692,
       "sha256": "decd50f793dcb059b8172798ed460751c6d7467fa8491517aa8dd22f50d20d6f"

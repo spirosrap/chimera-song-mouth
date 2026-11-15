@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, forty-four concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, forty-five concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -185,3 +185,5 @@ The full **Nightwish — The Phantom of the Opera** live video is staged at `?sc
 The complete supplied **Annie Lennox — Walking on Broken Glass** video is staged at `?scene=walking-broken-glass`, with original music, physical singing, red hood and embroidered gown, powdered wigs and fans, candlelit party, chandelier, jealous guests, corridor quarrel, spiral staircase and carried finale. See [the scene notes](docs/walking-broken-glass.md).
 
 The complete supplied **Duran Duran — The Wild Boys** video is staged at `?scene=wild-boys`, with original music, physical singing and calls, industrial factory, mechanical head and monitors, rotating windmill and bound singer, water and splashes, platforms and cages, band, punk dancers, coloured beams and closing rain. See [the scene notes](docs/wild-boys.md).
+
+The complete supplied **The Cure — Lullaby** video is staged at `?scene=lullaby`, with original music, physical singing and spoken ending, iron bed, striped pyjamas, white pillows and red blanket, window hands, lace and cobwebs, wall figure, giant spider, trapped figure and swallowing imagery, plus a web-covered band. See [the scene notes](docs/lullaby.md).
