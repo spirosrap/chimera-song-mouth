@@ -43,3 +43,9 @@ The complete performance lasts 255.397982 seconds, with 12,259,104 exact decoded
 The unchanged scene-clarity listening aid reported 97 errors among 133 normalized caption words (72.9%) over all 37 excerpts. This includes the nonverbal caption labels, which are not sung words, and British/American spelling differences. It is a listening diagnostic, not an intelligibility pass. The owner approved the actual 32-second preview, and its voice settings remain unchanged. The judge was not edited.
 
 Validation passed 187 native tests (two existing ignored), 459 Bun tests across 113 files and the four final focused scene checks. The focused checks cover complete audible phrases, exact source-clock telemetry, instrumental silence, direct seeking, five graphics on one retained model, phone and landscape head framing, clear bear eyes and hunter framing/occlusion, overhead camera restoration and unchanged shared neon materials. Native projections were inspected across all sets and close-up/mobile views; these are not browser screenshots. Final hunter face polish was followed by the focused checks and a fresh TypeScript/content-verified production build. All 667 preceding public assets remain byte-identical.
+
+Local HTTP checks matched all 673 built media files to the manifest and served the direct route, app bundles and six new scene files correctly.
+
+## Live release
+
+Application commit `b9fdbd5` is live at [Human Behaviour](https://agenticspiros.com/chimera-song-mouth/?scene=human-behaviour). All 17 changed files uploaded successfully, with the entry page last. Live verification matched 162 files, including the six new scene assets, app bundles and twenty-one preserved performances, plus the direct scene route. The temporary publish job was removed. All earlier prepared content remains preserved. Browser/GPU playback and recording remain untested for this scene.
