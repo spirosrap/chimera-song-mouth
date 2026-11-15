@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all forty-five concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all forty-six concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -90,6 +90,8 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 - The Project Hail Mary karaoke setting, prepared singing, original accompaniment and silent listener; see `docs/project-hail-mary.md`.
 
 - The Phantom of the Opera’s complete supplied Nightwish concert, approved physical duet and high vocalise, original music and applause, Finnish Kiitos, gold coat and yellow handheld microphone/stand, long-haired bassist with split beard, guitar, white keyboards, bandana drummer, blue/purple/red lights and waving crowd. Five heads borrow two retained singers. Keep source-time poses, supported high-register validation, side masks and all previous content; see [the scene notes](docs/nightwish-phantom.md).
+
+- I Believe in a Thing Called Love’s complete supplied Darkness video, approved physical lead and calls, original music, heart bath, purple bedroom and cupids, white glam catsuit, flower crown and two-tone hair, pink moon and crab, floating faces and boulder, amplifier walls, silver band/saucer, red alarm lighting, tentacles and guitar lasers. Four physical head graphics borrow one retained singer; other musicians are decorative proxies. Preserve source time, original guitar ending and all preceding assets; see [the scene notes](docs/darkness-love.md).
 
 ## Platform independence
 

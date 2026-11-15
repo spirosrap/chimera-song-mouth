@@ -1887,6 +1887,36 @@
       "sha256": "4e47b70766c241381198ec07a228691354d0bbb48937c7c6ef8ed1c974bad6a5"
     },
     {
+      "path": "public/scenes/darkness-love/backing.mp3",
+      "bytes": 7437356,
+      "sha256": "dde3f971ae223017f826df01c8a1b875607cf2d8d3fccec9137e9b9128ba66c9"
+    },
+    {
+      "path": "public/scenes/darkness-love/credits.txt",
+      "bytes": 1624,
+      "sha256": "466cf5885872a30eb50b0ee508a530973333bc4ee825774bafa30ecffd87351a"
+    },
+    {
+      "path": "public/scenes/darkness-love/lead.tele.gz",
+      "bytes": 1386667,
+      "sha256": "ba3559e208e4f1aab4b15ae6649de6d24ec1dc08ea61d674be60fc42451ccafb"
+    },
+    {
+      "path": "public/scenes/darkness-love/mix.mp3",
+      "bytes": 7437356,
+      "sha256": "cfb0bbba53b4ee57fd5a87c336adb916ef2730b2cd54aba72c33c9f33de4fdb5"
+    },
+    {
+      "path": "public/scenes/darkness-love/performance.json",
+      "bytes": 97027,
+      "sha256": "1c85e8dce7655cac0b1ba4119375f59e30d9b5ebe3f3a22d82127d3509e02be9"
+    },
+    {
+      "path": "public/scenes/darkness-love/scene.json",
+      "bytes": 5904,
+      "sha256": "841630abc3a5306b2e7ba762c195c84ec3e1f1b69a9a0bd7f03c1251913ad60e"
+    },
+    {
       "path": "public/scenes/dimash-sos/backing.mp3",
       "bytes": 7868204,
       "sha256": "a4f8e3330c5744ed1fbb5f48225fb1fa9e437ecbf46d98da2c03d188172a11e7"

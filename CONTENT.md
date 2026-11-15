@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 704 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 710 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -130,6 +130,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Annie Lennox — Walking on Broken Glass | 3:59 | `?scene=walking-broken-glass` | Full supplied video, physical singing, original music, red hood and gown, powdered-wig party, jealous guests, corridor quarrel, spiral stairs and carried ending |
 | Duran Duran — The Wild Boys | 4:13 | `?scene=wild-boys` | Full supplied video, physical singing/calls, original music, industrial factory, mechanical head and monitors, rotating windmill, water, cages, band and punk dancers |
 | The Cure — Lullaby | 4:10 | `?scene=lullaby` | Full supplied bedroom video, physical singing/spoken ending, original music, iron bed, striped pyjamas, spider and webs, window hands, trapped figure and web-covered band |
+| The Darkness — I Believe in a Thing Called Love | 3:52 | `?scene=darkness-love` | Full supplied spaceship video, physical lead and calls, original music, heart bath, purple bedroom, pink moon/crab, floating faces, amplifier walls, glam band, monster tentacles and guitar lasers |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -275,3 +276,5 @@ Walking on Broken Glass adds six prepared files: explicit phonetic score, origin
 The Wild Boys adds six prepared files: explicit phonetic score, original backing, full mix, compressed mouth track, source-timed scene/captions/cameras and credits. Three physical head graphics share one retained singer. Twelve punk/band figures are decorative animated proxies. Raw video, separated stems, recognition models and analysis stay private. See [the scene notes](docs/wild-boys.md).
 
 Lullaby adds six prepared files: explicit phonetic score, original backing, full mix, compressed mouth track, source-timed scene/captions/cameras and credits. Three physical heads share one retained singer. Four band members are decorative animated proxies. The original instrumental opening and extended ending are preserved. Raw video, separated stems, recognition models and analysis stay private. See [the scene notes](docs/lullaby.md).
+
+I Believe in a Thing Called Love adds the complete supplied Darkness spaceship video, the approved physical falsetto singer and continuous original instrumental music, including the long guitar ending. Four physical head graphics borrow one retained singer across the bath, bedroom, moon and ship. The source-time scenery includes cupids, a crab, giant faces, boulder, amplifier walls, saucer, tentacle attack and guitar lasers. See [the scene notes](docs/darkness-love.md).
