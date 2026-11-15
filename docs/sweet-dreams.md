@@ -47,3 +47,7 @@ The unchanged scene-clarity listening aid reported 155 errors among 280 normaliz
 Validation passed 187 native tests (two existing ignored), 463 Bun tests across 114 files, TypeScript, content/WASM verification and the production build. Four focused scene tests cover the full source tail, 29 audible physical phrases, exact-clock articulation, direct backward seeking, five graphics on one retained model, phone/landscape head and glove framing, the monitor head/body boundary, cello/face occlusion and unchanged shared neon materials. Native geometry projections were inspected across 27 complete-set, close-up and phone views; these are not browser screenshots. All 673 preceding public assets remain byte-identical.
 
 Local HTTP checks matched all 679 built media files to the manifest and served the direct route, app bundles and six new scene files correctly.
+
+## Live release
+
+Application commit `57baea0` is live at [Sweet Dreams](https://agenticspiros.com/chimera-song-mouth/?scene=sweet-dreams). All 17 changed files uploaded successfully, with the entry page last. Live verification matched 168 files, including the six new scene assets, app bundles and twenty-two preserved performances, plus the direct scene route. The temporary publish job was removed. All earlier prepared content remains preserved. Browser/GPU playback and recording remain untested for this scene.
