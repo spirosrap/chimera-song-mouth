@@ -1712,6 +1712,36 @@
       "sha256": "be200332e0fccbed4b785ba1e94bef1be685a9621c2e1d704ead99ceadb6b7b4"
     },
     {
+      "path": "public/scenes/break-free/backing.mp3",
+      "bytes": 8698412,
+      "sha256": "8f0616f36eb0b8c4914bae66b8676650df620853886270ebbac2a4c11e633081"
+    },
+    {
+      "path": "public/scenes/break-free/credits.txt",
+      "bytes": 1834,
+      "sha256": "d18f33faffd2755377123dacd2ebf67a6479bec051a1c8bbdf85f4c222960f9f"
+    },
+    {
+      "path": "public/scenes/break-free/lead.tele.gz",
+      "bytes": 1779015,
+      "sha256": "ed53c570abb4b44b2d16c088423368a2c956f60f9174ed83498e827786349717"
+    },
+    {
+      "path": "public/scenes/break-free/mix.mp3",
+      "bytes": 8698412,
+      "sha256": "eeb307c093429d6eac200d2ca94fee9f576d89ae928a443ef0673f1907cf885d"
+    },
+    {
+      "path": "public/scenes/break-free/performance.json",
+      "bytes": 110823,
+      "sha256": "6572551454b41719a7c383989c792ca8a3d268982368f607439b53cd33f9eeb0"
+    },
+    {
+      "path": "public/scenes/break-free/scene.json",
+      "bytes": 5127,
+      "sha256": "43c967331ecce5b98abc2a62530fc23e98bf035f706b863e87ed34792bf6448c"
+    },
+    {
       "path": "public/scenes/celentano/backing.mp3",
       "bytes": 7208492,
       "sha256": "dd67ac56f7bb2115a163507822a82152cfe0717e1f1a414d713695cc4ce6b2d7"
