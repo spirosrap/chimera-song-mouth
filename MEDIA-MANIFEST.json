@@ -3297,6 +3297,36 @@
       "sha256": "97699de3952f8ce7de5737e35a5079aacba741634308fe0f2615eb4a5ed2c708"
     },
     {
+      "path": "public/scenes/walking-broken-glass/backing.mp3",
+      "bytes": 7662380,
+      "sha256": "10b71530a5871b0ee090763e5f378dee6c05c9787ad78847a516a7d9445f4b34"
+    },
+    {
+      "path": "public/scenes/walking-broken-glass/credits.txt",
+      "bytes": 1516,
+      "sha256": "6bb55d6a72302f045bb8ec402ebc24930df226f5d4f775df534cfd2ff788820c"
+    },
+    {
+      "path": "public/scenes/walking-broken-glass/lead.tele.gz",
+      "bytes": 2600998,
+      "sha256": "0564c96cac21543ce4bded1a83f20fcf58e63a716e2ee0e98414155bb76d2125"
+    },
+    {
+      "path": "public/scenes/walking-broken-glass/mix.mp3",
+      "bytes": 7662380,
+      "sha256": "177649e0f339bd833cc4ba61254ad2b91b2585786d911ed85f8dfa2f58b3d604"
+    },
+    {
+      "path": "public/scenes/walking-broken-glass/performance.json",
+      "bytes": 190787,
+      "sha256": "dfc7f319095929fa26805dc57d837cd4bcd5b150f49c9ee5a23e242681b6bd4c"
+    },
+    {
+      "path": "public/scenes/walking-broken-glass/scene.json",
+      "bytes": 6742,
+      "sha256": "81a4ad420c7f7b00642578919f721f5a91f1bb6aea942311811adfb444d85985"
+    },
+    {
       "path": "public/scenes/whats-he-building/backing.mp3",
       "bytes": 6423596,
       "sha256": "d1290cb8664f951a01120af0f606ec7a6cadb02d0e42ef4427791745d47b86ae"
