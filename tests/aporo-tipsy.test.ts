@@ -1,0 +1,33 @@
+import {test,expect,spyOn} from 'bun:test';
+import {readFileSync} from 'node:fs';
+import {gunzipSync} from 'node:zlib';
+import * as THREE from 'three';
+import {initEngine} from './harness.ts';
+import {validateScene,sceneCamera,SCENE_SETTINGS} from '../src/scene/scene.ts';
+import {movieScene} from '../src/scene/library.ts';
+import {tipsyPose,tipsyCamera} from '../src/scene/aporo-tipsy.ts';
+import {TeleTrack} from '../src/show/tele.ts';
+import {validPerformance} from '../src/band/performance.ts';
+import type {Arrangement} from '../src/band/types.ts';
+import {Beams} from '../src/ui/render/beams3d.ts';
+await initEngine();
+const {TipsyStage}=await import('../src/ui/render/aporo-tipsy.ts');const {VoiceModel}=await import('../src/ui/analysis.ts');
+const file=(name:string)=>readFileSync(new URL(`../public/scenes/aporo-tipsy/${name}`,import.meta.url));
+const scene=validateScene(JSON.parse(file('scene.json').toString())),score:Arrangement=JSON.parse(file('performance.json').toString()),raw=gunzipSync(file('lead.tele.gz')),track=new TeleTrack(raw.buffer.slice(raw.byteOffset,raw.byteOffset+raw.byteLength));
+test('the complete Greek mashup includes both languages, greetings, refrain, instrumental break and closing speech',()=>{
+ expect(movieScene('aporo-tipsy')).toBeDefined();expect(scene.setting).toBe('tipsy');expect(scene.duration).toBeGreaterThan(124);expect(scene.duration).toBeLessThan(124.2);expect(scene.characters.map(c=>c.id)).toEqual(['tipsy-singer']);expect(score.parts[0].melody!.notes.length).toBe(159);expect(score.parts[1].recordingType).toBe('instrumental');expect(scene.cues.length).toBe(16);const text=scene.cues.map(c=>c.text).join(' ');for(const word of ['Καλησπέρα','αισθάνεσαι','τύψεις','tipsy','σουβλάκι'])expect(text).toContain(word);expect(scene.cues[0].start).toBeGreaterThan(2);expect(scene.cues[0].start).toBeLessThan(6);expect(scene.cues.at(-1)!.end).toBeGreaterThan(122);expect(file('mix.mp3').length).toBeGreaterThan(3_000_000);expect(sceneCamera(scene,40,'auto')).toBe('tipsy-guitar');expect(sceneCamera(scene,84,'auto')).toBe('tipsy-band');expect(sceneCamera(scene,110,'auto')).toBe('tipsy-credits');expect(()=>validateScene({...scene,characters:[{...scene.characters[0],id:'ashes-bowie'}]})).toThrow();expect(()=>validateScene({...scene,shots:[{time:0,view:'ashes-room'}]})).toThrow('camera');
+});
+test('Greek and English phones use actual audible physical phrases and leave the instrumental break silent',()=>{
+ const part=score.parts[0],perf=part.performance!;expect(part.effects).toBeUndefined();expect(part.recordingType).toBeUndefined();expect(validPerformance(perf,score.duration)).toBe(true);expect(track.duration).toBeCloseTo(scene.duration,1);expect(perf.phrases[0].phones.some(p=>p.ipa==='e')).toBe(true);expect(perf.phrases.flatMap(p=>p.phones).some(p=>p.ipa==='ɾ')).toBe(true);for(const ph of perf.phrases){const end=ph.start+ph.phones.reduce((s,x)=>s+x.duration,0);let peak=0;for(let j=track.indexAt(ph.start);j<=track.indexAt(end);j++)peak=Math.max(peak,track.message(j).t.outRms);expect(peak).toBeGreaterThan(.0001);}for(let j=0;j<track.frames;j++){const t=track.message(j).t;expect(t.clock).toBeCloseTo(j/20,4);expect([...t.artic].every(Number.isFinite)).toBe(true);if(j/20<2||j/20>69&&j/20<113)expect(t.outRms).toBeLessThan(.00001);}
+});
+test('the concert, guitar and organ motion, audience, aircraft and credits restore directly after seeking',()=>{
+ expect(tipsyPose(NaN)).toEqual(tipsyPose(0));const model=new VoiceModel(track.body,track.sampleRate),stage=new TipsyStage(model,track);const snapshot=()=>[stage.stage.visible,stage.title.visible,stage.plane.visible,stage.credits.visible,stage.singer.visible,...stage.singer.matrixWorld.elements,...stage.members.flatMap(m=>[...m.root.matrixWorld.elements,...m.instrument.matrixWorld.elements]),...stage.cymbals.flatMap(c=>c.matrixWorld.elements),...stage.keys.slice(0,8).flatMap(k=>k.matrixWorld.elements),...stage.camera.matrixWorld.elements];
+ try{for(const t of [1,6,12,20,32,40,52,58,70,80,84,99,110,116,122]){const view=sceneCamera(scene,t,'auto');stage.frame(t,true,1,view,.8);const before=snapshot();expect(before.every(v=>typeof v==='boolean'||Number.isFinite(v))).toBe(true);stage.frame(0,true,2,'tipsy-title',0);stage.frame(t,false,3,view,.8);expect(snapshot()).toEqual(before);}expect(new Set(stage.members.map(m=>m.kind))).toEqual(new Set(['bass','guitar','keys','drums']));expect(stage.audience.length).toBeGreaterThan(12);expect(stage.keys.length).toBeGreaterThan(24);expect(stage.cymbals.length).toBe(3);stage.frame(84,true,4,'tipsy-band',.8);stage.resize(1280,720);stage.frame(84,true,4,'tipsy-band',.8);expect(stage.bars.every(b=>!b.visible)).toBe(true);}
+ finally{stage.dispose();model.dispose();}
+});
+test('singer and microphone stay framed on phone and widescreen cameras while the stage retains its borrowed model',()=>{
+ const model=new VoiceModel(track.body,track.sampleRate),stage=new TipsyStage(model,track),defaultInk=new Beams();
+ try{for(const [w,h]of [[1280,720],[375,430]])for(const [time,view]of [[12,'tipsy-singer'],[20,'tipsy-mouth'],[46,'tipsy-singer'],[116,'tipsy-singer']]as const){stage.resize(w,h);stage.frame(time,true,1,view,.8);expect(stage.singer.visible).toBe(true);let count=0,inside=true;stage.head.scene.traverseVisible(o=>{let parent:THREE.Object3D|null=o;while(parent){if(parent===stage.hair.group)return;parent=parent.parent;}const m=o as THREE.Mesh<THREE.InstancedBufferGeometry>,a=m.geometry?.getAttribute('instanceStart');if(a)for(let j=0;j<m.geometry.instanceCount;j++){const p=new THREE.Vector3().fromBufferAttribute(a,j).applyMatrix4(m.matrixWorld).project(stage.camera);count++;inside&&=[p.x,p.y,p.z].every(Number.isFinite)&&Math.abs(p.x)<.99&&Math.abs(p.y)<.99&&Math.abs(p.z)<1;}});expect(count).toBeGreaterThan(1000);expect(inside).toBe(true);const mic=stage.microphone.localToWorld(new THREE.Vector3(1,7,11)).project(stage.camera);expect(Math.max(Math.abs(mic.x),Math.abs(mic.y))).toBeLessThan(.9);for(const v of SCENE_SETTINGS.tipsy.cameras){const c=tipsyCamera(v,w/h,time);expect([...c.target,...c.position,c.fov].every(Number.isFinite)).toBe(true);}}
+ for(const child of defaultInk.group.children){const m=(child as THREE.Mesh).material as THREE.Material;expect(m.blending).toBe(THREE.CustomBlending);expect(m.blendEquation).toBe(THREE.MaxEquation);}
+ }finally{const disposed=spyOn(VoiceModel.prototype,'dispose');stage.dispose();expect(disposed).toHaveBeenCalledTimes(0);disposed.mockRestore();model.dispose();defaultInk.dispose();}
+});
