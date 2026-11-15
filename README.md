@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, thirty-five concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, thirty-six concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -155,6 +155,8 @@ The complete supplied **a-ha — Take On Me** video is staged at `?scene=take-on
 The complete supplied **Nick Cave & Kylie Minogue — Where the Wild Roses Grow** video is staged at `?scene=wild-roses`, with original music, two physical singing voices, dark river and reeds, a floating red-haired woman in a white slip dress, Nick kneeling on the bank, rose-filled portraits, hands, snake and the final rose at her lips. See [the scene notes](docs/wild-roses.md).
 
 The complete supplied **Peter Gabriel — Sledgehammer** video is staged at `?scene=sledgehammer`, with original music, physical lead and backing calls, microscopic opening, giant face and miniature train, clay and fruit transformations, cardboard room, dancing chickens, wallpapered dance floor, moving furniture and a final figure of lights. Prop movement steps at nine frames per second while the mouth follows the physical articulation. See [the scene notes](docs/sledgehammer.md).
+
+The complete supplied **David Bowie — Ashes to Ashes** video is staged at `?scene=ashes-to-ashes`, with original music and physical singing, ruffled Pierrot, pink shoreline, memory cards, dark-clad procession and yellow bulldozer, padded room and wooden chair, monochrome astronaut, dark water and the closing walk with the older woman. Four physical heads share one retained model. See [the scene notes](docs/ashes-to-ashes.md).
 
 The complete supplied **Sinéad O’Connor — Nothing Compares 2 U** video is staged at `?scene=nothing-compares`, with original music, a physical singer in an intimate portrait, cropped hair, black high collar, restrained expressions and tears, formal garden paths, fountain, statues, balustrade, walking figure and slow double exposures, including the full long garden outro. See [the scene notes](docs/nothing-compares.md).
 

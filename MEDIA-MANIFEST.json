@@ -1547,6 +1547,36 @@
       "sha256": "5e1988a2d1b49b62b548933590e20b1683c7c12b74866f5867835db2255e6c5c"
     },
     {
+      "path": "public/scenes/ashes-to-ashes/backing.mp3",
+      "bytes": 6948140,
+      "sha256": "1a3da1933e6254ec0d06d2f89969547e390a9c770408fba6b4fcea76a870bfea"
+    },
+    {
+      "path": "public/scenes/ashes-to-ashes/credits.txt",
+      "bytes": 1684,
+      "sha256": "3facfdb22d72daad0b23b2b127d22d15356f618e90b93bf6869f829a3f379946"
+    },
+    {
+      "path": "public/scenes/ashes-to-ashes/lead.tele.gz",
+      "bytes": 2263314,
+      "sha256": "7888952208840685cc16a06e12d2b0b2175a583d9438424c0d0dee153574a211"
+    },
+    {
+      "path": "public/scenes/ashes-to-ashes/mix.mp3",
+      "bytes": 6948140,
+      "sha256": "e0bc4e9328915aa1bd6922d778d4bc4f9b3f86e080a1239d65ba82db986d10ec"
+    },
+    {
+      "path": "public/scenes/ashes-to-ashes/performance.json",
+      "bytes": 161663,
+      "sha256": "08db090ab38a9028b00b8e2a0efaec943db7195f3bb1564acb23b4a23cfc752d"
+    },
+    {
+      "path": "public/scenes/ashes-to-ashes/scene.json",
+      "bytes": 6546,
+      "sha256": "941521b9f9904428691bb478a32cce50b93b9c1b013b72f011d26d452ff41eab"
+    },
+    {
       "path": "public/scenes/autumn-leaves/backing.mp3",
       "bytes": 5101100,
       "sha256": "dc83ca2470fcbe7b60bc3869a32ab713282adc375238a65ac075f680a8f996e7"
