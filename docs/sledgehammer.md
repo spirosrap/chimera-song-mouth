@@ -45,3 +45,7 @@ Validation passed 187 native tests (two existing ignored), 439 Bun tests across 
 Native geometry projections were inspected for the microscopic opening, portrait, train, speaker, chalkboard, popcorn, clay, fish, fruit, cardboard and red rooms, chickens, dance floor, crowd, furniture, light figure, credits and mobile framing. These are native projections, not browser/GPU screenshots. All 633 preceding public assets remain byte-identical. Browser/GPU playback and real-time recording remain unverified.
 
 Local HTTP verification matched all 640 built media files to the manifest and served the direct scene route, application bundles and all seven new scene files correctly.
+
+## Live release
+
+Application commit `470d25e` is live at [Sledgehammer](https://agenticspiros.com/chimera-song-mouth/?scene=sledgehammer). All eighteen changed files uploaded successfully, with the entry page last. HTTP verification matched 129 live files byte-for-byte, including all seven new assets, application bundles and sixteen preserved performances, plus the direct scene route. The temporary publish job was removed. Browser/GPU playback and real-time recording remain unverified in this chat.
