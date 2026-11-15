@@ -45,3 +45,7 @@ Validation passed 187 native tests (two existing ignored), 443 Bun tests across 
 Native projections were inspected for the shoreline, Pierrot, memory card, cliffs, procession and bulldozer, patient and padded room, portrait, monochrome astronaut and attendants, water, blue hoses, older woman, ending, memory overlap and mobile framing. These are native projections, not browser/GPU screenshots. All 640 preceding public files remain byte-identical. Browser/GPU playback, layout lint and real-time recording remain unverified because browser access is declined.
 
 Local HTTP checks matched all 646 built media files to the manifest and served the direct scene route, app bundles and all six new scene files correctly.
+
+## Live release
+
+Application commit `c40dbe8` is live at [Ashes to Ashes](https://agenticspiros.com/chimera-song-mouth/?scene=ashes-to-ashes). All seventeen changed files uploaded successfully, with the entry page last. HTTP verification matched 135 live files byte-for-byte, including all six new assets, app bundles and seventeen preserved performances, plus the direct scene route. The temporary publish job was removed. Browser/GPU playback and real-time recording remain unverified in this chat.
