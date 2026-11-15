@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-two concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -98,6 +98,9 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 
 - You Spin Me Round’s complete supplied video, approved physical voice, original music, purple velvet and eye-patch costumes, portrait frame, mirror ball, extra-arm choreography, band, flags, ribbons and confetti. Preserve the corrected opening rest, three borrowed head graphics and source time; see [the notes](docs/spin-round.md).
 - No Surprises’ complete supplied helmet take, approved quiet physical singing and original music, corrected opening words, short hair, transparent glass and reflections, rising water, submerged hold, drain and relieved ending. Preserve the single borrowed singer, mouth visibility and source clock; see [the notes](docs/no-surprises.md).
+
+- Remember the Time’s complete supplied Egyptian short film, approved physical lead and three dialogue roles, original music, royal court, entertainers, cloak and magic, guards, market chase, balcony, kiss, dance and disappearance. Eleven physical head graphics borrow four retained models. Preserve all words, approved estimated closing calls, instrumental dance break and source time; see [the notes](docs/remember-time.md).
+- Shock the Monkey’s complete supplied film, approved physical singing, original music, dark office and ritual double, desk, scattered papers, projector, animal, flowers, forest, water and gestures. Five physical head graphics borrow one retained singer. Preserve source time and all preceding assets; see [the notes](docs/shock-monkey.md).
 
 ## Platform independence
 

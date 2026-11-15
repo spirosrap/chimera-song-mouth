@@ -2967,6 +2967,51 @@
       "sha256": "1a64e4b469c62548b6f9af0d5b8e8820c965fb9172e398eb8e2d19f10b2d17e4"
     },
     {
+      "path": "public/scenes/remember-time/backing.mp3",
+      "bytes": 17879084,
+      "sha256": "ced6ca294ebcc0c37f5915e4afe69e45f13bbfedfecb3521b4f14a1fc18dba64"
+    },
+    {
+      "path": "public/scenes/remember-time/credits.txt",
+      "bytes": 1971,
+      "sha256": "3ceec50eded4fa0a0d50cddf362c30f687ff4aabf2f068e01f5d95013536d9be"
+    },
+    {
+      "path": "public/scenes/remember-time/herald.tele.gz",
+      "bytes": 265422,
+      "sha256": "dc6db1248fbacb4981b048e11affa08714275faef553ae077400366776739021"
+    },
+    {
+      "path": "public/scenes/remember-time/lead.tele.gz",
+      "bytes": 3195502,
+      "sha256": "c5a5b1b788f6039da97d9a714583cc3c878b383043c899312ae205c4e4fac8b9"
+    },
+    {
+      "path": "public/scenes/remember-time/mix.mp3",
+      "bytes": 17879084,
+      "sha256": "7b653056f43c0d7274a1b0b20a3b76551359f89c092ad8e03dfde9f455972c0b"
+    },
+    {
+      "path": "public/scenes/remember-time/performance.json",
+      "bytes": 269554,
+      "sha256": "07584a0d6b1e1e8de93bca3f856abda0f7096303ea7fe3b9d8e37320862298b5"
+    },
+    {
+      "path": "public/scenes/remember-time/pharaoh.tele.gz",
+      "bytes": 177522,
+      "sha256": "31a6cb08be29ba90db0627ef5da73028ebb3c32447685094587081131aa22e0f"
+    },
+    {
+      "path": "public/scenes/remember-time/queen.tele.gz",
+      "bytes": 194570,
+      "sha256": "492680f473314211eb12b77500882df397c311d101f17ba9661d0462943b598d"
+    },
+    {
+      "path": "public/scenes/remember-time/scene.json",
+      "bytes": 10638,
+      "sha256": "bd3d4bf589bbb2af4aad2828b0ca191d2cbe026300c54b115aeb7edbae6ea50b"
+    },
+    {
       "path": "public/scenes/rock-me-amadeus/backing.mp3",
       "bytes": 7190828,
       "sha256": "d1113e5afab99e8efc8b5ae3a3c1255b0cff00ed66f95a6686dc4dc34ff2d137"
@@ -3100,6 +3145,36 @@
       "path": "public/scenes/shakespears-stay/scene.json",
       "bytes": 4681,
       "sha256": "dd1687443f234eb52a083e4cfb2aba5e974f59cd869af5b1eedbd927b26d3199"
+    },
+    {
+      "path": "public/scenes/shock-monkey/backing.mp3",
+      "bytes": 7794476,
+      "sha256": "133571b719b293f6e6d73c83184ecd68bbf268feb9ef3d87ae2cb35140b52c5f"
+    },
+    {
+      "path": "public/scenes/shock-monkey/credits.txt",
+      "bytes": 1430,
+      "sha256": "6661c62704687cfa2b1bc704a52e34a511c55eac5b392b54a8c5684d93e908b0"
+    },
+    {
+      "path": "public/scenes/shock-monkey/lead.tele.gz",
+      "bytes": 2466991,
+      "sha256": "88c6f5857ad7c43b3ce548b6fdbc615f61d0d5a4dd47b2e81c234c80a6cd4396"
+    },
+    {
+      "path": "public/scenes/shock-monkey/mix.mp3",
+      "bytes": 7794476,
+      "sha256": "eff657b0d7bc98515cab9ae41a0871d9cdd5e0563ad20fda2e847658a57d535c"
+    },
+    {
+      "path": "public/scenes/shock-monkey/performance.json",
+      "bytes": 145950,
+      "sha256": "0624e0095257f68c33b196e6c4cfbb2629cebdde373e4ad15b8155c0efb34513"
+    },
+    {
+      "path": "public/scenes/shock-monkey/scene.json",
+      "bytes": 7629,
+      "sha256": "8bfcb0a52922c2e3c5ec4c519af8def677c8d23f5fa1022c24c0ed517f6a3e89"
     },
     {
       "path": "public/scenes/sledgehammer/answer.tele.gz",
