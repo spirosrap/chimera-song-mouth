@@ -2572,6 +2572,51 @@
       "sha256": "7fa8fd269275d9e449bf7a1298e008ac8251e049f827f53cb86513e15510e9bd"
     },
     {
+      "path": "public/scenes/player-baby-come-back/backing.mp3",
+      "bytes": 8017196,
+      "sha256": "906d6b28192d23a04cafc6629bfd64d857502502374ac0b2ff57263ab1d73ea3"
+    },
+    {
+      "path": "public/scenes/player-baby-come-back/bass.tele.gz",
+      "bytes": 1131489,
+      "sha256": "03d79efdf2bc750ba0499eb9ae87eae9f9606741faf753ba2689dd170ee0dbf5"
+    },
+    {
+      "path": "public/scenes/player-baby-come-back/credits.txt",
+      "bytes": 1925,
+      "sha256": "e5632e328a3b58f41e316de3617dfca4b981c63177132a850b413c2901b70745"
+    },
+    {
+      "path": "public/scenes/player-baby-come-back/guitar.tele.gz",
+      "bytes": 1114135,
+      "sha256": "80f0cc6d1fb49029988aa7a13b942343fe25f746e54858ee15af6444a7f510c1"
+    },
+    {
+      "path": "public/scenes/player-baby-come-back/keys.tele.gz",
+      "bytes": 1113729,
+      "sha256": "3d87fc62c2246e818ede142dc23a07487278e50c604c123e35e1b2d851c0417d"
+    },
+    {
+      "path": "public/scenes/player-baby-come-back/lead.tele.gz",
+      "bytes": 1978668,
+      "sha256": "9b3203b7b25f1ac626895bee50bbbc3d63457713875b805ddb4cec8787ec56da"
+    },
+    {
+      "path": "public/scenes/player-baby-come-back/mix.mp3",
+      "bytes": 8017196,
+      "sha256": "0dd839ba7b60468fde9b63c83b9a07dbdbcf29b5eeaada9ad954bebd8118bba1"
+    },
+    {
+      "path": "public/scenes/player-baby-come-back/performance.json",
+      "bytes": 346536,
+      "sha256": "442b6ef9674b8531c7cfbccff1f02d0273be4489f14a3ddcf7434b6306d34c30"
+    },
+    {
+      "path": "public/scenes/player-baby-come-back/scene.json",
+      "bytes": 6412,
+      "sha256": "de5ddb04f10e4833d53747129665e8d230f4b9bf6c619d142da4c15e78f55389"
+    },
+    {
       "path": "public/scenes/princess-bride/credits.txt",
       "bytes": 446,
       "sha256": "a4cb80955a845c243252e3ea7923ee384259d1427b94c963431f25847ad174e1"
