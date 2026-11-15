@@ -45,3 +45,7 @@ The unchanged scene-clarity listening aid reported 154 errors among 241 normaliz
 Validation passed 187 native tests (two existing ignored), 477 Bun tests across 117 files, TypeScript, content/WASM verification and the production build. Four focused scene tests cover the complete audible phrases, exact-clock telemetry, quiet instrumental gaps, absolute seeking, three heads sharing one retained model, phone/desktop rotating-head framing, monitor boundaries, clear windmill mouth views and unchanged shared neon materials. Twenty-four native geometry views were inspected, followed by four final mechanical-head/monitor close-ups after the head-scale adjustment. These are not browser screenshots. All 692 earlier media files remain byte-identical.
 
 Local HTTP checks matched all 698 built media files to the manifest and served the direct route, app bundles and six new media files correctly.
+
+## Live release
+
+Application commit `14f7f6a` is live at [The Wild Boys](https://agenticspiros.com/chimera-song-mouth/?scene=wild-boys). All 17 changed files uploaded with the entry page last. Live verification matched 187 files, including six new media assets, app bundles and twenty-five preserved performances, plus the direct scene route. The temporary publish job was removed. Browser/GPU playback and real-time recording remain untested for this scene.
