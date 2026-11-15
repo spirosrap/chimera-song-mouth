@@ -16,7 +16,8 @@ export function validPerformance(p:VocalPerformance,duration:number):boolean{
   }
   let time=-1;
   for(const c of p.contour){
-    if(!c||!Number.isFinite(c.time)||c.time<=time||c.time<0||c.time>duration||!Number.isFinite(c.hz)||c.hz<40||c.hz>1200||!Number.isFinite(c.breath)||c.breath<0||c.breath>1.2)return false;
+    // The physical source supports the soprano register; keep prepared operatic notes in range.
+    if(!c||!Number.isFinite(c.time)||c.time<=time||c.time<0||c.time>duration||!Number.isFinite(c.hz)||c.hz<40||c.hz>1600||!Number.isFinite(c.breath)||c.breath<0||c.breath>1.2)return false;
     time=c.time;
   }
   for(const phrase of p.phrases){

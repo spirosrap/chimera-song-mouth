@@ -2502,6 +2502,41 @@
       "sha256": "91f91f75fc8df29f6bcda3b400b1f18b3aa2160de57abdb02f2a4b975b9bf48a"
     },
     {
+      "path": "public/scenes/nightwish-phantom/backing.mp3",
+      "bytes": 9102380,
+      "sha256": "1147a357aa8e57623b5fc3043522e80039dc7f04a1fa947821e515d8ad2414c1"
+    },
+    {
+      "path": "public/scenes/nightwish-phantom/credits.txt",
+      "bytes": 2077,
+      "sha256": "1cec7370a92023e67344fd504b881412fb0773173a6cbde09fd12e5171bb58d0"
+    },
+    {
+      "path": "public/scenes/nightwish-phantom/marco.tele.gz",
+      "bytes": 1596768,
+      "sha256": "a1268e369a1e7c319eb9db3e5c3e302b4af205944f78bc49cfeddf9a863ccb00"
+    },
+    {
+      "path": "public/scenes/nightwish-phantom/mix.mp3",
+      "bytes": 9102380,
+      "sha256": "a7f8daf5593823c30a69682dae549064451440276c45ca6b94b007a36e1fb8ff"
+    },
+    {
+      "path": "public/scenes/nightwish-phantom/performance.json",
+      "bytes": 215152,
+      "sha256": "8ac23896606c5ad45685d1b7fd88abfafd27a5317e619e60673b5ef0476cff17"
+    },
+    {
+      "path": "public/scenes/nightwish-phantom/scene.json",
+      "bytes": 6166,
+      "sha256": "ec463324cc2d10c6d4fba0688c0fc48ff109e24353ab09a7a1a5f913c0970975"
+    },
+    {
+      "path": "public/scenes/nightwish-phantom/tarja.tele.gz",
+      "bytes": 1705452,
+      "sha256": "4b7ad8c4bd9e4580deee7cccf8148d0e7e55c142260f7103ced92c3ab36b8d2e"
+    },
+    {
       "path": "public/scenes/nothing-compares/backing.mp3",
       "bytes": 9874220,
       "sha256": "691352c931a23427c57d75659bf9624b94cba3dac40b56df3243c6d1ec572766"

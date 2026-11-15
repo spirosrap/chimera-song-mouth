@@ -1,7 +1,7 @@
 import {expect,test} from 'bun:test';
 import {validPerformance} from '../src/band/performance.ts';
 import type {BandPart,VocalPerformance} from '../src/band/types.ts';
-import {initEngine,wasmModule} from './harness.ts';
+import {initEngine,wasmModule,WasmVoice} from './harness.ts';
 import {renderPart} from '../src/band/render.ts';
 import {loadBandArrangement,BAND_SONGS} from '../src/band/library.ts';
 const profile=():VocalPerformance=>({lyrics:'καλημέρα',phrases:[{start:.3,phones:[{ipa:'ʃ',duration:.08},{ipa:'i',duration:.32},{ipa:'ɾ',duration:.04},{ipa:'a',duration:.36}]}],contour:Array.from({length:16},(_,i)=>({time:.3+i*.05,hz:150+i*6,breath:.6+i*.02}))});
@@ -31,6 +31,25 @@ test('source phones preserve the actual durations and airway gestures instead of
 test('editing lyrics returns to text planning; selecting whistle still overrides the performance',()=>{
  const p=part();p.melody!.lyrics='γεια';expect(planPart(p).some(g=>g.label==='source performance')).toBe(false);
  const q=part();q.delivery='whistle';expect(planPart(q).some(g=>g.label==='source performance')).toBe(false);
+});
+
+test('prepared soprano notes retain their actual pitch above 1200 Hz and reject values outside the bounded register',()=>{
+ const p=part();p.body={female:.98,child:0};p.voice={pressure:7.6,brightness:.49,drift:0};
+ for(const c of p.performance!.contour)c.hz=1480;
+ expect(validPerformance(p.performance!,2)).toBe(true);
+ const gestures=planPart(p);expect(gestures.filter(g=>g.label==='source performance').every(g=>g.targets.f0===1480)).toBe(true);
+ const rendered=renderPart(wasmModule,p,2,gestures);expect(rendered.samples.every(x=>Number.isFinite(x)&&Math.abs(x)<1)).toBe(true);
+ const header=new DataView(rendered.tele),width=header.getUint32(20,true),data=new Float32Array(rendered.tele,48);let rms=0;
+ for(let j=12;j<20;j++){expect(Math.abs(1200*Math.log2(data[j*width+3]/1480))).toBeLessThan(15);rms=Math.max(rms,data[j*width+6]);}expect(rms).toBeGreaterThan(.0001);
+ for(const hz of [40,1600]){const q=profile();q.contour.forEach(c=>c.hz=hz);expect(validPerformance(q,2)).toBe(true);}
+ for(const hz of [39.999,1600.001,Infinity,NaN]){const q=profile();q.contour[0].hz=hz;expect(validPerformance(q,2)).toBe(false);}
+});
+
+test('the unchanged physical source holds the top prepared soprano note at device sample rates',()=>{
+ for(const fs of [16000,44100,48000]){
+  const voice=new WasmVoice(fs);voice.setSource({f0:1600,glide:0,pressure:7.6,drift:0,vibratoDepth:0,voiced:true});voice.setGate(1);
+  const samples=voice.render(Math.round(fs*.3));expect(samples.every(x=>Number.isFinite(x)&&Math.abs(x)<1)).toBe(true);expect(Math.abs(1200*Math.log2(voice.state().f0/1600))).toBeLessThan(5);expect([...voice.state().orAreas].every(Number.isFinite)).toBe(true);
+ }
 });
 
 test('prepared French nasal vowels pass their native velum control instead of an unknown decorated vowel',()=>{
