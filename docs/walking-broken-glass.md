@@ -43,3 +43,7 @@ Browser, Playwright and layout-lint access remain declined in this chat. Native 
 Validation passed 187 native tests (two existing ignored), 473 Bun tests across 116 files, TypeScript, content/WASM verification and the production build. Four focused scene tests cover complete audible physical phrases, exact source-clock telemetry, quiet instrumental stretches, direct backward seeking, phone/landscape head framing, clear final faces, stair-flight/camera occlusion, the cut into the rescue, overhead up-vector restoration and retained-model ownership. Twenty native geometry views were inspected, with five final costume, corridor and staircase close-ups checked after framing fixes. These are not browser screenshots.
 
 Local HTTP checks matched all 692 built media files to the manifest and served the direct route, app bundles and six new media files correctly. The seven concurrently deployed Nightwish files were also verified against their live hashes and preserved without re-uploading.
+
+## Live release
+
+Application commit `89fb332` is live at [Walking on Broken Glass](https://agenticspiros.com/chimera-song-mouth/?scene=walking-broken-glass). All 17 changed files uploaded with the entry page last. Live verification matched 181 files, including the six new media assets, app bundles and twenty-four preserved performances, plus the direct scene route. The concurrent Nightwish files remain unchanged. The temporary publish job was removed. Browser/GPU playback and real-time recording remain untested for this scene.
