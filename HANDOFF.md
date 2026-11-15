@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all forty-eight concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -95,6 +95,9 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 
 - Crucified’s complete supplied film, approved three physical voices, original music, crowns and ornate clothes, hall, mirror, violin, bath, bonnet and golden cage; preserve independent retained singers and source-time staging. See [the notes](docs/crucified.md).
 - Go West’s complete supplied film, approved lead and answering physical chorus, original music, blue/yellow uniforms and star hats, red statues, rings, stairway, city, arrows, marching figures and stars; preserve both retained singers and source time. See [the notes](docs/go-west.md).
+
+- You Spin Me Round’s complete supplied video, approved physical voice, original music, purple velvet and eye-patch costumes, portrait frame, mirror ball, extra-arm choreography, band, flags, ribbons and confetti. Preserve the corrected opening rest, three borrowed head graphics and source time; see [the notes](docs/spin-round.md).
+- No Surprises’ complete supplied helmet take, approved quiet physical singing and original music, corrected opening words, short hair, transparent glass and reflections, rising water, submerged hold, drain and relieved ending. Preserve the single borrowed singer, mouth visibility and source clock; see [the notes](docs/no-surprises.md).
 
 ## Platform independence
 

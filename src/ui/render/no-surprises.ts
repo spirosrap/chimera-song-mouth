@@ -1,0 +1,43 @@
+import * as THREE from 'three';
+import {Anatomy3D} from './anatomy3d.ts';
+import {Beams} from './beams3d.ts';
+import {VoiceModel} from '../analysis.ts';
+import type {TeleTrack} from '../../show/tele.ts';
+import type {CameraView,CharacterId} from '../../scene/scene.ts';
+import {surprisePose,surpriseCamera,type SurprisePoint as P} from '../../scene/no-surprises.ts';
+const TAU=Math.PI*2;
+/** One retained airway, inside a transparent procedural helmet. */
+export class SurpriseStage{
+ readonly scene=new THREE.Scene();readonly camera=new THREE.PerspectiveCamera(32,4/3,1,3500);readonly singer=new THREE.Group();readonly head=new Anatomy3D();readonly hair=new Beams();readonly helmet=new THREE.Group();readonly water=new THREE.Group();readonly surface=new Beams();readonly glass:THREE.Mesh;readonly volume:THREE.Mesh;readonly reflections=new Beams();readonly bubbles:THREE.Mesh[]=[];readonly droplets:THREE.Mesh[]=[];readonly lamps:THREE.Mesh[]=[];readonly rim:THREE.Mesh[]=[];
+ private meshes:THREE.Mesh[]=[];private inks:Beams[]=[this.hair,this.surface,this.reflections];private width=1280;private height=720;private last:number|null=null;private epoch=-1;private veil:THREE.Mesh;private dimmer:THREE.Mesh;
+ constructor(readonly model:VoiceModel,readonly track:TeleTrack){
+  this.scene.background=new THREE.Color('#000204');this.scene.add(this.singer,this.helmet,this.water,this.surface.group,this.reflections.group);this.head.centred=true;this.head.attachAccessory(this.hair.group);this.singer.add(this.head.scene);this.inks.forEach(b=>this.style(b));this.buildHair();this.singer.position.y=145;this.head.scene.scale.setScalar(1.7);
+  this.mesh(this.singer,new THREE.CylinderGeometry(21,29,45,24),[0,-29,0],'#080d14').scale.z=.63;this.mesh(this.singer,new THREE.CylinderGeometry(12,12,8,24),[0,-8,0],'#0e1520').scale.z=.71;
+  this.glass=this.mesh(this.helmet,new THREE.CylinderGeometry(31,31,68,64,1,true),[0,157,0],'#9ab5c2');const glass=this.glass.material as THREE.MeshBasicMaterial;glass.transparent=true;glass.opacity=.065;glass.depthWrite=false;this.glass.renderOrder=80;
+  for(const y of [123,191]){const ring=this.mesh(this.helmet,new THREE.TorusGeometry(31,1.4,12,64),[0,y,0],'#36515a');ring.rotation.x=Math.PI/2;this.rim.push(ring);}const frame=this.ink(this.helmet);for(const s of [-1,1])this.line(frame,[[s*31,124,0],[s*31,189,0]],'#2d4a50',1.3);frame.end();
+  this.volume=this.mesh(this.water,new THREE.CylinderGeometry(30,30,1,64),[0,123,0],'#3c9b9b');const wm=this.volume.material as THREE.MeshBasicMaterial;wm.transparent=true;wm.opacity=.14;wm.depthWrite=false;this.volume.renderOrder=60;
+  for(let i=0;i<43;i++){const q=i*2.4,r=14+(i%5)*3.3;const drop=this.oval(this.helmet,[Math.cos(q)*r,126+(i*17)%60,Math.sqrt(Math.max(0,31**2-(Math.cos(q)*r)**2))],[.12+(i%3)*.07,.22+(i%4)*.08,.12],'#aecfc7');const m=drop.material as THREE.MeshBasicMaterial;m.transparent=true;m.opacity=.72;this.droplets.push(drop);}
+  for(let i=0;i<18;i++){const bubble=this.oval(this.water,[0,123,0],[.35,.5,.35],'#bddfd8');const m=bubble.material as THREE.MeshBasicMaterial;m.transparent=true;m.opacity=.53;this.bubbles.push(bubble);}
+  for(let i=0;i<2;i++){const light=this.box(this.helmet,2.5,46,2,'#82e4ee',[(i?1:-1)*37,157,-2]);this.lamps.push(light);}this.oval(this.helmet,[-40,142,-20],[1.8,4,1],'#abc8ca');this.oval(this.helmet,[39,149,-19],[.5,.7,.5],'#d39e5b');
+  this.dimmer=this.box(this.scene,2,2,.01,'#000000',[0,0,0]);this.dimmer.renderOrder=998;let m=this.dimmer.material as THREE.MeshBasicMaterial;m.transparent=true;m.depthTest=false;m.depthWrite=false;
+  this.veil=this.box(this.scene,2,2,.01,'#000000',[0,0,0]);this.veil.renderOrder=1000;m=this.veil.material as THREE.MeshBasicMaterial;m.transparent=true;m.depthTest=false;m.depthWrite=false;this.resize(1280,720);this.frame(0,false,0,'surprise-helmet',0);
+ }
+ private mesh(parent:THREE.Object3D,g:THREE.BufferGeometry,p:P,c:string){const m=new THREE.Mesh(g,new THREE.MeshBasicMaterial({color:c,side:THREE.DoubleSide}));m.position.set(...p);parent.add(m);this.meshes.push(m);return m;}
+ private box(parent:THREE.Object3D,w:number,h:number,d:number,c:string,p:P){return this.mesh(parent,new THREE.BoxGeometry(w,h,d),p,c);}
+ private oval(parent:THREE.Object3D,p:P,s:P,c:string){const m=this.mesh(parent,new THREE.SphereGeometry(1,12,8),p,c);m.scale.set(...s);return m;}
+ private style(b:Beams){for(const o of b.group.children){const m=(o as THREE.Mesh).material as THREE.Material;m.blending=THREE.NormalBlending;m.depthWrite=false;m.depthTest=true;}}
+ private ink(parent:THREE.Object3D){const b=new Beams();this.style(b);b.begin();parent.add(b.group);this.inks.push(b);return b;}
+ private line(b:Beams,p:P[],c:string,w=1,close=false){b.line(p.flat(),p.length,c,w,{alpha:1,close});}
+ private ring(b:Beams,c:P,u:P,v:P,col:string,w=1){this.line(b,Array.from({length:48},(_,i)=>{const q=i/48*TAU;return c.map((x,k)=>x+u[k]*Math.cos(q)+v[k]*Math.sin(q))as P;}),col,w,true);}
+ private fade(b:Beams,a:number){for(const o of b.group.children)((o as THREE.Mesh).material as THREE.Material).opacity=a;}
+ private buildHair(){const b=this.hair,k=this.model.tract.scale;b.begin();for(let i=0;i<95;i++){const q=i/95*TAU,end=Math.cos(q)>.3?.72:1.68;this.line(b,Array.from({length:12},(_,j)=>{const t=.05+j/11*end;return[(-2+8.7*Math.sin(t)*Math.cos(q))*k,(16.2+8*Math.cos(t))*k,8.8*Math.sin(t)*Math.sin(q)*k]as P;}),i%3?'#634e3a':'#8c7151',.9);}b.end();}
+ resize(w:number,h:number){this.width=Math.max(1,w);this.height=Math.max(1,h);this.camera.aspect=this.width/this.height;this.head.resize(w,h);this.inks.forEach(b=>b.setResolution(w,h));}
+ frame(time:number,playing:boolean,epoch:number,view:CameraView,_intensity:number,_speaker?:CharacterId){const p=surprisePose(time),c=surpriseCamera(view,this.width/this.height,p.t),reset=this.epoch!==epoch||this.last!==null&&Math.abs(p.t-this.last)>.25,dt=this.last===null?0:Math.max(0,Math.min(.05,p.t-this.last));this.last=p.t;this.epoch=epoch;if(reset)this.head.resetMotion();this.camera.fov=c.fov;this.camera.up.set(...c.up);this.camera.position.set(...c.position);this.camera.lookAt(...c.target);this.camera.updateProjectionMatrix();this.camera.updateMatrixWorld();this.singer.rotation.set(-p.breath*.055,0,p.tilt);this.head.scene.rotation.set(0,-Math.PI/2+p.turn,0);
+  const level=123+p.water*65;this.volume.visible=p.water>.001;this.volume.scale.y=Math.max(.001,p.water*65);this.volume.position.y=123+p.water*32.5;this.surface.begin();if(p.water>.001){for(let i=0;i<3;i++)this.ring(this.surface,[0,level+Math.sin(p.t*2+i)*.12,0],[30-i*.3,0,0],[0,0,30-i*.3],i?'#5caaaa':'#9bd4cf',i?1:1.6);}this.surface.end();this.fade(this.surface,.56);
+  this.bubbles.forEach((m,i)=>{const u=((p.t*1.1+i*3.13)%12)/12;m.visible=p.water>.03;m.position.set(Math.sin(i*2.4)*20,123+u*p.water*65,Math.cos(i*2.4)*20);m.scale.setScalar((.2+(i%4)*.1)*(1+p.breath));});this.droplets.forEach((m,i)=>{m.visible=p.drain>.1;m.position.y=126+(i*17)%60-Math.max(0,p.t-181)*(.015+i%3*.012);});this.lamps.forEach((m,i)=>{(m.material as THREE.MeshBasicMaterial).color.set('#82e4ee').lerp(new THREE.Color('#d59d58'),(1-p.blue)*.4);m.visible=p.t>76&&p.t<201;});
+  this.reflections.begin();for(const s of [-1,1]){this.line(this.reflections,[[s*4,179,30],[s*13,181,27],[s*21,181.5,21]],'#c8e9e9',1.6);this.line(this.reflections,[[-24,177,18],[-10,168,29],[2,159,30]],'#aed1d2',.85);if(p.t>77&&p.t<196)this.line(this.reflections,[[s*28,144,14],[s*29,168,11],[s*27,179,14]],'#a5dbe2',2.1);}this.reflections.end();this.fade(this.reflections,.6);
+  const msg=this.track.message(this.track.indexAt(p.t)),artic=VoiceModel.articFromArray(msg.t.artic),tele=playing?msg:null;this.scene.updateMatrixWorld(true);this.head.camera.copy(this.camera);this.head.camera.updateMatrixWorld();this.head.face.update(tele,dt);this.head.face.nod=0;this.head.face.tilt=0;this.head.face.lid=p.water>.7?.38:Math.exp(-(((p.t%6.7-5.4)/.14)**2));this.head.update(this.model,this.model.frame(artic),artic,tele,{pressure:true,particles:false,grid:false,calipers:false},dt);
+  const dir=this.camera.getWorldDirection(new THREE.Vector3());for(const [i,m]of [this.dimmer,this.veil].entries()){m.position.copy(this.camera.position).addScaledVector(dir,2-i*.2);m.quaternion.copy(this.camera.quaternion);m.scale.set(10,10,1);} (this.dimmer.material as THREE.MeshBasicMaterial).opacity=(1-p.light)*.82;(this.veil.material as THREE.MeshBasicMaterial).opacity=1-p.fade;this.scene.updateMatrixWorld(true);
+ }
+ dispose(){this.hair.group.removeFromParent();this.head.dispose();this.inks.forEach(b=>b.dispose());this.meshes.forEach(m=>{m.geometry.dispose();(m.material as THREE.Material).dispose();});}
+}

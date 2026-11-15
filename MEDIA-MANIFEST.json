@@ -2672,6 +2672,36 @@
       "sha256": "4b7ad8c4bd9e4580deee7cccf8148d0e7e55c142260f7103ced92c3ab36b8d2e"
     },
     {
+      "path": "public/scenes/no-surprises/backing.mp3",
+      "bytes": 7282220,
+      "sha256": "23e271a43e827fd1838bf1284d3c2d7e6a06c87e45c2061f919ad7e62fad619c"
+    },
+    {
+      "path": "public/scenes/no-surprises/credits.txt",
+      "bytes": 1415,
+      "sha256": "eafa7b7bc51f4a9899e9883c224031e609ea143f541148b8c7dd7226cd462a53"
+    },
+    {
+      "path": "public/scenes/no-surprises/lead.tele.gz",
+      "bytes": 1859169,
+      "sha256": "3ed7235947777cd222a4013d164b9f813c062f18da6fdd32529bec1050effd87"
+    },
+    {
+      "path": "public/scenes/no-surprises/mix.mp3",
+      "bytes": 7282220,
+      "sha256": "40ab5da6077a3ebedee65ae4ff5fd9150a2b534a635423f0db5fbbe0a4f4988a"
+    },
+    {
+      "path": "public/scenes/no-surprises/performance.json",
+      "bytes": 127367,
+      "sha256": "e7d9f777cf9bbc8c4d997bb35e418c0809096c67475d5d19fca70059db7cc291"
+    },
+    {
+      "path": "public/scenes/no-surprises/scene.json",
+      "bytes": 3599,
+      "sha256": "16136499c84b0a4ba0a27d0dcd91722521b2f001d9e85c86d21a360755bf8390"
+    },
+    {
       "path": "public/scenes/nothing-compares/backing.mp3",
       "bytes": 9874220,
       "sha256": "691352c931a23427c57d75659bf9624b94cba3dac40b56df3243c6d1ec572766"
@@ -3105,6 +3135,36 @@
       "path": "public/scenes/sledgehammer/scene.json",
       "bytes": 6963,
       "sha256": "ee4fb7b58129cdd9a46a97170e3261874463da4f42f7935076aaae662108e5eb"
+    },
+    {
+      "path": "public/scenes/spin-round/backing.mp3",
+      "bytes": 6306092,
+      "sha256": "3c3b57392486625623ba5dab144d0f6a8381ee5a1dd758f4895f7b1a90e42ceb"
+    },
+    {
+      "path": "public/scenes/spin-round/credits.txt",
+      "bytes": 1477,
+      "sha256": "9f72a50cf9e5f86dba286ea5d26715c64bceab5cfd289f15b41c48ff64703326"
+    },
+    {
+      "path": "public/scenes/spin-round/lead.tele.gz",
+      "bytes": 2151271,
+      "sha256": "bbbad05281ec70f464a3cac9fdc308f0903de24e268c9b3e8abaa1f809270304"
+    },
+    {
+      "path": "public/scenes/spin-round/mix.mp3",
+      "bytes": 6306092,
+      "sha256": "b802948e6f64f5d084b440602432ea7b9dee7a0ce307c64f6ade7deb9f9773ac"
+    },
+    {
+      "path": "public/scenes/spin-round/performance.json",
+      "bytes": 174357,
+      "sha256": "0f591458f0d7032373b25b0e2324666fe793cea2aad7fa586333019979e6ff0c"
+    },
+    {
+      "path": "public/scenes/spin-round/scene.json",
+      "bytes": 6565,
+      "sha256": "6b75f8686531446957a2c3c37149cfa8a664b19e8a4073bc3f074a31696f07ac"
     },
     {
       "path": "public/scenes/stonehenge/backing.mp3",
