@@ -28,7 +28,8 @@ From upstream’s README. It governs the engine and the single-mouth app. This e
    native speaker's check and must leave English unchanged.
 5. **The design language (the vector display) is settled**; the look within it can still evolve.
 6. **Nothing copyrighted in git**; MIT; a deterministic, real-time-safe engine.
-7. **Not now**: a DAW or sequencer, a light theme, MPE, multi-voice dialogue.
+7. **Not now**: a DAW or sequencer, a light theme, MPE, multi-voice dialogue, translating the
+   interface (the voice speaks and sings many languages; the labels stay in English).
 
 ## Run locally — Bun only
 
