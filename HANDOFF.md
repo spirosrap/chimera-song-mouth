@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-two concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-three concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -130,3 +130,14 @@ microphone. Read `docs/synnefoula-singer.md` before changing its presentation;
 it reuses the existing vocal/whistle telemetry and preserves every audio asset.
 
 The seven-video set is complete and live: Darkness, Crucified, Go West, Remember the Time, Shock the Monkey, You Spin Me Round and No Surprises. See [the verified release](docs/music-video-batch-20261115.md) for all approved controls, prepared assets, checks and deployment scope. Preserve the 752-file manifest and the full 52-performance collection.
+
+## Black Hole Sun addition · 16 November 2026
+
+Soundgarden’s full supplied 5:20 video is added at `?scene=black-hole-sun` with the
+owner-approved physical singer and original instrumental music. The strange
+suburb, distorted smiles, hilltop band, kitchen, television lounge, pool, black
+hole and flying debris use absolute-time procedural graphics. See
+[the scene notes](docs/black-hole-sun.md). Preserve the 758-file public baseline
+and all fifty-three concert/music-video performances. Source recordings and
+analysis remain outside the repository. Browser playback/export/layout were
+not retested because access remains declined.

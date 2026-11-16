@@ -1,0 +1,38 @@
+import {test,expect,spyOn} from 'bun:test';
+import {readFileSync} from 'node:fs';
+import {gunzipSync} from 'node:zlib';
+import * as THREE from 'three';
+import {initEngine} from './harness.ts';
+import {validateScene,sceneCamera,SCENE_SETTINGS} from '../src/scene/scene.ts';
+import {movieScene} from '../src/scene/library.ts';
+import {sunPose,sunPlace,sunCamera} from '../src/scene/black-hole-sun.ts';
+import {TeleTrack} from '../src/show/tele.ts';
+import {validPerformance} from '../src/band/performance.ts';
+import type {Arrangement} from '../src/band/types.ts';
+import {Beams} from '../src/ui/render/beams3d.ts';
+await initEngine();
+const {BlackHoleStage}=await import('../src/ui/render/black-hole-sun.ts'),{VoiceModel}=await import('../src/ui/analysis.ts');
+const file=(n:string)=>readFileSync(new URL(`../public/scenes/black-hole-sun/${n}`,import.meta.url)),scene=validateScene(JSON.parse(file('scene.json').toString())),score:Arrangement=JSON.parse(file('performance.json').toString()),raw=gunzipSync(file('lead.tele.gz')),track=new TeleTrack(raw.buffer.slice(raw.byteOffset,raw.byteOffset+raw.byteLength));
+test('the complete Black Hole Sun adds its own cast, suburb cameras and original instrumental recording',()=>{
+ expect(movieScene('black-hole-sun')).toBeDefined();expect(movieScene('no-surprises')).toBeDefined();expect(scene.setting).toBe('blackhole');expect(scene.duration).toBeGreaterThan(320);expect(scene.duration).toBeLessThan(320.6);expect(scene.characters.map(c=>c.id)).toEqual(['sun-chris']);expect(scene.cues.length).toBe(49);expect(scene.shots.length).toBe(46);expect(score.parts[0].melody!.notes.length).toBe(264);expect(score.parts[1].recordingType).toBe('instrumental');expect(scene.cues[0].start).toBeGreaterThan(14);expect(scene.cues.at(-1)!.end).toBeGreaterThan(298);
+ for(const [t,v]of [[10,'sun-dawn'],[27,'sun-preacher'],[38,'sun-kitchen'],[47,'sun-dog'],[54,'sun-singer'],[75,'sun-television'],[102,'sun-barbecue'],[110,'sun-icecream'],[136,'sun-pool'],[147,'sun-doll'],[169,'sun-vortex'],[190,'sun-suction'],[245,'sun-blue'],[276,'sun-dark']]as const)expect(sceneCamera(scene,t,'auto')).toBe(v);
+ expect(()=>validateScene({...scene,characters:[{...scene.characters[0],id:'darkness-justin'}]})).toThrow();expect(()=>validateScene({...scene,shots:[{time:0,view:'lullaby-singer'}]})).toThrow('camera');
+});
+test('source-aligned physical singing has audible phrases, finite exact mouth clocks and instrumental rests',()=>{
+ const part=score.parts[0];expect(part.effects).toBeUndefined();expect(part.recordingType).toBeUndefined();expect(validPerformance(part.performance!,score.duration)).toBe(true);expect(track.duration).toBeCloseTo(scene.duration,1);expect(part.performance!.phrases.length).toBeGreaterThan(30);
+ for(const ph of part.performance!.phrases){const end=ph.start+ph.phones.reduce((s,p)=>s+p.duration,0);let peak=0;for(let j=track.indexAt(ph.start);j<=track.indexAt(end);j++)peak=Math.max(peak,track.message(j).t.outRms);expect(peak).toBeGreaterThan(.0001);}
+ for(let j=0;j<track.frames;j++){const t=track.message(j).t,clock=j/20;expect(t.clock).toBeCloseTo(clock,4);expect([...t.artic].every(Number.isFinite)).toBe(true);if(clock<14||clock>171&&clock<205||clock>302)expect(t.outRms).toBeLessThan(.00001);}
+});
+test('smile distortion, rotating black hole, flying neighbours and debris restore exactly on backward seeks',()=>{
+ expect(sunPose(NaN)).toEqual(sunPose(0));const model=new VoiceModel(track.body,track.sampleRate),stage=new BlackHoleStage(model,track);const snapshot=()=>[...Object.values(stage.rooms).map(g=>g.visible),...stage.neighbours.flatMap(n=>[...n.root.matrixWorld.elements,...n.face.matrixWorld.elements,...n.mouth.scale.toArray(),...n.hands.flatMap(h=>h.matrixWorld.elements)]),...stage.holes.flatMap(g=>[g.visible,...g.matrixWorld.elements]),...stage.debris.flatMap(g=>[g.visible,...g.matrixWorld.elements]),...stage.fragments.flatMap(g=>[g.visible,...g.matrixWorld.elements]),...stage.dog.matrixWorld.elements,...stage.bottle.matrixWorld.elements,...stage.doll.matrixWorld.elements,...stage.musicians.flatMap(m=>m.arms.flatMap(a=>a.matrixWorld.elements)),...stage.camera.up.toArray(),...stage.camera.matrixWorld.elements];
+ try{for(const t of [10,22,27,32,38,47,54,75,102,110,136,147,169,190,214,245,276,282,313,319]){const view=sceneCamera(scene,t,'auto');stage.frame(t,true,1,view,.8);const a=snapshot();expect(a.every(v=>typeof v==='boolean'||Number.isFinite(v))).toBe(true);expect(Object.values(stage.rooms).filter(g=>g.visible).length).toBe(1);stage.frame(292,true,2,'sun-vortex',.8);stage.frame(t,false,3,view,.8);expect(snapshot()).toEqual(a);}expect(stage.actors.length).toBe(2);expect(stage.neighbours.length).toBe(8);expect(stage.musicians.length).toBe(6);stage.frame(22,false,1,'sun-street',0);const small=stage.neighbours[1].mouth.scale.x;expect(stage.debris.every(m=>!m.visible)).toBe(true);stage.frame(190,false,1,'sun-suction',0);expect(stage.neighbours[1].mouth.scale.x).toBeGreaterThan(small);expect(stage.debris.every(m=>m.visible)).toBe(true);stage.frame(54,false,1,'sun-chris',0);expect(stage.rooms.band.visible).toBe(true);stage.frame(276,false,1,'sun-chris',0);expect(stage.rooms.void.visible).toBe(true);
+ }finally{stage.dispose();model.dispose();}
+});
+test('desktop and phone singer heads fit, mouths stay clear, and graphics preserve the retained singer and shared beam materials',()=>{
+ const model=new VoiceModel(track.body,track.sampleRate),stage=new BlackHoleStage(model,track),shared=new Beams();try{for(const [w,h]of [[960,540],[375,430]])for(const [t,v,index]of [[54,'sun-singer',0],[32,'sun-band',0],[245,'sun-blue',1],[276,'sun-dark',1]]as const){stage.resize(w,h);stage.frame(t,true,1,v,.8);const a=stage.actors[index];let count=0,inside=true;a.head.scene.traverseVisible(o=>{let q:THREE.Object3D|null=o;while(q){if(q===a.ornaments)return;q=q.parent;}const m=o as THREE.Mesh<THREE.InstancedBufferGeometry>,pos=m.geometry?.getAttribute('instanceStart');if(pos)for(let j=0;j<m.geometry.instanceCount;j++){const p=new THREE.Vector3().fromBufferAttribute(pos,j).applyMatrix4(m.matrixWorld).project(stage.camera);inside&&=[p.x,p.y,p.z].every(Number.isFinite)&&Math.max(Math.abs(p.x),Math.abs(p.y))<.99&&Math.abs(p.z)<1;count++;}});expect(count).toBeGreaterThan(1000);expect(inside).toBe(true);
+  const face=a.root.localToWorld(new THREE.Vector3(0,15,27)),ray=new THREE.Raycaster(stage.camera.position,face.clone().sub(stage.camera.position).normalize()),distance=stage.camera.position.distanceTo(face),blockers:THREE.Object3D[]=[];stage.rooms[sunPlace(v,t)].traverseVisible(o=>{const m=o as THREE.Mesh;if(m.isMesh&&!(m as any).isLineSegments2&&(m.material as THREE.Material).opacity>.9&&!a.root.getObjectById(m.id))blockers.push(o);});expect(ray.intersectObjects(blockers,false).some(h=>h.distance<distance-.1)).toBe(false);for(const view of SCENE_SETTINGS.blackhole.cameras){const c=sunCamera(view,w/h,t);expect([...c.target,...c.position,...c.up,c.fov].every(Number.isFinite)).toBe(true);}}
+  // The close-up camera follows the flying resident rather than pointing below their face.
+  for(const t of [214,282]){stage.frame(t,false,1,'sun-smile',0);const n=stage.neighbours[1],face=n.face.localToWorld(new THREE.Vector3()).project(stage.camera);expect(Math.max(Math.abs(face.x),Math.abs(face.y))).toBeLessThan(.15);}
+  for(const o of shared.group.children){const m=(o as THREE.Mesh).material as THREE.Material;expect(m.blending).toBe(THREE.CustomBlending);expect(m.blendEquation).toBe(THREE.MaxEquation);}
+ }finally{const dispose=spyOn(VoiceModel.prototype,'dispose');stage.dispose();expect(dispose).toHaveBeenCalledTimes(0);dispose.mockRestore();model.dispose();shared.dispose();}
+});

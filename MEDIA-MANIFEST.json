@@ -1682,6 +1682,36 @@
       "sha256": "777edcf05c2dc505015cd862415c662cad4864492f0414d06702baa9c5931942"
     },
     {
+      "path": "public/scenes/black-hole-sun/backing.mp3",
+      "bytes": 10256684,
+      "sha256": "c1ba0a097368bb5c51f7467262addbdfcc55fe74e7e9263177233d6bd47600d6"
+    },
+    {
+      "path": "public/scenes/black-hole-sun/credits.txt",
+      "bytes": 1615,
+      "sha256": "6ff7ae144f6fce40cec31027585a81fb502a60c01f48f12837da79024d3629c9"
+    },
+    {
+      "path": "public/scenes/black-hole-sun/lead.tele.gz",
+      "bytes": 2869185,
+      "sha256": "895f68e4892d3da6c9502ad6556e48ab4fb4b4fb3f69c421adf3905ae1f1f4de"
+    },
+    {
+      "path": "public/scenes/black-hole-sun/mix.mp3",
+      "bytes": 10256684,
+      "sha256": "b5d23d09f55e4c7157863b17981f443b0edc3e15a8f9c2a66f9f4bd7378199b3"
+    },
+    {
+      "path": "public/scenes/black-hole-sun/performance.json",
+      "bytes": 195077,
+      "sha256": "b1afb37ed6a1cab37f49380593b49cde827eddafff8705a465301a00db317a5e"
+    },
+    {
+      "path": "public/scenes/black-hole-sun/scene.json",
+      "bytes": 7387,
+      "sha256": "9231bf9e5ba781908f109058047242733d5e783c1f1a65fade3a7cbaf67ba996"
+    },
+    {
       "path": "public/scenes/bon-jovi-always/backing.mp3",
       "bytes": 11720492,
       "sha256": "982fe6b862541dfd8ca4becf898ed94c404be52a2db4857e0a7c27ec64f12f21"
