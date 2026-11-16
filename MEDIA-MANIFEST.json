@@ -1547,6 +1547,41 @@
       "sha256": "f45c9a28c9efe0f11e32cb54e1e8ef9f9ceecf25c71ce2982563987f03c895d1"
     },
     {
+      "path": "public/scenes/apt/backing.mp3",
+      "bytes": 5562668,
+      "sha256": "73db5d91c6b9332254bee7714a42dbe94eebb9d362bb3b363ebc8b0f5f9e2716"
+    },
+    {
+      "path": "public/scenes/apt/bruno.tele.gz",
+      "bytes": 1458832,
+      "sha256": "96b93fc3944367edca4c00c20ac7a0bf96d3f74a24b5033c9feffeb20a9db66f"
+    },
+    {
+      "path": "public/scenes/apt/credits.txt",
+      "bytes": 2133,
+      "sha256": "b39be4e6c6f615b0178d9ad3433f3fc0c2e86498e6c2096bbc589f3f2a6a302b"
+    },
+    {
+      "path": "public/scenes/apt/mix.mp3",
+      "bytes": 5562668,
+      "sha256": "8a8eed17432ada28d48a7aea073323da3f83afcda2b7d2418f78d831dc26c8ef"
+    },
+    {
+      "path": "public/scenes/apt/performance.json",
+      "bytes": 276824,
+      "sha256": "d0b0950329240c75cd0677beca13d1858536d74a87f533283447d1cc9e2c0725"
+    },
+    {
+      "path": "public/scenes/apt/rose.tele.gz",
+      "bytes": 1767210,
+      "sha256": "702ad3ffe07bc27390d9b016f55813fee0aff4b1d232ce6b31e73036844fc350"
+    },
+    {
+      "path": "public/scenes/apt/scene.json",
+      "bytes": 8407,
+      "sha256": "a9c92c2bd61ff79105eee866930e9a0af497e3d37c34b88c7226d5dae6cd7996"
+    },
+    {
       "path": "public/scenes/arrival/backing.mp3",
       "bytes": 951596,
       "sha256": "676658d11b8805b020dc395982c0161a8a45db0f1c2c77af4efc3023559bc957"

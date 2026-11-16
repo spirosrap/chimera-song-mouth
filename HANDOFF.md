@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-one concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -311,3 +311,18 @@ across 134 files, TypeScript, all 804 manifest entries, unchanged WASM,
 production build, built hashes and local HTTP delivery. Only documentation
 changed after the verified production build. Browser playback/export/layout
 remain untested because access remains declined in this chat.
+
+## APT. addition · 16 November 2026
+
+The complete supplied ROSÉ and Bruno Mars video is added at `?scene=apt`, with
+original music and two independent physical singers. The owner approved the
+duet audition. Keep the Korean opening, explicit 아파트 and 건배 phones, English
+verses, bridge, shared chant registers and answering calls. The pink studio has
+leather jackets, white shirts, blonde curls, cap/sunglasses, red plaid, drums,
+microphones, drummer swaps, paper heads, star glasses, cheek kiss and floor gag,
+circular views, flags, bow, clapperboard, silhouettes, guitars and dance ending.
+Six graphics borrow two retained singers. Preserve the source clock, paper crop,
+silhouette buffer ownership, actual lip clearance, all 811 public assets and
+sixty-one concert/music-video performances. See [the notes](docs/apt.md).
+Raw source film, frames, stems and model caches remain private. Browser
+playback/export/layout remain untested because access remains declined in this chat.

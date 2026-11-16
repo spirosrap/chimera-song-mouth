@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 804 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 811 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -145,6 +145,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | R.E.M. — Losing My Religion | 4:54 | `?scene=losing-religion` | Amber room, chair and floor gestures, mandolin band, giant wings, blue garden, workshop and red curtains; original music and physical singing |
 | Beck — Loser | 3:53 | `?scene=beck-loser` | Sunny pavement, monochrome coffin and guitar, busker, white suit, red graveyard dancers, cars, stage fire and dog; original music and two physical voices |
 | Tommy Cash — Espresso Macchiato | 3:13 | `?scene=espresso-macchiato` | Two suits and coffee cups, split-screen dance, half-and-half outfit, giant ingredients, security puppeteers, swing and flying beans; original music and physical vocals |
+| ROSÉ & Bruno Mars — APT. | 2:54 | `?scene=apt` | Pink studio, two physical singers, drums, microphones, paper portraits, star glasses, silhouettes, guitars and dance; original music |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -314,3 +315,5 @@ Losing My Religion adds the full supplied R.E.M. video as an independent perform
 Loser adds the full supplied Beck video as an independent scene; see [the performance notes](docs/beck-loser.md). All preceding public media remain byte-for-byte preserved.
 
 Espresso Macchiato adds the complete supplied official video as an independent performance; see [the scene notes](docs/espresso-macchiato.md). All preceding public media remain byte-for-byte preserved.
+
+APT. adds the complete supplied official video with an independent physical duet; see [the scene notes](docs/apt.md). All earlier public media remain byte-for-byte preserved.
