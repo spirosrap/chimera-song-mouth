@@ -299,3 +299,15 @@ phones, quiet windows, exact 20Hz clocks, source-time seeking, reparenting and
 owned graphics. See [the notes](docs/espresso-macchiato.md). Original film, frames,
 stems and models remain private. Browser playback/export/layout remain untested
 because access remains declined in this chat.
+
+Espresso Macchiato is live and verified. Runtime
+`01213a9110d07277926feb1449900269cd611fe4` was pushed; all 17 changed files
+published successfully (`DEPLOY_EXIT=0`), media first and index last. Live checks
+matched 303 files, including every current app bundle, six new scene assets and
+41 preserved performances, plus the clean direct route. The temporary upload
+job and plist were removed. All 798 earlier public files remain byte-identical.
+Required checks passed 195 native tests (two existing ignored), 557 Bun tests
+across 134 files, TypeScript, all 804 manifest entries, unchanged WASM,
+production build, built hashes and local HTTP delivery. Only documentation
+changed after the verified production build. Browser playback/export/layout
+remain untested because access remains declined in this chat.

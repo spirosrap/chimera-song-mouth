@@ -70,3 +70,12 @@ tests, 557 Bun tests across 134 files, TypeScript, all 804 public-file checks
 and the unchanged WASM, production build, all built public hashes and local
 HTTP delivery of the direct route, app bundles and six new scene files.
 The deployment contains only 17 changed files, media first and index last.
+
+Runtime `01213a9110d07277926feb1449900269cd611fe4` is pushed and live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=espresso-macchiato>.
+The Mac mini uploader published all 17 files with `DEPLOY_EXIT=0`. Live
+verification matched 303 files, including every current app bundle, six new
+scene assets and 41 preserved performances, plus the clean direct route.
+The temporary upload job and plist were removed. Only documentation changed
+after the verified production build. Browser playback/export/layout remain
+untested as described above.

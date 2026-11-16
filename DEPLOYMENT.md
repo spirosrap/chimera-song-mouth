@@ -223,3 +223,23 @@ TypeScript, content/WASM checks, production build, built hashes and local HTTP
 delivery. Only documentation changed after the verified build. See
 [the performance notes](docs/beck-loser.md). Browser playback/export/layout
 remain untested because access remains declined in this chat.
+
+## Espresso Macchiato · 16 November 2026
+
+The complete supplied Tommy Cash official video is live at
+`?scene=espresso-macchiato`, with original instrumental music and physical
+vocals, including the owner-approved clearer English verses. The reconstructed
+scene includes the boxes, two suits, split portraits/dance, costume fusion,
+giant coffee ingredients, apron/security dancers, lift, swing and flying beans.
+Seven physical head graphics share one retained singer. Runtime
+`01213a9110d07277926feb1449900269cd611fe4` was pushed before all 17 changed
+files uploaded successfully (`DEPLOY_EXIT=0`), media first and index last.
+Live checks matched 303 files, including every current app bundle, six new scene
+assets and 41 preserved performances, plus the clean direct route. The temporary
+upload job and plist were removed. All 798 earlier public files remain
+byte-identical; the manifest contains 804 files. Validation passed 195 native
+tests (two existing ignored), 557 Bun tests across 134 files, TypeScript,
+content/WASM checks, production build, built hashes and local HTTP delivery.
+Only documentation changed after the verified build. See
+[the performance notes](docs/espresso-macchiato.md). Browser playback/export/layout
+remain untested because access remains declined in this chat.
