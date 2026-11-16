@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-two concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-three concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -368,3 +368,19 @@ phone/desktop native head-clearance checks cover the background occlusion
 regression. Only documentation changed after the verified build. Browser
 playback, export and layout remain untested because access remains declined
 in this chat.
+
+## bad guy addition · 16 November 2026
+
+The full supplied Billie Eilish video is added at `?scene=bad-guy`, with the
+owner-approved physical voice, spoken opening, singing, calls and red-room
+ending, plus original instrumental music. Six looks borrow one retained model.
+Keep the yellow paper, blue-ended hair and oversized clothes, bruised knees,
+teal room, toy car and four distinct riders, pigeons and cereal, red desert,
+snorkel goggles, water bags, floral spiral, lamps and push-up ending. Preserve
+absolute source time, camera up restoration, cycle visibility and all-cut native
+head-clearance checks. The paper opening, knees and blackout intentionally omit
+the face. Manual camera fallbacks use the current scene catalog, fixing recent
+videos' courtroom choices. Preserve all 823 public files and 63 concert/music-video
+performances. See [the notes](docs/bad-guy.md). Raw film, frames, stems and model
+caches remain private. Browser playback/export/layout remain untested because
+access remains declined in this chat.

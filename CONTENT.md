@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 817 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 823 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -147,6 +147,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Tommy Cash — Espresso Macchiato | 3:13 | `?scene=espresso-macchiato` | Two suits and coffee cups, split-screen dance, half-and-half outfit, giant ingredients, security puppeteers, swing and flying beans; original music and physical vocals |
 | ROSÉ & Bruno Mars — APT. | 2:54 | `?scene=apt` | Pink studio, two physical singers, drums, microphones, paper portraits, star glasses, silhouettes, guitars and dance; original music |
 | Lady Gaga — Abracadabra | 4:30 | `?scene=abracadabra` | Red queen and spiked hat, white corset and flowing cape, industrial hall, 32 dancers, floor poses, circles and lifts; original music and physical singing |
+| Billie Eilish — bad guy | 3:26 | `?scene=bad-guy` | Torn yellow paper, oversized costumes, toy car and riders, pigeons/cereal, desert, goggles, spiral, water bags and red push-up room; original music and physical voice |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -320,3 +321,5 @@ Espresso Macchiato adds the complete supplied official video as an independent p
 APT. adds the complete supplied official video with an independent physical duet; see [the scene notes](docs/apt.md). All earlier public media remain byte-for-byte preserved.
 
 Abracadabra adds the complete supplied video with original instrumental music and a physical singer; see [the scene notes](docs/abracadabra.md). Earlier public media remain byte-for-byte preserved.
+
+bad guy adds the complete supplied colourful video with original instrumental music and the approved physical voice; see [the notes](docs/bad-guy.md). All earlier public media remain unchanged.

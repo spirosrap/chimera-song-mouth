@@ -1732,6 +1732,36 @@
       "sha256": "680eae8d09ac91bb98a6cabb609fb82843cc54f020d703a51ac0ec46f7fbb65d"
     },
     {
+      "path": "public/scenes/bad-guy/backing.mp3",
+      "bytes": 6604844,
+      "sha256": "c6c699459d268ae4fa168a8a50269b7abc0446052bfc3fd287e0011e2d9de699"
+    },
+    {
+      "path": "public/scenes/bad-guy/credits.txt",
+      "bytes": 2091,
+      "sha256": "8426b9e2ad04b13b7fbf3aea489c08c17b522221a278c727ce6e05f390a34365"
+    },
+    {
+      "path": "public/scenes/bad-guy/lead.tele.gz",
+      "bytes": 1921536,
+      "sha256": "170e4f608b497c618b33df2b5368ddabd5897bcf4eba2108bb34fd9790a47692"
+    },
+    {
+      "path": "public/scenes/bad-guy/mix.mp3",
+      "bytes": 6604844,
+      "sha256": "b334cfb625d72497f673c85ce823a1e32d89302cb9bb5c1cc38f9ab805880584"
+    },
+    {
+      "path": "public/scenes/bad-guy/performance.json",
+      "bytes": 138799,
+      "sha256": "cd1e66df3504145ce9e5efc7ab82c88b0ef46fbebd7494496c3f893eb7a388bf"
+    },
+    {
+      "path": "public/scenes/bad-guy/scene.json",
+      "bytes": 6898,
+      "sha256": "b8b51a6c142eff34974fe7e01846aa36302605afb6c0fde38da97c3930be5d1e"
+    },
+    {
       "path": "public/scenes/beck-loser/backing.mp3",
       "bytes": 7446572,
       "sha256": "dce7235cf2ff0e0998109d80ca066948c6a5afcccaf68050c9684cb247160708"
