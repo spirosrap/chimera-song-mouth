@@ -55,3 +55,18 @@ Audio verification found 3,976 finite frames in each exact 20Hz mouth track, wit
 The unchanged English-only caption listening aid mishears 217 of 310 words (70.0%). It hears each short caption alone, including calls and overlapping dialogue, so this remains a diagnostic rather than an intelligibility pass. The owner-approved audition governs the voice; no judge or threshold was changed.
 
 Release checks passed 195 native tests (two existing ignored), 578 Bun tests across 140 files, TypeScript, all 836 content hashes, the unchanged production WASM, production build, every built public hash and local HTTP delivery of the direct route, app bundles and seven new scene files. Seventeen focused catalog/scene checks and five final scene/control checks passed. All visible performer cuts passed native phone/desktop framing and opaque-mouth-ray checks. Browser playback, export and layout were not retested.
+
+Taste is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=taste>.
+Runtime `db2ca9335002289ef5542b709e685f2d8a5ae814` was pushed before all 18 changed files uploaded successfully
+with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP checks matched
+335 files, including every current app bundle, seven new scene assets and 46
+preserved performances, plus the clean direct route. The temporary upload job
+and plist were removed. All 829 preceding public files remain byte-identical;
+the manifest contains 836 files. Required checks passed 195 native tests (two
+existing ignored), 578 Bun tests across 140 files, TypeScript, content/WASM
+verification, production build, built hashes and local HTTP delivery. Forty-six
+native geometry projections and final hospital/lounge/prop reviews accompany
+all-visible-performer phone/desktop head framing and opaque-mouth-ray checks.
+Only documentation changed after the verified build. Browser playback, export
+and layout remain untested because access remains declined in this chat.

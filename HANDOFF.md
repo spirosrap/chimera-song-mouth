@@ -435,3 +435,18 @@ access remains declined in this chat.
 ## Taste addition · 16 November 2026
 
 The full supplied Sabrina Carpenter video is added at `?scene=taste`, with the owner-approved physical singing, opening lullaby, calls and distinct final reply voice over original instrumental music and retained effects. Eleven costume graphics borrow two retained performers. Preserve the vanity, blonde blue-dress singer, dark-haired rival, balcony, pink hospital gown, nurse and clinicians, lounge, feathered stairs, pool, funeral and coffee cups. Source time restores all props and roles; every visible performer head is checked against opaque sets and costume ornaments at phone and desktop framing. Keep all 836 public files and 65 concert/music-video performances. See [the scene notes](docs/taste.md). Raw film, frames, stems and analysis caches remain private.
+
+Taste is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=taste>.
+Runtime `db2ca9335002289ef5542b709e685f2d8a5ae814` was pushed before all 18 changed files uploaded successfully
+with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP checks matched
+335 files, including every current app bundle, seven new scene assets and 46
+preserved performances, plus the clean direct route. The temporary upload job
+and plist were removed. All 829 preceding public files remain byte-identical;
+the manifest contains 836 files. Required checks passed 195 native tests (two
+existing ignored), 578 Bun tests across 140 files, TypeScript, content/WASM
+verification, production build, built hashes and local HTTP delivery. Forty-six
+native geometry projections and final hospital/lounge/prop reviews accompany
+all-visible-performer phone/desktop head framing and opaque-mouth-ray checks.
+Only documentation changed after the verified build. Browser playback, export
+and layout remain untested because access remains declined in this chat.
