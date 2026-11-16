@@ -50,3 +50,12 @@ Full verification passed: 195 native tests with two existing ignored tests,
 529 Bun tests across 127 files, TypeScript, all 758 manifest entries, the
 production build and local HTTP delivery of the direct route, app bundles and
 all six scene files. The precompiled engine retains its provenance checksum.
+
+The scene is live at [Black Hole Sun](https://agenticspiros.com/chimera-song-mouth/?scene=black-hole-sun).
+Runtime commit `e9fde3ae43f2282b5dec2c8fdc4f8a4e960f768d` was pushed before deployment. The existing Mac mini
+uploader published 17 changed files successfully, with `DEPLOY_EXIT=0`; media
+went first and the app index last. All 257 checked live files matched their
+local SHA-256 values, including every current app bundle, the six new scene
+files and 34 preserved performances. The clean direct route returned the new
+index. The task's temporary launchd job and plist were removed after success.
+Only these documentation notes changed after the verified production build.

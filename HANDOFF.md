@@ -141,3 +141,10 @@ hole and flying debris use absolute-time procedural graphics. See
 and all fifty-three concert/music-video performances. Source recordings and
 analysis remain outside the repository. Browser playback/export/layout were
 not retested because access remains declined.
+
+Black Hole Sun is live and verified. Runtime commit `e9fde3a` was pushed and
+17 changed files published successfully; 257 live file hashes, the clean route
+and 34 preserved performances matched. Full checks passed: 195 native tests
+(two existing ignored), 529 Bun tests across 127 files, typecheck, manifest,
+production build and local HTTP integration. The following documentation commit
+does not change the verified runtime build.

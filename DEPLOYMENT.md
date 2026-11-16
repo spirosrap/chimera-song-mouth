@@ -113,3 +113,15 @@ The upload completed with 67 changed files, media first and index.html last, and
 all seven new direct routes and 27 preserved performances. The temporary Mac GUI 501
 job was unloaded and removed. Browser playback/layout/export were not retested.
 See [the complete release notes](docs/music-video-batch-20261115.md).
+
+## Black Hole Sun · 16 November 2026
+
+Runtime `e9fde3ae43f2282b5dec2c8fdc4f8a4e960f768d` adds the full approved physical-voice performance at
+`?scene=black-hole-sun`. The verified 758-file public build preserves all 752
+preceding assets. The existing Mac mini uploader published only 17 changed
+files, media first and index last, and exited successfully. All 257 checked
+live files and the clean new route matched the build, including all current
+app bundles and 34 preceding performances. The temporary task launchd job
+and plist were removed. No source recording, frame, stem or model cache was
+uploaded. See [the scene and validation notes](docs/black-hole-sun.md). Browser
+playback/export/layout remain untested in this chat because access was declined.
