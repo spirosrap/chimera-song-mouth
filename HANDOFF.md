@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-three concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-four concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -148,3 +148,16 @@ and 34 preserved performances matched. Full checks passed: 195 native tests
 (two existing ignored), 529 Bun tests across 127 files, typecheck, manifest,
 production build and local HTTP integration. The following documentation commit
 does not change the verified runtime build.
+
+## Land of Confusion addition · 16 November 2026
+
+Genesis’s full supplied 5:29 Spitting Image video is added at
+`?scene=land-confusion`, including bedroom dialogue, with the owner-approved
+physical singing and two distinct spoken voices over original music. The brass
+bed, chimp and teddy, puppet band and political screens, jungle and dinosaurs,
+flying superhero and cape, wrecked office, desert heads, crowd and wrong
+NUKE/NURSE button use source-time procedural graphics. Five head graphics borrow
+three retained models. See [the scene notes](docs/land-confusion.md). Preserve
+the 766-file public baseline and all fifty-four concert/music-video performances.
+Source video, frames, stems and model caches remain private. Browser playback,
+export and layout remain untested here because access was declined.

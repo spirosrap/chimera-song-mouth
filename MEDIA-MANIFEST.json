@@ -2412,6 +2412,46 @@
       "sha256": "5f79cc42d616914ccd8251365ceb6a5127648858e7aee6c688e57c9010f10390"
     },
     {
+      "path": "public/scenes/land-confusion/backing.mp3",
+      "bytes": 10527020,
+      "sha256": "9ba6f59ed655c600b00aa49ae8224ce7950f072886eddc994630c29bcdadce15"
+    },
+    {
+      "path": "public/scenes/land-confusion/credits.txt",
+      "bytes": 1795,
+      "sha256": "91493dc3b5cb60fe780098bb4878e7d48512d079fca16065a93991401f784691"
+    },
+    {
+      "path": "public/scenes/land-confusion/lead.tele.gz",
+      "bytes": 2721277,
+      "sha256": "474c4861a803a92f30ba7d4ec9f7154960a7b3dd173f15b79d2c370da5c7beb5"
+    },
+    {
+      "path": "public/scenes/land-confusion/mix.mp3",
+      "bytes": 10527020,
+      "sha256": "d067b29b590e174e3f5653cbaf701532430dddbb0a8eee01f06f78ad56334824"
+    },
+    {
+      "path": "public/scenes/land-confusion/nancy.tele.gz",
+      "bytes": 84829,
+      "sha256": "93382d6ea599f0c0c7306d2e89976ba231d549d09b3cf4faff4ae4ffe053d8dd"
+    },
+    {
+      "path": "public/scenes/land-confusion/performance.json",
+      "bytes": 216210,
+      "sha256": "4ec3336a139132620d5f479434eee6e51137696c2eaf2ac59de714be4f6142fd"
+    },
+    {
+      "path": "public/scenes/land-confusion/ronald.tele.gz",
+      "bytes": 354841,
+      "sha256": "94c55ca22b9f94dc881001c5947cd75868f8725d68c5bdb7c6b6c40fda2fcd9f"
+    },
+    {
+      "path": "public/scenes/land-confusion/scene.json",
+      "bytes": 9756,
+      "sha256": "3255b7fe553d6c7ff3a7b13b5ef293175c35a7d29b2f977446b885a473aedcf9"
+    },
+    {
       "path": "public/scenes/lullaby/backing.mp3",
       "bytes": 8007980,
       "sha256": "75635bc93663c0f730f7d91d91e571f99447c8671e5ae8d1f518e70bde3939f0"

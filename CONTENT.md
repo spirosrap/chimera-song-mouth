@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 758 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 766 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -138,6 +138,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Dead or Alive — You Spin Me Round | 3:17 | `?scene=spin-round` | Physical lead and original music, purple velvet/eye-patch costumes, gold portrait frame, mirror ball, arm choreography, band, flags, ribbons and confetti |
 | Radiohead — No Surprises | 3:48 | `?scene=no-surprises` | Quiet physical singer and original music, close portrait inside the transparent helmet, reflected lights, rising water, submerged hold, drain and relieved ending |
 | Soundgarden — Black Hole Sun | 5:20 | `?scene=black-hole-sun` | Hilltop band, strange suburb, kitchen and television lounge, warped smiles, pool, fiery black hole and rising debris; original music and physical singing |
+| Genesis — Land of Confusion | 5:29 | `?scene=land-confusion` | Spitting Image-style puppet band, brass bed, chimp, nightmare jungle, dinosaurs, political screens, Superman, crowd and wrong bedside button; original music and three physical voices |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -293,3 +294,5 @@ You Spin Me Round adds the complete supplied dance video, approved physical voic
 Remember the Time adds the full supplied Egyptian short film, original accompaniment, four approved physical dialogue/singing voices, royal court, entertainers, magic, chase, market, balcony and dance. Two dense closing call passages use approved estimated source phonetics. Shock the Monkey adds the full supplied video with its approved physical voice, original music, office, ritual double, scattered papers, projector, monkey, forest and water. See [Remember](docs/remember-time.md) and [Shock](docs/shock-monkey.md).
 
 Black Hole Sun adds the complete supplied video as an independent scene; see [its scene notes](docs/black-hole-sun.md) for the source-aligned physical voice, suburb reconstruction, approved audition and validation. All preceding public assets remain byte-for-byte preserved.
+
+Land of Confusion adds the full supplied puppet video, including the bedroom dialogue, as an independent scene. See [its scene notes](docs/land-confusion.md). All preceding media remain byte-for-byte preserved.
