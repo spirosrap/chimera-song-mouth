@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-four concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-five concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -168,3 +168,16 @@ route and 35 preserved performances matched. Full checks passed: 195 native
 tests (two existing ignored), 533 Bun tests across 128 files, typecheck, content
 manifest, production build and local HTTP integration. The following notes
 commit does not change the verified runtime build.
+
+## Rock DJ addition · 16 November 2026
+
+Robbie Williams’s full supplied 4:17 video is added at `?scene=rock-dj`, including
+the sung ending over the closing card. The owner-approved physical rap, singing
+and calls play over original instrumental music. The circular hatch, white
+stage, roller skaters and wheels, industrial fans, DJ booth and decks, clothes,
+tattoos, peeling panels, red anatomy, articulated skeleton and final DJ dance
+use source-time procedural graphics. One head graphic borrows one retained
+singer. Preserve the 772-file public baseline and all fifty-five concert and
+music-video performances. See [the scene notes](docs/rock-dj.md). Original film,
+frames, stems and local models remain private. Browser playback, export and
+layout remain untested here because access was declined.
