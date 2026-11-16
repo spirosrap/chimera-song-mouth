@@ -3562,6 +3562,36 @@
       "sha256": "8bfcb0a52922c2e3c5ec4c519af8def677c8d23f5fa1022c24c0ed517f6a3e89"
     },
     {
+      "path": "public/scenes/skibidi/backing.mp3",
+      "bytes": 6183212,
+      "sha256": "7a13c8d7a74b08fa416636ff7c0cfca52b7bd56610ae339675e5e6b6527bfd97"
+    },
+    {
+      "path": "public/scenes/skibidi/credits.txt",
+      "bytes": 1971,
+      "sha256": "8ea32527774d15d288bee2b0eb7f3c01bb42ab3b2d9600f525fa64d295fdbce5"
+    },
+    {
+      "path": "public/scenes/skibidi/lead.tele.gz",
+      "bytes": 1242064,
+      "sha256": "f7a02db70aae5ee59e5d544eb57165de952d6e5c3c641226d09b0bf9a37dd23b"
+    },
+    {
+      "path": "public/scenes/skibidi/mix.mp3",
+      "bytes": 6183212,
+      "sha256": "6f205a03826070646320472a076ec6402b12c5f659b87637b086450c493630fd"
+    },
+    {
+      "path": "public/scenes/skibidi/performance.json",
+      "bytes": 110140,
+      "sha256": "92da46c2887687fd3be9dd34fd025cd9d04e8d87d05ad89d54ab95502679db6f"
+    },
+    {
+      "path": "public/scenes/skibidi/scene.json",
+      "bytes": 7396,
+      "sha256": "49ddb339f6c6ebafb7a6080d7454134bfbf95a2da864171ea00138fb81f56425"
+    },
+    {
       "path": "public/scenes/sledgehammer/answer.tele.gz",
       "bytes": 952350,
       "sha256": "cd13e21b31724efd1e89aa89d71f0fc71d55c79553bf76b417cd92adde198f8a"

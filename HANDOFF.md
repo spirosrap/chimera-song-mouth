@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-five concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-six concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -450,3 +450,7 @@ native geometry projections and final hospital/lounge/prop reviews accompany
 all-visible-performer phone/desktop head framing and opaque-mouth-ray checks.
 Only documentation changed after the verified build. Browser playback, export
 and layout remain untested because access remains declined in this chat.
+
+## SKIBIDI addition · 17 November 2026
+
+The complete supplied Little Big video is added at `?scene=skibidi`, with original music and actual physical English singing and source-timed nonsense syllables. Nine costume graphics share one captured featured performance and borrow one retained model. Preserve the reciprocal chest-level fists, bent wrists, alternate knee lifts and heel taps; street, rooster, pram and baby, aerobics trio, pub, bathroom, overhead bed dance, park, alley crowd and giant reveal. Source time restores every pose and prop, and the bed camera restores its up vector. Every visible physical head passes native phone/desktop framing and opaque-mouth-ray checks. Keep all 842 public files and 66 concert/music-video performances. See [the scene notes](docs/skibidi.md). Raw source film, frames, stems and analysis caches stay private.

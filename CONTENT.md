@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 836 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 842 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -150,6 +150,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Billie Eilish — bad guy | 3:26 | `?scene=bad-guy` | Torn yellow paper, oversized costumes, toy car and riders, pigeons/cereal, desert, goggles, spiral, water bags and red push-up room; original music and physical voice |
 | Lil Nas X — MONTERO (Call Me by Your Name) | 3:10 | `?scene=montero` | Eden and serpent, pink guitar, blue wigs and pink fur, trial and chains, wings, inverted pole descent, lava, throne and final horns; original music and physical vocals |
 | Sabrina Carpenter — Taste | 3:18 | `?scene=taste` | Vanity, bedroom, balcony, pink hospital gown and nurse, lounge, feathered staircase, pool confrontation, funeral and coffee-cup walk; original music and two physical mouth-engine voices. |
+| Little Big — SKIBIDI | 3:13 | `?scene=skibidi` | Bent wrists and knee lifts, street, rooster, pram, aerobics trio, pub, bathroom, overhead bed dance, park, alley crowd and giant; original music and physical mouth-engine singing and chant. |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -329,3 +330,5 @@ bad guy adds the complete supplied colourful video with original instrumental mu
 MONTERO adds the full supplied fantasy video with original music and the approved physical narration, singing, rap and nasal humming; see [the scene notes](docs/montero.md). Earlier public media remain unchanged.
 
 Taste adds the complete supplied horror-comedy video with original music, approved physical singing and distinct closing dialogue. See [the scene notes](docs/taste.md). Earlier prepared media remain unchanged.
+
+SKIBIDI adds the full supplied strange-dance video with original music and an actual physical featured voice. See [the scene notes](docs/skibidi.md). All earlier prepared media remain unchanged.
