@@ -62,3 +62,12 @@ Required validation passed: 195 native tests with two existing ignored tests,
 545 Bun tests across 131 files, TypeScript, verification of all 785 public files
 and the unchanged WASM, the production build, built hashes and local HTTP
 delivery of the clean direct route, app bundles and all seven new scene files.
+
+The scene is live at [Danger! High Voltage](https://agenticspiros.com/chimera-song-mouth/?scene=danger-voltage).
+Runtime commit `073e649516cf37b5bc755f40cfd20eacbbba09c5` was pushed before deployment. The existing Mac mini
+uploader published all 18 changed files successfully, with `DEPLOY_EXIT=0`;
+media went first and the entry page last. All 284 checked live files match
+the local SHA-256 values, including every current app bundle, seven new assets
+and 38 preserved performances. The clean direct route returns the new index.
+The task’s temporary launchd job and plist were removed after success. Only
+documentation changed after the verified production build.

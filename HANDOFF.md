@@ -226,3 +226,11 @@ clear lips during the embrace, foreground flames only in their intended cut,
 See [the performance notes](docs/danger-voltage.md). Original film, frames,
 stems and models stay private. Browser playback, export and layout remain
 untested because access remains declined in this chat.
+
+Danger! High Voltage is live and verified. Runtime commit `073e649` was pushed;
+all 18 changed files published successfully. Live checks matched 284 files,
+including every current app bundle, seven new assets and 38 preserved
+performances, plus the clean route. The temporary uploader job was removed.
+Required checks passed 195 native tests (two existing ignored), 545 Bun tests,
+TypeScript, 785 manifest entries, production build and local HTTP delivery.
+Only documentation changed after the verified production build.

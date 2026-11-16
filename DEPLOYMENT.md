@@ -167,3 +167,20 @@ content/WASM checks, production build, built hashes and local HTTP delivery.
 The unchanged clarity aid is diagnostic; see [the notes](docs/babooshka.md).
 Browser playback/export/layout remain untested because access remains declined
 in this chat.
+
+## Danger! High Voltage · 16 November 2026
+
+The complete supplied Electric Six video is live at `?scene=danger-voltage`,
+with the approved physical duet, original music, repeated closing calls and
+instrumental tail. The green drawing room, glowing costumes, dance and embrace,
+moose ride and red-curtain saxophone finale use eight graphics borrowing two
+retained singers. Runtime commit `073e649` was pushed before all 18 changed
+files uploaded successfully, entry page last. All 284 checked live files match,
+including every current app bundle, seven new assets and 38 preserved
+performances, plus the clean route. The temporary uploader job was removed.
+All 778 earlier public files are byte-identical; the manifest contains 785 files.
+Validation passed 195 native tests (two existing ignored), 545 Bun tests across
+131 files, TypeScript, content/WASM checks, production build, built hashes and
+local HTTP delivery. The unchanged clarity aid is diagnostic; see
+[the performance notes](docs/danger-voltage.md). Browser playback/export/layout
+remain untested because access remains declined in this chat.
