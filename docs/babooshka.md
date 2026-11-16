@@ -62,3 +62,12 @@ The production build passed. All 778 built public assets match the manifest,
 and the direct route, app bundles and six new scene files served correctly
 over local HTTP. The changed-file upload plan contains 17 files, with media
 first and the entry page last.
+
+The scene is live at [Babooshka](https://agenticspiros.com/chimera-song-mouth/?scene=babooshka).
+Runtime commit `a6f8b15d4c4a1535b1695f1ae88734fc50f4144a` was pushed before deployment. The existing Mac mini
+uploader published all 17 changed files with `DEPLOY_EXIT=0`, media first and
+the app index last. All 277 checked live files match their local SHA-256 values,
+including every current app bundle, all six new scene files and 37 preserved
+performances. The clean direct route returns the new index. The task’s temporary
+launchd job and plist were removed after success. Only documentation changed
+after the verified production build.

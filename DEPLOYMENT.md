@@ -150,3 +150,20 @@ clean new route matched the build, including every current app bundle and
 removed. No source film, raw frame, stem or model cache was uploaded. See
 [the scene notes](docs/rock-dj.md). Browser playback/export/layout remain
 untested because access was declined.
+
+## Babooshka · 16 November 2026
+
+The complete supplied Kate Bush double-bass and warrior-costume video is live
+at `?scene=babooshka`, with the owner-approved physical singing and original
+music, three delayed title calls and the full instrumental dance ending.
+Two physical head graphics borrow one retained singer. The verified 778-file
+public build preserves all 772 preceding assets. Runtime commit `a6f8b15`
+was pushed before all 17 changed files uploaded successfully, entry page last.
+Live verification matched 277 files, including every current app bundle,
+the six new scene files and 37 preserved performances, plus the clean direct
+route. The temporary publish job was removed. Validation passed 195 native
+tests (two existing ignored), 541 Bun tests across 130 files, TypeScript,
+content/WASM checks, production build, built hashes and local HTTP delivery.
+The unchanged clarity aid is diagnostic; see [the notes](docs/babooshka.md).
+Browser playback/export/layout remain untested because access remains declined
+in this chat.

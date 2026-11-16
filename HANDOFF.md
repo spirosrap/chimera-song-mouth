@@ -203,3 +203,11 @@ explicit dictionary phones, 778-file public baseline and all fifty-six concert
 and music-video performances. See [the scene notes](docs/babooshka.md). Original
 video, frames, raw stems and model caches stay private. Browser playback,
 export and layout remain untested because access remains declined in this chat.
+
+Babooshka is live and verified. Runtime commit `a6f8b15` was pushed and
+all 17 changed files published successfully. Live checks matched 277 files,
+including every current app bundle, six new assets and 37 preserved
+performances, plus the clean route. The temporary uploader job was removed.
+Required checks passed 195 native tests (two existing ignored), 541 Bun tests,
+TypeScript, 778 manifest entries, production build and local HTTP delivery.
+Only documentation changed after the verified build.
