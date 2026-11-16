@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 829 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 836 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -149,6 +149,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Lady Gaga — Abracadabra | 4:30 | `?scene=abracadabra` | Red queen and spiked hat, white corset and flowing cape, industrial hall, 32 dancers, floor poses, circles and lifts; original music and physical singing |
 | Billie Eilish — bad guy | 3:26 | `?scene=bad-guy` | Torn yellow paper, oversized costumes, toy car and riders, pigeons/cereal, desert, goggles, spiral, water bags and red push-up room; original music and physical voice |
 | Lil Nas X — MONTERO (Call Me by Your Name) | 3:10 | `?scene=montero` | Eden and serpent, pink guitar, blue wigs and pink fur, trial and chains, wings, inverted pole descent, lava, throne and final horns; original music and physical vocals |
+| Sabrina Carpenter — Taste | 3:18 | `?scene=taste` | Vanity, bedroom, balcony, pink hospital gown and nurse, lounge, feathered staircase, pool confrontation, funeral and coffee-cup walk; original music and two physical mouth-engine voices. |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -326,3 +327,5 @@ Abracadabra adds the complete supplied video with original instrumental music an
 bad guy adds the complete supplied colourful video with original instrumental music and the approved physical voice; see [the notes](docs/bad-guy.md). All earlier public media remain unchanged.
 
 MONTERO adds the full supplied fantasy video with original music and the approved physical narration, singing, rap and nasal humming; see [the scene notes](docs/montero.md). Earlier public media remain unchanged.
+
+Taste adds the complete supplied horror-comedy video with original music, approved physical singing and distinct closing dialogue. See [the scene notes](docs/taste.md). Earlier prepared media remain unchanged.

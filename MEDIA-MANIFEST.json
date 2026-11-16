@@ -3762,6 +3762,41 @@
       "sha256": "bfad393d8068336d9f2021cf45275658999eeac620adf6b5dd2575bbcbd1298c"
     },
     {
+      "path": "public/scenes/taste/backing.mp3",
+      "bytes": 6362156,
+      "sha256": "991a38f6b282e5cd6dc75b640b2c818c664386a46ca77958b11280569e6542bd"
+    },
+    {
+      "path": "public/scenes/taste/credits.txt",
+      "bytes": 1792,
+      "sha256": "d2511449454fa7615e60fff0a0e965eebbedc1a8b1c6df9ce2438fe60c8837f4"
+    },
+    {
+      "path": "public/scenes/taste/lead.tele.gz",
+      "bytes": 2064389,
+      "sha256": "bd13128a19ea9dc68368caaf2dfcba05e05405dd085b1c25d916ac83ae43faef"
+    },
+    {
+      "path": "public/scenes/taste/mix.mp3",
+      "bytes": 6362156,
+      "sha256": "6d0a82fec90e42cf9e67fe52ed0e9e324ef06f95f9a3ef4b91c6e068bf49aa99"
+    },
+    {
+      "path": "public/scenes/taste/performance.json",
+      "bytes": 170053,
+      "sha256": "ae8cfd5cb18c530b03fa52d22a05b090caa2c198ed4e5b6843ddcd561b5abb5f"
+    },
+    {
+      "path": "public/scenes/taste/rival.tele.gz",
+      "bytes": 128742,
+      "sha256": "c1e7db5592728e7df20e18198bb8dd9b2084d75d5a4f470dd7e5feed49c08405"
+    },
+    {
+      "path": "public/scenes/taste/scene.json",
+      "bytes": 8057,
+      "sha256": "ebbbb30f3cebe6d096baed7f3b9175c30fc6be1b222fa01414906d9e4ab7252a"
+    },
+    {
       "path": "public/scenes/tears-in-rain/backing.mp3",
       "bytes": 7226924,
       "sha256": "efb33aeae846521f110a379857a2d8823c23a8858cf54f4b125e09ce4faa970c"

@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-four concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-five concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -431,3 +431,7 @@ native geometry projections and performer-cut phone/desktop head-clearance
 checks include owned costume ornaments. Only documentation changed after the
 verified build. Browser playback, export and layout remain untested because
 access remains declined in this chat.
+
+## Taste addition · 16 November 2026
+
+The full supplied Sabrina Carpenter video is added at `?scene=taste`, with the owner-approved physical singing, opening lullaby, calls and distinct final reply voice over original instrumental music and retained effects. Eleven costume graphics borrow two retained performers. Preserve the vanity, blonde blue-dress singer, dark-haired rival, balcony, pink hospital gown, nurse and clinicians, lounge, feathered stairs, pool, funeral and coffee cups. Source time restores all props and roles; every visible performer head is checked against opaque sets and costume ornaments at phone and desktop framing. Keep all 836 public files and 65 concert/music-video performances. See [the scene notes](docs/taste.md). Raw film, frames, stems and analysis caches remain private.
