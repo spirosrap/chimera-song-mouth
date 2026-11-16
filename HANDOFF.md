@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-five concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-six concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -189,3 +189,17 @@ tests (two existing ignored), 537 Bun tests across 129 files, typecheck,
 content manifest, production build and local HTTP integration. The app
 suite and build were repeated after the costume-overlap fix. The following
 notes commit does not change the verified runtime build.
+
+## Babooshka addition · 16 November 2026
+
+Kate Bush’s full supplied 3:30 video is added at `?scene=babooshka`, including
+three identifiable delayed title calls and the long instrumental dance ending.
+The owner approved the physical voice, title pronunciation and high refrain.
+Original instrumental music stays at the supplied speed. Two physical head
+graphics share one retained singer: the veiled black bodysuit and carved maple
+double bass, then the gold warrior costume with crown, boots and moving striped
+sleeves. Preserve the final instrument return, exact source clock, title’s
+explicit dictionary phones, 778-file public baseline and all fifty-six concert
+and music-video performances. See [the scene notes](docs/babooshka.md). Original
+video, frames, raw stems and model caches stay private. Browser playback,
+export and layout remain untested because access remains declined in this chat.

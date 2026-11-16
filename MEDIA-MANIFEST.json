@@ -1637,6 +1637,36 @@
       "sha256": "44578a030b6e4342e87bcf18c007654fadc738f2cd56395145faa0f6958f3932"
     },
     {
+      "path": "public/scenes/babooshka/backing.mp3",
+      "bytes": 6756140,
+      "sha256": "326c22602f907fdac025b7b0fb7aff7000e60c363fd0f13291059586d1d95e3b"
+    },
+    {
+      "path": "public/scenes/babooshka/credits.txt",
+      "bytes": 1802,
+      "sha256": "e1b21f08dcd6844ebc190890ce6f7feb99552f10afed8559a540fecb1d4ea03f"
+    },
+    {
+      "path": "public/scenes/babooshka/lead.tele.gz",
+      "bytes": 1854743,
+      "sha256": "bcad20aa0ed84c7c3a2f223b9ae49310be76c0e9a87300a143912b9544c14361"
+    },
+    {
+      "path": "public/scenes/babooshka/mix.mp3",
+      "bytes": 6756140,
+      "sha256": "de8d45933852b0533e3a675520cc19edcee063d21d9957f989ea08581709d9da"
+    },
+    {
+      "path": "public/scenes/babooshka/performance.json",
+      "bytes": 145868,
+      "sha256": "86f7104bda4ca21c7ca9861cc890e93fbc212a91b3cd29b388f109ca6aba50e9"
+    },
+    {
+      "path": "public/scenes/babooshka/scene.json",
+      "bytes": 6230,
+      "sha256": "680eae8d09ac91bb98a6cabb609fb82843cc54f020d703a51ac0ec46f7fbb65d"
+    },
+    {
       "path": "public/scenes/big-lebowski/backing.mp3",
       "bytes": 8471084,
       "sha256": "dbfb70ac8448bff4e2285613b8644aeb3e0e8c8b8832d5fedf19640639d51aea"
