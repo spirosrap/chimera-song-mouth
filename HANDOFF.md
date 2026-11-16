@@ -249,3 +249,11 @@ poses, actual mouth clearance, 791 public files and all fifty-eight concert
 and music-video performances. See [the notes](docs/losing-religion.md).
 Source film, frames, stems and models stay private. Browser playback, export
 and layout remain untested because access remains declined in this chat.
+
+Losing My Religion is live and verified. Runtime commit `8f2de35` was pushed;
+all 17 changed files published successfully. Live checks matched 290 files,
+including every current app bundle, six new assets and 39 preserved
+performances, plus the clean direct route. The temporary uploader job was
+removed. Required checks passed 195 native tests (two existing ignored), 549 Bun
+tests, TypeScript, 791 manifest entries, production build and local HTTP delivery.
+Only documentation changed after the verified production build.

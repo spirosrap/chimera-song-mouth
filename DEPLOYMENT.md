@@ -184,3 +184,22 @@ Validation passed 195 native tests (two existing ignored), 545 Bun tests across
 local HTTP delivery. The unchanged clarity aid is diagnostic; see
 [the performance notes](docs/danger-voltage.md). Browser playback/export/layout
 remain untested because access remains declined in this chat.
+
+## Losing My Religion · 16 November 2026
+
+The full supplied R.E.M. video is live at `?scene=losing-religion`, with the
+approved physical singing, original instrumental music, full opening and ending,
+62 phrases/captions and 86 camera cues. The amber room and winged scene share
+one retained singer; band and allegorical people are clothed animated proxies.
+The other sets include the blue garden, masks, symbolic arrows, gold wings,
+old angel workshop, flame portrait, red curtains and black winged structure.
+Runtime commit `8f2de35` was pushed before all 17 changed files uploaded
+successfully, entry page last. Live checks matched 290 files, including every
+current app bundle, six new assets and 39 preserved performances, plus the clean
+direct route. The temporary uploader job was removed. All 785 earlier public
+files remain byte-identical; the manifest contains 791 files. Validation passed
+195 native tests (two existing ignored), 549 Bun tests across 132 files,
+TypeScript, content/WASM checks, production build, built hashes and local HTTP
+delivery. The unchanged clarity aid is diagnostic; see
+[the performance notes](docs/losing-religion.md). Browser playback/export/layout
+remain untested because access remains declined in this chat.

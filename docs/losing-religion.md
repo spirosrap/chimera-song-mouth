@@ -60,3 +60,12 @@ Required verification passed: 195 native tests with two existing ignored tests,
 549 Bun tests across 132 files, TypeScript, all 791 public-file checks and the
 unchanged WASM, production build, built hashes and local HTTP delivery of the
 direct route, app bundles and all six scene assets.
+
+The scene is live at [Losing My Religion](https://agenticspiros.com/chimera-song-mouth/?scene=losing-religion).
+Runtime commit `8f2de35fa75f59e305a35b65cea530dd80ef3e04` was pushed before deployment. The existing Mac mini
+uploader published all 17 changed files with `DEPLOY_EXIT=0`; media went first
+and the app index last. All 290 checked live files match their local SHA-256
+values, including every current app bundle, six new scene assets and 39
+preserved performances. The clean direct route returns the new index. The
+task’s temporary launchd job and plist were removed after success. Only
+documentation changed after the verified production build.
