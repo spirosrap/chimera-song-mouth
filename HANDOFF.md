@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-eight concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-nine concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -257,3 +257,18 @@ performances, plus the clean direct route. The temporary uploader job was
 removed. Required checks passed 195 native tests (two existing ignored), 549 Bun
 tests, TypeScript, 791 manifest entries, production build and local HTTP delivery.
 Only documentation changed after the verified production build.
+
+## Loser addition · 16 November 2026
+
+The complete supplied Beck video is added at `?scene=beck-loser`, with approved
+physical rap, eight explicit Spanish refrains, dialogue/asides and original
+music, including the opening and ending. Sunny yellow-shirt pavement, monochrome
+portraits and guitar, stop-motion coffin, woodland busker in an upright box,
+white suit and sunglasses, red graveyard dancers, cars and driver, plaid night
+performance and flames, drums, shop projections, hillside guitar and departure
+with case and dog follow the supplied film. Seven head graphics borrow two
+retained voices. Preserve explicit Spanish vowels/taps, exact clocks, source-time
+seeking, owned monochrome buffers, 798 public files and all fifty-nine concert
+and music-video performances. See [the notes](docs/beck-loser.md). Source film,
+frames, stems and models stay private. Browser playback/export/layout remain
+untested because access remains declined in this chat.

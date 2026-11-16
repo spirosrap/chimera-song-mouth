@@ -1667,6 +1667,41 @@
       "sha256": "680eae8d09ac91bb98a6cabb609fb82843cc54f020d703a51ac0ec46f7fbb65d"
     },
     {
+      "path": "public/scenes/beck-loser/backing.mp3",
+      "bytes": 7446572,
+      "sha256": "dce7235cf2ff0e0998109d80ca066948c6a5afcccaf68050c9684cb247160708"
+    },
+    {
+      "path": "public/scenes/beck-loser/credits.txt",
+      "bytes": 1989,
+      "sha256": "7485792774915f48237a6de65a36ac242303afdc3d1321b1258d14491076abc2"
+    },
+    {
+      "path": "public/scenes/beck-loser/driver.tele.gz",
+      "bytes": 296220,
+      "sha256": "f3a891915cdb2cb250ac99fde18db17aab2dadf4e32b25385d6cef9b0802cb95"
+    },
+    {
+      "path": "public/scenes/beck-loser/lead.tele.gz",
+      "bytes": 2158317,
+      "sha256": "409a9c06ce19ffb67c5708ac4d5d1a8cae4cbf9fcab5bcd979f38c0fdd269450"
+    },
+    {
+      "path": "public/scenes/beck-loser/mix.mp3",
+      "bytes": 7446572,
+      "sha256": "ba64397317c51c1f655ac1e772c3f2a89f17d253f1b24a1f5ea084549a2057db"
+    },
+    {
+      "path": "public/scenes/beck-loser/performance.json",
+      "bytes": 190432,
+      "sha256": "0bde33419b07ea7aa549639f60f0ade599e98cec297dd348f6582895ab2f87e8"
+    },
+    {
+      "path": "public/scenes/beck-loser/scene.json",
+      "bytes": 8375,
+      "sha256": "43db170608e1a9967ce83bd750d415afbfe2dbada41ad2966717e8db0d283efd"
+    },
+    {
       "path": "public/scenes/big-lebowski/backing.mp3",
       "bytes": 8471084,
       "sha256": "dbfb70ac8448bff4e2285613b8644aeb3e0e8c8b8832d5fedf19640639d51aea"
