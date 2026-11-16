@@ -1987,6 +1987,41 @@
       "sha256": "4e47b70766c241381198ec07a228691354d0bbb48937c7c6ef8ed1c974bad6a5"
     },
     {
+      "path": "public/scenes/danger-voltage/answer.tele.gz",
+      "bytes": 852021,
+      "sha256": "9f372094d90bdb009cbb2f246ff84b9c6c6eae2369a970f5ce2a43e1abab867f"
+    },
+    {
+      "path": "public/scenes/danger-voltage/backing.mp3",
+      "bytes": 7094828,
+      "sha256": "f8dacdc0fc60cf80ee0df8e60e4ff055df91f43803eccb46f3bd4fe7df87bf7e"
+    },
+    {
+      "path": "public/scenes/danger-voltage/credits.txt",
+      "bytes": 1717,
+      "sha256": "e3944b0b538ebee31a8f881e0e87277655bc4d9a6e16b0593d2b8c224d0e5afa"
+    },
+    {
+      "path": "public/scenes/danger-voltage/lead.tele.gz",
+      "bytes": 1234143,
+      "sha256": "20196a3963e8aba67207c57703bb001c51bee8fde83e59d11092e8aad044a299"
+    },
+    {
+      "path": "public/scenes/danger-voltage/mix.mp3",
+      "bytes": 7094828,
+      "sha256": "4a56e6199206211ac04ef4339999bcdb511f7d5387f627e384f8bcae2039bd4a"
+    },
+    {
+      "path": "public/scenes/danger-voltage/performance.json",
+      "bytes": 121125,
+      "sha256": "be1665fca5b3c8d4c208572a440ef59f2c1b92f78d7c0aa551ea64e5aca487e6"
+    },
+    {
+      "path": "public/scenes/danger-voltage/scene.json",
+      "bytes": 7449,
+      "sha256": "8846b978752de349c44b71ee7714534006c11cfb46da2e0bfb0a612f27b5321b"
+    },
+    {
       "path": "public/scenes/darkness-love/backing.mp3",
       "bytes": 7437356,
       "sha256": "dde3f971ae223017f826df01c8a1b875607cf2d8d3fccec9137e9b9128ba66c9"

@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-six concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-seven concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -211,3 +211,18 @@ performances, plus the clean route. The temporary uploader job was removed.
 Required checks passed 195 native tests (two existing ignored), 541 Bun tests,
 TypeScript, 778 manifest entries, production build and local HTTP delivery.
 Only documentation changed after the verified build.
+
+## Danger! High Voltage addition · 16 November 2026
+
+The complete supplied Electric Six video is added at `?scene=danger-voltage`,
+with two approved physical singers, original music, the repeated ending calls
+and the full instrumental tail. The green patterned room includes portraits,
+fireplace, brass screen, red poodles, armchairs, lamp, roses and gramophone;
+clothed glowing costumes, dance and embrace; hunting hats and a moose ride;
+red curtains, military jacket, pale horse, chaise and saxophone finale.
+Eight physical head graphics borrow two retained singers. Preserve source time,
+clear lips during the embrace, foreground flames only in their intended cut,
+785 public files and all fifty-seven concert and music-video performances.
+See [the performance notes](docs/danger-voltage.md). Original film, frames,
+stems and models stay private. Browser playback, export and layout remain
+untested because access remains declined in this chat.
