@@ -353,3 +353,18 @@ media are unchanged; the current collection is 817 public files and sixty-two
 concert/music-video performances. See [the notes](docs/abracadabra.md). Raw film,
 frames, stems, model weights and analysis caches stay private. Browser playback,
 export and layout remain untested because access remains declined in this chat.
+
+Abracadabra is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=abracadabra>.
+Runtime `5add86118d8541071eae9074e5fd56364252ed23` is pushed. The Mac mini uploader published all 17
+changed files with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP
+checks matched 316 files, including all current app bundles, six new scene
+assets and 43 preserved performances, plus the clean direct route. The temporary
+upload job and plist were removed. All 811 earlier public media remain
+byte-identical; the manifest contains 817 files. Verification passed 195 native
+tests (two existing ignored), 565 Bun tests across 136 files, TypeScript,
+content/WASM checks, production build, built hashes and local HTTP. All-cut
+phone/desktop native head-clearance checks cover the background occlusion
+regression. Only documentation changed after the verified build. Browser
+playback, export and layout remain untested because access remains declined
+in this chat.
