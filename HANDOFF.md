@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-one concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-two concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -338,3 +338,18 @@ ignored), 561 Bun tests across 135 files, TypeScript, all 811 content hashes,
 unchanged WASM, production build, built hashes and local HTTP delivery.
 Only documentation changed after the verified build. Browser playback/export/layout
 remain untested because access remains declined in this chat.
+
+## Abracadabra addition · 16 November 2026
+
+The full supplied Lady Gaga video is added at `?scene=abracadabra`, with original
+instrumental music and the owner-approved clearer English physical singer. Keep
+the announcement, title/Latin-style hooks, vocalise, quiet ending, 32 dancers,
+white hood/corset/cape and train, red queen with spiked hat on the cage, red
+costume, rows and circles, floor poses and lifts. Three graphics borrow one
+retained model. Preserve exact source time, cloth/wardrobe seeking, camera up
+restoration and the all-cut phone/desktop head-clearance regression. The rear
+camera must stay inside the hall rather than behind its wall. All 811 preceding
+media are unchanged; the current collection is 817 public files and sixty-two
+concert/music-video performances. See [the notes](docs/abracadabra.md). Raw film,
+frames, stems, model weights and analysis caches stay private. Browser playback,
+export and layout remain untested because access remains declined in this chat.

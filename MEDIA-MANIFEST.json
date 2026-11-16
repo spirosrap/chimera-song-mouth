@@ -1382,6 +1382,36 @@
       "sha256": "09d34a031ba5833d5d831c5d937c668c2073faa99397476593732510bdaf4548"
     },
     {
+      "path": "public/scenes/abracadabra/backing.mp3",
+      "bytes": 8636972,
+      "sha256": "770b66c61003d92b0674b6aa49c20a992ff2cf128edc569d4b8fd64f6b17f5d3"
+    },
+    {
+      "path": "public/scenes/abracadabra/credits.txt",
+      "bytes": 1858,
+      "sha256": "58241041ce2fe44cfff61ccd9ee75eaea9411f21375ad84ccf9348a7572b5ad9"
+    },
+    {
+      "path": "public/scenes/abracadabra/lead.tele.gz",
+      "bytes": 2847358,
+      "sha256": "705ac6216b031c7d9f553c274bf5cb5e9fcadb7aca3aaa59623a8b1b5ca46c7a"
+    },
+    {
+      "path": "public/scenes/abracadabra/mix.mp3",
+      "bytes": 8636972,
+      "sha256": "fa33ea1161e69ae52d6c1a395447ecf11e79400ef626b547f2ebd3ba9e62d686"
+    },
+    {
+      "path": "public/scenes/abracadabra/performance.json",
+      "bytes": 233550,
+      "sha256": "31d0ca232d4b392d6708bfc65eed6f77a4834de0bd125efe06e540e2a95de0ac"
+    },
+    {
+      "path": "public/scenes/abracadabra/scene.json",
+      "bytes": 10828,
+      "sha256": "46898b7ab06b62e4f8a93c7d9ffb1616ee8e08c9f39f91ae9b23dfa679b7da5c"
+    },
+    {
       "path": "public/scenes/always-love-you/backing.mp3",
       "bytes": 8782124,
       "sha256": "7101e9c0fb72f14d0b4347e2c33dbc0581ea6d59738b390dc476d6ad48f79130"
