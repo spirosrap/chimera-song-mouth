@@ -64,3 +64,12 @@ the production build and local HTTP delivery of the direct route, app bundles
 and all eight scene assets. The tracked WASM retains its provenance checksum.
 The final bedside hand pose places the fingertip on the NUKE button; a geometry
 regression check preserves that contact.
+
+The scene is live at [Land of Confusion](https://agenticspiros.com/chimera-song-mouth/?scene=land-confusion).
+Runtime commit `a410c9fb01b5d04369a1c0673ffbb47136ffaf5d` was pushed before deployment. The existing Mac mini
+uploader published 19 changed files successfully, with `DEPLOY_EXIT=0`; media
+went first and the app index last. All 265 checked live files matched their
+local SHA-256 values, including every current app bundle, the eight new scene
+files and 35 preserved performances. The clean direct route returned the new
+index. The task's temporary launchd job and plist were removed after success.
+Only these documentation notes changed after the verified production build.

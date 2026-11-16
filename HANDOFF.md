@@ -161,3 +161,10 @@ three retained models. See [the scene notes](docs/land-confusion.md). Preserve
 the 766-file public baseline and all fifty-four concert/music-video performances.
 Source video, frames, stems and model caches remain private. Browser playback,
 export and layout remain untested here because access was declined.
+
+Land of Confusion is live and verified. Runtime commit `a410c9f` was pushed
+and 19 changed files published successfully; 265 live file hashes, the clean
+route and 35 preserved performances matched. Full checks passed: 195 native
+tests (two existing ignored), 533 Bun tests across 128 files, typecheck, content
+manifest, production build and local HTTP integration. The following notes
+commit does not change the verified runtime build.

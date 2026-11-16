@@ -125,3 +125,15 @@ app bundles and 34 preceding performances. The temporary task launchd job
 and plist were removed. No source recording, frame, stem or model cache was
 uploaded. See [the scene and validation notes](docs/black-hole-sun.md). Browser
 playback/export/layout remain untested in this chat because access was declined.
+
+## Land of Confusion · 16 November 2026
+
+Runtime `a410c9fb01b5d04369a1c0673ffbb47136ffaf5d` adds the full approved physical-voice puppet performance at
+`?scene=land-confusion`, including its bedroom dialogue. The verified 766-file
+public build preserves all 758 preceding assets. The existing Mac mini uploader
+published only 19 changed files, media first and index last, and exited
+successfully. All 265 checked live files and the clean new route matched the
+build, including every current app bundle and 35 preceding performances. The
+temporary task launchd job and plist were removed. No source film, raw frame,
+stem or model cache was uploaded. See [the scene notes](docs/land-confusion.md).
+Browser playback/export/layout remain untested because access was declined.
