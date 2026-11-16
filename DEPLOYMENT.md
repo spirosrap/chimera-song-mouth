@@ -312,3 +312,28 @@ checks cover the visual reconstruction. Manual camera fallback tests cover this
 video and the three preceding additions. Only documentation changed after the
 verified build. Browser playback, export and layout remain untested because
 access remains declined in this chat.
+
+## MONTERO · 16 November 2026
+
+The complete supplied Lil Nas X fantasy video has the approved physical
+narration, singing, rap and actual nasal humming with original instrumental
+music and ambience. Nine role graphics borrow one retained singer. Eden and
+serpent, flowers and pink guitar, blue wigs and pink fur, trial and chains,
+ascent and wings, inverted pole descent, lava, throne and final horns follow
+source time. Pole grips use world coordinates; the decorative defeated figure
+leaves the final portraits. See [the scene notes](docs/montero.md).
+
+MONTERO is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=montero>.
+Runtime `7081183c06ee7439069f91657999191b1a954a5b` was pushed before all 17 changed files uploaded successfully
+with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP checks matched
+328 files, including every current app bundle, six new scene assets and 45
+preserved performances, plus the clean direct route. The temporary upload job
+and plist were removed. All 823 preceding public media remain byte-identical;
+the manifest contains 829 files. Required checks passed 195 native tests (two
+existing ignored), 574 Bun tests across 139 files, TypeScript, content/WASM
+verification, production build, built hashes and local HTTP delivery. Thirty-seven
+native geometry projections and performer-cut phone/desktop head-clearance
+checks include owned costume ornaments. Only documentation changed after the
+verified build. Browser playback, export and layout remain untested because
+access remains declined in this chat.
