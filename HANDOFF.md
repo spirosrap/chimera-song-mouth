@@ -272,3 +272,15 @@ seeking, owned monochrome buffers, 798 public files and all fifty-nine concert
 and music-video performances. See [the notes](docs/beck-loser.md). Source film,
 frames, stems and models stay private. Browser playback/export/layout remain
 untested because access remains declined in this chat.
+
+Loser is live and verified. Runtime commit
+`28a0c15c1b8b81ee6377680987aad68b9c4193a5` was pushed; all 18 changed files
+published successfully (`DEPLOY_EXIT=0`), media first and index last. Live checks
+matched 297 files, including every current app bundle, seven new scene assets
+and 40 preserved performances, plus the clean direct route. The temporary
+upload job and plist were removed. All 791 earlier public files remain
+byte-identical. Required checks passed 195 native tests (two existing ignored),
+553 Bun tests across 133 files, TypeScript, 798 manifest entries, unchanged
+WASM, production build, built hashes and local HTTP delivery. Only documentation
+changed after the verified production build. Browser playback/export/layout
+remain untested because access remains declined in this chat.

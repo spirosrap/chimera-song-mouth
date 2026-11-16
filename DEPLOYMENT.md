@@ -203,3 +203,23 @@ TypeScript, content/WASM checks, production build, built hashes and local HTTP
 delivery. The unchanged clarity aid is diagnostic; see
 [the performance notes](docs/losing-religion.md). Browser playback/export/layout
 remain untested because access remains declined in this chat.
+
+## Loser · 16 November 2026
+
+The full supplied Beck video is live at `?scene=beck-loser`, with the approved
+physical rap, eight Spanish refrains, driver dialogue/asides and continuous
+original instrumental music. The cut-up reconstruction includes the yellow
+shirt, monochrome portraits, stop-motion coffin, white suit, red graveyard,
+stock cars, night stage and departure with guitar case and dog. Seven head
+graphics borrow two retained voices. Runtime commit
+`28a0c15c1b8b81ee6377680987aad68b9c4193a5` was pushed before all 18 changed
+files uploaded successfully (`DEPLOY_EXIT=0`), media first and index last.
+Live checks matched 297 files, including every current app bundle, seven new
+scene assets and 40 preserved performances, plus the clean direct route.
+The temporary upload job and plist were removed. All 791 earlier public files
+remain byte-identical; the manifest contains 798 files. Validation passed
+195 native tests (two existing ignored), 553 Bun tests across 133 files,
+TypeScript, content/WASM checks, production build, built hashes and local HTTP
+delivery. Only documentation changed after the verified build. See
+[the performance notes](docs/beck-loser.md). Browser playback/export/layout
+remain untested because access remains declined in this chat.

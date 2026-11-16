@@ -59,3 +59,12 @@ unchanged WASM, production build, built hashes and local HTTP delivery of the
 direct route, app bundles and all seven new scene assets. Twenty-nine native
 camera projections were reviewed, with final views regenerated after the case
 and bounded ground geometry changes.
+
+Runtime `28a0c15c1b8b81ee6377680987aad68b9c4193a5` is pushed and live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=beck-loser>. The existing
+Mac mini uploader published all 18 changed files, media first and index last,
+with `DEPLOY_EXIT=0`. Live verification matched 297 files, including all current
+app bundles, the seven new scene assets and 40 preserved performances. The
+clean direct route returns the verified entry page. The temporary upload job
+and plist were removed. Only documentation changed after the verified build;
+browser playback, export and layout remain untested as described above.
