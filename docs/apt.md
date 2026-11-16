@@ -57,3 +57,11 @@ tests across 135 files, TypeScript, all 811 content hashes and the unchanged
 WASM, production build, built public hashes and local HTTP delivery of the direct
 route, app bundles and seven new scene files. Only 18 changed files are prepared
 for publication, media first and entry page last.
+
+Runtime `d8a4cbf7234d120ae4bd4de50c4a4b53d6123b28` is pushed and live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=apt>. The Mac mini uploader
+published all 18 changed files with `DEPLOY_EXIT=0`. Live verification matched
+310 files, including every current app bundle, seven new scene assets and
+42 preserved performances, plus the clean direct route. The temporary upload
+job and plist were removed. Only documentation changed after the verified build.
+Browser playback/export/layout remain untested as described above.

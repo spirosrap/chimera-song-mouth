@@ -243,3 +243,22 @@ content/WASM checks, production build, built hashes and local HTTP delivery.
 Only documentation changed after the verified build. See
 [the performance notes](docs/espresso-macchiato.md). Browser playback/export/layout
 remain untested because access remains declined in this chat.
+
+## APT. · 16 November 2026
+
+The full supplied ROSÉ and Bruno Mars video is live at `?scene=apt`, with the
+approved physical Korean/English duet, original music and full opening/ending.
+The pink studio includes drums and performer swaps, microphones, costumes,
+paper heads, star glasses, floor gag, circular views, silhouettes, guitars
+and dance. Six physical head graphics borrow two retained models. Runtime
+`d8a4cbf7234d120ae4bd4de50c4a4b53d6123b28` was pushed before all 18 changed
+files uploaded successfully (`DEPLOY_EXIT=0`), media first and entry page last.
+Live checks matched 310 files, including every current app bundle, seven new
+scene assets and 42 preserved performances, plus the clean direct route.
+The temporary upload job and plist were removed. All 804 earlier public files
+remain byte-identical; the manifest contains 811 files. Validation passed
+195 native tests (two existing ignored), 561 Bun tests across 135 files,
+TypeScript, content/WASM checks, production build, built hashes and local HTTP
+delivery. Only documentation changed after the verified build. See
+[the performance notes](docs/apt.md). Browser playback/export/layout remain
+untested because access remains declined in this chat.

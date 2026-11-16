@@ -326,3 +326,15 @@ silhouette buffer ownership, actual lip clearance, all 811 public assets and
 sixty-one concert/music-video performances. See [the notes](docs/apt.md).
 Raw source film, frames, stems and model caches remain private. Browser
 playback/export/layout remain untested because access remains declined in this chat.
+
+APT. is live and verified. Runtime
+`d8a4cbf7234d120ae4bd4de50c4a4b53d6123b28` was pushed; all 18 changed files
+published successfully (`DEPLOY_EXIT=0`), media first and entry page last.
+Live checks matched 310 files, including every current app bundle, seven new
+scene assets and 42 preserved performances, plus the clean direct route.
+The temporary upload job and plist were removed. All 804 earlier public files
+remain byte-identical. Required checks passed 195 native tests (two existing
+ignored), 561 Bun tests across 135 files, TypeScript, all 811 content hashes,
+unchanged WASM, production build, built hashes and local HTTP delivery.
+Only documentation changed after the verified build. Browser playback/export/layout
+remain untested because access remains declined in this chat.
