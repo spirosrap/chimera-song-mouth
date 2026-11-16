@@ -2117,6 +2117,36 @@
       "sha256": "a761d2776c6f5a7e1fac59707c9427004c9a705a80edf3d13f451c714974294a"
     },
     {
+      "path": "public/scenes/espresso-macchiato/backing.mp3",
+      "bytes": 6165548,
+      "sha256": "cf6f885858b394f7c3a64a26a734c7b1459c974aedee1907eac4122048ece7da"
+    },
+    {
+      "path": "public/scenes/espresso-macchiato/credits.txt",
+      "bytes": 1909,
+      "sha256": "4b78c3ba28db8a11824ecfc32256bcdab984e43038185bc435baf7ea43687de6"
+    },
+    {
+      "path": "public/scenes/espresso-macchiato/lead.tele.gz",
+      "bytes": 1983602,
+      "sha256": "46702d5fac10472a60b357b917f0349437911f491d27d0b620b486bca2e1b05f"
+    },
+    {
+      "path": "public/scenes/espresso-macchiato/mix.mp3",
+      "bytes": 6165548,
+      "sha256": "1c84f117015f78ccbdd39750840cb3501988fe8caeea9fb4508e5fd5ec96b288"
+    },
+    {
+      "path": "public/scenes/espresso-macchiato/performance.json",
+      "bytes": 155867,
+      "sha256": "cdc2473235d14663a088d87b804bbd43bbd70436c0f6960fda0bcf34a3ceed6a"
+    },
+    {
+      "path": "public/scenes/espresso-macchiato/scene.json",
+      "bytes": 6964,
+      "sha256": "642fbf171ccacd48e3d773f8ba1d7eee6b97d70e1f01c5f5c96e26cd1343a6e9"
+    },
+    {
       "path": "public/scenes/fade-into-you/backing.mp3",
       "bytes": 8368940,
       "sha256": "a742c05f238d2b3c435f6b6628c4013473664c6ed624f02f75d29da4461732ee"

@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-nine concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -284,3 +284,18 @@ byte-identical. Required checks passed 195 native tests (two existing ignored),
 WASM, production build, built hashes and local HTTP delivery. Only documentation
 changed after the verified production build. Browser playback/export/layout
 remain untested because access remains declined in this chat.
+
+## Espresso Macchiato addition · 16 November 2026
+
+The complete supplied Tommy Cash video is added at `?scene=espresso-macchiato`,
+with original music and physical vocals. The owner approved the clearer English
+verse revision while retaining the exaggerated accent and chorus. Cardboard-box
+feet, two suits, cups and steam, stacked portraits, split-set dance, extra arms,
+two runners and costume fusion, giant cup/milk/sugar, apron dancers, guest,
+security dance/lift and puppeteering, swing, bean flight and closing navy suit
+follow source time. Seven physical head graphics borrow one retained singer.
+Preserve all 804 public files and sixty concert/music-video performances, explicit
+phones, quiet windows, exact 20Hz clocks, source-time seeking, reparenting and
+owned graphics. See [the notes](docs/espresso-macchiato.md). Original film, frames,
+stems and models remain private. Browser playback/export/layout remain untested
+because access remains declined in this chat.

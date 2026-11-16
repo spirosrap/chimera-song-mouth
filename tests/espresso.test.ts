@@ -1,0 +1,40 @@
+import {test,expect,spyOn} from 'bun:test';
+import {readFileSync} from 'node:fs';
+import {gunzipSync} from 'node:zlib';
+import * as THREE from 'three';
+import {initEngine} from './harness.ts';
+import {validateScene,sceneCamera,SCENE_SETTINGS} from '../src/scene/scene.ts';
+import {movieScene} from '../src/scene/library.ts';
+import {espressoPose,espressoCamera,espressoPlace} from '../src/scene/espresso.ts';
+import {TeleTrack} from '../src/show/tele.ts';
+import {validPerformance} from '../src/band/performance.ts';
+import type {Arrangement} from '../src/band/types.ts';
+await initEngine();
+const {EspressoStage}=await import('../src/ui/render/espresso.ts'),{VoiceModel}=await import('../src/ui/analysis.ts');
+const file=(n:string)=>readFileSync(new URL(`../public/scenes/espresso-macchiato/${n}`,import.meta.url)),scene=validateScene(JSON.parse(file('scene.json').toString())),score:Arrangement=JSON.parse(file('performance.json').toString());
+const raw=gunzipSync(file('lead.tele.gz')),track=new TeleTrack(raw.buffer.slice(raw.byteOffset,raw.byteOffset+raw.byteLength));
+const cast=()=>new VoiceModel(track.body,track.sampleRate);
+test('Espresso appends the complete supplied film, original music and prepared physical singer',()=>{
+ expect(movieScene('espresso-macchiato')).toBeDefined();expect(movieScene('beck-loser')).toBeDefined();expect(scene.setting).toBe('espresso');expect(scene.duration).toBeGreaterThan(192.6);expect(scene.duration).toBeLessThan(192.7);expect(scene.characters.map(c=>c.id)).toEqual(['espresso-tommy']);expect(scene.cues.length).toBe(41);expect(scene.shots.length).toBeGreaterThan(35);expect(score.parts.map(p=>p.kind)).toEqual(['voice','backing']);expect(score.parts[1].recordingType).toBe('instrumental');expect(scene.cues[0].start).toBeGreaterThan(20);expect(scene.cues.at(-1)!.end).toBeGreaterThan(175);expect(score.parts[0].melody!.notes.length).toBe(387);expect(scene.cues.some(c=>c.text==='Vocalise')).toBe(true);
+ for(const [t,v]of [[6,'espresso-boxes'],[11,'espresso-emerge'],[25,'espresso-portraits'],[38,'espresso-dance'],[56,'espresso-hands'],[82,'espresso-faceoff'],[100,'espresso-cup-close'],[106,'espresso-fusion'],[124,'espresso-ingredients'],[139,'espresso-cameo'],[151,'espresso-lift'],[159,'espresso-swing'],[163,'espresso-sky'],[180,'espresso-ending'],[188,'espresso-credits']]as const)expect(sceneCamera(scene,t,'auto')).toBe(v);
+ expect(()=>validateScene({...scene,characters:[{...scene.characters[0],id:'loser-beck'}]})).toThrow();expect(()=>validateScene({...scene,shots:[{time:0,view:'lose-lot'}]})).toThrow('camera');
+});
+test('explicit accented phones retain syllables, quiet rests, audible phrases and exact 20Hz movement',()=>{
+ const part=score.parts[0],perf=part.performance!;expect(part.effects).toBeUndefined();expect(part.recordingType).toBeUndefined();expect(validPerformance(perf,score.duration)).toBe(true);const taps=perf.phrases.flatMap(p=>p.phones).filter(p=>p.ipa==='ɾ');expect(taps.length).toBeGreaterThan(30);expect(taps.every(p=>p.duration<=.046)).toBe(true);expect(track.duration).toBeCloseTo(scene.duration,1);
+ for(const ph of perf.phrases){const end=ph.start+ph.phones.reduce((a,p)=>a+p.duration,0);let rms=0;for(let j=track.indexAt(ph.start);j<=track.indexAt(end);j++)rms=Math.max(rms,track.message(j).t.outRms);expect(rms).toBeGreaterThan(.0001);}
+ for(let j=0;j<track.frames;j++){const t=track.message(j).t;expect(t.clock).toBeCloseTo(j/20,4);expect([...t.artic].every(Number.isFinite)).toBe(true);if(j/20<20||j/20>177||j/20>56&&j/20<60)expect(t.outRms).toBeLessThan(.00001);}
+});
+test('split portraits, boxes, costume fusion, dancers, lift and sky restore after backward seeking',()=>{
+ expect(espressoPose(NaN)).toEqual(espressoPose(0));const model=cast(),stage=new EspressoStage(model,track),snap=()=>[...Object.values(stage.rooms).map(g=>g.visible),stage.horizontalSplit.visible,stage.splitLine.visible,...stage.boxes.map(g=>g.visible),...stage.guards.flatMap(a=>[...a.root.matrixWorld.elements,...a.arms.flatMap(m=>m.matrixWorld.elements)]),...stage.beans.flatMap(g=>g.matrixWorld.elements),stage.swing.visible,...stage.swing.matrixWorld.elements,...stage.actors.flatMap(a=>[a.figure.root.visible,...a.figure.root.matrixWorld.elements,...a.figure.hands.flatMap(m=>m.matrixWorld.elements),a.cup.visible,...a.extraArms.map(m=>m.visible)]),...stage.camera.matrixWorld.elements];
+ try{expect(stage.actors.length).toBe(7);expect(new Set(stage.actors.map(a=>a.figure.model)).size).toBe(1);for(const t of [6,11,25,38,56,82,100,106,111,113,124,139,151,155,159,163,165,180,188]){const view=sceneCamera(scene,t,'auto');stage.frame(t,true,1,view,.8);const before=snap();expect(before.every(v=>typeof v==='boolean'||Number.isFinite(v))).toBe(true);expect(Object.values(stage.rooms).filter(g=>g.visible).length).toBe(1);expect(stage.rooms[espressoPlace(view,t)].visible).toBe(true);stage.frame(163,true,2,'espresso-sky',.8);stage.frame(t,false,3,view,.8);expect(snap()).toEqual(before);}
+  stage.frame(6,false,1,'espresso-boxes',0);expect(stage.actors[0].figure.root.visible).toBe(false);expect(stage.boxFeet.every(m=>m.visible)).toBe(true);stage.frame(25,false,1,'espresso-portraits',0);expect(stage.boxFeet.every(m=>!m.visible)).toBe(true);expect(stage.actors[0].figure.legs.every(m=>!m.visible)).toBe(true);expect(stage.horizontalSplit.visible).toBe(true);stage.frame(151,false,1,'espresso-lift',0);expect(stage.actors[2].figure.root.parent).toBe(stage.rooms.crew);stage.frame(106,false,2,'espresso-fusion',0);expect(stage.actors[2].figure.root.parent).toBe(stage.rooms.white);
+ }finally{stage.dispose();model.dispose();}
+});
+test('phone and desktop mouths remain framed and unobstructed, with the borrowed model retained',()=>{
+ const model=cast(),stage=new EspressoStage(model,track);
+ try{for(const [w,h]of [[960,720],[375,430]])for(const [time,view,index]of [[25,'espresso-portraits',0],[25,'espresso-portraits',1],[34,'espresso-cups',0],[82,'espresso-faceoff',1],[106,'espresso-fusion',2],[124,'espresso-cup-man',3],[139,'espresso-cameo',4],[163,'espresso-sky',5],[180,'espresso-ending',6]]as const){stage.resize(w,h);stage.frame(time,true,1,view,.8);const f=stage.actors[index].figure;let count=0,inside=true;f.head.scene.traverseVisible(o=>{let q:THREE.Object3D|null=o;while(q){if(q===f.ornaments)return;q=q.parent;}const m=o as THREE.Mesh<THREE.InstancedBufferGeometry>,pos=m.geometry?.getAttribute('instanceStart');if(pos)for(let j=0;j<m.geometry.instanceCount;j++){const p=new THREE.Vector3().fromBufferAttribute(pos,j).applyMatrix4(m.matrixWorld).project(stage.camera);inside&&=[p.x,p.y,p.z].every(Number.isFinite)&&Math.max(Math.abs(p.x),Math.abs(p.y))<.99&&Math.abs(p.z)<1;count++;}});expect(count).toBeGreaterThan(1000);expect(inside).toBe(true);
+  const artic=VoiceModel.articFromArray(f.track.message(f.track.indexAt(time)).t.artic),shape=model.frame(artic),up=shape.upperLip.reduce((a,b)=>a.x>b.x?a:b),lo=shape.lowerLip.reduce((a,b)=>a.x>b.x?a:b),face=new THREE.Vector3((up.x+lo.x)/2,(up.y+lo.y)/2,0).applyMatrix4(f.head.scene.children[0].matrixWorld),ray=new THREE.Raycaster(stage.camera.position,face.clone().sub(stage.camera.position).normalize()),distance=stage.camera.position.distanceTo(face),blockers:THREE.Object3D[]=[];stage.scene.traverseVisible(o=>{const m=o as THREE.Mesh;if(m.isMesh&&!(m as any).isLineSegments2&&(m.material as THREE.Material).opacity>.9&&!f.head.scene.getObjectById(m.id)){m.geometry.computeBoundingBox();blockers.push(o);}});expect(ray.intersectObjects(blockers,false).filter(h=>h.distance<distance-.1).map(h=>({time,view,width:w,geometry:(h.object as THREE.Mesh).geometry.type,position:h.object.getWorldPosition(new THREE.Vector3()).toArray()}))).toEqual([]);
+  for(const v of SCENE_SETTINGS.espresso.cameras){const c=espressoCamera(v,w/h,time);expect([...c.target,...c.position,...c.up,c.fov].every(Number.isFinite)).toBe(true);}
+ }
+ }finally{const dispose=spyOn(VoiceModel.prototype,'dispose');stage.dispose();expect(dispose).toHaveBeenCalledTimes(0);dispose.mockRestore();model.dispose();}
+});
