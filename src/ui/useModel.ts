@@ -21,10 +21,12 @@ export function useRetainedModel(body:BodyMix,sampleRate:number):VoiceModel|null
 export function useModel(): React.MutableRefObject<VoiceModel | null> {
   const body = useStore((s) => s.body);
   const started = useStore((s) => s.started);
+  // the audio's rate drops to 32 kHz on a device that can't keep up at 48
+  const light = useStore((s) => s.lightAudio);
   const ref = useRef<VoiceModel | null>(null);
   ref.current = getModel(body, started ? engine.sampleRate : 48000);
   useEffect(() => {
     ref.current = getModel(body, started ? engine.sampleRate : 48000);
-  }, [body, started]);
+  }, [body, started, light]);
   return ref;
 }
