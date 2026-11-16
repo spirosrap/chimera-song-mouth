@@ -73,3 +73,19 @@ across 138 files, TypeScript, all 823 content hashes and the unchanged productio
 WASM, production build, all built public hashes and local HTTP delivery of the
 direct route, app bundles and six new scene files. Publication sends only changed
 files, with media first and the entry page last.
+
+bad guy is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=bad-guy>.
+Runtime `3784b09e7dccb6cc82d523c3f858399518187a10` was pushed before all 17 changed files uploaded successfully
+with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP checks matched
+322 files, including every current app bundle, six new scene assets and 44
+preserved performances, plus the clean direct route. The temporary upload job
+and plist were removed. All 817 preceding public media remain byte-identical;
+the manifest contains 823 files. Required checks passed 195 native tests (two
+existing ignored), 570 Bun tests across 138 files, TypeScript, content/WASM
+verification, production build, built hashes and local HTTP delivery. Thirty
+native geometry projections and all performer-cut phone/desktop head-clearance
+checks cover the visual reconstruction. Manual camera fallback tests cover this
+video and the three preceding additions. Only documentation changed after the
+verified build. Browser playback, export and layout remain untested because
+access remains declined in this chat.

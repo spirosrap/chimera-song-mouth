@@ -286,3 +286,29 @@ phone/desktop native head-clearance checks cover the background occlusion
 regression. Only documentation changed after the verified build. Browser
 playback, export and layout remain untested because access remains declined
 in this chat.
+
+## bad guy · 16 November 2026
+
+The complete supplied Billie Eilish video has the approved physical voice,
+spoken opening, singing, calls and red-room ending with original instrumental
+music. Six costume graphics borrow one retained singer. Yellow paper, oversized
+clothes, toy car and distinct riders, pigeons/cereal, desert, goggles and water
+bags, spiral and push-up room follow absolute source time. The manual camera
+fallback now reads each scene's catalog, correcting recent videos' courtroom
+choices. See [the scene notes](docs/bad-guy.md).
+
+bad guy is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=bad-guy>.
+Runtime `3784b09e7dccb6cc82d523c3f858399518187a10` was pushed before all 17 changed files uploaded successfully
+with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP checks matched
+322 files, including every current app bundle, six new scene assets and 44
+preserved performances, plus the clean direct route. The temporary upload job
+and plist were removed. All 817 preceding public media remain byte-identical;
+the manifest contains 823 files. Required checks passed 195 native tests (two
+existing ignored), 570 Bun tests across 138 files, TypeScript, content/WASM
+verification, production build, built hashes and local HTTP delivery. Thirty
+native geometry projections and all performer-cut phone/desktop head-clearance
+checks cover the visual reconstruction. Manual camera fallback tests cover this
+video and the three preceding additions. Only documentation changed after the
+verified build. Browser playback, export and layout remain untested because
+access remains declined in this chat.
