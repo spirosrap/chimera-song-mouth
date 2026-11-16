@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-seven concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all fifty-eight concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -234,3 +234,18 @@ performances, plus the clean route. The temporary uploader job was removed.
 Required checks passed 195 native tests (two existing ignored), 545 Bun tests,
 TypeScript, 785 manifest entries, production build and local HTTP delivery.
 Only documentation changed after the verified production build.
+
+## Losing My Religion addition · 16 November 2026
+
+The complete supplied R.E.M. video is added at `?scene=losing-religion`,
+with the approved physical singing, original music and full opening and ending.
+The amber room has a tall window, wooden floor, falling jug and shards, chair
+and floor gestures, mandolin band, shadows and a final winged figure. The
+other sets include white wings, shadowed caps, a blue garden, bow and symbolic
+arrows, masks, gold wings, the old angel workshop, feather bench and flame
+portrait, red curtains and black winged structure. Two physical head graphics
+borrow one retained singer. Preserve the chair/floor contact, source-time
+poses, actual mouth clearance, 791 public files and all fifty-eight concert
+and music-video performances. See [the notes](docs/losing-religion.md).
+Source film, frames, stems and models stay private. Browser playback, export
+and layout remain untested because access remains declined in this chat.

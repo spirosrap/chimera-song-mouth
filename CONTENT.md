@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 785 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 791 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -142,6 +142,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Robbie Williams — Rock DJ | 4:17 | `?scene=rock-dj` | Circular roller rink, skaters and DJ booth, industrial fans, tattoos, peeling anatomy panels, red muscle and dancing skeleton; original music and physical singing |
 | Kate Bush — Babooshka | 3:31 | `?scene=babooshka` | Carved double bass, veiled black bodysuit, gold warrior costume, striped sleeves and closing dance; original music and physical singing |
 | Electric Six — Danger! High Voltage | 3:42 | `?scene=danger-voltage` | Green portrait room, fireplace, glowing costumes, moose ride and saxophone finale; original music and two physical voices |
+| R.E.M. — Losing My Religion | 4:54 | `?scene=losing-religion` | Amber room, chair and floor gestures, mandolin band, giant wings, blue garden, workshop and red curtains; original music and physical singing |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -305,3 +306,5 @@ Rock DJ adds the full supplied roller-disco video as an independent scene; see [
 Babooshka adds the full supplied double-bass and warrior-costume video as an independent scene; see [its performance notes](docs/babooshka.md). All preceding public media remain byte-for-byte preserved.
 
 Danger! High Voltage adds the full supplied Electric Six video as an independent scene; see [its notes](docs/danger-voltage.md). All preceding public media remain byte-for-byte preserved.
+
+Losing My Religion adds the full supplied R.E.M. video as an independent performance; see [the scene notes](docs/losing-religion.md). All earlier public media remain byte-for-byte preserved.
