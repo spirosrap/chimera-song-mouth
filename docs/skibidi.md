@@ -62,3 +62,20 @@ because browser access remains declined in this chat.
 The unchanged English-only caption listening aid mishears 205 of 254 words (80.7%). Most refrain tokens are intentional nonsense syllables. The tool hears each short caption alone, so this remains a diagnostic rather than an intelligibility pass. No judge or threshold was changed.
 
 Release checks passed 195 native tests (two existing ignored), 582 Bun tests across 141 files, TypeScript, all 842 content hashes and the unchanged production WASM, production build, every built public hash and local HTTP delivery of the direct route, app bundles and six new scene files. Seventeen focused scene/catalog checks passed. Forty-eight distinct native geometry projections cover all source cuts and six phone views. Browser playback, export and layout were not retested.
+
+SKIBIDI is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=skibidi>.
+Runtime `4a7762ec6c5e4b0abfbcd01ee38958744dca3d25` was pushed before all 17 changed files uploaded successfully
+with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP checks matched
+341 files, including every current app bundle, six new scene assets and 47
+preserved performances, plus the clean direct route. The temporary upload job
+and plist were removed. All 836 preceding public files remain byte-identical;
+the manifest contains 842 files. Checks passed 195 native tests (two existing
+ignored), 582 Bun tests across 141 files, TypeScript, content/WASM verification,
+production build, built hashes and local HTTP delivery. The full test-script
+components ran in separate processes to stay inside the command time limit.
+Forty-eight distinct native geometry projections cover all source cuts and six
+phone views; all visible physical heads pass framing and opaque-mouth-ray
+checks, including costume ornaments. Only documentation changed after the
+verified build. Browser playback, export and layout remain untested because
+access remains declined in this chat.

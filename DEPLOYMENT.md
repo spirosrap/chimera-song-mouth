@@ -364,3 +364,31 @@ native geometry projections and final hospital/lounge/prop reviews accompany
 all-visible-performer phone/desktop head framing and opaque-mouth-ray checks.
 Only documentation changed after the verified build. Browser playback, export
 and layout remain untested because access remains declined in this chat.
+
+## SKIBIDI · 17 November 2026
+
+The complete supplied Little Big video has physical English singing and
+explicit rapid nonsense syllables over original instrumental music and
+retained effects. Nine costume graphics borrow one retained model. Bent
+wrists, chest-height reciprocal fists, raised knees and heel taps follow
+132 BPM. Street vignettes, aerobics trio, pub, bathroom, overhead bed, park,
+alley crowd and giant rooftop reveal follow source time. The bed camera
+restores its up vector and every visible physical head stays clear of opaque
+sets and costume ornaments. See [the scene notes](docs/skibidi.md).
+
+SKIBIDI is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=skibidi>.
+Runtime `4a7762ec6c5e4b0abfbcd01ee38958744dca3d25` was pushed before all 17 changed files uploaded successfully
+with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP checks matched
+341 files, including every current app bundle, six new scene assets and 47
+preserved performances, plus the clean direct route. The temporary upload job
+and plist were removed. All 836 preceding public files remain byte-identical;
+the manifest contains 842 files. Checks passed 195 native tests (two existing
+ignored), 582 Bun tests across 141 files, TypeScript, content/WASM verification,
+production build, built hashes and local HTTP delivery. The full test-script
+components ran in separate processes to stay inside the command time limit.
+Forty-eight distinct native geometry projections cover all source cuts and six
+phone views; all visible physical heads pass framing and opaque-mouth-ray
+checks, including costume ornaments. Only documentation changed after the
+verified build. Browser playback, export and layout remain untested because
+access remains declined in this chat.

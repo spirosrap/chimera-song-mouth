@@ -454,3 +454,20 @@ and layout remain untested because access remains declined in this chat.
 ## SKIBIDI addition · 17 November 2026
 
 The complete supplied Little Big video is added at `?scene=skibidi`, with original music and actual physical English singing and source-timed nonsense syllables. Nine costume graphics share one captured featured performance and borrow one retained model. Preserve the reciprocal chest-level fists, bent wrists, alternate knee lifts and heel taps; street, rooster, pram and baby, aerobics trio, pub, bathroom, overhead bed dance, park, alley crowd and giant reveal. Source time restores every pose and prop, and the bed camera restores its up vector. Every visible physical head passes native phone/desktop framing and opaque-mouth-ray checks. Keep all 842 public files and 66 concert/music-video performances. See [the scene notes](docs/skibidi.md). Raw source film, frames, stems and analysis caches stay private.
+
+SKIBIDI is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=skibidi>.
+Runtime `4a7762ec6c5e4b0abfbcd01ee38958744dca3d25` was pushed before all 17 changed files uploaded successfully
+with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP checks matched
+341 files, including every current app bundle, six new scene assets and 47
+preserved performances, plus the clean direct route. The temporary upload job
+and plist were removed. All 836 preceding public files remain byte-identical;
+the manifest contains 842 files. Checks passed 195 native tests (two existing
+ignored), 582 Bun tests across 141 files, TypeScript, content/WASM verification,
+production build, built hashes and local HTTP delivery. The full test-script
+components ran in separate processes to stay inside the command time limit.
+Forty-eight distinct native geometry projections cover all source cuts and six
+phone views; all visible physical heads pass framing and opaque-mouth-ray
+checks, including costume ornaments. Only documentation changed after the
+verified build. Browser playback, export and layout remain untested because
+access remains declined in this chat.
