@@ -26,6 +26,8 @@ const AVERAGE_S = 2;
 /** a reading counts as no more than this: a stall (a hidden tab, a laptop asleep, a busy moment)
  * mustn't alone make a fast device look slow, so it takes ~1 s of overload at least to fall back */
 const MOST = 1.5;
+/** how long a start or rebuild waits for the context to run */
+const RESUME_WAIT_MS = 3000;
 /** the first moments' load is the wasm compiling, not the device's speed */
 const WARM_UP_MS = 2000;
 
@@ -202,14 +204,13 @@ export class AudioEngine {
         console.error("worklet:", m.message);
       }
     };
-    await resumed;
+    // a rebuild comes from no gesture, and a browser may hold the new context until there is one
+    // (its resume() then doesn't settle until then): the next tap or key resumes it, and nothing
+    // waits on it for long, so the rebuild still finishes (the state is sent, the old song stops)
+    const resume = () => void ctx.resume().catch(() => {});
+    for (const ev of ["pointerdown", "keydown"]) window.addEventListener(ev, resume, { once: true, capture: true });
     // a second chance where the first resume was refused (the result is what callers see)
-    await ctx.resume();
-    if (ctx.state !== "running") {
-      // a rebuild comes from no gesture, and some browsers wait for one: the next tap or key
-      const resume = () => void ctx.resume().catch(() => {});
-      for (const ev of ["pointerdown", "keydown"]) window.addEventListener(ev, resume, { once: true, capture: true });
-    }
+    await Promise.race([resumed.then(() => ctx.resume()), new Promise((r) => setTimeout(r, RESUME_WAIT_MS))]);
   }
 
   /**

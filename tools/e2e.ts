@@ -363,18 +363,37 @@ async function run(viewport: { width: number; height: number }, tag: string) {
 
 // a device too slow for 48 kHz falls back to 32 kHz and keeps sounding; one too slow for that says
 // so (issues #86, #113). The patched node adds to the load the worklet reports: at 48 kHz only
-// (it keeps up at 32), or at every rate.
-for (const slowAt of ["48000", "any"]) {
+// (it keeps up at 32), or at every rate. "-gesture": the browser holds the 32 kHz context, built
+// without a gesture, until there is one (its resume() doesn't settle till then): the rebuild must
+// still finish, and the next tap must bring the sound back.
+for (const slowAt of ["48000", "any", "48000-gesture"]) {
   const tag = `slow-${slowAt}`;
   const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
   page.on("pageerror", (e) => errors.push(`[${tag}] pageerror: ${e.message}`));
   await page.addInitScript((slowAt) => {
+    if (slowAt.endsWith("-gesture")) {
+      let gestured = false;
+      window.addEventListener("pointerdown", () => (gestured = true), { capture: true });
+      const Device = window.AudioContext, resume = Device.prototype.resume;
+      window.AudioContext = class extends Device {
+        constructor(o?: AudioContextOptions) {
+          super(o);
+          // (the autoplay switch starts a context after its constructor: hold it at each start)
+          // (only a tap after it counts: the one that started the audio came before)
+          if (this.sampleRate === 32000) gestured = false;
+          if (this.sampleRate === 32000) this.addEventListener("statechange", () => !gestured && this.state === "running" && void this.suspend());
+        }
+        override resume(): Promise<void> {
+          return this.sampleRate !== 32000 || gestured ? resume.call(this) : new Promise<void>(() => {});
+        }
+      };
+    }
     const Node = window.AudioWorkletNode;
     const onmessage = Object.getOwnPropertyDescriptor(MessagePort.prototype, "onmessage")!;
     window.AudioWorkletNode = class extends Node {
       constructor(ctx: BaseAudioContext, name: string, o?: AudioWorkletNodeOptions) {
         super(ctx, name, o);
-        const port = this.port, slow = slowAt === "any" || String(ctx.sampleRate) === slowAt;
+        const port = this.port, slow = slowAt === "any" || String(ctx.sampleRate) === slowAt.split("-")[0];
         let h: ((e: MessageEvent) => void) | null = null;
         Object.defineProperty(port, "onmessage", {
           get: () => h,
@@ -396,6 +415,20 @@ for (const slowAt of ["48000", "any"]) {
     const e = window.__chimeraEngine;
     return { rate: e?.ctx?.sampleRate ?? -1, rms: e?.latest?.t?.outRms ?? -1 };
   });
+  if (slowAt.endsWith("-gesture")) {
+    const held = await page.evaluate(() => {
+      // @ts-expect-error debug handle
+      return window.__chimeraEngine?.ctx?.state;
+    });
+    await page.locator(".wordmark").click();
+    await page.waitForTimeout(1500);
+    state.rms = await page.evaluate(() => {
+      // @ts-expect-error debug handle
+      return window.__chimeraEngine?.latest?.t?.outRms ?? -1;
+    });
+    logs.push(`[${tag}] the 32 kHz context was ${held} until a tap`);
+    if (held !== "suspended") errors.push(`[${tag}] the held context was ${held} before the tap (the test's patch didn't hold it)`);
+  }
   const warned = await page.getByText(/This device can't keep up/).isVisible();
   const badge = await page.getByText(/· 32 kHz/).isVisible();
   logs.push(`[${tag}] slow device: runs at ${state.rate} Hz, rms ${state.rms.toFixed(4)}, 32 kHz shown ${badge}, warning ${warned}`);
