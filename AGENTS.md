@@ -52,12 +52,12 @@ and the CLI) under a React UI. See the README.
 - **The wasm loads before the UI.** A module that calls the engine at import must not be reachable
   from `src/main.tsx`'s static imports. Check: `bun tools/e2e.ts` against `bun run preview`.
 - **Recorded band heads own model leases for their mounted lifetime.** Do not hold an evictable live-preview model in a recorded feed; the original MEGALOVANIA used 13 body blends, beyond the eight-entry cache. Preserve that regression test even when an arrangement changes bodies. Check: `bun test tests/model-leases.test.ts`.
-- **Camera cuts must keep the active singing head clear of background geometry.** Check all Abracadabra source cuts at phone and desktop widths with `bun test tests/abracadabra.test.ts tests/bad-guy.test.ts`. Its rear camera once sat behind the hall wall. Intentional rear/profile poses may face away; move an obstructed camera or set rather than forcing the head over foreground props. Preserve this regression check in later scenes.
+- **Camera cuts must keep the active singing head clear of background geometry.** Check all Abracadabra source cuts at phone and desktop widths with `bun test tests/abracadabra.test.ts tests/bad-guy.test.ts tests/montero.test.ts`. Its rear camera once sat behind the hall wall. Intentional rear/profile poses may face away; move an obstructed camera or set rather than forcing the head over foreground props. Preserve this regression check in later scenes.
 - **Manual camera fallbacks use the loaded scene's catalog.** Unlisted recent videos previously showed courtroom cameras. Keep `sceneViewChoices` as the fallback in ScenePage; check `bun test tests/scene-view-choices.test.ts` before adding another performance.
 - **DOM content flows in `.screen-body`, never absolutely positioned.** Check: `bun run lint:layout`.
 - **The layout lint's encoder checks target `?solo=1`**; the bare URL intentionally opens the band. Check: `bun run lint:layout`.
 - **This handoff explicitly includes the user-requested prepared music/movie assets.**
-  Keep all twenty-two songs, all fifteen film and TV scenes, the speech scene, the two Apollo scenes and all sixty-three concert and music-video performances in `public/`; read `CONTENT.md` and `MEDIA-RIGHTS.md`.
+  Keep all twenty-two songs, all fifteen film and TV scenes, the speech scene, the two Apollo scenes and all sixty-four concert and music-video performances in `public/`; read `CONTENT.md` and `MEDIA-RIGHTS.md`.
   The upstream copyright exclusion does not apply to this explicitly requested export. CSD
   datasets, original input recordings and analysis caches are not included. Do not add them.
   After intentionally changing public assets, run `bun run content:manifest` and commit the

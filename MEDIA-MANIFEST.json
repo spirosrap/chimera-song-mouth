@@ -2897,6 +2897,36 @@
       "sha256": "f8b6bb59a637784744a0529dee86fc0be00a85d59c28e334c948f61e2ee43b04"
     },
     {
+      "path": "public/scenes/montero/backing.mp3",
+      "bytes": 6088748,
+      "sha256": "339af5db21bc1b61c79f9ff0a88df5d8c362ee02cc723e1faee35c709150634c"
+    },
+    {
+      "path": "public/scenes/montero/credits.txt",
+      "bytes": 2094,
+      "sha256": "56b7f7917a8e7f3eefc26fd468214f543ac016f611d1f1cad40c473e4486c6c9"
+    },
+    {
+      "path": "public/scenes/montero/lead.tele.gz",
+      "bytes": 2269670,
+      "sha256": "e674d9b0bd0adce0a6496e44223768ff294f31ba820916164a5ac7294dc01dd9"
+    },
+    {
+      "path": "public/scenes/montero/mix.mp3",
+      "bytes": 6088748,
+      "sha256": "f5bf2cad8d2363def240ec4bee53aa0fb8d0c92d6bfd193902eeb34108ba9490"
+    },
+    {
+      "path": "public/scenes/montero/performance.json",
+      "bytes": 192791,
+      "sha256": "e9909b1c395e1f728db06694fbd572f49bdfbf9c8a33b8f44b9567d3ebe07d5f"
+    },
+    {
+      "path": "public/scenes/montero/scene.json",
+      "bytes": 9548,
+      "sha256": "689baf693dc6ead1958ee3d46fc043ef6cba849dc8d97279f78d80dd16806057"
+    },
+    {
       "path": "public/scenes/my-heart-will-go-on/backing.mp3",
       "bytes": 8991020,
       "sha256": "874f1d5244d190e91c3edfdf70b6b6bef1ccfcc760814747efbf0c0d6ae33877"

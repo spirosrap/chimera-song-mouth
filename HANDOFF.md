@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-three concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-four concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -399,4 +399,20 @@ native geometry projections and all performer-cut phone/desktop head-clearance
 checks cover the visual reconstruction. Manual camera fallback tests cover this
 video and the three preceding additions. Only documentation changed after the
 verified build. Browser playback, export and layout remain untested because
+access remains declined in this chat.
+
+## MONTERO addition · 16 November 2026
+
+The full supplied Lil Nas X video is added at `?scene=montero`, with the approved
+physical narration, singing, rap and actual nasal humming over original music.
+Nine role graphics borrow one retained singer. Keep Eden and serpent, inscribed
+tree, flowers and pink guitar, blue wigs and pink fur, trial and chains, ascent
+and wings, turning/inverted pole descent and passing windows, lava, spires,
+throne, clothed dance, horn transfer and winged ending. The decorative defeated
+figure leaves the final portraits. Preserve absolute source time, world-space
+pole grips, all performer-cut phone/desktop head clearance including costume
+ornaments, and scene-catalog camera fallback. Scenic/detail cuts intentionally
+omit the singer. Preserve all 829 public files and 64 concert/music-video
+performances. See [the notes](docs/montero.md). Raw film, frames, stems and model
+caches stay private. Browser playback/export/layout remain untested because
 access remains declined in this chat.
