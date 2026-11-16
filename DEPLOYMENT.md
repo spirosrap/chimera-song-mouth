@@ -137,3 +137,16 @@ build, including every current app bundle and 35 preceding performances. The
 temporary task launchd job and plist were removed. No source film, raw frame,
 stem or model cache was uploaded. See [the scene notes](docs/land-confusion.md).
 Browser playback/export/layout remain untested because access was declined.
+
+## Rock DJ · 16 November 2026
+
+Runtime `6051e2365fff909ae7aaeafc573663e3af48cd71` adds the full approved physical-voice roller-disco performance
+at `?scene=rock-dj`, including the skeleton transformation and sung credit
+ending. The verified 772-file public build preserves all 766 preceding assets.
+The existing Mac mini uploader published only 17 changed files, media first
+and index last, and exited successfully. All 271 checked live files and the
+clean new route matched the build, including every current app bundle and
+36 preceding performances. The temporary task launchd job and plist were
+removed. No source film, raw frame, stem or model cache was uploaded. See
+[the scene notes](docs/rock-dj.md). Browser playback/export/layout remain
+untested because access was declined.

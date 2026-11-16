@@ -63,3 +63,12 @@ production build and local HTTP delivery of the direct route, app bundles and
 all six scene files. The full app suite and build were repeated after fixing
 the skin mesh showing through the trousers; a costume-transition regression
 check preserves the fix. The tracked WASM retains its provenance checksum.
+
+The scene is live at [Rock DJ](https://agenticspiros.com/chimera-song-mouth/?scene=rock-dj).
+Runtime commit `6051e2365fff909ae7aaeafc573663e3af48cd71` was pushed before deployment. The existing Mac mini
+uploader published 17 changed files successfully, with `DEPLOY_EXIT=0`; media
+went first and the app index last. All 271 checked live files matched their
+local SHA-256 values, including every current app bundle, the six new scene
+files and 36 preserved performances. The clean direct route returned the new
+index. The task's temporary launchd job and plist were removed after success.
+Only these documentation notes changed after the verified production build.

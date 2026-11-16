@@ -181,3 +181,11 @@ singer. Preserve the 772-file public baseline and all fifty-five concert and
 music-video performances. See [the scene notes](docs/rock-dj.md). Original film,
 frames, stems and local models remain private. Browser playback, export and
 layout remain untested here because access was declined.
+
+Rock DJ is live and verified. Runtime commit `6051e23` was pushed and
+17 changed files published successfully; 271 live file hashes, the clean
+route and 36 preserved performances matched. Full checks passed: 195 native
+tests (two existing ignored), 537 Bun tests across 129 files, typecheck,
+content manifest, production build and local HTTP integration. The app
+suite and build were repeated after the costume-overlap fix. The following
+notes commit does not change the verified runtime build.
