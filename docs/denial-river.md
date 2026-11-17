@@ -43,3 +43,25 @@ The owner approved the validated 33.5-second MP3 excerpt at source time 127–16
 The unchanged caption-level Whisper listening aid misheard 460 of 533 words (86.3%) in isolated mixed excerpts. This is not an intelligibility pass. Six windows are empty under the diagnostic’s neighbour-clipping rule because dialogue captions overlap; context-free rapid snippets further limit the diagnostic. The owner-approved MP3 remains the listening reference. The judges were not edited.
 
 Validation passed 195 native tests (two existing ignored), all 594 Bun tests across 144 files in four disjoint bounded batches, focused pose/camera checks, TypeScript, content/WASM verification and the production build. The first monolithic test process exceeded the command limit and hit a 15-second timing timeout under concurrent analysis; the complete unchanged suite passed in bounded batches. Native/WASM and Bun components ran separately within command time limits.
+
+DENIAL IS A RIVER is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=denial-river>.
+Runtime `b7909759e5184bd3bb535bc09657cc8fc84c87a5` was committed and pushed before
+all 20 changed files uploaded successfully with `DEPLOY_EXIT=0`, media first
+and entry page last. Live HTTP verification matched 363 files, including all
+current app bundles, nine new scene assets and 50 preserved performances,
+plus the clean direct route. The temporary upload job and plist were removed.
+All 855 preceding public files remain byte-identical; the manifest contains
+864 files and 69 concert/music-video performances. Validation passed 195 native
+tests (two existing ignored), all 594 Bun tests across 144 files in four bounded
+batches, focused source-timing/pose/camera checks, TypeScript, content/WASM,
+production build, all built hashes and local HTTP delivery. Forty-seven native
+geometry projections cover all 41 source cuts and six phone views. All visible
+physical heads pass framing and opaque-mouth-ray checks at three points per
+cut on phone and desktop, including costume ornaments; intentional full-screen
+fades are excluded. The kitchen guest stays in the visible kitchen and restores
+to the living-room couple shot on seeks. Only documentation changed after the
+verified build. Browser playback/export/layout were not retested because access
+remains declined in this chat. The unchanged caption-level clarity aid is a
+documented diagnostic, not an intelligibility pass; the approved preview is the
+listening reference.

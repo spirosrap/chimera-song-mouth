@@ -520,3 +520,25 @@ and layout were not retested because access remains declined in this chat.
 ## DENIAL IS A RIVER addition
 
 The full supplied Doechii video is added at `?scene=denial-river` with original music and four actual physical channels: rap, brighter inner voice, opening phrase and unvoiced breathing exercise. Preserve all 864 public assets and 69 concert/music-video performances. Ten costume/role graphics borrow three retained models; decorative guests and crew are independent. Keep the sitcom rooms, flowers, kitchen/knife/cucumber, refrigerator, changing outfits, guests, window gag, telephone, fisheye portrait, exposed flats, cameras/boom, audience and collapsing smoky finale. Every source-time transform restores after seeks. See [the scene notes](docs/denial-river.md). Browser playback/export/layout remain untested because access remains declined.
+
+DENIAL IS A RIVER is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=denial-river>.
+Runtime `b7909759e5184bd3bb535bc09657cc8fc84c87a5` was committed and pushed before
+all 20 changed files uploaded successfully with `DEPLOY_EXIT=0`, media first
+and entry page last. Live HTTP verification matched 363 files, including all
+current app bundles, nine new scene assets and 50 preserved performances,
+plus the clean direct route. The temporary upload job and plist were removed.
+All 855 preceding public files remain byte-identical; the manifest contains
+864 files and 69 concert/music-video performances. Validation passed 195 native
+tests (two existing ignored), all 594 Bun tests across 144 files in four bounded
+batches, focused source-timing/pose/camera checks, TypeScript, content/WASM,
+production build, all built hashes and local HTTP delivery. Forty-seven native
+geometry projections cover all 41 source cuts and six phone views. All visible
+physical heads pass framing and opaque-mouth-ray checks at three points per
+cut on phone and desktop, including costume ornaments; intentional full-screen
+fades are excluded. The kitchen guest stays in the visible kitchen and restores
+to the living-room couple shot on seeks. Only documentation changed after the
+verified build. Browser playback/export/layout were not retested because access
+remains declined in this chat. The unchanged caption-level clarity aid is a
+documented diagnostic, not an intelligibility pass; the approved preview is the
+listening reference.
