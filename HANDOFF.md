@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-four concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-five concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -633,3 +633,7 @@ also matches the new index. All 892 preceding public assets remain byte-identica
 The manifest contains 900 public files and the library 74 concert/music-video
 performances. All 614 Bun tests/149 files and 195 native tests passed (two existing
 ignored). Browser playback, export and layout were not retested.
+
+## like JENNIE addition
+
+The complete supplied video is added at `?scene=like-jennie`. Keep the approved 47-second English/Korean preview controls and original accompaniment. Four costumes borrow one retained physical airway. Preserve the red spacesuit and open helmet, capsule and hatch, floating bean and fingers, beige cap and braids, chrome spires and ceiling lights, 64 dancers, source-time lines/rings/overhead/floor formations, digital columns, red return, stormy landscape, translucent fire, capybara, blue flower and final animal close-up. Foreground extras leave a clear camera corridor; overhead caps use an owned translucent cutaway and ceiling lights leave overhead shots. All transforms and material state restore after seeks. Source doubles are represented by the lead; pronunciation and choreography remain approximate. See [the scene notes](docs/like-jennie.md). All 900 preceding public assets remain unchanged.

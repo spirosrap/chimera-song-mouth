@@ -2872,6 +2872,36 @@
       "sha256": "3255b7fe553d6c7ff3a7b13b5ef293175c35a7d29b2f977446b885a473aedcf9"
     },
     {
+      "path": "public/scenes/like-jennie/backing.mp3",
+      "bytes": 5844524,
+      "sha256": "a30d042aedd91f7ea4b92a682657d4f15789334e0a1904318c54b6eba8236dd6"
+    },
+    {
+      "path": "public/scenes/like-jennie/credits.txt",
+      "bytes": 1932,
+      "sha256": "dfd9010a8491f12891fc9b479ffbf4f966573acf95ed0a83fb8e1dbb1dc7303e"
+    },
+    {
+      "path": "public/scenes/like-jennie/lead.tele.gz",
+      "bytes": 1491956,
+      "sha256": "b39330beaa47cb765d40e8de09fc481223030fd391767109459bfdd8f9659767"
+    },
+    {
+      "path": "public/scenes/like-jennie/mix.mp3",
+      "bytes": 5844524,
+      "sha256": "083cdb3800d241683e76213a1510cf36750435ff9d65f18644513006c3bfefd3"
+    },
+    {
+      "path": "public/scenes/like-jennie/performance.json",
+      "bytes": 148888,
+      "sha256": "4a02ae8d4adabacc0b06a3053044140a3626707a06b40f3d06d48cdf7c7fbb1d"
+    },
+    {
+      "path": "public/scenes/like-jennie/scene.json",
+      "bytes": 9256,
+      "sha256": "b5aca29760c08b7944832c59fdd00ea34ba0698b8e70bdba64c7fd6f5f6933dc"
+    },
+    {
       "path": "public/scenes/losing-religion/backing.mp3",
       "bytes": 9421868,
       "sha256": "7708bedbbf17e4b3153cf97721f6f314d0ca66713d7491d9f08d55143c1fd4ed"
