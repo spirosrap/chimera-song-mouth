@@ -3937,6 +3937,36 @@
       "sha256": "b69c50ad8638a009405ff6e061b6b5e09a50daa8bb84ab9694b58709e2447209"
     },
     {
+      "path": "public/scenes/tailor-swif/backing.mp3",
+      "bytes": 6226988,
+      "sha256": "853ec2c36dac95a83573d522bcfbc1cb2f4790bf8dc48c5aed66046863b95dd6"
+    },
+    {
+      "path": "public/scenes/tailor-swif/credits.txt",
+      "bytes": 1925,
+      "sha256": "bdad0a4a0bd4d0c64762face13cf27e1ce667a0dbe12f37729034e89d9d46101"
+    },
+    {
+      "path": "public/scenes/tailor-swif/lead.tele.gz",
+      "bytes": 1862792,
+      "sha256": "a9d904b0600cff5605245c2d1e8a6e6ed6c7a441a9bb89b6bc183cfd3a8b48f7"
+    },
+    {
+      "path": "public/scenes/tailor-swif/mix.mp3",
+      "bytes": 6226988,
+      "sha256": "6d6c20c55d05f3874c859330deea74a60b5cfaf2adfcbb7670957ddd95c2996c"
+    },
+    {
+      "path": "public/scenes/tailor-swif/performance.json",
+      "bytes": 177242,
+      "sha256": "86d140b5898b221161ee189bdc93caf0f2d819458d826a238cd81ee8f5afd52c"
+    },
+    {
+      "path": "public/scenes/tailor-swif/scene.json",
+      "bytes": 8063,
+      "sha256": "459d4c9ba2960633ad4ecdd79e4cd8679e5e5e820fc9f46663d68869e73eb9c3"
+    },
+    {
       "path": "public/scenes/take-on-me/answer.tele.gz",
       "bytes": 573642,
       "sha256": "34821e4ddd9e80db15303818bdd1ec21cee46e00f712fc29dd6a1374ad5cff5d"

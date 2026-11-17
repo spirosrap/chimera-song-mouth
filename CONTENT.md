@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 886 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 892 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -157,6 +157,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | GENER8ION — STORM starring Yung Lean | 7:34 | `?scene=storm` | Uniforms, school grounds, corridor, canteen, dining hall, rooftop trolley, class portrait and coordinated night routine; original music, physical featured voice and rhythmic calls |
 | Joost — Europapa | 3:22 including release | `?scene=europapa` | Dutch physical lead, original music, blue pointed suit, podium, cowboy hat, scooter, dinner, windmill band, rave and quiet family tribute |
 | Eminem — Houdini | 4:57 | `?scene=houdini` | Original music and effects, physical featured vocal and three dialogue roles, portal, comic panels, superhero, roadster, rooftop showdown and 24 clones |
+| A$AP Rocky — Tailor Swif | 3:14 | `?scene=tailor-swif` | Approved physical rap, original music and effects; carpet car, bathroom, surreal apartment, tiny fridge people, padded giant, dog office, bathtub ride, gym and absurd playground |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -371,3 +372,5 @@ remain byte-identical; the manifest contains 886 files and 72 concert/music-vide
 performances. New-scene/native/content/build/HTTP checks passed. Two unchanged
 synthesis tests retain the documented five-second timing failures; browser
 playback, export and layout were not retested.
+
+Tailor Swif adds the complete supplied surreal video with approved physical rap over the original music. See [the scene notes](docs/tailor-swif.md). All 886 preceding public files remain byte-identical.

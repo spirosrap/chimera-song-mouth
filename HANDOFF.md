@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-two concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-three concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -603,3 +603,7 @@ remain byte-identical; the manifest contains 886 files and 72 concert/music-vide
 performances. New-scene/native/content/build/HTTP checks passed. Two unchanged
 synthesis tests retain the documented five-second timing failures; browser
 playback, export and layout were not retested.
+
+## Tailor Swif addition
+
+The full supplied A$AP Rocky video is added at `?scene=tailor-swif`. Keep the approved clearer physical rap from the second 52–80 second preview, source-aligned complete consonants, fuller vowels and continuous reference prosody. Five costume graphics borrow one retained model. Preserve the carpet-lined car, bathroom and pipe man, courtyard sedan, apartment cabinet, tiny fridge people, horse heads, padded giant, dog office, wheeled bathtub, gym tower, weightlifting dog, worker and lamb, tyre stack, burning armchair, playground and closing kitchen vignettes. All transforms restore from source time. See [the scene notes](docs/tailor-swif.md). All 886 preceding public files remain unchanged.
