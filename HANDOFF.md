@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-seven concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-eight concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -493,3 +493,7 @@ at three points in every source cut on phone and desktop, including costume
 ornaments. Only documentation changed after the verified build. Browser
 playback, export and layout were not retested because access remains declined
 in this chat.
+
+## Aperture addition · 17 November 2026
+
+The complete supplied Harry Styles video is added at `?scene=aperture`, with the owner-approved physical singing, opening telephone exchange and original music. Main and mirror graphics borrow one retained model; the receptionist borrows the other. Keep the patterned collar, quiff and stubble, night room, bed/chair and phone, mirror, green corridors, reception and bell, city tower, stranger and bag, escalators, curved stairs and tumble, laundry collision, drink, lift/inversion, dance, planter, lounge and return. Absolute source time restores all props and poses. Preserve all 855 public assets and 68 concert/music-video performances. See [the scene notes](docs/aperture.md). Browser playback/export/layout remain untested because access remains declined.

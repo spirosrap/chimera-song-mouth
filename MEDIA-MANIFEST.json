@@ -1477,6 +1477,41 @@
       "sha256": "d84ed453bbcc4643ba6ac0b2627ab2ecd4b3ce59009d98dabd94b275d7a772d8"
     },
     {
+      "path": "public/scenes/aperture/backing.mp3",
+      "bytes": 11248940,
+      "sha256": "e0155c797292114d6d3cfc60a86c9779e229e4567f7572bcc911451d4f9f45b2"
+    },
+    {
+      "path": "public/scenes/aperture/clerk.tele.gz",
+      "bytes": 99315,
+      "sha256": "0b29961acfff4e79ccaa667f6e130248e15fa762c3b82b335b2d67148914a51e"
+    },
+    {
+      "path": "public/scenes/aperture/credits.txt",
+      "bytes": 2137,
+      "sha256": "103a30439d8ada6c4e77cfd1c08af6dec5db36576b0078d2479fb4856a971021"
+    },
+    {
+      "path": "public/scenes/aperture/lead.tele.gz",
+      "bytes": 2665857,
+      "sha256": "82acacd100b79af2be7b805e051c92bcbfff45776a78cd2521eb3f5d4be71e06"
+    },
+    {
+      "path": "public/scenes/aperture/mix.mp3",
+      "bytes": 11248940,
+      "sha256": "f87fdacd906cb5f77f5ac4f56781245ee37927ef681cd34ec511320f066011c2"
+    },
+    {
+      "path": "public/scenes/aperture/performance.json",
+      "bytes": 193917,
+      "sha256": "8fb214f74b7499f6eabcc8064a758c8af7b431c814491bc6c7ede8fd0cdbaeac"
+    },
+    {
+      "path": "public/scenes/aperture/scene.json",
+      "bytes": 10649,
+      "sha256": "b89d491c00e6ab7d02116e2e3a9db534b91534ef5b06dffc9822bc494575836b"
+    },
+    {
       "path": "public/scenes/apollo-11/aldrin.tele.gz",
       "bytes": 2436682,
       "sha256": "cb9daa646880a4896907ceb41594f0fd6a921894e053ea356e3d2f098d5f2705"

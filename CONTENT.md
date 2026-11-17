@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 848 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 855 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -152,6 +152,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Sabrina Carpenter — Taste | 3:18 | `?scene=taste` | Vanity, bedroom, balcony, pink hospital gown and nurse, lounge, feathered staircase, pool confrontation, funeral and coffee-cup walk; original music and two physical mouth-engine voices. |
 | Little Big — SKIBIDI | 3:13 | `?scene=skibidi` | Bent wrists and knee lifts, street, rooster, pram, aerobics trio, pub, bathroom, overhead bed dance, park, alley crowd and giant; original music and physical mouth-engine singing and chant. |
 | Sabrina Carpenter — Manchild | 3:56 | `?scene=manchild` | Surreal desert road trip, nine outfits, strange vehicles, chandelier van, tanker, pool hall, motel, lily pond, wheeled armchairs, telephone, jet ski, pigs, dog, falling car, orca and sunset road; original music and one actual physical singer |
+| Harry Styles — Aperture | 5:51 | `?scene=aperture` | Night hotel room, telephone, mirror, empty reception, stranger, escalators and spiral stairs, laundry, surreal lift and inverted dance, planter and return; original music and two actual physical voices |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -335,3 +336,5 @@ Taste adds the complete supplied horror-comedy video with original music, approv
 SKIBIDI adds the full supplied strange-dance video with original music and an actual physical featured voice. See [the scene notes](docs/skibidi.md). All earlier prepared media remain unchanged.
 
 Manchild adds the complete supplied road-trip video as procedural scenery with original instrumental music and physical mouth-engine singing. See [the scene notes](docs/manchild.md). All preceding prepared media remain unchanged.
+
+Aperture adds the complete supplied hotel film with original instrumental music, the approved physical singing and opening telephone exchange. See [the scene notes](docs/aperture.md). All preceding prepared media remain unchanged.
