@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-eight concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-nine concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -516,3 +516,7 @@ at three points in every source cut on phone and desktop, including costume
 ornaments. The full-screen fade is deliberately excluded from those rays.
 Only documentation changed after the verified build. Browser playback, export
 and layout were not retested because access remains declined in this chat.
+
+## DENIAL IS A RIVER addition
+
+The full supplied Doechii video is added at `?scene=denial-river` with original music and four actual physical channels: rap, brighter inner voice, opening phrase and unvoiced breathing exercise. Preserve all 864 public assets and 69 concert/music-video performances. Ten costume/role graphics borrow three retained models; decorative guests and crew are independent. Keep the sitcom rooms, flowers, kitchen/knife/cucumber, refrigerator, changing outfits, guests, window gag, telephone, fisheye portrait, exposed flats, cameras/boom, audience and collapsing smoky finale. Every source-time transform restores after seeks. See [the scene notes](docs/denial-river.md). Browser playback/export/layout remain untested because access remains declined.

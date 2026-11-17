@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 855 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 864 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -153,6 +153,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Little Big — SKIBIDI | 3:13 | `?scene=skibidi` | Bent wrists and knee lifts, street, rooster, pram, aerobics trio, pub, bathroom, overhead bed dance, park, alley crowd and giant; original music and physical mouth-engine singing and chant. |
 | Sabrina Carpenter — Manchild | 3:56 | `?scene=manchild` | Surreal desert road trip, nine outfits, strange vehicles, chandelier van, tanker, pool hall, motel, lily pond, wheeled armchairs, telephone, jet ski, pigs, dog, falling car, orca and sunset road; original music and one actual physical singer |
 | Harry Styles — Aperture | 5:51 | `?scene=aperture` | Night hotel room, telephone, mirror, empty reception, stranger, escalators and spiral stairs, laundry, surreal lift and inverted dance, planter and return; original music and two actual physical voices |
+| Doechii — DENIAL IS A RIVER | 2:44 | `?scene=denial-river` | Changing sitcom rooms, flowers, kitchen, guests, costume changes, telephone, exposed studio and smoky collapse; original music and physical rap, dialogue, opening voice and breathing |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -338,3 +339,5 @@ SKIBIDI adds the full supplied strange-dance video with original music and an ac
 Manchild adds the complete supplied road-trip video as procedural scenery with original instrumental music and physical mouth-engine singing. See [the scene notes](docs/manchild.md). All preceding prepared media remain unchanged.
 
 Aperture adds the complete supplied hotel film with original instrumental music, the approved physical singing and opening telephone exchange. See [the scene notes](docs/aperture.md). All preceding prepared media remain unchanged.
+
+DENIAL IS A RIVER adds the full supplied sitcom film with original instrumental backing and four mouth-engine channels. See [the scene notes](docs/denial-river.md). All 855 preceding public files remain byte-identical.

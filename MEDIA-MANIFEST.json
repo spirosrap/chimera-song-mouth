@@ -2217,6 +2217,51 @@
       "sha256": "841630abc3a5306b2e7ba762c195c84ec3e1f1b69a9a0bd7f03c1251913ad60e"
     },
     {
+      "path": "public/scenes/denial-river/backing.mp3",
+      "bytes": 5279276,
+      "sha256": "71478af6869898e5a78cfcafea9cc9b7bcfd90f411372a9f3215516abdf86591"
+    },
+    {
+      "path": "public/scenes/denial-river/breath.tele.gz",
+      "bytes": 137054,
+      "sha256": "d4649d74f0f09e11f94e5691c2cc3f6e0725dc4377625030a67792dcad31c06c"
+    },
+    {
+      "path": "public/scenes/denial-river/credits.txt",
+      "bytes": 1719,
+      "sha256": "ab21dce46f4a59417af646c731e77c7156c0b737141d7e24bab4cb8b0fe49898"
+    },
+    {
+      "path": "public/scenes/denial-river/friend.tele.gz",
+      "bytes": 826914,
+      "sha256": "7feae15bb6c8e5cea073481363cb216dc1a335ef500b574078fb3eb379950b93"
+    },
+    {
+      "path": "public/scenes/denial-river/intro.tele.gz",
+      "bytes": 72211,
+      "sha256": "5e7a813ba4814f55d0f972372fbdabf377c506b1571b3d9bdcaa1c72fbe0f2c7"
+    },
+    {
+      "path": "public/scenes/denial-river/lead.tele.gz",
+      "bytes": 1572058,
+      "sha256": "5361ee5dca11c4cdd225b985d0f8a6ec573d365f55a162e755ce2ba7f22b3d39"
+    },
+    {
+      "path": "public/scenes/denial-river/mix.mp3",
+      "bytes": 5279276,
+      "sha256": "ebc4ec9a9521f08ac450181c01b918a64426f4527d36e57b35a3c02bb90d7e75"
+    },
+    {
+      "path": "public/scenes/denial-river/performance.json",
+      "bytes": 267065,
+      "sha256": "3779cf2d7109e17dcedccdf1eed0581caf76ad2b54c2b740a547b1984508dbe9"
+    },
+    {
+      "path": "public/scenes/denial-river/scene.json",
+      "bytes": 11530,
+      "sha256": "f01fc5062923c797addb0251b57e2be67e9f9330878d147a5eec8938923f2aa9"
+    },
+    {
       "path": "public/scenes/dimash-sos/backing.mp3",
       "bytes": 7868204,
       "sha256": "a4f8e3330c5744ed1fbb5f48225fb1fa9e437ecbf46d98da2c03d188172a11e7"
