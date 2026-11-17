@@ -455,3 +455,31 @@ verified build. Browser playback/export/layout were not retested because access
 remains declined in this chat. The unchanged caption-level clarity aid is a
 documented diagnostic, not an intelligibility pass; the approved preview is the
 listening reference.
+
+STORM is live at <https://agenticspiros.com/chimera-song-mouth/?scene=storm>.
+Runtime `2b424b2d0c94083abd1450bde8699f67bd0c6dd7` was committed and pushed before the corrected batch
+of 15 files uploaded successfully with `DEPLOY_EXIT=0`, media first and entry
+page last. The initial 18-file batch also completed successfully. The final
+live HTTP check matched all 370 checked files, including every current app
+bundle, seven STORM assets and 51 preserved performances, plus the clean direct
+route. Both temporary upload jobs and plists were removed. All 864 public files
+from before STORM remain byte-identical; the manifest contains 871 files and
+70 concert/music-video performances.
+
+Validation passed 195 native tests (two existing ignored) and the complete
+598-test Bun suite across 145 files in bounded batches with an isolated fixed-
+deadline percussion retry. The phonetic correction and versioned loading were
+followed by 27 passing targeted tests across seven files, TypeScript,
+content/WASM verification, production build, all built hashes and HTTP delivery
+using the versioned media URLs. Existing percussion assertions were unchanged;
+only catalog expectations and new STORM regression checks were added. The
+single earlier-verse word uses /s t ɔ ɹ m/; approved 330–364 phrases, pitch
+contours and voice settings remain unchanged. Only documentation changed after
+the verified build. Sixty-three native projections cover the 57 source views
+and six phone views, with final prop views reviewed again. All physical heads
+pass phone/desktop framing and opaque-mouth rays at three points per cut; all
+96 classmates pass the school-background ray check in the wide formation.
+Intentional full-screen fades are excluded. Browser playback/export/layout
+were not retested because access remains declined in this chat. The unchanged
+caption-level clarity aid remains a documented diagnostic, not an
+intelligibility pass; the owner-approved preview is the listening reference.
