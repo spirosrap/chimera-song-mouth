@@ -2257,6 +2257,36 @@
       "sha256": "841630abc3a5306b2e7ba762c195c84ec3e1f1b69a9a0bd7f03c1251913ad60e"
     },
     {
+      "path": "public/scenes/dead-dance/backing.mp3",
+      "bytes": 9192236,
+      "sha256": "4ae4d7b54da9e43e00d017645ef55c99dcbe3caf05b19833d0f074fd48a6a505"
+    },
+    {
+      "path": "public/scenes/dead-dance/credits.txt",
+      "bytes": 1810,
+      "sha256": "f7937ae88f0c48f25212941ec0978c11eaccf681cc3ef512987015b5bd4e21da"
+    },
+    {
+      "path": "public/scenes/dead-dance/lead.tele.gz",
+      "bytes": 2192741,
+      "sha256": "dad3a6824037fb901178e4ba95873a148e397ea5492e569d8cc573ce46974545"
+    },
+    {
+      "path": "public/scenes/dead-dance/mix.mp3",
+      "bytes": 9192236,
+      "sha256": "9682cf37f600de39f32f97d62424e1d86f54e8183b14f8a8651fbed55d60fdda"
+    },
+    {
+      "path": "public/scenes/dead-dance/performance.json",
+      "bytes": 178489,
+      "sha256": "c30e434a5ec532bb356dc43c4ab1a5412186e7ecfc28cf00cd8a67dfdfdd6f97"
+    },
+    {
+      "path": "public/scenes/dead-dance/scene.json",
+      "bytes": 9713,
+      "sha256": "5f5723fd8562ea8381c7a5ba346f590acb617965794caa72e0cb5b29b969a18d"
+    },
+    {
       "path": "public/scenes/denial-river/backing.mp3",
       "bytes": 5279276,
       "sha256": "71478af6869898e5a78cfcafea9cc9b7bcfd90f411372a9f3215516abdf86591"

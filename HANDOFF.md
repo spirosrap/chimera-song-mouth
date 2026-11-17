@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-six concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-seven concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -657,3 +657,7 @@ The full supplied video is added at `?scene=ratatata`. Preserve the approved thr
 RATATATA deployment proof: runtime `880f0083f9fdd922cbc96728e6a25fd29a9245ab` was committed and pushed, then all 19 changed files uploaded successfully (media first, index last; publisher exit 0). The direct [RATATATA route](https://agenticspiros.com/chimera-song-mouth/?scene=ratatata), current app bundles, all eight new scene files and fifty-seven preserved performances were verified against local SHA-256 values: 413 live files matched. The task's completed publisher job and its plist were removed; other jobs were untouched.
 
 The manifest contains 914 public files and the library 76 concert/music-video performances. All 906 preceding assets remain byte-identical. All four new-scene tests, 1,006 head/ray combinations, 77 native projections, 195 native tests (two existing ignored), native/WASM voice parity, typecheck, content verification, static build and local HTTP checks pass. The 622-test/151-file Bun inventory has 620 passes after isolated reruns; two existing physical-render tests still exceed their unchanged 5,000 ms limits (Country Roads held vowels and the 256-step beat). Browser playback/export, Playwright and layout lint were not retested under the standing user instruction.
+
+## The Dead Dance addition
+
+The full supplied video is added at `?scene=dead-dance`. Preserve the approved physical singing over original music, one retained model and two costume graphics. Keep the monochrome doll forest, hanging dolls and ropes, thorned dark opening outfit, pale layered ragged gown, puffed sleeves, bow and lace, curls, long fingers, wrist ribbons, doorway, mist and uncanny poses. Eight proxy dancers move beneath a moon; magenta lighting alternates with monochrome close-ups before the leaning and sinking ending. The 79 cuts, material colors and all character/prop poses restore after seeks. Fine vocal layers, pronunciation and choreography are approximate. All 914 preceding public assets remain byte-identical. See [the scene notes](docs/dead-dance.md).
