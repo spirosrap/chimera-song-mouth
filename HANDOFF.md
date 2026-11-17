@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-six concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-seven concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -471,3 +471,7 @@ phone views; all visible physical heads pass framing and opaque-mouth-ray
 checks, including costume ornaments. Only documentation changed after the
 verified build. Browser playback, export and layout remain untested because
 access remains declined in this chat.
+
+## Manchild addition · 17 November 2026
+
+The complete supplied Sabrina Carpenter video is added at `?scene=manchild`, with original music and actual physical English singing. Nine costume graphics borrow one retained singer. Desert hitchhiking, strange vehicles, chandelier van, tanker, wagon stunt, pool hall, diner and fridge, motel, lily pond, wheeled armchairs, telephone, dry-land jet ski, party, pigs, dog, falling car, orca, hairdryer and the long sunset-road ending use absolute source time. Preserve all 848 public files and 67 concert/music-video performances. See [the scene notes](docs/manchild.md). Browser playback/export/layout remain untested because access remains declined.
