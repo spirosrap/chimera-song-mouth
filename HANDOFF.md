@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-seven concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-eight concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -666,3 +666,7 @@ The full supplied video is added at `?scene=dead-dance`. Preserve the approved p
 The Dead Dance deployment proof: runtime `ef7d121f49c2360f1f159001cfda680bfdd7ca72` was committed and pushed, then all 17 changed files uploaded successfully (media first, index last; publisher exit 0). The direct [The Dead Dance route](https://agenticspiros.com/chimera-song-mouth/?scene=dead-dance), current app bundles, all six new scene files and fifty-eight preserved performances match their local SHA-256 values: 419 live files were verified. The task's completed publisher job and its plist were removed; other jobs were untouched.
 
 The manifest contains 920 public files and the library 77 concert/music-video performances. All 914 preceding assets remain byte-identical. All 626 Bun tests/152 files and 195 native tests pass (two existing native tests ignored), including native/WASM parity. The four new scene tests include 426 head/ray combinations; 84 offline geometry projections were inspected. Typecheck, content verification, static build, exact audio/mouth clocks and local HTTP checks pass. Browser playback/export, Playwright and layout lint were not retested under the standing user instruction.
+
+## Sabrina Carpenter — Tears addition
+
+The full supplied 5:03 video is added at `?scene=sabrina-tears`. Preserve the approved physical singing, separate response calls and comic boyfriend dialogue over original music. Eight costume graphics borrow three retained models. Host, vampire and red-drag costumes mime the lead using its telemetry. Keep the smoking teal car and grass, blue suit and cream hat, house approach, porch and gloved doorbell press, parlor and player piano, red bathroom and animated tears-collection tin, ivory outfit, blue bedroom and vanity bulbs, corn and antique red machine, silver fringe, limousine and 24 dancing guests. The porch fall, boyfriend exchange/disappearance and own red end card finish the complete source extent. All poses and 73 camera cuts restore from source time. All 920 preceding public assets remain byte-identical. See [the scene notes](docs/sabrina-tears.md).

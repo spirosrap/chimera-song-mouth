@@ -3762,6 +3762,46 @@
       "sha256": "3654113f9730da00ba79426076daf7da1c06bbb86ffbebd0afff612cc694d1f5"
     },
     {
+      "path": "public/scenes/sabrina-tears/backing.mp3",
+      "bytes": 9713708,
+      "sha256": "b1cf9cb1f29fe0487fcf63a97e8a3571e725e0028b53ac670eaa31a129550cbd"
+    },
+    {
+      "path": "public/scenes/sabrina-tears/boyfriend.tele.gz",
+      "bytes": 180527,
+      "sha256": "2c8c01ae1f3fee70a42d69a304e30e6ee4137cbaf66b1f6538926b6d462a8ebd"
+    },
+    {
+      "path": "public/scenes/sabrina-tears/credits.txt",
+      "bytes": 1982,
+      "sha256": "4a4d572379070e9a44cbf46cd8803232399b985f64967daea0c42e81110ee244"
+    },
+    {
+      "path": "public/scenes/sabrina-tears/lead.tele.gz",
+      "bytes": 1654483,
+      "sha256": "f53ee1b01acd47554ae9dd354251dab0c98fc519150285ed749f625a56f96e67"
+    },
+    {
+      "path": "public/scenes/sabrina-tears/mix.mp3",
+      "bytes": 9713708,
+      "sha256": "79284f466d6e2640b925722e0a78d53ffb2c4ad18df08ab25a986efa6db31de7"
+    },
+    {
+      "path": "public/scenes/sabrina-tears/performance.json",
+      "bytes": 171949,
+      "sha256": "bea508bee8d58a2e623803f5c111747b4ef5e9944813aff0afd56e6b8cea662e"
+    },
+    {
+      "path": "public/scenes/sabrina-tears/responses.tele.gz",
+      "bytes": 337537,
+      "sha256": "ef1d47ef7e786354ca81b32b6b8fb4e1d4ff6e5713d022b37990c132d7b67244"
+    },
+    {
+      "path": "public/scenes/sabrina-tears/scene.json",
+      "bytes": 11106,
+      "sha256": "748a134acd2cb0f271308ecbfb91b28897d94db0e0741a76f8e6e7ff7da11399"
+    },
+    {
       "path": "public/scenes/sagan-dimensions/backing.mp3",
       "bytes": 14196524,
       "sha256": "e937c2fdad7f596916519f7cb9f1c61d82462babf5a77837539470caec3bfd8b"
