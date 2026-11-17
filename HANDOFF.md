@@ -699,3 +699,12 @@ Eins, Zwei, Drei deployment verified for runtime `c2993cb61fae70e25a9ad7d2f03132
 The library has 81 music-video and concert performances and 950 public files. All 943 earlier files retain their checksums. Typecheck, production build and local HTTP checks pass. All 642 application tests across 156 files pass after reruns of three earlier tests that timed out under load. The beat test used the same assertions with a 15-second command timeout. All 195 native tests pass with two existing ignored, including the native and WebAssembly parity checks.
 
 The approved voices and pitch contours cover 70 physical phrases with 4,194 telemetry frames per voice. The full MP3 decodes to all 10,064,539 expected stereo sample frames. All 414 face-framing and obstruction checks passed across the 70 cuts on desktop and phone-sized views. Browser playback and export remain unverified.
+
+
+## KATSEYE — Gnarly
+
+Gnarly deployment verified for runtime `4ea7e8b221bc4a6b4d1ba4077a07f10dac6410e5`. The publisher uploaded all 19 changed files with media first and index last. SHA-256 checks match 44 live files including the [Gnarly route](https://agenticspiros.com/chimera-song-mouth/?scene=gnarly), eight new scene files, current bundles and both preceding scenes. Removed the completed publisher job and plist.
+
+The library has 82 concert and music-video performances and 958 public files. All 950 preceding assets retain their checksums. Typecheck, production build, local HTTP delivery, all 646 Bun tests across 157 files and all 195 native tests pass. Two existing native tests remain ignored. The existing Bun suite used a 15-second command timeout. The manual camera test passed on rerun after the prepared scene metadata was present.
+
+The three physical tracks contain 74 phrases and 2,845 synchronized mouth frames each. The full mix decodes to 6,826,749 stereo sample frames. The 119 cuts passed 1,902 head-framing and occlusion checks on desktop and phone-sized views. Browser playback and export remain unverified.
