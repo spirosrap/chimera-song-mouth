@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-one concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-two concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -588,3 +588,7 @@ The temporary upload job and plist were removed. All 871 preceding public files
 remain byte-identical; the manifest contains 877 files and the library has 71
 concert/music-video performances. Browser playback, export and layout were not
 retested; native geometry, audio, telemetry and HTTP checks provide the evidence.
+
+## Houdini addition
+
+The complete supplied Eminem video is added at `?scene=houdini`. Four physical airways generate the featured voice and Paul, Dre and driver dialogue over the original instrumental music and retained effects. Nine costume/role graphics borrow four retained models. Preserve the prepared rapid phonetics and continuous source prosody, young/modern/superhero/hybrid looks, portal, source-time comic borders, moving city, roadster and steering, store and trophies, guests, climb and rooftop collision, lightning and 24 distinct decorative clones. Source time restores all transforms. See [the scene notes](docs/houdini.md). All 877 preceding public files remain unchanged.

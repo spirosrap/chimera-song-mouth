@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 877 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 886 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -156,6 +156,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Doechii — DENIAL IS A RIVER | 2:44 | `?scene=denial-river` | Changing sitcom rooms, flowers, kitchen, guests, costume changes, telephone, exposed studio and smoky collapse; original music and physical rap, dialogue, opening voice and breathing |
 | GENER8ION — STORM starring Yung Lean | 7:34 | `?scene=storm` | Uniforms, school grounds, corridor, canteen, dining hall, rooftop trolley, class portrait and coordinated night routine; original music, physical featured voice and rhythmic calls |
 | Joost — Europapa | 3:22 including release | `?scene=europapa` | Dutch physical lead, original music, blue pointed suit, podium, cowboy hat, scooter, dinner, windmill band, rave and quiet family tribute |
+| Eminem — Houdini | 4:57 | `?scene=houdini` | Original music and effects, physical featured vocal and three dialogue roles, portal, comic panels, superhero, roadster, rooftop showdown and 24 clones |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -357,3 +358,5 @@ The temporary upload job and plist were removed. All 871 preceding public files
 remain byte-identical; the manifest contains 877 files and the library has 71
 concert/music-video performances. Browser playback, export and layout were not
 retested; native geometry, audio, telemetry and HTTP checks provide the evidence.
+
+Houdini adds the full supplied comic-book video with actual physical rap, refrain and scene dialogue over the original music. See [the scene notes](docs/houdini.md). All 877 preceding public files remain byte-identical.

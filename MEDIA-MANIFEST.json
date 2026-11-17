@@ -2627,6 +2627,51 @@
       "sha256": "d8ba8e2151c275869c08f4681664835f2e071b3fda4e732e1287eff2eaf84a1f"
     },
     {
+      "path": "public/scenes/houdini/backing.mp3",
+      "bytes": 9517100,
+      "sha256": "dff0787890cf7e18745ffd126f7e93d8413f8f275aba33040e1b8eb4d1dac10a"
+    },
+    {
+      "path": "public/scenes/houdini/credits.txt",
+      "bytes": 2013,
+      "sha256": "b41d8d904f2a1b9c1af448fb730cf695e4c0ee5d2b1c4000f8119d40483a0ebd"
+    },
+    {
+      "path": "public/scenes/houdini/dre.tele.gz",
+      "bytes": 126407,
+      "sha256": "61a684dfc76631dd1f3a1daa47d523932fd5c3a1865ec83b88fcab9cc918fc91"
+    },
+    {
+      "path": "public/scenes/houdini/lead.tele.gz",
+      "bytes": 3446670,
+      "sha256": "e198001133f7bae4168a47e648ce811ac2c156ce409242ed544714983c8a7de9"
+    },
+    {
+      "path": "public/scenes/houdini/mix.mp3",
+      "bytes": 9517100,
+      "sha256": "2052fd7220d3fc1fe59283c2f54d630d25b1f904d0858b2a897d856c38355554"
+    },
+    {
+      "path": "public/scenes/houdini/paul.tele.gz",
+      "bytes": 132664,
+      "sha256": "7e7bee39702888c08c08f589265b1657a71a9fda8a7e890519d6976eb33213eb"
+    },
+    {
+      "path": "public/scenes/houdini/performance.json",
+      "bytes": 419226,
+      "sha256": "618d931593a5f7feaec0b4a3bf5e613c9176b24cb26f7c7eac59ef0250ab0354"
+    },
+    {
+      "path": "public/scenes/houdini/pete.tele.gz",
+      "bytes": 121129,
+      "sha256": "9e4daa7633ef4571f5a80f7ce4813b38e577b1e3d2559a3f651e0f9b2a401fc2"
+    },
+    {
+      "path": "public/scenes/houdini/scene.json",
+      "bytes": 14733,
+      "sha256": "61a3189567d0bfb28f4edad8ded756002c4b102dd0e8d0875c1ea44a515ea490"
+    },
+    {
       "path": "public/scenes/human-behaviour/backing.mp3",
       "bytes": 8174636,
       "sha256": "de2738d459da540b8d1d92f7261cd31200c49d5827d6a15a81acca59f284dc46"
