@@ -217,3 +217,5 @@ The complete Doja Cat — Demons scene pairs the original music with physical ra
 The full Childish Gambino — Lithonia scene pairs the original music with physical singing and reaction voices, from the microphone and rehearsal room to the chase through the woods. See [the scene notes](docs/lithonia.md).
 
 LOOK MUM NO COMPUTER — Eins, Zwei, Drei pairs the original synth backing with physical English and German voices, from the office and modular synths to the singing pizza and winged Mini. See [the scene notes](docs/eins-zwei-drei.md).
+
+The full KATSEYE — Gnarly scene takes six performers from a pink grocery tray to a red-carpet dance, with original backing and three physical voices. See [the scene notes](docs/gnarly.md).

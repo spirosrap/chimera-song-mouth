@@ -128,3 +128,5 @@ The owner supplied Doja Cat — Demons for a complete scene reconstruction. The 
 The owner supplied Childish Gambino — Lithonia for a complete scene reconstruction. The prepared scene includes separated original instrumental music and retained effects, physical singing and reactions, captions and telemetry. The underlying composition, recording, film, words and performances retain their respective rights. Original footage, source vocal samples, raw stems and analysis caches are excluded.
 
 The owner supplied the official LOOK MUM NO COMPUTER — Eins, Zwei, Drei video. The prepared scene includes separated original instrumental music and effects, physical vocal synthesis, captions and telemetry. Original composition, lyrics, recording, video and performance rights remain with their respective holders.
+
+The owner supplied the KATSEYE — Gnarly music video. The prepared scene contains separated original instrumental music and effects, physical vocal synthesis, captions and telemetry. Composition, words, recording, video and performance rights remain with their respective holders.

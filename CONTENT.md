@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 950 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 958 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -166,6 +166,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Doja Cat — Demons | 3:45 | `?scene=doja-demons` | Original music, physical rap and answers, full haunted-house scene, captions, cuts and telemetry |
 | Childish Gambino — Lithonia | 2:01 | `?scene=lithonia` | Original music, physical singing and reactions, full studio and woods scene, captions and telemetry |
 | LOOK MUM NO COMPUTER — Eins, Zwei, Drei | 3:29 | `?scene=eins-zwei-drei` | Original synth backing, physical English and German voices, full office and pizza scene, captions and telemetry |
+| KATSEYE — Gnarly | 2:22 | `?scene=gnarly` | Original backing, three physical voices, full six-performer scene, captions and telemetry |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |

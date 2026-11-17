@@ -2597,6 +2597,46 @@
       "sha256": "7b32a0303122fce6bb8494f3397f78ede10022178cb2ee490a9d1fbed89b9bfd"
     },
     {
+      "path": "public/scenes/gnarly/backing.mp3",
+      "bytes": 4552748,
+      "sha256": "4d663c352877eeea64254a5ebb7ed966133da3da6f3a2b746deb28b698df56d0"
+    },
+    {
+      "path": "public/scenes/gnarly/chorus.tele.gz",
+      "bytes": 769153,
+      "sha256": "cd535ef81e5a6e4916800ee51caeaeaa85ce64c0cc5adce1ca8e58fd8896e2f1"
+    },
+    {
+      "path": "public/scenes/gnarly/credits.txt",
+      "bytes": 971,
+      "sha256": "96714f874b3576415bc1ffe01f99b8720c153af24fc3157c9a2e8789e1f20d03"
+    },
+    {
+      "path": "public/scenes/gnarly/mix.mp3",
+      "bytes": 4552748,
+      "sha256": "f604d045d3fcb68d868de1f02eed51fe022263ab8276df58d2d7a00c141337fc"
+    },
+    {
+      "path": "public/scenes/gnarly/performance.json",
+      "bytes": 142051,
+      "sha256": "dd98f618d8ee5d433eeeb22c54bf64bb6d1b368da329077a8eb4643428cd7ad3"
+    },
+    {
+      "path": "public/scenes/gnarly/scene.json",
+      "bytes": 13126,
+      "sha256": "fc8009d998e5b655d15d057f705697f63ad6629cf3d8266f2787f4875a5ee7b8"
+    },
+    {
+      "path": "public/scenes/gnarly/spoken.tele.gz",
+      "bytes": 348928,
+      "sha256": "42b311209f7b6a33cca846e6a8de11eb24ffcce4c0c81e19a41849c1c3581a13"
+    },
+    {
+      "path": "public/scenes/gnarly/verse.tele.gz",
+      "bytes": 629745,
+      "sha256": "db4ce7eaece476370b3d6b5f36571bbcb09f138ee0d2729d94e6274d0d54f864"
+    },
+    {
       "path": "public/scenes/go-west/backing.mp3",
       "bytes": 9335852,
       "sha256": "b1d4e584195635c1ed855ee9a31d6113d54b1fc9d7ccc05de8c117b07d45a77b"
