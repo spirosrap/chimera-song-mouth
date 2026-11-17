@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-five concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-six concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -648,3 +648,7 @@ also matches the new index. All 900 preceding public assets remain byte-identica
 The manifest contains 906 public files and the library 75 concert/music-video
 performances. All 618 Bun tests/150 files and 195 native tests passed (two existing
 ignored). Browser playback, export and layout were not retested.
+
+## RATATATA addition
+
+The full supplied video is added at `?scene=ratatata`. Preserve the approved three physical vocal tracks and original accompaniment. Five costumes borrow three retained model leases: Nico, Kevin and the female lead. Keep the open mirrored helmet fronts, piped suits, angular iridescent dresses, crowns and ponytails, office invasion and ducking workers, second wall crash, neon couch/drinks/microphones, giant mirrored globe, electric arcs, sparks, five-person choreography, lasers and confetti. All transforms and visibility restore from source time. Explicit per-song Japanese phones and the portable render tool accompany the score. Source doubles, screams, pronunciation and gestures are approximate. All 906 preceding public files must remain byte-identical. See [scene notes](docs/ratatata.md).

@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, seventy-five concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, seventy-six concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -205,3 +205,5 @@ The full supplied **A$AP Rocky — Tailor Swif** video is staged at `?scene=tail
 The complete bbno$ — two video scene adds physical rap and choir refrains over original music, with a church, sauna, excavator, dentist, wedding, football, cloning band and costume dance. See [the scene notes](docs/bbno-two.md).
 
 The complete JENNIE — like JENNIE video scene adds the approved English/Korean physical voice over original music, with red capsule/helmet, dark dance hall, group formations and the capybara transformation. See [the scene notes](docs/like-jennie.md).
+
+The complete BABYMETAL × Electric Callboy — RATATATA scene adds three approved physical vocal tracks over original music, with mirror helmets, office and karaoke wall crashes, a giant disco ball, lightning and five-person dancing. See [the scene notes](docs/ratatata.md).

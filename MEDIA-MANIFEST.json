@@ -3547,6 +3547,46 @@
       "sha256": "fcf34c256617f9b8f85feb1591960a2c3302d59bec40f57942b6ceaf432a3cc3"
     },
     {
+      "path": "public/scenes/ratatata/backing.mp3",
+      "bytes": 7117868,
+      "sha256": "cf58e60ee043bb19600d76f3432026a6f6d3cab99cb0ef659673ce748f859e2b"
+    },
+    {
+      "path": "public/scenes/ratatata/credits.txt",
+      "bytes": 1830,
+      "sha256": "eaa6bb093a787cf9740ec4127a860351b3cbff7424ac2e9294a4344eddd5b1e8"
+    },
+    {
+      "path": "public/scenes/ratatata/kevin.tele.gz",
+      "bytes": 598954,
+      "sha256": "b6857bc246c1aed70c7373516dfc22af8dcc2a00b2dcac7045d788ca938052a9"
+    },
+    {
+      "path": "public/scenes/ratatata/mix.mp3",
+      "bytes": 7117868,
+      "sha256": "077ecdc09fe4a3aa7e33abb0c065bc9a0704c693217fae2e0406743e04c0fe70"
+    },
+    {
+      "path": "public/scenes/ratatata/nico.tele.gz",
+      "bytes": 1012452,
+      "sha256": "3ead9a9437bed8307ea44ed30465bf8a66e6f492f291eb8115f250b8ad629858"
+    },
+    {
+      "path": "public/scenes/ratatata/performance.json",
+      "bytes": 287469,
+      "sha256": "57f9f19f7581a827d4274895b61d113256b5f473cf42e76322d5d5d1e8acd971"
+    },
+    {
+      "path": "public/scenes/ratatata/scene.json",
+      "bytes": 17139,
+      "sha256": "26750f58d9c0881bc3372a9457a84f92a480a9038bf341cfb5f17edb38be8b9f"
+    },
+    {
+      "path": "public/scenes/ratatata/su.tele.gz",
+      "bytes": 1729507,
+      "sha256": "554045867ddcd5d22bac9caa203473b2eac3fcba425a06133947707bc2c17941"
+    },
+    {
       "path": "public/scenes/rechenka/backing.mp3",
       "bytes": 7311404,
       "sha256": "7554dd8f8b2271a883d85fcca43e8c094286bd51d6ce5fadfd050d701c7b2e8d"

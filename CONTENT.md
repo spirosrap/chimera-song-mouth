@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 906 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 914 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -160,6 +160,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | A$AP Rocky — Tailor Swif | 3:14 | `?scene=tailor-swif` | Approved physical rap, original music and effects; carpet car, bathroom, surreal apartment, tiny fridge people, padded giant, dog office, bathtub ride, gym and absurd playground |
 | bbno$ — two | 2:17 | `?scene=bbno-two` | Original music, physical rap and two choir registers, complete procedural video, captions, cuts and three telemetry tracks |
 | JENNIE — like JENNIE | 3:02 | `?scene=like-jennie` | Original music, physical English/Korean vocals, full capsule/dance/capybara scene, captions, cuts and telemetry |
+| BABYMETAL × Electric Callboy — RATATATA | 3:42 | `?scene=ratatata` | Original music, three physical vocal tracks, full office/karaoke/disco-ball scene, captions, cuts and telemetry |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
