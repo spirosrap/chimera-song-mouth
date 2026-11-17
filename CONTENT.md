@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 892 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 900 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -158,6 +158,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Joost — Europapa | 3:22 including release | `?scene=europapa` | Dutch physical lead, original music, blue pointed suit, podium, cowboy hat, scooter, dinner, windmill band, rave and quiet family tribute |
 | Eminem — Houdini | 4:57 | `?scene=houdini` | Original music and effects, physical featured vocal and three dialogue roles, portal, comic panels, superhero, roadster, rooftop showdown and 24 clones |
 | A$AP Rocky — Tailor Swif | 3:14 | `?scene=tailor-swif` | Approved physical rap, original music and effects; carpet car, bathroom, surreal apartment, tiny fridge people, padded giant, dog office, bathtub ride, gym and absurd playground |
+| bbno$ — two | 2:17 | `?scene=bbno-two` | Original music, physical rap and two choir registers, complete procedural video, captions, cuts and three telemetry tracks |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -385,3 +386,5 @@ also matches the new index. All 886 preceding public assets remain byte-identica
 The manifest contains 892 public files and the library 73 concert/music-video
 performances. All 610 Bun tests/148 files and 195 native tests passed (two existing
 ignored). Browser playback, export and layout were not retested.
+
+bbno$ — two adds the complete supplied surreal costume film with approved physical rap and choir over original music. See [the scene notes](docs/bbno-two.md). All 892 preceding public files remain byte-identical.

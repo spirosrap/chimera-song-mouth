@@ -1797,6 +1797,46 @@
       "sha256": "b8b51a6c142eff34974fe7e01846aa36302605afb6c0fde38da97c3930be5d1e"
     },
     {
+      "path": "public/scenes/bbno-two/backing.mp3",
+      "bytes": 4396076,
+      "sha256": "44080041655caf610164491afb522b3184da9be5348d21d5b9c39e5ca20bfc8a"
+    },
+    {
+      "path": "public/scenes/bbno-two/credits.txt",
+      "bytes": 1839,
+      "sha256": "54a9e770fc165aa461cdd46f531357d93bd4f760167eaa9d8002642ca8ea98fa"
+    },
+    {
+      "path": "public/scenes/bbno-two/high.tele.gz",
+      "bytes": 513399,
+      "sha256": "f508012178ae7027326e5aac1c5b72289863873f6aee9c71a8e01960b7925af3"
+    },
+    {
+      "path": "public/scenes/bbno-two/lead.tele.gz",
+      "bytes": 1821175,
+      "sha256": "b0434e768f58d165d5243d699a978b15cacc3c8c99b7736dad32fd9d6d64ac97"
+    },
+    {
+      "path": "public/scenes/bbno-two/low.tele.gz",
+      "bytes": 540888,
+      "sha256": "bc055a117f93fd79d5e13aa03e923ddfa2fbfc0e4cfe36cba34c9636a57cabe3"
+    },
+    {
+      "path": "public/scenes/bbno-two/mix.mp3",
+      "bytes": 4396076,
+      "sha256": "fc21f67c7f82b5e4e3b9211f2dd31084ff9d2ca5c02c95558c401bbfb79ed6b7"
+    },
+    {
+      "path": "public/scenes/bbno-two/performance.json",
+      "bytes": 277827,
+      "sha256": "0d17c3d436867f9e3f4011a3fc59473337b1396e5574afc1ef06b5e07a023ef2"
+    },
+    {
+      "path": "public/scenes/bbno-two/scene.json",
+      "bytes": 10109,
+      "sha256": "33c7f1ba0a8573d0da6e918d83651cb0d91112657c64829da3d4d6600d24a81e"
+    },
+    {
       "path": "public/scenes/beck-loser/backing.mp3",
       "bytes": 7446572,
       "sha256": "dce7235cf2ff0e0998109d80ca066948c6a5afcccaf68050c9684cb247160708"

@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-three concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-four concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -618,3 +618,7 @@ also matches the new index. All 886 preceding public assets remain byte-identica
 The manifest contains 892 public files and the library 73 concert/music-video
 performances. All 610 Bun tests/148 files and 195 native tests passed (two existing
 ignored). Browser playback, export and layout were not retested.
+
+## two addition
+
+The full supplied bbno$ video is added at `?scene=bbno-two`. Keep the approved 18–46 second preview's physical rap and the two generated choir registers, original music, source timing and all three retained models. Preserve the church choir, pink suit, sauna, forest, excavator, dentist, wired helmet, cowboy/scouts, lifted truck, wedding, football and grass roll, milk and tiled wall, restaurant/priest, cloning band, bread hat, sheep, money carpet, leather dance, lemon eyes and clown boat. Eighteen costumes borrow three airways; other figures are animated proxies. See [the scene notes](docs/bbno-two.md). All 892 preceding public assets remain byte-identical.

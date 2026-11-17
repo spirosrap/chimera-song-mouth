@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, seventy-three concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, seventy-four concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -201,3 +201,5 @@ The complete supplied **Joost — Europapa** video is staged at `?scene=europapa
 The complete supplied **Eminem — Houdini** video is staged at `?scene=houdini`: original music, physical rap and scene dialogue, time portal, superhero outfit, comic panels, city roadster, rooftop showdown, merged character and clones. See [the scene notes](docs/houdini.md).
 
 The full supplied **A$AP Rocky — Tailor Swif** video is staged at `?scene=tailor-swif`: approved physical rap, original music, carpet car, bathroom, strange apartment, tiny fridge people, padded giant, dog office, wheeled bathtub and absurd playground. See [the scene notes](docs/tailor-swif.md).
+
+The complete bbno$ — two video scene adds physical rap and choir refrains over original music, with a church, sauna, excavator, dentist, wedding, football, cloning band and costume dance. See [the scene notes](docs/bbno-two.md).
