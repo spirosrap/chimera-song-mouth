@@ -374,3 +374,14 @@ synthesis tests retain the documented five-second timing failures; browser
 playback, export and layout were not retested.
 
 Tailor Swif adds the complete supplied surreal video with approved physical rap over the original music. See [the scene notes](docs/tailor-swif.md). All 886 preceding public files remain byte-identical.
+
+Deployment verified on 2026-11-17 at
+<https://agenticspiros.com/chimera-song-mouth/?scene=tailor-swif> for runtime
+`59091b89a2425ef45b45707b917ba1e6c3472a94`. The publishing helper uploaded 17 files and exited zero;
+its completed one-shot job and launch plist were removed. All 391 live hashes
+match the production build, including six new scene assets, 54 preserved
+performances and the current application bundles. The clean direct scene route
+also matches the new index. All 886 preceding public assets remain byte-identical.
+The manifest contains 892 public files and the library 73 concert/music-video
+performances. All 610 Bun tests/148 files and 195 native tests passed (two existing
+ignored). Browser playback, export and layout were not retested.
