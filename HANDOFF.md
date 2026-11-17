@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-eight concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-nine concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -674,3 +674,7 @@ The full supplied 5:03 video is added at `?scene=sabrina-tears`. Preserve the ap
 Tears deployment proof: runtime `61917d7b53d98bbac1c4590884d4d9d03d82aea9` was committed and pushed, then all 19 changed files uploaded successfully (media first, index last; publisher exit 0). The direct [Tears route](https://agenticspiros.com/chimera-song-mouth/?scene=sabrina-tears), current app bundles, all eight new scene files and fifty-nine preserved performances match local SHA-256 values: 427 live files were verified. The task's completed publisher job and plist were removed; other jobs were untouched.
 
 The manifest contains 928 public files and the library 78 concert/music-video performances. All 920 preceding assets remain byte-identical. All 630 Bun tests/153 files and 195 native tests pass (two existing native ignored), including native/WASM parity. All 418 head/ray checks pass; 78 native projections were inspected. Typecheck, content verification, production build, exact audio/mouth clocks and local HTTP checks pass. Browser playback/export, Playwright and layout lint were not retested under the standing user instruction.
+
+## Doja Cat — Demons
+
+The complete supplied 3:45 performance adds `?scene=doja-demons`, with two retained airways for the lead and answers over the original instrumental mix. Three lead costumes, two shadows and a silent homeowner share those models. Preserve the inverted bedroom crawl, green bath and claw, flashlight and tape player, attic typewriter and goats, animated kitchen fire, family and moving car. The 83 cuts and prop poses follow the source clock. All 928 preceding assets remain byte-identical. See [the scene notes](docs/doja-demons.md).

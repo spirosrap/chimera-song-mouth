@@ -2362,6 +2362,41 @@
       "sha256": "a761d2776c6f5a7e1fac59707c9427004c9a705a80edf3d13f451c714974294a"
     },
     {
+      "path": "public/scenes/doja-demons/backing.mp3",
+      "bytes": 7231532,
+      "sha256": "90c7ba24486ffdee62a3a5294c06f407af593c8396e33beb60cf2ddb3aae9e52"
+    },
+    {
+      "path": "public/scenes/doja-demons/credits.txt",
+      "bytes": 1414,
+      "sha256": "a4aa92d18d96bbcb4e3df4a51a400f59d9e0465dbf525a4df07b5e8fb16c968b"
+    },
+    {
+      "path": "public/scenes/doja-demons/echo.tele.gz",
+      "bytes": 321166,
+      "sha256": "616be3383d88dbf095ee63a1e9e40fe08979c8b3a620f074650ddbf3fe62cfe6"
+    },
+    {
+      "path": "public/scenes/doja-demons/lead.tele.gz",
+      "bytes": 1925192,
+      "sha256": "595871dcde1583ed763a6e0d20b4bbd39e136f8c6feabfa1fb99c233f4e79810"
+    },
+    {
+      "path": "public/scenes/doja-demons/mix.mp3",
+      "bytes": 7231532,
+      "sha256": "9bb5c060a56f273551136909a3aabb5adbb5c9d52e0e37d7337c02b0ff60b5a3"
+    },
+    {
+      "path": "public/scenes/doja-demons/performance.json",
+      "bytes": 171043,
+      "sha256": "20a7c11362e2a810807b02bbea8a29f8ea9170ba354c6036484d0a83c0c5f7ac"
+    },
+    {
+      "path": "public/scenes/doja-demons/scene.json",
+      "bytes": 15784,
+      "sha256": "c8ca7f9375e72a72532b9ea6d8fcedd94f63908cbf909808a97d06d45209eac0"
+    },
+    {
       "path": "public/scenes/espresso-macchiato/backing.mp3",
       "bytes": 6165548,
       "sha256": "cf6f885858b394f7c3a64a26a734c7b1459c974aedee1907eac4122048ece7da"

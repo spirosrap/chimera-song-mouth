@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 928 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 935 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -163,6 +163,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | BABYMETAL × Electric Callboy — RATATATA | 3:42 | `?scene=ratatata` | Original music, three physical vocal tracks, full office/karaoke/disco-ball scene, captions, cuts and telemetry |
 | Lady Gaga — The Dead Dance | 4:47 | `?scene=dead-dance` | Original music, physical singing, full doll-forest and moonlit dance scene, captions, cuts and telemetry |
 | Sabrina Carpenter — Tears | 5:03 | `?scene=sabrina-tears` | Original music, three physical voices, full haunted-house party and comic ending, captions, cuts and telemetry |
+| Doja Cat — Demons | 3:45 | `?scene=doja-demons` | Original music, physical rap and answers, full haunted-house scene, captions, cuts and telemetry |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
