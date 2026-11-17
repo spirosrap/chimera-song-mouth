@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all sixty-nine concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -542,3 +542,7 @@ verified build. Browser playback/export/layout were not retested because access
 remains declined in this chat. The unchanged caption-level clarity aid is a
 documented diagnostic, not an intelligibility pass; the approved preview is the
 listening reference.
+
+## STORM addition
+
+The complete supplied GENER8ION school film is added at `?scene=storm` with original music and two actual physical performances: featured singing/scene shout/callbacks and rhythmic calls/wordless interlude. Four costume/role graphics borrow two retained models. Keep the school facade and banner, uniforms, courtyard and pitch, corridor and lockers, canteen props, dining hall and pool table, rooftop trolley, class portrait and night steps, with the 96 instanced classmates and coordinated routine. Source time restores all instance matrices and poses; invalidate moved instance bounds for mouth-ray tests. Preserve all 871 public files and 70 concert/music-video performances. See [the scene notes](docs/storm.md). Browser playback/export/layout remain untested because access remains declined.

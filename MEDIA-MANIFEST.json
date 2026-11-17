@@ -3797,6 +3797,41 @@
       "sha256": "3805f1dc8b68b00d73f5a0d0805497dc1def388fa52b24fd9ba910e16b55976e"
     },
     {
+      "path": "public/scenes/storm/backing.mp3",
+      "bytes": 14562092,
+      "sha256": "bf5907ce93e2a42203e00543fd086885941e83db3b50f3738c70d091e29a0f50"
+    },
+    {
+      "path": "public/scenes/storm/chant.tele.gz",
+      "bytes": 2231500,
+      "sha256": "f84bf2ebb6a897bc7bf01921f290e0632a45d38f9595ef01bc8552eb1e0f901c"
+    },
+    {
+      "path": "public/scenes/storm/credits.txt",
+      "bytes": 2109,
+      "sha256": "6036f1591259ca0de9aedec092a558da0223bd90d11ef15ffacf8d9baff5cea3"
+    },
+    {
+      "path": "public/scenes/storm/lead.tele.gz",
+      "bytes": 2810945,
+      "sha256": "c98290e50ce6d5fc383e2c0be30509d11ccb3f742297d31e9166007fe6ec5199"
+    },
+    {
+      "path": "public/scenes/storm/mix.mp3",
+      "bytes": 14562092,
+      "sha256": "c088b7f1398a6931e5a15c2806396f3049a995e1189bd61b9249a96d1521f129"
+    },
+    {
+      "path": "public/scenes/storm/performance.json",
+      "bytes": 328735,
+      "sha256": "728bd8b7bf8338d34ffb6dc359cba52a8e444f777cb79149b0931d33601fe391"
+    },
+    {
+      "path": "public/scenes/storm/scene.json",
+      "bytes": 9880,
+      "sha256": "5188a4358dee806abf421e82ea0712cccb963c6d4297707f0f2e7e6b45113861"
+    },
+    {
       "path": "public/scenes/sweet-dreams/backing.mp3",
       "bytes": 6862892,
       "sha256": "1c03670b1fb1e26d7312cd87a93cf5da3212e476f53a144706591e471a8f562b"
