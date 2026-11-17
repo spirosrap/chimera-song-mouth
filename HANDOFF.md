@@ -578,3 +578,13 @@ intelligibility pass; the owner-approved preview is the listening reference.
 ## Europapa addition
 
 The complete supplied Joost Klein video is added at `?scene=europapa` with original instrumental music and one actual physical performance. Four costume graphics share the retained model. Preserve language-specific prepared IPA, Dutch rounded vowels and fricatives, rhythmic pa syllables, German/Italian lines and quiet spoken tribute. Keep the pointed blue suit, cowboy hat, glasses/vest and guitar looks, podium and offset microphones, flags and rural signs, scooter and canal road, dinner, windmill band, sunset, rave, firelit family and ending dedication. All transforms restore from source time. See [the scene notes](docs/europapa.md). All 871 preceding public assets remain unchanged.
+
+Europapa is live at <https://agenticspiros.com/chimera-song-mouth/?scene=europapa>.
+Runtime `d2a7fd9d661ac7b82cefac0e09c202a41eebb2b5` was committed and pushed before all 17 changed files uploaded
+successfully with `DEPLOY_EXIT=0`, media first and entry page last. The final live
+HTTP check matched all 376 checked files, including the current app bundles,
+six Europapa assets and 52 preserved performances, plus the clean direct route.
+The temporary upload job and plist were removed. All 871 preceding public files
+remain byte-identical; the manifest contains 877 files and the library has 71
+concert/music-video performances. Browser playback, export and layout were not
+retested; native geometry, audio, telemetry and HTTP checks provide the evidence.

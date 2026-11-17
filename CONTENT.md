@@ -347,3 +347,13 @@ DENIAL IS A RIVER adds the full supplied sitcom film with original instrumental 
 STORM adds the complete supplied school film with original instrumental music, physical featured singing and rhythmic responses. See [the scene notes](docs/storm.md). All 864 preceding public files remain byte-identical.
 
 Europapa adds the complete supplied music video with original accompaniment and actual physical Dutch vocals. See [the scene notes](docs/europapa.md). All 871 preceding public files remain byte-identical.
+
+Europapa is live at <https://agenticspiros.com/chimera-song-mouth/?scene=europapa>.
+Runtime `d2a7fd9d661ac7b82cefac0e09c202a41eebb2b5` was committed and pushed before all 17 changed files uploaded
+successfully with `DEPLOY_EXIT=0`, media first and entry page last. The final live
+HTTP check matched all 376 checked files, including the current app bundles,
+six Europapa assets and 52 preserved performances, plus the clean direct route.
+The temporary upload job and plist were removed. All 871 preceding public files
+remain byte-identical; the manifest contains 877 files and the library has 71
+concert/music-video performances. Browser playback, export and layout were not
+retested; native geometry, audio, telemetry and HTTP checks provide the evidence.
