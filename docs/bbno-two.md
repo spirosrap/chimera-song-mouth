@@ -60,3 +60,14 @@ Each physical phrase is audible, with finite exact-clock telemetry. Decoded MP3
 length matches 6,591,505 samples per stereo channel with no extra padding; decoded
 peak is below 0.93. The approved preview's performance, voice and body remain
 unchanged in the full score. All 892 preceding public files are byte-identical.
+
+Deployment verified on 2026-11-17 at
+<https://agenticspiros.com/chimera-song-mouth/?scene=bbno-two> for runtime
+`dded913655c3bbd1767bf7536312034359b51dcc`. The publishing helper uploaded 19 files and exited zero;
+its completed one-shot job and launch plist were removed. All 399 live hashes
+match the production build, including eight new scene assets, 55 preserved
+performances and the current application bundles. The clean direct scene route
+also matches the new index. All 892 preceding public assets remain byte-identical.
+The manifest contains 900 public files and the library 74 concert/music-video
+performances. All 614 Bun tests/149 files and 195 native tests passed (two existing
+ignored). Browser playback, export and layout were not retested.
