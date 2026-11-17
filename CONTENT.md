@@ -414,3 +414,8 @@ also matches the new index. All 900 preceding public assets remain byte-identica
 The manifest contains 906 public files and the library 75 concert/music-video
 performances. All 618 Bun tests/150 files and 195 native tests passed (two existing
 ignored). Browser playback, export and layout were not retested.
+
+
+RATATATA deployment proof: runtime `880f0083f9fdd922cbc96728e6a25fd29a9245ab` was committed and pushed, then all 19 changed files uploaded successfully (media first, index last; publisher exit 0). The direct [RATATATA route](https://agenticspiros.com/chimera-song-mouth/?scene=ratatata), current app bundles, all eight new scene files and fifty-seven preserved performances were verified against local SHA-256 values: 413 live files matched. The task's completed publisher job and its plist were removed; other jobs were untouched.
+
+The manifest contains 914 public files and the library 76 concert/music-video performances. All 906 preceding assets remain byte-identical. All four new-scene tests, 1,006 head/ray combinations, 77 native projections, 195 native tests (two existing ignored), native/WASM voice parity, typecheck, content verification, static build and local HTTP checks pass. The 622-test/151-file Bun inventory has 620 passes after isolated reruns; two existing physical-render tests still exceed their unchanged 5,000 ms limits (Country Roads held vowels and the 256-step beat). Browser playback/export, Playwright and layout lint were not retested under the standing user instruction.
