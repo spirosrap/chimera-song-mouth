@@ -2397,6 +2397,41 @@
       "sha256": "c8ca7f9375e72a72532b9ea6d8fcedd94f63908cbf909808a97d06d45209eac0"
     },
     {
+      "path": "public/scenes/eins-zwei-drei/backing.mp3",
+      "bytes": 6711596,
+      "sha256": "e916fc462bf41dabbbcb9b61ad98675abf6faa511fbba2b9994be7fd7425d872"
+    },
+    {
+      "path": "public/scenes/eins-zwei-drei/counter.tele.gz",
+      "bytes": 620791,
+      "sha256": "ccde9d304d61341ebb7db718511d2d811faccbafd542b80a1b26d136a9f4b7b0"
+    },
+    {
+      "path": "public/scenes/eins-zwei-drei/credits.txt",
+      "bytes": 1073,
+      "sha256": "391c77f3771109da1e9074dc253b0eee1ead567987b10ebf7a23bf8d2af6c953"
+    },
+    {
+      "path": "public/scenes/eins-zwei-drei/lead.tele.gz",
+      "bytes": 1830745,
+      "sha256": "a0c903dff9161f3dfa6de9af3a00354a1fa2615c9cb9f4b7ef749d32141ca075"
+    },
+    {
+      "path": "public/scenes/eins-zwei-drei/mix.mp3",
+      "bytes": 6711596,
+      "sha256": "c6a036757f3b1bb65b773f26fd0e8643fd5a4106b4ab26070d6f12e6e614592f"
+    },
+    {
+      "path": "public/scenes/eins-zwei-drei/performance.json",
+      "bytes": 192417,
+      "sha256": "64c05cbfd31d5a58f04b20f2ea8d1b7adc3543cdf552833d0a19ef014772d440"
+    },
+    {
+      "path": "public/scenes/eins-zwei-drei/scene.json",
+      "bytes": 10703,
+      "sha256": "28bb20982caafbfe08369991a1c4b75c039f40775ee4ddafa85548797a554446"
+    },
+    {
       "path": "public/scenes/espresso-macchiato/backing.mp3",
       "bytes": 6165548,
       "sha256": "cf6f885858b394f7c3a64a26a734c7b1459c974aedee1907eac4122048ece7da"
