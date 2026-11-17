@@ -686,3 +686,7 @@ The library has 79 concert and music-video performances and 935 public files. Al
 ## Childish Gambino — Lithonia
 
 The complete supplied video adds `?scene=lithonia`, with lead, backing harmony and witness reactions over the original instrumental music and effects. Preserve the dark microphone opening, profile, glasses and cap, warm band room, seated audience, circuitry shock, chase and closing title. Three retained airways serve seven figures. Source time restores 44 cuts, props and poses. See [the scene notes](docs/lithonia.md).
+
+Lithonia deployment verified for runtime `633019ae8158c1c8ecf658ea8e6aadbf79541ebb`. The publisher uploaded all 19 changed files with media first and the index last. SHA-256 checks match 442 live files, including the [Lithonia route](https://agenticspiros.com/chimera-song-mouth/?scene=lithonia), current bundles, eight new scene files and 61 preserved performances. Removed the completed publisher job and its plist.
+
+The library has 80 concert and music-video performances and 943 public files. The 935 preceding files match their previous hashes. All 638 Bun tests pass across 155 files after an isolated rerun. All 195 native tests pass with two existing ignored. Typecheck, native and WebAssembly parity, production build and local HTTP delivery pass. The 39 physical phrases share a source clock with 2,421 snapshots per voice and 5,810,065 audio frames. All 390 framing and lip-ray checks pass across 44 cuts and two viewport sizes. Inspected 49 offline projections. Browser playback and export were not retested.
