@@ -402,3 +402,14 @@ performances. All 614 Bun tests/149 files and 195 native tests passed (two exist
 ignored). Browser playback, export and layout were not retested.
 
 like JENNIE adds the complete supplied capsule, dance and capybara video with approved physical English/Korean vocals over original music. See [the scene notes](docs/like-jennie.md). All 900 preceding public files remain byte-identical.
+
+Deployment verified on 2026-11-17 at
+<https://agenticspiros.com/chimera-song-mouth/?scene=like-jennie> for runtime
+`c1cec75fa7938a9b2fdf9aca3564c8d1610675c4`. The publishing helper uploaded 17 files and exited zero;
+its completed one-shot job and launch plist were removed. All 405 live hashes
+match the production build, including six new scene assets, 56 preserved
+performances and the current application bundles. The clean direct scene route
+also matches the new index. All 900 preceding public assets remain byte-identical.
+The manifest contains 906 public files and the library 75 concert/music-video
+performances. All 618 Bun tests/150 files and 195 native tests passed (two existing
+ignored). Browser playback, export and layout were not retested.

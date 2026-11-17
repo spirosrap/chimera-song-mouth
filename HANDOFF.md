@@ -637,3 +637,14 @@ ignored). Browser playback, export and layout were not retested.
 ## like JENNIE addition
 
 The complete supplied video is added at `?scene=like-jennie`. Keep the approved 47-second English/Korean preview controls and original accompaniment. Four costumes borrow one retained physical airway. Preserve the red spacesuit and open helmet, capsule and hatch, floating bean and fingers, beige cap and braids, chrome spires and ceiling lights, 64 dancers, source-time lines/rings/overhead/floor formations, digital columns, red return, stormy landscape, translucent fire, capybara, blue flower and final animal close-up. Foreground extras leave a clear camera corridor; overhead caps use an owned translucent cutaway and ceiling lights leave overhead shots. All transforms and material state restore after seeks. Source doubles are represented by the lead; pronunciation and choreography remain approximate. See [the scene notes](docs/like-jennie.md). All 900 preceding public assets remain unchanged.
+
+Deployment verified on 2026-11-17 at
+<https://agenticspiros.com/chimera-song-mouth/?scene=like-jennie> for runtime
+`c1cec75fa7938a9b2fdf9aca3564c8d1610675c4`. The publishing helper uploaded 17 files and exited zero;
+its completed one-shot job and launch plist were removed. All 405 live hashes
+match the production build, including six new scene assets, 56 preserved
+performances and the current application bundles. The clean direct scene route
+also matches the new index. All 900 preceding public assets remain byte-identical.
+The manifest contains 906 public files and the library 75 concert/music-video
+performances. All 618 Bun tests/150 files and 195 native tests passed (two existing
+ignored). Browser playback, export and layout were not retested.
