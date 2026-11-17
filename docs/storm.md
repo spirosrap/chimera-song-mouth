@@ -48,9 +48,8 @@ All 864 preceding public files remain byte-identical; the manifest includes 871
 public files and seventy concert/music-video performances after this addition.
 
 The owner approved the validated 34-second MP3 preview at source 330–364 on
-17 November 2026. The full render retains that exact prepared physical score
-and body settings. Its two tracks contain 60 featured phrases and 269 call
-phrases, with 392 featured note events (including the repeated callback) and
+17 November 2026. The full render retains the previewed physical settings and every phrase and contour point in the approved source span. Its two tracks contain 60 featured phrases and 269 call
+phrases, with 390 featured note events (including the repeated callback) and
 269 call events. Decoded MP3 length matches all 21,839,843 output samples per
 stereo channel with no added padding; the decoded mix peak is below 0.92.
 The unvoiced opening music/ambience is restored directly through 26.5 seconds,
@@ -80,3 +79,5 @@ Source film: <https://www.youtube.com/watch?v=x6_mbnsh6VU>.
 Lyric corrections were cross-checked with the supplied recording and
 [STORM I](https://www.cifraclub.com.br/gener8ion/storm-i-feat-yung-lean-2/letra/)
 and [STORM II](https://lyricstranslate.com/en/gener8ion-storm-ii-lyrics).
+
+A final pronunciation check caught a copied template pronunciation for the word “storm.” It now uses the dictionary’s single syllable /s t ɔ ɹ m/. Only its earlier-verse phrase at source 293–299 was replaced; the approved 330–364 performance is unchanged. A regression assertion checks the final phones. STORM has an explicit asset version so scene metadata, audio and telemetry refresh together after the correction.

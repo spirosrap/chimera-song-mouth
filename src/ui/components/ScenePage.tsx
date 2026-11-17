@@ -12,12 +12,12 @@ import {recordSceneVideo,type SceneStage} from '../../scene/video.ts';
 import {sceneVideoUrl} from '../../scene/download.ts';
 import '../scene.css';
 
-const read=async(base:string,name:string)=>{const r=await fetch(base+name);if(!r.ok)throw Error(`The scene could not load (${r.status}). Reload and try again.`);return r;};
+const read=async(base:string,name:string,version?:string)=>{const r=await fetch(base+name+(version?'?v='+encodeURIComponent(version):''));if(!r.ok)throw Error(`The scene could not load (${r.status}). Reload and try again.`);return r;};
 interface LoadedScene{scene:SceneFile;tracks:TeleTrack[]}
 /** A scene with more camera views than this shows them behind one button instead of filling the page. */
 const FOLD_VIEWS=5;
 export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
-  const entry=movieScene(sceneId)!,BASE=`${BASE_PATH}scenes/${sceneId}/`;
+  const entry=movieScene(sceneId)!,BASE=`${BASE_PATH}scenes/${sceneId}/`,assetVersion='assetVersion'in entry?entry.assetVersion:undefined;
   const [transport,setTransport]=useState<Transport|null>(null),[loaded,setLoaded]=useState<LoadedScene|null>(null),[error,setError]=useState('');
   const [camera,setCamera]=useState<CameraChoice>('auto'),[subtitles,setSubtitles]=useState(true),[,tick]=useState(0),[retry,setRetry]=useState(0),[index,setIndex]=useState(false),[moreViews,setMoreViews]=useState(false);
   const [stage,setStage]=useState<SceneStage|null>(null),[exporting,setExporting]=useState(false),[exportTime,setExportTime]=useState(0),[exportError,setExportError]=useState('');
@@ -39,8 +39,8 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
   useEffect(()=>{
     if(!transport)return;let live=true;setError('');setLoaded(null);transport.pause();transport.seek(0);
     void(async()=>{
-      const scene=validateScene(await(await read(BASE,'scene.json')).json());
-      const [audio,...tele]=await Promise.all([read(BASE,scene.audio).then(r=>r.arrayBuffer()),...scene.characters.map(c=>read(BASE,c.tele+(c.telemetryEncoding==='gzip'?'.gz':'')).then(r=>r.arrayBuffer()).then(unpackTelemetry))]);
+      const scene=validateScene(await(await read(BASE,'scene.json',assetVersion)).json());
+      const [audio,...tele]=await Promise.all([read(BASE,scene.audio,assetVersion).then(r=>r.arrayBuffer()),...scene.characters.map(c=>read(BASE,c.tele+(c.telemetryEncoding==='gzip'?'.gz':''),assetVersion).then(r=>r.arrayBuffer()).then(unpackTelemetry))]);
       const tracks=tele.map(t=>new TeleTrack(t));
       if(tracks.some(t=>Math.abs(t.duration-scene.duration)>.1))throw Error('The mouth movement and scene audio do not match. Reload and try again.');
       if(!live)return;await transport.load(audio);if(!live)return;
@@ -48,7 +48,7 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
       setLoaded({scene,tracks});
     })().catch((e:unknown)=>{if(live)setError(e instanceof Error?e.message:String(e));});
     return()=>{live=false;};
-  },[transport,retry,BASE]);
+  },[transport,retry,BASE,assetVersion]);
   useEffect(()=>{if(!transport)return;const off=transport.subscribe(()=>tick(n=>n+1));const timer=setInterval(()=>{if(transport.isPlaying)tick(n=>n+1);},80);return()=>{off();clearInterval(timer);};},[transport]);
   const state=transport?.state??{playing:false,time:0,duration:0},scene=loaded?.scene,cue=scene?sceneCue(scene,state.time):undefined;
   const speaker=scene?.characters.find(c=>c.id===cue?.speaker),shown=useRef<typeof cue>(undefined);

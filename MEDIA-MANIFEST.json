@@ -3804,7 +3804,7 @@
     {
       "path": "public/scenes/storm/chant.tele.gz",
       "bytes": 2231500,
-      "sha256": "f84bf2ebb6a897bc7bf01921f290e0632a45d38f9595ef01bc8552eb1e0f901c"
+      "sha256": "33d06e7907b8c49a4dc94db24de65fbced839eb437b50c34bd97890319c9a319"
     },
     {
       "path": "public/scenes/storm/credits.txt",
@@ -3813,18 +3813,18 @@
     },
     {
       "path": "public/scenes/storm/lead.tele.gz",
-      "bytes": 2810945,
-      "sha256": "c98290e50ce6d5fc383e2c0be30509d11ccb3f742297d31e9166007fe6ec5199"
+      "bytes": 2810746,
+      "sha256": "29c9525d2bdb8aa3183e0e8663bfb3cac994041a666cca47de2496eeb7c27860"
     },
     {
       "path": "public/scenes/storm/mix.mp3",
       "bytes": 14562092,
-      "sha256": "c088b7f1398a6931e5a15c2806396f3049a995e1189bd61b9249a96d1521f129"
+      "sha256": "be23a648133694dcdf50534ad6c86ee75c7f52549e6f20a7a9a767287b8618b1"
     },
     {
       "path": "public/scenes/storm/performance.json",
-      "bytes": 328735,
-      "sha256": "728bd8b7bf8338d34ffb6dc359cba52a8e444f777cb79149b0931d33601fe391"
+      "bytes": 328596,
+      "sha256": "29595923859e4dbca1ffd76d09b8734dbc907a408ebdcaede2f9034257e8a143"
     },
     {
       "path": "public/scenes/storm/scene.json",
