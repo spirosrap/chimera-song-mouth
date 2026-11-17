@@ -2322,6 +2322,36 @@
       "sha256": "642fbf171ccacd48e3d773f8ba1d7eee6b97d70e1f01c5f5c96e26cd1343a6e9"
     },
     {
+      "path": "public/scenes/europapa/backing.mp3",
+      "bytes": 6468908,
+      "sha256": "2c982a5b7377d7bf3217674e8944f69c9a8ddcfc9ff6201b68dcf907a48c2166"
+    },
+    {
+      "path": "public/scenes/europapa/credits.txt",
+      "bytes": 1970,
+      "sha256": "bd6ca78e8c28ec9a38ccb6af800ef68e56f1af9a48a16a3200bea8b89ac1336f"
+    },
+    {
+      "path": "public/scenes/europapa/lead.tele.gz",
+      "bytes": 2001632,
+      "sha256": "995b10285ef4e6b8b626c273fd92fd95016d0278de03de813e4b94b538f83f31"
+    },
+    {
+      "path": "public/scenes/europapa/mix.mp3",
+      "bytes": 6468908,
+      "sha256": "66d97cde1776391ba7b4a54fc5acfc1916bbdaae0d5610856a3cc294741e320e"
+    },
+    {
+      "path": "public/scenes/europapa/performance.json",
+      "bytes": 183084,
+      "sha256": "e33054f05bf89f08c4571c3409d9cba64d6d20db054f7f1053f0daf4c40f1284"
+    },
+    {
+      "path": "public/scenes/europapa/scene.json",
+      "bytes": 7804,
+      "sha256": "5b8edaba29f74a64829ffc1122d08324370e9778587acdf068d0cb74969318ad"
+    },
+    {
       "path": "public/scenes/fade-into-you/backing.mp3",
       "bytes": 8368940,
       "sha256": "a742c05f238d2b3c435f6b6628c4013473664c6ed624f02f75d29da4461732ee"

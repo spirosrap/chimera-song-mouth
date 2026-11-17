@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, seventy concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, seventy-one concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -195,3 +195,5 @@ The complete supplied **The Darkness — I Believe in a Thing Called Love** vide
 **Dead or Alive — You Spin Me Round** (`?scene=spin-round`) adds the purple velvet and eye-patch costumes, mirror ball, picture frame, arm choreography, flags and confetti. **Radiohead — No Surprises** (`?scene=no-surprises`) adds the close singer, transparent helmet, reflected lights and source-timed rising/draining water. Both preserve original music and use their approved physical voices. See [Spin](docs/spin-round.md) and [No Surprises](docs/no-surprises.md).
 
 **Michael Jackson — Remember the Time** (`?scene=remember-time`) adds the complete Egyptian short film, four physical voices, royal dialogue, entertainers, magic, market chase, balcony and dance. **Peter Gabriel — Shock the Monkey** (`?scene=shock-monkey`) adds the office and ritual double, scattered papers, projector, monkey, forest and water. Both keep original music and the approved mouth-engine vocals. See [Remember](docs/remember-time.md) and [Shock](docs/shock-monkey.md).
+
+The complete supplied **Joost — Europapa** video is staged at `?scene=europapa`: Dutch mouth-engine vocals, original music, pointed blue suit and podium, huge cowboy hat, scooter journey, dinner, windmill band, rave and quiet closing family tribute. See [the scene notes](docs/europapa.md).

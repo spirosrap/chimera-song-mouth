@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 871 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 877 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -155,6 +155,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Harry Styles — Aperture | 5:51 | `?scene=aperture` | Night hotel room, telephone, mirror, empty reception, stranger, escalators and spiral stairs, laundry, surreal lift and inverted dance, planter and return; original music and two actual physical voices |
 | Doechii — DENIAL IS A RIVER | 2:44 | `?scene=denial-river` | Changing sitcom rooms, flowers, kitchen, guests, costume changes, telephone, exposed studio and smoky collapse; original music and physical rap, dialogue, opening voice and breathing |
 | GENER8ION — STORM starring Yung Lean | 7:34 | `?scene=storm` | Uniforms, school grounds, corridor, canteen, dining hall, rooftop trolley, class portrait and coordinated night routine; original music, physical featured voice and rhythmic calls |
+| Joost — Europapa | 3:22 including release | `?scene=europapa` | Dutch physical lead, original music, blue pointed suit, podium, cowboy hat, scooter, dinner, windmill band, rave and quiet family tribute |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -344,3 +345,5 @@ Aperture adds the complete supplied hotel film with original instrumental music,
 DENIAL IS A RIVER adds the full supplied sitcom film with original instrumental backing and four mouth-engine channels. See [the scene notes](docs/denial-river.md). All 855 preceding public files remain byte-identical.
 
 STORM adds the complete supplied school film with original instrumental music, physical featured singing and rhythmic responses. See [the scene notes](docs/storm.md). All 864 preceding public files remain byte-identical.
+
+Europapa adds the complete supplied music video with original accompaniment and actual physical Dutch vocals. See [the scene notes](docs/europapa.md). All 871 preceding public files remain byte-identical.

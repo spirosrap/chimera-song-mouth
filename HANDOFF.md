@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-one concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -574,3 +574,7 @@ Intentional full-screen fades are excluded. Browser playback/export/layout
 were not retested because access remains declined in this chat. The unchanged
 caption-level clarity aid remains a documented diagnostic, not an
 intelligibility pass; the owner-approved preview is the listening reference.
+
+## Europapa addition
+
+The complete supplied Joost Klein video is added at `?scene=europapa` with original instrumental music and one actual physical performance. Four costume graphics share the retained model. Preserve language-specific prepared IPA, Dutch rounded vowels and fricatives, rhythmic pa syllables, German/Italian lines and quiet spoken tribute. Keep the pointed blue suit, cowboy hat, glasses/vest and guitar looks, podium and offset microphones, flags and rural signs, scooter and canal road, dinner, windmill band, sunset, rave, firelit family and ending dedication. All transforms restore from source time. See [the scene notes](docs/europapa.md). All 871 preceding public assets remain unchanged.
