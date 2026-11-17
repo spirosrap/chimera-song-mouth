@@ -1,6 +1,6 @@
 # CHIMERA · Vocal Band & Movie Scenes
 
-Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, seventy-nine concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
+Complete portable edition of the CHIMERA mouth app: **twenty-two songs, fifteen film and TV scenes, one speech, two Apollo missions, eighty concert and music-video performances, the single-mouth player, and all prepared media used by the website**.
 
 Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-synth). The Rust/WebAssembly physical voice engine, React interface, mouth animation and generated scene environments are included. This independent repository has no dependency on the previous ChatGPT Site or its account. The voice model’s sources are listed in [docs/architecture.md](docs/architecture.md#references-and-credits).
 
@@ -213,3 +213,5 @@ The complete Lady Gaga — The Dead Dance scene adds the approved physical singi
 The complete Sabrina Carpenter — Tears scene adds approved physical singing, response calls and the full comic dialogue ending over original music. The haunted-house party includes the blue suit and hat, changing host costumes, red bathroom and tears-collection tin, cornfield, silver fringe and dancing guests. See [the scene notes](docs/sabrina-tears.md).
 
 The complete Doja Cat — Demons scene pairs the original music with physical rap and answering calls, from the ceiling crawl and green bath to the attic typewriter, goats and kitchen fire. See [the scene notes](docs/doja-demons.md).
+
+The full Childish Gambino — Lithonia scene pairs the original music with physical singing and reaction voices, from the microphone and rehearsal room to the chase through the woods. See [the scene notes](docs/lithonia.md).

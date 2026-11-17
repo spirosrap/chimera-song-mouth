@@ -2967,6 +2967,46 @@
       "sha256": "b5aca29760c08b7944832c59fdd00ea34ba0698b8e70bdba64c7fd6f5f6933dc"
     },
     {
+      "path": "public/scenes/lithonia/backing.mp3",
+      "bytes": 3875372,
+      "sha256": "8b7455a6024f1180261730f0b635bab844350eb7020e092498f7abec65a0a472"
+    },
+    {
+      "path": "public/scenes/lithonia/credits.txt",
+      "bytes": 1149,
+      "sha256": "aaa257564c0bccbf876eb3804a68856c87b3ee0050d73c51277de5a071d07a19"
+    },
+    {
+      "path": "public/scenes/lithonia/harmony.tele.gz",
+      "bytes": 371254,
+      "sha256": "e23498e4a928ad504ec86477a11a6776d434a0ba761fa4e78b36d9141ab29e99"
+    },
+    {
+      "path": "public/scenes/lithonia/lead.tele.gz",
+      "bytes": 897375,
+      "sha256": "856e4d12edfb190a00295bee3a216a7c8a7b5c9138381528b3db4b82df974f8f"
+    },
+    {
+      "path": "public/scenes/lithonia/mix.mp3",
+      "bytes": 3875372,
+      "sha256": "fc7f94305e93d848c20bc09fb24d374c3ad22bce3e2c7a5fd1e3b9eedc016694"
+    },
+    {
+      "path": "public/scenes/lithonia/performance.json",
+      "bytes": 96620,
+      "sha256": "9294e34a5dbc371323a7e80c60d297c53ae651660d27b0ebccb0ecc10e9ff579"
+    },
+    {
+      "path": "public/scenes/lithonia/scene.json",
+      "bytes": 5586,
+      "sha256": "9213579c7d24af954b8531e555c58800cfc1b373ee6407893073bb523b53a127"
+    },
+    {
+      "path": "public/scenes/lithonia/witness.tele.gz",
+      "bytes": 62893,
+      "sha256": "08bebc6bffd31be81f82e7bd31b47c97e51270238e5d48b4b7475d6e4b2eebef"
+    },
+    {
       "path": "public/scenes/losing-religion/backing.mp3",
       "bytes": 9421868,
       "sha256": "7708bedbbf17e4b3153cf97721f6f314d0ca66713d7491d9f08d55143c1fd4ed"

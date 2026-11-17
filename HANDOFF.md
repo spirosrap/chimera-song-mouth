@@ -21,7 +21,7 @@ This uses the included precompiled WASM engine. Publish the entire generated `di
 ## Preserve
 
 - Twenty-two songs in `src/band/library.ts`, including all prepared files in `public/band/`.
-- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all seventy-nine concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
+- All fifteen film and TV scenes, the Fool me once speech, the two Apollo scenes and all eighty concert and music-video performances in `src/scene/library.ts` and `public/scenes/`, including the existing A Few Good Men MP4 download.
 - The `?solo=1` player, Greek pronunciation/whistling and the robotic finger-click hand.
 - MEGALOVANIA’s retained model leases and shared WebGL renderer; do not revert these, or some of the 24 heads disappear.
 - Solo playback’s prepared audio buffer; routing it back through the overloaded live solver previously produced silent playback.
@@ -682,3 +682,7 @@ The complete supplied 3:45 performance adds `?scene=doja-demons`, with two retai
 Demons deployment verified for runtime `abbe08aee754dc0b864eda5a2e628fc461740ecb`. The helper uploaded all 18 changed files, with media first and the index last. SHA-256 checks match 434 live files, including the direct [Demons route](https://agenticspiros.com/chimera-song-mouth/?scene=doja-demons), current bundles, seven new scene files and 60 preserved performances. The completed publisher job and its plist were removed.
 
 The library has 79 concert and music-video performances and 935 public files. All 928 preceding public files match their previous hashes. All 634 Bun tests pass across 154 files after isolated reruns. All 195 native tests pass with two existing ignored, including native and WebAssembly voice parity. Typecheck, production build and local HTTP delivery pass. The 119 physical phrases use 4,519 mouth frames per voice on the same clock as 10,844,305 audio samples per channel. All 402 framing and lip-ray checks pass across 83 source cuts on desktop and phone. Reviewed 88 offline scene projections. Browser playback and export were not retested.
+
+## Childish Gambino — Lithonia
+
+The complete supplied video adds `?scene=lithonia`, with lead, backing harmony and witness reactions over the original instrumental music and effects. Preserve the dark microphone opening, profile, glasses and cap, warm band room, seated audience, circuitry shock, chase and closing title. Three retained airways serve seven figures. Source time restores 44 cuts, props and poses. See [the scene notes](docs/lithonia.md).
