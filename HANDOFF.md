@@ -475,3 +475,21 @@ access remains declined in this chat.
 ## Manchild addition · 17 November 2026
 
 The complete supplied Sabrina Carpenter video is added at `?scene=manchild`, with original music and actual physical English singing. Nine costume graphics borrow one retained singer. Desert hitchhiking, strange vehicles, chandelier van, tanker, wagon stunt, pool hall, diner and fridge, motel, lily pond, wheeled armchairs, telephone, dry-land jet ski, party, pigs, dog, falling car, orca, hairdryer and the long sunset-road ending use absolute source time. Preserve all 848 public files and 67 concert/music-video performances. See [the scene notes](docs/manchild.md). Browser playback/export/layout remain untested because access remains declined.
+
+Manchild is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=manchild>.
+Runtime `7e457ae42ab375131451402e165aebffac94e3bc` was pushed before all 17 changed files uploaded successfully
+with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP checks matched
+347 files, including every current app bundle, six new scene assets and 48
+preserved performances, plus the clean direct route. The temporary upload job
+and plist were removed. All 842 preceding public files remain byte-identical;
+the manifest contains 848 files. Checks passed 195 native tests (two existing
+ignored), 586 Bun tests across 142 files, TypeScript, content/WASM verification,
+production build, built hashes and local HTTP delivery. The full test-script
+components ran in separate processes to stay inside the command time limit.
+Sixty-three native geometry projections cover all 57 source cuts and six phone
+views. All visible physical heads pass framing and opaque-mouth-ray checks
+at three points in every source cut on phone and desktop, including costume
+ornaments. Only documentation changed after the verified build. Browser
+playback, export and layout were not retested because access remains declined
+in this chat.
