@@ -412,3 +412,24 @@ at three points in every source cut on phone and desktop, including costume
 ornaments. Only documentation changed after the verified build. Browser
 playback, export and layout were not retested because access remains declined
 in this chat.
+
+## Aperture · 17 November 2026
+
+Aperture is live at
+<https://agenticspiros.com/chimera-song-mouth/?scene=aperture>.
+Runtime `573e04d6a21268d07a46d2322e1fff75b5047018` was pushed before all 18 changed files uploaded successfully
+with `DEPLOY_EXIT=0`, media first and entry page last. Live HTTP checks matched
+354 files, including every current app bundle, seven new scene assets and 49
+preserved performances, plus the clean direct route. The temporary upload job
+and plist were removed. All 848 preceding public media files remain byte-identical;
+the manifest contains 855 files. Checks passed 195 native tests (two existing
+ignored), 590 Bun tests across 143 files, final focused pose/camera tests,
+TypeScript, content/WASM verification, production build, built hashes and local
+HTTP delivery. Full test-script components ran in separate processes to stay
+inside command time limits. Sixty-five native geometry projections cover all
+59 source cuts and six phone views, with the final supported lift reviewed
+again. All visible physical heads pass framing and opaque-mouth-ray checks
+at three points in every source cut on phone and desktop, including costume
+ornaments. The full-screen fade is deliberately excluded from those rays.
+Only documentation changed after the verified build. Browser playback, export
+and layout were not retested because access remains declined in this chat.
