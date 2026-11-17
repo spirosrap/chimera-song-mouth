@@ -165,6 +165,8 @@ export interface Segment {
   palatalized?: boolean;
   /** breathy voice: a voiced stop or affricate's release (IPA ʱ), or a vowel (combining diaeresis below) */
   breathy?: boolean;
+  /** a vowel that is a glide off the vowel before it, reached over this long (s): one movement, not a second held vowel */
+  glide?: number;
 }
 
 /** What the engine will not say as written in a piece of IPA text (see `skippedIpa`). */
@@ -209,10 +211,10 @@ export interface Syllable {
   phraseEnd: boolean;
   /** pitch bends inside the sung note, written by the syllable's front end (a tone, an accent) */
   pitch?: Bend[];
-  /** nasalise this fraction of the vowel before a nasal coda (unset: none) */
+  /** nasalise this fraction of the vowel before a closing rhyme's nasal coda (see `closing`; unset: none) */
   nasalLead?: number;
-  /** the share of a falling diphthong's note its off-glide takes (unset: 20%) */
-  offglide?: number;
+  /** the rhyme's ending (an off-glide, a nasal coda) is one closing movement at the note's end, this long at most (s); unset: a held part */
+  closing?: number;
 }
 
 /** A bend of the pitch inside a sung note: `st` semitones, at its vowel's start or end, over `len` of the vowel (at most `max` s). */

@@ -63,7 +63,24 @@ pub fn expand(ipa: &str) -> Option<&'static [&'static str]> {
         "uɑ" => &["u", "ɑ"],
         "uə" => &["u", "ə"],
         "yɛ" => &["y", "ɛ"],
+        // Mandarin's er: a central (er4: open) start, the r-colouring arriving in the held vowel
+        "əɝ" => &["ə", "ɝ"],
+        "aɝ" => &["a", "ɝ"],
         "uɔ" => &["u", "ɔ"],
+        // Mandarin's own back u (Zee & Lee 2001: F2 ~660, English /u/'s is ~1000) as the medial glide:
+        // the same compounds with `u̠` (vowel_data.rs), beside the ones above, which stay as they were
+        "u̠a" => &["u̠", "a"],
+        "u̠ɔ" => &["u̠", "ɔ"],
+        "u̠ɑ" => &["u̠", "ɑ"],
+        "u̠ə" => &["u̠", "ə"],
+        "u̠aɪ" => &["u̠", "a", "ɪ"],
+        "u̠eɪ" => &["u̠", "e", "i"],
+        // and Mandarin's ʊ (ong, and the off-glide of ao ou iao iou, Zee & Lee: F2 ~730 where English /ʊ/ has ~1120)
+        "iʊ̠" => &["i", "ʊ̠"],
+        "aʊ̠" => &["a", "ʊ̠"],
+        "əʊ̠" => &["ə", "ʊ̠"],
+        "iaʊ̠" => &["i", "a", "ʊ̠"],
+        "iəʊ̠" => &["i", "ə", "ʊ̠"],
         // a central start, Mandarin's ou ([əʊ], where English [oʊ] starts nearly at [u])
         "əʊ" => &["ə", "ʊ"],
         // triphthongs: a glide into a falling diphthong (Mandarin iao, iou, uai, uei)
@@ -77,7 +94,7 @@ pub fn expand(ipa: &str) -> Option<&'static [&'static str]> {
 
 /// A rising nucleus (a rising diphthong or a triphthong): its first part is a short glide.
 pub fn is_rising(ipa: &str) -> bool {
-    matches!(ipa, "ia" | "iɛ" | "iɑ" | "iʊ" | "ua" | "uo" | "uɑ" | "uə" | "yɛ" | "uɔ" | "iaʊ" | "iəʊ" | "uaɪ" | "ueɪ")
+    matches!(ipa, "ia" | "iɛ" | "iɑ" | "iʊ" | "ua" | "uo" | "uɑ" | "uə" | "yɛ" | "uɔ" | "əɝ" | "aɝ" | "iaʊ" | "iəʊ" | "uaɪ" | "ueɪ" | "u̠a" | "u̠ɔ" | "u̠ɑ" | "u̠ə" | "u̠aɪ" | "u̠eɪ" | "iʊ̠" | "iaʊ̠" | "iəʊ̠")
 }
 
 /// A rising nucleus's on-glide (its first part), sung short at the note's start.
@@ -143,8 +160,10 @@ fn preset_vowel_artic(ipa: &str, body: BodyName) -> Option<ArticPatch> {
         }
     }
     // a rhotic's tip is raised and curled back, not resting behind the teeth: without its
-    // calibrated position the tip stayed down and /ɝ/'s F3 sat ~15–20 % high (weakly rhotic)
-    if v.artic.get(ArticKey::TtCurl).unwrap_or(0.0) > 0.05 {
+    // calibrated position the tip stayed down and /ɝ/'s F3 sat ~15–20 % high (weakly rhotic). The
+    // apical vowels are made with the tongue tip, at the place of the sibilant before them (ʅ
+    // curled, ɿ not): their tip is part of the vowel too
+    if v.artic.get(ArticKey::TtCurl).unwrap_or(0.0) > 0.05 || ipa == "ɿ" {
         if let Some(x) = v.artic.get(ArticKey::TtX) {
             out.set(ArticKey::TtX, x);
         }
@@ -223,6 +242,8 @@ struct Seg<'a> {
     nasalized: Option<bool>,
     palatalized: Option<bool>,
     breathy: Option<bool>,
+    /// a glide off the vowel before it, reached over this long (s): see `Segment::glide`
+    glide: Option<f64>,
 }
 
 /// glottal abduction of breathy voice: /ɦ/'s, a gap the folds still vibrate across
@@ -294,10 +315,10 @@ pub fn plan_utterance(input: &[Segment], o: &PlanOptions) -> Plan {
             };
             for (i, p) in parts.iter().enumerate() {
                 let dur = base * shares.get(i).copied().unwrap_or(1.0);
-                segs.push(Seg { ipa: p, dur: Some(dur), stress: s.stress, f0: s.f0, def: None, vowel: None, glide_from: i > 0, aspirated: None, vot: None, nasalized: s.nasalized, palatalized: None, breathy: s.breathy });
+                segs.push(Seg { ipa: p, dur: Some(dur), stress: s.stress, f0: s.f0, def: None, vowel: None, glide_from: i > 0, aspirated: None, vot: None, nasalized: s.nasalized, palatalized: None, breathy: s.breathy, glide: None });
             }
         } else {
-            segs.push(Seg { ipa: &s.ipa, dur: Some(durs[si]), stress: s.stress, f0: s.f0, def: None, vowel: None, glide_from: false, aspirated: s.aspirated, vot: s.vot, nasalized: s.nasalized, palatalized: s.palatalized, breathy: s.breathy });
+            segs.push(Seg { ipa: &s.ipa, dur: Some(durs[si]), stress: s.stress, f0: s.f0, def: None, vowel: None, glide_from: false, aspirated: s.aspirated, vot: s.vot, nasalized: s.nasalized, palatalized: s.palatalized, breathy: s.breathy, glide: s.glide });
         }
     }
     for s in segs.iter_mut() {
@@ -340,8 +361,17 @@ pub fn plan_utterance(input: &[Segment], o: &PlanOptions) -> Plan {
         // vowel-to-vowel through the consonant (Öhman): the previous vowel lets go early in the gap
         // and the next one's target ramps in over most of it, so the tongue body is already near
         // the next vowel at the release and the transitions carry the consonant's place
-        let r_in = js_max(0.03, 0.75 * (times[i].t0 - prev)) + 0.01;
-        let r_out = js_max(0.03, 0.4 * (next - times[i].t1)) + 0.01;
+        let mut r_in = js_max(0.03, 0.75 * (times[i].t0 - prev)) + 0.01;
+        let mut r_out = js_max(0.03, 0.4 * (next - times[i].t1)) + 0.01;
+        // a glide off the vowel right before it (`Segment::glide`): it comes in over its given time
+        // and that vowel lets go over the glide's own length, so the tongue is on its way from the
+        // start of the one ramp to the end of the other and holds neither target in between
+        if let Some(g) = segs[i].glide.filter(|_| i > 0 && segs[i - 1].vowel.is_some()) {
+            r_in = js_max(0.01, g);
+        }
+        if i + 1 < segs.len() && segs[i + 1].vowel.is_some() && segs[i + 1].glide.is_some() {
+            r_out = js_max(0.01, times[i + 1].t1 - times[i + 1].t0);
+        }
         gestures.push(Gesture::new(times[i].t0, times[i].t1, r_in, r_out, 1.0, artic_targets(segs[i].vowel.as_ref().unwrap())).label(segs[i].ipa));
     }
     // utterance-initial/final consonants: lend them the nearest vowel's body posture

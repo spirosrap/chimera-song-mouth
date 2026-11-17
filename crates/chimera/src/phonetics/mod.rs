@@ -56,6 +56,11 @@ pub struct Segment {
     /// vowel said with them part-open (IPA combining diaeresis below); None or false: modal
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub breathy: Option<bool>,
+    /// a vowel that is a glide off the vowel before it: reached over this long (s) while that vowel
+    /// lets go over the glide's own length, so the two are one movement, not two held targets;
+    /// None: a vowel of its own
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub glide: Option<f64>,
 }
 
 impl Segment {
@@ -121,14 +126,16 @@ pub struct Syllable {
     /// accent, a scoop); none: the note's pitch as written
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub pitch: Vec<Bend>,
-    /// nasalise this fraction of the vowel before a nasal coda (at most 0.25 s), as Mandarin does;
-    /// None: the song's SongOptions::nasal_lead
+    /// nasalise this fraction of the vowel before a closing rhyme's nasal coda (`closing`; at most
+    /// 0.25 s), as Mandarin does; None: the velum lowers only for the nasal itself
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub nasal_lead: Option<f64>,
-    /// the share of a falling diphthong's held note its off-glide takes (Mandarin's ai ao ei ou glide
-    /// over the last 35%); None: the planner's 20%
+    /// the rhyme's ending (a falling diphthong's off-glide, a nasal coda) is one closing movement at
+    /// the end of the note, this long at most (s), as Mandarin's 韵尾 is: the main vowel moves into
+    /// it and it is not held. None: the off-glide holds a share of the note and the coda is a
+    /// consonant of its own
     #[serde(default, skip_serializing_if = "Option::is_none")]
-    pub offglide: Option<f64>,
+    pub closing: Option<f64>,
 }
 
 /// Which end of its sung vowel a pitch bend sits at.
@@ -143,7 +150,7 @@ pub enum Edge {
 
 /// A bend of the pitch inside a sung note: `st` semitones from the note, at the vowel's start or
 /// end, over `len` of the vowel but at most `max` seconds. The melody stays as written; a bend only
-/// colours the note's start or end (Mandarin's tones, Japanese pitch accent, an English scoop).
+/// colours part of the note (a scoop, a pitch accent).
 #[derive(Clone, Copy, Debug, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Bend {
