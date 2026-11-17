@@ -66,3 +66,14 @@ phrase is audible, with finite exact-clock telemetry. Decoded MP3 length matches
 all 14,273,110 samples per stereo channel, with no extra padding and peak below
 0.92. The final phone pronunciation correction retains the featured preview
 performance, voice and body unchanged.
+
+Houdini is live at <https://agenticspiros.com/chimera-song-mouth/?scene=houdini>.
+Runtime `7ac2e68d7eeeca25334a5fc636e33b9e6143a634` was committed and pushed before all 20 changed files uploaded
+successfully with `DEPLOY_EXIT=0`, media first and entry page last. The final live
+HTTP check matched all 385 checked files, including the current app bundles,
+nine Houdini assets and 53 preserved performances, plus the clean direct route.
+The completed upload job and plist were removed. All 877 preceding public files
+remain byte-identical; the manifest contains 886 files and 72 concert/music-video
+performances. New-scene/native/content/build/HTTP checks passed. Two unchanged
+synthesis tests retain the documented five-second timing failures; browser
+playback, export and layout were not retested.
