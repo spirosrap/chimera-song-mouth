@@ -717,3 +717,12 @@ House Tour deployment verified for runtime `e87ba114f69d478dbb0dc0b0505edef233f0
 The library has 83 concert and music-video performances and 966 public assets. All 958 preceding public files retain their checksums. Typecheck, production build, local HTTP delivery, all 650 Bun tests across 158 files and 195 native tests pass. Two existing native tests remain ignored. The existing Bun suite used a 15-second command timeout.
 
 The three physical tracks contain 57 phrases and 4,298 synchronized mouth frames each. The full mix decodes to 10,314,200 stereo sample frames. The 114 cuts passed 1,236 head-framing and occlusion checks on desktop and phone-sized views. Browser playback and video export remain unverified.
+
+
+## Chappell Roan — The Subway
+
+The Subway deployment verified for runtime `72080a0d432c53852ee7a004c8e3969404e93117`. The publisher uploaded all 19 changed files with media first and index last. SHA-256 checks match 45 live files covering the [The Subway link](https://agenticspiros.com/chimera-song-mouth/?scene=the-subway), its eight assets, the current bundles and the two preceding scenes. Removed the completed publishing job and plist.
+
+The library has 84 concert and music-video performances and 974 public assets. All 966 preceding public files retain their checksums. Typecheck, production build, local HTTP delivery, all 654 Bun tests across 159 files and 195 native tests pass. Two existing native tests remain ignored. The existing Bun suite used a 15-second command timeout.
+
+The three physical tracks contain 79 phrases and 5,428 synchronized mouth frames each. The full mix decodes to 13,027,034 stereo sample frames. The 84 cuts passed 438 head-framing and occlusion checks on desktop and phone-sized views. Browser playback and video export remain unverified.
