@@ -115,8 +115,12 @@ a real phone or a real slow device, Safari, sharing a recorded clip.
    If the generated site is identical, verify it is already synchronized;
    tooling-only changes do not require new song renders or changed web assets.
 
-This is an on-request update procedure, not a scheduled updater. No workflow
-automatically merges upstream code, re-renders recordings or publishes a site.
+Since 2026-11-18 the owner's ThinkBook checks upstream once a day (a systemd user timer,
+`chimera-upstream-check`, outside this repository). When upstream is ahead of
+`upstreamRevision`, it starts an unattended agent that follows this procedure: import, test,
+push and publish, or stop and leave a report when a test fails, a conflict needs judgment or
+the word-clarity judge reads worse. Nothing in this repository runs on a schedule, and no run
+re-renders recordings.
 Browser checks run in the system Chromium against a local server only (Playwright's
 own browser is not installed, so `tools/e2e.ts` and `tools/layout-lint.ts` need
 `executablePath: "/usr/bin/chromium"` in a temporary copy); never point a headless
