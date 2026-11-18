@@ -224,3 +224,4 @@ The full KATSEYE — Gnarly scene takes six performers from a pink grocery tray 
 The full Sabrina Carpenter — House Tour scene recreates the pink van, mansion and getaway with original backing and three physical voices. See [the scene notes](docs/house-tour.md).
 The full Chappell Roan — The Subway scene follows the New York street chase, train dance, fountain, and green hair tower with original backing and physical vocals. See [the scene notes](docs/the-subway.md).
 The full Charli xcx — SS26 scene follows the cross-shaped runway, backstage styling and final dissolve with original backing and physical voices. See [the scene notes](docs/ss26.md).
+The full OK Go — Love scene follows the station, robot arms and live kaleidoscope mirrors with original backing and physical voices. See [the scene notes](docs/ok-go-love.md).

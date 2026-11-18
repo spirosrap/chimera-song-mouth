@@ -136,3 +136,5 @@ The owner supplied Sabrina Carpenter — House Tour. The prepared scene contains
 The owner supplied Chappell Roan — The Subway. The prepared scene contains separated original instrumental music and effects, physical vocal tracks, captions and telemetry. Rights remain with their respective holders. Source footage and analysis caches stay outside this repository.
 
 The owner supplied Charli xcx — SS26. The prepared scene contains separated original instrumental music and effects, physical vocals, captions and telemetry. Rights remain with their respective holders. Raw footage and analysis remain outside the repository.
+
+The owner supplied OK Go — Love. The prepared scene contains the original separated instrumental music and scene effects, physical voices, captions and telemetry. Rights remain with their respective holders. Raw footage and analysis stay outside the repository.

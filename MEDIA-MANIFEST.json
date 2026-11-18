@@ -3642,6 +3642,46 @@
       "sha256": "9d5a1569f0675c3b9d014db35287588d0a620f18ddcd5da5ff7f44b6404a30cf"
     },
     {
+      "path": "public/scenes/ok-go-love/backing.mp3",
+      "bytes": 8398124,
+      "sha256": "12940c0a14dffb024c1b3673865b4475ce4be224cde25957334361aa9e0ae737"
+    },
+    {
+      "path": "public/scenes/ok-go-love/credits.txt",
+      "bytes": 884,
+      "sha256": "4622a1087629f8848add8be95bf7a19b6de4ea26a44d32d7d5d0522d3340a0f4"
+    },
+    {
+      "path": "public/scenes/ok-go-love/crew.tele.gz",
+      "bytes": 132628,
+      "sha256": "73d92f3d4312e9d1e306e13a99c2abf48ef4c24313adb8aa9ce931f40ef91953"
+    },
+    {
+      "path": "public/scenes/ok-go-love/harmony.tele.gz",
+      "bytes": 313541,
+      "sha256": "00159b2bc5f8fa8d497945efaf02ea250c4a126fd818bf816b6e4dcd557ecb3a"
+    },
+    {
+      "path": "public/scenes/ok-go-love/lead.tele.gz",
+      "bytes": 1716244,
+      "sha256": "a19c5fae57aae4719324ccb2f622b7dbd77c4f04eb1de11eb3d028b9ba865041"
+    },
+    {
+      "path": "public/scenes/ok-go-love/mix.mp3",
+      "bytes": 8398124,
+      "sha256": "eefcbe51e462944e2e5d643d7484b250299898ba7a3b31afeec2700d7133874a"
+    },
+    {
+      "path": "public/scenes/ok-go-love/performance.json",
+      "bytes": 155158,
+      "sha256": "0937165766796960afb520bcf80ef6d3fee974d2022563e0f54614f4744b525e"
+    },
+    {
+      "path": "public/scenes/ok-go-love/scene.json",
+      "bytes": 7025,
+      "sha256": "758272458d970bc75759714bdcf1ce7a07fd6f603da77bb1a98a38aa192e412d"
+    },
+    {
       "path": "public/scenes/once-in-a-lifetime/backing.mp3",
       "bytes": 7203884,
       "sha256": "48c2149e8bfb9788f7e495fe7885dccb93bb670baf87d434b89ccb804884ec41"
