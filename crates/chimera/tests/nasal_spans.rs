@@ -74,7 +74,9 @@ fn a_vowel_and_its_coda_r_share_the_vowels_span() {
     let end = Segment { word_end: Some(true), ..seg("ɹ") };
     let linked = klatt_durations(&[seg("p"), seg("ɑ"), end.clone(), seg("ɑ")], info);
     let closed = klatt_durations(&[seg("p"), seg("ɑ"), end, seg("k"), seg("ɑ")], info);
-    assert!(linked[1] + linked[2] < 0.75 * (klatt_durations(&[seg("p"), seg("ɑ"), seg("ɹ"), seg("ɑ")], info)[1..3].iter().sum::<f64>()), "\"car is\": ɑ {} + ɹ {}", linked[1], linked[2]);
+    // (0.9, not the base repo's 0.75: this edition speaks vowels 1.4-1.7x longer, so the /ɹ/ the
+    // nucleus saves is a smaller share of the pair: 0.88 here against 0.73 there)
+    assert!(linked[1] + linked[2] < 0.9 * (klatt_durations(&[seg("p"), seg("ɑ"), seg("ɹ"), seg("ɑ")], info)[1..3].iter().sum::<f64>()), "\"car is\": ɑ {} + ɹ {}", linked[1], linked[2]);
     assert!((linked[1] - closed[1]).abs() < 0.03, "ɑ {} before a vowel in the next word, {} before a consonant", linked[1], closed[1]);
     // an /ɹ/ that opens the next syllable is not a coda
     let open = klatt_durations(&[seg("p"), seg("ɑ"), seg("ɹ"), seg("ɑ")], info);

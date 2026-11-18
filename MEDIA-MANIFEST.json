@@ -1307,9 +1307,19 @@
       "sha256": "bd4ce8e44170a5f9f481310ca85c51de3c4f851a65e679b40e603b143bd3542a"
     },
     {
+      "path": "public/data/MANDARIN-PINYIN-LICENSE.txt",
+      "bytes": 2506,
+      "sha256": "11c1ea3499724392dcc02f6ba943c766d3763067c1fe90b2b36e3c0ae450fb02"
+    },
+    {
       "path": "public/data/cmudict.txt.gz",
       "bytes": 868793,
       "sha256": "336293a10a93c3ba183483308a22eab8e2b6a5e1ac91262dd0d3d4b85da285b5"
+    },
+    {
+      "path": "public/data/mandarin.txt.gz",
+      "bytes": 207607,
+      "sha256": "15529cebf851d13def12c14eb94bbc0f088f324c497a120db5cbe0dd0137853d"
     },
     {
       "path": "public/fonts/AVHERSHEY-LICENSE.txt",

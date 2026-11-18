@@ -318,6 +318,8 @@ export class AudioEngine {
     this.preparedGeneration++;
     this.buffered?.stop();this.buffered=null;this.preparingSong=true;
     this.latest=null;this.load=0;
+    // the live solver is paused, so nothing can fall behind: a "can't keep up" notice would be stale
+    this.slowLoad=0;this.setOverloaded(false);
     this.send({type:"rendering",enabled:false});
   }
 

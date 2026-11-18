@@ -8,72 +8,85 @@ not merge unrelated histories or replace this tree with an upstream checkout.
 
 ## Latest synchronization
 
-Checked on 2026-11-15, through `a5d22bebe7589a031916e67412e365cd2b65aecd`
-(6 commits after `153c9719`, all imported with `git cherry-pick -x`; none skipped).
+Checked on 2026-11-18, through `eeb0c1940d2d52f5f5effdecf3507fe79157f389`
+(13 first-parent commits after `a5d22beb`, all imported with `git cherry-pick -x`; the two
+merge commits, Mandarin #85 and hill-climb batch 3 #41, with `-m 1`; none skipped).
 
 What came in:
 
-- Sing: the **Sing** button sings the words in the lyrics box to a tune chosen by mood
-  (`src/song/tunes.ts`, `fit.ts`), with Tempo and Key on the Voice screen; the engine's
-  demo songs are in the same Tune menu and bring their own words. **Record video** sings it
-  again into a 9:16 clip to share or save (`src/song/record.ts`). The words, tune, tempo and
-  key are kept on the device.
-- Engine: decayed states are zeroed (in the browser a block took four times as long after a
-  nasal, and the sound could break up); speech planned faster than rate 1 shortens its
-  gesture ramps and release holds with the rate; beatbox patterns play up to 256 steps and
-  240 bpm; one more demo song.
+- Mandarin: Chinese lyrics (Han characters) and pinyin with tones are sung, the tones as
+  pitch bends, from a new lexicon (`public/data/mandarin.txt.gz`, loaded only when the lyrics
+  have Han characters; its license beside it). Later fixes by a native speaker's ear.
+- Voice, hill-climb batch 3 (the voice measured against recordings of real speakers): stops
+  and nasals are timed from where they sound closed; "ch" and "j" have a closure and a
+  frication; "v" and "z" weaken the voice; "th" after a pause is a silent closure; a vowel
+  and the "r" after it share one span; the lungs' pressure reaches the mouth; the female
+  voice's pulse and open phase changed.
+- Singing: a sung phrase ending in a vowel or sonorant is let go by the folds; the ring
+  control narrows the tube above the folds (the singer's formant near 3.2 kHz); the trilled
+  r no longer collapses into one silence; a Korean reading fix.
+- Slow devices: when the audio thread cannot keep up at 48 kHz the voice is rebuilt at
+  32 kHz and the top bar says so; if it still cannot keep up, a notice says that. Creature
+  voices zero their decayed state as the human voice does.
 
 Adapted rather than taken as written:
 
-- `README.md` keeps this edition's text.
-- Sing tab: this edition's song player stays. `singing.ts` keeps `playMelody` and its state
-  (`demo`, `elapsed`, `duration`, `renderProgress`) beside upstream's `tune`, `tempo`, `key`,
-  `playing` and `at`; the lyrics follow whichever is singing, and starting one stops the
-  other. Order on the tab: Sing button, Lyrics, Song player, Pitch (upstream puts the words
-  right under the button that sings them).
-- The song player used to load its first melody's words every time the tab opened, which
-  overwrote the words upstream now keeps. It loads them only when none were kept.
-- `crates/chimera/tests/golden/planning.json` conflicted twice, because this edition's
-  fixture already differs from upstream's (its longer vowels). Each time the edition's
-  fixture was kept and re-blessed twice with the one change applied, then compared field by
-  field with the fixture before: the fast-speech commit moved only `rampIn`, `rampOut` and
-  `releaseHold` in fixtures planned at rate 1.1 to 1.3; the beatbox commit moved only player
-  scenario 1 (the same 73 differences as upstream's own re-bless).
-- `tools/e2e.ts` types words into the lyrics box when it is empty. This edition opens Sing
-  on a melody without words (Ode to Joy), and upstream's checks follow a syllable. This was
-  also the cause of the "syllable cursor did not move" failure recorded at the last sync.
+- `crates/chimera/tests/golden/planning.json` conflicted three times (trill, sung release,
+  batch 3), because this edition's fixture already differs from upstream's (its longer
+  vowels). Each time the edition's fixture was kept and re-blessed twice with the one change
+  applied, then compared field by field with upstream's own re-bless: the trill commit moved
+  the same 105 values in the same four utterances, the sung release the same 68 values in
+  the same seven songs, and batch 3 moved 1161 values against upstream's 1164 in the same
+  five groups; the difference is five values whose last decimal digit moves in one fixture
+  and not the other.
+- This edition's clear-speech vowel lengths (1.7x unstressed, 1.4x stressed) are applied
+  before batch 3's rule that a vowel and its coda "r" share one span, so the pair gets the
+  lengthened vowel's span. `crates/chimera/tests/nasal_spans.rs` compares that pair with a
+  vowel and an onset "r" and asked for under 0.75 of it; with the longer vowels the ratio is
+  0.88 (0.73 upstream), so this edition's copy of the test asks for under 0.9. Nothing else
+  in the engine is changed from upstream.
+- `docs/hill-climb/log.md` keeps both this edition's clear-speech batch (retitled, with a
+  note that its experiment numbers 21 to 23 are its own) and upstream's batch 3.
+- The Mandarin lexicon is fetched through `BASE_PATH` (upstream fetches `/data/…`, which is
+  not this site's folder), and both new files are in `MEDIA-MANIFEST.json`.
+- `tests/prepared-song.test.ts` gives the engine a stand-in `window` (the slow-device code
+  listens there for a tap). When the song player starts, the "can't keep up" notice is
+  cleared: the live solver is paused then, so nothing can fall behind.
 
 The engine changed, so `src/wasm/chimera.wasm` is rebuilt (Arch `rust` and `rust-wasm`
-1.99.1; sha256 in `PROVENANCE.json`). Rendered with the engine before and after, Lovell's
-voice in the Apollo 13 scene is no longer identical: his lines are planned at rates above 1,
-so the fast-speech change shortens their ramps (difference 16 dB under the signal). With
-that one change left out the two renders differ by less than 1e-30, so the zeroing is
-inaudible. Lines at rate 1 or slower, and all singing, are unchanged. A search of the
-render scripts for rates above 1 finds Apollo 13, the Wizard of Oz, the Apollo 11 landing, and
-spoken lines in band songs (`src/band/planning.ts`). No prepared song or scene was re-rendered and
-the media manifest is unchanged, so what the site plays is the same; a later re-render of
-those scenes will not reproduce the published audio exactly.
+1.99.1; sha256 in `PROVENANCE.json`). All speech and singing sound different in the new
+engine, not only fast speech. No prepared song or scene was re-rendered and no existing file
+in the media manifest changed, so what the site plays from prepared audio is the same; a
+later re-render of any scene or song will not reproduce the published audio. Live voices
+(the single-mouth player, and a band song re-rendered in the browser after an edit) use the
+new engine.
 
-Validation: 195 native tests passed (two existing ignored); 493 Bun tests (two needed
-`--timeout 60000` on a busy machine); typecheck; content verification. Browser checks ran
-in the system Chromium with software rendering against a local server, on the single-mouth
-player (`?solo=1`):
+Word clarity, measured because this edition lengthened vowels for it: `tools/asr/speech_wer.py`
+(Whisper small.en, the same sentences as the run recorded in the log for experiment 21)
+reads 21.85 % word errors on the training sentences against 26.49 % before this import, and
+29.33 % against 38.67 % on the held-out ones. Upstream's own figures for batch 3 are 27.15 %
+and 38.33 %.
 
-- `tools/e2e.ts`, desktop and phone sizes: exit 0, no console errors, including the video
-  clip, the words coming back on reload, and the tune singing the lyrics. Upstream's
-  tongue-grab check was again skipped (2D face only, too slow under software rendering).
+Validation: 278 native tests passed (two existing ignored); 650 Bun tests with
+`--timeout 60000`; typecheck; content verification (983 public files after rebasing onto the newest scenes). Browser checks ran in
+the system Chromium with software rendering against a local server, on the single-mouth
+player (`?solo=1`), while the machine was busy (load average 17):
+
+- `tools/e2e.ts`, desktop and phone sizes: every step passed except its check that this
+  machine stays at 48 kHz. Under software rendering and that load the engine load reached
+  119 % and the voice fell back to 32 kHz, which is the new fallback doing its job; the
+  simulated slow-device steps passed. No console errors. Upstream's tongue-grab check was
+  again skipped (2D face only, too slow under software rendering).
 - `tools/layout-lint.ts`: Play, Beatbox, Bestiary and the duet page report 0 errors at 8
-  sizes. Sing reports 0 on most passes; two errors come and go between passes (canvas text
-  measured against a canvas that had moved at 1280x720, also seen before this import; the
-  word at the mouth over a readout at 768x1024, once in three passes). Speak reports one
-  error at 375x812 (two "k" labels touching in the gestural score), which the build from
-  before this import reports too.
-- By hand in the same browser: the song player plays a melody with its clock and word
-  highlight, the Sing button sings the same words, and each stops the other.
+  sizes. Sing reports the word at the mouth over a readout at 1280x720 and 1366x768 (the
+  same kind of error that came and went at the last sync). Speak reports the same one error
+  at 375x812 as before (two "k" labels touching in the gestural score).
+- By hand in the same browser: Chinese lyrics split into one syllable per character, the
+  lexicon loads from the site's folder, and both the Sing button and the song player sing
+  them.
 
-Not tested: listening to fast speech or to anything else by ear, a real phone, Safari,
-sharing a recorded clip, the lint's "clip to save" view (it looks for a button named
-"Video"; the button is "Record video").
+Not tested: listening to anything by ear (the new consonants, the female voice, Mandarin),
+a real phone or a real slow device, Safari, sharing a recorded clip.
 
 ## Next update
 

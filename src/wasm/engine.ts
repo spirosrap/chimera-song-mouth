@@ -139,7 +139,7 @@ export class MandarinLexicon {
     return this.isLoaded;
   }
 
-  load(url = "/data/mandarin.txt.gz"): Promise<void> {
+  load(url = BASE_PATH + "data/mandarin.txt.gz"): Promise<void> {
     if (this.isLoaded) return Promise.resolve();
     if (this.loading) return this.loading;
     this.loading = fetchGzText(url).then(

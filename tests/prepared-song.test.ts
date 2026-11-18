@@ -22,8 +22,10 @@ class Context {
  createBuffer(_c:number,n:number,rate:number){return {duration:n/rate,copyToChannel(){}};}
  createBufferSource(){const n=new Node();this.sources.push(n);return n;}
 }
-const global=globalThis as unknown as Record<string,unknown>,oldContext=global.AudioContext,oldNode=global.AudioWorkletNode;
-afterEach(()=>{global.AudioContext=oldContext;global.AudioWorkletNode=oldNode;});
+const global=globalThis as unknown as Record<string,unknown>,oldContext=global.AudioContext,oldNode=global.AudioWorkletNode,oldWindow=global.window;
+// the engine listens on window for the tap that lets a held context resume; there is none here
+const browserWindow=()=>{global.window={addEventListener(){},removeEventListener(){}};};
+afterEach(()=>{global.AudioContext=oldContext;global.AudioWorkletNode=oldNode;global.window=oldWindow;});
 const melody={name:'solo',source:'test',duration:.8,lyrics:'',notes:[{midi:60,start:0,duration:.5}]};
 const {plan}=planMelody(melody,'',{female:0,child:0},1,0,0);
 const part={id:'solo',name:'solo',role:'test',body:{female:0,child:0},volume:1,pan:0};
@@ -41,7 +43,7 @@ test('prepared solo audio sounds, preserves the selected source settings, and ha
 });
 
 test('prepared audio uses an AudioBufferSource, freezes the solver, and follows the audible clock',async()=>{
- const ctx=new Context();let node:Node,options:unknown;
+ browserWindow();const ctx=new Context();let node:Node,options:unknown;
  global.AudioContext=class{constructor(o:unknown){options=o;return ctx;}};
  global.AudioWorkletNode=class{constructor(){node=new Node();return node;}};
  const engine=new AudioEngine();await engine.start();engine.beginPreparedSong();
@@ -59,7 +61,7 @@ test('prepared audio uses an AudioBufferSource, freezes the solver, and follows 
 });
 
 test('a cancelled preparation cannot start an old buffer after a new song begins',async()=>{
- const ctx=new Context();global.AudioContext=class{constructor(){return ctx;}};global.AudioWorkletNode=Node;
+ browserWindow();const ctx=new Context();global.AudioContext=class{constructor(){return ctx;}};global.AudioWorkletNode=Node;
  const engine=new AudioEngine();await engine.start();engine.beginPreparedSong();
  let resume!:()=>void;ctx.resumeWait=new Promise<void>(r=>{resume=r;});
  const old=engine.playPreparedSong(rendered.samples,rendered.tele,plan);
