@@ -4212,6 +4212,41 @@
       "sha256": "6b75f8686531446957a2c3c37149cfa8a664b19e8a4073bc3f074a31696f07ac"
     },
     {
+      "path": "public/scenes/ss26/backing.mp3",
+      "bytes": 5535020,
+      "sha256": "f89c7b1a370c2edf6b46a6545fcafb7b9f0276c47e82864e6223ad89fc0a6536"
+    },
+    {
+      "path": "public/scenes/ss26/credits.txt",
+      "bytes": 804,
+      "sha256": "47d8f863e09c26aef96f2d6dcd7954726554891d7ecda8cf732e6219daad8cd8"
+    },
+    {
+      "path": "public/scenes/ss26/intro.tele.gz",
+      "bytes": 73333,
+      "sha256": "55cef017e4db9f3b23fe3d21d9b87b872eb24a9ce0f3e2dad822204a4903dbbf"
+    },
+    {
+      "path": "public/scenes/ss26/lead.tele.gz",
+      "bytes": 1710379,
+      "sha256": "1d91c2350e7bd7cbe4d92039cd8e2b3abd744c52643483a7f6f4c7fd05b9584d"
+    },
+    {
+      "path": "public/scenes/ss26/mix.mp3",
+      "bytes": 5535020,
+      "sha256": "81f214d9041816fde2bad4b1a58b2d972f11f417113e5c3bdfc81bd2e6cb9259"
+    },
+    {
+      "path": "public/scenes/ss26/performance.json",
+      "bytes": 165543,
+      "sha256": "83516d0903b1d7e84a74eadae2d12ebb4f4f5c6aaaa3f9729e5eb0ebe324b541"
+    },
+    {
+      "path": "public/scenes/ss26/scene.json",
+      "bytes": 9032,
+      "sha256": "636e59a49b72feff6091da5dc43860994574f7473d50b383015c0861ea0fc7ac"
+    },
+    {
       "path": "public/scenes/stonehenge/backing.mp3",
       "bytes": 7549484,
       "sha256": "5a02addf2d9a8dd288fdd9dae68a63c9d702ab0f41e92356676a8f3da6c861f3"

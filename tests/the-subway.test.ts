@@ -24,7 +24,8 @@ function readTrack(name:string) {
 }
 
 test('The Subway appends the complete New York and last train edit',()=>{
-  expect(MOVIE_SCENES.slice(-2).map(scene=>scene.id)).toEqual(['house-tour','the-subway']);
+  const index=MOVIE_SCENES.findIndex(scene=>scene.id==='the-subway');
+  expect(MOVIE_SCENES[index-1]?.id).toBe('house-tour');
   expect(movieScene('the-subway')).toHaveProperty('assetVersion','the-subway-20261118');
   expect(scene.characters.map(person=>person.id)).toEqual([...SUBWAY_CAST]);
   expect(scene.shots).toEqual(SUBWAY_SHOTS.map(([time,view])=>({time,view})));
