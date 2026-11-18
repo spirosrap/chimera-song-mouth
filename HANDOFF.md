@@ -735,3 +735,12 @@ SS26 deployment verified for runtime `49cabae8452d016636308c8fdb97cb79e96bee5d`.
 The library has 85 concert and music-video performances and 981 public assets. All 974 preceding public files retain their checksums. Typecheck, production build, local HTTP delivery, all 658 Bun tests across 160 files and 195 native tests pass. Two existing native tests remain ignored. The existing Bun suite used a 15-second command timeout. The preceding catalog test initially asserted the final two entries. It passed on rerun after checking the relative entry order so future scenes can be appended.
 
 The two physical tracks contain 44 phrases and 3,458 synchronized mouth frames each. The full mix decodes to 8,299,080 stereo sample frames. The 85 cuts passed 440 head-framing and occlusion checks on desktop and phone-sized views. Browser playback and video export remain unverified.
+
+
+## OK Go — Love
+
+Love deployment verified for runtime `fe34c04ea2c2778c3887a6c8752afce7335f22b2`. The publisher uploaded all 19 changed files with media first and index last. SHA-256 checks match 46 live files covering the [Love link](https://agenticspiros.com/chimera-song-mouth/?scene=ok-go-love), its eight assets, the current bundles and the two preceding scenes. Removed the completed publishing job and plist.
+
+The library has 86 concert and music-video performances and 991 public assets. All 981 preceding public files retain their checksums, and both imported dictionary assets match production. The scene was rebased onto the already published engine at upstream revision `eeb0c19`. Typecheck, production build, local HTTP delivery, all 663 Bun tests across 161 files and 278 native tests pass. Two existing native tests remain ignored. The existing Bun suite used a 15-second command timeout. The native/WASM parity case passed after rebuilding the cached WASM test target for the imported engine.
+
+The three physical tracks contain 64 phrases and 5,248 synchronized mouth frames each. The full mix decodes to 12,594,586 stereo sample frames. The 35 camera waypoints and transitions passed 192 head-framing and occlusion checks at desktop and phone sizes. GLSL compiles and native GLES renders all seven mirror patterns. Browser playback and video export remain unverified.
