@@ -17,6 +17,22 @@ use std::sync::OnceLock;
 
 /// label of the end-of-breath-group abduction (a live note can drop it when the next one starts)
 pub const EXHALE_LABEL: &str = "exhale";
+/// The end of a sung phrase on a vowel or sonorant (s): the folds are fully apart this long after
+/// the last segment's end, having parted over `LET_GO_OPENING` before that; the breath stays on
+/// for `LET_GO_BREATH` after the end. Trained singers' notes fall from -3 to -20 dB in about 50 ms
+/// and stop about 90 ms after -3 dB (8,095 releases in VocalSet and GTSinger).
+const LET_GO_OPEN_AT: f64 = 0.06;
+const LET_GO_OPENING: f64 = 0.15;
+const LET_GO_BREATH: f64 = 0.015;
+/// the opening's gesture strength: low enough that the folds follow its ramp (the voice takes a
+/// gesture's glottal opening in full from a weight of 2, which a strength of 6 reaches at a third
+/// of its activation, about 39 % of the way along the cosine ramp's time)
+const LET_GO_STRENGTH: f64 = 2.0;
+/// The shortest final note (its vowel and the sonorants that close it, s) the folds let go of
+/// this way. The opening starts `LET_GO_OPENING - LET_GO_OPEN_AT` (90 ms) before
+/// the phrase's end; on a shorter note it would start before the note has sounded and the whole
+/// note comes out quiet and breathy. Under twice that lead the phrase ends as it did before.
+const LET_GO_ROOM: f64 = 2.0 * (LET_GO_OPENING - LET_GO_OPEN_AT);
 
 /// when a sung phrase's breath reaches full drive, after the plan start (its first segment starts at 0.06)
 const BREATH_SUNG_AT: f64 = 0.06;
@@ -498,15 +514,44 @@ pub fn plan_utterance(input: &[Segment], o: &PlanOptions) -> Plan {
     // the first segment starts, and builds into adducted folds or behind the first constriction
     // rather than voicing ahead of the note. Speech and live notes keep their 20 ms lead.
     let breath_at = if sung { BREATH_SUNG_AT } else { 0.04 };
-    gestures.push(Gesture::new(o.t0 + breath_at, end, 0.04, if open_end { 0.07 } else { 0.05 }, 1.0, one(ControlKey::BREATH, 1.0)).label("breath"));
+    let last = segs.last();
+    let sonorant = last.is_some_and(|l| l.vowel.is_some()) || last.and_then(|l| l.def).is_some_and(|d| matches!(d.manner, Manner::Nasal | Manner::Approximant | Manner::Lateral | Manner::Tap | Manner::Trill));
+    // how long the phrase's last note sounds at its end: back from the end over the sonorants that
+    // close it, then over its vowel, and over a vowel right before that only at the same pitch (a
+    // diphthong's two halves; the note before in a melisma or a hiatus has its own pitch and is
+    // not this note). No vowel there: the closing sonorants alone (a hummed or syllabic ending).
+    let closing = |g: &Seg| g.vowel.is_none() && g.def.is_some_and(|d| matches!(d.manner, Manner::Nasal | Manner::Approximant | Manner::Lateral | Manner::Tap | Manner::Trill));
+    let mut from = segs.len();
+    while from > 0 && closing(&segs[from - 1]) {
+        from -= 1;
+    }
+    if from > 0 && segs[from - 1].vowel.is_some() {
+        let pitch = segs[from - 1].f0;
+        from -= 1;
+        while from > 0 && segs[from - 1].vowel.is_some() && segs[from - 1].f0 == pitch {
+            from -= 1;
+        }
+    }
+    let room = if from < segs.len() { end - times[from].t0 } else { 0.0 };
+    // a sung phrase that ends on a vowel or sonorant is let go by the folds, with the breath still
+    // on, where the last voiced stretch is long enough to keep its tone until the opening starts
+    let let_go = sung && sonorant && !open_end && room >= LET_GO_ROOM;
+    let breath_end = if let_go { end + LET_GO_BREATH } else { end };
+    gestures.push(Gesture::new(o.t0 + breath_at, breath_end, 0.04, if open_end { 0.07 } else { 0.05 }, 1.0, one(ControlKey::BREATH, 1.0)).label("breath"));
     // ---- end of the breath group: the folds part as the breath stops, so a final obstruent is
-    // released into silence instead of into an added vowel ("cat-uh"). After a vowel or sonorant
-    // they part once the pressure has fallen, so the voice fades out instead of ending in an [h].
+    // released into silence instead of into an added vowel ("cat-uh"). After a spoken vowel or
+    // sonorant they part once the pressure has fallen, so the voice fades out instead of ending in
+    // an [h]. A sung one ends the way a singer ends a note: the folds part slowly, from before the
+    // vowel's end, while the breath is still there, and the tone thins over the last tenth of a
+    // second instead of being cut off as the pressure crosses the voicing threshold.
     if !open_end {
-        let last = segs.last();
-        let sonorant = last.is_some_and(|l| l.vowel.is_some()) || last.and_then(|l| l.def).is_some_and(|d| matches!(d.manner, Manner::Nasal | Manner::Approximant | Manner::Lateral | Manner::Tap | Manner::Trill));
-        let at = end + if sonorant { 0.045 } else { 0.015 };
-        gestures.push(Gesture::new(at, end + 0.1, 0.03, 0.06, 6.0, one(ControlKey::ABDUCTION, 0.22)).label(EXHALE_LABEL));
+        if let_go {
+            let at = end + LET_GO_OPEN_AT;
+            gestures.push(Gesture::new(at, end + 0.1, LET_GO_OPENING, 0.06, LET_GO_STRENGTH, one(ControlKey::ABDUCTION, 0.22)).label(EXHALE_LABEL));
+        } else {
+            let at = end + if sonorant { 0.045 } else { 0.015 };
+            gestures.push(Gesture::new(at, end + 0.1, 0.03, 0.06, 6.0, one(ControlKey::ABDUCTION, 0.22)).label(EXHALE_LABEL));
+        }
     }
     // ---- intonation: pitch targets on vowels
     let f0 = o.f0.unwrap_or(110.0);
