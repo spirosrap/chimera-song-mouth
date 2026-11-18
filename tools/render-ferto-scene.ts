@@ -1,41 +1,74 @@
-import {readFileSync,writeFileSync,mkdtempSync,rmSync,copyFileSync} from 'node:fs';
+/** Render the full Ferto physical performance over an isolated instrumental. */
+import {copyFileSync, mkdtempSync, readFileSync, rmSync, writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
-import {join,resolve} from 'node:path';
+import {join, resolve} from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {gzipSync} from 'node:zlib';
-import {initEngine,wasmModule} from '../tests/harness.ts';
+import {initEngine, wasmModule} from '../tests/harness.ts';
 import type {Arrangement} from '../src/band/types.ts';
 import {validPerformance} from '../src/band/performance.ts';
+import {validateScene} from '../src/scene/scene.ts';
 
-const root=new URL('../',import.meta.url).pathname,out=join(root,'public/scenes/ferto');
-const [instrumentalArg,vocalsArg]=Bun.argv.slice(2);
-if(!instrumentalArg||!vocalsArg)throw Error('Usage: bun tools/render-ferto-scene.ts <no-vocals.wav> <vocals.wav>');
-const instrumental=resolve(instrumentalArg),vocals=resolve(vocalsArg);
-const a:Arrangement=JSON.parse(readFileSync(join(out,'performance.json'),'utf8'));
-const part=a.parts.find(p=>p.id==='ferto-announcer')!;
-if(!part.performance||!validPerformance(part.performance,a.duration))throw Error('The Ferto physical score is invalid.');
+const out = new URL('../public/scenes/ferto/', import.meta.url).pathname;
+const [backingArg, ...extra] = Bun.argv.slice(2);
+if (!backingArg || extra.length) {
+  throw Error('Usage: bun tools/render-ferto-scene.ts <isolated-instrumental.wav>');
+}
+
+const scene = validateScene(JSON.parse(readFileSync(join(out, 'scene.json'), 'utf8')));
+const arrangement: Arrangement & {backingVolume: number} = JSON.parse(readFileSync(join(out, 'performance.json'), 'utf8'));
+const [part] = arrangement.parts;
+const [character] = scene.characters;
+if (arrangement.parts.length !== 1 || scene.characters.length !== 1 ||
+    part.id !== character.id || arrangement.duration !== scene.duration ||
+    !Number.isFinite(arrangement.backingVolume) || arrangement.backingVolume < 0 || arrangement.backingVolume > 1 ||
+    !part.performance || !validPerformance(part.performance, scene.duration)) {
+  throw Error('The Ferto physical score and scene must agree.');
+}
+
 await initEngine();
-const {planPerformance}=await import('../src/band/performancePlan.ts');
-const {renderPart,BAND_RATE,BAND_HOP}=await import('../src/band/render.ts');
-const temp=mkdtempSync(join(tmpdir(),'chimera-ferto-'));
-try{
-  const rendered=renderPart(wasmModule,part,a.duration,planPerformance(part,part.performance));
-  if(!rendered.samples.every(x=>Number.isFinite(x)&&Math.abs(x)<1)||!rendered.samples.some(x=>Math.abs(x)>.01))throw Error('The Ferto airway render is silent or unstable.');
-  const raw=join(temp,'announcer.f32');writeFileSync(raw,Buffer.from(rendered.samples.buffer));
-  const header=new DataView(rendered.tele),width=header.getUint32(20,true),count=header.getUint32(16,true),tele=new Float32Array(rendered.tele,48);
-  for(let f=0;f<count;f++)tele[f*width+10]=f*header.getUint32(12,true)/header.getUint32(8,true);
-  writeFileSync(join(out,'ferto-announcer.tele.gz'),gzipSync(Buffer.from(rendered.tele),{level:9}));
-  const windows=(a as Arrangement&{sourceWindows?:{start:number;end:number}[]}).sourceWindows??[];
-  let expr='1';
-  for(const w of [...windows].reverse()){
-    const start=w.start,end=w.end,fade=.14,level=.12;
-    const local=`if(lt(t,${start+fade}),1-${1-level}*(t-${start})/${fade},if(gt(t,${end-fade}),1-${1-level}*(${end}-t)/${fade},${level}))`;
-    expr=`if(between(t,${start},${end}),${local},${expr})`;
+const {planPerformance} = await import('../src/band/performancePlan.ts');
+const {renderPart, BAND_RATE} = await import('../src/band/render.ts');
+const temp = mkdtempSync(join(tmpdir(), 'chimera-ferto-'));
+
+try {
+  const gestures = planPerformance(part, part.performance);
+  const {samples, tele} = renderPart(wasmModule, part, scene.duration, gestures);
+  if (!samples.every(sample => Number.isFinite(sample)) ||
+      !samples.some(sample => Math.abs(sample) > .01)) {
+    throw Error('The Ferto airway render is silent or unstable.');
   }
-  const filters=`[0:a]volume=0.84[inst];[1:a]volume='${expr}':eval=frame,volume=0.84[orig];[2:a]pan=stereo|c0=0.82*c0|c1=0.82*c0[ann];[inst][orig][ann]amix=inputs=3:normalize=0:duration=longest:dropout_transition=0,alimiter=limit=0.92[out]`;
-  const mix=join(temp,'mix.mp3');
-  const r=spawnSync('ffmpeg',['-v','error','-y','-i',instrumental,'-i',vocals,'-f','f32le','-ar',String(BAND_RATE),'-ac','1','-i',raw,'-filter_complex',filters,'-map','[out]','-map_metadata','-1','-c:a','libmp3lame','-b:a','256k',mix],{stdio:'inherit'});
-  if(r.status!==0)throw Error('Ferto source/announcer mix encoding failed.');
-  copyFileSync(mix,join(out,'mix.mp3'));
-  console.log(`Rendered ${part.performance.phrases.length} timed Greek phrases (${part.performance.contour.length} pitch points), ${rendered.samples.length} airway samples at ${BAND_RATE} Hz.`);
-}finally{rmSync(temp,{recursive:true,force:true});}
+
+  const raw = join(temp, 'engine.f32');
+  writeFileSync(raw, Buffer.from(samples.buffer));
+  const header = new DataView(tele);
+  const count = header.getUint32(16, true);
+  const width = header.getUint32(20, true);
+  const frameSeconds = header.getUint32(12, true) / header.getUint32(8, true);
+  const track = new Float32Array(tele, 48);
+  for (let frame = 0; frame < count; frame++) {
+    track[frame * width + 10] = frame * frameSeconds;
+  }
+  const telemetry = join(temp, character.tele + '.gz');
+  writeFileSync(telemetry, gzipSync(Buffer.from(tele), {level: 9}));
+
+  const filters = [
+    `[0:a]aresample=${BAND_RATE},volume=${arrangement.backingVolume}[backing]`,
+    `[1:a]highpass=f=100,acompressor=threshold=0.10:ratio=2:attack=8:release=85,pan=stereo|c0=1.25*c0|c1=1.25*c0[engine]`,
+    `[backing][engine]amix=inputs=2:normalize=0:duration=longest,atrim=end_sample=${samples.length},alimiter=limit=0.95:latency=1[out]`,
+  ];
+  const mix = join(temp, scene.audio);
+  const result = spawnSync('ffmpeg', [
+    '-v', 'error', '-y', '-i', resolve(backingArg),
+    '-f', 'f32le', '-ar', String(BAND_RATE), '-ac', '1', '-i', raw,
+    '-filter_complex', filters.join(';'), '-map', '[out]', '-map_metadata', '-1',
+    '-c:a', 'libmp3lame', '-b:a', '256k', mix,
+  ], {stdio: 'inherit'});
+  if (result.status !== 0) throw Error('Ferto instrumental and engine mix encoding failed.');
+
+  copyFileSync(mix, join(out, scene.audio));
+  copyFileSync(telemetry, join(out, character.tele + '.gz'));
+  console.log(`Rendered ${part.performance.phrases.length} phrases and ${gestures.length} gestures with the CHIMERA airway.`);
+} finally {
+  rmSync(temp, {recursive: true, force: true});
+}

@@ -1,165 +1,564 @@
 {
   "setting": "ferto",
   "title": "Akylas · Ferto",
-  "description": "A Greek arcade adventure follows the supplied song through a Cycladic platform level, castle vault, moon-shooter, lava cave, Vienna bonus round and pixel concert. The original recording carries the verses and music; a physical CHIMERA announcer takes over the repeated Φέρτο hooks.",
+  "description": "A Greek arcade adventure through the Aegean, a castle, the moon, a lava cave, Vienna and a pixel concert. CHIMERA sings and speaks the full vocal track over the original instrumental accompaniment.",
   "duration": 208.98,
-  "audio": "mix.mp3",
+  "audio": "mouth-mix.mp3",
   "characters": [
     {
       "id": "ferto-announcer",
-      "name": "FERTO · arcade announcer",
-      "role": "Greek hook calls · physical mouth-engine voice",
-      "tele": "ferto-announcer.tele",
+      "name": "FERTO · arcade player",
+      "role": "Full song · physical mouth-engine voice",
+      "tele": "ferto-player.tele",
       "telemetryEncoding": "gzip"
     }
   ],
   "cues": [
     {
-      "start": 61.24,
-      "end": 62.96,
+      "start": 16.817027,
+      "end": 19.4,
       "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.45
+      "text": "Πρέπει να παίξω, δεν θα πάω πάσο",
+      "intensity": 0.72
     },
     {
-      "start": 62.96,
-      "end": 64.68,
+      "start": 19.4748,
+      "end": 21.95,
       "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.48
+      "text": "Mi ambición es fuego, nunca fracaso",
+      "intensity": 0.72
     },
     {
-      "start": 64.68,
-      "end": 66.4,
+      "start": 22.026332,
+      "end": 25.575193,
       "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.51
+      "text": "No hay límite, todo lo arraso",
+      "intensity": 0.72
     },
     {
-      "start": 66.56,
-      "end": 67.82,
+      "start": 26.442079,
+      "end": 28.656719,
+      "speaker": "ferto-announcer",
+      "text": "Κυνηγάω τα πάντα μέχρι να τα φτάσω",
+      "intensity": 0.72
+    },
+    {
+      "start": 29.585171,
+      "end": 32.030171,
+      "speaker": "ferto-announcer",
+      "text": "Θέλω ένα στέμμα κι έναν θρόνο να κάτσω",
+      "intensity": 0.72
+    },
+    {
+      "start": 32.309144,
+      "end": 35.38,
+      "speaker": "ferto-announcer",
+      "text": "Ένα block επιταγών και check σε όλους να γράψω",
+      "intensity": 0.72
+    },
+    {
+      "start": 35.426892,
+      "end": 38.48,
+      "speaker": "ferto-announcer",
+      "text": "Φέρε μου ένα ποτό που θέλω να ξεδιψάσω",
+      "intensity": 0.72
+    },
+    {
+      "start": 38.611524,
+      "end": 42.039998,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτα μου όλα, όλα, πάλι δεν θα χορτάσω",
+      "intensity": 0.72
+    },
+    {
+      "start": 42.3656,
+      "end": 43.78615,
+      "speaker": "ferto-announcer",
+      "text": "Real estate, φέρτο",
+      "intensity": 0.72
+    },
+    {
+      "start": 44.035334,
+      "end": 45.519999,
+      "speaker": "ferto-announcer",
+      "text": "Sashimi tuna, φέρτο",
+      "intensity": 0.72
+    },
+    {
+      "start": 45.596022,
+      "end": 47.6,
+      "speaker": "ferto-announcer",
+      "text": "Χρυσό ρολόι, γυαλί designer",
+      "intensity": 0.72
+    },
+    {
+      "start": 47.654428,
+      "end": 48.645603,
+      "speaker": "ferto-announcer",
+      "text": "Σου λέω φέρτο",
+      "intensity": 0.72
+    },
+    {
+      "start": 48.663602,
+      "end": 50.38,
+      "speaker": "ferto-announcer",
+      "text": "Leather πάλτο, φέρτο",
+      "intensity": 0.72
+    },
+    {
+      "start": 50.577197,
+      "end": 51.899999,
+      "speaker": "ferto-announcer",
+      "text": "Κι escargot, φέρτο",
+      "intensity": 0.72
+    },
+    {
+      "start": 51.923128,
+      "end": 53.899999,
+      "speaker": "ferto-announcer",
+      "text": "Rally cars, yacht με stars",
+      "intensity": 0.72
+    },
+    {
+      "start": 54.013612,
+      "end": 55.079999,
       "speaker": "ferto-announcer",
       "text": "Σου είπα φέρτο",
-      "intensity": 0.525
+      "intensity": 0.72
     },
     {
-      "start": 68,
-      "end": 69.63,
+      "start": 59.085172,
+      "end": 60.100001,
       "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.54
+      "text": "(Φέρτο, φέρτο, φέρτο)",
+      "intensity": 0.72
     },
     {
-      "start": 69.63,
-      "end": 71.27,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.57
-    },
-    {
-      "start": 71.27,
-      "end": 72.9,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.6
-    },
-    {
-      "start": 118.98,
-      "end": 120.73,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.8
-    },
-    {
-      "start": 120.73,
-      "end": 122.47,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.815
-    },
-    {
-      "start": 122.47,
-      "end": 124.22,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.83
-    },
-    {
-      "start": 124.22,
-      "end": 125.46,
-      "speaker": "ferto-announcer",
-      "text": "Σου είπα φέρτο",
-      "intensity": 0.837
-    },
-    {
-      "start": 125.46,
-      "end": 127.14,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.845
-    },
-    {
-      "start": 127.14,
-      "end": 128.82,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.86
-    },
-    {
-      "start": 128.82,
-      "end": 130.5,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.88
-    },
-    {
-      "start": 173.6,
-      "end": 175.47,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.9
-    },
-    {
-      "start": 175.47,
-      "end": 177.33,
+      "start": 61.397,
+      "end": 62.979,
       "speaker": "ferto-announcer",
       "text": "Φέρτο μου, φέρτο μου, φέρτο",
       "intensity": 0.92
     },
     {
-      "start": 177.33,
-      "end": 179.2,
+      "start": 62.997,
+      "end": 64.579,
       "speaker": "ferto-announcer",
       "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.94
+      "intensity": 0.92
     },
     {
-      "start": 179.98,
-      "end": 181.62,
+      "start": 64.597,
+      "end": 66.25,
       "speaker": "ferto-announcer",
       "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.96
+      "intensity": 0.92
     },
     {
-      "start": 181.62,
-      "end": 183.26,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 0.98
-    },
-    {
-      "start": 183.26,
-      "end": 184.9,
-      "speaker": "ferto-announcer",
-      "text": "Φέρτο μου, φέρτο μου, φέρτο",
-      "intensity": 1.0
-    },
-    {
-      "start": 185,
-      "end": 186.22,
+      "start": 66.797882,
+      "end": 67.809001,
       "speaker": "ferto-announcer",
       "text": "Σου είπα φέρτο",
-      "intensity": 1.0
+      "intensity": 0.72
+    },
+    {
+      "start": 67.827,
+      "end": 69.409,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 69.427,
+      "end": 71.009,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 71.027,
+      "end": 72.68,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 74.247837,
+      "end": 76.6,
+      "speaker": "ferto-announcer",
+      "text": "Je veux le sommet, pas juste un pas",
+      "intensity": 0.72
+    },
+    {
+      "start": 77.14917,
+      "end": 79.859999,
+      "speaker": "ferto-announcer",
+      "text": "Rien ne me suffit, je réclame tout ça",
+      "intensity": 0.72
+    },
+    {
+      "start": 80.451378,
+      "end": 82.905323,
+      "speaker": "ferto-announcer",
+      "text": "Ακόμη κι όλα δεν είναι αρκετά",
+      "intensity": 0.72
+    },
+    {
+      "start": 83.303955,
+      "end": 84.850001,
+      "speaker": "ferto-announcer",
+      "text": "Θέλω τόσα πολλά",
+      "intensity": 0.72
+    },
+    {
+      "start": 85.03589,
+      "end": 86.42,
+      "speaker": "ferto-announcer",
+      "text": "που δεν είναι απτά",
+      "intensity": 0.72
+    },
+    {
+      "start": 86.538385,
+      "end": 89.9,
+      "speaker": "ferto-announcer",
+      "text": "Θέλω δόξα, αιωνιότητα και λεφτά",
+      "intensity": 0.72
+    },
+    {
+      "start": 89.982548,
+      "end": 92.879998,
+      "speaker": "ferto-announcer",
+      "text": "Ρούχα επιλεγμένα που είναι τόσο ακριβά",
+      "intensity": 0.72
+    },
+    {
+      "start": 93.002628,
+      "end": 95.965867,
+      "speaker": "ferto-announcer",
+      "text": "Να φωνάζουν το όνομά μου τόσο δυνατά",
+      "intensity": 0.72
+    },
+    {
+      "start": 95.983867,
+      "end": 99.81875,
+      "speaker": "ferto-announcer",
+      "text": "Και να χορεύω, χορεύω όσο πάω ψηλά",
+      "intensity": 0.72
+    },
+    {
+      "start": 99.836751,
+      "end": 101.42,
+      "speaker": "ferto-announcer",
+      "text": "Diamond rings, φέρτο",
+      "intensity": 0.55
+    },
+    {
+      "start": 101.581225,
+      "end": 102.972787,
+      "speaker": "ferto-announcer",
+      "text": "Cuban links, φέρτο",
+      "intensity": 0.55
+    },
+    {
+      "start": 103.141567,
+      "end": 104.76,
+      "speaker": "ferto-announcer",
+      "text": "Submarines, jet machines",
+      "intensity": 0.55
+    },
+    {
+      "start": 104.81317,
+      "end": 106.299999,
+      "speaker": "ferto-announcer",
+      "text": "Θέλω, οπότε φέρτο",
+      "intensity": 0.55
+    },
+    {
+      "start": 106.388967,
+      "end": 107.959777,
+      "speaker": "ferto-announcer",
+      "text": "(Γη κι ουρανό) φέρτο",
+      "intensity": 0.55
+    },
+    {
+      "start": 107.977777,
+      "end": 108.6,
+      "speaker": "ferto-announcer",
+      "text": "(φέρτο, φέρτο)",
+      "intensity": 0.55
+    },
+    {
+      "start": 108.642165,
+      "end": 109.419999,
+      "speaker": "ferto-announcer",
+      "text": "(φέρτο, φέρτο)",
+      "intensity": 0.55
+    },
+    {
+      "start": 109.620322,
+      "end": 111.084614,
+      "speaker": "ferto-announcer",
+      "text": "(Τον κόσμο όλο) φέρτο",
+      "intensity": 0.55
+    },
+    {
+      "start": 111.102615,
+      "end": 112.850002,
+      "speaker": "ferto-announcer",
+      "text": "(Εντός κι εκτός πλανήτη), αν δεν το έχω, φέρτο",
+      "intensity": 0.55
+    },
+    {
+      "start": 118.617,
+      "end": 120.199,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 120.217,
+      "end": 121.799,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 121.817,
+      "end": 123.47,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 124.306085,
+      "end": 125.409001,
+      "speaker": "ferto-announcer",
+      "text": "Σου είπα φέρτο",
+      "intensity": 0.72
+    },
+    {
+      "start": 125.427,
+      "end": 127.009,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 127.027,
+      "end": 128.609,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 128.627,
+      "end": 130.28,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 131.312091,
+      "end": 134.198207,
+      "speaker": "ferto-announcer",
+      "text": "Θέλω δόξα, αιωνιότητα και λεφτά",
+      "intensity": 0.72
+    },
+    {
+      "start": 134.643376,
+      "end": 137.398718,
+      "speaker": "ferto-announcer",
+      "text": "Ρούχα επιλεγμένα που είναι τόσο ακριβά",
+      "intensity": 0.72
+    },
+    {
+      "start": 137.812349,
+      "end": 140.720001,
+      "speaker": "ferto-announcer",
+      "text": "Να φωνάζουν το όνομά μου τόσο δυνατά",
+      "intensity": 0.72
+    },
+    {
+      "start": 140.847882,
+      "end": 143.450001,
+      "speaker": "ferto-announcer",
+      "text": "Να λένε φέρτο μας, Ακύλα, φέρτο",
+      "intensity": 0.72
+    },
+    {
+      "start": 143.75073,
+      "end": 145.549999,
+      "speaker": "ferto-announcer",
+      "text": "Κοίτα, μαμά",
+      "intensity": 0.72
+    },
+    {
+      "start": 145.856751,
+      "end": 148.649999,
+      "speaker": "ferto-announcer",
+      "text": "Όσα στερηθήκαμε παλιά",
+      "intensity": 0.72
+    },
+    {
+      "start": 149.87396,
+      "end": 152.4,
+      "speaker": "ferto-announcer",
+      "text": "Νιώθω πως θα καταφέρω",
+      "intensity": 0.72
+    },
+    {
+      "start": 152.645265,
+      "end": 156.52,
+      "speaker": "ferto-announcer",
+      "text": "Να προσφέρω μη μας λείψει κάτι ξανά",
+      "intensity": 0.72
+    },
+    {
+      "start": 156.625554,
+      "end": 158.4,
+      "speaker": "ferto-announcer",
+      "text": "Δες με, μαμά",
+      "intensity": 0.72
+    },
+    {
+      "start": 158.651082,
+      "end": 160.760001,
+      "speaker": "ferto-announcer",
+      "text": "Αγοράζω να κλείσω κενά",
+      "intensity": 0.72
+    },
+    {
+      "start": 161.760377,
+      "end": 164.44,
+      "speaker": "ferto-announcer",
+      "text": "Θα σου πάρω κι εσένα πολλά",
+      "intensity": 0.72
+    },
+    {
+      "start": 164.593305,
+      "end": 167.979999,
+      "speaker": "ferto-announcer",
+      "text": "Σπίτια, αμάξια και εξοχικά",
+      "intensity": 0.72
+    },
+    {
+      "start": 168.602497,
+      "end": 170.2,
+      "speaker": "ferto-announcer",
+      "text": "Βέβαια, αν κερδίσω",
+      "intensity": 0.72
+    },
+    {
+      "start": 170.780744,
+      "end": 171.419999,
+      "speaker": "ferto-announcer",
+      "text": "Whatever!",
+      "intensity": 0.72
+    },
+    {
+      "start": 171.521426,
+      "end": 172.379999,
+      "speaker": "ferto-announcer",
+      "text": "Κατάλαβες",
+      "intensity": 0.72
+    },
+    {
+      "start": 172.616662,
+      "end": 173.369,
+      "speaker": "ferto-announcer",
+      "text": "Οπότε",
+      "intensity": 0.72
+    },
+    {
+      "start": 173.387,
+      "end": 174.969,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 174.987,
+      "end": 176.569,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 176.587,
+      "end": 178.24,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 179.797,
+      "end": 181.379,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 181.397,
+      "end": 182.979,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 182.997,
+      "end": 184.65,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 185.198062,
+      "end": 186.220001,
+      "speaker": "ferto-announcer",
+      "text": "Σου είπα φέρτο",
+      "intensity": 0.72
+    },
+    {
+      "start": 186.917,
+      "end": 188.499,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.33
+    },
+    {
+      "start": 188.517,
+      "end": 190.099,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.33
+    },
+    {
+      "start": 190.117,
+      "end": 191.77,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.33
+    },
+    {
+      "start": 193.317,
+      "end": 194.899,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.33
+    },
+    {
+      "start": 194.917,
+      "end": 196.499,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.33
+    },
+    {
+      "start": 196.517,
+      "end": 198.17,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.33
     }
   ],
   "shots": [

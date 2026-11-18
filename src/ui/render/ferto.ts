@@ -129,38 +129,31 @@ export class FertoStage{
     ctx.fillStyle='rgba(3,9,23,.90)';ctx.fillRect(22,18,1236,84);ctx.fillRect(22,614,1236,86);
     ctx.strokeStyle=colors.cyan;ctx.lineWidth=3;ctx.strokeRect(22,18,1236,84);ctx.strokeRect(22,614,1236,86);
     ctx.font='bold 31px monospace';ctx.fillStyle=colors.cyan;ctx.fillText('CHIMERA  //  FERTO',48,56);
-    ctx.font='bold 16px monospace';ctx.fillStyle=colors.white;ctx.fillText('ONE PLAYER · ARCADE ANNOUNCER MODE',50,82);
+    ctx.font='bold 16px monospace';ctx.fillStyle=colors.white;ctx.fillText('ONE PLAYER',50,82);
     ctx.textAlign='right';ctx.font='bold 21px monospace';ctx.fillStyle=colors.gold;ctx.fillText(this.titleFor(stage),1228,58);
     const heartState=[...this.mapHearts()].filter(h=>h.time<=time).at(-1)?.hearts??0;
     const hx=1030,hy=77;for(let i=0;i<8;i++){
       const on=i<heartState;ctx.fillStyle=on?(i>5?colors.gold:colors.pink):'#344258';
       const x=hx+i*24;for(const [r,pattern]of ['0110110','1111111','1111111','0111110','0011100','0001000'].entries())for(let j=0;j<pattern.length;j++)if(pattern[j]==='1')ctx.fillRect(x+j*2,hy+r*2,2,2);
     }
-    const cue=this.mapHooks().filter(h=>h.start<=time&&time<h.end).at(-1);
-    ctx.textAlign='left';ctx.font='bold 23px monospace';ctx.fillStyle=cue?colors.white:colors.cyan;
-    ctx.fillText(cue?.text??(time<6.9?'INSERT COIN · PRESS START':this.titleFor(stage)),48,667);
+    ctx.textAlign='left';ctx.font='bold 23px monospace';ctx.fillStyle=colors.cyan;
+    const prompt=time<6.9?'INSERT COIN · PRESS START':stage==='continued'?'CONTINUE?  •  5 CREDITS':'';
+    if(prompt)ctx.fillText(prompt,48,667);
     ctx.textAlign='right';ctx.font='bold 17px monospace';ctx.fillStyle=colors.gold;ctx.fillText(`SCORE ${String(Math.floor(time*125)).padStart(6,'0')}`,1225,665);
     this.hudTexture.needsUpdate=true;
   }
-  private mapHooks(){return [
-    {start:61.24,end:62.96,text:'Φέρτο μου, φέρτο μου, φέρτο'},{start:62.96,end:64.68,text:'Φέρτο μου, φέρτο μου, φέρτο'},
-    {start:64.68,end:66.4,text:'Φέρτο μου, φέρτο μου, φέρτο'},{start:66.56,end:67.82,text:'Σου είπα φέρτο'},
-    {start:68,end:72.9,text:'Φέρτο μου, φέρτο μου, φέρτο'},{start:118.98,end:124.22,text:'Φέρτο μου, φέρτο μου, φέρτο'},
-    {start:124.22,end:125.46,text:'Σου είπα φέρτο'},{start:125.46,end:130.5,text:'Φέρτο μου, φέρτο μου, φέρτο'},
-    {start:173.6,end:179.2,text:'Φέρτο μου, φέρτο μου, φέρτο'},{start:179.98,end:184.9,text:'Φέρτο μου, φέρτο μου, φέρτο'},
-    {start:185,end:186.22,text:'Σου είπα φέρτο'},
-  ];}
   private mapHearts(){return [{time:16.8,hearts:7},{time:39.52,hearts:0},{time:42.04,hearts:2},{time:43.7,hearts:3},{time:45.72,hearts:4},{time:48.66,hearts:5},{time:50.58,hearts:6},{time:51.92,hearts:7},{time:80.22,hearts:8},{time:118.98,hearts:7},{time:130.5,hearts:3},{time:131.3,hearts:7},{time:173.6,hearts:8}];}
 
   resize(w:number,h:number){this.width=Math.max(1,w);this.height=Math.max(1,h);this.aspect=this.width/this.height;this.player.head.resize(this.width,this.height);this.props.resize(this.width,this.height);const z=480,visibleH=2*z*Math.tan(this.camera.fov*Math.PI/360);this.hud.position.set(0,0,-z);this.hud.scale.set(visibleH*this.aspect,visibleH,1);}
-  frame(time:number,playing:boolean,epoch:number,view:CameraView,_intensity=0){
+  frame(time:number,playing:boolean,epoch:number,view:CameraView,intensity=0){
     const t=Math.max(0,time),stage=this.stageAt(t,view);for(const [k,g]of Object.entries(this.worlds))g.visible=k===stage;
     this.scene.background=new THREE.Color(stage==='moon'?'#090f2a':stage==='lava'?'#280d23':stage==='vienna'?'#353849':stage==='concert'?'#080b1b':stage==='end'?'#060a18':'#0a1831');
     (this.scene.fog as THREE.Fog).color.copy(this.scene.background);
-    const run=Math.sin(t*7),hook=this.mapHooks().some(h=>t>=h.start&&t<h.end),close=view==='ferto-close';
-    this.player.root.position.set(close?-24:-90+(Math.sin(t*.9)*11),142+(hook?Math.abs(run)*7:Math.sin(t*2)*3),75);
-    this.player.root.rotation.set(0,Math.sin(t*.7)*.055,hook?Math.sin(t*5)*.035:Math.sin(t*1.8)*.018);
-    const lift=hook?1.0:.55,arms:P[]=[];for(const s of [-1,1])arms.push([s*(25+lift*11),-37+lift*28,8],[s*(28+lift*32),-52+lift*56,16+Math.sin(t*5+s)*5]);
+    const run=Math.sin(t*7),close=view==='ferto-close';
+    const bounce=Math.sin(t*2)*3*(1-intensity)+Math.abs(run)*7*intensity;
+    this.player.root.position.set(close?-24:-90+(Math.sin(t*.9)*11),142+bounce,75);
+    this.player.root.rotation.set(0,Math.sin(t*.7)*.055,Math.sin(t*1.8)*.018+Math.sin(t*5)*.035*intensity);
+    const lift=.55+.45*intensity,arms:P[]=[];for(const s of [-1,1])arms.push([s*(25+lift*11),-37+lift*28,8],[s*(28+lift*32),-52+lift*56,16+Math.sin(t*5+s)*5]);
     this.player.pose(t,arms as [P,P,P,P]);
     for(const [i,m]of this.coins.entries())m.rotation.y=t*2+i;
     for(const [i,e]of this.enemies.entries())e.group.position.y=e.baseY+Math.sin(t*3+i)*7;
