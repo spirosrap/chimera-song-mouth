@@ -726,3 +726,12 @@ The Subway deployment verified for runtime `72080a0d432c53852ee7a004c8e3969404e9
 The library has 84 concert and music-video performances and 974 public assets. All 966 preceding public files retain their checksums. Typecheck, production build, local HTTP delivery, all 654 Bun tests across 159 files and 195 native tests pass. Two existing native tests remain ignored. The existing Bun suite used a 15-second command timeout.
 
 The three physical tracks contain 79 phrases and 5,428 synchronized mouth frames each. The full mix decodes to 13,027,034 stereo sample frames. The 84 cuts passed 438 head-framing and occlusion checks on desktop and phone-sized views. Browser playback and video export remain unverified.
+
+
+## Charli xcx — SS26
+
+SS26 deployment verified for runtime `49cabae8452d016636308c8fdb97cb79e96bee5d`. The publisher uploaded all 18 changed files with media first and index last. SHA-256 checks match 44 live files covering the [SS26 link](https://agenticspiros.com/chimera-song-mouth/?scene=ss26), its seven assets, the current bundles and the two preceding scenes. Removed the completed publishing job and plist.
+
+The library has 85 concert and music-video performances and 981 public assets. All 974 preceding public files retain their checksums. Typecheck, production build, local HTTP delivery, all 658 Bun tests across 160 files and 195 native tests pass. Two existing native tests remain ignored. The existing Bun suite used a 15-second command timeout. The preceding catalog test initially asserted the final two entries. It passed on rerun after checking the relative entry order so future scenes can be appended.
+
+The two physical tracks contain 44 phrases and 3,458 synchronized mouth frames each. The full mix decodes to 8,299,080 stereo sample frames. The 85 cuts passed 440 head-framing and occlusion checks on desktop and phone-sized views. Browser playback and video export remain unverified.
