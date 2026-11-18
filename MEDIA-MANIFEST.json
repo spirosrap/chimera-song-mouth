@@ -2852,6 +2852,46 @@
       "sha256": "61a3189567d0bfb28f4edad8ded756002c4b102dd0e8d0875c1ea44a515ea490"
     },
     {
+      "path": "public/scenes/house-tour/backing.mp3",
+      "bytes": 6878252,
+      "sha256": "c3fe5591217dbdf5011d73bb67277311a6818a920c78da31f54edaf037daf5db"
+    },
+    {
+      "path": "public/scenes/house-tour/credits.txt",
+      "bytes": 1047,
+      "sha256": "d68741951fad730253aa4186c372c0a6422253a1640cdfa7c57c1becca4756c5"
+    },
+    {
+      "path": "public/scenes/house-tour/harmony.tele.gz",
+      "bytes": 325472,
+      "sha256": "304a32952f00526a94569b4538bf3d90bc7c09b654792177957d30aac500d6be"
+    },
+    {
+      "path": "public/scenes/house-tour/lead.tele.gz",
+      "bytes": 1319881,
+      "sha256": "a2bf09a2946bdf6ea06a227f33aa2b9c7fd898d75b68ffa7aab71f552e20e158"
+    },
+    {
+      "path": "public/scenes/house-tour/mix.mp3",
+      "bytes": 6878252,
+      "sha256": "a8be764197297de977dabfc7a0cf55dc39da18b4b18d006093acad3036936a7f"
+    },
+    {
+      "path": "public/scenes/house-tour/performance.json",
+      "bytes": 144783,
+      "sha256": "42a530af16ffc7e4dd361f60f146b0b39f02cf27de2384537eef575bb6fc2e82"
+    },
+    {
+      "path": "public/scenes/house-tour/reply.tele.gz",
+      "bytes": 247042,
+      "sha256": "8d778141252b7da0bf832e2e5ff46a33119c2b3a66525d9fae8d88dc6925a3c4"
+    },
+    {
+      "path": "public/scenes/house-tour/scene.json",
+      "bytes": 8716,
+      "sha256": "961f30a580f4fc9c870815fc8428cacfbac9d413e4c94f9fd9119cf2fe43eead"
+    },
+    {
       "path": "public/scenes/human-behaviour/backing.mp3",
       "bytes": 8174636,
       "sha256": "de2738d459da540b8d1d92f7261cd31200c49d5827d6a15a81acca59f284dc46"

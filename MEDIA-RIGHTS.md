@@ -130,3 +130,5 @@ The owner supplied Childish Gambino — Lithonia for a complete scene reconstruc
 The owner supplied the official LOOK MUM NO COMPUTER — Eins, Zwei, Drei video. The prepared scene includes separated original instrumental music and effects, physical vocal synthesis, captions and telemetry. Original composition, lyrics, recording, video and performance rights remain with their respective holders.
 
 The owner supplied the KATSEYE — Gnarly music video. The prepared scene contains separated original instrumental music and effects, physical vocal synthesis, captions and telemetry. Composition, words, recording, video and performance rights remain with their respective holders.
+
+The owner supplied Sabrina Carpenter — House Tour. The prepared scene contains separated original instrumental music and effects, physical voices, captions and telemetry. Composition, words, recording, video and performance rights remain with their respective holders.

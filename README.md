@@ -219,3 +219,5 @@ The full Childish Gambino — Lithonia scene pairs the original music with physi
 LOOK MUM NO COMPUTER — Eins, Zwei, Drei pairs the original synth backing with physical English and German voices, from the office and modular synths to the singing pizza and winged Mini. See [the scene notes](docs/eins-zwei-drei.md).
 
 The full KATSEYE — Gnarly scene takes six performers from a pink grocery tray to a red-carpet dance, with original backing and three physical voices. See [the scene notes](docs/gnarly.md).
+
+The full Sabrina Carpenter — House Tour scene recreates the pink van, mansion and getaway with original backing and three physical voices. See [the scene notes](docs/house-tour.md).
