@@ -1,0 +1,267 @@
+{
+  "setting": "ferto",
+  "title": "Akylas · Ferto",
+  "description": "A Greek arcade adventure follows the supplied song through a Cycladic platform level, castle vault, moon-shooter, lava cave, Vienna bonus round and pixel concert. The original recording carries the verses and music; a physical CHIMERA announcer takes over the repeated Φέρτο hooks.",
+  "duration": 208.98,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "ferto-announcer",
+      "name": "FERTO · arcade announcer",
+      "role": "Greek hook calls · physical mouth-engine voice",
+      "tele": "ferto-announcer.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 61.24,
+      "end": 62.96,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.45
+    },
+    {
+      "start": 62.96,
+      "end": 64.68,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.48
+    },
+    {
+      "start": 64.68,
+      "end": 66.4,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.51
+    },
+    {
+      "start": 66.56,
+      "end": 67.82,
+      "speaker": "ferto-announcer",
+      "text": "Σου είπα φέρτο",
+      "intensity": 0.525
+    },
+    {
+      "start": 68,
+      "end": 69.63,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.54
+    },
+    {
+      "start": 69.63,
+      "end": 71.27,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.57
+    },
+    {
+      "start": 71.27,
+      "end": 72.9,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.6
+    },
+    {
+      "start": 118.98,
+      "end": 120.73,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.8
+    },
+    {
+      "start": 120.73,
+      "end": 122.47,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.815
+    },
+    {
+      "start": 122.47,
+      "end": 124.22,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.83
+    },
+    {
+      "start": 124.22,
+      "end": 125.46,
+      "speaker": "ferto-announcer",
+      "text": "Σου είπα φέρτο",
+      "intensity": 0.837
+    },
+    {
+      "start": 125.46,
+      "end": 127.14,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.845
+    },
+    {
+      "start": 127.14,
+      "end": 128.82,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.86
+    },
+    {
+      "start": 128.82,
+      "end": 130.5,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.88
+    },
+    {
+      "start": 173.6,
+      "end": 175.47,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.9
+    },
+    {
+      "start": 175.47,
+      "end": 177.33,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.92
+    },
+    {
+      "start": 177.33,
+      "end": 179.2,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.94
+    },
+    {
+      "start": 179.98,
+      "end": 181.62,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.96
+    },
+    {
+      "start": 181.62,
+      "end": 183.26,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 0.98
+    },
+    {
+      "start": 183.26,
+      "end": 184.9,
+      "speaker": "ferto-announcer",
+      "text": "Φέρτο μου, φέρτο μου, φέρτο",
+      "intensity": 1.0
+    },
+    {
+      "start": 185,
+      "end": 186.22,
+      "speaker": "ferto-announcer",
+      "text": "Σου είπα φέρτο",
+      "intensity": 1.0
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "ferto-end"
+    },
+    {
+      "time": 6.92,
+      "view": "ferto-island"
+    },
+    {
+      "time": 15.0,
+      "view": "ferto-island"
+    },
+    {
+      "time": 19.28,
+      "view": "ferto-island"
+    },
+    {
+      "time": 27.4,
+      "view": "ferto-island"
+    },
+    {
+      "time": 32.08,
+      "view": "ferto-castle"
+    },
+    {
+      "time": 35.36,
+      "view": "ferto-castle"
+    },
+    {
+      "time": 39.52,
+      "view": "ferto-continue"
+    },
+    {
+      "time": 40.24,
+      "view": "ferto-continue"
+    },
+    {
+      "time": 42.04,
+      "view": "ferto-island"
+    },
+    {
+      "time": 53.94,
+      "view": "ferto-island"
+    },
+    {
+      "time": 55.1,
+      "view": "ferto-island"
+    },
+    {
+      "time": 59.1,
+      "view": "ferto-island"
+    },
+    {
+      "time": 61.24,
+      "view": "ferto-island"
+    },
+    {
+      "time": 70.96,
+      "view": "ferto-island"
+    },
+    {
+      "time": 78.68,
+      "view": "ferto-moon"
+    },
+    {
+      "time": 99.84,
+      "view": "ferto-moon"
+    },
+    {
+      "time": 112.6,
+      "view": "ferto-moon"
+    },
+    {
+      "time": 118.98,
+      "view": "ferto-lava"
+    },
+    {
+      "time": 130.5,
+      "view": "ferto-continue"
+    },
+    {
+      "time": 131.3,
+      "view": "ferto-island"
+    },
+    {
+      "time": 136.2,
+      "view": "ferto-vienna"
+    },
+    {
+      "time": 143.74,
+      "view": "ferto-vienna"
+    },
+    {
+      "time": 173.6,
+      "view": "ferto-concert"
+    },
+    {
+      "time": 186.22,
+      "view": "ferto-end"
+    }
+  ]
+}

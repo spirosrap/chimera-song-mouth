@@ -138,3 +138,5 @@ The owner supplied Chappell Roan — The Subway. The prepared scene contains sep
 The owner supplied Charli xcx — SS26. The prepared scene contains separated original instrumental music and effects, physical vocals, captions and telemetry. Rights remain with their respective holders. Raw footage and analysis remain outside the repository.
 
 The owner supplied OK Go — Love. The prepared scene contains the original separated instrumental music and scene effects, physical voices, captions and telemetry. Rights remain with their respective holders. Raw footage and analysis stay outside the repository.
+
+The owner supplied Akylas — Ferto and requested completion of the in-progress scene. The prepared mix keeps the supplied instrumental and original lead vocal outside the Greek hook takeovers; one CHIMERA physical airway performs the source-timed hooks and responses. The procedural pixel-art arcade environment, source captions and mouth telemetry are included. Composition, lyrics, recording, video and performance rights remain with their respective holders. The source video, separated stems and analysis cache are excluded.

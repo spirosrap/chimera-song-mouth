@@ -1,0 +1,3 @@
+# Akylas · Ferto
+
+The owner-prepared score replaces the three repeated Greek “Φέρτο” hook sections and their four short responses with one source-clocked CHIMERA arcade-announcer airway. Original music and the supplied original vocal remain elsewhere in the mix. A procedural pixel-platformer follows the clip’s Aegean island, castle, moon-shooter, lava cave, Vienna and concert beats, with an on-screen heart/score HUD. The prepared output includes the mix, one compressed mouth telemetry track, source-timed hook captions and a phonetic performance score. The source video, separated stems and frame-analysis cache remain outside the repository.

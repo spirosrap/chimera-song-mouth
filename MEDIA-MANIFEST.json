@@ -2532,6 +2532,31 @@
       "sha256": "9692bead593e5216bdff3cecb483991409ba2503a7c629ac407065b4610e0073"
     },
     {
+      "path": "public/scenes/ferto/credits.txt",
+      "bytes": 513,
+      "sha256": "0266bcdbe487e96b94e253ee78d02058cad61b4ea11d8cb0db77bb151eb58a1d"
+    },
+    {
+      "path": "public/scenes/ferto/ferto-announcer.tele.gz",
+      "bytes": 566130,
+      "sha256": "3fe6dcda3bb7bebf04f3c90b72eaabdb0846b44433534a9411e81b930f77426d"
+    },
+    {
+      "path": "public/scenes/ferto/mix.mp3",
+      "bytes": 6689324,
+      "sha256": "f5040a9b2c7a4529f3cdd287f02bc2b29c6cab806a82cc3c5e56411e42fd2ece"
+    },
+    {
+      "path": "public/scenes/ferto/performance.json",
+      "bytes": 43384,
+      "sha256": "9216b9b22777450bc9a574201b5faccbb20b760d2f38d7064a034889728a0b03"
+    },
+    {
+      "path": "public/scenes/ferto/scene.json",
+      "bytes": 5997,
+      "sha256": "f768be48d2b86975e4b714a9c1ff750c458687e6270e03d8647fb0f02ea417f2"
+    },
+    {
       "path": "public/scenes/fool-me-once/bush.tele.gz",
       "bytes": 299158,
       "sha256": "fa197175849d493690c8d997beac7c6629746042425dd4ca76b021acc57b3b98"

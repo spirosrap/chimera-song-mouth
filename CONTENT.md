@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 966 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 1002 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -171,6 +171,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Chappell Roan — The Subway | 4:31 | `?scene=the-subway` | Full New York video edit, original backing, physical lead and closing announcement, captions and telemetry |
 | Charli xcx — SS26 | 2:52 | `?scene=ss26` | Full runway and backstage edit, original backing, two physical voices, captions and telemetry |
 | OK Go — Love | 4:22 | `?scene=ok-go-love` | Full station edit, moving robot arms, live mirror effects, original backing, three physical voices, captions and telemetry |
+| Akylas — Ferto | 3:29 | `?scene=ferto` | Original music and verses, physical Greek arcade-announcer hooks, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -194,6 +195,10 @@ closing line and pauses. See [the scene notes](docs/arrival.md).
 
 The Matrix recreates the complete supplied spoon scene, including the boy’s
 demonstration, Neo’s attempt and the final invitation. See [the scene notes](docs/matrix-spoon.md).
+
+Akylas — Ferto keeps the supplied music and lead vocal outside its three hook
+takeovers. A physical Greek announcer and source-timed captions follow the arcade
+levels and heart HUD. See [the scene notes](docs/ferto.md).
 
 Apollo 13 uses NASA’s transcripts as well, with the silences shortened and ten minutes skipped.
 See [the scene notes](docs/apollo-13.md) for what is and is not from the record.
