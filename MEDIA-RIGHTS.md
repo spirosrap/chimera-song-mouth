@@ -132,3 +132,5 @@ The owner supplied the official LOOK MUM NO COMPUTER — Eins, Zwei, Drei video.
 The owner supplied the KATSEYE — Gnarly music video. The prepared scene contains separated original instrumental music and effects, physical vocal synthesis, captions and telemetry. Composition, words, recording, video and performance rights remain with their respective holders.
 
 The owner supplied Sabrina Carpenter — House Tour. The prepared scene contains separated original instrumental music and effects, physical voices, captions and telemetry. Composition, words, recording, video and performance rights remain with their respective holders.
+
+The owner supplied Chappell Roan — The Subway. The prepared scene contains separated original instrumental music and effects, physical vocal tracks, captions and telemetry. Rights remain with their respective holders. Source footage and analysis caches stay outside this repository.

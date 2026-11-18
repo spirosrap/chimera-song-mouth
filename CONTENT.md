@@ -168,6 +168,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | LOOK MUM NO COMPUTER — Eins, Zwei, Drei | 3:29 | `?scene=eins-zwei-drei` | Original synth backing, physical English and German voices, full office and pizza scene, captions and telemetry |
 | KATSEYE — Gnarly | 2:22 | `?scene=gnarly` | Original backing, three physical voices, full six-performer scene, captions and telemetry |
 | Sabrina Carpenter — House Tour | 3:34 | `?scene=house-tour` | Full mansion video and getaway, original backing, three physical voices, captions and telemetry |
+| Chappell Roan — The Subway | 4:31 | `?scene=the-subway` | Full New York video edit, original backing, physical lead and closing announcement, captions and telemetry |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |

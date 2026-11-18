@@ -4482,6 +4482,46 @@
       "sha256": "33b786189aa248d8d4f89a94716d119c2ad55b3880d101d0d14bac47547cb38f"
     },
     {
+      "path": "public/scenes/the-subway/backing.mp3",
+      "bytes": 8686892,
+      "sha256": "17255430db67dc64ca577c24fa12838f4ab32c38b871a78f70353ecc69382090"
+    },
+    {
+      "path": "public/scenes/the-subway/credits.txt",
+      "bytes": 862,
+      "sha256": "77648c5ce5086e3171bede03b0e09bb835402032183cc3023549c8eb64cd94a1"
+    },
+    {
+      "path": "public/scenes/the-subway/double.tele.gz",
+      "bytes": 685553,
+      "sha256": "d356d580a6a3cebc25f8fbeeac519fe22a1f6c948854efe2d0c6e72219d1d831"
+    },
+    {
+      "path": "public/scenes/the-subway/lead.tele.gz",
+      "bytes": 2369907,
+      "sha256": "c5436871cc53ba7da89c42adde0cefdd13383f63cf732f9b455745360445fc31"
+    },
+    {
+      "path": "public/scenes/the-subway/mix.mp3",
+      "bytes": 8686892,
+      "sha256": "4a49971d88e8c7de4714581c9e88b7afe1c65c2620f2402a06720445a5be8134"
+    },
+    {
+      "path": "public/scenes/the-subway/pa.tele.gz",
+      "bytes": 67120,
+      "sha256": "58d854f513e0d4a3e3275e30c54c76d02f92d49f4157fd751c129602dd93e1c1"
+    },
+    {
+      "path": "public/scenes/the-subway/performance.json",
+      "bytes": 234526,
+      "sha256": "cffaefc3ec703646cdd4df4648935ccdce4f8de3d699fd00e0e1afa0da51164f"
+    },
+    {
+      "path": "public/scenes/the-subway/scene.json",
+      "bytes": 10651,
+      "sha256": "76e36f3e60a11a744624a6030c935b1468cbef8a57b765b80187be9bb8a9c8bc"
+    },
+    {
       "path": "public/scenes/total-eclipse/answer.tele.gz",
       "bytes": 1238221,
       "sha256": "1a45072657515036f5ea6fe456337a9d7b04e3fe90e54a630886d660fe875799"

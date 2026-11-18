@@ -221,3 +221,4 @@ LOOK MUM NO COMPUTER — Eins, Zwei, Drei pairs the original synth backing with 
 The full KATSEYE — Gnarly scene takes six performers from a pink grocery tray to a red-carpet dance, with original backing and three physical voices. See [the scene notes](docs/gnarly.md).
 
 The full Sabrina Carpenter — House Tour scene recreates the pink van, mansion and getaway with original backing and three physical voices. See [the scene notes](docs/house-tour.md).
+The full Chappell Roan — The Subway scene follows the New York street chase, train dance, fountain, and green hair tower with original backing and physical vocals. See [the scene notes](docs/the-subway.md).
