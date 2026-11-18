@@ -4955,6 +4955,36 @@
       "path": "public/scenes/wuthering-heights/scene.json",
       "bytes": 6556,
       "sha256": "fceea43d9661b5f8dea1a0fa25ff96cf6268bb6ac1e757e86997eb3711f1673d"
+    },
+    {
+      "path": "public/scenes/zara-blue-moon/backing.mp3",
+      "bytes": 6221612,
+      "sha256": "62dda0ea8707abf395d07525d24e4f85adcc39fe94169dad01fa6ce9a82db958"
+    },
+    {
+      "path": "public/scenes/zara-blue-moon/credits.txt",
+      "bytes": 1274,
+      "sha256": "de613e85fd656eebbc6c8645fe78cf69e9cdd86bdb9d19a16a37b18236befe55"
+    },
+    {
+      "path": "public/scenes/zara-blue-moon/lead.tele.gz",
+      "bytes": 1908769,
+      "sha256": "93249bfa11eaaba8ac34192e573f6b1e37be03b14e3497537357de7869444c96"
+    },
+    {
+      "path": "public/scenes/zara-blue-moon/mix.mp3",
+      "bytes": 6221612,
+      "sha256": "d72d138ad6af4118a2249486ea0c7f5bf3ed0213b47e8ffd3ef1cc0a75c79e4f"
+    },
+    {
+      "path": "public/scenes/zara-blue-moon/performance.json",
+      "bytes": 169501,
+      "sha256": "7bb8bc96d2505d9f97d05b108bc979f731c9d7b05bbbaa2fb98d1778c0cc6e36"
+    },
+    {
+      "path": "public/scenes/zara-blue-moon/scene.json",
+      "bytes": 8442,
+      "sha256": "2024f592d444aca536a55b0676f0acc33b174098be806bbd615d808037a7b658"
     }
   ]
 }

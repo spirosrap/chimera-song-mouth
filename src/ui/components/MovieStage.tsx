@@ -1,6 +1,7 @@
 import {LoveStage} from '../render/ok-go-love.ts';
 import type {LoveId} from '../../scene/ok-go-love.ts';
 import {SS26Stage} from '../render/ss26.ts';
+import {ZaraMoonStage} from '../render/zara-blue-moon.ts';
 import type {SS26Id} from '../../scene/ss26.ts';
 import {SubwayStage} from '../render/the-subway.ts';
 import {HouseTourStage} from '../render/house-tour.ts';
@@ -152,6 +153,7 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
       ?new GoWestStage(people.map(c=>({...c,id:c.id as WestId})))
       :scene.setting==='okgolove'?new LoveStage(people.map(c=>({...c,id:c.id as LoveId})))
       :scene.setting==='ss26'?new SS26Stage(people.map(c=>({...c,id:c.id as SS26Id})))
+      :scene.setting==='zara'?new ZaraMoonStage(people[0].model,people[0].track)
       :scene.setting==='subway'?new SubwayStage(people.find(c=>c.id==='subway-chappell')!)
       :scene.setting==='housetour'?new HouseTourStage(people.map(c=>({...c,id:c.id as TourId}))):scene.setting==='gnarly'?new GnarlyStage(people.map(c=>({...c,id:c.id as GnarlyId}))):scene.setting==='einszwei'?new EinsStage(people.map(c=>({...c,id:c.id as EinsId}))):scene.setting==='lithonia'?new LithoniaStage(people.map(c=>({...c,id:c.id as LithoniaId}))):scene.setting==='dojademons'?new DemonsStage(people.map(c=>({...c,id:c.id as DemonsId}))):scene.setting==='sabrinatears'?new TearsStage(people.map(c=>({...c,id:c.id as TearsId}))):scene.setting==='deaddance'?new DeadDanceStage(people.map(c=>({...c,id:'dead-gaga' as const}))):scene.setting==='ratatata'?new RatatataStage(people.map(c=>({...c,id:c.id as 'rata-nico'|'rata-kevin'|'rata-su'}))):scene.setting==='likejennie'?new JennieStage(people.map(c=>({...c,id:'jennie-singer' as const}))):scene.setting==='bbnotwo'?new TwoStage(people.map(c=>({...c,id:c.id as TwoId}))):scene.setting==='tailorswif'?new SwifStage(people.map(c=>({...c,id:c.id as SwifId}))):scene.setting==='houdini'?new HoudiniStage(people.map(c=>({...c,id:c.id as HoudiniId}))):scene.setting==='europapa'?new EuropapaStage(people.map(c=>({...c,id:c.id as EuropapaId}))):scene.setting==='storm'
       ?new StormStage(people.map(c=>({...c,id:c.id as StormId})))
