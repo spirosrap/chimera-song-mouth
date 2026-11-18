@@ -708,3 +708,12 @@ Gnarly deployment verified for runtime `4ea7e8b221bc4a6b4d1ba4077a07f10dac6410e5
 The library has 82 concert and music-video performances and 958 public files. All 950 preceding assets retain their checksums. Typecheck, production build, local HTTP delivery, all 646 Bun tests across 157 files and all 195 native tests pass. Two existing native tests remain ignored. The existing Bun suite used a 15-second command timeout. The manual camera test passed on rerun after the prepared scene metadata was present.
 
 The three physical tracks contain 74 phrases and 2,845 synchronized mouth frames each. The full mix decodes to 6,826,749 stereo sample frames. The 119 cuts passed 1,902 head-framing and occlusion checks on desktop and phone-sized views. Browser playback and export remain unverified.
+
+
+## Sabrina Carpenter — House Tour
+
+House Tour deployment verified for runtime `e87ba114f69d478dbb0dc0b0505edef233f0d108`. The publisher uploaded all 19 changed files with media first and index last. SHA-256 checks match 44 live files covering the [House Tour link](https://agenticspiros.com/chimera-song-mouth/?scene=house-tour), its eight assets, the current bundles and the two preceding scenes. Removed the completed publishing job and plist.
+
+The library has 83 concert and music-video performances and 966 public assets. All 958 preceding public files retain their checksums. Typecheck, production build, local HTTP delivery, all 650 Bun tests across 158 files and 195 native tests pass. Two existing native tests remain ignored. The existing Bun suite used a 15-second command timeout.
+
+The three physical tracks contain 57 phrases and 4,298 synchronized mouth frames each. The full mix decodes to 10,314,200 stereo sample frames. The 114 cuts passed 1,236 head-framing and occlusion checks on desktop and phone-sized views. Browser playback and video export remain unverified.
