@@ -230,7 +230,7 @@ enum Token {
 }
 
 /// Words (with the index of the front end that claims them), melisma marks and phrase punctuation,
-/// in order. For English and Hangul this is
+/// in order. For English and precomposed Hangul this is
 /// `text.match(/[A-Za-z'][A-Za-z'\-]*|[가-힣]+|(?<=\s|^)[~-](?=\s|$)|[.,;:!?\n]/g)`.
 fn lyric_tokens(text: &str, front_ends: &[&dyn FrontEnd]) -> Vec<Token> {
     let s: Vec<char> = text.chars().collect();

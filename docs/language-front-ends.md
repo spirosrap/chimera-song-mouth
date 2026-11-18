@@ -51,6 +51,10 @@ the front end applies standard Seoul sound rules: a coda moves onto a following 
 머거), codas neutralise, obstruents nasalise before nasals (국물 → 궁물), ㄴ and ㄹ meet as [ll],
 ㅎ aspirates its neighbour (좋다 → 조타), and obstruents tense after an obstruent coda.
 
+A block typed as its letters (conjoining jamo, as decomposed text has them) is joined into the
+block first. The letters modern Korean dropped (ㆍ ㅿ ㆁ ㆆ) make no block, so a block with one is
+skipped like any script no front end reads (#132).
+
 Korean's three stops are all voiceless at the start of a word. The front end tells them apart by
 how long they aspirate (`vot`, voice onset time):
 
