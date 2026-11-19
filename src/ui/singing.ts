@@ -5,12 +5,12 @@
  * the vowel onto a new pitch (melisma). Releasing the sounding key while another is still down
  * glides back to that key on the same vowel. Key velocity sets the breath.
  * Sing sings the same words to a tune (src/song): fitted to its phrases, planned whole (planSong)
- * and sent as one score. The words, tune, tempo and key are kept on the device.
+ * and sent as one score. The words, their language, the tune, tempo and key are kept on the device.
  */
 import { create } from "zustand";
 import { engine } from "../audio/AudioEngine.ts";
 import { g2p, zh } from "./speech.ts";
-import { hasHan, lyricsToSyllables, type Syllable } from "../wasm/engine.ts";
+import { hasHan, lyricsToSyllables, type Lang, type Syllable } from "../wasm/engine.ts";
 import { planSong, planNoteOn, planNoteOff, planMelisma } from "../wasm/engine.ts";
 import { EXHALE_LABEL } from "../wasm/engine.ts";
 import type { Gesture } from "../wasm/types.ts";
@@ -36,12 +36,17 @@ export interface RollNote {
 export const roll: { notes: RollNote[] } = { notes: [] };
 
 export const DEFAULT_LYRICS = "Hello there, I am a voice made of air.";
+/** the opening words in each language (choosing the other language swaps one for the other) */
+const DEFAULT_LYRICS_OF: Record<Lang, string> = { en: DEFAULT_LYRICS, tr: "Merhaba, ben havadan yapılmış bir sesim." };
 
 /** sung when the lyrics are empty */
 const AH: Syllable = { text: "ah", onset: [], nucleus: { ipa: "ɑ", stress: 1 }, coda: [], wordEnd: true, phraseEnd: false };
 
 interface SingState {
   lyrics: string;
+  /** the language Latin-script words are read in: the lyrics here, and Speak's text (one setting
+   *  for both, kept with the words; other scripts are read by their own) */
+  lang: Lang;
   syllables: Syllable[];
   /** the syllable the next key sings */
   cursor: number;
@@ -65,6 +70,7 @@ interface SingState {
   /** how far the song player's voice has been prepared (0..1), null when it isn't preparing */
   renderProgress:number|null;
   setLyrics: (text: string) => void;
+  setLang: (lang: Lang) => void;
   setCursor: (i: number) => void;
   setVibrato: (cents: number) => void;
   setTune: (id: string) => void;
@@ -74,14 +80,15 @@ interface SingState {
 
 const KEPT = "chimera-sing";
 
-/** the last session's words, tune, tempo and key (anything missing or odd: the defaults) */
-function kept(): { lyrics: string; tune: string; tempo: number; key: number } {
-  const d = { lyrics: DEFAULT_LYRICS, tune: TUNES[0].id, tempo: 1, key: 0 };
+/** the last session's words and their language, tune, tempo and key (anything missing or odd: the defaults) */
+function kept(): { lyrics: string; lang: Lang; tune: string; tempo: number; key: number } {
+  const d = { lyrics: DEFAULT_LYRICS, lang: "en" as Lang, tune: TUNES[0].id, tempo: 1, key: 0 };
   try {
     const k = JSON.parse(localStorage.getItem(KEPT) ?? "null") as Record<string, unknown> | null;
     if (!k) return d;
     return {
       lyrics: typeof k.lyrics === "string" ? k.lyrics : d.lyrics,
+      lang: k.lang === "tr" ? "tr" : d.lang,
       tune: TUNES.some((t) => t.id === k.tune) ? (k.tune as string) : d.tune,
       tempo: typeof k.tempo === "number" && k.tempo >= 0.5 && k.tempo <= 1.5 ? k.tempo : d.tempo,
       key: typeof k.key === "number" && Math.abs(k.key) <= 12 ? Math.round(k.key) : d.key,
@@ -92,12 +99,13 @@ function kept(): { lyrics: string; tune: string; tempo: number; key: number } {
 }
 
 const atLoad = kept();
-/** the player's words while a demo song's are in the lyrics */
-let ownWords: string | null = null;
+/** the player's words and their language while a demo song's are in the lyrics */
+let ownWords: { lyrics: string; lang: Lang } | null = null;
 
 export const useSing = create<SingState>((set, get) => ({
   lyrics: atLoad.lyrics,
-  syllables: lyricsToSyllables(atLoad.lyrics),
+  lang: atLoad.lang,
+  syllables: lyricsToSyllables(atLoad.lyrics, atLoad.lang),
   cursor: 0,
   vibrato: 35,
   tune: atLoad.tune,
@@ -111,21 +119,34 @@ export const useSing = create<SingState>((set, get) => ({
   renderProgress:null,
   setLyrics: (text) => {
     stopDemo();
-    set({ lyrics: text, syllables: lyricsToSyllables(text), cursor: 0 });
+    set({ lyrics: text, syllables: lyricsToSyllables(text, get().lang), cursor: 0 });
     if (hasHan(text) && !zh.loaded) ensureDictionary();
+  },
+  setLang: (lang) => {
+    const s = get();
+    if (lang === s.lang) return;
+    stopDemo();
+    // the other language's opening words give way to this one's
+    const lyrics = s.lyrics === DEFAULT_LYRICS_OF[s.lang] ? DEFAULT_LYRICS_OF[lang] : s.lyrics;
+    set({ lang, lyrics, syllables: lyricsToSyllables(lyrics, lang), cursor: 0 });
   },
   setCursor: (i) => set({ cursor: Math.max(0, Math.min(i, Math.max(0, get().syllables.length - 1))) }),
   setVibrato: (cents) => set({ vibrato: cents }),
   setTune: (id) => {
     const words = TUNES.find((t) => t.id === id)?.lyrics;
-    const lyrics = get().lyrics;
+    const { lyrics, lang } = get();
     const asWritten = TUNES.some((t) => t.lyrics === lyrics);
     if (words !== undefined) {
-      // a demo song brings its words; the player's own come back with a mood
-      if (!asWritten) ownWords = lyrics;
-      if (lyrics !== words) get().setLyrics(words);
+      // a demo song brings its words, in English or a script of its own; the player's own words
+      // and language come back with a mood
+      if (!asWritten) ownWords = { lyrics, lang };
+      if (lyrics !== words || lang !== "en") {
+        set({ lang: "en" });
+        get().setLyrics(words);
+      }
     } else if (asWritten && ownWords !== null) {
-      get().setLyrics(ownWords);
+      set({ lang: ownWords.lang });
+      get().setLyrics(ownWords.lyrics);
       ownWords = null;
     }
     set({ tune: id });
@@ -135,9 +156,9 @@ export const useSing = create<SingState>((set, get) => ({
 }));
 
 useSing.subscribe((s, p) => {
-  if (s.lyrics === p.lyrics && s.tune === p.tune && s.tempo === p.tempo && s.key === p.key) return;
+  if (s.lyrics === p.lyrics && s.lang === p.lang && s.tune === p.tune && s.tempo === p.tempo && s.key === p.key) return;
   try {
-    localStorage.setItem(KEPT, JSON.stringify({ lyrics: s.lyrics, tune: s.tune, tempo: s.tempo, key: s.key }));
+    localStorage.setItem(KEPT, JSON.stringify({ lyrics: s.lyrics, lang: s.lang, tune: s.tune, tempo: s.tempo, key: s.key }));
   } catch {
     // not kept: the session still works
   }
@@ -155,7 +176,7 @@ export function ensureDictionary(): void {
   // a failed load leaves the rest working (letter-to-sound rules for English)
   void Promise.allSettled(needs).then(() => {
     const s = useSing.getState();
-    const syllables = lyricsToSyllables(s.lyrics);
+    const syllables = lyricsToSyllables(s.lyrics, s.lang);
     useSing.setState({ syllables, cursor: Math.min(s.cursor, Math.max(0, syllables.length - 1)) });
   });
 }
@@ -354,17 +375,19 @@ export async function playTune(id: string, body: BodyMix, ready?: () => Promise<
   stopSinging();
   const token = demoToken;
   await ready?.();
-  try {
-    await g2p.load();
-  } catch {
-    // letter-to-sound rules
-  }
+  // Turkish reads by rule: no English dictionary to wait for
+  if (useSing.getState().lang === "en")
+    try {
+      await g2p.load();
+    } catch {
+      // letter-to-sound rules
+    }
   if (hasHan(useSing.getState().lyrics)) await zh.load().catch(() => {});
   if (token !== demoToken) return false;
   const st = useSing.getState();
   // read again: the dictionary may have arrived since the words were typed
-  const own = lyricsToSyllables(st.lyrics);
-  const words = own.length ? own : lyricsToSyllables(la(tune));
+  const own = lyricsToSyllables(st.lyrics, st.lang);
+  const words = own.length ? own : lyricsToSyllables(la(tune), st.lang);
   const shift = tune.octave[nearestBody(body)] * 12 + st.key;
   // a demo song's own words, unedited: a syllable to each note as written (as `chimera render song`)
   const { notes, from } =

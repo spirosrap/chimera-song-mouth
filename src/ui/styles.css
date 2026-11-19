@@ -1934,7 +1934,8 @@ input[type="range"]::-moz-range-thumb {
   letter-spacing: 0.04em;
 }
 
-.vowel-pick {
+.vowel-pick,
+.lang-pick {
   display: flex;
   gap: 4px;
 }
