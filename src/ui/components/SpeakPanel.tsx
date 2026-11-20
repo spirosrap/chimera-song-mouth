@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { skippedLines } from "../skipped.ts";
 import { useStore } from "../store.ts";
 import { useSing } from "../singing.ts";
-import { speakText, speakPhrases, stopSpeaking, onPlan, currentPlan, spokenWordNow, speakingNow } from "../speech.ts";
+import { speakText, speakPhrases, stopSpeaking, onPlan, currentPlan, spokenWordNow, speakingNow, useSpeech } from "../speech.ts";
 import { mouthWords } from "../mouthWords.ts";
 import { tokenizeIpa, type Lang } from "../../wasm/engine.ts";
 import { Menu, Slider } from "./Controls.tsx";
@@ -15,6 +15,7 @@ import { Stroboscope } from "./Stroboscope.tsx";
 import type { InfoFn, SlotsFn } from "./AnatomyView.tsx";
 import { V } from "../colors.ts";
 import { engine } from "../../audio/AudioEngine.ts";
+import { inPlugin } from "../../audio/pluginBridge.ts";
 
 const EXAMPLES: Record<Lang, string[]> = {
   en: ["Hello. Can you hear me?", "She sells sea shells by the sea shore.", "Every sound here is air moving through a throat.", "The quick brown fox jumps over the lazy dog."],
@@ -135,6 +136,26 @@ function useSpeaking(): boolean {
 }
 
 /** Speak mode's right column: the speak button, what to say, the gestural score, the consonant chart, the tube and folds. */
+/** In the plugin: the lines a note says, with the next one marked. */
+function Lines() {
+  const lines = useSpeech((s) => s.lines);
+  const cursor = useSpeech((s) => s.cursor);
+  const setCursor = useSpeech((s) => s.setCursor);
+  return (
+    <div className="syllables say-lines" role="group" aria-label="Lines. Each note says the marked one; choose another to start there.">
+      {lines.map((l, i) => (
+        <button key={i} className={`syl say-line${i === cursor ? " next" : ""}`} onClick={() => setCursor(i)} aria-current={i === cursor ? "step" : undefined} title={`Say from “${l}”`}>
+          {l}
+        </button>
+      ))}
+      {!lines.length && <span className="dim">No words: the notes say nothing.</span>}
+      <Chip toggle={false} className="from-start" onClick={() => setCursor(0)} disabled={cursor === 0}>
+        From the start
+      </Chip>
+    </div>
+  );
+}
+
 export function SpeakRight() {
   const body = useStore((s) => s.body);
   const f0 = useStore((s) => s.source.f0);
@@ -142,18 +163,28 @@ export function SpeakRight() {
   // one language for Speak and Sing, kept with Sing's words
   const lang = useSing((s) => s.lang);
   const setLang = useSing((s) => s.setLang);
-  const [text, setText] = useState(EXAMPLES[lang][0]);
-  const [ipa, setIpa] = useState(false);
-  const [rate, setRate] = useState(1);
+  // kept in a store, so the plugin saves them with the project and reads them on the audio thread
+  const { text, ipa, rate, edit } = useSpeech();
+  const setText = (v: string) => edit({ text: v });
+  const setIpa = (v: boolean) => edit({ ipa: v });
+  const setRate = (v: number) => edit({ rate: v });
   const [busy, setBusy] = useState(false);
   const [trans, setTrans] = useState(currentPlan()?.transcription ?? "");
   const [vowel, setVowel] = useState("ɑ");
   const speaking = useSpeaking();
   useEffect(() => onPlan((p) => setTrans(p?.transcription ?? "")), []);
+  // in the browser each visit starts afresh, on the first example of the words' language (the
+  // plugin's box is the project's, so it stays)
+  useEffect(() => {
+    if (!inPlugin) edit({ text: EXAMPLES[lang][0], ipa: false, rate: 1 });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   // in IPA mode: the symbols in the box that the voice will not say, updated as the text changes
   const skipped = useMemo(() => (ipa ? skippedLines(text) : []), [ipa, text]);
 
   const speak = async () => {
+    // the plugin says the next line, as a note would
+    if (inPlugin) return engine.pluginSpeak();
     setBusy(true);
     try {
       await start();
@@ -165,6 +196,7 @@ export function SpeakRight() {
     }
   };
   const pad = async (c: string) => {
+    if (inPlugin) return engine.pluginSayIpa(`ˈ${vowel}${c}${vowel}`);
     await start();
     if (!useStore.getState().started) return;
     speakPhrases([{ segments: tokenizeIpa(`ˈ${vowel}${c}${vowel}`), intonation: "flat" }], { body, rate, f0 });
@@ -184,25 +216,25 @@ export function SpeakRight() {
       <ActionBar label="Speak" onSpace={press}>
         <PrimaryButton label="Speak" playing={speaking} busy={busy ? "Preparing…" : null} onClick={press} />
         {/* puts an example in the box: the menu always reads Examples, since the box shows the words */}
+        {!inPlugin && (
         <Menu
           label="Examples"
           value=""
           options={[{ value: "", label: "Examples", disabled: true }, ...EXAMPLES[lang].map((ex) => ({ value: ex, label: ex }))]}
-          onChange={(ex) => {
-            setText(ex);
-            setIpa(false);
-          }}
+          onChange={(ex) => edit({ text: ex, ipa: false })}
         />
+        )}
         <div className="act-slider">
           <Slider label="Rate" value={rate} min={0.5} max={1.8} onChange={setRate} format={(v) => `${v.toFixed(2)}×`} />
         </div>
-        <LangPick value={lang} onChange={pickLang} off={ipa} />
+        {/* the plugin reads Latin script as English (other scripts by their own front ends) */}
+        {!inPlugin && <LangPick value={lang} onChange={pickLang} off={ipa} />}
         <Chip on={ipa} onClick={() => setIpa(!ipa)}>
           Text is IPA
         </Chip>
       </ActionBar>
       <Screen className="s-say" label="What to say">
-        <div className="say">
+        <div className={`say${inPlugin ? " say-lined" : ""}`}>
           <div className="say-row">
             <textarea
               value={text}
@@ -215,7 +247,7 @@ export function SpeakRight() {
               spellCheck={!ipa}
               lang={ipa ? undefined : lang}
               aria-label={ipa ? "IPA to speak" : "Text to speak"}
-              placeholder={ipa ? "Type IPA, for example ˈhɛloʊ" : "Type something for the voice to say"}
+              placeholder={ipa ? "Type IPA, for example ˈhɛloʊ" : inPlugin ? "One line per note" : "Type something for the voice to say"}
             />
           </div>
           <div className="say-row">
@@ -232,6 +264,7 @@ export function SpeakRight() {
               </div>
             </div>
           </div>
+          {inPlugin && <Lines />}
         </div>
       </Screen>
       <Screen className="s-score" title="Gestural score">

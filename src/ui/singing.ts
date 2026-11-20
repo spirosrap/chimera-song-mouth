@@ -9,6 +9,7 @@
  */
 import { create } from "zustand";
 import { engine } from "../audio/AudioEngine.ts";
+import { inPlugin, setParam } from "../audio/pluginBridge.ts";
 import { g2p, zh } from "./speech.ts";
 import { hasHan, lyricsToSyllables, type Lang, type Syllable } from "../wasm/engine.ts";
 import { planSong, planNoteOn, planNoteOff, planMelisma } from "../wasm/engine.ts";
@@ -80,9 +81,13 @@ interface SingState {
 
 const KEPT = "chimera-sing";
 
-/** the last session's words and their language, tune, tempo and key (anything missing or odd: the defaults) */
+/**
+ * the last session's words and their language, tune, tempo and key (anything missing or odd: the
+ * defaults). Not in the plugin: the project keeps its words, and every instance shares this storage.
+ */
 function kept(): { lyrics: string; lang: Lang; tune: string; tempo: number; key: number } {
   const d = { lyrics: DEFAULT_LYRICS, lang: "en" as Lang, tune: TUNES[0].id, tempo: 1, key: 0 };
+  if (inPlugin) return d;
   try {
     const k = JSON.parse(localStorage.getItem(KEPT) ?? "null") as Record<string, unknown> | null;
     if (!k) return d;
@@ -118,6 +123,12 @@ export const useSing = create<SingState>((set, get) => ({
   duration: 0,
   renderProgress:null,
   setLyrics: (text) => {
+    if (inPlugin) {
+      // Rust reads the lyrics: the syllables and the cursor come back with the next polls
+      set({ lyrics: text });
+      engine.pluginLyrics(text);
+      return;
+    }
     stopDemo();
     set({ lyrics: text, syllables: lyricsToSyllables(text, get().lang), cursor: 0 });
     if (hasHan(text) && !zh.loaded) ensureDictionary();
@@ -130,8 +141,15 @@ export const useSing = create<SingState>((set, get) => ({
     const lyrics = s.lyrics === DEFAULT_LYRICS_OF[s.lang] ? DEFAULT_LYRICS_OF[lang] : s.lyrics;
     set({ lang, lyrics, syllables: lyricsToSyllables(lyrics, lang), cursor: 0 });
   },
-  setCursor: (i) => set({ cursor: Math.max(0, Math.min(i, Math.max(0, get().syllables.length - 1))) }),
-  setVibrato: (cents) => set({ vibrato: cents }),
+  setCursor: (i) => {
+    const index = Math.max(0, Math.min(i, Math.max(0, get().syllables.length - 1)));
+    if (inPlugin) engine.pluginCursor(index);
+    else set({ cursor: index });
+  },
+  setVibrato: (cents) => {
+    set({ vibrato: cents });
+    if (inPlugin) setParam("vibrato", cents);
+  },
   setTune: (id) => {
     const words = TUNES.find((t) => t.id === id)?.lyrics;
     const { lyrics, lang } = get();
@@ -156,6 +174,7 @@ export const useSing = create<SingState>((set, get) => ({
 }));
 
 useSing.subscribe((s, p) => {
+  if (inPlugin) return;
   if (s.lyrics === p.lyrics && s.lang === p.lang && s.tune === p.tune && s.tempo === p.tempo && s.key === p.key) return;
   try {
     localStorage.setItem(KEPT, JSON.stringify({ lyrics: s.lyrics, lang: s.lang, tune: s.tune, tempo: s.tempo, key: s.key }));
@@ -169,6 +188,8 @@ useSing.subscribe((s, p) => {
  * are Han characters), then re-read the lyrics with it (the cursor stays).
  */
 export function ensureDictionary(): void {
+  // in the plugin Rust reads the lyrics, with its own copy of the dictionary
+  if (inPlugin) return;
   const needs: Promise<void>[] = [];
   if (!g2p.loaded) needs.push(g2p.load());
   if (!zh.loaded && hasHan(useSing.getState().lyrics)) needs.push(zh.load());
@@ -274,6 +295,43 @@ function glide(midi: number, text: string): void {
   s.note.t1 = t;
   s.midi = midi;
   s.note = addNote(midi, t, text);
+}
+
+/** the note and press count last seen from the plugin */
+let pluginNote = -1;
+let pluginSerial = -1;
+
+/**
+ * In the plugin Rust plays the notes, so the words at the mouth and the piano roll follow what it
+ * reports. A new press is a new syllable, unless it's a melisma on a vowel still sounding; a new
+ * pitch with no press is the glide back to a key still down.
+ */
+export function followPluginNote(note: number, sung: number, serial: number, clock: number): void {
+  const pressed = serial !== pluginSerial;
+  if (!pressed && note === pluginNote) return;
+  pluginSerial = serial;
+  pluginNote = note;
+  const s = sounding;
+  if (s) s.note.t1 = clock;
+  if (note < 0) {
+    sounding = null;
+    return;
+  }
+  const syls = useSing.getState().syllables;
+  const syl = syls[sung] ?? AH;
+  if (s && (!pressed || syl.melisma)) {
+    s.midi = note;
+    s.note = addNote(note, clock, pressed ? syl.text : "~");
+  } else {
+    sounding = { midi: note, syl: syl.melisma ? parentOf(syls, sung) : syl, tag: 0, note: addNote(note, clock, syl.text) };
+  }
+}
+
+/** The voice clock started again (a new voice or a restore): the roll's times no longer mean anything. */
+export function clearPluginNotes(): void {
+  roll.notes = [];
+  sounding = null;
+  pluginNote = -1;
 }
 
 export function singNoteOn(midi: number, velocity: number, body: BodyMix): void {
