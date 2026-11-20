@@ -169,6 +169,35 @@ fn onset_dur(ipa: &str, aspirated: Option<bool>) -> Option<f64> {
 /// Aspiration length of Mandarin's aspirated stops and affricates (s).
 const MANDARIN_VOT: f64 = 0.09;
 
+/// The consonants before a sung vowel take at most this share of the time since the vowel before
+/// (`Syllable::onset_share`). Real singers' initials are a share of that time whatever the tempo
+/// (114,000 syllable pairs of M4Singer's 20 singers: the median 0.39-0.43 between 50 and 400 ms,
+/// three quarters under 0.50-0.55), 60 ms long on the fastest notes and 160 on slow ones. At a
+/// fixed length they left a fast note no vowel: after an aspirated initial, 85 % of the vowels
+/// under 150 ms were 12 dB or more under the singer's.
+///
+/// M4Singer: Zhang et al., "M4Singer: A Multi-Style, Multi-Singer and Musical Score Provided
+/// Mandarin Singing Corpus", NeurIPS 2022 Datasets and Benchmarks (CC BY-NC-SA 4.0). Only
+/// aggregate figures like these come from it: none of its audio, annotations or alignments is
+/// in this repository.
+const ONSET_SHARE: f64 = 0.55;
+
+/// How long after an initial's own segment the voice starts (s): the aspiration; an unaspirated
+/// stop's burst (11-17 ms measured on the renders) or affricate's (18); a fricative's release
+/// (25-34; [ɕ]'s is 3). The song planner starts the vowel that long before the beat
+/// (`Syllable::voice_lag`): sung with the vowel's segment on the beat, the voice came in 35-45 ms
+/// after it and 110 ms after an aspirated initial, where singers' is on it.
+fn voice_lag(ipa: &str, aspirated: Option<bool>) -> Option<f64> {
+    match (ipa, aspirated) {
+        (_, Some(true)) => Some(MANDARIN_VOT),
+        ("p" | "t" | "k", Some(false)) => Some(0.015),
+        ("tɕ" | "tʂ" | "ts", Some(false)) => Some(0.018),
+        ("f" | "x" | "ʂ", _) => Some(0.027),
+        ("s", _) => Some(0.034),
+        _ => None,
+    }
+}
+
 /// An initial → its sound and, for stops and affricates, its aspiration.
 fn initial(i: &str) -> Option<(&'static str, Option<bool>)> {
     Some(match i {
@@ -341,6 +370,8 @@ pub fn pinyin_syllable(py: &str, text: &str) -> Option<Syllable> {
         // more natural but made them harder to recognise in the scramble test, so they stay full.)
         nasal_lead: (!coda.is_empty()).then_some(NASAL_LEAD),
         closing: Some(CLOSING),
+        voice_lag: initial(ini).and_then(|(ipa, aspirated)| voice_lag(ipa, aspirated)),
+        onset_share: Some(ONSET_SHARE),
         ..Default::default()
     })
 }
