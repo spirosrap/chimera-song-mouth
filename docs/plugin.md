@@ -432,6 +432,27 @@ preset, mic, follow }`, each with defaults, so older projects load. `playing` is
 Beatbox sets the ready posture as the website does. Rust does that as part of the mode command, under
 one transaction and in one `Pending` edit, so neither a held note nor a restore can separate them.
 
+## Releases
+
+A tag `plugin-v<version>` (the version in `Cargo.toml`; `release.sh` refuses another) makes CI build,
+sign, notarise and test as on any push, and only then publish a GitHub release with three files from
+`macos/release.sh`:
+
+- `CHIMERA-macos.zip`: a `CHIMERA` folder with the three bundles and `How to install.txt`.
+- `SHA256SUMS`.
+- `manifest.json`: the version, the zip's address and SHA-256, and each bundle's path in the zip and its
+  folder. It's what an installer reads, so another tool (a package manager, a DAW's library) can install
+  CHIMERA without knowing anything else about it. `schema` goes up when a field changes meaning.
+
+`releases/latest/download/<file>` always names the newest release's, so the website's Download button
+and `public/install.sh` never change. The installer (`curl -fsSL https://chimera.audio/install.sh | sh`,
+served from `public/`) reads the latest manifest, checks the zip's SHA-256 and every bundle's
+signature before copying any, and installs into `~/Library/Audio/Plug-Ins`, so it needs no password.
+`curl` doesn't quarantine what it downloads; the bundles are notarised for a browser's download.
+`macos/install-test.sh` runs it on CI against each build's own release files, served as `file://`.
+
+To release: bump `version` in `Cargo.toml` if it has shipped, merge, then tag `main` and push the tag.
+
 ## Updating
 
 `crates/chimera-plugin/macos/update.sh` installs CI's newest passing build into
@@ -446,8 +467,8 @@ The plugin doesn't replace itself, though it could on a Mac:
 - It still takes a host restart, Windows locks a loaded DLL, and a sandboxed host may not let it write.
 - Musicians don't expect an instrument in their session to go online and change itself.
 
-For a public release, the plan is a notice in the plugin that a new version exists (off with one click, and
-making no other network use) and a signed installer: see Later.
+For the public, releases (above) and the installer stand in, and the plan is a notice in the plugin that a
+new version exists (off with one click, and making no other network use): see Later.
 
 ## Testing without a Mac or a DAW
 
@@ -514,6 +535,6 @@ if a dependency has no licence, or only a GPL one.
 - Sustain pedal, mod wheel and other controllers.
 - Dragging the host's window border (needs `can_resize` in nih-plug: a fork or an upstream change).
 - A full DSP reset (see Determinism).
-- An installer, and a notice in the plugin when a new version exists. Signing and notarisation are done
-  on macOS.
+- A notice in the plugin when a new version exists, and a `.pkg` installer (needs a Developer ID
+  Installer certificate). Releases, `install.sh` and signing are done on macOS.
 - One `Singer` for the browser too, replacing the TypeScript controller.

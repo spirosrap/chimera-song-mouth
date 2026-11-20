@@ -7,6 +7,8 @@ name: plugin
 on:
   push:
     branches: [main, "t3/**"]
+    # a release: CI builds, tests and publishes it (GitHub doesn't apply `paths` to tags)
+    tags: ["plugin-v*"]
     paths:
       - "crates/**"
       - "src/**"
@@ -29,6 +31,9 @@ jobs:
   macos:
     runs-on: macos-15
     timeout-minutes: 60
+    # to publish a release on a tag (a fork's pull request still gets a read-only token)
+    permissions:
+      contents: write
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
@@ -65,6 +70,10 @@ jobs:
           NOTARY_ISSUER_ID: ${{ secrets.NOTARY_ISSUER_ID }}
 
       # before validating, so a strict validator can't keep a build from being tried in a real host
+      # the release's files, and public/install.sh run on them as a user would
+      - name: Release files and the installer
+        run: crates/chimera-plugin/macos/install-test.sh
+
       - name: Package
         run: |
           mkdir -p out
@@ -80,6 +89,11 @@ jobs:
 
       - name: Validate
         run: crates/chimera-plugin/macos/validate.sh
+
+      # only a build that passed everything above
+      - name: Publish the release
+        if: startsWith(github.ref, 'refs/tags/plugin-v')
+        run: crates/chimera-plugin/macos/release.sh --publish "${GITHUB_REF_NAME}"
 
       # what the host test rendered and saw, to listen to and look at
       - uses: actions/upload-artifact@v4

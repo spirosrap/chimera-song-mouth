@@ -128,8 +128,9 @@ input {
 
 .topbar-right {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 18px;
+  gap: 8px 18px;
 }
 
 .volume {
@@ -1027,7 +1028,7 @@ body {
 }
 
 .topbar-right {
-  gap: 14px;
+  gap: 8px 14px;
 }
 
 .volume input {
@@ -1142,6 +1143,21 @@ body {
   display: inline-flex;
   color: var(--text-dim);
   transition: color 120ms, filter 120ms;
+}
+
+.plugin-link {
+  color: var(--text-dim);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 120ms, text-shadow 120ms;
+}
+
+.plugin-link:hover {
+  color: var(--text);
+  text-shadow: var(--glow-blue);
 }
 
 .repo-link:hover {

@@ -4,6 +4,7 @@
   "installCommand": "bun install --frozen-lockfile",
   "buildCommand": "bun run build:static",
   "outputDirectory": "dist",
+  "redirects": [{ "source": "/plugin", "destination": "/plugin/", "permanent": true }],
   "headers": [
     {
       "source": "/assets/(.*)",
