@@ -434,24 +434,36 @@ one transaction and in one `Pending` edit, so neither a held note nor a restore 
 
 ## Releases
 
-A tag `plugin-v<version>` (the version in `Cargo.toml`; `release.sh` refuses another) makes CI build,
-sign, notarise and test as on any push, and only then publish a GitHub release with three files from
-`macos/release.sh`:
+A tag `plugin-v<version>` (the version in `Cargo.toml`; `release.ts` refuses another) makes CI build,
+sign, notarise and test on each system as on any push. Only when both jobs pass does the `release` job
+(`publish.sh`) make a GitHub release, from the archives the jobs uploaded:
 
-- `CHIMERA-macos.zip`: a `CHIMERA` folder with the three bundles and `How to install.txt`.
+- `CHIMERA-macos.zip` (`macos/release.sh`, which on a tag also requires the Developer ID signature
+  and Apple's ticket on every bundle): a `CHIMERA` folder with the three bundles and
+  `How to install.txt`.
+- `CHIMERA-linux.tar.gz` (`linux/build.sh --package`): a `CHIMERA` folder with the CLAP (one `.so`),
+  the VST3 bundle, the licences and `How to install.txt`.
 - `SHA256SUMS`.
-- `manifest.json`: the version, the zip's address and SHA-256, and each bundle's path in the zip and its
-  folder. It's what an installer reads, so another tool (a package manager, a DAW's library) can install
-  CHIMERA without knowing anything else about it. `schema` goes up when a field changes meaning.
+- `manifest.json` (`release.ts`): the version, and for each system its archive's address and SHA-256
+  and each bundle's path in it and its folder. It's what an installer reads, so another tool (a package
+  manager, a DAW's library) can install CHIMERA without knowing anything else about it. `schema` goes
+  up when a field changes meaning; a new system or field doesn't.
 
-`releases/latest/download/<file>` always names the newest release's, so the website's Download button
+`releases/latest/download/<file>` always names the newest release's, so the website's Download buttons
 and `public/install.sh` never change. The installer (`curl -fsSL https://chimera.audio/install.sh | sh`,
-served from `public/`) reads the latest manifest, checks the zip's SHA-256 and every bundle's
-signature before copying any, and installs into `~/Library/Audio/Plug-Ins`, so it needs no password.
+served from `public/`) reads the latest manifest (with JavaScript for Automation on macOS, Python or jq
+on Linux), checks the archive's SHA-256 and, on macOS, every bundle's signature before copying any,
+and installs into `~/Library/Audio/Plug-Ins` or `~/.clap` and `~/.vst3`, so it needs no password.
 `curl` doesn't quarantine what it downloads; the bundles are notarised for a browser's download.
-`macos/install-test.sh` runs it on CI against each build's own release files, served as `file://`.
+`install-test.sh` runs it on CI on both systems, against each build's own archive served as `file://`.
+
+The Linux build is made on Ubuntu 22.04, so it needs glibc 2.35 at most: built on a newer system, the
+VST3 SDK's C++ calls glibc 2.38's `__isoc23_sscanf`, which Ubuntu 22.04 and Debian 12 lack. `linux/ci.sh`
+fails a build that needs a newer glibc than the 2.35 the release promises. When GitHub retires its
+22.04 runners, the build moves to the oldest one left and the promise with it.
 
 To release: bump `version` in `Cargo.toml` if it has shipped, merge, then tag `main` and push the tag.
+If either system's job fails, nothing is released: fix it, delete the tag, and tag again.
 
 ## Updating
 

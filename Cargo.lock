@@ -220,7 +220,7 @@ checksum = "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600"
 
 [[package]]
 name = "chimera"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "flate2",
  "libm",
@@ -231,7 +231,7 @@ dependencies = [
 
 [[package]]
 name = "chimera-cli"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "chimera",
  "flate2",
@@ -241,7 +241,7 @@ dependencies = [
 
 [[package]]
 name = "chimera-plugin"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "chimera",
  "clap-wrapper",
@@ -259,7 +259,7 @@ dependencies = [
 
 [[package]]
 name = "chimera-wasm"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "chimera",
  "serde",
