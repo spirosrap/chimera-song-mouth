@@ -8,53 +8,89 @@ not merge unrelated histories or replace this tree with an upstream checkout.
 
 ## Latest synchronization
 
-Checked on 2026-11-19, through `c6147d0198890475dbe8a65a0bb8f56240c539b7`
-(one first-parent commit after `eeb0c194`, imported with `git cherry-pick -x`; none skipped).
+Checked on 2026-11-20, through `0dc13f8704bd998e8d70377f3bc4de53b16863f8`
+(one first-parent commit after `c6147d0`, a merge imported with `git cherry-pick -x -m 1`;
+none skipped).
 
 What came in:
 
-- Korean: Hangul typed as its separate letters (conjoining jamo, as decomposed/NFD text has
-  them, for example lyrics pasted from a Mac file name) used to be skipped whole and sang
-  nothing. Modern jamo are now joined into blocks before the sound rules, so they sing like
-  the same text typed as blocks. Blocks with a letter modern Korean dropped (ㆍ ㅿ ㆁ ㆆ) are
-  still skipped. Upstream #133; a new test in `crates/chimera/tests/syllables.rs` and a
-  paragraph in `docs/language-front-ends.md` came with it.
+- Turkish in Speak and Sing (upstream #44). Turkish is written in Latin letters, so the lyrics
+  router cannot tell it from English by script: a new **EN / TR** choice, next to "Text is IPA"
+  in Speak and in the Lyrics header in Sing, says which one reads Latin-script words. It is one
+  setting for both tabs, kept on the device with Sing's words; English stays the default.
+  `crates/chimera/src/phonetics/turkish.rs` reads the spelling by rule (no dictionary, no new
+  sounds): fronted k, g and l by the vowels beside them, ğ as a long vowel, doubled consonants,
+  stress rules, numbers read out. `docs/turkish.md` describes it and lists what is not done yet.
+- With it: three Turkish vowels (/y/, /ø/, /ɯ/) get their own lengths in the duration table
+  instead of the 80 ms fallback, a `length` field on a segment (a long sound), `chimera render
+  turkish` and `chimera syllables "<lyrics>" tr` in the CLI, 19 native tests
+  (`crates/chimera/tests/turkish.rs`), `tests/turkish.test.ts`, one more Sing test and an e2e step.
 
-Adapted rather than taken as written: nothing. The commit applied without a conflict, touches
-no golden fixture, no file under `public/`, no UI or audio code, and no test needed an
-edition-specific limit. The adaptations made by earlier imports still stand and are described
-in their commits (`git log --grep='Upstream import'`): this edition's own
-`tests/golden/planning.json`, the 0.9 limit in `tests/nasal_spans.rs`, the Mandarin lexicon
-fetched through `BASE_PATH`, the stand-in `window` in `tests/prepared-song.test.ts`, and both
-hill-climb logs in `docs/hill-climb/log.md`.
+Adapted rather than taken as written:
+
+- `README.md`: this edition's text is kept (upstream's feature list is not in it), so the README
+  does not mention Turkish; `docs/turkish.md` and `docs/language-front-ends.md` do.
+- `src/wasm/engine.ts`: `lyricsToSyllables` takes upstream's `lang` argument and still sends
+  Greek script to this edition's own reader first; the language is passed on for the non-Greek
+  words of a mixed line.
+- `src/ui/components/SingPanel.tsx`: the EN/TR chips are added to the Lyrics screen where this
+  edition has it (Lyrics, Song player, Pitch); upstream's order (Pitch before Lyrics) is not taken.
+- `crates/chimera/tests/golden/planning.json`: this edition's fixture is kept and re-blessed
+  twice with the commit applied. Exactly one utterance moved, the same one as in upstream's own
+  change to the fixture ("phrase 16: y ø ˈɨ", which uses two of the three vowels that got table
+  lengths): the same 22 fields (segment and gesture times, three f0 targets, the end) plus one
+  last-digit rounding difference in a `rampOut`. /y/ goes 52 → 92 ms upstream and 89 → 156 ms
+  here, /ø/ 44 → 90 ms upstream and 74 → 153 ms here: upstream's new lengths times this
+  edition's 1.7 clear-speech factor for unstressed vowels. The other 97 utterances, the Klatt
+  cases and the beatbox audio are unchanged.
+- `durations.rs` merged without a conflict; the clear-speech vowel lengths are untouched.
+
+Not adapted, for the owner to decide: the song player (`src/song/plan.ts`) still reads the
+Lyrics box as English whichever of EN/TR is lit, as it did before; only the Sing button, the
+keys and Speak follow TR. Earlier adaptations still stand (`git log --grep='Upstream import'`).
 
 The engine source changed, so `src/wasm/chimera.wasm` is rebuilt (Arch `rust` and `rust-wasm`
-1.99.1; sha256 in `PROVENANCE.json`). Precomposed Hangul, English and every other language
-read exactly as before: no golden fixture moved, and the prepared Korean songs' regression
-tests pass unchanged. No prepared song or scene was re-rendered and no file in the media
-manifest changed.
+1.99.1; sha256 in `PROVENANCE.json`). English is unchanged: two test sentences rendered by the
+new CLI in the male and female voices are byte-identical to the 2026-11-18 build's, and the
+syllables for a Korean, Russian and English line are the same JSON. No prepared song or scene
+was re-rendered and no file in the media manifest changed.
 
 Word clarity (`tools/asr/speech_wer.py`, Whisper small.en, the same sentences as before):
-21.85 % word errors on the training sentences and 29.33 % on the held-out ones, the same
-figures as the 2026-11-18 import (verdict: no clear change), as expected for a change that
-only reads Korean text.
+21.85 % word errors on the training sentences and 29.33 % on the held-out ones, with every one
+of the 80 transcripts identical to the 2026-11-19 run (verdict: no clear change). The judge
+is English only; nothing here measures how clear the Turkish is.
 
-Validation: 279 native tests passed (two existing ignored; one more than last time, the new
-Korean test); 669 Bun tests with `--timeout 60000`; typecheck; content verification (1002
-public files). The rebuilt engine was asked for the syllables of "한국 노래" in both forms and
-gave the same four. Browser checks ran in the system Chromium with software rendering against
-a local server, on the single-mouth player (`?solo=1`), on a quiet machine (load average 2):
+Validation: 298 native tests passed (two existing ignored; 19 more than last time, all in the
+new Turkish file); 675 Bun tests with `--timeout 60000` (six more); typecheck; content
+verification (1002 public files). The rebuilt CLI split "çok güzel bağlarında" into çok, gü,
+zel, bağ, la, rın, da and rendered "Merhaba, nasılsın? Bugün hava çok güzel." (4.8 s).
 
-- `tools/e2e.ts`, desktop and phone sizes: every step passed, no console errors, and the
-  voice stayed at 48 kHz this time (engine load 79 % and 89 %). Upstream's tongue-grab check
-  was again skipped (2D face only, too slow under software rendering).
-- `tools/layout-lint.ts`, 240 views at 8 sizes: 2 errors, both known. Sing reports the word
-  at the mouth over a readout at 1366x768 (not at 1280x720 this time; this error comes and
-  goes). Speak reports the same one error at 375x812 as before (two "k" labels touching in
-  the gestural score). Play, Beatbox, Bestiary and the duet page report 0 errors.
+Browser checks ran in the system Chromium with software rendering against a local server, on
+the single-mouth player (`?solo=1`). The laptop was in its power-saver (Cool Saver) mode this
+time, so the software-rendered voice ran at about twice the load of the last import (185 to
+200 % against 79 and 89 %), and both checks were repeated against the previously published
+build (`1c58e6a`) under the same conditions to tell the machine from the import:
 
-Not tested: listening to Korean by ear, typing decomposed Hangul into the Sing box in a
-browser (the engine was asked directly instead), a real phone, Safari.
+- `tools/e2e.ts`, desktop and phone sizes. The new step passed at both sizes: TR chosen in
+  Speak is lit in Sing and still chosen, with the Turkish example, when Speak comes back.
+  Errors: the fall back to 32 kHz at both sizes, the can't-keep-up warning in the slow-device
+  step, and "Record video never offered a clip" / "no clip after two taps". The previous build
+  gave the same five on the same machine (engine load 193 and 195 %), plus a creature call
+  still sounding after Stop, which the first of two runs on the import also showed along with a
+  silent sung key and a recorder step; none of them appeared on 2026-11-19 at normal speed.
+  They are counted as the slow machine, not as passes. Upstream's tongue-grab check was again
+  skipped (2D face only, too slow under software rendering).
+- `tools/layout-lint.ts`, 240 views at 8 sizes: 7 errors, 12 warnings. One is the known Speak
+  error at 375x812 (two "k" labels touching in the gestural score). Six are in Sing at
+  1280x720, idle and running: the readouts "0.7", "CM" and "SHUT" of the live vocal tract are
+  drawn below its canvas. The previous build gives exactly the same three per view at 1280x720
+  (run twice each, same coordinates), so they do not come from this import; they were not
+  reported on 2026-11-19, when Sing's error at this size was the word over a readout. Play,
+  Beatbox, Bestiary and the duet page report 0 errors.
+
+Not tested: Turkish by ear, or by any judge; typing Turkish in a browser beyond the e2e step
+(the engine and CLI were asked directly); the video recorder and the 48 kHz path at normal
+machine speed; a real phone; Safari.
 
 ## Next update
 

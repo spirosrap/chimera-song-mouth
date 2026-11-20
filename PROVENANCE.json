@@ -8,12 +8,12 @@
   "preparedMovieScenes": 3,
   "publicAssetCount": 221,
   "publicAssetBytes": 341751492,
-  "precompiledWasmSha256": "0643036c4a661fb1eb7b569a10cc9f9b87715367c0476bba1dec9ba59c2d61ba",
+  "precompiledWasmSha256": "15177b59b8e60a508e83a9a940fb5e5f4d0bfef657743949e43d9b21516489d9",
   "mediaStorage": "ordinary Git; full public asset payload included",
   "previousSiteConfigurationIncluded": false,
   "currentSite": "https://agenticspiros.com/chimera-song-mouth/",
   "upstreamBranch": "main",
   "upstreamBaseRevision": "092b16ce12b927d473c884ca2dfae53ce1b995df",
-  "upstreamRevision": "c6147d0198890475dbe8a65a0bb8f56240c539b7",
-  "upstreamSyncDate": "2026-11-19"
+  "upstreamRevision": "0dc13f8704bd998e8d70377f3bc4de53b16863f8",
+  "upstreamSyncDate": "2026-11-20"
 }
