@@ -2727,6 +2727,41 @@
       "sha256": "7b32a0303122fce6bb8494f3397f78ede10022178cb2ee490a9d1fbed89b9bfd"
     },
     {
+      "path": "public/scenes/gabriela/backing.mp3",
+      "bytes": 7042446,
+      "sha256": "b4e006f0fe29887ccfc5175d7b4937831e59511de4113565d30dc19fe8d6d948"
+    },
+    {
+      "path": "public/scenes/gabriela/gab-boss.tele.gz",
+      "bytes": 842981,
+      "sha256": "afd5f432bbd27bd090a728e44755d41b513acbac0997b0d7ba8db2c1d58900a0"
+    },
+    {
+      "path": "public/scenes/gabriela/gab-daniela.tele.gz",
+      "bytes": 1060465,
+      "sha256": "7ee9fbdad5a905c2f5da4bba1fb8159f72f28c236a649d880985a9f40eadc82f"
+    },
+    {
+      "path": "public/scenes/gabriela/gab-lead.tele.gz",
+      "bytes": 1792549,
+      "sha256": "04ab61b90a52ddcb087df5180aadaaa38b325bcf6da4dc07f61ec0aa00355c1b"
+    },
+    {
+      "path": "public/scenes/gabriela/mix.mp3",
+      "bytes": 9389612,
+      "sha256": "48d072f643f03b9fa8053a5f2967c98a6ddb01d0edbc91b4d9f80438fcad932f"
+    },
+    {
+      "path": "public/scenes/gabriela/performance.json",
+      "bytes": 514080,
+      "sha256": "143e19a46887d3dc7acce0c947f2e0cbe7c12a55cd5012707c54d08006351a4d"
+    },
+    {
+      "path": "public/scenes/gabriela/scene.json",
+      "bytes": 13682,
+      "sha256": "2a2b7fa0ba5098fac0d20fd5438027a8a66576c8b62f27c6e6ad39f25c6b7952"
+    },
+    {
       "path": "public/scenes/gnarly/backing.mp3",
       "bytes": 4552748,
       "sha256": "4d663c352877eeea64254a5ebb7ed966133da3da6f3a2b746deb28b698df56d0"

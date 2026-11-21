@@ -1,0 +1,628 @@
+{
+  "setting": "gabriela",
+  "title": "KATSEYE · Gabriela",
+  "description": "The complete 90s Latin telenovela music video: Gabriela Enterprises skyscraper, mahogany CEO boardroom, sunlit and midnight-blue Venetian blinds, crimson conference-table choreography, peach mansion ballroom, rose-arch wedding crash, 90s \"KATFIGHT\" talk-show stage with rose petals, and neon outro. Original music with three physical mouth-engine voices.",
+  "duration": 293.360907,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "gab-lead",
+      "name": "KATSEYE Lead",
+      "role": "Lead English vocals & rival",
+      "tele": "gab-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "gab-daniela",
+      "name": "Daniela",
+      "role": "Spanish bridge & chorus",
+      "tele": "gab-daniela.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "gab-boss",
+      "name": "CEO Gabriela",
+      "role": "Boardroom CEO monologue & outro",
+      "tele": "gab-boss.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.74,
+      "end": 1.5,
+      "speaker": "gab-boss",
+      "text": "Gabriela.",
+      "intensity": 0.78
+    },
+    {
+      "start": 2.74,
+      "end": 5.14,
+      "speaker": "gab-boss",
+      "text": "Against all odds, I have built and sustained",
+      "intensity": 0.8
+    },
+    {
+      "start": 5.2,
+      "end": 7.42,
+      "speaker": "gab-boss",
+      "text": "this empire over the last twenty years.",
+      "intensity": 0.8
+    },
+    {
+      "start": 7.94,
+      "end": 9.1,
+      "speaker": "gab-boss",
+      "text": "A miracle, truly.",
+      "intensity": 0.76
+    },
+    {
+      "start": 10.02,
+      "end": 11.2,
+      "speaker": "gab-boss",
+      "text": "No thanks to any of you.",
+      "intensity": 0.82
+    },
+    {
+      "start": 11.62,
+      "end": 15.3,
+      "speaker": "gab-boss",
+      "text": "I would love to say that my legacy is in capable hands.",
+      "intensity": 0.8
+    },
+    {
+      "start": 15.76,
+      "end": 20.84,
+      "speaker": "gab-boss",
+      "text": "But alas, the talent in this room is quite disappointing.",
+      "intensity": 0.82
+    },
+    {
+      "start": 21.92,
+      "end": 25.6,
+      "speaker": "gab-boss",
+      "text": "However, one of you must succeed me",
+      "intensity": 0.82
+    },
+    {
+      "start": 25.68,
+      "end": 30.96,
+      "speaker": "gab-boss",
+      "text": "and claim my name as the next CEO of Gabriela Enterprises.",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.14,
+      "end": 36.02,
+      "speaker": "gab-boss",
+      "text": "So who will be the next Gabriela?",
+      "intensity": 0.86
+    },
+    {
+      "start": 38.24,
+      "end": 42.34,
+      "speaker": "gab-lead",
+      "text": "I'll be the next Gabriela and I'll make you proud, twin.",
+      "intensity": 0.84
+    },
+    {
+      "start": 43.44,
+      "end": 46.88,
+      "speaker": "gab-daniela",
+      "text": "Darling, you may smell of roses, but you reek of desperation.",
+      "intensity": 0.86
+    },
+    {
+      "start": 47.58,
+      "end": 50.26,
+      "speaker": "gab-lead",
+      "text": "You know I'm Gabriela. This is not a monarchy.",
+      "intensity": 0.86
+    },
+    {
+      "start": 50.84,
+      "end": 51.72,
+      "speaker": "gab-daniela",
+      "text": "I demand a vote.",
+      "intensity": 0.86
+    },
+    {
+      "start": 52.12,
+      "end": 56.62,
+      "speaker": "gab-lead",
+      "text": "That was so cute. While you were all here playing executive dress-up,",
+      "intensity": 0.86
+    },
+    {
+      "start": 56.78,
+      "end": 60.64,
+      "speaker": "gab-daniela",
+      "text": "I've been here actually saving the company. I built our luxury wigs division.",
+      "intensity": 0.88
+    },
+    {
+      "start": 60.9,
+      "end": 62.34,
+      "speaker": "gab-lead",
+      "text": "I'm her favorite. I'm Gabriela!",
+      "intensity": 0.9
+    },
+    {
+      "start": 62.48,
+      "end": 64.55,
+      "speaker": "gab-boss",
+      "text": "Ladies, ladies, ladies, silence!",
+      "intensity": 0.92
+    },
+    {
+      "start": 65.62,
+      "end": 67.95,
+      "speaker": "gab-boss",
+      "text": "It's nice to see a competitive spirit.",
+      "intensity": 0.84
+    },
+    {
+      "start": 68.6,
+      "end": 70.7,
+      "speaker": "gab-boss",
+      "text": "May the best Gabriela win.",
+      "intensity": 0.88
+    },
+    {
+      "start": 80.1,
+      "end": 81.25,
+      "speaker": "gab-lead",
+      "text": "Hot like a bullet",
+      "intensity": 0.82
+    },
+    {
+      "start": 81.8,
+      "end": 83.9,
+      "speaker": "gab-lead",
+      "text": "Flying too fast, I couldn't catch it",
+      "intensity": 0.84
+    },
+    {
+      "start": 84.25,
+      "end": 85.65,
+      "speaker": "gab-lead",
+      "text": "Heart in the casket",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.65,
+      "end": 87.85,
+      "speaker": "gab-lead",
+      "text": "You always knew it",
+      "intensity": 0.84
+    },
+    {
+      "start": 88.35,
+      "end": 90.65,
+      "speaker": "gab-lead",
+      "text": "The starring role, the main attraction",
+      "intensity": 0.86
+    },
+    {
+      "start": 91.05,
+      "end": 92.3,
+      "speaker": "gab-lead",
+      "text": "Got cameras flashing",
+      "intensity": 0.86
+    },
+    {
+      "start": 93.1,
+      "end": 93.85,
+      "speaker": "gab-lead",
+      "text": "Like, ooh",
+      "intensity": 0.84
+    },
+    {
+      "start": 94.45,
+      "end": 97,
+      "speaker": "gab-lead",
+      "text": "You got everybody's eyes undressing you",
+      "intensity": 0.88
+    },
+    {
+      "start": 97.5,
+      "end": 98.5,
+      "speaker": "gab-lead",
+      "text": "And I see it too",
+      "intensity": 0.88
+    },
+    {
+      "start": 99.2,
+      "end": 100.2,
+      "speaker": "gab-daniela",
+      "text": "Yeah, ooh",
+      "intensity": 0.84
+    },
+    {
+      "start": 100.3,
+      "end": 103.5,
+      "speaker": "gab-lead",
+      "text": "You could have anyone else you wanted to",
+      "intensity": 0.9
+    },
+    {
+      "start": 103.95,
+      "end": 105.15,
+      "speaker": "gab-lead",
+      "text": "I'm begging you",
+      "intensity": 0.92
+    },
+    {
+      "start": 105.65,
+      "end": 111.45,
+      "speaker": "gab-lead",
+      "text": "Hands off, Gabriela, Gabriela, hands off, Gabriela-la-la",
+      "intensity": 0.96
+    },
+    {
+      "start": 112.8,
+      "end": 118,
+      "speaker": "gab-daniela",
+      "text": "Back off of my fella, Gabriela, back off, Gabriela-la-la",
+      "intensity": 0.96
+    },
+    {
+      "start": 118.95,
+      "end": 123.25,
+      "speaker": "gab-lead",
+      "text": "'Cause you, you could have anyone else you wanted to",
+      "intensity": 0.94
+    },
+    {
+      "start": 123.75,
+      "end": 124.8,
+      "speaker": "gab-lead",
+      "text": "I'm begging you",
+      "intensity": 0.95
+    },
+    {
+      "start": 125.5,
+      "end": 131.2,
+      "speaker": "gab-lead",
+      "text": "Hands off, Gabriela, Gabriela, hands off, Gabriela-la-la",
+      "intensity": 0.98
+    },
+    {
+      "start": 131.6,
+      "end": 133.95,
+      "speaker": "gab-lead",
+      "text": "Skin amaretto",
+      "intensity": 0.84
+    },
+    {
+      "start": 134.95,
+      "end": 136.55,
+      "speaker": "gab-lead",
+      "text": "I bet you taste just like the summer",
+      "intensity": 0.86
+    },
+    {
+      "start": 136.8,
+      "end": 138.25,
+      "speaker": "gab-lead",
+      "text": "Under the covers",
+      "intensity": 0.86
+    },
+    {
+      "start": 139.25,
+      "end": 140.4,
+      "speaker": "gab-daniela",
+      "text": "Me in the middle",
+      "intensity": 0.86
+    },
+    {
+      "start": 141.35,
+      "end": 143.05,
+      "speaker": "gab-daniela",
+      "text": "Overprotective of my lover",
+      "intensity": 0.88
+    },
+    {
+      "start": 143.35,
+      "end": 144.8,
+      "speaker": "gab-daniela",
+      "text": "You make me wonder",
+      "intensity": 0.88
+    },
+    {
+      "start": 145.7,
+      "end": 149.5,
+      "speaker": "gab-lead",
+      "text": "You got everybody's eyes undressing you",
+      "intensity": 0.9
+    },
+    {
+      "start": 150.15,
+      "end": 151.3,
+      "speaker": "gab-lead",
+      "text": "And I see it too",
+      "intensity": 0.9
+    },
+    {
+      "start": 152.25,
+      "end": 156.05,
+      "speaker": "gab-lead",
+      "text": "You could have anyone else you wanted to",
+      "intensity": 0.92
+    },
+    {
+      "start": 156.55,
+      "end": 157.75,
+      "speaker": "gab-lead",
+      "text": "I'm begging you",
+      "intensity": 0.94
+    },
+    {
+      "start": 158.3,
+      "end": 164.05,
+      "speaker": "gab-lead",
+      "text": "Hands off, Gabriela, Gabriela, hands off, Gabriela-la-la",
+      "intensity": 0.98
+    },
+    {
+      "start": 164.95,
+      "end": 170.6,
+      "speaker": "gab-daniela",
+      "text": "Back off of my fella, Gabriela, back off, Gabriela-la-la",
+      "intensity": 0.98
+    },
+    {
+      "start": 171.55,
+      "end": 175.85,
+      "speaker": "gab-lead",
+      "text": "'Cause you, you could have anyone else you wanted to",
+      "intensity": 0.96
+    },
+    {
+      "start": 176.35,
+      "end": 177.4,
+      "speaker": "gab-lead",
+      "text": "I'm begging you",
+      "intensity": 0.96
+    },
+    {
+      "start": 178.1,
+      "end": 185.5,
+      "speaker": "gab-lead",
+      "text": "Hands off, Gabriela, Gabriela, hands off, Gabriela-la-la",
+      "intensity": 1
+    },
+    {
+      "start": 187.6,
+      "end": 192.1,
+      "speaker": "gab-daniela",
+      "text": "Él llegó conmigo y conmigo se va",
+      "intensity": 0.94
+    },
+    {
+      "start": 194.2,
+      "end": 198.4,
+      "speaker": "gab-daniela",
+      "text": "Sus ojos son mío', eso no va a cambiar",
+      "intensity": 0.94
+    },
+    {
+      "start": 199.1,
+      "end": 204.35,
+      "speaker": "gab-daniela",
+      "text": "Me quiere a mí y no importan las demás",
+      "intensity": 0.96
+    },
+    {
+      "start": 206.15,
+      "end": 211.65,
+      "speaker": "gab-daniela",
+      "text": "No, no, no, no, no, no, no, no, no",
+      "intensity": 0.96
+    },
+    {
+      "start": 215,
+      "end": 217.1,
+      "speaker": "gab-lead",
+      "text": "I'm so sorry!",
+      "intensity": 0.88
+    },
+    {
+      "start": 225.7,
+      "end": 227.7,
+      "speaker": "gab-daniela",
+      "text": "Oh my god!",
+      "intensity": 0.92
+    },
+    {
+      "start": 243.8,
+      "end": 249.2,
+      "speaker": "gab-lead",
+      "text": "I'm begging you, hands off, Gabriela, Gabriela",
+      "intensity": 1
+    },
+    {
+      "start": 249.4,
+      "end": 255.8,
+      "speaker": "gab-daniela",
+      "text": "Hands off, Gabriela, back off of my fella, Gabriela-la-la",
+      "intensity": 1
+    },
+    {
+      "start": 256.25,
+      "end": 261.5,
+      "speaker": "gab-lead",
+      "text": "You could have anyone else you wanted to",
+      "intensity": 0.98
+    },
+    {
+      "start": 266.55,
+      "end": 271.3,
+      "speaker": "gab-lead",
+      "text": "Hands off, Gabriela, Gabriela, hands off, Gabriela-la-la",
+      "intensity": 1
+    },
+    {
+      "start": 276.08,
+      "end": 281.3,
+      "speaker": "gab-boss",
+      "text": "Today's show is more chaotic than KATSEYE.",
+      "intensity": 0.86
+    },
+    {
+      "start": 281.4,
+      "end": 285.1,
+      "speaker": "gab-boss",
+      "text": "So let's build that peace!",
+      "intensity": 0.88
+    },
+    {
+      "start": 285.62,
+      "end": 289.8,
+      "speaker": "gab-boss",
+      "text": "Build that peace right there!",
+      "intensity": 0.88
+    },
+    {
+      "start": 290,
+      "end": 291.1,
+      "speaker": "gab-boss",
+      "text": "Cheers!",
+      "intensity": 0.9
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "gab-tower"
+    },
+    {
+      "time": 7.5,
+      "view": "gab-boardroom"
+    },
+    {
+      "time": 15.5,
+      "view": "gab-boss"
+    },
+    {
+      "time": 25,
+      "view": "gab-boardroom"
+    },
+    {
+      "time": 38,
+      "view": "gab-lead"
+    },
+    {
+      "time": 43.2,
+      "view": "gab-daniela"
+    },
+    {
+      "time": 52,
+      "view": "gab-blinds"
+    },
+    {
+      "time": 62.2,
+      "view": "gab-boss"
+    },
+    {
+      "time": 71.5,
+      "view": "gab-blinds"
+    },
+    {
+      "time": 80,
+      "view": "gab-lead"
+    },
+    {
+      "time": 88,
+      "view": "gab-blinds"
+    },
+    {
+      "time": 94.2,
+      "view": "gab-red-office"
+    },
+    {
+      "time": 105.5,
+      "view": "gab-table-dance"
+    },
+    {
+      "time": 112.5,
+      "view": "gab-daniela"
+    },
+    {
+      "time": 118.8,
+      "view": "gab-red-office"
+    },
+    {
+      "time": 125.4,
+      "view": "gab-table-dance"
+    },
+    {
+      "time": 132,
+      "view": "gab-mansion"
+    },
+    {
+      "time": 145.5,
+      "view": "gab-ballroom"
+    },
+    {
+      "time": 158,
+      "view": "gab-ballroom"
+    },
+    {
+      "time": 165,
+      "view": "gab-daniela"
+    },
+    {
+      "time": 171.5,
+      "view": "gab-lead"
+    },
+    {
+      "time": 178,
+      "view": "gab-ballroom"
+    },
+    {
+      "time": 187.4,
+      "view": "gab-daniela"
+    },
+    {
+      "time": 194,
+      "view": "gab-ballroom"
+    },
+    {
+      "time": 205.5,
+      "view": "gab-wedding"
+    },
+    {
+      "time": 215,
+      "view": "gab-wedding"
+    },
+    {
+      "time": 225.5,
+      "view": "gab-wedding"
+    },
+    {
+      "time": 238,
+      "view": "gab-talkshow"
+    },
+    {
+      "time": 249,
+      "view": "gab-crowd"
+    },
+    {
+      "time": 256,
+      "view": "gab-talkshow"
+    },
+    {
+      "time": 266,
+      "view": "gab-crowd"
+    },
+    {
+      "time": 275.8,
+      "view": "gab-boss"
+    },
+    {
+      "time": 288,
+      "view": "gab-outro"
+    }
+  ]
+}
