@@ -1,0 +1,20 @@
+Olivia Rodrigo — the cure (Official Music Video)
+CHIMERA Physical-Airway Reconstruction
+
+Source reference:
+- Music video: Olivia Rodrigo - the cure (Official Music Video)
+- Duration: 314.282s
+
+Synthesis & Staging:
+- Original instrumental accompaniment separated via Demucs HTDemucs into backing.mp3.
+- One CHIMERA physical female airway model synthesizes Olivia's pop-rock lead vocal
+  from verses and choruses through the soaring "unraveled" climax.
+- Phonetics generated with CHIMERA's English G2P engine and aligned to offline Whisper
+  word timestamps, official lyrics, and 25ms-hop measured F0 vocal contours.
+- Procedural 3D Three.js stage recreates the crimson-yarn title tray, symmetrical
+  mint-green hospital corridor and pastel pink "O R" double doors, glowing glass
+  chemistry lab, specimen cabinet, skeleton ribcage X-ray frame with pulsing red heart,
+  vintage corridor microphone & acoustic guitar, retro green ECG monitors, overhead
+  pink hospital bed tangled in crimson yarn with six surgical trays, and the sunlit
+  miniature dollhouse & cardboard moving boxes reveal.
+- Original video frames and source vocal stems are not embedded.

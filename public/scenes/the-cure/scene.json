@@ -1,0 +1,448 @@
+{
+  "setting": "thecure",
+  "title": "Olivia Rodrigo · the cure",
+  "description": "Crimson-yarn title tray, mint hospital corridor with pastel pink O R doors, glowing glass chemistry lab, ribcage X-ray frame with pulsing heart, corridor acoustic guitar & vintage microphone, retro green ECG monitors, overhead pink bed tangled in crimson yarn, and sunlit miniature dollhouse reveal.",
+  "duration": 314.2821088435374,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "cure-olivia",
+      "name": "Olivia Rodrigo",
+      "role": "Lead physical female vocal",
+      "tele": "cure-olivia.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 17.94,
+      "end": 22.24,
+      "speaker": "cure-olivia",
+      "text": "All the pretty girls in the foreground of my mind",
+      "intensity": 0.72
+    },
+    {
+      "start": 22.34,
+      "end": 28.9,
+      "speaker": "cure-olivia",
+      "text": "I thought I’d done enough, but they keep moving the line",
+      "intensity": 0.74
+    },
+    {
+      "start": 30.04,
+      "end": 35.26,
+      "speaker": "cure-olivia",
+      "text": "I thought I found the antidote this time",
+      "intensity": 0.76
+    },
+    {
+      "start": 36.68,
+      "end": 42.22,
+      "speaker": "cure-olivia",
+      "text": "I thought I found the antidote this time",
+      "intensity": 0.76
+    },
+    {
+      "start": 44.5,
+      "end": 48.86,
+      "speaker": "cure-olivia",
+      "text": "And all the nights I spent fighting bad thoughts in my room",
+      "intensity": 0.75
+    },
+    {
+      "start": 51.16,
+      "end": 55.78,
+      "speaker": "cure-olivia",
+      "text": "Feeling so alone, might as well be on the moon",
+      "intensity": 0.78
+    },
+    {
+      "start": 56.74,
+      "end": 61.84,
+      "speaker": "cure-olivia",
+      "text": "I thought I found the antidote with you",
+      "intensity": 0.8
+    },
+    {
+      "start": 63.2,
+      "end": 68.4,
+      "speaker": "cure-olivia",
+      "text": "I thought I found the antidote with you",
+      "intensity": 0.82
+    },
+    {
+      "start": 70.28,
+      "end": 77.08,
+      "speaker": "cure-olivia",
+      "text": "But my head is full of poison, and my heart is full of doubt",
+      "intensity": 0.9
+    },
+    {
+      "start": 77.18,
+      "end": 83.76,
+      "speaker": "cure-olivia",
+      "text": "I got toxins in my bloodstream, you tried hard to suck ’em out",
+      "intensity": 0.92
+    },
+    {
+      "start": 83.86,
+      "end": 90.42,
+      "speaker": "cure-olivia",
+      "text": "And it feels like medication, and it’s good for me, I’m sure",
+      "intensity": 0.92
+    },
+    {
+      "start": 90.52,
+      "end": 95.16,
+      "speaker": "cure-olivia",
+      "text": "But it don’t matter how your love feels anymore",
+      "intensity": 0.94
+    },
+    {
+      "start": 95.94,
+      "end": 99.1,
+      "speaker": "cure-olivia",
+      "text": "It’ll never be the cure",
+      "intensity": 0.94
+    },
+    {
+      "start": 102.2,
+      "end": 105.6,
+      "speaker": "cure-olivia",
+      "text": "It’ll never be the cure",
+      "intensity": 0.92
+    },
+    {
+      "start": 110.74,
+      "end": 115.64,
+      "speaker": "cure-olivia",
+      "text": "Used to play a game in my head when I’d date a guy",
+      "intensity": 0.78
+    },
+    {
+      "start": 118.2,
+      "end": 122.14,
+      "speaker": "cure-olivia",
+      "text": "Tally up the girls that he fucked ’til I start to cry",
+      "intensity": 0.82
+    },
+    {
+      "start": 122.24,
+      "end": 128.48,
+      "speaker": "cure-olivia",
+      "text": "I thought I found the antidote this time",
+      "intensity": 0.84
+    },
+    {
+      "start": 129.1,
+      "end": 134.4,
+      "speaker": "cure-olivia",
+      "text": "I thought I found the antidote this time",
+      "intensity": 0.86
+    },
+    {
+      "start": 135.18,
+      "end": 138.3,
+      "speaker": "cure-olivia",
+      "text": "But I’m unraveled",
+      "intensity": 0.88
+    },
+    {
+      "start": 138.55,
+      "end": 141.7,
+      "speaker": "cure-olivia",
+      "text": "I’m unraveled",
+      "intensity": 0.9
+    },
+    {
+      "start": 141.95,
+      "end": 145.1,
+      "speaker": "cure-olivia",
+      "text": "I’m unraveled",
+      "intensity": 0.92
+    },
+    {
+      "start": 145.35,
+      "end": 148.95,
+      "speaker": "cure-olivia",
+      "text": "I’m unraveled",
+      "intensity": 0.94
+    },
+    {
+      "start": 149.26,
+      "end": 157.06,
+      "speaker": "cure-olivia",
+      "text": "And my head is full of poison, and my heart is full of doubt",
+      "intensity": 0.95
+    },
+    {
+      "start": 157.16,
+      "end": 164.06,
+      "speaker": "cure-olivia",
+      "text": "I got toxins in my bloodstream, you tried hard to suck ’em out",
+      "intensity": 0.96
+    },
+    {
+      "start": 164.16,
+      "end": 170.44,
+      "speaker": "cure-olivia",
+      "text": "And it feels like medication, and it’s good for me, I’m sure",
+      "intensity": 0.96
+    },
+    {
+      "start": 170.54,
+      "end": 175.32,
+      "speaker": "cure-olivia",
+      "text": "But it don’t matter how your love feels anymore",
+      "intensity": 0.96
+    },
+    {
+      "start": 175.42,
+      "end": 179,
+      "speaker": "cure-olivia",
+      "text": "It will never be the cure",
+      "intensity": 0.96
+    },
+    {
+      "start": 181.86,
+      "end": 185.1,
+      "speaker": "cure-olivia",
+      "text": "It’ll never be the cure",
+      "intensity": 0.96
+    },
+    {
+      "start": 188.68,
+      "end": 192.3,
+      "speaker": "cure-olivia",
+      "text": "’Cause, baby, I’m unraveled",
+      "intensity": 0.94
+    },
+    {
+      "start": 192.55,
+      "end": 196.3,
+      "speaker": "cure-olivia",
+      "text": "I’m unraveled",
+      "intensity": 0.95
+    },
+    {
+      "start": 196.55,
+      "end": 200.5,
+      "speaker": "cure-olivia",
+      "text": "I’m unraveled",
+      "intensity": 0.96
+    },
+    {
+      "start": 200.75,
+      "end": 204.8,
+      "speaker": "cure-olivia",
+      "text": "I’m unraveled",
+      "intensity": 0.98
+    },
+    {
+      "start": 205,
+      "end": 208.35,
+      "speaker": "cure-olivia",
+      "text": "Why can’t you come stitch me up?",
+      "intensity": 0.98
+    },
+    {
+      "start": 208.55,
+      "end": 211.94,
+      "speaker": "cure-olivia",
+      "text": "Why can’t it ever be enough?",
+      "intensity": 0.98
+    },
+    {
+      "start": 212.26,
+      "end": 215.85,
+      "speaker": "cure-olivia",
+      "text": "Why can’t you come stitch me up?",
+      "intensity": 1
+    },
+    {
+      "start": 216.05,
+      "end": 219.7,
+      "speaker": "cure-olivia",
+      "text": "Why can’t it ever be enough?",
+      "intensity": 1
+    },
+    {
+      "start": 220.2,
+      "end": 223.4,
+      "speaker": "cure-olivia",
+      "text": "It’s not enough",
+      "intensity": 0.95
+    },
+    {
+      "start": 229.8,
+      "end": 237.1,
+      "speaker": "cure-olivia",
+      "text": "’Cause my head is full of poison, and my heart is full of doubt",
+      "intensity": 0.98
+    },
+    {
+      "start": 237.2,
+      "end": 243.7,
+      "speaker": "cure-olivia",
+      "text": "I got toxins in my bloodstream, you tried so hard to suck ’em out",
+      "intensity": 0.98
+    },
+    {
+      "start": 244.1,
+      "end": 250.5,
+      "speaker": "cure-olivia",
+      "text": "And it feels like medication, and it’s good for me, I’m sure",
+      "intensity": 0.98
+    },
+    {
+      "start": 250.6,
+      "end": 255.4,
+      "speaker": "cure-olivia",
+      "text": "But it don’t matter how your love feels anymore",
+      "intensity": 0.98
+    },
+    {
+      "start": 256.1,
+      "end": 259.2,
+      "speaker": "cure-olivia",
+      "text": "It’ll never be the cure",
+      "intensity": 0.96
+    },
+    {
+      "start": 262.36,
+      "end": 266,
+      "speaker": "cure-olivia",
+      "text": "It’ll never be the cure",
+      "intensity": 0.94
+    },
+    {
+      "start": 268.56,
+      "end": 273.5,
+      "speaker": "cure-olivia",
+      "text": "It’ll never be the cure",
+      "intensity": 0.88
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "cure-tray"
+    },
+    {
+      "time": 13.5,
+      "view": "cure-doors"
+    },
+    {
+      "time": 24,
+      "view": "cure-corridor"
+    },
+    {
+      "time": 35,
+      "view": "cure-tray"
+    },
+    {
+      "time": 42,
+      "view": "cure-lab"
+    },
+    {
+      "time": 56,
+      "view": "cure-lab"
+    },
+    {
+      "time": 70,
+      "view": "cure-olivia"
+    },
+    {
+      "time": 83.8,
+      "view": "cure-lab"
+    },
+    {
+      "time": 95.9,
+      "view": "cure-olivia"
+    },
+    {
+      "time": 105.5,
+      "view": "cure-exam"
+    },
+    {
+      "time": 118,
+      "view": "cure-exam"
+    },
+    {
+      "time": 135,
+      "view": "cure-yarn"
+    },
+    {
+      "time": 149,
+      "view": "cure-xray"
+    },
+    {
+      "time": 162,
+      "view": "cure-corridor"
+    },
+    {
+      "time": 168,
+      "view": "cure-guitar"
+    },
+    {
+      "time": 181.5,
+      "view": "cure-bed"
+    },
+    {
+      "time": 188.6,
+      "view": "cure-doors"
+    },
+    {
+      "time": 196,
+      "view": "cure-xray"
+    },
+    {
+      "time": 205,
+      "view": "cure-monitor"
+    },
+    {
+      "time": 212,
+      "view": "cure-bed"
+    },
+    {
+      "time": 220,
+      "view": "cure-bed"
+    },
+    {
+      "time": 229.8,
+      "view": "cure-xray"
+    },
+    {
+      "time": 237.2,
+      "view": "cure-mic"
+    },
+    {
+      "time": 244,
+      "view": "cure-mic"
+    },
+    {
+      "time": 250.5,
+      "view": "cure-corridor"
+    },
+    {
+      "time": 256,
+      "view": "cure-bed"
+    },
+    {
+      "time": 266,
+      "view": "cure-bed"
+    },
+    {
+      "time": 274,
+      "view": "cure-dollhouse"
+    },
+    {
+      "time": 286,
+      "view": "cure-dollhouse"
+    },
+    {
+      "time": 298,
+      "view": "cure-dollhouse"
+    }
+  ]
+}

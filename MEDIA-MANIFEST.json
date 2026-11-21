@@ -4752,6 +4752,36 @@
       "sha256": "33b786189aa248d8d4f89a94716d119c2ad55b3880d101d0d14bac47547cb38f"
     },
     {
+      "path": "public/scenes/the-cure/backing.mp3",
+      "bytes": 10059484,
+      "sha256": "4ee5aa535bb76b754c3f45356a6743056905d56656586c9621442858db549266"
+    },
+    {
+      "path": "public/scenes/the-cure/credits.txt",
+      "bytes": 1156,
+      "sha256": "9fce0926acc38837115b558e9923b0ebca394688020443ef351774702746a513"
+    },
+    {
+      "path": "public/scenes/the-cure/cure-olivia.tele.gz",
+      "bytes": 2986555,
+      "sha256": "2eb9c35559377264cc726146fde0d639fbdee3bb57a44a84bc381a41d8eb6a0d"
+    },
+    {
+      "path": "public/scenes/the-cure/mix.mp3",
+      "bytes": 10059308,
+      "sha256": "8d1de60e81aefa8b74b7734349b94cd900813c5719578d9fa5cc1fe63c23bd7c"
+    },
+    {
+      "path": "public/scenes/the-cure/performance.json",
+      "bytes": 159785,
+      "sha256": "f0e516e873e0b097c322a7a99472ffdf860be5ba3d06bd38c6e596a8581408a6"
+    },
+    {
+      "path": "public/scenes/the-cure/scene.json",
+      "bytes": 9881,
+      "sha256": "01b8242d1b109882beea39b7482ef92da1a41ae213dcc004bd59ad157b0ce91e"
+    },
+    {
       "path": "public/scenes/the-subway/backing.mp3",
       "bytes": 8686892,
       "sha256": "17255430db67dc64ca577c24fa12838f4ab32c38b871a78f70353ecc69382090"
