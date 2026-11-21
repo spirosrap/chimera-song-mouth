@@ -3537,6 +3537,36 @@
       "sha256": "f8b6bb59a637784744a0529dee86fc0be00a85d59c28e334c948f61e2ee43b04"
     },
     {
+      "path": "public/scenes/milkshake-man/backing.mp3",
+      "bytes": 4729042,
+      "sha256": "e8fc875f86dc3c3eee2b28f590cd01ed113e65a424b380a7aea1ab585f59d16a"
+    },
+    {
+      "path": "public/scenes/milkshake-man/milk-dancer.tele.gz",
+      "bytes": 705156,
+      "sha256": "1270250791821ce1d49d5f1ecbede8b37884009d9a305de2f2c88f394e3dae41"
+    },
+    {
+      "path": "public/scenes/milkshake-man/milk-gojo.tele.gz",
+      "bytes": 1985390,
+      "sha256": "e58da7d02faa5a982dbb5a92bbd19beb3f59070b0220cd70d64ac1e3d884a393"
+    },
+    {
+      "path": "public/scenes/milkshake-man/mix.mp3",
+      "bytes": 6305324,
+      "sha256": "e42d3cd84ae27b817e2fb60e1f3a59f6b3194d5f5614f38c339ac0e105da4d1a"
+    },
+    {
+      "path": "public/scenes/milkshake-man/performance.json",
+      "bytes": 354221,
+      "sha256": "e543ab0a2bd89bcf4c68559143f92b683d891d15b7d20f32e088db4b0d32ea0e"
+    },
+    {
+      "path": "public/scenes/milkshake-man/scene.json",
+      "bytes": 10626,
+      "sha256": "c29983ce63a46e0ae265674ef265501b0b335ff3406fec49ad4874930c6d49a0"
+    },
+    {
       "path": "public/scenes/montero/backing.mp3",
       "bytes": 6088748,
       "sha256": "339af5db21bc1b61c79f9ff0a88df5d8c362ee02cc723e1faee35c709150634c"

@@ -1,0 +1,486 @@
+{
+  "setting": "milkshake",
+  "title": "Go-Jo · Milkshake Man (Eurovision 2025 Live)",
+  "description": "The complete Eurovision 2025 live performance: retro CRT TV infomercial, red-and-white diner curtains, black-and-white optical checkerboard LED floor, giant glowing milkshake blender, neon lime/amber/pink smoke reveals, French bridge, red milk-splash overhead, shirtless climax and retro TV finale. Original instrumental with two physical mouth-engine voices.",
+  "duration": 196.974875,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "milk-gojo",
+      "name": "Go-Jo",
+      "role": "Lead physical pop-disco vocal",
+      "tele": "milk-gojo.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "milk-dancer",
+      "name": "Dancer",
+      "role": "Backing hooks & French bridge",
+      "tele": "milk-dancer.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 18.94,
+      "end": 22.24,
+      "speaker": "milk-gojo",
+      "text": "Come and take a sip from my special cup",
+      "intensity": 0.78
+    },
+    {
+      "start": 22.3,
+      "end": 25.74,
+      "speaker": "milk-gojo",
+      "text": "I heard that you could use a little pick-me-up",
+      "intensity": 0.8
+    },
+    {
+      "start": 25.8,
+      "end": 28.48,
+      "speaker": "milk-gojo",
+      "text": "What can get you high when you're oh-so-sad?",
+      "intensity": 0.82
+    },
+    {
+      "start": 28.54,
+      "end": 31.02,
+      "speaker": "milk-gojo",
+      "text": "Is the milk from the milkshake man",
+      "intensity": 0.86
+    },
+    {
+      "start": 31.7,
+      "end": 34.1,
+      "speaker": "milk-dancer",
+      "text": "Ah, ah, ah",
+      "intensity": 0.74
+    },
+    {
+      "start": 34.36,
+      "end": 37.84,
+      "speaker": "milk-gojo",
+      "text": "Well, I've got chocolate, vanilla, and lactose-free",
+      "intensity": 0.84
+    },
+    {
+      "start": 38.05,
+      "end": 40.35,
+      "speaker": "milk-dancer",
+      "text": "Ah, ah, ah",
+      "intensity": 0.76
+    },
+    {
+      "start": 40.74,
+      "end": 44.48,
+      "speaker": "milk-gojo",
+      "text": "And a caramel banana that you've got to see",
+      "intensity": 0.86
+    },
+    {
+      "start": 44.56,
+      "end": 47.2,
+      "speaker": "milk-gojo",
+      "text": "You can call me the milkshake man",
+      "intensity": 0.9
+    },
+    {
+      "start": 47.84,
+      "end": 50.54,
+      "speaker": "milk-gojo",
+      "text": "I wanna shake and make the whole world dance",
+      "intensity": 0.92
+    },
+    {
+      "start": 50.96,
+      "end": 53.36,
+      "speaker": "milk-gojo",
+      "text": "They drink my milk all across the land",
+      "intensity": 0.92
+    },
+    {
+      "start": 53.44,
+      "end": 56.66,
+      "speaker": "milk-gojo",
+      "text": "And I can tell you want a taste of the milkshake man",
+      "intensity": 0.95
+    },
+    {
+      "start": 59.3,
+      "end": 63.2,
+      "speaker": "milk-gojo",
+      "text": "I can tell you want a taste of the milkshake man",
+      "intensity": 0.96
+    },
+    {
+      "start": 63.6,
+      "end": 65.5,
+      "speaker": "milk-dancer",
+      "text": "Sh-sh-shake me good, sh-sh-shake me good",
+      "intensity": 0.86
+    },
+    {
+      "start": 65.8,
+      "end": 70.38,
+      "speaker": "milk-gojo",
+      "text": "I can tell you want a taste of the milkshake man",
+      "intensity": 0.96
+    },
+    {
+      "start": 72.16,
+      "end": 75.12,
+      "speaker": "milk-gojo",
+      "text": "The shake is not a drink, it's a state of mind",
+      "intensity": 0.82
+    },
+    {
+      "start": 75.2,
+      "end": 78.22,
+      "speaker": "milk-gojo",
+      "text": "It's a secret superpower you were born to find",
+      "intensity": 0.84
+    },
+    {
+      "start": 78.3,
+      "end": 81.2,
+      "speaker": "milk-gojo",
+      "text": "Drink it every day and before you know it",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.28,
+      "end": 84.7,
+      "speaker": "milk-gojo",
+      "text": "You'll be bigger and stronger with harder bones",
+      "intensity": 0.88
+    },
+    {
+      "start": 85,
+      "end": 86.95,
+      "speaker": "milk-dancer",
+      "text": "Ah, ah, ah",
+      "intensity": 0.78
+    },
+    {
+      "start": 87.18,
+      "end": 90.74,
+      "speaker": "milk-gojo",
+      "text": "Well, I got mango, mojito, a fruit ballet",
+      "intensity": 0.86
+    },
+    {
+      "start": 91,
+      "end": 93.2,
+      "speaker": "milk-dancer",
+      "text": "Ah, ah, ah",
+      "intensity": 0.78
+    },
+    {
+      "start": 93.6,
+      "end": 97.2,
+      "speaker": "milk-gojo",
+      "text": "And did you see the naughty special on my crème brûlée?",
+      "intensity": 0.88
+    },
+    {
+      "start": 97.8,
+      "end": 100.12,
+      "speaker": "milk-gojo",
+      "text": "You can call me the milkshake man",
+      "intensity": 0.92
+    },
+    {
+      "start": 100.2,
+      "end": 103.28,
+      "speaker": "milk-gojo",
+      "text": "I wanna shake up all the milk I can",
+      "intensity": 0.93
+    },
+    {
+      "start": 103.36,
+      "end": 106.16,
+      "speaker": "milk-gojo",
+      "text": "They know my name all across the land",
+      "intensity": 0.93
+    },
+    {
+      "start": 106.24,
+      "end": 109.46,
+      "speaker": "milk-gojo",
+      "text": "I can tell you want a taste of the milkshake man",
+      "intensity": 0.96
+    },
+    {
+      "start": 111.94,
+      "end": 115.64,
+      "speaker": "milk-gojo",
+      "text": "I can tell you want a taste of the milkshake man",
+      "intensity": 0.96
+    },
+    {
+      "start": 115.9,
+      "end": 117.9,
+      "speaker": "milk-dancer",
+      "text": "Sh-sh-shake me good, sh-sh-shake me good",
+      "intensity": 0.88
+    },
+    {
+      "start": 118.12,
+      "end": 123.4,
+      "speaker": "milk-gojo",
+      "text": "I can tell you want a taste of the milkshake man",
+      "intensity": 0.96
+    },
+    {
+      "start": 123.58,
+      "end": 127.82,
+      "speaker": "milk-dancer",
+      "text": "Excusez-moi, monsieur. Avez-vous du lait pour moi?",
+      "intensity": 0.84
+    },
+    {
+      "start": 128.54,
+      "end": 131.54,
+      "speaker": "milk-gojo",
+      "text": "When I say sweet, sweet, you say yum, yum",
+      "intensity": 0.88
+    },
+    {
+      "start": 131.6,
+      "end": 132.45,
+      "speaker": "milk-gojo",
+      "text": "Sweet, sweet",
+      "intensity": 0.9
+    },
+    {
+      "start": 132.5,
+      "end": 133.25,
+      "speaker": "milk-dancer",
+      "text": "Yum, yum!",
+      "intensity": 0.86
+    },
+    {
+      "start": 133.3,
+      "end": 134,
+      "speaker": "milk-gojo",
+      "text": "Sweet, sweet",
+      "intensity": 0.9
+    },
+    {
+      "start": 134.05,
+      "end": 134.7,
+      "speaker": "milk-dancer",
+      "text": "Yum, yum!",
+      "intensity": 0.86
+    },
+    {
+      "start": 134.78,
+      "end": 137.74,
+      "speaker": "milk-gojo",
+      "text": "When I say sweet, sweet, you say yum, yum",
+      "intensity": 0.92
+    },
+    {
+      "start": 137.8,
+      "end": 138.6,
+      "speaker": "milk-gojo",
+      "text": "Sweet, sweet",
+      "intensity": 0.92
+    },
+    {
+      "start": 138.66,
+      "end": 139.42,
+      "speaker": "milk-dancer",
+      "text": "Yum, yum!",
+      "intensity": 0.9
+    },
+    {
+      "start": 139.5,
+      "end": 140.44,
+      "speaker": "milk-gojo",
+      "text": "Sweet, sweet",
+      "intensity": 0.94
+    },
+    {
+      "start": 145.9,
+      "end": 147.36,
+      "speaker": "milk-gojo",
+      "text": "Yeah! Good day!",
+      "intensity": 0.95
+    },
+    {
+      "start": 147.8,
+      "end": 151,
+      "speaker": "milk-dancer",
+      "text": "Sweet, sweet, yum, yum, sweet, sweet",
+      "intensity": 0.9
+    },
+    {
+      "start": 154.84,
+      "end": 158.65,
+      "speaker": "milk-gojo",
+      "text": "I can tell you want a taste of the milkshake man",
+      "intensity": 0.98
+    },
+    {
+      "start": 158.75,
+      "end": 160.85,
+      "speaker": "milk-dancer",
+      "text": "Sh-sh-shake me good, sh-sh-shake me good",
+      "intensity": 0.92
+    },
+    {
+      "start": 160.98,
+      "end": 164.96,
+      "speaker": "milk-gojo",
+      "text": "I can tell you want a taste of the milkshake man",
+      "intensity": 0.98
+    },
+    {
+      "start": 165.4,
+      "end": 167.6,
+      "speaker": "milk-dancer",
+      "text": "Sh-sh-shake me good, sh-sh-shake me good",
+      "intensity": 0.92
+    },
+    {
+      "start": 167.78,
+      "end": 171.4,
+      "speaker": "milk-gojo",
+      "text": "I can tell you want a taste of the milkshake man",
+      "intensity": 1
+    },
+    {
+      "start": 174,
+      "end": 178.96,
+      "speaker": "milk-gojo",
+      "text": "I can tell you want a taste of the milkshake man",
+      "intensity": 1
+    },
+    {
+      "start": 183.04,
+      "end": 185.74,
+      "speaker": "milk-gojo",
+      "text": "Australia! Milkshake man!",
+      "intensity": 0.96
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "milk-tv"
+    },
+    {
+      "time": 18,
+      "view": "milk-diner"
+    },
+    {
+      "time": 25.5,
+      "view": "milk-gojo"
+    },
+    {
+      "time": 31.2,
+      "view": "milk-dancer"
+    },
+    {
+      "time": 34.2,
+      "view": "milk-diner"
+    },
+    {
+      "time": 40.5,
+      "view": "milk-checker"
+    },
+    {
+      "time": 44.5,
+      "view": "milk-blender"
+    },
+    {
+      "time": 51,
+      "view": "milk-gojo"
+    },
+    {
+      "time": 56.5,
+      "view": "milk-checker"
+    },
+    {
+      "time": 63.5,
+      "view": "milk-blender"
+    },
+    {
+      "time": 71.5,
+      "view": "milk-blue"
+    },
+    {
+      "time": 78,
+      "view": "milk-susan"
+    },
+    {
+      "time": 84.5,
+      "view": "milk-lime"
+    },
+    {
+      "time": 91,
+      "view": "milk-blue"
+    },
+    {
+      "time": 97.5,
+      "view": "milk-amber"
+    },
+    {
+      "time": 105,
+      "view": "milk-gojo"
+    },
+    {
+      "time": 111.5,
+      "view": "milk-smoke"
+    },
+    {
+      "time": 118,
+      "view": "milk-stars"
+    },
+    {
+      "time": 123.5,
+      "view": "milk-dancer"
+    },
+    {
+      "time": 128.4,
+      "view": "milk-stars"
+    },
+    {
+      "time": 134.5,
+      "view": "milk-gojo"
+    },
+    {
+      "time": 141,
+      "view": "milk-red-splash"
+    },
+    {
+      "time": 147.5,
+      "view": "milk-fruit"
+    },
+    {
+      "time": 154.5,
+      "view": "milk-shirtless"
+    },
+    {
+      "time": 160.8,
+      "view": "milk-fruit"
+    },
+    {
+      "time": 167.5,
+      "view": "milk-shirtless"
+    },
+    {
+      "time": 173.8,
+      "view": "milk-finale"
+    },
+    {
+      "time": 182.5,
+      "view": "milk-tv"
+    },
+    {
+      "time": 189,
+      "view": "wide"
+    }
+  ]
+}
