@@ -3,6 +3,7 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import { useStore } from "./store.ts";
 import { engine } from "../audio/AudioEngine.ts";
 import { inPlugin } from "../audio/pluginBridge.ts";
+import { BASE_PATH } from "../base.ts";
 import { AnatomyView } from "./components/AnatomyView.tsx";
 import { TubeView } from "./components/TubeView.tsx";
 import { Stroboscope } from "./components/Stroboscope.tsx";
@@ -93,7 +94,7 @@ function TopBar() {
           </span>
         ) : null}
         {!inPlugin && (
-          <a className="plugin-link" href="/plugin/" title="CHIMERA as a CLAP, VST3 and AU plugin for your DAW">
+          <a className="plugin-link" href={`${BASE_PATH}plugin/`} title="CHIMERA as a CLAP, VST3 and AU plugin for your DAW">
             Plugin
           </a>
         )}

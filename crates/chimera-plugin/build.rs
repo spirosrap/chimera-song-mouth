@@ -46,6 +46,12 @@ fn main() {
         if rel.ends_with(".map") || rel.starts_with("shows/") || rel == "data/cmudict.txt.gz" {
             continue;
         }
+        // This edition's `dist/` also holds its prepared songs and scenes (2.3 GB on 2026-11-21, against
+        // 6 MB for the page itself). The plugin's page never opens them, and embedding them would put
+        // gigabytes into every `cargo test --workspace` run in a checkout that has been built.
+        if rel.starts_with("band/") || rel.starts_with("scenes/") {
+            continue;
+        }
         let _ = writeln!(table, "    ({:?}, {:?}, include_bytes!({:?})),", format!("/{rel}"), mime(&rel), f.canonicalize().unwrap().display().to_string());
     }
     table.push_str("];\n");

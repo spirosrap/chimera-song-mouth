@@ -2,6 +2,11 @@
   "schema": 1,
   "files": [
     {
+      "path": "public/apple-touch-icon.png",
+      "bytes": 10625,
+      "sha256": "e7890e90c7c6b88cd492388c72face99caa94e21208a5ece3fbf785bd2cbd11b"
+    },
+    {
       "path": "public/band/all-made-of-air/alto.mp3",
       "bytes": 424268,
       "sha256": "39ca5e046584c8460e9c532c9d40d91b13b796afd2b6f0b9a58766a0f442dd41"
@@ -1322,6 +1327,11 @@
       "sha256": "15529cebf851d13def12c14eb94bbc0f088f324c497a120db5cbe0dd0137853d"
     },
     {
+      "path": "public/favicon.svg",
+      "bytes": 1725,
+      "sha256": "eb3546e5a11a2135a133dd4efe3fa67ca186ccb491a4337a8c29db8a3d0aac43"
+    },
+    {
       "path": "public/fonts/AVHERSHEY-LICENSE.txt",
       "bytes": 380,
       "sha256": "d27b30a1f3903dbecc7fa72cf507459ac2638049f987a9bde857df5fa9e4ba08"
@@ -1350,6 +1360,16 @@
       "path": "public/fonts/archivo-latin.woff2",
       "bytes": 90104,
       "sha256": "e3a28eade21a900c7155a247757f4b2834c07bb7ef07ad7efa55cebaac1e8f5e"
+    },
+    {
+      "path": "public/install.sh",
+      "bytes": 7328,
+      "sha256": "79c2f20a1fb17aacaf3742590bb458ca1e779ae5a2224df20dca608f62294a7a"
+    },
+    {
+      "path": "public/plugin/index.html",
+      "bytes": 7913,
+      "sha256": "bd646d9a1d1cd308b49fea276cec24d592631d50fb81d960bb10adfe63ec8ec4"
     },
     {
       "path": "public/scenes/a-few-good-men/credits.txt",
