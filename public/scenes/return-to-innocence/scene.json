@@ -1,0 +1,412 @@
+{
+  "setting": "enigma",
+  "title": "Enigma · Return To Innocence",
+  "description": "The complete supplied music video: sepia orchard with apples floating backwards to the branches, candlelit cathedral altar, misty blue ocean surf, Mediterranean vineyard and shepherd pasture, reverse wedding doorway, candlelit lovers, snow-capped mountains, silver-birch forest with a luminous white unicorn, sunlit cottage, vintage bicycle and chapel baptism. Original music with three physical mouth-engine voices.",
+  "duration": 294.336145,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "enigma-angel",
+      "name": "Angel X",
+      "role": "Lead physical pop-rock vocal",
+      "tele": "enigma-angel.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "enigma-sandra",
+      "name": "Sandra",
+      "role": "Whispered prologue, bridge & outro",
+      "tele": "enigma-sandra.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "enigma-chant",
+      "name": "Amis Elder",
+      "role": "Soaring pentatonic chant",
+      "tele": "enigma-chant.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 51.34,
+      "end": 54.8,
+      "speaker": "enigma-sandra",
+      "text": "Love — devotion",
+      "intensity": 0.68
+    },
+    {
+      "start": 55.6,
+      "end": 59.2,
+      "speaker": "enigma-sandra",
+      "text": "Feeling — emotion",
+      "intensity": 0.7
+    },
+    {
+      "start": 60.2,
+      "end": 63.4,
+      "speaker": "enigma-sandra",
+      "text": "Love — devotion",
+      "intensity": 0.7
+    },
+    {
+      "start": 64,
+      "end": 67.2,
+      "speaker": "enigma-sandra",
+      "text": "Feeling — emotion",
+      "intensity": 0.72
+    },
+    {
+      "start": 72.36,
+      "end": 76,
+      "speaker": "enigma-angel",
+      "text": "Don't be afraid to be weak",
+      "intensity": 0.84
+    },
+    {
+      "start": 77.78,
+      "end": 81.1,
+      "speaker": "enigma-angel",
+      "text": "Don't be too proud to be strong",
+      "intensity": 0.86
+    },
+    {
+      "start": 83.76,
+      "end": 87.2,
+      "speaker": "enigma-angel",
+      "text": "Just look into your heart, my friend",
+      "intensity": 0.9
+    },
+    {
+      "start": 87.3,
+      "end": 91.4,
+      "speaker": "enigma-angel",
+      "text": "That will be the return to yourself",
+      "intensity": 0.92
+    },
+    {
+      "start": 91.5,
+      "end": 94.1,
+      "speaker": "enigma-angel",
+      "text": "The return to innocence",
+      "intensity": 0.94
+    },
+    {
+      "start": 94.5,
+      "end": 102.85,
+      "speaker": "enigma-chant",
+      "text": "Hai-yo-i-yo-i-na-ho-yan",
+      "intensity": 0.94
+    },
+    {
+      "start": 104.8,
+      "end": 109.85,
+      "speaker": "enigma-chant",
+      "text": "Ho-e-ya-i-o-hai-yan",
+      "intensity": 0.94
+    },
+    {
+      "start": 110.35,
+      "end": 113,
+      "speaker": "enigma-chant",
+      "text": "Hai-yan ho-i-yo-an",
+      "intensity": 0.9
+    },
+    {
+      "start": 116.7,
+      "end": 119.1,
+      "speaker": "enigma-angel",
+      "text": "If you want, then start to laugh",
+      "intensity": 0.88
+    },
+    {
+      "start": 119.65,
+      "end": 121.8,
+      "speaker": "enigma-angel",
+      "text": "If you must, then start to cry",
+      "intensity": 0.88
+    },
+    {
+      "start": 122,
+      "end": 124.2,
+      "speaker": "enigma-angel",
+      "text": "Be yourself, don't hide",
+      "intensity": 0.88
+    },
+    {
+      "start": 124.5,
+      "end": 126.9,
+      "speaker": "enigma-angel",
+      "text": "Just believe in destiny",
+      "intensity": 0.9
+    },
+    {
+      "start": 127.4,
+      "end": 129.6,
+      "speaker": "enigma-angel",
+      "text": "Don't care what people say",
+      "intensity": 0.9
+    },
+    {
+      "start": 130,
+      "end": 132.4,
+      "speaker": "enigma-angel",
+      "text": "Just follow your own way",
+      "intensity": 0.92
+    },
+    {
+      "start": 132.6,
+      "end": 134.8,
+      "speaker": "enigma-angel",
+      "text": "Don't give up and use the chance",
+      "intensity": 0.94
+    },
+    {
+      "start": 135,
+      "end": 137.1,
+      "speaker": "enigma-angel",
+      "text": "To return to innocence",
+      "intensity": 0.96
+    },
+    {
+      "start": 137.3,
+      "end": 146.45,
+      "speaker": "enigma-chant",
+      "text": "Hai-yo-i-yo-i-na-ho-yan",
+      "intensity": 0.96
+    },
+    {
+      "start": 148.4,
+      "end": 153.5,
+      "speaker": "enigma-chant",
+      "text": "Ho-e-ya-i-o-hai-yan",
+      "intensity": 0.96
+    },
+    {
+      "start": 154.55,
+      "end": 159.65,
+      "speaker": "enigma-chant",
+      "text": "Hai-yan ho-i-yo-an",
+      "intensity": 0.94
+    },
+    {
+      "start": 160.35,
+      "end": 165.1,
+      "speaker": "enigma-chant",
+      "text": "Hai-yo-i-yo-i-na-ho-yan",
+      "intensity": 0.94
+    },
+    {
+      "start": 165.5,
+      "end": 170.5,
+      "speaker": "enigma-chant",
+      "text": "Ho-e-ya-i-o-hai-yan",
+      "intensity": 0.92
+    },
+    {
+      "start": 173.64,
+      "end": 176.5,
+      "speaker": "enigma-sandra",
+      "text": "That's not the beginning of the end",
+      "intensity": 0.8
+    },
+    {
+      "start": 176.6,
+      "end": 179.2,
+      "speaker": "enigma-sandra",
+      "text": "That's the return to yourself",
+      "intensity": 0.82
+    },
+    {
+      "start": 179.3,
+      "end": 181.74,
+      "speaker": "enigma-sandra",
+      "text": "The return to innocence",
+      "intensity": 0.84
+    },
+    {
+      "start": 203.8,
+      "end": 213.2,
+      "speaker": "enigma-chant",
+      "text": "Hai-yo-i-yo-i-na-ho-yan",
+      "intensity": 0.96
+    },
+    {
+      "start": 213.8,
+      "end": 222.8,
+      "speaker": "enigma-chant",
+      "text": "Ho-e-ya-i-o-hai-yan",
+      "intensity": 0.98
+    },
+    {
+      "start": 223.2,
+      "end": 231.1,
+      "speaker": "enigma-chant",
+      "text": "Hai-yan ho-i-yo-an",
+      "intensity": 0.98
+    },
+    {
+      "start": 231.4,
+      "end": 244.5,
+      "speaker": "enigma-chant",
+      "text": "Hai-yo-i-yo-i-na-ho-yan",
+      "intensity": 1
+    },
+    {
+      "start": 245.1,
+      "end": 252.8,
+      "speaker": "enigma-chant",
+      "text": "Ho-e-ya-i-o-hai-yan",
+      "intensity": 0.96
+    },
+    {
+      "start": 253.3,
+      "end": 257.9,
+      "speaker": "enigma-chant",
+      "text": "Hai-yan ho-i-yo-an",
+      "intensity": 0.94
+    },
+    {
+      "start": 258.4,
+      "end": 266.55,
+      "speaker": "enigma-chant",
+      "text": "Hai-yo-i-yo-i-na-ho-yan",
+      "intensity": 0.94
+    },
+    {
+      "start": 266.85,
+      "end": 274.7,
+      "speaker": "enigma-chant",
+      "text": "Ho-e-ya-i-o-hai-yan",
+      "intensity": 0.92
+    },
+    {
+      "start": 275.05,
+      "end": 281.7,
+      "speaker": "enigma-chant",
+      "text": "Hai-yan ho-i-yo-an",
+      "intensity": 0.88
+    },
+    {
+      "start": 282.6,
+      "end": 285.98,
+      "speaker": "enigma-sandra",
+      "text": "That's the return to innocence",
+      "intensity": 0.78
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "enigma-orchard"
+    },
+    {
+      "time": 18,
+      "view": "enigma-apples"
+    },
+    {
+      "time": 42,
+      "view": "enigma-church"
+    },
+    {
+      "time": 51,
+      "view": "enigma-sandra"
+    },
+    {
+      "time": 60,
+      "view": "enigma-candles"
+    },
+    {
+      "time": 67.5,
+      "view": "enigma-sea"
+    },
+    {
+      "time": 72.2,
+      "view": "enigma-angel"
+    },
+    {
+      "time": 83.5,
+      "view": "enigma-vineyard"
+    },
+    {
+      "time": 94.3,
+      "view": "enigma-chant"
+    },
+    {
+      "time": 104.5,
+      "view": "enigma-sea"
+    },
+    {
+      "time": 116.5,
+      "view": "enigma-pasture"
+    },
+    {
+      "time": 124.2,
+      "view": "enigma-angel"
+    },
+    {
+      "time": 132.5,
+      "view": "enigma-orchard"
+    },
+    {
+      "time": 137.2,
+      "view": "enigma-chant"
+    },
+    {
+      "time": 148,
+      "view": "enigma-wedding"
+    },
+    {
+      "time": 160,
+      "view": "enigma-lovers"
+    },
+    {
+      "time": 173.4,
+      "view": "enigma-sandra"
+    },
+    {
+      "time": 182,
+      "view": "enigma-mountain"
+    },
+    {
+      "time": 196,
+      "view": "enigma-unicorn"
+    },
+    {
+      "time": 204,
+      "view": "enigma-chant"
+    },
+    {
+      "time": 214,
+      "view": "enigma-unicorn"
+    },
+    {
+      "time": 224,
+      "view": "enigma-sea"
+    },
+    {
+      "time": 234,
+      "view": "enigma-cottage"
+    },
+    {
+      "time": 248,
+      "view": "enigma-bicycle"
+    },
+    {
+      "time": 262,
+      "view": "enigma-apples"
+    },
+    {
+      "time": 274,
+      "view": "enigma-baptism"
+    },
+    {
+      "time": 281.8,
+      "view": "enigma-sandra"
+    },
+    {
+      "time": 286,
+      "view": "enigma-ending"
+    }
+  ]
+}

@@ -4182,6 +4182,41 @@
       "sha256": "bd3d4bf589bbb2af4aad2828b0ca191d2cbe026300c54b115aeb7edbae6ea50b"
     },
     {
+      "path": "public/scenes/return-to-innocence/backing.mp3",
+      "bytes": 7065643,
+      "sha256": "72ffbc8f87b568841635256907ae4e54f06fbc91c9bc03f95ef5327ba1a99954"
+    },
+    {
+      "path": "public/scenes/return-to-innocence/enigma-angel.tele.gz",
+      "bytes": 647170,
+      "sha256": "8e5d5ddf9d7db502cf68d7c4a4d978d26f26b313e8ad6bf16054595f8cc99b79"
+    },
+    {
+      "path": "public/scenes/return-to-innocence/enigma-chant.tele.gz",
+      "bytes": 1611426,
+      "sha256": "a15f709ed33d7b9ce514644587736d38e618df115d0f1ebdf2a8eb142244e1c5"
+    },
+    {
+      "path": "public/scenes/return-to-innocence/enigma-sandra.tele.gz",
+      "bytes": 449064,
+      "sha256": "dbb01c78a4643784735120db597f530e29a19c3030d39efdca32c25e52d7cf13"
+    },
+    {
+      "path": "public/scenes/return-to-innocence/mix.mp3",
+      "bytes": 9421100,
+      "sha256": "071638ff92f0067ee09d4c42526f45d63514238003eccb05d22fb96504f75766"
+    },
+    {
+      "path": "public/scenes/return-to-innocence/performance.json",
+      "bytes": 370160,
+      "sha256": "da6a68b706e090d11a6531423e8acbb10c6cebc5b3de920b99fefa5784475474"
+    },
+    {
+      "path": "public/scenes/return-to-innocence/scene.json",
+      "bytes": 8725,
+      "sha256": "adf90f880938d6e909572bb1f91c0a15f90867cc1a4ee75bc3af28b7fdbf78f9"
+    },
+    {
       "path": "public/scenes/rock-dj/backing.mp3",
       "bytes": 8253740,
       "sha256": "df0efe9edc0d2a36cea4bdd7c6d5b6e6051dcd8f244b08d60d547a1d014f1cbb"
