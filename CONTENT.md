@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 1002 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 1013 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -172,6 +172,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Charli xcx — SS26 | 2:52 | `?scene=ss26` | Full runway and backstage edit, original backing, two physical voices, captions and telemetry |
 | OK Go — Love | 4:22 | `?scene=ok-go-love` | Full station edit, moving robot arms, live mirror effects, original backing, three physical voices, captions and telemetry |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
+| Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
 | Bon Jovi — Always | 6:06 | `?scene=bon-jovi-always` | Complete supplied video, original music and physical lead, vintage microphone, city, dusty road, apartment, party, loft, fire and turquoise art studio |
 | The Truman Show — the exit | 5:15 | `?scene=truman-show` | Seven physical dialogue voices, original music and effects, painted sky, sailboat, stairs, exit, control room, viewers and closing exchange |
@@ -199,6 +200,12 @@ demonstration, Neo’s attempt and the final invitation. See [the scene notes](d
 Akylas — Ferto pairs the original instrumental with a full physical vocal
 performance in Greek, Spanish, French and English. Mouth motion and captions
 follow the performance through the arcade levels. See [the scene notes](docs/ferto.md).
+
+Lady Gaga & Doechii — RUNWAY pairs the original instrumental with two physical
+voices: Lady Gaga sings the verses, choruses and outro, and Doechii raps the
+pre-choruses, verse 2 and bridge callouts. Staging follows the black-and-white
+ballroom, red studio, twin-head suit, porcelain teapot gown and crystal spiked
+catwalk. See [the scene notes](docs/runway.md).
 
 Apollo 13 uses NASA’s transcripts as well, with the silences shortened and ten minutes skipped.
 See [the scene notes](docs/apollo-13.md) for what is and is not from the record.
