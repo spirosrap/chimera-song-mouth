@@ -25,7 +25,7 @@ test('Whenever scores one physical rap voice from waiting room through desert cr
   expect(scene.cues.length).toBeGreaterThan(25);
   expect(scene.shots.length).toBeGreaterThan(25);
   const entry = movieScene('whenever');
-  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('whenever-20261121');
+  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('whenever-20261121-v2');
 });
 
 test('Whenever ships full engine mix, synchronized telemetry, and deterministic 3D cameras', () => {

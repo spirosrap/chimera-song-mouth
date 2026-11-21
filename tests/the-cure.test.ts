@@ -25,7 +25,7 @@ test('the cure scores one physical female voice from crimson yarn tray through d
   expect(scene.cues.length).toBeGreaterThan(30);
   expect(scene.shots.length).toBeGreaterThan(25);
   const entry = movieScene('the-cure');
-  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('the-cure-20261121');
+  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('the-cure-20261121-v2');
 });
 
 test('the cure ships full engine mix, synchronized telemetry, and deterministic 3D cameras', () => {

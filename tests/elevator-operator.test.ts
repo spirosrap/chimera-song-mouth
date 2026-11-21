@@ -27,7 +27,7 @@ test('ELEVATOR OPERATOR scores three physical voices from night alley through ze
   expect(scene.cues.length).toBeGreaterThan(60);
   expect(scene.shots.length).toBeGreaterThan(35);
   const entry = movieScene('elevator-operator');
-  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('elevator-20261121');
+  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('elevator-20261121-v2');
 });
 
 test('ELEVATOR OPERATOR ships full engine mix, synchronized telemetry, and deterministic 3D cameras', () => {

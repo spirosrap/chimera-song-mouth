@@ -27,7 +27,7 @@ test('I Just Might scores Lead Bruno and Backing Brunos across the full 70s disc
   expect(scene.cues.length).toBeGreaterThan(35);
   expect(scene.shots.length).toBeGreaterThan(25);
   const entry = movieScene('i-just-might');
-  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('i-just-might-20261121');
+  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('i-just-might-20261121-v2');
 });
 
 test('I Just Might ships full engine mix, synchronized telemetry, and deterministic 3D cameras', () => {

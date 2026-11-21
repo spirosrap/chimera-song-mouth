@@ -2508,28 +2508,28 @@
     },
     {
       "path": "public/scenes/elevator-operator/elev-kevin.tele.gz",
-      "bytes": 839933,
-      "sha256": "841548efdb18a794a7138044a90f9724b3b62c2b64154409ea4c1942ff3321bd"
+      "bytes": 837494,
+      "sha256": "93b16cb7edf9c71a9445844c3e6f2b7df7e143d0471e6fe08bb18cd9941e4698"
     },
     {
       "path": "public/scenes/elevator-operator/elev-nico.tele.gz",
-      "bytes": 1136692,
-      "sha256": "faeb8a5995196092c183ae06a0593476855805d59c1e002b12a525744dec9cb0"
+      "bytes": 1134673,
+      "sha256": "c96f721b7728f0a9f471dc19f45c1693f521df980a0d79ec51fecc564f6abc9b"
     },
     {
       "path": "public/scenes/elevator-operator/elev-operator.tele.gz",
-      "bytes": 495474,
-      "sha256": "c2340361be416409c4d697f800ed67195351bbe6342fd31f4da375bfa887562d"
+      "bytes": 495685,
+      "sha256": "0e27ce35d1c7609ec54e9a3d725205bf4560a12e8079a8b726c23bc53ec644c9"
     },
     {
       "path": "public/scenes/elevator-operator/mix.mp3",
       "bytes": 6359852,
-      "sha256": "cf8773c167fc75e5a4760d2d56e0f279a19cebd7d4810cbaf839215514a8ea97"
+      "sha256": "bc81633083288ca1da8ebe9762cc199d9dcb692a7c8ec5363636c7e4466747e9"
     },
     {
       "path": "public/scenes/elevator-operator/performance.json",
-      "bytes": 140839,
-      "sha256": "65993f56717ec3c21fc17e9450c7bfd161587c292a865797a224404051fe9e2a"
+      "bytes": 375957,
+      "sha256": "028e1d3a40b99c693b7adc5b0428bc16e14481be33f475f80aa515e0222e886a"
     },
     {
       "path": "public/scenes/elevator-operator/scene.json",
@@ -3063,23 +3063,23 @@
     },
     {
       "path": "public/scenes/i-just-might/might-bruno.tele.gz",
-      "bytes": 2505155,
-      "sha256": "873cf03783f03a477fd67d1b11c8ea893f021d9a7ea91ce5daed4349fb41fe88"
+      "bytes": 2509922,
+      "sha256": "a4b621d916bd57d01790adea64cb945fef605994d39a2fd50fb17e721f43492d"
     },
     {
       "path": "public/scenes/i-just-might/might-chorus.tele.gz",
-      "bytes": 974582,
-      "sha256": "860f14378a2d7558dc4cbdcfac4a4ab244d214ec8b51cc22eba91445ffabdd30"
+      "bytes": 986192,
+      "sha256": "ed702b9c7eedb75f4bcf416d96fb55af77d6795a22ae4b6563f2b07105de261f"
     },
     {
       "path": "public/scenes/i-just-might/mix.mp3",
       "bytes": 6818348,
-      "sha256": "167f237da03d059e2271de68e406c175a9957359e393166dc4c2e5f31345a8b9"
+      "sha256": "7cc8835f205a85495a1027cfe4a195600d63e7fe298951b2247972a3941c2271"
     },
     {
       "path": "public/scenes/i-just-might/performance.json",
-      "bytes": 172506,
-      "sha256": "f2ff5984f4d4699055a78ef4aae7ec52a104b7210595b2b763a62fb208a8b53e"
+      "bytes": 469747,
+      "sha256": "100b957765fce87fc3a35d1dc1ceca7a047f5829375405c416e454390dbd84df"
     },
     {
       "path": "public/scenes/i-just-might/scene.json",
@@ -3879,17 +3879,17 @@
     {
       "path": "public/scenes/phoebe/mix.mp3",
       "bytes": 7491116,
-      "sha256": "b3cc4713417fc8ec603fd03bfab97d881d3ebe8633137af5e97036acc8361479"
+      "sha256": "cd02157f0785cce51db1e593dc2ef9471d95562129bb0102fac2902165c279c1"
     },
     {
       "path": "public/scenes/phoebe/performance.json",
-      "bytes": 174468,
-      "sha256": "b4929ade89bd2b0b1df9c1b619bc3883862020b98a56ae92e10c53736991f315"
+      "bytes": 474567,
+      "sha256": "84b20285cf89e44509768f7cfba1195676937561743a1b4f7fa2812f992443d7"
     },
     {
       "path": "public/scenes/phoebe/phoebe-audrey.tele.gz",
-      "bytes": 2812465,
-      "sha256": "4d1225d94c2a17b71d178d326c6026352c717c1a6c64a4a4deab5b9e057236ca"
+      "bytes": 2810270,
+      "sha256": "bd6c904033ff616f6cc3ce57b1ff012c80630f70d086c0f5e194a34f9b158a6e"
     },
     {
       "path": "public/scenes/phoebe/scene.json",
@@ -4798,18 +4798,18 @@
     },
     {
       "path": "public/scenes/the-cure/cure-olivia.tele.gz",
-      "bytes": 2986555,
-      "sha256": "2eb9c35559377264cc726146fde0d639fbdee3bb57a44a84bc381a41d8eb6a0d"
+      "bytes": 2968534,
+      "sha256": "29dbaca75393aa8c58451d251be454746c267e53a6e152e98d40244f6afd53f9"
     },
     {
       "path": "public/scenes/the-cure/mix.mp3",
       "bytes": 10059308,
-      "sha256": "8d1de60e81aefa8b74b7734349b94cd900813c5719578d9fa5cc1fe63c23bd7c"
+      "sha256": "b9eb2f92d3fd99020e4b4fefb929383779fd2064f92a11773b3346dd7ca8c8ca"
     },
     {
       "path": "public/scenes/the-cure/performance.json",
-      "bytes": 159785,
-      "sha256": "f0e516e873e0b097c322a7a99472ffdf860be5ba3d06bd38c6e596a8581408a6"
+      "bytes": 428524,
+      "sha256": "61a1ef01c7193bb9ac64f849040c37614f99edbffbd7d7d72f894b51095de602"
     },
     {
       "path": "public/scenes/the-cure/scene.json",
@@ -5084,12 +5084,12 @@
     {
       "path": "public/scenes/whenever/mix.mp3",
       "bytes": 5326892,
-      "sha256": "f0a20766389ddaa4947ab6d7b0b2a1221f582608334f5c02cd3ccf7264ce243b"
+      "sha256": "23ae826bd4f4ce1c104ab193728cd2a090fca746babcd43920d12e1a206ad7ef"
     },
     {
       "path": "public/scenes/whenever/performance.json",
-      "bytes": 156429,
-      "sha256": "e73e06cd409a6842c3355741edabc8e916ebc34f1505480818075e1368be99f5"
+      "bytes": 434590,
+      "sha256": "277d6162ddf929bbdf2899dac41cc0228339f0e325ba4e91963905fca30be722"
     },
     {
       "path": "public/scenes/whenever/scene.json",
@@ -5098,8 +5098,8 @@
     },
     {
       "path": "public/scenes/whenever/whenever-megan.tele.gz",
-      "bytes": 2030267,
-      "sha256": "cbe7a65cfd07a4adf0d4a73f6f92aa369f6f50971c9a3e92b14fc0f031387ab8"
+      "bytes": 2025703,
+      "sha256": "2a5b3d9a64fcf8b609373a01f08ca6f5dbe2155691a88a068b5b8377cc1380ac"
     },
     {
       "path": "public/scenes/wild-boys/backing.mp3",

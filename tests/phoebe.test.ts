@@ -25,7 +25,7 @@ test('Phoebe scores one physical female voice from Pacific coastline through gol
   expect(scene.cues.length).toBeGreaterThan(35);
   expect(scene.shots.length).toBeGreaterThan(30);
   const entry = movieScene('phoebe');
-  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('phoebe-20261121');
+  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('phoebe-20261121-v2');
 });
 
 test('Phoebe ships full engine mix, synchronized telemetry, and deterministic 3D cameras', () => {
