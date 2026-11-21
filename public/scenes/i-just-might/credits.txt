@@ -1,0 +1,19 @@
+Bruno Mars — I Just Might (Official Music Video)
+CHIMERA Physical-Airway Reconstruction
+
+Source reference:
+- Music video: Bruno Mars - I Just Might [Official Music Video]
+- Duration: 213.020s
+
+Synthesis & Staging:
+- Original funk/disco instrumental accompaniment separated via Demucs HTDemucs into backing.mp3.
+- Two independent CHIMERA physical airway models synthesize Lead Bruno (bright soulful tenor)
+  and Backing Band Brunos (70s funk harmonies, "Doo-doo" refrains, and "Oh, oh, oh" calls).
+- Phonetics generated with CHIMERA's English G2P engine and aligned to offline Whisper
+  word timestamps, official lyrics, and 25ms-hop measured F0 vocal contours.
+- Procedural 3D Three.js stage recreates the curved mahogany wood-slat 1970s lounge studio,
+  terracotta carpet, concentric glowing circular ceiling disco lights (shifting through warm
+  amber, rainbow disco, electric cobalt blue, and crimson red), matching mint-green leisure
+  suits with wide white collars, raised conga & drum risers, twin guitar/bass Brunos,
+  DJ turntable booth with twin speakers, trio close-up harmony shot, and carpet-lounge pose.
+- Original video frames and source vocal stems are not embedded.
