@@ -1,0 +1,284 @@
+{
+  "setting": "berghain",
+  "title": "ROSAL\u00cdA feat. Bj\u00f6rk & Yves Tumor \u00b7 Berghain",
+  "description": "The complete supplied video: domestic Berlin apartment, solemn orchestra, German choir, Rosal\u00eda's soprano aria and Bj\u00f6rk's bridge. Original music with two physical mouth-engine singers.",
+  "duration": 206.773719,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "berghain-rosalia",
+      "name": "ROSAL\u00cdA \u00b7 physical soprano & lead",
+      "role": "Featured soprano singing, German verse and Spanish aria \u00b7 physical mouth",
+      "tele": "berghain-rosalia.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "berghain-bjork",
+      "name": "Bj\u00f6rk \u00b7 physical voice & bridge",
+      "role": "Featured singing, divine intervention bridge \u00b7 physical mouth",
+      "tele": "berghain-bjork.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 26.5,
+      "end": 31.5,
+      "speaker": "berghain-rosalia",
+      "text": "Seine Angst ist meine Angst",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.5,
+      "end": 36.5,
+      "speaker": "berghain-rosalia",
+      "text": "Seine Wut ist meine Wut",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.5,
+      "end": 41.5,
+      "speaker": "berghain-rosalia",
+      "text": "Seine Liebe ist meine Liebe",
+      "intensity": 0.85
+    },
+    {
+      "start": 41.5,
+      "end": 47.6,
+      "speaker": "berghain-rosalia",
+      "text": "Sein Blut ist mein Blut",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.8,
+      "end": 54.5,
+      "speaker": "berghain-rosalia",
+      "text": "Die Flamme dringt in mein Gehirn ein",
+      "intensity": 0.85
+    },
+    {
+      "start": 54.6,
+      "end": 58.2,
+      "speaker": "berghain-rosalia",
+      "text": "Wie ein Blei-Teddyb\u00e4r",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.4,
+      "end": 63.8,
+      "speaker": "berghain-rosalia",
+      "text": "Ich bewahre viele Dinge in meinem Herzen auf",
+      "intensity": 0.85
+    },
+    {
+      "start": 64.0,
+      "end": 70.5,
+      "speaker": "berghain-rosalia",
+      "text": "Deshalb ist mein Herz so schwer",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.5,
+      "end": 75.0,
+      "speaker": "berghain-rosalia",
+      "text": "Ah...",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.5,
+      "end": 87.5,
+      "speaker": "berghain-rosalia",
+      "text": "Yo s\u00e9 muy bien lo que soy",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.0,
+      "end": 91.5,
+      "speaker": "berghain-rosalia",
+      "text": "Ternura pa'l caf\u00e9",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.5,
+      "end": 95.9,
+      "speaker": "berghain-rosalia",
+      "text": "Solo soy un terr\u00f3n de az\u00facar",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.2,
+      "end": 99.3,
+      "speaker": "berghain-rosalia",
+      "text": "S\u00e9 que me funde el calor",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.8,
+      "end": 103.3,
+      "speaker": "berghain-rosalia",
+      "text": "S\u00e9 desaparecer",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.2,
+      "end": 106.8,
+      "speaker": "berghain-rosalia",
+      "text": "Cuando t\u00fa vienes",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.0,
+      "end": 116.0,
+      "speaker": "berghain-rosalia",
+      "text": "Es cuando me voy",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.2,
+      "end": 130.8,
+      "speaker": "berghain-bjork",
+      "text": "This is divine intervention",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.2,
+      "end": 156.0,
+      "speaker": "berghain-bjork",
+      "text": "The only way to save us is through divine intervention",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.2,
+      "end": 171.2,
+      "speaker": "berghain-bjork",
+      "text": "The only way I will be saved is through divine intervention",
+      "intensity": 0.85
+    },
+    {
+      "start": 173.0,
+      "end": 178.0,
+      "speaker": "berghain-rosalia",
+      "text": "Till you love me",
+      "intensity": 0.85
+    },
+    {
+      "start": 178.0,
+      "end": 184.0,
+      "speaker": "berghain-rosalia",
+      "text": "I'll love you till you love me",
+      "intensity": 0.85
+    },
+    {
+      "start": 184.0,
+      "end": 194.0,
+      "speaker": "berghain-rosalia",
+      "text": "Till you love me",
+      "intensity": 0.85
+    },
+    {
+      "start": 194.0,
+      "end": 206.0,
+      "speaker": "berghain-rosalia",
+      "text": "Love me, love me...",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0.0,
+      "view": "berghain-apartment"
+    },
+    {
+      "time": 8.0,
+      "view": "berghain-kitchen"
+    },
+    {
+      "time": 16.0,
+      "view": "berghain-iron"
+    },
+    {
+      "time": 26.5,
+      "view": "berghain-choir"
+    },
+    {
+      "time": 36.5,
+      "view": "berghain-orchestra"
+    },
+    {
+      "time": 47.5,
+      "view": "berghain-rosalia"
+    },
+    {
+      "time": 54.5,
+      "view": "berghain-rosalia-close"
+    },
+    {
+      "time": 64.0,
+      "view": "berghain-rosalia"
+    },
+    {
+      "time": 74.0,
+      "view": "berghain-steam"
+    },
+    {
+      "time": 82.5,
+      "view": "berghain-rosalia"
+    },
+    {
+      "time": 92.5,
+      "view": "berghain-rosalia-close"
+    },
+    {
+      "time": 99.8,
+      "view": "berghain-apartment"
+    },
+    {
+      "time": 108.0,
+      "view": "berghain-rosalia"
+    },
+    {
+      "time": 118.0,
+      "view": "berghain-bjork"
+    },
+    {
+      "time": 125.0,
+      "view": "berghain-bjork-close"
+    },
+    {
+      "time": 133.0,
+      "view": "berghain-steam"
+    },
+    {
+      "time": 143.0,
+      "view": "berghain-bjork"
+    },
+    {
+      "time": 150.0,
+      "view": "berghain-duet"
+    },
+    {
+      "time": 158.0,
+      "view": "berghain-bjork-close"
+    },
+    {
+      "time": 166.0,
+      "view": "berghain-duet"
+    },
+    {
+      "time": 172.5,
+      "view": "berghain-orchestra"
+    },
+    {
+      "time": 185.0,
+      "view": "berghain-strings"
+    },
+    {
+      "time": 195.0,
+      "view": "berghain-apartment"
+    },
+    {
+      "time": 202.0,
+      "view": "berghain-steam"
+    }
+  ]
+}

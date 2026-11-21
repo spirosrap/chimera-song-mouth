@@ -1,0 +1,610 @@
+{
+  "setting": "whenever",
+  "title": "Megan Thee Stallion · Whenever",
+  "description": "Retro waiting room with CRT TV and fish-headed patients, glass reception booth with office phones, giant wall aquarium, stark monochrome studio, burnt-orange Western desert with Cadillac, checkered chess knight, glossy 8-ball on pool felt, and crashed-Cadillac office finale.",
+  "duration": 166.39419501133787,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "whenever-megan",
+      "name": "Megan Thee Stallion",
+      "role": "Lead physical female rap voice",
+      "tele": "whenever-megan.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 3.13,
+      "end": 3.6,
+      "speaker": "whenever-megan",
+      "text": "When I",
+      "intensity": 0.76
+    },
+    {
+      "start": 3.9,
+      "end": 14.2,
+      "speaker": "whenever-megan",
+      "text": "was",
+      "intensity": 0.77
+    },
+    {
+      "start": 14.215,
+      "end": 16.54,
+      "speaker": "whenever-megan",
+      "text": "in the day, when the first thing y'all hoes do is start hating",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.02,
+      "end": 19.94,
+      "speaker": "whenever-megan",
+      "text": "Couldn't be me, I'm by my breach, in my sleep gettin' paid",
+      "intensity": 0.84
+    },
+    {
+      "start": 19.955,
+      "end": 21.52,
+      "speaker": "whenever-megan",
+      "text": "One bitch, two bitch, three bitch, four",
+      "intensity": 0.84
+    },
+    {
+      "start": 21.535,
+      "end": 25.04,
+      "speaker": "whenever-megan",
+      "text": "Wanna fight me over my hoes, once he takes this pussy",
+      "intensity": 0.85
+    },
+    {
+      "start": 25.055,
+      "end": 26.58,
+      "speaker": "whenever-megan",
+      "text": "You might as well let that go",
+      "intensity": 0.88
+    },
+    {
+      "start": 26.595,
+      "end": 28.62,
+      "speaker": "whenever-megan",
+      "text": "He feelin' pimp, he know bitch is still in the drip",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.635,
+      "end": 29.86,
+      "speaker": "whenever-megan",
+      "text": "He know that these niggas gon' hate",
+      "intensity": 0.84
+    },
+    {
+      "start": 29.875,
+      "end": 31.98,
+      "speaker": "whenever-megan",
+      "text": "He know that you want him, cause you know he fuckin' with me",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.995,
+      "end": 33.98,
+      "speaker": "whenever-megan",
+      "text": "And bitch, ain't takin' fake, make no mistake",
+      "intensity": 0.83
+    },
+    {
+      "start": 33.995,
+      "end": 36.58,
+      "speaker": "whenever-megan",
+      "text": "Just as I'm cutin' this bitch, don't mean I won't run in your shit",
+      "intensity": 0.84
+    },
+    {
+      "start": 36.595,
+      "end": 39.4,
+      "speaker": "whenever-megan",
+      "text": "Yeah, smoke, whenever the hoes see me out, she already knew",
+      "intensity": 0.84
+    },
+    {
+      "start": 39.88,
+      "end": 41.66,
+      "speaker": "whenever-megan",
+      "text": "Slip -flop hoes, I can sneak out my chip -chops",
+      "intensity": 0.85
+    },
+    {
+      "start": 41.675,
+      "end": 43.3,
+      "speaker": "whenever-megan",
+      "text": "Say she don't know me, she feelin' out on TikTok",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.315,
+      "end": 45.06,
+      "speaker": "whenever-megan",
+      "text": "Bitch, stop thinkin' you aint shoulda been quiet",
+      "intensity": 0.84
+    },
+    {
+      "start": 45.075,
+      "end": 46.76,
+      "speaker": "whenever-megan",
+      "text": "Can't get your hoe back, cause me with a pimp now",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.775,
+      "end": 48.36,
+      "speaker": "whenever-megan",
+      "text": "Can't make me argue with no -bitch",
+      "intensity": 0.86
+    },
+    {
+      "start": 48.375,
+      "end": 50.1,
+      "speaker": "whenever-megan",
+      "text": "Same nigga doggin', you all getting ghosted",
+      "intensity": 0.85
+    },
+    {
+      "start": 50.115,
+      "end": 51.68,
+      "speaker": "whenever-megan",
+      "text": "Hoes runnin' to see what I posted",
+      "intensity": 0.86
+    },
+    {
+      "start": 51.695,
+      "end": 53.18,
+      "speaker": "whenever-megan",
+      "text": "Get in the tent with my feet by the ocean",
+      "intensity": 0.88
+    },
+    {
+      "start": 54.325,
+      "end": 54.65,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.82
+    },
+    {
+      "start": 55.5,
+      "end": 58.598,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.89
+    },
+    {
+      "start": 58.823,
+      "end": 60.073,
+      "speaker": "whenever-megan",
+      "text": "It's whatever, we can do it right now",
+      "intensity": 0.88
+    },
+    {
+      "start": 60.547,
+      "end": 61.397,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.88
+    },
+    {
+      "start": 62.172,
+      "end": 63.346,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.88
+    },
+    {
+      "start": 64.321,
+      "end": 65.695,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.81
+    },
+    {
+      "start": 66.07,
+      "end": 66.92,
+      "speaker": "whenever-megan",
+      "text": "It's whatever, we can do it right now",
+      "intensity": 0.84
+    },
+    {
+      "start": 66.98,
+      "end": 69.06,
+      "speaker": "whenever-megan",
+      "text": "It's whatever we",
+      "intensity": 0.86
+    },
+    {
+      "start": 70.743,
+      "end": 73.567,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.84
+    },
+    {
+      "start": 74.041,
+      "end": 74.816,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.84
+    },
+    {
+      "start": 75.291,
+      "end": 77.2,
+      "speaker": "whenever-megan",
+      "text": "It's whatever, we can do it right now",
+      "intensity": 0.83
+    },
+    {
+      "start": 77.38,
+      "end": 79.94,
+      "speaker": "whenever-megan",
+      "text": "Hoes runnin' posted",
+      "intensity": 0.83
+    },
+    {
+      "start": 79.98,
+      "end": 81.92,
+      "speaker": "whenever-megan",
+      "text": "Get in with by the",
+      "intensity": 0.86
+    },
+    {
+      "start": 81.935,
+      "end": 83.16,
+      "speaker": "whenever-megan",
+      "text": "Hoes runnin' I posted",
+      "intensity": 0.84
+    },
+    {
+      "start": 83.175,
+      "end": 85.82,
+      "speaker": "whenever-megan",
+      "text": "Through the bitch talkin' shit look this good now",
+      "intensity": 0.84
+    },
+    {
+      "start": 85.835,
+      "end": 89.78,
+      "speaker": "whenever-megan",
+      "text": "I highly doubt it, real life, I.G., all the real bad bitches follow me",
+      "intensity": 0.84
+    },
+    {
+      "start": 89.795,
+      "end": 93.3,
+      "speaker": "whenever-megan",
+      "text": "Locked up, been through a way to keep niggas still stalking me",
+      "intensity": 0.84
+    },
+    {
+      "start": 93.315,
+      "end": 96.68,
+      "speaker": "whenever-megan",
+      "text": "I gotta say, but still on you hoes mine, disappeared then I pop out mofine",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.695,
+      "end": 99.24,
+      "speaker": "whenever-megan",
+      "text": "Holding my own way, fuck a cosign, me against everybody",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.255,
+      "end": 100.94,
+      "speaker": "whenever-megan",
+      "text": "Who the front line, who they compare to me?",
+      "intensity": 0.84
+    },
+    {
+      "start": 101.08,
+      "end": 102.6,
+      "speaker": "whenever-megan",
+      "text": "If they say the whole hot, then she better be",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.615,
+      "end": 104.26,
+      "speaker": "whenever-megan",
+      "text": "If she right on shit, then we finna see",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.275,
+      "end": 105.8,
+      "speaker": "whenever-megan",
+      "text": "Niggas know that my pin never outta end",
+      "intensity": 0.84
+    },
+    {
+      "start": 105.815,
+      "end": 107.48,
+      "speaker": "whenever-megan",
+      "text": "I love when I hear that a bitch don't like me",
+      "intensity": 0.83
+    },
+    {
+      "start": 107.495,
+      "end": 109.42,
+      "speaker": "whenever-megan",
+      "text": "Stock my I.G., bitch pretty face on her",
+      "intensity": 0.84
+    },
+    {
+      "start": 109.435,
+      "end": 111.74,
+      "speaker": "whenever-megan",
+      "text": "F -Y -P, been done with it, but the bitch still type in",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.755,
+      "end": 113.36,
+      "speaker": "whenever-megan",
+      "text": "Keep goin' cuz that shit hype me",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.375,
+      "end": 116.7,
+      "speaker": "whenever-megan",
+      "text": "You a chop, do your thing, but that ain't how I rhyme",
+      "intensity": 0.86
+    },
+    {
+      "start": 116.715,
+      "end": 119.84,
+      "speaker": "whenever-megan",
+      "text": "You hoes don't appreciate loyalty, I don't make funny, bitch, I ain't got quickly",
+      "intensity": 0.87
+    },
+    {
+      "start": 120.021,
+      "end": 120.395,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.83
+    },
+    {
+      "start": 122.17,
+      "end": 123.394,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.91
+    },
+    {
+      "start": 123.844,
+      "end": 125.069,
+      "speaker": "whenever-megan",
+      "text": "It's whatever, we can do it right now",
+      "intensity": 0.9
+    },
+    {
+      "start": 125.493,
+      "end": 126.718,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.88
+    },
+    {
+      "start": 127.217,
+      "end": 129.991,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.88
+    },
+    {
+      "start": 130.991,
+      "end": 131.865,
+      "speaker": "whenever-megan",
+      "text": "Whenever, bitch, it's whatever, hoe",
+      "intensity": 0.82
+    },
+    {
+      "start": 131.96,
+      "end": 135.82,
+      "speaker": "whenever-megan",
+      "text": "We never bitch, it's whatever hoe,",
+      "intensity": 0.84
+    },
+    {
+      "start": 136.2,
+      "end": 140.16,
+      "speaker": "whenever-megan",
+      "text": "it's whatever hoe, it's whatever",
+      "intensity": 0.84
+    },
+    {
+      "start": 140.175,
+      "end": 141.78,
+      "speaker": "whenever-megan",
+      "text": "bitch, it's whatever hoe,",
+      "intensity": 0.83
+    },
+    {
+      "start": 141.82,
+      "end": 144.6,
+      "speaker": "whenever-megan",
+      "text": "Whatever hoes, we can do it right now",
+      "intensity": 0.84
+    },
+    {
+      "start": 144.615,
+      "end": 146.16,
+      "speaker": "whenever-megan",
+      "text": "Bitch, take it out the duct",
+      "intensity": 0.83
+    },
+    {
+      "start": 147.08,
+      "end": 150.02,
+      "speaker": "whenever-megan",
+      "text": "24 hours in a day, in the first day, y'all hoes do it, hatin'",
+      "intensity": 0.82
+    },
+    {
+      "start": 150.1,
+      "end": 153.22,
+      "speaker": "whenever-megan",
+      "text": "Couldn't be me, I'm bout my breach, hear my sleep gettin' paid",
+      "intensity": 0.81
+    },
+    {
+      "start": 153.235,
+      "end": 154.84,
+      "speaker": "whenever-megan",
+      "text": "One bitch, two bitch, three bitch, four",
+      "intensity": 0.82
+    },
+    {
+      "start": 154.855,
+      "end": 157,
+      "speaker": "whenever-megan",
+      "text": "Wanna fight me over my hoe, aye",
+      "intensity": 0.8
+    },
+    {
+      "start": 157.015,
+      "end": 159.84,
+      "speaker": "whenever-megan",
+      "text": "One seat, taste this pussy, you might as well let that go",
+      "intensity": 0.81
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "whenever-waiting"
+    },
+    {
+      "time": 4.5,
+      "view": "whenever-tv"
+    },
+    {
+      "time": 12.5,
+      "view": "whenever-booth"
+    },
+    {
+      "time": 18,
+      "view": "whenever-megan"
+    },
+    {
+      "time": 22.5,
+      "view": "whenever-booth"
+    },
+    {
+      "time": 26.5,
+      "view": "whenever-aquarium"
+    },
+    {
+      "time": 31.5,
+      "view": "whenever-waiting"
+    },
+    {
+      "time": 35.5,
+      "view": "whenever-aquarium"
+    },
+    {
+      "time": 40,
+      "view": "whenever-mono"
+    },
+    {
+      "time": 45,
+      "view": "whenever-mono"
+    },
+    {
+      "time": 53.5,
+      "view": "whenever-waiting"
+    },
+    {
+      "time": 57.5,
+      "view": "whenever-cadillac"
+    },
+    {
+      "time": 62.5,
+      "view": "whenever-desert"
+    },
+    {
+      "time": 67.5,
+      "view": "whenever-desert"
+    },
+    {
+      "time": 72,
+      "view": "whenever-cadillac"
+    },
+    {
+      "time": 76.5,
+      "view": "whenever-desert"
+    },
+    {
+      "time": 80.5,
+      "view": "whenever-chess"
+    },
+    {
+      "time": 88.5,
+      "view": "whenever-chess"
+    },
+    {
+      "time": 94,
+      "view": "whenever-cadillac"
+    },
+    {
+      "time": 98.5,
+      "view": "whenever-booth"
+    },
+    {
+      "time": 103.5,
+      "view": "whenever-megan"
+    },
+    {
+      "time": 107.5,
+      "view": "whenever-eightball"
+    },
+    {
+      "time": 112,
+      "view": "whenever-desert"
+    },
+    {
+      "time": 116.5,
+      "view": "whenever-mono"
+    },
+    {
+      "time": 121,
+      "view": "whenever-cadillac"
+    },
+    {
+      "time": 126,
+      "view": "whenever-booth"
+    },
+    {
+      "time": 134.5,
+      "view": "whenever-desert"
+    },
+    {
+      "time": 139,
+      "view": "whenever-megan"
+    },
+    {
+      "time": 143.5,
+      "view": "whenever-mono"
+    },
+    {
+      "time": 148,
+      "view": "whenever-cadillac"
+    },
+    {
+      "time": 155,
+      "view": "whenever-desert"
+    },
+    {
+      "time": 160.5,
+      "view": "whenever-crash"
+    }
+  ]
+}

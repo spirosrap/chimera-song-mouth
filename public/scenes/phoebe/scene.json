@@ -1,0 +1,543 @@
+{
+  "setting": "phoebe",
+  "title": "Audrey Hobert · Phoebe",
+  "description": "Pacific sea stacks, warm wood cabin with fireplace and bed, pink-lily gravestone meadow, diner booth, redwood highway and white van, neon-green hoodie fishing for $100 bills, starry \"I LOVE YOU\" night sky, twilight ocean, dusk beach lightsaber kick and golden sunset.",
+  "duration": 234.03394557823128,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "phoebe-audrey",
+      "name": "Audrey Hobert",
+      "role": "Lead physical female vocal",
+      "tele": "phoebe-audrey.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.45,
+      "end": 6.95,
+      "speaker": "phoebe-audrey",
+      "text": "I went to New York, ’cause a man in a suit told me, \"You’re gonna be a star\"",
+      "intensity": 0.72
+    },
+    {
+      "start": 7.05,
+      "end": 11.88,
+      "speaker": "phoebe-audrey",
+      "text": "I said, \"Yeah, I know,\" but it came out like, \"What, who, me?\"",
+      "intensity": 0.74
+    },
+    {
+      "start": 13.72,
+      "end": 19.35,
+      "speaker": "phoebe-audrey",
+      "text": "I took a walk on the beach, ’cause the guy doesn’t like me back",
+      "intensity": 0.75
+    },
+    {
+      "start": 19.45,
+      "end": 25.8,
+      "speaker": "phoebe-audrey",
+      "text": "Even though I’m gonna be a star, guess I don’t have it after all",
+      "intensity": 0.78
+    },
+    {
+      "start": 27.8,
+      "end": 30.62,
+      "speaker": "phoebe-audrey",
+      "text": "But it’s okay, ’cause my life is so exciting",
+      "intensity": 0.8
+    },
+    {
+      "start": 30.7,
+      "end": 33.6,
+      "speaker": "phoebe-audrey",
+      "text": "Every night is like a party, ’cause I bit the bullet",
+      "intensity": 0.8
+    },
+    {
+      "start": 33.68,
+      "end": 37.12,
+      "speaker": "phoebe-audrey",
+      "text": "I’m finally watching Friends, \"What took me so long?\"",
+      "intensity": 0.8
+    },
+    {
+      "start": 37.32,
+      "end": 40.62,
+      "speaker": "phoebe-audrey",
+      "text": "I say to no one, ’cause I’m alone all the time",
+      "intensity": 0.82
+    },
+    {
+      "start": 40.72,
+      "end": 43.95,
+      "speaker": "phoebe-audrey",
+      "text": "But now I’m never lonely, not since I met Joey",
+      "intensity": 0.82
+    },
+    {
+      "start": 44.05,
+      "end": 47.65,
+      "speaker": "phoebe-audrey",
+      "text": "But when I turn the lights off, Joey doesn’t hold me",
+      "intensity": 0.84
+    },
+    {
+      "start": 47.75,
+      "end": 51.58,
+      "speaker": "phoebe-audrey",
+      "text": "And in my darkest moment, I wonder if I met him out at a bar",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.68,
+      "end": 55.45,
+      "speaker": "phoebe-audrey",
+      "text": "If he’d seen me, a perfect star, wanna take me home for that reason only",
+      "intensity": 0.86
+    },
+    {
+      "start": 55.55,
+      "end": 58.6,
+      "speaker": "phoebe-audrey",
+      "text": "’Cause why else would you want me?",
+      "intensity": 0.92
+    },
+    {
+      "start": 59.62,
+      "end": 62.78,
+      "speaker": "phoebe-audrey",
+      "text": "I think I’ve got a messed up face",
+      "intensity": 0.92
+    },
+    {
+      "start": 62.88,
+      "end": 65.95,
+      "speaker": "phoebe-audrey",
+      "text": "And that thought used to haunt me",
+      "intensity": 0.92
+    },
+    {
+      "start": 66.05,
+      "end": 69.1,
+      "speaker": "phoebe-audrey",
+      "text": "’Til it fell in its sweet embrace",
+      "intensity": 0.92
+    },
+    {
+      "start": 69.2,
+      "end": 71.6,
+      "speaker": "phoebe-audrey",
+      "text": "Now I don’t sweat the acne",
+      "intensity": 0.9
+    },
+    {
+      "start": 72.76,
+      "end": 75.96,
+      "speaker": "phoebe-audrey",
+      "text": "It’s a bitch, but it goes away",
+      "intensity": 0.92
+    },
+    {
+      "start": 76.06,
+      "end": 80.88,
+      "speaker": "phoebe-audrey",
+      "text": "And who cares if I’m pretty? I feel like I’m Phoebe",
+      "intensity": 0.95
+    },
+    {
+      "start": 80.98,
+      "end": 82.42,
+      "speaker": "phoebe-audrey",
+      "text": "I feel like it totally works",
+      "intensity": 0.78
+    },
+    {
+      "start": 82.94,
+      "end": 87.1,
+      "speaker": "phoebe-audrey",
+      "text": "When the blue in my skirt doesn’t work with the blue in my top",
+      "intensity": 0.8
+    },
+    {
+      "start": 87.2,
+      "end": 91.64,
+      "speaker": "phoebe-audrey",
+      "text": "And if I tried to be her, it’d fall so flat, you’d feel badly",
+      "intensity": 0.8
+    },
+    {
+      "start": 93.92,
+      "end": 97.6,
+      "speaker": "phoebe-audrey",
+      "text": "And most of these days, I feel the dull ache",
+      "intensity": 0.8
+    },
+    {
+      "start": 97.7,
+      "end": 100.68,
+      "speaker": "phoebe-audrey",
+      "text": "But then I say, \"Stop,\" and then I feel great",
+      "intensity": 0.82
+    },
+    {
+      "start": 100.78,
+      "end": 104.1,
+      "speaker": "phoebe-audrey",
+      "text": "’Cause it could be worse, I know, I know",
+      "intensity": 0.82
+    },
+    {
+      "start": 104.2,
+      "end": 107.04,
+      "speaker": "phoebe-audrey",
+      "text": "Know it in the worst way, we rehearsed this",
+      "intensity": 0.8
+    },
+    {
+      "start": 108,
+      "end": 110.58,
+      "speaker": "phoebe-audrey",
+      "text": "Everything’s okay, ’cause my life is so enticing",
+      "intensity": 0.84
+    },
+    {
+      "start": 110.68,
+      "end": 113.62,
+      "speaker": "phoebe-audrey",
+      "text": "In the corner, eating icing, it’s a birthday party",
+      "intensity": 0.84
+    },
+    {
+      "start": 113.72,
+      "end": 115.24,
+      "speaker": "phoebe-audrey",
+      "text": "These people aren’t my friends",
+      "intensity": 0.84
+    },
+    {
+      "start": 115.32,
+      "end": 120.04,
+      "speaker": "phoebe-audrey",
+      "text": "I’m thinking \"So long,\" amidst their deep talk ’bout someone they didn’t invite",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.62,
+      "end": 124.25,
+      "speaker": "phoebe-audrey",
+      "text": "But I’d rather be lonely, counted out and homely",
+      "intensity": 0.86
+    },
+    {
+      "start": 124.35,
+      "end": 127.7,
+      "speaker": "phoebe-audrey",
+      "text": "I know that he’ll need me once he gets to know me",
+      "intensity": 0.86
+    },
+    {
+      "start": 127.8,
+      "end": 131.52,
+      "speaker": "phoebe-audrey",
+      "text": "Wonder when I’ll meet him, wonder if he’s sitting there at a bar",
+      "intensity": 0.86
+    },
+    {
+      "start": 131.62,
+      "end": 135.72,
+      "speaker": "phoebe-audrey",
+      "text": "And if he likes ’em avant-garde, just what they told me",
+      "intensity": 0.88
+    },
+    {
+      "start": 135.82,
+      "end": 138.56,
+      "speaker": "phoebe-audrey",
+      "text": "’Cause why else would you want me?",
+      "intensity": 0.94
+    },
+    {
+      "start": 139.78,
+      "end": 142.86,
+      "speaker": "phoebe-audrey",
+      "text": "I think I’ve got a messed up face",
+      "intensity": 0.94
+    },
+    {
+      "start": 142.96,
+      "end": 145.8,
+      "speaker": "phoebe-audrey",
+      "text": "And that thought used to haunt me",
+      "intensity": 0.94
+    },
+    {
+      "start": 145.9,
+      "end": 149.22,
+      "speaker": "phoebe-audrey",
+      "text": "’Til it fell in its sweet embrace",
+      "intensity": 0.94
+    },
+    {
+      "start": 149.78,
+      "end": 151.64,
+      "speaker": "phoebe-audrey",
+      "text": "Now I don’t sweat the acne",
+      "intensity": 0.92
+    },
+    {
+      "start": 152.64,
+      "end": 155.88,
+      "speaker": "phoebe-audrey",
+      "text": "It’s a bitch, but it goes away",
+      "intensity": 0.94
+    },
+    {
+      "start": 155.98,
+      "end": 161.94,
+      "speaker": "phoebe-audrey",
+      "text": "Who cares if I’m pretty? I feel like I’m Phoebe, I feel like a star",
+      "intensity": 0.96
+    },
+    {
+      "start": 162.68,
+      "end": 165.08,
+      "speaker": "phoebe-audrey",
+      "text": "No, I’m good, thanks for asking",
+      "intensity": 0.82
+    },
+    {
+      "start": 166.1,
+      "end": 169.14,
+      "speaker": "phoebe-audrey",
+      "text": "That’d be awesome, but no worries if not",
+      "intensity": 0.84
+    },
+    {
+      "start": 169.24,
+      "end": 172.12,
+      "speaker": "phoebe-audrey",
+      "text": "Best believe I can hack it",
+      "intensity": 0.86
+    },
+    {
+      "start": 172.94,
+      "end": 175.98,
+      "speaker": "phoebe-audrey",
+      "text": "Check it out, I made it this far",
+      "intensity": 0.88
+    },
+    {
+      "start": 176.08,
+      "end": 178.94,
+      "speaker": "phoebe-audrey",
+      "text": "Had to dig deep inside me",
+      "intensity": 0.9
+    },
+    {
+      "start": 179.04,
+      "end": 182.54,
+      "speaker": "phoebe-audrey",
+      "text": "’Til I found what I was looking for",
+      "intensity": 0.92
+    },
+    {
+      "start": 182.64,
+      "end": 185.42,
+      "speaker": "phoebe-audrey",
+      "text": "It was right there inside me",
+      "intensity": 0.92
+    },
+    {
+      "start": 185.94,
+      "end": 189.2,
+      "speaker": "phoebe-audrey",
+      "text": "It was beautiful, beautiful, beautiful",
+      "intensity": 0.95
+    },
+    {
+      "start": 189.3,
+      "end": 191.86,
+      "speaker": "phoebe-audrey",
+      "text": "’Cause why else would you want me?",
+      "intensity": 0.96
+    },
+    {
+      "start": 192.58,
+      "end": 195.26,
+      "speaker": "phoebe-audrey",
+      "text": "I think I’ve got a messed up face",
+      "intensity": 0.96
+    },
+    {
+      "start": 195.96,
+      "end": 199.26,
+      "speaker": "phoebe-audrey",
+      "text": "And that thought used to haunt me",
+      "intensity": 0.96
+    },
+    {
+      "start": 199.36,
+      "end": 202.44,
+      "speaker": "phoebe-audrey",
+      "text": "’Til it fell in its sweet embrace",
+      "intensity": 0.96
+    },
+    {
+      "start": 202.54,
+      "end": 204.98,
+      "speaker": "phoebe-audrey",
+      "text": "Now I don’t sweat the acne",
+      "intensity": 0.94
+    },
+    {
+      "start": 206.06,
+      "end": 209.34,
+      "speaker": "phoebe-audrey",
+      "text": "It’s a bitch, but it goes away",
+      "intensity": 0.96
+    },
+    {
+      "start": 209.44,
+      "end": 214.94,
+      "speaker": "phoebe-audrey",
+      "text": "Who cares if I’m pretty? I feel like I’m Phoebe, I feel like a star",
+      "intensity": 0.98
+    },
+    {
+      "start": 216.08,
+      "end": 221.88,
+      "speaker": "phoebe-audrey",
+      "text": "Who cares if I’m pretty? I feel like I’m Phoebe, I feel like a star",
+      "intensity": 0.92
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "phoebe-coast"
+    },
+    {
+      "time": 13.7,
+      "view": "phoebe-cliff"
+    },
+    {
+      "time": 24,
+      "view": "phoebe-cabin"
+    },
+    {
+      "time": 38,
+      "view": "phoebe-fire"
+    },
+    {
+      "time": 44,
+      "view": "phoebe-cabin"
+    },
+    {
+      "time": 54,
+      "view": "phoebe-meadow"
+    },
+    {
+      "time": 59.5,
+      "view": "phoebe-bed"
+    },
+    {
+      "time": 66,
+      "view": "phoebe-audrey"
+    },
+    {
+      "time": 72.5,
+      "view": "phoebe-diner"
+    },
+    {
+      "time": 80.5,
+      "view": "phoebe-forest"
+    },
+    {
+      "time": 93.5,
+      "view": "phoebe-cliff"
+    },
+    {
+      "time": 100.5,
+      "view": "phoebe-forest"
+    },
+    {
+      "time": 108,
+      "view": "phoebe-highway"
+    },
+    {
+      "time": 118,
+      "view": "phoebe-river"
+    },
+    {
+      "time": 128,
+      "view": "phoebe-cash"
+    },
+    {
+      "time": 135.8,
+      "view": "phoebe-twilight"
+    },
+    {
+      "time": 142.8,
+      "view": "phoebe-audrey"
+    },
+    {
+      "time": 149.5,
+      "view": "phoebe-twilight"
+    },
+    {
+      "time": 155.8,
+      "view": "phoebe-stars"
+    },
+    {
+      "time": 162.5,
+      "view": "phoebe-highway"
+    },
+    {
+      "time": 169,
+      "view": "phoebe-forest"
+    },
+    {
+      "time": 176,
+      "view": "phoebe-river"
+    },
+    {
+      "time": 182.5,
+      "view": "phoebe-bed"
+    },
+    {
+      "time": 189.2,
+      "view": "phoebe-highway"
+    },
+    {
+      "time": 195.8,
+      "view": "phoebe-stars"
+    },
+    {
+      "time": 202,
+      "view": "phoebe-saber"
+    },
+    {
+      "time": 209.4,
+      "view": "phoebe-cliff"
+    },
+    {
+      "time": 214,
+      "view": "phoebe-twilight"
+    },
+    {
+      "time": 218.5,
+      "view": "phoebe-sunset"
+    },
+    {
+      "time": 224,
+      "view": "phoebe-coast"
+    },
+    {
+      "time": 229,
+      "view": "phoebe-sunset"
+    }
+  ]
+}

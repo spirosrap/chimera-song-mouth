@@ -1902,6 +1902,41 @@
       "sha256": "43db170608e1a9967ce83bd750d415afbfe2dbada41ad2966717e8db0d283efd"
     },
     {
+      "path": "public/scenes/berghain/backing.mp3",
+      "bytes": 6618844,
+      "sha256": "099528bc1b2a89458596df9908b5ebd7756c3002be268d5c4095e6d94380afc7"
+    },
+    {
+      "path": "public/scenes/berghain/berghain-bjork.tele.gz",
+      "bytes": 498183,
+      "sha256": "d1fc285b104ea7f12d52709ccf2799212685608284d06a7c6262aa2eb54041d6"
+    },
+    {
+      "path": "public/scenes/berghain/berghain-rosalia.tele.gz",
+      "bytes": 665758,
+      "sha256": "1d446e50aafcca604a4b4aed37286889118f10a982b76eefa441178f1be34aeb"
+    },
+    {
+      "path": "public/scenes/berghain/credits.txt",
+      "bytes": 1398,
+      "sha256": "df72b2af80203a1cacd703538b90df612f0b58dc0da62456e455fdb6cc48eb19"
+    },
+    {
+      "path": "public/scenes/berghain/mix.mp3",
+      "bytes": 6618668,
+      "sha256": "9222af48515ebb4fad6cfa27d6d506bed0d16f044494b00ec4114febf7ab1cda"
+    },
+    {
+      "path": "public/scenes/berghain/performance.json",
+      "bytes": 211252,
+      "sha256": "0f9fb275edee9580b5dd175b45d7aaf0de4bb4ce7d562e17db8a1bbfa105a284"
+    },
+    {
+      "path": "public/scenes/berghain/scene.json",
+      "bytes": 6240,
+      "sha256": "e2b97f9f487bb6ead4c6aea8c242de6d8ba881f6b51741b1eeb298773dabc79c"
+    },
+    {
       "path": "public/scenes/big-lebowski/backing.mp3",
       "bytes": 8471084,
       "sha256": "dbfb70ac8448bff4e2285613b8644aeb3e0e8c8b8832d5fedf19640639d51aea"
@@ -2460,6 +2495,46 @@
       "path": "public/scenes/eins-zwei-drei/scene.json",
       "bytes": 10703,
       "sha256": "28bb20982caafbfe08369991a1c4b75c039f40775ee4ddafa85548797a554446"
+    },
+    {
+      "path": "public/scenes/elevator-operator/backing.mp3",
+      "bytes": 6360546,
+      "sha256": "2eced85c1fb04e7604c66ea5c046e917479059729456cb0c7d76d63f3c6a033f"
+    },
+    {
+      "path": "public/scenes/elevator-operator/credits.txt",
+      "bytes": 1011,
+      "sha256": "31ffb27be06a5852725a689256b658c917302d80cff85038e7a765e40b7db13c"
+    },
+    {
+      "path": "public/scenes/elevator-operator/elev-kevin.tele.gz",
+      "bytes": 839933,
+      "sha256": "841548efdb18a794a7138044a90f9724b3b62c2b64154409ea4c1942ff3321bd"
+    },
+    {
+      "path": "public/scenes/elevator-operator/elev-nico.tele.gz",
+      "bytes": 1136692,
+      "sha256": "faeb8a5995196092c183ae06a0593476855805d59c1e002b12a525744dec9cb0"
+    },
+    {
+      "path": "public/scenes/elevator-operator/elev-operator.tele.gz",
+      "bytes": 495474,
+      "sha256": "c2340361be416409c4d697f800ed67195351bbe6342fd31f4da375bfa887562d"
+    },
+    {
+      "path": "public/scenes/elevator-operator/mix.mp3",
+      "bytes": 6359852,
+      "sha256": "cf8773c167fc75e5a4760d2d56e0f279a19cebd7d4810cbaf839215514a8ea97"
+    },
+    {
+      "path": "public/scenes/elevator-operator/performance.json",
+      "bytes": 140839,
+      "sha256": "65993f56717ec3c21fc17e9450c7bfd161587c292a865797a224404051fe9e2a"
+    },
+    {
+      "path": "public/scenes/elevator-operator/scene.json",
+      "bytes": 13333,
+      "sha256": "4040affd18c1b6a8b68668fdf33c97f7389ff9afd482d8d8c15979ea90af522a"
     },
     {
       "path": "public/scenes/espresso-macchiato/backing.mp3",
@@ -3757,6 +3832,36 @@
       "sha256": "7fa8fd269275d9e449bf7a1298e008ac8251e049f827f53cb86513e15510e9bd"
     },
     {
+      "path": "public/scenes/phoebe/backing.mp3",
+      "bytes": 7491543,
+      "sha256": "4ba281e3b84bc347a1f4d94feb974cdcdb6b73fa3dcf64abbcd09878bef35391"
+    },
+    {
+      "path": "public/scenes/phoebe/credits.txt",
+      "bytes": 1052,
+      "sha256": "02aed5adbb2946afb5dfd092864be74532b487cbaf992e397c56c27397edbd99"
+    },
+    {
+      "path": "public/scenes/phoebe/mix.mp3",
+      "bytes": 7491116,
+      "sha256": "b3cc4713417fc8ec603fd03bfab97d881d3ebe8633137af5e97036acc8361479"
+    },
+    {
+      "path": "public/scenes/phoebe/performance.json",
+      "bytes": 174468,
+      "sha256": "b4929ade89bd2b0b1df9c1b619bc3883862020b98a56ae92e10c53736991f315"
+    },
+    {
+      "path": "public/scenes/phoebe/phoebe-audrey.tele.gz",
+      "bytes": 2812465,
+      "sha256": "4d1225d94c2a17b71d178d326c6026352c717c1a6c64a4a4deab5b9e057236ca"
+    },
+    {
+      "path": "public/scenes/phoebe/scene.json",
+      "bytes": 12713,
+      "sha256": "01cbe61b081014af404b44c8b5e4d6e0c08a818c63a80827b89acbd2406f1814"
+    },
+    {
       "path": "public/scenes/player-baby-come-back/backing.mp3",
       "bytes": 8017196,
       "sha256": "906d6b28192d23a04cafc6629bfd64d857502502374ac0b2ff57263ab1d73ea3"
@@ -4900,6 +5005,36 @@
       "path": "public/scenes/whats-he-building/scene.json",
       "bytes": 6823,
       "sha256": "9e4857c9cc3d8c43a7e64d143a8561ee32c79cfd44d9181989ed041cd510fcb4"
+    },
+    {
+      "path": "public/scenes/whenever/backing.mp3",
+      "bytes": 5326514,
+      "sha256": "4bbf0fe24c99d97ad269e6dcead90133fa1cdba871cede908819b8cb0c1fe90e"
+    },
+    {
+      "path": "public/scenes/whenever/credits.txt",
+      "bytes": 1151,
+      "sha256": "d6059e597449bb7a8ea626589fd73aaffdca50f00e139d8a80ff9a516d77e8e9"
+    },
+    {
+      "path": "public/scenes/whenever/mix.mp3",
+      "bytes": 5326892,
+      "sha256": "f0a20766389ddaa4947ab6d7b0b2a1221f582608334f5c02cd3ccf7264ce243b"
+    },
+    {
+      "path": "public/scenes/whenever/performance.json",
+      "bytes": 156429,
+      "sha256": "e73e06cd409a6842c3355741edabc8e916ebc34f1505480818075e1368be99f5"
+    },
+    {
+      "path": "public/scenes/whenever/scene.json",
+      "bytes": 14283,
+      "sha256": "8fb3e7c3cda12373d060e229cfb14d8872cd6eae853c8839088fda15d9b48f05"
+    },
+    {
+      "path": "public/scenes/whenever/whenever-megan.tele.gz",
+      "bytes": 2030267,
+      "sha256": "cbe7a65cfd07a4adf0d4a73f6f92aa369f6f50971c9a3e92b14fc0f031387ab8"
     },
     {
       "path": "public/scenes/wild-boys/backing.mp3",

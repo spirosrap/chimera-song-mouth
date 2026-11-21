@@ -1,0 +1,668 @@
+{
+  "setting": "elevator",
+  "title": "Electric Callboy · ELEVATOR OPERATOR",
+  "description": "Dark brick alley, blinding elevator reveal, geometric white LED cabin, button panel, aquarium floor, blue rave club with metal band stage, and zero-gravity floating finale. Three CHIMERA physical airways over original instrumental music.",
+  "duration": 198.6931746031746,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "elev-nico",
+      "name": "Nico",
+      "role": "Clean tenor physical voice",
+      "tele": "elev-nico.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "elev-kevin",
+      "name": "Kevin",
+      "role": "Lower heavy & breakdown physical voice",
+      "tele": "elev-kevin.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "elev-operator",
+      "name": "Elevator Operator",
+      "role": "Deep baritone hook & lift announcer",
+      "tele": "elev-operator.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 6.95,
+      "end": 8.05,
+      "speaker": "elev-nico",
+      "text": "You heard about a man",
+      "intensity": 0.72
+    },
+    {
+      "start": 8.15,
+      "end": 9.25,
+      "speaker": "elev-nico",
+      "text": "The lift controller",
+      "intensity": 0.75
+    },
+    {
+      "start": 9.42,
+      "end": 11,
+      "speaker": "elev-nico",
+      "text": "The lever king, I told ya",
+      "intensity": 0.78
+    },
+    {
+      "start": 11.28,
+      "end": 13.55,
+      "speaker": "elev-nico",
+      "text": "Hop in and let the journey begin",
+      "intensity": 0.8
+    },
+    {
+      "start": 14.12,
+      "end": 15.98,
+      "speaker": "elev-kevin",
+      "text": "Shades, a shiny face",
+      "intensity": 0.88
+    },
+    {
+      "start": 16.08,
+      "end": 18.02,
+      "speaker": "elev-kevin",
+      "text": "Like he's someone from outer space",
+      "intensity": 0.88
+    },
+    {
+      "start": 18.1,
+      "end": 19.28,
+      "speaker": "elev-kevin",
+      "text": "So full of grace",
+      "intensity": 0.9
+    },
+    {
+      "start": 19.38,
+      "end": 20.76,
+      "speaker": "elev-kevin",
+      "text": "I just wanna get in",
+      "intensity": 0.92
+    },
+    {
+      "start": 20.84,
+      "end": 22.1,
+      "speaker": "elev-kevin",
+      "text": "Up and down",
+      "intensity": 0.9
+    },
+    {
+      "start": 22.25,
+      "end": 23.58,
+      "speaker": "elev-kevin",
+      "text": "We're movin' all around",
+      "intensity": 0.9
+    },
+    {
+      "start": 23.68,
+      "end": 25.4,
+      "speaker": "elev-kevin",
+      "text": "We're goin' up and down",
+      "intensity": 0.92
+    },
+    {
+      "start": 25.5,
+      "end": 27.15,
+      "speaker": "elev-kevin",
+      "text": "We're movin' all around",
+      "intensity": 0.94
+    },
+    {
+      "start": 27.45,
+      "end": 31.65,
+      "speaker": "elev-nico",
+      "text": "I wanna show you my world",
+      "intensity": 0.95
+    },
+    {
+      "start": 31.82,
+      "end": 34.82,
+      "speaker": "elev-nico",
+      "text": "Where the beat goes up and down",
+      "intensity": 0.95
+    },
+    {
+      "start": 34.96,
+      "end": 38,
+      "speaker": "elev-nico",
+      "text": "Let me open the door",
+      "intensity": 0.96
+    },
+    {
+      "start": 39.02,
+      "end": 40.66,
+      "speaker": "elev-operator",
+      "text": "Elevator operator",
+      "intensity": 0.92
+    },
+    {
+      "start": 41.55,
+      "end": 42.22,
+      "speaker": "elev-operator",
+      "text": "Up, up!",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.2,
+      "end": 43.88,
+      "speaker": "elev-operator",
+      "text": "Down, down!",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.82,
+      "end": 45.55,
+      "speaker": "elev-operator",
+      "text": "Up, up!",
+      "intensity": 0.88
+    },
+    {
+      "start": 45.68,
+      "end": 47.3,
+      "speaker": "elev-operator",
+      "text": "Elevator operator",
+      "intensity": 0.95
+    },
+    {
+      "start": 45.7,
+      "end": 47.35,
+      "speaker": "elev-nico",
+      "text": "Elevator operator",
+      "intensity": 0.92
+    },
+    {
+      "start": 53.95,
+      "end": 55.55,
+      "speaker": "elev-nico",
+      "text": "I wanna be like him",
+      "intensity": 0.8
+    },
+    {
+      "start": 55.8,
+      "end": 57.15,
+      "speaker": "elev-nico",
+      "text": "I really wanna be like him",
+      "intensity": 0.82
+    },
+    {
+      "start": 57.25,
+      "end": 58.85,
+      "speaker": "elev-nico",
+      "text": "I wanna be with him",
+      "intensity": 0.82
+    },
+    {
+      "start": 59.1,
+      "end": 61.72,
+      "speaker": "elev-nico",
+      "text": "Forget about that, heads up in the sky",
+      "intensity": 0.84
+    },
+    {
+      "start": 61.8,
+      "end": 63.2,
+      "speaker": "elev-nico",
+      "text": "And we keep gettin' high",
+      "intensity": 0.86
+    },
+    {
+      "start": 63.28,
+      "end": 66.4,
+      "speaker": "elev-nico",
+      "text": "A magic down in his lever that you cannot deny",
+      "intensity": 0.88
+    },
+    {
+      "start": 66.58,
+      "end": 68.82,
+      "speaker": "elev-kevin",
+      "text": "A glowing light, he's shining bright",
+      "intensity": 0.9
+    },
+    {
+      "start": 69.02,
+      "end": 70.9,
+      "speaker": "elev-kevin",
+      "text": "I cannot wait to get inside",
+      "intensity": 0.9
+    },
+    {
+      "start": 71,
+      "end": 72.12,
+      "speaker": "elev-kevin",
+      "text": "Still out of sight",
+      "intensity": 0.9
+    },
+    {
+      "start": 72.26,
+      "end": 73.68,
+      "speaker": "elev-kevin",
+      "text": "We, we wanna go",
+      "intensity": 0.92
+    },
+    {
+      "start": 73.72,
+      "end": 75.04,
+      "speaker": "elev-kevin",
+      "text": "Up and down",
+      "intensity": 0.92
+    },
+    {
+      "start": 75.24,
+      "end": 76.55,
+      "speaker": "elev-kevin",
+      "text": "We're movin' all around",
+      "intensity": 0.92
+    },
+    {
+      "start": 76.68,
+      "end": 78.38,
+      "speaker": "elev-kevin",
+      "text": "We're goin' up and down",
+      "intensity": 0.94
+    },
+    {
+      "start": 78.48,
+      "end": 80.15,
+      "speaker": "elev-kevin",
+      "text": "We're movin' all around",
+      "intensity": 0.95
+    },
+    {
+      "start": 80.42,
+      "end": 84.68,
+      "speaker": "elev-nico",
+      "text": "I wanna show you my world",
+      "intensity": 0.96
+    },
+    {
+      "start": 84.78,
+      "end": 87.82,
+      "speaker": "elev-nico",
+      "text": "Where the beat goes up and down",
+      "intensity": 0.96
+    },
+    {
+      "start": 87.95,
+      "end": 90.92,
+      "speaker": "elev-nico",
+      "text": "Let me open the door",
+      "intensity": 0.96
+    },
+    {
+      "start": 92.02,
+      "end": 93.62,
+      "speaker": "elev-operator",
+      "text": "Elevator operator",
+      "intensity": 0.94
+    },
+    {
+      "start": 94.54,
+      "end": 95.18,
+      "speaker": "elev-operator",
+      "text": "Up, up!",
+      "intensity": 0.86
+    },
+    {
+      "start": 96.18,
+      "end": 96.82,
+      "speaker": "elev-operator",
+      "text": "Down, down!",
+      "intensity": 0.86
+    },
+    {
+      "start": 97.8,
+      "end": 98.5,
+      "speaker": "elev-operator",
+      "text": "Up, up!",
+      "intensity": 0.9
+    },
+    {
+      "start": 98.66,
+      "end": 100.24,
+      "speaker": "elev-operator",
+      "text": "Elevator operator",
+      "intensity": 0.96
+    },
+    {
+      "start": 98.68,
+      "end": 100.24,
+      "speaker": "elev-nico",
+      "text": "Elevator operator",
+      "intensity": 0.92
+    },
+    {
+      "start": 100.34,
+      "end": 103.25,
+      "speaker": "elev-nico",
+      "text": "Ah!",
+      "intensity": 0.96
+    },
+    {
+      "start": 121.9,
+      "end": 125.5,
+      "speaker": "elev-kevin",
+      "text": "And I just wanna get down",
+      "intensity": 0.96
+    },
+    {
+      "start": 125.68,
+      "end": 127.48,
+      "speaker": "elev-kevin",
+      "text": "But I'm just goin' up",
+      "intensity": 0.96
+    },
+    {
+      "start": 128.52,
+      "end": 131.95,
+      "speaker": "elev-kevin",
+      "text": "You better listen to the sound",
+      "intensity": 0.98
+    },
+    {
+      "start": 132.02,
+      "end": 134.12,
+      "speaker": "elev-kevin",
+      "text": "Move your body like a god",
+      "intensity": 0.98
+    },
+    {
+      "start": 135.34,
+      "end": 136.68,
+      "speaker": "elev-kevin",
+      "text": "And we never stop",
+      "intensity": 1
+    },
+    {
+      "start": 139.38,
+      "end": 140.1,
+      "speaker": "elev-kevin",
+      "text": "Get down!",
+      "intensity": 1
+    },
+    {
+      "start": 145.05,
+      "end": 146.88,
+      "speaker": "elev-kevin",
+      "text": "I wanna hear you say",
+      "intensity": 0.98
+    },
+    {
+      "start": 148.9,
+      "end": 150.6,
+      "speaker": "elev-kevin",
+      "text": "Ta, ta, tatata, tatatata, tata",
+      "intensity": 0.96
+    },
+    {
+      "start": 152.25,
+      "end": 153.08,
+      "speaker": "elev-kevin",
+      "text": "Get down!",
+      "intensity": 1
+    },
+    {
+      "start": 153.26,
+      "end": 157.54,
+      "speaker": "elev-nico",
+      "text": "I wanna show you my world",
+      "intensity": 0.98
+    },
+    {
+      "start": 157.6,
+      "end": 160.6,
+      "speaker": "elev-nico",
+      "text": "Where the beat goes up and down",
+      "intensity": 0.98
+    },
+    {
+      "start": 160.7,
+      "end": 163.76,
+      "speaker": "elev-nico",
+      "text": "Let me open the door",
+      "intensity": 0.98
+    },
+    {
+      "start": 164.84,
+      "end": 166.46,
+      "speaker": "elev-operator",
+      "text": "Elevator operator",
+      "intensity": 0.96
+    },
+    {
+      "start": 167.36,
+      "end": 168,
+      "speaker": "elev-operator",
+      "text": "Up, up!",
+      "intensity": 0.88
+    },
+    {
+      "start": 169,
+      "end": 169.6,
+      "speaker": "elev-operator",
+      "text": "Down, down!",
+      "intensity": 0.88
+    },
+    {
+      "start": 170.65,
+      "end": 171.34,
+      "speaker": "elev-operator",
+      "text": "Up, up!",
+      "intensity": 0.92
+    },
+    {
+      "start": 171.48,
+      "end": 173.08,
+      "speaker": "elev-operator",
+      "text": "Elevator operator",
+      "intensity": 0.98
+    },
+    {
+      "start": 171.5,
+      "end": 173.08,
+      "speaker": "elev-nico",
+      "text": "Elevator operator",
+      "intensity": 0.95
+    },
+    {
+      "start": 173.12,
+      "end": 176.35,
+      "speaker": "elev-nico",
+      "text": "Ah!",
+      "intensity": 0.98
+    },
+    {
+      "start": 184.72,
+      "end": 186.42,
+      "speaker": "elev-operator",
+      "text": "Elevator operator",
+      "intensity": 0.94
+    },
+    {
+      "start": 184.74,
+      "end": 186.42,
+      "speaker": "elev-nico",
+      "text": "Elevator operator",
+      "intensity": 0.94
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "elev-alley"
+    },
+    {
+      "time": 6.8,
+      "view": "elev-nico"
+    },
+    {
+      "time": 10.5,
+      "view": "elev-alley"
+    },
+    {
+      "time": 14,
+      "view": "elev-kevin"
+    },
+    {
+      "time": 19.2,
+      "view": "elev-alley"
+    },
+    {
+      "time": 24,
+      "view": "elev-kevin"
+    },
+    {
+      "time": 27.4,
+      "view": "elev-doors"
+    },
+    {
+      "time": 31.8,
+      "view": "elev-operator"
+    },
+    {
+      "time": 35,
+      "view": "elev-doors"
+    },
+    {
+      "time": 38.8,
+      "view": "elev-cabin"
+    },
+    {
+      "time": 41.4,
+      "view": "elev-shaft"
+    },
+    {
+      "time": 45.6,
+      "view": "elev-cabin"
+    },
+    {
+      "time": 49,
+      "view": "elev-white-floor"
+    },
+    {
+      "time": 53.8,
+      "view": "elev-kevin"
+    },
+    {
+      "time": 58.8,
+      "view": "elev-nico"
+    },
+    {
+      "time": 62.5,
+      "view": "elev-fisheye"
+    },
+    {
+      "time": 66.5,
+      "view": "elev-kevin"
+    },
+    {
+      "time": 72,
+      "view": "elev-fisheye"
+    },
+    {
+      "time": 78.2,
+      "view": "elev-panel"
+    },
+    {
+      "time": 80.4,
+      "view": "elev-aquarium"
+    },
+    {
+      "time": 85,
+      "view": "elev-operator"
+    },
+    {
+      "time": 88,
+      "view": "elev-nico"
+    },
+    {
+      "time": 92,
+      "view": "elev-fisheye"
+    },
+    {
+      "time": 95.5,
+      "view": "elev-cabin"
+    },
+    {
+      "time": 98.5,
+      "view": "elev-fisheye"
+    },
+    {
+      "time": 103.5,
+      "view": "elev-doors"
+    },
+    {
+      "time": 107,
+      "view": "elev-rave"
+    },
+    {
+      "time": 114,
+      "view": "elev-band"
+    },
+    {
+      "time": 121.8,
+      "view": "elev-rave"
+    },
+    {
+      "time": 128.4,
+      "view": "elev-band"
+    },
+    {
+      "time": 135.2,
+      "view": "elev-kevin"
+    },
+    {
+      "time": 139.2,
+      "view": "elev-rave"
+    },
+    {
+      "time": 145,
+      "view": "elev-band"
+    },
+    {
+      "time": 149,
+      "view": "elev-rave"
+    },
+    {
+      "time": 153.2,
+      "view": "elev-halo"
+    },
+    {
+      "time": 157.5,
+      "view": "elev-doors"
+    },
+    {
+      "time": 161,
+      "view": "elev-band"
+    },
+    {
+      "time": 164.8,
+      "view": "elev-operator"
+    },
+    {
+      "time": 167.3,
+      "view": "elev-rave"
+    },
+    {
+      "time": 171.4,
+      "view": "elev-fisheye"
+    },
+    {
+      "time": 177,
+      "view": "elev-shaft"
+    },
+    {
+      "time": 184.5,
+      "view": "elev-cabin"
+    },
+    {
+      "time": 187.5,
+      "view": "elev-zerog"
+    }
+  ]
+}

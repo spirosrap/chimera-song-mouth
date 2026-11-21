@@ -1,0 +1,19 @@
+Audrey Hobert — Phoebe (Official Video)
+CHIMERA Physical-Airway Reconstruction
+
+Source reference:
+- Music video: Audrey Hobert - Phoebe (Official Video)
+- Duration: 234.034s
+
+Synthesis & Staging:
+- Original instrumental accompaniment separated via Demucs HTDemucs into backing.mp3.
+- One CHIMERA physical female vocal tract model synthesizes Audrey's lead vocal performance
+  across verses, choruses, bridge, and outro.
+- Phonetics generated with CHIMERA's English G2P engine and aligned to offline Whisper
+  word timestamps and 25ms-hop measured F0 vocal contours.
+- Procedural 3D Three.js stage recreates the Pacific ocean & sea stacks, wood-paneled night
+  cabin with fireplace and bedside lamp, pink-lily meadow gravestone, sunny diner booth,
+  California redwood grove & white cargo van, coastal bluff, neon-green hoodie river fishing
+  for $100 bills, starry "I LOVE YOU" night sky, twilight blue ocean portrait, dusk beach
+  lightsaber kick, and golden sunset ocean silhouette.
+- Original video frames and source vocal stems are not embedded.

@@ -1,0 +1,18 @@
+Electric Callboy — ELEVATOR OPERATOR (Official Video)
+CHIMERA Physical-Airway Reconstruction
+
+Source reference:
+- Music video: Electric Callboy - ELEVATOR OPERATOR (Official Video, featuring Uke Bosse)
+- Duration: 198.693s (145 BPM)
+
+Synthesis & Staging:
+- Original instrumental accompaniment separated via Demucs HTDemucs into backing.mp3.
+- Three independent CHIMERA physical airway models synthesize Nico (clean tenor),
+  Kevin (heavy rock/breakdown voice), and the Elevator Operator (deep baritone hook and lift calls).
+- Phonetics generated with CHIMERA's English G2P engine and aligned to Whisper word timestamps
+  and measured F0 vocal contours.
+- Procedural 3D Three.js stage recreates the night brick alley, glowing elevator doorway,
+  geometric white LED cabin, illuminated 3x3 button panel, high-speed elevator shaft,
+  white and aquarium floor reveals, electric blue rave club & live band stage,
+  and zero-gravity floating finale.
+- Original video frames and source vocal stems are not embedded.

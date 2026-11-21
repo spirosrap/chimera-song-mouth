@@ -1,0 +1,20 @@
+Megan Thee Stallion — Whenever (Official Video)
+CHIMERA Physical-Airway Reconstruction
+
+Source reference:
+- Music video: Megan Thee Stallion - Whenever [Official Video]
+- Duration: 166.394s
+
+Synthesis & Staging:
+- Original instrumental accompaniment separated via Demucs HTDemucs into backing.mp3.
+- One CHIMERA physical female airway model synthesizes Megan's rapid rap verses,
+  hooks, and ad-libs from intro through outro.
+- Phonetics generated with CHIMERA's English G2P engine and aligned to offline Whisper
+  word timestamps and 25ms-hop measured F0 vocal contours.
+- Procedural 3D Three.js stage recreates the retro wood-paneled waiting room and CRT TV,
+  glass reception booth with landline phones, giant glowing wall aquarium tank, surreal
+  fish-headed waiting room patients, stark monochrome white-void studio, burnt-orange
+  Western desert with vintage Cadillac and zig-zag "WHENEVER" sign, black-and-white
+  checkered chessboard with giant white chess knight, giant glossy black 8-ball on
+  green pool felt, and the Cadillac crashed through the waiting room wall finale.
+- Original video frames and source vocal stems are not embedded.
