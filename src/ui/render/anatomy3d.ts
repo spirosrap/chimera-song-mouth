@@ -660,8 +660,8 @@ export interface HeadDrawing {
   /** parts drawn otherwise than `inner` has them (a body that draws its own): the brain, the
    *  skull's section, the cervical spine; and the ears (1 unless set); `pop`: the eyes, nose and
    *  lips drawn up to this much wider (1.35 unless set), with white cores and the nose's ridge,
-   *  to stand out from what's behind them */
-  parts?: { brain?: number; skull?: number; spine?: number; ears?: number; pop?: number };
+   *  to stand out from what's behind them (`cores: false`: without the white cores) */
+  parts?: { brain?: number; skull?: number; spine?: number; ears?: number; pop?: number; cores?: boolean };
 }
 export const APP_DRAWING: Readonly<HeadDrawing> = { inner: 1, bone: 1, outline: 1, shell: 1, features: 1, lipSkin: true, mounted: false, fade: null };
 
@@ -945,11 +945,11 @@ export class Anatomy3D {
     this.k = k;
 
     // ---- the fixed and jaw-carried structures, each as bright as `drawing` has it
-    const d = this.drawing, pop = d.parts?.pop, widen = Math.min(pop ?? 1.35, 1 + 0.45 * Math.max(0, d.features - 1));
+    const d = this.drawing, pop = d.parts?.pop, cores = !!pop && d.parts?.cores !== false, widen = Math.min(pop ?? 1.35, 1 + 0.45 * Math.max(0, d.features - 1));
     B.fade = d.fade;
     for (const g of rest.fixed) {
       const feature = g.kind === "feature";
-      B.hot = feature && !!pop;
+      B.hot = feature && cores;
       B.gain = feature ? d.features : g.kind === "bone" ? d.bone : g.kind === "outer" ? (d.parts?.ears ?? 1) : g.kind === "brain" ? (d.parts?.brain ?? d.inner) : g.kind === "spine" ? (d.parts?.spine ?? d.inner) : d.inner;
       const color = feature && d.features > 1 ? V.blue : g.color;
       for (const l of g.lines) B.line(l, l.length / 3, color, feature ? g.width * widen : g.width, { alpha: g.alpha, hot: g.hot });
@@ -999,7 +999,7 @@ export class Anatomy3D {
     line(G.glottisWall, V.blue, 1.2, { alpha: 0.8 });
 
     B.gain = d.features;
-    B.hot = !!pop;
+    B.hot = cores;
     this.eyes(rest, dt, widen);
     if (pop) {
       // the nose's ridge, from the bridge down to under its tip (the midline profile's own piece of it)
@@ -1022,7 +1022,7 @@ export class Anatomy3D {
     const soft = (v: Vec[], it: number) => flat(chaikin(v.map((p) => [p.x, p.y] as Pt), it).map(([x, y]) => ({ x, y })));
     const upperLip = soft(f.upperLip, 2), lowerLip = soft(f.lowerLip, 2);
     B.gain = d.features;
-    B.hot = !!pop;
+    B.hot = cores;
     const mouth = this.lips(rest, model, f, a, phi, widen);
     B.hot = false;
     const chin = rest.chin;

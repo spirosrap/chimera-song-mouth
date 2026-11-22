@@ -46,11 +46,25 @@ const model = new VoiceModel(BODIES.male, 48000);
 const head = wearHead(rig, model);
 const skinned = new Float32Array(3 * rig.n);
 /** the head without its outside: no grid, no shell, no midline profile, no ears; its own brain and spine left to the nerves */
-const lookHead = (bone: number) => {
-  head.setLook({ inner: 1, bone, outline: 0, shell: 0, skin: 0, features: 2.6 });
-  head.head.drawing = { ...head.head.drawing, fade: null, parts: { brain: 0, skull: 0, spine: 0, ears: 0, pop: 2 } };
+head.setLook({ inner: 1, bone: 0.3, outline: 0, shell: 0, skin: 0, features: 2.6 });
+const parts = { brain: 0, skull: 0, spine: 0, ears: 0, pop: 2, cores: true };
+head.head.drawing = { ...head.head.drawing, fade: null, parts };
+/**
+ * The face's lines are so many px wide whatever the head's size on screen: seen whole-body they
+ * pile into a few px and bloom to white. So they're drawn as bright, as wide and with white cores
+ * only as the head comes close; far off, softer and thinner, the vocal tract dimmer.
+ */
+const headC = new THREE.Vector3();
+const scaleFace = () => {
+  headC.set(1, 12, 0).applyMatrix4(head.mount.matrixWorld);
+  const pxPerCm = innerHeight / (2 * camera.position.distanceTo(headC) * Math.tan((camera.fov * Math.PI) / 360));
+  const near = THREE.MathUtils.smoothstep(pxPerCm, 5, 16), mix = (a: number, b: number) => a + (b - a) * near;
+  head.look.features = mix(1.15, 2.6);
+  head.head.drawing.inner = mix(0.5, 1);
+  head.head.drawing.bone = mix(0.12, 0.3);
+  parts.pop = mix(1.1, 2);
+  parts.cores = near > 0.45;
 };
-lookHead(0.3);
 scene.add(head.mount);
 
 const form = document.querySelector("form")!;
@@ -171,6 +185,7 @@ renderer.setAnimationLoop((now) => {
   const dt = Math.max(0, Math.min(0.1, (now - last) / 1000));
   last = now;
   controls.update();
+  scaleFace();
   head.update(camera, artic(), null, dt);
   // the head's lines over the tubes, never hidden by them
   head.mount.traverse((o) => {
