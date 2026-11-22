@@ -3,6 +3,7 @@ import { VideoProps, VideoFigure, type VideoPoint as P } from './videoProps.ts';
 import type { VoiceModel } from '../analysis.ts';
 import type { TeleTrack } from '../../show/tele.ts';
 import type { CameraView, CharacterId } from '../../scene/scene.ts';
+import { bodyPoint } from './profile.ts';
 
 export type ElectricBlueId = 'eb-lead' | 'eb-agent';
 
@@ -375,6 +376,7 @@ export class ElectricBlueStage {
       electricBlue,
       skinLead,
     );
+    this.lead.head.scene.scale.setScalar(2.12);
     this.agent = new VideoFigure(
       agentModel,
       agentTrack,
@@ -383,20 +385,26 @@ export class ElectricBlueStage {
       burgundySuit,
       '#c89678',
     );
+    this.agent.head.scene.scale.setScalar(2.04);
 
-    const curlyMat = new THREE.MeshStandardMaterial({ color: hairCurly, roughness: 0.8 });
-    const leadHair = new THREE.Mesh(new THREE.SphereGeometry(19, 12, 10, 0, Math.PI * 2, 0, Math.PI * 0.58), curlyMat);
-    leadHair.position.set(0, 154, -2);
-    this.lead.root.add(leadHair);
-
-    const agentHair = new THREE.Mesh(
-      new THREE.CylinderGeometry(18, 22, 42, 12),
-      new THREE.MeshStandardMaterial({ color: '#261812', roughness: 0.78 }),
-    );
-    agentHair.position.set(0, 142, -6);
-    this.agent.root.add(agentHair);
+    this.styleHair(this.lead, hairCurly);
+    this.styleHair(this.agent, '#261812');
 
     this.resize(1280, 720);
+  }
+
+  private styleHair(f: VideoFigure, color: string): void {
+    const p = this.props;
+    const B = bodyPoint(f.model);
+    const k = f.model.tract.scale;
+    f.hair.begin();
+    for (let row = -8; row <= 8; row++) {
+      const z = row * 0.85 * k;
+      const a = B(-8, 22);
+      const b = B(8, 17);
+      p.line(f.hair, [[a.x, a.y + 4 * k, z], [a.x + 6 * k, a.y + 8 * k, z], [b.x, b.y - 4 * k, z]], color, 4.0);
+    }
+    f.hair.end();
   }
 
   resize(width: number, height: number): void {
@@ -404,6 +412,7 @@ export class ElectricBlueStage {
     this.height = Math.max(1, height);
     this.camera.aspect = this.width / this.height;
     this.camera.updateProjectionMatrix();
+    this.props.resize(this.width, this.height);
     this.lead.head.resize(this.width, this.height);
     this.agent.head.resize(this.width, this.height);
   }
@@ -479,27 +488,27 @@ export class ElectricBlueStage {
       this.rimLight.color.set('#ffe29c');
     }
 
-    // Position lead & agent
-    const jumpY = isTrampoline ? 58 + Math.abs(Math.sin(t * 3.8)) * 75 : isPool ? 64 : 0;
+    // Position lead & agent (VideoFigure head sits at root.y = 150!)
+    const jumpY = isTrampoline ? 45 + Math.abs(Math.sin(t * 3.8)) * 55 : isPool ? 38 : 0;
     const leadSpot: P = isOffice
-      ? [-115, 0, -90]
+      ? [-88, 148, -62]
       : isTrampoline
-      ? [0, jumpY, -40]
+      ? [0, 150 + jumpY, -28]
       : isPool
-      ? [-140, jumpY, -130]
+      ? [-72, 150 + jumpY, -70]
       : isTruck
-      ? [12, 0, -70]
-      : [sway * 18, bounce * 4, -25];
+      ? [10, 150, -48]
+      : [sway * 14, 150 + bounce * 4, -14];
     this.lead.root.position.set(leadSpot[0], leadSpot[1], leadSpot[2]);
-    this.lead.root.rotation.y = isOffice ? 0.55 : sway * 0.18;
-    this.lead.root.rotation.x = isTrampoline && Math.sin(t * 3.8) > 0.7 ? (t * 8) % (Math.PI * 2) : 0;
+    this.lead.root.rotation.y = isOffice ? 0.42 : sway * 0.16;
+    this.lead.root.rotation.x = isTrampoline && Math.sin(t * 3.8) > 0.75 ? (t * 8) % (Math.PI * 2) : 0;
 
     this.agent.root.visible = isOffice || isTrampoline;
     if (isOffice) {
-      this.agent.root.position.set(125, 0, -175);
+      this.agent.root.position.set(92, 148, -96);
       this.agent.root.rotation.y = -0.35;
     } else if (isTrampoline) {
-      this.agent.root.position.set(95, 42, -280);
+      this.agent.root.position.set(95, 190, -180);
       this.agent.root.rotation.y = 0;
     }
 
@@ -512,59 +521,59 @@ export class ElectricBlueStage {
     this.lead.pose(t, arms(beat, speaker === 'eb-lead' || !speaker ? 22 + bounce * 10 : 8));
     this.agent.pose(t, arms(beat + 0.6, speaker === 'eb-agent' ? 18 : 6));
 
-    // Deterministic cameras
+    // Deterministic hero cameras centered cleanly on the Chimera head
     const portrait = this.height > this.width;
-    let pos: [number, number, number] = [Math.sin(t * 0.35) * 55, 152, 240];
-    let target: [number, number, number] = [0, 128, -35];
-    let fov = portrait ? 54 : 40;
+    let pos: [number, number, number] = [Math.sin(t * 0.35) * 44, 160, 195];
+    let target: [number, number, number] = [leadSpot[0], 150, leadSpot[2]];
+    let fov = portrait ? 52 : 38;
 
     switch (view) {
       case 'eb-office':
-        pos = [Math.sin(t * 0.25) * 45, 148, 175];
-        target = [15, 122, -145];
-        fov = portrait ? 54 : 42;
-        break;
-      case 'eb-agent':
-        pos = [138 + Math.sin(t * 0.3) * 12, 148, -15];
-        target = [125, 142, -175];
-        fov = portrait ? 42 : 30;
-        break;
-      case 'eb-lawn':
-        pos = [Math.sin(t * 0.3) * 70, 145, 240];
-        target = [-10, 102, -65];
-        fov = portrait ? 56 : 42;
-        break;
-      case 'eb-truck':
-        pos = [Math.sin(t * 0.28) * 55, 148, 225];
-        target = [0, 128, -150];
-        fov = portrait ? 54 : 42;
-        break;
-      case 'eb-carwash':
-        pos = [Math.sin(t * 0.32) * 65, 138, 200];
-        target = [0, 112, -95];
+        pos = [Math.sin(t * 0.25) * 38, 158, 165];
+        target = [4, 148, -78];
         fov = portrait ? 52 : 40;
         break;
+      case 'eb-agent':
+        pos = [104 + Math.sin(t * 0.3) * 10, 156, 32];
+        target = [92, 150, -96];
+        fov = portrait ? 40 : 28;
+        break;
+      case 'eb-lawn':
+        pos = [Math.sin(t * 0.3) * 52, 158, 198];
+        target = [-6, 148, -32];
+        fov = portrait ? 54 : 40;
+        break;
+      case 'eb-truck':
+        pos = [Math.sin(t * 0.28) * 44, 158, 185];
+        target = [6, 150, -68];
+        fov = portrait ? 52 : 38;
+        break;
+      case 'eb-carwash':
+        pos = [Math.sin(t * 0.32) * 48, 156, 178];
+        target = [0, 148, -44];
+        fov = portrait ? 52 : 38;
+        break;
       case 'eb-pool':
-        pos = [Math.sin(t * 0.28) * 70, 178, 255];
-        target = [-20, 115, -135];
-        fov = portrait ? 56 : 44;
+        pos = [Math.sin(t * 0.28) * 52, 192, 205];
+        target = [-42, 174, -75];
+        fov = portrait ? 54 : 40;
         break;
       case 'eb-trampoline':
-        pos = [Math.sin(t * 0.3) * 60, 165, 250];
-        target = [0, 155, -80];
-        fov = portrait ? 56 : 42;
+        pos = [Math.sin(t * 0.3) * 48, 185 + jumpY * 0.4, 215];
+        target = [0, 162 + jumpY * 0.6, -42];
+        fov = portrait ? 54 : 40;
         break;
       case 'eb-lead':
-        pos = [leadSpot[0] + Math.sin(t * 0.45) * 14, 150 + jumpY * 0.4, 96];
-        target = [leadSpot[0], 144 + jumpY * 0.4, leadSpot[2]];
-        fov = portrait ? 40 : 28;
+        pos = [leadSpot[0] + Math.sin(t * 0.45) * 12, leadSpot[1] + 4, 102];
+        target = [leadSpot[0], leadSpot[1] + 2, leadSpot[2]];
+        fov = portrait ? 38 : 27;
         break;
       case 'eb-jumpsuits':
       case 'wide':
       default:
-        pos = [Math.sin(t * 0.35) * 62, 152, 245];
-        target = [0, 128, -65];
-        fov = portrait ? 54 : 40;
+        pos = [Math.sin(t * 0.35) * 48, 160, 198];
+        target = [0, 150, -28];
+        fov = portrait ? 52 : 38;
         break;
     }
 

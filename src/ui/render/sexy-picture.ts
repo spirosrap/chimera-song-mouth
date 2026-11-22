@@ -3,6 +3,7 @@ import { VideoProps, VideoFigure, type VideoPoint as P } from './videoProps.ts';
 import type { VoiceModel } from '../analysis.ts';
 import type { TeleTrack } from '../../show/tele.ts';
 import type { CameraView, CharacterId } from '../../scene/scene.ts';
+import { bodyPoint } from './profile.ts';
 
 export type SexyPictureId = 'cm-lead' | 'cm-choir';
 
@@ -165,6 +166,7 @@ export class SexyPictureStage {
 
   readonly lead: VideoFigure;
   readonly choir: VideoFigure;
+  readonly halo: THREE.Group = new THREE.Group();
   readonly scissorsGroup: THREE.Group;
   readonly coinMascot: THREE.Group;
   readonly dogMascot: THREE.Group;
@@ -177,6 +179,7 @@ export class SexyPictureStage {
   private readonly signTex: THREE.CanvasTexture | null;
   private readonly coinTex: THREE.CanvasTexture | null;
   private readonly desertTex: THREE.CanvasTexture | null;
+  private haloTex: THREE.CanvasTexture | null = null;
   private width = 1280;
   private height = 720;
   private last: number | null = null;
@@ -470,6 +473,7 @@ export class SexyPictureStage {
       redDress,
       skinFair,
     );
+    this.lead.head.scene.scale.setScalar(2.12);
     this.choir = new VideoFigure(
       choirModel,
       choirTrack,
@@ -478,25 +482,43 @@ export class SexyPictureStage {
       velvetBlue,
       '#dca88e',
     );
+    this.choir.head.scene.scale.setScalar(2.02);
 
-    const hairMat = new THREE.MeshStandardMaterial({ color: hairCopper, roughness: 0.72 });
-    const leadHair = new THREE.Mesh(
-      new THREE.SphereGeometry(20, 14, 12, 0, Math.PI * 2, 0, Math.PI * 0.65),
-      hairMat,
-    );
-    leadHair.position.set(0, 155, -3);
-    const leadBangs = new THREE.Mesh(new THREE.BoxGeometry(28, 9, 10), hairMat);
-    leadBangs.position.set(0, 161, 13);
-    this.lead.root.add(leadHair, leadBangs);
+    this.styleHair(this.lead, hairCopper);
+    this.styleHair(this.choir, '#422014');
 
-    const choirHair = new THREE.Mesh(
-      new THREE.CylinderGeometry(18, 24, 46, 12),
-      new THREE.MeshStandardMaterial({ color: '#422014', roughness: 0.78 }),
-    );
-    choirHair.position.set(0, 144, -6);
-    this.choir.root.add(choirHair);
+    if (typeof document !== 'undefined') {
+      const hc = document.createElement('canvas');
+      hc.width = hc.height = 192;
+      const hctx = hc.getContext('2d')!;
+      const grad = hctx.createRadialGradient(96, 96, 10, 96, 96, 96);
+      grad.addColorStop(0, 'rgba(12, 10, 18, 0.68)');
+      grad.addColorStop(0.5, 'rgba(12, 10, 18, 0.36)');
+      grad.addColorStop(1, 'rgba(12, 10, 18, 0)');
+      hctx.fillStyle = grad;
+      hctx.fillRect(0, 0, 192, 192);
+      this.haloTex = new THREE.CanvasTexture(hc);
+      const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: this.haloTex, transparent: true, depthWrite: false }));
+      sp.scale.set(118, 118, 1);
+      this.halo.add(sp);
+    }
+    this.scene.add(this.halo);
 
     this.resize(1280, 720);
+  }
+
+  private styleHair(f: VideoFigure, color: string): void {
+    const p = this.props;
+    const B = bodyPoint(f.model);
+    const k = f.model.tract.scale;
+    f.hair.begin();
+    for (let row = -8; row <= 8; row++) {
+      const z = row * 0.85 * k;
+      const a = B(-8, 22);
+      const b = B(8, 17);
+      p.line(f.hair, [[a.x, a.y + 4 * k, z], [a.x + 6 * k, a.y + 8 * k, z], [b.x, b.y - 4 * k, z]], color, 4.0);
+    }
+    f.hair.end();
   }
 
   resize(width: number, height: number): void {
@@ -504,6 +526,7 @@ export class SexyPictureStage {
     this.height = Math.max(1, height);
     this.camera.aspect = this.width / this.height;
     this.camera.updateProjectionMatrix();
+    this.props.resize(this.width, this.height);
     this.lead.head.resize(this.width, this.height);
     this.choir.head.resize(this.width, this.height);
   }
@@ -577,24 +600,26 @@ export class SexyPictureStage {
       this.rimLight.color.set('#ffdfb0');
     }
 
-    // Position lead & harmony singer
+    // Position lead & harmony singer (VideoFigure head sits at root.y = 150!)
     const leadSpot: P = isClub
-      ? [-24 + sway * 10, bounce * 3, -72]
+      ? [-20 + sway * 10, 150 + bounce * 3, -46]
       : isVanity
-      ? [0, 0, -68]
-      : [sway * 18, bounce * 4, -22];
+      ? [0, 150, -52]
+      : [sway * 14, 150 + bounce * 4, -14];
     this.lead.root.position.set(leadSpot[0], leadSpot[1], leadSpot[2]);
-    this.lead.root.rotation.y = isVanity ? -0.18 : sway * 0.16;
+    this.lead.root.rotation.y = isVanity ? -0.18 : sway * 0.14;
+    this.halo.visible = isRibbon || isDesert;
+    this.halo.position.set(leadSpot[0], leadSpot[1] + 6, leadSpot[2] - 28);
 
     this.choir.root.visible = isBlue || isRibbon || isClub;
     if (isBlue) {
-      this.choir.root.position.set(82, bounce * 4, -68);
+      this.choir.root.position.set(84, 148 + bounce * 4, -48);
       this.choir.root.rotation.y = -0.25;
     } else if (isClub) {
-      this.choir.root.position.set(86, 0, -112);
-      this.choir.root.rotation.y = -0.45;
+      this.choir.root.position.set(82, 148, -76);
+      this.choir.root.rotation.y = -0.4;
     } else {
-      this.choir.root.position.set(-88, bounce * 2, -105);
+      this.choir.root.position.set(-86, 148 + bounce * 2, -68);
       this.choir.root.rotation.y = 0.25;
     }
 
@@ -607,49 +632,49 @@ export class SexyPictureStage {
     this.lead.pose(t, arms(beat, speaker === 'cm-lead' || !speaker ? 22 + bounce * 10 : 8));
     this.choir.pose(t, arms(beat + 0.5, speaker === 'cm-choir' ? 20 : 6));
 
-    // Deterministic cameras
+    // Deterministic hero cameras framed squarely on the Chimera head
     const portrait = this.height > this.width;
-    let pos: [number, number, number] = [Math.sin(t * 0.35) * 52, 152, 240];
-    let target: [number, number, number] = [0, 128, -45];
-    let fov = portrait ? 54 : 40;
+    let pos: [number, number, number] = [Math.sin(t * 0.35) * 44, 160, 195];
+    let target: [number, number, number] = [leadSpot[0], 150, leadSpot[2]];
+    let fov = portrait ? 52 : 38;
 
     switch (view) {
       case 'cm-ribbon':
       case 'wide':
-        pos = [Math.sin(t * 0.28) * 58, 148, 250];
-        target = [0, 124, -75];
-        fov = portrait ? 56 : 42;
-        break;
-      case 'cm-club':
-        pos = [Math.sin(t * 0.26) * 44, 146, 170];
-        target = [8, 122, -95];
-        fov = portrait ? 54 : 40;
-        break;
-      case 'cm-desert':
-        pos = [Math.sin(t * 0.36) * 60, 148, 220];
-        target = [0, 126, -65];
-        fov = portrait ? 54 : 40;
-        break;
-      case 'cm-blue':
-        pos = [Math.sin(t * 0.32) * 56, 150, 215];
-        target = [0, 132, -65];
+        pos = [Math.sin(t * 0.28) * 44, 160, 205];
+        target = [0, 148, -32];
         fov = portrait ? 52 : 38;
         break;
+      case 'cm-club':
+        pos = [Math.sin(t * 0.26) * 36, 158, 145];
+        target = [4, 150, -56];
+        fov = portrait ? 50 : 36;
+        break;
+      case 'cm-desert':
+        pos = [Math.sin(t * 0.36) * 46, 160, 185];
+        target = [leadSpot[0], 150, -28];
+        fov = portrait ? 50 : 36;
+        break;
+      case 'cm-blue':
+        pos = [Math.sin(t * 0.32) * 42, 160, 182];
+        target = [10, 150, -32];
+        fov = portrait ? 50 : 36;
+        break;
       case 'cm-vanity':
-        pos = [38 + Math.sin(t * 0.2) * 14, 150, 118];
-        target = [0, 138, -110];
-        fov = portrait ? 46 : 34;
+        pos = [28 + Math.sin(t * 0.2) * 12, 158, 92];
+        target = [0, 152, -52];
+        fov = portrait ? 44 : 32;
         break;
       case 'cm-choir':
-        pos = [94 + Math.sin(t * 0.35) * 14, 150, 72];
-        target = [82, 142, -68];
-        fov = portrait ? 42 : 30;
+        pos = [this.choir.root.position.x + Math.sin(t * 0.35) * 12, 158, 86];
+        target = [this.choir.root.position.x, 152, this.choir.root.position.z];
+        fov = portrait ? 40 : 28;
         break;
       case 'cm-lead':
       default:
-        pos = [leadSpot[0] + Math.sin(t * 0.42) * 14, 150, 96];
-        target = [leadSpot[0], 144, leadSpot[2]];
-        fov = portrait ? 40 : 28;
+        pos = [leadSpot[0] + Math.sin(t * 0.42) * 12, 156, 100];
+        target = [leadSpot[0], 152, leadSpot[2]];
+        fov = portrait ? 38 : 27;
         break;
     }
 
@@ -672,6 +697,8 @@ export class SexyPictureStage {
     this.signTex?.dispose();
     this.coinTex?.dispose();
     this.desertTex?.dispose();
+    this.haloTex?.dispose();
+    (this.halo.children[0] as THREE.Sprite | undefined)?.material.dispose();
     this.props.dispose();
   }
 }

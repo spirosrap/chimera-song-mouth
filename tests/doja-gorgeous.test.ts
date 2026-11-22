@@ -46,11 +46,18 @@ test('Gorgeous ships full engine mix, synchronized telemetry, and deterministic 
 
   const stage = new DojaGorgeousStage(tracks[0].model, tracks[0].track, tracks[1].model, tracks[1].track);
   try {
+    expect(stage.lead.head.scene.scale.x).toBeGreaterThanOrEqual(2);
     for (const [w, h] of [[1280, 720], [390, 844]] as const) {
       stage.resize(w, h);
       for (const view of SCENE_SETTINGS.dojagorgeous.cameras) {
         stage.frame(120, true, 1, view, 0.9, 'dg-lead');
         expect(stage.camera.matrixWorld.elements.every(Number.isFinite)).toBe(true);
+        if (view !== 'dg-echo') {
+          const headPos = stage.lead.root.position.clone().project(stage.camera);
+          expect(Math.abs(headPos.x)).toBeLessThan(0.75);
+          expect(Math.abs(headPos.y)).toBeLessThan(0.55);
+          expect(headPos.z).toBeLessThan(1);
+        }
       }
     }
   } finally {

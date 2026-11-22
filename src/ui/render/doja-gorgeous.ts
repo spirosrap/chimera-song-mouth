@@ -3,6 +3,7 @@ import { VideoProps, VideoFigure, type VideoPoint as P } from './videoProps.ts';
 import type { VoiceModel } from '../analysis.ts';
 import type { TeleTrack } from '../../show/tele.ts';
 import type { CameraView, CharacterId } from '../../scene/scene.ts';
+import { bodyPoint } from './profile.ts';
 
 export type DojaGorgeousId = 'dg-lead' | 'dg-echo';
 
@@ -141,6 +142,7 @@ export class DojaGorgeousStage {
 
   readonly lead: VideoFigure;
   readonly echo: VideoFigure;
+  readonly halo: THREE.Group = new THREE.Group();
   readonly perfumeBottle: THREE.Group;
   readonly goldLipsticks: THREE.Group[] = [];
   readonly compactLid: THREE.Mesh;
@@ -152,6 +154,7 @@ export class DojaGorgeousStage {
   private readonly editTex: THREE.CanvasTexture | null;
   private readonly goldTex: THREE.CanvasTexture | null;
   private readonly gridTex: THREE.CanvasTexture | null;
+  private haloTex: THREE.CanvasTexture | null = null;
   private width = 1280;
   private height = 720;
   private last: number | null = null;
@@ -354,6 +357,7 @@ export class DojaGorgeousStage {
       hotPink,
       skinWarm,
     );
+    this.lead.head.scene.scale.setScalar(2.12);
     this.echo = new VideoFigure(
       echoModel,
       echoTrack,
@@ -362,23 +366,44 @@ export class DojaGorgeousStage {
       '#1e4838',
       skinCo,
     );
+    this.echo.head.scene.scale.setScalar(2.02);
 
-    const leadHairMat = new THREE.MeshStandardMaterial({ color: '#5c1816', roughness: 0.72 });
-    const leadHair = new THREE.Mesh(
-      new THREE.SphereGeometry(22, 14, 12, 0, Math.PI * 2, 0, Math.PI * 0.72),
-      leadHairMat,
-    );
-    leadHair.position.set(0, 155, -3);
-    this.lead.root.add(leadHair);
+    this.styleHair(this.lead, '#5c1816');
+    this.styleHair(this.echo, '#1c1818');
 
-    const echoHair = new THREE.Mesh(
-      new THREE.CylinderGeometry(18, 22, 42, 12),
-      new THREE.MeshStandardMaterial({ color: '#1c1818', roughness: 0.74 }),
-    );
-    echoHair.position.set(0, 146, -5);
-    this.echo.root.add(echoHair);
+    // Soft dark studio halo behind the wireframe face so it stays razor-sharp against bright white cyclorama
+    if (typeof document !== 'undefined') {
+      const hc = document.createElement('canvas');
+      hc.width = hc.height = 192;
+      const hctx = hc.getContext('2d')!;
+      const grad = hctx.createRadialGradient(96, 96, 10, 96, 96, 96);
+      grad.addColorStop(0, 'rgba(10, 8, 16, 0.72)');
+      grad.addColorStop(0.5, 'rgba(10, 8, 16, 0.42)');
+      grad.addColorStop(1, 'rgba(10, 8, 16, 0)');
+      hctx.fillStyle = grad;
+      hctx.fillRect(0, 0, 192, 192);
+      this.haloTex = new THREE.CanvasTexture(hc);
+      const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: this.haloTex, transparent: true, depthWrite: false }));
+      sp.scale.set(118, 118, 1);
+      this.halo.add(sp);
+    }
+    this.scene.add(this.halo);
 
     this.resize(1280, 720);
+  }
+
+  private styleHair(f: VideoFigure, color: string): void {
+    const p = this.props;
+    const B = bodyPoint(f.model);
+    const k = f.model.tract.scale;
+    f.hair.begin();
+    for (let row = -8; row <= 8; row++) {
+      const z = row * 0.85 * k;
+      const a = B(-8, 22);
+      const b = B(8, 17);
+      p.line(f.hair, [[a.x, a.y + 4 * k, z], [a.x + 6 * k, a.y + 8 * k, z], [b.x, b.y - 4 * k, z]], color, 4.0);
+    }
+    f.hair.end();
   }
 
   resize(width: number, height: number): void {
@@ -386,6 +411,7 @@ export class DojaGorgeousStage {
     this.height = Math.max(1, height);
     this.camera.aspect = this.width / this.height;
     this.camera.updateProjectionMatrix();
+    this.props.resize(this.width, this.height);
     this.lead.head.resize(this.width, this.height);
     this.echo.head.resize(this.width, this.height);
   }
@@ -470,22 +496,24 @@ export class DojaGorgeousStage {
       this.rimLight.color.set(champagneGold);
     }
 
-    // Floating zero-G pose on the opening white cyclorama (<16s)
+    // Floating zero-G pose on the opening white cyclorama (<16s); VideoFigure head sits at root.y!
     const floating = isCyclo && t < 16.5;
-    const floatY = floating ? 38 + Math.sin(t * 1.4) * 14 : bounce * 3.5;
+    const floatY = floating ? 18 + Math.sin(t * 1.4) * 10 : bounce * 3.5;
     const leadSpot: P = isGrid
-      ? [-48 + sway * 10, bounce * 3, -38]
-      : [sway * 16, floatY, -24];
+      ? [-24 + sway * 8, 150 + bounce * 3, -18]
+      : [sway * 14, 150 + floatY, -14];
     this.lead.root.position.set(leadSpot[0], leadSpot[1], leadSpot[2]);
-    this.lead.root.rotation.z = floating ? Math.sin(t * 0.7) * 0.55 : 0;
-    this.lead.root.rotation.y = sway * 0.16;
+    this.lead.root.rotation.z = floating ? Math.sin(t * 0.7) * 0.35 : 0;
+    this.lead.root.rotation.y = sway * 0.14;
+    this.halo.visible = isCyclo;
+    this.halo.position.set(leadSpot[0], leadSpot[1] + 6, leadSpot[2] - 28);
 
     this.echo.root.visible = isGrid || (isCyclo && t > 20) || isGold;
     if (isGrid) {
-      this.echo.root.position.set(54, bounce * 2.5, -52);
+      this.echo.root.position.set(38, 148 + bounce * 2.5, -34);
       this.echo.root.rotation.y = -0.22;
     } else {
-      this.echo.root.position.set(92, bounce * 2, -88);
+      this.echo.root.position.set(92, 148 + bounce * 2, -60);
       this.echo.root.rotation.y = -0.28;
     }
 
@@ -498,59 +526,59 @@ export class DojaGorgeousStage {
     this.lead.pose(t, arms(beat, speaker === 'dg-lead' || !speaker ? 22 + bounce * 8 : 10));
     this.echo.pose(t, arms(beat + 0.6, speaker === 'dg-echo' ? 20 : 8));
 
-    // Deterministic cameras
+    // Deterministic hero cameras centered cleanly on the Chimera head (y ≈ 155)
     const portrait = this.height > this.width;
-    let pos: [number, number, number] = [Math.sin(t * 0.3) * 52, 152, 235];
-    let target: [number, number, number] = [0, 128, -45];
-    let fov = portrait ? 54 : 40;
+    let pos: [number, number, number] = [Math.sin(t * 0.3) * 42, 162, 185];
+    let target: [number, number, number] = [leadSpot[0], leadSpot[1] + 2, leadSpot[2]];
+    let fov = portrait ? 50 : 36;
 
     switch (view) {
       case 'dg-cyclo':
       case 'wide':
-        pos = [Math.sin(t * 0.25) * 55, 148 + floatY * 0.5, 250];
-        target = [0, 128 + floatY * 0.6, -55];
-        fov = portrait ? 56 : 42;
-        break;
-      case 'dg-gold':
-        pos = [Math.sin(t * 0.3) * 54, 148, 225];
-        target = [0, 130, -85];
+        pos = [leadSpot[0] + Math.sin(t * 0.25) * 38, leadSpot[1] + 6, 178];
+        target = [leadSpot[0], leadSpot[1] - 4, leadSpot[2]];
         fov = portrait ? 52 : 38;
         break;
-      case 'dg-blue':
-        pos = [Math.sin(t * 0.28) * 60, 144, 220];
-        target = [20, 122, -75];
-        fov = portrait ? 54 : 40;
-        break;
-      case 'dg-amber':
-        pos = [Math.sin(t * 0.34) * 48, 146, 195];
-        target = [0, 134, -55];
+      case 'dg-gold':
+        pos = [Math.sin(t * 0.3) * 44, 160, 185];
+        target = [leadSpot[0], 150, -30];
         fov = portrait ? 50 : 36;
         break;
+      case 'dg-blue':
+        pos = [Math.sin(t * 0.28) * 46, 158, 185];
+        target = [12, 148, -32];
+        fov = portrait ? 52 : 38;
+        break;
+      case 'dg-amber':
+        pos = [Math.sin(t * 0.34) * 38, 158, 162];
+        target = [leadSpot[0], 152, -20];
+        fov = portrait ? 48 : 34;
+        break;
       case 'dg-plum':
-        pos = [Math.sin(t * 0.26) * 58, 152, 225];
-        target = [0, 118, -90];
-        fov = portrait ? 54 : 40;
+        pos = [Math.sin(t * 0.26) * 46, 162, 188];
+        target = [leadSpot[0], 148, -36];
+        fov = portrait ? 52 : 38;
         break;
       case 'dg-noir':
-        pos = [Math.sin(t * 0.3) * 32, 150, 135];
-        target = [0, 142, -65];
-        fov = portrait ? 44 : 32;
+        pos = [leadSpot[0] + Math.sin(t * 0.3) * 22, 160, 118];
+        target = [leadSpot[0], 154, leadSpot[2]];
+        fov = portrait ? 42 : 30;
         break;
       case 'dg-grid':
-        pos = [Math.sin(t * 0.24) * 48, 152, 235];
-        target = [0, 138, -85];
-        fov = portrait ? 54 : 40;
+        pos = [Math.sin(t * 0.24) * 28, 160, portrait ? 240 : 195];
+        target = [0, 150, -30];
+        fov = portrait ? 54 : 38;
         break;
       case 'dg-echo':
-        pos = [72 + Math.sin(t * 0.35) * 12, 150, 82];
-        target = [54, 142, -52];
-        fov = portrait ? 42 : 30;
+        pos = [this.echo.root.position.x + Math.sin(t * 0.35) * 10, 158, 92];
+        target = [this.echo.root.position.x, 154, this.echo.root.position.z];
+        fov = portrait ? 40 : 28;
         break;
       case 'dg-lead':
       default:
-        pos = [leadSpot[0] + Math.sin(t * 0.4) * 14, 150 + floatY * 0.4, 96];
-        target = [leadSpot[0], 144 + floatY * 0.4, leadSpot[2]];
-        fov = portrait ? 40 : 28;
+        pos = [leadSpot[0] + Math.sin(t * 0.4) * 12, leadSpot[1] + 4, 102];
+        target = [leadSpot[0], leadSpot[1] + 2, leadSpot[2]];
+        fov = portrait ? 38 : 27;
         break;
     }
 
@@ -573,6 +601,8 @@ export class DojaGorgeousStage {
     this.editTex?.dispose();
     this.goldTex?.dispose();
     this.gridTex?.dispose();
+    this.haloTex?.dispose();
+    (this.halo.children[0] as THREE.Sprite | undefined)?.material.dispose();
     this.props.dispose();
   }
 }

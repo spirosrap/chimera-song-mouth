@@ -3,6 +3,7 @@ import { VideoProps, VideoFigure, type VideoPoint as P } from './videoProps.ts';
 import type { VoiceModel } from '../analysis.ts';
 import type { TeleTrack } from '../../show/tele.ts';
 import type { CameraView, CharacterId } from '../../scene/scene.ts';
+import { bodyPoint } from './profile.ts';
 
 export type BaileId = 'baile-benito' | 'baile-coro';
 
@@ -353,6 +354,7 @@ export class BaileInolvidableStage {
       powderSuit,
       skinBenito,
     );
+    this.benito.head.scene.scale.setScalar(2.12);
     this.coro = new VideoFigure(
       coroModel,
       coroTrack,
@@ -361,52 +363,64 @@ export class BaileInolvidableStage {
       guayaberaWhite,
       '#b48060',
     );
+    this.coro.head.scene.scale.setScalar(2.04);
 
-    // Accessories: forest-green LA cap (for dance studio), amber aviators (for salsa stage), Panama hat for coro
+    // Accessories sit on top of the scaled Chimera head (local y = +24..+36, never blocking face!)
     this.greenCap = new THREE.Group();
     const capDome = new THREE.Mesh(
-      new THREE.SphereGeometry(18, 12, 10, 0, Math.PI * 2, 0, Math.PI * 0.55),
+      new THREE.SphereGeometry(20, 12, 10, 0, Math.PI * 2, 0, Math.PI * 0.45),
       new THREE.MeshStandardMaterial({ color: capGreen, roughness: 0.8 }),
     );
-    capDome.position.set(0, 152, -1);
+    capDome.position.set(0, 26, -2);
     const capBill = new THREE.Mesh(
-      new THREE.BoxGeometry(26, 3, 20),
+      new THREE.BoxGeometry(28, 3, 22),
       new THREE.MeshStandardMaterial({ color: capGreen, roughness: 0.8 }),
     );
-    capBill.position.set(0, 151, 14);
+    capBill.position.set(0, 27, 16);
     this.greenCap.add(capDome, capBill);
     this.benito.root.add(this.greenCap);
 
     this.shades = new THREE.Group();
-    const lensMat = new THREE.MeshStandardMaterial({ color: '#6b3e18', roughness: 0.2, metalness: 0.6 });
-    for (const sx of [-7.5, 7.5]) {
-      const lens = new THREE.Mesh(new THREE.BoxGeometry(12, 8, 2), lensMat);
-      lens.position.set(sx, 146, 16);
+    const lensMat = new THREE.MeshStandardMaterial({ color: '#6b3e18', roughness: 0.2, metalness: 0.6, transparent: true, opacity: 0.55 });
+    for (const sx of [-9, 9]) {
+      const lens = new THREE.Mesh(new THREE.BoxGeometry(13, 8, 2), lensMat);
+      lens.position.set(sx, 12, 22);
       this.shades.add(lens);
     }
-    const curlyHair = new THREE.Mesh(
-      new THREE.SphereGeometry(18.5, 12, 10, 0, Math.PI * 2, 0, Math.PI * 0.55),
-      new THREE.MeshStandardMaterial({ color: hairDark, roughness: 0.85 }),
-    );
-    curlyHair.position.set(0, 153, -1);
-    this.shades.add(curlyHair);
     this.benito.root.add(this.shades);
 
     this.panamaHat = new THREE.Group();
     const pStraw = new THREE.MeshStandardMaterial({ color: '#e0cfa4', roughness: 0.82 });
-    const pBrim = new THREE.Mesh(new THREE.CylinderGeometry(28, 28, 3, 14), pStraw);
-    pBrim.position.y = 158;
-    const pCrown = new THREE.Mesh(new THREE.CylinderGeometry(16, 18, 14, 12), pStraw);
-    pCrown.position.y = 166;
+    const pBrim = new THREE.Mesh(new THREE.CylinderGeometry(32, 32, 3, 14), pStraw);
+    pBrim.position.y = 30;
+    const pCrown = new THREE.Mesh(new THREE.CylinderGeometry(18, 20, 15, 12), pStraw);
+    pCrown.position.y = 38;
     const pRibbon = new THREE.Mesh(
-      new THREE.CylinderGeometry(18.3, 18.3, 3.5, 12),
+      new THREE.CylinderGeometry(20.3, 20.3, 3.5, 12),
       new THREE.MeshStandardMaterial({ color: '#241a14', roughness: 0.7 }),
     );
-    pRibbon.position.y = 160.5;
+    pRibbon.position.y = 32.5;
     this.panamaHat.add(pBrim, pCrown, pRibbon);
     this.coro.root.add(this.panamaHat);
 
+    this.styleHair(this.benito, hairDark);
+    this.styleHair(this.coro, hairDark);
+
     this.resize(1280, 720);
+  }
+
+  private styleHair(f: VideoFigure, color: string): void {
+    const p = this.props;
+    const B = bodyPoint(f.model);
+    const k = f.model.tract.scale;
+    f.hair.begin();
+    for (let row = -8; row <= 8; row++) {
+      const z = row * 0.85 * k;
+      const a = B(-8, 22);
+      const b = B(8, 17);
+      p.line(f.hair, [[a.x, a.y + 4 * k, z], [a.x + 6 * k, a.y + 8 * k, z], [b.x, b.y - 4 * k, z]], color, 4.0);
+    }
+    f.hair.end();
   }
 
   resize(width: number, height: number): void {
@@ -414,6 +428,7 @@ export class BaileInolvidableStage {
     this.height = Math.max(1, height);
     this.camera.aspect = this.width / this.height;
     this.camera.updateProjectionMatrix();
+    this.props.resize(this.width, this.height);
     this.benito.head.resize(this.width, this.height);
     this.coro.head.resize(this.width, this.height);
   }
@@ -493,19 +508,19 @@ export class BaileInolvidableStage {
       this.rimLight.color.set('#ffe29c');
     }
 
-    // Place Benito & Coro
+    // Place Benito & Coro (VideoFigure head sits at root.y = 150!)
     this.benito.root.visible = !isLobby;
     const benSpot: P = isSpotlight
-      ? [-18 + Math.sin(salsa * 0.35) * 12, 0, -24]
+      ? [-16 + Math.sin(salsa * 0.35) * 12, 150 + step * 3, -18]
       : isStudio
-      ? [sway * 22, 0, -40]
-      : [sway * 14, 0, -35];
+      ? [sway * 18, 150 + step * 3, -24]
+      : [sway * 14, 150 + step * 3, -20];
     this.benito.root.position.set(benSpot[0], benSpot[1], benSpot[2]);
-    this.benito.root.rotation.y = isSpotlight ? 0.65 + sway * 0.2 : sway * 0.16;
+    this.benito.root.rotation.y = isSpotlight ? 0.4 + sway * 0.16 : sway * 0.14;
 
     this.coro.root.visible = isStage;
-    this.coro.root.position.set(138, 0, -145);
-    this.coro.root.rotation.y = -0.35 - sway * 0.14;
+    this.coro.root.position.set(108, 150, -76);
+    this.coro.root.rotation.y = -0.32 - sway * 0.12;
 
     const arms = (phase: number, lift: number): [P, P, P, P] => [
       [-34, -4 + Math.sin(phase) * 14, 22],
@@ -516,11 +531,11 @@ export class BaileInolvidableStage {
     this.benito.pose(t, arms(salsa, speaker === 'baile-benito' || !speaker ? 18 + step * 8 : 8));
     this.coro.pose(t, arms(salsa + 0.6, speaker === 'baile-coro' ? 20 + step * 8 : 8));
 
-    // Deterministic cameras
+    // Deterministic hero cameras centered cleanly on the Chimera head
     const portrait = this.height > this.width;
-    let pos: [number, number, number] = [Math.sin(t * 0.32) * 55, 158, 260];
-    let target: [number, number, number] = [0, 134, -45];
-    let fov = portrait ? 54 : 40;
+    let pos: [number, number, number] = [Math.sin(t * 0.32) * 44, 160, 195];
+    let target: [number, number, number] = [benSpot[0], 150, benSpot[2]];
+    let fov = portrait ? 52 : 38;
 
     switch (view) {
       case 'baile-lobby':
@@ -530,51 +545,51 @@ export class BaileInolvidableStage {
         fov = portrait ? 54 : 40;
         break;
       case 'baile-studio':
-        pos = [Math.sin(t * 0.35) * 65, 162, 245];
-        target = [0, 126, -75];
-        fov = portrait ? 54 : 42;
-        break;
-      case 'baile-circle':
-        pos = [Math.sin(t * 0.38) * 115, 225, 285];
-        target = [0, 108, -110];
-        fov = portrait ? 58 : 44;
-        break;
-      case 'baile-spotlight':
-        pos = [Math.sin(t * 0.3) * 70, 178, 285];
-        target = [18, 118, -24];
+        pos = [Math.sin(t * 0.35) * 48, 160, 195];
+        target = [benSpot[0], 150, -34];
         fov = portrait ? 52 : 38;
         break;
+      case 'baile-circle':
+        pos = [Math.sin(t * 0.38) * 82, 192, 225];
+        target = [0, 144, -54];
+        fov = portrait ? 56 : 42;
+        break;
+      case 'baile-spotlight':
+        pos = [Math.sin(t * 0.3) * 48, 162, 195];
+        target = [8, 148, -18];
+        fov = portrait ? 50 : 36;
+        break;
       case 'baile-piano':
-        pos = [-145 + Math.sin(t * 0.4) * 18, 126, -40];
-        target = [-245, 86, -155];
+        pos = [-125 + Math.sin(t * 0.4) * 18, 138, 20];
+        target = [-215, 108, -140];
         fov = portrait ? 48 : 34;
         break;
       case 'baile-congas':
-        pos = [165 + Math.sin(t * 0.4) * 24, 138, 25];
-        target = [230, 102, -175];
+        pos = [145 + Math.sin(t * 0.4) * 24, 148, 55];
+        target = [190, 120, -145];
         fov = portrait ? 50 : 36;
         break;
       case 'baile-mist':
-        pos = [Math.sin(t * 0.3) * 45, 144, 245];
-        target = [0, 126, -80];
-        fov = portrait ? 54 : 40;
+        pos = [Math.sin(t * 0.3) * 42, 158, 185];
+        target = [benSpot[0], 150, -32];
+        fov = portrait ? 52 : 38;
         break;
       case 'baile-coro':
-        pos = [152 + Math.sin(t * 0.4) * 14, 152, 4];
-        target = [138, 146, -145];
-        fov = portrait ? 42 : 30;
+        pos = [120 + Math.sin(t * 0.4) * 12, 156, 48];
+        target = [108, 152, -76];
+        fov = portrait ? 40 : 28;
         break;
       case 'baile-benito':
-        pos = [benSpot[0] + Math.sin(t * 0.45) * 14, 150, 98];
-        target = [benSpot[0], 146, benSpot[2]];
-        fov = portrait ? 40 : 28;
+        pos = [benSpot[0] + Math.sin(t * 0.45) * 12, 156, 98];
+        target = [benSpot[0], 152, benSpot[2]];
+        fov = portrait ? 38 : 27;
         break;
       case 'baile-stage':
       case 'wide':
       default:
-        pos = [Math.sin(t * 0.3) * 72, 166, 305];
-        target = [0, 134, -105];
-        fov = portrait ? 56 : 42;
+        pos = [Math.sin(t * 0.3) * 52, 162, 215];
+        target = [12, 150, -48];
+        fov = portrait ? 54 : 40;
         break;
     }
 

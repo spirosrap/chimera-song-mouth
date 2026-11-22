@@ -3,6 +3,7 @@ import { VideoProps, VideoFigure, type VideoPoint as P } from './videoProps.ts';
 import type { VoiceModel } from '../analysis.ts';
 import type { TeleTrack } from '../../show/tele.ts';
 import type { CameraView, CharacterId } from '../../scene/scene.ts';
+import { bodyPoint } from './profile.ts';
 
 export type HateMadeLoveId = 'ht-ariana' | 'ht-harmony';
 
@@ -544,6 +545,7 @@ export class HateMadeLoveStage {
       yellowDress,
       skinAriana,
     );
+    this.ariana.head.scene.scale.setScalar(2.12);
     this.harmony = new VideoFigure(
       harmonyModel,
       harmonyTrack,
@@ -552,18 +554,26 @@ export class HateMadeLoveStage {
       waitressCream,
       skinAriana,
     );
+    this.harmony.head.scene.scale.setScalar(2.02);
 
-    // Add brunette crown & yellow shoulder bows to Ariana, pearl-chained cat-eye glasses to waitress harmony
-    const crownMat = new THREE.MeshStandardMaterial({ color: hairBrunette, roughness: 0.65 });
-    const ariHair = new THREE.Mesh(new THREE.SphereGeometry(18, 14, 12, 0, Math.PI * 2, 0, Math.PI * 0.6), crownMat);
-    ariHair.position.set(0, 152, -2);
-    this.ariana.root.add(ariHair);
-
-    const harmHair = new THREE.Mesh(new THREE.SphereGeometry(18, 14, 12, 0, Math.PI * 2, 0, Math.PI * 0.6), crownMat);
-    harmHair.position.set(0, 152, -2);
-    this.harmony.root.add(harmHair);
+    this.styleHair(this.ariana, hairBrunette);
+    this.styleHair(this.harmony, hairBrunette);
 
     this.resize(1280, 720);
+  }
+
+  private styleHair(f: VideoFigure, color: string): void {
+    const p = this.props;
+    const B = bodyPoint(f.model);
+    const k = f.model.tract.scale;
+    f.hair.begin();
+    for (let row = -8; row <= 8; row++) {
+      const z = row * 0.85 * k;
+      const a = B(-8, 22);
+      const b = B(8, 17);
+      p.line(f.hair, [[a.x, a.y + 4 * k, z], [a.x + 6 * k, a.y + 8 * k, z], [b.x, b.y - 4 * k, z]], color, 4.0);
+    }
+    f.hair.end();
   }
 
   resize(width: number, height: number): void {
@@ -571,6 +581,7 @@ export class HateMadeLoveStage {
     this.height = Math.max(1, height);
     this.camera.aspect = this.width / this.height;
     this.camera.updateProjectionMatrix();
+    this.props.resize(this.width, this.height);
     this.ariana.head.resize(this.width, this.height);
     this.harmony.head.resize(this.width, this.height);
   }
@@ -677,20 +688,20 @@ export class HateMadeLoveStage {
       this.justinProxy.rotation.y = -2.4;
     }
 
-    // Place Ariana (lead) and Harmony figure
+    // Place Ariana (lead) and Harmony figure (VideoFigure head sits at root.y = 150!)
     const ariVisible = !isTitle && !isGrave;
     this.ariana.root.visible = ariVisible;
     const ariSpot: P = isDawn
-      ? [0, 8, -40]
+      ? [0, 158, -28]
       : isCounter
-      ? [-24, 0, -185]
-      : [0, 0, -20];
+      ? [-20, 150, -92]
+      : [0, 150, -14];
     this.ariana.root.position.set(ariSpot[0], ariSpot[1], ariSpot[2]);
     this.ariana.root.rotation.y = sway * 0.14;
 
     const harmVisible = isCounter || isBunker || isCrash || isLiving;
     this.harmony.root.visible = harmVisible;
-    const harmSpot: P = isCounter ? [95, 0, -210] : [-125, 0, -110];
+    const harmSpot: P = isCounter ? [86, 148, -110] : [-98, 148, -68];
     this.harmony.root.position.set(harmSpot[0], harmSpot[1], harmSpot[2]);
     this.harmony.root.rotation.y = -sway * 0.12;
 
@@ -703,11 +714,11 @@ export class HateMadeLoveStage {
     this.ariana.pose(t, arms(beat, speaker === 'ht-ariana' || !speaker ? 18 + pulse * 6 : 6));
     this.harmony.pose(t, arms(beat + 0.8, speaker === 'ht-harmony' ? 16 + pulse * 4 : 5));
 
-    // Deterministic camera per view
+    // Deterministic hero cameras centered cleanly on the Chimera head
     const portrait = this.height > this.width;
-    let pos: [number, number, number] = [0, 148, 250];
-    let target: [number, number, number] = [0, 134, -20];
-    let fov = portrait ? 52 : 38;
+    let pos: [number, number, number] = [0, 158, 185];
+    let target: [number, number, number] = [0, 150, -14];
+    let fov = portrait ? 50 : 36;
 
     switch (view) {
       case 'ht-title':
@@ -721,56 +732,56 @@ export class HateMadeLoveStage {
         fov = portrait ? 56 : 44;
         break;
       case 'ht-bunker':
-        pos = [Math.sin(t * 0.35) * 55, 165, 255];
-        target = [0, 132, -80];
-        fov = portrait ? 54 : 42;
+        pos = [Math.sin(t * 0.35) * 44, 162, 195];
+        target = [0, 150, -30];
+        fov = portrait ? 52 : 38;
         break;
       case 'ht-notebooks':
-        pos = [Math.sin(t * 0.4) * 35, 255, 165];
-        target = [0, 68, -35];
-        fov = portrait ? 56 : 44;
-        break;
-      case 'ht-car':
-        pos = [Math.sin(t * 0.3) * 28, 128, 210];
-        target = [0, 124, -60];
-        fov = portrait ? 52 : 40;
-        break;
-      case 'ht-living':
-        pos = [-85 + Math.sin(t * 0.3) * 30, 152, 230];
-        target = [35, 118, -160];
-        fov = portrait ? 56 : 44;
-        break;
-      case 'ht-diner':
-        pos = [Math.sin(t * 0.22) * 55, 155, 260];
-        target = [0, 155, -240];
-        fov = portrait ? 58 : 46;
-        break;
-      case 'ht-counter':
-        pos = [Math.sin(t * 0.32) * 50, 158, 185];
-        target = [10, 130, -170];
-        fov = portrait ? 54 : 42;
-        break;
-      case 'ht-harmony':
-        pos = [115, 152, 12];
-        target = [95, 144, -210];
-        fov = portrait ? 46 : 34;
-        break;
-      case 'ht-dawn':
-        pos = [Math.sin(t * 0.28) * 32, 62, 175];
-        target = [0, 146, -40];
+        pos = [Math.sin(t * 0.4) * 32, 215, 165];
+        target = [0, 136, -24];
         fov = portrait ? 54 : 40;
         break;
+      case 'ht-car':
+        pos = [Math.sin(t * 0.3) * 28, 158, 175];
+        target = [0, 150, -24];
+        fov = portrait ? 50 : 36;
+        break;
+      case 'ht-living':
+        pos = [-48 + Math.sin(t * 0.3) * 28, 160, 190];
+        target = [8, 148, -42];
+        fov = portrait ? 52 : 38;
+        break;
+      case 'ht-diner':
+        pos = [Math.sin(t * 0.22) * 45, 160, 210];
+        target = [0, 150, -45];
+        fov = portrait ? 54 : 40;
+        break;
+      case 'ht-counter':
+        pos = [Math.sin(t * 0.32) * 40, 160, 118];
+        target = [10, 150, -96];
+        fov = portrait ? 52 : 38;
+        break;
+      case 'ht-harmony':
+        pos = [98, 156, 22];
+        target = [86, 150, -110];
+        fov = portrait ? 40 : 28;
+        break;
+      case 'ht-dawn':
+        pos = [Math.sin(t * 0.28) * 28, 136, 152];
+        target = [0, 156, -28];
+        fov = portrait ? 50 : 36;
+        break;
       case 'ht-ariana':
-        pos = [Math.sin(t * 0.4) * 18, 148, 128];
-        target = [0, 144, -20];
-        fov = portrait ? 44 : 32;
+        pos = [Math.sin(t * 0.4) * 14, 156, 102];
+        target = [0, 152, -14];
+        fov = portrait ? 38 : 27;
         break;
       case 'ht-crash':
       case 'wide':
       default:
-        pos = [Math.sin(t * 0.3) * 48, 148, 235];
-        target = [20, 126, -80];
-        fov = portrait ? 54 : 40;
+        pos = [Math.sin(t * 0.3) * 42, 160, 192];
+        target = [6, 150, -32];
+        fov = portrait ? 52 : 38;
         break;
     }
 
