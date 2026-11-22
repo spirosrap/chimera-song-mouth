@@ -1,0 +1,448 @@
+{
+  "setting": "imissus",
+  "title": "Joost, Tommy Cash & Käärijä · I MISS US",
+  "description": "The complete official music video: chrome studio microphones and crimson bokeh, starry Basel night and rainy Malmö street, cloudy Nordic lake, curved crimson grid boyband chamber, candlelit grand piano, pouring rain with clear umbrellas, 90s graffiti hip-hop alley and DJ turntables, folding-chair garage with teal muscle car, highway motorcycle sidecar, airport tarmac jet, and POP Times \"Euroboys are back!\" finale. Original music with three physical mouth-engine voices.",
+  "duration": 141.386304,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "miss-joost",
+      "name": "Joost Klein",
+      "role": "Dutch boyband lead",
+      "tele": "miss-joost.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "miss-tommy",
+      "name": "Tommy Cash",
+      "role": "Basel verse & chorus",
+      "tele": "miss-tommy.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "miss-kaarija",
+      "name": "Käärijä",
+      "role": "Liverpool verse & 90s rap",
+      "tele": "miss-kaarija.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.72,
+      "end": 2.1,
+      "speaker": "miss-joost",
+      "text": "Uh, yeah",
+      "intensity": 0.72
+    },
+    {
+      "start": 2.34,
+      "end": 5.26,
+      "speaker": "miss-joost",
+      "text": "Tommy Cash, Joost Klein, Käärijä, uh",
+      "intensity": 0.82
+    },
+    {
+      "start": 5.74,
+      "end": 8.8,
+      "speaker": "miss-tommy",
+      "text": "I was in Basel, looking at stars",
+      "intensity": 0.84
+    },
+    {
+      "start": 8.88,
+      "end": 11.4,
+      "speaker": "miss-joost",
+      "text": "I was in Malmö, looking at cars",
+      "intensity": 0.86
+    },
+    {
+      "start": 11.46,
+      "end": 12.68,
+      "speaker": "miss-kaarija",
+      "text": "All the good things",
+      "intensity": 0.86
+    },
+    {
+      "start": 12.76,
+      "end": 13.94,
+      "speaker": "miss-tommy",
+      "text": "All the bad things",
+      "intensity": 0.86
+    },
+    {
+      "start": 14,
+      "end": 15.32,
+      "speaker": "miss-joost",
+      "text": "In harmony",
+      "intensity": 0.88
+    },
+    {
+      "start": 15.68,
+      "end": 17.64,
+      "speaker": "miss-kaarija",
+      "text": "I gotta say, that trip was cool",
+      "intensity": 0.88
+    },
+    {
+      "start": 17.7,
+      "end": 20.08,
+      "speaker": "miss-tommy",
+      "text": "I had some fun in my hotel room",
+      "intensity": 0.88
+    },
+    {
+      "start": 20.16,
+      "end": 23.8,
+      "speaker": "miss-kaarija",
+      "text": "But I felt alone in Liverpool",
+      "intensity": 0.9
+    },
+    {
+      "start": 24.8,
+      "end": 29.7,
+      "speaker": "miss-joost",
+      "text": "I miss us, when I'm drinking in my flat all alone",
+      "intensity": 0.94
+    },
+    {
+      "start": 29.8,
+      "end": 34.96,
+      "speaker": "miss-tommy",
+      "text": "I miss us, when I'm in my bed and scrolling my phone",
+      "intensity": 0.94
+    },
+    {
+      "start": 35.04,
+      "end": 39.96,
+      "speaker": "miss-kaarija",
+      "text": "I miss us, and the things we love to do the most",
+      "intensity": 0.96
+    },
+    {
+      "start": 40.8,
+      "end": 44.38,
+      "speaker": "miss-joost",
+      "text": "Hmm, I wish I never let you go",
+      "intensity": 0.92
+    },
+    {
+      "start": 44.46,
+      "end": 46.06,
+      "speaker": "miss-kaarija",
+      "text": "I was so green",
+      "intensity": 0.88
+    },
+    {
+      "start": 46.24,
+      "end": 47.2,
+      "speaker": "miss-joost",
+      "text": "I was so blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 47.26,
+      "end": 49.62,
+      "speaker": "miss-tommy",
+      "text": "I tried the best that I could do",
+      "intensity": 0.88
+    },
+    {
+      "start": 49.68,
+      "end": 52,
+      "speaker": "miss-joost",
+      "text": "What do you mean? What do you do?",
+      "intensity": 0.9
+    },
+    {
+      "start": 52.1,
+      "end": 54.44,
+      "speaker": "miss-kaarija",
+      "text": "I tried my best, that's on my mother",
+      "intensity": 0.9
+    },
+    {
+      "start": 54.5,
+      "end": 56.82,
+      "speaker": "miss-tommy",
+      "text": "It was all said and done",
+      "intensity": 0.9
+    },
+    {
+      "start": 56.88,
+      "end": 59.16,
+      "speaker": "miss-joost",
+      "text": "We just wanted number one",
+      "intensity": 0.92
+    },
+    {
+      "start": 59.22,
+      "end": 61.78,
+      "speaker": "miss-kaarija",
+      "text": "But in the end, it doesn't matter",
+      "intensity": 0.9
+    },
+    {
+      "start": 61.84,
+      "end": 63.64,
+      "speaker": "miss-tommy",
+      "text": "Does it, does it?",
+      "intensity": 0.88
+    },
+    {
+      "start": 63.7,
+      "end": 68.46,
+      "speaker": "miss-joost",
+      "text": "I miss us, when I'm drinking in my flat all alone",
+      "intensity": 0.95
+    },
+    {
+      "start": 68.54,
+      "end": 73.3,
+      "speaker": "miss-tommy",
+      "text": "I miss us, when I'm in my bed and scrolling my phone",
+      "intensity": 0.95
+    },
+    {
+      "start": 73.38,
+      "end": 78.58,
+      "speaker": "miss-kaarija",
+      "text": "I miss us, and the things we love to do the most",
+      "intensity": 0.96
+    },
+    {
+      "start": 79.4,
+      "end": 82.56,
+      "speaker": "miss-joost",
+      "text": "Hmm, never switching up on my bro",
+      "intensity": 0.94
+    },
+    {
+      "start": 82.64,
+      "end": 85.16,
+      "speaker": "miss-kaarija",
+      "text": "I miss my family, I miss my brothers",
+      "intensity": 0.96
+    },
+    {
+      "start": 85.24,
+      "end": 87.54,
+      "speaker": "miss-kaarija",
+      "text": "Uh, hell yeah, motherfucker",
+      "intensity": 0.98
+    },
+    {
+      "start": 87.6,
+      "end": 90.12,
+      "speaker": "miss-kaarija",
+      "text": "I hope we see you soon, it would be so cool",
+      "intensity": 0.96
+    },
+    {
+      "start": 90.2,
+      "end": 92.22,
+      "speaker": "miss-kaarija",
+      "text": "To see you, motherfucker",
+      "intensity": 0.98
+    },
+    {
+      "start": 92.28,
+      "end": 95.18,
+      "speaker": "miss-joost",
+      "text": "Hey, hey, bro, Tantu stop it",
+      "intensity": 0.92
+    },
+    {
+      "start": 95.26,
+      "end": 97.18,
+      "speaker": "miss-joost",
+      "text": "Come on man, it's like a boyband song, bro",
+      "intensity": 0.92
+    },
+    {
+      "start": 97.52,
+      "end": 102.06,
+      "speaker": "miss-joost",
+      "text": "I miss us, when I'm drinking in my flat all alone",
+      "intensity": 0.98
+    },
+    {
+      "start": 102.42,
+      "end": 106.88,
+      "speaker": "miss-tommy",
+      "text": "I miss us, when I'm in my bed and scrolling my phone",
+      "intensity": 0.98
+    },
+    {
+      "start": 107.14,
+      "end": 112.02,
+      "speaker": "miss-kaarija",
+      "text": "I miss us, and the things we love to do the most",
+      "intensity": 0.98
+    },
+    {
+      "start": 112.8,
+      "end": 117,
+      "speaker": "miss-joost",
+      "text": "Hmm, Tommy, Käärijä and Joost",
+      "intensity": 0.96
+    },
+    {
+      "start": 118.85,
+      "end": 122.1,
+      "speaker": "miss-tommy",
+      "text": "Tommy, Käärijä and Joost",
+      "intensity": 0.92
+    },
+    {
+      "start": 123.65,
+      "end": 126.85,
+      "speaker": "miss-kaarija",
+      "text": "Tommy, Käärijä and Joost",
+      "intensity": 0.92
+    },
+    {
+      "start": 128.45,
+      "end": 131.2,
+      "speaker": "miss-joost",
+      "text": "Tommy, Käärijä and Joost",
+      "intensity": 0.9
+    },
+    {
+      "start": 133.2,
+      "end": 135.3,
+      "speaker": "miss-kaarija",
+      "text": "Tommy, Käärijä and Joost",
+      "intensity": 0.88
+    },
+    {
+      "start": 135.48,
+      "end": 138.05,
+      "speaker": "miss-joost",
+      "text": "We should totally sell this to like a major label",
+      "intensity": 0.84
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "miss-mics"
+    },
+    {
+      "time": 2.3,
+      "view": "miss-joost"
+    },
+    {
+      "time": 5.7,
+      "view": "miss-night"
+    },
+    {
+      "time": 8.8,
+      "view": "miss-joost"
+    },
+    {
+      "time": 11.4,
+      "view": "miss-mics"
+    },
+    {
+      "time": 15.6,
+      "view": "miss-lake"
+    },
+    {
+      "time": 20.1,
+      "view": "miss-kaarija"
+    },
+    {
+      "time": 24.7,
+      "view": "miss-red-grid"
+    },
+    {
+      "time": 29.8,
+      "view": "miss-tommy"
+    },
+    {
+      "time": 35,
+      "view": "miss-red-grid"
+    },
+    {
+      "time": 40.7,
+      "view": "miss-joost"
+    },
+    {
+      "time": 44.4,
+      "view": "miss-piano"
+    },
+    {
+      "time": 49.6,
+      "view": "miss-lake"
+    },
+    {
+      "time": 54.5,
+      "view": "miss-piano"
+    },
+    {
+      "time": 59.2,
+      "view": "miss-kaarija"
+    },
+    {
+      "time": 63.6,
+      "view": "miss-rain"
+    },
+    {
+      "time": 68.5,
+      "view": "miss-tommy"
+    },
+    {
+      "time": 73.3,
+      "view": "miss-rain"
+    },
+    {
+      "time": 79.3,
+      "view": "miss-mics"
+    },
+    {
+      "time": 82.6,
+      "view": "miss-graffiti"
+    },
+    {
+      "time": 87.6,
+      "view": "miss-kaarija"
+    },
+    {
+      "time": 92.2,
+      "view": "miss-joost"
+    },
+    {
+      "time": 97.5,
+      "view": "miss-garage"
+    },
+    {
+      "time": 102.4,
+      "view": "miss-sidecar"
+    },
+    {
+      "time": 107.1,
+      "view": "miss-tarmac"
+    },
+    {
+      "time": 112.8,
+      "view": "miss-mics"
+    },
+    {
+      "time": 118.8,
+      "view": "miss-red-grid"
+    },
+    {
+      "time": 123.6,
+      "view": "miss-rain"
+    },
+    {
+      "time": 128.4,
+      "view": "miss-garage"
+    },
+    {
+      "time": 133.2,
+      "view": "miss-ending"
+    }
+  ]
+}

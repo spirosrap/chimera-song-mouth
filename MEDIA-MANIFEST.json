@@ -3152,6 +3152,41 @@
       "sha256": "b006aa98d881093d807ca044480421632ac024ac6e971ed70e9e2612631bc7d9"
     },
     {
+      "path": "public/scenes/i-miss-us/backing.mp3",
+      "bytes": 3394916,
+      "sha256": "6b4247a4a0a6bceaafaf867e82b12453415a0f1d90b51c6b0932958997ed1e17"
+    },
+    {
+      "path": "public/scenes/i-miss-us/miss-joost.tele.gz",
+      "bytes": 1081809,
+      "sha256": "b0d4d673cc531b3b6d95d8f4212a6ecf1e4499be8bf5b8df4e1731ab4f184ebe"
+    },
+    {
+      "path": "public/scenes/i-miss-us/miss-kaarija.tele.gz",
+      "bytes": 962178,
+      "sha256": "d94aa0b76542659651b550eda767522c1243aff4d1f2fc2030aa2704de8332fb"
+    },
+    {
+      "path": "public/scenes/i-miss-us/miss-tommy.tele.gz",
+      "bytes": 745902,
+      "sha256": "a641ddc825d00bae72c07889b7128bc07eddbcb4ac61e7d9187ba1f4a5abe459"
+    },
+    {
+      "path": "public/scenes/i-miss-us/mix.mp3",
+      "bytes": 4526636,
+      "sha256": "d1780a4e254f688764dfa620214aa6a1c0ad190c24ae9c20b56b687109ceb3db"
+    },
+    {
+      "path": "public/scenes/i-miss-us/performance.json",
+      "bytes": 402184,
+      "sha256": "d5a369342d8520bcfc4813a2172763d218185d0a87b0fade016a6ddd9f81e6d4"
+    },
+    {
+      "path": "public/scenes/i-miss-us/scene.json",
+      "bytes": 9777,
+      "sha256": "f3ed32a68ea1fea2b87072cff1f6ead27f0525b5c75cf07661f5eae45b529a87"
+    },
+    {
       "path": "public/scenes/ill-make-love-to-you/backing.mp3",
       "bytes": 8333612,
       "sha256": "1b49c6e70f3babc3c84b9eff9a514375345b11a4cb9db1868d9a6ad8550d9f6d"
