@@ -1,0 +1,738 @@
+{
+  "setting": "anxiety",
+  "title": "Doechii · Anxiety",
+  "description": "The complete official music video: bougainvillea-framed bedroom window with mandala tapestry, backlit mansion hallway, arched sunlit sunroom, navy sofa flanked by powder-blue twin sisters, flaming kitchen stove, Gotye geometric pastel wall, hearth-lit piano parlor, golden-hour suburban hedge with a walking giant elephant, vintage black convertible, and overhead cul-de-sac flash-mob finale. Original music with two physical mouth-engine voices.",
+  "duration": 251.727528,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "anx-lead",
+      "name": "Doechii",
+      "role": "Lead vocal & rap",
+      "tele": "anx-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "anx-echo",
+      "name": "Inner Anxiety",
+      "role": "Echoes, whispers & twin replies",
+      "tele": "anx-echo.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 19.44,
+      "end": 22.36,
+      "speaker": "anx-lead",
+      "text": "Anxiety, keep on tryin' me",
+      "intensity": 0.84
+    },
+    {
+      "start": 22.44,
+      "end": 26.44,
+      "speaker": "anx-lead",
+      "text": "I feel it quietly, tryin' to silence me, yeah",
+      "intensity": 0.86
+    },
+    {
+      "start": 26.52,
+      "end": 29.68,
+      "speaker": "anx-lead",
+      "text": "My anxiety, can't shake it off of me",
+      "intensity": 0.88
+    },
+    {
+      "start": 30.08,
+      "end": 33.4,
+      "speaker": "anx-lead",
+      "text": "Somebody's watchin' me, it's my anxiety, yeah",
+      "intensity": 0.88
+    },
+    {
+      "start": 34.36,
+      "end": 37.9,
+      "speaker": "anx-echo",
+      "text": "Oh, oh, oh",
+      "intensity": 0.78
+    },
+    {
+      "start": 38.1,
+      "end": 41.64,
+      "speaker": "anx-lead",
+      "text": "Oh, oh, oh",
+      "intensity": 0.8
+    },
+    {
+      "start": 41.76,
+      "end": 46.88,
+      "speaker": "anx-echo",
+      "text": "Oh, oh, oh, yeah",
+      "intensity": 0.8
+    },
+    {
+      "start": 48.4,
+      "end": 50.24,
+      "speaker": "anx-lead",
+      "text": "Solo, no mojo",
+      "intensity": 0.86
+    },
+    {
+      "start": 50.56,
+      "end": 51.98,
+      "speaker": "anx-lead",
+      "text": "I bounce back, no pogo",
+      "intensity": 0.88
+    },
+    {
+      "start": 52.34,
+      "end": 54,
+      "speaker": "anx-lead",
+      "text": "Unhappy, no homo",
+      "intensity": 0.88
+    },
+    {
+      "start": 54.16,
+      "end": 55.8,
+      "speaker": "anx-lead",
+      "text": "New brands, no logos",
+      "intensity": 0.88
+    },
+    {
+      "start": 56.28,
+      "end": 57.96,
+      "speaker": "anx-lead",
+      "text": "Money on my jugular, natural hustler",
+      "intensity": 0.9
+    },
+    {
+      "start": 58.04,
+      "end": 59.8,
+      "speaker": "anx-lead",
+      "text": "Think I need a smuggler up in Russia",
+      "intensity": 0.9
+    },
+    {
+      "start": 59.88,
+      "end": 61.76,
+      "speaker": "anx-lead",
+      "text": "You could be my butler, shine my cutler'",
+      "intensity": 0.9
+    },
+    {
+      "start": 61.84,
+      "end": 63.54,
+      "speaker": "anx-lead",
+      "text": "Shout out to Oyenda, that's the guzzler",
+      "intensity": 0.9
+    },
+    {
+      "start": 63.62,
+      "end": 65.32,
+      "speaker": "anx-lead",
+      "text": "Okay, next thing, my life is a wet dream",
+      "intensity": 0.9
+    },
+    {
+      "start": 65.4,
+      "end": 67.18,
+      "speaker": "anx-lead",
+      "text": "I call it a sex scene, the back is a nice tease",
+      "intensity": 0.9
+    },
+    {
+      "start": 67.26,
+      "end": 69.02,
+      "speaker": "anx-lead",
+      "text": "I tried to escape, my life is an X-rate",
+      "intensity": 0.9
+    },
+    {
+      "start": 69.1,
+      "end": 70.94,
+      "speaker": "anx-lead",
+      "text": "I'm sorry, a sex tape, you only get one take",
+      "intensity": 0.92
+    },
+    {
+      "start": 71,
+      "end": 72.18,
+      "speaker": "anx-echo",
+      "text": "Quiet on the set, please",
+      "intensity": 0.82
+    },
+    {
+      "start": 72.46,
+      "end": 73.12,
+      "speaker": "anx-echo",
+      "text": "Rolling",
+      "intensity": 0.8
+    },
+    {
+      "start": 74.5,
+      "end": 75.38,
+      "speaker": "anx-lead",
+      "text": "Anxiety",
+      "intensity": 0.86
+    },
+    {
+      "start": 76.08,
+      "end": 77.78,
+      "speaker": "anx-echo",
+      "text": "In three, two, one",
+      "intensity": 0.88
+    },
+    {
+      "start": 79.88,
+      "end": 81.88,
+      "speaker": "anx-lead",
+      "text": "Anxiety, keep on tryin' me",
+      "intensity": 0.9
+    },
+    {
+      "start": 81.96,
+      "end": 86.08,
+      "speaker": "anx-lead",
+      "text": "I feel it quietly, tryin' to silence me, yeah",
+      "intensity": 0.92
+    },
+    {
+      "start": 86.18,
+      "end": 89.26,
+      "speaker": "anx-lead",
+      "text": "Anxiety, shake it off of me",
+      "intensity": 0.92
+    },
+    {
+      "start": 89.64,
+      "end": 92.76,
+      "speaker": "anx-lead",
+      "text": "Somebody's watchin' me, it's my anxiety",
+      "intensity": 0.94
+    },
+    {
+      "start": 93.3,
+      "end": 95.28,
+      "speaker": "anx-lead",
+      "text": "Anxiety, anxiety",
+      "intensity": 0.94
+    },
+    {
+      "start": 95.38,
+      "end": 98.78,
+      "speaker": "anx-lead",
+      "text": "Oh, I feel it tryin', keep it tryin', keep it tryin'",
+      "intensity": 0.94
+    },
+    {
+      "start": 98.88,
+      "end": 102.48,
+      "speaker": "anx-lead",
+      "text": "Oh, I feel the silence, keep it quiet, keep it quiet",
+      "intensity": 0.94
+    },
+    {
+      "start": 102.58,
+      "end": 105.88,
+      "speaker": "anx-lead",
+      "text": "Oh, somebody's watchin' me, anxiety, anxiety",
+      "intensity": 0.95
+    },
+    {
+      "start": 105.98,
+      "end": 108.1,
+      "speaker": "anx-lead",
+      "text": "Oh, I feel anxiety",
+      "intensity": 0.95
+    },
+    {
+      "start": 108.2,
+      "end": 109.52,
+      "speaker": "anx-echo",
+      "text": "It's my anxiety",
+      "intensity": 0.9
+    },
+    {
+      "start": 109.96,
+      "end": 111.64,
+      "speaker": "anx-lead",
+      "text": "Can't let it conquer me",
+      "intensity": 0.92
+    },
+    {
+      "start": 111.88,
+      "end": 113.1,
+      "speaker": "anx-echo",
+      "text": "It's my anxiety",
+      "intensity": 0.9
+    },
+    {
+      "start": 113.44,
+      "end": 115.2,
+      "speaker": "anx-lead",
+      "text": "Gotta shake it off of me",
+      "intensity": 0.94
+    },
+    {
+      "start": 115.3,
+      "end": 116.76,
+      "speaker": "anx-echo",
+      "text": "It's my anxiety",
+      "intensity": 0.9
+    },
+    {
+      "start": 117.06,
+      "end": 118.9,
+      "speaker": "anx-lead",
+      "text": "Don't want somebody watchin' me",
+      "intensity": 0.94
+    },
+    {
+      "start": 119,
+      "end": 120.58,
+      "speaker": "anx-echo",
+      "text": "It's my anxiety",
+      "intensity": 0.9
+    },
+    {
+      "start": 120.76,
+      "end": 122.66,
+      "speaker": "anx-lead",
+      "text": "Gotta keep it off of me, yeah",
+      "intensity": 0.94
+    },
+    {
+      "start": 122.74,
+      "end": 124.52,
+      "speaker": "anx-lead",
+      "text": "Anxiety, anxiety",
+      "intensity": 0.95
+    },
+    {
+      "start": 124.64,
+      "end": 127.82,
+      "speaker": "anx-lead",
+      "text": "Oh, I feel it tryin', keep it tryin', keep it tryin'",
+      "intensity": 0.95
+    },
+    {
+      "start": 127.9,
+      "end": 131.56,
+      "speaker": "anx-lead",
+      "text": "Oh, I feel the silence, keep it quiet, keep it quiet",
+      "intensity": 0.95
+    },
+    {
+      "start": 131.64,
+      "end": 135.3,
+      "speaker": "anx-lead",
+      "text": "Oh, somebody's watchin' me, anxiety, anxiety",
+      "intensity": 0.96
+    },
+    {
+      "start": 135.38,
+      "end": 137.38,
+      "speaker": "anx-lead",
+      "text": "Oh, I feel anxiety",
+      "intensity": 0.96
+    },
+    {
+      "start": 137.46,
+      "end": 139.42,
+      "speaker": "anx-lead",
+      "text": "Court order from Florida",
+      "intensity": 0.9
+    },
+    {
+      "start": 139.5,
+      "end": 141.26,
+      "speaker": "anx-lead",
+      "text": "What's in that clear blue water?",
+      "intensity": 0.9
+    },
+    {
+      "start": 141.34,
+      "end": 143.16,
+      "speaker": "anx-lead",
+      "text": "No limits, no borders",
+      "intensity": 0.9
+    },
+    {
+      "start": 143.24,
+      "end": 145.16,
+      "speaker": "anx-lead",
+      "text": "What's in that new world order?",
+      "intensity": 0.92
+    },
+    {
+      "start": 145.55,
+      "end": 146,
+      "speaker": "anx-lead",
+      "text": "Marco",
+      "intensity": 0.9
+    },
+    {
+      "start": 146.06,
+      "end": 146.46,
+      "speaker": "anx-echo",
+      "text": "Marco",
+      "intensity": 0.88
+    },
+    {
+      "start": 146.52,
+      "end": 146.94,
+      "speaker": "anx-lead",
+      "text": "Polo",
+      "intensity": 0.9
+    },
+    {
+      "start": 147,
+      "end": 147.4,
+      "speaker": "anx-echo",
+      "text": "Polo",
+      "intensity": 0.88
+    },
+    {
+      "start": 147.46,
+      "end": 148.78,
+      "speaker": "anx-lead",
+      "text": "Negro run from popo",
+      "intensity": 0.92
+    },
+    {
+      "start": 148.86,
+      "end": 150.64,
+      "speaker": "anx-lead",
+      "text": "That blue light and that rojo",
+      "intensity": 0.92
+    },
+    {
+      "start": 154.18,
+      "end": 158.62,
+      "speaker": "anx-lead",
+      "text": "And it's like, I get this tightness in my chest",
+      "intensity": 0.84
+    },
+    {
+      "start": 159.86,
+      "end": 163.68,
+      "speaker": "anx-lead",
+      "text": "Like an elephant is standing on me",
+      "intensity": 0.86
+    },
+    {
+      "start": 163.76,
+      "end": 166.74,
+      "speaker": "anx-lead",
+      "text": "And I just let it take over",
+      "intensity": 0.88
+    },
+    {
+      "start": 167.22,
+      "end": 173.16,
+      "speaker": "anx-lead",
+      "text": "Anxiety keeps on tryin' me",
+      "intensity": 0.94
+    },
+    {
+      "start": 174.74,
+      "end": 180.94,
+      "speaker": "anx-lead",
+      "text": "Anxiety keeps on tryin' me",
+      "intensity": 0.96
+    },
+    {
+      "start": 181.9,
+      "end": 185.8,
+      "speaker": "anx-echo",
+      "text": "Anxiety keeps on tryin' me",
+      "intensity": 0.96
+    },
+    {
+      "start": 185.9,
+      "end": 188.6,
+      "speaker": "anx-lead",
+      "text": "Anxiety, anxiety",
+      "intensity": 0.98
+    },
+    {
+      "start": 188.68,
+      "end": 192.94,
+      "speaker": "anx-lead",
+      "text": "Oh, I feel it tryin', keep it tryin', keep it tryin'",
+      "intensity": 0.98
+    },
+    {
+      "start": 193.02,
+      "end": 194.86,
+      "speaker": "anx-echo",
+      "text": "It's my anxiety, it's my anxiety",
+      "intensity": 0.96
+    },
+    {
+      "start": 194.94,
+      "end": 196.98,
+      "speaker": "anx-lead",
+      "text": "Keep it quiet, keep it quiet",
+      "intensity": 0.98
+    },
+    {
+      "start": 197.06,
+      "end": 199.46,
+      "speaker": "anx-echo",
+      "text": "It's my anxiety, it's my anxiety",
+      "intensity": 0.96
+    },
+    {
+      "start": 199.54,
+      "end": 203.4,
+      "speaker": "anx-lead",
+      "text": "Oh, somebody's watchin' me, anxiety, anxiety",
+      "intensity": 0.98
+    },
+    {
+      "start": 203.7,
+      "end": 206.6,
+      "speaker": "anx-lead",
+      "text": "Oh, I feel anxiety",
+      "intensity": 0.98
+    },
+    {
+      "start": 206.8,
+      "end": 208.96,
+      "speaker": "anx-echo",
+      "text": "My anxiety, my anxiety",
+      "intensity": 0.96
+    },
+    {
+      "start": 209.04,
+      "end": 212.14,
+      "speaker": "anx-lead",
+      "text": "Oh, I feel it tryin', keep it tryin', keep it tryin'",
+      "intensity": 0.98
+    },
+    {
+      "start": 212.22,
+      "end": 214.84,
+      "speaker": "anx-lead",
+      "text": "Oh, I feel the silence, keep it quiet, keep it quiet",
+      "intensity": 0.98
+    },
+    {
+      "start": 214.92,
+      "end": 217.06,
+      "speaker": "anx-echo",
+      "text": "Oh, yeah, it's my anxiety",
+      "intensity": 0.95
+    },
+    {
+      "start": 217.14,
+      "end": 219.38,
+      "speaker": "anx-lead",
+      "text": "Gotta keep it off of me",
+      "intensity": 0.96
+    },
+    {
+      "start": 219.46,
+      "end": 221.16,
+      "speaker": "anx-lead",
+      "text": "Gotta shake it off of me",
+      "intensity": 0.96
+    },
+    {
+      "start": 221.24,
+      "end": 223.08,
+      "speaker": "anx-echo",
+      "text": "Shake it off of me",
+      "intensity": 0.92
+    },
+    {
+      "start": 223.16,
+      "end": 224.72,
+      "speaker": "anx-echo",
+      "text": "It's my anxiety",
+      "intensity": 0.92
+    },
+    {
+      "start": 224.8,
+      "end": 227.54,
+      "speaker": "anx-lead",
+      "text": "Gotta shake it off of me",
+      "intensity": 0.94
+    },
+    {
+      "start": 227.62,
+      "end": 231.4,
+      "speaker": "anx-lead",
+      "text": "Oh, yeah",
+      "intensity": 0.82
+    },
+    {
+      "start": 231.5,
+      "end": 233.5,
+      "speaker": "anx-echo",
+      "text": "Oh, yeah",
+      "intensity": 0.78
+    },
+    {
+      "start": 234.5,
+      "end": 237.5,
+      "speaker": "anx-lead",
+      "text": "Ooh, oh",
+      "intensity": 0.76
+    },
+    {
+      "start": 238.5,
+      "end": 243.4,
+      "speaker": "anx-echo",
+      "text": "Ooh, oh, yeah",
+      "intensity": 0.74
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "anx-window"
+    },
+    {
+      "time": 18.8,
+      "view": "anx-hallway"
+    },
+    {
+      "time": 25,
+      "view": "anx-sunroom"
+    },
+    {
+      "time": 30,
+      "view": "anx-lead"
+    },
+    {
+      "time": 34.2,
+      "view": "anx-sunroom"
+    },
+    {
+      "time": 43,
+      "view": "anx-twins"
+    },
+    {
+      "time": 48.3,
+      "view": "anx-lead"
+    },
+    {
+      "time": 54,
+      "view": "anx-twins"
+    },
+    {
+      "time": 59.8,
+      "view": "anx-kitchen"
+    },
+    {
+      "time": 65.3,
+      "view": "anx-gotye"
+    },
+    {
+      "time": 70.9,
+      "view": "anx-echo"
+    },
+    {
+      "time": 74.4,
+      "view": "anx-lead"
+    },
+    {
+      "time": 79.8,
+      "view": "anx-hallway"
+    },
+    {
+      "time": 86,
+      "view": "anx-twins"
+    },
+    {
+      "time": 93.2,
+      "view": "anx-gotye"
+    },
+    {
+      "time": 99,
+      "view": "anx-kitchen"
+    },
+    {
+      "time": 105.8,
+      "view": "anx-lead"
+    },
+    {
+      "time": 108.1,
+      "view": "anx-echo"
+    },
+    {
+      "time": 113.4,
+      "view": "anx-parlor"
+    },
+    {
+      "time": 118.9,
+      "view": "anx-twins"
+    },
+    {
+      "time": 122.7,
+      "view": "anx-sunroom"
+    },
+    {
+      "time": 129,
+      "view": "anx-parlor"
+    },
+    {
+      "time": 135.3,
+      "view": "anx-lead"
+    },
+    {
+      "time": 137.4,
+      "view": "anx-hallway"
+    },
+    {
+      "time": 145.4,
+      "view": "anx-lawn"
+    },
+    {
+      "time": 154,
+      "view": "anx-lead"
+    },
+    {
+      "time": 159.7,
+      "view": "anx-lawn"
+    },
+    {
+      "time": 167,
+      "view": "anx-street"
+    },
+    {
+      "time": 174.6,
+      "view": "anx-lead"
+    },
+    {
+      "time": 181.8,
+      "view": "anx-street"
+    },
+    {
+      "time": 193,
+      "view": "anx-echo"
+    },
+    {
+      "time": 199.5,
+      "view": "anx-street"
+    },
+    {
+      "time": 209,
+      "view": "anx-overhead"
+    },
+    {
+      "time": 217,
+      "view": "anx-lead"
+    },
+    {
+      "time": 223,
+      "view": "anx-overhead"
+    },
+    {
+      "time": 234,
+      "view": "anx-window"
+    }
+  ]
+}

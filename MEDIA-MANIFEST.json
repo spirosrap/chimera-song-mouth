@@ -1472,6 +1472,36 @@
       "sha256": "24042037a1be60fdd7a71b5947a98ed241a317e38c490ae048cd39896b920a28"
     },
     {
+      "path": "public/scenes/anxiety/anx-echo.tele.gz",
+      "bytes": 992638,
+      "sha256": "01ac92f59401a3a9a9849c190456b897a22ab4a1d7c26ce9ac45f1a7800d1b99"
+    },
+    {
+      "path": "public/scenes/anxiety/anx-lead.tele.gz",
+      "bytes": 2507537,
+      "sha256": "8555796f77b1989dec8581319b1df177bf0f130e243bf503a2dff76792fbe8aa"
+    },
+    {
+      "path": "public/scenes/anxiety/backing.mp3",
+      "bytes": 6043105,
+      "sha256": "a5d2fd65f433e44efb465c095e865d402442afb241e0227fa9201c6ca019aec9"
+    },
+    {
+      "path": "public/scenes/anxiety/mix.mp3",
+      "bytes": 8057132,
+      "sha256": "c99dd8672a644dce5970db5557b6e4b3dcf917675eb8d6865e75965a2050e9b2"
+    },
+    {
+      "path": "public/scenes/anxiety/performance.json",
+      "bytes": 668084,
+      "sha256": "49f2f283de4d0d482d15e9dab554965fbb722677051f116f5cceb6df8ac1500e"
+    },
+    {
+      "path": "public/scenes/anxiety/scene.json",
+      "bytes": 15517,
+      "sha256": "a4a80e5a0b767df14b34214ef8a4307ff06ccd0c3be986e0031b084c4c7a7015"
+    },
+    {
       "path": "public/scenes/anything-for-love/answer.tele.gz",
       "bytes": 854739,
       "sha256": "93966840c61cfde6b56495748a05013b6799ef873094975b761b05ce35bba45a"
