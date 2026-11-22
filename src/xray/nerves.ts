@@ -924,8 +924,10 @@ varying float vSeed;
 varying float vDepth;
 varying vec3 vN;
 varying vec3 vV;
+varying vec3 vW;
 void main() {
   vec4 mv = modelViewMatrix * vec4(position, 1.0);
+  vW = (modelMatrix * vec4(position, 1.0)).xyz;
   vN = normalize(normalMatrix * normal);
   vV = -mv.xyz;
   vDepth = -mv.z;
@@ -937,13 +939,18 @@ void main() {
 
 const FRAG = /* glsl */ `
 uniform float uMode;
-uniform float uTime;
+/** how far the pulses have run out from the brain (cm) */
+uniform float uRun;
 uniform float uNear;
 uniform float uFar;
 uniform float uGain;
 uniform vec3 uRed;
 uniform vec3 uPurple;
 uniform vec3 uBlue;
+uniform float uSignal;
+uniform vec4 uClear[4];
+uniform float uClearAmt;
+varying vec3 vW;
 varying float vKind;
 varying float vDist;
 varying float vSeed;
@@ -963,29 +970,48 @@ vec3 byKind(float k) {
   if (k < 6.5) return mix(uRed, uPurple, 0.45);        // autonomic
   return mix(uPurple, uBlue, 0.5);                     // tracts
 }
+/** how much is left of a nerve near the line of sight through an eye, the nose or the mouth (from
+ *  just in front of it on back): the face's features stand out on a clearing */
+float cleared() {
+  float keep = 1.0;
+  for (int i = 0; i < 4; i++) {
+    vec3 c = uClear[i].xyz;
+    float r = uClear[i].w;
+    vec3 d = normalize(c - cameraPosition), p = vW - cameraPosition;
+    float t = dot(p, d);
+    if (t < dot(c - cameraPosition, d) - r) continue;
+    float off = length(p - d * t);
+    keep = min(keep, mix(0.12, 1.0, smoothstep(0.5 * r, r, off)));
+  }
+  return mix(1.0, keep, uClearAmt);
+}
+/** pulses running out from the brain along the nerves */
+float pulse() {
+  float ph = fract((vDist - uRun) / 26.0 + (vKind < 1.5 ? vSeed : 0.0));
+  return smoothstep(0.0, 0.03, ph) * (1.0 - smoothstep(0.03, 0.14, ph));
+}
 void main() {
   vec3 n = normalize(vN), v = normalize(vV);
   float ndv = abs(dot(n, v)), rim = 1.0 - ndv;
   vec3 col;
   if (uMode < 0.5) {
-    // solid, by what each nerve does
+    // solid, by what each nerve does, with a faint signal running through it
     vec3 c = byKind(vKind);
     col = c * (0.16 + 0.84 * ndv) + vec3(1.0) * pow(ndv, 28.0) * 0.45 + c * pow(rim, 3.0) * 0.5;
+    col += mix(c, vec3(1.0), 0.5) * pulse() * uSignal;
   } else if (uMode < 1.5) {
     // x-ray, by depth: near red, far blue
     float t = clamp((vDepth - uNear) / (uFar - uNear), 0.0, 1.0);
     float brain = vKind < 1.5 || (vKind > 6.5) ? 0.6 : 1.0;
-    col = tri(t) * (0.1 + 0.9 * pow(rim, 1.7)) * uGain * brain;
+    col = (tri(t) * (0.1 + 0.9 * pow(rim, 1.7)) + mix(tri(t), vec3(1.0), 0.4) * pulse() * uSignal * 0.6) * uGain * brain;
   } else {
     // signal: red at the brain to blue at the fingers and toes, pulses running out
     float t = clamp(vDist / 120.0, 0.0, 1.0);
     vec3 c = tri(t);
-    float ph = fract((vDist - uTime * 40.0) / 26.0 + (vKind < 1.5 ? vSeed : 0.0));
-    float pulse = smoothstep(0.0, 0.03, ph) * (1.0 - smoothstep(0.03, 0.14, ph));
     float brain = vKind < 1.5 || (vKind > 6.5) ? 0.65 : 1.0;
-    col = (c * (0.14 + 0.86 * pow(rim, 1.5)) + mix(c, vec3(1.0), 0.4) * pulse * 0.9) * uGain * brain;
+    col = (c * (0.14 + 0.86 * pow(rim, 1.5)) + mix(c, vec3(1.0), 0.4) * pulse() * 0.9) * uGain * brain;
   }
-  gl_FragColor = vec4(col, 1.0);
+  gl_FragColor = vec4(col * cleared(), 1.0);
 }`;
 
 export type Mode = "function" | "xray" | "signal";
@@ -1000,10 +1026,13 @@ export class NerveView {
       fragmentShader: FRAG,
       uniforms: {
         uMode: { value: 0 },
-        uTime: { value: 0 },
+        uRun: { value: 0 },
         uNear: { value: 100 },
         uFar: { value: 200 },
         uGain: { value: 1 },
+        uSignal: { value: 0 },
+        uClear: { value: [0, 1, 2, 3].map(() => new THREE.Vector4(0, -1e4, 0, 0.001)) },
+        uClearAmt: { value: 0 },
         uRed: { value: new THREE.Vector3(1.0, 0.2, 0.32) },
         uPurple: { value: new THREE.Vector3(0.62, 0.34, 1.0) },
         uBlue: { value: new THREE.Vector3(0.22, 0.56, 1.0) },

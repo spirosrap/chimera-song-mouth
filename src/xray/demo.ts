@@ -13,7 +13,7 @@ import { initChimera } from "../wasm/chimera.ts";
 import rigUrl from "../rig/body.rig.bin?url";
 
 await initChimera();
-const [{ Rig }, { PRESETS }, { wearHead }, { VoiceModel }, { PRESETS: BODIES }, { REST_ARTIC }, { Nerves, NerveView }] = await Promise.all([
+const [{ Rig }, { PRESETS }, { wearHead }, { VoiceModel }, { PRESETS: BODIES }, { REST_ARTIC }, { Nerves, NerveView }, { bodyPoint, buildProfile }] = await Promise.all([
   import("../rig/rig.ts"),
   import("../rig/pose.ts"),
   import("../rig/head.ts"),
@@ -21,6 +21,7 @@ const [{ Rig }, { PRESETS }, { wearHead }, { VoiceModel }, { PRESETS: BODIES }, 
   import("../ui/body.ts"),
   import("../ui/render/anatomy3d.ts"),
   import("./nerves.ts"),
+  import("../ui/render/profile.ts"),
 ]);
 type Mode = "function" | "xray" | "signal";
 
@@ -47,7 +48,7 @@ const skinned = new Float32Array(3 * rig.n);
 /** the head without its outside: no grid, no shell, no midline profile, no ears; its own brain and spine left to the nerves */
 const lookHead = (bone: number) => {
   head.setLook({ inner: 1, bone, outline: 0, shell: 0, skin: 0, features: 2.6 });
-  head.head.drawing = { ...head.head.drawing, fade: null, parts: { brain: 0, skull: 0, spine: 0, ears: 0 } };
+  head.head.drawing = { ...head.head.drawing, fade: null, parts: { brain: 0, skull: 0, spine: 0, ears: 0, pop: 2 } };
 };
 lookHead(0.3);
 scene.add(head.mount);
@@ -57,6 +58,8 @@ const field = (name: string) => form.elements.namedItem(name) as HTMLSelectEleme
 field("pose").append(...Object.keys(PRESETS).map((k) => new Option(k, k)));
 field("pose").value = q.get("pose") ?? "neutral";
 field("look").value = q.get("look") ?? "function";
+if (q.has("signal")) field("signal").value = q.get("signal")!;
+if (q.has("speed")) field("speed").value = q.get("speed")!;
 field("mouth").value = q.get("mouth") ?? "0";
 
 const artic = () => {
@@ -88,6 +91,37 @@ const setLook = () => {
   view.mode = m;
   bloom.strength = m === "function" ? 0.3 : 0.45;
   view.mat.uniforms.uGain.value = m === "xray" ? 1.1 : 1;
+};
+const setSignal = () => (view.mat.uniforms.uSignal.value = Number(field("signal").value));
+field("signal").oninput = setSignal;
+setSignal();
+
+// the face's features, in the head's cm: the nerves clear away behind them (see the shader's `cleared`)
+const k = model.tract.scale, B = bodyPoint(model);
+const eye = B(6.15, 15.35);
+const lip = head.head.lipEdges(model, REST_ARTIC).upper;
+const lipC = new THREE.Vector3();
+for (let i = 0; i < lip.length; i += 3) lipC.add(new THREE.Vector3(lip[i], lip[i + 1], lip[i + 2]));
+lipC.divideScalar(lip.length / 3);
+const prof = buildProfile(model, model.frame(REST_ARTIC), REST_ARTIC);
+const nose = prof.skinUpper.filter((p) => p.y > B(0, 10.9).y && p.y < B(0, 15).y).reduce((a, b) => (b.x > a.x ? b : a));
+const FEATURES: [THREE.Vector3, number][] = [
+  [new THREE.Vector3(eye.x, eye.y, 3.15 * k), 2.3],
+  [new THREE.Vector3(eye.x, eye.y, -3.15 * k), 2.3],
+  [new THREE.Vector3(nose.x - 0.6 * k, nose.y + 0.6 * k, 0), 2.0],
+  [lipC, 3.0],
+];
+const fwd = new THREE.Vector3(), toCam = new THREE.Vector3();
+const clearFeatures = () => {
+  const M = head.mount.matrixWorld, U = view.mat.uniforms;
+  FEATURES.forEach(([p, r], i) => {
+    const w = p.clone().applyMatrix4(M);
+    (U.uClear.value as THREE.Vector4[])[i].set(w.x, w.y, w.z, r);
+  });
+  // only while the face is towards the camera
+  fwd.set(1, 0, 0).transformDirection(M);
+  toCam.copy(camera.position).sub(FEATURES[3][0].clone().applyMatrix4(M)).normalize();
+  U.uClearAmt.value = THREE.MathUtils.smoothstep(fwd.dot(toCam), -0.2, 0.35) * Number(q.get("clear") ?? 1);
 };
 field("pose").onchange = () => {
   setPose();
@@ -132,7 +166,7 @@ addEventListener("resize", resize);
 resize();
 
 const fixedT = q.has("t") ? Number(q.get("t")) : null;
-let last = performance.now(), frames = 0;
+let last = performance.now(), frames = 0, run = 0;
 renderer.setAnimationLoop((now) => {
   const dt = Math.max(0, Math.min(0.1, (now - last) / 1000));
   last = now;
@@ -147,7 +181,10 @@ renderer.setAnimationLoop((now) => {
   const d = camera.position.distanceTo(controls.target), span = q.get("view") === "head" || q.get("view") === "side" ? 14 : 30;
   view.mat.uniforms.uNear.value = d - span;
   view.mat.uniforms.uFar.value = d + span;
-  view.mat.uniforms.uTime.value = fixedT ?? now / 1000;
+  // the pulses run on at the speed set (cm/s); a change of speed doesn't jump them
+  run = fixedT !== null ? fixedT * Number(field("speed").value) : run + dt * Number(field("speed").value);
+  view.mat.uniforms.uRun.value = run;
+  clearFeatures();
   composer.render();
   if (++frames === 8) (window as unknown as { xrayReady: boolean }).xrayReady = true;
 });
