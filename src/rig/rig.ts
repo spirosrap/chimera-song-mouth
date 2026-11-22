@@ -299,26 +299,43 @@ export class Rig {
       this.arm(p.arms[side], left, b, set, S);
       this.leg(p.legs[side], left, b, set, S, this.roll);
     }
-    // chain them: world turns from neutral, then turns from rest and the joints' places
+    // chained: each bone's world turn from neutral
+    for (let i = 0; i < this.B; i++) {
+      const par = this.bones[i].parent;
+      if (par < 0) this.W[i].copy(L[i]);
+      else this.W[i].copy(this.W[par]).multiply(L[i]);
+    }
+    this.poseWorld(this.W, this.H[0].clone().add(new THREE.Vector3(p.body.x, p.body.y, p.body.z)));
+  }
+
+  /**
+   * Pose the skeleton from each bone's world turn from neutral (`W`, as `this.W`: helpers' are
+   * ignored) and where the root's joint goes (cm): every bone's S, P and t. `pose` comes here
+   * after working the turns out from angles; motion from elsewhere (motion.ts) comes straight here.
+   */
+  poseWorld(W: readonly THREE.Quaternion[], root: THREE.Vector3): void {
     for (let i = 0; i < this.B; i++) {
       this.sc[i] = 1;
+      if (W !== this.W) this.W[i].copy(W[i]);
       const par = this.bones[i].parent;
-      if (par < 0) {
-        this.W[i].copy(L[i]);
-        this.P[i].copy(this.H[i]).add(new THREE.Vector3(p.body.x, p.body.y, p.body.z));
-      } else {
-        this.W[i].copy(this.W[par]).multiply(L[i]);
-        this.P[i].copy(this.H[i]).sub(this.H[par]).applyQuaternion(this.S[par]).add(this.P[par]);
-      }
+      if (par < 0) this.P[i].copy(root);
+      else this.P[i].copy(this.H[i]).sub(this.H[par]).applyQuaternion(this.S[par]).add(this.P[par]);
       this.S[i].copy(this.W[i]).multiply(this.N[i]);
     }
     // helpers: each turns part of the way from one neighbour's turn to the other's, about the
     // joint between them; the elbow's and knee's swell as they bend
+    const S = this.settings;
+    // the bend (degrees) at a hinge between two bones that hang down at anatomical zero, in the
+    // hinge's plane: the elbow's forward, the knee's back (negative: straightened past straight)
+    const bend = (a: string, c: string, forward: number) => {
+      const v = DOWN.clone().applyQuaternion(this.W[this.bone(c)]).applyQuaternion(this.W[this.bone(a)].clone().invert());
+      return Math.atan2(forward * v.x, -v.y) / RAD;
+    };
     for (const side of ["R", "L"] as const) {
       const b = (n: string) => `${n}.${side}`;
       this.helper(b("shoulderHelper"), b("clavicle"), b("upperarm"), S.deltoid);
-      this.helper(b("elbowHelper"), b("upperarm2"), b("forearm"), 0.5, 1 + (S.swell * p.arms[side].elbow) / 90);
-      this.helper(b("kneeHelper"), b("thigh2"), b("shin"), 0.5, 1 + (S.swell * p.legs[side].knee) / 90);
+      this.helper(b("elbowHelper"), b("upperarm2"), b("forearm"), 0.5, 1 + (S.swell * bend(b("upperarm2"), b("forearm"), 1)) / 90);
+      this.helper(b("kneeHelper"), b("thigh2"), b("shin"), 0.5, 1 + (S.swell * bend(b("thigh2"), b("shin"), -1)) / 90);
       this.helper(b("hipHelper"), "hips", b("thigh"), S.hip);
       this.helper(b("hipFront"), "hips", b("thigh"), S.hip);
     }
