@@ -58,6 +58,9 @@ and the CLI) under a React UI. See the README.
 - **Camera cuts must keep the active singing head clear of background geometry.** Check all Abracadabra source cuts at phone and desktop widths with `bun test tests/abracadabra.test.ts tests/bad-guy.test.ts tests/montero.test.ts tests/taste.test.ts tests/skibidi.test.ts tests/manchild.test.ts tests/aperture.test.ts tests/denial-river.test.ts tests/storm.test.ts`. Its rear camera once sat behind the hall wall. Intentional rear/profile poses may face away; move an obstructed camera or set rather than forcing the head over foreground props. Preserve this regression check in later scenes.
 - **Manual camera fallbacks use the loaded scene's catalog.** Unlisted recent videos previously showed courtroom cameras. Keep `sceneViewChoices` as the fallback in ScenePage; check `bun test tests/scene-view-choices.test.ts` before adding another performance.
 - **DOM content flows in `.screen-body`, never absolutely positioned.** Check: `bun run lint:layout`.
+- **Text is readable: Hershey Medium, 11 px or larger, never in a line colour (`--blue-dim`,
+  `--blue-mid`, `--frame`) or dimmed by opacity** (`docs/ui-redesign.md` → Type). Check:
+  `bun run lint:layout` fails text under 11 px.
 - **The layout lint's encoder checks target `?solo=1`**; the bare URL intentionally opens the band. Check: `bun run lint:layout`.
 - **This handoff explicitly includes the user-requested prepared music/movie assets.**
   Keep all twenty-two songs, all fifteen film and TV scenes, the speech scene, the two Apollo scenes and all eighty-six concert and music-video performances in `public/`; read `CONTENT.md` and `MEDIA-RIGHTS.md`.

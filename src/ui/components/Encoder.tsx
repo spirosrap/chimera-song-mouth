@@ -87,10 +87,12 @@ export function Encoder(props: EncoderSpec & { slot: number }) {
           aria-valuetext={`${shown.value} ${shown.unit}`.trim()}
         />
       </div>
-      <output className="enc-value" htmlFor={id}>
-        {shown.value}
-      </output>
-      <span className="enc-unit">{shown.unit}</span>
+      <div className="enc-readout">
+        <output className="enc-value" htmlFor={id}>
+          {shown.value}
+        </output>
+        {shown.unit && <span className="enc-unit">{shown.unit}</span>}
+      </div>
     </div>
   );
 }
