@@ -3527,6 +3527,46 @@
       "sha256": "3255b7fe553d6c7ff3a7b13b5ef293175c35a7d29b2f977446b885a473aedcf9"
     },
     {
+      "path": "public/scenes/lava-chicken/backing.mp3",
+      "bytes": 1628204,
+      "sha256": "d8e6e17edb5b1c1c2d68cdb7e757053a7b626f5c90068d4cc7576d09e37754ba"
+    },
+    {
+      "path": "public/scenes/lava-chicken/credits.txt",
+      "bytes": 471,
+      "sha256": "a33b3fddccc6bdb037267813f626d37789cdd2b171819c4ce6ad085864b99bd6"
+    },
+    {
+      "path": "public/scenes/lava-chicken/lava-customer.tele.gz",
+      "bytes": 67767,
+      "sha256": "736caea93d184ae73682cd3ca94113a6ac41bc25bc60dad7f7a629e1bbcf38c5"
+    },
+    {
+      "path": "public/scenes/lava-chicken/lava-guest.tele.gz",
+      "bytes": 40349,
+      "sha256": "406d71c088142689386beb8ef91411a88216fe787d94bedb352628b5d0824847"
+    },
+    {
+      "path": "public/scenes/lava-chicken/lava-host.tele.gz",
+      "bytes": 439509,
+      "sha256": "08d7703a860b4a8be3fa7df554d013c45741e20b2aa73570122995facab97b80"
+    },
+    {
+      "path": "public/scenes/lava-chicken/mix.mp3",
+      "bytes": 1628204,
+      "sha256": "c7b570bad3b033ffdd6ce700bbedff0638ae51d731ddb7c0a45704fa82213ba5"
+    },
+    {
+      "path": "public/scenes/lava-chicken/performance.json",
+      "bytes": 107460,
+      "sha256": "a5914a1a35cedbab4e2fff93c7593799b5664ac1cad50dbd11b671cffe83ea21"
+    },
+    {
+      "path": "public/scenes/lava-chicken/scene.json",
+      "bytes": 4089,
+      "sha256": "0f177822bee5beda08aa3a8e3eec8c62db4ca6ad460cd9e358d4464e074bc8f1"
+    },
+    {
       "path": "public/scenes/like-jennie/backing.mp3",
       "bytes": 5844524,
       "sha256": "a30d042aedd91f7ea4b92a682657d4f15789334e0a1904318c54b6eba8236dd6"

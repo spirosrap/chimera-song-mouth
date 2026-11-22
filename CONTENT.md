@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 1013 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All 1167 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -171,6 +171,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Chappell Roan — The Subway | 4:31 | `?scene=the-subway` | Full New York video edit, original backing, physical lead and closing announcement, captions and telemetry |
 | Charli xcx — SS26 | 2:52 | `?scene=ss26` | Full runway and backstage edit, original backing, two physical voices, captions and telemetry |
 | OK Go — Love | 4:22 | `?scene=ok-go-love` | Full station edit, moving robot arms, live mirror effects, original backing, three physical voices, captions and telemetry |
+| Jack Black — Steve’s Lava Chicken | 0:51 | `?scene=lava-chicken` | Block-built kitchen, lever, glowing lava channel, chicken and closing reaction, with three physical voices over original music and cooking effects |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
