@@ -4552,6 +4552,41 @@
       "sha256": "ee4fb7b58129cdd9a46a97170e3261874463da4f42f7935076aaae662108e5eb"
     },
     {
+      "path": "public/scenes/soda-pop/backing.mp3",
+      "bytes": 4329682,
+      "sha256": "b819d2f15570817ff9eeed947675b1997091b6bc38cacf29dc28c739b8d19e7d"
+    },
+    {
+      "path": "public/scenes/soda-pop/mix.mp3",
+      "bytes": 5772332,
+      "sha256": "4af4d9c16de62b96838b2e237557684837998d22473e62c031d4d63cb8f93d9f"
+    },
+    {
+      "path": "public/scenes/soda-pop/performance.json",
+      "bytes": 502199,
+      "sha256": "7e8daa22140641622e0b013cbe867974d36ff5148c086bafb0c418cf69b0588d"
+    },
+    {
+      "path": "public/scenes/soda-pop/scene.json",
+      "bytes": 13647,
+      "sha256": "c9a01b7aa213402d8469198592f575584122418ced34cdce529a5ee86ce51e3d"
+    },
+    {
+      "path": "public/scenes/soda-pop/soda-chorus.tele.gz",
+      "bytes": 1066742,
+      "sha256": "ffb741aeea5a026cf75923a79661243371b3b6c5ad8ac5d0f9c51129d4e70ced"
+    },
+    {
+      "path": "public/scenes/soda-pop/soda-jinu.tele.gz",
+      "bytes": 1295609,
+      "sha256": "91ce43fbdb132110537f4b385c97ff20382978b797eaf06fee491aac80f20c88"
+    },
+    {
+      "path": "public/scenes/soda-pop/soda-rap.tele.gz",
+      "bytes": 358044,
+      "sha256": "ffef52a122b19ee60948e979204046f07f0370d5362496aa7191fb2352452ef6"
+    },
+    {
       "path": "public/scenes/spin-round/backing.mp3",
       "bytes": 6306092,
       "sha256": "3c3b57392486625623ba5dab144d0f6a8381ee5a1dd758f4895f7b1a90e42ceb"

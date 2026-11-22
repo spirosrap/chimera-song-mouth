@@ -1,0 +1,661 @@
+{
+  "setting": "sodapop",
+  "title": "Saja Boys · Soda Pop",
+  "description": "The complete KPop Demon Hunters Seoul street music video: billowing magenta smoke reveal, sunlit plaza with FIRST RUN glass storefronts, five candy-pastel boyband members led by Jinu, fizzy rising soda bubbles, pastel bokeh breakdown bridge, elevated plaza pedestal, and neon magenta/cyan finale. Original backing with three physical mouth-engine male K-pop voices.",
+  "duration": 180.326168,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "soda-jinu",
+      "name": "Jinu",
+      "role": "Lead K-pop tenor vocal",
+      "tele": "soda-jinu.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "soda-rap",
+      "name": "Baby & Abby",
+      "role": "Rap verse & low groove",
+      "tele": "soda-rap.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "soda-chorus",
+      "name": "Romance & Mystery",
+      "role": "High hook & vocal harmonies",
+      "tele": "soda-chorus.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 2.75,
+      "end": 3.9,
+      "speaker": "soda-chorus",
+      "text": "Wait, wait, what is that?",
+      "intensity": 0.72
+    },
+    {
+      "start": 11.82,
+      "end": 13.18,
+      "speaker": "soda-jinu",
+      "text": "Oh, sorry!",
+      "intensity": 0.74
+    },
+    {
+      "start": 16.46,
+      "end": 17.42,
+      "speaker": "soda-chorus",
+      "text": "Hey, hey",
+      "intensity": 0.84
+    },
+    {
+      "start": 18.52,
+      "end": 19.38,
+      "speaker": "soda-jinu",
+      "text": "Hey, hey",
+      "intensity": 0.86
+    },
+    {
+      "start": 20.46,
+      "end": 21.26,
+      "speaker": "soda-chorus",
+      "text": "Hey, hey",
+      "intensity": 0.86
+    },
+    {
+      "start": 22.3,
+      "end": 22.72,
+      "speaker": "soda-jinu",
+      "text": "Hey!",
+      "intensity": 0.88
+    },
+    {
+      "start": 25.24,
+      "end": 26.64,
+      "speaker": "soda-jinu",
+      "text": "Don't want you, need you",
+      "intensity": 0.86
+    },
+    {
+      "start": 26.74,
+      "end": 28.92,
+      "speaker": "soda-jinu",
+      "text": "Yeah, I need you to fill me up",
+      "intensity": 0.88
+    },
+    {
+      "start": 29.02,
+      "end": 30.72,
+      "speaker": "soda-jinu",
+      "text": "마시고 마셔 봐도",
+      "intensity": 0.86
+    },
+    {
+      "start": 30.86,
+      "end": 32.04,
+      "speaker": "soda-jinu",
+      "text": "성에 차지 않아",
+      "intensity": 0.88
+    },
+    {
+      "start": 32.16,
+      "end": 34.12,
+      "speaker": "soda-jinu",
+      "text": "Got a feeling that, oh, yeah",
+      "intensity": 0.88
+    },
+    {
+      "start": 34.22,
+      "end": 35.54,
+      "speaker": "soda-jinu",
+      "text": "You could be everything that",
+      "intensity": 0.86
+    },
+    {
+      "start": 35.64,
+      "end": 36.6,
+      "speaker": "soda-jinu",
+      "text": "That I need",
+      "intensity": 0.88
+    },
+    {
+      "start": 36.7,
+      "end": 37.56,
+      "speaker": "soda-jinu",
+      "text": "Taste so sweet",
+      "intensity": 0.88
+    },
+    {
+      "start": 37.66,
+      "end": 39.7,
+      "speaker": "soda-jinu",
+      "text": "Every sip makes me want more, yeah",
+      "intensity": 0.9
+    },
+    {
+      "start": 39.84,
+      "end": 41.98,
+      "speaker": "soda-rap",
+      "text": "Lookin' like snacks 'cause you got it like that",
+      "intensity": 0.88
+    },
+    {
+      "start": 42.08,
+      "end": 43.96,
+      "speaker": "soda-rap",
+      "text": "Take a big bite, want another bite, yeah",
+      "intensity": 0.9
+    },
+    {
+      "start": 44.06,
+      "end": 46.06,
+      "speaker": "soda-chorus",
+      "text": "너의 모든 걸 난 원해, 원해, 원해",
+      "intensity": 0.9
+    },
+    {
+      "start": 46.16,
+      "end": 47.98,
+      "speaker": "soda-chorus",
+      "text": "너 말곤 모두 뻔해, 뻔해, 뻔해",
+      "intensity": 0.9
+    },
+    {
+      "start": 48.08,
+      "end": 50.88,
+      "speaker": "soda-jinu",
+      "text": "When you're in my arms, I hold you so tight",
+      "intensity": 0.88
+    },
+    {
+      "start": 50.98,
+      "end": 51.92,
+      "speaker": "soda-chorus",
+      "text": "So tight",
+      "intensity": 0.86
+    },
+    {
+      "start": 52,
+      "end": 54.8,
+      "speaker": "soda-jinu",
+      "text": "Can't let go, no, no, not tonight",
+      "intensity": 0.9
+    },
+    {
+      "start": 54.92,
+      "end": 58.48,
+      "speaker": "soda-jinu",
+      "text": "지금 당장 날 봐 시간 없잖아",
+      "intensity": 0.9
+    },
+    {
+      "start": 58.62,
+      "end": 61.78,
+      "speaker": "soda-jinu",
+      "text": "넌 내꺼야 이미 알고 있잖아",
+      "intensity": 0.92
+    },
+    {
+      "start": 61.88,
+      "end": 64.56,
+      "speaker": "soda-jinu",
+      "text": "'Cause I need you to need me",
+      "intensity": 0.92
+    },
+    {
+      "start": 64.66,
+      "end": 67.3,
+      "speaker": "soda-chorus",
+      "text": "I'm empty, you feed me",
+      "intensity": 0.92
+    },
+    {
+      "start": 67.4,
+      "end": 68.78,
+      "speaker": "soda-jinu",
+      "text": "So refreshing",
+      "intensity": 0.94
+    },
+    {
+      "start": 68.86,
+      "end": 70.08,
+      "speaker": "soda-chorus",
+      "text": "My little soda pop",
+      "intensity": 0.95
+    },
+    {
+      "start": 70.72,
+      "end": 72.44,
+      "speaker": "soda-chorus",
+      "text": "You're all I can think of",
+      "intensity": 0.95
+    },
+    {
+      "start": 72.52,
+      "end": 74.36,
+      "speaker": "soda-chorus",
+      "text": "Every drop I drink up",
+      "intensity": 0.95
+    },
+    {
+      "start": 74.88,
+      "end": 76.2,
+      "speaker": "soda-jinu",
+      "text": "You're my soda pop",
+      "intensity": 0.96
+    },
+    {
+      "start": 76.3,
+      "end": 77.72,
+      "speaker": "soda-chorus",
+      "text": "My little soda pop",
+      "intensity": 0.96
+    },
+    {
+      "start": 78.12,
+      "end": 80.06,
+      "speaker": "soda-jinu",
+      "text": "Cool me down, you're so hot",
+      "intensity": 0.95
+    },
+    {
+      "start": 80.16,
+      "end": 82,
+      "speaker": "soda-jinu",
+      "text": "Pour me up, I won't stop",
+      "intensity": 0.96
+    },
+    {
+      "start": 82.58,
+      "end": 83.92,
+      "speaker": "soda-chorus",
+      "text": "You're my soda pop",
+      "intensity": 0.96
+    },
+    {
+      "start": 84.1,
+      "end": 85.4,
+      "speaker": "soda-chorus",
+      "text": "My little soda pop",
+      "intensity": 0.96
+    },
+    {
+      "start": 90.16,
+      "end": 91.22,
+      "speaker": "soda-chorus",
+      "text": "Hey, oh!",
+      "intensity": 0.84
+    },
+    {
+      "start": 92.18,
+      "end": 93.36,
+      "speaker": "soda-chorus",
+      "text": "Hey, oh!",
+      "intensity": 0.86
+    },
+    {
+      "start": 96.7,
+      "end": 98.3,
+      "speaker": "soda-chorus",
+      "text": "Hey, they're dreamy!",
+      "intensity": 0.82
+    },
+    {
+      "start": 98.84,
+      "end": 100.64,
+      "speaker": "soda-chorus",
+      "text": "I mean demon, obviously demon",
+      "intensity": 0.86
+    },
+    {
+      "start": 100.88,
+      "end": 101.2,
+      "speaker": "soda-rap",
+      "text": "Uh",
+      "intensity": 0.84
+    },
+    {
+      "start": 101.34,
+      "end": 102.74,
+      "speaker": "soda-rap",
+      "text": "Make me wanna flip the top",
+      "intensity": 0.92
+    },
+    {
+      "start": 102.82,
+      "end": 104.18,
+      "speaker": "soda-rap",
+      "text": "한 모금에 you hit the spot",
+      "intensity": 0.92
+    },
+    {
+      "start": 104.26,
+      "end": 106.32,
+      "speaker": "soda-rap",
+      "text": "Every little drip and drop, fizz and pop, ah",
+      "intensity": 0.94
+    },
+    {
+      "start": 106.4,
+      "end": 107.98,
+      "speaker": "soda-rap",
+      "text": "소름 돋아, it's gettin' hot",
+      "intensity": 0.92
+    },
+    {
+      "start": 108.06,
+      "end": 110.48,
+      "speaker": "soda-rap",
+      "text": "Yes, I'm sippin' when it's drippin' now",
+      "intensity": 0.94
+    },
+    {
+      "start": 110.56,
+      "end": 112.36,
+      "speaker": "soda-rap",
+      "text": "It's done? I need a second round",
+      "intensity": 0.94
+    },
+    {
+      "start": 112.44,
+      "end": 114.22,
+      "speaker": "soda-rap",
+      "text": "And pour a lot, and don't you stop",
+      "intensity": 0.95
+    },
+    {
+      "start": 114.3,
+      "end": 116.36,
+      "speaker": "soda-rap",
+      "text": "'Til my soda pop fizzles out",
+      "intensity": 0.95
+    },
+    {
+      "start": 116.52,
+      "end": 121.42,
+      "speaker": "soda-jinu",
+      "text": "꿈 속에 그려왔던 너",
+      "intensity": 0.86
+    },
+    {
+      "start": 121.84,
+      "end": 124.98,
+      "speaker": "soda-jinu",
+      "text": "난 절대 놓칠 수 없어",
+      "intensity": 0.88
+    },
+    {
+      "start": 125.52,
+      "end": 126.96,
+      "speaker": "soda-chorus",
+      "text": "널 원해 꼭",
+      "intensity": 0.9
+    },
+    {
+      "start": 127.04,
+      "end": 130.32,
+      "speaker": "soda-jinu",
+      "text": "I waited so long for a taste of soda",
+      "intensity": 0.92
+    },
+    {
+      "start": 130.52,
+      "end": 133.18,
+      "speaker": "soda-jinu",
+      "text": "So, the wait is over, baby",
+      "intensity": 0.94
+    },
+    {
+      "start": 133.52,
+      "end": 135.28,
+      "speaker": "soda-chorus",
+      "text": "Come and fill me up",
+      "intensity": 0.95
+    },
+    {
+      "start": 135.38,
+      "end": 137.32,
+      "speaker": "soda-chorus",
+      "text": "Just can't get enough",
+      "intensity": 0.96
+    },
+    {
+      "start": 137.42,
+      "end": 138.62,
+      "speaker": "soda-jinu",
+      "text": "Oh!",
+      "intensity": 0.98
+    },
+    {
+      "start": 138.72,
+      "end": 140.92,
+      "speaker": "soda-chorus",
+      "text": "You're all I can think of",
+      "intensity": 0.97
+    },
+    {
+      "start": 141.02,
+      "end": 143.1,
+      "speaker": "soda-chorus",
+      "text": "Every drop I drink up",
+      "intensity": 0.97
+    },
+    {
+      "start": 143.22,
+      "end": 144.86,
+      "speaker": "soda-jinu",
+      "text": "You're my soda pop",
+      "intensity": 0.98
+    },
+    {
+      "start": 144.96,
+      "end": 146.3,
+      "speaker": "soda-chorus",
+      "text": "My little soda pop",
+      "intensity": 0.98
+    },
+    {
+      "start": 146.38,
+      "end": 148.24,
+      "speaker": "soda-jinu",
+      "text": "Cool me down, you're so hot",
+      "intensity": 0.97
+    },
+    {
+      "start": 148.34,
+      "end": 150.56,
+      "speaker": "soda-jinu",
+      "text": "Pour me up, I won't stop",
+      "intensity": 0.98
+    },
+    {
+      "start": 150.64,
+      "end": 152.42,
+      "speaker": "soda-chorus",
+      "text": "You're my soda pop",
+      "intensity": 0.98
+    },
+    {
+      "start": 152.52,
+      "end": 154.12,
+      "speaker": "soda-chorus",
+      "text": "My little soda pop",
+      "intensity": 0.98
+    },
+    {
+      "start": 154.92,
+      "end": 156.12,
+      "speaker": "soda-jinu",
+      "text": "Ooh, ooh",
+      "intensity": 0.94
+    },
+    {
+      "start": 156.92,
+      "end": 158.12,
+      "speaker": "soda-jinu",
+      "text": "Ooh, ooh",
+      "intensity": 0.95
+    },
+    {
+      "start": 158.54,
+      "end": 160.08,
+      "speaker": "soda-chorus",
+      "text": "You're my soda pop",
+      "intensity": 0.98
+    },
+    {
+      "start": 160.2,
+      "end": 161.46,
+      "speaker": "soda-jinu",
+      "text": "Gotta drink every drop",
+      "intensity": 0.98
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "soda-smoke"
+    },
+    {
+      "time": 5,
+      "view": "soda-plaza"
+    },
+    {
+      "time": 11.5,
+      "view": "soda-jinu"
+    },
+    {
+      "time": 16.2,
+      "view": "soda-smoke"
+    },
+    {
+      "time": 20.2,
+      "view": "soda-plaza"
+    },
+    {
+      "time": 25,
+      "view": "soda-jinu"
+    },
+    {
+      "time": 32,
+      "view": "soda-plaza"
+    },
+    {
+      "time": 35.5,
+      "view": "soda-jinu"
+    },
+    {
+      "time": 39.7,
+      "view": "soda-rap"
+    },
+    {
+      "time": 44,
+      "view": "soda-chorus"
+    },
+    {
+      "time": 48,
+      "view": "soda-jinu"
+    },
+    {
+      "time": 54.8,
+      "view": "soda-pastel"
+    },
+    {
+      "time": 61.8,
+      "view": "soda-jinu"
+    },
+    {
+      "time": 64.6,
+      "view": "soda-chorus"
+    },
+    {
+      "time": 67.3,
+      "view": "soda-pastel"
+    },
+    {
+      "time": 70.5,
+      "view": "soda-pedestal"
+    },
+    {
+      "time": 74.8,
+      "view": "soda-jinu"
+    },
+    {
+      "time": 78,
+      "view": "soda-plaza"
+    },
+    {
+      "time": 82.4,
+      "view": "soda-pedestal"
+    },
+    {
+      "time": 86,
+      "view": "soda-plaza"
+    },
+    {
+      "time": 96.5,
+      "view": "soda-chorus"
+    },
+    {
+      "time": 101.2,
+      "view": "soda-rap"
+    },
+    {
+      "time": 106.3,
+      "view": "soda-plaza"
+    },
+    {
+      "time": 108,
+      "view": "soda-rap"
+    },
+    {
+      "time": 112.4,
+      "view": "soda-pedestal"
+    },
+    {
+      "time": 116.4,
+      "view": "soda-bridge"
+    },
+    {
+      "time": 125.4,
+      "view": "soda-pastel"
+    },
+    {
+      "time": 127,
+      "view": "soda-jinu"
+    },
+    {
+      "time": 133.4,
+      "view": "soda-bridge"
+    },
+    {
+      "time": 138.6,
+      "view": "soda-neon"
+    },
+    {
+      "time": 143.2,
+      "view": "soda-jinu"
+    },
+    {
+      "time": 146.3,
+      "view": "soda-neon"
+    },
+    {
+      "time": 150.6,
+      "view": "soda-pedestal"
+    },
+    {
+      "time": 154.8,
+      "view": "soda-neon"
+    },
+    {
+      "time": 158.5,
+      "view": "soda-ending"
+    },
+    {
+      "time": 162.5,
+      "view": "soda-plaza"
+    }
+  ]
+}
