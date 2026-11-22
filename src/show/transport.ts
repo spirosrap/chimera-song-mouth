@@ -48,6 +48,11 @@ export class Transport {
     return this.buffer?.duration ?? 0;
   }
 
+  /** Decoded audio buffer for fast offline WebCodecs MP4 export. */
+  get audioBuffer(): AudioBuffer | null {
+    return this.buffer;
+  }
+
   get isPlaying(): boolean {
     return this.playing;
   }

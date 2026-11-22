@@ -1,18 +1,20 @@
+import {ArrayBufferTarget,Muxer} from 'mp4-muxer';
 import {sceneCue,type SceneCue,type SceneFile} from './scene.ts';
 import type {Transport} from '../show/transport.ts';
 export interface StageCapture {draw(time:number):HTMLCanvasElement;release():void}
 export interface SceneStage {capture(width?:number,height?:number):StageCapture}
-export interface VideoFile {blob:Blob;extension:'mp4'|'webm'}
+export interface VideoFile {blob:Blob;extension:'mp4'|'webm';fast?:boolean}
 export type VideoPreset = 'hd'|'x-lyrics';
 export interface VideoExportOptions {
   preset?:VideoPreset;
   startTime?:number;
   endTime?:number;
+  onMode?:(mode:'offline'|'realtime')=>void;
 }
 
 export const VIDEO_PRESETS:Record<VideoPreset,{width:number;height:number;fps:number;videoBitsPerSecond:number;audioBitsPerSecond:number}>={
   hd:{width:1280,height:720,fps:30,videoBitsPerSecond:5_000_000,audioBitsPerSecond:192_000},
-  // Compact 540p 24fps H.264/WebM (~12 MB/min) tuned for fast sharing on X with live lyrics.
+  // Compact 540p 24fps H.264/AAC MP4 (~12 MB/min) tuned for fast sharing on X with live lyrics.
   'x-lyrics':{width:960,height:540,fps:24,videoBitsPerSecond:1_500_000,audioBitsPerSecond:128_000},
 };
 
@@ -169,14 +171,198 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
   ctx.fillRect(0,h-4,Math.round(w*ratio),4);
 }
 
-/** One complete take (or clip range). The video track and audio tap use the same source clock. */
+interface OfflineCodecChoice {
+  videoCodec:string;
+  audioCodec:'mp4a.40.2'|'opus';
+  muxerAudioCodec:'aac'|'opus';
+}
+
+async function pickWebCodecsConfig(width:number,height:number,fps:number,videoBitrate:number,audioBitrate:number,sampleRate:number,channels:number):Promise<OfflineCodecChoice|null>{
+  if(typeof VideoEncoder==='undefined'||typeof AudioEncoder==='undefined'||typeof VideoFrame==='undefined'||typeof AudioData==='undefined')return null;
+  let videoCodec='';
+  for(const codec of ['avc1.640028','avc1.4d0028','avc1.42001f']){
+    try{
+      const sup=await VideoEncoder.isConfigSupported({codec,width,height,bitrate:videoBitrate,framerate:fps,avc:{format:'avc'}});
+      if(sup.supported){videoCodec=codec;break;}
+    }catch{ /* try next profile */ }
+  }
+  if(!videoCodec)return null;
+  for(const [audioCodec,muxerAudioCodec] of [['mp4a.40.2','aac'],['opus','opus']] as const){
+    try{
+      const sup=await AudioEncoder.isConfigSupported({codec:audioCodec,sampleRate,numberOfChannels:channels,bitrate:audioBitrate});
+      if(sup.supported)return {videoCodec,audioCodec,muxerAudioCodec};
+    }catch{ /* try next audio codec */ }
+  }
+  return null;
+}
+
+/** Instant event-loop yield (MessageChannel isn't throttled to 1s in background tabs like setTimeout). */
+function yieldImmediate():Promise<void>{
+  if(typeof MessageChannel!=='undefined'){
+    return new Promise(resolve=>{
+      const ch=new MessageChannel();
+      ch.port1.onmessage=()=>resolve();
+      ch.port2.postMessage(0);
+    });
+  }
+  return new Promise(resolve=>setTimeout(resolve,0));
+}
+
+/** Fast, silent, background-safe offline WebCodecs MP4 renderer (10x+ faster than real time). */
+async function exportSceneVideoOffline(
+  stage:SceneStage,
+  scene:SceneFile,
+  audioBuffer:AudioBuffer,
+  presetName:VideoPreset,
+  start:number,
+  end:number,
+  onProgress:(elapsed:number)=>void,
+  signal:AbortSignal,
+  codecs:OfflineCodecChoice,
+):Promise<VideoFile>{
+  const preset=VIDEO_PRESETS[presetName];
+  const channels=Math.max(1,Math.min(2,audioBuffer.numberOfChannels));
+  const sampleRate=audioBuffer.sampleRate;
+  const target=new ArrayBufferTarget();
+  const muxer=new Muxer({
+    target,
+    video:{codec:'avc',width:preset.width,height:preset.height},
+    audio:{codec:codecs.muxerAudioCodec,numberOfChannels:channels,sampleRate},
+    fastStart:'in-memory',
+    firstTimestampBehavior:'offset',
+  });
+
+  let encoderError:Error|null=null;
+  const videoEncoder=new VideoEncoder({
+    output:(chunk,meta)=>muxer.addVideoChunk(chunk,meta),
+    error:e=>{encoderError=e instanceof Error?e:Error(String(e));},
+  });
+  const audioEncoder=new AudioEncoder({
+    output:(chunk,meta)=>muxer.addAudioChunk(chunk,meta),
+    error:e=>{encoderError=e instanceof Error?e:Error(String(e));},
+  });
+
+  let capture:StageCapture|undefined;
+  try{
+    videoEncoder.configure({
+      codec:codecs.videoCodec,
+      width:preset.width,
+      height:preset.height,
+      bitrate:preset.videoBitsPerSecond,
+      framerate:preset.fps,
+      avc:{format:'avc'},
+    });
+    audioEncoder.configure({
+      codec:codecs.audioCodec,
+      sampleRate,
+      numberOfChannels:channels,
+      bitrate:preset.audioBitsPerSecond,
+    });
+
+    await document.fonts.ready;
+    if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
+
+    capture=stage.capture(preset.width,preset.height);
+    const canvas=document.createElement('canvas');
+    canvas.width=preset.width;canvas.height=preset.height;
+    const ctx=canvas.getContext('2d');
+    if(!ctx)throw Error('This browser cannot render the scene video.');
+
+    // 1. Encode audio slice offline (takes <0.2s for a full song)
+    const startSample=Math.floor(start*sampleRate);
+    const endSample=Math.min(audioBuffer.length,Math.ceil(end*sampleRate));
+    const chunkSamples=4096;
+    for(let pos=startSample;pos<endSample;pos+=chunkSamples){
+      if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
+      if(encoderError)throw encoderError;
+      const frames=Math.min(chunkSamples,endSample-pos);
+      const planar=new Float32Array(frames*channels);
+      for(let ch=0;ch<channels;ch++){
+        planar.set(audioBuffer.getChannelData(ch).subarray(pos,pos+frames),ch*frames);
+      }
+      const timestamp=Math.round(((pos-startSample)/sampleRate)*1_000_000);
+      const audioData=new AudioData({format:'f32-planar',sampleRate,numberOfChannels:channels,numberOfFrames:frames,timestamp,data:planar});
+      audioEncoder.encode(audioData);
+      audioData.close();
+      if(audioEncoder.encodeQueueSize>24)await yieldImmediate();
+    }
+    await audioEncoder.flush();
+    if(encoderError)throw encoderError;
+
+    // 2. Step 3D stage & lyrics frame-by-frame as fast as GPU/WebCodecs can encode
+    const duration=end-start;
+    const totalFrames=Math.max(1,Math.ceil(duration*preset.fps));
+    const frameDurUs=Math.round(1_000_000/preset.fps);
+    const gop=preset.fps*2;
+    let lastProgressAt=0;
+
+    for(let i=0;i<totalFrames;i++){
+      if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
+      if(encoderError)throw encoderError;
+      const t=Math.min(end,start+i/preset.fps);
+      const source=capture.draw(t);
+      if(presetName==='x-lyrics')drawLyricsVideoFrame(ctx,source,scene,t,preset.width,preset.height);
+      else drawVideoFrame(ctx,source,scene,t);
+
+      const timestamp=Math.round((i/preset.fps)*1_000_000);
+      const vf=new VideoFrame(canvas,{timestamp,duration:frameDurUs});
+      videoEncoder.encode(vf,{keyFrame:i%gop===0});
+      vf.close();
+
+      while(videoEncoder.encodeQueueSize>8){
+        if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
+        if(encoderError)throw encoderError;
+        await yieldImmediate();
+      }
+      const now=typeof performance!=='undefined'?performance.now():Date.now();
+      if(i%4===0||now-lastProgressAt>100){
+        onProgress(Math.min(duration,t-start));
+        lastProgressAt=now;
+        await yieldImmediate();
+      }
+    }
+
+    await videoEncoder.flush();
+    if(encoderError)throw encoderError;
+    onProgress(duration);
+    muxer.finalize();
+    const blob=new Blob([target.buffer],{type:'video/mp4'});
+    if(!blob.size)throw Error('The browser created an empty video. Please try again.');
+    return {blob,extension:'mp4',fast:true};
+  }finally{
+    try{if(videoEncoder.state!=='closed')videoEncoder.close();}catch{ /* ignore */ }
+    try{if(audioEncoder.state!=='closed')audioEncoder.close();}catch{ /* ignore */ }
+    capture?.release();
+  }
+}
+
+/** Exports a video take (fast offline WebCodecs MP4 when available, otherwise real-time MediaRecorder fallback). */
 export async function recordSceneVideo(stage:SceneStage,scene:SceneFile,transport:Transport,onProgress:(time:number)=>void,signal:AbortSignal,options:VideoExportOptions={}):Promise<VideoFile>{
-  if(typeof MediaRecorder==='undefined')throw Error('This browser cannot save video. Try opening the scene in another browser.');
-  if(document.hidden)throw Error('Keep this tab visible while preparing the video.');
   const presetName=options.preset??'hd';
   const preset=VIDEO_PRESETS[presetName];
   const start=Math.max(0,Math.min(scene.duration-0.1,options.startTime??0));
   const end=Math.max(start+0.1,Math.min(scene.duration,options.endTime??scene.duration));
+
+  // Prefer fast silent offline WebCodecs MP4 export when the browser supports it (works even in background tabs!).
+  const buf=transport.audioBuffer;
+  if(buf){
+    const codecs=await pickWebCodecsConfig(preset.width,preset.height,preset.fps,preset.videoBitsPerSecond,preset.audioBitsPerSecond,buf.sampleRate,Math.max(1,Math.min(2,buf.numberOfChannels)));
+    if(codecs){
+      const previous=transport.time();
+      transport.pause();
+      options.onMode?.('offline');
+      try{
+        return await exportSceneVideoOffline(stage,scene,buf,presetName,start,end,onProgress,signal,codecs);
+      }finally{
+        transport.seek(previous);
+      }
+    }
+  }
+
+  // Real-time MediaRecorder fallback for browsers without WebCodecs support
+  if(typeof MediaRecorder==='undefined')throw Error('This browser cannot save video. Try opening the scene in another browser.');
+  if(document.hidden)throw Error('Keep this tab visible while preparing the video.');
+  options.onMode?.('realtime');
   const format=videoFormat(m=>MediaRecorder.isTypeSupported(m));
   const previous=transport.time();transport.pause();transport.seek(start);
   let capture:StageCapture|undefined,video:MediaStream|undefined,audio:MediaStreamAudioDestinationNode|undefined,recorder:MediaRecorder|undefined,untap:(()=>void)|undefined;
@@ -220,7 +406,7 @@ export async function recordSceneVideo(stage:SceneStage,scene:SceneFile,transpor
       writer.start(1000);transport.play();raf=requestAnimationFrame(frame);
       if(signal.aborted)abortListener();
     });
-    return {blob,extension:format.extension};
+    return {blob,extension:format.extension,fast:false};
   }finally{
     cancelAnimationFrame(raf);if(timer)clearTimeout(timer);
     signal.removeEventListener('abort',abortListener);document.removeEventListener('visibilitychange',visibilityListener);

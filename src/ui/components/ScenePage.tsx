@@ -20,7 +20,7 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
   const entry=movieScene(sceneId)!,BASE=`${BASE_PATH}scenes/${sceneId}/`,assetVersion='assetVersion'in entry?entry.assetVersion:undefined;
   const [transport,setTransport]=useState<Transport|null>(null),[loaded,setLoaded]=useState<LoadedScene|null>(null),[error,setError]=useState('');
   const [camera,setCamera]=useState<CameraChoice>('auto'),[subtitles,setSubtitles]=useState(true),[,tick]=useState(0),[retry,setRetry]=useState(0),[index,setIndex]=useState(false),[moreViews,setMoreViews]=useState(false);
-  const [stage,setStage]=useState<SceneStage|null>(null),[exporting,setExporting]=useState(false),[exportTime,setExportTime]=useState(0),[exportTotal,setExportTotal]=useState(0),[exportLabel,setExportLabel]=useState(''),[exportError,setExportError]=useState('');
+  const [stage,setStage]=useState<SceneStage|null>(null),[exporting,setExporting]=useState(false),[exportTime,setExportTime]=useState(0),[exportTotal,setExportTotal]=useState(0),[exportLabel,setExportLabel]=useState(''),[exportMode,setExportMode]=useState<'offline'|'realtime'>('offline'),[exportError,setExportError]=useState('');
   const [savedVideo,setSavedVideo]=useState<{url:string;name:string;sizeMB:string}|null>(null),exportJob=useRef<AbortController|null>(null),mounted=useRef(true);
   useEffect(()=>{mounted.current=true;return()=>{mounted.current=false;exportJob.current?.abort();};},[]);
   useEffect(()=>()=>{if(savedVideo)URL.revokeObjectURL(savedVideo.url);},[savedVideo]);
@@ -30,9 +30,9 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
     const startTime=clipSeconds?Math.max(0,Math.min(Math.max(0,dur-clipSeconds),transport.time())):0;
     const endTime=clipSeconds?Math.min(dur,startTime+clipSeconds):dur;
     const label=preset==='x-lyrics'?(clipSeconds?'compact X lyrics clip':'compact X video with lyrics'):'HD video';
-    const controller=new AbortController();exportJob.current=controller;setExporting(true);setExportTime(0);setExportTotal(endTime-startTime);setExportLabel(label);setExportError('');setSavedVideo(null);setCamera('auto');setSubtitles(true);
+    const controller=new AbortController();exportJob.current=controller;setExporting(true);setExportTime(0);setExportTotal(endTime-startTime);setExportLabel(label);setExportMode('offline');setExportError('');setSavedVideo(null);setCamera('auto');setSubtitles(true);
     try{
-      const result=await recordSceneVideo(stage,loaded.scene,transport,setExportTime,controller.signal,{preset,startTime,endTime});
+      const result=await recordSceneVideo(stage,loaded.scene,transport,setExportTime,controller.signal,{preset,startTime,endTime,onMode:m=>{if(mounted.current)setExportMode(m);}});
       if(!mounted.current||controller.signal.aborted)return;
       const suffix=preset==='x-lyrics'?(clipSeconds?'-lyrics-clip-for-X':'-lyrics-for-X'):'-with-subtitles';
       const video={url:URL.createObjectURL(result.blob),name:`${sceneId}${suffix}.${result.extension}`,sizeMB:(result.blob.size/(1024*1024)).toFixed(1)};setSavedVideo(video);
@@ -88,7 +88,7 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
         {scene&&entry.readyVideo&&<a className="chip" href={sceneVideoUrl(BASE,entry.readyVideo)} download={`${sceneId}-with-subtitles-X-ready.mp4`}>Download MP4 for X</a>}
         {scene&&<a className="chip" href={BASE+scene.audio} download={`${sceneId}-chimera.mp3`}>Download audio</a>}
       </div>
-      {exporting&&<div className="scene-export" role="status"><div><strong>Preparing {exportLabel} · {formatTime(exportTime)} / {formatTime(exportTotal||scene?.duration||0)}</strong><p>Keep this tab open. Sound and live lyrics are being saved directly to your device.</p></div><progress value={exportTime} max={exportTotal||scene?.duration||1}/><button className="chip" onClick={()=>exportJob.current?.abort()}>Cancel</button></div>}
+      {exporting&&<div className="scene-export" role="status"><div><strong>{exportMode==='offline'?'Rendering':'Preparing'} {exportLabel} · {formatTime(exportTime)} / {formatTime(exportTotal||scene?.duration||0)}</strong><p>{exportMode==='offline'?'Fast offline MP4 render (no playback needed — safe to switch tabs while it finishes).':'Keep this tab open. Sound and live lyrics are being saved directly to your device.'}</p></div><progress value={exportTime} max={exportTotal||scene?.duration||1}/><button className="chip" onClick={()=>exportJob.current?.abort()}>Cancel</button></div>}
       {exportError&&<p className="scene-export-error" role="alert">{exportError}</p>}
       {savedVideo&&<p className="scene-export-saved">Video ready ({savedVideo.sizeMB} MB). <a href={savedVideo.url} download={savedVideo.name}>Save video</a></p>}
       <div className="scene-options"><fieldset disabled={exporting}><legend>Camera</legend><div className="scene-views">{viewChip('auto')}{viewChip('wide')}{folded?<button className={`chip scene-fold${!moreViews&&tucked?' on':''}`} aria-expanded={moreViews} aria-controls="scene-more-views" onClick={()=>setMoreViews(o=>!o)}>{moreViews?'Fewer views':tucked?`${viewName(camera)} · ${views.length-1} more`:`${views.length} more views`}<i aria-hidden="true">{moreViews?'▴':'▾'}</i></button>:views.map(viewChip)}</div>{folded&&moreViews&&<div className="scene-more" id="scene-more-views">{people.length>0&&<div><span>People</span>{people.map(viewChip)}</div>}{places.length>0&&<div><span>Views</span>{places.map(viewChip)}</div>}</div>}</fieldset><label><input type="checkbox" disabled={exporting} checked={subtitles} onChange={e=>setSubtitles(e.target.checked)}/>Subtitles</label></div>
