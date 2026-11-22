@@ -1,0 +1,422 @@
+{
+  "setting": "drumsofdeath",
+  "title": "FKA twigs · Drums of Death",
+  "description": "Physical voices over the separated industrial glitch-techno backing, staged across the fluorescent corporate office, chair-glitch choreography, white-cotton liberation ensemble, retro desk interlude, and fluorescent strobe climax.",
+  "duration": 194.815,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "dd-lead",
+      "name": "Lead Vocal",
+      "role": "Ethereal Chorus",
+      "tele": "dd-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "dd-glitch",
+      "name": "Glitch Chant",
+      "role": "Industrial Verse",
+      "tele": "dd-glitch.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 39.8,
+      "end": 42.6,
+      "speaker": "dd-lead",
+      "text": "Hello",
+      "intensity": 0.64
+    },
+    {
+      "start": 49,
+      "end": 51.6,
+      "speaker": "dd-lead",
+      "text": "Hello",
+      "intensity": 0.68
+    },
+    {
+      "start": 54.7,
+      "end": 57.5,
+      "speaker": "dd-lead",
+      "text": "Oh, hello",
+      "intensity": 0.72
+    },
+    {
+      "start": 62,
+      "end": 64.6,
+      "speaker": "dd-lead",
+      "text": "Hello",
+      "intensity": 0.72
+    },
+    {
+      "start": 68.4,
+      "end": 70.8,
+      "speaker": "dd-lead",
+      "text": "Hello",
+      "intensity": 0.74
+    },
+    {
+      "start": 72.66,
+      "end": 74.6,
+      "speaker": "dd-glitch",
+      "text": "Listen up, girl",
+      "intensity": 0.88
+    },
+    {
+      "start": 75.1,
+      "end": 76.62,
+      "speaker": "dd-glitch",
+      "text": "Drop your skirt to the floor",
+      "intensity": 0.9
+    },
+    {
+      "start": 77.05,
+      "end": 79.25,
+      "speaker": "dd-glitch",
+      "text": "Tear your clothes, body torn",
+      "intensity": 0.92
+    },
+    {
+      "start": 80.26,
+      "end": 82.22,
+      "speaker": "dd-glitch",
+      "text": "Shed your skin",
+      "intensity": 0.92
+    },
+    {
+      "start": 83.05,
+      "end": 85.2,
+      "speaker": "dd-glitch",
+      "text": "Rip your shirt, flesh exposed",
+      "intensity": 0.92
+    },
+    {
+      "start": 86.1,
+      "end": 87.5,
+      "speaker": "dd-glitch",
+      "text": "Feel hot",
+      "intensity": 0.9
+    },
+    {
+      "start": 88.25,
+      "end": 90.35,
+      "speaker": "dd-glitch",
+      "text": "Feel hard, feel heavy",
+      "intensity": 0.92
+    },
+    {
+      "start": 90.5,
+      "end": 92.45,
+      "speaker": "dd-glitch",
+      "text": "Fuck who you want",
+      "intensity": 0.94
+    },
+    {
+      "start": 92.6,
+      "end": 95.18,
+      "speaker": "dd-glitch",
+      "text": "Baby girl, do it just for fun",
+      "intensity": 0.94
+    },
+    {
+      "start": 96.28,
+      "end": 100.32,
+      "speaker": "dd-lead",
+      "text": "Hello, what you like? Do you wanna meet later?",
+      "intensity": 0.88
+    },
+    {
+      "start": 100.9,
+      "end": 104.62,
+      "speaker": "dd-lead",
+      "text": "Relax and ease your mind 'cause you work so much",
+      "intensity": 0.88
+    },
+    {
+      "start": 105.16,
+      "end": 109.08,
+      "speaker": "dd-lead",
+      "text": "I know what you like, and you're my main character",
+      "intensity": 0.9
+    },
+    {
+      "start": 109.56,
+      "end": 112.88,
+      "speaker": "dd-lead",
+      "text": "I'm here anytime, you can call me up",
+      "intensity": 0.9
+    },
+    {
+      "start": 112.96,
+      "end": 114.92,
+      "speaker": "dd-glitch",
+      "text": "Call me up, yeah",
+      "intensity": 0.82
+    },
+    {
+      "start": 116.5,
+      "end": 119.1,
+      "speaker": "dd-lead",
+      "text": "Hello",
+      "intensity": 0.72
+    },
+    {
+      "start": 125,
+      "end": 127.6,
+      "speaker": "dd-lead",
+      "text": "Hello",
+      "intensity": 0.74
+    },
+    {
+      "start": 138.3,
+      "end": 140.4,
+      "speaker": "dd-glitch",
+      "text": "Craving rabid fuck",
+      "intensity": 0.94
+    },
+    {
+      "start": 140.6,
+      "end": 142.15,
+      "speaker": "dd-glitch",
+      "text": "Hard metal",
+      "intensity": 0.94
+    },
+    {
+      "start": 142.3,
+      "end": 144.2,
+      "speaker": "dd-glitch",
+      "text": "Silver stiletto",
+      "intensity": 0.94
+    },
+    {
+      "start": 144.32,
+      "end": 146.48,
+      "speaker": "dd-glitch",
+      "text": "Devour the entire world",
+      "intensity": 0.96
+    },
+    {
+      "start": 146.6,
+      "end": 148.1,
+      "speaker": "dd-glitch",
+      "text": "Fuck it, make it yours",
+      "intensity": 0.96
+    },
+    {
+      "start": 148.2,
+      "end": 149.82,
+      "speaker": "dd-glitch",
+      "text": "Do, do, do, do it just for fun",
+      "intensity": 0.98
+    },
+    {
+      "start": 151.15,
+      "end": 155.1,
+      "speaker": "dd-lead",
+      "text": "Hello, what you like? Do you wanna meet later?",
+      "intensity": 0.94
+    },
+    {
+      "start": 155.45,
+      "end": 158.95,
+      "speaker": "dd-lead",
+      "text": "Relax and ease your mind 'cause you work so much",
+      "intensity": 0.94
+    },
+    {
+      "start": 159.6,
+      "end": 163.45,
+      "speaker": "dd-lead",
+      "text": "I know what you like, and you're my main character",
+      "intensity": 0.96
+    },
+    {
+      "start": 164.25,
+      "end": 167.5,
+      "speaker": "dd-lead",
+      "text": "I'm here anytime, you can call me up",
+      "intensity": 0.96
+    },
+    {
+      "start": 168.25,
+      "end": 172.45,
+      "speaker": "dd-lead",
+      "text": "Hello, what you like? Do you wanna meet later?",
+      "intensity": 0.98
+    },
+    {
+      "start": 172.85,
+      "end": 176.25,
+      "speaker": "dd-lead",
+      "text": "Relax and ease your mind 'cause you work so much",
+      "intensity": 0.98
+    },
+    {
+      "start": 176.9,
+      "end": 181.1,
+      "speaker": "dd-lead",
+      "text": "I know what you like, and you're my main character",
+      "intensity": 1
+    },
+    {
+      "start": 181.2,
+      "end": 184.82,
+      "speaker": "dd-lead",
+      "text": "I'm here anytime, you can call me up",
+      "intensity": 1
+    },
+    {
+      "start": 184.92,
+      "end": 187.05,
+      "speaker": "dd-glitch",
+      "text": "Crash the system, diva doll",
+      "intensity": 0.98
+    },
+    {
+      "start": 187.15,
+      "end": 189.08,
+      "speaker": "dd-glitch",
+      "text": "Serve cunt, serve violence",
+      "intensity": 1
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "dd-office"
+    },
+    {
+      "time": 4,
+      "view": "dd-lead"
+    },
+    {
+      "time": 8,
+      "view": "dd-chairs"
+    },
+    {
+      "time": 16,
+      "view": "dd-office"
+    },
+    {
+      "time": 24,
+      "view": "dd-chairs"
+    },
+    {
+      "time": 32,
+      "view": "dd-office"
+    },
+    {
+      "time": 39.8,
+      "view": "dd-lead"
+    },
+    {
+      "time": 44,
+      "view": "dd-chairs"
+    },
+    {
+      "time": 52,
+      "view": "dd-office"
+    },
+    {
+      "time": 60,
+      "view": "dd-chairs"
+    },
+    {
+      "time": 68,
+      "view": "dd-shed"
+    },
+    {
+      "time": 72.6,
+      "view": "dd-glitch"
+    },
+    {
+      "time": 76,
+      "view": "dd-shed"
+    },
+    {
+      "time": 80.2,
+      "view": "dd-glitch"
+    },
+    {
+      "time": 84,
+      "view": "dd-shed"
+    },
+    {
+      "time": 90,
+      "view": "dd-glitch"
+    },
+    {
+      "time": 96.2,
+      "view": "dd-lead"
+    },
+    {
+      "time": 100.9,
+      "view": "dd-shed"
+    },
+    {
+      "time": 104.2,
+      "view": "dd-desk"
+    },
+    {
+      "time": 109.5,
+      "view": "dd-desk"
+    },
+    {
+      "time": 116,
+      "view": "dd-desk"
+    },
+    {
+      "time": 120,
+      "view": "dd-chairs"
+    },
+    {
+      "time": 128,
+      "view": "dd-strobe"
+    },
+    {
+      "time": 138.3,
+      "view": "dd-glitch"
+    },
+    {
+      "time": 143.5,
+      "view": "dd-shed"
+    },
+    {
+      "time": 148.2,
+      "view": "dd-strobe"
+    },
+    {
+      "time": 151.1,
+      "view": "dd-lead"
+    },
+    {
+      "time": 156,
+      "view": "dd-shed"
+    },
+    {
+      "time": 164,
+      "view": "dd-lead"
+    },
+    {
+      "time": 168.2,
+      "view": "dd-strobe"
+    },
+    {
+      "time": 176.9,
+      "view": "dd-shed"
+    },
+    {
+      "time": 180,
+      "view": "dd-strobe"
+    },
+    {
+      "time": 184.9,
+      "view": "dd-glitch"
+    },
+    {
+      "time": 188,
+      "view": "dd-lead"
+    }
+  ]
+}

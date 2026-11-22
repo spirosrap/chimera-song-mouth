@@ -2582,6 +2582,36 @@
       "sha256": "4ffc0c4dea08aaaf427e851d5a7d20837ba1c2ce8a1ab9aedb49798b92d0b2b8"
     },
     {
+      "path": "public/scenes/drums-of-death/backing.mp3",
+      "bytes": 4677164,
+      "sha256": "9e1091da1a1efbcc8bc3c31d69d356a2b7dd0ed38a5105e567cf900c213e8685"
+    },
+    {
+      "path": "public/scenes/drums-of-death/dd-glitch.tele.gz",
+      "bytes": 659500,
+      "sha256": "b65417afb7537c89c61fa720289a0711d28841a3fee7513a54a3e6af2d625a78"
+    },
+    {
+      "path": "public/scenes/drums-of-death/dd-lead.tele.gz",
+      "bytes": 1108209,
+      "sha256": "fde44024dd346df9d4e29b5a0a2746dcc1cb491e758624e9221cc525c535edf6"
+    },
+    {
+      "path": "public/scenes/drums-of-death/mix.mp3",
+      "bytes": 6236204,
+      "sha256": "f71540cfefbd68d337bd4bba3700b66f95197c832fd39f1fa078b820cbf863d0"
+    },
+    {
+      "path": "public/scenes/drums-of-death/performance.json",
+      "bytes": 360043,
+      "sha256": "9acae3b1bd04679b83c53d0f909a1677e9c17382ae7a13b46406bb55cb8b6020"
+    },
+    {
+      "path": "public/scenes/drums-of-death/scene.json",
+      "bytes": 8307,
+      "sha256": "bc20ea0ac22af9c37f2ec7088b019185c33d0735e928e7eb6dc45ce8bb5166ee"
+    },
+    {
       "path": "public/scenes/eins-zwei-drei/backing.mp3",
       "bytes": 6711596,
       "sha256": "e916fc462bf41dabbbcb9b61ad98675abf6faa511fbba2b9994be7fd7425d872"
