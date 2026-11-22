@@ -21,27 +21,45 @@ Try it: `bun run dev`, then `/rig.html` (pick a pose, open the mouth, pick how t
 ## Use
 
 ```ts
-await initChimera();                                   // first: the head reads the engine's tables as it loads
-const { Rig } = await import("./src/rig/rig.ts");      // …and the rest, imported after it
-const rig = await Rig.load(rigUrl);                    // body.rig.bin
-const model = new VoiceModel(PRESETS.male, 48000);     // yours to keep (and dispose) for the rig's life
-const head = wearHead(rig, model);                     // before the view: it adds the head's skin to the mesh
+import * as THREE from "three";
+import { initChimera } from "./src/wasm/chimera.ts";
+import rigUrl from "./src/rig/body.rig.bin?url";
+
+await initChimera();
+// the head reads the engine's tables as it loads, so it (and what imports it) comes after the engine
+const [{ Rig }, { pose }, { wearHead }, { RigView }, { VoiceModel }, { PRESETS: BODIES }] = await Promise.all([
+  import("./src/rig/rig.ts"), import("./src/rig/pose.ts"), import("./src/rig/head.ts"),
+  import("./src/rig/view.ts"), import("./src/ui/analysis.ts"), import("./src/ui/body.ts"),
+]);
+const rig = await Rig.load(rigUrl);
+const model = new VoiceModel(BODIES.male, 48000);    // yours: keep it for the rig's life, dispose it after
+const head = wearHead(rig, model);                    // before the view and any buffers: it adds the head's skin to the mesh
 const view = new RigView(rig);
-scene.add(view.group, head.mount);                     // under the same parent
+const skinned = new Float32Array(3 * rig.n);          // rig.n counts the head's skin now
+scene.add(view.group, head.mount);                    // under the same parent
 renderer.outputColorSpace = THREE.LinearSRGBColorSpace; // the head's colours are the app's display values
 
 // every frame
 rig.pose(pose({ arms: { R: { raise: 90, elbow: 40 } }, neck: { twist: 30 } }));
-rig.skin(skinned);                                     // centres of rotation; rig.skin(out, "lbs") for plain blending
-head.update(camera, artic, tele, dt);                  // the voice now: its articulation, its telemetry (or null)
-head.face(skinned, view.posed);                        // the jaw, cheeks and lips on top
+rig.skin(skinned);                                    // centres of rotation; rig.skin(out, "lbs") for plain blending
+head.update(camera, artic, tele, dt);                 // the voice now: its articulation, its telemetry (or null)
+head.face(skinned, view.posed);                       // the jaw, cheeks and lips on top
 view.update();
+head.resize(width, height);                           // on resize: the head's line widths are in px
+
+// done with it (or changing voice body: a new rig, head and view)
+scene.remove(view.group, head.mount);
+view.dispose();
+head.dispose();
+model.dispose();
 ```
 
 `artic` and `tele` come from wherever the voice runs: the live worklet's telemetry messages
 (`VoiceModel.articFromArray(msg.t.artic)`), or a recording replayed with `TeleTrack`
-(`chimera render notes … --tele voice.tele`, `src/show/tele.ts`). A different body (a child's
-voice, say) is a new rig and a new head: the head's skin is fitted to the model once.
+(`chimera render notes … --tele voice.tele`, `src/show/tele.ts`). Without a voice, pass an
+articulation of your own (`REST_ARTIC` from `src/ui/render/anatomy3d.ts` is the mouth closed)
+and `null`. A different body (a child's voice, say) is a new rig and a new head: the head's skin
+is fitted to the model once.
 
 ## How it works
 
@@ -59,8 +77,9 @@ voice, say) is a new rig and a new head: the head's skin is fitted to the model 
   twist, no bulge. Plain linear blending is there too (what other tools do).
 - **Head:** a quad grid grown from the neck's rim over the head's own surface (`skinAt`), closed
   by a patch over the crown and run on over the mouth, square for square. It's cut open along
-  the lips' line, as wide as the mouth can spread; each frame the cut follows the lips the head
-  draws (`lipEdges`), and the jaw and cheeks carry the rest of the face (`skinNow`). The head's
+  the lips' line, as wide as the mouth can spread; each frame the cut is laid on the lips the
+  head draws (`lipEdges`), corner to corner (a rounded mouth gathers the skin in), and the jaw
+  and cheeks carry the rest of the face (`skinNow`). The head's
   own lines (eyes, nose, lips, the vocal tract inside) are drawn by Anatomy3D on the head bone,
   with `drawing.mounted` (the body turns the head) and the lip patch's own skin lines left out.
 - **Looks** (`HEAD_LOOKS`): `vocal` (the default: the grid and the face in front, the insides at
@@ -78,8 +97,9 @@ rest joint `rig.H[i]`, and after `pose` its turn from rest `rig.S[i]` and joint 
 ## Checks
 
 - `bun test tests/rig.test.ts` (part of `bun run test`): the mesh's open edges, skinning at
-  rest, anatomical zero, the lips' cut closing and opening with the drawn lips, and the face's
-  motion staying off the crown and the rim.
+  rest, anatomical zero, the lips' cut lying on the drawn lips (shut; open narrow and wide, the
+  head turned), weights summing to 1, the face's motion staying off the crown and the rim, and
+  the head following its parent's transform.
 - `/rig.html`: look at it. A metric isn't the picture.
 
 ## Provenance

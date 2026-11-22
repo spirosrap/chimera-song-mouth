@@ -109,18 +109,67 @@ describe("the head on the body", () => {
     expect(open.every(([a, b]) => a >= rig.bodyVertices && b >= rig.bodyVertices && (cut.has(a) || cut.has(b)))).toBe(true);
   });
 
-  test("the lips lie together at rest and part as the mouth opens, as far as the drawn lips", () => {
-    const w = wear(), pairs = lipPairs(w.rig);
+  /** a point's distance from a polyline (flat xyz) carried by a matrix */
+  const fromLine = (p: THREE.Vector3, line: Float32Array, m: THREE.Matrix4) => {
+    const a = new THREE.Vector3(), b = new THREE.Vector3(), seg = new THREE.Line3(), q = new THREE.Vector3();
+    let d = Infinity;
+    for (let i = 0; i + 5 < line.length; i += 3) {
+      seg.set(a.fromArray(line, i).applyMatrix4(m), b.fromArray(line, i + 3).applyMatrix4(m));
+      d = Math.min(d, seg.closestPointToPoint(p, true, q).distanceTo(p));
+    }
+    return d;
+  };
+
+  test("the lips' cut lies on the lips the head draws: together at rest; apart, narrow or wide, with the head turned", () => {
+    const w = wear(), { rig } = w, pairs = lipPairs(rig);
     const shut = frame(w, M.pose.neutral(), M.REST_ARTIC).out;
     for (const [u, l] of pairs) expect(at(shut, u).distanceTo(at(shut, l))).toBeLessThan(1e-3);
-    const open = { ...M.REST_ARTIC, jaw: 1.8, lipAp: 1.8 };
-    const { out } = frame(w, M.pose.neutral(), open);
-    const gap = Math.max(...pairs.map(([u, l]) => at(out, u).distanceTo(at(out, l))));
-    // the drawn lips' gap at the middle (head cm → body cm)
-    const e = w.head.head.lipEdges(w.model, open), mid = 3 * Math.floor(e.upper.length / 6);
-    const drawn = Math.hypot(e.upper[mid] - e.lower[mid], e.upper[mid + 1] - e.lower[mid + 1], e.upper[mid + 2] - e.lower[mid + 2]) / w.head.s;
-    expect(drawn).toBeGreaterThan(0.5);
-    expect(Math.abs(gap - drawn) / drawn).toBeLessThan(0.2);
+    // the cut's corners: its ends, which both lips share
+    const cut = new Set(pairs.flat()), corners = [...new Set(openEdges(rig).flat())].filter((i) => !cut.has(i));
+    expect(corners.length).toBe(2);
+    const turned = M.pose.neutral();
+    turned.neck.twist = 40;
+    turned.neck.flex = 20;
+    for (const p of [M.pose.neutral(), turned]) {
+      for (const lipWidth of [0, 1]) {
+        const a = { ...M.REST_ARTIC, jaw: 1.8, lipAp: 1.8, lipWidth };
+        const { out } = frame(w, p, a);
+        const e = w.head.head.lipEdges(w.model, a), m = w.head.mount.matrix;
+        // apart (the drawn lips' gap at the middle, in body cm)
+        const mid = 3 * Math.floor(e.upper.length / 6);
+        expect(new THREE.Vector3().fromArray(e.upper, mid).distanceTo(new THREE.Vector3().fromArray(e.lower, mid)) / w.head.s).toBeGreaterThan(0.5);
+        for (const [u, l] of pairs) {
+          expect(fromLine(at(out, u), e.upper, m)).toBeLessThan(0.01);
+          expect(fromLine(at(out, l), e.lower, m)).toBeLessThan(0.01);
+        }
+        // the cut's ends are the mouth's corners, however wide it is
+        const ends = [new THREE.Vector3().fromArray(e.upper, 0), new THREE.Vector3().fromArray(e.upper, e.upper.length - 3)].map((c) => c.applyMatrix4(m));
+        for (const c of corners) expect(Math.min(...ends.map((x) => x.distanceTo(at(out, c))))).toBeLessThan(0.01);
+      }
+    }
+  });
+
+  test("every point's weights sum to 1 (a fitted neck once dropped a share)", () => {
+    const { rig } = wear();
+    for (let i = 0; i < rig.n; i++) {
+      let sum = 0;
+      for (let j = 0; j < rig.INF; j++) sum += rig.skinWeight[rig.INF * i + j];
+      expect(Math.abs(sum - 1)).toBeLessThan(1e-5);
+    }
+  });
+
+  test("the head reads its parent's transform as it is now (the features dim with the face turned away)", () => {
+    const w = wear(), parent = new THREE.Group(), camera = new THREE.PerspectiveCamera();
+    parent.add(w.head.mount);
+    camera.position.set(400, 60, 0);
+    w.rig.pose(M.pose.neutral());
+    w.head.update(camera, M.REST_ARTIC, null, 0);
+    const facing = w.head.head.drawing.features;
+    // the body turned round under its parent since the last frame: the face is away from the camera now
+    parent.rotation.y = Math.PI;
+    w.head.update(camera, M.REST_ARTIC, null, 0);
+    expect(facing).toBeCloseTo(w.head.look.features, 3);
+    expect(w.head.head.drawing.features).toBeLessThan(0.2 * w.head.look.features);
   });
 
   test("the face's motion moves the face only: not the crown, not the rim (a mouth opening once dented the crown)", () => {

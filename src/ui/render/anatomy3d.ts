@@ -792,20 +792,18 @@ export class Anatomy3D {
   }
 
   /** The lips' line for an articulation (body cm, before the head's own turn), as the lips are
-   *  drawn: the upper lip's edge and the lower's, each n + 1 points evenly across from z = −half
-   *  to +half (by default the mouth's corners; the patch's at most), the same line where the lips
-   *  are together (past the corners, or all of it when closed). `half` is also returned. */
-  lipEdges(model: VoiceModel, a: HumanArtic = REST_ARTIC, n = 24, half?: number): { upper: Float32Array; lower: Float32Array; half: number } {
+   *  drawn: the upper lip's edge and the lower's, each n + 1 points evenly across from the −z
+   *  corner of the mouth to the +z, sharing their corners; one line when the lips are together. */
+  lipEdges(model: VoiceModel, a: HumanArtic = REST_ARTIC, n = 24): { upper: Float32Array; lower: Float32Array } {
     const rest = this.restFor(model);
-    const { pt, Wm, Wl, open } = this.lipPatch(rest, model, model.frame(a), a, jawAngle(model, a.jaw));
-    const W = Math.min(Wl, half ?? Wm);
+    const { pt, Wm, open } = this.lipPatch(rest, model, model.frame(a), a, jawAngle(model, a.jaw));
     const upper = new Float32Array(3 * (n + 1)), lower = new Float32Array(3 * (n + 1));
     for (let i = 0; i <= n; i++) {
-      const z = -W + (2 * W * i) / n;
+      const z = -Wm + (2 * Wm * i) / n;
       upper.set(pt(true, 0, z), 3 * i);
-      lower.set(open && Math.abs(z) < Wm ? pt(false, 0, z) : upper.subarray(3 * i, 3 * i + 3), 3 * i);
+      lower.set(open && i > 0 && i < n ? pt(false, 0, z) : upper.subarray(3 * i, 3 * i + 3), 3 * i);
     }
-    return { upper, lower, half: W };
+    return { upper, lower };
   }
 
   /** the point the head turns about (its nods and tilts; a body's neck), body cm */

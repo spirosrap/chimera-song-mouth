@@ -36,15 +36,21 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 
-const SRC = "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data";
-const CACHE = `${process.env.HOME}/.cache/chimera-rig/mh-base`;
+const MH_COMMIT = "a8bc2d54ff0ac92e78ff71431b1023eda42bf482", MPFB_COMMIT = "9de0707fdc88438d7c53a1a2ac7937d9221e2431";
+const SRC = `https://raw.githubusercontent.com/makehumancommunity/makehuman/${MH_COMMIT}/makehuman/data`;
+/** downloads, by the commit they came from (a cache from another commit isn't read) */
+const CACHE = `${process.env.HOME}/.cache/chimera-rig/makehuman-${MH_COMMIT.slice(0, 12)}`;
+const MPFB_CACHE = `${process.env.HOME}/.cache/chimera-rig/mpfb2-${MPFB_COMMIT.slice(0, 12)}`;
 const PACK = "https://files.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip";
 const PACK_DIR = `${process.env.HOME}/.cache/chimera-rig/mh-cc0`;
 const OUT = process.argv[2] ?? new URL("../../src/rig/body.rig.bin", import.meta.url);
 const LEVELS = 1;
 const PROXY = "proxy741";
-/** the proxy's files the mesh was made from (sha256) */
-const PROXY_SHA256: Record<string, string> = { proxy: "1dc925fe62f28b1e55e02528e3b7ad36fa7283f1128b326889f85b86efa5e05e" };
+/** the proxy's files the mesh was made from (sha256): its fitting to the base mesh, and its quads */
+const PROXY_SHA256: Record<string, string> = {
+  proxy: "1dc925fe62f28b1e55e02528e3b7ad36fa7283f1128b326889f85b86efa5e05e",
+  obj: "002a1dac4e912ca6c0a123a5bf4c43d4ce0db5152ea4b3452a0bead5e6ffad4b",
+};
 const proxyPath = `${PACK_DIR}/proxymeshes/${PROXY}/${PROXY}`;
 if (!existsSync(`${proxyPath}.obj`)) {
   mkdirSync(PACK_DIR, { recursive: true });
@@ -110,9 +116,10 @@ const male = mh.map(cm);
 // MakeHuman's "Rigify human" (MPFB2): the one of its rigs whose weights were tuned for how the body
 // deforms, with helper bones at the shoulder, elbow, knee and hip. Its weights are on the base
 // mesh, so the proxy takes them as it takes the shape. CC0 (mpfb2 LICENSE.md, assets).
-const MPFB = "https://raw.githubusercontent.com/makehumancommunity/mpfb2/9de0707fdc88438d7c53a1a2ac7937d9221e2431/src/mpfb/data/rigs/rigify";
+const MPFB = `https://raw.githubusercontent.com/makehumancommunity/mpfb2/${MPFB_COMMIT}/src/mpfb/data/rigs/rigify`;
 const getMpfb = async (file: string) => {
-  const path = `${CACHE}/mpfb2__rigify__${file}`;
+  mkdirSync(MPFB_CACHE, { recursive: true });
+  const path = `${MPFB_CACHE}/rigify__${file}`;
   if (existsSync(path)) return readFileSync(path, "utf8");
   const r = await fetch(`${MPFB}/${file}`);
   if (!r.ok) throw new Error(`${file}: ${r.status}`);

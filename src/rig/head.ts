@@ -44,7 +44,7 @@ const SETTLE = 3;
 const CAP = 6.4;
 /** how far round the mouth the skin takes a share of the lips' move: rows above and below the
  *  lips' line, and columns past the mouth's corners */
-const MOUTH = { rows: 2, beyond: 2 };
+const MOUTH = { rows: 3, beyond: 3 };
 const VIEW: ViewFlags = { pressure: true, particles: true, grid: false, calipers: false };
 /** points along the lips' line (Anatomy3D.lipEdges) */
 const LIP_POINTS = 24;
@@ -138,8 +138,7 @@ export function wearHead(rig: Rig, model: VoiceModel, opts: { look?: Partial<Hea
   drawAs(look);
   /** the lips' line at rest (jaw and lips closed), as wide as the mouth spreads: where the grid
    *  is cut open, so the lips can part anywhere the mouth's corners can reach */
-  const widest = head.lipEdges(model, { ...REST_ARTIC, lipWidth: 1 });
-  const lipsRest = widest.upper;
+  const lipsRest = head.lipEdges(model, { ...REST_ARTIC, lipWidth: 1 }, LIP_POINTS).upper;
 
   // ------------------------------------------------------------------ the body's neck fitted to the head's
   const y = shape.y0 + NECK_BLEND * k, sec = shape.at(y);
@@ -353,13 +352,14 @@ export function wearHead(rig: Rig, model: VoiceModel, opts: { look?: Partial<Hea
 
   // ------------------------------------------------------------------ the mouth
   // The grid runs on over the mouth, square for square. Its row on the lips' line (see `rm`) is
-  // cut open between the mouth's corners (the grid's columns nearest them): each point there has
-  // an upper lip's copy (the quads above take it) and a lower lip's (the quads below). Closed, the
-  // two lie together; as the lips part they follow the lips the head draws, frame by frame, and
-  // the rows above and below, and the columns past the corners, take a share of the lips' move
-  // that lessens away from them.
+  // cut open between the columns nearest the corners of the mouth at its widest: each point there
+  // has an upper lip's copy (the quads above take it) and a lower lip's (the quads below). At rest
+  // the cut lies on the lips' line, evenly from corner to corner, the two copies together. Each
+  // frame the cut is laid on the lips the head draws, from their corners as they are (a rounded
+  // mouth gathers the skin in towards it, as lips do), and the rows above and below, and the
+  // columns past the corners, take a share of the lips' move that lessens away from them.
   const rv = (r: number, j: number) => N * r + col(j);
-  const m0 = lipsRest.length / 3 - 1, z0 = lipsRest[2], z1 = lipsRest[3 * m0 + 2], zc = (Math.abs(z0) + Math.abs(z1)) / 2;
+  const m0 = lipsRest.length / 3 - 1, zc = (Math.abs(lipsRest[2]) + Math.abs(lipsRest[3 * m0 + 2])) / 2;
   const zOf = (r: number, j: number) => rest[3 * rv(r, j) + 2];
   let J = 1;
   for (let j = 2; j < N / 4; j++) if (Math.abs(Math.abs(zOf(rm, j)) - zc) < Math.abs(Math.abs(zOf(rm, J)) - zc)) J = j;
@@ -380,6 +380,12 @@ export function wearHead(rig: Rig, model: VoiceModel, opts: { look?: Partial<Hea
     toneC[p] = tone0[from];
     colC[p] = from < N * R ? from % N : -1;
   }
+  // the cut laid on the lips' line at rest; its points' places along the lips (0 to 1, −z to +z)
+  const along = (j: number) => Math.max(0, Math.min(1, (j + J) / (2 * J)));
+  for (let j = -J; j <= J; j++) {
+    sample(lipsRest, along(j), restC, 3 * rv(rm, j));
+    if (Math.abs(j) < J) sample(lipsRest, along(j), restC, 3 * lower(j));
+  }
   // the quads under the slit take the lower lip's copies
   const quads = grid.slice();
   const cut = new Map<number, number>();
@@ -390,9 +396,8 @@ export function wearHead(rig: Rig, model: VoiceModel, opts: { look?: Partial<Hea
   for (let r = rm - MR; r <= rm + MR; r++) {
     for (let j = -J - MB; j <= J + MB; j++) {
       const w = (1 - Math.abs(r - rm) / (MR + 1)) * (Math.abs(j) <= J ? 1 : 1 - (Math.abs(j) - J) / (MB + 1));
-      const sAt = Math.max(0, Math.min(1, (zOf(r, j) - z0) / (z1 - z0)));
-      lipShare.push({ v: rv(r, j), s: sAt, lip: r < rm ? -1 : 1, w });
-      if (r === rm && Math.abs(j) < J) lipShare.push({ v: lower(j), s: sAt, lip: -1, w });
+      lipShare.push({ v: rv(r, j), s: along(j), lip: r < rm ? -1 : 1, w });
+      if (r === rm && Math.abs(j) < J) lipShare.push({ v: lower(j), s: along(j), lip: -1, w });
     }
   }
 
@@ -445,7 +450,7 @@ export function wearHead(rig: Rig, model: VoiceModel, opts: { look?: Partial<Hea
   const now = new Float32Array(restC.length), moved = new Float32Array(restC.length), lip = new Float32Array(6);
   const faceNow = (a: HumanArtic) => {
     head.skinNow(model, a, restC, jawC, cheekC, now);
-    const mouth = head.lipEdges(model, a, LIP_POINTS, widest.half);
+    const mouth = head.lipEdges(model, a, LIP_POINTS);
     for (const { v, s: at, lip: which, w } of lipShare) {
       sample(which < 0 ? mouth.lower : mouth.upper, at, lip, 0);
       sample(lipsRest, at, lip, 3);
@@ -482,7 +487,10 @@ export function wearHead(rig: Rig, model: VoiceModel, opts: { look?: Partial<Hea
       const i = head0;
       m.compose(rig.P[i], rig.S[i], one).multiply(unH.makeTranslation(-rig.H[i].x, -rig.H[i].y, -rig.H[i].z)).multiply(toBody);
       mount.matrix.copy(m);
-      mount.updateMatrixWorld(true);
+      // its world transform now, through its parents' as they are now (they may have moved since
+      // they were last drawn; a matrix set by hand isn't flagged as changed by itself)
+      mount.matrixWorldNeedsUpdate = true;
+      mount.updateWorldMatrix(true, true);
       // the features full from in front, dimmer as the face turns away (they're seen through the head); in the world's frame
       camera.getWorldPosition(eye);
       piv.copy(pivot).applyMatrix4(mount.matrixWorld);
@@ -563,9 +571,11 @@ function neckWeights(rig: Rig, rimY: number, share: (y: number) => number, head:
     const out: [number, number][] = list.map(([b, w]) => [b, ((1 - tau) * w) / other]);
     out.push([head, tau]);
     out.sort((a, b) => b[1] - a[1]);
+    // the strongest INF, summing to 1
+    const top = out.slice(0, INF), sum = top.reduce((t, [, w]) => t + w, 0) || 1;
     for (let j = 0; j < INF; j++) {
-      rig.skinIndex[INF * i + j] = out[j]?.[0] ?? 0;
-      rig.skinWeight[INF * i + j] = out[j]?.[1] ?? 0;
+      rig.skinIndex[INF * i + j] = top[j]?.[0] ?? 0;
+      rig.skinWeight[INF * i + j] = (top[j]?.[1] ?? 0) / sum;
     }
   }
 }

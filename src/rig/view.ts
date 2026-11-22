@@ -167,6 +167,16 @@ export class RigView {
     this.back.visible = on;
   }
 
+  /** free the GPU's copies of its geometry and materials (take `group` out of the scene too) */
+  dispose(): void {
+    this.geo.dispose();
+    for (const m of [this.mat, this.backMat]) m.dispose();
+    for (const o of [this.bones, this.joints]) {
+      o.geometry.dispose();
+      (o.material as THREE.Material).dispose();
+    }
+  }
+
   /** the lines' brightness again from the rig's tone (after it changed) */
   toneChanged(): void {
     const T = this.geo.getAttribute("tone") as THREE.BufferAttribute, A = T.array as Float32Array;

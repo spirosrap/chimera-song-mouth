@@ -373,11 +373,9 @@ export class Rig {
   }
 
   // ------------------------------------------------------------------ skinning
-  /** Each vertex's centre of rotation (Le & Hodgins 2016), from the weights. */
-  cor(sigma = 0.1): Float32Array {
-    if (this.corCache) return this.corCache;
-    this.corCache = centresOfRotation(this, sigma);
-    return this.corCache;
+  /** Each vertex's centre of rotation (Le & Hodgins 2016), from the weights (worked out once). */
+  cor(): Float32Array {
+    return (this.corCache ??= centresOfRotation(this));
   }
 
   /** forget what was worked out from the rest mesh and weights (after either changes) */
