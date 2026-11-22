@@ -26,6 +26,7 @@ import {DojaGorgeousStage} from '../render/doja-gorgeous.ts';
 import {DrumsOfDeathStage} from '../render/drums-of-death.ts';
 import {BackstabberStage} from '../render/backstabber.ts';
 import {TheGiverStage} from '../render/the-giver.ts';
+import {BangarangaStage} from '../render/bangaranga.ts';
 import type {SS26Id} from '../../scene/ss26.ts';
 import {SubwayStage} from '../render/the-subway.ts';
 import {HouseTourStage} from '../render/house-tour.ts';
@@ -202,6 +203,7 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
       :scene.setting==='drumsofdeath'?new DrumsOfDeathStage(people[0].model,people[0].track,people[1].model,people[1].track)
       :scene.setting==='backstabber'?new BackstabberStage(people[0].model,people[0].track,people[1].model,people[1].track)
       :scene.setting==='thegiver'?new TheGiverStage(people[0].model,people[0].track,people[1].model,people[1].track)
+      :scene.setting==='bangaranga'?new BangarangaStage(people[0].model,people[0].track,people[1].model,people[1].track)
       :scene.setting==='subway'?new SubwayStage(people.find(c=>c.id==='subway-chappell')!)
       :scene.setting==='housetour'?new HouseTourStage(people.map(c=>({...c,id:c.id as TourId}))):scene.setting==='gnarly'?new GnarlyStage(people.map(c=>({...c,id:c.id as GnarlyId}))):scene.setting==='einszwei'?new EinsStage(people.map(c=>({...c,id:c.id as EinsId}))):scene.setting==='lithonia'?new LithoniaStage(people.map(c=>({...c,id:c.id as LithoniaId}))):scene.setting==='dojademons'?new DemonsStage(people.map(c=>({...c,id:c.id as DemonsId}))):scene.setting==='sabrinatears'?new TearsStage(people.map(c=>({...c,id:c.id as TearsId}))):scene.setting==='deaddance'?new DeadDanceStage(people.map(c=>({...c,id:'dead-gaga' as const}))):scene.setting==='ratatata'?new RatatataStage(people.map(c=>({...c,id:c.id as 'rata-nico'|'rata-kevin'|'rata-su'}))):scene.setting==='likejennie'?new JennieStage(people.map(c=>({...c,id:'jennie-singer' as const}))):scene.setting==='bbnotwo'?new TwoStage(people.map(c=>({...c,id:c.id as TwoId}))):scene.setting==='tailorswif'?new SwifStage(people.map(c=>({...c,id:c.id as SwifId}))):scene.setting==='houdini'?new HoudiniStage(people.map(c=>({...c,id:c.id as HoudiniId}))):scene.setting==='europapa'?new EuropapaStage(people.map(c=>({...c,id:c.id as EuropapaId}))):scene.setting==='storm'
       ?new StormStage(people.map(c=>({...c,id:c.id as StormId})))

@@ -105,6 +105,8 @@ const WORD_REWRITES: Record<string, string> = {
   'ms': 'miz',
   'dr': 'doctor',
   'dj': 'dee jay',
+  'bangaranga': 'bang a rang a',
+  'bangaran': 'bang a ran',
 };
 
 let dictWords: Set<string> | null = null;

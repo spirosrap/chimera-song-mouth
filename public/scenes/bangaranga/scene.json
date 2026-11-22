@@ -1,0 +1,745 @@
+{
+  "setting": "bangaranga",
+  "title": "Waiting-Room Chair Riot to Laser Arena",
+  "description": "Sweeping stadium lasers open onto an upside-down wood-paneled waiting room with five red chairs, erupting into a cyan-smoke chair riot and a violet-laser Eurovision finale.",
+  "duration": 204.986,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "bg-lead",
+      "name": "Lead Singer",
+      "role": "Lead Vocal",
+      "tele": "bg-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "bg-chant",
+      "name": "Riot Chants",
+      "role": "Backing Chorus & Riot Calls",
+      "tele": "bg-chant.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 6.25,
+      "end": 10.35,
+      "speaker": "bg-chant",
+      "text": "I, I, I, I",
+      "intensity": 0.72
+    },
+    {
+      "start": 16.45,
+      "end": 18.42,
+      "speaker": "bg-lead",
+      "text": "Come alive",
+      "intensity": 0.78
+    },
+    {
+      "start": 18.6,
+      "end": 22.04,
+      "speaker": "bg-lead",
+      "text": "Surrender to the blinding lights",
+      "intensity": 0.84
+    },
+    {
+      "start": 22.45,
+      "end": 25.36,
+      "speaker": "bg-lead",
+      "text": "No one's gonna sleep tonight",
+      "intensity": 0.86
+    },
+    {
+      "start": 25.75,
+      "end": 27.62,
+      "speaker": "bg-lead",
+      "text": "Welcome to the riot",
+      "intensity": 0.88
+    },
+    {
+      "start": 28.35,
+      "end": 30.88,
+      "speaker": "bg-lead",
+      "text": "Come alive",
+      "intensity": 0.84
+    },
+    {
+      "start": 31.05,
+      "end": 34.4,
+      "speaker": "bg-lead",
+      "text": "Surrender to the blinding lights",
+      "intensity": 0.88
+    },
+    {
+      "start": 34.75,
+      "end": 37.76,
+      "speaker": "bg-lead",
+      "text": "No one's gonna sleep tonight",
+      "intensity": 0.9
+    },
+    {
+      "start": 38.3,
+      "end": 40.24,
+      "speaker": "bg-lead",
+      "text": "Welcome to the riot",
+      "intensity": 0.92
+    },
+    {
+      "start": 40.35,
+      "end": 41.18,
+      "speaker": "bg-chant",
+      "text": "I, I, I, I",
+      "intensity": 0.86
+    },
+    {
+      "start": 41.25,
+      "end": 41.96,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.9
+    },
+    {
+      "start": 42.02,
+      "end": 45.06,
+      "speaker": "bg-lead",
+      "text": "Bangaranga, bangaranga, bangaranga",
+      "intensity": 0.95
+    },
+    {
+      "start": 45.18,
+      "end": 46.12,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.92
+    },
+    {
+      "start": 46.22,
+      "end": 48.64,
+      "speaker": "bg-lead",
+      "text": "Bangaranga, bangaranga, bangaranga",
+      "intensity": 0.96
+    },
+    {
+      "start": 48.78,
+      "end": 49.68,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.92
+    },
+    {
+      "start": 49.8,
+      "end": 51.6,
+      "speaker": "bg-lead",
+      "text": "Blinding lights",
+      "intensity": 0.92
+    },
+    {
+      "start": 51.8,
+      "end": 53.65,
+      "speaker": "bg-lead",
+      "text": "Welcome to the riot",
+      "intensity": 0.94
+    },
+    {
+      "start": 53.75,
+      "end": 55.2,
+      "speaker": "bg-chant",
+      "text": "I, I, I, I",
+      "intensity": 0.88
+    },
+    {
+      "start": 55.35,
+      "end": 56.82,
+      "speaker": "bg-lead",
+      "text": "I'm the bangaran—",
+      "intensity": 0.94
+    },
+    {
+      "start": 56.92,
+      "end": 57.68,
+      "speaker": "bg-chant",
+      "text": "I know, I'm the bangaran—",
+      "intensity": 0.88
+    },
+    {
+      "start": 70.65,
+      "end": 72.35,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.88
+    },
+    {
+      "start": 72.55,
+      "end": 76.25,
+      "speaker": "bg-lead",
+      "text": "I'm an angel, I'm a demon, I'm a psycho for no reason",
+      "intensity": 0.9
+    },
+    {
+      "start": 76.45,
+      "end": 80.1,
+      "speaker": "bg-lead",
+      "text": "I'm a mover, I'm a teaser, I don't follow, I'm the leader",
+      "intensity": 0.92
+    },
+    {
+      "start": 80.25,
+      "end": 83.2,
+      "speaker": "bg-lead",
+      "text": "Let me hype ya, hype ya up, let me hype ya up",
+      "intensity": 0.93
+    },
+    {
+      "start": 83.35,
+      "end": 86.2,
+      "speaker": "bg-lead",
+      "text": "I'ma let you get so hooked, I'ma leave you shook",
+      "intensity": 0.94
+    },
+    {
+      "start": 86.45,
+      "end": 88.8,
+      "speaker": "bg-lead",
+      "text": "Come alive",
+      "intensity": 0.88
+    },
+    {
+      "start": 88.95,
+      "end": 92.25,
+      "speaker": "bg-lead",
+      "text": "Surrender to the blinding lights",
+      "intensity": 0.92
+    },
+    {
+      "start": 92.45,
+      "end": 95.65,
+      "speaker": "bg-lead",
+      "text": "No one's gonna sleep tonight",
+      "intensity": 0.94
+    },
+    {
+      "start": 95.85,
+      "end": 97.95,
+      "speaker": "bg-lead",
+      "text": "Welcome to the riot",
+      "intensity": 0.95
+    },
+    {
+      "start": 98.05,
+      "end": 99.3,
+      "speaker": "bg-chant",
+      "text": "I, I, I, I",
+      "intensity": 0.9
+    },
+    {
+      "start": 99.45,
+      "end": 100.4,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.92
+    },
+    {
+      "start": 100.5,
+      "end": 103.55,
+      "speaker": "bg-lead",
+      "text": "Bangaranga, bangaranga, bangaranga",
+      "intensity": 0.96
+    },
+    {
+      "start": 103.65,
+      "end": 104.55,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.93
+    },
+    {
+      "start": 104.65,
+      "end": 107.6,
+      "speaker": "bg-lead",
+      "text": "Bangaranga, bangaranga, bangaranga",
+      "intensity": 0.97
+    },
+    {
+      "start": 107.7,
+      "end": 109.5,
+      "speaker": "bg-lead",
+      "text": "Blinding lights",
+      "intensity": 0.94
+    },
+    {
+      "start": 109.65,
+      "end": 111.75,
+      "speaker": "bg-lead",
+      "text": "Welcome to the riot",
+      "intensity": 0.95
+    },
+    {
+      "start": 111.85,
+      "end": 113.2,
+      "speaker": "bg-chant",
+      "text": "I, I, I, I",
+      "intensity": 0.92
+    },
+    {
+      "start": 113.3,
+      "end": 115.65,
+      "speaker": "bg-lead",
+      "text": "I'm the bangaran—",
+      "intensity": 0.95
+    },
+    {
+      "start": 115.75,
+      "end": 119.5,
+      "speaker": "bg-chant",
+      "text": "Bangaranga, bangaranga, bangaranga",
+      "intensity": 0.92
+    },
+    {
+      "start": 119.65,
+      "end": 123.3,
+      "speaker": "bg-lead",
+      "text": "I'm the bangaran—",
+      "intensity": 0.95
+    },
+    {
+      "start": 123.45,
+      "end": 125.1,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.9
+    },
+    {
+      "start": 128.4,
+      "end": 130.45,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.92
+    },
+    {
+      "start": 130.54,
+      "end": 133.72,
+      "speaker": "bg-lead",
+      "text": "Close to the edge, I can feel it inside",
+      "intensity": 0.94
+    },
+    {
+      "start": 133.8,
+      "end": 137.42,
+      "speaker": "bg-lead",
+      "text": "Bodies on bodies and sparks 'bout to fly",
+      "intensity": 0.95
+    },
+    {
+      "start": 137.5,
+      "end": 139.8,
+      "speaker": "bg-chant",
+      "text": "Yeah, I, I",
+      "intensity": 0.92
+    },
+    {
+      "start": 139.9,
+      "end": 142.45,
+      "speaker": "bg-lead",
+      "text": "I'm 'bout to lose my mind",
+      "intensity": 0.96
+    },
+    {
+      "start": 142.65,
+      "end": 143.38,
+      "speaker": "bg-chant",
+      "text": "Mind",
+      "intensity": 0.94
+    },
+    {
+      "start": 143.46,
+      "end": 144.45,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.95
+    },
+    {
+      "start": 144.54,
+      "end": 147.55,
+      "speaker": "bg-lead",
+      "text": "Bangaranga, bangaranga, bangaranga",
+      "intensity": 0.98
+    },
+    {
+      "start": 147.62,
+      "end": 148.55,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.95
+    },
+    {
+      "start": 148.64,
+      "end": 151.1,
+      "speaker": "bg-lead",
+      "text": "Bangaranga, bangaranga, bangaranga",
+      "intensity": 0.98
+    },
+    {
+      "start": 151.18,
+      "end": 152.35,
+      "speaker": "bg-chant",
+      "text": "I'm the bangaran—",
+      "intensity": 0.95
+    },
+    {
+      "start": 152.44,
+      "end": 154.26,
+      "speaker": "bg-lead",
+      "text": "Blinding lights",
+      "intensity": 0.96
+    },
+    {
+      "start": 154.35,
+      "end": 156.2,
+      "speaker": "bg-lead",
+      "text": "Welcome to the riot",
+      "intensity": 0.97
+    },
+    {
+      "start": 156.3,
+      "end": 157.4,
+      "speaker": "bg-chant",
+      "text": "I, I, I, I",
+      "intensity": 0.94
+    },
+    {
+      "start": 158.22,
+      "end": 159.4,
+      "speaker": "bg-lead",
+      "text": "I'm a rebel",
+      "intensity": 0.94
+    },
+    {
+      "start": 159.48,
+      "end": 160.12,
+      "speaker": "bg-chant",
+      "text": "Rebel",
+      "intensity": 0.9
+    },
+    {
+      "start": 160.2,
+      "end": 161.34,
+      "speaker": "bg-lead",
+      "text": "I'm a danger",
+      "intensity": 0.95
+    },
+    {
+      "start": 161.42,
+      "end": 161.96,
+      "speaker": "bg-chant",
+      "text": "Danger",
+      "intensity": 0.92
+    },
+    {
+      "start": 162.04,
+      "end": 164.92,
+      "speaker": "bg-lead",
+      "text": "I'm a mover for freedom",
+      "intensity": 0.96
+    },
+    {
+      "start": 165.16,
+      "end": 168.48,
+      "speaker": "bg-lead",
+      "text": "Let me light you, light you up, let me light you up",
+      "intensity": 0.97
+    },
+    {
+      "start": 168.64,
+      "end": 170.75,
+      "speaker": "bg-lead",
+      "text": "Come on, let me pull you in so deep",
+      "intensity": 0.97
+    },
+    {
+      "start": 170.95,
+      "end": 173.4,
+      "speaker": "bg-lead",
+      "text": "I'ma leave you weak",
+      "intensity": 0.98
+    },
+    {
+      "start": 173.48,
+      "end": 175.35,
+      "speaker": "bg-lead",
+      "text": "I'm the bangaran—",
+      "intensity": 0.98
+    },
+    {
+      "start": 176.2,
+      "end": 179.9,
+      "speaker": "bg-chant",
+      "text": "Bangaranga, bangaranga, bangaranga",
+      "intensity": 0.96
+    },
+    {
+      "start": 180.25,
+      "end": 182.75,
+      "speaker": "bg-lead",
+      "text": "I'm the bangaran—",
+      "intensity": 0.98
+    },
+    {
+      "start": 184.6,
+      "end": 187.3,
+      "speaker": "bg-chant",
+      "text": "Bangaranga, bangaranga, bangaranga",
+      "intensity": 0.96
+    },
+    {
+      "start": 187.4,
+      "end": 190.4,
+      "speaker": "bg-lead",
+      "text": "I'm the bangaran—",
+      "intensity": 0.99
+    },
+    {
+      "start": 190.55,
+      "end": 194.8,
+      "speaker": "bg-lead",
+      "text": "Welcome to the riot, blinding lights",
+      "intensity": 1
+    },
+    {
+      "start": 194.95,
+      "end": 198.14,
+      "speaker": "bg-lead",
+      "text": "I'm the bangaran—",
+      "intensity": 1
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "bg-arena"
+    },
+    {
+      "time": 6.2,
+      "view": "bg-chant"
+    },
+    {
+      "time": 10.5,
+      "view": "bg-arena"
+    },
+    {
+      "time": 16.2,
+      "view": "bg-inverted"
+    },
+    {
+      "time": 20.5,
+      "view": "bg-lead"
+    },
+    {
+      "time": 23,
+      "view": "bg-inverted"
+    },
+    {
+      "time": 28,
+      "view": "bg-room"
+    },
+    {
+      "time": 33,
+      "view": "bg-lead"
+    },
+    {
+      "time": 36.5,
+      "view": "bg-room"
+    },
+    {
+      "time": 40.3,
+      "view": "bg-chant"
+    },
+    {
+      "time": 42,
+      "view": "bg-room"
+    },
+    {
+      "time": 45.1,
+      "view": "bg-chant"
+    },
+    {
+      "time": 46.2,
+      "view": "bg-lead"
+    },
+    {
+      "time": 48.7,
+      "view": "bg-chant"
+    },
+    {
+      "time": 49.8,
+      "view": "bg-room"
+    },
+    {
+      "time": 53.7,
+      "view": "bg-chant"
+    },
+    {
+      "time": 55.3,
+      "view": "bg-lead"
+    },
+    {
+      "time": 58,
+      "view": "bg-room"
+    },
+    {
+      "time": 64,
+      "view": "wide"
+    },
+    {
+      "time": 70.6,
+      "view": "bg-chant"
+    },
+    {
+      "time": 72.5,
+      "view": "bg-room"
+    },
+    {
+      "time": 76.4,
+      "view": "bg-lead"
+    },
+    {
+      "time": 80.2,
+      "view": "bg-room"
+    },
+    {
+      "time": 83.3,
+      "view": "bg-lead"
+    },
+    {
+      "time": 86.4,
+      "view": "bg-room"
+    },
+    {
+      "time": 92.4,
+      "view": "bg-lead"
+    },
+    {
+      "time": 98,
+      "view": "bg-chant"
+    },
+    {
+      "time": 100.5,
+      "view": "bg-room"
+    },
+    {
+      "time": 103.6,
+      "view": "bg-chant"
+    },
+    {
+      "time": 104.6,
+      "view": "bg-lead"
+    },
+    {
+      "time": 107.7,
+      "view": "bg-room"
+    },
+    {
+      "time": 111.8,
+      "view": "bg-chant"
+    },
+    {
+      "time": 113.3,
+      "view": "bg-lead"
+    },
+    {
+      "time": 115.7,
+      "view": "bg-chant"
+    },
+    {
+      "time": 119.6,
+      "view": "bg-room"
+    },
+    {
+      "time": 123.4,
+      "view": "bg-chairs"
+    },
+    {
+      "time": 128.4,
+      "view": "bg-chant"
+    },
+    {
+      "time": 130.5,
+      "view": "bg-chairs"
+    },
+    {
+      "time": 133.8,
+      "view": "bg-lead"
+    },
+    {
+      "time": 137.5,
+      "view": "bg-chairs"
+    },
+    {
+      "time": 139.9,
+      "view": "bg-lead"
+    },
+    {
+      "time": 143.4,
+      "view": "bg-stage"
+    },
+    {
+      "time": 147.6,
+      "view": "bg-chant"
+    },
+    {
+      "time": 148.6,
+      "view": "bg-stage"
+    },
+    {
+      "time": 152.4,
+      "view": "bg-lead"
+    },
+    {
+      "time": 156.3,
+      "view": "bg-chant"
+    },
+    {
+      "time": 158.2,
+      "view": "bg-stage"
+    },
+    {
+      "time": 162,
+      "view": "bg-lead"
+    },
+    {
+      "time": 165.1,
+      "view": "bg-stage"
+    },
+    {
+      "time": 168.6,
+      "view": "bg-lead"
+    },
+    {
+      "time": 173.4,
+      "view": "bg-stage"
+    },
+    {
+      "time": 176.2,
+      "view": "bg-chant"
+    },
+    {
+      "time": 180.2,
+      "view": "bg-lead"
+    },
+    {
+      "time": 184.6,
+      "view": "bg-chant"
+    },
+    {
+      "time": 187.4,
+      "view": "bg-stage"
+    },
+    {
+      "time": 194.9,
+      "view": "bg-lead"
+    },
+    {
+      "time": 198.5,
+      "view": "bg-stage"
+    }
+  ]
+}

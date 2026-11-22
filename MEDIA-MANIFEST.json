@@ -1917,6 +1917,36 @@
       "sha256": "4f016c882e08e7754d61042722a62aaf5deaf147bbb3abb2191b4ecfb0defac9"
     },
     {
+      "path": "public/scenes/bangaranga/backing.mp3",
+      "bytes": 4921388,
+      "sha256": "882acdb440550c46de62ff1420ff03996b1826fa2a706b2d2d965c90d80f3e61"
+    },
+    {
+      "path": "public/scenes/bangaranga/bg-chant.tele.gz",
+      "bytes": 1061760,
+      "sha256": "2774115c185c4974419c26e8551770b380e3cddd905f6dcc16eb666080579bc5"
+    },
+    {
+      "path": "public/scenes/bangaranga/bg-lead.tele.gz",
+      "bytes": 1928548,
+      "sha256": "411b405c9aa12a26758d92907ccc4a19dd66b678960befc75292aae508ff88ac"
+    },
+    {
+      "path": "public/scenes/bangaranga/mix.mp3",
+      "bytes": 6561836,
+      "sha256": "5a1464a8620d13f86264a75ec39fd9a04598b56989b109e927e23fac0adb5fb0"
+    },
+    {
+      "path": "public/scenes/bangaranga/performance.json",
+      "bytes": 653540,
+      "sha256": "8a19d693571914378a2a013811933c669910f61b518d1e292175b554887c47b3"
+    },
+    {
+      "path": "public/scenes/bangaranga/scene.json",
+      "bytes": 14425,
+      "sha256": "28e70343c153cc9860e71427c9ff6d38d7a110528ebb6a2f9f01f7eee8ad14de"
+    },
+    {
       "path": "public/scenes/bbno-two/backing.mp3",
       "bytes": 4396076,
       "sha256": "44080041655caf610164491afb522b3184da9be5348d21d5b9c39e5ca20bfc8a"
