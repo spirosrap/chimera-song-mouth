@@ -1827,6 +1827,36 @@
       "sha256": "680eae8d09ac91bb98a6cabb609fb82843cc54f020d703a51ac0ec46f7fbb65d"
     },
     {
+      "path": "public/scenes/backstabber/backing.mp3",
+      "bytes": 5012972,
+      "sha256": "a5e3b9a2c391c15f33e0d99c9d85678879332ca32987cae3abf02e65744a7fc3"
+    },
+    {
+      "path": "public/scenes/backstabber/kb-gang.tele.gz",
+      "bytes": 668878,
+      "sha256": "eb9d7085704023e54391c14ee9fe3198ac5b32c3fa8640aeb8e9746fbba66afc"
+    },
+    {
+      "path": "public/scenes/backstabber/kb-lead.tele.gz",
+      "bytes": 2068184,
+      "sha256": "8fbafc92864dbe046db8d48de6a3ce5c590fa14b211ffec67ce0aa53691c019e"
+    },
+    {
+      "path": "public/scenes/backstabber/mix.mp3",
+      "bytes": 6683948,
+      "sha256": "2178fecc5e8daee5b6f10e0c8b1fba681c65d6a85d66c6cdd081116c20bb8d12"
+    },
+    {
+      "path": "public/scenes/backstabber/performance.json",
+      "bytes": 652050,
+      "sha256": "54511c73065a6fd986e8eb369cda53a1160a18f128a6f55d27217da4bac303ce"
+    },
+    {
+      "path": "public/scenes/backstabber/scene.json",
+      "bytes": 12732,
+      "sha256": "ebd521118061eb9978a49d5f046cfb632e5df67da1d660df2445a5fb4ff52680"
+    },
+    {
       "path": "public/scenes/bad-guy/backing.mp3",
       "bytes": 6604844,
       "sha256": "c6c699459d268ae4fa168a8a50269b7abc0446052bfc3fd287e0011e2d9de699"
