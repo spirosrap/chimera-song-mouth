@@ -391,10 +391,10 @@ export class ClickClackStage {
     this.choir.root.rotation.set(0, -0.18 + sway * 0.12, -sway * 0.04);
 
     const arms = (phase: number, lift: number): [P, P, P, P] => [
-      [-34, -6 + Math.sin(phase) * 14, 22],
-      [-52, 16 + lift + Math.sin(phase) * 20, 28],
-      [34, -6 - Math.sin(phase) * 14, 22],
-      [52, 16 + lift - Math.sin(phase) * 20, 28],
+      [-28, -36 + Math.sin(phase) * 5, 14],
+      [-33, -48 + lift * 0.45 + Math.sin(phase) * 7, 24],
+      [28, -36 - Math.sin(phase) * 5, 14],
+      [33, -48 + lift * 0.45 - Math.sin(phase) * 7, 24],
     ];
     this.raye.pose(t, arms(q, speaker === 'cc-raye' ? 20 : 8));
     this.choir.pose(t, arms(q + 0.7, speaker === 'cc-choir' ? 18 : 6));

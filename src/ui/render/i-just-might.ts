@@ -324,12 +324,12 @@ export class IJustMightStage {
 
     // Expressive disco/funk choreography
     const leadArms: [P, P, P, P] = isDj
-      ? [[-38, -2, 18], [-64, 24, 24], [32, -14, 22], [18, -10, 36]]
+      ? [[-30, -32, 18], [-34, -40, 28], [28, -30, 18], [18, -36, 32]]
       : [
-          [-34, -8 + Math.sin(q) * 18, 20],
-          [-54, 18 + Math.sin(q) * 26, 28],
-          [34, -8 - Math.sin(q) * 18, 20],
-          [54, 18 - Math.sin(q) * 26, 28],
+          [-28, -36 + Math.sin(q) * 5, 16],
+          [-34, -46 + Math.sin(q) * 8, 24],
+          [28, -36 - Math.sin(q) * 5, 16],
+          [34, -46 - Math.sin(q) * 8, 24],
         ];
     const bandArms: [P, P, P, P] = [
       [-28, -26, 22],

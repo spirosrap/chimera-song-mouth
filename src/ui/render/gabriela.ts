@@ -467,22 +467,22 @@ export class GabrielaStage {
 
     const dramLift = intensity * 18;
     const leadArms: [P, P, P, P] = [
-      [-34, -6 + Math.sin(q) * 14, 20],
-      [-52, 18 + dramLift + Math.sin(q) * 18, 28],
-      [34, -6 - Math.sin(q) * 14, 20],
-      [52, 18 + dramLift - Math.sin(q) * 18, 28],
+      [-28, -36 + Math.sin(q) * 5, 14],
+      [-34, -46 + dramLift * 0.5 + Math.sin(q) * 7, 24],
+      [28, -36 - Math.sin(q) * 5, 14],
+      [34, -46 + dramLift * 0.5 - Math.sin(q) * 7, 24],
     ];
     const danielaArms: [P, P, P, P] = [
-      [-32, -8 - beat * 12, 20],
-      [-48, 16 + (speaker === 'gab-daniela' ? 20 : 8), 26],
-      [32, -8 + beat * 12, 20],
-      [48, 16 + (speaker === 'gab-daniela' ? 20 : 8), 26],
+      [-28, -36 - beat * 4, 14],
+      [-33, -46 + (speaker === 'gab-daniela' ? 12 : 4), 22],
+      [28, -36 + beat * 4, 14],
+      [33, -46 + (speaker === 'gab-daniela' ? 12 : 4), 22],
     ];
     const bossArms: [P, P, P, P] = [
-      [-32, -16, 18],
-      [-46, 4 + Math.sin(t * 2) * 10, 26],
-      [32, -16, 18],
-      [46, 8 + Math.cos(t * 2) * 10, 26],
+      [-28, -36, 14],
+      [-31, -46 + Math.sin(t * 2) * 5, 22],
+      [28, -36, 14],
+      [31, -44 + Math.cos(t * 2) * 5, 22],
     ];
     this.lead.pose(t, leadArms);
     this.daniela.pose(t, danielaArms);

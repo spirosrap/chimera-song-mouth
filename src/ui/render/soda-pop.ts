@@ -333,10 +333,10 @@ export class SodaPopStage {
 
     // Synchronized K-pop shoulder-pop & soda-sip choreography!
     const popArm = (phase: number, lift: number): [P, P, P, P] => [
-      [-34, -6 + Math.sin(phase) * 18, 22],
-      [-54, 18 + lift + Math.sin(phase) * 22, 28],
-      [34, -6 - Math.sin(phase) * 18, 22],
-      [54, 18 + lift - Math.sin(phase) * 22, 28],
+      [-28, -36 + Math.sin(phase) * 5, 16],
+      [-34, -46 + lift * 0.5 + Math.sin(phase) * 7, 26],
+      [28, -36 - Math.sin(phase) * 5, 16],
+      [34, -46 + lift * 0.5 - Math.sin(phase) * 7, 26],
     ];
     this.jinu.pose(t, popArm(q, speaker === 'soda-jinu' ? 18 : 8));
     this.rapBoy.pose(t, popArm(q + 0.6, speaker === 'soda-rap' ? 18 : 8));

@@ -391,10 +391,10 @@ export class BackstabberStage {
     }
 
     const arms = (phase: number, lift: number): [P, P, P, P] => [
-      [-34, -2 + Math.sin(phase) * 16, 22],
-      [-54, 20 + lift + Math.sin(phase) * 22, 28],
-      [34, -2 - Math.sin(phase) * 16, 22],
-      [54, 20 + lift - Math.sin(phase) * 22, 28],
+      [-28, -36 + Math.sin(phase) * 5, 14],
+      [-34, -48 + lift * 0.45 + Math.sin(phase) * 7, 24],
+      [28, -36 - Math.sin(phase) * 5, 14],
+      [34, -48 + lift * 0.45 - Math.sin(phase) * 7, 24],
     ];
     this.lead.pose(t, arms(beat, speaker === 'kb-lead' || !speaker ? 24 + bounce * 10 : 10));
     this.gang.pose(t, arms(beat + 0.6, speaker === 'kb-gang' ? 24 + bounce * 8 : 8));

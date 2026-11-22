@@ -535,10 +535,10 @@ export class AnxietyStage {
     this.echo.root.rotation.set(0, -0.18 + sway * 0.12, -sway * 0.04);
 
     const arms = (phase: number, lift: number): [P, P, P, P] => [
-      [-32, -8 + Math.sin(phase) * 16, 20],
-      [-50, 14 + lift + Math.sin(phase) * 20, 26],
-      [32, -8 - Math.sin(phase) * 16, 20],
-      [50, 14 + lift - Math.sin(phase) * 20, 26],
+      [-28, -36 + Math.sin(phase) * 5, 14],
+      [-32, -48 + lift * 0.45 + Math.sin(phase) * 7, 24],
+      [28, -36 - Math.sin(phase) * 5, 14],
+      [32, -48 + lift * 0.45 - Math.sin(phase) * 7, 24],
     ];
     this.lead.pose(t, arms(beatPhase, speaker === 'anx-lead' ? 18 : 8));
     this.echo.pose(t, arms(beatPhase + 0.8, speaker === 'anx-echo' ? 18 : 6));

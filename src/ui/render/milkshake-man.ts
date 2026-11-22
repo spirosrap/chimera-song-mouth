@@ -487,16 +487,16 @@ export class MilkshakeManStage {
 
     const gojoLift = speaker === 'milk-gojo' ? 18 : 6;
     const gojoArms: [P, P, P, P] = [
-      [-34, -8 + Math.sin(q) * 16, 20],
-      [-56, 16 + gojoLift + Math.sin(q) * 20, 28],
-      [34, -8 - Math.sin(q) * 16, 20],
-      [56, 16 + gojoLift - Math.sin(q) * 20, 28],
+      [-28, -36 + Math.sin(q) * 5, 16],
+      [-34, -46 + gojoLift * 0.45 + Math.sin(q) * 7, 26],
+      [28, -36 - Math.sin(q) * 5, 16],
+      [34, -46 + gojoLift * 0.45 - Math.sin(q) * 7, 26],
     ];
     const dancerArms: [P, P, P, P] = [
-      [-30, -10 + beat * 12, 18],
-      [-46, 14 + beat * 16, 26],
-      [30, -10 - beat * 12, 18],
-      [46, 14 - beat * 16, 26],
+      [-27, -36 + beat * 5, 14],
+      [-32, -46 + beat * 7, 22],
+      [27, -36 - beat * 5, 14],
+      [32, -46 - beat * 7, 22],
     ];
     this.gojo.pose(t, gojoArms);
     this.dancer.pose(t, dancerArms);

@@ -523,10 +523,10 @@ export class BaileInolvidableStage {
     this.coro.root.rotation.y = -0.32 - sway * 0.12;
 
     const arms = (phase: number, lift: number): [P, P, P, P] => [
-      [-34, -4 + Math.sin(phase) * 14, 22],
-      [-52, 16 + lift + Math.sin(phase) * 20, 28],
-      [34, -4 - Math.sin(phase) * 14, 22],
-      [52, 16 + lift - Math.sin(phase) * 20, 28],
+      [-28, -36 + Math.sin(phase) * 5, 16],
+      [-33, -46 + lift * 0.45 + Math.sin(phase) * 7, 26],
+      [28, -36 - Math.sin(phase) * 5, 16],
+      [33, -46 + lift * 0.45 - Math.sin(phase) * 7, 26],
     ];
     this.benito.pose(t, arms(salsa, speaker === 'baile-benito' || !speaker ? 18 + step * 8 : 8));
     this.coro.pose(t, arms(salsa + 0.6, speaker === 'baile-coro' ? 20 + step * 8 : 8));

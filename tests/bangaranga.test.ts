@@ -47,11 +47,17 @@ test('Bangaranga ships full engine mix, synchronized telemetry, and hero-framed 
   const stage = new BangarangaStage(tracks[0].model, tracks[0].track, tracks[1].model, tracks[1].track);
   try {
     expect(stage.lead.head.scene.scale.x).toBeGreaterThanOrEqual(2);
+    expect(stage.detainees.length).toBe(3);
+    expect(stage.roomChairs.length).toBe(5);
     for (const [w, h] of [[1280, 720], [390, 844]] as const) {
       stage.resize(w, h);
       for (const view of SCENE_SETTINGS.bangaranga.cameras) {
-        stage.frame(90, true, 1, view, 0.9, 'bg-lead');
+        stage.frame(50, true, 1, view, 0.9, 'bg-lead');
         expect(stage.camera.matrixWorld.elements.every(Number.isFinite)).toBe(true);
+        // Hands must stay below head level (local y < 0) rather than waving above the head
+        for (const hand of [...stage.lead.hands, ...stage.chant.hands]) {
+          expect(hand.position.y).toBeLessThan(0);
+        }
         if (view !== 'bg-chant') {
           const headPos = stage.lead.root.position.clone().project(stage.camera);
           expect(Math.abs(headPos.x)).toBeLessThan(0.75);

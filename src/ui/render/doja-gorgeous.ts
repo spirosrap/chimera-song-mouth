@@ -518,10 +518,10 @@ export class DojaGorgeousStage {
     }
 
     const arms = (phase: number, lift: number): [P, P, P, P] => [
-      [-32, -2 + Math.sin(phase) * 14, 24],
-      [-48, 22 + lift + Math.sin(phase) * 18, 30],
-      [32, -2 - Math.sin(phase) * 14, 24],
-      [48, 22 + lift - Math.sin(phase) * 18, 30],
+      [-28, -36 + Math.sin(phase) * 5, 14],
+      [-32, -46 + lift * 0.45 + Math.sin(phase) * 6, 24],
+      [28, -36 - Math.sin(phase) * 5, 14],
+      [32, -46 + lift * 0.45 - Math.sin(phase) * 6, 24],
     ];
     this.lead.pose(t, arms(beat, speaker === 'dg-lead' || !speaker ? 22 + bounce * 8 : 10));
     this.echo.pose(t, arms(beat + 0.6, speaker === 'dg-echo' ? 20 : 8));

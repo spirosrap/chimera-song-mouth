@@ -466,16 +466,16 @@ export class StatesideStage {
     const pLift = speaker === 'state-pink' ? 18 : 6;
     const zLift = speaker === 'state-zara' ? 18 : 6;
     this.pink.pose(t, [
-      [-32, -8 + Math.sin(q) * 16, 20],
-      [-52, 16 + pLift + Math.sin(q) * 18, 26],
-      [32, -8 - Math.sin(q) * 16, 20],
-      [52, 16 + pLift - Math.sin(q) * 18, 26],
+      [-28, -36 + Math.sin(q) * 5, 14],
+      [-33, -46 + pLift * 0.45 + Math.sin(q) * 7, 24],
+      [28, -36 - Math.sin(q) * 5, 14],
+      [33, -46 + pLift * 0.45 - Math.sin(q) * 7, 24],
     ]);
     this.zara.pose(t, [
-      [-32, -8 - Math.sin(q) * 16, 20],
-      [-52, 16 + zLift - Math.sin(q) * 18, 26],
-      [32, -8 + Math.sin(q) * 16, 20],
-      [52, 16 + zLift + Math.sin(q) * 18, 26],
+      [-28, -36 - Math.sin(q) * 5, 14],
+      [-33, -46 + zLift * 0.45 - Math.sin(q) * 7, 24],
+      [28, -36 + Math.sin(q) * 5, 14],
+      [33, -46 + zLift * 0.45 + Math.sin(q) * 7, 24],
     ]);
 
     // Camera framing

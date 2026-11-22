@@ -1,0 +1,192 @@
+{
+  "setting": "lavachicken",
+  "title": "Jack Black · Steve’s Lava Chicken",
+  "description": "The complete cooking sketch in a blocky village kitchen, with a glowing lava oven, a chicken reveal, the physical jingle and the customer’s dry reply.",
+  "duration": 50.828481,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "lava-host",
+      "name": "Steve",
+      "role": "Cook · physical dialogue and jingle",
+      "tele": "lava-host.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "lava-guest",
+      "name": "Young visitor",
+      "role": "The quiet reply · physical speech",
+      "tele": "lava-guest.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "lava-customer",
+      "name": "Garrett",
+      "role": "Customer · low, dry physical speech",
+      "tele": "lava-customer.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.28,
+      "end": 3.23,
+      "speaker": "lava-host",
+      "text": "You ever wonder what happens when you mix hot lava and chicken?",
+      "intensity": 0.55
+    },
+    {
+      "start": 3.96,
+      "end": 4.38,
+      "speaker": "lava-host",
+      "text": "I did.",
+      "intensity": 0.53
+    },
+    {
+      "start": 4.76,
+      "end": 6.04,
+      "speaker": "lava-host",
+      "text": "And you’re about to find out.",
+      "intensity": 0.61
+    },
+    {
+      "start": 16.45,
+      "end": 17.6,
+      "speaker": "lava-host",
+      "text": "You hear that?",
+      "intensity": 0.49
+    },
+    {
+      "start": 18.11,
+      "end": 19.69,
+      "speaker": "lava-host",
+      "text": "That’s the sound of sizzling.",
+      "intensity": 0.62
+    },
+    {
+      "start": 20.66,
+      "end": 21.13,
+      "speaker": "lava-guest",
+      "text": "Mm-hmm.",
+      "intensity": 0.43
+    },
+    {
+      "start": 21.94,
+      "end": 22.82,
+      "speaker": "lava-host",
+      "text": "Smell that smell.",
+      "intensity": 0.57
+    },
+    {
+      "start": 24.25,
+      "end": 27.19,
+      "speaker": "lava-host",
+      "text": "La-la-la-lava, ch-ch-ch-chicken!",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.61,
+      "end": 30.53,
+      "speaker": "lava-host",
+      "text": "Steve’s lava chicken, yeah, it’s tasty as hell!",
+      "intensity": 0.88
+    },
+    {
+      "start": 30.65,
+      "end": 33.87,
+      "speaker": "lava-host",
+      "text": "Ooh, mamacita, now you’re ringing the bell!",
+      "intensity": 0.89
+    },
+    {
+      "start": 34.05,
+      "end": 36.72,
+      "speaker": "lava-host",
+      "text": "Crispy and juicy, now you’re havin’ a snack!",
+      "intensity": 0.91
+    },
+    {
+      "start": 36.83,
+      "end": 40.92,
+      "speaker": "lava-host",
+      "text": "Ooh, super spicy, it’s a lava attack!",
+      "intensity": 1
+    },
+    {
+      "start": 46.52,
+      "end": 47.75,
+      "speaker": "lava-customer",
+      "text": "I have a small business, too.",
+      "intensity": 0.48
+    },
+    {
+      "start": 47.86,
+      "end": 50.3,
+      "speaker": "lava-customer",
+      "text": "The one thing I try to do is not have my jingle suck butt.",
+      "intensity": 0.6
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "lava-stall"
+    },
+    {
+      "time": 3.51,
+      "view": "lava-reaction"
+    },
+    {
+      "time": 4.92,
+      "view": "lava-lever"
+    },
+    {
+      "time": 7.8,
+      "view": "lava-channel"
+    },
+    {
+      "time": 9.14,
+      "view": "lava-channel-detail"
+    },
+    {
+      "time": 13.02,
+      "view": "lava-chicken"
+    },
+    {
+      "time": 15.35,
+      "view": "lava-host"
+    },
+    {
+      "time": 19.56,
+      "view": "lava-guest"
+    },
+    {
+      "time": 21.31,
+      "view": "lava-stall"
+    },
+    {
+      "time": 24.23,
+      "view": "lava-solo"
+    },
+    {
+      "time": 30.11,
+      "view": "lava-ensemble"
+    },
+    {
+      "time": 32.28,
+      "view": "lava-solo"
+    },
+    {
+      "time": 38.63,
+      "view": "lava-belt"
+    },
+    {
+      "time": 41.08,
+      "view": "lava-platter"
+    },
+    {
+      "time": 46.08,
+      "view": "lava-customer"
+    }
+  ]
+}

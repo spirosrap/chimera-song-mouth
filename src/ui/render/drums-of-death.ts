@@ -364,10 +364,10 @@ export class DrumsOfDeathStage {
     this.glitch.root.rotation.set(0, -0.24 - sway * 0.12, -twitch * 0.1);
 
     const arms = (phase: number, lift: number): [P, P, P, P] => [
-      [-36, -2 + Math.sin(phase) * 18, 22],
-      [-58, 22 + lift + Math.cos(phase) * 26, 26],
-      [36, -2 - Math.sin(phase) * 18, 22],
-      [58, 22 + lift - Math.cos(phase) * 26, 26],
+      [-29, -36 + Math.sin(phase) * 6, 14],
+      [-35, -46 + lift * 0.45 + Math.cos(phase) * 8, 24],
+      [29, -36 - Math.sin(phase) * 6, 14],
+      [35, -46 + lift * 0.45 - Math.cos(phase) * 8, 24],
     ];
     this.lead.pose(t, arms(beat, speaker === 'dd-lead' || !speaker ? 26 + pulse * 12 : 12), seated);
     this.glitch.pose(t, arms(beat + 0.7, speaker === 'dd-glitch' ? 28 + pulse * 10 : 10), seated);

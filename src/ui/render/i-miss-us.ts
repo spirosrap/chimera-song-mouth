@@ -453,10 +453,10 @@ export class IMissUsStage {
 
     // Classic 90s boyband reaching-hand choreography!
     const boybandArms = (phase: number, reach: number): [P, P, P, P] => [
-      [-32, -4 + Math.sin(phase) * 14, 24],
-      [-46, 16 + reach + Math.sin(phase) * 18, 36],
-      [32, -4 - Math.sin(phase) * 14, 24],
-      [46, 16 + reach - Math.sin(phase) * 18, 36],
+      [-28, -36 + Math.sin(phase) * 5, 16],
+      [-33, -46 + reach * 0.5 + Math.sin(phase) * 7, 28],
+      [28, -36 - Math.sin(phase) * 5, 16],
+      [33, -46 + reach * 0.5 - Math.sin(phase) * 7, 28],
     ];
     this.joost.pose(t, boybandArms(q, speaker === 'miss-joost' ? 20 : 8));
     this.tommy.pose(t, boybandArms(q + 0.5, speaker === 'miss-tommy' ? 20 : 8));

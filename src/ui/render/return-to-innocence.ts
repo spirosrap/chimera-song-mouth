@@ -433,10 +433,10 @@ export class ReturnToInnocenceStage {
 
     const openArm = 10 + intensity * 14;
     const sereneArms = (phase: number): [P, P, P, P] => [
-      [-32, -16 + Math.sin(phase) * 6, 18],
-      [-48, 2 + openArm + Math.sin(phase) * 8, 26],
-      [32, -16 - Math.sin(phase) * 6, 18],
-      [48, 2 + openArm - Math.sin(phase) * 8, 26],
+      [-28, -36 + Math.sin(phase) * 4, 14],
+      [-32, -46 + openArm * 0.4 + Math.sin(phase) * 6, 22],
+      [28, -36 - Math.sin(phase) * 4, 14],
+      [32, -46 + openArm * 0.4 - Math.sin(phase) * 6, 22],
     ];
     this.angel.pose(t, sereneArms(t * 1.1));
     this.sandra.pose(t, sereneArms(t * 0.9 + 1));

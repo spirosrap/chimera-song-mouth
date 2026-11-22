@@ -513,10 +513,10 @@ export class ElectricBlueStage {
     }
 
     const arms = (phase: number, lift: number): [P, P, P, P] => [
-      [-34, -4 + Math.sin(phase) * 14, 22],
-      [-52, 18 + lift + Math.sin(phase) * 20, 28],
-      [34, -4 - Math.sin(phase) * 14, 22],
-      [52, 18 + lift - Math.sin(phase) * 20, 28],
+      [-28, -36 + Math.sin(phase) * 5, 14],
+      [-34, -48 + lift * 0.45 + Math.sin(phase) * 7, 24],
+      [28, -36 - Math.sin(phase) * 5, 14],
+      [34, -48 + lift * 0.45 - Math.sin(phase) * 7, 24],
     ];
     this.lead.pose(t, arms(beat, speaker === 'eb-lead' || !speaker ? 22 + bounce * 10 : 8));
     this.agent.pose(t, arms(beat + 0.6, speaker === 'eb-agent' ? 18 : 6));

@@ -706,10 +706,10 @@ export class HateMadeLoveStage {
     this.harmony.root.rotation.y = -sway * 0.12;
 
     const arms = (phase: number, lift: number): [P, P, P, P] => [
-      [-32, -6 + Math.sin(phase) * 12, 20],
-      [-50, 14 + lift + Math.sin(phase) * 18, 26],
-      [32, -6 - Math.sin(phase) * 12, 20],
-      [50, 14 + lift - Math.sin(phase) * 18, 26],
+      [-27, -36 + Math.sin(phase) * 4, 14],
+      [-31, -48 + lift * 0.4 + Math.sin(phase) * 6, 22],
+      [27, -36 - Math.sin(phase) * 4, 14],
+      [31, -48 + lift * 0.4 - Math.sin(phase) * 6, 22],
     ];
     this.ariana.pose(t, arms(beat, speaker === 'ht-ariana' || !speaker ? 18 + pulse * 6 : 6));
     this.harmony.pose(t, arms(beat + 0.8, speaker === 'ht-harmony' ? 16 + pulse * 4 : 5));

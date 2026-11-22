@@ -82,11 +82,13 @@ and the CLI) under a React UI. See the README.
   Quiet/reverb-heavy opening vocals, whispers, or non-English chants (e.g. Enigma's `25.85–43.20s`
   opening chant at `0.029` RMS) are missed by high cutoffs (`> 0.035`) and by English-only Whisper.
   Always check a per-second RMS profile from `0s` to the end so the opening voice is never silent.
-- **Verify `index.html` and JS bundle checksums after every live deploy, and never cut off `publish.sh`.**
+- **Verify `index.html` and ALL `dist/assets/*` chunk checksums after every live deploy, and never cut off `publish.sh`.**
   Wait strictly until `DEPLOY_EXIT=0` appears in the `macmini` launchd log before `bootout` (never
-  use a fixed timeout loop that can kill `publish.sh` before `index.html` uploads). Always verify
-  live HTTPS SHA-256 matches local `dist/` for `index.html`, the new hashed `assets/index-*.js` and
-  `assets/ScenePage-*.js`, plus `scene.json`, `mix.mp3`, and `.tele.gz`. When re-rendering an
+  use a fixed timeout loop that can kill `publish.sh` before `index.html` uploads). Always include
+  every file in `dist/assets/*` in the `publish.sh` upload list (not only `index-*.js` and
+  `ScenePage-*.js`, because Vite re-hashes sibling chunks like `mount-*.js` and `BandPage-*.js` when
+  `MOVIE_SCENES` changes), and verify live HTTPS SHA-256 matches local `dist/` for `index.html`,
+  every file in `dist/assets/*`, plus `scene.json`, `mix.mp3`, and `.tele.gz`. When re-rendering an
   existing scene, always bump `assetVersion` in `src/scene/library.ts`, `performance.json`, and tests.
 
 ## Checks

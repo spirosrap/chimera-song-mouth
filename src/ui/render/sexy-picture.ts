@@ -624,10 +624,10 @@ export class SexyPictureStage {
     }
 
     const arms = (phase: number, lift: number): [P, P, P, P] => [
-      [-34, -4 + Math.sin(phase) * 14, 22],
-      [-52, 18 + lift + Math.sin(phase) * 22, 28],
-      [34, -4 - Math.sin(phase) * 14, 22],
-      [52, 18 + lift - Math.sin(phase) * 22, 28],
+      [-28, -36 + Math.sin(phase) * 5, 14],
+      [-34, -48 + lift * 0.45 + Math.sin(phase) * 7, 24],
+      [28, -36 - Math.sin(phase) * 5, 14],
+      [34, -48 + lift * 0.45 - Math.sin(phase) * 7, 24],
     ];
     this.lead.pose(t, arms(beat, speaker === 'cm-lead' || !speaker ? 22 + bounce * 10 : 8));
     this.choir.pose(t, arms(beat + 0.5, speaker === 'cm-choir' ? 20 : 6));
