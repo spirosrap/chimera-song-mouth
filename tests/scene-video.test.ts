@@ -56,7 +56,7 @@ test('cancel and hiding the tab reject partial videos and release the streams',a
 });
 test('compact X lyrics preset draws song title, karaoke-highlighted lyrics, upcoming preview, and clips cleanly',async()=>{
  const multi:SceneFile={...scene,duration:10,cues:[{start:1,end:4,speaker:'kaffee',text:'First lyric line',intensity:.8},{start:5,end:8,speaker:'jessep',text:'Second lyric line',intensity:.9}]};
- expect(VIDEO_PRESETS['x-lyrics']).toEqual({width:1920,height:1080,fps:30,videoBitsPerSecond:5_000_000,audioBitsPerSecond:160_000});
+ expect(VIDEO_PRESETS['x-lyrics']).toEqual({width:1920,height:1080,fps:30,videoBitsPerSecond:4_500_000,audioBitsPerSecond:160_000});
  const words:string[]=[];const ctx={fillRect(){},drawImage(){},fillText:(s:string)=>words.push(s),measureText:(s:string)=>({width:s.length*10})} as unknown as CanvasRenderingContext2D;
  drawLyricsVideoFrame(ctx,{} as CanvasImageSource,multi,0.2);
  expect(words).toContain('Scene');expect(words).toContain('NEXT LYRIC');expect(words).toContain('First lyric line');
@@ -153,7 +153,7 @@ test('fast offline WebCodecs path muxes an H.264 + AAC MP4 silently faster than 
   expect(file.extension).toBe('mp4');
   expect(file.fast).toBe(true);
   expect(encodedVideo).toBe(15); // 0.5s * 30fps
-  expect(keyFrames).toEqual([0,4,8,12]); // Software OpenH264 uses 4-frame GOP to eliminate red chroma ghosting!
+  expect(keyFrames).toEqual([0]); // Compact 2s GOP + scene-cut keyframes
   expect(encodedAudio).toBeGreaterThan(0);
   expect(prog.length).toBeGreaterThan(1);
   expect(prog.at(-1)).toBeCloseTo(0.5,2);
