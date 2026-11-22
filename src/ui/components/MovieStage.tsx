@@ -362,11 +362,13 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
       const view=room instanceof LoveStage&&chosen==='auto'?'wide':sceneCamera(scene,time,chosen);
       room.frame(time,recording||transport.isPlaying,transport.epoch,view,cue?.intensity??0,cue?.speaker);
       if(room instanceof LoveStage)room.renderReflections(gl);
-      gl.render(room.scene,room.camera);ctx.drawImage(gl.domElement,0,0,canvas.width,canvas.height);return canvas;
+      gl.render(room.scene,room.camera);
+      if(recording)return gl.domElement;
+      ctx.drawImage(gl.domElement,0,0,canvas.width,canvas.height);return canvas;
     };
-    onReady({capture:(width=1280,height=720)=>{
+    onReady({capture:(width=1920,height=1080)=>{
       if(!alive||capturing)throw Error('The scene is already preparing a video.');
-      capturing=true;gl.setPixelRatio(1);gl.setSize(width,height,false);canvas.width=width;canvas.height=height;room.resize(width,height);
+      capturing=true;gl.setPixelRatio(1);gl.setSize(width,height,false);room.resize(width,height);
       let released=false;
       return {draw:(time)=>draw(time,true),release:()=>{if(released)return;released=true;capturing=false;if(alive)fit();}};
     }});

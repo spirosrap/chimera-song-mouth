@@ -12,9 +12,9 @@ export interface VideoExportOptions {
 }
 
 export const VIDEO_PRESETS:Record<VideoPreset,{width:number;height:number;fps:number;videoBitsPerSecond:number;audioBitsPerSecond:number}>={
-  hd:{width:1280,height:720,fps:30,videoBitsPerSecond:5_000_000,audioBitsPerSecond:192_000},
-  // Compact 540p 24fps H.264 + AAC-LC MP4 (~12 MB/min) tuned for fast sharing on X with live lyrics.
-  'x-lyrics':{width:960,height:540,fps:24,videoBitsPerSecond:1_500_000,audioBitsPerSecond:128_000},
+  hd:{width:1920,height:1080,fps:30,videoBitsPerSecond:8_000_000,audioBitsPerSecond:192_000},
+  // Crisp 1080p Full HD 30fps VBR H.264 High + AAC-LC MP4 tuned for X's highest HD playback tier with live lyrics.
+  'x-lyrics':{width:1920,height:1080,fps:30,videoBitsPerSecond:4_500_000,audioBitsPerSecond:160_000},
 };
 
 export function videoFormat(supported:(mime:string)=>boolean):{mimeType:string;extension:'mp4'|'webm'}{
@@ -54,50 +54,54 @@ function fmtClock(sec:number):string{
 }
 
 /** Subtitles are drawn into the video pixels, independently of the page's subtitle switch. */
-export function drawVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasImageSource,scene:SceneFile,time:number):void{
-  const w=1280,h=720;
+export function drawVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasImageSource,scene:SceneFile,time:number,w=1280,h=720):void{
+  const s=w/1280;
   ctx.fillStyle='#000';ctx.fillRect(0,0,w,h);ctx.drawImage(source,0,0,w,h);
-  ctx.fillStyle='#000';ctx.fillRect(0,h-112,w,112);
+  ctx.fillStyle='#000';ctx.fillRect(0,h-Math.round(112*s),w,Math.round(112*s));
   const cue=sceneCue(scene,time);if(!cue)return;
   const name=scene.characters.find(c=>c.id===cue.speaker)?.name??'';
-  ctx.textAlign='center';ctx.textBaseline='middle';ctx.font='500 13px Archivo, sans-serif';ctx.fillStyle='#d6b786';ctx.fillText(name.toUpperCase(),w/2,h-91);
-  ctx.font='500 27px Archivo, sans-serif';ctx.fillStyle='#fff';
-  const lines=subtitleLines(cue.text,w-100,s=>ctx.measureText(s).width);
-  const top=h-53-(lines.length-1)*17;
-  lines.forEach((line,i)=>ctx.fillText(line,w/2,top+i*34));
+  ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=`500 ${Math.round(13*s)}px Archivo, sans-serif`;ctx.fillStyle='#d6b786';ctx.fillText(name.toUpperCase(),w/2,h-Math.round(91*s));
+  ctx.font=`500 ${Math.round(27*s)}px Archivo, sans-serif`;ctx.fillStyle='#fff';
+  const lines=subtitleLines(cue.text,w-Math.round(100*s),txt=>ctx.measureText(txt).width);
+  const top=h-Math.round(53*s)-(lines.length-1)*Math.round(17*s);
+  lines.forEach((line,i)=>ctx.fillText(line,w/2,top+i*Math.round(34*s)));
 }
 
-/** Draws a share-ready 16:9 frame with song title header, live word-highlighted lyrics, upcoming preview, and progress bar. */
-export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasImageSource,scene:SceneFile,time:number,w=960,h=540):void{
+/** Draws a share-ready 16:9 HD frame with song title header, live word-highlighted lyrics, upcoming preview, and progress bar. */
+export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasImageSource,scene:SceneFile,time:number,w=1920,h=1080):void{
+  const s=w/960;
   ctx.fillStyle='#000';ctx.fillRect(0,0,w,h);
+  ctx.imageSmoothingEnabled=true;
+  if('imageSmoothingQuality' in ctx)ctx.imageSmoothingQuality='high';
   ctx.drawImage(source,0,0,w,h);
 
   // Subtle top bar with song title & clock
+  const topH=Math.round(58*s);
   if(typeof ctx.createLinearGradient==='function'){
-    const topGrad=ctx.createLinearGradient(0,0,0,58);
+    const topGrad=ctx.createLinearGradient(0,0,0,topH);
     topGrad.addColorStop(0,'rgba(8,6,5,0.72)');
     topGrad.addColorStop(1,'rgba(8,6,5,0)');
     ctx.fillStyle=topGrad;
   }else{
     ctx.fillStyle='rgba(8,6,5,0.68)';
   }
-  ctx.fillRect(0,0,w,58);
+  ctx.fillRect(0,0,w,topH);
 
   ctx.textBaseline='middle';
   ctx.textAlign='left';
-  ctx.font='600 14px Archivo, sans-serif';
+  ctx.font=`600 ${Math.round(14*s)}px Archivo, sans-serif`;
   ctx.fillStyle='rgba(246,236,220,0.92)';
-  ctx.fillText(scene.title,24,24);
+  ctx.fillText(scene.title,Math.round(24*s),Math.round(24*s));
 
   ctx.textAlign='right';
-  ctx.font='500 12px Archivo, sans-serif';
+  ctx.font=`500 ${Math.round(12*s)}px Archivo, sans-serif`;
   ctx.fillStyle='rgba(214,183,134,0.88)';
-  ctx.fillText(`CHIMERA · ${fmtClock(time)} / ${fmtClock(scene.duration)}`,w-24,24);
+  ctx.fillText(`CHIMERA · ${fmtClock(time)} / ${fmtClock(scene.duration)}`,w-Math.round(24*s),Math.round(24*s));
 
   // Bottom cinema gradient for live lyrics deck
-  const deckH=158;
+  const deckH=Math.round(158*s),fadeH=Math.round(36*s);
   if(typeof ctx.createLinearGradient==='function'){
-    const botGrad=ctx.createLinearGradient(0,h-deckH-36,0,h);
+    const botGrad=ctx.createLinearGradient(0,h-deckH-fadeH,0,h);
     botGrad.addColorStop(0,'rgba(8,6,5,0)');
     botGrad.addColorStop(0.28,'rgba(8,6,5,0.78)');
     botGrad.addColorStop(1,'rgba(6,5,4,0.95)');
@@ -105,25 +109,25 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
   }else{
     ctx.fillStyle='rgba(8,6,5,0.88)';
   }
-  ctx.fillRect(0,h-deckH-36,w,deckH+36);
+  ctx.fillRect(0,h-deckH-fadeH,w,deckH+fadeH);
 
   const cue=sceneCue(scene,time);
   const next=nextSceneCue(scene,time,cue);
-  const maxW=w-88;
+  const maxW=w-Math.round(88*s);
 
   if(cue){
     const name=scene.characters.find(c=>c.id===cue.speaker)?.name??'';
     ctx.textAlign='center';
-    ctx.font='600 12px Archivo, sans-serif';
+    ctx.font=`600 ${Math.round(12*s)}px Archivo, sans-serif`;
     ctx.fillStyle='#e2be82';
-    ctx.fillText(name.toUpperCase(),w/2,h-126);
+    ctx.fillText(name.toUpperCase(),w/2,h-Math.round(126*s));
 
-    ctx.font='600 24px Archivo, sans-serif';
-    const lines=subtitleLines(cue.text,maxW,s=>ctx.measureText(s).width).slice(0,2);
+    ctx.font=`600 ${Math.round(24*s)}px Archivo, sans-serif`;
+    const lines=subtitleLines(cue.text,maxW,txt=>ctx.measureText(txt).width).slice(0,2);
     const allWords=lines.flatMap(l=>l.split(/\s+/).filter(Boolean));
     const progress=Math.max(0,Math.min(1,(time-cue.start)/Math.max(0.05,cue.end-cue.start)));
     const litCount=Math.max(1,Math.ceil(progress*allWords.length));
-    const lineStartY=lines.length===1?h-82:h-95;
+    const lineStartY=lines.length===1?h-Math.round(82*s):h-Math.round(95*s);
 
     let wordIdx=0;
     ctx.textAlign='left';
@@ -132,12 +136,12 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
       const lineText=words.join(' ');
       const lineW=ctx.measureText(lineText).width;
       let x=(w-lineW)/2;
-      const y=lineStartY+li*30;
+      const y=lineStartY+li*Math.round(30*s);
       const spaceW=ctx.measureText(' ').width;
       for(let wi=0;wi<words.length;wi++){
         const word=words[wi];
         const lit=wordIdx<litCount;
-        ctx.fillStyle=lit?'#ffd98a':'rgba(255,255,255,0.88)';
+        ctx.fillStyle=lit?'#ffd98a':'rgba(255,255,255,0.92)';
         ctx.fillText(word,x,y);
         x+=ctx.measureText(word).width+spaceW;
         wordIdx++;
@@ -146,28 +150,29 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
 
     if(next){
       ctx.textAlign='center';
-      ctx.font='400 14px Archivo, sans-serif';
+      ctx.font=`400 ${Math.round(14*s)}px Archivo, sans-serif`;
       ctx.fillStyle='rgba(232,220,202,0.58)';
-      const preview=subtitleLines(next.text,maxW,s=>ctx.measureText(s).width)[0]??next.text;
-      ctx.fillText(preview,w/2,h-32);
+      const preview=subtitleLines(next.text,maxW,txt=>ctx.measureText(txt).width)[0]??next.text;
+      ctx.fillText(preview,w/2,h-Math.round(32*s));
     }
   }else if(next){
     ctx.textAlign='center';
-    ctx.font='500 12px Archivo, sans-serif';
+    ctx.font=`500 ${Math.round(12*s)}px Archivo, sans-serif`;
     ctx.fillStyle='rgba(214,183,134,0.75)';
-    ctx.fillText('NEXT LYRIC',w/2,h-92);
-    ctx.font='500 18px Archivo, sans-serif';
+    ctx.fillText('NEXT LYRIC',w/2,h-Math.round(92*s));
+    ctx.font=`500 ${Math.round(18*s)}px Archivo, sans-serif`;
     ctx.fillStyle='rgba(244,236,222,0.72)';
-    const preview=subtitleLines(next.text,maxW,s=>ctx.measureText(s).width)[0]??next.text;
-    ctx.fillText(preview,w/2,h-60);
+    const preview=subtitleLines(next.text,maxW,txt=>ctx.measureText(txt).width)[0]??next.text;
+    ctx.fillText(preview,w/2,h-Math.round(60*s));
   }
 
   // Bottom progress bar
+  const barH=Math.max(4,Math.round(4*s));
   ctx.fillStyle='rgba(255,255,255,0.16)';
-  ctx.fillRect(0,h-4,w,4);
+  ctx.fillRect(0,h-barH,w,barH);
   const ratio=scene.duration>0?Math.max(0,Math.min(1,time/scene.duration)):0;
   ctx.fillStyle='#e2be82';
-  ctx.fillRect(0,h-4,Math.round(w*ratio),4);
+  ctx.fillRect(0,h-barH,Math.round(w*ratio),barH);
 }
 
 /** Instant event-loop yield (MessageChannel isn't throttled to 1s in background tabs like setTimeout). */
@@ -205,7 +210,12 @@ async function exportSceneVideoOffline(
   const sampleRate=audioBuffer.sampleRate;
 
   const mb=await import('mediabunny');
-  const canH264=await mb.canEncodeVideo('avc',{width:preset.width,height:preset.height,bitrate:preset.videoBitsPerSecond});
+  let width=preset.width,height=preset.height,videoBps=preset.videoBitsPerSecond;
+  let canH264=await mb.canEncodeVideo('avc',{width,height,bitrate:videoBps});
+  if(!canH264&&width>1280){
+    width=1280;height=720;videoBps=presetName==='x-lyrics'?3_200_000:6_000_000;
+    canH264=await mb.canEncodeVideo('avc',{width,height,bitrate:videoBps});
+  }
   if(!canH264)return null;
 
   let canAac=await mb.canEncodeAudio('aac',{sampleRate,numberOfChannels:channels,bitrate:preset.audioBitsPerSecond});
@@ -231,16 +241,18 @@ async function exportSceneVideoOffline(
     await document.fonts.ready;
     if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
 
-    capture=stage.capture(preset.width,preset.height);
+    capture=stage.capture(width,height);
     const canvas=document.createElement('canvas');
-    canvas.width=preset.width;canvas.height=preset.height;
+    canvas.width=width;canvas.height=height;
     const ctx=canvas.getContext('2d');
     if(!ctx)throw Error('This browser cannot render the scene video.');
 
     const videoSource=new mb.CanvasSource(canvas,{
       codec:'avc',
-      bitrate:preset.videoBitsPerSecond,
-      keyFrameInterval:2,
+      bitrate:videoBps,
+      bitrateMode:'variable',
+      latencyMode:'quality',
+      keyFrameInterval:4,
     });
     const audioSource=new mb.AudioSampleSource({
       codec:'aac',
@@ -289,8 +301,8 @@ async function exportSceneVideoOffline(
       if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
       const t=Math.min(end,start+i*frameDur);
       const source=capture.draw(t);
-      if(presetName==='x-lyrics')drawLyricsVideoFrame(ctx,source,scene,t,preset.width,preset.height);
-      else drawVideoFrame(ctx,source,scene,t);
+      if(presetName==='x-lyrics')drawLyricsVideoFrame(ctx,source,scene,t,width,height);
+      else drawVideoFrame(ctx,source,scene,t,width,height);
 
       await videoSource.add(i*frameDur,frameDur);
 
@@ -352,7 +364,7 @@ export async function recordSceneVideo(stage:SceneStage,scene:SceneFile,transpor
   let abortListener=()=>{},visibilityListener=()=>{};
   const renderFrame=(ctx:CanvasRenderingContext2D,t:number)=>{
     if(presetName==='x-lyrics')drawLyricsVideoFrame(ctx,capture!.draw(t),scene,t,preset.width,preset.height);
-    else drawVideoFrame(ctx,capture!.draw(t),scene,t);
+    else drawVideoFrame(ctx,capture!.draw(t),scene,t,preset.width,preset.height);
   };
   try{
     await transport.ctx.resume();await document.fonts.ready;

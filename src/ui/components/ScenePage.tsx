@@ -82,8 +82,8 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
         <button className="chip" disabled={!loaded||exporting} onClick={()=>{transport?.pause();transport?.seek(0);}}>Restart</button>
         <input aria-label="Position in the movie scene" type="range" min={0} max={state.duration||1} step={.05} value={state.time} disabled={!loaded||exporting} onChange={e=>transport?.seek(Number(e.target.value))}/>
         <span>{formatTime(state.time)} / {formatTime(state.duration)}</span>
-        <button className="chip on" disabled={!loaded||!stage||exporting} title="Compact 540p 24fps video (~12 MB/min) with live highlighted lyrics & upcoming line, optimized for posting on X" onClick={()=>void downloadVideo('x-lyrics')}>Download lyrics video (X)</button>
-        {scene&&scene.duration>140&&<button className="chip" disabled={!loaded||!stage||exporting} title="Compact 2:15 lyrics clip starting from the current playhead position (fits X's 2:20 standard video limit)" onClick={()=>void downloadVideo('x-lyrics',135)}>2:15 lyrics clip (X)</button>}
+        <button className="chip on" disabled={!loaded||!stage||exporting} title="Full HD 1080p 30fps MP4 (H.264 High + AAC) with live highlighted lyrics & upcoming line, optimized for X" onClick={()=>void downloadVideo('x-lyrics')}>Download lyrics video (X)</button>
+        {scene&&scene.duration>140&&<button className="chip" disabled={!loaded||!stage||exporting} title="Full HD 1080p 2:15 lyrics clip starting from the current playhead position (fits X's 2:20 standard video limit)" onClick={()=>void downloadVideo('x-lyrics',135)}>2:15 lyrics clip (X)</button>}
         <button className="chip" disabled={!loaded||!stage||exporting} onClick={()=>void downloadVideo('hd')}>Record HD video</button>
         {scene&&entry.readyVideo&&<a className="chip" href={sceneVideoUrl(BASE,entry.readyVideo)} download={`${sceneId}-with-subtitles-X-ready.mp4`}>Download MP4 for X</a>}
         {scene&&<a className="chip" href={BASE+scene.audio} download={`${sceneId}-chimera.mp3`}>Download audio</a>}

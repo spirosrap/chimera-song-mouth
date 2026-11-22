@@ -56,7 +56,7 @@ test('cancel and hiding the tab reject partial videos and release the streams',a
 });
 test('compact X lyrics preset draws song title, karaoke-highlighted lyrics, upcoming preview, and clips cleanly',async()=>{
  const multi:SceneFile={...scene,duration:10,cues:[{start:1,end:4,speaker:'kaffee',text:'First lyric line',intensity:.8},{start:5,end:8,speaker:'jessep',text:'Second lyric line',intensity:.9}]};
- expect(VIDEO_PRESETS['x-lyrics']).toEqual({width:960,height:540,fps:24,videoBitsPerSecond:1_500_000,audioBitsPerSecond:128_000});
+ expect(VIDEO_PRESETS['x-lyrics']).toEqual({width:1920,height:1080,fps:30,videoBitsPerSecond:4_500_000,audioBitsPerSecond:160_000});
  const words:string[]=[];const ctx={fillRect(){},drawImage(){},fillText:(s:string)=>words.push(s),measureText:(s:string)=>({width:s.length*10})} as unknown as CanvasRenderingContext2D;
  drawLyricsVideoFrame(ctx,{} as CanvasImageSource,multi,0.2);
  expect(words).toContain('Scene');expect(words).toContain('NEXT LYRIC');expect(words).toContain('First lyric line');
@@ -74,7 +74,7 @@ test('fast offline WebCodecs path muxes an H.264 + AAC MP4 silently faster than 
  const priorWC=new Map<string,PropertyDescriptor|undefined>();
  let encodedVideo=0,encodedAudio=0;
  class MockVideoFrame{
-  readonly codedWidth=960;readonly codedHeight=540;readonly displayWidth=960;readonly displayHeight=540;readonly format='RGBA';
+  readonly codedWidth=1920;readonly codedHeight=1080;readonly displayWidth=1920;readonly displayHeight=1080;readonly format='RGBA';
   readonly colorSpace={primaries:'bt709',transfer:'iec61966-2-1',matrix:'rgb',fullRange:true};
   readonly timestamp:number;readonly duration:number;
   constructor(readonly src:unknown,readonly init:{timestamp:number;duration:number}){this.timestamp=init.timestamp;this.duration=init.duration;}
@@ -116,7 +116,7 @@ test('fast offline WebCodecs path muxes an H.264 + AAC MP4 silently faster than 
    encodedVideo++;
    const bytes=new Uint8Array([0,0,0,4,0x65,0x88,0x84,0x21]);
    const chunk=new MockEncodedVideoChunk(bytes,opts?.keyFrame?'key':'delta',frame.timestamp,frame.duration);
-   const meta=encodedVideo===1?{decoderConfig:{codec:'avc1.640028',codedWidth:960,codedHeight:540,description:new Uint8Array([1,0x64,0,0x28,0xff,0xe1,0,4,0x67,0x64,0,0x28,1,0,4,0x68,0xee,0x3c,0x80])}}:undefined;
+   const meta=encodedVideo===1?{decoderConfig:{codec:'avc1.640028',codedWidth:1920,codedHeight:1080,description:new Uint8Array([1,0x64,0,0x28,0xff,0xe1,0,4,0x67,0x64,0,0x28,1,0,4,0x68,0xee,0x3c,0x80])}}:undefined;
    this.init.output(chunk,meta);
   }
   async flush(){}
@@ -151,7 +151,7 @@ test('fast offline WebCodecs path muxes an H.264 + AAC MP4 silently faster than 
   expect(mode).toBe('offline');
   expect(file.extension).toBe('mp4');
   expect(file.fast).toBe(true);
-  expect(encodedVideo).toBe(12); // 0.5s * 24fps
+  expect(encodedVideo).toBe(15); // 0.5s * 30fps
   expect(encodedAudio).toBeGreaterThan(0);
   expect(prog.length).toBeGreaterThan(1);
   expect(prog.at(-1)).toBeCloseTo(0.5,2);
