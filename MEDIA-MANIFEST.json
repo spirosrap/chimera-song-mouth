@@ -2552,6 +2552,36 @@
       "sha256": "c8ca7f9375e72a72532b9ea6d8fcedd94f63908cbf909808a97d06d45209eac0"
     },
     {
+      "path": "public/scenes/doja-gorgeous/backing.mp3",
+      "bytes": 6397676,
+      "sha256": "f27d0ee69488a347f1879d1363bd5d5d26757a40a5643c9950faeca531cabbc1"
+    },
+    {
+      "path": "public/scenes/doja-gorgeous/dg-echo.tele.gz",
+      "bytes": 889737,
+      "sha256": "699cc467f999f7845f9fb3be341e4754c5f8fc65fccd11003071aedbd89f1bd3"
+    },
+    {
+      "path": "public/scenes/doja-gorgeous/dg-lead.tele.gz",
+      "bytes": 2737647,
+      "sha256": "9faecb9a73c144646211780d8d9f27838d462c861274289eddaee0ce07909679"
+    },
+    {
+      "path": "public/scenes/doja-gorgeous/mix.mp3",
+      "bytes": 8530220,
+      "sha256": "85c65ff1a647077a01cf788f869cef82334369177c9100fd89121bd4abe56445"
+    },
+    {
+      "path": "public/scenes/doja-gorgeous/performance.json",
+      "bytes": 905980,
+      "sha256": "e59f00e7aa2b1e1725f4129de6f5b19bff6f66f57400f1b8e62e73e9034b51bb"
+    },
+    {
+      "path": "public/scenes/doja-gorgeous/scene.json",
+      "bytes": 17624,
+      "sha256": "4ffc0c4dea08aaaf427e851d5a7d20837ba1c2ce8a1ab9aedb49798b92d0b2b8"
+    },
+    {
       "path": "public/scenes/eins-zwei-drei/backing.mp3",
       "bytes": 6711596,
       "sha256": "e916fc462bf41dabbbcb9b61ad98675abf6faa511fbba2b9994be7fd7425d872"

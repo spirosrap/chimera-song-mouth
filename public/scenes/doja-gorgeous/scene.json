@@ -1,0 +1,823 @@
+{
+  "setting": "dojagorgeous",
+  "title": "Doja Cat · Gorgeous",
+  "description": "Physical voices over the separated 80s synth-pop instrumental, staged across the floating pink-suit cyclorama, champagne-gold lipstick showcase, sapphire perfume pool, liquid-gold gloss studio, plum eyeshadow compact, monochrome vanity, and 9-panel beauty grid.",
+  "duration": 266.519,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "dg-lead",
+      "name": "Lead Vocal",
+      "role": "Lead & Rap",
+      "tele": "dg-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "dg-echo",
+      "name": "Backing & Ad-libs",
+      "role": "80s Echoes",
+      "tele": "dg-echo.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.08,
+      "end": 1.45,
+      "speaker": "dg-echo",
+      "text": "I don't believe",
+      "intensity": 0.6
+    },
+    {
+      "start": 5.02,
+      "end": 6.65,
+      "speaker": "dg-echo",
+      "text": "I don't believe",
+      "intensity": 0.62
+    },
+    {
+      "start": 10.44,
+      "end": 11.95,
+      "speaker": "dg-echo",
+      "text": "I don't believe",
+      "intensity": 0.62
+    },
+    {
+      "start": 15.8,
+      "end": 17.3,
+      "speaker": "dg-echo",
+      "text": "I don't believe",
+      "intensity": 0.64
+    },
+    {
+      "start": 21.25,
+      "end": 22.85,
+      "speaker": "dg-echo",
+      "text": "I don't believe",
+      "intensity": 0.66
+    },
+    {
+      "start": 22.96,
+      "end": 24.72,
+      "speaker": "dg-lead",
+      "text": "If they wasn't grilling before",
+      "intensity": 0.82
+    },
+    {
+      "start": 24.78,
+      "end": 26.58,
+      "speaker": "dg-lead",
+      "text": "They gonna be really mad when we hit the floor",
+      "intensity": 0.84
+    },
+    {
+      "start": 26.64,
+      "end": 28.22,
+      "speaker": "dg-lead",
+      "text": "It's a crime to be gorgeous",
+      "intensity": 0.9
+    },
+    {
+      "start": 28.28,
+      "end": 30.02,
+      "speaker": "dg-lead",
+      "text": "Between you and a million phones",
+      "intensity": 0.84
+    },
+    {
+      "start": 30.08,
+      "end": 32.04,
+      "speaker": "dg-lead",
+      "text": "They taking pictures like we hitting a pose",
+      "intensity": 0.84
+    },
+    {
+      "start": 32.1,
+      "end": 33.74,
+      "speaker": "dg-lead",
+      "text": "It's alright to be honest",
+      "intensity": 0.88
+    },
+    {
+      "start": 33.8,
+      "end": 35.46,
+      "speaker": "dg-lead",
+      "text": "Even when we sit in the dark",
+      "intensity": 0.84
+    },
+    {
+      "start": 35.52,
+      "end": 37.48,
+      "speaker": "dg-lead",
+      "text": "I feel the prettiest that you ever saw",
+      "intensity": 0.86
+    },
+    {
+      "start": 37.54,
+      "end": 39.12,
+      "speaker": "dg-lead",
+      "text": "Are your eyes even open?",
+      "intensity": 0.88
+    },
+    {
+      "start": 39.18,
+      "end": 40.88,
+      "speaker": "dg-lead",
+      "text": "It ain't ever really our fault",
+      "intensity": 0.86
+    },
+    {
+      "start": 40.94,
+      "end": 42.78,
+      "speaker": "dg-lead",
+      "text": "We make a killing being so beautiful",
+      "intensity": 0.88
+    },
+    {
+      "start": 42.84,
+      "end": 44.74,
+      "speaker": "dg-lead",
+      "text": "It's a crime to be gorgeous",
+      "intensity": 0.92
+    },
+    {
+      "start": 48.35,
+      "end": 50.25,
+      "speaker": "dg-echo",
+      "text": "It's a crime to be gorgeous",
+      "intensity": 0.8
+    },
+    {
+      "start": 53.85,
+      "end": 55.75,
+      "speaker": "dg-echo",
+      "text": "It's a crime to be gorgeous",
+      "intensity": 0.8
+    },
+    {
+      "start": 59.35,
+      "end": 61.25,
+      "speaker": "dg-echo",
+      "text": "It's a crime to be gorgeous",
+      "intensity": 0.82
+    },
+    {
+      "start": 62.45,
+      "end": 67.6,
+      "speaker": "dg-lead",
+      "text": "Baby, I just wanna tell you how much I love you",
+      "intensity": 0.68
+    },
+    {
+      "start": 67.8,
+      "end": 72.1,
+      "speaker": "dg-lead",
+      "text": "And how amazing and beautiful you are",
+      "intensity": 0.7
+    },
+    {
+      "start": 73.2,
+      "end": 78.3,
+      "speaker": "dg-lead",
+      "text": "Oh my God, how uplifting and inspiring you've been for me",
+      "intensity": 0.72
+    },
+    {
+      "start": 79.35,
+      "end": 85.3,
+      "speaker": "dg-lead",
+      "text": "For all this time, and I love you, and no one could change",
+      "intensity": 0.7
+    },
+    {
+      "start": 85.42,
+      "end": 87.72,
+      "speaker": "dg-lead",
+      "text": "I can't find your heart monitor",
+      "intensity": 0.74
+    },
+    {
+      "start": 87.8,
+      "end": 91.04,
+      "speaker": "dg-lead",
+      "text": "Yeah, look at me, really look at me, loaded the magazine",
+      "intensity": 0.88
+    },
+    {
+      "start": 91.1,
+      "end": 94.26,
+      "speaker": "dg-lead",
+      "text": "They throwing the book at me, I'm booking it eighty miles per hour",
+      "intensity": 0.9
+    },
+    {
+      "start": 94.32,
+      "end": 96.48,
+      "speaker": "dg-lead",
+      "text": "'Cause my jewelry, I'm cooking some collard greens",
+      "intensity": 0.88
+    },
+    {
+      "start": 96.54,
+      "end": 99.08,
+      "speaker": "dg-lead",
+      "text": "I ain't got no room for these, then I got surgery",
+      "intensity": 0.88
+    },
+    {
+      "start": 99.14,
+      "end": 102.52,
+      "speaker": "dg-lead",
+      "text": "'Cause of scrutiny, but he like my before and after pictures",
+      "intensity": 0.9
+    },
+    {
+      "start": 102.58,
+      "end": 105.88,
+      "speaker": "dg-lead",
+      "text": "He cool with these, I took off the wig and put some roots on my new four C",
+      "intensity": 0.9
+    },
+    {
+      "start": 105.94,
+      "end": 109.96,
+      "speaker": "dg-lead",
+      "text": "I put on a wig and take it off as I damn well please, I look like my family",
+      "intensity": 0.92
+    },
+    {
+      "start": 110.44,
+      "end": 114.46,
+      "speaker": "dg-lead",
+      "text": "I don't need to brag, titty don't sag, she got some ass",
+      "intensity": 0.9
+    },
+    {
+      "start": 114.52,
+      "end": 117.18,
+      "speaker": "dg-lead",
+      "text": "Can't afford the bag, can't even afford the cash",
+      "intensity": 0.9
+    },
+    {
+      "start": 117.24,
+      "end": 119.94,
+      "speaker": "dg-lead",
+      "text": "Yeah, you beautiful baby, but you got more than that",
+      "intensity": 0.9
+    },
+    {
+      "start": 120,
+      "end": 122.4,
+      "speaker": "dg-lead",
+      "text": "Pretty hurts, come talk to me about Brazilians",
+      "intensity": 0.9
+    },
+    {
+      "start": 122.46,
+      "end": 125.14,
+      "speaker": "dg-lead",
+      "text": "Yeah, that wax, you thought you wanted to kill them",
+      "intensity": 0.9
+    },
+    {
+      "start": 125.2,
+      "end": 127.62,
+      "speaker": "dg-lead",
+      "text": "But now you walking round like you one in a million",
+      "intensity": 0.92
+    },
+    {
+      "start": 127.68,
+      "end": 130.56,
+      "speaker": "dg-lead",
+      "text": "He looking at me like he want some beautiful children",
+      "intensity": 0.92
+    },
+    {
+      "start": 132.02,
+      "end": 133.8,
+      "speaker": "dg-lead",
+      "text": "If they wasn't grilling before",
+      "intensity": 0.86
+    },
+    {
+      "start": 133.86,
+      "end": 135.66,
+      "speaker": "dg-lead",
+      "text": "They gonna be really mad when we hit the floor",
+      "intensity": 0.88
+    },
+    {
+      "start": 135.72,
+      "end": 137.32,
+      "speaker": "dg-lead",
+      "text": "It's a crime to be gorgeous",
+      "intensity": 0.92
+    },
+    {
+      "start": 137.38,
+      "end": 139.12,
+      "speaker": "dg-lead",
+      "text": "Between you and a million phones",
+      "intensity": 0.88
+    },
+    {
+      "start": 139.18,
+      "end": 141.14,
+      "speaker": "dg-lead",
+      "text": "They taking pictures like we hitting a pose",
+      "intensity": 0.88
+    },
+    {
+      "start": 141.2,
+      "end": 142.68,
+      "speaker": "dg-lead",
+      "text": "It's alright to be honest",
+      "intensity": 0.9
+    },
+    {
+      "start": 142.74,
+      "end": 144.54,
+      "speaker": "dg-lead",
+      "text": "Even when we sit in the dark",
+      "intensity": 0.88
+    },
+    {
+      "start": 144.6,
+      "end": 146.58,
+      "speaker": "dg-lead",
+      "text": "I feel the prettiest that you ever saw",
+      "intensity": 0.9
+    },
+    {
+      "start": 146.64,
+      "end": 148.22,
+      "speaker": "dg-lead",
+      "text": "Are your eyes even open?",
+      "intensity": 0.9
+    },
+    {
+      "start": 148.28,
+      "end": 149.96,
+      "speaker": "dg-lead",
+      "text": "It ain't ever really our fault",
+      "intensity": 0.88
+    },
+    {
+      "start": 150.02,
+      "end": 151.94,
+      "speaker": "dg-lead",
+      "text": "We make a killing being so beautiful",
+      "intensity": 0.9
+    },
+    {
+      "start": 152,
+      "end": 153.9,
+      "speaker": "dg-lead",
+      "text": "It's a crime to be gorgeous",
+      "intensity": 0.94
+    },
+    {
+      "start": 154.7,
+      "end": 159.4,
+      "speaker": "dg-echo",
+      "text": "It's a crime, it's a crime to be gorgeous",
+      "intensity": 0.84
+    },
+    {
+      "start": 160.2,
+      "end": 164.9,
+      "speaker": "dg-echo",
+      "text": "It's a crime, it's a crime to be gorgeous",
+      "intensity": 0.86
+    },
+    {
+      "start": 165.7,
+      "end": 170.4,
+      "speaker": "dg-echo",
+      "text": "It's a crime, it's a crime to be gorgeous",
+      "intensity": 0.84
+    },
+    {
+      "start": 173.66,
+      "end": 176.8,
+      "speaker": "dg-lead",
+      "text": "She like white gold in her hardware",
+      "intensity": 0.88
+    },
+    {
+      "start": 176.88,
+      "end": 179.95,
+      "speaker": "dg-lead",
+      "text": "With an install and a long nail",
+      "intensity": 0.88
+    },
+    {
+      "start": 180.02,
+      "end": 182.6,
+      "speaker": "dg-lead",
+      "text": "With an eyelash and it's glued on",
+      "intensity": 0.88
+    },
+    {
+      "start": 182.92,
+      "end": 185.65,
+      "speaker": "dg-lead",
+      "text": "She ain't so Christian in Louboutins",
+      "intensity": 0.9
+    },
+    {
+      "start": 185.72,
+      "end": 188.46,
+      "speaker": "dg-lead",
+      "text": "And now she got contacts with no close friends",
+      "intensity": 0.9
+    },
+    {
+      "start": 188.52,
+      "end": 190.88,
+      "speaker": "dg-lead",
+      "text": "And she lasered all that hair off",
+      "intensity": 0.9
+    },
+    {
+      "start": 190.94,
+      "end": 193.26,
+      "speaker": "dg-lead",
+      "text": "And she thank God for that Em sculpt",
+      "intensity": 0.9
+    },
+    {
+      "start": 193.32,
+      "end": 196.18,
+      "speaker": "dg-lead",
+      "text": "She wanna be chic when it's inspired by heroin",
+      "intensity": 0.9
+    },
+    {
+      "start": 196.24,
+      "end": 199,
+      "speaker": "dg-lead",
+      "text": "Ah, there you go with that smile again",
+      "intensity": 0.92
+    },
+    {
+      "start": 199.06,
+      "end": 201.84,
+      "speaker": "dg-lead",
+      "text": "She stay in school, but she mostly eat the collagen",
+      "intensity": 0.9
+    },
+    {
+      "start": 201.9,
+      "end": 204.48,
+      "speaker": "dg-lead",
+      "text": "Oh, now you on Botox again",
+      "intensity": 0.92
+    },
+    {
+      "start": 204.54,
+      "end": 207.24,
+      "speaker": "dg-lead",
+      "text": "You oughta cut off all them kids, stay toxic, friend",
+      "intensity": 0.92
+    },
+    {
+      "start": 207.3,
+      "end": 209.84,
+      "speaker": "dg-lead",
+      "text": "Ah, you getting showered in compliments",
+      "intensity": 0.92
+    },
+    {
+      "start": 209.9,
+      "end": 212.62,
+      "speaker": "dg-lead",
+      "text": "Ah, you feeling power, but not within",
+      "intensity": 0.92
+    },
+    {
+      "start": 212.68,
+      "end": 215.12,
+      "speaker": "dg-lead",
+      "text": "I mean, I only got myself to appeal to",
+      "intensity": 0.92
+    },
+    {
+      "start": 215.18,
+      "end": 217,
+      "speaker": "dg-lead",
+      "text": "They got they nose up, judging me",
+      "intensity": 0.92
+    },
+    {
+      "start": 217.06,
+      "end": 219.4,
+      "speaker": "dg-lead",
+      "text": "But ain't all of them real, so",
+      "intensity": 0.92
+    },
+    {
+      "start": 219.52,
+      "end": 221.28,
+      "speaker": "dg-lead",
+      "text": "If they wasn't grilling before",
+      "intensity": 0.9
+    },
+    {
+      "start": 221.34,
+      "end": 223.14,
+      "speaker": "dg-lead",
+      "text": "They gonna be really mad when we hit the floor",
+      "intensity": 0.92
+    },
+    {
+      "start": 223.2,
+      "end": 224.8,
+      "speaker": "dg-lead",
+      "text": "It's a crime to be gorgeous",
+      "intensity": 0.96
+    },
+    {
+      "start": 224.86,
+      "end": 226.6,
+      "speaker": "dg-lead",
+      "text": "Between you and a million phones",
+      "intensity": 0.92
+    },
+    {
+      "start": 226.66,
+      "end": 228.62,
+      "speaker": "dg-lead",
+      "text": "They taking pictures like we hitting a pose",
+      "intensity": 0.92
+    },
+    {
+      "start": 228.68,
+      "end": 230.26,
+      "speaker": "dg-lead",
+      "text": "It's alright to be honest",
+      "intensity": 0.94
+    },
+    {
+      "start": 230.32,
+      "end": 232.1,
+      "speaker": "dg-lead",
+      "text": "Even when we sit in the dark",
+      "intensity": 0.92
+    },
+    {
+      "start": 232.16,
+      "end": 234.14,
+      "speaker": "dg-lead",
+      "text": "I feel the prettiest that you ever saw",
+      "intensity": 0.94
+    },
+    {
+      "start": 234.2,
+      "end": 235.78,
+      "speaker": "dg-lead",
+      "text": "Are your eyes even open?",
+      "intensity": 0.94
+    },
+    {
+      "start": 235.84,
+      "end": 237.54,
+      "speaker": "dg-lead",
+      "text": "It ain't ever really our fault",
+      "intensity": 0.92
+    },
+    {
+      "start": 237.6,
+      "end": 239.46,
+      "speaker": "dg-lead",
+      "text": "We make a killing being so beautiful",
+      "intensity": 0.94
+    },
+    {
+      "start": 239.52,
+      "end": 241.35,
+      "speaker": "dg-lead",
+      "text": "It's a crime to be gorgeous",
+      "intensity": 0.98
+    },
+    {
+      "start": 242.1,
+      "end": 244.4,
+      "speaker": "dg-lead",
+      "text": "Come on, it's a crime to be gorgeous",
+      "intensity": 0.9
+    },
+    {
+      "start": 246.5,
+      "end": 249.6,
+      "speaker": "dg-lead",
+      "text": "It's a crime to be gorgeous",
+      "intensity": 0.86
+    },
+    {
+      "start": 252.2,
+      "end": 256.4,
+      "speaker": "dg-lead",
+      "text": "It's a crime to be gorgeous, always",
+      "intensity": 0.84
+    },
+    {
+      "start": 257.4,
+      "end": 260.9,
+      "speaker": "dg-lead",
+      "text": "It's a crime to be gorgeous, always",
+      "intensity": 0.8
+    },
+    {
+      "start": 261.2,
+      "end": 263.6,
+      "speaker": "dg-lead",
+      "text": "It's a crime to be gorgeous, always",
+      "intensity": 0.76
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "dg-cyclo"
+    },
+    {
+      "time": 10.4,
+      "view": "dg-cyclo"
+    },
+    {
+      "time": 22.9,
+      "view": "dg-gold"
+    },
+    {
+      "time": 28.2,
+      "view": "dg-lead"
+    },
+    {
+      "time": 32,
+      "view": "dg-gold"
+    },
+    {
+      "time": 37.5,
+      "view": "dg-lead"
+    },
+    {
+      "time": 42.8,
+      "view": "dg-cyclo"
+    },
+    {
+      "time": 48.3,
+      "view": "dg-grid"
+    },
+    {
+      "time": 54,
+      "view": "dg-echo"
+    },
+    {
+      "time": 59.3,
+      "view": "dg-grid"
+    },
+    {
+      "time": 62.4,
+      "view": "dg-blue"
+    },
+    {
+      "time": 75.5,
+      "view": "dg-amber"
+    },
+    {
+      "time": 83.5,
+      "view": "dg-blue"
+    },
+    {
+      "time": 87.8,
+      "view": "dg-grid"
+    },
+    {
+      "time": 92,
+      "view": "dg-amber"
+    },
+    {
+      "time": 96.5,
+      "view": "dg-cyclo"
+    },
+    {
+      "time": 100,
+      "view": "dg-gold"
+    },
+    {
+      "time": 104,
+      "view": "dg-grid"
+    },
+    {
+      "time": 111.5,
+      "view": "dg-gold"
+    },
+    {
+      "time": 116,
+      "view": "dg-blue"
+    },
+    {
+      "time": 120,
+      "view": "dg-cyclo"
+    },
+    {
+      "time": 127.6,
+      "view": "dg-grid"
+    },
+    {
+      "time": 132,
+      "view": "dg-cyclo"
+    },
+    {
+      "time": 138,
+      "view": "dg-lead"
+    },
+    {
+      "time": 144.5,
+      "view": "dg-cyclo"
+    },
+    {
+      "time": 151.5,
+      "view": "dg-gold"
+    },
+    {
+      "time": 155,
+      "view": "dg-amber"
+    },
+    {
+      "time": 163.5,
+      "view": "dg-blue"
+    },
+    {
+      "time": 167.5,
+      "view": "dg-plum"
+    },
+    {
+      "time": 171.5,
+      "view": "dg-amber"
+    },
+    {
+      "time": 175,
+      "view": "dg-noir"
+    },
+    {
+      "time": 184,
+      "view": "dg-noir"
+    },
+    {
+      "time": 195.5,
+      "view": "dg-cyclo"
+    },
+    {
+      "time": 204,
+      "view": "dg-cyclo"
+    },
+    {
+      "time": 211.5,
+      "view": "dg-noir"
+    },
+    {
+      "time": 215.5,
+      "view": "dg-gold"
+    },
+    {
+      "time": 219.5,
+      "view": "dg-amber"
+    },
+    {
+      "time": 224,
+      "view": "dg-grid"
+    },
+    {
+      "time": 228,
+      "view": "dg-cyclo"
+    },
+    {
+      "time": 232,
+      "view": "dg-plum"
+    },
+    {
+      "time": 239.5,
+      "view": "dg-grid"
+    },
+    {
+      "time": 244,
+      "view": "dg-blue"
+    },
+    {
+      "time": 248,
+      "view": "dg-noir"
+    },
+    {
+      "time": 254,
+      "view": "dg-blue"
+    },
+    {
+      "time": 259.5,
+      "view": "dg-grid"
+    }
+  ]
+}
