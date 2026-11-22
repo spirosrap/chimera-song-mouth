@@ -80,8 +80,10 @@ describe("the body", () => {
 });
 
 describe("the head on the body", () => {
-  const wear = () => {
-    const rig = loadRig(), model = new M.VoiceModel(M.BODIES.male, 48000), head = M.head.wearHead(rig, model);
+  /** the voices' bodies: the head is fitted to each (a child's has fewer rows under its mouth) */
+  const BODIES = ["male", "female", "child"] as const;
+  const wear = (body: (typeof BODIES)[number] = "male") => {
+    const rig = loadRig(), model = new M.VoiceModel(M.BODIES[body], 48000), head = M.head.wearHead(rig, model);
     return { rig, model, head };
   };
   /** the lips' cut: pairs of head points that lie together at rest (each upper lip point and its lower copy) */
@@ -100,8 +102,8 @@ describe("the head on the body", () => {
     return { base, out };
   };
 
-  test("the skin closes over the head: the only open edges are the lips' cut", () => {
-    const { rig } = wear(), open = openEdges(rig), pairs = lipPairs(rig);
+  test.each(BODIES)("the skin closes over the head: the only open edges are the lips' cut (%s)", (body) => {
+    const { rig } = wear(body), open = openEdges(rig), pairs = lipPairs(rig);
     expect(pairs.length).toBeGreaterThan(2);
     const cut = new Set(pairs.flat());
     // the cut runs between the mouth's corners, which both lips share: each edge has at least one cut point, none a body point
@@ -120,13 +122,24 @@ describe("the head on the body", () => {
     return d;
   };
 
-  test("the lips' cut lies on the lips the head draws: together at rest; apart, narrow or wide, with the head turned", () => {
-    const w = wear(), { rig } = w, pairs = lipPairs(rig);
+  /** a point's distance from a polyline of points */
+  const fromPoints = (p: THREE.Vector3, pts: THREE.Vector3[]) => {
+    const seg = new THREE.Line3(), q = new THREE.Vector3();
+    let d = Infinity;
+    for (let i = 0; i + 1 < pts.length; i++) d = Math.min(d, seg.set(pts[i], pts[i + 1]).closestPointToPoint(p, true, q).distanceTo(p));
+    return d;
+  };
+
+  test.each(BODIES)("the lips' cut lies on the lips the head draws: together at rest; apart, narrow or wide, with the head turned (%s)", (body) => {
+    const w = wear(body), { rig } = w, pairs = lipPairs(rig);
     const shut = frame(w, M.pose.neutral(), M.REST_ARTIC).out;
     for (const [u, l] of pairs) expect(at(shut, u).distanceTo(at(shut, l))).toBeLessThan(1e-3);
     // the cut's corners: its ends, which both lips share
     const cut = new Set(pairs.flat()), corners = [...new Set(openEdges(rig).flat())].filter((i) => !cut.has(i));
     expect(corners.length).toBe(2);
+    // each lip's side of the cut, corner to corner (at rest the cut runs across z)
+    const byZ = (ids: number[]) => ids.sort((i, j) => rig.rest[3 * i + 2] - rig.rest[3 * j + 2]);
+    const sides = [byZ([...corners, ...pairs.map(([u]) => u)]), byZ([...corners, ...pairs.map(([, l]) => l)])];
     const turned = M.pose.neutral();
     turned.neck.twist = 40;
     turned.neck.flex = 20;
@@ -145,6 +158,30 @@ describe("the head on the body", () => {
         // the cut's ends are the mouth's corners, however wide it is
         const ends = [new THREE.Vector3().fromArray(e.upper, 0), new THREE.Vector3().fromArray(e.upper, e.upper.length - 3)].map((c) => c.applyMatrix4(m));
         for (const c of corners) expect(Math.min(...ends.map((x) => x.distanceTo(at(out, c))))).toBeLessThan(0.01);
+        // and the drawn lips are near the cut's edges all along (straight between the grid's
+        // columns, so within a fraction of a column's width of the curve)
+        [e.upper, e.lower].forEach((line, k) => {
+          const edge = sides[k].map((i) => at(out, i));
+          for (let i = 0; i < line.length; i += 3) expect(fromPoints(new THREE.Vector3().fromArray(line, i).applyMatrix4(m), edge)).toBeLessThan(0.4);
+        });
+      }
+    }
+  });
+
+  test.each(BODIES)("the head's quads don't fold, the mouth wide open or pursed with the head bent and turned (%s)", (body) => {
+    const w = wear(body), { rig } = w, p = M.pose.neutral();
+    p.neck.flex = 40;
+    p.neck.twist = 60;
+    for (const a of [{ ...M.REST_ARTIC, jaw: 2.4, lipAp: 2.2, lipWidth: 1 }, { ...M.REST_ARTIC, jaw: 2.4, lipAp: 2.2, lipWidth: 0.05, lipProt: 1.4 }]) {
+      const { out } = frame(w, p, a);
+      for (let f = 0; f < rig.nq; f++) {
+        const q = [0, 1, 2, 3].map((j) => rig.quads[4 * f + j]);
+        if (q.every((i) => i < rig.bodyVertices)) continue;
+        // the two triangles the view draws (a b c, a c d) face the same way
+        const [A, B, C, D] = q.map((i) => at(out, i));
+        const n1 = new THREE.Vector3().crossVectors(B.clone().sub(A), C.clone().sub(A)), n2 = new THREE.Vector3().crossVectors(C.clone().sub(A), D.clone().sub(A));
+        if (n1.length() < 1e-6 || n2.length() < 1e-6) continue;
+        expect(n1.normalize().dot(n2.normalize())).toBeGreaterThan(0);
       }
     }
   });

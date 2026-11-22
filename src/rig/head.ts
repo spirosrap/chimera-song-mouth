@@ -364,7 +364,12 @@ export function wearHead(rig: Rig, model: VoiceModel, opts: { look?: Partial<Hea
   let J = 1;
   for (let j = 2; j < N / 4; j++) if (Math.abs(Math.abs(zOf(rm, j)) - zc) < Math.abs(Math.abs(zOf(rm, J)) - zc)) J = j;
   const { rows: MR, beyond: MB } = MOUTH;
-  if (rm - MR < 0 || rm + MR > R - 2) throw new Error(`the mouth's rows (${rm - MR} to ${rm + MR}) are off the head's (0 to ${R - 1})`);
+  // The lips' share fades over MOUTH.rows rows each way, and below the mouth it's gone by the first
+  // row over the rim (a small head has few rows there: a child's mouth is two up): that row
+  // still blends the neck's motion with the head's, and the lips' move on it folded the grid
+  // under the chin with the head turned.
+  const fadeUp = MR + 1, fadeDown = Math.min(MR + 1, rm);
+  if (rm < 1 || rm + MR > R - 2) throw new Error(`the mouth's row (${rm}) is too near the head's rim or crown (rows 0 to ${R - 1})`);
   const extra = 2 * J - 1, kept = count + extra;
   /** the lower lip's copy of the slit's point j (−J < j < J; rest numbering) */
   const lower = (j: number) => count + j + J - 1;
@@ -393,9 +398,9 @@ export function wearHead(rig: Rig, model: VoiceModel, opts: { look?: Partial<Hea
   for (let f = 4 * N * rm; f < 4 * N * (rm + 1); f++) quads[f] = cut.get(quads[f]) ?? quads[f];
   /** the points that take a share of the lips' move: where along the lips (0 to 1, −z to +z), which lip (−1 lower), how much */
   const lipShare: { v: number; s: number; lip: number; w: number }[] = [];
-  for (let r = rm - MR; r <= rm + MR; r++) {
+  for (let r = rm - fadeDown + 1; r < rm + fadeUp; r++) {
     for (let j = -J - MB; j <= J + MB; j++) {
-      const w = (1 - Math.abs(r - rm) / (MR + 1)) * (Math.abs(j) <= J ? 1 : 1 - (Math.abs(j) - J) / (MB + 1));
+      const w = (1 - Math.abs(r - rm) / (r < rm ? fadeDown : fadeUp)) * (Math.abs(j) <= J ? 1 : 1 - (Math.abs(j) - J) / (MB + 1));
       lipShare.push({ v: rv(r, j), s: along(j), lip: r < rm ? -1 : 1, w });
       if (r === rm && Math.abs(j) < J) lipShare.push({ v: lower(j), s: along(j), lip: -1, w });
     }
