@@ -52,7 +52,7 @@ const field = (name: string) => form.elements.namedItem(name) as HTMLSelectEleme
 for (const [name, keys] of [["pose", Object.keys(PRESETS)], ["look", Object.keys(HEAD_LOOKS)]] as const) field(name).append(...keys.map((k) => new Option(k, k)));
 field("look").value = HEAD_LOOK;
 field("look").onchange = () => {
-  head.setLook(HEAD_LOOKS[field("look").value as keyof typeof HEAD_LOOKS]);
+  head.setLook(HEAD_LOOKS[field("look").value]);
   view.toneChanged();
 };
 

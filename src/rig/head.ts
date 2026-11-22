@@ -72,13 +72,13 @@ export interface HeadLook {
  *  - `vocal`: the grid and bright features in front, the insides at half: for singing and speaking
  *  - `outside`: the grid and the brightest features, the insides faint: for acting, the voice aside
  */
-export const HEAD_LOOKS = {
+export const HEAD_LOOKS: Readonly<Record<string, HeadLook>> = {
   classic: { inner: 1, bone: 1, outline: 1, shell: 1, skin: 0.12, features: 1 },
   skinned: { inner: 1, bone: 1, outline: 1, shell: 0, skin: 0.55, features: 1.4 },
-  vocal: { inner: 0.55, bone: 0.5, outline: 0.6, shell: 0, skin: 1, features: 1.6 },
-  outside: { inner: 0.3, bone: 0.28, outline: 0.3, shell: 0, skin: 1, features: 1.8 },
-} as const satisfies Record<string, HeadLook>;
-export const HEAD_LOOK: keyof typeof HEAD_LOOKS = "vocal";
+  vocal: { inner: 0.9, bone: 0.88, outline: 0.95, shell: 0, skin: 1, features: 1.6 },
+  outside: { inner: 0.7, bone: 0.67, outline: 0.7, shell: 0, skin: 1, features: 1.8 },
+};
+export const HEAD_LOOK = "vocal";
 
 const smooth = (x: number) => {
   const t = Math.max(0, Math.min(1, x));
