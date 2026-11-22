@@ -54,14 +54,14 @@ test('cancel and hiding the tab reject partial videos and release the streams',a
   }finally{h.restore();}
  }
 });
-test('compact X lyrics preset draws song title, karaoke-highlighted lyrics, upcoming preview, and clips cleanly',async()=>{
+test('compact X lyrics preset draws song title, active karaoke-highlighted lyrics only, and clips cleanly',async()=>{
  const multi:SceneFile={...scene,duration:10,cues:[{start:1,end:4,speaker:'kaffee',text:'First lyric line',intensity:.8},{start:5,end:8,speaker:'jessep',text:'Second lyric line',intensity:.9}]};
  expect(VIDEO_PRESETS['x-lyrics']).toEqual({width:1920,height:1080,fps:30,videoBitsPerSecond:4_500_000,audioBitsPerSecond:160_000});
  const words:string[]=[];const ctx={fillRect(){},drawImage(){},fillText:(s:string)=>words.push(s),measureText:(s:string)=>({width:s.length*10})} as unknown as CanvasRenderingContext2D;
  drawLyricsVideoFrame(ctx,{} as CanvasImageSource,multi,0.2);
- expect(words).toContain('Scene');expect(words).toContain('NEXT LYRIC');expect(words).toContain('First lyric line');
+ expect(words).toContain('Scene');expect(words).not.toContain('NEXT LYRIC');expect(words).not.toContain('First lyric line');
  words.length=0;drawLyricsVideoFrame(ctx,{} as CanvasImageSource,multi,2.5);
- expect(words).toContain('COUNSEL');expect(words).toContain('First');expect(words).toContain('lyric');expect(words).toContain('line');expect(words).toContain('Second lyric line');
+ expect(words).toContain('COUNSEL');expect(words).toContain('First');expect(words).toContain('lyric');expect(words).toContain('line');expect(words).not.toContain('Second lyric line');
  const h=harness();try{
   const promise=recordSceneVideo(h.stage,multi,h.transport,()=>{},new AbortController().signal,{preset:'x-lyrics',startTime:1,endTime:4});await ready();
   expect(h.starts).toEqual([1]);

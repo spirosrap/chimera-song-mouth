@@ -67,7 +67,7 @@ export function drawVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasImageSo
   lines.forEach((line,i)=>ctx.fillText(line,w/2,top+i*Math.round(34*s)));
 }
 
-/** Draws a share-ready 16:9 HD frame with song title header, live word-highlighted lyrics, upcoming preview, and progress bar. */
+/** Draws a share-ready 16:9 HD frame with song title header, clock, and live word-highlighted lyrics. */
 export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasImageSource,scene:SceneFile,time:number,w=1920,h=1080):void{
   const s=w/960;
   ctx.fillStyle='#000';ctx.fillRect(0,0,w,h);
@@ -98,36 +98,35 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
   ctx.fillStyle='rgba(214,183,134,0.88)';
   ctx.fillText(`CHIMERA · ${fmtClock(time)} / ${fmtClock(scene.duration)}`,w-Math.round(24*s),Math.round(24*s));
 
-  // Bottom cinema gradient for live lyrics deck
-  const deckH=Math.round(158*s),fadeH=Math.round(36*s);
-  if(typeof ctx.createLinearGradient==='function'){
-    const botGrad=ctx.createLinearGradient(0,h-deckH-fadeH,0,h);
-    botGrad.addColorStop(0,'rgba(8,6,5,0)');
-    botGrad.addColorStop(0.28,'rgba(8,6,5,0.78)');
-    botGrad.addColorStop(1,'rgba(6,5,4,0.95)');
-    ctx.fillStyle=botGrad;
-  }else{
-    ctx.fillStyle='rgba(8,6,5,0.88)';
-  }
-  ctx.fillRect(0,h-deckH-fadeH,w,deckH+fadeH);
-
   const cue=sceneCue(scene,time);
-  const next=nextSceneCue(scene,time,cue);
   const maxW=w-Math.round(88*s);
 
   if(cue){
+    // Bottom cinema gradient for active lyrics only (clean stage during instrumental breaks)
+    const deckH=Math.round(134*s),fadeH=Math.round(36*s);
+    if(typeof ctx.createLinearGradient==='function'){
+      const botGrad=ctx.createLinearGradient(0,h-deckH-fadeH,0,h);
+      botGrad.addColorStop(0,'rgba(8,6,5,0)');
+      botGrad.addColorStop(0.28,'rgba(8,6,5,0.78)');
+      botGrad.addColorStop(1,'rgba(6,5,4,0.95)');
+      ctx.fillStyle=botGrad;
+    }else{
+      ctx.fillStyle='rgba(8,6,5,0.88)';
+    }
+    ctx.fillRect(0,h-deckH-fadeH,w,deckH+fadeH);
+
     const name=scene.characters.find(c=>c.id===cue.speaker)?.name??'';
     ctx.textAlign='center';
     ctx.font=`600 ${Math.round(12*s)}px Archivo, sans-serif`;
     ctx.fillStyle='#e2be82';
-    ctx.fillText(name.toUpperCase(),w/2,h-Math.round(126*s));
+    ctx.fillText(name.toUpperCase(),w/2,h-Math.round(104*s));
 
     ctx.font=`600 ${Math.round(24*s)}px Archivo, sans-serif`;
     const lines=subtitleLines(cue.text,maxW,txt=>ctx.measureText(txt).width).slice(0,2);
     const allWords=lines.flatMap(l=>l.split(/\s+/).filter(Boolean));
     const progress=Math.max(0,Math.min(1,(time-cue.start)/Math.max(0.05,cue.end-cue.start)));
     const litCount=Math.max(1,Math.ceil(progress*allWords.length));
-    const lineStartY=lines.length===1?h-Math.round(82*s):h-Math.round(95*s);
+    const lineStartY=lines.length===1?h-Math.round(58*s):h-Math.round(72*s);
 
     let wordIdx=0;
     ctx.textAlign='left';
@@ -147,32 +146,7 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
         wordIdx++;
       }
     }
-
-    if(next){
-      ctx.textAlign='center';
-      ctx.font=`400 ${Math.round(14*s)}px Archivo, sans-serif`;
-      ctx.fillStyle='rgba(232,220,202,0.58)';
-      const preview=subtitleLines(next.text,maxW,txt=>ctx.measureText(txt).width)[0]??next.text;
-      ctx.fillText(preview,w/2,h-Math.round(32*s));
-    }
-  }else if(next){
-    ctx.textAlign='center';
-    ctx.font=`500 ${Math.round(12*s)}px Archivo, sans-serif`;
-    ctx.fillStyle='rgba(214,183,134,0.75)';
-    ctx.fillText('NEXT LYRIC',w/2,h-Math.round(92*s));
-    ctx.font=`500 ${Math.round(18*s)}px Archivo, sans-serif`;
-    ctx.fillStyle='rgba(244,236,222,0.72)';
-    const preview=subtitleLines(next.text,maxW,txt=>ctx.measureText(txt).width)[0]??next.text;
-    ctx.fillText(preview,w/2,h-Math.round(60*s));
   }
-
-  // Bottom progress bar
-  const barH=Math.max(4,Math.round(4*s));
-  ctx.fillStyle='rgba(255,255,255,0.16)';
-  ctx.fillRect(0,h-barH,w,barH);
-  const ratio=scene.duration>0?Math.max(0,Math.min(1,time/scene.duration)):0;
-  ctx.fillStyle='#e2be82';
-  ctx.fillRect(0,h-barH,Math.round(w*ratio),barH);
 }
 
 /** Instant event-loop yield (MessageChannel isn't throttled to 1s in background tabs like setTimeout). */

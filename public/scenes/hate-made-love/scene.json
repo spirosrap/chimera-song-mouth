@@ -1,0 +1,523 @@
+{
+  "setting": "hatemadelove",
+  "title": "Ariana Grande · hate that i made you love me",
+  "description": "The complete 5:00 official music video: Hitchcockian yellow title card, moonlit desert grave, green-lit underground bunker, burning car crash, living room fireplace inferno, neon Bunny Hop diner, and amber dawn grave reversal.",
+  "duration": 300.141134,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "ht-ariana",
+      "name": "Ariana Grande",
+      "role": "Lead soprano voice",
+      "tele": "ht-ariana.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "ht-harmony",
+      "name": "Ariana Harmonies",
+      "role": "Chorus & bridge harmonies",
+      "tele": "ht-harmony.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 52.68,
+      "end": 55.85,
+      "speaker": "ht-ariana",
+      "text": "I can't tell you why",
+      "intensity": 0.68
+    },
+    {
+      "start": 56.25,
+      "end": 58.48,
+      "speaker": "ht-ariana",
+      "text": "But something inside",
+      "intensity": 0.72
+    },
+    {
+      "start": 58.55,
+      "end": 61.15,
+      "speaker": "ht-ariana",
+      "text": "Is dancing with fire",
+      "intensity": 0.75
+    },
+    {
+      "start": 61.35,
+      "end": 65.8,
+      "speaker": "ht-ariana",
+      "text": "Eyes lit like the sky",
+      "intensity": 0.78
+    },
+    {
+      "start": 65.85,
+      "end": 68.62,
+      "speaker": "ht-ariana",
+      "text": "Turned tears into diamonds",
+      "intensity": 0.78
+    },
+    {
+      "start": 68.68,
+      "end": 70.65,
+      "speaker": "ht-ariana",
+      "text": "Got good at goodbyes",
+      "intensity": 0.8
+    },
+    {
+      "start": 71,
+      "end": 74.98,
+      "speaker": "ht-ariana",
+      "text": "Just know that I will find my way from you",
+      "intensity": 0.82
+    },
+    {
+      "start": 75.18,
+      "end": 77.36,
+      "speaker": "ht-ariana",
+      "text": "Like flowers from a tomb",
+      "intensity": 0.82
+    },
+    {
+      "start": 77.42,
+      "end": 81.16,
+      "speaker": "ht-ariana",
+      "text": "While you decide who you are",
+      "intensity": 0.84
+    },
+    {
+      "start": 81.22,
+      "end": 83.75,
+      "speaker": "ht-ariana",
+      "text": "And I can see right through",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.58,
+      "end": 87.36,
+      "speaker": "ht-ariana",
+      "text": "Like shadows on the moon",
+      "intensity": 0.84
+    },
+    {
+      "start": 87.42,
+      "end": 91.1,
+      "speaker": "ht-ariana",
+      "text": "And it's all bad news",
+      "intensity": 0.88
+    },
+    {
+      "start": 105.98,
+      "end": 108.62,
+      "speaker": "ht-ariana",
+      "text": "Yeah, I, I, I",
+      "intensity": 0.9
+    },
+    {
+      "start": 108.68,
+      "end": 112.1,
+      "speaker": "ht-ariana",
+      "text": "Hate that I made you love me",
+      "intensity": 0.94
+    },
+    {
+      "start": 113.14,
+      "end": 116.92,
+      "speaker": "ht-ariana",
+      "text": "Sorry if I made me your type",
+      "intensity": 0.9
+    },
+    {
+      "start": 116.98,
+      "end": 122.25,
+      "speaker": "ht-ariana",
+      "text": "Yeah, I, I hate that I made you love me",
+      "intensity": 0.95
+    },
+    {
+      "start": 122.52,
+      "end": 126.18,
+      "speaker": "ht-ariana",
+      "text": "'Cause I barely tried",
+      "intensity": 0.9
+    },
+    {
+      "start": 126.24,
+      "end": 128.58,
+      "speaker": "ht-ariana",
+      "text": "Yeah, I, I, I",
+      "intensity": 0.88
+    },
+    {
+      "start": 128.68,
+      "end": 131.42,
+      "speaker": "ht-ariana",
+      "text": "What's happening now?",
+      "intensity": 0.74
+    },
+    {
+      "start": 131.48,
+      "end": 134.1,
+      "speaker": "ht-ariana",
+      "text": "You studied my crown",
+      "intensity": 0.76
+    },
+    {
+      "start": 134.16,
+      "end": 136.85,
+      "speaker": "ht-ariana",
+      "text": "And borrowed my body",
+      "intensity": 0.78
+    },
+    {
+      "start": 138.98,
+      "end": 141.44,
+      "speaker": "ht-ariana",
+      "text": "Warm, kissed by the sun",
+      "intensity": 0.78
+    },
+    {
+      "start": 141.5,
+      "end": 144.02,
+      "speaker": "ht-ariana",
+      "text": "Then cold like the wind",
+      "intensity": 0.78
+    },
+    {
+      "start": 144.08,
+      "end": 146.65,
+      "speaker": "ht-ariana",
+      "text": "A bee stuck in honey",
+      "intensity": 0.8
+    },
+    {
+      "start": 146.72,
+      "end": 150.32,
+      "speaker": "ht-ariana",
+      "text": "Know that I will find my way from you",
+      "intensity": 0.83
+    },
+    {
+      "start": 150.38,
+      "end": 152.96,
+      "speaker": "ht-ariana",
+      "text": "I guess it's kinda cute",
+      "intensity": 0.83
+    },
+    {
+      "start": 153.02,
+      "end": 156.86,
+      "speaker": "ht-ariana",
+      "text": "How you like me where you are",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.92,
+      "end": 159.35,
+      "speaker": "ht-ariana",
+      "text": "But I can see right through",
+      "intensity": 0.86
+    },
+    {
+      "start": 160.28,
+      "end": 162.92,
+      "speaker": "ht-ariana",
+      "text": "Just don't eclipse the moon",
+      "intensity": 0.86
+    },
+    {
+      "start": 162.98,
+      "end": 166.35,
+      "speaker": "ht-ariana",
+      "text": "'Cause it's all bad news",
+      "intensity": 0.88
+    },
+    {
+      "start": 166.42,
+      "end": 168.52,
+      "speaker": "ht-ariana",
+      "text": "Yeah, I, I, I",
+      "intensity": 0.91
+    },
+    {
+      "start": 168.58,
+      "end": 172.12,
+      "speaker": "ht-ariana",
+      "text": "Hate that I made you love me",
+      "intensity": 0.95
+    },
+    {
+      "start": 173.06,
+      "end": 176.78,
+      "speaker": "ht-ariana",
+      "text": "Sorry if I made me your type",
+      "intensity": 0.91
+    },
+    {
+      "start": 176.84,
+      "end": 182.06,
+      "speaker": "ht-ariana",
+      "text": "Yeah, I, I hate that I made you love me",
+      "intensity": 0.95
+    },
+    {
+      "start": 182.12,
+      "end": 186.18,
+      "speaker": "ht-ariana",
+      "text": "'Cause I barely tried",
+      "intensity": 0.91
+    },
+    {
+      "start": 186.24,
+      "end": 188.6,
+      "speaker": "ht-ariana",
+      "text": "Yeah, I, I, I",
+      "intensity": 0.88
+    },
+    {
+      "start": 191.16,
+      "end": 194.55,
+      "speaker": "ht-ariana",
+      "text": "I've held your projections when you've felt so insecure",
+      "intensity": 0.86
+    },
+    {
+      "start": 195.25,
+      "end": 197.24,
+      "speaker": "ht-ariana",
+      "text": "Tell me, why is it this way?",
+      "intensity": 0.88
+    },
+    {
+      "start": 197.3,
+      "end": 199.85,
+      "speaker": "ht-ariana",
+      "text": "Why you so hate to see women endure?",
+      "intensity": 0.9
+    },
+    {
+      "start": 200.52,
+      "end": 205.05,
+      "speaker": "ht-ariana",
+      "text": "Is it really my fault you all gave me your hearts of your own accord?",
+      "intensity": 0.92
+    },
+    {
+      "start": 205.14,
+      "end": 209.56,
+      "speaker": "ht-ariana",
+      "text": "I don't really think so",
+      "intensity": 0.96
+    },
+    {
+      "start": 209.64,
+      "end": 211.18,
+      "speaker": "ht-ariana",
+      "text": "I, I, I",
+      "intensity": 0.92
+    },
+    {
+      "start": 211.24,
+      "end": 214.55,
+      "speaker": "ht-ariana",
+      "text": "Hate that I made you love me",
+      "intensity": 0.96
+    },
+    {
+      "start": 215.52,
+      "end": 219.4,
+      "speaker": "ht-ariana",
+      "text": "Sorry if I made me your type",
+      "intensity": 0.92
+    },
+    {
+      "start": 219.46,
+      "end": 225.04,
+      "speaker": "ht-ariana",
+      "text": "Yeah, I, I hate that I made you love me",
+      "intensity": 0.96
+    },
+    {
+      "start": 225.1,
+      "end": 228.54,
+      "speaker": "ht-ariana",
+      "text": "'Cause I barely tried",
+      "intensity": 0.92
+    },
+    {
+      "start": 228.6,
+      "end": 231.14,
+      "speaker": "ht-ariana",
+      "text": "Yeah, I, I, I",
+      "intensity": 0.92
+    },
+    {
+      "start": 231.2,
+      "end": 234.55,
+      "speaker": "ht-ariana",
+      "text": "Hate that I made you love me",
+      "intensity": 0.97
+    },
+    {
+      "start": 235.62,
+      "end": 239.44,
+      "speaker": "ht-ariana",
+      "text": "Sorry if I made me your type",
+      "intensity": 0.93
+    },
+    {
+      "start": 239.5,
+      "end": 245.02,
+      "speaker": "ht-ariana",
+      "text": "Yeah, I, I hate that I made you love me",
+      "intensity": 0.97
+    },
+    {
+      "start": 245.08,
+      "end": 248.48,
+      "speaker": "ht-ariana",
+      "text": "'Cause I barely tried",
+      "intensity": 0.92
+    },
+    {
+      "start": 248.54,
+      "end": 251.35,
+      "speaker": "ht-ariana",
+      "text": "Yeah, I, I, I",
+      "intensity": 0.9
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "ht-title"
+    },
+    {
+      "time": 8,
+      "view": "ht-grave"
+    },
+    {
+      "time": 51,
+      "view": "ht-bunker"
+    },
+    {
+      "time": 56,
+      "view": "ht-ariana"
+    },
+    {
+      "time": 60,
+      "view": "ht-bunker"
+    },
+    {
+      "time": 65,
+      "view": "ht-car"
+    },
+    {
+      "time": 78,
+      "view": "ht-ariana"
+    },
+    {
+      "time": 83,
+      "view": "ht-car"
+    },
+    {
+      "time": 92,
+      "view": "ht-crash"
+    },
+    {
+      "time": 106,
+      "view": "ht-ariana"
+    },
+    {
+      "time": 112,
+      "view": "ht-crash"
+    },
+    {
+      "time": 118,
+      "view": "ht-ariana"
+    },
+    {
+      "time": 122,
+      "view": "ht-crash"
+    },
+    {
+      "time": 128,
+      "view": "ht-notebooks"
+    },
+    {
+      "time": 138,
+      "view": "ht-bunker"
+    },
+    {
+      "time": 146,
+      "view": "ht-notebooks"
+    },
+    {
+      "time": 154,
+      "view": "ht-living"
+    },
+    {
+      "time": 166,
+      "view": "ht-ariana"
+    },
+    {
+      "time": 172,
+      "view": "ht-living"
+    },
+    {
+      "time": 180,
+      "view": "ht-ariana"
+    },
+    {
+      "time": 186,
+      "view": "ht-diner"
+    },
+    {
+      "time": 194,
+      "view": "ht-counter"
+    },
+    {
+      "time": 205,
+      "view": "ht-harmony"
+    },
+    {
+      "time": 210,
+      "view": "ht-counter"
+    },
+    {
+      "time": 218,
+      "view": "ht-ariana"
+    },
+    {
+      "time": 224,
+      "view": "ht-counter"
+    },
+    {
+      "time": 232,
+      "view": "ht-harmony"
+    },
+    {
+      "time": 239,
+      "view": "ht-counter"
+    },
+    {
+      "time": 245,
+      "view": "ht-ariana"
+    },
+    {
+      "time": 252,
+      "view": "ht-dawn"
+    },
+    {
+      "time": 274,
+      "view": "ht-bunker"
+    },
+    {
+      "time": 280,
+      "view": "ht-dawn"
+    },
+    {
+      "time": 295,
+      "view": "ht-title"
+    }
+  ]
+}

@@ -2957,6 +2957,36 @@
       "sha256": "5536c80207f0106103e558ff4faab5314ccb6386988d451d5c6c4bb97d69cbc6"
     },
     {
+      "path": "public/scenes/hate-made-love/backing.mp3",
+      "bytes": 7204823,
+      "sha256": "10abf3b4e90b68dd5ebecca00e20eb9b3be897f7eb1b6a3585dd69fbb3cdb794"
+    },
+    {
+      "path": "public/scenes/hate-made-love/ht-ariana.tele.gz",
+      "bytes": 2311461,
+      "sha256": "6c71bef296085c4a1aa17810c226f885e1cf4cdf6fe260b493649dcdbdbada7d"
+    },
+    {
+      "path": "public/scenes/hate-made-love/ht-harmony.tele.gz",
+      "bytes": 1318412,
+      "sha256": "c536e426a2053eac84029ff1b9f27d8b107e0d3e1f0055b3d7b804881b2d549c"
+    },
+    {
+      "path": "public/scenes/hate-made-love/mix.mp3",
+      "bytes": 9606188,
+      "sha256": "b68d9ee95c89fdae3b262a46d9a39c5ac07a79e4effe442e2cdaf859aec411b9"
+    },
+    {
+      "path": "public/scenes/hate-made-love/performance.json",
+      "bytes": 1122172,
+      "sha256": "cc68bbba154fec2988fea9a0e9fdc1b8ba672f7ace050dc7aa264112a12ae079"
+    },
+    {
+      "path": "public/scenes/hate-made-love/scene.json",
+      "bytes": 10702,
+      "sha256": "9e42a1e1ab6a5fc4f9e878ed994088c340f396ad5c041542179ebe4d0de3eaaf"
+    },
+    {
       "path": "public/scenes/hello/backing.mp3",
       "bytes": 10449452,
       "sha256": "fa3d45b992f55e2f4e2588492422cbed009cdcda1b9bd997d29dd78c77be3b41"
