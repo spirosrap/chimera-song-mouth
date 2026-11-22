@@ -14,7 +14,7 @@ Based on [Jameson Hodge’s CHIMERA](https://github.com/jamesondh/chimera-vocal-
 
 ## The original project’s vision & scope
 
-From upstream’s README. It governs the engine and the single-mouth app. This edition deliberately goes beyond points 6 and 7: it tracks the prepared song and scene media the owner asked for (see [MEDIA-RIGHTS.md](MEDIA-RIGHTS.md)) and stages multi-voice scenes.
+From upstream’s README. It governs the engine and the single-mouth app. This edition deliberately goes beyond points 6 and 8: it tracks the prepared song and scene media the owner asked for (see [MEDIA-RIGHTS.md](MEDIA-RIGHTS.md)) and stages multi-voice scenes.
 
 1. **One instrument**: a physically modeled voice (lungs, vocal folds, throat, mouth). No
    samples, no neural audio.
@@ -28,7 +28,9 @@ From upstream’s README. It governs the engine and the single-mouth app. This e
    native speaker's check and must leave English unchanged.
 5. **The design language (the vector display) is settled**; the look within it can still evolve.
 6. **Nothing copyrighted in git**; MIT; a deterministic, real-time-safe engine.
-7. **Not now**: a DAW or sequencer, a light theme, multi-voice dialogue, translating the
+7. **The 3D head can be worn by a body** ([docs/rig.md](docs/rig.md)), for the videos people
+   make with the voice: a small library, not animation software (no timeline, no renderer).
+8. **Not now**: a DAW or sequencer, a light theme, multi-voice dialogue, translating the
    interface (the voice speaks and sings many languages; the labels stay in English).
 
 ## Run locally — Bun only
@@ -91,7 +93,7 @@ Original source recordings from the Music/Videos folders, temporary processing f
 
 ## License and credits
 
-The software retains the upstream [MIT license](LICENSE) and Jameson Hodge’s copyright notice. Included third-party fonts and dictionary retain their own license files. Song and movie material is separately credited and is not relicensed as MIT; see [MEDIA-RIGHTS.md](MEDIA-RIGHTS.md).
+The software retains the upstream [MIT license](LICENSE) and Jameson Hodge’s copyright notice. Included third-party fonts and dictionary retain their own license files. The body rig’s mesh (`src/rig/body.rig.bin`) is CC0, from MakeHuman and MPFB2; see [docs/rig.md](docs/rig.md#provenance). Song and movie material is separately credited and is not relicensed as MIT; see [MEDIA-RIGHTS.md](MEDIA-RIGHTS.md).
 
 ## Rodehihi — Δεν ξανακάνω φυλακή
 

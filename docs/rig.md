@@ -1,0 +1,97 @@
+# The body rig
+
+A body for the 3D head to wear, for people (and agents) making videos with the voice: the app's
+own head (`src/ui/render/anatomy3d.ts`) drawn live on a posable low-poly body, its face moving as
+the voice does. It's a small library, not an animation tool: there's no timeline and no renderer
+of its own. You pose it, skin it and draw it in your own three.js scene, frame by frame.
+
+Try it: `bun run dev`, then `/rig.html` (pick a pose, open the mouth, pick how the head is drawn).
+
+## Files
+
+| | |
+|---|---|
+| `src/rig/rig.ts` | the rig: loading, posing by joint angles, skinning |
+| `src/rig/pose.ts` | the `Pose` type (anatomical angles), ranges of motion, presets |
+| `src/rig/head.ts` | `wearHead`: the head's skin grown from the neck, the head's lines on the head bone, the face moving |
+| `src/rig/view.ts` | the wireframe in CHIMERA's blue (and heat and weights views for finding faults) |
+| `src/rig/body.rig.bin` | the mesh, skeleton and weights (generated: `bun tools/rig/gen-body.ts`, never edited) |
+| `src/rig/demo.ts`, `rig.html` | the dev page (not in the app's build) |
+
+## Use
+
+```ts
+await initChimera();                                   // first: the head reads the engine's tables as it loads
+const { Rig } = await import("./src/rig/rig.ts");      // …and the rest, imported after it
+const rig = await Rig.load(rigUrl);                    // body.rig.bin
+const model = new VoiceModel(PRESETS.male, 48000);     // yours to keep (and dispose) for the rig's life
+const head = wearHead(rig, model);                     // before the view: it adds the head's skin to the mesh
+const view = new RigView(rig);
+scene.add(view.group, head.mount);                     // under the same parent
+renderer.outputColorSpace = THREE.LinearSRGBColorSpace; // the head's colours are the app's display values
+
+// every frame
+rig.pose(pose({ arms: { R: { raise: 90, elbow: 40 } }, neck: { twist: 30 } }));
+rig.skin(skinned);                                     // centres of rotation; rig.skin(out, "lbs") for plain blending
+head.update(camera, artic, tele, dt);                  // the voice now: its articulation, its telemetry (or null)
+head.face(skinned, view.posed);                        // the jaw, cheeks and lips on top
+view.update();
+```
+
+`artic` and `tele` come from wherever the voice runs: the live worklet's telemetry messages
+(`VoiceModel.articFromArray(msg.t.artic)`), or a recording replayed with `TeleTrack`
+(`chimera render notes … --tele voice.tele`, `src/show/tele.ts`). A different body (a child's
+voice, say) is a new rig and a new head: the head's skin is fitted to the model once.
+
+## How it works
+
+- **Body:** MakeHuman's CC0 low-poly body (proxy741, hand-laid loops), on MPFB2's Rigify human
+  skeleton and weights: 33 bones, each limb bone split in two for twist, and Rigify's helpers
+  (the shoulder's cap and the hip turn half way with the limb; the elbow and knee swell as they
+  bend).
+- **Poses** are angles as an anatomist names them, from anatomical zero (standing, arms
+  hanging, thumbs forward). The shoulder is the ISB "globe": `raise`, `plane` (0 out to the side,
+  90 forward) and `rotate`. Left and right take the same angles; the rig mirrors them. The rig
+  adds what bodies do on their own: the collarbone rises about 10° as the arm goes overhead, the
+  arm turns out as it rises to the side, the pelvis rolls back past about 55° of hip flexion,
+  twist is shared along each limb, and a head turn is spread up the whole neck.
+- **Skinning:** optimised centres of rotation (Le & Hodgins 2016), on the CPU: no candy-wrapper
+  twist, no bulge. Plain linear blending is there too (what other tools do).
+- **Head:** a quad grid grown from the neck's rim over the head's own surface (`skinAt`), closed
+  by a patch over the crown and run on over the mouth, square for square. It's cut open along
+  the lips' line, as wide as the mouth can spread; each frame the cut follows the lips the head
+  draws (`lipEdges`), and the jaw and cheeks carry the rest of the face (`skinNow`). The head's
+  own lines (eyes, nose, lips, the vocal tract inside) are drawn by Anatomy3D on the head bone,
+  with `drawing.mounted` (the body turns the head) and the lip patch's own skin lines left out.
+- **Looks** (`HEAD_LOOKS`): `vocal` (the default: the grid and the face in front, the insides at
+  half, for singing and speaking), `outside` (the insides faint, for acting), `skinned` (the
+  app's insides at full under a half-bright grid) and `classic` (the app's head as it draws
+  itself).
+
+## Frames
+
+Body cm: x forward, y up, z out of the body's right side. The skeleton's bind pose is the mesh's
+(an A pose: arms out and down about 40°). Each bone has a parent (`rig.bones[i].parent`), its
+rest joint `rig.H[i]`, and after `pose` its turn from rest `rig.S[i]` and joint `rig.P[i]`
+(x' = S (x − H) + P). The head is drawn in its own cm, `head.s` times larger than the body.
+
+## Checks
+
+- `bun test tests/rig.test.ts` (part of `bun run test`): the mesh's open edges, skinning at
+  rest, anatomical zero, the lips' cut closing and opening with the drawn lips, and the face's
+  motion staying off the crown and the rim.
+- `/rig.html`: look at it. A metric isn't the picture.
+
+## Provenance
+
+`body.rig.bin` is CC0: MakeHuman's base mesh, targets and proxies
+([makehuman](https://github.com/makehumancommunity/makehuman), `LICENSE.ASSETS.md`; the proxy
+from the CC0 system assets pack) and MPFB2's Rigify human rig and weights
+([mpfb2](https://github.com/makehumancommunity/mpfb2), `LICENSE.md`, assets). The generator pins
+each source by commit, or by hash where the source has no version.
+
+## Not yet
+
+Fingers (folded into the hand), dragging hands and feet (IK), importing motion from other tools
+(Mixamo, BVH, glTF), exporting the body (GLB). Deep bends (elbow or knee near 150°, a deep
+squat) still show some strain.
