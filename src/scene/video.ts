@@ -1,4 +1,3 @@
-import {ArrayBufferTarget,Muxer} from 'mp4-muxer';
 import {sceneCue,type SceneCue,type SceneFile} from './scene.ts';
 import type {Transport} from '../show/transport.ts';
 export interface StageCapture {draw(time:number):HTMLCanvasElement;release():void}
@@ -14,7 +13,7 @@ export interface VideoExportOptions {
 
 export const VIDEO_PRESETS:Record<VideoPreset,{width:number;height:number;fps:number;videoBitsPerSecond:number;audioBitsPerSecond:number}>={
   hd:{width:1280,height:720,fps:30,videoBitsPerSecond:5_000_000,audioBitsPerSecond:192_000},
-  // Compact 540p 24fps H.264/AAC MP4 (~12 MB/min) tuned for fast sharing on X with live lyrics.
+  // Compact 540p 24fps H.264 + AAC-LC MP4 (~12 MB/min) tuned for fast sharing on X with live lyrics.
   'x-lyrics':{width:960,height:540,fps:24,videoBitsPerSecond:1_500_000,audioBitsPerSecond:128_000},
 };
 
@@ -171,31 +170,6 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
   ctx.fillRect(0,h-4,Math.round(w*ratio),4);
 }
 
-interface OfflineCodecChoice {
-  videoCodec:string;
-  audioCodec:'mp4a.40.2'|'opus';
-  muxerAudioCodec:'aac'|'opus';
-}
-
-async function pickWebCodecsConfig(width:number,height:number,fps:number,videoBitrate:number,audioBitrate:number,sampleRate:number,channels:number):Promise<OfflineCodecChoice|null>{
-  if(typeof VideoEncoder==='undefined'||typeof AudioEncoder==='undefined'||typeof VideoFrame==='undefined'||typeof AudioData==='undefined')return null;
-  let videoCodec='';
-  for(const codec of ['avc1.640028','avc1.4d0028','avc1.42001f']){
-    try{
-      const sup=await VideoEncoder.isConfigSupported({codec,width,height,bitrate:videoBitrate,framerate:fps,avc:{format:'avc'}});
-      if(sup.supported){videoCodec=codec;break;}
-    }catch{ /* try next profile */ }
-  }
-  if(!videoCodec)return null;
-  for(const [audioCodec,muxerAudioCodec] of [['mp4a.40.2','aac'],['opus','opus']] as const){
-    try{
-      const sup=await AudioEncoder.isConfigSupported({codec:audioCodec,sampleRate,numberOfChannels:channels,bitrate:audioBitrate});
-      if(sup.supported)return {videoCodec,audioCodec,muxerAudioCodec};
-    }catch{ /* try next audio codec */ }
-  }
-  return null;
-}
-
 /** Instant event-loop yield (MessageChannel isn't throttled to 1s in background tabs like setTimeout). */
 function yieldImmediate():Promise<void>{
   if(typeof MessageChannel!=='undefined'){
@@ -208,7 +182,13 @@ function yieldImmediate():Promise<void>{
   return new Promise(resolve=>setTimeout(resolve,0));
 }
 
-/** Fast, silent, background-safe offline WebCodecs MP4 renderer (10x+ faster than real time). */
+let aacEncoderRegistered=false;
+
+/**
+ * Fast, silent, background-safe offline MP4 renderer using WebCodecs H.264 + AAC-LC.
+ * Automatically lazy-loads the WASM AAC-LC encoder on browsers (like Linux Brave/Chromium)
+ * that lack a built-in proprietary AAC AudioEncoder, guaranteeing an X-compatible H.264+AAC MP4.
+ */
 async function exportSceneVideoOffline(
   stage:SceneStage,
   scene:SceneFile,
@@ -218,47 +198,36 @@ async function exportSceneVideoOffline(
   end:number,
   onProgress:(elapsed:number)=>void,
   signal:AbortSignal,
-  codecs:OfflineCodecChoice,
-):Promise<VideoFile>{
+):Promise<VideoFile|null>{
+  if(typeof VideoEncoder==='undefined'||typeof VideoFrame==='undefined')return null;
   const preset=VIDEO_PRESETS[presetName];
   const channels=Math.max(1,Math.min(2,audioBuffer.numberOfChannels));
   const sampleRate=audioBuffer.sampleRate;
-  const target=new ArrayBufferTarget();
-  const muxer=new Muxer({
-    target,
-    video:{codec:'avc',width:preset.width,height:preset.height},
-    audio:{codec:codecs.muxerAudioCodec,numberOfChannels:channels,sampleRate},
-    fastStart:'in-memory',
-    firstTimestampBehavior:'offset',
-  });
 
-  let encoderError:Error|null=null;
-  const videoEncoder=new VideoEncoder({
-    output:(chunk,meta)=>muxer.addVideoChunk(chunk,meta),
-    error:e=>{encoderError=e instanceof Error?e:Error(String(e));},
-  });
-  const audioEncoder=new AudioEncoder({
-    output:(chunk,meta)=>muxer.addAudioChunk(chunk,meta),
-    error:e=>{encoderError=e instanceof Error?e:Error(String(e));},
+  const mb=await import('mediabunny');
+  const canH264=await mb.canEncodeVideo('avc',{width:preset.width,height:preset.height,bitrate:preset.videoBitsPerSecond});
+  if(!canH264)return null;
+
+  let canAac=await mb.canEncodeAudio('aac',{sampleRate,numberOfChannels:channels,bitrate:preset.audioBitsPerSecond});
+  if(!canAac){
+    if(!aacEncoderRegistered){
+      const {registerAacEncoder}=await import('@mediabunny/aac-encoder');
+      registerAacEncoder();
+      aacEncoderRegistered=true;
+    }
+    canAac=await mb.canEncodeAudio('aac',{sampleRate,numberOfChannels:channels,bitrate:preset.audioBitsPerSecond});
+  }
+  if(!canAac)return null;
+
+  const target=new mb.BufferTarget();
+  const output=new mb.Output({
+    format:new mb.Mp4OutputFormat({fastStart:'in-memory'}),
+    target,
   });
 
   let capture:StageCapture|undefined;
+  let started=false;
   try{
-    videoEncoder.configure({
-      codec:codecs.videoCodec,
-      width:preset.width,
-      height:preset.height,
-      bitrate:preset.videoBitsPerSecond,
-      framerate:preset.fps,
-      avc:{format:'avc'},
-    });
-    audioEncoder.configure({
-      codec:codecs.audioCodec,
-      sampleRate,
-      numberOfChannels:channels,
-      bitrate:preset.audioBitsPerSecond,
-    });
-
     await document.fonts.ready;
     if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
 
@@ -268,94 +237,107 @@ async function exportSceneVideoOffline(
     const ctx=canvas.getContext('2d');
     if(!ctx)throw Error('This browser cannot render the scene video.');
 
-    // 1. Encode audio slice offline (takes <0.2s for a full song)
-    const startSample=Math.floor(start*sampleRate);
-    const endSample=Math.min(audioBuffer.length,Math.ceil(end*sampleRate));
-    const chunkSamples=4096;
-    for(let pos=startSample;pos<endSample;pos+=chunkSamples){
-      if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
-      if(encoderError)throw encoderError;
-      const frames=Math.min(chunkSamples,endSample-pos);
-      const planar=new Float32Array(frames*channels);
-      for(let ch=0;ch<channels;ch++){
-        planar.set(audioBuffer.getChannelData(ch).subarray(pos,pos+frames),ch*frames);
-      }
-      const timestamp=Math.round(((pos-startSample)/sampleRate)*1_000_000);
-      const audioData=new AudioData({format:'f32-planar',sampleRate,numberOfChannels:channels,numberOfFrames:frames,timestamp,data:planar});
-      audioEncoder.encode(audioData);
-      audioData.close();
-      if(audioEncoder.encodeQueueSize>24)await yieldImmediate();
-    }
-    await audioEncoder.flush();
-    if(encoderError)throw encoderError;
+    const videoSource=new mb.CanvasSource(canvas,{
+      codec:'avc',
+      bitrate:preset.videoBitsPerSecond,
+      keyFrameInterval:2,
+    });
+    const audioSource=new mb.AudioSampleSource({
+      codec:'aac',
+      bitrate:preset.audioBitsPerSecond,
+    });
 
-    // 2. Step 3D stage & lyrics frame-by-frame as fast as GPU/WebCodecs can encode
+    output.addVideoTrack(videoSource,{frameRate:preset.fps});
+    output.addAudioTrack(audioSource);
+    await output.start();
+    started=true;
+
     const duration=end-start;
     const totalFrames=Math.max(1,Math.ceil(duration*preset.fps));
-    const frameDurUs=Math.round(1_000_000/preset.fps);
-    const gop=preset.fps*2;
-    let lastProgressAt=0;
+    const frameDur=1/preset.fps;
 
+    // Encode audio concurrently in 1-second slices so video progress updates immediately from frame 1!
+    const audioTask=(async()=>{
+      const startSample=Math.floor(start*sampleRate);
+      const endSample=Math.min(audioBuffer.length,Math.ceil(end*sampleRate));
+      const chunkSamples=sampleRate; // 1s per chunk (tiny overhead, fast WASM/native AAC encoding)
+      for(let pos=startSample;pos<endSample;pos+=chunkSamples){
+        if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
+        const frames=Math.min(chunkSamples,endSample-pos);
+        const planar=new Float32Array(frames*channels);
+        for(let ch=0;ch<channels;ch++){
+          planar.set(audioBuffer.getChannelData(ch).subarray(pos,pos+frames),ch*frames);
+        }
+        const sample=new mb.AudioSample({
+          data:planar,
+          format:'f32-planar',
+          numberOfChannels:channels,
+          sampleRate,
+          timestamp:(pos-startSample)/sampleRate,
+        });
+        try{
+          await audioSource.add(sample);
+        }finally{
+          sample.close();
+        }
+      }
+      audioSource.close();
+    })();
+
+    let lastProgressAt=0;
     for(let i=0;i<totalFrames;i++){
       if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
-      if(encoderError)throw encoderError;
-      const t=Math.min(end,start+i/preset.fps);
+      const t=Math.min(end,start+i*frameDur);
       const source=capture.draw(t);
       if(presetName==='x-lyrics')drawLyricsVideoFrame(ctx,source,scene,t,preset.width,preset.height);
       else drawVideoFrame(ctx,source,scene,t);
 
-      const timestamp=Math.round((i/preset.fps)*1_000_000);
-      const vf=new VideoFrame(canvas,{timestamp,duration:frameDurUs});
-      videoEncoder.encode(vf,{keyFrame:i%gop===0});
-      vf.close();
+      await videoSource.add(i*frameDur,frameDur);
 
-      while(videoEncoder.encodeQueueSize>8){
-        if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
-        if(encoderError)throw encoderError;
-        await yieldImmediate();
-      }
       const now=typeof performance!=='undefined'?performance.now():Date.now();
-      if(i%4===0||now-lastProgressAt>100){
-        onProgress(Math.min(duration,t-start));
+      if(i===0||i%3===0||now-lastProgressAt>80){
+        onProgress(Math.min(duration,(i+1)*frameDur));
         lastProgressAt=now;
         await yieldImmediate();
       }
     }
+    videoSource.close();
 
-    await videoEncoder.flush();
-    if(encoderError)throw encoderError;
+    await audioTask;
+    if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
+    await output.finalize();
     onProgress(duration);
-    muxer.finalize();
-    const blob=new Blob([target.buffer],{type:'video/mp4'});
-    if(!blob.size)throw Error('The browser created an empty video. Please try again.');
-    return {blob,extension:'mp4',fast:true};
+
+    if(!target.buffer||!target.buffer.byteLength){
+      throw Error('The browser created an empty video. Please try again.');
+    }
+    return {blob:new Blob([target.buffer],{type:'video/mp4'}),extension:'mp4',fast:true};
+  }catch(e){
+    if(started){try{await output.cancel();}catch{ /* ignore */ }}
+    throw e;
   }finally{
-    try{if(videoEncoder.state!=='closed')videoEncoder.close();}catch{ /* ignore */ }
-    try{if(audioEncoder.state!=='closed')audioEncoder.close();}catch{ /* ignore */ }
     capture?.release();
   }
 }
 
-/** Exports a video take (fast offline WebCodecs MP4 when available, otherwise real-time MediaRecorder fallback). */
+/** Exports a video take (fast offline H.264+AAC MP4 when available, otherwise real-time MediaRecorder fallback). */
 export async function recordSceneVideo(stage:SceneStage,scene:SceneFile,transport:Transport,onProgress:(time:number)=>void,signal:AbortSignal,options:VideoExportOptions={}):Promise<VideoFile>{
   const presetName=options.preset??'hd';
   const preset=VIDEO_PRESETS[presetName];
   const start=Math.max(0,Math.min(scene.duration-0.1,options.startTime??0));
   const end=Math.max(start+0.1,Math.min(scene.duration,options.endTime??scene.duration));
 
-  // Prefer fast silent offline WebCodecs MP4 export when the browser supports it (works even in background tabs!).
+  // Prefer fast silent offline H.264 + AAC-LC MP4 export (works on Linux Brave/Chrome/macOS/Windows & background tabs!)
   const buf=transport.audioBuffer;
   if(buf){
-    const codecs=await pickWebCodecsConfig(preset.width,preset.height,preset.fps,preset.videoBitsPerSecond,preset.audioBitsPerSecond,buf.sampleRate,Math.max(1,Math.min(2,buf.numberOfChannels)));
-    if(codecs){
-      const previous=transport.time();
-      transport.pause();
-      options.onMode?.('offline');
-      try{
-        return await exportSceneVideoOffline(stage,scene,buf,presetName,start,end,onProgress,signal,codecs);
-      }finally{
-        transport.seek(previous);
-      }
+    const previous=transport.time();
+    transport.pause();
+    options.onMode?.('offline');
+    try{
+      const result=await exportSceneVideoOffline(stage,scene,buf,presetName,start,end,onProgress,signal);
+      if(result)return result;
+    }finally{
+      transport.seek(previous);
     }
   }
 

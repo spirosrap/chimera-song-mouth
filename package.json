@@ -18,7 +18,8 @@
     "content:manifest": "bun tools/verify-content.ts --write"
   },
   "dependencies": {
-    "mp4-muxer": "^5.2.2",
+    "@mediabunny/aac-encoder": "^1.66.2",
+    "mediabunny": "^1.66.2",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "three": "0.186.1",

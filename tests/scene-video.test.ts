@@ -69,65 +69,92 @@ test('compact X lyrics preset draws song title, karaoke-highlighted lyrics, upco
   expect(file.extension).toBe('webm');expect(file.blob.size).toBeGreaterThan(0);expect(h.pos).toBe(17);expect(h.released).toBe(1);
  }finally{h.restore();}
 });
-test('fast offline WebCodecs path muxes an MP4 silently faster than real time and survives hidden tabs',async()=>{
+test('fast offline WebCodecs path muxes an H.264 + AAC MP4 silently faster than real time and survives hidden tabs',async()=>{
  const h=harness();
  const priorWC=new Map<string,PropertyDescriptor|undefined>();
  let encodedVideo=0,encodedAudio=0;
- class MockVideoFrame{constructor(readonly src:unknown,readonly init:{timestamp:number;duration:number}){}close(){}}
- class MockAudioData{constructor(readonly init:{timestamp:number;numberOfFrames:number}){}close(){}}
+ class MockVideoFrame{
+  readonly codedWidth=960;readonly codedHeight=540;readonly displayWidth=960;readonly displayHeight=540;readonly format='RGBA';
+  readonly colorSpace={primaries:'bt709',transfer:'iec61966-2-1',matrix:'rgb',fullRange:true};
+  readonly timestamp:number;readonly duration:number;
+  constructor(readonly src:unknown,readonly init:{timestamp:number;duration:number}){this.timestamp=init.timestamp;this.duration=init.duration;}
+  close(){}
+ }
+ class MockAudioDecoder{
+  static async isConfigSupported(cfg:unknown){return {supported:true,config:cfg};}
+  state='configured';
+  constructor(readonly init:{output:(d:unknown)=>void;error:(e:unknown)=>void}){}
+  configure(){}
+  decode(c:{timestamp:number}){this.init.output(new MockAudioData({format:'f32-planar',sampleRate:48000,numberOfChannels:2,numberOfFrames:1024,timestamp:c.timestamp,data:new Float32Array(2048)}));}
+  async flush(){}
+  close(){this.state='closed';}
+ }
+ class MockAudioData{
+  readonly format:string;readonly sampleRate:number;readonly numberOfChannels:number;readonly numberOfFrames:number;readonly timestamp:number;
+  constructor(readonly init:{format:string;sampleRate:number;numberOfChannels:number;numberOfFrames:number;timestamp:number;data:Float32Array}){
+   this.format=init.format;this.sampleRate=init.sampleRate;this.numberOfChannels=init.numberOfChannels;this.numberOfFrames=init.numberOfFrames;this.timestamp=init.timestamp;
+  }
+  copyTo(dst:ArrayBufferView|ArrayBuffer){const u=dst instanceof ArrayBuffer?new Float32Array(dst):new Float32Array(dst.buffer,dst.byteOffset,dst.byteLength/4);u.set(this.init.data.subarray(0,u.length));}
+  close(){}
+ }
  class MockEncodedVideoChunk{
   readonly type:'key'|'delta';readonly timestamp:number;readonly duration:number;readonly byteLength:number;
   constructor(private readonly bytes:Uint8Array,type:'key'|'delta',timestamp:number,duration:number){this.type=type;this.timestamp=timestamp;this.duration=duration;this.byteLength=bytes.byteLength;}
-  copyTo(dst:ArrayBufferView){new Uint8Array(dst.buffer,dst.byteOffset,dst.byteLength).set(this.bytes);}
+  copyTo(dst:ArrayBufferView|ArrayBuffer){const u=dst instanceof ArrayBuffer?new Uint8Array(dst):new Uint8Array(dst.buffer,dst.byteOffset,dst.byteLength);u.set(this.bytes);}
  }
  class MockEncodedAudioChunk{
   readonly type:'key'|'delta';readonly timestamp:number;readonly duration:number;readonly byteLength:number;
   constructor(private readonly bytes:Uint8Array,timestamp:number,duration:number){this.type='key';this.timestamp=timestamp;this.duration=duration;this.byteLength=bytes.byteLength;}
-  copyTo(dst:ArrayBufferView){new Uint8Array(dst.buffer,dst.byteOffset,dst.byteLength).set(this.bytes);}
+  copyTo(dst:ArrayBufferView|ArrayBuffer){const u=dst instanceof ArrayBuffer?new Uint8Array(dst):new Uint8Array(dst.buffer,dst.byteOffset,dst.byteLength);u.set(this.bytes);}
  }
  class MockVideoEncoder{
-  static async isConfigSupported(){return {supported:true};}
+  static async isConfigSupported(cfg:unknown){return {supported:true,config:cfg};}
   state='configured';encodeQueueSize=0;
   constructor(readonly init:{output:(chunk:unknown,meta?:unknown)=>void;error:(e:unknown)=>void}){}
   configure(){}
-  encode(frame:{init:{timestamp:number;duration:number}},opts?:{keyFrame?:boolean}){
+  encode(frame:{timestamp:number;duration:number},opts?:{keyFrame?:boolean}){
    encodedVideo++;
    const bytes=new Uint8Array([0,0,0,4,0x65,0x88,0x84,0x21]);
-   const chunk=new MockEncodedVideoChunk(bytes,opts?.keyFrame?'key':'delta',frame.init.timestamp,frame.init.duration);
-   const meta=encodedVideo===1?{decoderConfig:{codec:'avc1.640028',description:new Uint8Array([1,0x64,0,0x28,0xff,0xe1,0,4,0x67,0x64,0,0x28,1,0,4,0x68,0xee,0x3c,0x80])}}:undefined;
+   const chunk=new MockEncodedVideoChunk(bytes,opts?.keyFrame?'key':'delta',frame.timestamp,frame.duration);
+   const meta=encodedVideo===1?{decoderConfig:{codec:'avc1.640028',codedWidth:960,codedHeight:540,description:new Uint8Array([1,0x64,0,0x28,0xff,0xe1,0,4,0x67,0x64,0,0x28,1,0,4,0x68,0xee,0x3c,0x80])}}:undefined;
    this.init.output(chunk,meta);
   }
   async flush(){}
   close(){this.state='closed';}
  }
  class MockAudioEncoder{
-  static async isConfigSupported(){return {supported:true};}
-  state='configured';encodeQueueSize=0;
+  static async isConfigSupported(cfg:unknown){return {supported:true,config:cfg};}
+  state='configured';encodeQueueSize=0;private first=true;
   constructor(readonly init:{output:(chunk:unknown,meta?:unknown)=>void;error:(e:unknown)=>void}){}
   configure(){}
-  encode(data:{init:{timestamp:number;numberOfFrames:number}}){
+  encode(data:{timestamp:number;numberOfFrames:number}){
    encodedAudio++;
    const bytes=new Uint8Array([0x21,0x10,0x04,0x60]);
-   const chunk=new MockEncodedAudioChunk(bytes,data.init.timestamp,Math.round((data.init.numberOfFrames/48000)*1_000_000));
-   const meta=encodedAudio===1?{decoderConfig:{codec:'mp4a.40.2',description:new Uint8Array([0x11,0x90])}}:undefined;
+   const chunk=new MockEncodedAudioChunk(bytes,data.timestamp,Math.round((data.numberOfFrames/48000)*1_000_000));
+   const meta=this.first?{decoderConfig:{codec:'mp4a.40.2',sampleRate:48000,numberOfChannels:2,description:new Uint8Array([0x11,0x90])}}:undefined;
+   this.first=false;
    this.init.output(chunk,meta);
   }
   async flush(){}
   close(){this.state='closed';}
  }
- const globals:Record<string,unknown>={VideoEncoder:MockVideoEncoder,AudioEncoder:MockAudioEncoder,VideoFrame:MockVideoFrame,AudioData:MockAudioData,EncodedVideoChunk:MockEncodedVideoChunk,EncodedAudioChunk:MockEncodedAudioChunk};
+ class MockHTMLCanvas{width=0;height=0;getContext(){return {fillRect(){},drawImage(){},fillText(){},measureText:(s:string)=>({width:s.length*10})};}}
+ const globals:Record<string,unknown>={HTMLCanvasElement:MockHTMLCanvas,VideoEncoder:MockVideoEncoder,AudioEncoder:MockAudioEncoder,AudioDecoder:MockAudioDecoder,VideoFrame:MockVideoFrame,AudioData:MockAudioData,EncodedVideoChunk:MockEncodedVideoChunk,EncodedAudioChunk:MockEncodedAudioChunk};
  for(const [k,v] of Object.entries(globals)){priorWC.set(k,Object.getOwnPropertyDescriptor(globalThis,k));Object.defineProperty(globalThis,k,{value:v,writable:true,configurable:true});}
+ h.doc.createElement=()=>new MockHTMLCanvas() as unknown as ReturnType<typeof h.doc.createElement>;
  const fakeAudio={sampleRate:48000,numberOfChannels:2,length:48000,getChannelData:()=>new Float32Array(48000)} as unknown as AudioBuffer;
  Object.defineProperty(h.transport,'audioBuffer',{get:()=>fakeAudio});
  h.doc.hidden=true; // Must succeed even when the tab is hidden!
- let mode='';
+ let mode='';const prog:number[]=[];
  try{
-  const file=await recordSceneVideo(h.stage,scene,h.transport,()=>{},new AbortController().signal,{preset:'x-lyrics',onMode:m=>{mode=m;}});
+  const file=await recordSceneVideo(h.stage,scene,h.transport,t=>prog.push(t),new AbortController().signal,{preset:'x-lyrics',onMode:m=>{mode=m;}});
   expect(mode).toBe('offline');
   expect(file.extension).toBe('mp4');
   expect(file.fast).toBe(true);
   expect(encodedVideo).toBe(12); // 0.5s * 24fps
   expect(encodedAudio).toBeGreaterThan(0);
+  expect(prog.length).toBeGreaterThan(1);
+  expect(prog.at(-1)).toBeCloseTo(0.5,2);
   expect(h.starts).toEqual([]); // Never played audio aloud!
   expect(h.pos).toBe(17); // Restored playhead
   expect(h.released).toBe(1);
