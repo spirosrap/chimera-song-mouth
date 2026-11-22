@@ -1,7 +1,7 @@
 /**
  * The body rig wearing the CHIMERA head, as a page: `bun run dev`, then /rig.html. Pick a pose,
- * open the mouth, pick how the head is drawn; drag to turn round it. Dev only (not in the app's
- * build). See docs/rig.md.
+ * open the mouth, pick how the head is drawn, or play a motion file from another tool (Mixamo's
+ * FBX, a BVH, a glTF); drag to turn round it. Dev only (not in the app's build). See docs/rig.md.
  */
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
@@ -11,6 +11,7 @@ import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js"
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 import { initChimera } from "../wasm/chimera.ts";
 import rigUrl from "./body.rig.bin?url";
+import { Motion, readMotion } from "./motion.ts";
 
 await initChimera();
 // the head reads the engine's tables as it loads, so it comes after the engine
@@ -56,12 +57,41 @@ field("look").onchange = () => {
   view.toneChanged();
 };
 
+// a motion file, played looped instead of the pose (its clips to pick from, if it has several).
+// A Motion takes the file's scene over, so another clip reads the file again; a newer pick (or
+// a pose) wins over a load still under way.
+let motion: Motion | null = null, motionT = 0, picked = 0;
+let file: { data: ArrayBuffer; name: string } | null = null;
+const play = async (clip: number, read = file && readMotion(file.data, file.name)) => {
+  const mine = ++picked;
+  try {
+    const { root, clips } = (await read)!;
+    if (mine === picked) [motion, motionT] = [new Motion(rig, root, clips[clip]), 0];
+  } catch (e) {
+    if (mine === picked) alert(e instanceof Error ? e.message : String(e));
+  }
+};
+field("motion").onchange = async () => {
+  const f = field("motion").files?.[0];
+  if (!f) return;
+  file = { data: await f.arrayBuffer(), name: f.name };
+  const read = readMotion(file.data, file.name);
+  const { clips } = await read.catch(() => ({ clips: [] as THREE.AnimationClip[] }));
+  const longest = clips.reduce((a, c, i) => (c.duration > clips[a].duration ? i : a), 0);
+  field("clip").replaceChildren(...clips.map((c, i) => new Option(`${c.name} (${c.duration.toFixed(1)} s)`, String(i), false, i === longest)));
+  field("clip").hidden = clips.length < 2;
+  await play(longest, read);
+};
+field("clip").onchange = () => void play(Number(field("clip").value));
+
 // looking at the chest from in front and to its right; the view follows the chest from pose to pose
 const chest = () => rig.P[rig.bone("upperchest")].clone();
 rig.pose(PRESETS.neutral);
 controls.target.copy(chest());
 camera.position.copy(controls.target).add(new THREE.Vector3(150, 25, 70));
 field("pose").onchange = () => {
+  motion = null;
+  picked++;
   rig.pose(PRESETS[field("pose").value]);
   const move = chest().sub(controls.target);
   controls.target.add(move);
@@ -83,8 +113,14 @@ let last = performance.now();
 renderer.setAnimationLoop((now) => {
   const dt = Math.max(0, Math.min(0.1, (now - last) / 1000));
   last = now;
+  if (motion) {
+    motion.pose((motionT += dt));
+    // the view goes along with the body as it travels
+    const move = chest().sub(controls.target).setY(0);
+    controls.target.add(move);
+    camera.position.add(move);
+  } else rig.pose(PRESETS[field("pose").value] ?? PRESETS.neutral);
   controls.update();
-  rig.pose(PRESETS[field("pose").value] ?? PRESETS.neutral);
   rig.skin(skinned);
   const open = Number(field("mouth").value);
   head.update(camera, { ...REST_ARTIC, jaw: 1.8 * open, lipAp: 1.8 * open }, null, dt);

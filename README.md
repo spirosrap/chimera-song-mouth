@@ -29,7 +29,8 @@ From upstream’s README. It governs the engine and the single-mouth app. This e
 5. **The design language (the vector display) is settled**; the look within it can still evolve.
 6. **Nothing copyrighted in git**; MIT; a deterministic, real-time-safe engine.
 7. **The 3D head can be worn by a body** ([docs/rig.md](docs/rig.md)), for the videos people
-   make with the voice: a small library, not animation software (no timeline, no renderer).
+   make with the voice, posed by joint angles or moved by other tools' motion (Mixamo, BVH,
+   glTF): a small library, not animation software (no timeline, no renderer).
 8. **Not now**: a DAW or sequencer, a light theme, multi-voice dialogue, translating the
    interface (the voice speaks and sings many languages; the labels stay in English).
 

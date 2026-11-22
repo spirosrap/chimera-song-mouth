@@ -5,7 +5,8 @@ own head (`src/ui/render/anatomy3d.ts`) drawn live on a posable low-poly body, i
 the voice does. It's a small library, not an animation tool: there's no timeline and no renderer
 of its own. You pose it, skin it and draw it in your own three.js scene, frame by frame.
 
-Try it: `bun run dev`, then `/rig.html` (pick a pose, open the mouth, pick how the head is drawn).
+Try it: `bun run dev`, then `/rig.html` (pick a pose, open the mouth, pick how the head is drawn,
+or play a motion file from another tool).
 
 ## Files
 
@@ -14,6 +15,7 @@ Try it: `bun run dev`, then `/rig.html` (pick a pose, open the mouth, pick how t
 | `src/rig/rig.ts` | the rig: loading, posing by joint angles, skinning |
 | `src/rig/pose.ts` | the `Pose` type (anatomical angles), ranges of motion, presets |
 | `src/rig/head.ts` | `wearHead`: the head's skin grown from the neck, the head's lines on the head bone, the face moving |
+| `src/rig/motion.ts` | `Motion`: a clip from another tool (Mixamo's FBX, BVH, glTF) carried over onto the rig |
 | `src/rig/view.ts` | the wireframe in CHIMERA's blue (and heat and weights views for finding faults) |
 | `src/rig/body.rig.bin` | the mesh, skeleton and weights (generated: `bun tools/rig/gen-body.ts`, never edited) |
 | `src/rig/demo.ts`, `rig.html` | the dev page (not in the app's build) |
@@ -54,6 +56,15 @@ head.dispose();
 model.dispose();
 ```
 
+Or move it as a clip from another tool does, instead of posing it:
+
+```ts
+import { Motion } from "./src/rig/motion.ts";
+const motion = await Motion.load(rig, await file.arrayBuffer(), file.name); // .fbx, .bvh, .glb or .gltf
+// every frame, instead of rig.pose(…)
+motion.pose(seconds);                                 // loops; motion.duration, motion.clip
+```
+
 `artic` and `tele` come from wherever the voice runs: the live worklet's telemetry messages
 (`VoiceModel.articFromArray(msg.t.artic)`), or a recording replayed with `TeleTrack`
 (`chimera render notes … --tele voice.tele`, `src/show/tele.ts`). Without a voice, pass an
@@ -87,6 +98,42 @@ is fitted to the model once.
   app's insides at full under a half-bright grid) and `classic` (the app's head as it draws
   itself).
 
+## Motion from other tools
+
+`Motion.load` reads the file with three.js's loader for it (`readMotion`: FBX, BVH, a GLB or a
+.gltf with nothing in separate files), plays a clip of it on its own skeleton (the longest, or
+`{ clip: name or index }`) and carries each frame over onto the rig. For a scene you've loaded
+yourself (a .gltf with separate files, a VRM), `new Motion(rig, root, clip)`.
+
+- **Matching:** the limbs and head by name (Mixamo, CMU and DAZ BVHs, VRM and VRoid, Unreal,
+  Rigify, 3ds Max Biped: `rigName`), each the bone the clip itself moves by that name;
+  `motion.bones` says what was found. The trunk is found by where it sits between them, and a
+  spine or neck of any number of bones is spread along the rig's by length (the chest the arms
+  hang from, and the head, always match). For names it misses, or two bones that could be one
+  of the rig's and the clip moves both: `{ map: { "DEF-spine.006": "head" } }` (it comes first).
+- **Carrying over:** the source as loaded is its reference: each limb's turn then is swung until
+  it points as the rig's does at anatomical zero (the hand also turned so its palm faces as the
+  rig's, where it has fingers). Each frame, a source bone's turn since its reference is the rig
+  bone's, in a world matched by the source's up axis and its hips' facing; so the source's bone
+  axes, units, facing and up axis don't matter. A T or an A pose reference both work, palms down
+  or in; a limb's roll can't be seen in a straight limb, so a reference with the arms turned
+  otherwise (palms forward) comes out turned by as much. A mirrored or unevenly scaled source is
+  refused, and so is one that doesn't stand as loaded (its height can't be told). Limb
+  twist is shared along the rig's twist bones, as its posing does (without it a turned wrist
+  pinches), except near half a turn, where it can't be told which way round it went. Only rotations carry over: the source's bones' lengths and any movement of a joint
+  other than the hips are the rig's own.
+- **Where it stands:** the hips move as the source's do, measured from the source's origin and
+  scaled by leg length (hip joints over ankles). The floor is an estimate: where the source's
+  lower ankle usually is over the clip (a low percentile), put where the rig's stands. A clip
+  that never touches down stands on its lowest. Its feet can slide a little where its
+  proportions differ from the rig's (there's no foot locking).
+- A Motion plays its clip on the source's scene (`motion.root`) and reads it relative to that
+  scene's parent: put it beside the rig by its parent (`motion.C` and `motion.scale` turn and
+  size it as the rig), not by moving `root` itself. For another clip, load the file again.
+
+Mixamo: download "FBX Binary", with or without skin. Mixamo's files can't be redistributed, so
+none are in the repo; the tests write the rig's own poses as a BVH and read them back.
+
 ## Frames
 
 Body cm: x forward, y up, z out of the body's right side. The skeleton's bind pose is the mesh's
@@ -98,8 +145,11 @@ rest joint `rig.H[i]`, and after `pose` its turn from rest `rig.S[i]` and joint 
 
 - `bun test tests/rig.test.ts` (part of `bun run test`): the mesh's open edges, skinning at
   rest, anatomical zero, the lips' cut lying on the drawn lips (shut; open narrow and wide, the
-  head turned), weights summing to 1, the face's motion staying off the crown and the rim, and
-  the head following its parent's transform.
+  head turned), weights summing to 1, the face's motion staying off the crown and the rim, the
+  head following its parent's transform; and motion: bone names across tools, every preset
+  written as a BVH (from a standing and a T-pose reference, turned, in other units) and read
+  back to within 0.1 cm and the hands to 0.5°, the hips' height, a skeleton without toes, a
+  one-frame clip, seeking, and the source moved by its parent.
 - `/rig.html`: look at it. A metric isn't the picture.
 
 ## Provenance
@@ -112,6 +162,6 @@ each source by commit, or by hash where the source has no version.
 
 ## Not yet
 
-Fingers (folded into the hand), dragging hands and feet (IK), importing motion from other tools
-(Mixamo, BVH, glTF), exporting the body (GLB). Deep bends (elbow or knee near 150°, a deep
+Fingers (folded into the hand), dragging hands and feet (IK), keeping imported feet planted,
+exporting the body (GLB). Deep bends (elbow or knee near 150°, a deep
 squat) still show some strain.

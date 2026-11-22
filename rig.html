@@ -17,6 +17,8 @@
   <label>pose <select name="pose"></select></label>
   <label>mouth <input name="mouth" type="range" min="0" max="1" step="0.01" value="0"></label>
   <label>head <select name="look"></select></label>
+  <label>motion <input name="motion" type="file" accept=".fbx,.bvh,.glb,.gltf"></label>
+  <select name="clip" hidden></select>
 </form>
 <script type="module" src="/src/rig/demo.ts"></script>
 </body>

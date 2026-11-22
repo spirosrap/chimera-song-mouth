@@ -7,9 +7,11 @@ import { readFileSync } from "node:fs";
 import * as THREE from "three";
 import { initEngine } from "./harness.ts";
 import type { Rig as RigT } from "../src/rig/rig.ts";
+import type { Pose } from "../src/rig/pose.ts";
 
 type Mods = {
   Rig: typeof import("../src/rig/rig.ts").Rig;
+  motion: typeof import("../src/rig/motion.ts");
   pose: typeof import("../src/rig/pose.ts");
   head: typeof import("../src/rig/head.ts");
   VoiceModel: typeof import("../src/ui/analysis.ts").VoiceModel;
@@ -20,8 +22,8 @@ let M: Mods;
 beforeAll(async () => {
   await initEngine();
   // the head reads the engine's tables as it loads: after the engine
-  const [rig, pose, head, analysis, body, a3d] = await Promise.all([import("../src/rig/rig.ts"), import("../src/rig/pose.ts"), import("../src/rig/head.ts"), import("../src/ui/analysis.ts"), import("../src/ui/body.ts"), import("../src/ui/render/anatomy3d.ts")]);
-  M = { Rig: rig.Rig, pose, head, VoiceModel: analysis.VoiceModel, BODIES: body.PRESETS, REST_ARTIC: a3d.REST_ARTIC };
+  const [rig, pose, head, analysis, body, a3d, motion] = await Promise.all([import("../src/rig/rig.ts"), import("../src/rig/pose.ts"), import("../src/rig/head.ts"), import("../src/ui/analysis.ts"), import("../src/ui/body.ts"), import("../src/ui/render/anatomy3d.ts"), import("../src/rig/motion.ts")]);
+  M = { Rig: rig.Rig, motion, pose, head, VoiceModel: analysis.VoiceModel, BODIES: body.PRESETS, REST_ARTIC: a3d.REST_ARTIC };
 });
 
 function loadRig(): RigT {
@@ -223,5 +225,246 @@ describe("the head on the body", () => {
     expect(maxMove(base, out, crown)).toBeLessThan(1e-4);
     expect(maxMove(base, out, rig.rim)).toBe(0);
     expect(maxMove(base, out, lipPairs(rig).map(([, l]) => l))).toBeGreaterThan(0.5);
+  });
+});
+
+/**
+ * The rig's own skeleton as a BVH file, as another tool would write it: bound at `bind`, then
+ * posed through `frames` (half a second apart), turned `yaw`° about the vertical and measured in
+ * `unit`s per cm, standing on the file's floor (y = 0) with its root's OFFSET at 0 as BVHs have;
+ * without the `leave` joints (their parents end there).
+ */
+function toBVH(rig: RigT, bind: Pose, frames: Pose[], yaw: number, unit: number, leave: string[] = []): string {
+  const G = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), (yaw * Math.PI) / 180), Gi = G.clone().invert();
+  const joints = rig.bones.map((_, i) => i).filter((i) => !rig.bones[i].helper && !leave.includes(rig.bones[i].name));
+  const kids = (i: number) => joints.filter((j) => rig.bones[j].parent === i);
+  rig.pose(bind);
+  const Pb = rig.P.map((p) => p.clone()), Wb = rig.W.map((q) => q.clone().invert()), Sb = rig.S.map((q) => q.clone());
+  const floor = Math.min(...rig.P.map((p) => p.y));
+  const file = (v: THREE.Vector3) => v.clone().applyQuaternion(G).multiplyScalar(unit);
+  const lines = ["HIERARCHY"], order: number[] = [];
+  const write = (i: number, pad: string) => {
+    order.push(i);
+    const par = rig.bones[i].parent, o = par < 0 ? new THREE.Vector3() : file(Pb[i].clone().sub(Pb[par]));
+    lines.push(`${pad}${par < 0 ? "ROOT" : "JOINT"} ${rig.bones[i].name.replace(".", "_")}`, `${pad}{`, `${pad}  OFFSET ${o.x} ${o.y} ${o.z}`);
+    lines.push(`${pad}  CHANNELS ${par < 0 ? "6 Xposition Yposition Zposition " : "3 "}Zrotation Xrotation Yrotation`);
+    for (const j of kids(i)) write(j, pad + "  ");
+    if (!kids(i).length) {
+      const t = file(new THREE.Vector3().fromArray(rig.bones[i].tail).sub(rig.H[i]).applyQuaternion(Sb[i]));
+      lines.push(`${pad}  End Site`, `${pad}  {`, `${pad}    OFFSET ${t.x} ${t.y} ${t.z}`, `${pad}  }`);
+    }
+    lines.push(`${pad}}`);
+  };
+  write(0, "");
+  lines.push("MOTION", `Frames: ${frames.length}`, "Frame Time: 0.5");
+  for (const f of frames) {
+    rig.pose(f);
+    const R = rig.W.map((w, i) => G.clone().multiply(w).multiply(Wb[i]).multiply(Gi));
+    const vals: number[] = [];
+    for (const i of order) {
+      const par = rig.bones[i].parent;
+      if (par < 0) vals.push(...file(rig.P[0].clone().sub(new THREE.Vector3(0, floor, 0))).toArray());
+      const e = new THREE.Euler().setFromQuaternion(par < 0 ? R[i] : R[par].clone().invert().multiply(R[i]), "ZXY");
+      vals.push(...[e.z, e.x, e.y].map((a) => (a * 180) / Math.PI));
+    }
+    lines.push(vals.join(" "));
+  }
+  return lines.join("\n");
+}
+const buffer = (text: string) => new TextEncoder().encode(text).buffer as ArrayBuffer;
+/** how far (degrees) the hands of `b` are turned from `a`'s */
+const handsApart = (a: RigT, b: RigT) => Math.max(...["hand.L", "hand.R"].map((h) => (a.S[a.bone(h)].angleTo(b.S[b.bone(h)]) * 180) / Math.PI));
+/** the farthest any joint of `b` is from `a`'s, measured from each one's root (or not) */
+function jointsApart(a: RigT, b: RigT, fromRoot: boolean): { cm: number; at: string } {
+  let cm = 0, at = "";
+  a.bones.forEach((bone, i) => {
+    if (bone.helper) return;
+    const d = fromRoot ? a.P[i].clone().sub(a.P[0]).distanceTo(b.P[i].clone().sub(b.P[0])) : a.P[i].distanceTo(b.P[i]);
+    if (!(d <= cm)) [cm, at] = [Number.isNaN(d) ? Infinity : d, bone.name];
+  });
+  return { cm, at };
+}
+
+/**
+ * A small skeleton as other tools make them: Mixamo's names, a T pose (palms down), y up, facing
+ * +z, in metres. `change` can add to it or move it before it's used.
+ */
+function mixamo(change?: (b: Record<string, THREE.Bone>) => void): Record<string, THREE.Bone> {
+  const b: Record<string, THREE.Bone> = {};
+  const bone = (name: string, parent: string | null, x: number, y: number, z: number) => {
+    const o = (b[name] = new THREE.Bone());
+    o.name = name;
+    o.position.set(x, y, z);
+    if (parent) b[parent].add(o);
+  };
+  bone("Hips", null, 0, 1, 0);
+  bone("Spine", "Hips", 0, 0.1, 0);
+  bone("Chest", "Spine", 0, 0.2, 0);
+  bone("Neck", "Chest", 0, 0.2, 0);
+  bone("Head", "Neck", 0, 0.1, 0);
+  bone("HeadTop_End", "Head", 0, 0.18, 0);
+  for (const [s, x] of [["Left", 1], ["Right", -1]] as const) {
+    bone(`${s}Shoulder`, "Chest", 0.05 * x, 0.15, 0);
+    bone(`${s}Arm`, `${s}Shoulder`, 0.12 * x, 0, 0);
+    bone(`${s}ForeArm`, `${s}Arm`, 0.27 * x, 0, 0);
+    bone(`${s}Hand`, `${s}ForeArm`, 0.27 * x, 0, 0);
+    bone(`${s}HandMiddle1`, `${s}Hand`, 0.1 * x, 0, 0);
+    bone(`${s}HandPinky1`, `${s}Hand`, 0.09 * x, 0, -0.03);
+    bone(`${s}UpLeg`, "Hips", 0.09 * x, -0.05, 0);
+    bone(`${s}Leg`, `${s}UpLeg`, 0, -0.45, 0);
+    bone(`${s}Foot`, `${s}Leg`, 0, -0.42, 0);
+    bone(`${s}ToeBase`, `${s}Foot`, 0, -0.06, 0.12);
+  }
+  change?.(b);
+  return b;
+}
+/** a clip turning bones (by name) about an axis, through angles (degrees), a key every 0.05 s */
+function turning(turns: Record<string, { axis: [number, number, number]; degrees: number[] }>): THREE.AnimationClip {
+  return new THREE.AnimationClip("turning", -1, Object.entries(turns).map(([name, { axis, degrees }]) => new THREE.QuaternionKeyframeTrack(
+    `${name}.quaternion`, degrees.map((_, i) => 0.05 * i),
+    degrees.flatMap((d) => new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(...axis), (d * Math.PI) / 180).toArray()),
+  )));
+}
+/** how far (degrees) a rig bone points from the source's bone (its joint to the next one's), in the rig's frame */
+function aimedApart(motion: InstanceType<Mods["motion"]["Motion"]>, bone: string, next: string, from: THREE.Object3D, to: THREE.Object3D): number {
+  const r = motion.rig, p = (o: THREE.Object3D) => o.getWorldPosition(new THREE.Vector3());
+  const want = p(to).sub(p(from)).applyQuaternion(motion.C).normalize();
+  return (r.P[r.bone(next)].clone().sub(r.P[r.bone(bone)]).normalize().angleTo(want) * 180) / Math.PI;
+}
+
+describe("motion from other tools", () => {
+  test("bones are matched by name across tools' conventions; twist bones, fingers and end sites aren't", () => {
+    const cases: Record<string, string | null> = {
+      // Mixamo (FBX and glTF, as three.js's loaders name them), CMU and DAZ BVHs
+      "mixamorig:LeftArm": "upperarm.L", mixamorigRightForeArm: "forearm.R", mixamorig1LeftUpLeg: "thigh.L", mixamorigLeftShoulder: "clavicle.L",
+      mixamorigRightToeBase: "toes.R", mixamorigHead: "head", mixamorigLeftHandIndex1: null, mixamorigLeftToe_End: null, mixamorigHeadTop_End: null,
+      LeftLeg: "shin.L", RightFoot: "foot.R", LHipJoint: null, LeftFingerBase: null, lShldr: "upperarm.L", rCollar: "clavicle.R", rShin: "shin.R", lButtock: null, head: "head",
+      // VRM and VRoid, Unreal, Rigify, 3ds Max Biped, and the rig's own
+      leftUpperArm: "upperarm.L", rightLowerLeg: "shin.R", J_Bip_L_UpperArm: "upperarm.L", J_Bip_C_Head: "head", J_Bip_R_ToeBase: "toes.R",
+      upperarm_l: "upperarm.L", calf_r: "shin.R", ball_l: "toes.L", upperarm_twist_01_l: null, "DEF-upper_arm.L": "upperarm.L", "DEF-upper_armL": "upperarm.L",
+      "DEF-upper_arm.L.001": null, "Bip01 L Thigh": "thigh.L", "Bip01 R Calf": "shin.R", "Bip01 L Toe0": "toes.L",
+      "forearm.R": "forearm.R", "upperarm2.R": null, "shoulderHelper.L": null, "pelvis.R": null,
+    };
+    for (const [name, want] of Object.entries(cases)) expect([name, M.motion.rigName(name)]).toEqual([name, want]);
+  });
+
+  test("the rig's own poses come back through a BVH, whatever its bind, facing and units", async () => {
+    const { PRESETS } = M.pose, names = Object.keys(PRESETS);
+    // the clip comes back round to neutral, so its last pose isn't the loop's wrap
+    const frames = [...names.map((n) => PRESETS[n]), PRESETS.neutral];
+    for (const [bind, yaw, unit] of [["neutral", 90, 1 / 2.54], ["T pose", -30, 0.01]] as const) {
+      const src = loadRig(), dst = loadRig();
+      // the source's thigh twists about the thigh: the rig's own posing twists it about the
+      // vertical, a few degrees off, which bends its second half off the line
+      src.settings.thighTwist = 1;
+      const motion = await M.motion.Motion.load(dst, buffer(toBVH(src, PRESETS[bind], frames, yaw, unit)), "rig.bvh");
+      names.forEach((name, k) => {
+        src.pose(PRESETS[name]);
+        motion.pose(0.5 * k);
+        expect([bind, name, jointsApart(src, dst, true).cm < 0.1, handsApart(src, dst) < 0.5]).toEqual([bind, name, true, true]);
+      });
+    }
+  });
+
+  test("a skeleton without toes, or with a clip of one frame, still plays; seeking goes anywhere in any order", async () => {
+    const { PRESETS } = M.pose, names = ["run", "lotus", "twist & look", "wrists"];
+    const src = loadRig(), dst = loadRig();
+    src.settings.thighTwist = 1;
+    const motion = await M.motion.Motion.load(dst, buffer(toBVH(src, PRESETS.neutral, [...names.map((n) => PRESETS[n]), PRESETS.neutral], 0, 1, ["toes.L", "toes.R"])), "rig.bvh");
+    expect(motion.bones["toes.L"]).toBeUndefined();
+    // [time in frames, the frame it shows]: past the end (2 s) it loops
+    for (const [k, shows] of [[3, 3], [0, 0], [2, 2], [1, 1], [6, 2]]) {
+      src.pose(PRESETS[names[shows]]);
+      motion.pose(0.5 * k);
+      expect(jointsApart(src, dst, true).cm).toBeLessThan(0.1);
+    }
+    const ref = loadRig(), still = await M.motion.Motion.load(loadRig(), buffer(toBVH(loadRig(), PRESETS.neutral, [PRESETS.run], 0, 1)), "rig.bvh");
+    expect(still.duration).toBe(0);
+    still.pose(3.7);
+    ref.pose(PRESETS.run);
+    expect(jointsApart(ref, still.rig, true).cm).toBeLessThan(0.1);
+  });
+
+  test("standing on its floor, the source's hips put the rig's where they'd stand", async () => {
+    const { PRESETS } = M.pose, frames = ["neutral", "T pose", "arms forward", "flex biceps", "neutral"].map((n) => PRESETS[n]);
+    const src = loadRig(), dst = loadRig();
+    src.settings.thighTwist = 1;
+    const motion = await M.motion.Motion.load(dst, buffer(toBVH(src, PRESETS["T pose"], frames, 45, 1)), "rig.bvh");
+    frames.forEach((f, k) => {
+      src.pose(f);
+      motion.pose(0.5 * k);
+      expect(jointsApart(src, dst, false).cm).toBeLessThan(0.1);
+    });
+  });
+
+  test("an explicit map wins; of two bones that could be one of the rig's, the one the clip moves", () => {
+    const { Motion } = M.motion;
+    const withControl = () => mixamo((b) => {
+      // a control bone that also reads as the left upper arm
+      b.upperarm_L = new THREE.Bone();
+      b.upperarm_L.name = "upperarm_L";
+      b.Hips.add(b.upperarm_L);
+    });
+    const raise = { axis: [0, 0, 1] as [number, number, number], degrees: [0, 45] };
+    let b = withControl();
+    expect(new Motion(loadRig(), b.Hips, turning({ LeftArm: raise })).bones["upperarm.L"]).toBe("LeftArm");
+    b = withControl();
+    expect(() => new Motion(loadRig(), b.Hips, turning({ LeftArm: raise, upperarm_L: raise }))).toThrow(/could be/);
+    b = withControl();
+    expect(new Motion(loadRig(), b.Hips, turning({ LeftArm: raise, upperarm_L: raise }), { map: { LeftArm: "upperarm.L" } }).bones["upperarm.L"]).toBe("LeftArm");
+  });
+
+  test("a pivot between the chest and a shoulder is fine; an unevenly scaled or unstanding source is refused", () => {
+    const { Motion } = M.motion;
+    const b = mixamo((b) => {
+      const pivot = new THREE.Bone();
+      pivot.name = "ShoulderPivot";
+      b.Chest.add(pivot);
+      pivot.add(b.LeftShoulder);
+    });
+    const motion = new Motion(loadRig(), b.Hips, turning({ LeftArm: { axis: [0, 1, 0], degrees: [0, 90] }, LeftForeArm: { axis: [0, 0, 1], degrees: [0, 60] } }));
+    motion.pose(0.05);
+    expect(aimedApart(motion, "upperarm.L", "forearm.L", b.LeftArm, b.LeftForeArm)).toBeLessThan(0.1);
+    expect(aimedApart(motion, "forearm.L", "hand.L", b.LeftForeArm, b.LeftHand)).toBeLessThan(0.1);
+    const squashed = mixamo((b) => b.Chest.scale.set(1, 2, 1));
+    expect(() => new Motion(loadRig(), squashed.Hips, turning({ LeftArm: { axis: [0, 1, 0], degrees: [0, 90] } }))).toThrow(/unevenly/);
+    // sitting: the knees forward, the feet as high as the hips
+    const seated = mixamo((b) => {
+      for (const s of ["Left", "Right"]) b[`${s}Leg`].position.set(0, 0, 0.45);
+      for (const s of ["Left", "Right"]) b[`${s}Foot`].position.set(0, 0, 0.42);
+    });
+    expect(() => new Motion(loadRig(), seated.Hips, turning({ LeftArm: { axis: [0, 1, 0], degrees: [0, 90] } }))).toThrow(/standing/);
+  });
+
+  test("the forearm doesn't snap as the wrist turns through half a turn", () => {
+    const b = mixamo(), rig = loadRig();
+    const motion = new M.motion.Motion(rig, b.Hips, turning({ LeftHand: { axis: [1, 0, 0], degrees: Array.from({ length: 41 }, (_, i) => 160 + i) } }));
+    const bones = ["forearm.L", "forearm2.L", "hand.L"].map((n) => rig.bone(n));
+    let last: THREE.Quaternion[] | null = null, most = 0;
+    for (let t = 0; t <= 2; t += 0.01) {
+      motion.pose(t);
+      const now = bones.map((i) => rig.W[i].clone());
+      if (last) most = Math.max(most, ...now.map((q, k) => (q.angleTo(last![k]) * 180) / Math.PI));
+      last = now;
+    }
+    // the wrist turns 0.2° a step
+    expect(most).toBeLessThan(2);
+  });
+
+  test("the source can be put anywhere in a scene, by its parent", async () => {
+    const { PRESETS } = M.pose, frames = ["neutral", "run", "neutral"].map((n) => PRESETS[n]);
+    const src = loadRig(), dst = loadRig(), still = loadRig();
+    const text = toBVH(src, PRESETS.neutral, frames, 0, 1);
+    const moved = await M.motion.Motion.load(dst, buffer(text), "rig.bvh");
+    const motion = await M.motion.Motion.load(still, buffer(text), "rig.bvh");
+    const parent = new THREE.Group();
+    parent.position.set(30, -20, 5);
+    parent.quaternion.setFromEuler(new THREE.Euler(0.3, 1.2, -0.2));
+    parent.scale.setScalar(2.5);
+    parent.add(moved.root);
+    parent.updateMatrixWorld(true);
+    moved.pose(0.5);
+    motion.pose(0.5);
+    expect(jointsApart(dst, still, false).cm).toBeLessThan(0.01);
   });
 });
