@@ -70,6 +70,24 @@ and the CLI) under a React UI. See the README.
   still go through `clearPhrases` (`src/scene/clarity.ts`) for the affricate floor, and a line timed
   to a source clip uses `CLEAR_SPEECH_TIGHT`. Check a finished scene with
   `~/.cache/chimera-asr/.venv/bin/python tools/scene-clarity.py <scene-id>` and listen to what it lists.
+- **Prepared English vocals must load CMUdict (`tools/lib/english-phones.ts`), never bare `EnglishG2P`.**
+  Calling `EnglishG2P` in Bun without loading `public/data/cmudict.txt.gz` silently falls back to
+  letter-to-sound rules and mangles common English words. Always use `ensureEnglishDict` +
+  `buildTimedPhones` (split diphthongs `aɪ/aʊ/eɪ/oʊ/ɔɪ`, crisp fixed consonants, stress-weighted
+  vowels) and floor active-phrase `contour` `breath` at `>= 0.72` so initial/final consonants are
+  never starved of airflow. Always match `part.melody.lyrics === part.performance.lyrics` (otherwise
+  `planPart` ignores `part.performance`). Check: run `tools/scene-clarity.py <scene-id>` and verify
+  sample phrases produce real CMUdict IPA.
+- **Inspect the full 0-to-end vocal RMS timeline at a low threshold (`> 0.010`) before scoring.**
+  Quiet/reverb-heavy opening vocals, whispers, or non-English chants (e.g. Enigma's `25.85–43.20s`
+  opening chant at `0.029` RMS) are missed by high cutoffs (`> 0.035`) and by English-only Whisper.
+  Always check a per-second RMS profile from `0s` to the end so the opening voice is never silent.
+- **Verify `index.html` and JS bundle checksums after every live deploy, and never cut off `publish.sh`.**
+  Wait strictly until `DEPLOY_EXIT=0` appears in the `macmini` launchd log before `bootout` (never
+  use a fixed timeout loop that can kill `publish.sh` before `index.html` uploads). Always verify
+  live HTTPS SHA-256 matches local `dist/` for `index.html`, the new hashed `assets/index-*.js` and
+  `assets/ScenePage-*.js`, plus `scene.json`, `mix.mp3`, and `.tele.gz`. When re-rendering an
+  existing scene, always bump `assetVersion` in `src/scene/library.ts`, `performance.json`, and tests.
 
 ## Checks
 
