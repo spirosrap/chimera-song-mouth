@@ -8,7 +8,7 @@ import {TeleTrack} from '../../show/tele.ts';
 import {Transport} from '../../show/transport.ts';
 import {formatTime} from '../../song/melody.ts';
 import {MovieStage} from './MovieStage.tsx';
-import {nextSceneCue,recordSceneVideo,type SceneStage,type VideoPreset} from '../../scene/video.ts';
+import {recordSceneVideo,type SceneStage,type VideoPreset} from '../../scene/video.ts';
 import {sceneVideoUrl} from '../../scene/download.ts';
 import '../scene.css';
 
@@ -64,7 +64,6 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
     return()=>window.removeEventListener('keydown',onKey);
   },[fullscreen,transport,loaded,exporting]);
   const state=transport?.state??{playing:false,time:0,duration:0},scene=loaded?.scene,cue=scene?sceneCue(scene,state.time):undefined;
-  const nextCue=scene?nextSceneCue(scene,state.time,cue):undefined;
   const cueWords=cue?cue.text.split(/\s+/).filter(Boolean):[];
   const cueProgress=cue?Math.max(0,Math.min(1,(state.time-cue.start)/Math.max(0.05,cue.end-cue.start))):0;
   const litWords=cueWords.length?Math.max(1,Math.ceil(cueProgress*cueWords.length)):0;
@@ -93,18 +92,10 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
             </div>
             {core
               ?<figcaption className={`scene-caption scene-hud-deck quiet${cue?' on':''}`} aria-live="off">{quiet?<><span>{quietSpeaker?.name}</span><p key={quiet.start}>{quiet.text}</p></>:<p aria-hidden="true">&nbsp;</p>}</figcaption>
-              :<figcaption className="scene-caption scene-hud-deck" aria-live="off">{cue
-                ?<>
-                  <span className="scene-hud-speaker">{speaker?.name}</span>
-                  <p className="scene-hud-lyrics">{cueWords.map((word,i)=><span key={i} className={i<litWords?'lit':undefined}>{word}{i<cueWords.length-1?' ':''}</span>)}</p>
-                  {nextCue&&<p className="scene-hud-next">{nextCue.text}</p>}
-                </>
-                :nextCue
-                ?<>
-                  <span className="scene-hud-speaker muted">NEXT LYRIC</span>
-                  <p className="scene-hud-preview">{nextCue.text}</p>
-                </>
-                :<p aria-hidden="true">&nbsp;</p>}</figcaption>}
+              :cue?<figcaption className="scene-caption scene-hud-deck" aria-live="off">
+                <span className="scene-hud-speaker">{speaker?.name}</span>
+                <p className="scene-hud-lyrics">{cueWords.map((word,i)=><span key={i} className={i<litWords?'lit':undefined}>{word}{i<cueWords.length-1?' ':''}</span>)}</p>
+              </figcaption>:null}
           </>}
         </div>
       </figure>
