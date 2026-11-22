@@ -3787,6 +3787,36 @@
       "sha256": "689baf693dc6ead1958ee3d46fc043ef6cba849dc8d97279f78d80dd16806057"
     },
     {
+      "path": "public/scenes/mr-electric-blue/backing.mp3",
+      "bytes": 7742736,
+      "sha256": "d79e53ae88fa5cba2f97dd3cc925deccca27208f0a6af5d6cb03b984789f959c"
+    },
+    {
+      "path": "public/scenes/mr-electric-blue/eb-agent.tele.gz",
+      "bytes": 2467688,
+      "sha256": "6824ecfc22274c2fe441a2ab2daa0b5b2ad701b428ff0a536bf883527382751c"
+    },
+    {
+      "path": "public/scenes/mr-electric-blue/eb-lead.tele.gz",
+      "bytes": 3352189,
+      "sha256": "507954bade0b73ab51f4c8cf8115aa2940116e02a596cfa6c7dd36dac40ed6ad"
+    },
+    {
+      "path": "public/scenes/mr-electric-blue/mix.mp3",
+      "bytes": 10323500,
+      "sha256": "82df9322d0abc619427c775c7a34ca0ded376e271f33b07ca48d966ebc2d6944"
+    },
+    {
+      "path": "public/scenes/mr-electric-blue/performance.json",
+      "bytes": 1533066,
+      "sha256": "b7f7e81f75a7e9bfd4432f680f310be3233f2815949b3e5e02b161a49c8af122"
+    },
+    {
+      "path": "public/scenes/mr-electric-blue/scene.json",
+      "bytes": 15776,
+      "sha256": "9b4afc18974010129e8b3e180f9a27a52a3d9aff46a5a36088abd9ede1e2b7c5"
+    },
+    {
       "path": "public/scenes/my-heart-will-go-on/backing.mp3",
       "bytes": 8991020,
       "sha256": "874f1d5244d190e91c3edfdf70b6b6bef1ccfcc760814747efbf0c0d6ae33877"

@@ -1,0 +1,732 @@
+{
+  "setting": "electricblue",
+  "title": "Benson Boone · Mr Electric Blue",
+  "description": "The complete 5:22 official music video: 1970s Industry Plant Records agent office, sunlit hillside lawn-mowing and dog-walking, electric-blue Discount Jumpsuits sign-spinner, pastel pink ice-cream truck, soapy red muscle car wash, turquoise backyard pool, and backyard trampoline backflip.",
+  "duration": 322.54839,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "eb-lead",
+      "name": "Benson Boone",
+      "role": "Lead tenor vocal & dialogue",
+      "tele": "eb-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "eb-agent",
+      "name": "Record Agent & Backing",
+      "role": "Agent dialogue & chorus harmonies",
+      "tele": "eb-agent.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.1,
+      "end": 2.26,
+      "speaker": "eb-agent",
+      "text": "A baby that can do cartwheels, I love it.",
+      "intensity": 0.74
+    },
+    {
+      "start": 4.46,
+      "end": 6.76,
+      "speaker": "eb-agent",
+      "text": "My beautiful little thing, come here!",
+      "intensity": 0.78
+    },
+    {
+      "start": 7.16,
+      "end": 9.74,
+      "speaker": "eb-agent",
+      "text": "Yes, yes, come sit, talk, let's talk.",
+      "intensity": 0.74
+    },
+    {
+      "start": 10.84,
+      "end": 12.16,
+      "speaker": "eb-lead",
+      "text": "I'm fine, is everything all right?",
+      "intensity": 0.7
+    },
+    {
+      "start": 12.3,
+      "end": 13.42,
+      "speaker": "eb-agent",
+      "text": "Have you not been on the internet?",
+      "intensity": 0.78
+    },
+    {
+      "start": 14.3,
+      "end": 14.8,
+      "speaker": "eb-lead",
+      "text": "Well, I have.",
+      "intensity": 0.68
+    },
+    {
+      "start": 14.9,
+      "end": 16.05,
+      "speaker": "eb-agent",
+      "text": "Everything's terrible!",
+      "intensity": 0.82
+    },
+    {
+      "start": 16.68,
+      "end": 21.7,
+      "speaker": "eb-agent",
+      "text": "We put all of our money in moonbeam ice cream and a backflip.",
+      "intensity": 0.82
+    },
+    {
+      "start": 22.12,
+      "end": 24.04,
+      "speaker": "eb-agent",
+      "text": "And it's done absolutely horrible.",
+      "intensity": 0.8
+    },
+    {
+      "start": 25,
+      "end": 26.86,
+      "speaker": "eb-agent",
+      "text": "We need something new. We need a new gimmick.",
+      "intensity": 0.82
+    },
+    {
+      "start": 26.96,
+      "end": 29.46,
+      "speaker": "eb-lead",
+      "text": "Maybe good songwriting?",
+      "intensity": 0.74
+    },
+    {
+      "start": 30.06,
+      "end": 32.58,
+      "speaker": "eb-agent",
+      "text": "You know you can't do that. You are bad at that.",
+      "intensity": 0.8
+    },
+    {
+      "start": 32.8,
+      "end": 35.62,
+      "speaker": "eb-agent",
+      "text": "All I know is you owe us ten million dollars. So I'm giving you this.",
+      "intensity": 0.82
+    },
+    {
+      "start": 36.7,
+      "end": 37.35,
+      "speaker": "eb-lead",
+      "text": "Ten million dollars?",
+      "intensity": 0.82
+    },
+    {
+      "start": 37.48,
+      "end": 38.6,
+      "speaker": "eb-agent",
+      "text": "You have seven days to do it.",
+      "intensity": 0.82
+    },
+    {
+      "start": 38.7,
+      "end": 41.96,
+      "speaker": "eb-lead",
+      "text": "How am I gonna raise ten million dollars in seven days? That's ridiculous!",
+      "intensity": 0.84
+    },
+    {
+      "start": 46.18,
+      "end": 47.65,
+      "speaker": "eb-lead",
+      "text": "He was a stranger",
+      "intensity": 0.82
+    },
+    {
+      "start": 48.54,
+      "end": 51.35,
+      "speaker": "eb-lead",
+      "text": "He walked in looking for danger",
+      "intensity": 0.84
+    },
+    {
+      "start": 51.82,
+      "end": 55.58,
+      "speaker": "eb-lead",
+      "text": "When he stares at you, he can change a town",
+      "intensity": 0.86
+    },
+    {
+      "start": 55.66,
+      "end": 58.65,
+      "speaker": "eb-lead",
+      "text": "And make you fall in love",
+      "intensity": 0.86
+    },
+    {
+      "start": 61.1,
+      "end": 62.8,
+      "speaker": "eb-lead",
+      "text": "Heaven knows it",
+      "intensity": 0.84
+    },
+    {
+      "start": 63.36,
+      "end": 66.06,
+      "speaker": "eb-lead",
+      "text": "They made him out of fire and roses",
+      "intensity": 0.86
+    },
+    {
+      "start": 66.12,
+      "end": 70.18,
+      "speaker": "eb-lead",
+      "text": "With an attitude, but he's sweet enough",
+      "intensity": 0.88
+    },
+    {
+      "start": 70.26,
+      "end": 73.35,
+      "speaker": "eb-lead",
+      "text": "To put him on your tongue",
+      "intensity": 0.88
+    },
+    {
+      "start": 75.58,
+      "end": 82.65,
+      "speaker": "eb-lead",
+      "text": "He can be everything you've ever dreamed",
+      "intensity": 0.92
+    },
+    {
+      "start": 83.5,
+      "end": 87.85,
+      "speaker": "eb-lead",
+      "text": "Oh, Mr. Electric Blue",
+      "intensity": 0.95
+    },
+    {
+      "start": 88.38,
+      "end": 91.68,
+      "speaker": "eb-lead",
+      "text": "I wanna dance like you",
+      "intensity": 0.94
+    },
+    {
+      "start": 91.74,
+      "end": 95.45,
+      "speaker": "eb-lead",
+      "text": "How did you get so cool?",
+      "intensity": 0.94
+    },
+    {
+      "start": 95.9,
+      "end": 98.32,
+      "speaker": "eb-lead",
+      "text": "You got it, huh, huh, you got it",
+      "intensity": 0.93
+    },
+    {
+      "start": 98.38,
+      "end": 102.64,
+      "speaker": "eb-lead",
+      "text": "Oh, you got electric soul",
+      "intensity": 0.95
+    },
+    {
+      "start": 102.7,
+      "end": 106.35,
+      "speaker": "eb-lead",
+      "text": "You let the good times roll",
+      "intensity": 0.94
+    },
+    {
+      "start": 106.94,
+      "end": 109.96,
+      "speaker": "eb-lead",
+      "text": "Mr. Electric Blue",
+      "intensity": 0.95
+    },
+    {
+      "start": 110.02,
+      "end": 113.5,
+      "speaker": "eb-lead",
+      "text": "You got it, huh, huh, you got it",
+      "intensity": 0.93
+    },
+    {
+      "start": 114.72,
+      "end": 117.95,
+      "speaker": "eb-lead",
+      "text": "They say that he fell from space",
+      "intensity": 0.94
+    },
+    {
+      "start": 118.74,
+      "end": 121.95,
+      "speaker": "eb-lead",
+      "text": "Or some supernatural place",
+      "intensity": 0.94
+    },
+    {
+      "start": 122.7,
+      "end": 125.05,
+      "speaker": "eb-lead",
+      "text": "Mr. Electric Blue",
+      "intensity": 0.95
+    },
+    {
+      "start": 125.76,
+      "end": 128.9,
+      "speaker": "eb-lead",
+      "text": "I know I believe in you",
+      "intensity": 0.94
+    },
+    {
+      "start": 129.42,
+      "end": 131.82,
+      "speaker": "eb-lead",
+      "text": "And here is your Moonbeam ice cream, miss.",
+      "intensity": 0.72
+    },
+    {
+      "start": 132.06,
+      "end": 134.3,
+      "speaker": "eb-agent",
+      "text": "Hey, you're that guy who sings Beautiful Things?",
+      "intensity": 0.76
+    },
+    {
+      "start": 134.62,
+      "end": 136.18,
+      "speaker": "eb-lead",
+      "text": "I sure am. Thank you very much.",
+      "intensity": 0.72
+    },
+    {
+      "start": 136.3,
+      "end": 137.85,
+      "speaker": "eb-agent",
+      "text": "Your music is terrible.",
+      "intensity": 0.8
+    },
+    {
+      "start": 139.32,
+      "end": 141.42,
+      "speaker": "eb-lead",
+      "text": "He's a man's man",
+      "intensity": 0.86
+    },
+    {
+      "start": 141.48,
+      "end": 144.78,
+      "speaker": "eb-lead",
+      "text": "A good hard-working American",
+      "intensity": 0.88
+    },
+    {
+      "start": 144.84,
+      "end": 149.24,
+      "speaker": "eb-lead",
+      "text": "But he ain't the guy you'd want to fight",
+      "intensity": 0.9
+    },
+    {
+      "start": 149.3,
+      "end": 152.1,
+      "speaker": "eb-lead",
+      "text": "He'll make you bite the dirt",
+      "intensity": 0.9
+    },
+    {
+      "start": 153.5,
+      "end": 158.3,
+      "speaker": "eb-lead",
+      "text": "And he said watch the way you talk to me",
+      "intensity": 0.92
+    },
+    {
+      "start": 158.38,
+      "end": 161.9,
+      "speaker": "eb-lead",
+      "text": "If you want to keep your two front teeth",
+      "intensity": 0.94
+    },
+    {
+      "start": 162.42,
+      "end": 165.9,
+      "speaker": "eb-lead",
+      "text": "Oh, Mr. Electric Blue",
+      "intensity": 0.96
+    },
+    {
+      "start": 166.83,
+      "end": 169.95,
+      "speaker": "eb-lead",
+      "text": "I wanna dance like you",
+      "intensity": 0.95
+    },
+    {
+      "start": 170.53,
+      "end": 174.2,
+      "speaker": "eb-lead",
+      "text": "How did you get so cool?",
+      "intensity": 0.95
+    },
+    {
+      "start": 174.71,
+      "end": 177.08,
+      "speaker": "eb-lead",
+      "text": "You got it, huh, huh, you got it",
+      "intensity": 0.94
+    },
+    {
+      "start": 177.13,
+      "end": 181.42,
+      "speaker": "eb-lead",
+      "text": "Oh, you got electric soul",
+      "intensity": 0.96
+    },
+    {
+      "start": 181.49,
+      "end": 185.35,
+      "speaker": "eb-lead",
+      "text": "You let the good times roll",
+      "intensity": 0.95
+    },
+    {
+      "start": 185.87,
+      "end": 188.05,
+      "speaker": "eb-lead",
+      "text": "Mr. Electric Blue",
+      "intensity": 0.96
+    },
+    {
+      "start": 188.81,
+      "end": 192.04,
+      "speaker": "eb-lead",
+      "text": "You got it, huh, huh, you got it",
+      "intensity": 0.94
+    },
+    {
+      "start": 192.09,
+      "end": 195.45,
+      "speaker": "eb-lead",
+      "text": "Mr. Electric, Mr. Electric",
+      "intensity": 0.96
+    },
+    {
+      "start": 196.09,
+      "end": 199.48,
+      "speaker": "eb-lead",
+      "text": "Mr. Electric, Mr. Electric",
+      "intensity": 0.96
+    },
+    {
+      "start": 199.53,
+      "end": 202.66,
+      "speaker": "eb-lead",
+      "text": "Mr. Electric, Mr. Electric",
+      "intensity": 0.97
+    },
+    {
+      "start": 202.71,
+      "end": 206.78,
+      "speaker": "eb-lead",
+      "text": "Mr. Electric, Mr. Electric",
+      "intensity": 0.97
+    },
+    {
+      "start": 206.85,
+      "end": 211.52,
+      "speaker": "eb-lead",
+      "text": "They say that he fell from space",
+      "intensity": 0.95
+    },
+    {
+      "start": 211.59,
+      "end": 215.5,
+      "speaker": "eb-lead",
+      "text": "From a supernatural place",
+      "intensity": 0.95
+    },
+    {
+      "start": 216.09,
+      "end": 219.15,
+      "speaker": "eb-lead",
+      "text": "Mr. Electric Blue",
+      "intensity": 0.96
+    },
+    {
+      "start": 220.99,
+      "end": 223.7,
+      "speaker": "eb-lead",
+      "text": "I believe in you",
+      "intensity": 0.94
+    },
+    {
+      "start": 232.91,
+      "end": 234.25,
+      "speaker": "eb-lead",
+      "text": "Hey, Mr. Label, sir.",
+      "intensity": 0.72
+    },
+    {
+      "start": 235.81,
+      "end": 241.25,
+      "speaker": "eb-lead",
+      "text": "Listen, I tried everything I could to make you ten million dollars and I couldn't do it, please give me one more chance.",
+      "intensity": 0.76
+    },
+    {
+      "start": 241.37,
+      "end": 247.7,
+      "speaker": "eb-lead",
+      "text": "I made 168 bucks and it's worth every penny. I was washing cars, I was walking dogs.",
+      "intensity": 0.76
+    },
+    {
+      "start": 247.75,
+      "end": 251.4,
+      "speaker": "eb-agent",
+      "text": "Did you not get my fax? Everything's fine!",
+      "intensity": 0.82
+    },
+    {
+      "start": 251.47,
+      "end": 257,
+      "speaker": "eb-agent",
+      "text": "I sold your entire catalog to retail chains, fast food chains, and movie theaters.",
+      "intensity": 0.84
+    },
+    {
+      "start": 257.03,
+      "end": 261.75,
+      "speaker": "eb-agent",
+      "text": "You'll be the most overplayed artist in the world and I'll be rich!",
+      "intensity": 0.86
+    },
+    {
+      "start": 265.61,
+      "end": 267.75,
+      "speaker": "eb-lead",
+      "text": "That's all I've ever wanted!",
+      "intensity": 0.84
+    },
+    {
+      "start": 270.18,
+      "end": 271.05,
+      "speaker": "eb-lead",
+      "text": "Yes!",
+      "intensity": 0.88
+    },
+    {
+      "start": 272.47,
+      "end": 275.6,
+      "speaker": "eb-lead",
+      "text": "They say that he fell from space",
+      "intensity": 0.95
+    },
+    {
+      "start": 275.65,
+      "end": 279.7,
+      "speaker": "eb-lead",
+      "text": "From a supernatural place",
+      "intensity": 0.95
+    },
+    {
+      "start": 279.77,
+      "end": 282.9,
+      "speaker": "eb-lead",
+      "text": "Mr. Electric Blue",
+      "intensity": 0.96
+    },
+    {
+      "start": 283.65,
+      "end": 286.8,
+      "speaker": "eb-lead",
+      "text": "I know I believe in you",
+      "intensity": 0.94
+    },
+    {
+      "start": 290.49,
+      "end": 293.5,
+      "speaker": "eb-agent",
+      "text": "Excuse me, young innocent boy.",
+      "intensity": 0.78
+    },
+    {
+      "start": 293.57,
+      "end": 294.95,
+      "speaker": "eb-lead",
+      "text": "Yeah?",
+      "intensity": 0.72
+    },
+    {
+      "start": 295.75,
+      "end": 297.75,
+      "speaker": "eb-agent",
+      "text": "Was that a backflip I saw?",
+      "intensity": 0.78
+    },
+    {
+      "start": 298.49,
+      "end": 302.1,
+      "speaker": "eb-lead",
+      "text": "Yeah, yeah, that was a backflip. They're pretty easy for me.",
+      "intensity": 0.76
+    },
+    {
+      "start": 302.13,
+      "end": 303.9,
+      "speaker": "eb-agent",
+      "text": "Can you sing by chance?",
+      "intensity": 0.78
+    },
+    {
+      "start": 303.95,
+      "end": 308.5,
+      "speaker": "eb-lead",
+      "text": "No. But I guess I could try it.",
+      "intensity": 0.76
+    },
+    {
+      "start": 308.57,
+      "end": 311.1,
+      "speaker": "eb-agent",
+      "text": "He's absolutely perfect.",
+      "intensity": 0.8
+    },
+    {
+      "start": 315.85,
+      "end": 316.95,
+      "speaker": "eb-lead",
+      "text": "Weird guy.",
+      "intensity": 0.72
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "eb-office"
+    },
+    {
+      "time": 18,
+      "view": "eb-agent"
+    },
+    {
+      "time": 26.5,
+      "view": "eb-office"
+    },
+    {
+      "time": 32,
+      "view": "eb-agent"
+    },
+    {
+      "time": 38.5,
+      "view": "eb-office"
+    },
+    {
+      "time": 54,
+      "view": "eb-lawn"
+    },
+    {
+      "time": 68,
+      "view": "eb-jumpsuits"
+    },
+    {
+      "time": 76,
+      "view": "eb-lawn"
+    },
+    {
+      "time": 83.5,
+      "view": "eb-truck"
+    },
+    {
+      "time": 98,
+      "view": "eb-carwash"
+    },
+    {
+      "time": 106.5,
+      "view": "eb-lead"
+    },
+    {
+      "time": 112,
+      "view": "eb-truck"
+    },
+    {
+      "time": 116,
+      "view": "eb-lawn"
+    },
+    {
+      "time": 122.5,
+      "view": "eb-carwash"
+    },
+    {
+      "time": 129,
+      "view": "eb-truck"
+    },
+    {
+      "time": 144,
+      "view": "eb-jumpsuits"
+    },
+    {
+      "time": 148,
+      "view": "eb-carwash"
+    },
+    {
+      "time": 152,
+      "view": "eb-lawn"
+    },
+    {
+      "time": 162.5,
+      "view": "eb-lawn"
+    },
+    {
+      "time": 168,
+      "view": "eb-jumpsuits"
+    },
+    {
+      "time": 172,
+      "view": "eb-carwash"
+    },
+    {
+      "time": 180,
+      "view": "eb-jumpsuits"
+    },
+    {
+      "time": 186,
+      "view": "eb-lead"
+    },
+    {
+      "time": 192,
+      "view": "eb-carwash"
+    },
+    {
+      "time": 200,
+      "view": "eb-lawn"
+    },
+    {
+      "time": 206,
+      "view": "eb-pool"
+    },
+    {
+      "time": 232,
+      "view": "eb-office"
+    },
+    {
+      "time": 247.5,
+      "view": "eb-agent"
+    },
+    {
+      "time": 262,
+      "view": "eb-office"
+    },
+    {
+      "time": 272.5,
+      "view": "eb-jumpsuits"
+    },
+    {
+      "time": 288,
+      "view": "eb-trampoline"
+    }
+  ]
+}
