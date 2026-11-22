@@ -1,0 +1,623 @@
+{
+  "setting": "sexypicture",
+  "title": "CMAT · Take A Sexy Picture Of Me",
+  "description": "Physical voices over the separated pop-country instrumental, staged across the mall ribbon cutting, crimson VIP club booth, desert photo studio, electric-blue neon light tubes, and backstage vanity mirror.",
+  "duration": 242.277,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "cm-lead",
+      "name": "Lead Vocal",
+      "role": "Lead",
+      "tele": "cm-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "cm-choir",
+      "name": "Backing Harmonies",
+      "role": "Chorus & Call",
+      "tele": "cm-choir.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 3.05,
+      "end": 6.1,
+      "speaker": "cm-lead",
+      "text": "Happy birthday to you",
+      "intensity": 0.72
+    },
+    {
+      "start": 7.78,
+      "end": 10.66,
+      "speaker": "cm-lead",
+      "text": "Happy birthday to you",
+      "intensity": 0.74
+    },
+    {
+      "start": 11.75,
+      "end": 14.95,
+      "speaker": "cm-lead",
+      "text": "Ever since I was a little girl",
+      "intensity": 0.76
+    },
+    {
+      "start": 15.85,
+      "end": 19.75,
+      "speaker": "cm-lead",
+      "text": "I only wanted to be sexy",
+      "intensity": 0.8
+    },
+    {
+      "start": 21.1,
+      "end": 23.1,
+      "speaker": "cm-lead",
+      "text": "Nine years old",
+      "intensity": 0.78
+    },
+    {
+      "start": 23.42,
+      "end": 26.8,
+      "speaker": "cm-lead",
+      "text": "Trying to wax my legs with tape",
+      "intensity": 0.8
+    },
+    {
+      "start": 30.15,
+      "end": 33.5,
+      "speaker": "cm-lead",
+      "text": "There were some things only I can see",
+      "intensity": 0.78
+    },
+    {
+      "start": 34.45,
+      "end": 38.35,
+      "speaker": "cm-lead",
+      "text": "A little spot that can't be lifted",
+      "intensity": 0.8
+    },
+    {
+      "start": 39.55,
+      "end": 44.2,
+      "speaker": "cm-lead",
+      "text": "On my left hand, dig in like a car key",
+      "intensity": 0.82
+    },
+    {
+      "start": 45.75,
+      "end": 47.38,
+      "speaker": "cm-lead",
+      "text": "So you see",
+      "intensity": 0.82
+    },
+    {
+      "start": 49.45,
+      "end": 53.18,
+      "speaker": "cm-lead",
+      "text": "I've been having a horrible time",
+      "intensity": 0.88
+    },
+    {
+      "start": 53.32,
+      "end": 56.86,
+      "speaker": "cm-lead",
+      "text": "Of late, I get none of your sympathy",
+      "intensity": 0.88
+    },
+    {
+      "start": 57.1,
+      "end": 61.38,
+      "speaker": "cm-lead",
+      "text": "But all of the pain hits and the fog lifts",
+      "intensity": 0.9
+    },
+    {
+      "start": 62.1,
+      "end": 65.45,
+      "speaker": "cm-lead",
+      "text": "And then it's too much for therapy",
+      "intensity": 0.9
+    },
+    {
+      "start": 66.4,
+      "end": 70.48,
+      "speaker": "cm-lead",
+      "text": "Oh, baby, heed my solution",
+      "intensity": 0.92
+    },
+    {
+      "start": 71.7,
+      "end": 74.02,
+      "speaker": "cm-lead",
+      "text": "And take a sexy picture",
+      "intensity": 0.94
+    },
+    {
+      "start": 74.16,
+      "end": 77.05,
+      "speaker": "cm-lead",
+      "text": "Take a sexy picture of me",
+      "intensity": 0.96
+    },
+    {
+      "start": 79.45,
+      "end": 81.45,
+      "speaker": "cm-lead",
+      "text": "And make me look sixteen",
+      "intensity": 0.92
+    },
+    {
+      "start": 83.2,
+      "end": 84.3,
+      "speaker": "cm-lead",
+      "text": "Listen!",
+      "intensity": 0.9
+    },
+    {
+      "start": 84.7,
+      "end": 87.85,
+      "speaker": "cm-lead",
+      "text": "I did the butcher, I did the baker",
+      "intensity": 0.84
+    },
+    {
+      "start": 88.24,
+      "end": 90.22,
+      "speaker": "cm-lead",
+      "text": "I did the home and the family maker",
+      "intensity": 0.86
+    },
+    {
+      "start": 90.56,
+      "end": 93.02,
+      "speaker": "cm-lead",
+      "text": "I did school girl fantasies",
+      "intensity": 0.86
+    },
+    {
+      "start": 94.86,
+      "end": 97.16,
+      "speaker": "cm-lead",
+      "text": "Oh, I did leg things and hand stuff",
+      "intensity": 0.86
+    },
+    {
+      "start": 97.3,
+      "end": 99.42,
+      "speaker": "cm-lead",
+      "text": "And single woman banter",
+      "intensity": 0.86
+    },
+    {
+      "start": 99.7,
+      "end": 102.66,
+      "speaker": "cm-lead",
+      "text": "Now tell me, what was in it for me?",
+      "intensity": 0.88
+    },
+    {
+      "start": 103.8,
+      "end": 108.1,
+      "speaker": "cm-lead",
+      "text": "Oh, I've been having a horrible time",
+      "intensity": 0.9
+    },
+    {
+      "start": 108.55,
+      "end": 112.48,
+      "speaker": "cm-lead",
+      "text": "Of late, I get none of your sympathy",
+      "intensity": 0.9
+    },
+    {
+      "start": 112.68,
+      "end": 116.92,
+      "speaker": "cm-lead",
+      "text": "But all of the pain hits and the fog lifts",
+      "intensity": 0.92
+    },
+    {
+      "start": 117.65,
+      "end": 121.68,
+      "speaker": "cm-lead",
+      "text": "And then it's too much for therapy",
+      "intensity": 0.92
+    },
+    {
+      "start": 122.28,
+      "end": 125.9,
+      "speaker": "cm-lead",
+      "text": "Oh, baby, heed my solution",
+      "intensity": 0.94
+    },
+    {
+      "start": 127.15,
+      "end": 129.5,
+      "speaker": "cm-lead",
+      "text": "And take a sexy picture",
+      "intensity": 0.96
+    },
+    {
+      "start": 129.7,
+      "end": 132.84,
+      "speaker": "cm-lead",
+      "text": "Take a sexy picture of me",
+      "intensity": 0.96
+    },
+    {
+      "start": 134.85,
+      "end": 136.88,
+      "speaker": "cm-lead",
+      "text": "And make me look sixteen",
+      "intensity": 0.94
+    },
+    {
+      "start": 140.85,
+      "end": 145.1,
+      "speaker": "cm-lead",
+      "text": "You haven't looked at me the same since I turned twenty seven",
+      "intensity": 0.86
+    },
+    {
+      "start": 145.65,
+      "end": 147.6,
+      "speaker": "cm-lead",
+      "text": "Where goes my potential?",
+      "intensity": 0.88
+    },
+    {
+      "start": 148.2,
+      "end": 149.84,
+      "speaker": "cm-lead",
+      "text": "Oh, she's up in Heaven",
+      "intensity": 0.88
+    },
+    {
+      "start": 149.94,
+      "end": 152.84,
+      "speaker": "cm-lead",
+      "text": "Rest in peace to any chance of me",
+      "intensity": 0.9
+    },
+    {
+      "start": 153,
+      "end": 157.05,
+      "speaker": "cm-lead",
+      "text": "Ah, ah, ooh, ooh, ah, ah",
+      "intensity": 0.88
+    },
+    {
+      "start": 157.45,
+      "end": 163.72,
+      "speaker": "cm-lead",
+      "text": "And no doctor or Pope can grant diagnosis",
+      "intensity": 0.88
+    },
+    {
+      "start": 164.15,
+      "end": 168.48,
+      "speaker": "cm-lead",
+      "text": "I've peeled through the forums and there's no cure for old sis",
+      "intensity": 0.9
+    },
+    {
+      "start": 168.62,
+      "end": 171.24,
+      "speaker": "cm-lead",
+      "text": "But here's a message to the party girls",
+      "intensity": 0.92
+    },
+    {
+      "start": 171.34,
+      "end": 173.12,
+      "speaker": "cm-lead",
+      "text": "Dragged out by their ankles",
+      "intensity": 0.92
+    },
+    {
+      "start": 173.45,
+      "end": 175.92,
+      "speaker": "cm-lead",
+      "text": "I'm here if you need me",
+      "intensity": 0.92
+    },
+    {
+      "start": 176.02,
+      "end": 178.18,
+      "speaker": "cm-lead",
+      "text": "Deep in your afters",
+      "intensity": 0.94
+    },
+    {
+      "start": 178.8,
+      "end": 182.46,
+      "speaker": "cm-lead",
+      "text": "I've been having a horrible time",
+      "intensity": 0.94
+    },
+    {
+      "start": 182.58,
+      "end": 186.24,
+      "speaker": "cm-lead",
+      "text": "Of late, I get none of your sympathy",
+      "intensity": 0.94
+    },
+    {
+      "start": 186.36,
+      "end": 190.84,
+      "speaker": "cm-lead",
+      "text": "But all of the pain hits and the fog lifts",
+      "intensity": 0.96
+    },
+    {
+      "start": 191.45,
+      "end": 194.68,
+      "speaker": "cm-lead",
+      "text": "And then it's too much for therapy",
+      "intensity": 0.96
+    },
+    {
+      "start": 196.02,
+      "end": 199.8,
+      "speaker": "cm-lead",
+      "text": "Oh, baby, heed my solution",
+      "intensity": 0.96
+    },
+    {
+      "start": 201,
+      "end": 203.3,
+      "speaker": "cm-lead",
+      "text": "And take a sexy picture",
+      "intensity": 0.98
+    },
+    {
+      "start": 203.42,
+      "end": 205.68,
+      "speaker": "cm-lead",
+      "text": "Take a sexy picture",
+      "intensity": 0.98
+    },
+    {
+      "start": 206.1,
+      "end": 207.98,
+      "speaker": "cm-lead",
+      "text": "Can't you see me wither?",
+      "intensity": 0.98
+    },
+    {
+      "start": 208.1,
+      "end": 211.35,
+      "speaker": "cm-lead",
+      "text": "Take a sexy picture of me",
+      "intensity": 1
+    },
+    {
+      "start": 211.48,
+      "end": 213.4,
+      "speaker": "cm-lead",
+      "text": "Ah, ah, ah",
+      "intensity": 0.94
+    },
+    {
+      "start": 213.62,
+      "end": 218.08,
+      "speaker": "cm-lead",
+      "text": "And make me look fourteen, oh",
+      "intensity": 0.92
+    },
+    {
+      "start": 218.88,
+      "end": 221.25,
+      "speaker": "cm-lead",
+      "text": "Or like ten, or like five",
+      "intensity": 0.9
+    },
+    {
+      "start": 221.48,
+      "end": 224,
+      "speaker": "cm-lead",
+      "text": "Or like two, like a baby",
+      "intensity": 0.9
+    },
+    {
+      "start": 224.2,
+      "end": 227.12,
+      "speaker": "cm-lead",
+      "text": "Whoever it is that you're gonna love",
+      "intensity": 0.92
+    },
+    {
+      "start": 227.22,
+      "end": 229.06,
+      "speaker": "cm-lead",
+      "text": "So you'll be nice to me",
+      "intensity": 0.92
+    },
+    {
+      "start": 232.56,
+      "end": 235.04,
+      "speaker": "cm-choir",
+      "text": "Yoo-hoo! We need you on set in five!",
+      "intensity": 0.8
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 4,
+      "view": "cm-lead"
+    },
+    {
+      "time": 7.6,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 11.5,
+      "view": "cm-club"
+    },
+    {
+      "time": 20.8,
+      "view": "cm-club"
+    },
+    {
+      "time": 29.5,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 35.5,
+      "view": "cm-lead"
+    },
+    {
+      "time": 39,
+      "view": "cm-club"
+    },
+    {
+      "time": 43.8,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 47.5,
+      "view": "cm-desert"
+    },
+    {
+      "time": 59.5,
+      "view": "cm-club"
+    },
+    {
+      "time": 66.2,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 70.5,
+      "view": "cm-club"
+    },
+    {
+      "time": 74,
+      "view": "cm-blue"
+    },
+    {
+      "time": 80,
+      "view": "cm-choir"
+    },
+    {
+      "time": 84.5,
+      "view": "cm-club"
+    },
+    {
+      "time": 90.5,
+      "view": "cm-blue"
+    },
+    {
+      "time": 94.8,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 99.6,
+      "view": "cm-club"
+    },
+    {
+      "time": 103.5,
+      "view": "cm-desert"
+    },
+    {
+      "time": 108.4,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 111.5,
+      "view": "cm-desert"
+    },
+    {
+      "time": 116,
+      "view": "cm-club"
+    },
+    {
+      "time": 122.2,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 126,
+      "view": "cm-desert"
+    },
+    {
+      "time": 130,
+      "view": "cm-club"
+    },
+    {
+      "time": 134.8,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 139,
+      "view": "cm-blue"
+    },
+    {
+      "time": 144,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 147.8,
+      "view": "cm-club"
+    },
+    {
+      "time": 155.5,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 167.5,
+      "view": "cm-club"
+    },
+    {
+      "time": 178.2,
+      "view": "cm-blue"
+    },
+    {
+      "time": 183.5,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 187.5,
+      "view": "cm-blue"
+    },
+    {
+      "time": 191.5,
+      "view": "cm-desert"
+    },
+    {
+      "time": 196,
+      "view": "cm-club"
+    },
+    {
+      "time": 203,
+      "view": "cm-desert"
+    },
+    {
+      "time": 207.8,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 211.4,
+      "view": "cm-desert"
+    },
+    {
+      "time": 215.5,
+      "view": "cm-club"
+    },
+    {
+      "time": 219.5,
+      "view": "cm-ribbon"
+    },
+    {
+      "time": 223.8,
+      "view": "cm-club"
+    },
+    {
+      "time": 230.5,
+      "view": "cm-vanity"
+    }
+  ]
+}

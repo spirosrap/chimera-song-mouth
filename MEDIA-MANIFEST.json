@@ -4607,6 +4607,36 @@
       "sha256": "d16cf105a3c18c44053b3b13fec6eaf7f3fdc251af2e265a776229c7138d4da9"
     },
     {
+      "path": "public/scenes/sexy-picture/backing.mp3",
+      "bytes": 5815916,
+      "sha256": "bff11cb2a637c5421ef1eda07a23f9e31506a1962e8fc5fb69418a02c5ea421f"
+    },
+    {
+      "path": "public/scenes/sexy-picture/cm-choir.tele.gz",
+      "bytes": 518968,
+      "sha256": "34e9e981bd89ba6867b7abce4ec8761eee2f528b2c8399f1b05a7d89cc284a53"
+    },
+    {
+      "path": "public/scenes/sexy-picture/cm-lead.tele.gz",
+      "bytes": 2784544,
+      "sha256": "d0b3f4cacd92291043f06747f85c48124097c0cbfbac048a8247693a95361ca1"
+    },
+    {
+      "path": "public/scenes/sexy-picture/mix.mp3",
+      "bytes": 7754540,
+      "sha256": "7fe682077b73f58bb59581765a2c0949b492f9e28871a27c8e8d569252e5900e"
+    },
+    {
+      "path": "public/scenes/sexy-picture/performance.json",
+      "bytes": 738522,
+      "sha256": "c60c64cb893594f97074bbd374bd807b9d2372e3ba6d7840a9f0eb2f14c62dc2"
+    },
+    {
+      "path": "public/scenes/sexy-picture/scene.json",
+      "bytes": 12550,
+      "sha256": "b7cb823066e2f88ce78c7587df58384c6ef0f1223443b1d4eac6c0a05e7ad407"
+    },
+    {
       "path": "public/scenes/shakespears-stay/answer.tele.gz",
       "bytes": 527936,
       "sha256": "106a3655564ee7f80a6465c99326589ef0c087205cfacf690fcae7304e09d68f"
