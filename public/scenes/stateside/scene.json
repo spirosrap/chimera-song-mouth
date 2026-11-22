@@ -1,0 +1,463 @@
+{
+  "setting": "stateside",
+  "title": "PinkPantheress + Zara Larsson · Stateside",
+  "description": "The complete supplied music video: London night \"FANCY that\" red display window, crimson tartan boutique with gold frames and pop-art lips, overhead dance floor, Zara’s glowing aqua seashell window, hot-pink tropical souvenir shop, royal-blue tartan Polaroid frame, floating AIR MAIL postcards, and polka-dot & hibiscus duet backdrops. Original music with two physical mouth-engine voices.",
+  "duration": 193.166803,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "state-pink",
+      "name": "PinkPantheress",
+      "role": "Lead British pop vocal",
+      "tele": "state-pink.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "state-zara",
+      "name": "Zara Larsson",
+      "role": "Swedish pop verse & duet",
+      "tele": "state-zara.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 7.98,
+      "end": 11.85,
+      "speaker": "state-pink",
+      "text": "I'm freezing outside, I feel my skin tight",
+      "intensity": 0.8
+    },
+    {
+      "start": 11.95,
+      "end": 15.8,
+      "speaker": "state-pink",
+      "text": "My coat is inside, but I look up at you",
+      "intensity": 0.82
+    },
+    {
+      "start": 15.9,
+      "end": 19.65,
+      "speaker": "state-pink",
+      "text": "I tracked your plane ride for when you're in tonight",
+      "intensity": 0.84
+    },
+    {
+      "start": 19.72,
+      "end": 23.1,
+      "speaker": "state-pink",
+      "text": "Tell me, when is the next time I'll run into you?",
+      "intensity": 0.86
+    },
+    {
+      "start": 23.54,
+      "end": 27.42,
+      "speaker": "state-pink",
+      "text": "It sounds insane, right? I'll take the same flight",
+      "intensity": 0.86
+    },
+    {
+      "start": 27.48,
+      "end": 29.4,
+      "speaker": "state-pink",
+      "text": "Wait at your bedside",
+      "intensity": 0.86
+    },
+    {
+      "start": 29.46,
+      "end": 31.42,
+      "speaker": "state-pink",
+      "text": "I'll land right next to you",
+      "intensity": 0.88
+    },
+    {
+      "start": 31.48,
+      "end": 33.32,
+      "speaker": "state-pink",
+      "text": "I'm going stateside",
+      "intensity": 0.88
+    },
+    {
+      "start": 33.38,
+      "end": 35.16,
+      "speaker": "state-pink",
+      "text": "Where I'll see you tonight",
+      "intensity": 0.9
+    },
+    {
+      "start": 35.22,
+      "end": 39.48,
+      "speaker": "state-pink",
+      "text": "Tell me, how did a girl like me get into you?",
+      "intensity": 0.9
+    },
+    {
+      "start": 40.1,
+      "end": 47,
+      "speaker": "state-pink",
+      "text": "You could be my American, ha, ha, ha, ha",
+      "intensity": 0.94
+    },
+    {
+      "start": 47.3,
+      "end": 54.1,
+      "speaker": "state-pink",
+      "text": "You could be my American, ha, ha, ha, ha",
+      "intensity": 0.94
+    },
+    {
+      "start": 54.52,
+      "end": 56.9,
+      "speaker": "state-pink",
+      "text": "Is it right? I don't know",
+      "intensity": 0.88
+    },
+    {
+      "start": 56.98,
+      "end": 60.68,
+      "speaker": "state-pink",
+      "text": "Yet you're taking my control, never been abroad before",
+      "intensity": 0.9
+    },
+    {
+      "start": 60.76,
+      "end": 62.74,
+      "speaker": "state-pink",
+      "text": "Now I'm knocking through your door",
+      "intensity": 0.9
+    },
+    {
+      "start": 62.82,
+      "end": 64.66,
+      "speaker": "state-pink",
+      "text": "But you're nice, so I'll stay",
+      "intensity": 0.9
+    },
+    {
+      "start": 64.72,
+      "end": 66.58,
+      "speaker": "state-pink",
+      "text": "Never met a British girl, you say?",
+      "intensity": 0.92
+    },
+    {
+      "start": 66.66,
+      "end": 68.58,
+      "speaker": "state-pink",
+      "text": "No one treats me this way",
+      "intensity": 0.92
+    },
+    {
+      "start": 68.66,
+      "end": 70.3,
+      "speaker": "state-pink",
+      "text": "Are all boys out here the same?",
+      "intensity": 0.92
+    },
+    {
+      "start": 70.38,
+      "end": 73.28,
+      "speaker": "state-pink",
+      "text": "What can I say? What can I do?",
+      "intensity": 0.94
+    },
+    {
+      "start": 74.1,
+      "end": 78.8,
+      "speaker": "state-pink",
+      "text": "I'm trying to be the girl that you're talking to",
+      "intensity": 0.94
+    },
+    {
+      "start": 78.88,
+      "end": 82.48,
+      "speaker": "state-pink",
+      "text": "And maybe you could be my American, ha, ha, boy",
+      "intensity": 0.96
+    },
+    {
+      "start": 82.56,
+      "end": 85.8,
+      "speaker": "state-zara",
+      "text": "He could be my American, ha, ha, boy",
+      "intensity": 0.96
+    },
+    {
+      "start": 85.88,
+      "end": 89.2,
+      "speaker": "state-pink",
+      "text": "Why can't you say that you want it too?",
+      "intensity": 0.95
+    },
+    {
+      "start": 89.64,
+      "end": 93.2,
+      "speaker": "state-pink",
+      "text": "I'm flying intercontinental with you",
+      "intensity": 0.96
+    },
+    {
+      "start": 93.28,
+      "end": 96.2,
+      "speaker": "state-zara",
+      "text": "And maybe you can be my American, ha, ha, boy",
+      "intensity": 0.96
+    },
+    {
+      "start": 96.28,
+      "end": 100.1,
+      "speaker": "state-pink",
+      "text": "You can be my American, ha, ha",
+      "intensity": 0.96
+    },
+    {
+      "start": 102.2,
+      "end": 105.45,
+      "speaker": "state-zara",
+      "text": "All those years I put in for the American dream",
+      "intensity": 0.92
+    },
+    {
+      "start": 105.52,
+      "end": 109.25,
+      "speaker": "state-zara",
+      "text": "Is it worth all the work if you can't be here with me?",
+      "intensity": 0.92
+    },
+    {
+      "start": 109.32,
+      "end": 111.24,
+      "speaker": "state-zara",
+      "text": "'Cause I fly Stockholm to LA",
+      "intensity": 0.94
+    },
+    {
+      "start": 111.3,
+      "end": 114.9,
+      "speaker": "state-zara",
+      "text": "In my feelings on the plane, worries fade away",
+      "intensity": 0.94
+    },
+    {
+      "start": 114.98,
+      "end": 118.8,
+      "speaker": "state-zara",
+      "text": "When I hit the stage, I've been touring stateside",
+      "intensity": 0.95
+    },
+    {
+      "start": 118.88,
+      "end": 122.6,
+      "speaker": "state-zara",
+      "text": "Kissing my Swedish boy over FaceTime, oh no",
+      "intensity": 0.95
+    },
+    {
+      "start": 123.28,
+      "end": 127.52,
+      "speaker": "state-zara",
+      "text": "Who knew opening up would make me a headline? Boots, that's my ego boost",
+      "intensity": 0.96
+    },
+    {
+      "start": 127.6,
+      "end": 132.3,
+      "speaker": "state-zara",
+      "text": "Schedule ain't been loose for a minute, yeah, I'm that girl, I've been it",
+      "intensity": 0.96
+    },
+    {
+      "start": 133.5,
+      "end": 138.2,
+      "speaker": "state-zara",
+      "text": "Oh, yeah, whoa!",
+      "intensity": 0.96
+    },
+    {
+      "start": 141.98,
+      "end": 145.3,
+      "speaker": "state-zara",
+      "text": "What can I say? What can I do?",
+      "intensity": 0.98
+    },
+    {
+      "start": 146,
+      "end": 150.8,
+      "speaker": "state-zara",
+      "text": "I'm trying to be the girl that you're talking to",
+      "intensity": 0.98
+    },
+    {
+      "start": 150.88,
+      "end": 153.92,
+      "speaker": "state-zara",
+      "text": "And maybe you could be my American, ha, ha, boy",
+      "intensity": 1
+    },
+    {
+      "start": 154,
+      "end": 157.15,
+      "speaker": "state-pink",
+      "text": "He could be my American, ha, ha, boy",
+      "intensity": 1
+    },
+    {
+      "start": 157.24,
+      "end": 160.75,
+      "speaker": "state-zara",
+      "text": "Why can't you say that you want it too?",
+      "intensity": 0.98
+    },
+    {
+      "start": 160.84,
+      "end": 165.2,
+      "speaker": "state-zara",
+      "text": "I'm flying intercontinental with you",
+      "intensity": 1
+    },
+    {
+      "start": 165.4,
+      "end": 169,
+      "speaker": "state-pink",
+      "text": "And maybe you can be my American, ha, ha, boy",
+      "intensity": 1
+    },
+    {
+      "start": 169.1,
+      "end": 172.5,
+      "speaker": "state-zara",
+      "text": "You can be my American, ha, ha",
+      "intensity": 0.98
+    },
+    {
+      "start": 172.74,
+      "end": 177.35,
+      "speaker": "state-zara",
+      "text": "Is it right? I don't know, yet you're taking my control",
+      "intensity": 0.96
+    },
+    {
+      "start": 177.42,
+      "end": 182.38,
+      "speaker": "state-zara",
+      "text": "Never been abroad before, now I'm knocking through your door, but you're nice",
+      "intensity": 0.96
+    },
+    {
+      "start": 182.46,
+      "end": 185.6,
+      "speaker": "state-zara",
+      "text": "So I'll stay, never met a Swedish girl, you say?",
+      "intensity": 0.98
+    },
+    {
+      "start": 185.68,
+      "end": 189.22,
+      "speaker": "state-pink",
+      "text": "No one treats me this way, are all boys out here the same?",
+      "intensity": 0.96
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "state-london"
+    },
+    {
+      "time": 11.8,
+      "view": "state-pink"
+    },
+    {
+      "time": 19.6,
+      "view": "state-overhead"
+    },
+    {
+      "time": 27.4,
+      "view": "state-pink"
+    },
+    {
+      "time": 33.3,
+      "view": "state-plaid"
+    },
+    {
+      "time": 40,
+      "view": "state-plaid"
+    },
+    {
+      "time": 47.2,
+      "view": "state-overhead"
+    },
+    {
+      "time": 54.4,
+      "view": "state-london"
+    },
+    {
+      "time": 62.7,
+      "view": "state-plaid"
+    },
+    {
+      "time": 70.3,
+      "view": "state-polka"
+    },
+    {
+      "time": 78.8,
+      "view": "state-duet"
+    },
+    {
+      "time": 85.8,
+      "view": "state-plaid"
+    },
+    {
+      "time": 93.2,
+      "view": "state-polka"
+    },
+    {
+      "time": 100.5,
+      "view": "state-sweden"
+    },
+    {
+      "time": 109.2,
+      "view": "state-tropical"
+    },
+    {
+      "time": 118.8,
+      "view": "state-blue-tartan"
+    },
+    {
+      "time": 127.5,
+      "view": "state-zara"
+    },
+    {
+      "time": 135,
+      "view": "state-tropical"
+    },
+    {
+      "time": 141.9,
+      "view": "state-hibiscus"
+    },
+    {
+      "time": 150.8,
+      "view": "state-duet"
+    },
+    {
+      "time": 157.2,
+      "view": "state-airmail"
+    },
+    {
+      "time": 165.3,
+      "view": "state-hibiscus"
+    },
+    {
+      "time": 172.7,
+      "view": "state-plaid"
+    },
+    {
+      "time": 180,
+      "view": "state-polka"
+    },
+    {
+      "time": 185.6,
+      "view": "state-tropical"
+    }
+  ]
+}

@@ -4617,6 +4617,36 @@
       "sha256": "636e59a49b72feff6091da5dc43860994574f7473d50b383015c0861ea0fc7ac"
     },
     {
+      "path": "public/scenes/stateside/backing.mp3",
+      "bytes": 4637509,
+      "sha256": "74f4d401018e996d7c24d530dddded8f3f9f47735df086981f6587c529a1d71d"
+    },
+    {
+      "path": "public/scenes/stateside/mix.mp3",
+      "bytes": 6183212,
+      "sha256": "e78ff9eceaefb21f959b0dd0f57ce4e80f70b4876c2b258c7a1ed1dddccf9eba"
+    },
+    {
+      "path": "public/scenes/stateside/performance.json",
+      "bytes": 425041,
+      "sha256": "a7a769c1472738ebec1cda5a3427c8e64953ec6d3f4d5c81aa967f2add8f7962"
+    },
+    {
+      "path": "public/scenes/stateside/scene.json",
+      "bytes": 10605,
+      "sha256": "57e85070bf1e42678d0c149cf939ea26e8a837bf3987207eca1e22bd6f546ccf"
+    },
+    {
+      "path": "public/scenes/stateside/state-pink.tele.gz",
+      "bytes": 1398684,
+      "sha256": "c7789c14aac81a1b107b8626aab2f3025d98cc4b850783efcb4129dcb8d05ce5"
+    },
+    {
+      "path": "public/scenes/stateside/state-zara.tele.gz",
+      "bytes": 1174759,
+      "sha256": "5a318832d472aa17d3e8111e550289999197ee5ab6ceef55fb6cd955a16bc40a"
+    },
+    {
       "path": "public/scenes/stonehenge/backing.mp3",
       "bytes": 7549484,
       "sha256": "5a02addf2d9a8dd288fdd9dae68a63c9d702ab0f41e92356676a8f3da6c861f3"
