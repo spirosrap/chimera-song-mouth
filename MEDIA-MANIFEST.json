@@ -5287,6 +5287,36 @@
       "sha256": "01b8242d1b109882beea39b7482ef92da1a41ae213dcc004bd59ad157b0ce91e"
     },
     {
+      "path": "public/scenes/the-giver/backing.mp3",
+      "bytes": 4864940,
+      "sha256": "c2b2103c091d87fe94617deb87b266a75375a088517302786fc0fcda57b44bbc"
+    },
+    {
+      "path": "public/scenes/the-giver/gv-choir.tele.gz",
+      "bytes": 625106,
+      "sha256": "209ba5d0161fb431c8a5819eeb0498eabab3f38e087e06de17de3dd03f764e29"
+    },
+    {
+      "path": "public/scenes/the-giver/gv-lead.tele.gz",
+      "bytes": 2096716,
+      "sha256": "4b74485d500d65a86f6ccb9faca11e01dfbaab5b96fd1736e8a34eabc8470a2d"
+    },
+    {
+      "path": "public/scenes/the-giver/mix.mp3",
+      "bytes": 6486572,
+      "sha256": "33c36c9d6bd4f3bccb20fdd2aa357cd85eb3da4f23699f183427503328579cfd"
+    },
+    {
+      "path": "public/scenes/the-giver/performance.json",
+      "bytes": 655153,
+      "sha256": "ad59518abe4565d93bb0e7ea5408713d26e21711e6e8a7c90b8ef493e419df2a"
+    },
+    {
+      "path": "public/scenes/the-giver/scene.json",
+      "bytes": 11719,
+      "sha256": "5fcccda62c4e61dbd49e97cc0e01d6855ac2857492dd2976400d345af5aa66a7"
+    },
+    {
       "path": "public/scenes/the-subway/backing.mp3",
       "bytes": 8686892,
       "sha256": "17255430db67dc64ca577c24fa12838f4ab32c38b871a78f70353ecc69382090"

@@ -1,0 +1,591 @@
+{
+  "setting": "thegiver",
+  "title": "Chappell Roan · The Giver",
+  "description": "Physical voices over the separated country-rock instrumental, staged across the retro VHS DVD menu and 5-job infomercial character sets: Lawyer, Detective, Dentist, Plumber, and Construction Worker.",
+  "duration": 202.641,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "gv-lead",
+      "name": "Lead Vocal",
+      "role": "Country-Pop Lead",
+      "tele": "gv-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "gv-choir",
+      "name": "Backing Harmonies",
+      "role": "Chorus & Chants",
+      "tele": "gv-choir.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 2.92,
+      "end": 4.2,
+      "speaker": "gv-lead",
+      "text": "Two, three!",
+      "intensity": 0.78
+    },
+    {
+      "start": 15.38,
+      "end": 18.22,
+      "speaker": "gv-lead",
+      "text": "Ain't got antlers on my walls",
+      "intensity": 0.84
+    },
+    {
+      "start": 18.62,
+      "end": 20.62,
+      "speaker": "gv-lead",
+      "text": "But I sure know mating calls",
+      "intensity": 0.86
+    },
+    {
+      "start": 20.8,
+      "end": 23.86,
+      "speaker": "gv-lead",
+      "text": "From the stalls in the bars on a Friday night",
+      "intensity": 0.88
+    },
+    {
+      "start": 25.38,
+      "end": 28.38,
+      "speaker": "gv-lead",
+      "text": "And other boys may need a map",
+      "intensity": 0.86
+    },
+    {
+      "start": 28.58,
+      "end": 30.4,
+      "speaker": "gv-lead",
+      "text": "But I can close my eyes",
+      "intensity": 0.88
+    },
+    {
+      "start": 30.48,
+      "end": 34.28,
+      "speaker": "gv-lead",
+      "text": "And have you wrapped around my fingers like that",
+      "intensity": 0.9
+    },
+    {
+      "start": 35.1,
+      "end": 37.2,
+      "speaker": "gv-lead",
+      "text": "So, baby",
+      "intensity": 0.88
+    },
+    {
+      "start": 37.3,
+      "end": 39.56,
+      "speaker": "gv-lead",
+      "text": "When you need the job done",
+      "intensity": 0.9
+    },
+    {
+      "start": 40.08,
+      "end": 42.3,
+      "speaker": "gv-lead",
+      "text": "You can call me, baby",
+      "intensity": 0.9
+    },
+    {
+      "start": 44.56,
+      "end": 46.92,
+      "speaker": "gv-lead",
+      "text": "'Cause you ain't gotta tell me",
+      "intensity": 0.92
+    },
+    {
+      "start": 46.98,
+      "end": 49.46,
+      "speaker": "gv-lead",
+      "text": "It's just in my nature",
+      "intensity": 0.92
+    },
+    {
+      "start": 49.52,
+      "end": 52.16,
+      "speaker": "gv-lead",
+      "text": "So take it like a taker",
+      "intensity": 0.94
+    },
+    {
+      "start": 52.22,
+      "end": 54.54,
+      "speaker": "gv-lead",
+      "text": "'Cause, baby, I'm a giver",
+      "intensity": 0.94
+    },
+    {
+      "start": 54.6,
+      "end": 57.24,
+      "speaker": "gv-lead",
+      "text": "Ain't no need to hurry",
+      "intensity": 0.94
+    },
+    {
+      "start": 57.3,
+      "end": 59.8,
+      "speaker": "gv-lead",
+      "text": "'Cause, baby, I deliver",
+      "intensity": 0.94
+    },
+    {
+      "start": 59.88,
+      "end": 62.18,
+      "speaker": "gv-lead",
+      "text": "Ain't no country boy quitter",
+      "intensity": 0.96
+    },
+    {
+      "start": 62.24,
+      "end": 65.1,
+      "speaker": "gv-lead",
+      "text": "I get the job done",
+      "intensity": 0.96
+    },
+    {
+      "start": 65.2,
+      "end": 68.14,
+      "speaker": "gv-lead",
+      "text": "I get the job done",
+      "intensity": 0.96
+    },
+    {
+      "start": 76.2,
+      "end": 80.08,
+      "speaker": "gv-lead",
+      "text": "Girl, I don't need no lifted truck",
+      "intensity": 0.88
+    },
+    {
+      "start": 80.14,
+      "end": 82.66,
+      "speaker": "gv-lead",
+      "text": "Revving loud to pick you up",
+      "intensity": 0.88
+    },
+    {
+      "start": 82.72,
+      "end": 86.12,
+      "speaker": "gv-lead",
+      "text": "'Cause how I look is how I touch",
+      "intensity": 0.9
+    },
+    {
+      "start": 87.38,
+      "end": 90.36,
+      "speaker": "gv-lead",
+      "text": "And in this strip mall town of dreams",
+      "intensity": 0.9
+    },
+    {
+      "start": 90.42,
+      "end": 93.44,
+      "speaker": "gv-lead",
+      "text": "Good luck finding a man who has the means",
+      "intensity": 0.9
+    },
+    {
+      "start": 93.5,
+      "end": 96.82,
+      "speaker": "gv-lead",
+      "text": "To rhinestone cowgirl all night long",
+      "intensity": 0.92
+    },
+    {
+      "start": 96.9,
+      "end": 98.7,
+      "speaker": "gv-lead",
+      "text": "So, baby",
+      "intensity": 0.9
+    },
+    {
+      "start": 99.48,
+      "end": 101.64,
+      "speaker": "gv-lead",
+      "text": "If you're never having one",
+      "intensity": 0.92
+    },
+    {
+      "start": 101.7,
+      "end": 104.28,
+      "speaker": "gv-lead",
+      "text": "Call me, baby",
+      "intensity": 0.92
+    },
+    {
+      "start": 104.6,
+      "end": 106.1,
+      "speaker": "gv-lead",
+      "text": "Yeah!",
+      "intensity": 0.92
+    },
+    {
+      "start": 106.16,
+      "end": 108.8,
+      "speaker": "gv-lead",
+      "text": "'Cause you ain't gotta tell me",
+      "intensity": 0.94
+    },
+    {
+      "start": 108.86,
+      "end": 111.34,
+      "speaker": "gv-lead",
+      "text": "It's just in my nature",
+      "intensity": 0.94
+    },
+    {
+      "start": 111.4,
+      "end": 114.08,
+      "speaker": "gv-lead",
+      "text": "So take it like a taker",
+      "intensity": 0.96
+    },
+    {
+      "start": 114.14,
+      "end": 116.86,
+      "speaker": "gv-lead",
+      "text": "'Cause, baby, I'm a giver",
+      "intensity": 0.96
+    },
+    {
+      "start": 116.92,
+      "end": 119.32,
+      "speaker": "gv-lead",
+      "text": "Ain't no need to hurry",
+      "intensity": 0.96
+    },
+    {
+      "start": 119.38,
+      "end": 122.18,
+      "speaker": "gv-lead",
+      "text": "'Cause, baby, I deliver",
+      "intensity": 0.96
+    },
+    {
+      "start": 122.24,
+      "end": 124.16,
+      "speaker": "gv-lead",
+      "text": "Ain't no country boy quitter",
+      "intensity": 0.98
+    },
+    {
+      "start": 124.22,
+      "end": 126.88,
+      "speaker": "gv-lead",
+      "text": "I get the job done",
+      "intensity": 0.98
+    },
+    {
+      "start": 126.94,
+      "end": 130.12,
+      "speaker": "gv-lead",
+      "text": "I get the job done",
+      "intensity": 0.98
+    },
+    {
+      "start": 138.5,
+      "end": 141.4,
+      "speaker": "gv-choir",
+      "text": "Na, na, na, na, na, na",
+      "intensity": 0.86
+    },
+    {
+      "start": 141.5,
+      "end": 145.35,
+      "speaker": "gv-choir",
+      "text": "Na, na, na, she gets the job done",
+      "intensity": 0.88
+    },
+    {
+      "start": 145.5,
+      "end": 149.4,
+      "speaker": "gv-lead",
+      "text": "All you country boys saying you know how to treat a woman right",
+      "intensity": 0.92
+    },
+    {
+      "start": 149.6,
+      "end": 153.5,
+      "speaker": "gv-lead",
+      "text": "Well, only a woman knows how to treat a woman right",
+      "intensity": 0.94
+    },
+    {
+      "start": 153.6,
+      "end": 157.85,
+      "speaker": "gv-choir",
+      "text": "She gets the job done, na, na, na, na",
+      "intensity": 0.9
+    },
+    {
+      "start": 158,
+      "end": 160.2,
+      "speaker": "gv-lead",
+      "text": "'Cause you ain't gotta tell me",
+      "intensity": 0.96
+    },
+    {
+      "start": 160.28,
+      "end": 162.8,
+      "speaker": "gv-lead",
+      "text": "It's just in my nature",
+      "intensity": 0.96
+    },
+    {
+      "start": 162.88,
+      "end": 165.45,
+      "speaker": "gv-lead",
+      "text": "So take it like a taker",
+      "intensity": 0.98
+    },
+    {
+      "start": 165.52,
+      "end": 168.1,
+      "speaker": "gv-lead",
+      "text": "'Cause, baby, I'm a giver",
+      "intensity": 0.98
+    },
+    {
+      "start": 168.2,
+      "end": 170.8,
+      "speaker": "gv-lead",
+      "text": "Ain't no need to hurry",
+      "intensity": 0.98
+    },
+    {
+      "start": 170.9,
+      "end": 173.45,
+      "speaker": "gv-lead",
+      "text": "'Cause, baby, I deliver",
+      "intensity": 0.98
+    },
+    {
+      "start": 173.52,
+      "end": 175.72,
+      "speaker": "gv-lead",
+      "text": "Ain't no country boy quitter",
+      "intensity": 1
+    },
+    {
+      "start": 175.78,
+      "end": 178.3,
+      "speaker": "gv-lead",
+      "text": "I get the job done",
+      "intensity": 1
+    },
+    {
+      "start": 178.4,
+      "end": 181.15,
+      "speaker": "gv-lead",
+      "text": "I get the job done",
+      "intensity": 1
+    },
+    {
+      "start": 181.25,
+      "end": 185.85,
+      "speaker": "gv-lead",
+      "text": "I get the job done",
+      "intensity": 1
+    },
+    {
+      "start": 185.95,
+      "end": 190.4,
+      "speaker": "gv-lead",
+      "text": "I get the job done",
+      "intensity": 1
+    },
+    {
+      "start": 190.5,
+      "end": 195.8,
+      "speaker": "gv-lead",
+      "text": "I get the job done",
+      "intensity": 1
+    },
+    {
+      "start": 196.16,
+      "end": 200.5,
+      "speaker": "gv-lead",
+      "text": "Yes, ma'am! Yes, I do! You're welcome!",
+      "intensity": 0.92
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "gv-menu"
+    },
+    {
+      "time": 4,
+      "view": "gv-menu"
+    },
+    {
+      "time": 15.3,
+      "view": "gv-lawyer"
+    },
+    {
+      "time": 20.8,
+      "view": "gv-lawyer"
+    },
+    {
+      "time": 25.3,
+      "view": "gv-detective"
+    },
+    {
+      "time": 30.4,
+      "view": "gv-dentist"
+    },
+    {
+      "time": 35.1,
+      "view": "gv-menu"
+    },
+    {
+      "time": 40,
+      "view": "gv-plumber"
+    },
+    {
+      "time": 44.5,
+      "view": "gv-lawyer"
+    },
+    {
+      "time": 49.5,
+      "view": "gv-hardhat"
+    },
+    {
+      "time": 52.2,
+      "view": "gv-lawyer"
+    },
+    {
+      "time": 54.6,
+      "view": "gv-plumber"
+    },
+    {
+      "time": 59.8,
+      "view": "gv-hardhat"
+    },
+    {
+      "time": 62.2,
+      "view": "gv-dentist"
+    },
+    {
+      "time": 68,
+      "view": "gv-dentist"
+    },
+    {
+      "time": 72,
+      "view": "gv-plumber"
+    },
+    {
+      "time": 76.2,
+      "view": "gv-hardhat"
+    },
+    {
+      "time": 82.7,
+      "view": "gv-hardhat"
+    },
+    {
+      "time": 87.3,
+      "view": "gv-menu"
+    },
+    {
+      "time": 93.5,
+      "view": "gv-menu"
+    },
+    {
+      "time": 99.4,
+      "view": "gv-plumber"
+    },
+    {
+      "time": 104.5,
+      "view": "gv-hardhat"
+    },
+    {
+      "time": 108.8,
+      "view": "gv-hardhat"
+    },
+    {
+      "time": 111.4,
+      "view": "gv-dentist"
+    },
+    {
+      "time": 116.9,
+      "view": "gv-hardhat"
+    },
+    {
+      "time": 119.3,
+      "view": "gv-detective"
+    },
+    {
+      "time": 124.2,
+      "view": "gv-dentist"
+    },
+    {
+      "time": 127,
+      "view": "gv-detective"
+    },
+    {
+      "time": 131.5,
+      "view": "gv-plumber"
+    },
+    {
+      "time": 138.5,
+      "view": "gv-choir"
+    },
+    {
+      "time": 144,
+      "view": "gv-lawyer"
+    },
+    {
+      "time": 148,
+      "view": "gv-detective"
+    },
+    {
+      "time": 152,
+      "view": "gv-dentist"
+    },
+    {
+      "time": 156,
+      "view": "gv-detective"
+    },
+    {
+      "time": 160.2,
+      "view": "gv-lawyer"
+    },
+    {
+      "time": 164,
+      "view": "gv-detective"
+    },
+    {
+      "time": 168.2,
+      "view": "gv-plumber"
+    },
+    {
+      "time": 172,
+      "view": "gv-dentist"
+    },
+    {
+      "time": 175.8,
+      "view": "gv-detective"
+    },
+    {
+      "time": 180,
+      "view": "gv-lawyer"
+    },
+    {
+      "time": 184,
+      "view": "gv-plumber"
+    },
+    {
+      "time": 188,
+      "view": "gv-hardhat"
+    },
+    {
+      "time": 196,
+      "view": "gv-dentist"
+    }
+  ]
+}
