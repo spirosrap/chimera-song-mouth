@@ -2903,8 +2903,18 @@ recognizer's numbers and their own target values (#135). The speakers' judge agr
 | centroid /z/ women / men (speakers 7.07 / 5.12 kHz) | 4.61 / 4.24 | 5.79 / 5.55 |
 | centroid /ʃ/ women / men (speakers 4.05 / 3.13 kHz) | 3.43 / 3.53 | 3.44 / 3.54 |
 | Whisper, training | 28.81 % | 28.48 % (NO CLEAR CHANGE) |
+| Whisper, held-out (never decides) | 39.00 % | 37.33 % |
 | singer, training | 0.442 | 0.442 (NO CLEAR CHANGE) |
+| singer, held-out | 0.598 | 0.604 |
 | bench os=2, male | 20.1 % | 20.9 % (noise: a target can't change the per-block cost) |
+
+- **Singer guards**, training songs, unchanged: 0 of 5793 notes off time, 0 dropped gestures, note
+  MCD 8.436 → 8.433 dB, envelope correlation 0.825, pitch error 5.22 cents.
+- **Speakers' group costs, female / male** (main → this). Scored: sibilants 2.252 → 1.041 /
+  0.945 → 0.404; timing 0.414 → 0.383 / 0.266 → 0.237; level 0.758 → 0.754 / 0.265 → 0.294 (the male
+  rise breaks no term). Diagnostics: formants 1.289 → 1.294 / 1.049 → 1.051; spectrum 1.260 → 1.236 /
+  1.541 → 1.521; voice 0.968 → 0.968 / 1.147 → 1.154; intonation 1.250 → 1.243 / 0.833 → 0.821;
+  voicing 0.282 → 0.279 / 0.411 → 0.400.
 
 The owner listened blind on 2026-11-22 (12 clips: isolated sounds, English, Turkish, sung Mandarin and
 Russian): this 5, main 0, can't tell 7. All four English sentences went to this; the other languages and
