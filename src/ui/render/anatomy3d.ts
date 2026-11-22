@@ -196,7 +196,7 @@ interface Group {
   hot?: boolean;
   /** what part of the head it is, for how bright it's drawn (HeadDrawing): outside it (the ears),
    *  a feature of the face (the nose), bone (the teeth); none: inside it */
-  kind?: "outer" | "feature" | "bone";
+  kind?: "outer" | "feature" | "bone" | "brain" | "spine";
 }
 
 /** a polyline whose points the jaw carries by weight w (the lower face's skin), and the cheeks' puff by c */
@@ -470,7 +470,7 @@ function buildRest(model: VoiceModel): Rest {
         L.end();
       }
     }
-  });
+  }, false, "brain");
 
   // ---- cervical vertebrae: bodies, arches, processes; the spinal cord through them
   group(fixed, V.blueDim, 0.9, 0.6, (L) => {
@@ -490,12 +490,12 @@ function buildRest(model: VoiceModel): Rest {
       }
       L.p(ax - 0.72 * k, ym, 0).p(ax - 1.8 * k, ym - 0.55 * k, 0).end();
     }
-  });
+  }, false, "spine");
   group(fixed, V.blueDim, 0.85, 0.5, (L) => {
     const cx = P(-4.9, 0).x;
     for (let y = -4.4; y <= 11.0; y += 1.75) L.ellipse([cx, P(0, y).y, 0], [0.42 * k, 0, 0], [0, 0, 0.6 * k], 16);
     for (const s of [1, -1]) L.p(cx, P(0, -4.6).y, s * 0.6 * k).p(cx, P(0, 11.4).y, s * 0.6 * k).end();
-  });
+  }, false, "spine");
 
   // ---- nasal cavity: the septum is the 2D outline; its side walls and the turbinates beside it
   group(fixed, V.blueDim, 0.9, 0.7, (L) => {
@@ -657,6 +657,9 @@ export interface HeadDrawing {
   mounted: boolean;
   /** the lines fade out going down to height `y`, over `band` (body cm), where a neck takes over */
   fade: { y: number; band: number } | null;
+  /** parts drawn otherwise than `inner` has them (a body that draws its own): the brain, the
+   *  skull's section, the cervical spine; and the ears (1 unless set) */
+  parts?: { brain?: number; skull?: number; spine?: number; ears?: number };
 }
 export const APP_DRAWING: Readonly<HeadDrawing> = { inner: 1, bone: 1, outline: 1, shell: 1, features: 1, lipSkin: true, mounted: false, fade: null };
 
@@ -944,7 +947,7 @@ export class Anatomy3D {
     B.fade = d.fade;
     for (const g of rest.fixed) {
       const feature = g.kind === "feature";
-      B.gain = feature ? d.features : g.kind === "bone" ? d.bone : g.kind === "outer" ? 1 : d.inner;
+      B.gain = feature ? d.features : g.kind === "bone" ? d.bone : g.kind === "outer" ? (d.parts?.ears ?? 1) : g.kind === "brain" ? (d.parts?.brain ?? d.inner) : g.kind === "spine" ? (d.parts?.spine ?? d.inner) : d.inner;
       const color = feature && d.features > 1 ? V.blue : g.color;
       for (const l of g.lines) B.line(l, l.length / 3, color, feature ? g.width * widen : g.width, { alpha: g.alpha, hot: g.hot });
     }
@@ -973,11 +976,13 @@ export class Anatomy3D {
 
     // ---- the midsagittal section, as the 2D view draws it
     const G = buildProfile(model, f, a);
-    B.gain = d.inner;
+    B.gain = d.parts?.skull ?? d.inner;
     line(G.inset, V.blueDim, 0.9, { alpha: 0.5 });
     line(G.skull, V.blueDim, 0.9, { close: true, alpha: 0.6 });
+    B.gain = d.parts?.brain ?? d.inner;
     line(G.brain, V.blueMid, 1.0, { close: true, alpha: 0.75 });
     line(G.sulcus, V.blueDim, 0.9);
+    B.gain = d.inner;
     line(G.nasal, V.blueMid, 1, { close: true });
     line(G.palOral, V.blueMid, 1.1);
     line(G.palNasal, V.blueMid, 1.1);
