@@ -3457,6 +3457,51 @@
       "sha256": "97c3da3ba9364cce1bac8c1f61fd873e8206787c3d348d9eaa10866872b4408e"
     },
     {
+      "path": "public/scenes/jade-angel/backing.mp3",
+      "bytes": 7418924,
+      "sha256": "ec2bb0df0e3df2a8751e892530c72755624256158fb75f30245b36dadbf8cda5"
+    },
+    {
+      "path": "public/scenes/jade-angel/credits.txt",
+      "bytes": 448,
+      "sha256": "e193d09c3a598c729912e69a5916667549c1dbc4ef9e08ee4c823da872d9358e"
+    },
+    {
+      "path": "public/scenes/jade-angel/jade-dialogue.tele.gz",
+      "bytes": 75201,
+      "sha256": "26e541f4ec77157ce6b8675ec6f036b86a234994757e432b3b2d55bd68f384d3"
+    },
+    {
+      "path": "public/scenes/jade-angel/jade-harmony.tele.gz",
+      "bytes": 529177,
+      "sha256": "4d672b8ce75dc866757d8c0ebd37776fa66d836bb510c971a981b80f0eb45ca4"
+    },
+    {
+      "path": "public/scenes/jade-angel/jade-lead.tele.gz",
+      "bytes": 1890175,
+      "sha256": "474a9417d1d9b52daf40922f97b613939229c7b0e78aa2ec364af98f475ee1c3"
+    },
+    {
+      "path": "public/scenes/jade-angel/jade-sample.tele.gz",
+      "bytes": 444935,
+      "sha256": "d07b609e99dbc2f0a70106bf1408c22bbba10fd13667dac265da1499a88d2c16"
+    },
+    {
+      "path": "public/scenes/jade-angel/mix.mp3",
+      "bytes": 7418924,
+      "sha256": "2944759a2c98ccda59ea8c53801212cfc1401ee46b6d4be4e7d3d87ed5019ead"
+    },
+    {
+      "path": "public/scenes/jade-angel/performance.json",
+      "bytes": 579398,
+      "sha256": "dbd62f648219f8b8d89dc3262bfbefdba80d5905692f666e717cc0c1e74b4cab"
+    },
+    {
+      "path": "public/scenes/jade-angel/scene.json",
+      "bytes": 17565,
+      "sha256": "e344b60cf322e235bc6e5a27d67e92e4c516547f31940738dc791ca67fb91640"
+    },
+    {
       "path": "public/scenes/je-taime/backing.mp3",
       "bytes": 9616172,
       "sha256": "b33da5038a476c44d3c71924699c2872e954813056afd313bafcd64d67937fc9"

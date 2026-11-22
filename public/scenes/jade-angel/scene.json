@@ -1,0 +1,867 @@
+{
+  "setting": "jadeangel",
+  "title": "JADE · Angel of My Dreams",
+  "description": "The complete music video staged as a street performance, childhood montage, pop-star arrival, white limousine and winged studio choreography. Original instrumental with four physical CHIMERA voices.",
+  "duration": 231.781587,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "jade-lead",
+      "name": "JADE",
+      "role": "Lead singing and spoken verse",
+      "tele": "jade-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "jade-harmony",
+      "name": "Chorus",
+      "role": "Answering voices and held harmonies",
+      "tele": "jade-harmony.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "jade-sample",
+      "name": "Sample voice",
+      "role": "Rebuilt opening, repetitions and shouts",
+      "tele": "jade-sample.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "jade-dialogue",
+      "name": "Spoken tag",
+      "role": "Excited voice before the first refrain",
+      "tele": "jade-dialogue.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 5.02,
+      "end": 8.77,
+      "text": "I wonder if one day that you'll say that you care",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 8.78,
+      "end": 10.24,
+      "text": "If you say you love me madly",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 10.31,
+      "end": 13.74,
+      "text": "Hey Mike, let's do something crazy!",
+      "speaker": "jade-dialogue",
+      "intensity": 0.72
+    },
+    {
+      "start": 14.98,
+      "end": 17.33,
+      "text": "Angel of my dreams",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.87,
+      "end": 22.24,
+      "text": "I will always love you and hate you",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.54,
+      "end": 25.47,
+      "text": "It's not fair",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.12,
+      "end": 29.37,
+      "text": "It's so bittersweet",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.9,
+      "end": 33.77,
+      "text": "I will always want you and need you",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.05,
+      "end": 36.52,
+      "text": "You don't care",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.9,
+      "end": 39.68,
+      "text": "You don't care",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.46,
+      "end": 43.55,
+      "text": "You don't care",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.18,
+      "end": 45.12,
+      "text": "You don't care",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.2,
+      "end": 46.53,
+      "text": "Care that I'm mad",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.56,
+      "end": 47.55,
+      "text": "Care that I'm sad",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.58,
+      "end": 49.13,
+      "text": "It's so bad, it's funny",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.48,
+      "end": 50.43,
+      "text": "Care if I cry",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 50.44,
+      "end": 51.44,
+      "text": "Care if I die",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.45,
+      "end": 52.88,
+      "text": "You only care about money",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.9,
+      "end": 54.82,
+      "text": "Sellin' my soul to a psycho",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 54.98,
+      "end": 56.46,
+      "text": "They say I'm so lucky",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.5,
+      "end": 59.4,
+      "text": "Better act like you're lucky, honey",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.29,
+      "end": 61.14,
+      "text": "(Vocal cry)",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.84,
+      "end": 63.79,
+      "text": "(Vocal cry)",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 64.28,
+      "end": 66.5,
+      "text": "But it feels like",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.61,
+      "end": 67.66,
+      "text": "Ooh",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 67.7,
+      "end": 69.09,
+      "text": "It feels like",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.1,
+      "end": 69.81,
+      "text": "Ooh",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 69.86,
+      "end": 71.65,
+      "text": "In the spotlight",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.66,
+      "end": 72.22,
+      "text": "Ooh",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 72.24,
+      "end": 73.86,
+      "text": "When the camera flashin'",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.89,
+      "end": 75.42,
+      "text": "I act so happy",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.65,
+      "end": 81.02,
+      "text": "I'm in heaven when you're lookin' at me",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.39,
+      "end": 82.98,
+      "text": "Angel of my dreams",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.01,
+      "end": 85.41,
+      "text": "I will always love you and hate you",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.49,
+      "end": 87.54,
+      "text": "It's not fair",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.48,
+      "end": 90.21,
+      "text": "It's so bittersweet",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.28,
+      "end": 93.5,
+      "text": "I will always want you and need you",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.53,
+      "end": 94.64,
+      "text": "You don't care",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.72,
+      "end": 97.02,
+      "text": "Love when you call me a star",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.07,
+      "end": 98.98,
+      "text": "You let me down in the dark",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 99,
+      "end": 102.03,
+      "text": "Want you and need you, you don't care",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.05,
+      "end": 104.21,
+      "text": "It's not fair",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.3,
+      "end": 106.52,
+      "text": "It's not fair",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 107.17,
+      "end": 109.92,
+      "text": "(Vocal cry)",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.56,
+      "end": 114.79,
+      "text": "I wonder if one day that you'll say that you care",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.4,
+      "end": 117.03,
+      "text": "(Vocal cry)",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.06,
+      "end": 121.11,
+      "text": "If you say you love me madly",
+      "speaker": "jade-sample",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.53,
+      "end": 122.62,
+      "text": "Care that I drive",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.63,
+      "end": 123.71,
+      "text": "Care that I try",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.75,
+      "end": 125.16,
+      "text": "Care that I buy you sushi",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.2,
+      "end": 126.31,
+      "text": "Got you a car",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.34,
+      "end": 127.29,
+      "text": "Got you a house",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.32,
+      "end": 128.79,
+      "text": "Got you a suit, it's Gucci",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.96,
+      "end": 130.19,
+      "text": "If I don't win",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.2,
+      "end": 131.21,
+      "text": "I'm in the bin",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.23,
+      "end": 132.94,
+      "text": "You say you never knew me",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.96,
+      "end": 134.75,
+      "text": "But when I pop off, you sue me",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 134.78,
+      "end": 135.86,
+      "text": "So sue me",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.98,
+      "end": 137.45,
+      "text": "But it feels like",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.48,
+      "end": 138.95,
+      "text": "Ooh",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 139.1,
+      "end": 140.57,
+      "text": "It feels like",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.59,
+      "end": 141.12,
+      "text": "Ooh",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 141.16,
+      "end": 142.62,
+      "text": "In the spotlight",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.65,
+      "end": 143.19,
+      "text": "Ooh",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 143.22,
+      "end": 144.93,
+      "text": "When the camera flashin'",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.96,
+      "end": 146.76,
+      "text": "I act so happy",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.85,
+      "end": 151.69,
+      "text": "I'm in heaven when you're lookin' at me",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.28,
+      "end": 154.04,
+      "text": "Angel of my dreams",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.12,
+      "end": 156.68,
+      "text": "I will always love you and hate you",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.7,
+      "end": 158.66,
+      "text": "It's not fair",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.64,
+      "end": 161.42,
+      "text": "It's so bittersweet",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.49,
+      "end": 164.33,
+      "text": "I will always want you and need you",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.38,
+      "end": 165.93,
+      "text": "You don't care",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.97,
+      "end": 168.25,
+      "text": "Love when you call me a star",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.3,
+      "end": 170.74,
+      "text": "You let me down in the dark",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.77,
+      "end": 173.52,
+      "text": "Want you and need you, you don't care",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 173.57,
+      "end": 175.85,
+      "text": "It's not fair",
+      "speaker": "jade-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.3,
+      "end": 178.54,
+      "text": "It's not fair",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 178.71,
+      "end": 180.72,
+      "text": "It's not fair",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 180.81,
+      "end": 182.2,
+      "text": "Angel of my dreams",
+      "speaker": "jade-lead",
+      "intensity": 0.97
+    },
+    {
+      "start": 182.25,
+      "end": 186.83,
+      "text": "I will always love you and hate you",
+      "speaker": "jade-lead",
+      "intensity": 0.97
+    },
+    {
+      "start": 186.89,
+      "end": 190.91,
+      "text": "It's not fair",
+      "speaker": "jade-lead",
+      "intensity": 0.97
+    },
+    {
+      "start": 191.22,
+      "end": 193.44,
+      "text": "It's so bittersweet",
+      "speaker": "jade-lead",
+      "intensity": 0.97
+    },
+    {
+      "start": 193.49,
+      "end": 197.04,
+      "text": "I will always want you and need you",
+      "speaker": "jade-lead",
+      "intensity": 0.97
+    },
+    {
+      "start": 197.12,
+      "end": 199.44,
+      "text": "You don't care",
+      "speaker": "jade-lead",
+      "intensity": 0.97
+    },
+    {
+      "start": 199.5,
+      "end": 203.24,
+      "text": "I will always love you, forever, I swear",
+      "speaker": "jade-lead",
+      "intensity": 0.97
+    },
+    {
+      "start": 203.3,
+      "end": 205.31,
+      "text": "Ooh",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 205.35,
+      "end": 207.97,
+      "text": "Ooh",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 208,
+      "end": 211.57,
+      "text": "Ooh",
+      "speaker": "jade-harmony",
+      "intensity": 0.59
+    },
+    {
+      "start": 214.34,
+      "end": 217.69,
+      "text": "(Vocal cry)",
+      "speaker": "jade-sample",
+      "intensity": 0.97
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "jade-street"
+    },
+    {
+      "time": 8.1,
+      "view": "jade-medallion"
+    },
+    {
+      "time": 13.25,
+      "view": "jade-candles"
+    },
+    {
+      "time": 16.9,
+      "view": "jade-childhood"
+    },
+    {
+      "time": 22.3,
+      "view": "jade-candles"
+    },
+    {
+      "time": 24.65,
+      "view": "jade-audition"
+    },
+    {
+      "time": 28.85,
+      "view": "jade-busker"
+    },
+    {
+      "time": 38.95,
+      "view": "jade-suv"
+    },
+    {
+      "time": 43.15,
+      "view": "jade-limo"
+    },
+    {
+      "time": 46.55,
+      "view": "jade-paparazzi"
+    },
+    {
+      "time": 55.6,
+      "view": "jade-press-close"
+    },
+    {
+      "time": 60.75,
+      "view": "jade-paparazzi"
+    },
+    {
+      "time": 67.05,
+      "view": "jade-press-close"
+    },
+    {
+      "time": 76.8,
+      "view": "jade-gadget"
+    },
+    {
+      "time": 79.65,
+      "view": "jade-paparazzi"
+    },
+    {
+      "time": 82.65,
+      "view": "jade-busker"
+    },
+    {
+      "time": 91.2,
+      "view": "jade-limo"
+    },
+    {
+      "time": 94.7,
+      "view": "jade-press-close"
+    },
+    {
+      "time": 99.6,
+      "view": "jade-suv"
+    },
+    {
+      "time": 102.1,
+      "view": "jade-busker"
+    },
+    {
+      "time": 105,
+      "view": "jade-paparazzi"
+    },
+    {
+      "time": 108.25,
+      "view": "jade-limo"
+    },
+    {
+      "time": 112.65,
+      "view": "jade-contract"
+    },
+    {
+      "time": 117.35,
+      "view": "jade-limo"
+    },
+    {
+      "time": 119.25,
+      "view": "jade-phone"
+    },
+    {
+      "time": 127.8,
+      "view": "jade-suite"
+    },
+    {
+      "time": 133.3,
+      "view": "jade-arrival"
+    },
+    {
+      "time": 136.9,
+      "view": "jade-angels"
+    },
+    {
+      "time": 143.15,
+      "view": "jade-shoot"
+    },
+    {
+      "time": 146.4,
+      "view": "jade-rehearsal"
+    },
+    {
+      "time": 151.4,
+      "view": "jade-red-hair"
+    },
+    {
+      "time": 155.35,
+      "view": "jade-rehearsal"
+    },
+    {
+      "time": 159.85,
+      "view": "jade-spotlight"
+    },
+    {
+      "time": 164,
+      "view": "jade-red-hair"
+    },
+    {
+      "time": 168.9,
+      "view": "jade-rehearsal"
+    },
+    {
+      "time": 174.4,
+      "view": "jade-spotlight"
+    },
+    {
+      "time": 176.2,
+      "view": "jade-red-hair"
+    },
+    {
+      "time": 179,
+      "view": "jade-rehearsal"
+    },
+    {
+      "time": 182.2,
+      "view": "jade-spotlight"
+    },
+    {
+      "time": 186.15,
+      "view": "jade-finale"
+    },
+    {
+      "time": 194,
+      "view": "jade-audition"
+    },
+    {
+      "time": 197.1,
+      "view": "jade-busker"
+    },
+    {
+      "time": 200,
+      "view": "jade-press-close"
+    },
+    {
+      "time": 202.7,
+      "view": "jade-red-hair"
+    },
+    {
+      "time": 205.3,
+      "view": "jade-limo"
+    },
+    {
+      "time": 208.25,
+      "view": "jade-paparazzi"
+    },
+    {
+      "time": 214.6,
+      "view": "jade-news"
+    },
+    {
+      "time": 222.3,
+      "view": "jade-street"
+    },
+    {
+      "time": 224.85,
+      "view": "jade-fade"
+    }
+  ]
+}
