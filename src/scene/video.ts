@@ -1,4 +1,4 @@
-import {sceneCue,type SceneCue,type SceneFile} from './scene.ts';
+import {sceneCamera,sceneCue,type SceneCue,type SceneFile} from './scene.ts';
 import type {Transport} from '../show/transport.ts';
 export interface StageCapture {draw(time:number):HTMLCanvasElement;release():void}
 export interface SceneStage {capture(width?:number,height?:number):StageCapture}
@@ -14,7 +14,7 @@ export interface VideoExportOptions {
 export const VIDEO_PRESETS:Record<VideoPreset,{width:number;height:number;fps:number;videoBitsPerSecond:number;audioBitsPerSecond:number}>={
   hd:{width:1920,height:1080,fps:30,videoBitsPerSecond:8_000_000,audioBitsPerSecond:192_000},
   // Crisp 1080p Full HD 30fps VBR H.264 High + AAC-LC MP4 tuned for X's highest HD playback tier with live lyrics.
-  'x-lyrics':{width:1920,height:1080,fps:30,videoBitsPerSecond:4_500_000,audioBitsPerSecond:160_000},
+  'x-lyrics':{width:1920,height:1080,fps:30,videoBitsPerSecond:5_000_000,audioBitsPerSecond:160_000},
 };
 
 export function videoFormat(supported:(mime:string)=>boolean):{mimeType:string;extension:'mp4'|'webm'}{
@@ -229,6 +229,16 @@ async function exportSceneVideoOffline(
   }
   if(!canAac)return null;
 
+  let hwH264=false;
+  try{
+    const hwCheck=await VideoEncoder.isConfigSupported({
+      codec:width>1280?'avc1.640028':'avc1.64001f',
+      width,height,bitrate:videoBps,framerate:preset.fps,
+      hardwareAcceleration:'prefer-hardware',
+    });
+    hwH264=Boolean(hwCheck.supported);
+  }catch{hwH264=false;}
+
   const target=new mb.BufferTarget();
   const output=new mb.Output({
     format:new mb.Mp4OutputFormat({fastStart:'in-memory'}),
@@ -247,12 +257,22 @@ async function exportSceneVideoOffline(
     const ctx=canvas.getContext('2d');
     if(!ctx)throw Error('This browser cannot render the scene video.');
 
+    const duration=end-start;
+    // Software OpenH264 (used on Linux Chromium/Brave without VAAPI encode) leaves red chroma speckles
+    // and macroblock artifacts across long P-frame chains; a 4-frame GOP + scene-cut keyframes + higher
+    // VBR ceiling keeps every frame razor-sharp while staying safely under X's 512 MB upload cap.
+    const gopFrames=hwH264?preset.fps*2:4;
+    const desiredBps=hwH264?videoBps:Math.max(videoBps,presetName==='x-lyrics'?8_000_000:10_000_000);
+    const maxShareBps=Math.max(2_500_000,Math.floor((450*8_000_000)/Math.max(1,duration)));
+    const effectiveBps=Math.min(desiredBps,maxShareBps);
+
     const videoSource=new mb.CanvasSource(canvas,{
       codec:'avc',
-      bitrate:videoBps,
+      bitrate:effectiveBps,
       bitrateMode:'variable',
       latencyMode:'quality',
-      keyFrameInterval:4,
+      keyFrameInterval:gopFrames/preset.fps,
+      hardwareAcceleration:hwH264?'prefer-hardware':'no-preference',
     });
     const audioSource=new mb.AudioSampleSource({
       codec:'aac',
@@ -264,7 +284,6 @@ async function exportSceneVideoOffline(
     await output.start();
     started=true;
 
-    const duration=end-start;
     const totalFrames=Math.max(1,Math.ceil(duration*preset.fps));
     const frameDur=1/preset.fps;
 
@@ -296,7 +315,7 @@ async function exportSceneVideoOffline(
       audioSource.close();
     })();
 
-    let lastProgressAt=0;
+    let lastProgressAt=0,lastKeyFrame=-gopFrames,prevView:string|undefined;
     for(let i=0;i<totalFrames;i++){
       if(signal.aborted)throw new DOMException('Video export cancelled.','AbortError');
       const t=Math.min(end,start+i*frameDur);
@@ -304,7 +323,11 @@ async function exportSceneVideoOffline(
       if(presetName==='x-lyrics')drawLyricsVideoFrame(ctx,source,scene,t,width,height);
       else drawVideoFrame(ctx,source,scene,t,width,height);
 
-      await videoSource.add(i*frameDur,frameDur);
+      const view=sceneCamera(scene,t,'auto');
+      const keyFrame=i===0||(i-lastKeyFrame)>=gopFrames||(prevView!==undefined&&view!==prevView);
+      if(keyFrame)lastKeyFrame=i;
+      prevView=view;
+      await videoSource.add(i*frameDur,frameDur,{keyFrame});
 
       const now=typeof performance!=='undefined'?performance.now():Date.now();
       if(i===0||i%3===0||now-lastProgressAt>80){

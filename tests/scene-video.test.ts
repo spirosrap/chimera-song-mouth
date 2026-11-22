@@ -56,7 +56,7 @@ test('cancel and hiding the tab reject partial videos and release the streams',a
 });
 test('compact X lyrics preset draws song title, karaoke-highlighted lyrics, upcoming preview, and clips cleanly',async()=>{
  const multi:SceneFile={...scene,duration:10,cues:[{start:1,end:4,speaker:'kaffee',text:'First lyric line',intensity:.8},{start:5,end:8,speaker:'jessep',text:'Second lyric line',intensity:.9}]};
- expect(VIDEO_PRESETS['x-lyrics']).toEqual({width:1920,height:1080,fps:30,videoBitsPerSecond:4_500_000,audioBitsPerSecond:160_000});
+ expect(VIDEO_PRESETS['x-lyrics']).toEqual({width:1920,height:1080,fps:30,videoBitsPerSecond:5_000_000,audioBitsPerSecond:160_000});
  const words:string[]=[];const ctx={fillRect(){},drawImage(){},fillText:(s:string)=>words.push(s),measureText:(s:string)=>({width:s.length*10})} as unknown as CanvasRenderingContext2D;
  drawLyricsVideoFrame(ctx,{} as CanvasImageSource,multi,0.2);
  expect(words).toContain('Scene');expect(words).toContain('NEXT LYRIC');expect(words).toContain('First lyric line');
@@ -72,7 +72,7 @@ test('compact X lyrics preset draws song title, karaoke-highlighted lyrics, upco
 test('fast offline WebCodecs path muxes an H.264 + AAC MP4 silently faster than real time and survives hidden tabs',async()=>{
  const h=harness();
  const priorWC=new Map<string,PropertyDescriptor|undefined>();
- let encodedVideo=0,encodedAudio=0;
+ let encodedVideo=0,encodedAudio=0;const keyFrames:number[]=[];
  class MockVideoFrame{
   readonly codedWidth=1920;readonly codedHeight=1080;readonly displayWidth=1920;readonly displayHeight=1080;readonly format='RGBA';
   readonly colorSpace={primaries:'bt709',transfer:'iec61966-2-1',matrix:'rgb',fullRange:true};
@@ -108,11 +108,12 @@ test('fast offline WebCodecs path muxes an H.264 + AAC MP4 silently faster than 
   copyTo(dst:ArrayBufferView|ArrayBuffer){const u=dst instanceof ArrayBuffer?new Uint8Array(dst):new Uint8Array(dst.buffer,dst.byteOffset,dst.byteLength);u.set(this.bytes);}
  }
  class MockVideoEncoder{
-  static async isConfigSupported(cfg:unknown){return {supported:true,config:cfg};}
+  static async isConfigSupported(cfg:{hardwareAcceleration?:string}){return {supported:cfg?.hardwareAcceleration!=='prefer-hardware',config:cfg};}
   state='configured';encodeQueueSize=0;
   constructor(readonly init:{output:(chunk:unknown,meta?:unknown)=>void;error:(e:unknown)=>void}){}
   configure(){}
   encode(frame:{timestamp:number;duration:number},opts?:{keyFrame?:boolean}){
+   if(opts?.keyFrame)keyFrames.push(encodedVideo);
    encodedVideo++;
    const bytes=new Uint8Array([0,0,0,4,0x65,0x88,0x84,0x21]);
    const chunk=new MockEncodedVideoChunk(bytes,opts?.keyFrame?'key':'delta',frame.timestamp,frame.duration);
@@ -152,6 +153,7 @@ test('fast offline WebCodecs path muxes an H.264 + AAC MP4 silently faster than 
   expect(file.extension).toBe('mp4');
   expect(file.fast).toBe(true);
   expect(encodedVideo).toBe(15); // 0.5s * 30fps
+  expect(keyFrames).toEqual([0,4,8,12]); // Software OpenH264 uses 4-frame GOP to eliminate red chroma ghosting!
   expect(encodedAudio).toBeGreaterThan(0);
   expect(prog.length).toBeGreaterThan(1);
   expect(prog.at(-1)).toBeCloseTo(0.5,2);
