@@ -1,0 +1,786 @@
+{
+  "setting": "clickclack",
+  "title": "RAYE feat. Hans Zimmer · Click Clack Symphony.",
+  "description": "The complete official music video: B&W globe wrapped in musical staves, moody London manor parlor and tufted teal pillow sofa, crimson Friday-night neon room, gravity-tilted hall, South London terraced street with piano-key zebra crossing and drifting eighth-notes, giant flying eighth-note over London and a medieval castle, and golden-hour English downs in a scarlet feather coat. Original Hans Zimmer orchestration with two physical mouth-engine voices.",
+  "duration": 311.147392,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "cc-raye",
+      "name": "RAYE",
+      "role": "Lead British soul & symphonic vocal",
+      "tele": "cc-raye.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "cc-choir",
+      "name": "Girls Squad",
+      "role": "Chorus & orchestral backing vocals",
+      "tele": "cc-choir.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 13.28,
+      "end": 17.16,
+      "speaker": "cc-raye",
+      "text": "Did you know the odds to be born on this Earth's one in four hundred trillion?",
+      "intensity": 0.8
+    },
+    {
+      "start": 17.44,
+      "end": 21.08,
+      "speaker": "cc-raye",
+      "text": "I conquered those odds, yet I can't conquer leaving this house",
+      "intensity": 0.82
+    },
+    {
+      "start": 21.24,
+      "end": 24.48,
+      "speaker": "cc-raye",
+      "text": "I eat, sleep, scroll, and work, but there has to be more than just merely existing",
+      "intensity": 0.84
+    },
+    {
+      "start": 24.6,
+      "end": 28.02,
+      "speaker": "cc-raye",
+      "text": "In fact, I was thinking there's not enough wine in the fridge to unleash me",
+      "intensity": 0.86
+    },
+    {
+      "start": 28.1,
+      "end": 30.88,
+      "speaker": "cc-raye",
+      "text": "And this feeling fiends for some feminine healing",
+      "intensity": 0.86
+    },
+    {
+      "start": 30.96,
+      "end": 32.26,
+      "speaker": "cc-raye",
+      "text": "By that I mean, I called my girls and said",
+      "intensity": 0.88
+    },
+    {
+      "start": 32.34,
+      "end": 34.14,
+      "speaker": "cc-choir",
+      "text": "SOS, pick a dress, pick a time",
+      "intensity": 0.9
+    },
+    {
+      "start": 34.22,
+      "end": 35.94,
+      "speaker": "cc-raye",
+      "text": "And an address, for we are going out tonight",
+      "intensity": 0.92
+    },
+    {
+      "start": 36.02,
+      "end": 37.94,
+      "speaker": "cc-choir",
+      "text": "Send the call out, send the call out",
+      "intensity": 0.94
+    },
+    {
+      "start": 38.02,
+      "end": 40.6,
+      "speaker": "cc-raye",
+      "text": "Calling all my baddest women, it's about to go down",
+      "intensity": 0.95
+    },
+    {
+      "start": 40.68,
+      "end": 43.06,
+      "speaker": "cc-choir",
+      "text": "Click-click-click clack symphony, I need that",
+      "intensity": 0.95
+    },
+    {
+      "start": 43.14,
+      "end": 46.2,
+      "speaker": "cc-choir",
+      "text": "Click-click-click clack symphony, I love the sound of it",
+      "intensity": 0.95
+    },
+    {
+      "start": 46.28,
+      "end": 47.02,
+      "speaker": "cc-choir",
+      "text": "Who let the girls out?",
+      "intensity": 0.94
+    },
+    {
+      "start": 47.08,
+      "end": 49.02,
+      "speaker": "cc-raye",
+      "text": "I did, I did, darling",
+      "intensity": 0.96
+    },
+    {
+      "start": 49.1,
+      "end": 51.6,
+      "speaker": "cc-raye",
+      "text": "She's empowered by the sound of us marching",
+      "intensity": 0.95
+    },
+    {
+      "start": 51.68,
+      "end": 54.28,
+      "speaker": "cc-raye",
+      "text": "Her legs are hurting, but her back is still arching",
+      "intensity": 0.95
+    },
+    {
+      "start": 54.36,
+      "end": 56.68,
+      "speaker": "cc-raye",
+      "text": "And this sound reminds me that it's going to be alright",
+      "intensity": 0.94
+    },
+    {
+      "start": 56.76,
+      "end": 59.02,
+      "speaker": "cc-raye",
+      "text": "And I never could have guessed I started my morning in tears",
+      "intensity": 0.86
+    },
+    {
+      "start": 59.1,
+      "end": 61.46,
+      "speaker": "cc-raye",
+      "text": "Got a great waterproof mascara, I can recommend",
+      "intensity": 0.86
+    },
+    {
+      "start": 61.54,
+      "end": 64,
+      "speaker": "cc-raye",
+      "text": "I should try my luck in Hollywood and find some auditions",
+      "intensity": 0.88
+    },
+    {
+      "start": 64.08,
+      "end": 66.54,
+      "speaker": "cc-raye",
+      "text": "Because the way I fake this smile could pay the mortgage and the rent",
+      "intensity": 0.88
+    },
+    {
+      "start": 66.62,
+      "end": 68.7,
+      "speaker": "cc-raye",
+      "text": "I climb into my lonely throne before my TV",
+      "intensity": 0.86
+    },
+    {
+      "start": 68.78,
+      "end": 71.52,
+      "speaker": "cc-raye",
+      "text": "I feel alone, I feel like no one really needs me",
+      "intensity": 0.86
+    },
+    {
+      "start": 71.6,
+      "end": 75.02,
+      "speaker": "cc-raye",
+      "text": "So thank you, Carly, for having a sixth sense and for calling to remind me",
+      "intensity": 0.88
+    },
+    {
+      "start": 75.1,
+      "end": 77.66,
+      "speaker": "cc-choir",
+      "text": "We don't settle for depression on a Friday night",
+      "intensity": 0.92
+    },
+    {
+      "start": 78.46,
+      "end": 82.48,
+      "speaker": "cc-raye",
+      "text": "I need a pep talk, I need a hug, I need a dance floor",
+      "intensity": 0.9
+    },
+    {
+      "start": 82.56,
+      "end": 87.48,
+      "speaker": "cc-raye",
+      "text": "I got one little life, I need to get out the house more and really start living it",
+      "intensity": 0.92
+    },
+    {
+      "start": 87.56,
+      "end": 89.74,
+      "speaker": "cc-raye",
+      "text": "Heavy is the burdens that are weighing on me",
+      "intensity": 0.9
+    },
+    {
+      "start": 89.82,
+      "end": 92.34,
+      "speaker": "cc-raye",
+      "text": "I will lay them down under some pink and blue lights",
+      "intensity": 0.92
+    },
+    {
+      "start": 92.42,
+      "end": 94.2,
+      "speaker": "cc-choir",
+      "text": "Call my girls and said, SOS",
+      "intensity": 0.92
+    },
+    {
+      "start": 94.28,
+      "end": 96.9,
+      "speaker": "cc-raye",
+      "text": "Pick a dress, pick a time and an address, for we are going out tonight",
+      "intensity": 0.94
+    },
+    {
+      "start": 96.98,
+      "end": 99.22,
+      "speaker": "cc-choir",
+      "text": "Send the call out, send the call out",
+      "intensity": 0.95
+    },
+    {
+      "start": 99.3,
+      "end": 101.88,
+      "speaker": "cc-raye",
+      "text": "Calling all my baddest women, it's about to go down",
+      "intensity": 0.96
+    },
+    {
+      "start": 101.96,
+      "end": 104.24,
+      "speaker": "cc-choir",
+      "text": "Click-click-click clack symphony, I need that",
+      "intensity": 0.96
+    },
+    {
+      "start": 104.32,
+      "end": 107.1,
+      "speaker": "cc-choir",
+      "text": "Click-click-click clack symphony, I love the sound of it",
+      "intensity": 0.96
+    },
+    {
+      "start": 107.18,
+      "end": 108.16,
+      "speaker": "cc-choir",
+      "text": "Who let the girls out?",
+      "intensity": 0.94
+    },
+    {
+      "start": 108.24,
+      "end": 110.28,
+      "speaker": "cc-raye",
+      "text": "I did, I did, darling",
+      "intensity": 0.96
+    },
+    {
+      "start": 110.36,
+      "end": 112.74,
+      "speaker": "cc-raye",
+      "text": "She's empowered by the sound of us marching",
+      "intensity": 0.96
+    },
+    {
+      "start": 112.82,
+      "end": 115.52,
+      "speaker": "cc-raye",
+      "text": "Her legs are hurting, but her back is still arching",
+      "intensity": 0.96
+    },
+    {
+      "start": 115.6,
+      "end": 118.08,
+      "speaker": "cc-raye",
+      "text": "And this sound reminds me that it's going to be alright",
+      "intensity": 0.95
+    },
+    {
+      "start": 118.16,
+      "end": 120.32,
+      "speaker": "cc-raye",
+      "text": "Jim-Jimmy Choo, it's time to open up the closet",
+      "intensity": 0.88
+    },
+    {
+      "start": 120.4,
+      "end": 123.16,
+      "speaker": "cc-raye",
+      "text": "It's a sad sight to see Manolo Blahnik gather cobwebs",
+      "intensity": 0.88
+    },
+    {
+      "start": 123.24,
+      "end": 126.02,
+      "speaker": "cc-raye",
+      "text": "Why I'm like an alien in every dress I try on?",
+      "intensity": 0.9
+    },
+    {
+      "start": 126.1,
+      "end": 128.38,
+      "speaker": "cc-raye",
+      "text": "Every time I'm used to clouds over in Britain, it's fine",
+      "intensity": 0.9
+    },
+    {
+      "start": 128.46,
+      "end": 130.88,
+      "speaker": "cc-raye",
+      "text": "Everything that's hurt me left a scar upon me",
+      "intensity": 0.9
+    },
+    {
+      "start": 130.96,
+      "end": 133.48,
+      "speaker": "cc-raye",
+      "text": "Am I just a product of everything that was done to me?",
+      "intensity": 0.92
+    },
+    {
+      "start": 133.58,
+      "end": 135.94,
+      "speaker": "cc-choir",
+      "text": "Run to me, run to me, someone bring the sun to me",
+      "intensity": 0.92
+    },
+    {
+      "start": 136.02,
+      "end": 138.8,
+      "speaker": "cc-raye",
+      "text": "I can see the shadow of the girl who wants to believe",
+      "intensity": 0.92
+    },
+    {
+      "start": 138.88,
+      "end": 141.5,
+      "speaker": "cc-raye",
+      "text": "She just, she just needs me",
+      "intensity": 0.9
+    },
+    {
+      "start": 141.58,
+      "end": 145.8,
+      "speaker": "cc-raye",
+      "text": "She needs a hug, she needs a dance floor, she's got one little life",
+      "intensity": 0.92
+    },
+    {
+      "start": 145.88,
+      "end": 151,
+      "speaker": "cc-raye",
+      "text": "She needs to get out the house more and try and start living it, heavy is the burdens",
+      "intensity": 0.94
+    },
+    {
+      "start": 151.08,
+      "end": 154.2,
+      "speaker": "cc-raye",
+      "text": "I will lay them down under some pink and blue lights",
+      "intensity": 0.94
+    },
+    {
+      "start": 154.28,
+      "end": 158.08,
+      "speaker": "cc-choir",
+      "text": "Call my girls and said SOS, pick a dress, pick a time and an address",
+      "intensity": 0.95
+    },
+    {
+      "start": 158.16,
+      "end": 160.5,
+      "speaker": "cc-choir",
+      "text": "Send the call out, send the call out",
+      "intensity": 0.96
+    },
+    {
+      "start": 160.58,
+      "end": 163.26,
+      "speaker": "cc-raye",
+      "text": "Calling all my baddest women, it's about to go down",
+      "intensity": 0.97
+    },
+    {
+      "start": 163.36,
+      "end": 165.76,
+      "speaker": "cc-choir",
+      "text": "Click-click-click clack symphony, I need that",
+      "intensity": 0.97
+    },
+    {
+      "start": 165.84,
+      "end": 168.4,
+      "speaker": "cc-choir",
+      "text": "Click-click-click clack symphony, I love the sound of it",
+      "intensity": 0.97
+    },
+    {
+      "start": 168.48,
+      "end": 169.44,
+      "speaker": "cc-choir",
+      "text": "Who let the girls out?",
+      "intensity": 0.96
+    },
+    {
+      "start": 169.52,
+      "end": 171.56,
+      "speaker": "cc-raye",
+      "text": "I did, I did, darling",
+      "intensity": 0.98
+    },
+    {
+      "start": 171.64,
+      "end": 174.14,
+      "speaker": "cc-raye",
+      "text": "She's empowered by the sound of us marching",
+      "intensity": 0.98
+    },
+    {
+      "start": 174.22,
+      "end": 176.78,
+      "speaker": "cc-raye",
+      "text": "Her legs are hurting, but her back is still arching",
+      "intensity": 0.98
+    },
+    {
+      "start": 176.86,
+      "end": 179.6,
+      "speaker": "cc-raye",
+      "text": "And this sound reminds me that it's going to be alright",
+      "intensity": 0.97
+    },
+    {
+      "start": 180.62,
+      "end": 184.08,
+      "speaker": "cc-raye",
+      "text": "Though this season of her life had been cold, lonely, and tough",
+      "intensity": 0.84
+    },
+    {
+      "start": 185.16,
+      "end": 188.46,
+      "speaker": "cc-raye",
+      "text": "Though she slipped back into a darkness she had hoped by now to have overcome",
+      "intensity": 0.86
+    },
+    {
+      "start": 190.22,
+      "end": 191.9,
+      "speaker": "cc-raye",
+      "text": "She had learned a beautiful lesson",
+      "intensity": 0.88
+    },
+    {
+      "start": 192.28,
+      "end": 195.52,
+      "speaker": "cc-raye",
+      "text": "And she kissed her girls goodbye and thanked them for getting her out the house",
+      "intensity": 0.9
+    },
+    {
+      "start": 196.62,
+      "end": 201.3,
+      "speaker": "cc-raye",
+      "text": "That maybe everything was going to be alright",
+      "intensity": 0.92
+    },
+    {
+      "start": 201.4,
+      "end": 205.98,
+      "speaker": "cc-choir",
+      "text": "And even if only for a moment",
+      "intensity": 0.94
+    },
+    {
+      "start": 208.4,
+      "end": 212.56,
+      "speaker": "cc-raye",
+      "text": "Everything is going to be alright",
+      "intensity": 0.96
+    },
+    {
+      "start": 212.66,
+      "end": 216.38,
+      "speaker": "cc-choir",
+      "text": "Yeah, it's going to be alright",
+      "intensity": 0.96
+    },
+    {
+      "start": 216.46,
+      "end": 219.12,
+      "speaker": "cc-raye",
+      "text": "Going to be alright",
+      "intensity": 0.98
+    },
+    {
+      "start": 219.22,
+      "end": 221.66,
+      "speaker": "cc-choir",
+      "text": "Send the call out, send the call out",
+      "intensity": 0.98
+    },
+    {
+      "start": 221.74,
+      "end": 224.42,
+      "speaker": "cc-raye",
+      "text": "Calling all my baddest women, it's about to go down",
+      "intensity": 0.98
+    },
+    {
+      "start": 224.5,
+      "end": 226.86,
+      "speaker": "cc-choir",
+      "text": "Click-click-click clack symphony, I need that",
+      "intensity": 0.98
+    },
+    {
+      "start": 226.94,
+      "end": 229.62,
+      "speaker": "cc-choir",
+      "text": "Click-click-click clack symphony, I love the sound of it",
+      "intensity": 0.98
+    },
+    {
+      "start": 229.7,
+      "end": 230.74,
+      "speaker": "cc-choir",
+      "text": "Who let the girls out?",
+      "intensity": 0.96
+    },
+    {
+      "start": 230.82,
+      "end": 232.78,
+      "speaker": "cc-raye",
+      "text": "I did, I did, darling",
+      "intensity": 0.99
+    },
+    {
+      "start": 232.86,
+      "end": 235.38,
+      "speaker": "cc-raye",
+      "text": "She's empowered by the sound of us marching",
+      "intensity": 0.99
+    },
+    {
+      "start": 235.46,
+      "end": 237.42,
+      "speaker": "cc-raye",
+      "text": "Her legs are hurting, but her back is still arching",
+      "intensity": 0.99
+    },
+    {
+      "start": 237.52,
+      "end": 245.98,
+      "speaker": "cc-raye",
+      "text": "She put her headphones in, and then she danced under the weight of her clouds",
+      "intensity": 0.9
+    },
+    {
+      "start": 246.22,
+      "end": 252.42,
+      "speaker": "cc-raye",
+      "text": "But for the first time in a long time, she believed that one day she would again feel the sun",
+      "intensity": 0.92
+    },
+    {
+      "start": 252.52,
+      "end": 256.72,
+      "speaker": "cc-raye",
+      "text": "She must be patient, she must have faith in the seeds that are planted beneath the snow",
+      "intensity": 0.92
+    },
+    {
+      "start": 257.82,
+      "end": 260.9,
+      "speaker": "cc-raye",
+      "text": "She must hold on, and she must let go",
+      "intensity": 0.92
+    },
+    {
+      "start": 262.18,
+      "end": 266.28,
+      "speaker": "cc-raye",
+      "text": "She'll be alright, no knight in shining armor tonight",
+      "intensity": 0.94
+    },
+    {
+      "start": 266.8,
+      "end": 268.78,
+      "speaker": "cc-raye",
+      "text": "She will save herself this time",
+      "intensity": 0.95
+    },
+    {
+      "start": 270.48,
+      "end": 274.68,
+      "speaker": "cc-raye",
+      "text": "And in fact, tonight, she did confirm",
+      "intensity": 0.94
+    },
+    {
+      "start": 275.56,
+      "end": 277.68,
+      "speaker": "cc-raye",
+      "text": "The cold never lasts, my darling",
+      "intensity": 0.95
+    },
+    {
+      "start": 278.5,
+      "end": 281.36,
+      "speaker": "cc-raye",
+      "text": "It just teaches the heart how to burn",
+      "intensity": 0.96
+    },
+    {
+      "start": 285.15,
+      "end": 291.3,
+      "speaker": "cc-choir",
+      "text": "Oh, it's going to be alright",
+      "intensity": 0.88
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "cc-globe"
+    },
+    {
+      "time": 13,
+      "view": "cc-parlor"
+    },
+    {
+      "time": 21,
+      "view": "cc-sofa"
+    },
+    {
+      "time": 28,
+      "view": "cc-raye"
+    },
+    {
+      "time": 36,
+      "view": "cc-parlor"
+    },
+    {
+      "time": 43,
+      "view": "cc-choir"
+    },
+    {
+      "time": 47,
+      "view": "cc-raye"
+    },
+    {
+      "time": 56.7,
+      "view": "cc-sofa"
+    },
+    {
+      "time": 66.5,
+      "view": "cc-parlor"
+    },
+    {
+      "time": 75,
+      "view": "cc-neon"
+    },
+    {
+      "time": 82.5,
+      "view": "cc-raye"
+    },
+    {
+      "time": 92.3,
+      "view": "cc-neon"
+    },
+    {
+      "time": 97,
+      "view": "cc-gravity"
+    },
+    {
+      "time": 104.3,
+      "view": "cc-choir"
+    },
+    {
+      "time": 108.2,
+      "view": "cc-raye"
+    },
+    {
+      "time": 118.1,
+      "view": "cc-gravity"
+    },
+    {
+      "time": 128.4,
+      "view": "cc-parlor"
+    },
+    {
+      "time": 138.8,
+      "view": "cc-raye"
+    },
+    {
+      "time": 145.8,
+      "view": "cc-gravity"
+    },
+    {
+      "time": 158.1,
+      "view": "cc-street"
+    },
+    {
+      "time": 165.8,
+      "view": "cc-choir"
+    },
+    {
+      "time": 169.5,
+      "view": "cc-raye"
+    },
+    {
+      "time": 174.2,
+      "view": "cc-street"
+    },
+    {
+      "time": 180.6,
+      "view": "cc-piano-walk"
+    },
+    {
+      "time": 196.6,
+      "view": "cc-raye"
+    },
+    {
+      "time": 208.4,
+      "view": "cc-piano-walk"
+    },
+    {
+      "time": 219.2,
+      "view": "cc-flight"
+    },
+    {
+      "time": 230.8,
+      "view": "cc-raye"
+    },
+    {
+      "time": 235.4,
+      "view": "cc-flight"
+    },
+    {
+      "time": 237.5,
+      "view": "cc-downs"
+    },
+    {
+      "time": 252.5,
+      "view": "cc-feathers"
+    },
+    {
+      "time": 266.8,
+      "view": "cc-downs"
+    },
+    {
+      "time": 275.5,
+      "view": "cc-feathers"
+    },
+    {
+      "time": 285,
+      "view": "cc-downs"
+    }
+  ]
+}

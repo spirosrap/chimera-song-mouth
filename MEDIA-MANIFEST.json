@@ -2167,6 +2167,36 @@
       "sha256": "565ea48cac8bf84fdf542c2d8488c9dfa16f7b216b1c6cf4ae5e727f35420985"
     },
     {
+      "path": "public/scenes/click-clack-symphony/backing.mp3",
+      "bytes": 7469391,
+      "sha256": "13e088129f3516cac70cfe434056db13c3d832feada1399df206bb640e86a2d0"
+    },
+    {
+      "path": "public/scenes/click-clack-symphony/cc-choir.tele.gz",
+      "bytes": 1204519,
+      "sha256": "23cac48076c57521a52914a32e4474524321035d2a32f91c6bc513d2253a4230"
+    },
+    {
+      "path": "public/scenes/click-clack-symphony/cc-raye.tele.gz",
+      "bytes": 3059667,
+      "sha256": "092077c1e7d912b47b1dea0a6ed667abcad6cb49f147ea068541e6caf3f8f828"
+    },
+    {
+      "path": "public/scenes/click-clack-symphony/mix.mp3",
+      "bytes": 9958700,
+      "sha256": "82e7b161460a5610b86782b3e0cb4ca09666525dbfbd1fb2ebc210a39a6a9c30"
+    },
+    {
+      "path": "public/scenes/click-clack-symphony/performance.json",
+      "bytes": 837357,
+      "sha256": "446ce4f49b0601ab11f4f9b095c70744f3179ef1bbc2bf1d7beb9fdb870cef37"
+    },
+    {
+      "path": "public/scenes/click-clack-symphony/scene.json",
+      "bytes": 18555,
+      "sha256": "7f9b3dd736a7ab9182f98851019a0fe4f009e84ed35d6b9bc58167f2e961d7c3"
+    },
+    {
       "path": "public/scenes/contact/backing.mp3",
       "bytes": 9576236,
       "sha256": "870862f52a6ef6c4c8296027b6246fae6afa5163bf84943de6bf164f26a1ca86"
