@@ -68,7 +68,6 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
   const cueWords=cue?cue.text.split(/\s+/).filter(Boolean):[];
   const cueProgress=cue?Math.max(0,Math.min(1,(state.time-cue.start)/Math.max(0.05,cue.end-cue.start))):0;
   const litWords=cueWords.length?Math.max(1,Math.ceil(cueProgress*cueWords.length)):0;
-  const progressPct=state.duration>0?Math.max(0,Math.min(100,(state.time/state.duration)*100)):0;
   const speaker=scene?.characters.find(c=>c.id===cue?.speaker),shown=useRef<typeof cue>(undefined);
   const core=sceneId==='hal-9000',press=sceneId==='fool-me-once',throne=sceneId==='wizard-of-oz',moon=sceneId==='apollo-11'||sceneId==='apollo-13';
   if(cue)shown.current=cue;
@@ -106,7 +105,6 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
                   <p className="scene-hud-preview">{nextCue.text}</p>
                 </>
                 :<p aria-hidden="true">&nbsp;</p>}</figcaption>}
-            <div className="scene-hud-bar" aria-hidden="true"><i style={{width:`${progressPct.toFixed(2)}%`}}/></div>
           </>}
         </div>
       </figure>
@@ -115,7 +113,7 @@ export function ScenePage({sceneId}:{sceneId:MovieSceneId}){
         <button className="chip" disabled={!loaded||exporting} onClick={()=>{transport?.pause();transport?.seek(0);}}>Restart</button>
         <input aria-label="Position in the movie scene" type="range" min={0} max={state.duration||1} step={.05} value={state.time} disabled={!loaded||exporting} onChange={e=>transport?.seek(Number(e.target.value))}/>
         <span>{formatTime(state.time)} / {formatTime(state.duration)}</span>
-        <button className="chip" disabled={!loaded||exporting} title="Fullscreen 16:9 stage with live title, clock, karaoke lyrics, and progress bar (Space or click to play/pause)" onClick={()=>{if(document.fullscreenElement)void document.exitFullscreen();else void filmRef.current?.requestFullscreen();}}>{fullscreen?'Exit fullscreen':'⛶ Fullscreen'}</button>
+        <button className="chip" disabled={!loaded||exporting} title="Fullscreen 16:9 stage with live title, clock, and karaoke lyrics (Space or click to play/pause)" onClick={()=>{if(document.fullscreenElement)void document.exitFullscreen();else void filmRef.current?.requestFullscreen();}}>{fullscreen?'Exit fullscreen':'⛶ Fullscreen'}</button>
         <button className="chip on" disabled={!loaded||!stage||exporting} title="Full HD 1080p 30fps MP4 (H.264 High + AAC) with live highlighted lyrics & upcoming line, optimized for X" onClick={()=>void downloadVideo('x-lyrics')}>Download lyrics video (X)</button>
         {scene&&scene.duration>140&&<button className="chip" disabled={!loaded||!stage||exporting} title="Full HD 1080p 2:15 lyrics clip starting from the current playhead position (fits X's 2:20 standard video limit)" onClick={()=>void downloadVideo('x-lyrics',135)}>2:15 lyrics clip (X)</button>}
         <button className="chip" disabled={!loaded||!stage||exporting} onClick={()=>void downloadVideo('hd')}>Record HD video</button>
