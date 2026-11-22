@@ -502,3 +502,15 @@ matched the local SHA-256 hashes over HTTPS, including every app bundle and scen
 asset. The direct scene URL and five versioned media URLs also matched. The
 focused scene tests passed, including speaker framing and occlusion checks.
 Browser playback remains unverified.
+
+### Angel of My Dreams
+
+The complete JADE scene (`03714c5`, 22 November 2026) is live at
+`?scene=jade-angel`. Four CHIMERA airways synthesize the lead, chorus,
+opening sample and spoken tag over the original separated music. The 3:52 scene
+includes the market, childhood performances, paparazzi, limousine, night suite
+and winged studio choreography. The publisher returned `DEPLOY_EXIT=0`.
+All 36 uploaded files matched their build hashes over HTTPS, along with the
+direct scene URL and six versioned media URLs. Native engine, TypeScript and
+scene tests passed. The camera checks cover desktop and phone framing and
+opaque prop occlusion. Browser playback remains unverified.
