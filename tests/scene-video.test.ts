@@ -1,5 +1,5 @@
 import {expect,test} from 'bun:test';
-import {videoFormat,subtitleLines,drawVideoFrame,recordSceneVideo} from '../src/scene/video.ts';
+import {videoFormat,subtitleLines,drawVideoFrame,drawLyricsVideoFrame,recordSceneVideo,VIDEO_PRESETS} from '../src/scene/video.ts';
 import type {SceneFile} from '../src/scene/scene.ts';
 import type {Transport} from '../src/show/transport.ts';
 const scene:SceneFile={title:'Scene',description:'Test',duration:.5,audio:'mix.mp3',characters:[{id:'kaffee',name:'Counsel',role:'Asking',tele:'kaffee.tele'},{id:'jessep',name:'Witness',role:'Answering',tele:'jessep.tele'}],cues:[{start:0,end:.5,speaker:'kaffee',text:'A short test.',intensity:.5}],shots:[{time:0,view:'wide'}]};
@@ -53,4 +53,19 @@ test('cancel and hiding the tab reject partial videos and release the streams',a
    await expect(promise).rejects.toThrow(hidden?'tab was hidden':'cancelled');expect(h.released).toBe(1);expect(h.taps).toBe(0);expect(h.tracks.every(t=>t.stopped)).toBe(true);expect(h.pos).toBe(17);
   }finally{h.restore();}
  }
+});
+test('compact X lyrics preset draws song title, karaoke-highlighted lyrics, upcoming preview, and clips cleanly',async()=>{
+ const multi:SceneFile={...scene,duration:10,cues:[{start:1,end:4,speaker:'kaffee',text:'First lyric line',intensity:.8},{start:5,end:8,speaker:'jessep',text:'Second lyric line',intensity:.9}]};
+ expect(VIDEO_PRESETS['x-lyrics']).toEqual({width:960,height:540,fps:24,videoBitsPerSecond:1_500_000,audioBitsPerSecond:128_000});
+ const words:string[]=[];const ctx={fillRect(){},drawImage(){},fillText:(s:string)=>words.push(s),measureText:(s:string)=>({width:s.length*10})} as unknown as CanvasRenderingContext2D;
+ drawLyricsVideoFrame(ctx,{} as CanvasImageSource,multi,0.2);
+ expect(words).toContain('Scene');expect(words).toContain('NEXT LYRIC');expect(words).toContain('First lyric line');
+ words.length=0;drawLyricsVideoFrame(ctx,{} as CanvasImageSource,multi,2.5);
+ expect(words).toContain('COUNSEL');expect(words).toContain('First');expect(words).toContain('lyric');expect(words).toContain('line');expect(words).toContain('Second lyric line');
+ const h=harness();try{
+  const promise=recordSceneVideo(h.stage,multi,h.transport,()=>{},new AbortController().signal,{preset:'x-lyrics',startTime:1,endTime:4});await ready();
+  expect(h.starts).toEqual([1]);
+  h.frame(2.5);h.frame(4);const file=await promise;
+  expect(file.extension).toBe('webm');expect(file.blob.size).toBeGreaterThan(0);expect(h.pos).toBe(17);expect(h.released).toBe(1);
+ }finally{h.restore();}
 });
