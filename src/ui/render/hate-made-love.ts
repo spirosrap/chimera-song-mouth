@@ -35,15 +35,14 @@ function makeTitleCardTexture(): THREE.CanvasTexture | null {
   ctx.shadowColor = 'rgba(0,0,0,0.65)';
   ctx.shadowBlur = 18;
   ctx.textAlign = 'center';
-  ctx.font = 'italic 900 84px Georgia, serif';
-  ctx.fillText('“Hate that', 0, -76);
-  ctx.fillText('I Made you', 0, 14);
-  ctx.fillText('Love Me”', 0, 104);
+  ctx.font = 'italic 900 88px Georgia, serif';
+  ctx.fillText('“Midnight', 0, -48);
+  ctx.fillText('Confession”', 0, 56);
   ctx.restore();
   ctx.fillStyle = '#e8cf46';
   ctx.textAlign = 'center';
   ctx.font = '700 18px sans-serif';
-  ctx.fillText('STARRING ARIANA GRANDE   ·   DIRECTED BY CHRISTIAN BRESLAUER', 512, 466);
+  ctx.fillText('CHIMERA PHYSICAL VOCAL CINEMA', 512, 466);
   return new THREE.CanvasTexture(c);
 }
 

@@ -12,9 +12,9 @@ test('generic MP4 capability cannot select VP9 or Opus inside an MP4',()=>{
  expect(choice.extension).toBe('webm');expect(choice.mimeType).toBe('video/webm');
  expect(()=>videoFormat(m=>m==='video/mp4')).toThrow('cannot save');
 });
-test('the exported picture contains the subtitle and speaker, even without a DOM caption',()=>{
+test('the exported picture contains the subtitle and generic singer label, without spoiling artist or character names',()=>{
  const words:string[]=[];const ctx={fillRect(){},drawImage(){},fillText:(s:string)=>words.push(s),measureText:(s:string)=>({width:s.length*10})} as unknown as CanvasRenderingContext2D;
- drawVideoFrame(ctx,{} as CanvasImageSource,scene,.1);expect(words).toEqual(['COUNSEL','A short test.']);
+ drawVideoFrame(ctx,{} as CanvasImageSource,scene,.1);expect(words).toEqual(['SINGER 1','A short test.']);
  words.length=0;drawVideoFrame(ctx,{} as CanvasImageSource,scene,.5);expect(words).toEqual([]);
 });
 
@@ -59,9 +59,11 @@ test('compact X lyrics preset draws song title, active karaoke-highlighted lyric
  expect(VIDEO_PRESETS['x-lyrics']).toEqual({width:1920,height:1080,fps:30,videoBitsPerSecond:4_500_000,audioBitsPerSecond:160_000});
  const words:string[]=[];const ctx={fillRect(){},drawImage(){},fillText:(s:string)=>words.push(s),measureText:(s:string)=>({width:s.length*10})} as unknown as CanvasRenderingContext2D;
  drawLyricsVideoFrame(ctx,{} as CanvasImageSource,multi,0.2);
- expect(words).toContain('Scene');expect(words).not.toContain('NEXT LYRIC');expect(words).not.toContain('First lyric line');
+ expect(words).toContain('CHIMERA');expect(words).not.toContain('Scene');expect(words).not.toContain('NEXT LYRIC');expect(words).not.toContain('First lyric line');
  words.length=0;drawLyricsVideoFrame(ctx,{} as CanvasImageSource,multi,2.5);
- expect(words).toContain('COUNSEL');expect(words).toContain('First');expect(words).toContain('lyric');expect(words).toContain('line');expect(words).not.toContain('Second lyric line');
+ expect(words).toContain('SINGER 1');expect(words).not.toContain('COUNSEL');expect(words).toContain('First');expect(words).toContain('lyric');expect(words).toContain('line');expect(words).not.toContain('Second lyric line');
+ words.length=0;drawLyricsVideoFrame(ctx,{} as CanvasImageSource,multi,6.0);
+ expect(words).toContain('SINGER 2');expect(words).not.toContain('WITNESS');
  const h=harness();try{
   const promise=recordSceneVideo(h.stage,multi,h.transport,()=>{},new AbortController().signal,{preset:'x-lyrics',startTime:1,endTime:4});await ready();
   expect(h.starts).toEqual([1]);

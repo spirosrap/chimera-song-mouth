@@ -1857,6 +1857,36 @@
       "sha256": "b8b51a6c142eff34974fe7e01846aa36302605afb6c0fde38da97c3930be5d1e"
     },
     {
+      "path": "public/scenes/baile-inolvidable/backing.mp3",
+      "bytes": 9074981,
+      "sha256": "c26f372c8ad6e2b73bc451703c33db8f35187b52fe0f220e664d400a3a009372"
+    },
+    {
+      "path": "public/scenes/baile-inolvidable/baile-benito.tele.gz",
+      "bytes": 3208531,
+      "sha256": "bd0efc3a5f4212c139e3f6f34457723d0776038fbd29851f0797f55b2d838109"
+    },
+    {
+      "path": "public/scenes/baile-inolvidable/baile-coro.tele.gz",
+      "bytes": 946873,
+      "sha256": "388783bc6413c4e10420e6174785ce418e7f67c2c1f0b6281233ceb79462485f"
+    },
+    {
+      "path": "public/scenes/baile-inolvidable/mix.mp3",
+      "bytes": 12099884,
+      "sha256": "f804757f89c7325e3cf2e667c47d378393cf7ac2207a5abffe084ae6b0568be9"
+    },
+    {
+      "path": "public/scenes/baile-inolvidable/performance.json",
+      "bytes": 1186907,
+      "sha256": "46cbdfcd393c48de487154b687e1150487550f123fecc8e8b17c760a83a4d392"
+    },
+    {
+      "path": "public/scenes/baile-inolvidable/scene.json",
+      "bytes": 10371,
+      "sha256": "4f016c882e08e7754d61042722a62aaf5deaf147bbb3abb2191b4ecfb0defac9"
+    },
+    {
       "path": "public/scenes/bbno-two/backing.mp3",
       "bytes": 4396076,
       "sha256": "44080041655caf610164491afb522b3184da9be5348d21d5b9c39e5ca20bfc8a"

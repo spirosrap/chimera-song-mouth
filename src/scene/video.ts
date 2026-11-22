@@ -53,21 +53,27 @@ function fmtClock(sec:number):string{
   return `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;
 }
 
+/** Generic anonymous speaker label (SINGER 1, SINGER 2, ...) so exported and recorded videos don't spoil the song or artist. */
+export function genericSpeakerLabel(scene:SceneFile,speakerId:string):string{
+  const idx=scene.characters.findIndex(c=>c.id===speakerId);
+  return idx>=0?`SINGER ${idx+1}`:'SINGER';
+}
+
 /** Subtitles are drawn into the video pixels, independently of the page's subtitle switch. */
 export function drawVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasImageSource,scene:SceneFile,time:number,w=1280,h=720):void{
   const s=w/1280;
   ctx.fillStyle='#000';ctx.fillRect(0,0,w,h);ctx.drawImage(source,0,0,w,h);
   ctx.fillStyle='#000';ctx.fillRect(0,h-Math.round(112*s),w,Math.round(112*s));
   const cue=sceneCue(scene,time);if(!cue)return;
-  const name=scene.characters.find(c=>c.id===cue.speaker)?.name??'';
-  ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=`500 ${Math.round(13*s)}px Archivo, sans-serif`;ctx.fillStyle='#d6b786';ctx.fillText(name.toUpperCase(),w/2,h-Math.round(91*s));
+  const name=genericSpeakerLabel(scene,cue.speaker);
+  ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=`500 ${Math.round(13*s)}px Archivo, sans-serif`;ctx.fillStyle='#d6b786';ctx.fillText(name,w/2,h-Math.round(91*s));
   ctx.font=`500 ${Math.round(27*s)}px Archivo, sans-serif`;ctx.fillStyle='#fff';
   const lines=subtitleLines(cue.text,w-Math.round(100*s),txt=>ctx.measureText(txt).width);
   const top=h-Math.round(53*s)-(lines.length-1)*Math.round(17*s);
   lines.forEach((line,i)=>ctx.fillText(line,w/2,top+i*Math.round(34*s)));
 }
 
-/** Draws a share-ready 16:9 HD frame with song title header, clock, and live word-highlighted lyrics. */
+/** Draws a share-ready 16:9 HD frame with anonymous CHIMERA header, clock, and live word-highlighted lyrics (no song/artist spoiler). */
 export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasImageSource,scene:SceneFile,time:number,w=1920,h=1080):void{
   const s=w/960;
   ctx.fillStyle='#000';ctx.fillRect(0,0,w,h);
@@ -75,7 +81,7 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
   if('imageSmoothingQuality' in ctx)ctx.imageSmoothingQuality='high';
   ctx.drawImage(source,0,0,w,h);
 
-  // Subtle top bar with song title & clock
+  // Subtle top bar with CHIMERA mark & clock (no song title or artist reveal)
   const topH=Math.round(58*s);
   if(typeof ctx.createLinearGradient==='function'){
     const topGrad=ctx.createLinearGradient(0,0,0,topH);
@@ -91,12 +97,12 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
   ctx.textAlign='left';
   ctx.font=`600 ${Math.round(14*s)}px Archivo, sans-serif`;
   ctx.fillStyle='rgba(246,236,220,0.92)';
-  ctx.fillText(scene.title,Math.round(24*s),Math.round(24*s));
+  ctx.fillText('CHIMERA',Math.round(24*s),Math.round(24*s));
 
   ctx.textAlign='right';
   ctx.font=`500 ${Math.round(12*s)}px Archivo, sans-serif`;
   ctx.fillStyle='rgba(214,183,134,0.88)';
-  ctx.fillText(`CHIMERA · ${fmtClock(time)} / ${fmtClock(scene.duration)}`,w-Math.round(24*s),Math.round(24*s));
+  ctx.fillText(`${fmtClock(time)} / ${fmtClock(scene.duration)}`,w-Math.round(24*s),Math.round(24*s));
 
   const cue=sceneCue(scene,time);
   const maxW=w-Math.round(88*s);
@@ -115,11 +121,11 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
     }
     ctx.fillRect(0,h-deckH-fadeH,w,deckH+fadeH);
 
-    const name=scene.characters.find(c=>c.id===cue.speaker)?.name??'';
+    const name=genericSpeakerLabel(scene,cue.speaker);
     ctx.textAlign='center';
     ctx.font=`600 ${Math.round(12*s)}px Archivo, sans-serif`;
     ctx.fillStyle='#e2be82';
-    ctx.fillText(name.toUpperCase(),w/2,h-Math.round(104*s));
+    ctx.fillText(name,w/2,h-Math.round(104*s));
 
     ctx.font=`600 ${Math.round(24*s)}px Archivo, sans-serif`;
     const lines=subtitleLines(cue.text,maxW,txt=>ctx.measureText(txt).width).slice(0,2);

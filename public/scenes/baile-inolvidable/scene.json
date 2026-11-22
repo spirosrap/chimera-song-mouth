@@ -1,0 +1,453 @@
+{
+  "setting": "baile",
+  "title": "BAD BUNNY · BAILE INoLVIDABLE",
+  "description": "The complete 6:18 official music video: wood-paneled Clases de Baile lobby, warm hardwood salsa class and dance circle, single-spotlight pitch-black ballroom memory, golden velvet-curtain live Puerto Rican salsa orchestra stage, smoky cyan silhouettes, and bittersweet studio return.",
+  "duration": 378.067302,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "baile-benito",
+      "name": "Bad Bunny",
+      "role": "Lead Spanish baritone vocal",
+      "tele": "baile-benito.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "baile-coro",
+      "name": "Salsa Coro",
+      "role": "Puerto Rican salsa call-and-response chorus",
+      "tele": "baile-coro.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 2.78,
+      "end": 7.45,
+      "speaker": "baile-benito",
+      "text": "Pensaba que contigo iba a envejecer",
+      "intensity": 0.72
+    },
+    {
+      "start": 7.64,
+      "end": 13.45,
+      "speaker": "baile-benito",
+      "text": "En otra vida, en otro mundo podrá ser",
+      "intensity": 0.74
+    },
+    {
+      "start": 14,
+      "end": 18.45,
+      "speaker": "baile-benito",
+      "text": "En esta solo queda irme un día",
+      "intensity": 0.74
+    },
+    {
+      "start": 18.62,
+      "end": 24.94,
+      "speaker": "baile-benito",
+      "text": "Y solamente verte en el atardecer",
+      "intensity": 0.76
+    },
+    {
+      "start": 26.3,
+      "end": 30.4,
+      "speaker": "baile-benito",
+      "text": "Si me ven solo y triste, no me hablen",
+      "intensity": 0.78
+    },
+    {
+      "start": 30.56,
+      "end": 36.14,
+      "speaker": "baile-benito",
+      "text": "Si me ven solo y triste, soy culpable",
+      "intensity": 0.78
+    },
+    {
+      "start": 37.88,
+      "end": 41.75,
+      "speaker": "baile-benito",
+      "text": "La vida es una fiesta que un día termina",
+      "intensity": 0.8
+    },
+    {
+      "start": 41.88,
+      "end": 47.84,
+      "speaker": "baile-benito",
+      "text": "Y fuiste tú mi baile inolvidable",
+      "intensity": 0.84
+    },
+    {
+      "start": 55.18,
+      "end": 60.2,
+      "speaker": "baile-benito",
+      "text": "Y fuiste tú mi baile inolvidable",
+      "intensity": 0.84
+    },
+    {
+      "start": 66.74,
+      "end": 70.65,
+      "speaker": "baile-benito",
+      "text": "Mientras uno está vivo, uno debe amar lo más que pueda",
+      "intensity": 0.78
+    },
+    {
+      "start": 101.9,
+      "end": 106.3,
+      "speaker": "baile-benito",
+      "text": "Pensaba que contigo iba a envejecer",
+      "intensity": 0.84
+    },
+    {
+      "start": 106.42,
+      "end": 111.65,
+      "speaker": "baile-benito",
+      "text": "En otra vida, en otro mundo podrá ser",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.8,
+      "end": 116.55,
+      "speaker": "baile-benito",
+      "text": "En esta solo queda irme un día",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.66,
+      "end": 123.5,
+      "speaker": "baile-benito",
+      "text": "Y ver pa'l cielo a ver si te veo caer",
+      "intensity": 0.88
+    },
+    {
+      "start": 123.62,
+      "end": 127.45,
+      "speaker": "baile-benito",
+      "text": "Si me ven solo y triste, no me hablen",
+      "intensity": 0.88
+    },
+    {
+      "start": 127.54,
+      "end": 132.85,
+      "speaker": "baile-benito",
+      "text": "Si me ven solo y triste, soy culpable",
+      "intensity": 0.88
+    },
+    {
+      "start": 134.18,
+      "end": 138.1,
+      "speaker": "baile-benito",
+      "text": "La vida es una fiesta que un día termina",
+      "intensity": 0.9
+    },
+    {
+      "start": 138.24,
+      "end": 143.85,
+      "speaker": "baile-benito",
+      "text": "Y fuiste tú mi baile inolvidable",
+      "intensity": 0.92
+    },
+    {
+      "start": 153.72,
+      "end": 158.85,
+      "speaker": "baile-coro",
+      "text": "No, no te puedo olvidar, no, no te puedo borrar",
+      "intensity": 0.92
+    },
+    {
+      "start": 159.34,
+      "end": 164.7,
+      "speaker": "baile-coro",
+      "text": "Tú me enseñaste a querer, me enseñaste a bailar",
+      "intensity": 0.93
+    },
+    {
+      "start": 175.12,
+      "end": 180.55,
+      "speaker": "baile-coro",
+      "text": "No, no te puedo olvidar, no, no te puedo borrar",
+      "intensity": 0.93
+    },
+    {
+      "start": 180.66,
+      "end": 185.22,
+      "speaker": "baile-coro",
+      "text": "Tú me enseñaste a querer, me enseñaste a bailar",
+      "intensity": 0.94
+    },
+    {
+      "start": 185.3,
+      "end": 189.22,
+      "speaker": "baile-benito",
+      "text": "Yeah, ey, dime cómo le hago pa' olvidarte",
+      "intensity": 0.92
+    },
+    {
+      "start": 189.28,
+      "end": 191.95,
+      "speaker": "baile-benito",
+      "text": "Hay un paso nuevo que quiero enseñarte",
+      "intensity": 0.92
+    },
+    {
+      "start": 192,
+      "end": 196.52,
+      "speaker": "baile-benito",
+      "text": "En las noches ya ni puedo dormir, lo que hago es soñarte",
+      "intensity": 0.93
+    },
+    {
+      "start": 196.58,
+      "end": 201.62,
+      "speaker": "baile-coro",
+      "text": "No, no te puedo olvidar, no, no te puedo borrar",
+      "intensity": 0.94
+    },
+    {
+      "start": 202.12,
+      "end": 207.15,
+      "speaker": "baile-coro",
+      "text": "Tú me enseñaste a querer, me enseñaste a bailar",
+      "intensity": 0.94
+    },
+    {
+      "start": 207.22,
+      "end": 212.45,
+      "speaker": "baile-benito",
+      "text": "Cómo tú me besabas, cómo yo te lo hacía, cómo tú me mirabas, bellaquito me ponía",
+      "intensity": 0.94
+    },
+    {
+      "start": 212.5,
+      "end": 218.05,
+      "speaker": "baile-benito",
+      "text": "Se siente feo no tenerte cerquita, la nueva mama bien, pero no es tu boquita",
+      "intensity": 0.94
+    },
+    {
+      "start": 220.08,
+      "end": 222.58,
+      "speaker": "baile-benito",
+      "text": "Mi diabla, mi ángel, mi loquita",
+      "intensity": 0.95
+    },
+    {
+      "start": 222.64,
+      "end": 226,
+      "speaker": "baile-benito",
+      "text": "Mi diabla, mi ángel, mi loquita, ey",
+      "intensity": 0.96
+    },
+    {
+      "start": 238.32,
+      "end": 243.1,
+      "speaker": "baile-benito",
+      "text": "'To suena cabrón, goza otra vez",
+      "intensity": 0.9
+    },
+    {
+      "start": 245.4,
+      "end": 247,
+      "speaker": "baile-benito",
+      "text": "Como anoche, como anoche",
+      "intensity": 0.9
+    },
+    {
+      "start": 252.46,
+      "end": 254.2,
+      "speaker": "baile-coro",
+      "text": "Aprieta, chamaquito, aprieta",
+      "intensity": 0.92
+    },
+    {
+      "start": 279.02,
+      "end": 284.75,
+      "speaker": "baile-coro",
+      "text": "No, no te puedo olvidar, no, no te puedo borrar",
+      "intensity": 0.96
+    },
+    {
+      "start": 284.82,
+      "end": 289.38,
+      "speaker": "baile-coro",
+      "text": "Tú me enseñaste a querer, me enseñaste a bailar",
+      "intensity": 0.96
+    },
+    {
+      "start": 289.44,
+      "end": 294.55,
+      "speaker": "baile-benito",
+      "text": "Ay, con cualquiera me puedo acostar, pero no con cualquiera quiero despertar",
+      "intensity": 0.96
+    },
+    {
+      "start": 295.04,
+      "end": 298.98,
+      "speaker": "baile-benito",
+      "text": "Yo bailo con usted, con usted, yo bailo con usted",
+      "intensity": 0.95
+    },
+    {
+      "start": 299.04,
+      "end": 303.25,
+      "speaker": "baile-benito",
+      "text": "Nada más con usted, un beso con usted, con usted",
+      "intensity": 0.95
+    },
+    {
+      "start": 303.32,
+      "end": 306.1,
+      "speaker": "baile-coro",
+      "text": "No, no te puedo olvidar, no, no te puedo borrar",
+      "intensity": 0.97
+    },
+    {
+      "start": 306.16,
+      "end": 310.98,
+      "speaker": "baile-coro",
+      "text": "Me enseñaste a querer, me enseñaste a bailar",
+      "intensity": 0.97
+    },
+    {
+      "start": 311.06,
+      "end": 315.6,
+      "speaker": "baile-benito",
+      "text": "Y yo tenía muchas novias, pero como tú ninguna",
+      "intensity": 0.97
+    },
+    {
+      "start": 315.66,
+      "end": 319.24,
+      "speaker": "baile-benito",
+      "text": "Ya no tengo mi sol, me paso en la luna",
+      "intensity": 0.96
+    },
+    {
+      "start": 319.3,
+      "end": 322.15,
+      "speaker": "baile-benito",
+      "text": "Si te pienso me tiro de una",
+      "intensity": 0.96
+    },
+    {
+      "start": 324.54,
+      "end": 326.75,
+      "speaker": "baile-benito",
+      "text": "Mi diabla, mi ángel, mi loquita",
+      "intensity": 0.96
+    },
+    {
+      "start": 327.14,
+      "end": 329.85,
+      "speaker": "baile-benito",
+      "text": "Mi diabla, mi ángel, mi loquita, ey",
+      "intensity": 0.97
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "baile-lobby"
+    },
+    {
+      "time": 45,
+      "view": "baile-studio"
+    },
+    {
+      "time": 66,
+      "view": "baile-lobby"
+    },
+    {
+      "time": 72,
+      "view": "baile-studio"
+    },
+    {
+      "time": 100,
+      "view": "baile-benito"
+    },
+    {
+      "time": 112,
+      "view": "baile-studio"
+    },
+    {
+      "time": 124,
+      "view": "baile-circle"
+    },
+    {
+      "time": 138,
+      "view": "baile-benito"
+    },
+    {
+      "time": 153,
+      "view": "baile-circle"
+    },
+    {
+      "time": 175,
+      "view": "baile-studio"
+    },
+    {
+      "time": 186,
+      "view": "baile-benito"
+    },
+    {
+      "time": 196,
+      "view": "baile-circle"
+    },
+    {
+      "time": 208,
+      "view": "baile-studio"
+    },
+    {
+      "time": 235,
+      "view": "baile-spotlight"
+    },
+    {
+      "time": 270,
+      "view": "baile-piano"
+    },
+    {
+      "time": 279,
+      "view": "baile-coro"
+    },
+    {
+      "time": 289,
+      "view": "baile-benito"
+    },
+    {
+      "time": 298,
+      "view": "baile-stage"
+    },
+    {
+      "time": 303,
+      "view": "baile-coro"
+    },
+    {
+      "time": 311,
+      "view": "baile-stage"
+    },
+    {
+      "time": 318,
+      "view": "baile-congas"
+    },
+    {
+      "time": 324,
+      "view": "baile-benito"
+    },
+    {
+      "time": 334,
+      "view": "baile-mist"
+    },
+    {
+      "time": 345,
+      "view": "baile-congas"
+    },
+    {
+      "time": 354,
+      "view": "baile-stage"
+    },
+    {
+      "time": 363,
+      "view": "baile-ending"
+    }
+  ]
+}
