@@ -4193,8 +4193,8 @@
     },
     {
       "path": "public/scenes/return-to-innocence/enigma-chant.tele.gz",
-      "bytes": 1611426,
-      "sha256": "a15f709ed33d7b9ce514644587736d38e618df115d0f1ebdf2a8eb142244e1c5"
+      "bytes": 1833855,
+      "sha256": "2db48d3c69d4f4d44ebb0261e60d44f186dab9ef7105631d713e90d4529c2405"
     },
     {
       "path": "public/scenes/return-to-innocence/enigma-sandra.tele.gz",
@@ -4204,17 +4204,17 @@
     {
       "path": "public/scenes/return-to-innocence/mix.mp3",
       "bytes": 9421100,
-      "sha256": "071638ff92f0067ee09d4c42526f45d63514238003eccb05d22fb96504f75766"
+      "sha256": "3ef70081078bb6409d9697b9744ad2110ce11e7662b28530e622240d011c541b"
     },
     {
       "path": "public/scenes/return-to-innocence/performance.json",
-      "bytes": 370160,
-      "sha256": "da6a68b706e090d11a6531423e8acbb10c6cebc5b3de920b99fefa5784475474"
+      "bytes": 398384,
+      "sha256": "b58a24a1592015ee234b3d500304379d7c183889f470a52414cb9ef494f92d44"
     },
     {
       "path": "public/scenes/return-to-innocence/scene.json",
-      "bytes": 8725,
-      "sha256": "adf90f880938d6e909572bb1f91c0a15f90867cc1a4ee75bc3af28b7fdbf78f9"
+      "bytes": 9152,
+      "sha256": "9f3241751c08c8be6a2ae9f6afc98b0094f1ea04b9a0f79994f726fa33a83a11"
     },
     {
       "path": "public/scenes/rock-dj/backing.mp3",

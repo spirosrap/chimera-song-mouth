@@ -29,6 +29,20 @@
   ],
   "cues": [
     {
+      "start": 25.85,
+      "end": 33.4,
+      "speaker": "enigma-chant",
+      "text": "Hai-yo-i-yo-i-na-ho-yan",
+      "intensity": 0.92
+    },
+    {
+      "start": 35.55,
+      "end": 43.2,
+      "speaker": "enigma-chant",
+      "text": "Ho-e-ya-i-o-hai-yan",
+      "intensity": 0.94
+    },
+    {
       "start": 51.34,
       "end": 54.8,
       "speaker": "enigma-sandra",
@@ -305,7 +319,15 @@
       "view": "enigma-apples"
     },
     {
-      "time": 42,
+      "time": 25.6,
+      "view": "enigma-chant"
+    },
+    {
+      "time": 35.4,
+      "view": "enigma-apples"
+    },
+    {
+      "time": 43.5,
       "view": "enigma-church"
     },
     {

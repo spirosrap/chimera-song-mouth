@@ -27,7 +27,7 @@ test('Return To Innocence scores Angel X, Sandra and Amis Chant across the rever
   expect(scene.cues.length).toBeGreaterThan(25);
   expect(scene.shots.length).toBeGreaterThan(20);
   const entry = movieScene('return-to-innocence');
-  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('enigma-20261121');
+  expect(entry && 'assetVersion' in entry && entry.assetVersion).toBe('enigma-20261122-v2');
 });
 
 test('Return To Innocence ships full engine mix, synchronized telemetry, and deterministic 3D cameras', () => {
