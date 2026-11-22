@@ -63,14 +63,24 @@ export function genericSpeakerLabel(scene:SceneFile,speakerId:string):string{
 export function drawVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasImageSource,scene:SceneFile,time:number,w=1280,h=720):void{
   const s=w/1280;
   ctx.fillStyle='#000';ctx.fillRect(0,0,w,h);ctx.drawImage(source,0,0,w,h);
-  ctx.fillStyle='#000';ctx.fillRect(0,h-Math.round(112*s),w,Math.round(112*s));
   const cue=sceneCue(scene,time);if(!cue)return;
+  const barH=Math.round(92*s);
+  if(typeof ctx.createLinearGradient==='function'){
+    const grad=ctx.createLinearGradient(0,h-barH,0,h);
+    grad.addColorStop(0,'rgba(8,6,5,0)');
+    grad.addColorStop(0.45,'rgba(8,6,5,0.20)');
+    grad.addColorStop(1,'rgba(6,5,4,0.38)');
+    ctx.fillStyle=grad;
+  }else{
+    ctx.fillStyle='rgba(8,6,5,0.32)';
+  }
+  ctx.fillRect(0,h-barH,w,barH);
   const name=genericSpeakerLabel(scene,cue.speaker);
-  ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=`500 ${Math.round(13*s)}px Archivo, sans-serif`;ctx.fillStyle='#d6b786';ctx.fillText(name,w/2,h-Math.round(91*s));
-  ctx.font=`500 ${Math.round(27*s)}px Archivo, sans-serif`;ctx.fillStyle='#fff';
+  ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=`500 ${Math.round(13*s)}px Archivo, sans-serif`;ctx.fillStyle='#d6b786';ctx.fillText(name,w/2,h-Math.round(74*s));
+  ctx.font=`500 ${Math.round(26*s)}px Archivo, sans-serif`;ctx.fillStyle='#fff';
   const lines=subtitleLines(cue.text,w-Math.round(100*s),txt=>ctx.measureText(txt).width);
-  const top=h-Math.round(53*s)-(lines.length-1)*Math.round(17*s);
-  lines.forEach((line,i)=>ctx.fillText(line,w/2,top+i*Math.round(34*s)));
+  const top=h-Math.round(38*s)-(lines.length-1)*Math.round(16*s);
+  lines.forEach((line,i)=>ctx.fillText(line,w/2,top+i*Math.round(32*s)));
 }
 
 /** Draws a share-ready 16:9 HD frame with anonymous CHIMERA header, clock, and live word-highlighted lyrics (no song/artist spoiler). */
@@ -82,14 +92,14 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
   ctx.drawImage(source,0,0,w,h);
 
   // Subtle top bar with CHIMERA mark & clock (no song title or artist reveal)
-  const topH=Math.round(58*s);
+  const topH=Math.round(48*s);
   if(typeof ctx.createLinearGradient==='function'){
     const topGrad=ctx.createLinearGradient(0,0,0,topH);
-    topGrad.addColorStop(0,'rgba(8,6,5,0.72)');
+    topGrad.addColorStop(0,'rgba(8,6,5,0.34)');
     topGrad.addColorStop(1,'rgba(8,6,5,0)');
     ctx.fillStyle=topGrad;
   }else{
-    ctx.fillStyle='rgba(8,6,5,0.68)';
+    ctx.fillStyle='rgba(8,6,5,0.28)';
   }
   ctx.fillRect(0,0,w,topH);
 
@@ -108,31 +118,31 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
   const maxW=w-Math.round(88*s);
 
   if(cue){
-    // Bottom cinema gradient for active lyrics only (clean stage during instrumental breaks)
-    const deckH=Math.round(134*s),fadeH=Math.round(36*s);
+    // Light bottom feather for active lyrics only so the 3D stage stays visible behind the words
+    const deckH=Math.round(92*s),fadeH=Math.round(24*s);
     if(typeof ctx.createLinearGradient==='function'){
       const botGrad=ctx.createLinearGradient(0,h-deckH-fadeH,0,h);
       botGrad.addColorStop(0,'rgba(8,6,5,0)');
-      botGrad.addColorStop(0.28,'rgba(8,6,5,0.78)');
-      botGrad.addColorStop(1,'rgba(6,5,4,0.95)');
+      botGrad.addColorStop(0.45,'rgba(8,6,5,0.20)');
+      botGrad.addColorStop(1,'rgba(6,5,4,0.38)');
       ctx.fillStyle=botGrad;
     }else{
-      ctx.fillStyle='rgba(8,6,5,0.88)';
+      ctx.fillStyle='rgba(8,6,5,0.32)';
     }
     ctx.fillRect(0,h-deckH-fadeH,w,deckH+fadeH);
 
     const name=genericSpeakerLabel(scene,cue.speaker);
     ctx.textAlign='center';
-    ctx.font=`600 ${Math.round(12*s)}px Archivo, sans-serif`;
+    ctx.font=`600 ${Math.round(11*s)}px Archivo, sans-serif`;
     ctx.fillStyle='#e2be82';
-    ctx.fillText(name,w/2,h-Math.round(104*s));
+    ctx.fillText(name,w/2,h-Math.round(76*s));
 
-    ctx.font=`600 ${Math.round(24*s)}px Archivo, sans-serif`;
+    ctx.font=`600 ${Math.round(23*s)}px Archivo, sans-serif`;
     const lines=subtitleLines(cue.text,maxW,txt=>ctx.measureText(txt).width).slice(0,2);
     const allWords=lines.flatMap(l=>l.split(/\s+/).filter(Boolean));
     const progress=Math.max(0,Math.min(1,(time-cue.start)/Math.max(0.05,cue.end-cue.start)));
     const litCount=Math.max(1,Math.ceil(progress*allWords.length));
-    const lineStartY=lines.length===1?h-Math.round(58*s):h-Math.round(72*s);
+    const lineStartY=lines.length===1?h-Math.round(38*s):h-Math.round(52*s);
 
     let wordIdx=0;
     ctx.textAlign='left';
@@ -141,12 +151,12 @@ export function drawLyricsVideoFrame(ctx:CanvasRenderingContext2D,source:CanvasI
       const lineText=words.join(' ');
       const lineW=ctx.measureText(lineText).width;
       let x=(w-lineW)/2;
-      const y=lineStartY+li*Math.round(30*s);
+      const y=lineStartY+li*Math.round(28*s);
       const spaceW=ctx.measureText(' ').width;
       for(let wi=0;wi<words.length;wi++){
         const word=words[wi];
         const lit=wordIdx<litCount;
-        ctx.fillStyle=lit?'#ffd98a':'rgba(255,255,255,0.92)';
+        ctx.fillStyle=lit?'#ffd98a':'rgba(255,255,255,0.96)';
         ctx.fillText(word,x,y);
         x+=ctx.measureText(word).width+spaceW;
         wordIdx++;
