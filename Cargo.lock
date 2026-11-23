@@ -255,6 +255,7 @@ dependencies = [
  "tiny_http",
  "windows-sys 0.61.2",
  "wry",
+ "x11-dl",
 ]
 
 [[package]]

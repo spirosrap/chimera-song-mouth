@@ -1,7 +1,7 @@
 //! The editor on Linux: the page in the user's web browser, served from 127.0.0.1 while the host's
 //! window for the plugin is open. A webview inside that window would need GTK running on its thread
 //! (docs/plugin.md, "Linux"); a browser needs nothing, and works on Wayland too. The host's window
-//! stays small and empty.
+//! stays small, with a plain X11 child window.
 
 use std::fs::File;
 use std::io::Read;
@@ -9,6 +9,7 @@ use std::process::Command;
 use std::sync::{Arc, Mutex};
 
 use nih_plug::prelude::*;
+use x11_dl::xlib::{Display, Window, Xlib};
 
 use crate::ChimeraParams;
 use crate::bridge::{Bridge, GripAction, GuiHost, ParamHost};
@@ -78,11 +79,59 @@ impl ParamHost for Gated {
     fn grip(&self, _action: GripAction) {}
 }
 
+/// Bitwig destroys the editor after a second if its parent gets no child window.
+struct ChildWindow {
+    xlib: Xlib,
+    display: *mut Display,
+    /// the server destroys it with the connection; the test looks for it
+    #[cfg_attr(not(test), allow(dead_code))]
+    window: Window,
+}
+
+// SAFETY: the connection belongs to this window alone. The host's GUI thread creates and drops it,
+// and the server thread never uses it.
+unsafe impl Send for ChildWindow {}
+
+impl ChildWindow {
+    fn new(parent: Window) -> Option<Self> {
+        let xlib = match Xlib::open() {
+            Ok(xlib) => xlib,
+            Err(err) => {
+                nih_error!("CHIMERA: could not load Xlib for the editor: {err}");
+                return None;
+            }
+        };
+        // SAFETY: the host supplies a live X11 parent on the default display.
+        unsafe {
+            let display = (xlib.XOpenDisplay)(std::ptr::null());
+            if display.is_null() {
+                nih_error!("CHIMERA: could not open the X display for the editor");
+                return None;
+            }
+            let window = (xlib.XCreateSimpleWindow)(display, parent, 0, 0, WINDOW.0, WINDOW.1, 0, 0, 0);
+            (xlib.XMapWindow)(display, window);
+            (xlib.XFlush)(display);
+            Some(Self { xlib, display, window })
+        }
+    }
+}
+
+impl Drop for ChildWindow {
+    fn drop(&mut self) {
+        // Closing the connection makes the server destroy the window. XDestroyWindow could name a
+        // window already gone with a host's parent, and Xlib's default handler for that error exits
+        // the process: the DAW.
+        // SAFETY: the display was opened by `new` and nothing else uses it.
+        unsafe { (self.xlib.XCloseDisplay)(self.display) };
+    }
+}
+
 /// The open editor: closing the host's window stops the server, and the page then says so.
 struct Open {
     bridge: Arc<Bridge>,
     gate: Arc<Gate>,
     server: Arc<tiny_http::Server>,
+    _child: Option<ChildWindow>,
 }
 
 impl Drop for Open {
@@ -95,7 +144,7 @@ impl Drop for Open {
 }
 
 impl Editor for BrowserEditor {
-    fn spawn(&self, _parent: ParentWindowHandle, context: Arc<dyn GuiContext>) -> Box<dyn std::any::Any + Send> {
+    fn spawn(&self, parent: ParentWindowHandle, context: Arc<dyn GuiContext>) -> Box<dyn std::any::Any + Send> {
         let gate = Arc::new(Gate(Mutex::new(Some(GuiHost::new(self.params.clone(), context)))));
         let bridge = Arc::new(Bridge::new(self.params.clone(), self.shared.clone(), Box::new(Gated(gate.clone()))));
         let server = match tiny_http::Server::http("127.0.0.1:0") {
@@ -131,7 +180,11 @@ impl Editor for BrowserEditor {
             Ok(mut child) => drop(std::thread::spawn(move || child.wait())),
             Err(err) => nih_error!("CHIMERA: could not open a browser ({err}): open {url}"),
         }
-        Box::new(Open { bridge, gate, server })
+        let child = match parent {
+            ParentWindowHandle::X11Window(window) => ChildWindow::new(window.into()),
+            _ => None,
+        };
+        Box::new(Open { bridge, gate, server, _child: child })
     }
 
     fn size(&self) -> (u32, u32) {
@@ -150,10 +203,60 @@ impl Editor for BrowserEditor {
 
 #[cfg(test)]
 mod tests {
-    use super::allowed;
+    use super::{ChildWindow, allowed};
+    use std::mem::MaybeUninit;
+    use std::ptr::{null, null_mut};
+    use x11_dl::xlib::{IsUnmapped, Xlib};
 
     const T: &str = "abc123";
     const HOST: Option<&str> = Some("127.0.0.1:4000");
+
+    #[test]
+    #[ignore = "needs an X display: linux/ci.sh runs it under xvfb-run"]
+    fn the_x11_editor_maps_and_removes_its_child() {
+        let xlib = Xlib::open().expect("load Xlib");
+        unsafe {
+            let display = (xlib.XOpenDisplay)(null());
+            assert!(!display.is_null(), "open an X display");
+            let root = (xlib.XDefaultRootWindow)(display);
+            let parent = (xlib.XCreateSimpleWindow)(display, root, 0, 0, 400, 100, 0, 0, 0);
+            (xlib.XMapWindow)(display, parent);
+            (xlib.XSync)(display, 0);
+
+            let children = || {
+                let (mut root, mut tree_parent, mut count) = (0, 0, 0);
+                let mut windows = null_mut();
+                assert_ne!((xlib.XQueryTree)(display, parent, &mut root, &mut tree_parent, &mut windows, &mut count), 0);
+                let only_child = if count == 1 { Some(*windows) } else { None };
+                if !windows.is_null() {
+                    (xlib.XFree)(windows.cast());
+                }
+                (count, only_child)
+            };
+
+            let child = ChildWindow::new(parent).expect("open the editor's X display");
+            // The parent and child use separate connections. Wait for the map before querying.
+            (xlib.XSync)(child.display, 0);
+            assert_eq!(children(), (1, Some(child.window)));
+            let mut attrs = MaybeUninit::uninit();
+            assert_ne!((xlib.XGetWindowAttributes)(display, child.window, attrs.as_mut_ptr()), 0);
+            assert_ne!(attrs.assume_init().map_state, IsUnmapped);
+
+            drop(child);
+            // the server destroys it once it has read the other connection's end
+            let mut left = children();
+            for _ in 0..100 {
+                if left == (0, None) {
+                    break;
+                }
+                std::thread::sleep(std::time::Duration::from_millis(10));
+                left = children();
+            }
+            assert_eq!(left, (0, None));
+            (xlib.XDestroyWindow)(display, parent);
+            (xlib.XCloseDisplay)(display);
+        }
+    }
 
     #[test]
     fn the_token_lets_a_request_about_the_plugin_in() {

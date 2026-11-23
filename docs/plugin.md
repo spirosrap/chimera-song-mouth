@@ -60,7 +60,7 @@ because the host asks the size before there's a window.
 
 The editor is the page in the user's web browser. Opening the plugin's window in the DAW starts a
 small server on 127.0.0.1 and opens its address with `xdg-open`, and closing the window stops it; the
-page then says it has no answer. The DAW's own window for the plugin stays small and empty. That's
+page then says it has no answer. The DAW's own window for the plugin stays small. That's
 `src/browser.rs`, and `src/http.rs`, which `examples/ui_harness.rs` serves the page with too.
 
 A webview inside the DAW's window would be WebKitGTK, which needs GTK running on its thread. The host's
@@ -70,6 +70,8 @@ process could embed WebKitGTK in the DAW's window by its X11 window ID, showing 
 at the cost of a second executable to ship, WebKitGTK for users to install, and X11 only. A browser
 needs none of that, and works on Wayland.
 
+- **Bitwig** destroys the editor after 1 s if its parent gets no child window, so the editor maps
+  a plain X11 child there. [#158](https://github.com/jamesondh/chimera-vocal-synth/issues/158)
 - **Who can reach it:** the page's own files are public (they're the open-source site), but anything
   about the plugin needs the random token in the page's address, which the page keeps and sends as a
   header: a cookie would go to every service on 127.0.0.1, whatever its port. A request must also name
@@ -83,9 +85,13 @@ needs none of that, and works on Wayland.
   out, and after 3 s without an answer it says so and polls once a second until there is one. That also
   covers a host whose main thread is busy, on the other systems. The first request has no timeout, as
   nothing would try it again.
-- **Tested:** the token check by unit tests. In REAPER for Linux here, by hand: the plugin opened its
+- **Tested:** the token check by unit tests, and the X11 child's mapping and removal under Xvfb
+  on CI. In REAPER for Linux here, by hand: the plugin opened its
   page, a click on Beatbox reached it, and closing the window stopped the server and the page said so.
-  The host test on CI renders on Linux, and doesn't drive the browser.
+  In Bitwig 6.1.7 (demo, under Xvfb), CLAP and VST3: the server answered for 15 s with the child
+  and stopped at 1 s without it; closing and opening the window again worked. REAPER keeps an editor
+  with no child, so it never showed this. The host test on CI renders on Linux, and doesn't drive the
+  browser.
 
 ## Threads
 

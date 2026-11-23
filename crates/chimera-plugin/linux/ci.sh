@@ -16,6 +16,7 @@ echo "::endgroup::"
 
 echo "::group::tests"
 cargo test -p chimera-plugin --release
+xvfb-run -a cargo test -p chimera-plugin --release -- --ignored the_x11_editor_maps_and_removes_its_child
 echo "::endgroup::"
 
 echo "::group::build"
