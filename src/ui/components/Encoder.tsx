@@ -8,6 +8,9 @@ export interface EncoderSpec {
   max: number;
   /** logarithmic mapping (pitch, glide) */
   log?: boolean;
+  /** the grain of a value the caller rounds (a semitone, 5 % of tempo): an arrow key moves one step.
+   *  Without it an arrow moves a thousandth of the dial, which rounding put straight back. Linear only. */
+  step?: number;
   onChange: (v: number) => void;
   /** big numeral and its unit */
   format: (v: number) => { value: string; unit: string };
@@ -24,7 +27,7 @@ const SPAN = (270 * Math.PI) / 180;
  * (touch-action: pan-y) and only horizontal drags edit.
  */
 export function Encoder(props: EncoderSpec & { slot: number }) {
-  const { label, value, min, max, log, onChange, format, slot } = props;
+  const { label, value, min, max, log, step, onChange, format, slot } = props;
   const id = useId();
   const color = SLOTS[slot % 4];
   const toPos = (v: number) => (log ? (Math.log(v) - Math.log(min)) / (Math.log(max) - Math.log(min)) : (v - min) / (max - min));
@@ -80,11 +83,9 @@ export function Encoder(props: EncoderSpec & { slot: number }) {
           id={id}
           className="enc-input"
           type="range"
-          min={0}
-          max={1000}
-          step={1}
-          value={Math.round(pos * 1000)}
-          onChange={(e) => onChange(fromPos(Number(e.target.value) / 1000))}
+          {...(step && !log
+            ? { min, max, step, value, onChange: (e: React.ChangeEvent<HTMLInputElement>) => onChange(Number(e.target.value)) }
+            : { min: 0, max: 1000, step: 1, value: Math.round(pos * 1000), onChange: (e: React.ChangeEvent<HTMLInputElement>) => onChange(fromPos(Number(e.target.value) / 1000)) })}
           aria-valuetext={`${shown.value} ${shown.unit}`.trim()}
         />
       </div>
