@@ -51,7 +51,8 @@ export const VIEWPORTS: { w: number; h: number; fit?: boolean }[] = [
   { w: 1366, h: 768 },
   { w: 1440, h: 900 },
   // every tab fits a window Play fits (805 px at this width): Beatbox needed 893 and Sing 811.
-  // Checked for page-scroll only; the sizes around it run the rest.
+  // Speak's short Tube and Vocal folds drew 11 px labels at 10.9 here (canvases scaled by dpr, not
+  // by their rounded backing store).
   { w: 1728, h: 808, fit: true },
   { w: 1920, h: 1080 },
   { w: 2560, h: 1440 },
@@ -349,7 +350,7 @@ async function main() {
       // a busy machine can be frames behind: give every canvas the chance to redraw at its size
       await page.waitForFunction(() => (window as unknown as { __canvasesFresh: () => boolean }).__canvasesFresh(), undefined, { timeout: 3000, polling: 50 }).catch(() => {});
       views++;
-      const problems = fit ? [] : ((await page.evaluate(inspect)) as Problem[]);
+      const problems = (await page.evaluate(inspect)) as Problem[];
       // a plugin's window doesn't scroll: what's below the fold might as well not be there
       if (plugin || fit) {
         const over = await page.evaluate(() => document.documentElement.scrollHeight - innerHeight);
