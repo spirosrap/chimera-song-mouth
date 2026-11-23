@@ -29,7 +29,7 @@ test('mouth overlay draws Greek words, clears old words on seek, and draws notes
   const previous=Object.getOwnPropertyDescriptor(globalThis,'Path2D');
   Object.defineProperty(globalThis,'Path2D',{configurable:true,value:class {moveTo(){}lineTo(){}}});
   const text:string[]=[],positions:number[]=[];let musicalNotes=0;
-  const ctx={save(){},restore(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},fill(){},setLineDash(){},quadraticCurveTo(){},translate(){},scale(){},rotate(){},ellipse(){musicalNotes++;},measureText:(s:string)=>({width:s.length*15}),fillText:(s:string,x:number,y:number)=>{text.push(s);positions.push(x,y);}} as unknown as CanvasRenderingContext2D;
+  const ctx={save(){},restore(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},strokeText(){},fill(){},setLineDash(){},quadraticCurveTo(){},translate(){},scale(){},rotate(){},ellipse(){musicalNotes++;},measureText:(s:string)=>({width:s.length*15}),fillText:(s:string,x:number,y:number)=>{text.push(s);positions.push(x,y);}} as unknown as CanvasRenderingContext2D;
   const view={handles:()=>[{id:'lips',label:'Lips',pos:{x:0,y:0}}],X:()=>140,Y:()=>130,pxPerCm:3} as Parameters<OverlayFn>[1];
   const args=[ctx,view,{} as Parameters<OverlayFn>[2],{} as Parameters<OverlayFn>[3],{} as Parameters<OverlayFn>[4],{w:350,h:430,dt:0}] as const;
   const draw=singerOverlay(part);

@@ -8,97 +8,115 @@ not merge unrelated histories or replace this tree with an upstream checkout.
 
 ## Latest synchronization
 
-Checked on 2026-11-22, through `7c0f722e6a375f0acae543364565741d58c100c9`
-(two first-parent commits after `caf270a`, both merges imported with `git cherry-pick -x -m 1`;
-no conflicts, nothing left out).
+Checked on 2026-11-23, through `f1b2bb13b295709f03fc01c0798d8569e096a5fd`
+(thirteen first-parent commits after `7c0f722`: twelve imported with `git cherry-pick -x`, the
+one merge among them with `-m 1`; one left out, see below).
 
 What came in:
 
-- **Frication just past the soft palate** (upstream #143, issue #124): when the narrowest point
-  of the mouth, or the stretch of airflow the engine follows on either side of it, landed on the
-  first section of the oral tube, the engine made no frication noise there at all, and the teeth
-  source was dropped with it. That hit back vowels and velar consonants. The one section now
-  maps to its branch like every other (`voice/human_airway.rs`); a new test,
-  `tests/frication_junction.rs`, counts the narrow moments that have no noise source (none now).
-  Upstream describes the audible change as small: about 1 dB more noise above 1 kHz in [x].
-- **Mandarin 长 after a degree word** (upstream #128): 很长, 太长, 那么长 now read cháng (long);
-  长大 and 校长 keep zhǎng, and so does 怎么长. A rule in the front end
-  (`phonetics/mandarin.rs`), with a test; the lexicon file `public/data/mandarin.txt.gz` is
-  unchanged. Two notes in `docs/language-front-ends.md` and a comment in
-  `tools/build-mandarin.ts` came with it.
+- **/s/ and /z/ with the tongue tip 3 mm further forward** (upstream #135, commit `0885014`):
+  s and z were heard as sh and zh because the narrowest point sat too far behind the lips. The
+  tip target moves (`TtX` 6.3 → 6.6 in `phonetics/inventory.rs`), its height is recalibrated
+  (`consonantTargets.generated.json`), /ts dz/ follow, and Mandarin's apical vowel ɿ, tied to
+  /s/'s tip, is refit (`vowelTargets.generated.json`). Upstream's own judges: real-speaker cost
+  0.817 → 0.519, the hiss of /s/ about 1.2 to 1.3 kHz higher, Whisper and singer no clear
+  change, and the upstream owner's blind listen preferred it. Two entries in
+  `docs/hill-climb/log.md` came with it (`0885014`, `b8e4bf9`).
+- **A body the 3D head can be worn on** (nine commits, `da49862` to `cb54ec4`): a small library
+  in `src/rig/` (a posable body mesh `body.rig.bin`, CC0 from MakeHuman and MPFB2, with
+  `tools/rig/gen-body.ts` to rebuild it; motion from Mixamo FBX, BVH or glTF clips through
+  three.js's loaders), a dev page `rig.html`, `docs/rig.md`, and 14 tests in
+  `tests/rig.test.ts`. The 3D head (`src/ui/render/anatomy3d.ts`, `beams3d.ts`) gained drawing
+  options and skin-surface queries for it; the defaults draw the app's head as before. Nothing
+  in the site uses the rig: `rig.html` is not a build input, so the published site has no rig
+  page and no rig code. Upstream's README scope gained a point for it (now point 7).
+- **Readable labels** (upstream #145, merge `60ae9f9`): every label in Hershey Medium, an 11 px
+  floor for DOM and canvas text, text never in a line colour or dimmed by opacity, a thin black
+  halo behind canvas labels, a small square before a lit chip. It changes `src/ui/styles.css`,
+  the shared canvas `label()` in `src/ui/render/vector.ts`, eleven components, and the layout
+  lint (which now fails text under 11 px). This edition's band, song and scene pages share the
+  stylesheet and `label()`, so their text is slightly larger and bolder too.
 
-Adapted rather than taken as written: nothing. Both commits applied as upstream wrote them, no
-edition file needed a change, and no file under `public/` was added or changed (the media
-manifest is as it was). Earlier adaptations still stand (`git log --grep='Upstream import'`),
-and `.github/workflows/` stays out as before; neither commit touched it.
+Left out: `f1b2bb1` "Create checks.yml" adds only `.github/workflows/checks.yml` (tests,
+typecheck, layout lint and e2e on every pull request and push to main). `.github/workflows/`
+is not imported until the owner says so, because Actions is enabled on this repository and the
+workflow would run on every push. `upstreamRevision` is set to that commit all the same: the
+range is accounted for, and the file can be taken later with
+`git checkout upstream/main -- .github/workflows/checks.yml`.
 
-Golden fixtures: upstream re-blessed four audio fixtures with the frication fix (`beatbox-bar`,
-`voice-speech-male`, `voice-speech-female-96k`, `voice-speech-child`). This edition's copies of
-those four were byte-identical to upstream's before the commit, upstream's new ones came in
-with the pick, and this edition's engine reproduces them: every golden test passes and nothing
-was blessed here. `planning.json` (the fixture that differs in this edition) was not touched.
+Adapted rather than taken as written:
+
+- `README.md` (conflict in `acf41b7`): the edition's text is kept. The quoted upstream scope
+  list took the new point 7 and the renumbered point 8, so the sentence above it now says this
+  edition goes beyond points 6 and 8 (it said 6 and 7), and the licence paragraph names the
+  body mesh's CC0 source.
+- `AGENTS.md` (conflict in `60ae9f9`): the edition's rules are kept and upstream's new
+  "Text is readable" rule is added beside them.
+- `crates/chimera/tests/golden/planning.json` (conflict in `0885014`): the edition's fixture
+  is kept and re-blessed twice with that one commit applied. The change is 174 values, every
+  one an /s/ or /z/ gesture's `ttX` (6.3 → 6.6, 87 of them) or `ttY`, and the list of changed
+  paths with their old and new values is identical to upstream's own change to its fixture
+  (`jdiff.py` at full depth, no difference). `beatbox-bar.f32` was byte-identical to
+  upstream's before the commit, upstream's new one came in with the pick, and this edition's
+  engine reproduces it.
+- `tests/folk-singer-overlay.test.ts`: the test's stand-in canvas gained an empty
+  `strokeText`, which `label()` now calls for the halo. Its assertions are unchanged.
+
+Not adapted, noted: the band page keeps two labels of its own under the new floor
+(`.band-badge`/`.band-eyebrow` at 10 px, `.band-ensemble .screen-sub` at 9 px) and the scene
+pages a few more. The lint only covers the single-mouth player, and they are this edition's
+text, so they are left for the owner.
+
+No file under `public/` was added or changed (the media manifest is as it was), and
+`src/audio/AudioEngine.ts`, `src/ui/singing.ts` and `SingPanel.tsx` were not touched.
 
 The engine source changed, so `src/wasm/chimera.wasm` is rebuilt (Arch `rust` and `rust-wasm`
-1.99.1; sha256 in `PROVENANCE.json`). Unlike the last two imports, this one changes the sound
-of everything the live voice says or sings, slightly. Against the 2026-11-21 build, 78 of the
-80 judge sentences render differently (two are byte-identical): the level is the same within
-0.02 dB, the energy above 1 kHz within -0.32 to +0.18 dB, and the difference between old and
-new render sits 12 to 42 dB below the signal (median 18.5). The five songs of `chimera render
-song` all differ too: same level within 0.02 dB, difference 22 to 34 dB below the signal. The
-prepared songs and scenes are recordings: none was re-rendered, and no file in the media
-manifest changed. They keep the sound of the engine that rendered them.
+1.99.1; sha256 in `PROVENANCE.json`). The live voice changes wherever it says s or z. Against
+the 2026-11-22 build, 76 of the 80 judge sentences render differently (the four identical ones
+are two sentences with no s or z, in both voices): the level is the same within 0.03 dB, the
+energy above 4 kHz moves by -2.5 to +2.8 dB (median +0.5), and the difference between old and
+new render sits 10 to 29 dB below the signal (median 17.7). The prepared songs and scenes are
+recordings: none was re-rendered, and no file in the media manifest changed.
 
 Word clarity (`tools/asr/speech_wer.py`, Whisper small.en, the same sentences as before):
-verdict **no clear change**. Training sentences 21.85 → 20.53 % word errors (66 → 62 wrong
-words of 302; 15 of 40 transcripts changed, 7 better, 4 worse). Held-out sentences 29.33 →
-31.67 % (88 → 95 of 300; 12 of 40 changed, 2 better, 7 worse); the judge does not use them to
-decide, and its limit for "worse" is +3 points on the training set. Both sets together: 154 →
-157 wrong words of 602. The largest single moves were held-out: "The salt breeze came across
-from the sea" (female) went from perfect to four wrong words and "The boy was there when the
-sun rose" (male) from perfect to three, while "The source of the huge river is the clear
-spring" (male) went from six wrong to two. The judge is English only; nothing here measures
-Mandarin.
+verdict **no clear change**. Training sentences 20.53 → 19.87 % word errors (62 → 60 wrong
+words of 302; 15 of 40 transcripts changed, 6 better, 6 worse). Held-out sentences 31.67 →
+30.00 % (95 → 90 of 300; 21 of 40 changed, 8 better, 8 worse); the judge does not use them to
+decide. Both sets together: 157 → 150 wrong words of 602. The largest gains are held-out
+and in the female voice: "The salt breeze came across from the sea" (four wrong → perfect)
+and "The boy was there when the sun rose" (six wrong → three). The largest loss is "Four
+hours of steady work faced us" (female, one wrong → three), where "faced us" is now heard as
+"faceless", as it already was in the male voice. The judge is English only.
 
-Speed (`cargo run --release -p chimera --example bench`, previous engine and this one built
-side by side and run alternately three times on a busy laptop): 30.3 to 34.2 % of a core
-before, 29.6 to 30.4 % after at 2x oversampling; 12.6 to 16.8 % before, 13.2 to 14.8 % after
-at 1x. No slowdown.
-
-Validation: 370 native tests passed (two existing ignored; two more than last time, the two
-new tests above); 702 Bun tests with `--timeout 60000` (twenty more than at the last import,
-all from scenes added in between); typecheck; content verification (1073 public files). Three
-more commits were pushed by another session while this ran; after rebasing onto them, the Bun
-tests (704), the typecheck and the content verification (1079 files) passed again.
+Validation: 370 native tests passed (two existing ignored; upstream added none); 759 Bun tests
+with `--timeout 60000` (758 on the first run plus the stand-in fix above; 14 are the new rig
+tests, the rest of the growth is scenes added in between); typecheck; content verification
+(1176 public files).
 
 Browser checks ran in the system Chromium with software rendering against a local server, on
-the single-mouth player (`?solo=1`). This time the laptop was not in its power-saver mode
-(`performance` during the e2e, `balanced` later), which is why the results differ from the
-last two records:
+the single-mouth player (`?solo=1`), with the laptop in `balanced` mode but busy (load average
+12 to 17 from the owner's desktop):
 
-- `tools/e2e.ts`, desktop and phone sizes: no errors, for the first time in these records. The
-  voice stayed at 48 kHz (engine load 67 % desktop, 63 % phone), Record video produced a clip,
-  the slow-device warning showed, and the tune was silent after Stop. Upstream's tongue-grab
-  check was again skipped (2D face only, too slow under software rendering).
-- `tools/layout-lint.ts`, 240 views at 8 sizes: 5 errors, 12 warnings. One error is the known
-  Speak one at 375x812 (two "k" labels touching in the gestural score). The other four are one
-  error not seen in earlier records, at four sizes (1280x720, 1366x768, 1440x900, 1920x1080),
-  in Sing while a tune sings: the area label on the narrowest point of the vocal tract
-  ("0.26 CM²") drawn over the sung word "OF" as it leaves the mouth. It is not from this
-  import: the previously published build (`93ff700`), linted the same hour, reported it too
-  (3 errors, 12 warnings: the Speak one and this overlap at 1366x768 and 1920x1080), and
-  repeating two sizes twice on each build gave it in 3 of 4 runs on the previous build and 1 of
-  4 on the import. The lint looks 1.5 s after pressing Sing; on a machine at normal speed that
-  is the moment the third word is sung, and the earlier records were taken in power-saver
-  mode. The label's code (`drawCalipers` in `src/ui/render/anatomy.ts`) reads only the tract's
-  shape and no file under `src/` changed here. It is an upstream layout fault, left as it is.
-  The three known Sing errors at 1280x720 (the readouts "0.7", "CM" and "SHUT" below the
-  canvas) did not show in the full run and came back in one of five repeats at that size (a
-  second repeat reported three errors there and its log was not kept). The twelve warnings are
-  the same twelve as last time.
+- `tools/e2e.ts`, desktop and phone sizes: one error, the known busy-machine one (the phone
+  run fell back to 32 kHz; engine load 77 % desktop, 84 % phone). The previously published
+  build, run with the pre-import test a few minutes later, did worse (three errors: both sizes
+  fell back to 32 kHz, load 84 % and 96 %, and the tune still sounding after Stop), so it is
+  the machine. Everything else passed, including Record video. Upstream's tongue-grab check
+  was again skipped.
+- `tools/layout-lint.ts`, 240 views at 8 sizes: 1 error, 2 warnings, and no text under the new
+  11 px floor. The error is the known Speak one at 375x812 (two "k" labels touching in the
+  gestural score); the warnings are the two known duet-title ones. The ten Bestiary warnings
+  of earlier records are gone (the label change fixed them). The Sing overlap first seen on
+  2026-11-22 (the area label over the sung word) did not show in this run; it depends on
+  timing and may return.
+- The band page, a song (`?song=megalovania`), two scene pages and the solo player were
+  opened on both builds at desktop and phone sizes: no console or request errors, and the
+  pages look as before apart from the slightly larger, bolder text.
 
-Not tested: the new sound by ear; back vowels and velars specifically (the judge's sentences
-are ordinary English); the Mandarin reading in the browser (the rule is tested natively and
-is in the rebuilt engine); anything about the plugin; a real phone; Safari.
+Not tested: the new sound by ear; the speed bench (not rerun: only target values changed, no
+code path, upstream measured no difference, and the laptop was too busy for a fair reading);
+Mandarin ɿ; the rig beyond its own tests (its dev page was not opened, no real FBX, BVH or
+glTF file was played); anything about the plugin; a real phone; Safari.
 
 ## Next update
 
@@ -115,9 +133,11 @@ is in the rebuilt engine); anything about the plugin; a real phone; Safari.
    incorporating the actual fix. Record any deliberately skipped changes.
    Preserve all prepared media, subfolder paths, the tracked WASM binary,
    portable build settings, retained MEGALOVANIA heads and solo audio fixes.
-   `.github/workflows/` is not imported until the owner says so (see the 2026-11-21 record
-   above): when a pick changes `.github/workflows/plugin.yml`, resolve the modify/delete
-   conflict with `git rm` and keep upstream's change to `crates/chimera-plugin/plugin.yml`.
+   `.github/workflows/` is not imported until the owner says so (decided on 2026-11-21, when
+   the plugin workflow arrived): when a pick changes `.github/workflows/plugin.yml`, resolve the
+   modify/delete conflict with `git rm` and keep upstream's change to
+   `crates/chimera-plugin/plugin.yml`; a commit that only adds a workflow file (`checks.yml`,
+   2026-11-23) is left out and recorded.
 5. Run `bun run test`, `bun run typecheck`, `bun run verify:content` and
    `bun run build:static --base=/chimera-song-mouth/`. Follow the additional
    engine/ABI checks in `AGENTS.md` when those files change. Never bless golden
