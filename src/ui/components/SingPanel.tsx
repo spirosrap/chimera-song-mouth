@@ -284,10 +284,10 @@ export function SingRight() {
           <SongPanel />
         </Screen>
       )}
-      <Screen className="s-roll" title="Pitch">
+      <Screen watch className="s-roll" title="Pitch">
         <PianoRoll />
       </Screen>
-      <Screen className="s-spec" title="Spectrum" sub={ring ? "Ring on" : ""}>
+      <Screen watch className="s-spec" title="Spectrum" sub={ring ? "Ring on" : ""}>
         <SpectrumView ring={ring} />
       </Screen>
       <Screen className="s-voice" title="Voice">

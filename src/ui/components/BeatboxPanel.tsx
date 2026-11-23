@@ -228,7 +228,7 @@ export function BeatboxRight() {
       <Screen className="s-seq" title="Step sequencer">
         <Sequencer />
       </Screen>
-      <Screen className="s-wf" title="Spectrogram">
+      <Screen watch className="s-wf" title="Spectrogram">
         <Spectrogram />
       </Screen>
       <Screen className="s-pads" title="Pads">

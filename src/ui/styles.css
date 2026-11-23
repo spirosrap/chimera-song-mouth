@@ -1913,13 +1913,15 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
+/* phones, every tab: what you touch comes before what you only watch (Screen's `watch`), so
+   the controls sit right under the head and the charts go last (AGENTS.md; the layout lint checks) */
 @media (max-width: 640px) {
   .app {
     padding: 6px 8px 12px;
   }
   .right-play {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "act" "tube" "folds" "spec" "vowels" "voice" "keys";
+    grid-template-areas: "act" "keys" "vowels" "voice" "tube" "folds" "spec";
   }
   .left .screen-body {
     min-height: 118vw;
@@ -2134,7 +2136,7 @@ input[type="range"]::-moz-range-thumb {
 @media (max-width: 640px) {
   .right-speak {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "act" "say" "score" "chart" "tube" "folds";
+    grid-template-areas: "act" "say" "chart" "score" "tube" "folds";
   }
   .say-row {
     flex-wrap: wrap;
@@ -2275,7 +2277,7 @@ input[type="range"]::-moz-range-thumb {
 @media (max-width: 640px) {
   .right-sing {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "act" "lyrics" "song" "roll" "spec" "voice" "keys";
+    grid-template-areas: "act" "lyrics" "song" "keys" "voice" "roll" "spec";
   }
   /* 16 px: iOS zooms the page into any smaller field it focuses */
   .lyrics textarea {
@@ -2578,7 +2580,7 @@ input[type="range"]::-moz-range-thumb {
 @media (max-width: 640px) {
   .right-beatbox {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "act" "seq" "wf" "pads" "transport" "keys";
+    grid-template-areas: "act" "seq" "pads" "transport" "keys" "wf";
   }
   .beat-overlay {
     top: 10px;
@@ -2702,7 +2704,7 @@ input[type="range"]::-moz-range-thumb {
 @media (max-width: 640px) {
   .right-bestiary {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "act" "gallery" "wf" "cparams" "airway" "keys";
+    grid-template-areas: "act" "gallery" "cparams" "keys" "wf" "airway";
   }
   .s-gallery .specimens {
     grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -15,6 +15,7 @@
  *  - h-scroll    the page scrolls sideways
  *  - small-text  text under 11 px, DOM or canvas (the label floor: docs/ui-redesign.md → Type)
  *  - shift       an encoder's readout moving as the encoder turns (each is turned to its ends)
+ *  - order       on a phone, a screen you touch below one you only watch (`<Screen watch>`)
  *  - stale       (warning) a canvas still showing a frame drawn for another size, so its text went unchecked
  *
  * Opt-outs, for things meant to sit on top of other things:
@@ -216,6 +217,17 @@ function inspect(): Problem[] {
     for (let j = i + 1; j < frames.length; j++) {
       const m = meet(rect(frames[i].getBoundingClientRect()), rect(frames[j].getBoundingClientRect()));
       if (w(m) > TOL && h(m) > TOL) problems.push({ kind: "screens", detail: `${nameOf(frames[i], "")} overlaps ${nameOf(frames[j], "")}` });
+    }
+  }
+
+  // on a phone, what you touch comes before what you only watch: no screen under a `watch` one
+  // (the phone layout: styles.css, max-width 640px)
+  if (window.innerWidth <= 640) {
+    const column = [...document.querySelectorAll(".wall > .right > .screen")].filter(visible).sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
+    let watched: Element | undefined;
+    for (const s of column) {
+      if (s.classList.contains("watch")) watched ??= s;
+      else if (watched) problems.push({ kind: "order", detail: `${s.getAttribute("aria-label")} sits below ${watched.getAttribute("aria-label")}, which only shows: on a phone the screens you touch come first` });
     }
   }
 
