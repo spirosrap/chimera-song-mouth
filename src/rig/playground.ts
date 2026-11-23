@@ -311,7 +311,6 @@ const chat = field("line");
 let lastLine = "";
 interface SpeechRequest {
   figure: Figure;
-  controller: AbortController;
   planId: number | null;
   tele: TelemetryMessage | null;
 }
@@ -321,14 +320,13 @@ let audioBody: BodyName | null = null;
 
 function cancelSpeech(): void {
   if (!activeSpeech) return;
-  activeSpeech.controller.abort();
   activeSpeech = null;
   speech.stopSpeaking();
 }
 
 async function say(text: string): Promise<void> {
   cancelSpeech();
-  const request: SpeechRequest = { figure: current(), controller: new AbortController(), planId: null, tele: null };
+  const request: SpeechRequest = { figure: current(), planId: null, tele: null };
   activeSpeech = request;
   notice.value = "";
   try {
@@ -345,7 +343,11 @@ async function say(text: string): Promise<void> {
     }
     // A fresh engine already has the human source defaults and gate off. The score supplies breath.
     engine.setSource({ f0: pitch });
-    const plan = await speech.speakText(text, { ipa: false, body, rate: speech.DEFAULT_SPEECH_RATE, f0: pitch, signal: request.controller.signal });
+    // the dictionary first: once it's in, speakText plans and schedules without yielding to a
+    // newer line, so a line cut off while it loaded never starts
+    await speech.g2p.load().catch(() => {});
+    if (activeSpeech !== request) return;
+    const plan = await speech.speakText(text, { ipa: false, body, rate: 1, f0: pitch });
     if (activeSpeech !== request) return;
     if (plan?.plan.segments.length) request.planId = plan.id;
     else cancelSpeech();
@@ -715,6 +717,12 @@ canvas.addEventListener("pointerup", (e) => {
   if (press?.id === e.pointerId && Math.hypot(e.clientX - press.x, e.clientY - press.y) <= 5) pick(e.clientX, e.clientY);
   press = null;
 });
+// a mouse click leaves no focus behind on its button (or the motion file's picker), so Enter
+// opens the chat bar instead of pressing + again
+document.addEventListener("click", (e) => {
+  if (e.detail > 0 && e.target instanceof Element) (e.target.closest("button, summary") as HTMLElement | null)?.blur();
+});
+field("motion").addEventListener("change", () => field("motion").blur());
 window.addEventListener("keydown", (e) => {
   if (e.defaultPrevented || e.isComposing || e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
   const target = e.target instanceof HTMLElement ? e.target : null;

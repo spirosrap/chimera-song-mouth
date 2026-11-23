@@ -2,7 +2,7 @@
  * Main-thread speech planning: text/IPA → phrases → gestural plan → worklet. In the plugin Rust plans
  * and plays, and this follows what it says (docs/plugin.md, "Speak").
  */
-import { createStore } from "zustand/vanilla";
+import { create } from "zustand";
 import { inPlugin } from "../audio/pluginBridge.ts";
 import type { BodyMix } from "../wasm/types.ts";
 import { EnglishG2P, MandarinLexicon, turkishPhrases, type Lang, type Phrase } from "../wasm/engine.ts";
@@ -16,7 +16,6 @@ import { wordSpans, type WordSpan } from "./words.ts";
 export const g2p = new EnglishG2P();
 /** the Mandarin front end's lexicon, loaded when lyrics first have Han characters */
 export const zh = new MandarinLexicon();
-export const DEFAULT_SPEECH_RATE = 1;
 
 interface SpeechState {
   text: string;
@@ -30,10 +29,10 @@ interface SpeechState {
   setCursor: (i: number) => void;
 }
 
-export const speechState = createStore<SpeechState>((set) => ({
+export const useSpeech = create<SpeechState>((set) => ({
   text: "Hello. Can you hear me?",
   ipa: false,
-  rate: DEFAULT_SPEECH_RATE,
+  rate: 1,
   lines: [],
   cursor: 0,
   edit: (e) => {
@@ -92,8 +91,8 @@ export function speakPhrases(phrases: { segments: Segment[]; intonation?: "state
   return current;
 }
 
-/** Say text in IPA or `lang` (default English). Abort prevents scheduling after dictionary load. */
-export async function speakText(text: string, o: { ipa: boolean; lang?: Lang; body: BodyMix; rate: number; f0: number; signal?: AbortSignal }): Promise<SpokenPlan | null> {
+/** Say text: IPA, or words read as `lang` (English unless said). */
+export async function speakText(text: string, o: { ipa: boolean; lang?: Lang; body: BodyMix; rate: number; f0: number }): Promise<SpokenPlan | null> {
   if (!text.trim()) return null;
   let phrases: Phrase[];
   if (o.ipa) phrases = ipaToPhrases(text);
@@ -106,7 +105,7 @@ export async function speakText(text: string, o: { ipa: boolean; lang?: Lang; bo
     }
     phrases = g2p.toPhrases(text);
   }
-  if (o.signal?.aborted || !phrases.length) return null;
+  if (!phrases.length) return null;
   return speakPhrases(phrases, o);
 }
 
