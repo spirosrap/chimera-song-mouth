@@ -1,7 +1,10 @@
 /**
- * Mock-up page (xray.html): the body rig with no skin drawn, only its nervous system as tubes,
- * and the head's recognisable parts (eyes, nose, lips, the vocal tract inside). Dev only.
- * URL: ?look=function|xray|signal&view=body|head|front|back&pose=<preset>&t=<seconds>&mouth=0..1
+ * Mock-up page (xray.html): the body rig with no skin drawn, only its nervous system as round
+ * lines (or tubes), and the head's recognisable parts (eyes, nose, lips, the vocal tract inside).
+ * Dev only.
+ * URL: ?look=function|xray|signal&draw=lines|tubes&view=body|head|front|back&pose=<preset>
+ *      &t=<seconds>&mouth=0..1&signal=0..1&speed=<cm/s>&label=<text>
+ *      &video: no clock of its own; tools/xray-video.ts draws it frame by frame (xrayRender)
  */
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
@@ -12,8 +15,20 @@ import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 import { initChimera } from "../wasm/chimera.ts";
 import rigUrl from "../rig/body.rig.bin?url";
 
+const q = new URLSearchParams(location.search);
+// a video's frames: the same eye movements and blinks in every take
+if (q.has("video")) {
+  let a = 12345;
+  Math.random = () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = Math.imul(a ^ (a >>> 15), a | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
 await initChimera();
-const [{ Rig }, { PRESETS }, { wearHead }, { VoiceModel }, { PRESETS: BODIES }, { REST_ARTIC }, { Nerves, NerveView }, { bodyPoint, buildProfile }] = await Promise.all([
+const [{ Rig }, { PRESETS }, { wearHead }, { VoiceModel }, { PRESETS: BODIES }, { REST_ARTIC }, { Nerves, NerveTubes, NerveLines }, { bodyPoint, buildProfile }] = await Promise.all([
   import("../rig/rig.ts"),
   import("../rig/pose.ts"),
   import("../rig/head.ts"),
@@ -25,7 +40,8 @@ const [{ Rig }, { PRESETS }, { wearHead }, { VoiceModel }, { PRESETS: BODIES }, 
 ]);
 type Mode = "function" | "xray" | "signal";
 
-const q = new URLSearchParams(location.search);
+const label = document.getElementById("label")!;
+label.textContent = q.get("label") ?? "";
 const canvas = document.querySelector("canvas")!;
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
 renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
@@ -89,16 +105,19 @@ place();
 const t0 = performance.now();
 const nerves = new Nerves(rig, skinned, head.mount.matrixWorld.clone(), model);
 console.log(`nerves: ${nerves.fibres.length} fibres in ${(performance.now() - t0).toFixed(0)} ms`);
-const view = new NerveView(nerves);
+const view = q.get("draw") === "tubes" ? new NerveTubes(nerves) : new NerveLines(nerves);
 scene.add(view.mesh);
-console.log(`tubes: ${view.mesh.geometry.getAttribute("position").count} vertices`);
 
 const setPose = () => {
+  const t0 = performance.now();
   rig.pose(PRESETS[field("pose").value] ?? PRESETS.neutral);
   rig.skin(skinned);
   head.update(camera, artic(), null, 0);
+  const t1 = performance.now();
   nerves.pose(head.mount.matrixWorld);
+  const t2 = performance.now();
   view.rebuild();
+  console.log(`pose: rig ${(t1 - t0).toFixed(1)} ms, nerves ${(t2 - t1).toFixed(1)} ms, drawing ${(performance.now() - t2).toFixed(1)} ms`);
 };
 const setLook = () => {
   const m = field("look").value as Mode;
@@ -173,33 +192,57 @@ function resize(): void {
   renderer.setSize(w, h, false);
   composer.setSize(w, h);
   head.resize(w, h);
+  const px = renderer.getDrawingBufferSize(new THREE.Vector2());
+  view.setSize(px.x, px.y);
+  view.mat.uniforms.uMinPx.value = 1.3 * renderer.getPixelRatio();
   camera.aspect = w / h;
   camera.updateProjectionMatrix();
 }
 addEventListener("resize", resize);
 resize();
 
-const fixedT = q.has("t") ? Number(q.get("t")) : null;
-let last = performance.now(), frames = 0, run = 0;
-renderer.setAnimationLoop((now) => {
-  const dt = Math.max(0, Math.min(0.1, (now - last) / 1000));
-  last = now;
-  controls.update();
+const W = window as unknown as { xrayReady: boolean; xrayRender: (t: number, where: string, az: number, dist: number, elev: number) => void };
+/** draw a frame: the head (its look for its size on screen), then the nerves' uniforms, then the scene */
+function draw(dt: number, run: number, target: THREE.Vector3): void {
   scaleFace();
   head.update(camera, artic(), null, dt);
-  // the head's lines over the tubes, never hidden by them
+  // the head's lines over the nerves, never hidden by them
   head.mount.traverse((o) => {
     const m = (o as THREE.Mesh).material as THREE.Material | undefined;
     if (m && m.depthTest) m.depthTest = false;
   });
   // the depth range for the x-ray's colours: the body's near and far sides as seen now
-  const d = camera.position.distanceTo(controls.target), span = q.get("view") === "head" || q.get("view") === "side" ? 14 : 30;
+  const d = camera.position.distanceTo(target), span = d < 150 ? 14 : 30;
   view.mat.uniforms.uNear.value = d - span;
   view.mat.uniforms.uFar.value = d + span;
-  // the pulses run on at the speed set (cm/s); a change of speed doesn't jump them
-  run = fixedT !== null ? fixedT * Number(field("speed").value) : run + dt * Number(field("speed").value);
   view.mat.uniforms.uRun.value = run;
   clearFeatures();
   composer.render();
-  if (++frames === 8) (window as unknown as { xrayReady: boolean }).xrayReady = true;
-});
+}
+
+const speed = () => Number(field("speed").value);
+if (q.has("video")) {
+  // the camera on a circle round the body or the head: azimuth from the front (degrees, + to its right), distance, height
+  let lastT = 0;
+  W.xrayRender = (t, where, az, dist, elev) => {
+    const target = where === "head" ? new THREE.Vector3(1, 12, 0).applyMatrix4(head.mount.matrixWorld) : new THREE.Vector3(2, 6, 0);
+    const a = (az * Math.PI) / 180;
+    camera.position.set(target.x + dist * Math.cos(a), target.y + elev, target.z + dist * Math.sin(a));
+    camera.lookAt(target);
+    draw(t > lastT ? t - lastT : 1 / 30, t * speed(), target);
+    lastT = t;
+  };
+  W.xrayReady = true;
+} else {
+  // the pulses run on at the speed set (cm/s); a change of speed doesn't jump them
+  const fixedT = q.has("t") ? Number(q.get("t")) : null;
+  let last = performance.now(), frames = 0, run = 0;
+  renderer.setAnimationLoop((now) => {
+    const dt = Math.max(0, Math.min(0.1, (now - last) / 1000));
+    last = now;
+    controls.update();
+    run = fixedT !== null ? fixedT * speed() : run + dt * speed();
+    draw(dt, run, controls.target);
+    if (++frames === 8) W.xrayReady = true;
+  });
+}

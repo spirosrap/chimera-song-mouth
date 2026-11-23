@@ -913,31 +913,12 @@ export class Nerves {
 }
 
 // ------------------------------------------------------------------ drawing
+// Two ways to draw the same fibres, with the same colours: tubes (a mesh of rings round each
+// fibre) or lines (each sample-to-sample piece a flat strip facing the camera, as wide as the
+// fibre in cm, shaded across its width as if it were round: a capsule drawn as an impostor).
 
-const VERT = /* glsl */ `
-attribute float aKind;
-attribute float aDist;
-attribute float aSeed;
-varying float vKind;
-varying float vDist;
-varying float vSeed;
-varying float vDepth;
-varying vec3 vN;
-varying vec3 vV;
-varying vec3 vW;
-void main() {
-  vec4 mv = modelViewMatrix * vec4(position, 1.0);
-  vW = (modelMatrix * vec4(position, 1.0)).xyz;
-  vN = normalize(normalMatrix * normal);
-  vV = -mv.xyz;
-  vDepth = -mv.z;
-  vKind = aKind;
-  vDist = aDist;
-  vSeed = aSeed;
-  gl_Position = projectionMatrix * mv;
-}`;
-
-const FRAG = /* glsl */ `
+/** the colours, shared: what a point of a fibre looks like, given how squarely it faces the eye */
+const SHADE = /* glsl */ `
 uniform float uMode;
 /** how far the pulses have run out from the brain (cm) */
 uniform float uRun;
@@ -952,11 +933,8 @@ uniform vec4 uClear[4];
 uniform float uClearAmt;
 varying vec3 vW;
 varying float vKind;
-varying float vDist;
 varying float vSeed;
 varying float vDepth;
-varying vec3 vN;
-varying vec3 vV;
 vec3 tri(float t) {
   return t < 0.5 ? mix(uRed, uPurple, t * 2.0) : mix(uPurple, uBlue, t * 2.0 - 1.0);
 }
@@ -986,64 +964,190 @@ float cleared() {
   return mix(1.0, keep, uClearAmt);
 }
 /** pulses running out from the brain along the nerves */
-float pulse() {
-  float ph = fract((vDist - uRun) / 26.0 + (vKind < 1.5 ? vSeed : 0.0));
+float pulse(float dist) {
+  float ph = fract((dist - uRun) / 26.0 + (vKind < 1.5 ? vSeed : 0.0));
   return smoothstep(0.0, 0.03, ph) * (1.0 - smoothstep(0.03, 0.14, ph));
 }
-void main() {
-  vec3 n = normalize(vN), v = normalize(vV);
-  float ndv = abs(dot(n, v)), rim = 1.0 - ndv;
+vec3 shade(float ndv, float dist) {
+  float rim = 1.0 - ndv;
   vec3 col;
   if (uMode < 0.5) {
     // solid, by what each nerve does, with a faint signal running through it
     vec3 c = byKind(vKind);
     col = c * (0.16 + 0.84 * ndv) + vec3(1.0) * pow(ndv, 28.0) * 0.45 + c * pow(rim, 3.0) * 0.5;
-    col += mix(c, vec3(1.0), 0.5) * pulse() * uSignal;
+    col += mix(c, vec3(1.0), 0.5) * pulse(dist) * uSignal;
   } else if (uMode < 1.5) {
     // x-ray, by depth: near red, far blue
     float t = clamp((vDepth - uNear) / (uFar - uNear), 0.0, 1.0);
     float brain = vKind < 1.5 || (vKind > 6.5) ? 0.6 : 1.0;
-    col = (tri(t) * (0.1 + 0.9 * pow(rim, 1.7)) + mix(tri(t), vec3(1.0), 0.4) * pulse() * uSignal * 0.6) * uGain * brain;
+    col = (tri(t) * (0.1 + 0.9 * pow(rim, 1.7)) + mix(tri(t), vec3(1.0), 0.4) * pulse(dist) * uSignal * 0.6) * uGain * brain;
   } else {
     // signal: red at the brain to blue at the fingers and toes, pulses running out
-    float t = clamp(vDist / 120.0, 0.0, 1.0);
+    float t = clamp(dist / 120.0, 0.0, 1.0);
     vec3 c = tri(t);
     float brain = vKind < 1.5 || (vKind > 6.5) ? 0.65 : 1.0;
-    col = (c * (0.14 + 0.86 * pow(rim, 1.5)) + mix(c, vec3(1.0), 0.4) * pulse() * 0.9) * uGain * brain;
+    col = (c * (0.14 + 0.86 * pow(rim, 1.5)) + mix(c, vec3(1.0), 0.4) * pulse(dist) * 0.9) * uGain * brain;
   }
-  gl_FragColor = vec4(col * cleared(), 1.0);
+  return col * cleared();
+}`;
+
+const TUBE_VERT = /* glsl */ `
+attribute float aKind;
+attribute float aDist;
+attribute float aSeed;
+varying float vKind;
+varying float vDist;
+varying float vSeed;
+varying float vDepth;
+varying vec3 vN;
+varying vec3 vV;
+varying vec3 vW;
+void main() {
+  vec4 mv = modelViewMatrix * vec4(position, 1.0);
+  vW = (modelMatrix * vec4(position, 1.0)).xyz;
+  vN = normalize(normalMatrix * normal);
+  vV = -mv.xyz;
+  vDepth = -mv.z;
+  vKind = aKind;
+  vDist = aDist;
+  vSeed = aSeed;
+  gl_Position = projectionMatrix * mv;
+}`;
+
+const TUBE_FRAG = /* glsl */ `
+${SHADE}
+varying float vDist;
+varying vec3 vN;
+varying vec3 vV;
+void main() {
+  gl_FragColor = vec4(shade(abs(dot(normalize(vN), normalize(vV))), vDist), 1.0);
+}`;
+
+const LINE_VERT = /* glsl */ `
+attribute vec3 iA;
+attribute vec3 iB;
+/** the radius at each end, and the path distance from the brain at each */
+attribute vec4 iRD;
+/** its kind, its fibre's seed, and whether each end is the fibre's (rounded) or a joint (cut square) */
+attribute vec4 iK;
+/** the drawing buffer's size (px), and the narrowest a line is drawn (px) */
+uniform vec2 uRes;
+uniform float uMinPx;
+varying vec2 vQ;
+varying vec3 vSeg;
+varying vec2 vD;
+varying vec2 vCap;
+varying float vPx;
+varying float vCover;
+varying float vKind;
+varying float vSeed;
+varying float vDepth;
+varying vec3 vW;
+void main() {
+  vec3 A = (modelMatrix * vec4(iA, 1.0)).xyz, B = (modelMatrix * vec4(iB, 1.0)).xyz;
+  vec3 ax = B - A;
+  float L = length(ax);
+  vec3 dir = L > 1e-5 ? ax / L : vec3(0.0, 1.0, 0.0);
+  vec3 mid = 0.5 * (A + B);
+  vec3 toCam = normalize(cameraPosition - mid);
+  vec3 side = cross(dir, toCam);
+  float sl = length(side);
+  side = sl > 1e-4 ? side / sl : normalize(cross(toCam, vec3(0.0, 1.0, 0.0001)));
+  // never thinner on screen than uMinPx: a line drawn wider than it is is dimmer for it
+  float pxPerCm = uRes.y * projectionMatrix[1][1] / (2.0 * max(1.0, distance(cameraPosition, mid)));
+  float r = max(max(iRD.x, iRD.y), 1e-4);
+  float grow = max(1.0, 0.5 * uMinPx / (pxPerCm * r));
+  vCover = 1.0 / grow;
+  float R = r * grow;
+  // the strip covers the capsule round the piece: its length and a radius past each end
+  float a = position.x * (L + 2.0 * R) - R;
+  float b = position.y * R;
+  vec3 w = A + dir * a + side * b;
+  vQ = vec2(a, b);
+  vSeg = vec3(L, iRD.x * grow, iRD.y * grow);
+  vD = iRD.zw;
+  vCap = iK.zw;
+  vPx = pxPerCm;
+  vKind = iK.x;
+  vSeed = iK.y;
+  vW = w;
+  vec4 mv = viewMatrix * vec4(w, 1.0);
+  vDepth = -mv.z;
+  gl_Position = projectionMatrix * mv;
+}`;
+
+const LINE_FRAG = /* glsl */ `
+${SHADE}
+uniform mat4 projectionMatrix;
+varying vec2 vQ;
+varying vec3 vSeg;
+varying vec2 vD;
+varying vec2 vCap;
+varying float vPx;
+varying float vCover;
+void main() {
+  float L = vSeg.x;
+  // a joint is cut square (a rounded end there would overlap the next piece's, a bead at every joint)
+  if ((vQ.x < 0.0 && vCap.x < 0.5) || (vQ.x > L && vCap.y < 0.5)) discard;
+  float t = clamp(vQ.x / max(L, 1e-4), 0.0, 1.0), r = mix(vSeg.y, vSeg.z, t);
+  // how far out from the piece's axis, as a share of its radius: 1 at its edge
+  float q = length(vec2(vQ.x - clamp(vQ.x, 0.0, L), vQ.y)) / r;
+  if (q >= 1.0) discard;
+  float ndv = sqrt(1.0 - q * q);
+  // the round surface's depth, nearer than the strip by its bulge: crossing nerves cut each other as tubes would
+  vec4 clip = projectionMatrix * vec4(0.0, 0.0, r * ndv - vDepth, 1.0);
+  gl_FragDepth = 0.5 * clip.z / clip.w + 0.5;
+  // the outermost px soft, where lines add up (a solid line just ends: a soft edge would be a dark fringe over what's behind)
+  float edge = uMode < 0.5 ? 1.0 : clamp((1.0 - q) * r * vPx + 0.5, 0.0, 1.0);
+  gl_FragColor = vec4(shade(ndv, mix(vD.x, vD.y, t)) * vCover * edge, 1.0);
 }`;
 
 export type Mode = "function" | "xray" | "signal";
 
-/** the fibres as one mesh of tubes, rebuilt when they move */
-export class NerveView {
+const uniforms = () => ({
+  uMode: { value: 0 },
+  uRun: { value: 0 },
+  uNear: { value: 100 },
+  uFar: { value: 200 },
+  uGain: { value: 1 },
+  uSignal: { value: 0 },
+  uClear: { value: [0, 1, 2, 3].map(() => new THREE.Vector4(0, -1e4, 0, 0.001)) },
+  uClearAmt: { value: 0 },
+  uRed: { value: new THREE.Vector3(1.0, 0.2, 0.32) },
+  uPurple: { value: new THREE.Vector3(0.62, 0.34, 1.0) },
+  uBlue: { value: new THREE.Vector3(0.22, 0.56, 1.0) },
+  uRes: { value: new THREE.Vector2(1, 1) },
+  uMinPx: { value: 1.3 },
+});
+
+/** a fibre smoothed (Catmull-Rom through its points) and sampled every `step` or so, with the distance along it */
+function sampled(f: Fibre): { pts: V3[]; cum: number[] } {
+  const P = f.p, n = P.length, pts: V3[] = [];
+  const cr = (p0: V3, p1: V3, p2: V3, p3: V3, t: number) => {
+    const t2 = t * t, t3 = t2 * t, out = v();
+    for (const c of ["x", "y", "z"] as const) out[c] = 0.5 * (2 * p1[c] + (-p0[c] + p2[c]) * t + (2 * p0[c] - 5 * p1[c] + 4 * p2[c] - p3[c]) * t2 + (-p0[c] + 3 * p1[c] - 3 * p2[c] + p3[c]) * t3);
+    return out;
+  };
+  for (let i = 0; i < n - 1; i++) {
+    const m = Math.max(1, Math.ceil(P[i].distanceTo(P[i + 1]) / f.step));
+    for (let j = 0; j < m; j++) pts.push(cr(P[Math.max(0, i - 1)], P[i], P[i + 1], P[Math.min(n - 1, i + 2)], j / m));
+  }
+  pts.push(P[n - 1].clone());
+  const cum = [0];
+  for (let i = 1; i < pts.length; i++) cum.push(cum[i - 1] + pts[i].distanceTo(pts[i - 1]));
+  return { pts, cum };
+}
+
+/** what both drawings share: the material's look and its uniforms */
+abstract class Drawing {
   readonly mesh: THREE.Mesh;
   readonly mat: THREE.ShaderMaterial;
-  constructor(private readonly nerves: Nerves) {
-    this.mat = new THREE.ShaderMaterial({
-      vertexShader: VERT,
-      fragmentShader: FRAG,
-      uniforms: {
-        uMode: { value: 0 },
-        uRun: { value: 0 },
-        uNear: { value: 100 },
-        uFar: { value: 200 },
-        uGain: { value: 1 },
-        uSignal: { value: 0 },
-        uClear: { value: [0, 1, 2, 3].map(() => new THREE.Vector4(0, -1e4, 0, 0.001)) },
-        uClearAmt: { value: 0 },
-        uRed: { value: new THREE.Vector3(1.0, 0.2, 0.32) },
-        uPurple: { value: new THREE.Vector3(0.62, 0.34, 1.0) },
-        uBlue: { value: new THREE.Vector3(0.22, 0.56, 1.0) },
-      },
-    });
+  constructor(protected readonly nerves: Nerves, vert: string, frag: string) {
+    this.mat = new THREE.ShaderMaterial({ vertexShader: vert, fragmentShader: frag, uniforms: uniforms() });
     this.mesh = new THREE.Mesh(new THREE.BufferGeometry(), this.mat);
     this.mesh.frustumCulled = false;
     this.mesh.renderOrder = -1;
-    this.rebuild();
   }
-
   set mode(m: Mode) {
     const solid = m === "function";
     this.mat.uniforms.uMode.value = m === "function" ? 0 : m === "xray" ? 1 : 2;
@@ -1052,27 +1156,30 @@ export class NerveView {
     this.mat.depthWrite = solid;
     this.mat.needsUpdate = true;
   }
+  /** the drawing buffer's size in px (lines keep a least width on screen) */
+  setSize(w: number, h: number): void {
+    this.mat.uniforms.uRes.value.set(w, h);
+  }
+  /** draw the fibres where they are now */
+  abstract rebuild(): void;
+  dispose(): void {
+    this.mesh.geometry.dispose();
+    this.mat.dispose();
+  }
+}
 
-  /** the tubes again from the fibres' points now */
+/** the fibres as a mesh of tubes */
+export class NerveTubes extends Drawing {
+  constructor(nerves: Nerves) {
+    super(nerves, TUBE_VERT, TUBE_FRAG);
+    this.rebuild();
+  }
   rebuild(): void {
     const pos: number[] = [], nor: number[] = [], kind: number[] = [], dist: number[] = [], seed: number[] = [], idx: number[] = [];
-    const cr = (p0: V3, p1: V3, p2: V3, p3: V3, t: number, out: V3) => {
-      const t2 = t * t, t3 = t2 * t;
-      for (const c of ["x", "y", "z"] as const) out[c] = 0.5 * (2 * p1[c] + (-p0[c] + p2[c]) * t + (2 * p0[c] - 5 * p1[c] + 4 * p2[c] - p3[c]) * t2 + (-p0[c] + 3 * p1[c] - 3 * p2[c] + p3[c]) * t3);
-      return out;
-    };
     for (const f of this.nerves.fibres) {
-      const P = f.p, n = P.length;
-      const samples: V3[] = [];
-      for (let i = 0; i < n - 1; i++) {
-        const m = Math.max(1, Math.ceil(P[i].distanceTo(P[i + 1]) / f.step));
-        for (let j = 0; j < m; j++) samples.push(cr(P[Math.max(0, i - 1)], P[i], P[i + 1], P[Math.min(n - 1, i + 2)], j / m, v()));
-      }
-      samples.push(P[n - 1].clone());
-      if (samples.length < 2) continue;
+      const { pts: samples, cum } = sampled(f);
       const S = samples.length, R = f.r0 > 0.25 ? 8 : f.r0 > 0.1 ? 6 : 4;
-      const cum = [0];
-      for (let i = 1; i < S; i++) cum.push(cum[i - 1] + samples[i].distanceTo(samples[i - 1]));
+      if (S < 2) continue;
       const L = cum[S - 1] || 1;
       // parallel-transported frames
       let N: V3 | null = null;
@@ -1110,9 +1217,39 @@ export class NerveView {
     this.mesh.geometry.dispose();
     this.mesh.geometry = g;
   }
+}
 
-  dispose(): void {
+/** the fibres as lines: one camera-facing strip per piece, drawn round */
+export class NerveLines extends Drawing {
+  constructor(nerves: Nerves) {
+    super(nerves, LINE_VERT, LINE_FRAG);
+    // a strip faces the camera, but which way round it's wound depends on its piece's direction
+    this.mat.side = THREE.DoubleSide;
+    this.rebuild();
+  }
+  rebuild(): void {
+    const all = this.nerves.fibres.map((f) => ({ f, ...sampled(f) }));
+    const n = all.reduce((s, x) => s + Math.max(0, x.pts.length - 1), 0);
+    const A = new Float32Array(3 * n), B = new Float32Array(3 * n), RD = new Float32Array(4 * n), K = new Float32Array(4 * n);
+    let i = 0;
+    for (const { f, pts, cum } of all) {
+      const L = cum[cum.length - 1] || 1;
+      for (let j = 0; j < pts.length - 1; j++, i++) {
+        pts[j].toArray(A, 3 * i);
+        pts[j + 1].toArray(B, 3 * i);
+        RD.set([f.r0 + (f.r1 - f.r0) * (cum[j] / L), f.r0 + (f.r1 - f.r0) * (cum[j + 1] / L), f.d0 + cum[j], f.d0 + cum[j + 1]], 4 * i);
+        K.set([f.kind, f.seed, j === 0 ? 1 : 0, j === pts.length - 2 ? 1 : 0], 4 * i);
+      }
+    }
+    const g = new THREE.InstancedBufferGeometry();
+    g.setAttribute("position", new THREE.Float32BufferAttribute([0, -1, 0, 1, -1, 0, 0, 1, 0, 1, 1, 0], 3));
+    g.setIndex([0, 1, 2, 2, 1, 3]);
+    g.setAttribute("iA", new THREE.InstancedBufferAttribute(A, 3));
+    g.setAttribute("iB", new THREE.InstancedBufferAttribute(B, 3));
+    g.setAttribute("iRD", new THREE.InstancedBufferAttribute(RD, 4));
+    g.setAttribute("iK", new THREE.InstancedBufferAttribute(K, 4));
+    g.instanceCount = n;
     this.mesh.geometry.dispose();
-    this.mat.dispose();
+    this.mesh.geometry = g;
   }
 }
