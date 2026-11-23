@@ -8,6 +8,8 @@ import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 import { initChimera } from "../wasm/chimera.ts";
 import { engine } from "../audio/AudioEngine.ts";
 import { defaultF0, PRESETS as BODIES } from "../ui/body.ts";
+import { V } from "../ui/colors.ts";
+import { mouthWords } from "../ui/mouthWords.ts";
 import type { HumanArtic } from "../wasm/types.ts";
 import type { BodyName, TelemetryMessage } from "../worklet/protocol.ts";
 import rigUrl from "./body.rig.bin?url";
@@ -34,6 +36,9 @@ const [{ wearHead, HEAD_LOOKS, HEAD_LOOK }, { VoiceModel }, { REST_ARTIC }, nerv
 // for the page's lifetime so removing one figure cannot drop another figure's model.
 const models = new Map<BodyName, InstanceType<typeof VoiceModel>>();
 const canvas = document.querySelector("canvas")!;
+const wordsCanvas = document.querySelector<HTMLCanvasElement>("#words")!;
+const wordsContext = wordsCanvas.getContext("2d")!;
+void document.fonts.load('500 26px "Hershey"');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
 renderer.setPixelRatio(Math.min(2, devicePixelRatio));
@@ -122,6 +127,12 @@ class Figure {
   private rigMoved = true;
   private lookBlend = 0;
   private neckAim: Pose["neck"] | null = null;
+  private readonly words = mouthWords(
+    () => activeSpeech?.figure === this && activeSpeech.planId === engine.lastPlan?.id
+      ? speech.spokenWordNow() : null,
+    V.white,
+    (view, lips) => view.X({ x: lips.x + 1, y: lips.y }) < view.X(lips) ? -1 : 1,
+  );
   mouthBlend = 0;
   liveArtic: HumanArtic | null = null;
   tween: { from: Pose; to: Pose; start: number } | null = null;
@@ -247,6 +258,12 @@ class Figure {
       this.view.update();
     }
     this.rigMoved = false;
+    // Both looks update the mounted head: NerveView.update calls RigHead.update itself.
+    // Use the stage projection, since the head's private camera has a different FOV.
+    const { head, model } = this.head;
+    const frame = model.frame(artic);
+    this.words(wordsContext, head.faceView(model, frame, artic, camera), model, frame, artic,
+      { w: innerWidth, h: innerHeight, dt });
   }
 
   dispose(): void {
@@ -543,6 +560,9 @@ function frame(which: string): void {
 }
 
 function resize(): void {
+  wordsCanvas.width = Math.round(innerWidth * devicePixelRatio);
+  wordsCanvas.height = Math.round(innerHeight * devicePixelRatio);
+  wordsContext.setTransform(wordsCanvas.width / innerWidth, 0, 0, wordsCanvas.height / innerHeight, 0, 0);
   renderer.setSize(innerWidth, innerHeight, false);
   composer.setSize(innerWidth, innerHeight);
   camera.aspect = innerWidth / innerHeight;
@@ -767,6 +787,8 @@ renderer.setAnimationLoop((now) => {
   last = now;
   const easing = current().tween !== null;
   controls.update();
+  camera.updateMatrixWorld();
+  wordsContext.clearRect(0, 0, innerWidth, innerHeight);
   if (activeSpeech?.planId != null && !speech.speakingNow()) activeSpeech = null;
   let xrays = 0, nerveStrength = 0, nerveClose = 0;
   for (const f of figures) {

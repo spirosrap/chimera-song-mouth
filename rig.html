@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CHIMERA rig playground</title>
 <style>
+  @font-face { font-family: Hershey; src: url("/fonts/AVHersheySimplexMedium.otf") format("opentype"); font-weight: 500; font-display: swap; }
   html, body { margin: 0; height: 100%; background: #000; color: #4fb6f2; font: 13px/1.4 ui-sans-serif, system-ui, sans-serif; overflow: hidden; }
   canvas { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+  #words { pointer-events: none; }
   .panel { position: fixed; box-sizing: border-box; background: rgb(0 0 0 / 75%); padding: 8px 10px; border: 1px solid #133954; border-radius: 6px; overflow: auto; }
   #stage { left: 12px; bottom: 12px; max-width: min(840px, calc(100vw - 246px)); max-height: 40dvh; display: flex; flex-direction: column; }
   #stage-options { overflow: auto; }
@@ -44,6 +46,7 @@
 </head>
 <body>
 <canvas aria-label="Chimera stage"></canvas>
+<canvas id="words" aria-hidden="true"></canvas>
 <section id="stage" class="panel" aria-label="Stage controls" inert>
   <div id="stage-options">
     <div class="row">

@@ -10,6 +10,7 @@ of its own. You pose it, skin it and draw it in your own three.js scene, frame b
 Run `bun run dev` and open `/rig.html`. Add figures with **+** and select them with their chips or
 by clicking a figure. Drag the canvas to orbit. Choose a voice, pitch, size, wireframe or nerve
 look, mouth opening and pose for each figure. Type in the chat bar and press **Enter** to speak.
+Spoken words appear at the speaker's lips and fly away, even with the controls hidden.
 **↑** in the empty bar recalls the last line. The selected figure speaks at its pitch, turning
 toward the camera over its pose or motion before returning to it and to the mouth slider. Open
 the joint groups on the right to adjust the pose. **Mirror** copies arm and leg edits to the other

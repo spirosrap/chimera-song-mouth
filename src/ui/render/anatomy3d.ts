@@ -877,16 +877,16 @@ export class Anatomy3D {
   }
 
   /** body point → CSS px on the canvas */
-  project(x: number, y: number, z: number): [number, number] {
-    const v = this.v3.set(x, y, z).applyMatrix4(this.beams.group.matrixWorld).project(this.camera);
+  project(x: number, y: number, z: number, camera: THREE.Camera = this.camera): [number, number] {
+    const v = this.v3.set(x, y, z).applyMatrix4(this.beams.group.matrixWorld).project(camera);
     return [((v.x + 1) / 2) * this.w, ((1 - v.y) / 2) * this.h];
   }
 
   /** CSS px per cm at a body point, across the screen */
-  pxPerCmAt(x: number, y: number, z: number): number {
-    const e = this.camera.matrixWorld.elements;
-    const [x0, y0] = this.project(x, y, z);
-    const [x1, y1] = this.project(x + e[0], y + e[1], z + e[2]);
+  pxPerCmAt(x: number, y: number, z: number, camera: THREE.Camera = this.camera): number {
+    const e = camera.matrixWorld.elements;
+    const [x0, y0] = this.project(x, y, z, camera);
+    const [x1, y1] = this.project(x + e[0], y + e[1], z + e[2], camera);
     return Math.hypot(x1 - x0, y1 - y0);
   }
 
@@ -901,13 +901,13 @@ export class Anatomy3D {
   }
 
   /** what the words at the mouth (and other overlays) need of this view */
-  faceView(model: VoiceModel, f: HumanFrame, a: HumanArtic): FaceView {
+  faceView(model: VoiceModel, f: HumanFrame, a: HumanArtic, camera: THREE.Camera = this.camera): FaceView {
     const lips = faceHandles(model, f, a).find((h) => h.id === "lips")!.pos;
     return {
       handles: faceHandles,
-      X: (p) => this.project(p.x, p.y, 0)[0],
-      Y: (p) => this.project(p.x, p.y, 0)[1],
-      pxPerCm: this.pxPerCmAt(lips.x, lips.y, 0),
+      X: (p) => this.project(p.x, p.y, 0, camera)[0],
+      Y: (p) => this.project(p.x, p.y, 0, camera)[1],
+      pxPerCm: this.pxPerCmAt(lips.x, lips.y, 0, camera),
     };
   }
 
