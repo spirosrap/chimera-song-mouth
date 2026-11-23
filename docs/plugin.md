@@ -73,8 +73,9 @@ needs none of that, and works on Wayland.
 - **Bitwig** (6.1.7, at least) destroys the editor after 1 s if its parent gets no child window, so
   the editor maps a blank X11 child there, through x11rb: an X error is then the plugin's to log,
   where Xlib's default handler would exit the DAW. The host's window is X11 either way (XWayland on a
-  Wayland desktop; nih-plug offers no other on Linux), and with no X display there's no child and
-  Bitwig closes the editor. [#158](https://github.com/jamesondh/chimera-vocal-synth/issues/158)
+  Wayland desktop; nih-plug offers no other on Linux). The child's connection is its own, to
+  `$DISPLAY` with `$XAUTHORITY`, as nih-plug's other editors open theirs: a host on another display
+  is assumed away, and with no X display there's no child and Bitwig closes the editor. [#158](https://github.com/jamesondh/chimera-vocal-synth/issues/158)
 - **Who can reach it:** the page's own files are public (they're the open-source site), but anything
   about the plugin needs the random token in the page's address, which the page keeps and sends as a
   header: a cookie would go to every service on 127.0.0.1, whatever its port. A request must also name
