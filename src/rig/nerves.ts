@@ -1379,10 +1379,12 @@ export class NerveView {
     this.close = THREE.MathUtils.smoothstep(pxPerCm, 8, 30);
     U.uBright.value = 1 - 0.35 * this.close;
     head.update(camera, artic, tele, dt);
-    // the x-ray's depth range, in the view's depth as the shader measures it: the head's near and
-    // far sides close up, the body's further off
-    const close = dHead < 150, middle = close ? headC : this.w3.copy(rig.P[0]).applyMatrix4(this.mesh.matrixWorld);
-    const d = -middle.applyMatrix4(camera.matrixWorldInverse).z, span = (close ? 14 : 30) * scale;
+    // the x-ray's depth range, in the view's depth as the shader measures it: the body's (about the
+    // hips, ±30 cm) further off, sliding to the head's near and far sides (±14 cm) as the camera
+    // comes in. (A switch from one to the other at 150 cm jumped every colour at once.)
+    const toHead = 1 - THREE.MathUtils.smoothstep(dHead, 110, 220);
+    const middle = this.w3.copy(rig.P[0]).applyMatrix4(this.mesh.matrixWorld).lerp(headC, toHead);
+    const d = -middle.applyMatrix4(camera.matrixWorldInverse).z, span = THREE.MathUtils.lerp(30, 14, toHead) * scale;
     U.uNear.value = d - span;
     U.uFar.value = d + span;
     this.run = at ?? this.run + dt * this.speed;

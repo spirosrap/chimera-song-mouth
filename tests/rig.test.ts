@@ -575,6 +575,25 @@ describe("the nerve x-ray", () => {
     expect(apart).toEqual([]);
   });
 
+  test("the x-ray's depth colours don't jump as the camera comes in (the range once switched from the body's to the head's at 150 cm)", () => {
+    const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
+    const view = new M.nerves.NerveView(new M.nerves.Nerves(rig, head)), camera = new THREE.PerspectiveCamera(30, 1, 5, 5000);
+    const U = view.mat.uniforms, target = new THREE.Vector3(1, 12, 0).applyMatrix4(head.mount.matrix);
+    // straight in at the face, 1 cm at a time, from the whole body to close up
+    let last: [number, number] | null = null, worst = 0;
+    for (let d = 400; d >= 40; d--) {
+      camera.position.copy(target).add(new THREE.Vector3(d, 0.1 * d, 0.45 * d).normalize().multiplyScalar(d));
+      camera.lookAt(target);
+      camera.updateMatrixWorld(true);
+      view.update(camera, M.REST_ARTIC, null, 0, 900);
+      const now: [number, number] = [U.uNear.value, U.uFar.value];
+      // how far the range's ends move against its width: a sudden shift recolours everything
+      if (last) worst = Math.max(worst, ...now.map((v, i) => Math.abs(v - last![i]) / (now[1] - now[0])));
+      last = now;
+    }
+    expect(worst).toBeLessThan(0.05);
+  });
+
   test("its nerves are in the rig's own frame, wherever the rig's parent puts it (the head's were once moved by it twice)", () => {
     const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
     const nerves = new M.nerves.Nerves(rig, head), view = new M.nerves.NerveView(nerves), camera = new THREE.PerspectiveCamera();
