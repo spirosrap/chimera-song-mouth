@@ -307,7 +307,8 @@ options("preset", ["custom", ...Object.keys(PRESETS)]);
 select("preset").options[0].disabled = true;
 
 const notice = el<HTMLOutputElement>("notice");
-const speechMenu = el<HTMLFormElement>("speech");
+const chat = field("line");
+let lastLine = "";
 interface SpeechRequest {
   figure: Figure;
   controller: AbortController;
@@ -326,8 +327,6 @@ function cancelSpeech(): void {
 }
 
 async function say(text: string): Promise<void> {
-  if (!text.trim()) return;
-  setSpeechMenu(false, true);
   cancelSpeech();
   const request: SpeechRequest = { figure: current(), controller: new AbortController(), planId: null, tele: null };
   activeSpeech = request;
@@ -368,24 +367,26 @@ engine.onTelemetry((msg) => {
   request.figure.liveArtic = VoiceModel.articFromArray(msg.t.artic);
 });
 
-function setSpeechMenu(open: boolean, restoreFocus = false): void {
-  speechMenu.hidden = !open;
-  button("speak").setAttribute("aria-expanded", String(open));
-  if (open) speechMenu.querySelector("button")?.focus();
-  else if (restoreFocus) button("speak").focus();
-}
-
-button("speak").onclick = () => setSpeechMenu(speechMenu.hidden === true);
-for (const line of speechMenu.querySelectorAll("button")) line.onclick = () => void say(line.textContent!);
-speechMenu.onsubmit = (e) => {
+el<HTMLFormElement>("chat").onsubmit = (e) => {
   e.preventDefault();
-  void say(field("line").value);
+  const text = chat.value.trim();
+  if (!text) return;
+  lastLine = text;
+  chat.value = "";
+  if (document.body.classList.contains("shot")) chat.blur();
+  void say(text);
 };
-document.addEventListener("pointerdown", (e) => {
-  if (!speechMenu.hidden && e.target instanceof Node && !speechMenu.contains(e.target) && !button("speak").contains(e.target)) {
-    setSpeechMenu(false);
+chat.onblur = () => document.body.classList.remove("chat-open");
+chat.onkeydown = (e) => {
+  if (e.isComposing) return;
+  if (e.key === "Escape") {
+    e.preventDefault();
+    chat.blur();
+  } else if (e.key === "ArrowUp" && !chat.value && lastLine) {
+    e.preventDefault();
+    chat.value = lastLine;
   }
-});
+};
 
 const sliders: ((groups: ReturnType<typeof jointGroups>) => void)[] = [];
 jointGroups(neutral()).forEach(({ label, ranges }, index) => {
@@ -715,14 +716,14 @@ canvas.addEventListener("pointerup", (e) => {
   press = null;
 });
 window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && !speechMenu.hidden) {
+  if (e.defaultPrevented || e.isComposing || e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
+  const target = e.target instanceof HTMLElement ? e.target : null;
+  if (target?.matches("input[type=text], input[type=number], textarea") || target?.isContentEditable) return;
+  if ((e.key === "Enter" && !target?.closest("button, summary, a[href], input[type=file]")) || e.key === "/") {
     e.preventDefault();
-    setSpeechMenu(false, true);
-    return;
-  }
-  if (e.target instanceof HTMLElement && e.target.matches("select, input[type=text], input[type=number], textarea")) return;
-  if (e.key.toLowerCase() === "h" && !e.repeat && !e.ctrlKey && !e.metaKey && !e.altKey) {
-    setSpeechMenu(false);
+    if (document.body.classList.contains("shot")) document.body.classList.add("chat-open");
+    chat.focus();
+  } else if (e.key.toLowerCase() === "h" && !target?.matches("select")) {
     document.body.classList.toggle("shot");
   }
 });

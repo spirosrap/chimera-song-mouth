@@ -9,17 +9,19 @@ of its own. You pose it, skin it and draw it in your own three.js scene, frame b
 
 Run `bun run dev` and open `/rig.html`. Add figures with **+** and select them with their chips or
 by clicking a figure. Drag the canvas to orbit. Choose a voice, pitch, size, wireframe or nerve
-look, mouth opening and pose for each figure. Use **▶** to pick a line or write one and press
-**Enter**. The selected figure speaks at its pitch, turning toward the camera over its pose or
-motion before returning to it and to the mouth slider. Open the joint groups on the right to
-adjust the pose. **Mirror** copies arm and leg edits to the other side
-and **copy pose** copies the selected figure's joint angles as code for `pose()`.
+look, mouth opening and pose for each figure. Type in the chat bar and press **Enter** to speak.
+**↑** in the empty bar recalls the last line. The selected figure speaks at its pitch, turning
+toward the camera over its pose or motion before returning to it and to the mouth slider. Open
+the joint groups on the right to adjust the pose. **Mirror** copies arm and leg edits to the other
+side and **copy pose** copies the selected figure's joint angles as code for `pose()`.
 
 A motion file loops on its figure. Editing that figure's pose, size, mouth or voice stops the clip.
 The body, front and back views frame the stage. The torso, head, face and side views frame the
 selected figure. The stage, orbit camera and pulse controls are saved in browser storage where
 available. Motion files stay in the current session. **Clear stage** resets the scene. Press **H**
-to hide or show the controls, or open `/rig.html?shot` to start with them hidden.
+to hide or show the controls, or open `/rig.html?shot` to start with them hidden. **Enter** or
+**/** focuses chat, showing only the bar if the controls are hidden. Sending a line hides it
+again in recording mode. **Escape** leaves the field.
 
 The playground uses one bloom pass. The nerve glow uses the strongest nerve look and dims by the
 largest close-up amount so a nearby face stays legible. Mixed stages keep the wireframe threshold
