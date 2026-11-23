@@ -63,7 +63,7 @@ const artic = () => {
   return { ...REST_ARTIC, jaw: 1.8 * open, lipAp: 1.8 * open };
 };
 /** the glow: the look's, weaker as the camera comes close to the face */
-const glow = () => (field("look").value === "function" ? 0.3 : 0.45) * (1 - 0.6 * view.close);
+const glow = () => (field("look").value === "function" ? 0.3 : 0.45) * (1 - 0.65 * view.close);
 const setLook = () => {
   view.look = field("look").value as NerveLook;
   bloom.strength = glow();

@@ -1112,7 +1112,7 @@ vec3 shade(float ndv, float dist) {
   if (uMode < 0.5) {
     // solid, by what each nerve does, with a faint signal running through it
     vec3 c = byKind(vKind);
-    col = c * (0.16 + 0.84 * ndv) + vec3(1.0) * pow(ndv, 28.0) * 0.45 + c * pow(rim, 3.0) * 0.5;
+    col = c * (0.16 + 0.84 * ndv) + vec3(1.0) * pow(ndv, 28.0) * 0.45 * uBright + c * pow(rim, 3.0) * 0.5;
     col += mix(c, vec3(1.0), 0.5) * pulse(dist) * uSignal;
   } else if (uMode < 1.5) {
     // x-ray, by depth: near red, far blue
@@ -1276,8 +1276,8 @@ export class NerveView {
   signal = 0.3;
   /** how fast the pulses run out from the brain (cm/s) */
   speed = 12;
-  /** how close the camera is to the head, 0 (a head-and-shoulders view, or further) to 1 (the
-   *  face filling the screen): a glow pass should weaken as it nears 1 (its own lines are dimmed) */
+  /** how close the camera is to the head, 0 (the whole body, or further) to 1 (about the head
+   *  filling the screen, or closer): a glow pass should weaken as it nears 1 (its own lines are dimmed) */
   close = 0;
   private run = 0;
   private readonly head: RigHead;
@@ -1371,9 +1371,10 @@ export class NerveView {
     head.head.drawing.inner = mix(0.5, 1);
     head.head.drawing.bone = mix(0.12, 0.3);
     this.parts.pop = mix(1.1, 2.2);
-    // and closer still, everything dimmer: the nerves widen on screen (they're so many cm wide)
-    this.close = THREE.MathUtils.smoothstep(pxPerCm, 16, 45);
-    U.uBright.value = 1 - 0.3 * this.close;
+    // and from head and shoulders in, everything dimmer: the nerves widen on screen (they're so
+    // many cm wide), and their white highlights and the glow over them would wash the face out
+    this.close = THREE.MathUtils.smoothstep(pxPerCm, 8, 30);
+    U.uBright.value = 1 - 0.35 * this.close;
     head.update(camera, artic, tele, dt);
     // the x-ray's depth range, in the view's depth as the shader measures it: the head's near and
     // far sides close up, the body's further off
