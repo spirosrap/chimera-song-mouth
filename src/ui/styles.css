@@ -1638,7 +1638,10 @@ button.primary.large {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  align-items: center;
+  /* the row's encoders centred as a group, each from the top: labels and dials line up whatever
+     their readouts take (a unit under its value) */
+  align-content: center;
+  align-items: start;
 }
 
 .enc-row.cols-2 {
@@ -1721,6 +1724,23 @@ button.primary.large {
   align-items: baseline;
   gap: 0 4px;
   max-width: 100%;
+}
+
+/* the shown value (and unit) and hidden copies of the widest it can show share one cell: the box
+   keeps the widest's width (readoutRoom in Encoder.tsx) */
+.enc-value-box,
+.enc-unit-box {
+  display: grid;
+  justify-items: center;
+}
+
+.enc-value-box > *,
+.enc-unit-box > * {
+  grid-area: 1 / 1;
+}
+
+.enc-sizer {
+  visibility: hidden;
 }
 
 .enc-unit {

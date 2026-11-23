@@ -14,6 +14,7 @@
  *  - canvas-edge canvas text running off its canvas
  *  - h-scroll    the page scrolls sideways
  *  - small-text  text under 11 px, DOM or canvas (the label floor: docs/ui-redesign.md → Type)
+ *  - shift       an encoder's readout moving as the encoder turns (each is turned to its ends)
  *  - stale       (warning) a canvas still showing a frame drawn for another size, so its text went unchecked
  *
  * Opt-outs, for things meant to sit on top of other things:
@@ -346,12 +347,51 @@ async function main() {
       if (errs.length) await page.screenshot({ path: `${out}/${w}x${h}-${state.replace(/[^a-z0-9]+/gi, "-")}.png`, fullPage: true });
     };
     const mode = (m: string) => page.getByRole("radio", { name: new RegExp(`^${m}$`, "i") }).click();
+    // every encoder shown, turned to each end and back: its readout must not move (a "0" turned to
+    // "+1" once dropped the unit to a second line, and the screen under it jumped)
+    const steady = async (state: string) => {
+      const moved = (await page.evaluate(async () => {
+        const frame = () => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+        const set = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, "value")!.set!;
+        const turn = (input: HTMLInputElement, v: string) => {
+          set.call(input, v);
+          input.dispatchEvent(new Event("input", { bubbles: true }));
+        };
+        const out: string[] = [];
+        for (const input of document.querySelectorAll<HTMLInputElement>(".enc-input")) {
+          const enc = input.closest(".encoder")!;
+          if (!enc.checkVisibility()) continue;
+          const box = () => {
+            const b = enc.querySelector(".enc-readout")!.getBoundingClientRect();
+            const u = enc.querySelector(".enc-unit")?.getBoundingClientRect();
+            return [b.left, b.top, b.width, b.height, u?.left ?? 0, u?.top ?? 0].map((v) => Math.round(v * 2) / 2).join(",");
+          };
+          const was = input.value, at = box();
+          for (const end of [input.min, input.max]) {
+            turn(input, end);
+            await frame();
+            const now = box();
+            if (now !== at) out.push(`${enc.querySelector(".enc-label")?.textContent} at ${end === input.min ? "min" : "max"} "${(enc.querySelector(".enc-readout") as HTMLElement).innerText}": readout [${at}] became [${now}]`);
+          }
+          turn(input, was);
+          await frame();
+        }
+        return out;
+      })) as string[];
+      if (!moved.length) return;
+      errors += moved.length;
+      console.log(`\n${w}x${h} ${state}: ${moved.length} error(s)`);
+      for (const m of moved) console.log(`  ERROR ${"shift".padEnd(11)} ${m}`);
+    };
     // every encoder page of the screens on the right (each page has its own labels)
     const pages = async (state: string) => {
+      await steady(state);
       const tabs = page.locator(".right .enc-tab");
       for (let i = 1; i < (await tabs.count()); i++) {
         await tabs.nth(i).click();
-        await check(`${state}, controls page ${(await tabs.nth(i).textContent())?.trim()}`);
+        const name = `${state}, controls page ${(await tabs.nth(i).textContent())?.trim()}`;
+        await check(name);
+        await steady(name);
       }
       if (await tabs.count()) await tabs.first().click();
     };

@@ -34,6 +34,7 @@ export function Encoder(props: EncoderSpec & { slot: number }) {
   };
   const pos = Math.min(1, Math.max(0, toPos(value)));
   const shown = format(value);
+  const room = readoutRoom(format, fromPos);
   const drag = useRef<{ x: number; y: number; pos: number; id: number; touch: boolean } | null>(null);
   const at = (u: number, r: number) => [Math.cos(A0 - u * SPAN) * r, -Math.sin(A0 - u * SPAN) * r];
   const [x0, y0] = at(0, 30), [x1, y1] = at(pos, 30), [px, py] = at(pos, 23);
@@ -88,13 +89,46 @@ export function Encoder(props: EncoderSpec & { slot: number }) {
         />
       </div>
       <div className="enc-readout">
-        <output className="enc-value" htmlFor={id}>
-          {shown.value}
-        </output>
-        {shown.unit && <span className="enc-unit">{shown.unit}</span>}
+        <span className="enc-value-box">
+          {room.values.map((w) => (
+            <span key={w} className="enc-value enc-sizer" aria-hidden="true">
+              {w}
+            </span>
+          ))}
+          <output className="enc-value" htmlFor={id}>
+            {shown.value}
+          </output>
+        </span>
+        {room.units.length > 0 && (
+          <span className="enc-unit-box">
+            {room.units.map((w) => (
+              <span key={w} className="enc-unit enc-sizer" aria-hidden="true">
+                {w}
+              </span>
+            ))}
+            <span className="enc-unit">{shown.unit}</span>
+          </span>
+        )}
       </div>
     </div>
   );
+}
+
+/**
+ * Everything an encoder can show, as hidden copies stacked under its readout so the readout is
+ * always as wide as the widest: turning the dial never moves the unit or wraps it under the value
+ * ("0" turned to "+1" once dropped "semitones" to a second line and the screen under it jumped).
+ * The range is sampled (a unit can change along it: Pitch's note name, Soft palate's "Shut"), and
+ * digits are written as 0, the widest in Hershey, which has no tabular figures.
+ */
+function readoutRoom(format: EncoderSpec["format"], at: (pos: number) => number) {
+  const values = new Set<string>(), units = new Set<string>();
+  for (let i = 0; i <= 96; i++) {
+    const f = format(at(i / 96));
+    values.add(f.value.replace(/\d/g, "0"));
+    if (f.unit) units.add(f.unit.replace(/\d/g, "0"));
+  }
+  return { values: [...values], units: [...units] };
 }
 
 export interface EncoderPage {
