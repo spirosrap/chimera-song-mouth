@@ -13,7 +13,7 @@ import { dirname, join } from "node:path";
 
 /** The system building it: each system's build.sh builds natively, and their dependencies differ (x11rb
  * on Linux only, windows-sys on Windows only). */
-const TARGET = /^host: (\S+)$/m.exec(execSync("rustc -vV").toString())![1];
+const TARGET = /^host: (\S+)/m.exec(execSync("rustc -vV").toString())![1];
 
 interface Pkg {
   id: string;
