@@ -8,6 +8,28 @@ import * as THREE from "three";
 import { initEngine } from "./harness.ts";
 import type { Rig as RigT } from "../src/rig/rig.ts";
 import type { Pose } from "../src/rig/pose.ts";
+import { arm, leg, neutral, pose, PRESETS, RANGE, serializePose } from "../src/rig/pose.ts";
+
+test("copy pose round-trips presets and arbitrary joint angles", () => {
+  let seed = 13;
+  const randomPart = (ranges: Record<string, readonly [number, number]>) =>
+    Object.fromEntries(Object.entries(ranges).map(([joint, [min, max]]) => {
+      seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+      return [joint, min + (max - min) * (seed / 2 ** 32)];
+    }));
+  const asymmetric = pose({
+    body: randomPart(RANGE.body), spine: randomPart(RANGE.spine), neck: randomPart(RANGE.neck),
+    arms: { R: arm(randomPart(RANGE.arm)), L: arm(randomPart(RANGE.arm)) },
+    legs: { R: leg(randomPart(RANGE.leg)) },
+  });
+  const symmetric = pose({ bothArms: randomPart(RANGE.arm), bothLegs: randomPart(RANGE.leg) });
+  for (const p of [...Object.values(PRESETS), asymmetric, symmetric]) {
+    expect(new Function("pose", `return ${serializePose(p)}`)(pose)).toEqual(p);
+  }
+  expect(serializePose(neutral())).toBe("pose({})");
+  expect(serializePose(PRESETS["T pose"])).toBe("pose({bothArms: {raise: 90}})");
+  expect(serializePose(symmetric)).toContain("bothLegs");
+});
 
 type Mods = {
   Rig: typeof import("../src/rig/rig.ts").Rig;
@@ -536,17 +558,19 @@ describe("the nerve x-ray", () => {
       view.update(camera, M.REST_ARTIC, null, 1 / 60, 900);
       view.pose();
       const eye = (view.mat.uniforms.uClear.value as THREE.Vector4[])[0];
-      return { points: nerves.fibres.flatMap((f) => f.p.map((p) => p.clone())), eye: new THREE.Vector3(eye.x, eye.y, eye.z) };
+      return { points: nerves.fibres.flatMap((f) => f.p.map((p) => p.clone())), eye: new THREE.Vector3(eye.x, eye.y, eye.z), radius: eye.w };
     };
     const alone = posed();
     // the same rig put 30 cm along by a parent of the nerves' mesh and the head's mount
     const parent = new THREE.Group();
     parent.position.set(30, 0, -12);
+    parent.scale.setScalar(0.65);
     parent.add(view.mesh, head.mount);
     // (its world matrix not brought up to date first: update does that)
     const moved = posed();
     expect(Math.max(...alone.points.map((p, i) => p.distanceTo(moved.points[i])))).toBeLessThan(1e-4);
-    expect(moved.eye.clone().sub(alone.eye).distanceTo(parent.position)).toBeLessThan(1e-4);
+    expect(moved.eye.distanceTo(parent.localToWorld(alone.eye))).toBeLessThan(1e-4);
+    expect(moved.radius).toBeCloseTo(0.65 * alone.radius, 6);
     expect(alone.points.every((p) => [p.x, p.y, p.z].every(Number.isFinite))).toBe(true);
     expect((view.mesh.geometry as THREE.InstancedBufferGeometry).instanceCount).toBeGreaterThan(10000);
   });

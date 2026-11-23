@@ -1,6 +1,6 @@
 /**
  * The nerve x-ray: the body's nervous system drawn as round lines in red, purple and blue, with
- * no skin, and the head's eyes, nose, lips and vocal tract kept (xray.html; docs/rig.md). For
+ * no skin, and the head's eyes, nose, lips and vocal tract kept (rig.html; docs/rig.md). For
  * videos: it's laid out to read as a nervous system, not to be anatomy to rely on.
  *
  * Built once, on the rig in its neutral pose (body cm: x forward, y up, z out of the right side):
@@ -188,6 +188,7 @@ export class Nerves {
     this.build();
     this.bindAll(skinned);
     geo.dispose();
+    (this.mesh.material as THREE.Material).dispose();
   }
 
   // ------------------------------------------------------------------ tools
@@ -1161,7 +1162,8 @@ void main() {
   vec3 side = cross(dir, toCam);
   // never thinner on screen than uMinPx: a line drawn wider than it is is dimmer for it
   float pxPerCm = uRes.y * projectionMatrix[1][1] / (2.0 * max(1.0, distance(cameraPosition, mid)));
-  float r = max(max(iRD.x, iRD.y), 1e-4);
+  vec2 radii = iRD.xy * length(modelMatrix[0].xyz);
+  float r = max(max(radii.x, radii.y), 1e-4);
   float grow = max(1.0, 0.5 * uMinPx / (pxPerCm * r));
   vCover = 1.0 / grow;
   float R = r * grow;
@@ -1170,7 +1172,7 @@ void main() {
   float b = position.y * R;
   vec3 w = mid - dir * (0.5 * L) + dir * a + side * b;
   vQ = vec2(a, b);
-  vSeg = vec3(L, iRD.x * grow, iRD.y * grow);
+  vSeg = vec3(L, radii * grow);
   vD = iRD.zw;
   // joints are cut square, but not a piece seen end-on: its round ends are all there is of it
   // (only then: where lines add up, the overlapping ends of a chain of such pieces glow)
@@ -1359,7 +1361,8 @@ export class NerveView {
     const eye = camera.getWorldPosition(new THREE.Vector3());
     // the head's middle (half way up its bone; the mount is placed by head.update, below)
     const hb = rig.bone("head"), headC = this.v3.copy(rig.P[hb]).lerp(rig.P[hb].clone().add(this.w3.fromArray(rig.bones[hb].tail).sub(rig.H[hb]).applyQuaternion(rig.S[hb])), 0.5).applyMatrix4(this.mesh.matrixWorld);
-    const dHead = eye.distanceTo(headC);
+    const scale = this.w3.setFromMatrixColumn(this.mesh.matrixWorld, 0).length();
+    const dHead = eye.distanceTo(headC) / scale;
     // The face's lines are so many px wide whatever the head's size on screen: seen whole-body
     // they'd pile into a few px and bloom to white. So they're drawn as bright, as wide and with
     // more of it only as the head comes close; far off, softer and thinner, the vocal tract dimmer.
@@ -1379,7 +1382,7 @@ export class NerveView {
     // the x-ray's depth range, in the view's depth as the shader measures it: the head's near and
     // far sides close up, the body's further off
     const close = dHead < 150, middle = close ? headC : this.w3.copy(rig.P[0]).applyMatrix4(this.mesh.matrixWorld);
-    const d = -middle.applyMatrix4(camera.matrixWorldInverse).z, span = close ? 14 : 30;
+    const d = -middle.applyMatrix4(camera.matrixWorldInverse).z, span = (close ? 14 : 30) * scale;
     U.uNear.value = d - span;
     U.uFar.value = d + span;
     this.run = at ?? this.run + dt * this.speed;
@@ -1388,7 +1391,7 @@ export class NerveView {
     // the clearings behind the eyes, nose and mouth, while the face is towards the camera
     this.feats.forEach(([p, r], i) => {
       const w = this.w3.copy(p).applyMatrix4(M);
-      (U.uClear.value as THREE.Vector4[])[i].set(w.x, w.y, w.z, r);
+      (U.uClear.value as THREE.Vector4[])[i].set(w.x, w.y, w.z, r * scale);
     });
     const fwd = this.v3.set(1, 0, 0).transformDirection(M), toCam = this.w3.copy(this.feats[3][0]).applyMatrix4(M).sub(eye).negate().normalize();
     U.uClearAmt.value = THREE.MathUtils.smoothstep(fwd.dot(toCam), -0.2, 0.35);
