@@ -681,6 +681,9 @@ export class Anatomy3D {
   /** which way the turned home view shows the face: 1 to the right, −1 to the left (a duet's
    *  second head, so the two sing towards each other) */
   facing: 1 | -1 = 1;
+  /** the eyes look into the camera (as far as eyes turn) instead of wandering: a body's
+   *  speaker addressing the viewer. The app's head leaves it off. */
+  gazeAtCamera = false;
   private clock = 0;
   private readonly gaze = new Gaze();
   /** brows, lids, cheeks and the head's nods, from the voice (the view updates it) */
@@ -1095,17 +1098,25 @@ export class Anatomy3D {
   // ------------------------------------------------------------------ eyes
   private eyes(rest: Rest, dt: number, widen = 1): void {
     const g = this.gaze, e = this.face;
-    g.update(this.clock, dt);
+    const cam = this.eye;
+    let at: { pitch: number; yaw: number } | undefined;
+    if (this.gazeAtCamera) {
+      // from between the eyes to the camera, held within how far eyes turn
+      const [a, b] = rest.eyes;
+      const x = cam.x - (a[0] + b[0]) / 2, y = cam.y - (a[1] + b[1]) / 2, z = cam.z - (a[2] + b[2]) / 2;
+      const clamp = (v: number, m: number) => Math.max(-m, Math.min(m, v));
+      at = { pitch: clamp(Math.atan2(y, Math.hypot(x, z)), 0.55), yaw: clamp(Math.atan2(z, x), 0.9) };
+    }
+    g.update(this.clock, dt, at);
     const r = rest.eyeR;
-    // where they look: forward, turned by the gaze (yaw towards +z, pitch up)
-    const pitch = g.pitch + 1.3 * e.lookUp;
+    // where they look: forward, turned by the gaze (yaw towards +z, pitch up); into the camera, not lifted on a high note
+    const pitch = g.pitch + (at ? 0 : 1.3 * e.lookUp);
     const d: V3 = [Math.cos(pitch) * Math.cos(g.yaw), Math.sin(pitch), Math.cos(pitch) * Math.sin(g.yaw)];
     const basis = (n: V3): [V3, V3] => {
       const up: V3 = Math.abs(n[1]) > 0.9 ? [1, 0, 0] : [0, 1, 0];
       const u = norm3(cross(up, n));
       return [u, cross(n, u)];
     };
-    const cam = this.eye;
     // the iris shows less as the lids close
     const seen = 1 - smooth(0.4, 0.9, e.lid);
     const wide = Math.max(0, e.brow);
