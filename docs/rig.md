@@ -178,7 +178,8 @@ view.resize(w, h, renderer.getPixelRatio());
 `view.look` is `"function"` (solid: motor nerves red, sensory blue, mixed purple),
 `"xray"` (seen through, near red to far blue) or `"signal"` (red at the brain to blue at the
 fingers and toes, pulses running out); `view.signal` (0–1) is how much of the pulses the first
-two show, `view.speed` how fast they run (cm/s). The page's bloom is part of the look.
+two show, `view.speed` how fast they run (cm/s). The page's bloom is part of the look: it
+weakens as `view.close` (0 to 1) says the camera has come close to the face.
 
 - **What's there:** the brain's folds (contours of a smooth noise field over the head's brain
   outline), the cerebellum, brainstem, spinal cord and cauda equina; the spinal nerves at each
@@ -201,10 +202,11 @@ two show, `view.speed` how fast they run (cm/s). The page's bloom is part of the
   under about a px), shaded across as if round, its joints cut square (rounded where it's seen
   end-on), its depth the round surface's.
 - **The head:** its own brain, skull section, cervical spine and ears are left out
-  (`HeadDrawing.parts`); the eyes, nose and lips are drawn wider, white-cored and with the
+  (`HeadDrawing.parts`); the eyes, nose and lips are drawn wider, in their own colours, with the
   nose's ridge (`parts.pop`), the nerves cleared away behind them while the face is towards the
-  camera; and all of it softer as the head gets small on screen, where its px-wide lines would
-  otherwise pile up and bloom to white.
+  camera. Its lines are px wide whatever the head's size: far off they're softer and thinner (or
+  they'd pile up and bloom to white), and close up the nerves (cm wide, so widening on screen)
+  are dimmer, so the face isn't washed out either way.
 - **Not yet:** the face's nerves don't follow the jaw. A pose is redrawn in 8 to 22 ms here
   (about 20,000 pieces), on the CPU: fine for stills and for a motion clip drawn frame by frame,
   heavy for one played live.

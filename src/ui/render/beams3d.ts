@@ -128,8 +128,6 @@ export class Beams {
   private readonly batches: Batch[];
   /** every line added from now on is this bright (1: as given): a renderer dims a part of what it draws */
   gain = 1;
-  /** every line added from now on also gets a whitish core, as `hot` gives one */
-  hot = false;
   /** lines fade out going down to height `y` and vanish below it, over `band` (body cm): a head
    *  whose neck gives way to a body drawn under it */
   fade: { y: number; band: number } | null = null;
@@ -170,7 +168,7 @@ export class Beams {
     if (n < 2) return;
     const al = o.alpha ?? 1;
     this.strokes(a, n, rgb(color), al, this.batch(width), o.close ?? false);
-    if (o.hot || this.hot) this.strokes(a, n, rgb(core(color)), al, this.batch(width * 0.42), o.close ?? false);
+    if (o.hot) this.strokes(a, n, rgb(core(color)), al, this.batch(width * 0.42), o.close ?? false);
   }
 
   poly(p: Poly, color: string, width: number, o: Beam3Opts = {}): void {

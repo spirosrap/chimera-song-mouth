@@ -4,7 +4,7 @@
  * lips and vocal tract. Pick a look, the pulses' strength and speed, a pose, the mouth; drag to
  * turn round it. Dev only (not in the app's build). See docs/rig.md.
  *
- * URL: ?look=function|xray|signal&pose=<preset>&view=body|front|back|torso|head|side&signal=0..1
+ * URL: ?look=function|xray|signal&pose=<preset>&view=body|front|back|torso|head|face|side&signal=0..1
  *      &speed=<cm/s>&mouth=0..1&shot (without the form)
  */
 import * as THREE from "three";
@@ -62,10 +62,11 @@ const artic = () => {
   const open = Number(field("mouth").value);
   return { ...REST_ARTIC, jaw: 1.8 * open, lipAp: 1.8 * open };
 };
+/** the glow: the look's, weaker as the camera comes close to the face */
+const glow = () => (field("look").value === "function" ? 0.3 : 0.45) * (1 - 0.6 * view.close);
 const setLook = () => {
-  const look = field("look").value as NerveLook;
-  view.look = look;
-  bloom.strength = look === "function" ? 0.3 : 0.45;
+  view.look = field("look").value as NerveLook;
+  bloom.strength = glow();
 };
 const setPulses = () => {
   view.signal = Number(field("signal").value);
@@ -88,7 +89,7 @@ setPulses();
 setPose();
 
 /** where the camera looks from, for each view: the body's middle or the head, and from where */
-const target = (where: string) => (where === "head" || where === "side" ? new THREE.Vector3(1, 12, 0).applyMatrix4(head.mount.matrixWorld) : where === "torso" ? new THREE.Vector3(2, 40, 0) : new THREE.Vector3(2, 6, 0));
+const target = (where: string) => (where === "head" || where === "face" || where === "side" ? new THREE.Vector3(1, 12, 0).applyMatrix4(head.mount.matrixWorld) : where === "torso" ? new THREE.Vector3(2, 40, 0) : new THREE.Vector3(2, 6, 0));
 function frame(which: string): void {
   const from: Record<string, THREE.Vector3> = {
     body: new THREE.Vector3(300, 40, 175),
@@ -96,6 +97,7 @@ function frame(which: string): void {
     back: new THREE.Vector3(-300, 40, 175),
     torso: new THREE.Vector3(160, 20, 95),
     head: new THREE.Vector3(86, 10, 40),
+    face: new THREE.Vector3(44, 2, 20),
     side: new THREE.Vector3(0, 4, 80),
   };
   controls.target.copy(target(which));
@@ -128,5 +130,6 @@ renderer.setAnimationLoop((now) => {
   last = now;
   controls.update();
   view.update(camera, artic(), null, dt, innerHeight);
+  bloom.strength = glow();
   composer.render();
 });

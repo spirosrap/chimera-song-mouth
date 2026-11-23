@@ -1065,6 +1065,8 @@ uniform vec3 uRed;
 uniform vec3 uPurple;
 uniform vec3 uBlue;
 uniform float uSignal;
+/** all of it dimmer as the camera comes close (the lines widen with it, and the glow over them) */
+uniform float uBright;
 uniform vec4 uClear[4];
 uniform float uClearAmt;
 varying vec3 vW;
@@ -1124,7 +1126,7 @@ vec3 shade(float ndv, float dist) {
     float brain = vKind < 1.5 || (vKind > 6.5) ? 0.65 : 1.0;
     col = (c * (0.14 + 0.86 * pow(rim, 1.5)) + mix(c, vec3(1.0), 0.4) * pulse(dist) * 0.9) * uGain * brain;
   }
-  return col * cleared();
+  return col * cleared() * uBright;
 }`;
 
 const LINE_VERT = /* glsl */ `
@@ -1225,6 +1227,7 @@ const uniforms = () => ({
   uFar: { value: 200 },
   uGain: { value: 1 },
   uSignal: { value: 0 },
+  uBright: { value: 1 },
   uClear: { value: [0, 1, 2, 3].map(() => new THREE.Vector4(0, -1e4, 0, 0.001)) },
   uClearAmt: { value: 0 },
   uRed: { value: new THREE.Vector3(1.0, 0.2, 0.32) },
@@ -1273,9 +1276,12 @@ export class NerveView {
   signal = 0.3;
   /** how fast the pulses run out from the brain (cm/s) */
   speed = 12;
+  /** how close the camera is to the head, 0 (a head-and-shoulders view, or further) to 1 (the
+   *  face filling the screen): a glow pass should weaken as it nears 1 (its own lines are dimmed) */
+  close = 0;
   private run = 0;
   private readonly head: RigHead;
-  private readonly parts = { brain: 0, skull: 0, spine: 0, ears: 0, pop: 2, cores: true };
+  private readonly parts = { brain: 0, skull: 0, spine: 0, ears: 0, pop: 2 };
   private readonly feats: [V3, number][];
   private readonly v3 = v();
   private readonly w3 = v();
@@ -1356,14 +1362,18 @@ export class NerveView {
     const dHead = eye.distanceTo(headC);
     // The face's lines are so many px wide whatever the head's size on screen: seen whole-body
     // they'd pile into a few px and bloom to white. So they're drawn as bright, as wide and with
-    // white cores only as the head comes close; far off, softer and thinner, the vocal tract dimmer.
+    // more of it only as the head comes close; far off, softer and thinner, the vocal tract dimmer.
     const pxPerCm = height / (2 * dHead * Math.tan((camera.fov * Math.PI) / 360));
     const near = THREE.MathUtils.smoothstep(pxPerCm, 5, 16), mix = (a: number, b: number) => a + (b - a) * near;
-    head.setFeatures(mix(1.15, 2.6));
+    // close up, the features stand out by their width and the dark round them, in their own
+    // colours: brighter (or white-cored) they'd wash out to white
+    head.setFeatures(mix(1.15, 1.7));
     head.head.drawing.inner = mix(0.5, 1);
     head.head.drawing.bone = mix(0.12, 0.3);
-    this.parts.pop = mix(1.1, 2);
-    this.parts.cores = near > 0.45;
+    this.parts.pop = mix(1.1, 2.2);
+    // and closer still, everything dimmer: the nerves widen on screen (they're so many cm wide)
+    this.close = THREE.MathUtils.smoothstep(pxPerCm, 16, 45);
+    U.uBright.value = 1 - 0.3 * this.close;
     head.update(camera, artic, tele, dt);
     // the x-ray's depth range, in the view's depth as the shader measures it: the head's near and
     // far sides close up, the body's further off

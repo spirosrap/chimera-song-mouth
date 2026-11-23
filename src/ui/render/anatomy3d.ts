@@ -659,9 +659,9 @@ export interface HeadDrawing {
   fade: { y: number; band: number } | null;
   /** parts drawn otherwise than `inner` has them (a body that draws its own): the brain, the
    *  skull's section, the cervical spine; and the ears (1 unless set); `pop`: the eyes, nose and
-   *  lips drawn up to this much wider (1.35 unless set), with white cores and the nose's ridge,
-   *  to stand out from what's behind them (`cores: false`: without the white cores) */
-  parts?: { brain?: number; skull?: number; spine?: number; ears?: number; pop?: number; cores?: boolean };
+   *  lips drawn this much wider (unset: wider with `features` over 1, up to 1.35), and the
+   *  nose's ridge with them, to stand out from what's behind them */
+  parts?: { brain?: number; skull?: number; spine?: number; ears?: number; pop?: number };
 }
 export const APP_DRAWING: Readonly<HeadDrawing> = { inner: 1, bone: 1, outline: 1, shell: 1, features: 1, lipSkin: true, mounted: false, fade: null };
 
@@ -945,16 +945,15 @@ export class Anatomy3D {
     this.k = k;
 
     // ---- the fixed and jaw-carried structures, each as bright as `drawing` has it
-    const d = this.drawing, pop = d.parts?.pop, cores = !!pop && d.parts?.cores !== false, widen = Math.min(pop ?? 1.35, 1 + 0.45 * Math.max(0, d.features - 1));
+    // (with `pop` the features' width is set apart from their brightness: bright enough to widen them would wash their colours to white)
+    const d = this.drawing, pop = d.parts?.pop, widen = pop ?? Math.min(1.35, 1 + 0.45 * Math.max(0, d.features - 1));
     B.fade = d.fade;
     for (const g of rest.fixed) {
       const feature = g.kind === "feature";
-      B.hot = feature && cores;
       B.gain = feature ? d.features : g.kind === "bone" ? d.bone : g.kind === "outer" ? (d.parts?.ears ?? 1) : g.kind === "brain" ? (d.parts?.brain ?? d.inner) : g.kind === "spine" ? (d.parts?.spine ?? d.inner) : d.inner;
       const color = feature && d.features > 1 ? V.blue : g.color;
       for (const l of g.lines) B.line(l, l.length / 3, color, feature ? g.width * widen : g.width, { alpha: g.alpha, hot: g.hot });
     }
-    B.hot = false;
     B.gain = d.bone;
     for (const g of rest.jaw) {
       for (const l of g.lines) {
@@ -999,7 +998,6 @@ export class Anatomy3D {
     line(G.glottisWall, V.blue, 1.2, { alpha: 0.8 });
 
     B.gain = d.features;
-    B.hot = cores;
     this.eyes(rest, dt, widen);
     if (pop) {
       // the nose's ridge, from the bridge down to under its tip (the midline profile's own piece of it)
@@ -1011,7 +1009,6 @@ export class Anatomy3D {
       }
       if (ridge.length > 1) B.line(flat(ridge), ridge.length, V.blue, 1.4 * widen);
     }
-    B.hot = false;
     B.gain = d.inner;
     this.airway(model, f, tele, view, k);
     this.velum(f, k);
@@ -1022,9 +1019,7 @@ export class Anatomy3D {
     const soft = (v: Vec[], it: number) => flat(chaikin(v.map((p) => [p.x, p.y] as Pt), it).map(([x, y]) => ({ x, y })));
     const upperLip = soft(f.upperLip, 2), lowerLip = soft(f.lowerLip, 2);
     B.gain = d.features;
-    B.hot = cores;
     const mouth = this.lips(rest, model, f, a, phi, widen);
-    B.hot = false;
     const chin = rest.chin;
     const chinNow = new Float32Array(chin.length);
     for (let i = 0; i < chin.length; i += 3) {
