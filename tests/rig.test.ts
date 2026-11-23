@@ -9,6 +9,7 @@ import { initEngine } from "./harness.ts";
 import type { Rig as RigT } from "../src/rig/rig.ts";
 import type { Pose } from "../src/rig/pose.ts";
 import { arm, leg, neutral, pose, PRESETS, RANGE, serializePose } from "../src/rig/pose.ts";
+import { aimNeck } from "../src/rig/aimNeck.ts";
 
 test("copy pose round-trips presets and arbitrary joint angles", () => {
   let seed = 13;
@@ -53,6 +54,32 @@ function loadRig(): RigT {
   const b = readFileSync(new URL("../src/rig/body.rig.bin", import.meta.url));
   return new M.Rig(b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength) as ArrayBuffer);
 }
+
+test("the neck aims at world-space cameras from a moved, turned and scaled figure", () => {
+  const rig = loadRig();
+  const p = pose({ body: { turn: 47, tip: -19, x: 30, y: -21, z: -40 }, spine: { bend: 23, twist: -32 }, neck: { twist: 15, bend: -13 } });
+  const parent = new THREE.Matrix4().compose(
+    new THREE.Vector3(30, 10, -50),
+    new THREE.Quaternion().setFromEuler(new THREE.Euler(0.3, -0.4, 0.2)),
+    new THREE.Vector3(0.65, 0.65, 0.65),
+  );
+  rig.pose(p);
+  const neck = rig.bone("neck"), head = rig.bone("head");
+  const trunk = rig.W[rig.bones[neck].parent].clone();
+  const target = (x: number, y: number, z: number) =>
+    new THREE.Vector3(x, y, z).applyQuaternion(trunk).add(rig.P[neck]).applyMatrix4(parent);
+  for (const camera of [target(48, 10, 33), target(55, -25, -65), target(80, 54, 35), target(20, 0, 90)]) {
+    const aimed = aimNeck(rig, parent, camera);
+    rig.pose({ ...p, neck: aimed });
+    const forward = new THREE.Vector3(1, 0, 0).applyQuaternion(rig.S[head]).transformDirection(parent);
+    const ray = camera.sub(rig.P[head].clone().applyMatrix4(parent));
+    expect(THREE.MathUtils.radToDeg(forward.angleTo(ray))).toBeLessThan(3);
+  }
+  expect(aimNeck(rig, parent, target(-80, 5, 50)).twist).toBe(RANGE.neck.twist[0]);
+  expect(aimNeck(rig, parent, target(-80, 5, -50)).twist).toBe(RANGE.neck.twist[1]);
+  expect(aimNeck(rig, parent, target(2, 200, 0)).flex).toBe(RANGE.neck.flex[0]);
+  expect(aimNeck(rig, parent, target(2, -200, 0)).flex).toBe(RANGE.neck.flex[1]);
+});
 
 /** the mesh's edges that only one quad has, as vertex pairs */
 function openEdges(rig: RigT): [number, number][] {
