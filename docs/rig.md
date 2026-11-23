@@ -5,8 +5,23 @@ own head (`src/ui/render/anatomy3d.ts`) drawn live on a posable low-poly body, i
 the voice does. It's a small library, not an animation tool: there's no timeline and no renderer
 of its own. You pose it, skin it and draw it in your own three.js scene, frame by frame.
 
-Try it: `bun run dev`, then `/rig.html` (pick a pose, open the mouth, pick how the head is drawn,
-or play a motion file from another tool).
+## Rig playground
+
+Run `bun run dev` and open `/rig.html`. Add figures with **+** and select them with their chips or
+by clicking a figure. Drag the canvas to orbit. Choose a voice, pitch, size, wireframe or nerve
+look, mouth opening and pose for each figure. Pitch is stored for future live speech. Open the
+joint groups on the right to adjust the pose. **Mirror** copies arm and leg edits to the other side
+and **copy pose** copies the selected figure's joint angles as code for `pose()`.
+
+A motion file loops on its figure. Editing that figure's pose, size, mouth or voice stops the clip.
+The body, front and back views frame the stage. The torso, head, face and side views frame the
+selected figure. The stage, orbit camera and pulse controls are saved in browser storage where
+available. Motion files stay in the current session. **Clear stage** resets the scene. Press **H**
+to hide or show the controls, or open `/rig.html?shot` to start with them hidden.
+
+The playground uses one bloom pass. The nerve glow uses the strongest nerve look and dims by the
+largest close-up amount so a nearby face stays legible. Mixed stages keep the wireframe threshold
+and radius and average the wireframe strength with the nerve glow.
 
 ## Files
 
@@ -18,9 +33,8 @@ or play a motion file from another tool).
 | `src/rig/motion.ts` | `Motion`: a clip from another tool (Mixamo's FBX, BVH, glTF) carried over onto the rig |
 | `src/rig/view.ts` | the wireframe in CHIMERA's blue (and heat and weights views for finding faults) |
 | `src/rig/body.rig.bin` | the mesh, skeleton and weights (generated: `bun tools/rig/gen-body.ts`, never edited) |
-| `src/rig/demo.ts`, `rig.html` | the dev page (not in the app's build) |
+| `src/rig/playground.ts`, `rig.html` | the dev playground (not in the app's build) |
 | `src/rig/nerves.ts` | the nerve x-ray: the body's nervous system as round lines, the head drawn to go with it |
-| `src/rig/xray.ts`, `xray.html` | its dev page (not in the app's build) |
 
 ## Use
 
@@ -158,7 +172,7 @@ rest joint `rig.H[i]`, and after `pose` its turn from rest `rig.S[i]` and joint 
 
 Another way to show the body, for videos: no skin and no grid, only a nervous system in red,
 purple and blue, and the head's recognisable parts (the eyes, nose and lips, and the vocal tract
-inside). Try it: `bun run dev`, then `/xray.html`.
+inside). Try the **by function**, **x-ray by depth** and **signal** looks in the playground.
 
 ```ts
 import { Nerves, NerveView } from "./src/rig/nerves.ts";   // after initChimera, as the head
@@ -210,8 +224,6 @@ weakens as `view.close` (0 to 1) says the camera has come close to the face.
 - **Not yet:** the face's nerves don't follow the jaw. A pose is redrawn in 8 to 22 ms here
   (about 20,000 pieces), on the CPU: fine for stills and for a motion clip drawn frame by frame,
   heavy for one played live.
-
-`xray.html?shot` hides the form (for a screen recording).
 
 `bun test tests/rig.test.ts` poses every preset and checks no nerve is pulled more than 2.5
 times (and 6 cm) longer than it was built, that nerves stay joined where they meet and twigs on
