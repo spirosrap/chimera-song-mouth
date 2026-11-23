@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import { skippedLines } from "../skipped.ts";
 import { useStore } from "../store.ts";
 import { useSing } from "../singing.ts";
-import { speakText, speakPhrases, stopSpeaking, onPlan, currentPlan, spokenWordNow, speakingNow, useSpeech } from "../speech.ts";
+import { useStore as useZustandStore } from "zustand";
+import { speakText, speakPhrases, stopSpeaking, onPlan, currentPlan, spokenWordNow, speakingNow, speechState, DEFAULT_SPEECH_RATE } from "../speech.ts";
 import { mouthWords } from "../mouthWords.ts";
 import { tokenizeIpa, type Lang } from "../../wasm/engine.ts";
 import { Menu, Slider } from "./Controls.tsx";
@@ -138,9 +139,9 @@ function useSpeaking(): boolean {
 /** Speak mode's right column: the speak button, what to say, the gestural score, the consonant chart, the tube and folds. */
 /** In the plugin: the lines a note says, with the next one marked. */
 function Lines() {
-  const lines = useSpeech((s) => s.lines);
-  const cursor = useSpeech((s) => s.cursor);
-  const setCursor = useSpeech((s) => s.setCursor);
+  const lines = useZustandStore(speechState, (s) => s.lines);
+  const cursor = useZustandStore(speechState, (s) => s.cursor);
+  const setCursor = useZustandStore(speechState, (s) => s.setCursor);
   return (
     <div className="syllables say-lines" role="group" aria-label="Lines. Each note says the marked one; choose another to start there.">
       {lines.map((l, i) => (
@@ -164,7 +165,7 @@ export function SpeakRight() {
   const lang = useSing((s) => s.lang);
   const setLang = useSing((s) => s.setLang);
   // kept in a store, so the plugin saves them with the project and reads them on the audio thread
-  const { text, ipa, rate, edit } = useSpeech();
+  const { text, ipa, rate, edit } = useZustandStore(speechState);
   const setText = (v: string) => edit({ text: v });
   const setIpa = (v: boolean) => edit({ ipa: v });
   const setRate = (v: number) => edit({ rate: v });
@@ -176,7 +177,7 @@ export function SpeakRight() {
   // in the browser each visit starts afresh, on the first example of the words' language (the
   // plugin's box is the project's, so it stays)
   useEffect(() => {
-    if (!inPlugin) edit({ text: EXAMPLES[lang][0], ipa: false, rate: 1 });
+    if (!inPlugin) edit({ text: EXAMPLES[lang][0], ipa: false, rate: DEFAULT_SPEECH_RATE });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   // in IPA mode: the symbols in the box that the voice will not say, updated as the text changes

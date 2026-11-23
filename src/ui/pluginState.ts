@@ -7,7 +7,7 @@ import { ARTIC_PARAMS, SOURCE_PARAMS, clipboardShortcuts, dbToVolume, gestureOpe
 import type { BeatStep, BodyMix, HumanArtic, Syllable, VoiceSource } from "../wasm/engine.ts";
 import { TELE_LABELS, decodeTelemetry } from "../worklet/telemetry.ts";
 import { clearPluginNotes, followPluginNote, roll, useSing } from "./singing.ts";
-import { followSpoken, useSpeech } from "./speech.ts";
+import { followSpoken, speechState } from "./speech.ts";
 import { useStore } from "./store.ts";
 
 /** Scalars at the head of a `/poll` response: POLL_HEADER in crates/chimera-plugin/src/bridge.rs. */
@@ -84,7 +84,7 @@ function adopt(s: Snapshot): void {
   useSing.setState({ lyrics: s.settings.lyrics, syllables: s.syllables, cursor: s.cursor, vibrato: s.params.vibrato });
   linesGeneration = s.speech.generation;
   const { text, ipa, rate } = s.settings.speech;
-  useSpeech.setState({ text, ipa, rate, lines: s.speech.lines, cursor: s.speechCursor });
+  speechState.setState({ text, ipa, rate, lines: s.speech.lines, cursor: s.speechCursor });
 }
 
 /** Host values, for the parameters not being moved here. */
@@ -154,9 +154,9 @@ async function poll(): Promise<void> {
   if (cursor !== useSing.getState().cursor) useSing.setState({ cursor });
   if (lines !== linesGeneration) {
     linesGeneration = lines;
-    useSpeech.setState({ lines: (await getJson<SpeechLines>("/speech")).lines });
+    speechState.setState({ lines: (await getJson<SpeechLines>("/speech")).lines });
   }
-  if (speechCursor !== useSpeech.getState().cursor) useSpeech.setState({ cursor: speechCursor });
+  if (speechCursor !== speechState.getState().cursor) speechState.setState({ cursor: speechCursor });
   void followSpoken(spokenSerial, spokenLine, spokenGeneration, spokenT0);
   const beat = useStore.getState().beat;
   if (beat.playing !== !!beatRunning || beat.following !== !!beatFollowing || beat.hostBpm !== hostBpm) useStore.setState({ beat: { ...beat, playing: !!beatRunning, following: !!beatFollowing, hostBpm } });
