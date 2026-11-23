@@ -202,7 +202,7 @@ function BeatText() {
   }, [steps]);
   return (
     <label className="sbn">
-      <span className="dim">As text</span>
+      <span className="dim">Beat as text</span>
       <input
         value={text}
         title={`B kick, t hat, Pf snare, K rimshot, ^K inward, ! click, m hum (m:43 sets its note), . rest. Up to ${MAX_BEAT_STEPS} steps.`}

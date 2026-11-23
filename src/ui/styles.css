@@ -700,13 +700,6 @@ input[type="range"]::-moz-range-thumb {
   color: var(--text-dim);
 }
 
-.transport {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
 .seq-grid {
   display: flex;
   flex-direction: column;
