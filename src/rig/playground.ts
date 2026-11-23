@@ -131,8 +131,16 @@ class Figure {
     () => activeSpeech?.figure === this && activeSpeech.planId === engine.lastPlan?.id
       ? speech.spokenWordNow() : null,
     V.white,
-    (view, lips) => view.X({ x: lips.x + 1, y: lips.y }) < view.X(lips) ? -1 : 1,
+    (view, lips) => {
+      // where 1 cm ahead of the lips lands across the screen, in cm there: ±1 in profile, about 0
+      // facing the camera (as a speaker turns to), where the sign is noise and would flip the
+      // words from side to side frame by frame. So the side changes only once the face is turned.
+      const ahead = (view.X({ x: lips.x + 1, y: lips.y }) - view.X(lips)) / view.pxPerCm;
+      if (Math.abs(ahead) > 0.3) this.wordSide = ahead < 0 ? -1 : 1;
+      return this.wordSide;
+    },
   );
+  private wordSide: 1 | -1 = 1;
   mouthBlend = 0;
   liveArtic: HumanArtic | null = null;
   tween: { from: Pose; to: Pose; start: number } | null = null;
