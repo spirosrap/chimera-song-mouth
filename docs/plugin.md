@@ -70,8 +70,11 @@ process could embed WebKitGTK in the DAW's window by its X11 window ID, showing 
 at the cost of a second executable to ship, WebKitGTK for users to install, and X11 only. A browser
 needs none of that, and works on Wayland.
 
-- **Bitwig** destroys the editor after 1 s if its parent gets no child window, so the editor maps
-  a plain X11 child there. [#158](https://github.com/jamesondh/chimera-vocal-synth/issues/158)
+- **Bitwig** (6.1.7, at least) destroys the editor after 1 s if its parent gets no child window, so
+  the editor maps a blank X11 child there, through x11rb: an X error is then the plugin's to log,
+  where Xlib's default handler would exit the DAW. The host's window is X11 either way (XWayland on a
+  Wayland desktop; nih-plug offers no other on Linux), and with no X display there's no child and
+  Bitwig closes the editor. [#158](https://github.com/jamesondh/chimera-vocal-synth/issues/158)
 - **Who can reach it:** the page's own files are public (they're the open-source site), but anything
   about the plugin needs the random token in the page's address, which the page keeps and sends as a
   header: a cookie would go to every service on 127.0.0.1, whatever its port. A request must also name
@@ -85,9 +88,10 @@ needs none of that, and works on Wayland.
   out, and after 3 s without an answer it says so and polls once a second until there is one. That also
   covers a host whose main thread is busy, on the other systems. The first request has no timeout, as
   nothing would try it again.
-- **Tested:** the token check by unit tests, and the X11 child's mapping and removal under Xvfb
-  on CI. In REAPER for Linux here, by hand: the plugin opened its
-  page, a click on Beatbox reached it, and closing the window stopped the server and the page said so.
+- **Tested:** the token check by unit tests, and under Xvfb on CI, the X11 child: mapped, gone
+  with the editor, and a parent already gone an error rather than an exit. In REAPER for Linux here,
+  by hand: the plugin opened its page, a click on Beatbox reached it, and closing the window stopped
+  the server and the page said so.
   In Bitwig 6.1.7 (demo, under Xvfb), CLAP and VST3: the server answered for 15 s with the child
   and stopped at 1 s without it; closing and opening the window again worked. REAPER keeps an editor
   with no child, so it never showed this. The host test on CI renders on Linux, and doesn't drive the

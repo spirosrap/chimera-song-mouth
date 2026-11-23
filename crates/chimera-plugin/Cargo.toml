@@ -32,4 +32,4 @@ objc2 = "0.6"
 objc2-core-foundation = { version = "0.3", default-features = false, features = ["std", "objc2", "CFCGTypes"] }
 
 [target.'cfg(target_os = "linux")'.dependencies]
-x11-dl = "2.21"
+x11rb = "0.13"

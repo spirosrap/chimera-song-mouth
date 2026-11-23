@@ -9,7 +9,10 @@ use std::process::Command;
 use std::sync::{Arc, Mutex};
 
 use nih_plug::prelude::*;
-use x11_dl::xlib::{Display, Window, Xlib};
+use x11rb::connection::Connection;
+use x11rb::protocol::xproto::{ConnectionExt as _, CreateWindowAux, Window, WindowClass};
+use x11rb::rust_connection::RustConnection;
+use x11rb::{COPY_DEPTH_FROM_PARENT, COPY_FROM_PARENT};
 
 use crate::ChimeraParams;
 use crate::bridge::{Bridge, GripAction, GuiHost, ParamHost};
@@ -79,50 +82,24 @@ impl ParamHost for Gated {
     fn grip(&self, _action: GripAction) {}
 }
 
-/// Bitwig destroys the editor after a second if its parent gets no child window.
+/// A blank window in the host's: Bitwig (6.1.7, at least) destroys an editor after a second if its
+/// parent gets no child window. Its own connection, so dropping it (closing that) makes the server
+/// destroy the window. Each request is checked: an error is ours to log, where Xlib's default
+/// handler would exit the process, the DAW.
 struct ChildWindow {
-    xlib: Xlib,
-    display: *mut Display,
-    /// the server destroys it with the connection; the test looks for it
+    _conn: RustConnection,
     #[cfg_attr(not(test), allow(dead_code))]
     window: Window,
 }
 
-// SAFETY: the connection belongs to this window alone. The host's GUI thread creates and drops it,
-// and the server thread never uses it.
-unsafe impl Send for ChildWindow {}
-
 impl ChildWindow {
-    fn new(parent: Window) -> Option<Self> {
-        let xlib = match Xlib::open() {
-            Ok(xlib) => xlib,
-            Err(err) => {
-                nih_error!("CHIMERA: could not load Xlib for the editor: {err}");
-                return None;
-            }
-        };
-        // SAFETY: the host supplies a live X11 parent on the default display.
-        unsafe {
-            let display = (xlib.XOpenDisplay)(std::ptr::null());
-            if display.is_null() {
-                nih_error!("CHIMERA: could not open the X display for the editor");
-                return None;
-            }
-            let window = (xlib.XCreateSimpleWindow)(display, parent, 0, 0, WINDOW.0, WINDOW.1, 0, 0, 0);
-            (xlib.XMapWindow)(display, window);
-            (xlib.XFlush)(display);
-            Some(Self { xlib, display, window })
-        }
-    }
-}
-
-impl Drop for ChildWindow {
-    fn drop(&mut self) {
-        // Closing the connection makes the server destroy the window. XDestroyWindow could name a
-        // window already gone with a host's parent, and Xlib's default handler for that error exits
-        // the process: the DAW.
-        // SAFETY: the display was opened by `new` and nothing else uses it.
-        unsafe { (self.xlib.XCloseDisplay)(self.display) };
+    fn new(parent: Window) -> Result<Self, Box<dyn std::error::Error>> {
+        let (conn, _) = RustConnection::connect(None)?;
+        let window = conn.generate_id()?;
+        let aux = CreateWindowAux::new().background_pixel(0);
+        conn.create_window(COPY_DEPTH_FROM_PARENT, window, parent, 0, 0, WINDOW.0 as u16, WINDOW.1 as u16, 0, WindowClass::INPUT_OUTPUT, COPY_FROM_PARENT, &aux)?.check()?;
+        conn.map_window(window)?.check()?;
+        Ok(Self { _conn: conn, window })
     }
 }
 
@@ -181,7 +158,7 @@ impl Editor for BrowserEditor {
             Err(err) => nih_error!("CHIMERA: could not open a browser ({err}): open {url}"),
         }
         let child = match parent {
-            ParentWindowHandle::X11Window(window) => ChildWindow::new(window.into()),
+            ParentWindowHandle::X11Window(window) => ChildWindow::new(window).map_err(|err| nih_error!("CHIMERA: no window in the host's ({err}): it may close the editor")).ok(),
             _ => None,
         };
         Box::new(Open { bridge, gate, server, _child: child })
@@ -204,9 +181,10 @@ impl Editor for BrowserEditor {
 #[cfg(test)]
 mod tests {
     use super::{ChildWindow, allowed};
-    use std::mem::MaybeUninit;
-    use std::ptr::{null, null_mut};
-    use x11_dl::xlib::{IsUnmapped, Xlib};
+    use x11rb::connection::Connection;
+    use x11rb::protocol::xproto::{ConnectionExt as _, CreateWindowAux, MapState, WindowClass};
+    use x11rb::rust_connection::RustConnection;
+    use x11rb::{COPY_DEPTH_FROM_PARENT, COPY_FROM_PARENT};
 
     const T: &str = "abc123";
     const HOST: Option<&str> = Some("127.0.0.1:4000");
@@ -214,48 +192,37 @@ mod tests {
     #[test]
     #[ignore = "needs an X display: linux/ci.sh runs it under xvfb-run"]
     fn the_x11_editor_maps_and_removes_its_child() {
-        let xlib = Xlib::open().expect("load Xlib");
-        unsafe {
-            let display = (xlib.XOpenDisplay)(null());
-            assert!(!display.is_null(), "open an X display");
-            let root = (xlib.XDefaultRootWindow)(display);
-            let parent = (xlib.XCreateSimpleWindow)(display, root, 0, 0, 400, 100, 0, 0, 0);
-            (xlib.XMapWindow)(display, parent);
-            (xlib.XSync)(display, 0);
+        let (conn, screen) = RustConnection::connect(None).expect("an X display");
+        let root = conn.setup().roots[screen].root;
+        let window = || {
+            let w = conn.generate_id().unwrap();
+            conn.create_window(COPY_DEPTH_FROM_PARENT, w, root, 0, 0, 400, 100, 0, WindowClass::INPUT_OUTPUT, COPY_FROM_PARENT, &CreateWindowAux::new()).unwrap().check().unwrap();
+            w
+        };
+        let children = |w| conn.query_tree(w).unwrap().reply().unwrap().children;
 
-            let children = || {
-                let (mut root, mut tree_parent, mut count) = (0, 0, 0);
-                let mut windows = null_mut();
-                assert_ne!((xlib.XQueryTree)(display, parent, &mut root, &mut tree_parent, &mut windows, &mut count), 0);
-                let only_child = if count == 1 { Some(*windows) } else { None };
-                if !windows.is_null() {
-                    (xlib.XFree)(windows.cast());
-                }
-                (count, only_child)
-            };
-
-            let child = ChildWindow::new(parent).expect("open the editor's X display");
-            // The parent and child use separate connections. Wait for the map before querying.
-            (xlib.XSync)(child.display, 0);
-            assert_eq!(children(), (1, Some(child.window)));
-            let mut attrs = MaybeUninit::uninit();
-            assert_ne!((xlib.XGetWindowAttributes)(display, child.window, attrs.as_mut_ptr()), 0);
-            assert_ne!(attrs.assume_init().map_state, IsUnmapped);
-
-            drop(child);
-            // the server destroys it once it has read the other connection's end
-            let mut left = children();
-            for _ in 0..100 {
-                if left == (0, None) {
-                    break;
-                }
-                std::thread::sleep(std::time::Duration::from_millis(10));
-                left = children();
+        // the host's window: the child is in it, mapped, and gone once the editor drops it
+        let parent = window();
+        let child = ChildWindow::new(parent).expect("a child window");
+        assert_eq!(children(parent), [child.window]);
+        let map = conn.get_window_attributes(child.window).unwrap().reply().unwrap().map_state;
+        assert_ne!(map, MapState::UNMAPPED);
+        drop(child);
+        // the server destroys it once it has read the other connection's end
+        let mut left = children(parent);
+        for _ in 0..100 {
+            if left.is_empty() {
+                break;
             }
-            assert_eq!(left, (0, None));
-            (xlib.XDestroyWindow)(display, parent);
-            (xlib.XCloseDisplay)(display);
+            std::thread::sleep(std::time::Duration::from_millis(10));
+            left = children(parent);
         }
+        assert!(left.is_empty(), "{left:?}");
+
+        // a parent already gone is an error to log, not the end of the process (Xlib's would be)
+        let gone = window();
+        conn.destroy_window(gone).unwrap().check().unwrap();
+        assert!(ChildWindow::new(gone).is_err());
     }
 
     #[test]
