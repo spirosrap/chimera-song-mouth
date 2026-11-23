@@ -19,6 +19,9 @@ or play a motion file from another tool).
 | `src/rig/view.ts` | the wireframe in CHIMERA's blue (and heat and weights views for finding faults) |
 | `src/rig/body.rig.bin` | the mesh, skeleton and weights (generated: `bun tools/rig/gen-body.ts`, never edited) |
 | `src/rig/demo.ts`, `rig.html` | the dev page (not in the app's build) |
+| `src/rig/nerves.ts` | the nerve x-ray: the body's nervous system as round lines, the head drawn to go with it |
+| `src/rig/xray.ts`, `xray.html` | its dev page (not in the app's build) |
+| `tools/rig/xray-video.ts` | its frames for a video, drawn one at a time |
 
 ## Use
 
@@ -151,6 +154,69 @@ rest joint `rig.H[i]`, and after `pose` its turn from rest `rig.S[i]` and joint 
   back to within 0.1 cm and the hands to 0.5°, the hips' height, a skeleton without toes, a
   one-frame clip, seeking, and the source moved by its parent.
 - `/rig.html`: look at it. A metric isn't the picture.
+
+## The nerve x-ray
+
+Another way to show the body, for videos: no skin and no grid, only a nervous system in red,
+purple and blue, and the head's recognisable parts (the eyes, nose and lips, and the vocal tract
+inside). Try it: `bun run dev`, then `/xray.html`.
+
+```ts
+import { Nerves, NerveView } from "./src/rig/nerves.ts";   // after initChimera, as the head
+const head = wearHead(rig, model);                         // no RigView: the skin isn't drawn
+const nerves = new Nerves(rig, head);                      // a second or three; leaves the rig at its neutral pose
+const view = new NerveView(nerves);                        // it sets how the head is drawn
+scene.add(view.mesh, head.mount);
+
+// on a new pose (or each frame of a motion)
+rig.pose(p);
+head.update(camera, artic, tele, dt);
+view.pose();                                               // the nerves where the bones are now
+
+// every frame
+view.update(camera, dt, canvasHeightCss);                  // before head.update: the face's look, the pulses
+head.update(camera, artic, tele, dt);
+view.resize(w, h, renderer.getPixelRatio());               // on resize
+```
+
+`view.look` is `"function"` (solid: motor nerves red, sensory blue, mixed purple),
+`"xray"` (seen through, near red to far blue) or `"signal"` (red at the brain to blue at the
+fingers and toes, pulses running out); `view.signal` (0–1) is how much of the pulses the first
+two show, `view.speed` how fast they run (cm/s). The page's bloom is part of the look.
+
+- **What's there:** the brain's folds (contours of a smooth noise field over the head's brain
+  outline), the cerebellum, brainstem, spinal cord and cauda equina; the spinal nerves at each
+  level, the brachial, lumbar and sacral plexuses and the limbs' named nerves; the intercostals;
+  the sympathetic chains; the vagus with its recurrent laryngeal loops; the cranial nerves to the
+  eyes, nose, face and tongue; and twigs forking out to just under the skin, which is what draws
+  the body's outline once the skin is gone. Laid out to read as a nervous system, not as anatomy
+  to rely on.
+- **Built on the body:** in the neutral pose, by casting rays from the bones out to the skin (a
+  nerve at so many degrees round a limb and so far out to its skin), from the joints, and in the
+  head's own frame for the head.
+- **Moving:** each point is bound to the bones of the skin nearest it, of its own part of the
+  body only (a hanging hand's nerves once took the weights of the thigh beside them); a twig
+  moves as the point it leaves its nerve at, weights are smoothed along a nerve, and a plexus's
+  run into a limb goes over from the trunk's to the limb's. Above the jaw's line, the head
+  carries them.
+- **Drawn as lines:** each piece a strip facing the camera, as wide as the nerve in cm (never
+  under about a px), shaded across as if round, joints cut square, its depth the round
+  surface's.
+- **The head:** its own brain, skull section, cervical spine and ears are left out
+  (`HeadDrawing.parts`); the eyes, nose and lips are drawn wider, white-cored and with the
+  nose's ridge (`parts.pop`), the nerves cleared away behind them while the face is towards the
+  camera; and all of it softer as the head gets small on screen, where its px-wide lines would
+  otherwise pile up and bloom to white.
+- **Not yet:** the face's nerves don't follow the jaw. A pose is redrawn in 8 to 22 ms here
+  (about 20,000 pieces), on the CPU: fine for stills and for a motion clip drawn frame by frame,
+  heavy for one played live.
+
+For a video, `xray.html?shot&video` keeps no clock of its own and seeds `Math.random` (the
+same blinks and glances in every take); `bun tools/rig/xray-video.ts <url> <out dir>` draws a
+turn round the body and a swing across the face frame by frame, to join with ffmpeg.
+
+`bun test tests/rig.test.ts` poses every preset and checks no nerve is pulled more than 2.5
+times (and 6 cm) longer than it was built.
 
 ## Provenance
 

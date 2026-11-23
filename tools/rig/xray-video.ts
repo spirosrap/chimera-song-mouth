@@ -2,7 +2,7 @@
  * A video of the nerve x-ray mock-up (xray.html?video), drawn frame by frame, so takes with
  * different settings match frame for frame: a turn round the whole body, then a swing across the
  * face. Writes PNG frames to <out dir>/f0000.png…; join them with ffmpeg.
- * Usage: bun tools/xray-video.ts <page url> <out dir> [query, e.g. "&draw=tubes&label=tubes"] [first frame] [last frame]
+ * Usage: bun tools/rig/xray-video.ts <page url> <out dir> [query, e.g. "&look=xray&label=x-ray"] [first frame] [last frame]
  */
 import { chromium } from "playwright-core";
 import { mkdirSync } from "node:fs";

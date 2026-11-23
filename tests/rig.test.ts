@@ -17,13 +17,14 @@ type Mods = {
   VoiceModel: typeof import("../src/ui/analysis.ts").VoiceModel;
   BODIES: typeof import("../src/ui/body.ts").PRESETS;
   REST_ARTIC: typeof import("../src/ui/render/anatomy3d.ts").REST_ARTIC;
+  nerves: typeof import("../src/rig/nerves.ts");
 };
 let M: Mods;
 beforeAll(async () => {
   await initEngine();
   // the head reads the engine's tables as it loads: after the engine
-  const [rig, pose, head, analysis, body, a3d, motion] = await Promise.all([import("../src/rig/rig.ts"), import("../src/rig/pose.ts"), import("../src/rig/head.ts"), import("../src/ui/analysis.ts"), import("../src/ui/body.ts"), import("../src/ui/render/anatomy3d.ts"), import("../src/rig/motion.ts")]);
-  M = { Rig: rig.Rig, motion, pose, head, VoiceModel: analysis.VoiceModel, BODIES: body.PRESETS, REST_ARTIC: a3d.REST_ARTIC };
+  const [rig, pose, head, analysis, body, a3d, motion, nerves] = await Promise.all([import("../src/rig/rig.ts"), import("../src/rig/pose.ts"), import("../src/rig/head.ts"), import("../src/ui/analysis.ts"), import("../src/ui/body.ts"), import("../src/ui/render/anatomy3d.ts"), import("../src/rig/motion.ts"), import("../src/rig/nerves.ts")]);
+  M = { Rig: rig.Rig, motion, pose, head, VoiceModel: analysis.VoiceModel, BODIES: body.PRESETS, REST_ARTIC: a3d.REST_ARTIC, nerves };
 });
 
 function loadRig(): RigT {
@@ -466,5 +467,28 @@ describe("motion from other tools", () => {
     moved.pose(0.5);
     motion.pose(0.5);
     expect(jointsApart(dst, still, false).cm).toBeLessThan(0.01);
+  });
+});
+
+describe("the nerve x-ray", () => {
+  test("its nerves follow every pose without one pulled across the body (a hanging hand's once bound to the thigh beside it)", () => {
+    const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
+    const nerves = new M.nerves.Nerves(rig, head), camera = new THREE.PerspectiveCamera();
+    // each fibre's gaps between its control points, at the neutral pose it was built in
+    const gaps = nerves.fibres.map((f) => f.p.slice(1).map((p, i) => p.distanceTo(f.p[i])));
+    const pulled: string[] = [];
+    for (const [name, pose] of Object.entries(M.pose.PRESETS)) {
+      rig.pose(pose);
+      head.update(camera, M.REST_ARTIC, null, 0);
+      nerves.pose();
+      nerves.fibres.forEach((f, i) => {
+        f.p.forEach((p, j) => {
+          if (![p.x, p.y, p.z].every(Number.isFinite)) pulled.push(`${name}: fibre ${i} point ${j} isn't finite`);
+          const was = gaps[i][j - 1], now = j ? p.distanceTo(f.p[j - 1]) : 0;
+          if (j && now > Math.max(2.5 * was, was + 6)) pulled.push(`${name}: fibre ${i} (kind ${f.kind}) gap ${j}: ${was.toFixed(1)} → ${now.toFixed(1)} cm at y ${p.y.toFixed(0)}`);
+        });
+      });
+    }
+    expect(pulled).toEqual([]);
   });
 });
