@@ -9,8 +9,10 @@ of its own. You pose it, skin it and draw it in your own three.js scene, frame b
 
 Run `bun run dev` and open `/rig.html`. Add figures with **+** and select them with their chips or
 by clicking a figure. Drag the canvas to orbit. Choose a voice, pitch, size, wireframe or nerve
-look, mouth opening and pose for each figure. Pitch is stored for future live speech. Open the
-joint groups on the right to adjust the pose. **Mirror** copies arm and leg edits to the other side
+look, mouth opening and pose for each figure. Use **▶** to pick a line or write one and press
+**Enter**. The selected figure speaks at its pitch, turning toward the camera over its pose or
+motion before returning to it and to the mouth slider. Open the joint groups on the right to
+adjust the pose. **Mirror** copies arm and leg edits to the other side
 and **copy pose** copies the selected figure's joint angles as code for `pose()`.
 
 A motion file loops on its figure. Editing that figure's pose, size, mouth or voice stops the clip.
@@ -85,7 +87,8 @@ motion.pose(seconds);                                 // loops; motion.duration,
 (`VoiceModel.articFromArray(msg.t.artic)`), or a recording replayed with `TeleTrack`
 (`chimera render notes … --tele voice.tele`, `src/show/tele.ts`). Without a voice, pass an
 articulation of your own (`REST_ARTIC` from `src/ui/render/anatomy3d.ts` is the mouth closed)
-and `null`. A different body (a child's voice, say) is a new rig and a new head: the head's skin
+and `null`. Set the mounted head's `head.head.gazeAtCamera` to aim its eyes at the camera.
+A different body (a child's voice, say) is a new rig and a new head: the head's skin
 is fitted to the model once.
 
 ## How it works

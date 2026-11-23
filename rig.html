@@ -8,7 +8,13 @@
   html, body { margin: 0; height: 100%; background: #000; color: #4fb6f2; font: 13px/1.4 ui-sans-serif, system-ui, sans-serif; overflow: hidden; }
   canvas { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
   .panel { position: fixed; box-sizing: border-box; background: rgb(0 0 0 / 75%); padding: 8px 10px; border: 1px solid #133954; border-radius: 6px; overflow: auto; }
-  #stage { left: 12px; bottom: 12px; max-width: min(840px, calc(100vw - 246px)); max-height: 40dvh; }
+  #stage-controls { position: fixed; left: 12px; bottom: 12px; max-width: min(840px, calc(100vw - 246px)); }
+  #stage { position: relative; max-height: 40dvh; }
+  #speech { position: absolute; left: 0; bottom: calc(100% + 6px); width: min(240px, 100%); max-height: 45dvh; background: #000; }
+  #speech button, #line { display: block; width: 100%; box-sizing: border-box; padding: 3px 5px; text-align: left; }
+  #speech button { border-color: transparent; }
+  #speech button:hover, #speech button:focus-visible { background: #092438; }
+  #line { margin-top: 5px; }
   #joints { right: 12px; top: 12px; width: 210px; max-height: calc(100dvh - 24px); }
   .row, #cast, #pulses { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center; }
   .row + .row { margin-top: 6px; }
@@ -31,19 +37,22 @@
   .joint output { text-align: right; font-variant-numeric: tabular-nums; }
   [hidden], body.shot .panel { display: none !important; }
   @media (max-width: 600px) {
-    #stage { left: 6px; right: 6px; bottom: 6px; max-width: none; max-height: 34dvh; }
+    #stage-controls { left: 6px; right: 6px; bottom: 6px; max-width: none; }
+    #stage { max-height: 34dvh; }
     #joints { right: 6px; top: 6px; max-height: 38dvh; }
   }
 </style>
 </head>
 <body>
 <canvas aria-label="Chimera stage"></canvas>
+<div id="stage-controls">
 <section id="stage" class="panel" aria-label="Stage controls" inert>
   <div class="row">
     <div id="cast" aria-label="Chimeras"></div>
     <div id="cast-tools">
       <button id="add" aria-label="Add chimera">+</button>
       <button id="remove" aria-label="Remove selected chimera">×</button>
+      <button id="speak" aria-label="Speak" aria-controls="speech" aria-expanded="false">▶</button>
     </div>
   </div>
   <div class="row">
@@ -71,6 +80,16 @@
     </div>
   </div>
 </section>
+<form id="speech" class="panel" aria-label="Speak a line" hidden>
+  <button type="button">Hello. Can you hear me?</button>
+  <button type="button">I am Chimera.</button>
+  <button type="button">Is this thing on?</button>
+  <button type="button">What should I sing?</button>
+  <button type="button">I can see right through you.</button>
+  <button type="button">There are more of us now.</button>
+  <input id="line" type="text" aria-label="Custom line" placeholder="Type a line and press Enter">
+</form>
+</div>
 <aside id="joints" class="panel" aria-label="Pose joints" inert>
   <div class="row">
     <label><input id="mirror" type="checkbox"> mirror</label>

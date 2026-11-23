@@ -6,27 +6,33 @@ import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 import { initChimera } from "../wasm/chimera.ts";
+import { engine } from "../audio/AudioEngine.ts";
 import { defaultF0, PRESETS as BODIES } from "../ui/body.ts";
 import type { HumanArtic } from "../wasm/types.ts";
 import type { BodyName, TelemetryMessage } from "../worklet/protocol.ts";
 import rigUrl from "./body.rig.bin?url";
 import { Motion, readMotion } from "./motion.ts";
 import { neutral, pose, PRESETS, RANGE, serializePose, type Pose } from "./pose.ts";
-import { Rig } from "./rig.ts";
+import { neckTurns, Rig } from "./rig.ts";
+import { aimNeck } from "./aimNeck.ts";
 import { RigView } from "./view.ts";
 import type { Nerves, NerveView, NerveLook } from "./nerves.ts";
 
 const rigBytes = fetch(rigUrl).then((res) => res.arrayBuffer());
 await initChimera();
 // These modules read the engine's tables when imported.
-const [{ wearHead, HEAD_LOOKS, HEAD_LOOK }, { VoiceModel }, { REST_ARTIC }, nervesModule, bytes] = await Promise.all([
+const [{ wearHead, HEAD_LOOKS, HEAD_LOOK }, { VoiceModel }, { REST_ARTIC }, nervesModule, speech, bytes] = await Promise.all([
   import("./head.ts"),
   import("../ui/analysis.ts"),
   import("../ui/render/anatomy3d.ts"),
   import("./nerves.ts"),
+  import("../ui/speech.ts"),
   rigBytes,
 ]);
 
+// WASM gives the same body and rate the same model handle. Keep the three possible models
+// for the page's lifetime so removing one figure cannot drop another figure's model.
+const models = new Map<BodyName, InstanceType<typeof VoiceModel>>();
 const canvas = document.querySelector("canvas")!;
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
@@ -47,6 +53,9 @@ const isNerveLook = (look: string): look is NerveLook => Object.hasOwn(NERVE_LOO
 const SETTINGS_KEY = "chimera-rig-playground";
 const SPACING = 60;
 const clamp = THREE.MathUtils.clamp;
+const lerp = THREE.MathUtils.lerp;
+const smooth = (t: number) => t * t * (3 - 2 * t);
+const cameraPosition = new THREE.Vector3();
 const finite = (value: unknown, fallback: number) => typeof value === "number" && Number.isFinite(value) ? value : fallback;
 const vector = (v: unknown): v is [number, number, number] =>
   Array.isArray(v) && v.length === 3 && v.every(Number.isFinite);
@@ -103,7 +112,6 @@ function figureState(saved?: Partial<FigureState> | null): FigureState {
 class Figure {
   readonly group = new THREE.Group();
   readonly rig = new Rig(bytes);
-  readonly model: InstanceType<typeof VoiceModel>;
   readonly head: ReturnType<typeof wearHead>;
   readonly floor: number;
   view: RigView | null = null;
@@ -112,6 +120,10 @@ class Figure {
   private skinned: Float32Array | null = null;
   private posed: Pose | null = null;
   private rigMoved = true;
+  private lookBlend = 0;
+  private neckAim: Pose["neck"] | null = null;
+  mouthBlend = 0;
+  liveArtic: HumanArtic | null = null;
   tween: { from: Pose; to: Pose; start: number } | null = null;
   motion: Motion | null = null;
   motionTime = 0;
@@ -119,8 +131,9 @@ class Figure {
   file: { data: ArrayBuffer; name: string; clips: string[]; index: number } | null = null;
 
   constructor(readonly state: FigureState) {
-    this.model = new VoiceModel(BODIES[state.voice], 48000);
-    this.head = wearHead(this.rig, this.model);
+    const model = models.get(state.voice) ?? new VoiceModel(BODIES[state.voice], 48000);
+    models.set(state.voice, model);
+    this.head = wearHead(this.rig, model);
     this.floor = Math.min(...this.rig.rest.filter((_, i) => i % 3 === 1));
     this.group.add(this.head.mount);
     this.resize();
@@ -171,31 +184,53 @@ class Figure {
     this.posed = null;
   }
 
-  updatePose(now: number, dt: number): void {
-    if (this.motion) {
-      this.motion.pose(this.motionTime += dt);
-      this.posed = null;
-      this.rigMoved = true;
-      return;
-    }
+  updatePose(now: number, elapsed: number): void {
     const tween = this.tween;
     if (tween) {
       const t = clamp((now - tween.start) / 500, 0, 1);
-      const eased = t * t * (3 - 2 * t);
+      const eased = smooth(t);
       const from = jointGroups(tween.from), to = jointGroups(tween.to);
       const p = neutral();
       jointGroups(p).forEach(({ angles, ranges }, i) => {
-        for (const key of Object.keys(ranges)) angles[key] = THREE.MathUtils.lerp(from[i].angles[key], to[i].angles[key], eased);
+        for (const key of Object.keys(ranges)) angles[key] = lerp(from[i].angles[key], to[i].angles[key], eased);
       });
       this.state.pose = t === 1 ? tween.to : p;
       if (t === 1) this.tween = null;
     }
-    // A live neck offset can be layered onto this pose before passing it to the rig.
+    const speaking = activeSpeech?.figure === this && activeSpeech.planId === engine.lastPlan?.id;
+    this.head.head.gazeAtCamera = speaking;
+    this.lookBlend = clamp(this.lookBlend + elapsed * (speaking ? 1 / 0.3 : -1 / 0.4), 0, 1);
     const p = this.state.pose;
-    if (this.posed === p) return;
-    this.rig.pose(p);
-    this.posed = p;
+    if (this.motion) this.motion.pose(this.motionTime += Math.min(elapsed, 0.1));
+    else if (this.posed !== p) this.rig.pose(p);
+    else if (!this.lookBlend) return;
+    this.posed = this.motion || this.lookBlend ? null : p;
     this.rigMoved = true;
+    if (!this.lookBlend) {
+      this.neckAim = null;
+      return;
+    }
+
+    // Both slider poses and motion clips end in world turns. Replace just the neck chain,
+    // blending its local joints so the rest of the moving skeleton stays on its clip.
+    const { rig } = this;
+    this.group.updateWorldMatrix(true, false);
+    const aim = aimNeck(rig, this.group.matrixWorld, camera.getWorldPosition(cameraPosition));
+    // Crossing directly behind the figure changes which shoulder is nearer the camera.
+    const step = Math.min(elapsed, 0.1) * 360;
+    if (this.neckAim) {
+      aim.twist = clamp(aim.twist, this.neckAim.twist - step, this.neckAim.twist + step);
+      aim.flex = clamp(aim.flex, this.neckAim.flex - step, this.neckAim.flex + step);
+    }
+    this.neckAim = aim;
+    const [lower, upper] = neckTurns(aim);
+    const neck = rig.bone("neck"), head = rig.bone("head");
+    const trunk = rig.W[rig.bones[neck].parent];
+    const headLocal = rig.W[neck].clone().invert().multiply(rig.W[head]);
+    const blend = smooth(this.lookBlend);
+    rig.W[neck].slerp(lower.premultiply(trunk), blend);
+    rig.W[head].copy(headLocal.slerp(upper, blend).premultiply(rig.W[neck]));
+    rig.poseWorld(rig.W, rig.P[0]);
   }
 
   draw(dt: number, artic: HumanArtic, tele: TelemetryMessage | null): void {
@@ -215,13 +250,13 @@ class Figure {
   }
 
   dispose(): void {
+    if (activeSpeech?.figure === this) cancelSpeech();
     this.stopMotion();
     this.group.removeFromParent();
     this.group.clear();
     this.view?.dispose();
     this.xray?.dispose();
     this.head.dispose();
-    this.model.dispose();
   }
 }
 
@@ -272,6 +307,86 @@ options("preset", ["custom", ...Object.keys(PRESETS)]);
 select("preset").options[0].disabled = true;
 
 const notice = el<HTMLOutputElement>("notice");
+const speechMenu = el<HTMLFormElement>("speech");
+interface SpeechRequest {
+  figure: Figure;
+  controller: AbortController;
+  planId: number | null;
+  tele: TelemetryMessage | null;
+}
+let activeSpeech: SpeechRequest | null = null;
+let startingAudio: Promise<void> | null = null;
+let audioBody: BodyName | null = null;
+
+function cancelSpeech(): void {
+  if (!activeSpeech) return;
+  activeSpeech.controller.abort();
+  activeSpeech = null;
+  speech.stopSpeaking();
+}
+
+async function say(text: string): Promise<void> {
+  if (!text.trim()) return;
+  setSpeechMenu(false, true);
+  cancelSpeech();
+  const request: SpeechRequest = { figure: current(), controller: new AbortController(), planId: null, tele: null };
+  activeSpeech = request;
+  notice.value = "";
+  try {
+    // Start/resume in the input gesture. Reuse a pending start so two quick picks share the worklet.
+    startingAudio ??= engine.start().finally(() => { startingAudio = null; });
+    await startingAudio;
+    if (activeSpeech !== request) return;
+    if (!engine.running) throw new Error("Audio did not start");
+    const { voice, pitch } = request.figure.state;
+    const body = BODIES[voice];
+    if (voice !== audioBody) {
+      engine.setBody(body);
+      audioBody = voice;
+    }
+    // A fresh engine already has the human source defaults and gate off. The score supplies breath.
+    engine.setSource({ f0: pitch });
+    const plan = await speech.speakText(text, { ipa: false, body, rate: speech.DEFAULT_SPEECH_RATE, f0: pitch, signal: request.controller.signal });
+    if (activeSpeech !== request) return;
+    if (plan?.plan.segments.length) request.planId = plan.id;
+    else cancelSpeech();
+  } catch (error) {
+    if (activeSpeech !== request) return;
+    cancelSpeech();
+    notice.value = error instanceof Error ? error.message : String(error);
+  }
+}
+
+engine.onRebuilt(() => {
+  audioBody = null;
+  cancelSpeech();
+});
+engine.onTelemetry((msg) => {
+  const request = activeSpeech, plan = engine.lastPlan;
+  if (!request || request.planId === null || plan?.id !== request.planId || msg.t.clock < plan.t0 || msg.t.clock >= plan.end) return;
+  request.tele = msg;
+  request.figure.liveArtic = VoiceModel.articFromArray(msg.t.artic);
+});
+
+function setSpeechMenu(open: boolean, restoreFocus = false): void {
+  speechMenu.hidden = !open;
+  button("speak").setAttribute("aria-expanded", String(open));
+  if (open) speechMenu.querySelector("button")?.focus();
+  else if (restoreFocus) button("speak").focus();
+}
+
+button("speak").onclick = () => setSpeechMenu(speechMenu.hidden === true);
+for (const line of speechMenu.querySelectorAll("button")) line.onclick = () => void say(line.textContent!);
+speechMenu.onsubmit = (e) => {
+  e.preventDefault();
+  void say(field("line").value);
+};
+document.addEventListener("pointerdown", (e) => {
+  if (!speechMenu.hidden && e.target instanceof Node && !speechMenu.contains(e.target) && !button("speak").contains(e.target)) {
+    setSpeechMenu(false);
+  }
+});
+
 const sliders: ((groups: ReturnType<typeof jointGroups>) => void)[] = [];
 jointGroups(neutral()).forEach(({ label, ranges }, index) => {
   const group = document.createElement("details"), summary = document.createElement("summary");
@@ -600,13 +715,27 @@ canvas.addEventListener("pointerup", (e) => {
   press = null;
 });
 window.addEventListener("keydown", (e) => {
-  if (e.target instanceof HTMLSelectElement) return;
-  if (e.key.toLowerCase() === "h" && !e.repeat && !e.ctrlKey && !e.metaKey && !e.altKey) document.body.classList.toggle("shot");
+  if (e.key === "Escape" && !speechMenu.hidden) {
+    e.preventDefault();
+    setSpeechMenu(false, true);
+    return;
+  }
+  if (e.target instanceof HTMLElement && e.target.matches("select, input[type=text], input[type=number], textarea")) return;
+  if (e.key.toLowerCase() === "h" && !e.repeat && !e.ctrlKey && !e.metaKey && !e.altKey) {
+    setSpeechMenu(false);
+    document.body.classList.toggle("shot");
+  }
 });
 
 function articulation(f: Figure): { artic: HumanArtic; tele: TelemetryMessage | null } {
   const open = 1.8 * f.state.mouth;
-  return { artic: { ...REST_ARTIC, jaw: open, lipAp: open }, tele: null };
+  const artic = { ...REST_ARTIC, jaw: open, lipAp: open };
+  if (f.liveArtic && f.mouthBlend) {
+    for (const key of Object.keys(artic) as (keyof HumanArtic)[]) {
+      artic[key] = lerp(artic[key], f.liveArtic[key], smooth(f.mouthBlend));
+    }
+  }
+  return { artic, tele: activeSpeech?.figure === f ? activeSpeech.tele : null };
 }
 
 resize();
@@ -624,13 +753,17 @@ controls.addEventListener("change", requestSave);
 
 let last = performance.now();
 renderer.setAnimationLoop((now) => {
-  const dt = clamp((now - last) / 1000, 0, 0.1);
+  const elapsed = Math.max(0, (now - last) / 1000);
+  const dt = Math.min(elapsed, 0.1);
   last = now;
   const easing = current().tween !== null;
   controls.update();
+  if (activeSpeech?.planId != null && !speech.speakingNow()) activeSpeech = null;
   let xrays = 0, nerveStrength = 0, nerveClose = 0;
   for (const f of figures) {
-    f.updatePose(now, dt);
+    f.updatePose(now, elapsed);
+    const live = activeSpeech?.figure === f && activeSpeech.tele !== null;
+    f.mouthBlend = clamp(f.mouthBlend + elapsed * (live ? 1 / 0.08 : -1 / 0.12), 0, 1);
     const { artic, tele } = articulation(f);
     f.draw(dt, artic, tele);
     if (f.xray) {
