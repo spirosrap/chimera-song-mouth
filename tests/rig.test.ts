@@ -594,6 +594,28 @@ describe("the nerve x-ray", () => {
     expect(worst).toBeLessThan(0.05);
   });
 
+  test("the by-function look is calmed from the torso view in, not only at the head (its arms and cord washed out white there)", () => {
+    const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
+    const view = new M.nerves.NerveView(new M.nerves.Nerves(rig, head)), camera = new THREE.PerspectiveCamera(30, 1, 5, 5000);
+    const target = new THREE.Vector3(1, 12, 0).applyMatrix4(head.mount.matrix);
+    /** how calmed it is with the head at this many px per cm on a 900 px canvas */
+    const close = (look: "function" | "xray", pxPerCm: number) => {
+      view.look = look;
+      const d = 900 / (2 * pxPerCm * Math.tan((15 * Math.PI) / 180));
+      camera.position.copy(target).add(new THREE.Vector3(1, 0.1, 0.45).normalize().multiplyScalar(d));
+      camera.lookAt(target);
+      camera.updateMatrixWorld(true);
+      view.update(camera, M.REST_ARTIC, null, 0, 900);
+      return view.close;
+    };
+    // the playground's body, torso and head views on a 900 px canvas: about 3.5, 8.6 and 16
+    expect(close("function", 3.5)).toBe(0);
+    expect(close("function", 8.6)).toBeGreaterThan(0.5);
+    expect(close("function", 16)).toBe(1);
+    // the x-ray by depth wasn't washed out there: as it was
+    expect(close("xray", 8.6)).toBeLessThan(0.01);
+  });
+
   test("its nerves are in the rig's own frame, wherever the rig's parent puts it (the head's were once moved by it twice)", () => {
     const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
     const nerves = new M.nerves.Nerves(rig, head), view = new M.nerves.NerveView(nerves), camera = new THREE.PerspectiveCamera();

@@ -1375,8 +1375,10 @@ export class NerveView {
     head.head.drawing.bone = mix(0.12, 0.3);
     this.parts.pop = mix(1.1, 2.2);
     // and from head and shoulders in, everything dimmer: the nerves widen on screen (they're so
-    // many cm wide), and their white highlights and the glow over them would wash the face out
-    this.close = THREE.MathUtils.smoothstep(pxPerCm, 8, 30);
+    // many cm wide), and their white highlights and the glow over them would wash the face out.
+    // The function look's solid nerves wash out from further off (the torso view, the arms and
+    // cord white); the others' dark middles hold out until head and shoulders.
+    this.close = U.uMode.value === 0 ? THREE.MathUtils.smoothstep(pxPerCm, 4, 12) : THREE.MathUtils.smoothstep(pxPerCm, 8, 30);
     U.uBright.value = 1 - 0.35 * this.close;
     head.update(camera, artic, tele, dt);
     // the x-ray's depth range, in the view's depth as the shader measures it: the body's (about the
