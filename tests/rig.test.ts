@@ -491,4 +491,55 @@ describe("the nerve x-ray", () => {
     }
     expect(pulled).toEqual([]);
   });
+
+  test("where nerves meet they stay met in every pose, and a twig stays on its nerve (a plexus once came apart at the armpit by 11 cm)", () => {
+    const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
+    const nerves = new M.nerves.Nerves(rig, head), camera = new THREE.PerspectiveCamera();
+    // the points that are one place at the neutral pose the nerves were built in
+    const groups = new Map<string, THREE.Vector3[]>();
+    for (const f of nerves.fibres) {
+      for (const p of f.p) {
+        const k = [p.x, p.y, p.z].map((c) => Math.round(c * 100)).join();
+        groups.set(k, [...(groups.get(k) ?? []), p]);
+      }
+    }
+    const joins = [...groups.values()].filter((g) => g.length > 1);
+    expect(joins.length).toBeGreaterThan(100);
+    /** how far a point is off a polyline */
+    const off = (q: THREE.Vector3, line: THREE.Vector3[]) => Math.min(...line.slice(1).map((b, i) => new THREE.Line3(line[i], b).closestPointToPoint(q, true, new THREE.Vector3()).distanceTo(q)));
+    const apart: string[] = [];
+    for (const [name, pose] of Object.entries(M.pose.PRESETS)) {
+      rig.pose(pose);
+      head.update(camera, M.REST_ARTIC, null, 0);
+      nerves.pose();
+      for (const g of joins) {
+        const d = Math.max(...g.map((p) => p.distanceTo(g[0])));
+        if (d > 0.05) apart.push(`${name}: a junction at y ${g[0].y.toFixed(0)} came ${d.toFixed(2)} cm apart`);
+      }
+      for (const f of nerves.fibres) if (f.twig?.first && off(f.p[0], f.twig.of.p) > 0.05) apart.push(`${name}: a twig ${off(f.p[0], f.twig.of.p).toFixed(1)} cm off its nerve`);
+    }
+    expect(apart).toEqual([]);
+  });
+
+  test("its nerves are in the rig's own frame, wherever the rig's parent puts it (the head's were once moved by it twice)", () => {
+    const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
+    const nerves = new M.nerves.Nerves(rig, head), view = new M.nerves.NerveView(nerves), camera = new THREE.PerspectiveCamera();
+    camera.position.set(300, 40, 175);
+    const posed = () => {
+      rig.pose(M.pose.PRESETS.run);
+      view.update(camera, M.REST_ARTIC, null, 1 / 60, 900);
+      view.pose();
+      return nerves.fibres.flatMap((f) => f.p.map((p) => p.clone()));
+    };
+    const alone = posed();
+    // the same rig put 30 cm along by a parent of the nerves' mesh and the head's mount
+    const parent = new THREE.Group();
+    parent.position.set(30, 0, -12);
+    parent.add(view.mesh, head.mount);
+    parent.updateMatrixWorld(true);
+    const moved = posed();
+    expect(Math.max(...alone.map((p, i) => p.distanceTo(moved[i])))).toBeLessThan(1e-4);
+    expect(alone.every((p) => [p.x, p.y, p.z].every(Number.isFinite))).toBe(true);
+    expect((view.mesh.geometry as THREE.InstancedBufferGeometry).instanceCount).toBeGreaterThan(10000);
+  });
 });

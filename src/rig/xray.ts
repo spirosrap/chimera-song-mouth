@@ -5,9 +5,7 @@
  * turn round it. Dev only (not in the app's build). See docs/rig.md.
  *
  * URL: ?look=function|xray|signal&pose=<preset>&view=body|front|back|torso|head|side&signal=0..1
- *      &speed=<cm/s>&mouth=0..1&label=<text>&shot (without the form)
- *      &video: no clock of its own, the same blinks and glances every time; tools/rig/xray-video.ts
- *      draws it frame by frame (window.xrayRender)
+ *      &speed=<cm/s>&mouth=0..1&shot (without the form)
  */
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
@@ -19,17 +17,6 @@ import { initChimera } from "../wasm/chimera.ts";
 import rigUrl from "./body.rig.bin?url";
 
 const q = new URLSearchParams(location.search);
-if (q.has("video")) {
-  // a seeded Math.random: the eyes' glances and blinks are the same in every take
-  let a = 12345;
-  Math.random = () => {
-    a = (a + 0x6d2b79f5) >>> 0;
-    let t = Math.imul(a ^ (a >>> 15), a | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
 await initChimera();
 // the head reads the engine's tables as it loads, so it comes after the engine
 const [{ Rig }, { PRESETS }, { wearHead }, { VoiceModel }, { PRESETS: BODIES }, { REST_ARTIC }, { Nerves, NerveView }] = await Promise.all([
@@ -43,7 +30,6 @@ const [{ Rig }, { PRESETS }, { wearHead }, { VoiceModel }, { PRESETS: BODIES }, 
 ]);
 type NerveLook = import("./nerves.ts").NerveLook;
 
-document.getElementById("label")!.textContent = q.get("label") ?? "";
 const canvas = document.querySelector("canvas")!;
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 // the head's colours are the app's display values, passed through as the app's 3D view does
@@ -85,9 +71,10 @@ const setPulses = () => {
   view.signal = Number(field("signal").value);
   view.speed = Number(field("speed").value);
 };
+/** a new pose: the head placed for it (no time passing), then the nerves */
 const setPose = () => {
   rig.pose(PRESETS[field("pose").value] ?? PRESETS.neutral);
-  head.update(camera, artic(), null, 0);
+  view.update(camera, artic(), null, 0, innerHeight);
   view.pose();
 };
 field("look").onchange = setLook;
@@ -135,31 +122,12 @@ function resize(): void {
 addEventListener("resize", resize);
 resize();
 
-const W = window as unknown as { xrayReady: boolean; xrayRender: (t: number, where: string, az: number, dist: number, elev: number) => void };
-if (q.has("video")) {
-  // one frame at t seconds, the camera on a circle round the body or the head: azimuth from the
-  // front (degrees, + to its right), distance and height (cm)
-  let last = 0;
-  W.xrayRender = (t, where, az, dist, elev) => {
-    const at = target(where), a = (az * Math.PI) / 180;
-    camera.position.set(at.x + dist * Math.cos(a), at.y + elev, at.z + dist * Math.sin(a));
-    camera.lookAt(at);
-    const dt = t > last ? t - last : 1 / 30;
-    last = t;
-    view.update(camera, dt, innerHeight, t * view.speed);
-    head.update(camera, artic(), null, dt);
-    composer.render();
-  };
-  W.xrayReady = true;
-} else {
-  let last = performance.now(), frames = 0;
-  renderer.setAnimationLoop((now) => {
-    const dt = Math.max(0, Math.min(0.1, (now - last) / 1000));
-    last = now;
-    controls.update();
-    view.update(camera, dt, innerHeight);
-    head.update(camera, artic(), null, dt);
-    composer.render();
-    if (++frames === 8) W.xrayReady = true;
-  });
-}
+let last = performance.now(), frames = 0;
+renderer.setAnimationLoop((now) => {
+  const dt = Math.max(0, Math.min(0.1, (now - last) / 1000));
+  last = now;
+  controls.update();
+  view.update(camera, artic(), null, dt, innerHeight);
+  composer.render();
+  if (++frames === 8) (window as unknown as { xrayReady: boolean }).xrayReady = true;
+});

@@ -20,9 +20,9 @@
  *   const head = wearHead(rig, model);                    // the head, as for a RigView (no RigView needed)
  *   const nerves = new Nerves(rig, head);                 // leaves the rig in its neutral pose
  *   const view = new NerveView(nerves);                   // draws the head as the x-ray has it
- *   scene.add(view.mesh, head.mount);
- *   // on a new pose: rig.pose(p); head.update(…); view.pose();
- *   // every frame:   view.update(camera, dt, height);   then head.update(camera, artic, tele, dt)
+ *   scene.add(view.mesh, head.mount);                     // under the same parent
+ *   // every frame: rig.pose(p) if it moves; view.update(camera, artic, tele, dt, height) (it updates the head);
+ *   //              then view.pose() if the rig moved
  * Render with `renderer.outputColorSpace = THREE.LinearSRGBColorSpace`, as the head.
  */
 import * as THREE from "three";
@@ -30,6 +30,8 @@ import type { Rig } from "./rig.ts";
 import type { RigHead } from "./head.ts";
 import { neutral } from "./pose.ts";
 import type { VoiceModel } from "../ui/analysis.ts";
+import type { HumanArtic } from "../wasm/types.ts";
+import type { TelemetryMessage } from "../worklet/protocol.ts";
 import { bodyPoint, buildProfile } from "../ui/render/profile.ts";
 import { REST_ARTIC } from "../ui/render/anatomy3d.ts";
 
@@ -53,8 +55,10 @@ export interface Fibre {
   seed: number;
   /** the part of the body it binds to: torso, or a limb (and the torso within `r` of the limb's root) */
   region: Region;
-  /** a twig's: where it leaves its nerve; the whole twig moves as that point does */
-  root?: V3;
+  /** a twig's: the nerve it leaves, where (`t` of the way from its point `j` to the next: a share
+   *  of its length would land elsewhere once it's posed and its pieces stretch unevenly); it moves
+   *  as the nerve does there, and its first piece (`first`) starts on the nerve */
+  twig?: { of: Fibre; j: number; t: number; first: boolean };
   /** a nerve from the trunk into a limb: up to this point it's bound as the trunk, then its
    *  weights go over evenly to its last point's (bound in its region), so the limb's swing is
    *  shared along it */
@@ -98,19 +102,19 @@ const len = (p: V3[]) => {
   return L;
 };
 
-/** the point and direction at a fraction of a polyline's length */
-function along(p: V3[], u: number): { at: V3; dir: V3; s: number } {
+/** the point and direction at a fraction of a polyline's length, and the piece it's on (`j`: from point j to j + 1) and how far along that (`t`) */
+function along(p: V3[], u: number): { at: V3; dir: V3; s: number; j: number; t: number } {
   const L = len(p), s = Math.max(0, Math.min(1, u)) * L;
   let acc = 0;
   for (let i = 1; i < p.length; i++) {
     const d = p[i].distanceTo(p[i - 1]);
     if (acc + d >= s || i === p.length - 1) {
-      const t = d > 0 ? (s - acc) / d : 0;
-      return { at: p[i - 1].clone().lerp(p[i], Math.min(1, t)), dir: p[i].clone().sub(p[i - 1]).normalize(), s };
+      const t = Math.min(1, d > 0 ? (s - acc) / d : 0);
+      return { at: p[i - 1].clone().lerp(p[i], t), dir: p[i].clone().sub(p[i - 1]).normalize(), s, j: i - 1, t };
     }
     acc += d;
   }
-  return { at: p[0].clone(), dir: v(0, -1, 0), s: 0 };
+  return { at: p[0].clone(), dir: v(0, -1, 0), s: 0, j: 0, t: 0 };
 }
 
 /** a unit vector perpendicular to `t`, at a random turn about it */
@@ -130,12 +134,15 @@ export class Nerves {
   private readonly B: (x: number, y: number) => { x: number; y: number };
   private readonly T: { P(x: number, y: number): { x: number; y: number } };
   private readonly side = [1, -1] as const;
-  /** each control point's binding: to the head (its point in the head's cm), or to bones */
-  private bind: { head?: V3; bones?: { b: number; w: number; r: V3 }[] }[][] = [];
+  /** each control point's binding: to the head (its point in the head's cm), to bones (its point
+   *  in each bone's rest frame), or, a twig's, to where it leaves its nerve (its offset from there
+   *  in each bone's rest frame) */
+  private bind: { head?: V3; bones?: { b: number; w: number; r: V3 }[]; off?: { b: number; w: number; r: V3 }[]; offHead?: V3 }[][] = [];
   /** the region fibres being added now bind to */
   private region: Region = { chain: "torso" };
-  /** the point a twig being added now leaves its nerve at */
+  /** the twig being added now: the point it leaves its nerve at, and that nerve and how far along it */
   private root: V3 | undefined;
+  private twigOf: { of: Fibre; j: number; t: number } | undefined;
 
   private readonly headM: THREE.Matrix4;
   private readonly model: VoiceModel;
@@ -146,7 +153,8 @@ export class Nerves {
     const skinned = new Float32Array(3 * rig.n);
     rig.skin(skinned);
     head.update(new THREE.PerspectiveCamera(), REST_ARTIC, null, 0);
-    this.headM = head.mount.matrixWorld.clone();
+    // the head's place in the rig's frame (the mount's own matrix: whatever its parent, the nerves are drawn in that parent's frame too)
+    this.headM = head.mount.matrix.clone();
     this.model = head.model;
     this.k = head.model.tract.scale;
     this.B = bodyPoint(head.model);
@@ -171,7 +179,8 @@ export class Nerves {
   // ------------------------------------------------------------------ tools
   private add(p: V3[], r0: number, r1: number, kind: number, d0 = 0, step = 1.2): Fibre {
     // its own copies: a junction (the armpit, a fork) is many fibres' point, and each is bound and posed as its fibre is
-    const f: Fibre = { p: p.map((q) => q.clone()), r0, r1, kind, d0, step, seed: this.rnd(), region: this.region, root: this.root };
+    const twig = this.twigOf && { ...this.twigOf, first: p[0] === this.root };
+    const f: Fibre = { p: p.map((q) => q.clone()), r0, r1, kind, d0, step, seed: this.rnd(), region: this.region, twig };
     if (p.length >= 2 && len(p) > 0.2) this.fibres.push(f);
     return f;
   }
@@ -276,8 +285,9 @@ export class Nerves {
   private twigs(f: Fibre, every: number, o: { motor?: number; far?: number; r?: number; reach?: number } = {}): void {
     const L = len(f.p), rnd = this.rnd, motor = o.motor ?? 0.4, far = o.far ?? 16, r = o.r ?? 0.07;
     for (let s = every * (0.3 + 0.5 * rnd()); s < L - 0.5; s += every * (0.6 + 0.8 * rnd())) {
-      const { at, dir } = along(f.p, s / L);
+      const { at, dir, j, t } = along(f.p, s / L);
       this.root = at;
+      this.twigOf = this.fibres.includes(f) ? { of: f, j, t } : undefined;
       const out = perp(dir, rnd);
       const h = this.hit(at, out, far);
       if (h < 0.9 || h >= far) continue;
@@ -306,6 +316,7 @@ export class Nerves {
       }
     }
     this.root = undefined;
+    this.twigOf = undefined;
   }
 
   // ------------------------------------------------------------------ the whole system
@@ -923,57 +934,92 @@ export class Nerves {
       const t = [...wb].sort((a, b) => b[1] - a[1]).slice(0, 4), sum = t.reduce((s, [, w]) => s + w, 0);
       return t.map(([b, w]) => [b, w / sum] as const);
     };
+    type Weights = Map<number, number>;
+    const sum = (m: Weights) => [...m.values()].reduce((s, x) => s + x, 0) || 1;
+    /** a mix of weight maps, each counted as summing to its share */
+    const mixOf = (parts: [Weights, number][]): Weights => {
+      const m: Weights = new Map();
+      for (const [w, k] of parts) w.forEach((x, b) => m.set(b, (m.get(b) ?? 0) + (k * x) / sum(w)));
+      return m;
+    };
+    /** a point bound: carried by the head (its point in the head's cm) or by bones */
+    type Bind = (typeof this.bind)[number][number];
+    const byBones = (p: V3, w: Weights): Bind => ({ bones: top(w).map(([b, x]) => ({ b, w: x, r: p.clone().sub(rig.P[b]).applyQuaternion(rig.S[b].clone().invert()).divideScalar(rig.sc[b]).add(rig.H[b]) })) });
+    // the head carries what is above the jaw's line; the neck's nerves twist with the neck's skin
+    const headward = (p: V3) => {
+      const local = p.clone().applyMatrix4(inv);
+      return local.y > 6 * this.k || p.y > rimY + 14 ? local : null;
+    };
+
+    // 1. each nerve's weights along it, smoothed, so no two neighbouring points follow different
+    //    bones (a limb's nerve near the torso, or a root by the shoulder, would be pulled apart as
+    //    the arm rises); a plexus's run into a limb goes over from the trunk's to the limb's
+    const TRUNK: Region = { chain: "torso" };
+    const nerveW = new Map<Fibre, (Weights | null)[]>();
     for (const f of this.fibres) {
-      // the head carries what is above the jaw's line; the neck's nerves twist with the neck's skin
-      const local = f.p.map((p) => p.clone().applyMatrix4(inv));
-      const onHead = f.p.map((p, i) => local[i].y > 6 * this.k || p.y > rimY + 14);
-      // A twig moves as the point it leaves its nerve at. Along a nerve the weights are smoothed,
-      // so no two neighbouring points follow different bones (a limb's nerve near the torso, or a
-      // root by the shoulder, would be pulled apart as the arm rises).
-      const rootW = f.root ? weightsAt(f.root, f.region) : null;
-      const TRUNK: Region = { chain: "torso" };
-      let W = f.p.map((p, i) => (onHead[i] ? new Map<number, number>() : (rootW ?? weightsAt(p, f.blendFrom !== undefined && i < f.p.length - 1 ? TRUNK : f.region))));
+      if (f.twig) continue;
+      const onHead = f.p.map((p) => headward(p) !== null);
+      let W = f.p.map((p, i) => (onHead[i] ? new Map() : weightsAt(p, f.blendFrom !== undefined && i < f.p.length - 1 ? TRUNK : f.region)));
       if (f.blendFrom !== undefined) {
-        const a = f.blendFrom, b = f.p.length - 1, A = W[a], B = W[b];
-        for (let i = a + 1; i < b; i++) {
-          const t = (i - a) / (b - a), m = new Map<number, number>();
-          const sum = (x: Map<number, number>) => [...x.values()].reduce((s, y) => s + y, 0) || 1;
-          A.forEach((x, k) => m.set(k, (m.get(k) ?? 0) + ((1 - t) * x) / sum(A)));
-          B.forEach((x, k) => m.set(k, (m.get(k) ?? 0) + (t * x) / sum(B)));
-          W[i] = m;
-        }
-      } else if (!rootW) {
+        const a = f.blendFrom, b = f.p.length - 1;
+        for (let i = a + 1; i < b; i++) W[i] = mixOf([[W[a], 1 - (i - a) / (b - a)], [W[b], (i - a) / (b - a)]]);
+      } else {
         for (let pass = 0; pass < 3; pass++) {
           W = W.map((w, i) => {
             if (onHead[i]) return w;
-            const out = new Map<number, number>();
-            const put = (m: Map<number, number>, k: number) => m.forEach((x, b) => out.set(b, (out.get(b) ?? 0) + k * x));
-            const sum = (m: Map<number, number>) => [...m.values()].reduce((s, x) => s + x, 0) || 1;
-            // each map scaled to sum 1, so a point near much skin doesn't outweigh its neighbours
-            const nb = [W[i - 1], W[i + 1]].filter((m, j) => m && !onHead[i + (j ? 1 : -1)]) as Map<number, number>[];
-            put(w, 0.5 / sum(w));
-            for (const m of nb) put(m, 0.5 / nb.length / sum(m));
-            return out;
+            const nb = [i - 1, i + 1].filter((j) => j >= 0 && j < W.length && !onHead[j]);
+            return mixOf([[w, 0.5], ...nb.map((j) => [W[j], 0.5 / nb.length] as [Weights, number])]);
           });
         }
       }
-      this.bind.push(
-        f.p.map((p, i) => {
-          if (onHead[i]) return { head: local[i] };
-          return { bones: top(W[i]).map(([b, w]) => ({ b, w, r: p.clone().sub(rig.P[b]).applyQuaternion(rig.S[b].clone().invert()).divideScalar(rig.sc[b]).add(rig.H[b]) })) };
-        }),
-      );
+      nerveW.set(f, W.map((w, i) => (onHead[i] ? null : w)));
+    }
+    // 2. where nerves meet (a plexus's node, the armpit, a nerve's split) they share a point: its
+    //    weights are all of theirs, so it can't come apart as they're posed
+    const key = (p: V3) => `${Math.round(p.x * 100)},${Math.round(p.y * 100)},${Math.round(p.z * 100)}`;
+    const meet = new Map<string, Weights[]>();
+    for (const [f, W] of nerveW) f.p.forEach((p, i) => W[i] && meet.set(key(p), [...(meet.get(key(p)) ?? []), W[i]!]));
+    const final = (f: Fibre, i: number): Weights | null => {
+      const w = nerveW.get(f)?.[i];
+      if (!w) return null;
+      const all = meet.get(key(f.p[i]))!;
+      return all.length > 1 ? mixOf(all.map((x) => [x, 1 / all.length])) : w;
+    };
+    // 3. a twig moves as its nerve does where it leaves it (or with the head, if the head carries the nerve there)
+    const twigW = ({ of, j, t }: NonNullable<Fibre["twig"]>): Weights | null => {
+      const a = final(of, j), b = final(of, j + 1);
+      return a && b ? mixOf([[a, 1 - t], [b, t]]) : null;
+    };
+    const headTurn = new THREE.Matrix3().setFromMatrix4(inv);
+    for (const f of this.fibres) {
+      if (f.twig) {
+        // it hangs off its nerve where it leaves it, turned as the nerve's bones turn there (or as
+        // the head does, where the head carries the nerve)
+        const { of, j, t } = f.twig, w = twigW(f.twig), root = of.p[j].clone().lerp(of.p[j + 1], t);
+        this.bind.push(f.p.map((p) => (w ? { off: top(w).map(([b, x]) => ({ b, w: x, r: p.clone().sub(root).applyQuaternion(rig.S[b].clone().invert()).divideScalar(rig.sc[b]) })) } : { offHead: p.clone().sub(root).applyMatrix3(headTurn) })));
+      } else {
+        this.bind.push(f.p.map((p, i) => {
+          const w = final(f, i);
+          return w ? byBones(p, w) : { head: headward(p)! };
+        }));
+      }
     }
   }
 
   /** move every control point to the rig's pose now (and the head's place: after head.update) */
   pose(): void {
-    const rig = this.rig, q = v(), headM = this.head.mount.matrixWorld;
+    const rig = this.rig, q = v(), headM = this.head.mount.matrix, headTurn = new THREE.Matrix3().setFromMatrix4(headM);
     this.fibres.forEach((f, i) => {
+      // a twig's nerve was posed before it (it was made first)
+      const root = f.twig ? f.twig.of.p[f.twig.j].clone().lerp(f.twig.of.p[f.twig.j + 1], f.twig.t) : null;
       f.p.forEach((p, j) => {
         const b = this.bind[i][j];
         if (b.head) p.copy(b.head).applyMatrix4(headM);
-        else {
+        else if (b.offHead) p.copy(b.offHead).applyMatrix3(headTurn).add(root!);
+        else if (b.off) {
+          p.copy(root!);
+          for (const { b: bi, w, r } of b.off) p.addScaledVector(q.copy(r).multiplyScalar(rig.sc[bi]).applyQuaternion(rig.S[bi]), w);
+        } else {
           p.set(0, 0, 0);
           for (const { b: bi, w, r } of b.bones!) p.addScaledVector(q.copy(r).sub(rig.H[bi]).multiplyScalar(rig.sc[bi]).applyQuaternion(rig.S[bi]).add(rig.P[bi]), w);
         }
@@ -1083,14 +1129,13 @@ varying float vDepth;
 varying vec3 vW;
 void main() {
   vec3 A = (modelMatrix * vec4(iA, 1.0)).xyz, B = (modelMatrix * vec4(iB, 1.0)).xyz;
-  vec3 ax = B - A;
-  float L = length(ax);
-  vec3 dir = L > 1e-5 ? ax / L : vec3(0.0, 1.0, 0.0);
   vec3 mid = 0.5 * (A + B);
   vec3 toCam = normalize(cameraPosition - mid);
+  // the piece as seen: its axis laid in the plane facing the camera (end-on, it's a disc)
+  vec3 ax = (B - A) - toCam * dot(B - A, toCam);
+  float L = length(ax);
+  vec3 dir = L > 1e-4 ? ax / L : normalize(cross(toCam, abs(toCam.y) < 0.99 ? vec3(0.0, 1.0, 0.0) : vec3(1.0, 0.0, 0.0)));
   vec3 side = cross(dir, toCam);
-  float sl = length(side);
-  side = sl > 1e-4 ? side / sl : normalize(cross(toCam, vec3(0.0, 1.0, 0.0001)));
   // never thinner on screen than uMinPx: a line drawn wider than it is is dimmer for it
   float pxPerCm = uRes.y * projectionMatrix[1][1] / (2.0 * max(1.0, distance(cameraPosition, mid)));
   float r = max(max(iRD.x, iRD.y), 1e-4);
@@ -1100,11 +1145,12 @@ void main() {
   // the strip covers the capsule round the piece: its length and a radius past each end
   float a = position.x * (L + 2.0 * R) - R;
   float b = position.y * R;
-  vec3 w = A + dir * a + side * b;
+  vec3 w = mid - dir * (0.5 * L) + dir * a + side * b;
   vQ = vec2(a, b);
   vSeg = vec3(L, iRD.x * grow, iRD.y * grow);
   vD = iRD.zw;
-  vCap = iK.zw;
+  // joints are cut square, but not a piece seen nearly end-on: its round ends are all there is of it
+  vCap = L < R ? vec2(1.0) : iK.zw;
   vPx = pxPerCm;
   vKind = iK.x;
   vSeed = iK.y;
@@ -1269,11 +1315,12 @@ export class NerveView {
   }
 
   /**
-   * Every frame, before head.update: the face drawn for its size on screen, the pulses moved on
-   * `dt` seconds (or put at `at`: how far they've run, cm), the x-ray's depth range, and the
-   * clearings behind the face's features. `height`: the canvas's height in CSS px.
+   * Every frame, in place of head.update (it calls it): the face drawn for its size on screen, the
+   * head, then the pulses moved on `dt` seconds (or put at `at`: how far they've run, cm), the
+   * x-ray's depth range and the clearings behind the face's features. `height`: the canvas's
+   * height in CSS px. After it, if the rig moved: pose().
    */
-  update(camera: THREE.PerspectiveCamera, dt: number, height: number, at?: number): void {
+  update(camera: THREE.PerspectiveCamera, artic: HumanArtic, tele: TelemetryMessage | null, dt: number, height: number, at?: number): void {
     const head = this.head, U = this.mat.uniforms, M = head.mount.matrixWorld;
     const headC = this.v3.set(1, 12, 0).applyMatrix4(M), dHead = camera.position.distanceTo(headC);
     // The face's lines are so many px wide whatever the head's size on screen: seen whole-body
@@ -1286,13 +1333,10 @@ export class NerveView {
     head.head.drawing.bone = mix(0.12, 0.3);
     this.parts.pop = mix(1.1, 2);
     this.parts.cores = near > 0.45;
-    // the head's lines over the nerves, never hidden by them
-    head.mount.traverse((o) => {
-      const m = (o as THREE.Mesh).material as THREE.Material | undefined;
-      if (m && m.depthTest) m.depthTest = false;
-    });
+    head.update(camera, artic, tele, dt);
     // the x-ray's depth range: the head's near and far sides close up, the body's further off
-    const close = dHead < 150, d = close ? dHead : camera.position.distanceTo(this.nerves.rig.P[0]), span = close ? 14 : 30;
+    const close = dHead < 150, hips = this.w3.copy(this.nerves.rig.P[0]).applyMatrix4(this.mesh.matrixWorld);
+    const d = close ? dHead : camera.position.distanceTo(hips), span = close ? 14 : 30;
     U.uNear.value = d - span;
     U.uFar.value = d + span;
     this.run = at ?? this.run + dt * this.speed;

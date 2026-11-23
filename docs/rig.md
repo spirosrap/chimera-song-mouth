@@ -21,7 +21,6 @@ or play a motion file from another tool).
 | `src/rig/demo.ts`, `rig.html` | the dev page (not in the app's build) |
 | `src/rig/nerves.ts` | the nerve x-ray: the body's nervous system as round lines, the head drawn to go with it |
 | `src/rig/xray.ts`, `xray.html` | its dev page (not in the app's build) |
-| `tools/rig/xray-video.ts` | its frames for a video, drawn one at a time |
 
 ## Use
 
@@ -166,16 +165,12 @@ import { Nerves, NerveView } from "./src/rig/nerves.ts";   // after initChimera,
 const head = wearHead(rig, model);                         // no RigView: the skin isn't drawn
 const nerves = new Nerves(rig, head);                      // a second or three; leaves the rig at its neutral pose
 const view = new NerveView(nerves);                        // it sets how the head is drawn
-scene.add(view.mesh, head.mount);
-
-// on a new pose (or each frame of a motion)
-rig.pose(p);
-head.update(camera, artic, tele, dt);
-view.pose();                                               // the nerves where the bones are now
+scene.add(view.mesh, head.mount);                          // under the same parent
 
 // every frame
-view.update(camera, dt, canvasHeightCss);                  // before head.update: the face's look, the pulses
-head.update(camera, artic, tele, dt);
+rig.pose(p);                                               // if it moves (a motion: motion.pose(t))
+view.update(camera, artic, tele, dt, canvasHeightCss);     // in place of head.update: it calls it
+view.pose();                                               // if the rig moved: the nerves where the bones are now
 view.resize(w, h, renderer.getPixelRatio());               // on resize
 ```
 
@@ -195,13 +190,15 @@ two show, `view.speed` how fast they run (cm/s). The page's bloom is part of the
   nerve at so many degrees round a limb and so far out to its skin), from the joints, and in the
   head's own frame for the head.
 - **Moving:** each point is bound to the bones of the skin nearest it, of its own part of the
-  body only (a hanging hand's nerves once took the weights of the thigh beside them); a twig
-  moves as the point it leaves its nerve at, weights are smoothed along a nerve, and a plexus's
-  run into a limb goes over from the trunk's to the limb's. Above the jaw's line, the head
-  carries them.
+  body only (a hanging hand's nerves once took the weights of the thigh beside them). Weights
+  are smoothed along a nerve, a plexus's run into a limb goes over from the trunk's to the
+  limb's, and where nerves meet they share one binding. A twig hangs off its nerve where it
+  leaves it (the piece and how far along it), turned as the nerve's bones turn there. Above the
+  jaw's line, the head carries them. All of it is in the rig's frame: the mesh and the head's
+  mount go under the same parent.
 - **Drawn as lines:** each piece a strip facing the camera, as wide as the nerve in cm (never
-  under about a px), shaded across as if round, joints cut square, its depth the round
-  surface's.
+  under about a px), shaded across as if round, its joints cut square (rounded where it's seen
+  end-on), its depth the round surface's.
 - **The head:** its own brain, skull section, cervical spine and ears are left out
   (`HeadDrawing.parts`); the eyes, nose and lips are drawn wider, white-cored and with the
   nose's ridge (`parts.pop`), the nerves cleared away behind them while the face is towards the
@@ -211,12 +208,11 @@ two show, `view.speed` how fast they run (cm/s). The page's bloom is part of the
   (about 20,000 pieces), on the CPU: fine for stills and for a motion clip drawn frame by frame,
   heavy for one played live.
 
-For a video, `xray.html?shot&video` keeps no clock of its own and seeds `Math.random` (the
-same blinks and glances in every take); `bun tools/rig/xray-video.ts <url> <out dir>` draws a
-turn round the body and a swing across the face frame by frame, to join with ffmpeg.
+`xray.html?shot` hides the form (for a screen recording).
 
 `bun test tests/rig.test.ts` poses every preset and checks no nerve is pulled more than 2.5
-times (and 6 cm) longer than it was built.
+times (and 6 cm) longer than it was built, that nerves stay joined where they meet and twigs on
+their nerves, and that a parent's transform moves it all once.
 
 ## Provenance
 
