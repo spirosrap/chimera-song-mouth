@@ -122,12 +122,11 @@ function resize(): void {
 addEventListener("resize", resize);
 resize();
 
-let last = performance.now(), frames = 0;
+let last = performance.now();
 renderer.setAnimationLoop((now) => {
   const dt = Math.max(0, Math.min(0.1, (now - last) / 1000));
   last = now;
   controls.update();
   view.update(camera, artic(), null, dt, innerHeight);
   composer.render();
-  if (++frames === 8) (window as unknown as { xrayReady: boolean }).xrayReady = true;
 });

@@ -492,7 +492,7 @@ describe("the nerve x-ray", () => {
     expect(pulled).toEqual([]);
   });
 
-  test("where nerves meet they stay met in every pose, and a twig stays on its nerve (a plexus once came apart at the armpit by 11 cm)", () => {
+  test("where nerves meet they stay met in every pose, and a twig stays on its nerve as drawn (a plexus once came apart at the armpit by 11 cm, a twig off its curve by 1.5 cm)", () => {
     const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
     const nerves = new M.nerves.Nerves(rig, head), camera = new THREE.PerspectiveCamera();
     // the points that are one place at the neutral pose the nerves were built in
@@ -516,7 +516,12 @@ describe("the nerve x-ray", () => {
         const d = Math.max(...g.map((p) => p.distanceTo(g[0])));
         if (d > 0.05) apart.push(`${name}: a junction at y ${g[0].y.toFixed(0)} came ${d.toFixed(2)} cm apart`);
       }
-      for (const f of nerves.fibres) if (f.twig?.first && off(f.p[0], f.twig.of.p) > 0.05) apart.push(`${name}: a twig ${off(f.p[0], f.twig.of.p).toFixed(1)} cm off its nerve`);
+      // against the line its nerve is drawn along (a curve through its points, not the straight line between them)
+      for (const f of nerves.fibres) {
+        if (!f.twig?.first) continue;
+        const d = off(f.p[0], M.nerves.drawnLine(f.twig.of));
+        if (d > 0.01) apart.push(`${name}: a twig ${d.toFixed(2)} cm off its nerve as drawn`);
+      }
     }
     expect(apart).toEqual([]);
   });
@@ -525,21 +530,24 @@ describe("the nerve x-ray", () => {
     const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
     const nerves = new M.nerves.Nerves(rig, head), view = new M.nerves.NerveView(nerves), camera = new THREE.PerspectiveCamera();
     camera.position.set(300, 40, 175);
+    /** the nerves' points in the rig's frame, and where the clearing behind the right eye is in the world */
     const posed = () => {
       rig.pose(M.pose.PRESETS.run);
       view.update(camera, M.REST_ARTIC, null, 1 / 60, 900);
       view.pose();
-      return nerves.fibres.flatMap((f) => f.p.map((p) => p.clone()));
+      const eye = (view.mat.uniforms.uClear.value as THREE.Vector4[])[0];
+      return { points: nerves.fibres.flatMap((f) => f.p.map((p) => p.clone())), eye: new THREE.Vector3(eye.x, eye.y, eye.z) };
     };
     const alone = posed();
     // the same rig put 30 cm along by a parent of the nerves' mesh and the head's mount
     const parent = new THREE.Group();
     parent.position.set(30, 0, -12);
     parent.add(view.mesh, head.mount);
-    parent.updateMatrixWorld(true);
+    // (its world matrix not brought up to date first: update does that)
     const moved = posed();
-    expect(Math.max(...alone.map((p, i) => p.distanceTo(moved[i])))).toBeLessThan(1e-4);
-    expect(alone.every((p) => [p.x, p.y, p.z].every(Number.isFinite))).toBe(true);
+    expect(Math.max(...alone.points.map((p, i) => p.distanceTo(moved.points[i])))).toBeLessThan(1e-4);
+    expect(moved.eye.clone().sub(alone.eye).distanceTo(parent.position)).toBeLessThan(1e-4);
+    expect(alone.points.every((p) => [p.x, p.y, p.z].every(Number.isFinite))).toBe(true);
     expect((view.mesh.geometry as THREE.InstancedBufferGeometry).instanceCount).toBeGreaterThan(10000);
   });
 });

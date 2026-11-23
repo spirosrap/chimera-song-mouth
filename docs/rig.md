@@ -171,7 +171,8 @@ scene.add(view.mesh, head.mount);                          // under the same par
 rig.pose(p);                                               // if it moves (a motion: motion.pose(t))
 view.update(camera, artic, tele, dt, canvasHeightCss);     // in place of head.update: it calls it
 view.pose();                                               // if the rig moved: the nerves where the bones are now
-view.resize(w, h, renderer.getPixelRatio());               // on resize
+head.resize(w, h);                                         // on resize
+view.resize(w, h, renderer.getPixelRatio());
 ```
 
 `view.look` is `"function"` (solid: motor nerves red, sensory blue, mixed purple),

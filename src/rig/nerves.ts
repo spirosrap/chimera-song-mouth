@@ -117,6 +117,20 @@ function along(p: V3[], u: number): { at: V3; dir: V3; s: number; j: number; t: 
   return { at: p[0].clone(), dir: v(0, -1, 0), s: 0, j: 0, t: 0 };
 }
 
+/** the curve drawn through a fibre's points (Catmull-Rom), from its point i towards the next, t of the way */
+function curveAt(P: V3[], i: number, t: number): V3 {
+  const n = P.length, p0 = P[Math.max(0, i - 1)], p1 = P[i], p2 = P[Math.min(n - 1, i + 1)], p3 = P[Math.min(n - 1, i + 2)];
+  const t2 = t * t, t3 = t2 * t, out = v();
+  for (const c of ["x", "y", "z"] as const) out[c] = 0.5 * (2 * p1[c] + (-p0[c] + p2[c]) * t + (2 * p0[c] - 5 * p1[c] + 4 * p2[c] - p3[c]) * t2 + (-p0[c] + 3 * p1[c] - 3 * p2[c] + p3[c]) * t3);
+  return out;
+}
+
+/** the line a fibre is drawn along (sampled from its curve every `step` or so, as `sampled`), from its point i towards the next, t of the way */
+function drawnAt(P: V3[], step: number, i: number, t: number): V3 {
+  const m = Math.max(1, Math.ceil(P[i].distanceTo(P[i + 1]) / step)), k = Math.min(m - 1, Math.floor(t * m));
+  return curveAt(P, i, k / m).lerp(curveAt(P, i, (k + 1) / m), t * m - k);
+}
+
 /** a unit vector perpendicular to `t`, at a random turn about it */
 function perp(t: V3, rnd: () => number): V3 {
   const a = Math.abs(t.y) < 0.9 ? v(0, 1, 0) : v(1, 0, 0);
@@ -285,7 +299,9 @@ export class Nerves {
   private twigs(f: Fibre, every: number, o: { motor?: number; far?: number; r?: number; reach?: number } = {}): void {
     const L = len(f.p), rnd = this.rnd, motor = o.motor ?? 0.4, far = o.far ?? 16, r = o.r ?? 0.07;
     for (let s = every * (0.3 + 0.5 * rnd()); s < L - 0.5; s += every * (0.6 + 0.8 * rnd())) {
-      const { at, dir, j, t } = along(f.p, s / L);
+      const { dir, j, t } = along(f.p, s / L);
+      // on the line the nerve is drawn along (a curve through its points), not the straight one between them
+      const at = drawnAt(f.p, f.step, j, t);
       this.root = at;
       this.twigOf = this.fibres.includes(f) ? { of: f, j, t } : undefined;
       const out = perp(dir, rnd);
@@ -986,17 +1002,21 @@ export class Nerves {
       return all.length > 1 ? mixOf(all.map((x) => [x, 1 / all.length])) : w;
     };
     // 3. a twig moves as its nerve does where it leaves it (or with the head, if the head carries the nerve there)
-    const twigW = ({ of, j, t }: NonNullable<Fibre["twig"]>): Weights | null => {
-      const a = final(of, j), b = final(of, j + 1);
-      return a && b ? mixOf([[a, 1 - t], [b, t]]) : null;
+    /** a twig's frame: its nerve's bones' weights there, and how much of it is the head's (where the head carries one end of the nerve's piece) */
+    const twigW = ({ of, j, t }: NonNullable<Fibre["twig"]>): { w: Weights; head: number } => {
+      const ends: [Weights | null, number][] = [[final(of, j), 1 - t], [final(of, j + 1), t]];
+      return { w: mixOf(ends.filter(([w]) => w) as [Weights, number][]), head: ends.reduce((h, [w, k]) => h + (w ? 0 : k), 0) };
     };
     const headTurn = new THREE.Matrix3().setFromMatrix4(inv);
     for (const f of this.fibres) {
       if (f.twig) {
         // it hangs off its nerve where it leaves it, turned as the nerve's bones turn there (or as
         // the head does, where the head carries the nerve)
-        const { of, j, t } = f.twig, w = twigW(f.twig), root = of.p[j].clone().lerp(of.p[j + 1], t);
-        this.bind.push(f.p.map((p) => (w ? { off: top(w).map(([b, x]) => ({ b, w: x, r: p.clone().sub(root).applyQuaternion(rig.S[b].clone().invert()).divideScalar(rig.sc[b]) })) } : { offHead: p.clone().sub(root).applyMatrix3(headTurn) })));
+        const { of, j, t } = f.twig, { w, head } = twigW(f.twig), root = drawnAt(of.p, of.step, j, t);
+        this.bind.push(f.p.map((p) => ({
+          off: head < 1 ? top(w).map(([b, x]) => ({ b, w: x * (1 - head), r: p.clone().sub(root).applyQuaternion(rig.S[b].clone().invert()).divideScalar(rig.sc[b]) })) : [],
+          offHead: p.clone().sub(root).applyMatrix3(headTurn).multiplyScalar(head),
+        })));
       } else {
         this.bind.push(f.p.map((p, i) => {
           const w = final(f, i);
@@ -1011,13 +1031,13 @@ export class Nerves {
     const rig = this.rig, q = v(), headM = this.head.mount.matrix, headTurn = new THREE.Matrix3().setFromMatrix4(headM);
     this.fibres.forEach((f, i) => {
       // a twig's nerve was posed before it (it was made first)
-      const root = f.twig ? f.twig.of.p[f.twig.j].clone().lerp(f.twig.of.p[f.twig.j + 1], f.twig.t) : null;
+      const root = f.twig ? drawnAt(f.twig.of.p, f.twig.of.step, f.twig.j, f.twig.t) : null;
       f.p.forEach((p, j) => {
         const b = this.bind[i][j];
         if (b.head) p.copy(b.head).applyMatrix4(headM);
-        else if (b.offHead) p.copy(b.offHead).applyMatrix3(headTurn).add(root!);
         else if (b.off) {
-          p.copy(root!);
+          // the head's share of the turn is in offHead already
+          p.copy(b.offHead!).applyMatrix3(headTurn).add(root!);
           for (const { b: bi, w, r } of b.off) p.addScaledVector(q.copy(r).multiplyScalar(rig.sc[bi]).applyQuaternion(rig.S[bi]), w);
         } else {
           p.set(0, 0, 0);
@@ -1121,6 +1141,7 @@ varying vec2 vQ;
 varying vec3 vSeg;
 varying vec2 vD;
 varying vec2 vCap;
+varying vec2 vEnds;
 varying float vPx;
 varying float vCover;
 varying float vKind;
@@ -1149,12 +1170,15 @@ void main() {
   vQ = vec2(a, b);
   vSeg = vec3(L, iRD.x * grow, iRD.y * grow);
   vD = iRD.zw;
-  // joints are cut square, but not a piece seen nearly end-on: its round ends are all there is of it
-  vCap = L < R ? vec2(1.0) : iK.zw;
+  // joints are cut square, but not a piece seen end-on: its round ends are all there is of it
+  // (only then: where lines add up, the overlapping ends of a chain of such pieces glow)
+  vCap = L < 0.3 * R ? vec2(1.0) : iK.zw;
   vPx = pxPerCm;
   vKind = iK.x;
   vSeed = iK.y;
   vW = w;
+  // its ends' own depths: the strip lies in one plane, the piece doesn't
+  vEnds = vec2(-(viewMatrix * vec4(A, 1.0)).z, -(viewMatrix * vec4(B, 1.0)).z);
   vec4 mv = viewMatrix * vec4(w, 1.0);
   vDepth = -mv.z;
   gl_Position = projectionMatrix * mv;
@@ -1167,6 +1191,7 @@ varying vec2 vQ;
 varying vec3 vSeg;
 varying vec2 vD;
 varying vec2 vCap;
+varying vec2 vEnds;
 varying float vPx;
 varying float vCover;
 void main() {
@@ -1178,8 +1203,10 @@ void main() {
   float q = length(vec2(vQ.x - clamp(vQ.x, 0.0, L), vQ.y)) / r;
   if (q >= 1.0) discard;
   float ndv = sqrt(1.0 - q * q);
-  // the round surface's depth, nearer than the strip by its bulge: crossing nerves cut each other as tubes would
-  vec4 clip = projectionMatrix * vec4(0.0, 0.0, r * ndv - vDepth, 1.0);
+  // the round surface's depth: the piece's own there (its near end, seen end-on), nearer by the
+  // bulge, so crossing nerves cut each other as tubes would
+  float depth = L < r ? min(vEnds.x, vEnds.y) : mix(vEnds.x, vEnds.y, t);
+  vec4 clip = projectionMatrix * vec4(0.0, 0.0, r * ndv - depth, 1.0);
   gl_FragDepth = 0.5 * clip.z / clip.w + 0.5;
   // the outermost px soft, where lines add up (a solid line just ends: a soft edge would be a dark fringe over what's behind)
   float edge = uMode < 0.5 ? 1.0 : clamp((1.0 - q) * r * vPx + 0.5, 0.0, 1.0);
@@ -1210,20 +1237,18 @@ const uniforms = () => ({
 /** a fibre smoothed (Catmull-Rom through its points) and sampled every `step` or so, with the distance along it */
 function sampled(f: Fibre): { pts: V3[]; cum: number[] } {
   const P = f.p, n = P.length, pts: V3[] = [];
-  const cr = (p0: V3, p1: V3, p2: V3, p3: V3, t: number) => {
-    const t2 = t * t, t3 = t2 * t, out = v();
-    for (const c of ["x", "y", "z"] as const) out[c] = 0.5 * (2 * p1[c] + (-p0[c] + p2[c]) * t + (2 * p0[c] - 5 * p1[c] + 4 * p2[c] - p3[c]) * t2 + (-p0[c] + 3 * p1[c] - 3 * p2[c] + p3[c]) * t3);
-    return out;
-  };
   for (let i = 0; i < n - 1; i++) {
     const m = Math.max(1, Math.ceil(P[i].distanceTo(P[i + 1]) / f.step));
-    for (let j = 0; j < m; j++) pts.push(cr(P[Math.max(0, i - 1)], P[i], P[i + 1], P[Math.min(n - 1, i + 2)], j / m));
+    for (let j = 0; j < m; j++) pts.push(curveAt(P, i, j / m));
   }
   pts.push(P[n - 1].clone());
   const cum = [0];
   for (let i = 1; i < pts.length; i++) cum.push(cum[i - 1] + pts[i].distanceTo(pts[i - 1]));
   return { pts, cum };
 }
+
+/** the line a fibre is drawn along, where it is now (for checking what's drawn) */
+export const drawnLine = (f: Fibre): V3[] => sampled(f).pts;
 
 /** the face's features in the head's cm, and how far round each the nerves clear away behind it */
 function features(head: RigHead): [V3, number][] {
@@ -1321,8 +1346,14 @@ export class NerveView {
    * height in CSS px. After it, if the rig moved: pose().
    */
   update(camera: THREE.PerspectiveCamera, artic: HumanArtic, tele: TelemetryMessage | null, dt: number, height: number, at?: number): void {
-    const head = this.head, U = this.mat.uniforms, M = head.mount.matrixWorld;
-    const headC = this.v3.set(1, 12, 0).applyMatrix4(M), dHead = camera.position.distanceTo(headC);
+    const head = this.head, U = this.mat.uniforms, M = head.mount.matrixWorld, rig = this.nerves.rig;
+    // everything where it is now, in the world: the rig's frame (the mesh's), the camera
+    this.mesh.updateWorldMatrix(true, false);
+    camera.updateWorldMatrix(true, false);
+    const eye = camera.getWorldPosition(new THREE.Vector3());
+    // the head's middle (half way up its bone; the mount is placed by head.update, below)
+    const hb = rig.bone("head"), headC = this.v3.copy(rig.P[hb]).lerp(rig.P[hb].clone().add(this.w3.fromArray(rig.bones[hb].tail).sub(rig.H[hb]).applyQuaternion(rig.S[hb])), 0.5).applyMatrix4(this.mesh.matrixWorld);
+    const dHead = eye.distanceTo(headC);
     // The face's lines are so many px wide whatever the head's size on screen: seen whole-body
     // they'd pile into a few px and bloom to white. So they're drawn as bright, as wide and with
     // white cores only as the head comes close; far off, softer and thinner, the vocal tract dimmer.
@@ -1334,9 +1365,10 @@ export class NerveView {
     this.parts.pop = mix(1.1, 2);
     this.parts.cores = near > 0.45;
     head.update(camera, artic, tele, dt);
-    // the x-ray's depth range: the head's near and far sides close up, the body's further off
-    const close = dHead < 150, hips = this.w3.copy(this.nerves.rig.P[0]).applyMatrix4(this.mesh.matrixWorld);
-    const d = close ? dHead : camera.position.distanceTo(hips), span = close ? 14 : 30;
+    // the x-ray's depth range, in the view's depth as the shader measures it: the head's near and
+    // far sides close up, the body's further off
+    const close = dHead < 150, middle = close ? headC : this.w3.copy(rig.P[0]).applyMatrix4(this.mesh.matrixWorld);
+    const d = -middle.applyMatrix4(camera.matrixWorldInverse).z, span = close ? 14 : 30;
     U.uNear.value = d - span;
     U.uFar.value = d + span;
     this.run = at ?? this.run + dt * this.speed;
@@ -1347,7 +1379,7 @@ export class NerveView {
       const w = this.w3.copy(p).applyMatrix4(M);
       (U.uClear.value as THREE.Vector4[])[i].set(w.x, w.y, w.z, r);
     });
-    const fwd = this.v3.set(1, 0, 0).transformDirection(M), toCam = this.w3.copy(this.feats[3][0]).applyMatrix4(M).sub(camera.position).negate().normalize();
+    const fwd = this.v3.set(1, 0, 0).transformDirection(M), toCam = this.w3.copy(this.feats[3][0]).applyMatrix4(M).sub(eye).negate().normalize();
     U.uClearAmt.value = THREE.MathUtils.smoothstep(fwd.dot(toCam), -0.2, 0.35);
   }
 
