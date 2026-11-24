@@ -1,0 +1,364 @@
+{
+  "setting": "stonerolls",
+  "title": "OK Go · A Stone Only Rolls Downhill",
+  "description": "A single yellow-case phone on a concrete slab multiplies into two, four, twelve chevron-striped phones, a spinning phone-inside-phone Droste tunnel, a 35-phone cable-wired wall with arm starbursts and tartan plaid, and an 8x8 64-phone mosaic reveal. Original instrumental with two physical CHIMERA voices.",
+  "duration": 236.518458,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "stone-lead",
+      "name": "Damian Kulash",
+      "role": "Lead vocals",
+      "tele": "stone-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "stone-harmony",
+      "name": "OK Go Harmonies",
+      "role": "Answering refrains and stacked harmonies",
+      "tele": "stone-harmony.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 7.86,
+      "end": 14.88,
+      "text": "I wish I could say it would all be all right",
+      "speaker": "stone-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 15.04,
+      "end": 16.72,
+      "text": "It'll all be all right",
+      "speaker": "stone-harmony",
+      "intensity": 0.8
+    },
+    {
+      "start": 17.12,
+      "end": 24.38,
+      "text": "I wish I could tell you it would all be fine",
+      "speaker": "stone-lead",
+      "intensity": 0.86
+    },
+    {
+      "start": 24.68,
+      "end": 26.4,
+      "text": "It'll all be just fine",
+      "speaker": "stone-harmony",
+      "intensity": 0.82
+    },
+    {
+      "start": 27.14,
+      "end": 32.16,
+      "text": "But a stone only rolls downhill",
+      "speaker": "stone-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 32.24,
+      "end": 37.14,
+      "text": "And these things they'll be what they will",
+      "speaker": "stone-lead",
+      "intensity": 0.86
+    },
+    {
+      "start": 37.38,
+      "end": 40.6,
+      "text": "What they will",
+      "speaker": "stone-lead",
+      "intensity": 0.84
+    },
+    {
+      "start": 56.96,
+      "end": 64.6,
+      "text": "Someday soon you'll look out from your hilltop perch",
+      "speaker": "stone-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.38,
+      "end": 72.58,
+      "text": "Your heart worn out from trying to make sense of the arc",
+      "speaker": "stone-lead",
+      "intensity": 0.86
+    },
+    {
+      "start": 72.64,
+      "end": 77.26,
+      "text": "Which only bends one way",
+      "speaker": "stone-lead",
+      "intensity": 0.86
+    },
+    {
+      "start": 77.38,
+      "end": 80.38,
+      "text": "And you're rightly afraid",
+      "speaker": "stone-lead",
+      "intensity": 0.86
+    },
+    {
+      "start": 80.42,
+      "end": 84.08,
+      "text": "It don't seem to be the way that we thought",
+      "speaker": "stone-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 84.84,
+      "end": 91.5,
+      "text": "And I wish I could say it would all be all right",
+      "speaker": "stone-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 91.56,
+      "end": 93.36,
+      "text": "It'll all be all right",
+      "speaker": "stone-harmony",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.72,
+      "end": 100.84,
+      "text": "I wish I could tell you it would all be fine",
+      "speaker": "stone-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 101.48,
+      "end": 103.3,
+      "text": "It'll all be just fine",
+      "speaker": "stone-harmony",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.12,
+      "end": 108.96,
+      "text": "But a stone only rolls downhill",
+      "speaker": "stone-lead",
+      "intensity": 0.91
+    },
+    {
+      "start": 109.02,
+      "end": 113.88,
+      "text": "And these things they'll be what they will",
+      "speaker": "stone-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 114.2,
+      "end": 115.96,
+      "text": "What they will",
+      "speaker": "stone-lead",
+      "intensity": 0.86
+    },
+    {
+      "start": 116.08,
+      "end": 123.56,
+      "text": "Oh the inertia of our ravenous brand of avarice",
+      "speaker": "stone-lead",
+      "intensity": 0.91
+    },
+    {
+      "start": 123.62,
+      "end": 125.92,
+      "text": "Of our selfishness",
+      "speaker": "stone-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 126.14,
+      "end": 131.58,
+      "text": "It was just too much to overcome",
+      "speaker": "stone-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 132.98,
+      "end": 136.76,
+      "text": "Now we're overrun",
+      "speaker": "stone-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 137.72,
+      "end": 144.3,
+      "text": "And I wish I could say it would all be all right",
+      "speaker": "stone-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 144.72,
+      "end": 146.36,
+      "text": "It'll all be all right",
+      "speaker": "stone-harmony",
+      "intensity": 0.88
+    },
+    {
+      "start": 146.78,
+      "end": 153.86,
+      "text": "I wish I could tell you it would all be fine",
+      "speaker": "stone-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 154.36,
+      "end": 155.96,
+      "text": "It'll all be just fine",
+      "speaker": "stone-harmony",
+      "intensity": 0.89
+    },
+    {
+      "start": 156.24,
+      "end": 161.5,
+      "text": "Oh how I wish that I could tell you it would be all right",
+      "speaker": "stone-lead",
+      "intensity": 0.94
+    },
+    {
+      "start": 161.56,
+      "end": 166.1,
+      "text": "Could tell you it'll all be fine, it'll work out",
+      "speaker": "stone-harmony",
+      "intensity": 0.91
+    },
+    {
+      "start": 167.7,
+      "end": 173,
+      "text": "Oh how I wish I could tell you it'll all be fine",
+      "speaker": "stone-lead",
+      "intensity": 0.94
+    },
+    {
+      "start": 174.76,
+      "end": 180.58,
+      "text": "Oh how I wish that I could tell you it would be all right",
+      "speaker": "stone-lead",
+      "intensity": 0.95
+    },
+    {
+      "start": 180.64,
+      "end": 185.34,
+      "text": "Could tell you it'll all be fine, it'll work out",
+      "speaker": "stone-harmony",
+      "intensity": 0.91
+    },
+    {
+      "start": 186.76,
+      "end": 189.6,
+      "text": "Oh, it'll all be fine",
+      "speaker": "stone-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 192.5,
+      "end": 194.36,
+      "text": "It'll all be just fine",
+      "speaker": "stone-harmony",
+      "intensity": 0.86
+    },
+    {
+      "start": 194.48,
+      "end": 196.84,
+      "text": "It'll all be just fine",
+      "speaker": "stone-lead",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "stone-slab"
+    },
+    {
+      "time": 3.8,
+      "view": "stone-one"
+    },
+    {
+      "time": 11.8,
+      "view": "stone-two"
+    },
+    {
+      "time": 19.8,
+      "view": "stone-four"
+    },
+    {
+      "time": 27.6,
+      "view": "stone-split"
+    },
+    {
+      "time": 35.4,
+      "view": "stone-hats-four"
+    },
+    {
+      "time": 37.8,
+      "view": "stone-grid12"
+    },
+    {
+      "time": 43.2,
+      "view": "stone-arms12"
+    },
+    {
+      "time": 57.2,
+      "view": "stone-chevrons"
+    },
+    {
+      "time": 63.4,
+      "view": "stone-andy12"
+    },
+    {
+      "time": 71.2,
+      "view": "stone-hats12"
+    },
+    {
+      "time": 77.2,
+      "view": "stone-tiles12"
+    },
+    {
+      "time": 86.8,
+      "view": "stone-droste"
+    },
+    {
+      "time": 103.5,
+      "view": "stone-tunnel"
+    },
+    {
+      "time": 113.2,
+      "view": "stone-burst"
+    },
+    {
+      "time": 125.4,
+      "view": "stone-weave"
+    },
+    {
+      "time": 135.4,
+      "view": "stone-matrix"
+    },
+    {
+      "time": 145.5,
+      "view": "stone-trio"
+    },
+    {
+      "time": 155,
+      "view": "stone-mosaic"
+    },
+    {
+      "time": 175,
+      "view": "stone-climax"
+    },
+    {
+      "time": 191.5,
+      "view": "stone-wall64"
+    },
+    {
+      "time": 195.2,
+      "view": "stone-studio"
+    },
+    {
+      "time": 199.4,
+      "view": "stone-outro"
+    }
+  ]
+}

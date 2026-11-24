@@ -5102,6 +5102,41 @@
       "sha256": "5a318832d472aa17d3e8111e550289999197ee5ab6ceef55fb6cd955a16bc40a"
     },
     {
+      "path": "public/scenes/stone-rolls/backing.mp3",
+      "bytes": 5677676,
+      "sha256": "d86721e60bc45343317812bb249dae1b0e60b67b56eaba034455a134ed20dea5"
+    },
+    {
+      "path": "public/scenes/stone-rolls/credits.txt",
+      "bytes": 531,
+      "sha256": "c886403068bca02bf77d1ef64b78437dba6b72a244ad265d3c7d0424ea92237f"
+    },
+    {
+      "path": "public/scenes/stone-rolls/mix.mp3",
+      "bytes": 7570220,
+      "sha256": "6ed468ae5a05ca20fd629d067ee2113ac5362c71f1b4e2261abb2e3831b520c0"
+    },
+    {
+      "path": "public/scenes/stone-rolls/performance.json",
+      "bytes": 355448,
+      "sha256": "82933eab5f388a337525791083afd3c84f26323dfcf649a67e4f4d96100258db"
+    },
+    {
+      "path": "public/scenes/stone-rolls/scene.json",
+      "bytes": 8042,
+      "sha256": "d6293a16f51e6f4a0b119a96e23886a79385003d2ec40bfcfd58cc454c1db625"
+    },
+    {
+      "path": "public/scenes/stone-rolls/stone-harmony.tele.gz",
+      "bytes": 627690,
+      "sha256": "34fa83fbe244e469f191d6af84356fb9f113d77379919e6ee94f39926a4608cc"
+    },
+    {
+      "path": "public/scenes/stone-rolls/stone-lead.tele.gz",
+      "bytes": 1805205,
+      "sha256": "dc58ea244c4d1077e989c8eb4eb6b32aa7671374253426491094b9da68a1dca4"
+    },
+    {
       "path": "public/scenes/stonehenge/backing.mp3",
       "bytes": 7549484,
       "sha256": "5a02addf2d9a8dd288fdd9dae68a63c9d702ab0f41e92356676a8f3da6c861f3"

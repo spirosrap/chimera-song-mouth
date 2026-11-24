@@ -26,6 +26,7 @@ import {DojaGorgeousStage} from '../render/doja-gorgeous.ts';
 import {DrumsOfDeathStage} from '../render/drums-of-death.ts';
 import {BackstabberStage} from '../render/backstabber.ts';
 import {TheGiverStage} from '../render/the-giver.ts';
+import {StoneRollsStage} from '../render/stone-rolls.ts';
 import {JadeAngelStage} from '../render/jade-angel.ts';
 import {LavaChickenStage} from '../render/lava-chicken.ts';
 import {BangarangaStage} from '../render/bangaranga.ts';
@@ -205,6 +206,7 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
       :scene.setting==='drumsofdeath'?new DrumsOfDeathStage(people[0].model,people[0].track,people[1].model,people[1].track)
       :scene.setting==='backstabber'?new BackstabberStage(people[0].model,people[0].track,people[1].model,people[1].track)
       :scene.setting==='thegiver'?new TheGiverStage(people[0].model,people[0].track,people[1].model,people[1].track)
+      :scene.setting==='stonerolls'?new StoneRollsStage(people[0],people[1])
       :scene.setting==='jadeangel'?new JadeAngelStage(people[0],people[1],people[2],people[3])
       :scene.setting==='lavachicken'?new LavaChickenStage(people[0],people[1],people[2])
       :scene.setting==='bangaranga'?new BangarangaStage(people[0].model,people[0].track,people[1].model,people[1].track)

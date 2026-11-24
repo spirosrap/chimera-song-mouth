@@ -1,0 +1,56 @@
+export const STONE_CAST = ['stone-lead', 'stone-harmony'] as const;
+export type StoneId = typeof STONE_CAST[number];
+
+export const STONE_CAMERAS = [
+  'stone-slab',
+  'stone-one',
+  'stone-two',
+  'stone-four',
+  'stone-split',
+  'stone-hats-four',
+  'stone-grid12',
+  'stone-arms12',
+  'stone-chevrons',
+  'stone-andy12',
+  'stone-hats12',
+  'stone-tiles12',
+  'stone-droste',
+  'stone-tunnel',
+  'stone-burst',
+  'stone-weave',
+  'stone-matrix',
+  'stone-trio',
+  'stone-mosaic',
+  'stone-climax',
+  'stone-wall64',
+  'stone-studio',
+  'stone-outro',
+] as const;
+export type StoneView = typeof STONE_CAMERAS[number];
+
+/** Complete shot script mapped to OK Go — A Stone Only Rolls Downhill (3:56.5 / 236.518s). */
+export const STONE_SHOTS: ReadonlyArray<{ time: number; view: StoneView }> = [
+  { time: 0, view: 'stone-slab' },
+  { time: 3.8, view: 'stone-one' },
+  { time: 11.8, view: 'stone-two' },
+  { time: 19.8, view: 'stone-four' },
+  { time: 27.6, view: 'stone-split' },
+  { time: 35.4, view: 'stone-hats-four' },
+  { time: 37.8, view: 'stone-grid12' },
+  { time: 43.2, view: 'stone-arms12' },
+  { time: 57.2, view: 'stone-chevrons' },
+  { time: 63.4, view: 'stone-andy12' },
+  { time: 71.2, view: 'stone-hats12' },
+  { time: 77.2, view: 'stone-tiles12' },
+  { time: 86.8, view: 'stone-droste' },
+  { time: 103.5, view: 'stone-tunnel' },
+  { time: 113.2, view: 'stone-burst' },
+  { time: 125.4, view: 'stone-weave' },
+  { time: 135.4, view: 'stone-matrix' },
+  { time: 145.5, view: 'stone-trio' },
+  { time: 155.0, view: 'stone-mosaic' },
+  { time: 175.0, view: 'stone-climax' },
+  { time: 191.5, view: 'stone-wall64' },
+  { time: 195.2, view: 'stone-studio' },
+  { time: 199.4, view: 'stone-outro' },
+];

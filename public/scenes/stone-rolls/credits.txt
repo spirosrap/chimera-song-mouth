@@ -1,0 +1,6 @@
+A Stone Only Rolls Downhill — OK Go
+Source video: Official Music Video (YouTube MOEULOSVNK4), 236.52s
+Backing stem: Demucs htdemucs instrumental stem (no_vocals), 48 kHz stereo 192 kbps
+Vocals: Two physical CHIMERA vocal-tract voices (Damian Kulash lead + OK Go Harmonies)
+Score & phonetic timing: CMU Pronouncing Dictionary via EnglishG2P, aligned to extracted vocal pitch and phrase contour
+Stage: 3D multi-phone tabletop, 12-phone grid, recursive Droste tiled tunnel, 35-phone charging rig, 64-phone mosaic, and studio reveal
