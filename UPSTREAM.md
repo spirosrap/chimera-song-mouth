@@ -8,115 +8,113 @@ not merge unrelated histories or replace this tree with an upstream checkout.
 
 ## Latest synchronization
 
-Checked on 2026-11-23, through `f1b2bb13b295709f03fc01c0798d8569e096a5fd`
-(thirteen first-parent commits after `7c0f722`: twelve imported with `git cherry-pick -x`, the
-one merge among them with `-m 1`; one left out, see below).
+Checked on 2026-11-24, through `616b9af366ce43d5b41094aee2503e64afb795a0`
+(twelve first-parent commits after `f1b2bb1`, all imported with `git cherry-pick -x`; no merge
+commits, none left out).
 
 What came in:
 
-- **/s/ and /z/ with the tongue tip 3 mm further forward** (upstream #135, commit `0885014`):
-  s and z were heard as sh and zh because the narrowest point sat too far behind the lips. The
-  tip target moves (`TtX` 6.3 → 6.6 in `phonetics/inventory.rs`), its height is recalibrated
-  (`consonantTargets.generated.json`), /ts dz/ follow, and Mandarin's apical vowel ɿ, tied to
-  /s/'s tip, is refit (`vowelTargets.generated.json`). Upstream's own judges: real-speaker cost
-  0.817 → 0.519, the hiss of /s/ about 1.2 to 1.3 kHz higher, Whisper and singer no clear
-  change, and the upstream owner's blind listen preferred it. Two entries in
-  `docs/hill-climb/log.md` came with it (`0885014`, `b8e4bf9`).
-- **A body the 3D head can be worn on** (nine commits, `da49862` to `cb54ec4`): a small library
-  in `src/rig/` (a posable body mesh `body.rig.bin`, CC0 from MakeHuman and MPFB2, with
-  `tools/rig/gen-body.ts` to rebuild it; motion from Mixamo FBX, BVH or glTF clips through
-  three.js's loaders), a dev page `rig.html`, `docs/rig.md`, and 14 tests in
-  `tests/rig.test.ts`. The 3D head (`src/ui/render/anatomy3d.ts`, `beams3d.ts`) gained drawing
-  options and skin-surface queries for it; the defaults draw the app's head as before. Nothing
-  in the site uses the rig: `rig.html` is not a build input, so the published site has no rig
-  page and no rig code. Upstream's README scope gained a point for it (now point 7).
-- **Readable labels** (upstream #145, merge `60ae9f9`): every label in Hershey Medium, an 11 px
-  floor for DOM and canvas text, text never in a line colour or dimmed by opacity, a thin black
-  halo behind canvas labels, a small square before a lit chip. It changes `src/ui/styles.css`,
-  the shared canvas `label()` in `src/ui/render/vector.ts`, eleven components, and the layout
-  lint (which now fails text under 11 px). This edition's band, song and scene pages share the
-  stylesheet and `label()`, so their text is slightly larger and bolder too.
-
-Left out: `f1b2bb1` "Create checks.yml" adds only `.github/workflows/checks.yml` (tests,
-typecheck, layout lint and e2e on every pull request and push to main). `.github/workflows/`
-is not imported until the owner says so, because Actions is enabled on this repository and the
-workflow would run on every push. `upstreamRevision` is set to that commit all the same: the
-range is accounted for, and the file can be taken later with
-`git checkout upstream/main -- .github/workflows/checks.yml`.
+- **Dials** (`c835f82`, `f565447`): an encoder's readout now reserves the room of the widest
+  value and unit it can show, so turning a dial no longer moves the row (Sing's Key going from
+  "0" to "+1" used to wrap "semitones" and make both dials jump). Arrow keys now move Key,
+  Tempo, Vibrato and Beatbox's Tempo, which used to snap back (`Encoder` takes a `step`).
+- **Phone layout** (`076f2c6`): on a phone (640 px and under) every screen you touch comes
+  before every screen you only watch, in all five tabs; `<Screen watch>` marks the charts.
+  Upstream measured Play's keys 1303 px higher at 390 x 844. Nothing changes above 640 px.
+  `AGENTS.md` gained the rule.
+- **Desktop heights** (`f52d06f`, `45becf3`): Beatbox's pads sit beside the spectrogram over
+  the tempo, and the beat as text moved into the step sequencer's header, so Beatbox no longer
+  scrolls on a desktop window that fits the other tabs (measured here at 1728 x 808: 85 px over
+  before, fits now). Upstream's matching change for Sing is not taken as written, see below.
+- **Canvas labels** (`616b9af`): 2D canvases scale by their rounded backing store, not by
+  `devicePixelRatio` (`cssScale` in `src/ui/useCanvas.ts`), so an 11 px label is no longer
+  drawn at 10.9 px on a canvas with a fractional height.
+- **Layout lint and smoke test**: three new lint checks (`shift`: every encoder turned to both
+  ends, its readout must not move; `order`: the phone rule above; `page-scroll` at a new ninth
+  size, 1728 x 808) and one new smoke-test step (an arrow key on every encoder of Sing and
+  Beatbox).
+- **Plugin** (six commits, `14d21c9` to `40efa44`; this edition builds and ships no plugin):
+  the Linux editor maps an X11 child window through `x11rb` so Bitwig keeps it open (upstream
+  #158), `tools/third-party-notices.ts` lists the building system's dependencies, `docs/plugin.md`,
+  and the workspace version 0.2.0 → 0.2.1 (`Cargo.toml`, `Cargo.lock`).
 
 Adapted rather than taken as written:
 
-- `README.md` (conflict in `acf41b7`): the edition's text is kept. The quoted upstream scope
-  list took the new point 7 and the renumbered point 8, so the sentence above it now says this
-  edition goes beyond points 6 and 8 (it said 6 and 7), and the licence paragraph names the
-  body mesh's CC0 source.
-- `AGENTS.md` (conflict in `60ae9f9`): the edition's rules are kept and upstream's new
-  "Text is readable" rule is added beside them.
-- `crates/chimera/tests/golden/planning.json` (conflict in `0885014`): the edition's fixture
-  is kept and re-blessed twice with that one commit applied. The change is 174 values, every
-  one an /s/ or /z/ gesture's `ttX` (6.3 → 6.6, 87 of them) or `ttY`, and the list of changed
-  paths with their old and new values is identical to upstream's own change to its fixture
-  (`jdiff.py` at full depth, no difference). `beatbox-bar.f32` was byte-identical to
-  upstream's before the commit, upstream's new one came in with the pick, and this edition's
-  engine reproduces it.
-- `tests/folk-singer-overlay.test.ts`: the test's stand-in canvas gained an empty
-  `strokeText`, which `label()` now calls for the halo. Its assertions are unchanged.
+- `src/ui/components/SingPanel.tsx` and the phone rule in `src/ui/styles.css` (conflicts in
+  `076f2c6`): the edition's Sing column keeps its song player. Pitch and Spectrum take upstream's
+  `watch` mark, and the phone order is Sing, Lyrics, Song player, Keys, Voice, Pitch, Spectrum
+  (upstream's order with the song player where it was, after Lyrics; it has things to touch, so
+  it is not `watch`). The lint's `order` check passes on it.
+- `.right-sing` rows in `src/ui/styles.css` (conflict in `f52d06f`): the edition keeps
+  `240fr` for the pitch roll's row; upstream went to `200fr`. Upstream's reason does not hold
+  here. There, the keys' minimum stretched the roll 41 px past its own, and 200fr removed that.
+  Here the roll has a taller minimum of its own (`.mode-sing .s-roll .screen-body`, 165 px,
+  from the original export), so the roll sets the ratio and 200fr stretched the keys instead:
+  measured at 1728 x 808, the Keys screen went from 139.6 to 167.6 px and the Sing page from
+  1210 to 1238 px. With 240fr every screen in Sing is the size it was before the import
+  (measured, identical to the previous build). The comment above the rule gives the numbers.
+  Sing scrolls on a desktop window in this edition either way: the song player's screen is
+  about 343 px tall.
 
-Not adapted, noted: the band page keeps two labels of its own under the new floor
-(`.band-badge`/`.band-eyebrow` at 10 px, `.band-ensemble .screen-sub` at 9 px) and the scene
-pages a few more. The lint only covers the single-mouth player, and they are this edition's
-text, so they are left for the owner.
+No file under `public/` was added or changed (the media manifest is as it was), no workflow
+file came with the range, and `src/audio/AudioEngine.ts`, `src/ui/singing.ts`, the golden
+fixtures and everything under `crates/chimera/` and `crates/chimera-wasm/` were not touched.
 
-No file under `public/` was added or changed (the media manifest is as it was), and
-`src/audio/AudioEngine.ts`, `src/ui/singing.ts` and `SingPanel.tsx` were not touched.
+`src/wasm/chimera.wasm` is rebuilt all the same (Arch `rust` and `rust-wasm` 1.99.1; sha256 in
+`PROVENANCE.json`), because the engine reports the workspace version (`env!("CARGO_PKG_VERSION")`
+in `crates/chimera-wasm/src/api.rs`), which is now 0.2.1. The binary has the same size
+(1,233,240 bytes) with its contents reordered. The sound is the same: no engine source changed,
+the native goldens pass unblessed, and `tests/wasm-engine.test.ts` renders the voice scenarios
+through the new binary bit-identically to the native build. The word-clarity judge was not run
+(nothing under `crates/chimera/src` changed); the 2026-11-23 figures stand: training 19.87 %,
+held-out 30.00 %. The prepared songs and scenes are recordings: none was re-rendered.
 
-The engine source changed, so `src/wasm/chimera.wasm` is rebuilt (Arch `rust` and `rust-wasm`
-1.99.1; sha256 in `PROVENANCE.json`). The live voice changes wherever it says s or z. Against
-the 2026-11-22 build, 76 of the 80 judge sentences render differently (the four identical ones
-are two sentences with no s or z, in both voices): the level is the same within 0.03 dB, the
-energy above 4 kHz moves by -2.5 to +2.8 dB (median +0.5), and the difference between old and
-new render sits 10 to 29 dB below the signal (median 17.7). The prepared songs and scenes are
-recordings: none was re-rendered, and no file in the media manifest changed.
-
-Word clarity (`tools/asr/speech_wer.py`, Whisper small.en, the same sentences as before):
-verdict **no clear change**. Training sentences 20.53 → 19.87 % word errors (62 → 60 wrong
-words of 302; 15 of 40 transcripts changed, 6 better, 6 worse). Held-out sentences 31.67 →
-30.00 % (95 → 90 of 300; 21 of 40 changed, 8 better, 8 worse); the judge does not use them to
-decide. Both sets together: 157 → 150 wrong words of 602. The largest gains are held-out
-and in the female voice: "The salt breeze came across from the sea" (four wrong → perfect)
-and "The boy was there when the sun rose" (six wrong → three). The largest loss is "Four
-hours of steady work faced us" (female, one wrong → three), where "faced us" is now heard as
-"faceless", as it already was in the male voice. The judge is English only.
-
-Validation: 370 native tests passed (two existing ignored; upstream added none); 759 Bun tests
-with `--timeout 60000` (758 on the first run plus the stand-in fix above; 14 are the new rig
-tests, the rest of the growth is scenes added in between); typecheck; content verification
-(1176 public files).
+Validation: 370 native tests passed (three ignored: the two existing ones and upstream's new X11
+editor test, which needs a display); 759 Bun tests across 193 files with `--timeout 60000` (on
+the first run one timed out, `tests/wasm-engine.test.ts`, cut off at its 120 s limit while cargo
+was still compiling its native reference renderer in a fresh worktree; it passed once that was
+built, and the whole suite passed on the final tree); typecheck; content verification (1176
+public files).
 
 Browser checks ran in the system Chromium with software rendering against a local server, on
-the single-mouth player (`?solo=1`), with the laptop in `balanced` mode but busy (load average
-12 to 17 from the owner's desktop):
+the single-mouth player (`?solo=1`), with the laptop in `power-saver` mode and busy (load
+average 6 to 20):
 
-- `tools/e2e.ts`, desktop and phone sizes: one error, the known busy-machine one (the phone
-  run fell back to 32 kHz; engine load 77 % desktop, 84 % phone). The previously published
-  build, run with the pre-import test a few minutes later, did worse (three errors: both sizes
-  fell back to 32 kHz, load 84 % and 96 %, and the tune still sounding after Stop), so it is
-  the machine. Everything else passed, including Record video. Upstream's tongue-grab check
-  was again skipped.
-- `tools/layout-lint.ts`, 240 views at 8 sizes: 1 error, 2 warnings, and no text under the new
-  11 px floor. The error is the known Speak one at 375x812 (two "k" labels touching in the
-  gestural score); the warnings are the two known duet-title ones. The ten Bestiary warnings
-  of earlier records are gone (the label change fixed them). The Sing overlap first seen on
-  2026-11-22 (the area label over the sung word) did not show in this run; it depends on
-  timing and may return.
-- The band page, a song (`?song=megalovania`), two scene pages and the solo player were
-  opened on both builds at desktop and phone sizes: no console or request errors, and the
-  pages look as before apart from the slightly larger, bolder text.
+- `tools/e2e.ts`, desktop and phone sizes: six errors, all of the slow-machine kind met in
+  power-saver mode on 2026-11-20 and 2026-11-21 (both sizes fell back to 32 kHz, engine load 164 % and 99 %; the
+  can't-keep-up warning check; two Record video steps; the tune still sounding after Stop). The
+  previously published build, run with the pre-import test right after, also gave six (the same
+  ones, with "the breath stopped sounding across the fallback" in place of the tune one), so it
+  is the machine. The new arrow-key step passed (9 encoders turned, 0 stuck). Upstream's
+  tongue-grab check was again skipped.
+- `tools/layout-lint.ts`, 270 views at 9 sizes: 112 errors and 2 warnings, where the last
+  record had 1 and 2. Nearly all come from the two new checks:
+  - `shift`, 101 errors: a readout's width or its unit's position differs by 0.5 px (the
+    check's rounding step) between a dial's ends, in Play, Sing and Bestiary. Upstream's own
+    unmodified tree at `616b9af`, built and linted in the same browser, gives 95 of the same errors (and no others), where
+    upstream reports 0 with Playwright's browser: it is the test browser's text metrics, not
+    this edition and not the import. Nothing moves by a visible amount, and the wrap that the
+    fix is for does not happen.
+  - `page-scroll` at 1728 x 808, 5 errors, all Sing: the page is 402 to 419 px taller than
+    the window, because of the song player (the previous build measures the same 402 px).
+    Beatbox, 85 and 109 px over in the previous build, fits now. An earlier run of the same
+    lint also had Play 21 px and Speak 13 to 14 px over while running; so do the previous
+    build and upstream's own tree in this browser.
+  - `overlap`, 6 errors: the known Speak one at 375 x 812 (two "k" labels in the gestural
+    score) and five of the timing-dependent Sing one first seen on 2026-11-22 (the area label
+    over the sung word). The 2 warnings are the known duet-title ones.
+  - No `order` errors, and no text under 11 px.
+- Sing, Play and Beatbox were opened on both builds at 375 x 812 and 1440 x 900: no console
+  or request errors; the phone order is as described above and Sing's page height is unchanged
+  (2513 px on the phone, 1227 px at 1440 x 900).
+- The band page, a song (`?song=megalovania`) and two scene pages (`hello`, `wizard-of-oz`)
+  were opened on both builds at the same two sizes: no console or request errors, and the
+  pages look the same.
 
-Not tested: the new sound by ear; the speed bench (not rerun: only target values changed, no
-code path, upstream measured no difference, and the laptop was too busy for a fair reading);
-Mandarin ɿ; the rig beyond its own tests (its dev page was not opened, no real FBX, BVH or
-glTF file was played); anything about the plugin; a real phone; Safari.
+Not tested: a real phone or tablet; the dials with a keyboard by hand; anything about the
+plugin beyond compiling it and its own tests (the X11 test needs a display and did not run;
+no host was opened); playback on the band, song and scene pages (they were only opened);
+Safari; a HiDPI screen.
 
 ## Next update
 

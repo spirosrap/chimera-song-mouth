@@ -2142,12 +2142,15 @@ input[type="range"]::-moz-range-thumb {
 /* ---------- Sing */
 /* the words right under the button that sings them; the pitch roll only shows what was sung: a
    smaller share than it had, so the song's button fits a 1280 x 800 window and the keys keep
-   their room. 200fr to the keys' 172fr, as Play's charts: fr rows keep their ratio down to the
-   keys' minimum, and at 240fr that stretched the roll 41 px past its own, so Sing scrolled on a
-   desktop window that fit Play */
+   their room. Upstream went from 240fr to 200fr here (f52d06f): fr rows keep their ratio down to
+   the largest minimum, and there the keys' minimum stretched the roll 41 px past its own. This
+   edition keeps 240fr: its roll has a taller minimum (165 px body, below), so here the roll sets
+   the ratio and 200fr stretched the keys instead (at 1728 x 808: keys 140 -> 168 px, page
+   1210 -> 1238 px; with 240fr both are as they were). Sing scrolls on a desktop here either way:
+   the song player's screen adds about 343 px */
 .right-sing {
   grid-template-columns: minmax(0, 342fr) minmax(0, 342fr);
-  grid-template-rows: auto auto auto minmax(min-content, 200fr) auto minmax(min-content, 172fr);
+  grid-template-rows: auto auto auto minmax(min-content, 240fr) auto minmax(min-content, 172fr);
   grid-template-areas: "act act" "lyrics lyrics" "song song" "roll roll" "spec voice" "keys keys";
 }
 
