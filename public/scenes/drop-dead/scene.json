@@ -1,0 +1,449 @@
+{
+  "setting": "dropdead",
+  "title": "Olivia Rodrigo · drop dead",
+  "description": "A pastel-pink VHS daydream progressing from a crowded neon dive bar in a pearl-beaded white dress to laptop-glowing Versailles bedchambers, leaping across the Gallery of Battles, sliding down the Queen’s marble staircase, rocking matching hot-pink electric guitars in a gilded Rococo salon, gliding past a white swan at dusk, and collapsing across the floodlit Palace steps. Original instrumental with two physical CHIMERA voices.",
+  "duration": 250.195011,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "drop-lead",
+      "name": "Olivia Rodrigo",
+      "role": "Lead vocals",
+      "tele": "drop-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "drop-harmony",
+      "name": "Versailles Harmonies",
+      "role": "Dreamy lead-ins and chorus harmonies",
+      "tele": "drop-harmony.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 19.54,
+      "end": 24.16,
+      "text": "I know that the bar closes at eleven",
+      "speaker": "drop-lead",
+      "intensity": 0.78
+    },
+    {
+      "start": 27.68,
+      "end": 32.44,
+      "text": "But I hope you never finish that beer",
+      "speaker": "drop-lead",
+      "intensity": 0.8
+    },
+    {
+      "start": 34.38,
+      "end": 39.14,
+      "text": "You know all the words to Just Like Heaven",
+      "speaker": "drop-lead",
+      "intensity": 0.82
+    },
+    {
+      "start": 39.98,
+      "end": 46.32,
+      "text": "And I know why he wrote them now that you're standing right here",
+      "speaker": "drop-lead",
+      "intensity": 0.84
+    },
+    {
+      "start": 48.46,
+      "end": 49.42,
+      "text": "Oh",
+      "speaker": "drop-harmony",
+      "intensity": 0.82
+    },
+    {
+      "start": 49.48,
+      "end": 56.12,
+      "text": "One night I was bored in bed and stalked you on the internet",
+      "speaker": "drop-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 56.18,
+      "end": 64.04,
+      "text": "It's feminine intuition 'cause I always had a vision of us standing like this",
+      "speaker": "drop-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 64.1,
+      "end": 67.74,
+      "text": "All pressed up in the bathroom line",
+      "speaker": "drop-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 67.8,
+      "end": 71.42,
+      "text": "You're looking like an angel on the walls of Versailles",
+      "speaker": "drop-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 71.48,
+      "end": 75.18,
+      "text": "The most alive I've ever been",
+      "speaker": "drop-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 75.24,
+      "end": 79.1,
+      "text": "But kiss me and I might drop dead",
+      "speaker": "drop-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 86.6,
+      "end": 90.26,
+      "text": "And I feel like I might throw up, left hook, right punch to the gut",
+      "speaker": "drop-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 90.32,
+      "end": 93.88,
+      "text": "You're so, so pretty, boy, I'm paranoid I made you up",
+      "speaker": "drop-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 93.94,
+      "end": 97.54,
+      "text": "Yeah, I'd love it if you walked me home, if you promise we can go real slow",
+      "speaker": "drop-lead",
+      "intensity": 0.87
+    },
+    {
+      "start": 97.6,
+      "end": 101.1,
+      "text": "'Cause I got chewing gum and a bunch of stuff I'd like to know",
+      "speaker": "drop-lead",
+      "intensity": 0.87
+    },
+    {
+      "start": 101.16,
+      "end": 104.74,
+      "text": "Like have you ever been to Japan or taken that Eurostar to France",
+      "speaker": "drop-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 104.8,
+      "end": 108.48,
+      "text": "I've been dropping hints all night that I'd love if you held my hand, goddamn",
+      "speaker": "drop-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 108.54,
+      "end": 112.16,
+      "text": "And then maybe we could make out, clothes off and fall to the ground",
+      "speaker": "drop-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 112.22,
+      "end": 115.84,
+      "text": "Let's go steady, let's go out and tell the whole damn world how",
+      "speaker": "drop-lead",
+      "intensity": 0.91
+    },
+    {
+      "start": 115.9,
+      "end": 122.32,
+      "text": "One night I was bored in bed and stalked you on the internet",
+      "speaker": "drop-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 123.2,
+      "end": 129.92,
+      "text": "It's feminine intuition 'cause I always had a vision of us standing like this",
+      "speaker": "drop-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 129.98,
+      "end": 133.94,
+      "text": "All pressed up in the bathroom line",
+      "speaker": "drop-lead",
+      "intensity": 0.91
+    },
+    {
+      "start": 134,
+      "end": 137.42,
+      "text": "You're looking like an angel on the walls of Versailles",
+      "speaker": "drop-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 137.5,
+      "end": 141.1,
+      "text": "The most alive I've ever been",
+      "speaker": "drop-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 141.18,
+      "end": 145.04,
+      "text": "But kiss me and I might",
+      "speaker": "drop-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 145.12,
+      "end": 148.64,
+      "text": "Pisces and a Gemini",
+      "speaker": "drop-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 148.7,
+      "end": 152.36,
+      "text": "But I think we might go really nice together",
+      "speaker": "drop-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 152.42,
+      "end": 156.04,
+      "text": "If you let me stay the night",
+      "speaker": "drop-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 156.1,
+      "end": 160.02,
+      "text": "Well, I think I might just have to stay forever",
+      "speaker": "drop-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 160.08,
+      "end": 163.28,
+      "text": "Pisces and a Gemini",
+      "speaker": "drop-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 163.38,
+      "end": 167,
+      "text": "But I think we might go really nice together",
+      "speaker": "drop-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 167.06,
+      "end": 170.8,
+      "text": "If you let me stay the night",
+      "speaker": "drop-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 170.86,
+      "end": 174.46,
+      "text": "Well, I think I might just have to stay forever",
+      "speaker": "drop-lead",
+      "intensity": 0.92
+    },
+    {
+      "start": 188.6,
+      "end": 189.64,
+      "text": "Oh",
+      "speaker": "drop-harmony",
+      "intensity": 0.88
+    },
+    {
+      "start": 189.72,
+      "end": 196.32,
+      "text": "One night I was bored in bed and stalked you on the internet",
+      "speaker": "drop-lead",
+      "intensity": 0.94
+    },
+    {
+      "start": 196.38,
+      "end": 204.16,
+      "text": "It's feminine intuition 'cause I always had a vision of us standing like this",
+      "speaker": "drop-lead",
+      "intensity": 0.94
+    },
+    {
+      "start": 204.22,
+      "end": 207.74,
+      "text": "All pressed up in the bathroom line",
+      "speaker": "drop-lead",
+      "intensity": 0.94
+    },
+    {
+      "start": 207.8,
+      "end": 211.44,
+      "text": "You're looking like an angel on the walls of Versailles",
+      "speaker": "drop-lead",
+      "intensity": 0.95
+    },
+    {
+      "start": 211.5,
+      "end": 215.22,
+      "text": "The most alive I've ever been",
+      "speaker": "drop-lead",
+      "intensity": 0.95
+    },
+    {
+      "start": 215.28,
+      "end": 218.96,
+      "text": "But kiss me and I might",
+      "speaker": "drop-lead",
+      "intensity": 0.94
+    },
+    {
+      "start": 219.02,
+      "end": 222.78,
+      "text": "Kiss me and I might",
+      "speaker": "drop-lead",
+      "intensity": 0.95
+    },
+    {
+      "start": 222.84,
+      "end": 226.8,
+      "text": "Kiss me and I might drop dead",
+      "speaker": "drop-lead",
+      "intensity": 0.96
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "drop-card-intro"
+    },
+    {
+      "time": 5.5,
+      "view": "drop-bar-dance"
+    },
+    {
+      "time": 27.5,
+      "view": "drop-bar-booth"
+    },
+    {
+      "time": 39.5,
+      "view": "drop-bar-close"
+    },
+    {
+      "time": 48.5,
+      "view": "drop-laptop"
+    },
+    {
+      "time": 60,
+      "view": "drop-bed-wide"
+    },
+    {
+      "time": 79.5,
+      "view": "drop-ceiling"
+    },
+    {
+      "time": 83.5,
+      "view": "drop-gallery-bench"
+    },
+    {
+      "time": 95.5,
+      "view": "drop-gallery-columns"
+    },
+    {
+      "time": 103.5,
+      "view": "drop-gallery-leap"
+    },
+    {
+      "time": 111,
+      "view": "drop-gallery-lean"
+    },
+    {
+      "time": 115.5,
+      "view": "drop-stairs-rail"
+    },
+    {
+      "time": 121,
+      "view": "drop-stairs-leap"
+    },
+    {
+      "time": 133,
+      "view": "drop-stairs-slide"
+    },
+    {
+      "time": 143,
+      "view": "drop-stairs-heart"
+    },
+    {
+      "time": 145.5,
+      "view": "drop-guitar-trio"
+    },
+    {
+      "time": 151.5,
+      "view": "drop-headphones-dusk"
+    },
+    {
+      "time": 157.5,
+      "view": "drop-guitar-solo"
+    },
+    {
+      "time": 159.8,
+      "view": "drop-bed-lounge"
+    },
+    {
+      "time": 162,
+      "view": "drop-garden-steps"
+    },
+    {
+      "time": 165.5,
+      "view": "drop-swan"
+    },
+    {
+      "time": 168,
+      "view": "drop-headphones-dusk"
+    },
+    {
+      "time": 171.8,
+      "view": "drop-bed-lounge"
+    },
+    {
+      "time": 173.6,
+      "view": "drop-guitar-trio"
+    },
+    {
+      "time": 175.6,
+      "view": "drop-gold-gate"
+    },
+    {
+      "time": 190,
+      "view": "drop-courtyard-kneel"
+    },
+    {
+      "time": 201.5,
+      "view": "drop-courtyard-spin"
+    },
+    {
+      "time": 211.5,
+      "view": "drop-parapet-dusk"
+    },
+    {
+      "time": 217.5,
+      "view": "drop-courtyard-spin"
+    },
+    {
+      "time": 227,
+      "view": "drop-steps-sprawl"
+    },
+    {
+      "time": 234.5,
+      "view": "drop-steps-wide"
+    },
+    {
+      "time": 243.5,
+      "view": "drop-card-outro"
+    }
+  ]
+}

@@ -2642,6 +2642,41 @@
       "sha256": "4ffc0c4dea08aaaf427e851d5a7d20837ba1c2ce8a1ab9aedb49798b92d0b2b8"
     },
     {
+      "path": "public/scenes/drop-dead/backing.mp3",
+      "bytes": 6005996,
+      "sha256": "6d2ac9e90af77d19b465700991a26c5fb988eec6c0fbb524f48e8b83f240748a"
+    },
+    {
+      "path": "public/scenes/drop-dead/credits.txt",
+      "bytes": 653,
+      "sha256": "9ab98fc89d204afedf47d2bb471d60421762717944fa9e8265135bd1bb092e66"
+    },
+    {
+      "path": "public/scenes/drop-dead/drop-harmony.tele.gz",
+      "bytes": 330944,
+      "sha256": "792f5667e77e2621a5ad117fb32cd7fe4c5f26c94790862ba84f1d9aff24da98"
+    },
+    {
+      "path": "public/scenes/drop-dead/drop-lead.tele.gz",
+      "bytes": 2252821,
+      "sha256": "5f7938364b0c7d51510f4429d5aa66c8eb210463ba4023665a27bcbf8bc145d8"
+    },
+    {
+      "path": "public/scenes/drop-dead/mix.mp3",
+      "bytes": 8007980,
+      "sha256": "b881d7baf483101b3aec0ff0f7349cd8dbb3060dd8afbba5232749946bbb24ce"
+    },
+    {
+      "path": "public/scenes/drop-dead/performance.json",
+      "bytes": 439457,
+      "sha256": "609d72571c9dfee481bf170946ae14476bbcdd3fdf73b86566c7f8d0287b163e"
+    },
+    {
+      "path": "public/scenes/drop-dead/scene.json",
+      "bytes": 10350,
+      "sha256": "4407e881b834765ddb6d977628b2add7475f29ed27e73e9105d501f522755bc2"
+    },
+    {
       "path": "public/scenes/drums-of-death/backing.mp3",
       "bytes": 4677164,
       "sha256": "9e1091da1a1efbcc8bc3c31d69d356a2b7dd0ed38a5105e567cf900c213e8685"
