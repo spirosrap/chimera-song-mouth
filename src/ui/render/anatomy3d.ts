@@ -703,6 +703,8 @@ export class Anatomy3D {
   /** the airway's cross-sections this frame: centre, the grid line's direction, half-gap, half-width */
   private ring = { n: 0, s: new Float64Array(80), cx: new Float64Array(80), cy: new Float64Array(80), ux: new Float64Array(80), uy: new Float64Array(80), a: new Float64Array(80), b: new Float64Array(80) };
   private readonly v3 = new THREE.Vector3();
+  private readonly right = new THREE.Vector3();
+  private readonly toHead = new THREE.Matrix4();
   /** the narrowest constriction this frame (for the measurement label), body cm */
   caliper: { x: number; y: number; z: number; area: number } | null = null;
 
@@ -884,9 +886,11 @@ export class Anatomy3D {
 
   /** CSS px per cm at a body point, across the screen */
   pxPerCmAt(x: number, y: number, z: number, camera: THREE.Camera = this.camera): number {
-    const e = camera.matrixWorld.elements;
+    // the camera's right brought into the head's frame (worn on a body, the head is turned with
+    // it: the world's right added as is could point at the camera and measure next to nothing)
+    const r = this.right.setFromMatrixColumn(camera.matrixWorld, 0).transformDirection(this.toHead.copy(this.beams.group.matrixWorld).invert());
     const [x0, y0] = this.project(x, y, z, camera);
-    const [x1, y1] = this.project(x + e[0], y + e[1], z + e[2], camera);
+    const [x1, y1] = this.project(x + r.x, y + r.y, z + r.z, camera);
     return Math.hypot(x1 - x0, y1 - y0);
   }
 

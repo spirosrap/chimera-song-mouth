@@ -276,6 +276,26 @@ describe("the head on the body", () => {
     expect(maxMove(base, out, rig.rim)).toBe(0);
     expect(maxMove(base, out, lipPairs(rig).map(([, l]) => l))).toBeGreaterThan(0.5);
   });
+
+  test("the words at a worn head's mouth are sized by the head's scale on screen whichever way the body faces (the camera's right was added in the head's frame: faced along the stage's z, it measured next to nothing)", () => {
+    const rig = loadRig(), model = new M.VoiceModel(M.BODIES.male, 48000), head = M.head.wearHead(rig, model);
+    head.resize(900, 900);
+    const camera = new THREE.PerspectiveCamera(30, 1, 5, 5000), frame = model.frame(M.REST_ARTIC);
+    /** px per cm at the lips, 150 cm in front of the face with the body turned this far */
+    const pxPerCm = (turn: number) => {
+      rig.pose(M.pose.pose({ body: { turn } }));
+      head.update(camera, M.REST_ARTIC, null, 0);
+      const g = head.head.headGroup.matrixWorld, mouth = new THREE.Vector3(8, 8, 0).applyMatrix4(g);
+      camera.position.copy(mouth).add(new THREE.Vector3(1, 0, 0).transformDirection(g).multiplyScalar(150));
+      camera.lookAt(mouth);
+      camera.updateMatrixWorld(true);
+      head.update(camera, M.REST_ARTIC, null, 0);
+      return head.head.faceView(model, frame, M.REST_ARTIC, camera).pxPerCm;
+    };
+    const ahead = pxPerCm(0);
+    expect(ahead).toBeGreaterThan(2);
+    for (const turn of [90, -90, 45]) expect(pxPerCm(turn) / ahead).toBeCloseTo(1, 2);
+  });
 });
 
 /**
@@ -589,9 +609,17 @@ describe("the nerve x-ray", () => {
       const now: [number, number] = [U.uNear.value, U.uFar.value];
       // how far the range's ends move against its width: a sudden shift recolours everything
       if (last) worst = Math.max(worst, ...now.map((v, i) => Math.abs(v - last![i]) / (now[1] - now[0])));
+      else {
+        // far off, the body's range: the hips ± 30 cm
+        const hips = -rig.P[0].clone().applyMatrix4(camera.matrixWorldInverse).z;
+        expect((now[0] + now[1]) / 2).toBeCloseTo(hips, 3);
+        expect(now[1] - now[0]).toBeCloseTo(60, 3);
+      }
       last = now;
     }
     expect(worst).toBeLessThan(0.05);
+    // close up, the head's: ± 14 cm
+    expect(last![1] - last![0]).toBeCloseTo(28, 3);
   });
 
   test("the by-function look is calmed from the torso view in, not only at the head (its arms and cord washed out white there)", () => {
@@ -606,6 +634,8 @@ describe("the nerve x-ray", () => {
       camera.lookAt(target);
       camera.updateMatrixWorld(true);
       view.update(camera, M.REST_ARTIC, null, 0, 900);
+      // what the look is drawn with follows it
+      expect(view.mat.uniforms.uBright.value).toBeCloseTo(1 - 0.35 * view.close, 6);
       return view.close;
     };
     // the playground's body, torso and head views on a 900 px canvas: about 3.5, 8.6 and 16

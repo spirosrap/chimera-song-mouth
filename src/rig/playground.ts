@@ -368,12 +368,13 @@ async function say(text: string): Promise<void> {
     }
     // A fresh engine already has the human source defaults and gate off. The score supplies breath.
     engine.setSource({ f0: pitch });
-    // the dictionary first: once it's in, speakText plans and schedules without yielding to a
-    // newer line, so a line cut off while it loaded never starts
+    // the dictionary (or, if it won't load, the letter-to-sound rules), then plan and schedule with
+    // no await between the check and the schedule, so a line cut off while it loaded never starts.
+    // (speakText would load again after a failed load, and schedule a line cut off meanwhile.)
     await speech.g2p.load().catch(() => {});
     if (activeSpeech !== request) return;
-    const plan = await speech.speakText(text, { ipa: false, body, rate: 1, f0: pitch });
-    if (activeSpeech !== request) return;
+    const phrases = speech.g2p.toPhrases(text);
+    const plan = phrases.length ? speech.speakPhrases(phrases, { body, rate: 1, f0: pitch }) : null;
     if (plan?.plan.segments.length) request.planId = plan.id;
     else cancelSpeech();
   } catch (error) {
