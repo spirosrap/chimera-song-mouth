@@ -3717,6 +3717,41 @@
       "sha256": "08bebc6bffd31be81f82e7bd31b47c97e51270238e5d48b4b7475d6e4b2eebef"
     },
     {
+      "path": "public/scenes/lonely-in-the-future/backing.mp3",
+      "bytes": 8328236,
+      "sha256": "6c0fc5ba3570a99540bb2af1ad167ab4e24552eb429c4c0d43fa87ba8ae8f21c"
+    },
+    {
+      "path": "public/scenes/lonely-in-the-future/credits.txt",
+      "bytes": 468,
+      "sha256": "8a6eab5bed9821881d692be5bae53e3dc7a6363f9a70847c243265182249bd04"
+    },
+    {
+      "path": "public/scenes/lonely-in-the-future/future-broadcast.tele.gz",
+      "bytes": 91663,
+      "sha256": "0505d9fecfe22752e1a0e51a5851fb2716a9a05ef57959213dacdc366334a699"
+    },
+    {
+      "path": "public/scenes/lonely-in-the-future/future-julian.tele.gz",
+      "bytes": 1920027,
+      "sha256": "8a60881c1b9a9e469883b04ec4f36f8e97037689ae4da15fa66322a980d56a13"
+    },
+    {
+      "path": "public/scenes/lonely-in-the-future/mix.mp3",
+      "bytes": 8328236,
+      "sha256": "6235d93685b2d5dde9e1c8f1576e6e0761b7a5ebe0cab138bc8bd348614b4c60"
+    },
+    {
+      "path": "public/scenes/lonely-in-the-future/performance.json",
+      "bytes": 547487,
+      "sha256": "940417026374359e4d7952efe450c13a2144c83299b51d85610976f3a0b2c7ba"
+    },
+    {
+      "path": "public/scenes/lonely-in-the-future/scene.json",
+      "bytes": 11113,
+      "sha256": "42b0d827c10424d0769feb758d8e1854c133e7001e725b4ba476c635d27e796d"
+    },
+    {
       "path": "public/scenes/losing-religion/backing.mp3",
       "bytes": 9421868,
       "sha256": "7708bedbbf17e4b3153cf97721f6f314d0ca66713d7491d9f08d55143c1fd4ed"
