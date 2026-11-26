@@ -152,3 +152,5 @@ The owner supplied Olivia Rodrigo — drop dead. The complete scene includes the
 The owner supplied Kendrick Lamar — squabble up. The complete video scene uses the separated original music and opening effects with three synthesized CHIMERA voices. Rights in the song, samples, recording and video remain with their respective holders.
 
 The owner supplied The Strokes — Lonely in the Future. The complete scene uses separated original accompaniment with CHIMERA singing and the closing spoken line. Puppet graphics and scenery are built in the app. Rights in the song, recording and video remain with their respective holders.
+
+The owner supplied Olivia Rodrigo feat. Chappell Roan — expectations. The complete game-show scene uses the separated accompaniment and studio effects with physical CHIMERA duet vocals, host and announcer. The source recording and video rights remain with their holders.

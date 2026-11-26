@@ -2842,6 +2842,51 @@
       "sha256": "5b8edaba29f74a64829ffc1122d08324370e9778587acdf068d0cb74969318ad"
     },
     {
+      "path": "public/scenes/expectations/backing.mp3",
+      "bytes": 9368108,
+      "sha256": "977e5c06bef9b83479f256c25bbe4f063a40b428545e0c6bf578629a135ba059"
+    },
+    {
+      "path": "public/scenes/expectations/credits.txt",
+      "bytes": 479,
+      "sha256": "f49cc275caef205802ff325beffac4c92e844ceb1cdb5e67b4785ef780452c37"
+    },
+    {
+      "path": "public/scenes/expectations/expect-announcer.tele.gz",
+      "bytes": 374625,
+      "sha256": "1e366ca336aaa04145707bc9c93b671949974a27c0f0907f46f611d46fbc06a3"
+    },
+    {
+      "path": "public/scenes/expectations/expect-chappell.tele.gz",
+      "bytes": 1410524,
+      "sha256": "3889c9a859bc1bd3c789d37240c7a513316b1eeb82a5d215e38f4fdd3c04ec3f"
+    },
+    {
+      "path": "public/scenes/expectations/expect-johnny.tele.gz",
+      "bytes": 650090,
+      "sha256": "778ccc1c07ba0ddaf9746c9bd7bdfaa0fc5708c2db1959c1c4d7b51118710c6d"
+    },
+    {
+      "path": "public/scenes/expectations/expect-olivia.tele.gz",
+      "bytes": 1410065,
+      "sha256": "54339c1339774cde9fbefc6e05b38cdcdd0ed5569b7cc50ed6d9a2787a12b4ba"
+    },
+    {
+      "path": "public/scenes/expectations/mix.mp3",
+      "bytes": 9368108,
+      "sha256": "5d984de352219b877f4c81c526626ee58b8849ce88a0328986ea028e5a40b866"
+    },
+    {
+      "path": "public/scenes/expectations/performance.json",
+      "bytes": 1087957,
+      "sha256": "2acd1c34373c827ac5d5340bc12261b60140fb1bdd66591957db49a5e42a195c"
+    },
+    {
+      "path": "public/scenes/expectations/scene.json",
+      "bytes": 19515,
+      "sha256": "a7157819b3ad68f6d6bc3e51de4a402ed708660503cce62f95c1b8371702a1b3"
+    },
+    {
       "path": "public/scenes/fade-into-you/backing.mp3",
       "bytes": 8368940,
       "sha256": "a742c05f238d2b3c435f6b6628c4013473664c6ed624f02f75d29da4461732ee"

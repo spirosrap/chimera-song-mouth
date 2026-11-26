@@ -1,0 +1,897 @@
+{
+  "setting": "expectations",
+  "title": "Olivia Rodrigo feat. Chappell Roan · expectations",
+  "description": "The complete retro game show with the Channel OR opening, Johnny Johnson, three Olivia R. contestants, letterboard, Sister Squabble, prize car, the phone sets and the confetti duet. Physical CHIMERA vocals and dialogue use the original accompaniment.",
+  "duration": 292.687528,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "expect-olivia",
+      "name": "Olivia",
+      "role": "First verse, phone chorus and duet",
+      "tele": "expect-olivia.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "expect-chappell",
+      "name": "Chappell",
+      "role": "Sister Squabble verse, responses and duet",
+      "tele": "expect-chappell.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "expect-johnny",
+      "name": "Johnny Johnson",
+      "role": "Game-show host",
+      "tele": "expect-johnny.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "expect-announcer",
+      "name": "Announcer",
+      "role": "Opening broadcast",
+      "tele": "expect-announcer.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.76,
+      "end": 3.23,
+      "text": "Ooh, Olivia does remixes now.",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 3.76,
+      "end": 4.88,
+      "text": "Settle down, folks.",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 5.34,
+      "end": 6.76,
+      "text": "It's time for",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 7.38,
+      "end": 9.92,
+      "text": "The Big Expectations Show.",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 10.4,
+      "end": 12.78,
+      "text": "With your host, Johnny Johnson.",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 13.55,
+      "end": 15.7,
+      "text": "Let's meet tonight's contestants.",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 16.02,
+      "end": 17.5,
+      "text": "Olivia Rodrigo!",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 18.55,
+      "end": 20.27,
+      "text": "Olivia Rodrigo!",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 21.02,
+      "end": 23.06,
+      "text": "Olivia Rodrigo!",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 24.31,
+      "end": 25.78,
+      "text": "And now, your host",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 26.38,
+      "end": 27.53,
+      "text": "Johnny Johnson!",
+      "speaker": "expect-announcer",
+      "intensity": 0.77
+    },
+    {
+      "start": 31.55,
+      "end": 33.55,
+      "text": "Settle down, folks, settle down.",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 34.15,
+      "end": 38.1,
+      "text": "It's time for The Big Expectations Show.",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 38.74,
+      "end": 41.25,
+      "text": "I'm your host, Johnny Johnson.",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 41.84,
+      "end": 44.13,
+      "text": "Now, let's meet our contestants.",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 44.82,
+      "end": 45.95,
+      "text": "Olivia R.",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 46.47,
+      "end": 49.3,
+      "text": "Tell me a little bit how you got here.",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 50.67,
+      "end": 53.69,
+      "text": "I met him at a party",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 54.46,
+      "end": 57.31,
+      "text": "I think he was on drugs",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 58.02,
+      "end": 60.94,
+      "text": "He wasn't smart or funny",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 61.52,
+      "end": 64.54,
+      "text": "I convinced myself he was",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 64.64,
+      "end": 67.9,
+      "text": "He had a great apartment",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 68.15,
+      "end": 71.65,
+      "text": "And a gorgeous pair of eyes",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 71.68,
+      "end": 74.95,
+      "text": "I thought that he was perfect",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 75.1,
+      "end": 77.63,
+      "text": "And now his number's blocked",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 78.17,
+      "end": 79.73,
+      "text": "Took a couple months",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 79.78,
+      "end": 81.28,
+      "text": "Took a couple months",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 81.3,
+      "end": 83.19,
+      "text": "But now I am cured",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 83.22,
+      "end": 85.14,
+      "text": "Now I am cured",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 85.17,
+      "end": 86.96,
+      "text": "I am so evil",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 87,
+      "end": 88.81,
+      "text": "I am so evil",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 88.85,
+      "end": 93.29,
+      "text": "Now I ask for more and more and more and more and more",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 93.31,
+      "end": 97.34,
+      "text": "I won't settle for a guy with a fake job",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 97.36,
+      "end": 99.15,
+      "text": "Who seems so desperate for love",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 99.18,
+      "end": 100.72,
+      "text": "But baby, I'm not",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 100.74,
+      "end": 104.25,
+      "text": "Gave my heart with zero stipulations",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 104.29,
+      "end": 107.72,
+      "text": "Now I take careful consideration",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 107.74,
+      "end": 111.68,
+      "text": "I'm not kissing any boy that is passive",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 111.71,
+      "end": 115.21,
+      "text": "The indecision is painfully unattractive",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 115.26,
+      "end": 118.62,
+      "text": "Past mistakes are just new information",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 118.66,
+      "end": 122.48,
+      "text": "These days I've got expectations",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 123.64,
+      "end": 127.51,
+      "text": "And we're back with another special episode of",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 127.57,
+      "end": 130.96,
+      "text": "Sister Squabble featuring the reigning champs",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 131.04,
+      "end": 132.44,
+      "text": "The Rodrigos",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 133.28,
+      "end": 137.05,
+      "text": "Going heart to heart with the Roans.",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 140.32,
+      "end": 142.24,
+      "text": "Contestants, come on up.",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 144.15,
+      "end": 146.96,
+      "text": "All right, here we go.",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 147.74,
+      "end": 150.14,
+      "text": "We surveyed one hundred people in the room.",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 150.53,
+      "end": 153.9,
+      "text": "Question, places you should take her?",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    },
+    {
+      "start": 154.96,
+      "end": 158.5,
+      "text": "I took her to a concert",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 158.6,
+      "end": 161.62,
+      "text": "Front row, thought it'd be fun",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 162.1,
+      "end": 165.62,
+      "text": "Her hand moving up my thigh",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 165.65,
+      "end": 169.22,
+      "text": "Noticed a piercing on her tongue",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 169.31,
+      "end": 172.57,
+      "text": "She said she'd call me later",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 172.6,
+      "end": 176.31,
+      "text": "That was three weeks ago",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 176.39,
+      "end": 179.75,
+      "text": "Classic L.A. behavior",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 179.78,
+      "end": 182.48,
+      "text": "She could've just said no, no, no",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 182.53,
+      "end": 184.62,
+      "text": "But in a couple months",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 184.65,
+      "end": 186.05,
+      "text": "In a couple months",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 186.08,
+      "end": 188.06,
+      "text": "This love will be procured",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 188.1,
+      "end": 189.72,
+      "text": "This love will be procured",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 189.75,
+      "end": 191.42,
+      "text": "She will be mine",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 191.46,
+      "end": 193.18,
+      "text": "She will be mine",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 193.21,
+      "end": 197.7,
+      "text": "I will be adored, adored, adored, adored, adored",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 197.74,
+      "end": 201.71,
+      "text": "I won't settle for a girl with a fake job",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 201.74,
+      "end": 203.56,
+      "text": "Who seems so desperate for love",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 203.58,
+      "end": 205.66,
+      "text": "But baby, I'm not",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 205.69,
+      "end": 209.1,
+      "text": "Gave my heart with zero stipulations",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 209.14,
+      "end": 212.56,
+      "text": "Now I take careful consideration",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 212.6,
+      "end": 216.13,
+      "text": "I'm not kissing any girl that is passive",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 216.16,
+      "end": 219.69,
+      "text": "The indecision is painfully unattractive",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 219.71,
+      "end": 223.19,
+      "text": "Past mistakes are just new information",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 223.22,
+      "end": 227.04,
+      "text": "These days I've got expectations",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 227.1,
+      "end": 230.47,
+      "text": "I've got big expectations",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 230.51,
+      "end": 233.95,
+      "text": "I've got real big expectations",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 234.1,
+      "end": 237.71,
+      "text": "I've got big expectations",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 237.74,
+      "end": 241.18,
+      "text": "I've got real big expectations",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 241.22,
+      "end": 244.7,
+      "text": "She's got big expectations",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 245.36,
+      "end": 248.4,
+      "text": "She's got real big expectations",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 248.46,
+      "end": 252.07,
+      "text": "She's got big expectations",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 252.44,
+      "end": 255.54,
+      "text": "She's got real big expectations",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 255.81,
+      "end": 259.52,
+      "text": "I won't settle for a guy with a fake job",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 259.56,
+      "end": 261.63,
+      "text": "Who seems so desperate for love",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 261.65,
+      "end": 263.16,
+      "text": "But baby, I'm not",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 263.26,
+      "end": 266.52,
+      "text": "Gave my heart with zero stipulations",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 266.56,
+      "end": 269.8,
+      "text": "Now I take careful consideration",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 269.84,
+      "end": 272.69,
+      "text": "I'm not kissing any boy",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 272.73,
+      "end": 274.42,
+      "text": "Not kissing a boy",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 274.44,
+      "end": 277.36,
+      "text": "The indecision is painfully unattractive",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 277.4,
+      "end": 280.95,
+      "text": "Past mistakes are just new information",
+      "speaker": "expect-olivia",
+      "intensity": 0.88
+    },
+    {
+      "start": 280.98,
+      "end": 284.71,
+      "text": "These days I've got expectations",
+      "speaker": "expect-chappell",
+      "intensity": 0.88
+    },
+    {
+      "start": 287.95,
+      "end": 289.69,
+      "text": "Can we do all that again?",
+      "speaker": "expect-johnny",
+      "intensity": 0.77
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "expect-channel"
+    },
+    {
+      "time": 2.875,
+      "view": "expect-audience"
+    },
+    {
+      "time": 5.167,
+      "view": "expect-title"
+    },
+    {
+      "time": 13.56,
+      "view": "expect-introductions"
+    },
+    {
+      "time": 26.333,
+      "view": "expect-audience"
+    },
+    {
+      "time": 32.292,
+      "view": "expect-host"
+    },
+    {
+      "time": 42.417,
+      "view": "expect-contestants"
+    },
+    {
+      "time": 44.292,
+      "view": "expect-split"
+    },
+    {
+      "time": 48.208,
+      "view": "expect-host"
+    },
+    {
+      "time": 49.958,
+      "view": "expect-contestants"
+    },
+    {
+      "time": 51.625,
+      "view": "expect-split"
+    },
+    {
+      "time": 57.833,
+      "view": "expect-contestants"
+    },
+    {
+      "time": 67.75,
+      "view": "expect-prize"
+    },
+    {
+      "time": 71.958,
+      "view": "expect-letterboard"
+    },
+    {
+      "time": 75.708,
+      "view": "expect-host"
+    },
+    {
+      "time": 77.25,
+      "view": "expect-split"
+    },
+    {
+      "time": 82,
+      "view": "expect-host"
+    },
+    {
+      "time": 84,
+      "view": "expect-prize"
+    },
+    {
+      "time": 89.542,
+      "view": "expect-letterboard"
+    },
+    {
+      "time": 93.667,
+      "view": "expect-phone"
+    },
+    {
+      "time": 95.083,
+      "view": "expect-blue-grid"
+    },
+    {
+      "time": 98.833,
+      "view": "expect-phone"
+    },
+    {
+      "time": 101.75,
+      "view": "expect-blue-grid"
+    },
+    {
+      "time": 105.708,
+      "view": "expect-phone"
+    },
+    {
+      "time": 108.125,
+      "view": "expect-blue-grid"
+    },
+    {
+      "time": 111.625,
+      "view": "expect-phone"
+    },
+    {
+      "time": 119.042,
+      "view": "expect-blue-grid"
+    },
+    {
+      "time": 122.542,
+      "view": "expect-squabble"
+    },
+    {
+      "time": 127.125,
+      "view": "expect-survey"
+    },
+    {
+      "time": 135.042,
+      "view": "expect-host"
+    },
+    {
+      "time": 137.917,
+      "view": "expect-survey"
+    },
+    {
+      "time": 145.417,
+      "view": "expect-buzzer"
+    },
+    {
+      "time": 150.5,
+      "view": "expect-survey"
+    },
+    {
+      "time": 155.833,
+      "view": "expect-buzzer"
+    },
+    {
+      "time": 158.417,
+      "view": "expect-survey"
+    },
+    {
+      "time": 168.333,
+      "view": "expect-question"
+    },
+    {
+      "time": 180.25,
+      "view": "expect-split"
+    },
+    {
+      "time": 183,
+      "view": "expect-prize"
+    },
+    {
+      "time": 194.667,
+      "view": "expect-pink-grid"
+    },
+    {
+      "time": 216.042,
+      "view": "expect-phone"
+    },
+    {
+      "time": 221,
+      "view": "expect-pink-grid"
+    },
+    {
+      "time": 232.458,
+      "view": "expect-gold-titles"
+    },
+    {
+      "time": 240.5,
+      "view": "expect-prize-money"
+    },
+    {
+      "time": 253.833,
+      "view": "expect-finale"
+    },
+    {
+      "time": 259.833,
+      "view": "expect-split"
+    },
+    {
+      "time": 264.208,
+      "view": "expect-finale"
+    },
+    {
+      "time": 266.25,
+      "view": "expect-prize"
+    },
+    {
+      "time": 269,
+      "view": "expect-finale"
+    },
+    {
+      "time": 272.75,
+      "view": "expect-pink-grid"
+    },
+    {
+      "time": 274.625,
+      "view": "expect-finale"
+    },
+    {
+      "time": 280.25,
+      "view": "expect-phone"
+    },
+    {
+      "time": 283.083,
+      "view": "expect-split"
+    },
+    {
+      "time": 286.958,
+      "view": "expect-goodnight"
+    }
+  ]
+}
