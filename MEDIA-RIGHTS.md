@@ -156,3 +156,5 @@ The owner supplied The Strokes — Lonely in the Future. The complete scene uses
 The owner supplied Olivia Rodrigo feat. Chappell Roan — expectations. The complete game-show scene uses the separated accompaniment and studio effects with physical CHIMERA duet vocals, host and announcer. The source recording and video rights remain with their holders.
 
 The owner supplied Wet Leg — pokemon. The full scene follows the giant-egg story with the separated original accompaniment and a physical CHIMERA vocal. The song, recording and video rights remain with their holders.
+
+The owner supplied XG — DEPENDS. The complete scene uses separated original accompaniment and effects, seven physical CHIMERA voices, synchronized captions and procedurally drawn performers and insects. Rights in the song, recording and video remain with their respective holders.

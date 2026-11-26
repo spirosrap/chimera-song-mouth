@@ -6072,6 +6072,66 @@
       "sha256": "fceea43d9661b5f8dea1a0fa25ff96cf6268bb6ac1e757e86997eb3711f1673d"
     },
     {
+      "path": "public/scenes/xg-depends/backing.mp3",
+      "bytes": 6830636,
+      "sha256": "5ea62df8734da59ff6fb64b0af59e7274877831bc4689e411156f7b3ce4649aa"
+    },
+    {
+      "path": "public/scenes/xg-depends/credits.txt",
+      "bytes": 568,
+      "sha256": "6f0ed2fe9f21f3862a3f52229185f6c5025d86b99acd5c0a37451e207712a14b"
+    },
+    {
+      "path": "public/scenes/xg-depends/depends-blue.tele.gz",
+      "bytes": 349986,
+      "sha256": "06d367c127490148f58c0b4b74fb1fa200779f5d212e68f8e8cb7c63fa58b94d"
+    },
+    {
+      "path": "public/scenes/xg-depends/depends-green.tele.gz",
+      "bytes": 296038,
+      "sha256": "bed1bc952cbd0f57138274253cede0f101e67d15b651ed704e9517161fe948bb"
+    },
+    {
+      "path": "public/scenes/xg-depends/depends-orange.tele.gz",
+      "bytes": 393338,
+      "sha256": "2b7662818add18ee2d0b2ca30890fe947990a1ba00e37263459d02e4fc57744f"
+    },
+    {
+      "path": "public/scenes/xg-depends/depends-purple.tele.gz",
+      "bytes": 298577,
+      "sha256": "549206471c393fee3906ba2c80e7a38a83e27ef5b8ffdb7344a15544aa8bd8ca"
+    },
+    {
+      "path": "public/scenes/xg-depends/depends-red.tele.gz",
+      "bytes": 519811,
+      "sha256": "e101b82912c2d9a314196bcc1e3ae25534064f6216b3822303c0f0612dfd860b"
+    },
+    {
+      "path": "public/scenes/xg-depends/depends-silver.tele.gz",
+      "bytes": 433663,
+      "sha256": "575e9b90ad1e3bfd8b29aa20cd90c6f9c9e5c8ba79d5cd948eba1d0542038595"
+    },
+    {
+      "path": "public/scenes/xg-depends/depends-yellow.tele.gz",
+      "bytes": 455582,
+      "sha256": "5f02b7a9d5b587edd8d4567862dac40d97a4bf2017b9d18b493757b836969670"
+    },
+    {
+      "path": "public/scenes/xg-depends/mix.mp3",
+      "bytes": 6830636,
+      "sha256": "df95d45baba59b5c02058cc2598b4eaa529a39ef4ee4c71745ae4e6e1ef0d23a"
+    },
+    {
+      "path": "public/scenes/xg-depends/performance.json",
+      "bytes": 931861,
+      "sha256": "3d59993ca04c0ebf69774f442f0c8875c4e45af65145ca1ceb13206088650b13"
+    },
+    {
+      "path": "public/scenes/xg-depends/scene.json",
+      "bytes": 16132,
+      "sha256": "7b2998232ace5fe9e67c24bd6cc48e988252239bb9186248a4f585e938652dd7"
+    },
+    {
       "path": "public/scenes/zara-blue-moon/backing.mp3",
       "bytes": 6221612,
       "sha256": "62dda0ea8707abf395d07525d24e4f85adcc39fe94169dad01fa6ce9a82db958"

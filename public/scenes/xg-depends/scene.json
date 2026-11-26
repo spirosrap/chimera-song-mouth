@@ -1,0 +1,746 @@
+{
+  "setting": "xgdepends",
+  "title": "XG · DEPENDS",
+  "description": "Seven physical CHIMERA performers chase colorful creatures through a service station, grocery aisle, picnic and roadside fireworks, then meet the giant insects. The complete supplied edit with original accompaniment.",
+  "duration": 213.391383,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "depends-yellow",
+      "name": "Yellow performer",
+      "role": "CHIMERA vocals",
+      "tele": "depends-yellow.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "depends-blue",
+      "name": "Blue performer",
+      "role": "CHIMERA vocals",
+      "tele": "depends-blue.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "depends-purple",
+      "name": "Purple performer",
+      "role": "CHIMERA vocals",
+      "tele": "depends-purple.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "depends-silver",
+      "name": "Silver performer",
+      "role": "CHIMERA vocals",
+      "tele": "depends-silver.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "depends-red",
+      "name": "Red performer",
+      "role": "CHIMERA vocals",
+      "tele": "depends-red.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "depends-green",
+      "name": "Green performer",
+      "role": "CHIMERA vocals",
+      "tele": "depends-green.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "depends-orange",
+      "name": "Orange performer",
+      "role": "CHIMERA vocals",
+      "tele": "depends-orange.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 16.5,
+      "end": 18.63,
+      "text": "Oh, oh",
+      "speaker": "depends-yellow",
+      "intensity": 0.88
+    },
+    {
+      "start": 19.2,
+      "end": 23.54,
+      "text": "I've been single for tonight, but I ain't been all alone",
+      "speaker": "depends-yellow",
+      "intensity": 0.88
+    },
+    {
+      "start": 23.63,
+      "end": 27.6,
+      "text": "And lately I've been everywhere but home",
+      "speaker": "depends-yellow",
+      "intensity": 0.88
+    },
+    {
+      "start": 27.88,
+      "end": 32.29,
+      "text": "I've been finding myself, I've been losing my soul",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 32.42,
+      "end": 35.78,
+      "text": "Looking for any reason to lose control",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 35.89,
+      "end": 38.12,
+      "text": "In the low lights, what do I see?",
+      "speaker": "depends-orange",
+      "intensity": 0.88
+    },
+    {
+      "start": 38.49,
+      "end": 40.28,
+      "text": "It's a party with the whole team",
+      "speaker": "depends-orange",
+      "intensity": 0.88
+    },
+    {
+      "start": 40.46,
+      "end": 44.55,
+      "text": "Bet you're probably thinking I'll be alone",
+      "speaker": "depends-orange",
+      "intensity": 0.88
+    },
+    {
+      "start": 44.67,
+      "end": 46.89,
+      "text": "Said I'm spicy, wanna try me?",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 46.97,
+      "end": 49.08,
+      "text": "Keep a good boy on a tight leash",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 49.13,
+      "end": 51.12,
+      "text": "If you're asking me what's next",
+      "speaker": "depends-green",
+      "intensity": 0.88
+    },
+    {
+      "start": 51.17,
+      "end": 53.23,
+      "text": "Baby, I don't know, I guess it just",
+      "speaker": "depends-green",
+      "intensity": 0.88
+    },
+    {
+      "start": 53.27,
+      "end": 55.19,
+      "text": "D E P E N D S",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 55.21,
+      "end": 57.36,
+      "text": "I might call you, might call my ex",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 57.39,
+      "end": 59.43,
+      "text": "Oh damn, I got you in distress",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 59.45,
+      "end": 61.54,
+      "text": "I'd love to, love to make you",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 61.56,
+      "end": 61.85,
+      "text": "It",
+      "speaker": "depends-purple",
+      "intensity": 0.88
+    },
+    {
+      "start": 61.92,
+      "end": 63.84,
+      "text": "D E P E N D S",
+      "speaker": "depends-purple",
+      "intensity": 0.88
+    },
+    {
+      "start": 63.86,
+      "end": 66.01,
+      "text": "I might call you, might call my ex",
+      "speaker": "depends-purple",
+      "intensity": 0.88
+    },
+    {
+      "start": 66.04,
+      "end": 68.08,
+      "text": "Oh damn, I got you in distress",
+      "speaker": "depends-purple",
+      "intensity": 0.88
+    },
+    {
+      "start": 68.1,
+      "end": 70.19,
+      "text": "I'd love to, love to make you",
+      "speaker": "depends-purple",
+      "intensity": 0.88
+    },
+    {
+      "start": 70.36,
+      "end": 72.62,
+      "text": "Feeling like game six, I'm Magic",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 72.65,
+      "end": 74.94,
+      "text": "Who is out here making new new feel classic?",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 75,
+      "end": 76.91,
+      "text": "Tenfold and my hands look royal",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 76.98,
+      "end": 79.03,
+      "text": "Play your cards right and you might get spoiled",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 79.17,
+      "end": 81.28,
+      "text": "Baby, I got options, I'm bad at decisions",
+      "speaker": "depends-orange",
+      "intensity": 0.88
+    },
+    {
+      "start": 81.35,
+      "end": 83.45,
+      "text": "I wouldn't take my chance if I was in your position",
+      "speaker": "depends-orange",
+      "intensity": 0.88
+    },
+    {
+      "start": 83.49,
+      "end": 85.59,
+      "text": "Taking back control like Janet",
+      "speaker": "depends-orange",
+      "intensity": 0.88
+    },
+    {
+      "start": 85.65,
+      "end": 87.85,
+      "text": "That's my jewelry, gem, I don't ask, I demand it",
+      "speaker": "depends-orange",
+      "intensity": 0.88
+    },
+    {
+      "start": 87.85,
+      "end": 90.08,
+      "text": "In the low lights, what do I see?",
+      "speaker": "depends-yellow",
+      "intensity": 0.88
+    },
+    {
+      "start": 90.45,
+      "end": 92.24,
+      "text": "It's a party with the whole team",
+      "speaker": "depends-yellow",
+      "intensity": 0.88
+    },
+    {
+      "start": 92.42,
+      "end": 96.51,
+      "text": "Bet you're probably thinking I'll be alone",
+      "speaker": "depends-yellow",
+      "intensity": 0.88
+    },
+    {
+      "start": 96.63,
+      "end": 98.85,
+      "text": "Said I'm spicy, wanna try me?",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 98.93,
+      "end": 101.04,
+      "text": "Keep a good girl on a tight leash",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 101.09,
+      "end": 103.08,
+      "text": "If you're asking me what's next",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 103.13,
+      "end": 105.19,
+      "text": "Baby, I don't know, I guess it just",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 105.24,
+      "end": 107.16,
+      "text": "D E P E N D S",
+      "speaker": "depends-green",
+      "intensity": 0.88
+    },
+    {
+      "start": 107.18,
+      "end": 109.33,
+      "text": "I might call you, might call my ex",
+      "speaker": "depends-green",
+      "intensity": 0.88
+    },
+    {
+      "start": 109.36,
+      "end": 111.4,
+      "text": "Oh damn, I got you in distress",
+      "speaker": "depends-green",
+      "intensity": 0.88
+    },
+    {
+      "start": 111.42,
+      "end": 113.51,
+      "text": "I'd love to, love to make you",
+      "speaker": "depends-green",
+      "intensity": 0.88
+    },
+    {
+      "start": 113.54,
+      "end": 113.83,
+      "text": "It",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 113.88,
+      "end": 115.8,
+      "text": "D E P E N D S",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 115.82,
+      "end": 117.97,
+      "text": "I might call you, might call my ex",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 118,
+      "end": 120.04,
+      "text": "Oh damn, I got you in distress",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 120.06,
+      "end": 122.15,
+      "text": "I'd love to, love to make you",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 123.6,
+      "end": 126.04,
+      "text": "You know what time it is",
+      "speaker": "depends-purple",
+      "intensity": 0.88
+    },
+    {
+      "start": 126.08,
+      "end": 130.38,
+      "text": "There's a consequence of crossing the line",
+      "speaker": "depends-purple",
+      "intensity": 0.88
+    },
+    {
+      "start": 130.48,
+      "end": 134.57,
+      "text": "Oh, didn't your common sense",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 134.73,
+      "end": 138.65,
+      "text": "Tell you that I'ma say goodbye?",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 138.72,
+      "end": 142.43,
+      "text": "Oh",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 144.12,
+      "end": 146.22,
+      "text": "D E P E N D S",
+      "speaker": "depends-green",
+      "intensity": 0.88
+    },
+    {
+      "start": 148.37,
+      "end": 150.47,
+      "text": "D E P E N D S",
+      "speaker": "depends-purple",
+      "intensity": 0.88
+    },
+    {
+      "start": 152.62,
+      "end": 154.77,
+      "text": "D E P E N D S",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 156.98,
+      "end": 158.64,
+      "text": "D E P E N D S",
+      "speaker": "depends-yellow",
+      "intensity": 0.88
+    },
+    {
+      "start": 159.05,
+      "end": 159.34,
+      "text": "It",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 159.4,
+      "end": 161.32,
+      "text": "D E P E N D S",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 161.34,
+      "end": 163.49,
+      "text": "I might call you, might call my ex",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 163.52,
+      "end": 165.56,
+      "text": "Oh damn, I got you in distress",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 165.58,
+      "end": 167.67,
+      "text": "I'd love to, love to make you",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 167.68,
+      "end": 167.97,
+      "text": "It",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 168.02,
+      "end": 169.94,
+      "text": "D E P E N D S",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 169.96,
+      "end": 172.11,
+      "text": "I might call you, might call my ex",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 172.14,
+      "end": 174.18,
+      "text": "Oh damn, I got you in distress",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 174.2,
+      "end": 176.29,
+      "text": "I'd love to, love to make you",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 176.36,
+      "end": 178.26,
+      "text": "I love to, love to",
+      "speaker": "depends-green",
+      "intensity": 0.88
+    },
+    {
+      "start": 178.36,
+      "end": 180.9,
+      "text": "I love to, love to",
+      "speaker": "depends-yellow",
+      "intensity": 0.88
+    },
+    {
+      "start": 181.04,
+      "end": 182.5,
+      "text": "I love to",
+      "speaker": "depends-blue",
+      "intensity": 0.88
+    },
+    {
+      "start": 182.86,
+      "end": 184.7,
+      "text": "I love to, love to",
+      "speaker": "depends-purple",
+      "intensity": 0.88
+    },
+    {
+      "start": 184.84,
+      "end": 186.79,
+      "text": "I love to, love to",
+      "speaker": "depends-silver",
+      "intensity": 0.88
+    },
+    {
+      "start": 187,
+      "end": 189,
+      "text": "I love to, love to",
+      "speaker": "depends-red",
+      "intensity": 0.88
+    },
+    {
+      "start": 189.18,
+      "end": 191.38,
+      "text": "I love to, love to",
+      "speaker": "depends-green",
+      "intensity": 0.88
+    },
+    {
+      "start": 191.55,
+      "end": 192.82,
+      "text": "I love to",
+      "speaker": "depends-orange",
+      "intensity": 0.88
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "depends-gather"
+    },
+    {
+      "time": 12.7,
+      "view": "depends-title"
+    },
+    {
+      "time": 18.7,
+      "view": "depends-service-station"
+    },
+    {
+      "time": 24.5,
+      "view": "depends-convertible"
+    },
+    {
+      "time": 26.9,
+      "view": "depends-grocery"
+    },
+    {
+      "time": 31.7,
+      "view": "depends-shopping-cart"
+    },
+    {
+      "time": 35.035,
+      "view": "depends-picnic"
+    },
+    {
+      "time": 42.1,
+      "view": "depends-flowers"
+    },
+    {
+      "time": 43.21,
+      "view": "depends-roadside"
+    },
+    {
+      "time": 51.6,
+      "view": "depends-dance-close"
+    },
+    {
+      "time": 55.5,
+      "view": "depends-blue-dance"
+    },
+    {
+      "time": 61.8,
+      "view": "depends-dance-close"
+    },
+    {
+      "time": 66.3,
+      "view": "depends-blue-dance"
+    },
+    {
+      "time": 68.4,
+      "view": "depends-service-station"
+    },
+    {
+      "time": 72.8,
+      "view": "depends-convertible"
+    },
+    {
+      "time": 79.8,
+      "view": "depends-shopping-cart"
+    },
+    {
+      "time": 84.5,
+      "view": "depends-grocery"
+    },
+    {
+      "time": 87.7,
+      "view": "depends-flowers"
+    },
+    {
+      "time": 95.9,
+      "view": "depends-sparks"
+    },
+    {
+      "time": 104.021,
+      "view": "depends-blue-dance"
+    },
+    {
+      "time": 111.6,
+      "view": "depends-dance-close"
+    },
+    {
+      "time": 120.2,
+      "view": "depends-service-station"
+    },
+    {
+      "time": 122.414,
+      "view": "depends-grocery"
+    },
+    {
+      "time": 129.4,
+      "view": "depends-shopping-cart"
+    },
+    {
+      "time": 136.7,
+      "view": "depends-convertible"
+    },
+    {
+      "time": 139.806,
+      "view": "depends-white-dance"
+    },
+    {
+      "time": 147.022,
+      "view": "depends-chase"
+    },
+    {
+      "time": 150.776,
+      "view": "depends-white-dance"
+    },
+    {
+      "time": 155.572,
+      "view": "depends-chase"
+    },
+    {
+      "time": 162.8,
+      "view": "depends-white-dance"
+    },
+    {
+      "time": 169.5,
+      "view": "depends-chase"
+    },
+    {
+      "time": 176.1,
+      "view": "depends-creature-reveal"
+    },
+    {
+      "time": 178.553,
+      "view": "depends-bee"
+    },
+    {
+      "time": 180.764,
+      "view": "depends-cicada"
+    },
+    {
+      "time": 182.891,
+      "view": "depends-mantis"
+    },
+    {
+      "time": 185.06,
+      "view": "depends-butterfly"
+    },
+    {
+      "time": 187.02,
+      "view": "depends-ladybird"
+    },
+    {
+      "time": 189.272,
+      "view": "depends-leafhopper"
+    },
+    {
+      "time": 191.316,
+      "view": "depends-pink-mantis"
+    },
+    {
+      "time": 193.276,
+      "view": "depends-flight"
+    },
+    {
+      "time": 197.781,
+      "view": "depends-masthead"
+    },
+    {
+      "time": 200.784,
+      "view": "depends-name-card"
+    },
+    {
+      "time": 203.787,
+      "view": "depends-garden-card"
+    },
+    {
+      "time": 206.79,
+      "view": "depends-end-credits"
+    },
+    {
+      "time": 210.669,
+      "view": "depends-logo"
+    }
+  ]
+}
