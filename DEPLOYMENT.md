@@ -557,3 +557,19 @@ Chromium verified play, pause and forward and backward seeks on desktop and
 phone. Selected speech clips improved on the dedicated speech pass, with
 some pronunciation and layered singing still approximate. Real-time video
 export was not exercised.
+
+### pokemon
+
+The complete 3:27 Wet Leg scene (`d15b509`, 26 November 2026) is live at
+`?scene=wet-leg-pokemon`. It follows the egg through the armchair, convertible,
+picnic, treadmill and roadside hatch to the final joined hands. A single
+physical track sings over the separated original accompaniment and drives both
+characters. The revised phrasing reduced misheard words from 40 to 24 across
+eight sampled hook lines.
+
+The publisher returned `DEPLOY_EXIT=0`. All 34 uploaded files and four direct
+or versioned URLs matched the build over HTTPS. All 1,214 earlier assets retain
+their hashes. TypeScript, the production build, 784 Bun tests, 401 native tests,
+and 17 focused checks passed. Local Chromium verified playback and seeking
+through the hatch and backward to the opening on desktop and phone. Real-time
+video export was not exercised.
