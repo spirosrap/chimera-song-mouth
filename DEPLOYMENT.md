@@ -573,3 +573,20 @@ their hashes. TypeScript, the production build, 784 Bun tests, 401 native tests,
 and 17 focused checks passed. Local Chromium verified playback and seeking
 through the hatch and backward to the opening on desktop and phone. Real-time
 video export was not exercised.
+
+### DEPENDS
+
+The complete 3:33 XG scene (`e065968`, 26 November 2026) is live at
+`?scene=xg-depends`. Seven independent physical mouths follow 72 vocal cues
+over the separated original stereo accompaniment. The 45 camera cuts cover
+the service station, grocery, picnic, roadside sparks, choreography and
+chase, individual giant-insect portraits, and closing cards.
+
+The publisher returned `DEPLOY_EXIT=0`. All 40 uploaded files and ten direct
+or versioned URLs matched the production build over HTTPS. All 1,220
+preceding asset hashes are preserved. The production build, 786 Bun tests,
+401 native tests, 15 focused checks and phone layout lint passed. Local
+Chromium verified playback, pause, and 12 seeks each on desktop and phone.
+The revised hook uses explicit timed consonant releases. Fast syllables,
+voice assignments and layered hooks are approximate. Real-time video export
+was not exercised.
