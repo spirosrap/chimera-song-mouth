@@ -590,3 +590,7 @@ Chromium verified playback, pause, and 12 seeks each on desktop and phone.
 The revised hook uses explicit timed consonant releases. Fast syllables,
 voice assignments and layered hooks are approximate. Real-time video export
 was not exercised.
+
+### CMAT, KAJ, ANOTR, KATSEYE, Little Simz and Viagra Boys · 26 November 2026
+
+Build `54db4e4` is live. All six reference edits have separated original accompaniment, physical CHIMERA vocals, animated settings and captions. The release preserves 1,232 previous assets and adds 43 prepared files. The 71 uploaded files and 31 direct or asset-versioned URLs matched the build. Chromium playback and forward and backward seeking passed for all six live scenes at phone width. TypeScript and all 790 active Bun tests passed, with two skipped. The six full-length 1080p H.264 and AAC exports decoded completely.
