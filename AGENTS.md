@@ -58,6 +58,10 @@ and the CLI) under a React UI. See the README.
 - **Recorded band heads own model leases for their mounted lifetime.** Do not hold an evictable live-preview model in a recorded feed; the original MEGALOVANIA used 13 body blends, beyond the eight-entry cache. Preserve that regression test even when an arrangement changes bodies. Check: `bun test tests/model-leases.test.ts`.
 - **Camera cuts must keep the active singing head clear of background geometry.** Check all Abracadabra source cuts at phone and desktop widths with `bun test tests/abracadabra.test.ts tests/bad-guy.test.ts tests/montero.test.ts tests/taste.test.ts tests/skibidi.test.ts tests/manchild.test.ts tests/aperture.test.ts tests/denial-river.test.ts tests/storm.test.ts`. Its rear camera once sat behind the hall wall. Intentional rear/profile poses may face away; move an obstructed camera or set rather than forcing the head over foreground props. Preserve this regression check in later scenes.
 - **Manual camera fallbacks use the loaded scene's catalog.** Unlisted recent videos previously showed courtroom cameras. Keep `sceneViewChoices` as the fallback in ScenePage; check `bun test tests/scene-view-choices.test.ts` before adding another performance.
+- **A scene's `Beams` draws lines no wider than 2.1 px, whatever width is asked for** (six widths;
+  only the head's own `Beams(true)` has upstream's 2.6 and 3.2 px). About 100 scene calls ask for
+  2.4 to 9 px and were made and approved at 2.1 px; upstream's wider widths, imported as written
+  on 2026-11-26, would have thickened them all. Check: `bun test tests/scene-line-widths.test.ts`.
 - **DOM content flows in `.screen-body`, never absolutely positioned.** Check: `bun run lint:layout`.
 - **On a phone, everything you touch comes before everything you only watch.** The head stays
   first; a screen with nothing to touch (a chart, the tube, the folds) is `<Screen watch>` and goes

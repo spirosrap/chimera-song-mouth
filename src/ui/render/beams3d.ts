@@ -17,6 +17,13 @@ import { core } from "../colors.ts";
 
 /** line widths (CSS px) the batches draw at; a beam takes the nearest */
 const WIDTHS = [0.6, 0.85, 1.05, 1.3, 1.6, 2.1, 2.6, 3.2];
+/** This edition: a Beams draws at the first six of WIDTHS unless it is made `wide`. Upstream added
+ *  2.6 and 3.2 px for the nerve x-ray's face ("which nothing in the app asks for", ba774b6), but
+ *  this edition's scenes ask for wider lines than they were ever drawn at: about 100 calls in 29
+ *  scene renderers pass 2.4 to 9 px (hair at 3 and 4 px) and were made, and approved, with all of
+ *  them drawn at 2.1 px. With eight widths each would come out at 2.6 or 3.2 px. The head
+ *  (`Anatomy3D`) asks for all eight, as upstream's does. Check: `bun test tests/scene-line-widths.test.ts`. */
+const SCENE_WIDTHS = 6;
 
 /** A growable polyline of xyz points, reused between frames. */
 export class Poly {
@@ -132,8 +139,9 @@ export class Beams {
    *  whose neck gives way to a body drawn under it */
   fade: { y: number; band: number } | null = null;
 
-  constructor() {
-    this.batches = WIDTHS.map((w) => {
+  /** `wide`: draw at every width in WIDTHS (the head); otherwise at the six the scenes were made with */
+  constructor(wide = false) {
+    this.batches = (wide ? WIDTHS : WIDTHS.slice(0, SCENE_WIDTHS)).map((w) => {
       const m = new LineMaterial({ linewidth: w, vertexColors: true, transparent: true, depthTest: false, depthWrite: false, toneMapped: false });
       m.blending = THREE.CustomBlending;
       m.blendEquation = THREE.MaxEquation;
@@ -159,7 +167,7 @@ export class Beams {
 
   private batch(width: number): Batch {
     let best = 0;
-    for (let i = 1; i < WIDTHS.length; i++) if (Math.abs(WIDTHS[i] - width) < Math.abs(WIDTHS[best] - width)) best = i;
+    for (let i = 1; i < this.batches.length; i++) if (Math.abs(WIDTHS[i] - width) < Math.abs(WIDTHS[best] - width)) best = i;
     return this.batches[best];
   }
 

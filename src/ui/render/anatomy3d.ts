@@ -668,7 +668,7 @@ export const APP_DRAWING: Readonly<HeadDrawing> = { inner: 1, bone: 1, outline: 
 export class Anatomy3D {
   readonly scene = new THREE.Scene();
   readonly camera = new THREE.PerspectiveCamera(24, 1, 5, 2000);
-  private readonly beams = new Beams();
+  private readonly beams = new Beams(true); // every line width, as upstream: this edition's scenes keep six (beams3d.ts)
   private rest: Rest | null = null;
   private w = 1;
   private h = 1;
