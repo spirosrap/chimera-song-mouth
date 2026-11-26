@@ -180,6 +180,12 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Olivia Rodrigo feat. Chappell Roan — expectations | 4:53 | `?scene=expectations` | Retro game show with Johnny Johnson, letterboard, Sister Squabble, phone sets, yellow prize car and confetti duet |
 | Wet Leg — pokemon | 3:27 | `?scene=wet-leg-pokemon` | Giant egg in the living room, convertible and backyard, with a violet roadside hatch and one physical vocal track |
 | XG — DEPENDS | 3:33 | `?scene=xg-depends` | Seven physical singers and seven colorful insects across a service station, grocery aisle, picnic, roadside fireworks and the giant-insect portraits |
+| CMAT — The Jamie Oliver Petrol Station | 5:42 | `?scene=jamie-oliver-petrol-station` | Teal kitchen, cooking stations, a feathered singer and a television revue. |
+| KAJ — Bara Bada Bastu | 3:15 | `?scene=bara-bada-bastu` | Three physical voices, timber sauna, forest, fire, steam and arena lights. |
+| ANOTR feat. 3DDY — Like It | 4:28 | `?scene=anotr-like-it` | Red corridor, mirrored club, wedding outfits and a changing dance floor. |
+| KATSEYE — PINKY UP | 3:02 | `?scene=katseye-pinky-up` | Five physical voices, swans, claw machine, toys, red car and pinkies at tea. |
+| Little Simz — Young | 3:10 | `?scene=little-simz-young` | An older punk’s flat, bass guitar, street and pub stage with physical rap. |
+| Viagra Boys — Man Made of Meat | 4:39 | `?scene=man-made-of-meat` | Gallery, auction paddles, trampoline and a blue-lit installation. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

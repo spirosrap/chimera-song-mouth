@@ -1472,6 +1472,36 @@
       "sha256": "24042037a1be60fdd7a71b5947a98ed241a317e38c490ae048cd39896b920a28"
     },
     {
+      "path": "public/scenes/anotr-like-it/backing.mp3",
+      "bytes": 8593196,
+      "sha256": "172a23769e633af1988e3bb2070d90131d2707ceef81a5af68169d30426198af"
+    },
+    {
+      "path": "public/scenes/anotr-like-it/credits.txt",
+      "bytes": 83,
+      "sha256": "e72743afb0035881e10011729ad286fdec819a1182b397756854de537be8eb30"
+    },
+    {
+      "path": "public/scenes/anotr-like-it/likeit-vocal.tele.gz",
+      "bytes": 2075401,
+      "sha256": "324aeecaae8decdc7f12af9e8524a4bcda3eee564c345517923ae2d20679fe3a"
+    },
+    {
+      "path": "public/scenes/anotr-like-it/mix.mp3",
+      "bytes": 8593196,
+      "sha256": "896b4f35da8a1bacefe68aa1c78171969ec8642e9487bc0a7bc98173b2f155cf"
+    },
+    {
+      "path": "public/scenes/anotr-like-it/performance.json",
+      "bytes": 404272,
+      "sha256": "fe17270cc6f397ad540b8b785ca21496ce8e6b9d0b83e1e35e61fb0fe5a0c6cc"
+    },
+    {
+      "path": "public/scenes/anotr-like-it/scene.json",
+      "bytes": 8584,
+      "sha256": "adaaf92551b7baab0409ea8bf107482762166fb9f21bba5c388b276d2ae02b41"
+    },
+    {
       "path": "public/scenes/anxiety/anx-echo.tele.gz",
       "bytes": 992638,
       "sha256": "01ac92f59401a3a9a9849c190456b897a22ab4a1d7c26ce9ac45f1a7800d1b99"
@@ -1945,6 +1975,46 @@
       "path": "public/scenes/bangaranga/scene.json",
       "bytes": 14425,
       "sha256": "28e70343c153cc9860e71427c9ff6d38d7a110528ebb6a2f9f01f7eee8ad14de"
+    },
+    {
+      "path": "public/scenes/bara-bada-bastu/backing.mp3",
+      "bytes": 6253868,
+      "sha256": "6c542f8aa22838c47ebed834175e46d9e817455e044a5d132ab3a9438cef7875"
+    },
+    {
+      "path": "public/scenes/bara-bada-bastu/bastu-axel.tele.gz",
+      "bytes": 273158,
+      "sha256": "a02f4bd959a153c9624563fc6006abaa4c07946a35c19c14c46973d567922938"
+    },
+    {
+      "path": "public/scenes/bara-bada-bastu/bastu-jakob.tele.gz",
+      "bytes": 718320,
+      "sha256": "0d3107873972ed991b8cecac928338cf2f68069cc84058385308a9f39b9136ed"
+    },
+    {
+      "path": "public/scenes/bara-bada-bastu/bastu-kevin.tele.gz",
+      "bytes": 616572,
+      "sha256": "5b848725f04e40b79c4d501920410e58b15af35a7aedf3386c0076cee26a351f"
+    },
+    {
+      "path": "public/scenes/bara-bada-bastu/credits.txt",
+      "bytes": 78,
+      "sha256": "c064b00c31d6daa8c89dc4b8fce866092075891dda3d133f74288223a7d059a6"
+    },
+    {
+      "path": "public/scenes/bara-bada-bastu/mix.mp3",
+      "bytes": 6253868,
+      "sha256": "208eff39f72874aaab3e08a277ee891fc683fc172d173d57d7c2e2aa8627cd9c"
+    },
+    {
+      "path": "public/scenes/bara-bada-bastu/performance.json",
+      "bytes": 312484,
+      "sha256": "660e5e9697e0001d1bf6bac569191f2f963e290181dd9ebbc70d78393fb6c6cb"
+    },
+    {
+      "path": "public/scenes/bara-bada-bastu/scene.json",
+      "bytes": 28428,
+      "sha256": "f3341dfad41ac14a44a63fd963ff93775e123426751378d14e5ca08eddc6c938"
     },
     {
       "path": "public/scenes/bbno-two/backing.mp3",
@@ -3582,6 +3652,41 @@
       "sha256": "e344b60cf322e235bc6e5a27d67e92e4c516547f31940738dc791ca67fb91640"
     },
     {
+      "path": "public/scenes/jamie-oliver-petrol-station/backing.mp3",
+      "bytes": 10959404,
+      "sha256": "fabee0c37252245753ed0f0923f67b78905c107ad01c7eee343a03766e1e2e89"
+    },
+    {
+      "path": "public/scenes/jamie-oliver-petrol-station/credits.txt",
+      "bytes": 95,
+      "sha256": "1552d582dd3f6f690c6276a202c4e1c148873721db290d0593acd3d183af9c3f"
+    },
+    {
+      "path": "public/scenes/jamie-oliver-petrol-station/mix.mp3",
+      "bytes": 10959404,
+      "sha256": "c0aee1be34ac4373dc55dd5a0e9e850b8e46d3a5a446f58cd824095f89327ee5"
+    },
+    {
+      "path": "public/scenes/jamie-oliver-petrol-station/performance.json",
+      "bytes": 708154,
+      "sha256": "0aa788dd02f2142af199b3abc5448c7d3d53d317b37999acbda6bc5c30d6aa1c"
+    },
+    {
+      "path": "public/scenes/jamie-oliver-petrol-station/petrol-chef.tele.gz",
+      "bytes": 156829,
+      "sha256": "ab6f3a7b8d6c5c66fd67a80e15a16252e82ded7c445ecce63e1dd3895b587e29"
+    },
+    {
+      "path": "public/scenes/jamie-oliver-petrol-station/petrol-cmat.tele.gz",
+      "bytes": 3081573,
+      "sha256": "687a3bbad573f7ea7c4c44037ec64732a902c018a25b9ecc9535aa3bf0fa20e2"
+    },
+    {
+      "path": "public/scenes/jamie-oliver-petrol-station/scene.json",
+      "bytes": 63046,
+      "sha256": "7e66abdb41a021050360a41c087a3e53e48666c4b7e5b0c3532d5a4c0b53d90d"
+    },
+    {
       "path": "public/scenes/je-taime/backing.mp3",
       "bytes": 9616172,
       "sha256": "b33da5038a476c44d3c71924699c2872e954813056afd313bafcd64d67937fc9"
@@ -3610,6 +3715,56 @@
       "path": "public/scenes/je-taime/scene.json",
       "bytes": 5145,
       "sha256": "5f79cc42d616914ccd8251365ceb6a5127648858e7aee6c688e57c9010f10390"
+    },
+    {
+      "path": "public/scenes/katseye-pinky-up/backing.mp3",
+      "bytes": 5823788,
+      "sha256": "99de85ff290ff1b45ae2d5884af7ea9ab2d2be58992bcefa30a5ff61eb91eaf5"
+    },
+    {
+      "path": "public/scenes/katseye-pinky-up/credits.txt",
+      "bytes": 75,
+      "sha256": "ae0c209e8c08105e4671457f56a798124513d20c7bfe5036b131c011b3465511"
+    },
+    {
+      "path": "public/scenes/katseye-pinky-up/mix.mp3",
+      "bytes": 5823788,
+      "sha256": "288038a14f8eea9114b9071fc5ce679b48d00526bea19b9624b13fa6023a06d5"
+    },
+    {
+      "path": "public/scenes/katseye-pinky-up/performance.json",
+      "bytes": 232073,
+      "sha256": "48539cc310d9fca6109ad98b354588d1635fdf43e07c59be7b5af26d59d9822f"
+    },
+    {
+      "path": "public/scenes/katseye-pinky-up/pinky-five.tele.gz",
+      "bytes": 333191,
+      "sha256": "9ded9db821d23058cbc53860624c5d9a2c3277e92aea83ef8ae679ea1ad1995c"
+    },
+    {
+      "path": "public/scenes/katseye-pinky-up/pinky-four.tele.gz",
+      "bytes": 354182,
+      "sha256": "2acf8db068d1414cca055c3a9b05f79ee88f3c899d352e0dc0e22ff68e1fa48b"
+    },
+    {
+      "path": "public/scenes/katseye-pinky-up/pinky-one.tele.gz",
+      "bytes": 236744,
+      "sha256": "85fe586ad9c638ed6fb1f8b73d1c92002d507af88854ddea2d493627fd92817e"
+    },
+    {
+      "path": "public/scenes/katseye-pinky-up/pinky-three.tele.gz",
+      "bytes": 84251,
+      "sha256": "ff7d7b1c0e1430e40a12928da894dfc4d9e8a12081bf6fd769308729caea9f06"
+    },
+    {
+      "path": "public/scenes/katseye-pinky-up/pinky-two.tele.gz",
+      "bytes": 262113,
+      "sha256": "9341d607ea50b10538b246ac424fc0fe3195ac82a21e8cc4ea1dd5a4dd9ddc73"
+    },
+    {
+      "path": "public/scenes/katseye-pinky-up/scene.json",
+      "bytes": 7503,
+      "sha256": "064813a9539d97f7c0c5956a389513e8baaf207bd1fae785ba9a5f8482498fea"
     },
     {
       "path": "public/scenes/land-confusion/backing.mp3",
@@ -3760,6 +3915,36 @@
       "path": "public/scenes/lithonia/witness.tele.gz",
       "bytes": 62893,
       "sha256": "08bebc6bffd31be81f82e7bd31b47c97e51270238e5d48b4b7475d6e4b2eebef"
+    },
+    {
+      "path": "public/scenes/little-simz-young/backing.mp3",
+      "bytes": 6078764,
+      "sha256": "90846c745dfe4d9fbe0045907dfd5a256e414903cc58b363527b9dd88cc09a25"
+    },
+    {
+      "path": "public/scenes/little-simz-young/credits.txt",
+      "bytes": 76,
+      "sha256": "2515148538326443c607f68c0c5aea7d315eacc8ab55884da38ba06990b6e0e0"
+    },
+    {
+      "path": "public/scenes/little-simz-young/mix.mp3",
+      "bytes": 6078764,
+      "sha256": "1085cb25f0d6959cf3bb158178bf0fbd970b4e23ef3245b650a4ed7a65eee20a"
+    },
+    {
+      "path": "public/scenes/little-simz-young/performance.json",
+      "bytes": 430024,
+      "sha256": "3b483d3c1fbaa4330f630ae5bbbdf916db80a53afa6be1a84c45a0d192c9ae71"
+    },
+    {
+      "path": "public/scenes/little-simz-young/scene.json",
+      "bytes": 7666,
+      "sha256": "dfa6bfdb1789cf16b77da36330ece20d06fc846c252b4da98d3991832543408d"
+    },
+    {
+      "path": "public/scenes/little-simz-young/young-simz.tele.gz",
+      "bytes": 1971778,
+      "sha256": "89a68bd0b8b77b0da5b0f1695ce88ad8542a6b4392a2d3390139ce2d901ce937"
     },
     {
       "path": "public/scenes/lonely-in-the-future/backing.mp3",
@@ -3945,6 +4130,36 @@
       "path": "public/scenes/making-love/scene.json",
       "bytes": 10597,
       "sha256": "82e4db6a0f42bf8cd8abf6921b3cecf4058bf8c10c12514eb27420a9a428b794"
+    },
+    {
+      "path": "public/scenes/man-made-of-meat/backing.mp3",
+      "bytes": 8926508,
+      "sha256": "b79dd18f4a8760cee43cf623111660dcde679033f67591c379145fbcd16664a1"
+    },
+    {
+      "path": "public/scenes/man-made-of-meat/credits.txt",
+      "bytes": 87,
+      "sha256": "a88d0c01fff1f45f167e49eac06a36414f5e82d1f6dd60733a34b56d39299ab8"
+    },
+    {
+      "path": "public/scenes/man-made-of-meat/meat-sebastian.tele.gz",
+      "bytes": 2144053,
+      "sha256": "62a384ab52d3dfe701fc5e34ef4e0b80573ea0b60f25f74e2972d25d4d214e2d"
+    },
+    {
+      "path": "public/scenes/man-made-of-meat/mix.mp3",
+      "bytes": 8926508,
+      "sha256": "a90561a1b988b8c75633324424ebf3d33d19816b140f280c577eafe0877b3745"
+    },
+    {
+      "path": "public/scenes/man-made-of-meat/performance.json",
+      "bytes": 446519,
+      "sha256": "aec1303d2b95c3b883135fae3491533910f98ffcf8a7d0468c09a90f86095f67"
+    },
+    {
+      "path": "public/scenes/man-made-of-meat/scene.json",
+      "bytes": 10186,
+      "sha256": "af0b319cfb2777b5d8c1b3f2d44f620bc865ea3c703e03fa9ddfcc28ccad1a5b"
     },
     {
       "path": "public/scenes/manchild/backing.mp3",

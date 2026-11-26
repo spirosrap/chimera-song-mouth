@@ -158,3 +158,5 @@ The owner supplied Olivia Rodrigo feat. Chappell Roan — expectations. The comp
 The owner supplied Wet Leg — pokemon. The full scene follows the giant-egg story with the separated original accompaniment and a physical CHIMERA vocal. The song, recording and video rights remain with their holders.
 
 The owner supplied XG — DEPENDS. The complete scene uses separated original accompaniment and effects, seven physical CHIMERA voices, synchronized captions and procedurally drawn performers and insects. Rights in the song, recording and video remain with their respective holders.
+
+The six supplied videos by CMAT, KAJ, ANOTR feat. 3DDY, KATSEYE, Little Simz and Viagra Boys have CHIMERA-generated physical voices, reconstructed sets, captions and telemetry. The arrangements retain the separated accompaniment and incidental sounds, which may carry vocal residue. The reference video files are kept outside the repository.

@@ -1,4 +1,4 @@
-/** Render the full xg-depends scene’s physical voices, stereo mix and synchronized mouth telemetry. */
+/** Render a prepared scene’s physical voices, stereo mix and synchronized mouth telemetry. */
 import { readFileSync, writeFileSync, mkdtempSync, rmSync, copyFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -9,12 +9,14 @@ import { initEngine, wasmModule } from '../tests/harness.ts';
 import type { Arrangement, BandPart } from '../src/band/types.ts';
 import { validPerformance } from '../src/band/performance.ts';
 
-const out = fileURLToPath(new URL('../public/scenes/xg-depends/', import.meta.url));
+const scene = process.env.CHIMERA_RENDER_SCENE ?? 'xg-depends';
+if (!/^[a-z0-9-]+$/.test(scene)) throw new Error('Invalid prepared scene ID.');
+const out = fileURLToPath(new URL('../public/scenes/' + scene + '/', import.meta.url));
 const arrangement: Arrangement = JSON.parse(readFileSync(join(out, 'performance.json'), 'utf8'));
 const voices = arrangement.parts.filter(part => part.kind === 'voice');
 const backing = arrangement.parts.find(part => part.kind === 'backing');
-if (voices.length !== 7 || !backing || voices.some(part => !part.performance || !validPerformance(part.performance, arrangement.duration))) {
-  throw new Error('The prepared xg-depends score is invalid.');
+if (!voices.length || !backing || voices.some(part => !part.performance || !validPerformance(part.performance, arrangement.duration))) {
+  throw new Error('Invalid prepared score for ' + scene);
 }
 const rate = 48_000;
 const total = Math.ceil(arrangement.duration * rate);
@@ -121,7 +123,7 @@ function assembleVoice(part: BandPart, windows: Window[], scratch: string) {
 async function makeMix(scratch: string) {
   const byVoice = voices.map(activeRanges);
   const queue = byVoice.flat().sort((a, b) => (b.last - b.first) - (a.last - a.first));
-  const tasks = Array.from({ length: Math.min(7, queue.length) }, async () => {
+  const tasks = Array.from({ length: Math.min(5, queue.length) }, async () => {
     while (queue.length) await launchWindow(queue.shift()!, scratch);
   });
   const results = await Promise.allSettled(tasks);
@@ -154,12 +156,12 @@ async function makeMix(scratch: string) {
 const [id, directory, task] = process.argv.slice(2);
 if (id && directory) {
   const part = voices.find(candidate => candidate.id === id);
-  if (!part) throw new Error('Unknown xg-depends voice: ' + id);
+  if (!part) throw new Error('Unknown prepared voice: ' + id);
   const window = activeRanges(part)[Number(task)];
   if (!window) throw new Error('Unknown render window.');
   await renderWindow(window, directory);
 } else {
-  const scratch = mkdtempSync(join(tmpdir(), 'chimera-xg-depends-'));
+  const scratch = mkdtempSync(join(tmpdir(), 'chimera-physical-scene-'));
   try {
     await makeMix(scratch);
   } finally {

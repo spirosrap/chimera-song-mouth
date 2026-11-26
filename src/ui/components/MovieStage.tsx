@@ -1,3 +1,5 @@
+import {isNextVideo} from '../../scene/next-videos.ts';
+import {NextVideoStage} from '../render/next-videos.ts';
 import {LoveStage} from '../render/ok-go-love.ts';
 import type {LoveId} from '../../scene/ok-go-love.ts';
 import {SS26Stage} from '../render/ss26.ts';
@@ -165,7 +167,7 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
     const canvas=canvasRef.current!,wrap=wrapRef.current!,ctx=canvas.getContext('2d')!;
     let gl:THREE.WebGLRenderer,release:()=>void;
     try{const lease=headRendererPool.acquire();gl=lease.renderer;release=lease.release;}catch{setError('The scene needs WebGL. You can still play and download the scene audio.');return;}
-    gl.outputColorSpace=THREE.LinearSRGBColorSpace;
+    gl.outputColorSpace=isNextVideo(scene.setting)?THREE.SRGBColorSpace:THREE.LinearSRGBColorSpace;
     gl.setPixelRatio(Math.min(1.5,window.devicePixelRatio||1));
     const leases:(()=>void)[]=[];
     const people=scene.characters.flatMap((c,i)=>{
@@ -212,6 +214,7 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
       :scene.setting==='drumsofdeath'?new DrumsOfDeathStage(people[0].model,people[0].track,people[1].model,people[1].track)
       :scene.setting==='backstabber'?new BackstabberStage(people[0].model,people[0].track,people[1].model,people[1].track)
       :scene.setting==='thegiver'?new TheGiverStage(people[0].model,people[0].track,people[1].model,people[1].track)
+      :isNextVideo(scene.setting)?new NextVideoStage(scene.setting, people)
       :scene.setting==='xgdepends'?new DependsStage(people)
       :scene.setting==='wetlegpokemon'?new PokemonStage(people[0])
       :scene.setting==='expectations'?new ExpectationsStage(people[0],people[1],people[2],people[3])
