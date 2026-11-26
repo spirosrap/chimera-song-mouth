@@ -178,6 +178,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Kendrick Lamar — squabble up | 2:46 | `?scene=squabble-up` | Green paneled room, chandelier, bicycle crew, changing dance tableaux, bouncing lowrider and parade banner with original instrumental and three physical voices |
 | The Strokes — Lonely in the Future | 4:20 | `?scene=lonely-in-the-future` | Animated puppet band, CRT newsroom, Bach, cinema marquee, flight into orbit and credits with original accompaniment and physical vocals |
 | Olivia Rodrigo feat. Chappell Roan — expectations | 4:53 | `?scene=expectations` | Retro game show with Johnny Johnson, letterboard, Sister Squabble, phone sets, yellow prize car and confetti duet |
+| Wet Leg — pokemon | 3:27 | `?scene=wet-leg-pokemon` | Giant egg in the living room, convertible and backyard, with a violet roadside hatch and one physical vocal track |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

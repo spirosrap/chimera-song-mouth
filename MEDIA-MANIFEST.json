@@ -5847,6 +5847,36 @@
       "sha256": "81a4ad420c7f7b00642578919f721f5a91f1bb6aea942311811adfb444d85985"
     },
     {
+      "path": "public/scenes/wet-leg-pokemon/backing.mp3",
+      "bytes": 6619436,
+      "sha256": "1950a4159a149ba8eb70e408a8d9ec74bf36fd13e108882e9e6a6bb490f3437b"
+    },
+    {
+      "path": "public/scenes/wet-leg-pokemon/credits.txt",
+      "bytes": 391,
+      "sha256": "025c100617fb5fabac13d9b7c9ae4755bb1aecc62954ca54d8218a56dc9a678d"
+    },
+    {
+      "path": "public/scenes/wet-leg-pokemon/mix.mp3",
+      "bytes": 6619436,
+      "sha256": "f71259d6b5d304b8143e3cb8f920c2241eeaa3afaa4a82e947fcfba2132b14ce"
+    },
+    {
+      "path": "public/scenes/wet-leg-pokemon/performance.json",
+      "bytes": 720339,
+      "sha256": "b0e50a0a44009d85d85e265a3190c486884de55c459f0ead89f29e544bb5d315"
+    },
+    {
+      "path": "public/scenes/wet-leg-pokemon/pokemon-vocal.tele.gz",
+      "bytes": 2406848,
+      "sha256": "ce9696bab35a95d05e85b14d53b143f284fc7130223794bfa8bdc751e2b5ebab"
+    },
+    {
+      "path": "public/scenes/wet-leg-pokemon/scene.json",
+      "bytes": 13441,
+      "sha256": "5c75d6e21015664229768e9c8b37bb5c19b516df10fe89db65dc0b0c1001c5d9"
+    },
+    {
       "path": "public/scenes/whats-he-building/backing.mp3",
       "bytes": 6423596,
       "sha256": "d1290cb8664f951a01120af0f606ec7a6cadb02d0e42ef4427791745d47b86ae"

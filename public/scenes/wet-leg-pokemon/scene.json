@@ -1,0 +1,623 @@
+{
+  "setting": "wetlegpokemon",
+  "title": "Wet Leg · pokemon",
+  "description": "The full giant-egg story from the green armchair through the convertible and backyard to the roadside hatch and joined hands. CHIMERA sings over the original accompaniment.",
+  "duration": 206.796916,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "pokemon-vocal",
+      "name": "Lead vocal",
+      "role": "Physical voice shared by the two characters",
+      "tele": "pokemon-vocal.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 2.18,
+      "end": 5.32,
+      "text": "Ooh, ooh, ooh",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 5.42,
+      "end": 8.88,
+      "text": "Ooh, ooh, ooh",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 11.53,
+      "end": 14.53,
+      "text": "I wanna fall too far",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 14.56,
+      "end": 17.29,
+      "text": "Crawling on the ground",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 17.32,
+      "end": 20.52,
+      "text": "And my hands and knees are bleeding out",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 20.56,
+      "end": 23.36,
+      "text": "Oh, oh, oh, oh, oh",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 23.4,
+      "end": 26.22,
+      "text": "This town, this town is the best I've seen",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 26.26,
+      "end": 29.19,
+      "text": "But nothing hits like you and me",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 29.52,
+      "end": 32.05,
+      "text": "I love you, I say casually",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 32.12,
+      "end": 33.13,
+      "text": "Oh, oh",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 35.24,
+      "end": 37.75,
+      "text": "Oh, to be yours, to be driving away",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 37.8,
+      "end": 40.8,
+      "text": "Baby, you got the keys, let me show you the way",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 40.83,
+      "end": 44.64,
+      "text": "I'll be more than a friend, more than a friend to you",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 45.81,
+      "end": 48.21,
+      "text": "You wanna go for a drive?",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 49.55,
+      "end": 51.8,
+      "text": "I don't wanna take it slow",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 51.84,
+      "end": 54.73,
+      "text": "You wanna go for a drive?",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 55.61,
+      "end": 58.46,
+      "text": "I don't like to be alone",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 59.05,
+      "end": 60.56,
+      "text": "Over and over again",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 61.27,
+      "end": 63.72,
+      "text": "I don't wanna take it slow",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 63.85,
+      "end": 66.72,
+      "text": "You wanna go for a drive?",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 66.86,
+      "end": 69.93,
+      "text": "Oh no, oh no",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 70.28,
+      "end": 73.23,
+      "text": "Your kiss is all I'll ever need",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 73.38,
+      "end": 76.12,
+      "text": "You taste so sweet like grenadine",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 76.18,
+      "end": 79.12,
+      "text": "You are my favorite human being",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 79.17,
+      "end": 82.34,
+      "text": "Oh, oh, oh, oh, oh",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 82.4,
+      "end": 84.94,
+      "text": "People tell you this feeling will fade",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 84.98,
+      "end": 87.9,
+      "text": "But they don't understand that it's not our way",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 87.94,
+      "end": 89.41,
+      "text": "From the start to the end",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 89.48,
+      "end": 91.81,
+      "text": "Every day all I want is you",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 94,
+      "end": 95.48,
+      "text": "Think about you a lot",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 95.57,
+      "end": 96.92,
+      "text": "Ride with me, drop the top",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 97.03,
+      "end": 99.91,
+      "text": "Take you down to the spot, let you drive if you want",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 99.94,
+      "end": 102.77,
+      "text": "Take control of me now, take a hold of me now",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 102.8,
+      "end": 105.86,
+      "text": "Grab my hair just for you, take the reins, giddy up",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 106.55,
+      "end": 109.14,
+      "text": "Giddy up, you wanna go faster",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 109.24,
+      "end": 112,
+      "text": "Call me the Demon Headmaster",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 112.2,
+      "end": 114.71,
+      "text": "Tell me what you want, I'll be what you want",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 114.77,
+      "end": 117.92,
+      "text": "You just gotta choose me, baby, yeah, I'll be your Pokemon",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 119.18,
+      "end": 122.27,
+      "text": "You wanna go for a drive?",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 123.26,
+      "end": 125.75,
+      "text": "I don't wanna take it slow",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 125.8,
+      "end": 128.74,
+      "text": "You wanna go for a drive?",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 129.02,
+      "end": 132.16,
+      "text": "I don't like to be alone",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 132.37,
+      "end": 134.31,
+      "text": "Over and over again",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 134.47,
+      "end": 137.44,
+      "text": "I don't wanna take it slow",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 138.13,
+      "end": 140.45,
+      "text": "You wanna go for a drive?",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 140.52,
+      "end": 143.74,
+      "text": "On the road, on the road",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 143.92,
+      "end": 146.58,
+      "text": "On the road, on the road",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 146.76,
+      "end": 149.43,
+      "text": "On the road, on the road",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 149.56,
+      "end": 152.46,
+      "text": "On the road, on the road",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 152.66,
+      "end": 155.45,
+      "text": "On the road, on the road",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 155.6,
+      "end": 158.44,
+      "text": "On the road, on the road",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 158.6,
+      "end": 161.24,
+      "text": "On the road, on the road",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 161.42,
+      "end": 164.12,
+      "text": "On the road, on the road",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 164.28,
+      "end": 165.49,
+      "text": "On the road",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.6
+    },
+    {
+      "start": 166.58,
+      "end": 169.49,
+      "text": "You wanna go for a drive?",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 170.5,
+      "end": 172.59,
+      "text": "I don't wanna take it slow",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 172.61,
+      "end": 175.55,
+      "text": "You wanna go for a drive?",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 176.11,
+      "end": 179.8,
+      "text": "I don't like to be alone",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 181.72,
+      "end": 184.95,
+      "text": "I don't wanna take it slow",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 185.03,
+      "end": 187.43,
+      "text": "You wanna go for a drive?",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 187.66,
+      "end": 190.53,
+      "text": "On the road, on the road",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 191.11,
+      "end": 194.07,
+      "text": "Get lost, get loose, get another round",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 194.12,
+      "end": 196.91,
+      "text": "Going from fall to fall, crawling on the ground",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 196.94,
+      "end": 199.98,
+      "text": "When our hands and knees are bleeding out",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    },
+    {
+      "start": 200.01,
+      "end": 203.04,
+      "text": "Oh, oh, oh, oh, oh",
+      "speaker": "pokemon-vocal",
+      "intensity": 0.87
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "pokemon-chair"
+    },
+    {
+      "time": 11.887,
+      "view": "pokemon-window"
+    },
+    {
+      "time": 14.848,
+      "view": "pokemon-chair"
+    },
+    {
+      "time": 17.768,
+      "view": "pokemon-breakfast"
+    },
+    {
+      "time": 26.652,
+      "view": "pokemon-window"
+    },
+    {
+      "time": 29.571,
+      "view": "pokemon-breakfast"
+    },
+    {
+      "time": 33.992,
+      "view": "pokemon-window"
+    },
+    {
+      "time": 35.452,
+      "view": "pokemon-chair"
+    },
+    {
+      "time": 39.915,
+      "view": "pokemon-shell"
+    },
+    {
+      "time": 43.2,
+      "view": "pokemon-breakfast"
+    },
+    {
+      "time": 47.214,
+      "view": "pokemon-day-drive"
+    },
+    {
+      "time": 55.347,
+      "view": "pokemon-goggles"
+    },
+    {
+      "time": 61.936,
+      "view": "pokemon-day-drive"
+    },
+    {
+      "time": 64.897,
+      "view": "pokemon-studio"
+    },
+    {
+      "time": 72.698,
+      "view": "pokemon-picnic"
+    },
+    {
+      "time": 79.079,
+      "view": "pokemon-grill"
+    },
+    {
+      "time": 86.503,
+      "view": "pokemon-picnic"
+    },
+    {
+      "time": 91.8,
+      "view": "pokemon-treadmill"
+    },
+    {
+      "time": 98.682,
+      "view": "pokemon-picnic"
+    },
+    {
+      "time": 101.643,
+      "view": "pokemon-treadmill"
+    },
+    {
+      "time": 110.569,
+      "view": "pokemon-neighbours"
+    },
+    {
+      "time": 117.951,
+      "view": "pokemon-studio"
+    },
+    {
+      "time": 120.871,
+      "view": "pokemon-night-drive"
+    },
+    {
+      "time": 126.752,
+      "view": "pokemon-crack"
+    },
+    {
+      "time": 132.551,
+      "view": "pokemon-night-drive"
+    },
+    {
+      "time": 136.054,
+      "view": "pokemon-crack"
+    },
+    {
+      "time": 141.474,
+      "view": "pokemon-night-drive"
+    },
+    {
+      "time": 144.019,
+      "view": "pokemon-lift"
+    },
+    {
+      "time": 156.198,
+      "view": "pokemon-lift"
+    },
+    {
+      "time": 160.619,
+      "view": "pokemon-road"
+    },
+    {
+      "time": 166.708,
+      "view": "pokemon-hatch"
+    },
+    {
+      "time": 170.17,
+      "view": "pokemon-hatchling"
+    },
+    {
+      "time": 176.092,
+      "view": "pokemon-road-crew"
+    },
+    {
+      "time": 182.683,
+      "view": "pokemon-hatchling"
+    },
+    {
+      "time": 194.486,
+      "view": "pokemon-road-crew"
+    },
+    {
+      "time": 195.987,
+      "view": "pokemon-mirror"
+    },
+    {
+      "time": 198.156,
+      "view": "pokemon-hands"
+    }
+  ]
+}
