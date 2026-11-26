@@ -5072,6 +5072,46 @@
       "sha256": "6b75f8686531446957a2c3c37149cfa8a664b19e8a4073bc3f074a31696f07ac"
     },
     {
+      "path": "public/scenes/squabble-up/backing.mp3",
+      "bytes": 5298476,
+      "sha256": "c9bd35c854ea9d98a90aa570b6534870d2c04136b170938b650fdddb8ec2b2e0"
+    },
+    {
+      "path": "public/scenes/squabble-up/credits.txt",
+      "bytes": 482,
+      "sha256": "c855c85231ea1f891d425232903b53b4251de4c1e46413a347b34f8e151a5853"
+    },
+    {
+      "path": "public/scenes/squabble-up/mix.mp3",
+      "bytes": 5298476,
+      "sha256": "fa44eabd7d91540d442113c94a32fd504af4b6d19d04023c0e4859cd7ff6c1db"
+    },
+    {
+      "path": "public/scenes/squabble-up/performance.json",
+      "bytes": 532544,
+      "sha256": "7bf6e9ef4213249a293b28e7c50d05aec1b359c636ba6f337ccbbe1b22fbb6e3"
+    },
+    {
+      "path": "public/scenes/squabble-up/scene.json",
+      "bytes": 15928,
+      "sha256": "cb4401c97929bac536e5b3bad3a39d0927b6125c8bd3ee1b62d43894f454c56d"
+    },
+    {
+      "path": "public/scenes/squabble-up/squabble-hook.tele.gz",
+      "bytes": 413750,
+      "sha256": "3410f1d04d23ea81ed292ee4cf0023eec8aadc37c7e31c92fe1fa02bd31a4167"
+    },
+    {
+      "path": "public/scenes/squabble-up/squabble-lead.tele.gz",
+      "bytes": 1638856,
+      "sha256": "e9997d88da00c657561760139c92301b146d84406f0f2f6224c9a227720746cf"
+    },
+    {
+      "path": "public/scenes/squabble-up/squabble-sample.tele.gz",
+      "bytes": 148297,
+      "sha256": "1a6c2100ad4ee76605ec626ba1db81a45ce9bb1d411a285857e0b82bd7564a48"
+    },
+    {
       "path": "public/scenes/ss26/backing.mp3",
       "bytes": 5535020,
       "sha256": "f89c7b1a370c2edf6b46a6545fcafb7b9f0276c47e82864e6223ad89fc0a6536"

@@ -148,3 +148,5 @@ The owner supplied JADE — Angel of My Dreams. The complete scene includes the 
 The owner supplied OK Go — A Stone Only Rolls Downhill. The complete scene includes the original separated instrumental, two physical CHIMERA voices, synchronized captions, mouth telemetry, and procedural 3D smartphone mosaic sets. Rights in the song, recording and music video remain with their respective holders. Raw video footage and intermediate separation stems remain outside the repository.
 
 The owner supplied Olivia Rodrigo — drop dead. The complete scene includes the original separated instrumental, two physical CHIMERA voices, synchronized captions, mouth telemetry, and procedural 3D dive-bar and Palace of Versailles sets. Rights in the song, recording and music video remain with their respective holders. Raw video footage and intermediate separation stems remain outside the repository.
+
+The owner supplied Kendrick Lamar — squabble up. The complete video scene uses the separated original music and opening effects with three synthesized CHIMERA voices. Rights in the song, samples, recording and video remain with their respective holders.
