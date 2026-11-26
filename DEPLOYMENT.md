@@ -540,3 +540,20 @@ passed. Local Chromium verified playback, pause and seeking at 1280 and 390
 pixels. One unrelated long beat test timed out in the full Bun run and passed
 on an isolated rerun. Broad layout lint reported shifts in the solo controls
 before it was stopped. Real-time export was not tested.
+
+### expectations
+
+The full 4:53 game-show scene (`025d97a`, 26 November 2026) is live at
+`?scene=expectations`. Olivia, Chappell, Johnny Johnson and the announcer
+have separate physical voice tracks at 20 Hz over the original separated
+studio music. The scene retains the introductions, letterboard, Sister
+Squabble, phone walls, prize car, duet and the closing host line.
+
+The publisher returned `DEPLOY_EXIT=0`. All 37 uploaded files and seven
+direct or versioned URLs matched the build over HTTPS. All 1,205 preceding
+asset hashes are preserved. The 782 Bun tests, 401 native tests, 17 final
+focused checks, phone layout check and production build passed. Local
+Chromium verified play, pause and forward and backward seeks on desktop and
+phone. Selected speech clips improved on the dedicated speech pass, with
+some pronunciation and layered singing still approximate. Real-time video
+export was not exercised.
