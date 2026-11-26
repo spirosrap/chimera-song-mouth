@@ -525,3 +525,18 @@ banner. The publisher returned `DEPLOY_EXIT=0`. All 36 deployed files and six
 direct or versioned URLs matched the build hashes over HTTPS. The 16 focused
 scene and catalog checks passed, covering voice timing, framing and visibility.
 Browser playback remains unverified.
+
+### Lonely in the Future
+
+The full 4:20 Strokes puppet scene (`4d3997f`, 26 November 2026) is live at
+`?scene=lonely-in-the-future`. The two physical tracks sing the lead and speak
+the closing line over the separated original accompaniment. The band, CRTs,
+cinema, Bach, beach, video credits and space sequence follow the source clock.
+
+The publisher returned `DEPLOY_EXIT=0`. The 35 deployed files and five direct
+or versioned URLs matched the build over HTTPS. The 1,198 preceding prepared
+files retain their hashes. The build, native tests and scene-specific tests
+passed. Local Chromium verified playback, pause and seeking at 1280 and 390
+pixels. One unrelated long beat test timed out in the full Bun run and passed
+on an isolated rerun. Broad layout lint reported shifts in the solo controls
+before it was stopped. Real-time export was not tested.
