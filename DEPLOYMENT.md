@@ -514,3 +514,14 @@ All 36 uploaded files matched their build hashes over HTTPS, along with the
 direct scene URL and six versioned media URLs. Native engine, TypeScript and
 scene tests passed. The camera checks cover desktop and phone framing and
 opaque prop occlusion. Browser playback remains unverified.
+
+### squabble up
+
+The 2:46 Kendrick Lamar scene (`4b5cef2`, 26 November 2026) is live at
+`?scene=squabble-up`. Three physical tracks render the rap, hooks, sampled
+singing and phonetic bridge over the separated instrumental. The green room
+includes the crystal chandelier, bicycle crew, letter board, lowrider and parade
+banner. The publisher returned `DEPLOY_EXIT=0`. All 36 deployed files and six
+direct or versioned URLs matched the build hashes over HTTPS. The 16 focused
+scene and catalog checks passed, covering voice timing, framing and visibility.
+Browser playback remains unverified.
