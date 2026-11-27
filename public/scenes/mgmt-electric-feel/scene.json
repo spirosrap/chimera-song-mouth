@@ -1,0 +1,313 @@
+{
+  "setting": "mgmtelectric",
+  "title": "MGMT · Electric Feel",
+  "description": "A night forest glows with stage lanterns, patterned dancers and a bright moon over the clearing.",
+  "duration": 228.484354,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "electric-andrew",
+      "name": "Andrew",
+      "role": "CHIMERA vocals",
+      "tele": "electric-andrew.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 30.38,
+      "end": 32.96,
+      "text": "All along the western front,",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.36,
+      "end": 35.97,
+      "text": "people line up to receive.",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.78,
+      "end": 40.02,
+      "text": "got the power in her hand,",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.9,
+      "end": 43.3,
+      "text": "to shock you like you won't believe.",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.98,
+      "end": 48.62,
+      "text": "So hot in the Amazon With the voltage",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.62,
+      "end": 50.34,
+      "text": "running through her skin",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.5,
+      "end": 56.2,
+      "text": "Standing there with nothing but She gonna teach me",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.2,
+      "end": 57.38,
+      "text": "how to swim",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.26,
+      "end": 65.84,
+      "text": "said, boogah It shocked",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.86,
+      "end": 70.32,
+      "text": "me like a magic ear, baby girl",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.64,
+      "end": 77.22,
+      "text": "turned out through electric fear, said boo girl",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.58,
+      "end": 83.44,
+      "text": "shocked me like an electric ear, baby",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.44,
+      "end": 84.5,
+      "text": "girl",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.88,
+      "end": 89.1,
+      "text": "It turned out through electric fear",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.9,
+      "end": 106.36,
+      "text": "All along the eastern shore",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.26,
+      "end": 109.84,
+      "text": "That's just that gets in the sea",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.56,
+      "end": 113.4,
+      "text": "This is what the world is for,",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.46,
+      "end": 119.14,
+      "text": "making electricity You can feel it",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.14,
+      "end": 120.4,
+      "text": "in your mind,",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.44,
+      "end": 126.28,
+      "text": "or you can do it all the time Can I get the energy",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.28,
+      "end": 127.22,
+      "text": "to run,",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.44,
+      "end": 130.78,
+      "text": "you are my electric girl",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.28,
+      "end": 135.46,
+      "text": "said,",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.82,
+      "end": 136.72,
+      "text": "boo girl,",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.98,
+      "end": 143.8,
+      "text": "shock me like an electric peel Baby girl,",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.02,
+      "end": 148.3,
+      "text": "tell me I want you to let did you fear?",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.78,
+      "end": 150.7,
+      "text": "said boom, you know!",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.84,
+      "end": 155.38,
+      "text": "It shocked me like an electric heel,",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.06,
+      "end": 157.78,
+      "text": "baby girl",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.84,
+      "end": 162.36,
+      "text": "Turn up with your electric heel",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 194.54,
+      "end": 197.1,
+      "text": "Do what you feel now",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.16,
+      "end": 202.74,
+      "text": "He likes to feel now, he likes",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.74,
+      "end": 204.3,
+      "text": "to feel now",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.44,
+      "end": 221.86,
+      "text": "dim now",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 222.74,
+      "end": 224.5,
+      "text": "do what feel",
+      "speaker": "electric-andrew",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "electric-forest"
+    },
+    {
+      "time": 15,
+      "view": "electric-party"
+    },
+    {
+      "time": 32,
+      "view": "electric-lantern-close"
+    },
+    {
+      "time": 48,
+      "view": "electric-lantern-close"
+    },
+    {
+      "time": 67,
+      "view": "electric-party"
+    },
+    {
+      "time": 89,
+      "view": "electric-forest"
+    },
+    {
+      "time": 104,
+      "view": "electric-moon"
+    },
+    {
+      "time": 128,
+      "view": "electric-night-dance"
+    },
+    {
+      "time": 150,
+      "view": "electric-night-dance"
+    },
+    {
+      "time": 174,
+      "view": "electric-lantern-close"
+    },
+    {
+      "time": 194,
+      "view": "electric-party"
+    },
+    {
+      "time": 217,
+      "view": "electric-finale"
+    }
+  ]
+}

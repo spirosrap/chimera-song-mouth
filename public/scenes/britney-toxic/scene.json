@@ -1,0 +1,369 @@
+{
+  "setting": "britneytoxic",
+  "title": "Britney Spears · Toxic",
+  "description": "A candy-colored cabin cuts to a dark city, red-lit passage and a reflective performance set.",
+  "duration": 211.696327,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "toxic-britney",
+      "name": "Britney",
+      "role": "CHIMERA vocals",
+      "tele": "toxic-britney.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 15.6,
+      "end": 16.8,
+      "text": "I'm coming,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.58,
+      "end": 20.82,
+      "text": "a gal that you should wear a bin,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 21.36,
+      "end": 21.8,
+      "text": "it's dangerous,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.92,
+      "end": 24.16,
+      "text": "I'm floppin'",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.73,
+      "end": 32.34,
+      "text": "There's no escape, I can't wait I need a hint,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.7,
+      "end": 35.22,
+      "text": "never give me a hint You're dangerous,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.14,
+      "end": 36.98,
+      "text": "I'm lovin'",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.87,
+      "end": 45.58,
+      "text": "Still I can come to them, I'm my hands in",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.58,
+      "end": 47.04,
+      "text": "a round and round",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 49,
+      "end": 51.1,
+      "text": "Do you feel me now?",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.02,
+      "end": 58.58,
+      "text": "Ooh, that taste of the lips,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.98,
+      "end": 60.3,
+      "text": "I'm on the right",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.1,
+      "end": 62.36,
+      "text": "Your tongue's sick,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.76,
+      "end": 65.62,
+      "text": "I'm slipping under The taste of a poison",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.76,
+      "end": 70.52,
+      "text": "I'm addicted to you, don't you know that you're toxic?",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.72,
+      "end": 77.72,
+      "text": "And I love what you do, don't you know that you are Big!",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.4,
+      "end": 89.28,
+      "text": "I took a step,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.84,
+      "end": 94.02,
+      "text": "my devil's got a It's a load bitch, it's taking both of",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.02,
+      "end": 95.1,
+      "text": "me",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.86,
+      "end": 99.08,
+      "text": "Do I,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.7,
+      "end": 103.7,
+      "text": "yeah, come to know It's in the air, it's all over",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.7,
+      "end": 104.96,
+      "text": "now",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.14,
+      "end": 107.9,
+      "text": "Should we show you that?",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.58,
+      "end": 115.66,
+      "text": "Oh, there tastes of your lips,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.16,
+      "end": 117.36,
+      "text": "I'm on the right.",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.24,
+      "end": 121.04,
+      "text": "You're toxic and slippin' under.",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.38,
+      "end": 123.58,
+      "text": "Taste of a poison paradise.",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.14,
+      "end": 127.74,
+      "text": "I'm addicted to you, don't you know that you're toxic?",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.58,
+      "end": 134.52,
+      "text": "I love what you do, don't you know that you're toxic?",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 139.12,
+      "end": 141.5,
+      "text": "you know that you're toxic?!",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.06,
+      "end": 162.6,
+      "text": "Tastes like you look so mad and fair No time",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.6,
+      "end": 163.06,
+      "text": "sick,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.44,
+      "end": 164.26,
+      "text": "I'm slipping under",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.66,
+      "end": 169.46,
+      "text": "Taste of a poison paradise I've heard it, to you",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.46,
+      "end": 171.18,
+      "text": "Don't you know that you're toxic?",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 171.92,
+      "end": 172.74,
+      "text": "Taste of your lips,",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 173.14,
+      "end": 177.46,
+      "text": "I'm on the right You're toxic, I'm slippin'",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 178.06,
+      "end": 182.8,
+      "text": "Tastes of a poison paradise I'm addicted to you",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.8,
+      "end": 184.94,
+      "text": "Don't you know that you're toxic?",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 185.44,
+      "end": 188.48,
+      "text": "Intoxicate me now Would ya love me now?",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.74,
+      "end": 191.4,
+      "text": "I think I'm ready now I love the menu",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 192.14,
+      "end": 195.22,
+      "text": "Intoxicate me now Would you love me now?",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.48,
+      "end": 197.12,
+      "text": "think I'm ready now",
+      "speaker": "toxic-britney",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "toxic-cabin"
+    },
+    {
+      "time": 14,
+      "view": "toxic-cabin-close"
+    },
+    {
+      "time": 34,
+      "view": "toxic-red-dance"
+    },
+    {
+      "time": 53,
+      "view": "toxic-chrome"
+    },
+    {
+      "time": 71,
+      "view": "toxic-cabin"
+    },
+    {
+      "time": 88,
+      "view": "toxic-city"
+    },
+    {
+      "time": 113,
+      "view": "toxic-chrome-close"
+    },
+    {
+      "time": 131,
+      "view": "toxic-city"
+    },
+    {
+      "time": 150,
+      "view": "toxic-passage"
+    },
+    {
+      "time": 168,
+      "view": "toxic-red-dance"
+    },
+    {
+      "time": 185,
+      "view": "toxic-passage-close"
+    },
+    {
+      "time": 202,
+      "view": "toxic-finale"
+    }
+  ]
+}

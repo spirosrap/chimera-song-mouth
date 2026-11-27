@@ -21,7 +21,9 @@ test('a single-speaker speech loads alongside the movies without weakening their
   'amyl-should-not','st-vincent-digital-witness','yard-act-we-make-hits','jungle-back-on-74','janelle-tightrope','fever-ray-kandy','ren-animal-flow',
   'mitski-nobody','chemical-let-forever-be','christine-tilted','caroline-welcome-island','glass-life-itself','robyn-call-girlfriend','idles-dancer',
   'kimbra-settle-down','tuneyards-water-fountain','metronomy-the-look','jain-makeba','japanese-breakfast-be-sweet','chvrches-mother-we-share','altj-tessellate',
-  'jamiroquai-virtual-insanity','miike-snow-genghis-khan','muna-silk-chiffon','aurora-cure-for-me','lizzo-about-damn-time','kylie-cant-get-you-out','roisin-overpowered']);
+  'jamiroquai-virtual-insanity','miike-snow-genghis-khan','muna-silk-chiffon','aurora-cure-for-me','lizzo-about-damn-time','kylie-cant-get-you-out','roisin-overpowered',
+  'florence-dog-days','grimes-oblivion','britney-toxic','gorillaz-dare','mgmt-electric-feel',
+  'passion-pit-take-a-walk','b52-love-shack']);
   expect(movieScene('fool-me-once')).toBeDefined();expect(scene.characters.map(c=>c.id)).toEqual(['bush']);
   expect(scene.setting).toBe('press');expect(track.duration).toBeCloseTo(scene.duration,1);
   expect(readFileSync(new URL('mix.mp3',base)).length).toBeGreaterThan(100_000);

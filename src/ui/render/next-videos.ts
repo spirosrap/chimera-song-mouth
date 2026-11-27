@@ -107,6 +107,11 @@ export class NextVideoStage {
           this.props.oval(figure.root, [(dot%3-1)*7.6+(Math.floor(dot/3)%2)*3,-24-Math.floor(dot/3)*8,11], [1.2,1.25,.6], '#ceb7a2');
         }
       }
+      if (setting === 'grimesoblivion' && i === 0) {
+        for (const side of [-1,1]) this.props.oval(figure.root,[side*10.7,1,1],[3.3,6.9,4.3],'#84788b');
+        this.props.tube(figure.root,[-10.5,7,0],[0,14,0],1.05,'#817288');
+        this.props.tube(figure.root,[0,14,0],[10.5,7,0],1.05,'#817288');
+      }
       if (setting === 'virtualinsanity' && i === 0) {
         this.props.oval(figure.root, [0, 14, 1], [13, 6, 12], '#312d36');
         this.props.oval(figure.root, [0, 10.5, 4], [15, 1.7, 13], '#3b353d');
@@ -417,7 +422,7 @@ export class NextVideoStage {
     const dt = reset ? 1 / 60 : THREE.MathUtils.clamp(time - this.previousTime, 1 / 120, .05);
     const beat = Math.PI * 2 * (time * NEXT_VIDEO_INFO[this.setting].bpm / 60);
     const tight = designated >= 0 || /close|portrait|window|canvas/.test(stageView);
-    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band|look-white-stage|sweet-office|sweet-car|sweet-ufo|tessellate-steps|tessellate-table|water-tv|time-meeting|genghis-house|silk-porch|silk-room/.test(stageView);
+    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band|look-white-stage|sweet-office|sweet-car|sweet-ufo|tessellate-steps|tessellate-table|water-tv|time-meeting|genghis-house|silk-porch|silk-room|oblivion-bleachers|toxic-cabin|shack-front/.test(stageView);
     const seated = /campfire|tea|flat/.test(stageView);
     const ensemble = this.setting === 'virtualinsanity' ? stageView === 'virtual-white-ensemble' : group;
     const core = this.figures.length;

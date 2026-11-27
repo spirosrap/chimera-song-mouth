@@ -1,0 +1,313 @@
+{
+  "setting": "passionwalk",
+  "title": "Passion Pit · Take a Walk",
+  "description": "A bouncing ball follows the neighborhood from the park and terraced streets to glass towers and their reflections.",
+  "duration": 250.98449,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "walk-michael",
+      "name": "Michael",
+      "role": "CHIMERA vocals",
+      "tele": "walk-michael.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 46.64,
+      "end": 51.22,
+      "text": "All these kinds of places make it seem like it's been ages",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.22,
+      "end": 55.62,
+      "text": "and tomorrow something new buildings great to sky I",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.62,
+      "end": 59.94,
+      "text": "love this country dearly I can feel the latter",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 59.94,
+      "end": 64.34,
+      "text": "clearly but never thought I'd be alone to try",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 64.34,
+      "end": 68.96,
+      "text": "Once I was outside Penn Station, selling",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 68.96,
+      "end": 73.18,
+      "text": "red and white carnations We were still alone my life and",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.18,
+      "end": 74,
+      "text": "I",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.14,
+      "end": 79.68,
+      "text": "Before we met we saved my money from our dear wife over",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.68,
+      "end": 83.8,
+      "text": "Now I've worked to bring my family states out",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.54,
+      "end": 89.2,
+      "text": "Put off the boot, they see the world and scat it cross the coast",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.2,
+      "end": 93.7,
+      "text": "Once a year, I'll see them for a week or so at most",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.86,
+      "end": 113.42,
+      "text": "a walk, oh, oh, oh, oh,",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.9,
+      "end": 117.56,
+      "text": "oh, isn't perfect but the market cuts a loss",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.9,
+      "end": 121.7,
+      "text": "I remind myself that times could be much worse",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.46,
+      "end": 127.14,
+      "text": "My wife won't ask me questions There's not so much to ask",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.12,
+      "end": 136.52,
+      "text": "Once my mother locked in just to stay a couple nights",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.88,
+      "end": 140.76,
+      "text": "And decided she would stay the rest of her life",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.76,
+      "end": 145.48,
+      "text": "I watched my little children play some book game in",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.48,
+      "end": 150.22,
+      "text": "their kitchen And I sit and pray they never fit my strife",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 151.08,
+      "end": 155.72,
+      "text": "But then my partner called to say the pension funds were gone.",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 155.72,
+      "end": 160.4,
+      "text": "He made some bad investments now that counts are over John",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.44,
+      "end": 177.14,
+      "text": "a walk,",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 177.52,
+      "end": 182.36,
+      "text": "oh Honey it's your son I think",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.36,
+      "end": 187.12,
+      "text": "I borrowed just too much We had taxes we had bills we had",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.12,
+      "end": 191.8,
+      "text": "a lifestyle a friend And tonight I swear I'll come home and",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.8,
+      "end": 196.56,
+      "text": "we'll make love like we're young Tomorrow you cook dinner for",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 196.56,
+      "end": 197.94,
+      "text": "the neighbors on the",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.32,
+      "end": 202.5,
+      "text": "can rip apart those socialists and all their dent",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.5,
+      "end": 205.6,
+      "text": "taxes We'll see I am no criminal,",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.94,
+      "end": 210.36,
+      "text": "I'm down on both our names I'm just too much a coward",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 210.36,
+      "end": 213.94,
+      "text": "to admit when I'm in need I take a walk",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 222.54,
+      "end": 226.76,
+      "text": "a",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 226.76,
+      "end": 229.06,
+      "text": "walk, a",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 229.06,
+      "end": 239.26,
+      "text": "walk,",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    },
+    {
+      "start": 239.5,
+      "end": 242.56,
+      "text": "ohhh",
+      "speaker": "walk-michael",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "walk-playground"
+    },
+    {
+      "time": 16,
+      "view": "walk-grass"
+    },
+    {
+      "time": 34,
+      "view": "walk-street"
+    },
+    {
+      "time": 55,
+      "view": "walk-portrait"
+    },
+    {
+      "time": 73,
+      "view": "walk-towers"
+    },
+    {
+      "time": 94,
+      "view": "walk-street"
+    },
+    {
+      "time": 113,
+      "view": "walk-towers"
+    },
+    {
+      "time": 132,
+      "view": "walk-park"
+    },
+    {
+      "time": 156,
+      "view": "walk-street"
+    },
+    {
+      "time": 177,
+      "view": "walk-portrait"
+    },
+    {
+      "time": 198,
+      "view": "walk-towers"
+    },
+    {
+      "time": 223,
+      "view": "walk-finale"
+    }
+  ]
+}

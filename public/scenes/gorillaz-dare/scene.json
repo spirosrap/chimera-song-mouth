@@ -1,0 +1,420 @@
+{
+  "setting": "gorillazdare",
+  "title": "Gorillaz · DARE",
+  "description": "A little room, a stairwell and an outsized guest turn a private dance into a two-voice performance.",
+  "duration": 289.181315,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "dare-rosie",
+      "name": "Rosie",
+      "role": "CHIMERA vocals",
+      "tele": "dare-rosie.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "dare-shaun",
+      "name": "Shaun",
+      "role": "CHIMERA vocals",
+      "tele": "dare-shaun.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 36.16,
+      "end": 37.56,
+      "text": "Hello.",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.3,
+      "end": 53.8,
+      "text": "It's coming",
+      "speaker": "dare-shaun",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.8,
+      "end": 60.62,
+      "text": "up,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.2,
+      "end": 80.7,
+      "text": "You've got to press it on you,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 80.7,
+      "end": 83.54,
+      "text": "you just think it,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.98,
+      "end": 85.58,
+      "text": "that's what you do,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.68,
+      "end": 89.56,
+      "text": "hold it down,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.1,
+      "end": 96.98,
+      "text": "Jump every move and move it.",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.7,
+      "end": 102.56,
+      "text": "Jump back and forth Feel like you danced",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.56,
+      "end": 106.12,
+      "text": "when looking out",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.8,
+      "end": 114.58,
+      "text": "Never did no harm, never did no",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.58,
+      "end": 119.34,
+      "text": "harm It's dead,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.54,
+      "end": 124.42,
+      "text": "it's coming up, it's coming up, It's coming up, it's coming up, it's",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.42,
+      "end": 125.26,
+      "text": "coming out,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.62,
+      "end": 126.32,
+      "text": "it's day.",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.32,
+      "end": 130.54,
+      "text": "You've got to press it on you.",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.3,
+      "end": 135.54,
+      "text": "You just thinkin' that's what you do,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.1,
+      "end": 136.4,
+      "text": "baby",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.1,
+      "end": 139.48,
+      "text": "Hold it down,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.1,
+      "end": 147.8,
+      "text": "Jump in the mouth and move it Jump",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.8,
+      "end": 152.04,
+      "text": "in the door Feel like you were there",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.04,
+      "end": 155.68,
+      "text": "yourself working keyholes!",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.58,
+      "end": 161,
+      "text": "Never did no harm!",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.6,
+      "end": 163.34,
+      "text": "did no harm!",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.58,
+      "end": 167.28,
+      "text": "It's dare.",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.24,
+      "end": 172.6,
+      "text": "He's coming up, he's coming up, he's coming out, it's coming out, it's coming",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 172.6,
+      "end": 174.36,
+      "text": "out... It's a dare!",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.36,
+      "end": 180.24,
+      "text": "You've got to press it on you,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.44,
+      "end": 185.12,
+      "text": "you just think it, that's what you do",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 185.12,
+      "end": 185.92,
+      "text": "baby,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.06,
+      "end": 189,
+      "text": "hold it down",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.92,
+      "end": 194.88,
+      "text": "Jump every moment,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 196.5,
+      "end": 198.74,
+      "text": "back and forth,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.04,
+      "end": 201.62,
+      "text": "and feel like you were there,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.1,
+      "end": 202.78,
+      "text": "settle,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 203.16,
+      "end": 205.18,
+      "text": "and work it out.",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 208.8,
+      "end": 212.32,
+      "text": "You've got to press it on you,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 212.76,
+      "end": 217.06,
+      "text": "You just thinkin' that's what you do",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 217.06,
+      "end": 217.76,
+      "text": "baby,",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 218.8,
+      "end": 222.36,
+      "text": "Hold it down there",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.74,
+      "end": 229.3,
+      "text": "Jump with them all and move it Jump",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 229.3,
+      "end": 233.74,
+      "text": "back and forth And feel like you were there",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 233.74,
+      "end": 237.26,
+      "text": "It's several working out",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 252.92,
+      "end": 255.72,
+      "text": "Thank you.",
+      "speaker": "dare-rosie",
+      "intensity": 0.85
+    },
+    {
+      "start": 272.44,
+      "end": 274.18,
+      "text": "Go back to sleep, honey.",
+      "speaker": "dare-shaun",
+      "intensity": 0.85
+    },
+    {
+      "start": 277.92,
+      "end": 278.5,
+      "text": "Ooh!",
+      "speaker": "dare-shaun",
+      "intensity": 0.85
+    },
+    {
+      "start": 286.08,
+      "end": 287.52,
+      "text": "ugh, ugh!",
+      "speaker": "dare-shaun",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "dare-room"
+    },
+    {
+      "time": 15,
+      "view": "dare-stairs"
+    },
+    {
+      "time": 31,
+      "view": "dare-room-dance"
+    },
+    {
+      "time": 48,
+      "view": "dare-guest"
+    },
+    {
+      "time": 67,
+      "view": "dare-close"
+    },
+    {
+      "time": 86,
+      "view": "dare-room-dance"
+    },
+    {
+      "time": 104,
+      "view": "dare-stairs"
+    },
+    {
+      "time": 123,
+      "view": "dare-guest"
+    },
+    {
+      "time": 143,
+      "view": "dare-room-dance"
+    },
+    {
+      "time": 162,
+      "view": "dare-close"
+    },
+    {
+      "time": 184,
+      "view": "dare-guest"
+    },
+    {
+      "time": 206,
+      "view": "dare-room-dance"
+    },
+    {
+      "time": 224,
+      "view": "dare-guest"
+    },
+    {
+      "time": 243,
+      "view": "dare-room-dance"
+    },
+    {
+      "time": 265,
+      "view": "dare-finale"
+    },
+    {
+      "time": 279,
+      "view": "dare-close"
+    }
+  ]
+}

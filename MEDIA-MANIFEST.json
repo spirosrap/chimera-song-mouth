@@ -1947,6 +1947,41 @@
       "sha256": "44578a030b6e4342e87bcf18c007654fadc738f2cd56395145faa0f6958f3932"
     },
     {
+      "path": "public/scenes/b52-love-shack/backing.mp3",
+      "bytes": 8277549,
+      "sha256": "8ece19d086e9a1434a6921d72b0737b13f3cbc026a8c8f47425afab0657af9b1"
+    },
+    {
+      "path": "public/scenes/b52-love-shack/credits.txt",
+      "bytes": 80,
+      "sha256": "8bed4cfb5ba04e9f80cb22d3cb739908e78b84ed44b5d08b14dae8b07f3ab7ec"
+    },
+    {
+      "path": "public/scenes/b52-love-shack/mix.mp3",
+      "bytes": 8277548,
+      "sha256": "6d9281f19b12e349c9e24d2ed3123643ed4d05b6c0e478ea84d028c8de9c2816"
+    },
+    {
+      "path": "public/scenes/b52-love-shack/performance.json",
+      "bytes": 624958,
+      "sha256": "80360eab7d83ed8b318f835b16fef307997310fa436894acda55c89f68f9f76c"
+    },
+    {
+      "path": "public/scenes/b52-love-shack/scene.json",
+      "bytes": 12185,
+      "sha256": "df8833fd79000b77f10e946d75e294c17f042fa79f72b1eb8517dc37e4c13fa0"
+    },
+    {
+      "path": "public/scenes/b52-love-shack/shack-chorus.tele.gz",
+      "bytes": 2229730,
+      "sha256": "03235ffbdf364037e02e316e9d64fcdc39e8c84a7c30f27ed669ac5588dab050"
+    },
+    {
+      "path": "public/scenes/b52-love-shack/shack-fred.tele.gz",
+      "bytes": 576603,
+      "sha256": "e107a2b7a869a103c3141c04b2f590c1439430262767a2c5296133f3ac0c42b3"
+    },
+    {
       "path": "public/scenes/babooshka/backing.mp3",
       "bytes": 6756140,
       "sha256": "326c22602f907fdac025b7b0fb7aff7000e60c363fd0f13291059586d1d95e3b"
@@ -2380,6 +2415,36 @@
       "path": "public/scenes/break-free/scene.json",
       "bytes": 5127,
       "sha256": "43c967331ecce5b98abc2a62530fc23e98bf035f706b863e87ed34792bf6448c"
+    },
+    {
+      "path": "public/scenes/britney-toxic/backing.mp3",
+      "bytes": 6776109,
+      "sha256": "bbc00ae347753a1f7c771e69dedcae58650ea9428898577e815a72e9e3f77a3d"
+    },
+    {
+      "path": "public/scenes/britney-toxic/credits.txt",
+      "bytes": 79,
+      "sha256": "686c51ce439a379580a52b90be8bea894709cb8d2b45fc9e977d0c9b1cea118a"
+    },
+    {
+      "path": "public/scenes/britney-toxic/mix.mp3",
+      "bytes": 6776108,
+      "sha256": "a188e893159ad768e09a55e70e3a2cc7bcf52bc2fcd63dbdaa0b72b45b63eab7"
+    },
+    {
+      "path": "public/scenes/britney-toxic/performance.json",
+      "bytes": 382803,
+      "sha256": "db42efc201f68972cb29703656f2e511a6b3d7d7a804b09df51fb026aaba86ae"
+    },
+    {
+      "path": "public/scenes/britney-toxic/scene.json",
+      "bytes": 8128,
+      "sha256": "75c7064df6d790815b82d4ed14d1bf3378a894af9f0c4d3f2d24f62e7b7c66d7"
+    },
+    {
+      "path": "public/scenes/britney-toxic/toxic-britney.tele.gz",
+      "bytes": 1673443,
+      "sha256": "132ed72707513f903910f1610a7f7070268cd774be08504ee756c62b6521e02a"
     },
     {
       "path": "public/scenes/caroline-welcome-island/backing.mp3",
@@ -3352,6 +3417,36 @@
       "sha256": "b015a4885d43ef90b72a34844b80aae455333fa21497800b9633f6e6493b95af"
     },
     {
+      "path": "public/scenes/florence-dog-days/backing.mp3",
+      "bytes": 7018797,
+      "sha256": "cb2b415904d3120a10fdb32c06be0f40bc78d6c76b47b5c97bc96dedffc21866"
+    },
+    {
+      "path": "public/scenes/florence-dog-days/credits.txt",
+      "bytes": 99,
+      "sha256": "f34b94e1c53e38600e101cad8ef136e5b4ec6e60a6a2c87c64f7a9325c283b78"
+    },
+    {
+      "path": "public/scenes/florence-dog-days/dogdays-florence.tele.gz",
+      "bytes": 2282515,
+      "sha256": "c805ccfe8287fce80df70458991b475979bcb2c3a780f875e2bc7addd959fb7a"
+    },
+    {
+      "path": "public/scenes/florence-dog-days/mix.mp3",
+      "bytes": 7018796,
+      "sha256": "ad0b256daf03f419a884d7cb10010fa023acd9681b07c3cfc38c1f4ca97c70b5"
+    },
+    {
+      "path": "public/scenes/florence-dog-days/performance.json",
+      "bytes": 544930,
+      "sha256": "75b8d9fb89dc1af135a596979efcd6b3f264eac8f4f20b0f013330a99ae20d98"
+    },
+    {
+      "path": "public/scenes/florence-dog-days/scene.json",
+      "bytes": 8531,
+      "sha256": "31b0a8bada20c19b22b919eefe74e26f4f7b70d8f2c80283da36ee7b492bf5ab"
+    },
+    {
       "path": "public/scenes/fool-me-once/bush.tele.gz",
       "bytes": 299158,
       "sha256": "fa197175849d493690c8d997beac7c6629746042425dd4ca76b021acc57b3b98"
@@ -3665,6 +3760,71 @@
       "path": "public/scenes/good-will-hunting/will.tele.gz",
       "bytes": 446481,
       "sha256": "93d87335d5363dd2fa9dc6fce36860aef7acd9c16b119bd914c41b3325ad4f30"
+    },
+    {
+      "path": "public/scenes/gorillaz-dare/backing.mp3",
+      "bytes": 9255981,
+      "sha256": "6669c4b0fc59f0943d725955a1122a3a25aad2e5ca49df7b3827b330a89df1d8"
+    },
+    {
+      "path": "public/scenes/gorillaz-dare/credits.txt",
+      "bytes": 72,
+      "sha256": "c2d30a5f50b4a88f08edb0130d411fd3811eac7e2d9ec45109c7c82a917851d5"
+    },
+    {
+      "path": "public/scenes/gorillaz-dare/dare-rosie.tele.gz",
+      "bytes": 1949030,
+      "sha256": "fa8fc82d8426273f0f7ae786e2683231e89bc827485fe813a3a2f214549e36ce"
+    },
+    {
+      "path": "public/scenes/gorillaz-dare/dare-shaun.tele.gz",
+      "bytes": 124915,
+      "sha256": "e5556c6677aef4535e5fc05ceb8bb046927f3c3489768c522ffedfa024c79abb"
+    },
+    {
+      "path": "public/scenes/gorillaz-dare/mix.mp3",
+      "bytes": 9255980,
+      "sha256": "b9c13ce8c8e27756fea99727752cec67d3b0ed1e8e771b11a3afdbb66d17f54d"
+    },
+    {
+      "path": "public/scenes/gorillaz-dare/performance.json",
+      "bytes": 466337,
+      "sha256": "3d709a2672c2ac05f1fa4ab726edd3da85c59635870fe578fb62564960db5d40"
+    },
+    {
+      "path": "public/scenes/gorillaz-dare/scene.json",
+      "bytes": 8674,
+      "sha256": "275b01ae26ae123f71b5af00eaa3ab74bb656f7d2050941a4bbf11304c8827be"
+    },
+    {
+      "path": "public/scenes/grimes-oblivion/backing.mp3",
+      "bytes": 8060205,
+      "sha256": "146a637282627bc7783dd590d729d733b24b0832f49e8f401cc49efec8bddfd1"
+    },
+    {
+      "path": "public/scenes/grimes-oblivion/credits.txt",
+      "bytes": 74,
+      "sha256": "6607134b13e3d486214d169feb919cca2a988d06e1bbbe9f6a8dafcace73e729"
+    },
+    {
+      "path": "public/scenes/grimes-oblivion/mix.mp3",
+      "bytes": 8060204,
+      "sha256": "bba945f8f34ccce9434ce0da0b38f0a18773dfbedadbc1b249cc6d6fc175098c"
+    },
+    {
+      "path": "public/scenes/grimes-oblivion/oblivion-grimes.tele.gz",
+      "bytes": 2313207,
+      "sha256": "42d3e11fa399d2f06c64e23237b05b709deca9f50e2334feae82b278b4a00a4b"
+    },
+    {
+      "path": "public/scenes/grimes-oblivion/performance.json",
+      "bytes": 546933,
+      "sha256": "bdfcf03988f795d06dfef90e8205937775a88778ac283fb52248f21e10b19361"
+    },
+    {
+      "path": "public/scenes/grimes-oblivion/scene.json",
+      "bytes": 7348,
+      "sha256": "8492bf3782991c4a76031734400f9b3159b384610fa26f03e24f1dc94d6c2c81"
     },
     {
       "path": "public/scenes/hal-9000/credits.txt",
@@ -5077,6 +5237,36 @@
       "sha256": "6ac1ce3e6fe773bc770456ce5d2614fb8e787e6b9399656143c25e2075ef0a54"
     },
     {
+      "path": "public/scenes/mgmt-electric-feel/backing.mp3",
+      "bytes": 7313709,
+      "sha256": "487c48e775bf7fedcbfe854fe92824cfb3436059db1ef8bab38b16f294d37cd3"
+    },
+    {
+      "path": "public/scenes/mgmt-electric-feel/credits.txt",
+      "bytes": 77,
+      "sha256": "cd08f1dbb5a4cb671b85a5eb8f0207194ecef04b0c1843ee345d8a2e218512f2"
+    },
+    {
+      "path": "public/scenes/mgmt-electric-feel/electric-andrew.tele.gz",
+      "bytes": 1492034,
+      "sha256": "54fe7a0314104b16204e1b82f4fa15ed20702a28eb887baf61a6ade1c1603aee"
+    },
+    {
+      "path": "public/scenes/mgmt-electric-feel/mix.mp3",
+      "bytes": 7313708,
+      "sha256": "96ff04a92bad35d3136701e7b54f45fa70b2ee67fa5a13b0c92f0d009af31924"
+    },
+    {
+      "path": "public/scenes/mgmt-electric-feel/performance.json",
+      "bytes": 320002,
+      "sha256": "8eaa8197ed726533ec431cc4671ebd4227c855356242bbf04908eed35305f226"
+    },
+    {
+      "path": "public/scenes/mgmt-electric-feel/scene.json",
+      "bytes": 6829,
+      "sha256": "186b7a9a8f6fb2ad69092f64a1764c0a985e1b4a708025adcb9f345927907bbe"
+    },
+    {
       "path": "public/scenes/miike-snow-genghis-khan/backing.mp3",
       "bytes": 7933485,
       "sha256": "05432335ead75c6b4681778e2d7834e4acbd26d17925b98ffc577f1d304df317"
@@ -5590,6 +5780,36 @@
       "path": "public/scenes/once-in-a-lifetime/scene.json",
       "bytes": 8379,
       "sha256": "7fa8fd269275d9e449bf7a1298e008ac8251e049f827f53cb86513e15510e9bd"
+    },
+    {
+      "path": "public/scenes/passion-pit-take-a-walk/backing.mp3",
+      "bytes": 8033325,
+      "sha256": "f8aa28a582be62feb7b6572bd83fd2de4fecb754b2e7d215ab517e87627230db"
+    },
+    {
+      "path": "public/scenes/passion-pit-take-a-walk/credits.txt",
+      "bytes": 82,
+      "sha256": "78f580163c27264427fec4489688a291ce94578c7290711d08367a2225ef7306"
+    },
+    {
+      "path": "public/scenes/passion-pit-take-a-walk/mix.mp3",
+      "bytes": 8033324,
+      "sha256": "e3c717716a057fd7ac7a226c1a0c0b6ebade58e3491c2369102833fa74783a0e"
+    },
+    {
+      "path": "public/scenes/passion-pit-take-a-walk/performance.json",
+      "bytes": 513394,
+      "sha256": "11d461bd469b2de2afbd1042d9e39bba0a9ffcbad4b7db537736dd6f406eb4ee"
+    },
+    {
+      "path": "public/scenes/passion-pit-take-a-walk/scene.json",
+      "bytes": 7210,
+      "sha256": "dcdaec7d1871fc69566d809c8fd57c1d7088f59586008a556d8eac6d0967e83a"
+    },
+    {
+      "path": "public/scenes/passion-pit-take-a-walk/walk-michael.tele.gz",
+      "bytes": 2191142,
+      "sha256": "aefd9da8ef701d89a744d94cd52d75e9a3fd99f523799b2d736f686f9128a401"
     },
     {
       "path": "public/scenes/phoebe/backing.mp3",

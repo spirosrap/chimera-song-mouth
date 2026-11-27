@@ -224,6 +224,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Lizzo — About Damn Time | 4:05 | `?scene=lizzo-about-damn-time` | A support circle, colored hall, disco and blue-lit pool. |
 | Kylie Minogue — Can't Get You Out Of My Head | 3:50 | `?scene=kylie-cant-get-you-out` | A car, a white city plaza and a night-time ensemble. |
 | Róisín Murphy — Overpowered | 3:56 | `?scene=roisin-overpowered` | Sculptural stagewear in a club, city street, bus and late-night counter. |
+| Florence + The Machine — Dog Days Are Over | 3:39 | `?scene=florence-dog-days` | A white studio with costumed dancers, drums and plumes of color. |
+| Grimes — Oblivion | 4:12 | `?scene=grimes-oblivion` | Headphones and choreography in stadium bleachers and locker rooms. |
+| Britney Spears — Toxic | 3:32 | `?scene=britney-toxic` | A colorful aircraft cabin, chrome stage and red-lit city passage. |
+| Gorillaz — DARE | 4:49 | `?scene=gorillaz-dare` | A two-voice bedroom dance with a giant visitor and checkerboard stairs. |
+| MGMT — Electric Feel | 3:48 | `?scene=mgmt-electric-feel` | A forest party lit by lanterns and a glowing moon. |
+| Passion Pit — Take a Walk | 4:11 | `?scene=passion-pit-take-a-walk` | A bouncing ball travels from the park to neighborhood rooftops and glass towers. |
+| The B-52's — Love Shack | 4:19 | `?scene=b52-love-shack` | A roadside convertible and tin-roof dance party with call-and-response vocals. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

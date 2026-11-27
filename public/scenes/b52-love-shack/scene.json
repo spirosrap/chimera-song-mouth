@@ -1,0 +1,562 @@
+{
+  "setting": "loveshack",
+  "title": "The B-52's · Love Shack",
+  "description": "A roadside convertible arrives at a ramshackle house full of bright costumes, lanterns and a call-and-response dance.",
+  "duration": 258.600635,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "shack-fred",
+      "name": "Fred",
+      "role": "CHIMERA vocals",
+      "tele": "shack-fred.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "shack-chorus",
+      "name": "Kate and Cindy",
+      "role": "CHIMERA vocals",
+      "tele": "shack-chorus.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 4.68,
+      "end": 9.22,
+      "text": "If you see a faded sign at the side of the road that says",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 9.22,
+      "end": 13.72,
+      "text": "15 miles to the I'm out of sight,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 13.78,
+      "end": 15.6,
+      "text": "love sight,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 16.12,
+      "end": 16.8,
+      "text": "yeah",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 19.08,
+      "end": 21.92,
+      "text": "I'm heading down the",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.2,
+      "end": 35.72,
+      "text": "I've got me a car,",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.14,
+      "end": 40.78,
+      "text": "it's as big as the well and we're heading on down to the love shack.",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.78,
+      "end": 45.62,
+      "text": "I've got me a Chrysler and it's about 20, so hurry",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.62,
+      "end": 48.6,
+      "text": "up and bring your jukebox money!",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.04,
+      "end": 53.54,
+      "text": "Love Shack is a little place where we",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.54,
+      "end": 56.1,
+      "text": "can get together!",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.22,
+      "end": 59.38,
+      "text": "Love Shack baby,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 59.76,
+      "end": 64.2,
+      "text": "love shack baby, love shack",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 64.2,
+      "end": 64.86,
+      "text": "baby,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.16,
+      "end": 65.98,
+      "text": "love sha",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.3,
+      "end": 69.78,
+      "text": "Love Shack, Little Love Shack",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.66,
+      "end": 73.7,
+      "text": "Fine says stay away fools,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.08,
+      "end": 78.94,
+      "text": "Cause what rules at the love of Shack We'll sit way back",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.94,
+      "end": 83.78,
+      "text": "in the middle of a field Just like funky old shack and I gotta get",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.78,
+      "end": 86.9,
+      "text": "back Glitter on my track,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 87.1,
+      "end": 90.44,
+      "text": "Glitter on the highway,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.2,
+      "end": 95.34,
+      "text": "Glitter on the fine parts,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 96,
+      "end": 100.46,
+      "text": "Glitter on the Love Shack",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.46,
+      "end": 104.88,
+      "text": "is a little place where we can get",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.88,
+      "end": 109.2,
+      "text": "together Love Shack",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.2,
+      "end": 114.06,
+      "text": "Baby be Love Shack baby Love",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.06,
+      "end": 118.72,
+      "text": "Shack, that's it ends Love Shack,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.86,
+      "end": 123.6,
+      "text": "that's where it dies Huggin' and a kissin', dancin' And",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.6,
+      "end": 127.54,
+      "text": "I love it, wearin' than nothin' as hard as you know,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.86,
+      "end": 131.96,
+      "text": "the old chat shit is when everybody's moving around",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.54,
+      "end": 139.3,
+      "text": "Everybody's moving and everybody's grooving, baby Oh,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 139.72,
+      "end": 144.54,
+      "text": "lining up outside just to get down Everybody's moving and",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.54,
+      "end": 149.26,
+      "text": "everybody's groovin', baby Fuck a little shot, fuck a little shot",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.12,
+      "end": 160.94,
+      "text": "Hop in my fight splurge, it's as big as a whale, and it's about",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 160.94,
+      "end": 162.98,
+      "text": "to set sail.",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.24,
+      "end": 165.4,
+      "text": "got near par,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.98,
+      "end": 168.32,
+      "text": "get seats about 20, so come on,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.62,
+      "end": 173.3,
+      "text": "and bring your jukebox money! The last shack is the",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 173.3,
+      "end": 176.98,
+      "text": "literal place where we can get",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.98,
+      "end": 178.78,
+      "text": "together",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.01,
+      "end": 182.18,
+      "text": "Love Shack baby",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 184.72,
+      "end": 188.56,
+      "text": "Love Shack baby, Love Shack",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.95,
+      "end": 192.28,
+      "text": "Love Shack baby, Love Shack",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.86,
+      "end": 200.5,
+      "text": "Bang,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.52,
+      "end": 201.94,
+      "text": "bang,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.38,
+      "end": 203.64,
+      "text": "on the door, baby.",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.02,
+      "end": 206.78,
+      "text": "Not gonna lie to sugar.",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 207.5,
+      "end": 208.98,
+      "text": "Bang, bang, bang,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 209.34,
+      "end": 210.72,
+      "text": "on that door, baby.",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 212.46,
+      "end": 214.16,
+      "text": "I hear you!",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 214.5,
+      "end": 214.84,
+      "text": "Bang,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 215.16,
+      "end": 215.4,
+      "text": "bang!",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 216.56,
+      "end": 217.36,
+      "text": "On the door,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 218.16,
+      "end": 218.46,
+      "text": "Bang,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 218.9,
+      "end": 221.28,
+      "text": "I'm the door!",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 221.84,
+      "end": 222.74,
+      "text": "Bang bang!",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 223.82,
+      "end": 225.14,
+      "text": "On the door, baby!",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 225.56,
+      "end": 227.12,
+      "text": "Bang bang!",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 228.44,
+      "end": 229.26,
+      "text": "You're what?",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 230.86,
+      "end": 231.42,
+      "text": "-row!",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 232.96,
+      "end": 233.4,
+      "text": "Rusted.",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 235.12,
+      "end": 235.6,
+      "text": "shark,",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 236.18,
+      "end": 240.42,
+      "text": "baby love shark Love shark, baby love",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 240.42,
+      "end": 241.7,
+      "text": "shark Yeah,",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 242.14,
+      "end": 242.8,
+      "text": "love shock,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 243.52,
+      "end": 244.74,
+      "text": "love shock.",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 245.48,
+      "end": 246.42,
+      "text": "Love shock,",
+      "speaker": "shack-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 246.76,
+      "end": 248.04,
+      "text": "bad love shock.",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    },
+    {
+      "start": 248.46,
+      "end": 251.1,
+      "text": "shock, bad love shock.",
+      "speaker": "shack-fred",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "shack-road"
+    },
+    {
+      "time": 17,
+      "view": "shack-fred-close"
+    },
+    {
+      "time": 38,
+      "view": "shack-front"
+    },
+    {
+      "time": 57,
+      "view": "shack-party"
+    },
+    {
+      "time": 76,
+      "view": "shack-chorus-close"
+    },
+    {
+      "time": 96,
+      "view": "shack-porch-dance"
+    },
+    {
+      "time": 116,
+      "view": "shack-party"
+    },
+    {
+      "time": 137,
+      "view": "shack-fred-close"
+    },
+    {
+      "time": 158,
+      "view": "shack-chorus-close"
+    },
+    {
+      "time": 179,
+      "view": "shack-party"
+    },
+    {
+      "time": 199,
+      "view": "shack-porch-dance"
+    },
+    {
+      "time": 220,
+      "view": "shack-fred-close"
+    },
+    {
+      "time": 242,
+      "view": "shack-finale"
+    }
+  ]
+}

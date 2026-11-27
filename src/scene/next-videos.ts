@@ -32,7 +32,20 @@ const VIEW_KEYS = {
 export type NextVideoView = typeof VIEW_KEYS[NextVideoSetting][number];
 type Shot = readonly [time: number, view: NextVideoView];
 
-export const NEXT_VIDEO_INFO = {
+interface VideoInfo {
+  readonly id: string;
+  readonly title: string;
+  readonly eyebrow: string;
+  readonly description: string;
+  readonly names: readonly string[];
+  readonly female: readonly number[];
+  readonly child: readonly number[];
+  readonly bpm: number;
+  readonly source: string;
+  readonly shots: readonly Shot[];
+}
+
+export const NEXT_VIDEO_INFO: Readonly<Record<NextVideoSetting, VideoInfo>> = {
   ...SEVEN_VIDEO_INFO,
   ...LATER_VIDEO_INFO,
   ...SHOWCASE_INFO,
@@ -72,10 +85,7 @@ export const NEXT_VIDEO_INFO = {
     names: ['Sebastian'], female: [.05], child: [0], bpm: 142, source: 'UD4jRK5j2Ow',
     shots: [[0,'meat-canvas'],[18,'meat-gallery'],[29,'meat-critics'],[44,'meat-gallery'],[60,'meat-critics'],[71,'meat-gallery'],[91,'meat-trampoline'],[113,'meat-party'],[145,'meat-blue-room'],[178,'meat-critics'],[184,'meat-auction'],[208,'meat-blue-room'],[224,'meat-critics'],[247,'meat-gallery'],[267,'meat-canvas']] satisfies Shot[],
   },
-} as const satisfies Record<NextVideoSetting, {
-  id: string; title: string; eyebrow: string; description: string; names: readonly string[];
-  female: readonly number[]; child: readonly number[]; bpm: number; source: string; shots: readonly Shot[];
-}>;
+};
 
 export const isNextVideo = (value: unknown): value is NextVideoSetting =>
   NEXT_VIDEO_SETTINGS.some(setting => value === setting);

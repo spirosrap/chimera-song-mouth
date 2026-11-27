@@ -1,0 +1,383 @@
+{
+  "setting": "dogdays",
+  "title": "Florence + The Machine · Dog Days Are Over",
+  "description": "A white studio fills with blue singers, copper costumes, rolling drums and plumes of color.",
+  "duration": 219.266032,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "dogdays-florence",
+      "name": "Florence",
+      "role": "CHIMERA vocals",
+      "tele": "dogdays-florence.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 3.3,
+      "end": 7.92,
+      "text": "Happiness hit her like a",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 7.92,
+      "end": 12.16,
+      "text": "train on a drive",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 15.84,
+      "end": 19.46,
+      "text": "Coming towards her,",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 20.22,
+      "end": 23.96,
+      "text": "stuck still no turning back",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.24,
+      "end": 33.02,
+      "text": "She hid in round corners and she hid under",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 33.02,
+      "end": 36.78,
+      "text": "beds She killed the kisses,",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.72,
+      "end": 40.46,
+      "text": "and from it she fled",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.98,
+      "end": 45.62,
+      "text": "Live every bubble she sang with",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.62,
+      "end": 49.68,
+      "text": "a drink and washed it away",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.68,
+      "end": 54.38,
+      "text": "down the kitchen sink the",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 54.38,
+      "end": 58.72,
+      "text": "dog days are over the dog days",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.72,
+      "end": 62.7,
+      "text": "are done the horse is coming",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.7,
+      "end": 67.5,
+      "text": "so you better run Run past",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.5,
+      "end": 70.1,
+      "text": "my own mother, run past for your father,",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.52,
+      "end": 73.12,
+      "text": "for your children, for your sisters, never about.",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.62,
+      "end": 78.32,
+      "text": "Leave all your love in your lonely behind, you can't carry with you if you",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.32,
+      "end": 79.28,
+      "text": "want to survive.",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.86,
+      "end": 84.34,
+      "text": "The dog days are over and the dog days",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.34,
+      "end": 85.26,
+      "text": "are down.",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.76,
+      "end": 100.56,
+      "text": "And I",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.56,
+      "end": 105.1,
+      "text": "never wanted",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.1,
+      "end": 107.66,
+      "text": "anything from",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.66,
+      "end": 111.54,
+      "text": "you Except",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.54,
+      "end": 115.3,
+      "text": "for everything",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.3,
+      "end": 119.86,
+      "text": "you had and what was left",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.86,
+      "end": 123.34,
+      "text": "after that you owe",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.1,
+      "end": 129.34,
+      "text": "Happiness I hit her like a",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.34,
+      "end": 131.62,
+      "text": "bullet in the mirror",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.12,
+      "end": 141.26,
+      "text": "I'm a great height,",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.92,
+      "end": 145.88,
+      "text": "by someone who should've known that I",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.88,
+      "end": 149.7,
+      "text": "haven't been there.",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 150.26,
+      "end": 154.56,
+      "text": "dark days are over. Oh, the strong days",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.56,
+      "end": 158.68,
+      "text": "of dawn Can you hear our s",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.68,
+      "end": 162.82,
+      "text": "As we all lay in calm",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.18,
+      "end": 174.82,
+      "text": "Run fast for your mother Run fast for your father Run for your",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.82,
+      "end": 179.3,
+      "text": "children Run for your sisters they will rot us leave by your love and your longing",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.3,
+      "end": 183.8,
+      "text": "behind you can carry it with you if you want to survive the",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.8,
+      "end": 188.24,
+      "text": "dog days are over the dog days",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.24,
+      "end": 189.14,
+      "text": "are over",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 190.1,
+      "end": 192.04,
+      "text": "can I hear the horses",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.1,
+      "end": 197.78,
+      "text": "cause we are late We can't go of you",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.14,
+      "end": 200.74,
+      "text": "oh, oh,",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.1,
+      "end": 205.7,
+      "text": "oh, oh, oh oh,",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.7,
+      "end": 208.24,
+      "text": "oh,",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    },
+    {
+      "start": 208.24,
+      "end": 211.08,
+      "text": "oh",
+      "speaker": "dogdays-florence",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "dogdays-white"
+    },
+    {
+      "time": 15,
+      "view": "dogdays-florence-close"
+    },
+    {
+      "time": 35,
+      "view": "dogdays-white"
+    },
+    {
+      "time": 56,
+      "view": "dogdays-blue-ensemble"
+    },
+    {
+      "time": 76,
+      "view": "dogdays-copper-dance"
+    },
+    {
+      "time": 97,
+      "view": "dogdays-florence-close"
+    },
+    {
+      "time": 117,
+      "view": "dogdays-blue-ensemble"
+    },
+    {
+      "time": 134,
+      "view": "dogdays-copper-dance"
+    },
+    {
+      "time": 151,
+      "view": "dogdays-drums"
+    },
+    {
+      "time": 173,
+      "view": "dogdays-blue-ensemble"
+    },
+    {
+      "time": 188,
+      "view": "dogdays-florence-close"
+    },
+    {
+      "time": 205,
+      "view": "dogdays-finale"
+    }
+  ]
+}
