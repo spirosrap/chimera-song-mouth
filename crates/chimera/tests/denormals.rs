@@ -137,6 +137,13 @@ fn the_processor_is_never_handed_a_denormal() {
 /// (Before their states were zeroed too, 40-100% of blocks computed with denormals from ~5 s on.)
 #[cfg(target_arch = "x86_64")]
 fn assert_creature_dies_to_zero(id: &str) {
+    assert_creature_dies_to_zero_when(id, None, &[], 30);
+}
+
+/// The same after a named call (`None`: the creature's first), with these dials moved as the
+/// breath is let go, watched for this many seconds.
+#[cfg(target_arch = "x86_64")]
+fn assert_creature_dies_to_zero_when(id: &str, call: Option<&str>, let_go: &[(&str, f64)], seconds: usize) {
     use core::arch::asm;
     const DENORMAL_OPERAND: u32 = 0x0002;
     fn mxcsr() -> u32 {
@@ -152,21 +159,25 @@ fn assert_creature_dies_to_zero(id: &str) {
     e.set_creature(Some(def), &[]);
     e.set_gate(1.0);
     if !def.calls.is_empty() {
-        e.play_call(0, None, None);
+        let index = call.map_or(0, |c| def.call_index(c).unwrap_or_else(|| panic!("{id} has no call {c}")));
+        e.play_call(index, None, None);
     }
     run(&mut e, 3.0);
     e.set_gate(0.0);
     e.stop_call();
+    for (key, x) in let_go {
+        e.set_creature_params(&[(def.param_index(key).unwrap_or_else(|| panic!("{id} has no dial {key}")), *x)]);
+    }
     let mut buf = [0.0f32; 128];
     let per_second = (FS / 128.0) as usize;
-    for second in 1..=30 {
+    for second in 1..=seconds {
         let mut dirty = 0usize;
         for _ in 0..per_second {
             set_mxcsr(mxcsr() & !0x3f);
             e.render(&mut buf);
             dirty += (mxcsr() & DENORMAL_OPERAND != 0) as usize;
         }
-        assert_eq!(dirty, 0, "{id}, {second} s after letting go: {dirty} of {per_second} blocks computed with denormals");
+        assert_eq!(dirty, 0, "{id} ({}, {let_go:?}), {second} s after letting go: {dirty} of {per_second} blocks computed with denormals", call.unwrap_or("first call"));
     }
 }
 
@@ -192,4 +203,48 @@ fn the_alligator_dies_to_zero() {
 #[test]
 fn the_elephant_dies_to_zero() {
     assert_creature_dies_to_zero("elephant");
+}
+
+/// A call that takes a dial away from zero and lets it go again. The dial's smoothed value then
+/// came back toward zero for ever, and once it was small enough it stayed a denormal that every
+/// control step computed with: the elephant's `mode` after its squeak or its trumpet (19 and
+/// 20 s after letting go; the two take the same path, so only the trumpet is kept here), the
+/// alligator's `hiss` after its hiss (27 s). The calls above never
+/// showed it: each creature's first call leaves these dials where they rest. Watched for 40 s,
+/// so that a dial coming home a little slower would still be caught.
+#[cfg(target_arch = "x86_64")]
+#[test]
+fn the_elephant_dies_to_zero_after_its_trumpet() {
+    assert_creature_dies_to_zero_when("elephant", Some("trumpet"), &[], 40);
+}
+
+#[cfg(target_arch = "x86_64")]
+#[test]
+fn the_alligator_dies_to_zero_after_its_hiss() {
+    assert_creature_dies_to_zero_when("alligator", Some("hiss"), &[], 40);
+}
+
+/// One side of the syrinx muted (the songbird's "Left ↔ both ↔ right" dial at one end). Each side
+/// smooths its own gate, a sample at a time, and that one was never zeroed: the muted side's gate
+/// came to rest for ever, and from 13.6 s on every sample was computed with a denormal.
+#[cfg(target_arch = "x86_64")]
+#[test]
+fn the_songbird_dies_to_zero_with_one_side_muted() {
+    assert_creature_dies_to_zero_when("songbird", None, &[("voices", 0.0)], 30);
+}
+
+/// The flush is for a dial coming to rest at zero, and for no other. One sent to a value just
+/// above zero must still get there: flushed whatever its target, the elephant's `mode` set to
+/// 1e-29 took a first step of 4.35e-31, was zeroed, and stayed at 0 for ever.
+#[test]
+fn a_dial_sent_just_above_zero_still_arrives() {
+    use chimera::creatures::{CreatureVoice, creature_by_id};
+    let def = creature_by_id("elephant").expect("a creature");
+    let mode = def.param_index("mode").expect("the elephant's mode");
+    let mut v = CreatureVoice::new(def, FS, &[]);
+    v.set_params(&[(mode, 1e-29)]);
+    let mut buf = vec![0.0f32; FS as usize];
+    v.render(&mut buf);
+    let got = v.values()[mode];
+    assert!((got - 1e-29).abs() < 1e-31, "mode sent to 1e-29 is at {got:e} a second later");
 }

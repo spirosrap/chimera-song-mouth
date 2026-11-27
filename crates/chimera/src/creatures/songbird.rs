@@ -111,6 +111,10 @@ impl CreatureSim for Songbird {
         self.net.set_port_area(self.v_r, a);
         self.net.step()
     }
+    fn flush_tiny(&mut self) {
+        self.lab_l.flush_tiny();
+        self.lab_r.flush_tiny();
+    }
     fn source_state(&self, out: &mut Vec<(&'static str, f64)>) {
         out.clear();
         out.push(("left", self.lab_l.opening));

@@ -345,6 +345,13 @@ impl CreatureVoice {
             let cur = self.value[i];
             let tgt = self.target[i];
             self.value[i] = if p.log == Some(true) && cur > 0.0 && tgt > 0.0 { cur * pow(tgt / cur, a) } else { cur + (tgt - cur) * a };
+            // a dial on its way back to zero never arrives: it ends a denormal, computed with at
+            // every control step from then on (the elephant's `mode` after a trumpet). Only a
+            // dial whose target is zero: one sent to a value just above it must still get there.
+            // What a creature smooths for itself it zeroes in its own `flush_tiny`.
+            if tgt == 0.0 {
+                tiny(&mut self.value[i]);
+            }
         }
         let goal = js_max(self.gate_target, self.call_gate);
         let gt = self.def.gate_times.unwrap_or(DEFAULT_GATE_TIMES);

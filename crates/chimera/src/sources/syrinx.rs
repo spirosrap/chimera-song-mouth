@@ -5,6 +5,7 @@
 //! waveform from a near-sine (Hopf onset) to rich relaxation pulses; β (labial tension) shapes it.
 //! The labial displacement maps to the valve opening of its bronchus.
 
+use crate::airway::network::tiny;
 use crate::math::{js_max, js_min};
 use serde::Deserialize;
 use std::sync::OnceLock;
@@ -106,6 +107,16 @@ impl SyrinxLabia {
     #[inline(always)]
     fn rhs(x: f64, y: f64, a: f64, b: f64) -> (f64, f64) {
         (y, -a - b * x - x * x * x - x * x * y + x * x - x * y)
+    }
+
+    /// Zero the gate's smoothing once it has decayed to nothing (control rate). A side that is
+    /// muted comes to rest by a fixed fraction each sample and never arrives: without this it
+    /// ends a denormal, computed with at every sample from then on. Only a gate that is shut:
+    /// one set just above zero must still get there.
+    pub fn flush_tiny(&mut self) {
+        if self.gate == 0.0 {
+            tiny(&mut self.gate_sm);
+        }
     }
 
     /// Advance one sample; returns the valve opening 0..1.
