@@ -70,6 +70,11 @@ and the CLI) under a React UI. See the README.
   `--blue-mid`, `--frame`) or dimmed by opacity** (`docs/ui-redesign.md` → Type). Check:
   `bun run lint:layout` fails text under 11 px.
 - **The layout lint's encoder checks target `?solo=1`**; the bare URL intentionally opens the band. Check: `bun run lint:layout`.
+- **Headless scene exports use `launchSceneExportBrowser` from `tools/lib/scene-export-browser.mjs`.**
+  Install its matching Playwright Chromium with `bun node_modules/playwright-core/cli.js install chromium --no-shell`.
+  When staging an exporter on another host, copy the helper with it. Do not pass the system Brave
+  executable: short-lived headless Brave copies interfered with the Mac mini's live browser automation.
+  Check: `bun test tests/scene-export-browser.test.mjs`.
 - **This handoff explicitly includes the user-requested prepared music/movie assets.**
   Keep all twenty-two songs, all fifteen film and TV scenes, the speech scene, the two Apollo scenes and all 155 concert and music-video performances in `public/`; read `CONTENT.md` and `MEDIA-RIGHTS.md`.
   The upstream copyright exclusion does not apply to this explicitly requested export. CSD
