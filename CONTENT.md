@@ -203,6 +203,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Janelle Monáe feat. Big Boi — Tightrope | 5:12 | `?scene=janelle-tightrope` | A tiled institution, ensemble choreography, and two physical voices. |
 | Fever Ray — Kandy | 4:25 | `?scene=fever-ray-kandy` | A jukebox, blue curtain, green armchair and red venue. |
 | Ren — Animal Flow | 2:56 | `?scene=ren-animal-flow` | A tiled corridor and a banquet staged with animal costumes. |
+| Mitski — Nobody | 3:24 | `?scene=mitski-nobody` | A yellow bedroom, divided table, mirror portraits and the exposed studio set. |
+| The Chemical Brothers — Let Forever Be | 3:47 | `?scene=chemical-let-forever-be` | Escalators, a digital bedside clock and repeated dancers in a patterned revue. |
+| Christine and the Queens — Tilted | 3:59 | `?scene=christine-tilted` | A blue stage with synchronized angles, hands and footwork. |
+| Caroline Polachek — Welcome To My Island | 3:56 | `?scene=caroline-welcome-island` | The shop, cardboard room, volcanic hollow, coast and subway platform. |
+| Glass Animals — Life Itself | 4:46 | `?scene=glass-life-itself` | A red car, motel curtains, roadside signs and the open desert. |
+| Robyn — Call Your Girlfriend | 3:35 | `?scene=robyn-call-girlfriend` | A solo warehouse dance under changing industrial lights. |
+| IDLES — Dancer | 3:23 | `?scene=idles-dancer` | A laundromat, street shutters, red-lit band and a physical vocal exchange. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

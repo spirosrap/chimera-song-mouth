@@ -1,0 +1,309 @@
+{
+  "setting": "lifeitself",
+  "title": "Glass Animals · Life Itself",
+  "description": "A red car, drawn motel curtains and open desert roads frame a restless roadside story.",
+  "duration": 286.023401,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "life-dave",
+      "name": "Dave",
+      "role": "CHIMERA vocals",
+      "tele": "life-dave.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 43.84,
+      "end": 52.8,
+      "text": "was",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.8,
+      "end": 57.38,
+      "text": "a",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.38,
+      "end": 62.24,
+      "text": "gentle human said that he loved",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.24,
+      "end": 65.46,
+      "text": "each of my two million freckles when I",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.86,
+      "end": 70.68,
+      "text": "I was gonna be a superstar I can't get a job,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.92,
+      "end": 75.4,
+      "text": "so I live with my mom I take her money but",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.4,
+      "end": 79.94,
+      "text": "not quite enough I sit in the car and I",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.94,
+      "end": 84.7,
+      "text": "listen to static She said I look fat, but I look",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.7,
+      "end": 89.48,
+      "text": "fantastic Come back and touch my knees, gotta get back, gotta",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.48,
+      "end": 92.28,
+      "text": "get free Come back down to my knees,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.72,
+      "end": 97.54,
+      "text": "back down, lean back to free Come back down to my knees, got to get back,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.84,
+      "end": 100.82,
+      "text": "gotta get free Cut back down to my knees,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.3,
+      "end": 103.32,
+      "text": "back down, lean back to three",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.36,
+      "end": 113.44,
+      "text": "Max's eyesight, let's go look like the one",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.1,
+      "end": 118.9,
+      "text": "Sippin', holding Coca Cola thought that I was Northern",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.9,
+      "end": 123.8,
+      "text": "Camden's on flash, Gordon's on a great gun Gonna be your",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.8,
+      "end": 128.5,
+      "text": "superstar I can't get a job, so I live with my mom",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.5,
+      "end": 130.32,
+      "text": "I take her money,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.9,
+      "end": 132.72,
+      "text": "but not quite enough,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.26,
+      "end": 138.06,
+      "text": "made my own fun In grandma's place when I said",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.06,
+      "end": 142.86,
+      "text": "I look mad She said I look wasted Come back down",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.86,
+      "end": 147.46,
+      "text": "to my knees Gotta get back, gotta get free Come back down to my",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.46,
+      "end": 152.26,
+      "text": "knees Things like that, things I can read Come back down to my knees",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.26,
+      "end": 154.64,
+      "text": "Gotta get back, gotta get free,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 155.1,
+      "end": 156.54,
+      "text": "back down to my knees,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 157,
+      "end": 159.18,
+      "text": "back down and lean back and reach.",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.5,
+      "end": 189.9,
+      "text": "I'm",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.9,
+      "end": 195.94,
+      "text": "a",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.94,
+      "end": 199.32,
+      "text": "to",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 219.96,
+      "end": 224.6,
+      "text": "to my knees Gotta get back, gotta get free Come back, come to my",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.6,
+      "end": 229.46,
+      "text": "knees Lean back down, lean back to my knees Come back, come to my knees",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 229.46,
+      "end": 233.7,
+      "text": "Gotta get back, gotta get I come back down to my knees,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 234.02,
+      "end": 236.2,
+      "text": "Lean back down, lean back down to knees,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 236.58,
+      "end": 240.3,
+      "text": "back down to my knees, Gotta get fat, gotta get free,",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    },
+    {
+      "start": 240.8,
+      "end": 244.9,
+      "text": "back down to my knees, in that I'm by the breeze.",
+      "speaker": "life-dave",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "life-neon"
+    },
+    {
+      "time": 19,
+      "view": "life-road"
+    },
+    {
+      "time": 46,
+      "view": "life-close"
+    },
+    {
+      "time": 69,
+      "view": "life-room"
+    },
+    {
+      "time": 96,
+      "view": "life-room"
+    },
+    {
+      "time": 119,
+      "view": "life-diner"
+    },
+    {
+      "time": 146,
+      "view": "life-close"
+    },
+    {
+      "time": 179,
+      "view": "life-room"
+    },
+    {
+      "time": 208,
+      "view": "life-motel"
+    },
+    {
+      "time": 242,
+      "view": "life-road"
+    },
+    {
+      "time": 266,
+      "view": "life-finale"
+    }
+  ]
+}

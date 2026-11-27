@@ -1,0 +1,386 @@
+{
+  "setting": "idlesdancer",
+  "title": "IDLES · Dancer",
+  "description": "A laundromat and its concrete storefront give way to a red-lit band and a doubled vocal close-up.",
+  "duration": 203.337143,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "dancer-joe",
+      "name": "Joe",
+      "role": "CHIMERA vocals",
+      "tele": "dancer-joe.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "dancer-response",
+      "name": "Response",
+      "role": "CHIMERA vocals",
+      "tele": "dancer-response.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.04,
+      "text": "Pro -richness!",
+      "speaker": "dancer-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 41.94,
+      "end": 46.7,
+      "text": "I'm going little feet touch plus hands for",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.7,
+      "end": 50.8,
+      "text": "the sake we can swing if you prefer so to speak",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.48,
+      "end": 55.4,
+      "text": "my breath moves your hair in around that's a glance like a",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.4,
+      "end": 60.28,
+      "text": "pirouette and a sweat i give myself to",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.28,
+      "end": 64.42,
+      "text": "you as long as you move on the floor",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.9,
+      "end": 67.52,
+      "text": "it's hip to hip,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 68.48,
+      "end": 68.82,
+      "text": "dance,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.82,
+      "end": 70.9,
+      "text": "cheek to cheek,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.46,
+      "end": 72.16,
+      "text": "dance,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.84,
+      "end": 74.46,
+      "text": "it's hip to hip,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.24,
+      "end": 79,
+      "text": "dance and cheek to",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.62,
+      "end": 81.38,
+      "text": "hip to hip,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.94,
+      "end": 82.66,
+      "text": "dance,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.34,
+      "end": 84.62,
+      "text": "cheek to cheek,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.12,
+      "end": 86.16,
+      "text": "dance,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.9,
+      "end": 87.54,
+      "text": "dance,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.46,
+      "end": 91.88,
+      "text": "to",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.88,
+      "end": 110.02,
+      "text": "do",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.02,
+      "end": 110.84,
+      "text": "goddamn mate,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.22,
+      "end": 111.92,
+      "text": "so to speak.",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.82,
+      "end": 117.3,
+      "text": "I can taste the mood in my mouth, like particles of pot -strunk",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.3,
+      "end": 118.82,
+      "text": "love and the sweat.",
+      "speaker": "dancer-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.68,
+      "end": 120.5,
+      "text": "What moves?",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.76,
+      "end": 123.78,
+      "text": "swing, lights cut from the moves they make,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.76,
+      "end": 129.44,
+      "text": "so to speak. Somebody tell me where I go like a",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.44,
+      "end": 133.88,
+      "text": "goddamn homing dog and give",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.88,
+      "end": 137.45,
+      "text": "myself to you as long as we move",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.1,
+      "end": 154.38,
+      "text": "set,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.92,
+      "end": 155.92,
+      "text": "hip to hip,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.88,
+      "end": 157.12,
+      "text": "down,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.66,
+      "end": 157.96,
+      "text": "set,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.48,
+      "end": 160.52,
+      "text": "cheek to cheek, dance,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.74,
+      "end": 162.46,
+      "text": "dance,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.94,
+      "end": 164.72,
+      "text": "count your downs!",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.64,
+      "end": 169.22,
+      "text": "Cut waves make change,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.02,
+      "end": 172.38,
+      "text": "cut circles in my cage.",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 173.46,
+      "end": 176.14,
+      "text": "waves make change,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.86,
+      "end": 179.12,
+      "text": "circles in my cage.",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.2,
+      "end": 180.84,
+      "text": "Cut ways,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 181.66,
+      "end": 182.86,
+      "text": "make change,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.64,
+      "end": 185.56,
+      "text": "circles in my cage!",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.04,
+      "end": 187.94,
+      "text": "I'm a dinosaur,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.64,
+      "end": 189.84,
+      "text": "you're a dinosaur,",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 190.42,
+      "end": 192.1,
+      "text": "let's go! Yes!",
+      "speaker": "dancer-response",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "idles-door"
+    },
+    {
+      "time": 14,
+      "view": "idles-laundry-close"
+    },
+    {
+      "time": 33,
+      "view": "idles-laundry-dance"
+    },
+    {
+      "time": 56,
+      "view": "idles-shutters"
+    },
+    {
+      "time": 79,
+      "view": "idles-laundry-dance"
+    },
+    {
+      "time": 97,
+      "view": "idles-red-dance"
+    },
+    {
+      "time": 118,
+      "view": "idles-stage-close"
+    },
+    {
+      "time": 141,
+      "view": "idles-red-dance"
+    },
+    {
+      "time": 159,
+      "view": "idles-violet-dance"
+    },
+    {
+      "time": 178,
+      "view": "idles-joe-close"
+    },
+    {
+      "time": 192,
+      "view": "idles-finale"
+    }
+  ]
+}

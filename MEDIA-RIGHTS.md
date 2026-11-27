@@ -170,3 +170,5 @@ The owner supplied Yuno Miles × Fantano — Emo Girl. The CHIMERA version uses 
 The owner supplied Jack White — Archbishop Harold Holmes. The CHIMERA version uses separated original accompaniment and ambience, one synthesized vocal, synchronized captions and procedurally drawn chapel and hospital settings. Rights in the song, recording and video remain with their respective holders.
 
 The owner supplied The Last Dinner Party — Knocking at the Sky. The CHIMERA version uses separated original accompaniment and ambience, synthesized vocals, synchronized captions and procedurally drawn settings. Rights in the song, recording and video remain with their respective holders.
+
+The seven scenes for Mitski, The Chemical Brothers, Christine and the Queens, Caroline Polachek, Glass Animals, Robyn, and IDLES include separated accompaniment, physical vocals, synchronized captions, and procedural sets. Rights in the compositions, lyrics, recordings, performances, and videos remain with their respective holders. Original footage and analysis data remain outside the repository.

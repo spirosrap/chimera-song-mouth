@@ -1,0 +1,456 @@
+{
+  "setting": "mitskinobody",
+  "title": "Mitski · Nobody",
+  "description": "A divided table, yellow bedroom and double portraits reveal the theatrical set behind the singer.",
+  "duration": 203.639002,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "nobody-mitski",
+      "name": "Mitski",
+      "role": "CHIMERA vocals",
+      "tele": "nobody-mitski.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 3.02,
+      "end": 6.6,
+      "text": "My God, I'm so lonely,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 7.02,
+      "end": 11.68,
+      "text": "so I open the window to",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 11.68,
+      "end": 15.34,
+      "text": "hear sounds of people,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 15.86,
+      "end": 19.62,
+      "text": "to hear sounds of people",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 19.62,
+      "end": 21.74,
+      "text": "Venus",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.5,
+      "end": 26.98,
+      "text": "of love was destroyed by global",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.98,
+      "end": 31.8,
+      "text": "warming did its people want too much",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.8,
+      "end": 36.32,
+      "text": "too did its people want too much",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.32,
+      "end": 40.5,
+      "text": "and I don't want your pity",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.5,
+      "end": 43.68,
+      "text": "I just want somebody",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.8,
+      "end": 47.02,
+      "text": "I'm a coward,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.56,
+      "end": 51.2,
+      "text": "I just want to feel alright",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.2,
+      "end": 55.92,
+      "text": "And I know no",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.92,
+      "end": 57.62,
+      "text": "one will save me,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.36,
+      "end": 62.92,
+      "text": "just need someone to kiss Give me",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.92,
+      "end": 66.96,
+      "text": "one good honest kiss and I'll be",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.96,
+      "end": 68.44,
+      "text": "alright",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.1,
+      "end": 71.94,
+      "text": "Nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.9,
+      "end": 73.68,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.02,
+      "end": 78.18,
+      "text": "nobody, nobody, nobody",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.18,
+      "end": 79.2,
+      "text": "Ooh,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.5,
+      "end": 80.14,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 80.84,
+      "end": 81.96,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.3,
+      "end": 83.32,
+      "text": "nobody",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.7,
+      "end": 95.54,
+      "text": "I think big and small and big and",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.54,
+      "end": 100.26,
+      "text": "small and big and small again And still",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.26,
+      "end": 104.36,
+      "text": "nobody wants me Still",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.36,
+      "end": 109.12,
+      "text": "nobody wants me And I know no",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.12,
+      "end": 113.58,
+      "text": "one will save me, I'm just asking for",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.58,
+      "end": 118.44,
+      "text": "a kiss Give me one good movie kiss",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.44,
+      "end": 121.84,
+      "text": "and I'll be alright",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.12,
+      "end": 125.24,
+      "text": "Nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.86,
+      "end": 126.7,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.2,
+      "end": 128.18,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.52,
+      "end": 132.42,
+      "text": "nobody, nobody who",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.94,
+      "end": 133.86,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 134.38,
+      "end": 135.14,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.58,
+      "end": 138.78,
+      "text": "nobody, nobody, no body,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 139.6,
+      "end": 140.76,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.14,
+      "end": 145.1,
+      "text": "nobody, nobody, Nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.08,
+      "end": 147.72,
+      "text": "Nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.04,
+      "end": 150.26,
+      "text": "Nobody, Nobody",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.1,
+      "end": 154.94,
+      "text": "Nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 155.2,
+      "end": 158.44,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.98,
+      "end": 160.26,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 160.9,
+      "end": 161.42,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 162,
+      "end": 162.98,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.34,
+      "end": 163.9,
+      "text": "no,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.6,
+      "end": 165.34,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.58,
+      "end": 167.64,
+      "text": "nobody, no,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.76,
+      "end": 170.72,
+      "text": "no, no, no,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 171.28,
+      "end": 171.62,
+      "text": "no,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 173.12,
+      "end": 174.58,
+      "text": "nobody,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.1,
+      "end": 179.04,
+      "text": "No party,",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.18,
+      "end": 184.46,
+      "text": "no party, party, no",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    },
+    {
+      "start": 184.46,
+      "end": 186.12,
+      "text": "party",
+      "speaker": "nobody-mitski",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "nobody-table"
+    },
+    {
+      "time": 13,
+      "view": "nobody-bedroom"
+    },
+    {
+      "time": 39,
+      "view": "nobody-letter-close"
+    },
+    {
+      "time": 58,
+      "view": "nobody-mirror-close"
+    },
+    {
+      "time": 81,
+      "view": "nobody-colored-room"
+    },
+    {
+      "time": 99,
+      "view": "nobody-hands-ensemble"
+    },
+    {
+      "time": 117,
+      "view": "nobody-mirror-close"
+    },
+    {
+      "time": 137,
+      "view": "nobody-colored-room"
+    },
+    {
+      "time": 158,
+      "view": "nobody-letter-close"
+    },
+    {
+      "time": 175,
+      "view": "nobody-studio"
+    },
+    {
+      "time": 190,
+      "view": "nobody-finale"
+    }
+  ]
+}

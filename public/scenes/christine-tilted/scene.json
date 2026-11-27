@@ -1,0 +1,331 @@
+{
+  "setting": "tilteddance",
+  "title": "Christine and the Queens · Tilted",
+  "description": "A blue stage and a small ensemble trade tight hand gestures for sweeping synchronized steps.",
+  "duration": 238.608254,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "tilted-chris",
+      "name": "Chris",
+      "role": "CHIMERA vocals",
+      "tele": "tilted-chris.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 41.42,
+      "end": 43.82,
+      "text": "I went before my Susie love",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.44,
+      "end": 48.5,
+      "text": "So I'll fight some blammonia",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.5,
+      "end": 52.88,
+      "text": "In every morning we fight so",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.88,
+      "end": 54.22,
+      "text": "bad",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.12,
+      "end": 59.02,
+      "text": "I miss them for the tears they shed",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 59.02,
+      "end": 62.08,
+      "text": "But I'm a chalicot",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.48,
+      "end": 65.78,
+      "text": "Can't help it if we're tilted I am a",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.18,
+      "end": 66.78,
+      "text": "good,",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.26,
+      "end": 71.62,
+      "text": "can't help it for we I am actually good,",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.86,
+      "end": 76.42,
+      "text": "can't stop it if we're tilted I'm actually good,",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.8,
+      "end": 79.34,
+      "text": "can't stop it If we're tilted",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.4,
+      "end": 101.84,
+      "text": "I miss Prasilis and many souls",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.84,
+      "end": 106.4,
+      "text": "Trumple of a beauty while singing the thoughts",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.4,
+      "end": 110.64,
+      "text": "I match them with my euphoria",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 113,
+      "end": 116.72,
+      "text": "When there's a change in brief or good to walk",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.66,
+      "end": 119.58,
+      "text": "But I'm actually good",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.22,
+      "end": 124.4,
+      "text": "Can't help it if we're tilted I am actually good",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.86,
+      "end": 126.86,
+      "text": "Can't help it if we",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.2,
+      "end": 131.9,
+      "text": "I am actually good You can't help it if we're tilted,",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.36,
+      "end": 136.98,
+      "text": "I am actually good Can't help it, if we're tilted",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.84,
+      "end": 142.38,
+      "text": "Lo ela mano ne des sortes Perque une sainse plume ati un contadumie de mie",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.06,
+      "end": 161.56,
+      "text": "I'm doing my face, with a magic marker",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.56,
+      "end": 166.4,
+      "text": "I'm in my right place, don't be a daughter",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.4,
+      "end": 169.02,
+      "text": "I'm doing my face,",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.62,
+      "end": 174,
+      "text": "with a magic marker I'm in my right place,",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.68,
+      "end": 179.34,
+      "text": "to be if I am actually good, you can feel sweet if",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.34,
+      "end": 183.94,
+      "text": "we're dotted I am surely good, you can feel sweet if",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.94,
+      "end": 186.76,
+      "text": "We're dotted am surely good,",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.08,
+      "end": 190.02,
+      "text": "can fell sweet if we're If",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 190.02,
+      "end": 193.2,
+      "text": "I am surely",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.2,
+      "end": 197.6,
+      "text": "good, can still",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.6,
+      "end": 198.24,
+      "text": "sweet",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.72,
+      "end": 200.56,
+      "text": "I am good,",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 200.56,
+      "end": 205.82,
+      "text": "am",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 208.32,
+      "end": 212.28,
+      "text": "I am good, good, good am good I am good,",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 212.6,
+      "end": 213.06,
+      "text": "am I",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    },
+    {
+      "start": 213.06,
+      "end": 221.38,
+      "text": "am",
+      "speaker": "tilted-chris",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "tilted-empty"
+    },
+    {
+      "time": 12,
+      "view": "tilted-portrait"
+    },
+    {
+      "time": 29,
+      "view": "tilted-line-dance"
+    },
+    {
+      "time": 49,
+      "view": "tilted-pair-dance"
+    },
+    {
+      "time": 67,
+      "view": "tilted-line-dance"
+    },
+    {
+      "time": 86,
+      "view": "tilted-floor"
+    },
+    {
+      "time": 104,
+      "view": "tilted-portrait"
+    },
+    {
+      "time": 125,
+      "view": "tilted-ensemble"
+    },
+    {
+      "time": 144,
+      "view": "tilted-floor"
+    },
+    {
+      "time": 163,
+      "view": "tilted-line-dance"
+    },
+    {
+      "time": 181,
+      "view": "tilted-ensemble"
+    },
+    {
+      "time": 203,
+      "view": "tilted-portrait"
+    },
+    {
+      "time": 219,
+      "view": "tilted-finale"
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "setting": "robynfriend",
+  "title": "Robyn · Call Your Girlfriend",
+  "description": "A solo dancer crosses an empty warehouse as its industrial lights shift from cool white to violet and red.",
+  "duration": 215.1561,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "girlfriend-robyn",
+      "name": "Robyn",
+      "role": "CHIMERA vocals",
+      "tele": "girlfriend-robyn.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 2.7,
+      "end": 5.24,
+      "text": "Call your girlfriend,",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 5.94,
+      "end": 10.22,
+      "text": "it's time you had the talk,",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 11.16,
+      "end": 13.22,
+      "text": "give your reasons,",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 14.94,
+      "end": 17.8,
+      "text": "say its not her fault,",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 18.92,
+      "end": 22.6,
+      "text": "but you just met somebody",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.6,
+      "end": 27.04,
+      "text": "new Tell her not to get",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.04,
+      "end": 31.68,
+      "text": "upset Second guess in everything you said and done",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.76,
+      "end": 37.46,
+      "text": "And when she gets upset Tell her how you never meant",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.46,
+      "end": 39.44,
+      "text": "to hurt no one",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.38,
+      "end": 45.02,
+      "text": "And you tell her the only way her heart",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.02,
+      "end": 49.48,
+      "text": "will mend is when she learns to love again",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.48,
+      "end": 53.72,
+      "text": "And it won't make sense right now, but you're still her",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.72,
+      "end": 57.32,
+      "text": "friend And then you let it down each",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.32,
+      "end": 59.24,
+      "text": "day",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.62,
+      "end": 62.78,
+      "text": "Call your girlfriend",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 64.96,
+      "end": 69.42,
+      "text": "time you had the talk, give your",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.42,
+      "end": 73.78,
+      "text": "reasons Say it's not",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.78,
+      "end": 77.54,
+      "text": "her fault, but you",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.54,
+      "end": 81.76,
+      "text": "just let somebody new",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.76,
+      "end": 86.62,
+      "text": "Don't you tell me how I gave you something that you",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.62,
+      "end": 89.1,
+      "text": "never even knew you missed.",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.12,
+      "end": 96,
+      "text": "Don't you even try and explain how it's so different when we",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 96,
+      "end": 97,
+      "text": "kissed.",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.48,
+      "end": 103.38,
+      "text": "You just tell her that the only way her heart will mend",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.38,
+      "end": 108.26,
+      "text": "is when she learns to love again And it won't",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.26,
+      "end": 112.38,
+      "text": "make sense right now but you're still her friend.",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.94,
+      "end": 115.52,
+      "text": "And then you let it down easy.",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.24,
+      "end": 120.32,
+      "text": "How your girlfriend",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.56,
+      "end": 125.46,
+      "text": "time you had the talk.",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.48,
+      "end": 131.36,
+      "text": "Give your reasons say it's not",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.36,
+      "end": 135.08,
+      "text": "But you",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.08,
+      "end": 139.44,
+      "text": "just let somebody do",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 139.44,
+      "end": 144.28,
+      "text": "And now it's",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.28,
+      "end": 146.62,
+      "text": "gonna be me and you",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.06,
+      "end": 157.98,
+      "text": "AA",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.46,
+      "end": 167.28,
+      "text": "AA And you tell her that's the only way Her",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.28,
+      "end": 171.82,
+      "text": "heart will mend Is when she learns to love",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 171.82,
+      "end": 176.6,
+      "text": "again And it won't make sense right now But you still have",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.6,
+      "end": 177.46,
+      "text": "friends",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 177.78,
+      "end": 182.18,
+      "text": "And then you let it down each day",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.18,
+      "end": 183.2,
+      "text": "Call,",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 184.08,
+      "end": 185.44,
+      "text": "call your girlfriend",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.34,
+      "end": 190.74,
+      "text": "This time you had the talk",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.32,
+      "end": 193.94,
+      "text": "And give your reasons",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.38,
+      "end": 199.66,
+      "text": "Say it's not her But",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.66,
+      "end": 203.12,
+      "text": "you just met somebody",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    },
+    {
+      "start": 203.12,
+      "end": 204.84,
+      "text": "new",
+      "speaker": "girlfriend-robyn",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "girlfriend-door"
+    },
+    {
+      "time": 16,
+      "view": "girlfriend-wall-dance"
+    },
+    {
+      "time": 39,
+      "view": "girlfriend-close"
+    },
+    {
+      "time": 60,
+      "view": "girlfriend-wall-dance"
+    },
+    {
+      "time": 82,
+      "view": "girlfriend-low-dance"
+    },
+    {
+      "time": 104,
+      "view": "girlfriend-close"
+    },
+    {
+      "time": 119,
+      "view": "girlfriend-violet-dance"
+    },
+    {
+      "time": 145,
+      "view": "girlfriend-low-dance"
+    },
+    {
+      "time": 162,
+      "view": "girlfriend-violet-dance"
+    },
+    {
+      "time": 177,
+      "view": "girlfriend-red-close"
+    },
+    {
+      "time": 194,
+      "view": "girlfriend-wall-dance"
+    },
+    {
+      "time": 208,
+      "view": "girlfriend-finale"
+    }
+  ]
+}

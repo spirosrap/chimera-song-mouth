@@ -2322,6 +2322,36 @@
       "sha256": "43c967331ecce5b98abc2a62530fc23e98bf035f706b863e87ed34792bf6448c"
     },
     {
+      "path": "public/scenes/caroline-welcome-island/backing.mp3",
+      "bytes": 7561005,
+      "sha256": "f40aa6a2294d1ad15a085c7168ea7e6579bf4c5a77629d3f6cba4c3116a9c421"
+    },
+    {
+      "path": "public/scenes/caroline-welcome-island/credits.txt",
+      "bytes": 97,
+      "sha256": "dfdd8d1c04ae8f80266f666de33ca93626b37a6cebcdf6835aa1ba9da18b5262"
+    },
+    {
+      "path": "public/scenes/caroline-welcome-island/island-caroline.tele.gz",
+      "bytes": 2130045,
+      "sha256": "cf38b5f51a6171ffa0cb9774aa4d755a04853c05f23d2ab613a9dc3113e93337"
+    },
+    {
+      "path": "public/scenes/caroline-welcome-island/mix.mp3",
+      "bytes": 7561004,
+      "sha256": "fac38ccdc3113b3bd22d53754d0c709dbcf6e9f40c81f865980a1948952d5def"
+    },
+    {
+      "path": "public/scenes/caroline-welcome-island/performance.json",
+      "bytes": 486026,
+      "sha256": "4316b229c4137c6c2007357f56f65f062c1e6fa5e58f2c25c57db4fcc164b256"
+    },
+    {
+      "path": "public/scenes/caroline-welcome-island/scene.json",
+      "bytes": 6555,
+      "sha256": "6dd53abeaecf74d7315328d24c09e939730549c6aaa654027b1fd15484c45f76"
+    },
+    {
       "path": "public/scenes/celentano/backing.mp3",
       "bytes": 7208492,
       "sha256": "dd67ac56f7bb2115a163507822a82152cfe0717e1f1a414d713695cc4ce6b2d7"
@@ -2385,6 +2415,66 @@
       "path": "public/scenes/celine-coming-back/scene.json",
       "bytes": 10766,
       "sha256": "565ea48cac8bf84fdf542c2d8488c9dfa16f7b216b1c6cf4ae5e727f35420985"
+    },
+    {
+      "path": "public/scenes/chemical-let-forever-be/backing.mp3",
+      "bytes": 7277613,
+      "sha256": "2b2789e2bc329c49957b56b26871e2513f7836c581071fa7fa6f74f15a9156d4"
+    },
+    {
+      "path": "public/scenes/chemical-let-forever-be/credits.txt",
+      "bytes": 95,
+      "sha256": "c0d07f754b164c6ee28002fbd9105b2d3ae2764f344576deae1e77c7ed568b1d"
+    },
+    {
+      "path": "public/scenes/chemical-let-forever-be/forever-noel.tele.gz",
+      "bytes": 1694159,
+      "sha256": "0460c093eac072e94c8377c21b920bfcb221a0dc85f5cd453e1709d1f92d2fad"
+    },
+    {
+      "path": "public/scenes/chemical-let-forever-be/mix.mp3",
+      "bytes": 7277612,
+      "sha256": "e1d6d5c21e9ffb989ceea58aa4fa77d485fc7037498904134862d98803cb641f"
+    },
+    {
+      "path": "public/scenes/chemical-let-forever-be/performance.json",
+      "bytes": 366965,
+      "sha256": "3a9e998d3586d4678c4ef2454854ce9f8bc90b1e4a28fbe9b9753fb4059ba3b3"
+    },
+    {
+      "path": "public/scenes/chemical-let-forever-be/scene.json",
+      "bytes": 5811,
+      "sha256": "c5ad0240cd8268f2c08a7962fc1b13c055d63a1ef226357e4033e6f5f3183217"
+    },
+    {
+      "path": "public/scenes/christine-tilted/backing.mp3",
+      "bytes": 7637805,
+      "sha256": "b924b0a0cf83162d3c1b0f68c08ebbfbd5483574d71639d7962d9efeb53f6a39"
+    },
+    {
+      "path": "public/scenes/christine-tilted/credits.txt",
+      "bytes": 90,
+      "sha256": "5b11c62904411020977f70d7e7b274e1c5f47a011f2d1dcd0d0b99582e02bea8"
+    },
+    {
+      "path": "public/scenes/christine-tilted/mix.mp3",
+      "bytes": 7637804,
+      "sha256": "82e0df3c6cd2506f69ddb46b497b0e86bed176933b66d1cac95d214253285f0b"
+    },
+    {
+      "path": "public/scenes/christine-tilted/performance.json",
+      "bytes": 442516,
+      "sha256": "c26bcb24f529487de1d4ef99376b9bff8deb303407e986cd1477f0a8e8f22dfc"
+    },
+    {
+      "path": "public/scenes/christine-tilted/scene.json",
+      "bytes": 7219,
+      "sha256": "3d997d01fc327889b4facee9b7318f72fd32d3133d0c7305a13de04e248348d4"
+    },
+    {
+      "path": "public/scenes/christine-tilted/tilted-chris.tele.gz",
+      "bytes": 1901991,
+      "sha256": "8ac2ce117569e43b627b21e502b3c526a3383b41ca22ab9c4d0ebbd9983385fe"
     },
     {
       "path": "public/scenes/click-clack-symphony/backing.mp3",
@@ -3347,6 +3437,36 @@
       "sha256": "3c27c032de8650edbd1e645ae06bb89792ce7810105b0821b48dab49a1927f45"
     },
     {
+      "path": "public/scenes/glass-life-itself/backing.mp3",
+      "bytes": 9154605,
+      "sha256": "9644c71846b398952be97e1910d65a433e249380383c5924de97a3cdec8437b1"
+    },
+    {
+      "path": "public/scenes/glass-life-itself/credits.txt",
+      "bytes": 84,
+      "sha256": "facb28050526f85a7d731e4172bb69f4d6b64dafcae6aeb45402a3368e185b57"
+    },
+    {
+      "path": "public/scenes/glass-life-itself/life-dave.tele.gz",
+      "bytes": 2337520,
+      "sha256": "f2467e45030bde3d870f7250a00a00292ac030361b51cd6705048a7f4ed2757d"
+    },
+    {
+      "path": "public/scenes/glass-life-itself/mix.mp3",
+      "bytes": 9154604,
+      "sha256": "17c0f6b557dadcc0c904c0ad23fdef5ced4dd5e15b1a4e2f142077e8c7d60566"
+    },
+    {
+      "path": "public/scenes/glass-life-itself/performance.json",
+      "bytes": 522668,
+      "sha256": "f5335e3d9bda8d84972b14b7356b6dce2ef6ce334b1412091800a92be05616d2"
+    },
+    {
+      "path": "public/scenes/glass-life-itself/scene.json",
+      "bytes": 6919,
+      "sha256": "3177fe1734f5ba45d0e1c5ee28bcf225d34cbabfeea553b29ae9a201e22003a4"
+    },
+    {
       "path": "public/scenes/gnarly/backing.mp3",
       "bytes": 4552748,
       "sha256": "4d663c352877eeea64254a5ebb7ed966133da3da6f3a2b746deb28b698df56d0"
@@ -3770,6 +3890,41 @@
       "path": "public/scenes/i-miss-us/scene.json",
       "bytes": 9777,
       "sha256": "f3ed32a68ea1fea2b87072cff1f6ead27f0525b5c75cf07661f5eae45b529a87"
+    },
+    {
+      "path": "public/scenes/idles-dancer/backing.mp3",
+      "bytes": 6508845,
+      "sha256": "964b20efb154f3747c3cda0b332ec2d6121c64a20d8dded5d029615ceda46f9a"
+    },
+    {
+      "path": "public/scenes/idles-dancer/credits.txt",
+      "bytes": 71,
+      "sha256": "a9f8922e296c8ef9c95d9dd77d8a017c48651238d8684bca0d51b357ea832e23"
+    },
+    {
+      "path": "public/scenes/idles-dancer/dancer-joe.tele.gz",
+      "bytes": 71870,
+      "sha256": "e49464da1c00b9e3ce4e806c396ffb7632398554da0575b237a4c8c7342610dd"
+    },
+    {
+      "path": "public/scenes/idles-dancer/dancer-response.tele.gz",
+      "bytes": 1705687,
+      "sha256": "3b2a1a8f05c85e0b6689a060a65f4ce5af4dcc99900d9c1db63918475654cd1b"
+    },
+    {
+      "path": "public/scenes/idles-dancer/mix.mp3",
+      "bytes": 6508844,
+      "sha256": "87cae3db2bfc37e7e0e8ab9a1c9df03d9d97dad43e162c06ac4ad200e38d3b7e"
+    },
+    {
+      "path": "public/scenes/idles-dancer/performance.json",
+      "bytes": 376800,
+      "sha256": "11acd7110fc5ce7758b3fa003405fdbe096d41890aeee481ab47898271684f99"
+    },
+    {
+      "path": "public/scenes/idles-dancer/scene.json",
+      "bytes": 8191,
+      "sha256": "8ec26a27198e68ceba33d37e0288a59b7a1cf458b3e1b91db0a4e6bb0a693b2f"
     },
     {
       "path": "public/scenes/ill-make-love-to-you/backing.mp3",
@@ -4652,6 +4807,36 @@
       "sha256": "c29983ce63a46e0ae265674ef265501b0b335ff3406fec49ad4874930c6d49a0"
     },
     {
+      "path": "public/scenes/mitski-nobody/backing.mp3",
+      "bytes": 6518061,
+      "sha256": "67651f0bdd9941b7abb8c5d8a52329cd2d3b9ca025c6aab27e60f5b6636eb12f"
+    },
+    {
+      "path": "public/scenes/mitski-nobody/credits.txt",
+      "bytes": 72,
+      "sha256": "c9bad6103449f3fe0d6153e4e09fe81f3156651450928b147d6f3fb32ccc7030"
+    },
+    {
+      "path": "public/scenes/mitski-nobody/mix.mp3",
+      "bytes": 6518060,
+      "sha256": "f4b7b85d010ad1fbdcfe2f987b0750f776c266614032c63b028066c8c7541488"
+    },
+    {
+      "path": "public/scenes/mitski-nobody/nobody-mitski.tele.gz",
+      "bytes": 2105903,
+      "sha256": "b793851a97ddc47a01c67daa928e1175ace5fd8ea17a44a2e0966dd92b10d6b0"
+    },
+    {
+      "path": "public/scenes/mitski-nobody/performance.json",
+      "bytes": 474491,
+      "sha256": "c59993d4bcdc80513a1008b023212f25efb229ca2ba70076984f178bb816ff8d"
+    },
+    {
+      "path": "public/scenes/mitski-nobody/scene.json",
+      "bytes": 9430,
+      "sha256": "dc0b1b22a6a090f024d60d5babb2a856caa08979fd3a9fc7bf32b967c630ae39"
+    },
+    {
       "path": "public/scenes/model-cinderella/backing.mp3",
       "bytes": 9842733,
       "sha256": "aafae70d9bdb81f41c5b905cd3cd4d964b6f040bff2b770d70ef7dcabdd4d198"
@@ -5390,6 +5575,36 @@
       "path": "public/scenes/rina-xs/xs-rina.tele.gz",
       "bytes": 2219502,
       "sha256": "4452dc3d24c220a8c5949068aade1c53873d6a44a3427a16098f9a0e4782e5bc"
+    },
+    {
+      "path": "public/scenes/robyn-call-girlfriend/backing.mp3",
+      "bytes": 6886701,
+      "sha256": "0aff2160bb2312cf6755c04216f76c69e89e405a2e34c22f78650e73058bbb88"
+    },
+    {
+      "path": "public/scenes/robyn-call-girlfriend/credits.txt",
+      "bytes": 85,
+      "sha256": "79062e4e6987fc5bb629d7b81e36709ff802848979699ff2b3852a6c4d7b1cb7"
+    },
+    {
+      "path": "public/scenes/robyn-call-girlfriend/girlfriend-robyn.tele.gz",
+      "bytes": 2252467,
+      "sha256": "597297dd11be44a0c8b400f20f0f4b1cec0d21ceb4687c6f1b9bc1d760cb8a0c"
+    },
+    {
+      "path": "public/scenes/robyn-call-girlfriend/mix.mp3",
+      "bytes": 6886700,
+      "sha256": "c269bcc261016a45afebf6ae8eebcd2572e8122c35e394fec8ed168a2a2f8cf7"
+    },
+    {
+      "path": "public/scenes/robyn-call-girlfriend/performance.json",
+      "bytes": 546727,
+      "sha256": "3bafbff6eb98797afbc6b759d8edadb85c1ec99b9bb46ebb1122e7b247387fbb"
+    },
+    {
+      "path": "public/scenes/robyn-call-girlfriend/scene.json",
+      "bytes": 8908,
+      "sha256": "6d7d2eacb9bd86d519bbae3977057f85d5bff871327b0022aa854d6fc13520fe"
     },
     {
       "path": "public/scenes/rock-dj/backing.mp3",

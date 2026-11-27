@@ -1,0 +1,302 @@
+{
+  "setting": "welcometoisland",
+  "title": "Caroline Polachek · Welcome To My Island",
+  "description": "A convenience shop, cardboard box, painted coastline and a red volcanic hollow give way to a subterranean platform.",
+  "duration": 236.216599,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "island-caroline",
+      "name": "Caroline",
+      "role": "CHIMERA vocals",
+      "tele": "island-caroline.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 26.04,
+      "end": 29.24,
+      "text": "Welcome to my island,",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.92,
+      "end": 33.54,
+      "text": "see the palm trees waving the wind.",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.82,
+      "end": 37.48,
+      "text": "Welcome to my island,",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 38,
+      "end": 39.48,
+      "text": "hope you like me,",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.22,
+      "end": 44.66,
+      "text": "you ain't leaving. and welcome to my",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.66,
+      "end": 45.54,
+      "text": "island,",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.16,
+      "end": 49.96,
+      "text": "see the palm trees within the wind.",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.2,
+      "end": 53.74,
+      "text": "Welcome to my island,",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 54.42,
+      "end": 55.76,
+      "text": "hope you like me,",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.48,
+      "end": 57.68,
+      "text": "you ain't leaving.",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.72,
+      "end": 68.04,
+      "text": "Desired",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.8,
+      "end": 73.46,
+      "text": "I wanna tell it to you",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.54,
+      "end": 75.5,
+      "text": "It all",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.98,
+      "end": 81.28,
+      "text": "The old ship blew",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.28,
+      "end": 84.8,
+      "text": "It all",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.8,
+      "end": 88.02,
+      "text": "The old",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.04,
+      "end": 108.1,
+      "text": "Well,",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.36,
+      "end": 114.2,
+      "text": "it's my island see the palm trees where in the",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.2,
+      "end": 118.92,
+      "text": "wind welcome to my island",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.92,
+      "end": 122.88,
+      "text": "who'd like me you ain't leaving",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.88,
+      "end": 124.64,
+      "text": "desire",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.08,
+      "end": 130.62,
+      "text": "I wanna tell it to you but",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.62,
+      "end": 133.3,
+      "text": "desire Desired,",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.9,
+      "end": 137.88,
+      "text": "I wanna turn it to",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.88,
+      "end": 141.2,
+      "text": "you Blue",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.9,
+      "end": 146.88,
+      "text": "The ocean blue",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.88,
+      "end": 148.86,
+      "text": "Blue",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 151.02,
+      "end": 154.44,
+      "text": "The ocean blue",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 155.56,
+      "end": 159.46,
+      "text": "I am my father's daughter in the end He says, watch your ego,",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.84,
+      "end": 164.72,
+      "text": "watch your head girl You're so smart, talented But now the water is turning red And it's",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.72,
+      "end": 167.36,
+      "text": "all your fault and it's all your mess And you're all alone",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.92,
+      "end": 180.7,
+      "text": "flat she enters nothing's gonna be the same again no nothing's gonna be the same again",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 203.4,
+      "end": 207.48,
+      "text": "I'm floating on",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    },
+    {
+      "start": 207.48,
+      "end": 211.44,
+      "text": "the ocean blue",
+      "speaker": "island-caroline",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "island-open-close"
+    },
+    {
+      "time": 19,
+      "view": "island-shop"
+    },
+    {
+      "time": 46,
+      "view": "island-painted"
+    },
+    {
+      "time": 66,
+      "view": "island-box"
+    },
+    {
+      "time": 94,
+      "view": "island-passage"
+    },
+    {
+      "time": 119,
+      "view": "island-lava-close"
+    },
+    {
+      "time": 142,
+      "view": "island-lava"
+    },
+    {
+      "time": 160,
+      "view": "island-star-close"
+    },
+    {
+      "time": 182,
+      "view": "island-coast"
+    },
+    {
+      "time": 207,
+      "view": "island-passage"
+    },
+    {
+      "time": 230,
+      "view": "island-finale"
+    }
+  ]
+}

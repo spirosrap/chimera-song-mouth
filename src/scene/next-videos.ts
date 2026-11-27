@@ -1,12 +1,14 @@
+import { SHOWCASE_CAST, SHOWCASE_INFO, SHOWCASE_SETTINGS, SHOWCASE_VIEWS, isShowcase } from './showcase-videos.ts';
 import { LATER_VIDEO_CAST, LATER_VIDEO_INFO, LATER_VIDEO_SETTINGS, LATER_VIDEO_VIEWS, isLaterVideo } from './later-videos.ts';
 import { SEVEN_VIDEO_CAST, SEVEN_VIDEO_INFO, SEVEN_VIDEO_SETTINGS, SEVEN_VIDEO_VIEWS, isSevenVideo } from './seven-videos.ts';
 
-export const NEXT_VIDEO_SETTINGS = ['jamieoliver', 'barabastu', 'anotrlikeit', 'pinkyup', 'simzyoung', 'manmadeofmeat', ...SEVEN_VIDEO_SETTINGS, ...LATER_VIDEO_SETTINGS] as const;
+export const NEXT_VIDEO_SETTINGS = ['jamieoliver', 'barabastu', 'anotrlikeit', 'pinkyup', 'simzyoung', 'manmadeofmeat', ...SEVEN_VIDEO_SETTINGS, ...LATER_VIDEO_SETTINGS, ...SHOWCASE_SETTINGS] as const;
 export type NextVideoSetting = typeof NEXT_VIDEO_SETTINGS[number];
 
 export const NEXT_VIDEO_CAST = {
   ...SEVEN_VIDEO_CAST,
   ...LATER_VIDEO_CAST,
+  ...SHOWCASE_CAST,
   jamieoliver: ['petrol-cmat', 'petrol-chef'],
   barabastu: ['bastu-kevin', 'bastu-axel', 'bastu-jakob'],
   anotrlikeit: ['likeit-vocal'],
@@ -19,6 +21,7 @@ export type NextVideoCharacter = typeof NEXT_VIDEO_CAST[NextVideoSetting][number
 const VIEW_KEYS = {
   ...SEVEN_VIDEO_VIEWS,
   ...LATER_VIDEO_VIEWS,
+  ...SHOWCASE_VIEWS,
   jamieoliver: ['petrol-kitchen', 'petrol-revue', 'petrol-close', 'petrol-service', 'petrol-drums'],
   barabastu: ['bastu-opening', 'bastu-campfire', 'bastu-choir', 'bastu-steam', 'bastu-lights', 'bastu-finale'],
   anotrlikeit: ['likeit-hall', 'likeit-party', 'likeit-portrait', 'likeit-smoke', 'likeit-dance'],
@@ -32,6 +35,7 @@ type Shot = readonly [time: number, view: NextVideoView];
 export const NEXT_VIDEO_INFO = {
   ...SEVEN_VIDEO_INFO,
   ...LATER_VIDEO_INFO,
+  ...SHOWCASE_INFO,
   jamieoliver: {
     id: 'jamie-oliver-petrol-station', title: 'CMAT · The Jamie Oliver Petrol Station', eyebrow: 'PHYSICAL VOICE · KITCHEN AND VARIETY REVUE',
     description: 'A flustered chef, an exuberant singer in white feathers and a blue-carpeted television revue. Original accompaniment with CHIMERA singing and dialogue.',
@@ -83,6 +87,6 @@ export const NEXT_VIDEO_SCENES = Object.fromEntries(NEXT_VIDEO_SETTINGS.map(sett
 
 export const NEXT_VIDEO_ENTRIES = NEXT_VIDEO_SETTINGS.map(setting => {
   const { id, title, eyebrow, description } = NEXT_VIDEO_INFO[setting];
-  return { id, title, eyebrow, description, assetVersion: `${id}-${isSevenVideo(setting) || isLaterVideo(setting) ? '20261127' : '20261126'}`, readyVideo: undefined,
+  return { id, title, eyebrow, description, assetVersion: `${id}-${isSevenVideo(setting) || isLaterVideo(setting) || isShowcase(setting) ? '20261127' : '20261126'}`, readyVideo: undefined,
     credit: 'A stylized CHIMERA reconstruction of the supplied video. Vocal timing, individual voice assignments and scene choreography are approximate.' };
 });

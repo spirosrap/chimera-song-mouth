@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import { isShowcase, type ShowcaseView } from '../../scene/showcase-videos.ts';
+import { buildShowcaseSet, SHOWCASE_FIGURES, SHOWCASE_WARDROBE } from './showcase-videos.ts';
 import { isLaterVideo, type LaterVideoView } from '../../scene/later-videos.ts';
 import { buildLaterVideoSet, LATER_VIDEO_FIGURES, LATER_VIDEO_WARDROBE } from './later-videos.ts';
 import { isSevenVideo, type SevenVideoView } from '../../scene/seven-videos.ts';
@@ -18,6 +20,7 @@ const random = (index: number) => Math.sin(index * 12.727 + 9.73) * .5 + .5;
 const wardrobe: Record<NextVideoSetting, { jackets: string[]; hair: string[] }> = {
   ...SEVEN_VIDEO_WARDROBE,
   ...LATER_VIDEO_WARDROBE,
+  ...SHOWCASE_WARDROBE,
   jamieoliver: { jackets: ['#efe5d1', '#3bb8b3', '#66c5c1'], hair: ['#9c402a', '#e5bc7d'] },
   barabastu: { jackets: ['#522c37', '#3c2c3a', '#5e5940', '#eee7d4'], hair: ['#493b32', '#916146', '#8c6b4f'] },
   anotrlikeit: { jackets: ['#4e252d', '#e8daca', '#f1dfd8', '#442f61'], hair: ['#403021', '#b69a85'] },
@@ -28,6 +31,7 @@ const wardrobe: Record<NextVideoSetting, { jackets: string[]; hair: string[] }> 
 const settings: Record<NextVideoSetting, number> = {
   ...SEVEN_VIDEO_FIGURES,
   ...LATER_VIDEO_FIGURES,
+  ...SHOWCASE_FIGURES,
   jamieoliver: 3, barabastu: 5, anotrlikeit: 4, pinkyup: 5, simzyoung: 4, manmadeofmeat: 5,
 };
 
@@ -98,6 +102,16 @@ export class NextVideoStage {
         }
         this.props.oval(figure.root, [0, .5, 10.5], [6, 4, 3.6], i % 2 ? '#ae8a81' : '#66584f');
       }
+      if (setting === 'mitskinobody' && i === 0) {
+        for (let dot=0; dot<15; dot++) {
+          this.props.oval(figure.root, [(dot%3-1)*7.6+(Math.floor(dot/3)%2)*3,-24-Math.floor(dot/3)*8,11], [1.2,1.25,.6], '#ceb7a2');
+        }
+      }
+      if (setting === 'robynfriend') {
+        for (const [j,tone] of ['#d6a080','#bc8275','#d2bf9b','#658f9e'].entries()) {
+          this.props.box(figure.root, 23, 4.2, 1.4, tone, [0,-28-j*7,10.6]);
+        }
+      }
       const pinky = setting === 'pinkyup' ? this.props.oval(figure.root, [0, 0, 0], [1.05, 3.2, 1.1], '#d6bdad') : undefined;
       return { figure, base, jacket: figure.torso.material as THREE.MeshBasicMaterial, pinky };
     });
@@ -105,6 +119,12 @@ export class NextVideoStage {
   }
 
   private build(view: NextVideoView): Set {
+    if (isShowcase(this.setting)) {
+      const scenery = buildShowcaseSet(this.props, this.setting, view as ShowcaseView);
+      scenery.root.visible = false;
+      this.scene.add(scenery.root);
+      return scenery;
+    }
     if (isLaterVideo(this.setting)) {
       const scenery = buildLaterVideoSet(this.props, this.setting, view as LaterVideoView);
       scenery.root.visible = false;
@@ -404,7 +424,7 @@ export class NextVideoStage {
         [-28, -38 + 7 * Math.sin(phase), 9], [-25 - emphasis * 9, -62 + 17 * Math.sin(phase * .5), 17],
         [30, -32 + 8 * Math.sin(phase + .4), 10], [34 + 5 * Math.sin(phase * .5), raised, 20],
       ], seated);
-      if (isLaterVideo(this.setting) && group && !tight) {
+      if ((isLaterVideo(this.setting) || isShowcase(this.setting)) && group && !tight) {
         for (const [sideIndex, direction] of [-1, 1].entries()) {
           const stride = Math.sin(phase + sideIndex * Math.PI);
           const knee: Point = [direction * (14 + 4 * stride), -103 + 4 * Math.max(0,stride), 6 * stride];
