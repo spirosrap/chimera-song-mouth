@@ -59,6 +59,21 @@ describe("musicxml-to-notes", () => {
     expect(JSON.parse(r.out)).toEqual({ bpm: 100, lyrics: "one go two end last", notes: [[60, 4], [62, 4], [60, 4], [64, 4], [65, 2], [0, 2]] });
   });
 
+  test("a skipped third ending stops conversion before it emits a partial melody", () => {
+    const r = run(
+      score([
+        `<barline location="left"><repeat direction="forward"/></barline>${note("C", 4, [["single", "one"]])}`,
+        `<barline location="left"><ending number="1" type="start"/></barline>${note("D", 4, [["single", "go"]])}<barline location="right"><ending number="1" type="stop"/><repeat direction="backward"/></barline>`,
+        `<barline location="left"><ending number="2" type="start"/></barline>${note("E", 4, [["single", "go"]])}<barline location="right"><ending number="2" type="stop"/><repeat direction="backward"/></barline>`,
+        `<barline location="left"><ending number="3" type="start"/></barline>${note("F", 4, [["single", "end"]])}<barline location="right"><ending number="3" type="discontinue"/></barline>`,
+        note("G", 4, [["single", "last"]]),
+      ]),
+    );
+    expect(r.code).toBe(1);
+    expect(r.out).toBe("");
+    expect(r.err).toContain("measure 4: skipped while expanding repeats");
+  });
+
   test("a word the score splits is joined for the dictionary, and tied notes are one note", () => {
     const r = run(
       score([

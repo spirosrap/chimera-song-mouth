@@ -127,6 +127,7 @@ if (jump) fail(`measure ${jump.number}: D.C., D.S., To Coda and Fine jumps are n
 // Play order: repeats (`<repeat direction=... times=...>`) and voltas (`<ending number="1, 2">`)
 // written out. `pass` is which time through the current repeat (1, 2, ...).
 const order: { number: string; xml: string; pass: number }[] = [];
+const playedMeasures = new Set<number>();
 {
   let start = 0;
   let pass = 1;
@@ -150,6 +151,7 @@ const order: { number: string; xml: string; pass: number }[] = [];
       continue;
     }
     order.push({ ...m, pass });
+    playedMeasures.add(i);
     const back = repeats.find((r) => r.direction === "backward");
     if (back && pass < Number(back.times ?? 2)) {
       pass++;
@@ -165,6 +167,8 @@ const order: { number: string; xml: string; pass: number }[] = [];
     i++;
   }
 }
+const skipped = measures.find((_, i) => !playedMeasures.has(i));
+if (skipped) fail(`measure ${skipped.number}: skipped while expanding repeats. Check the repeat counts and ending numbers.`);
 const verses = new Set(attrs(body, "lyric").flatMap((a) => (a.number ? [a.number] : [])));
 const passes = Math.max(...order.map((m) => m.pass));
 if (verses.size > passes) console.error(`warning: the part has ${verses.size} lyric lines (${[...verses].join(", ")}) but is sung ${passes} time(s); each pass sings its own line, the rest are unused`);
