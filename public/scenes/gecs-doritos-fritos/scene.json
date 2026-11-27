@@ -1,0 +1,401 @@
+{
+  "setting": "gecsdoritos",
+  "title": "100 gecs · Doritos & Fritos",
+  "description": "Star-covered clothes, a flat desert, airborne wizard silhouettes, mock television news and a prismatic ending.",
+  "duration": 209.444,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "doritos-laura",
+      "name": "Laura",
+      "role": "CHIMERA vocals",
+      "tele": "doritos-laura.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "doritos-dylan",
+      "name": "Dylan",
+      "role": "CHIMERA vocals",
+      "tele": "doritos-dylan.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 22.28,
+      "end": 24.94,
+      "text": "I went to France to get some new pants.",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 25.28,
+      "end": 27.68,
+      "text": "went to Greece to get something to eat.",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.96,
+      "end": 29.12,
+      "text": "I'm hard to please.",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.4,
+      "end": 30.2,
+      "text": "I touch the referee.",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 30.76,
+      "end": 31.96,
+      "text": "I bruise my knees.",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.2,
+      "end": 36.78,
+      "text": "I'm pissin' in the breeze. I saw the beach, I bought a tea, it's hot,",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.96,
+      "end": 38.8,
+      "text": "it's G's It's 100 degrees,",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.1,
+      "end": 43.72,
+      "text": "apply the lotion I swim in the ocean, and now I saw a commotion I'm sinking,",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.96,
+      "end": 44.38,
+      "text": "I'm flying!",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.74,
+      "end": 49.52,
+      "text": "D -Vase turned to cable And I'm sleeping when I'm",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.52,
+      "end": 53.86,
+      "text": "But the D -Vase on so loud it hurts My breath, my breath,",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.86,
+      "end": 65.4,
+      "text": "breath,",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.4,
+      "end": 68.3,
+      "text": "breath, break, break, break, oooh!",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 68.5,
+      "end": 69,
+      "text": "Toritos,",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.3,
+      "end": 69.84,
+      "text": "Toritos,",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.38,
+      "end": 72.62,
+      "text": "Toritos!",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.74,
+      "end": 79.5,
+      "text": "Toritos, Toritos... Toritos, Toritos. Cheetos, torpedoes,",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.78,
+      "end": 80.68,
+      "text": "torpedoes, mosquitoes,",
+      "speaker": "doritos-dylan",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.2,
+      "end": 82.74,
+      "text": "eating torpedoes, Danny,",
+      "speaker": "doritos-dylan",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.04,
+      "end": 84.14,
+      "text": "the feet of cheese,",
+      "speaker": "doritos-dylan",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.48,
+      "end": 86.26,
+      "text": "but please I'm looking for memes,",
+      "speaker": "doritos-dylan",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.58,
+      "end": 89.8,
+      "text": "I'm joining the circus, I'm goin', the circus At seven,",
+      "speaker": "doritos-dylan",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.8,
+      "end": 91.86,
+      "text": "I'm drinkin', a beverage,",
+      "speaker": "doritos-dylan",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.2,
+      "end": 92.66,
+      "text": "I'm lyin'",
+      "speaker": "doritos-dylan",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.06,
+      "end": 97.42,
+      "text": "Strangers, I'm lookin', it ain't there I'm chewin', it's a girl, I'm swimmin' Cuba",
+      "speaker": "doritos-dylan",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.42,
+      "end": 100.2,
+      "text": "don't look at me do such a turn you to stuff",
+      "speaker": "doritos-dylan",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.42,
+      "end": 106.18,
+      "text": "Tickets on no time. I went to greats ticket something to eat. You",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.18,
+      "end": 107.42,
+      "text": "said shit all we got",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.08,
+      "end": 114.92,
+      "text": "and Doritos and Fritos Yeah I saw a bee, it flew into a screen I need",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.92,
+      "end": 119.74,
+      "text": "some sleep, so turned on that TV He said shit, oh he got Doritos and Fritos",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.74,
+      "end": 124.26,
+      "text": "Give me all those bloody Doritos of freedom The D -Vids tune to",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.26,
+      "end": 129.08,
+      "text": "Gabriel And I'm sleepy when I'm able But the D -Vids",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.08,
+      "end": 131.98,
+      "text": "aren't so loud It hurts my breath My breath,",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.46,
+      "end": 136.84,
+      "text": "breath, breath, break And the TV's turnin' cable And I'm",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.84,
+      "end": 141.56,
+      "text": "sleepin' when I'm able But the TV's on so loud It",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.56,
+      "end": 143.1,
+      "text": "hurts my breath Breath, breath,",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.56,
+      "end": 144.94,
+      "text": "breath, breath Break break break",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.02,
+      "end": 147.98,
+      "text": "To reality's readers!",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.14,
+      "end": 150.86,
+      "text": "To reality's",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 151.96,
+      "end": 153.58,
+      "text": "To reality's",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.86,
+      "end": 155.86,
+      "text": "Three days of freedom!",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.72,
+      "end": 167.16,
+      "text": "She'll turn you to snow!",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.72,
+      "end": 181.62,
+      "text": "Do we have the dreamers?",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.74,
+      "end": 184.2,
+      "text": "Do we have the dreamers?",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 185.3,
+      "end": 187.26,
+      "text": "Do we have the dreamers?",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.28,
+      "end": 189.7,
+      "text": "Do we have the dreamers?",
+      "speaker": "doritos-laura",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "doritos-flight"
+    },
+    {
+      "time": 14,
+      "view": "doritos-news"
+    },
+    {
+      "time": 28,
+      "view": "doritos-flight"
+    },
+    {
+      "time": 47,
+      "view": "doritos-field"
+    },
+    {
+      "time": 64,
+      "view": "doritos-prism-close"
+    },
+    {
+      "time": 79,
+      "view": "doritos-telescope"
+    },
+    {
+      "time": 97,
+      "view": "doritos-telescope"
+    },
+    {
+      "time": 113,
+      "view": "doritos-news"
+    },
+    {
+      "time": 132,
+      "view": "doritos-prism-close"
+    },
+    {
+      "time": 151,
+      "view": "doritos-flight"
+    },
+    {
+      "time": 171,
+      "view": "doritos-field"
+    },
+    {
+      "time": 190,
+      "view": "doritos-prism-close"
+    },
+    {
+      "time": 203,
+      "view": "doritos-end"
+    }
+  ]
+}

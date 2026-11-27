@@ -1,0 +1,341 @@
+{
+  "setting": "confholiday",
+  "title": "Confidence Man · Holiday",
+  "description": "Salt flats at twilight, yellow-and-teal balloon fabric, an aerial basket and a red-lit night dance.",
+  "duration": 288.229,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "holiday-janet",
+      "name": "Janet",
+      "role": "CHIMERA vocals",
+      "tele": "holiday-janet.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "holiday-sugar",
+      "name": "Sugar",
+      "role": "CHIMERA vocals",
+      "tele": "holiday-sugar.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2,
+      "text": "Ah",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 23.86,
+      "end": 28.72,
+      "text": "oh, oh, oh, oh.",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 29,
+      "end": 33.1,
+      "text": "oh, oh, oh.",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.5,
+      "end": 65.32,
+      "text": "I get away every day my holiday I'm getting paid I",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.32,
+      "end": 69.76,
+      "text": "live it up on the go, I'm getting high, I'm never low Kicking up",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.76,
+      "end": 70.7,
+      "text": "another's control,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.02,
+      "end": 74.66,
+      "text": "I'm bound to fly, I want it all Take off and I'm everywhere,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.04,
+      "end": 79.92,
+      "text": "I'm in the air, I'll meet you there I get away every day, my holiday,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 80.4,
+      "end": 83.26,
+      "text": "I'm gettin' I live it up on the go,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.56,
+      "end": 87.42,
+      "text": "I'm getting high, never know Keepin' up and out of this control,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 87.76,
+      "end": 91.36,
+      "text": "I'm going to fly, I want it all Take off and I'm everywhere,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.76,
+      "end": 94.1,
+      "text": "I'm in the air I'll meet you there",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.86,
+      "end": 115.32,
+      "text": "best weed back on the block, I'll take it We all",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.32,
+      "end": 117.66,
+      "text": "need something to live for,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.25,
+      "end": 121.74,
+      "text": "I get away every day by holiday,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.04,
+      "end": 124.98,
+      "text": "I'm getting paid I leave it up on the go,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.3,
+      "end": 129.98,
+      "text": "I'm getting high I'm never low, keeping on the nicest control I'm going to",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.98,
+      "end": 130.28,
+      "text": "cry,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.58,
+      "end": 133.1,
+      "text": "want it all Take off and I'm everywhere,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.4,
+      "end": 136.1,
+      "text": "I'm in the air, I'll meet you there",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.14,
+      "end": 154.78,
+      "text": "it gets,",
+      "speaker": "holiday-sugar",
+      "intensity": 0.85
+    },
+    {
+      "start": 155.08,
+      "end": 159.4,
+      "text": "I'll take it Woah, woah, what do you live for,",
+      "speaker": "holiday-sugar",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.54,
+      "end": 160.08,
+      "text": "baby?",
+      "speaker": "holiday-sugar",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.18,
+      "end": 165.82,
+      "text": "There's three back on the block, I'll take it I don't need",
+      "speaker": "holiday-sugar",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.82,
+      "end": 170.6,
+      "text": "something to live for, baby When I was a child,",
+      "speaker": "holiday-sugar",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.64,
+      "end": 172.7,
+      "text": "I was so naked",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.14,
+      "end": 180.96,
+      "text": "naked I get away every day, my holiday I'll get",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.96,
+      "end": 184.52,
+      "text": "paid I live it up on the go I'm getting high,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 184.82,
+      "end": 189.48,
+      "text": "never flow Kicking off another stroll I'm going to cry, I want it",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.48,
+      "end": 199.38,
+      "text": "all",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.38,
+      "end": 203.76,
+      "text": "yo, nae Nae yo, nae nae nae yo, Nae nae yo,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 203.76,
+      "end": 207.82,
+      "text": "nay nae yo, Nae nai nae yo",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 227.62,
+      "end": 230.18,
+      "text": "I get away every day, my holiday,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 230.7,
+      "end": 231.5,
+      "text": "I'm getting paid",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 232.06,
+      "end": 236.82,
+      "text": "I live it up on the go, I'm getting high, I'm never low Kicking up and",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 236.82,
+      "end": 237.7,
+      "text": "I lose control,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 238.04,
+      "end": 241.64,
+      "text": "I'm going to fly, I'm on it all Take off and I'm everywhere,",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    },
+    {
+      "start": 242.2,
+      "end": 244.1,
+      "text": "I'm in the air, I'll meet you there",
+      "speaker": "holiday-janet",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "holiday-salt-flat"
+    },
+    {
+      "time": 19,
+      "view": "holiday-daylight"
+    },
+    {
+      "time": 42,
+      "view": "holiday-twilight"
+    },
+    {
+      "time": 66,
+      "view": "holiday-balloon-dance"
+    },
+    {
+      "time": 106,
+      "view": "holiday-basket"
+    },
+    {
+      "time": 138,
+      "view": "holiday-balloon-dance"
+    },
+    {
+      "time": 158,
+      "view": "holiday-night"
+    },
+    {
+      "time": 181,
+      "view": "holiday-basket"
+    },
+    {
+      "time": 209,
+      "view": "holiday-balloon-dance"
+    },
+    {
+      "time": 233,
+      "view": "holiday-night"
+    },
+    {
+      "time": 259,
+      "view": "holiday-salt-flat"
+    },
+    {
+      "time": 279,
+      "view": "holiday-end"
+    }
+  ]
+}

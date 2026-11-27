@@ -1,0 +1,317 @@
+{
+  "setting": "amylshouldnot",
+  "title": "Amyl and The Sniffers · U Should Not Be Doing That",
+  "description": "A neon storefront, an empty swimming pool, red bar lights and a green-lit runway frame a dance-off.",
+  "duration": 206.936236,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "amyl-amy",
+      "name": "Amy",
+      "role": "CHIMERA vocals",
+      "tele": "amyl-amy.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 18.12,
+      "end": 19.12,
+      "text": "Good morning,",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 20.36,
+      "end": 21.28,
+      "text": "Can you shake Dr.",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 21.62,
+      "end": 26.52,
+      "text": "Skin? I was struggling to tell you where I have been cuz I've been",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.52,
+      "end": 31.14,
+      "text": "running around making national self know how you feel about",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.14,
+      "end": 35.26,
+      "text": "that it's on me once when I showed you that but my",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.26,
+      "end": 39.94,
+      "text": "best to get it on not everybody makes it out",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.94,
+      "end": 41.04,
+      "text": "I love when they",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 41.58,
+      "end": 43.06,
+      "text": "Young, I was a Tokyo!",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.66,
+      "end": 48.4,
+      "text": "Showin' up a crack and you told me that I should not be doing",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.4,
+      "end": 53.28,
+      "text": "that, hey I was in LA shaking my shit while",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.28,
+      "end": 56.4,
+      "text": "you were down in Melbourne saying fuck that bitch",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.22,
+      "end": 62.02,
+      "text": "You're in New York getting shit on and they were down in",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.02,
+      "end": 64.84,
+      "text": "Novacite and you should not be doing that!",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.24,
+      "end": 80.78,
+      "text": "I'm in my head,",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.86,
+      "end": 83.38,
+      "text": "doing the work,",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.1,
+      "end": 86.12,
+      "text": "putting on me shoes and me socks,",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.42,
+      "end": 91.3,
+      "text": "cuz I gotta get out of here, another person sayin' I'm not doin' it right",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.3,
+      "end": 95.68,
+      "text": "Another person tryna give me some kind of eternal fight But",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.68,
+      "end": 100.54,
+      "text": "I'm workin on my words, I'm workin on my work I'm workin on who I am I'm working on",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.54,
+      "end": 101.34,
+      "text": "what is wrong,",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.64,
+      "end": 103.28,
+      "text": "what is right, and where I am!",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.78,
+      "end": 107.16,
+      "text": "And all my worth, I love the worst, you taught me what I was!",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.6,
+      "end": 109.22,
+      "text": "I cannot do this anymore,",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.64,
+      "end": 111.14,
+      "text": "I gotta hit the barstool.",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.54,
+      "end": 116.36,
+      "text": "I was a Tokyo Poppin shit off while you went down and see you",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.36,
+      "end": 121,
+      "text": "trying to get just off I was a London being",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 121,
+      "end": 125.56,
+      "text": "the Queen and you written my head saying you should not be",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.56,
+      "end": 126.56,
+      "text": "doing that",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.1,
+      "end": 134.1,
+      "text": "I know my",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.42,
+      "end": 171.78,
+      "text": "I was a gnome,",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 172.36,
+      "end": 176.92,
+      "text": "working on my steers, while you whipped down your tat and sang in flash, there is",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.92,
+      "end": 177.28,
+      "text": "tears",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 178.04,
+      "end": 179.42,
+      "text": "I don't gotta go,",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.72,
+      "end": 184.22,
+      "text": "showing off my flaps While you are up and busy trying to show me I",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    },
+    {
+      "start": 184.22,
+      "end": 185.76,
+      "text": "can't do it like that",
+      "speaker": "amyl-amy",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "amyl-neon"
+    },
+    {
+      "time": 12,
+      "view": "amyl-store-close"
+    },
+    {
+      "time": 31,
+      "view": "amyl-lot-dance"
+    },
+    {
+      "time": 48,
+      "view": "amyl-store-close"
+    },
+    {
+      "time": 66,
+      "view": "amyl-lot-dance"
+    },
+    {
+      "time": 82,
+      "view": "amyl-pool-dance"
+    },
+    {
+      "time": 104,
+      "view": "amyl-sunset-close"
+    },
+    {
+      "time": 119,
+      "view": "amyl-pool-dance"
+    },
+    {
+      "time": 137,
+      "view": "amyl-bar-dance"
+    },
+    {
+      "time": 156,
+      "view": "amyl-bar-close"
+    },
+    {
+      "time": 173,
+      "view": "amyl-runway-close"
+    },
+    {
+      "time": 186,
+      "view": "amyl-runway-dance"
+    },
+    {
+      "time": 201,
+      "view": "amyl-finale"
+    }
+  ]
+}

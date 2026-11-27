@@ -1,0 +1,391 @@
+{
+  "setting": "anotrlikeit",
+  "title": "ANOTR feat. 3DDY · Like It",
+  "description": "A red hallway opens onto a club full of veils, shoulder pads, bright spots and improvised dance steps. Original accompaniment with a CHIMERA voice.",
+  "duration": 268.469116,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "likeit-vocal",
+      "name": "3DDY",
+      "role": "CHIMERA vocals",
+      "tele": "likeit-vocal.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 30.12,
+      "end": 34.26,
+      "text": "If you're better, if you're better, you should try it.",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.56,
+      "end": 35.42,
+      "text": "Uh -huh.",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.12,
+      "end": 37.96,
+      "text": "If you really like me,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.56,
+      "end": 40.3,
+      "text": "we should really, we really,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.66,
+      "end": 41.7,
+      "text": "try this.",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.22,
+      "end": 48.5,
+      "text": "-huh. Baby, like it, if you're it, if you're with it you should try",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.5,
+      "end": 54.16,
+      "text": "again Uh -huh If you really like it, you should really,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 54.48,
+      "end": 57.98,
+      "text": "you should really, try again Uh -huh",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.46,
+      "end": 63.96,
+      "text": "I just wanna dance with you",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.08,
+      "end": 66.12,
+      "text": "Rollin' own face,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 73,
+      "end": 79.34,
+      "text": "I'm not gonna play it until I'm Cause",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.34,
+      "end": 85.6,
+      "text": "I know you'd roll like a player Can't you hear me? I guess we're up as we've been told",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.48,
+      "end": 90.1,
+      "text": "Promise you I'll not between me you.",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.8,
+      "end": 104.06,
+      "text": "If you're ready to be lucky,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.88,
+      "end": 107.84,
+      "text": "if you're willing, if you're willing, should come in.",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.52,
+      "end": 109.14,
+      "text": "Aha!",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.26,
+      "end": 111.86,
+      "text": "you're really like me,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.5,
+      "end": 114.28,
+      "text": "you should relate, should relate, you",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.62,
+      "end": 116.7,
+      "text": "try this Aha!",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.36,
+      "end": 126.52,
+      "text": "you're really, feel like me, you should relate, if you're really, feel like me",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.52,
+      "end": 128.84,
+      "text": "She really, she really,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.22,
+      "end": 131.4,
+      "text": "really, really, really, my heart.",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.2,
+      "end": 163.78,
+      "text": "to",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.06,
+      "end": 182.44,
+      "text": "Give it if you like it, if you're it, if you're with it you should try it Uh",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.44,
+      "end": 185.9,
+      "text": "-huh, If you really like it,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 186.24,
+      "end": 187.98,
+      "text": "you should really, you should really,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.34,
+      "end": 189.2,
+      "text": "try it",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 192.44,
+      "end": 194.42,
+      "text": "If you're waiting,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 194.76,
+      "end": 195.28,
+      "text": "you're waiting,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.62,
+      "end": 200.54,
+      "text": "should try it, uh -huh. you really like it,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.06,
+      "end": 205.36,
+      "text": "you should really, you should really, really try it Uh -huh,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.86,
+      "end": 208.7,
+      "text": "leave it if you'd like to",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 210.08,
+      "end": 211.3,
+      "text": "Try it",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 213.72,
+      "end": 218.2,
+      "text": "Try it it",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 218.74,
+      "end": 220.28,
+      "text": "Uh -huh",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 221.48,
+      "end": 224.24,
+      "text": "thank you,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 225.36,
+      "end": 232.06,
+      "text": "thank you, thank",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 233.06,
+      "end": 237.62,
+      "text": "thank you, ah -ha, oh, give it to thank you.",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 237.86,
+      "end": 241,
+      "text": "If you're willing, if you're willing, should try again,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 241.4,
+      "end": 242.16,
+      "text": "ah -ha.",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 242.98,
+      "end": 247,
+      "text": "you really like it She really, she really,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 247.4,
+      "end": 253.56,
+      "text": "really try this Aha, you like it",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 253.56,
+      "end": 255.86,
+      "text": "That is,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 258.44,
+      "end": 260.26,
+      "text": "that's it",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    },
+    {
+      "start": 262.08,
+      "end": 263.2,
+      "text": "That is,",
+      "speaker": "likeit-vocal",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "likeit-hall"
+    },
+    {
+      "time": 12,
+      "view": "likeit-party"
+    },
+    {
+      "time": 40,
+      "view": "likeit-portrait"
+    },
+    {
+      "time": 57,
+      "view": "likeit-party"
+    },
+    {
+      "time": 78,
+      "view": "likeit-portrait"
+    },
+    {
+      "time": 97,
+      "view": "likeit-hall"
+    },
+    {
+      "time": 115,
+      "view": "likeit-party"
+    },
+    {
+      "time": 127,
+      "view": "likeit-dance"
+    },
+    {
+      "time": 145,
+      "view": "likeit-portrait"
+    },
+    {
+      "time": 158,
+      "view": "likeit-smoke"
+    },
+    {
+      "time": 174,
+      "view": "likeit-dance"
+    },
+    {
+      "time": 216,
+      "view": "likeit-party"
+    },
+    {
+      "time": 226,
+      "view": "likeit-dance"
+    },
+    {
+      "time": 250,
+      "view": "likeit-smoke"
+    }
+  ]
+}

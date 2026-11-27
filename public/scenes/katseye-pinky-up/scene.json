@@ -1,0 +1,359 @@
+{
+  "setting": "pinkyup",
+  "title": "KATSEYE · PINKY UP",
+  "description": "Swans, a plush-toy pile, a claw machine, a dust-filled dance hall and a strangely formal tea party. Original accompaniment with five CHIMERA voices.",
+  "duration": 181.928345,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "pinky-one",
+      "name": "Voice 1",
+      "role": "CHIMERA vocals",
+      "tele": "pinky-one.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "pinky-two",
+      "name": "Voice 2",
+      "role": "CHIMERA vocals",
+      "tele": "pinky-two.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "pinky-three",
+      "name": "Voice 3",
+      "role": "CHIMERA vocals",
+      "tele": "pinky-three.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "pinky-four",
+      "name": "Voice 4",
+      "role": "CHIMERA vocals",
+      "tele": "pinky-four.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "pinky-five",
+      "name": "Voice 5",
+      "role": "CHIMERA vocals",
+      "tele": "pinky-five.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 8.14,
+      "end": 11.44,
+      "text": "bet it goes like this. Binky up.",
+      "speaker": "pinky-one",
+      "intensity": 0.85
+    },
+    {
+      "start": 12.28,
+      "end": 12.88,
+      "text": "Up.",
+      "speaker": "pinky-one",
+      "intensity": 0.85
+    },
+    {
+      "start": 13.74,
+      "end": 14.44,
+      "text": "Binky up.",
+      "speaker": "pinky-one",
+      "intensity": 0.85
+    },
+    {
+      "start": 15.44,
+      "end": 16.02,
+      "text": "Up.",
+      "speaker": "pinky-one",
+      "intensity": 0.85
+    },
+    {
+      "start": 16.76,
+      "end": 17.64,
+      "text": "Binky up.",
+      "speaker": "pinky-one",
+      "intensity": 0.85
+    },
+    {
+      "start": 18.8,
+      "end": 19.14,
+      "text": "Up.",
+      "speaker": "pinky-two",
+      "intensity": 0.85
+    },
+    {
+      "start": 20,
+      "end": 20.8,
+      "text": "Binky up.",
+      "speaker": "pinky-two",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.92,
+      "end": 31.14,
+      "text": "I'm gonna make out with my new best friends I wanna live life",
+      "speaker": "pinky-two",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.14,
+      "end": 33.92,
+      "text": "right before it all burns down",
+      "speaker": "pinky-three",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.72,
+      "end": 41.88,
+      "text": "Pinky, go hard like we're robbing the loop We wanna lease out with a cute attitude",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 41.88,
+      "end": 46.92,
+      "text": "I want to get high right before we're in the ground",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.04,
+      "end": 55.64,
+      "text": "Ooh, screaming from cloud line All can search us if they tried",
+      "speaker": "pinky-five",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.2,
+      "end": 61.04,
+      "text": "But it's a state of mind I -I -I bet it goes like this",
+      "speaker": "pinky-one",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.46,
+      "end": 79.26,
+      "text": "You,",
+      "speaker": "pinky-two",
+      "intensity": 0.85
+    },
+    {
+      "start": 80,
+      "end": 81.42,
+      "text": "me, we, me,",
+      "speaker": "pinky-two",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.74,
+      "end": 83.52,
+      "text": "we, me, me, me,",
+      "speaker": "pinky-two",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.36,
+      "end": 85.78,
+      "text": "me, me,",
+      "speaker": "pinky-two",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.22,
+      "end": 86.74,
+      "text": "we,",
+      "speaker": "pinky-two",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.68,
+      "end": 105.88,
+      "text": "I guess the world's shaking ass in the parking lot if we get arrested ha ha",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.88,
+      "end": 108.32,
+      "text": "baby laughing I love you. You love me.",
+      "speaker": "pinky-five",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.5,
+      "end": 113,
+      "text": "We batch it we weed and I kill them for you if they got that deep",
+      "speaker": "pinky-five",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.72,
+      "end": 118.56,
+      "text": "Belsey is the frequency of my love Delusion, philosophy,",
+      "speaker": "pinky-five",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.26,
+      "end": 122.84,
+      "text": "I kinda Know nothing just like Socrates",
+      "speaker": "pinky-five",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.36,
+      "end": 126.04,
+      "text": "The only truth is don't know you know nothin'",
+      "speaker": "pinky-one",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.64,
+      "end": 146.9,
+      "text": "I bet it goes like this.",
+      "speaker": "pinky-two",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.6,
+      "end": 154.82,
+      "text": "up! Up!",
+      "speaker": "pinky-three",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.02,
+      "end": 156.2,
+      "text": "Up!",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.42,
+      "end": 157.12,
+      "text": "And be up!",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.34,
+      "end": 157.88,
+      "text": "Two!",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.28,
+      "end": 158.92,
+      "text": "One, two,",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.3,
+      "end": 159.36,
+      "text": "three,",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.7,
+      "end": 159.8,
+      "text": "four!",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 160.86,
+      "end": 161.02,
+      "text": "Up!",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.44,
+      "end": 162.58,
+      "text": "Up!",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.68,
+      "end": 164.1,
+      "text": "Up!",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.22,
+      "end": 166.38,
+      "text": "Up! Up! be up!",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.94,
+      "end": 167.34,
+      "text": "Up!",
+      "speaker": "pinky-four",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "pinky-swans"
+    },
+    {
+      "time": 12,
+      "view": "pinky-toys"
+    },
+    {
+      "time": 29,
+      "view": "pinky-claw"
+    },
+    {
+      "time": 43,
+      "view": "pinky-toys"
+    },
+    {
+      "time": 57,
+      "view": "pinky-dance"
+    },
+    {
+      "time": 70,
+      "view": "pinky-dust"
+    },
+    {
+      "time": 81,
+      "view": "pinky-car"
+    },
+    {
+      "time": 94,
+      "view": "pinky-dance"
+    },
+    {
+      "time": 106,
+      "view": "pinky-toys"
+    },
+    {
+      "time": 117,
+      "view": "pinky-car"
+    },
+    {
+      "time": 128,
+      "view": "pinky-tea"
+    },
+    {
+      "time": 147,
+      "view": "pinky-dance"
+    },
+    {
+      "time": 163,
+      "view": "pinky-dust"
+    }
+  ]
+}

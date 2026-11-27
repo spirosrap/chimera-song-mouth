@@ -1,0 +1,317 @@
+{
+  "setting": "magimage",
+  "title": "Magdalena Bay · Image",
+  "description": "A white clinic, a red door, a retro television and a surreal checkerboard world with a red star and a blue runway.",
+  "duration": 220.102,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "image-mica",
+      "name": "Mica",
+      "role": "CHIMERA vocals",
+      "tele": "image-mica.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 21.96,
+      "end": 23.8,
+      "text": "my countlessness,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.68,
+      "end": 28.6,
+      "text": "I need all the countessence",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 30.1,
+      "end": 34.6,
+      "text": "Time to start the clock from the",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.6,
+      "end": 39,
+      "text": "top I need confidence,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.56,
+      "end": 42.54,
+      "text": "confidence in medicine",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.1,
+      "end": 46.82,
+      "text": "But oh my",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.82,
+      "end": 49.08,
+      "text": "God,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.52,
+      "end": 54.26,
+      "text": "twenty two more minutes of so",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 54.26,
+      "end": 59.1,
+      "text": "high Made you brand new",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 59.1,
+      "end": 59.82,
+      "text": "images",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.7,
+      "end": 108.3,
+      "text": "I'm the best you've got,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.64,
+      "end": 109.1,
+      "text": "that's true,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.74,
+      "end": 114.02,
+      "text": "I have got common sense,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.38,
+      "end": 118.6,
+      "text": "I've got all the common sense",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.81,
+      "end": 123.56,
+      "text": "Time to let me in,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.88,
+      "end": 126.08,
+      "text": "let's begin Let's begin,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.44,
+      "end": 129,
+      "text": "let's Let me in,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.36,
+      "end": 132.36,
+      "text": "stretch over from present of",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.36,
+      "end": 136.8,
+      "text": "faith But oh my",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.8,
+      "end": 141.42,
+      "text": "God 21 more",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.42,
+      "end": 142.8,
+      "text": "minutes Oh,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.8,
+      "end": 148.4,
+      "text": "so hard Reach a brand",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.4,
+      "end": 153.2,
+      "text": "new image Oh my God",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.2,
+      "end": 156.8,
+      "text": "Just a few moments",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.8,
+      "end": 160.38,
+      "text": "ago, so hard",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.1,
+      "end": 164.46,
+      "text": "And be much clearer",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.12,
+      "end": 171.76,
+      "text": "But oh my god",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 171.76,
+      "end": 175.92,
+      "text": "Make me end your image",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.92,
+      "end": 177.04,
+      "text": "juice,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 177.86,
+      "end": 182.7,
+      "text": "so I went through it to make",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.7,
+      "end": 187,
+      "text": "me remove my game",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.1,
+      "end": 191.54,
+      "text": "I want one more minute now",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 192.46,
+      "end": 197.1,
+      "text": "So I made you better,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.14,
+      "end": 197.78,
+      "text": "no,",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.08,
+      "end": 202.2,
+      "text": "makes you lose",
+      "speaker": "image-mica",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "image-television"
+    },
+    {
+      "time": 12,
+      "view": "image-clinic"
+    },
+    {
+      "time": 33,
+      "view": "image-telephone"
+    },
+    {
+      "time": 49,
+      "view": "image-television"
+    },
+    {
+      "time": 66,
+      "view": "image-cosmos"
+    },
+    {
+      "time": 86,
+      "view": "image-furnace"
+    },
+    {
+      "time": 104,
+      "view": "image-checkers"
+    },
+    {
+      "time": 125,
+      "view": "image-star"
+    },
+    {
+      "time": 143,
+      "view": "image-clinic"
+    },
+    {
+      "time": 158,
+      "view": "image-runway"
+    },
+    {
+      "time": 183,
+      "view": "image-runway-close"
+    },
+    {
+      "time": 199,
+      "view": "image-star"
+    },
+    {
+      "time": 213,
+      "view": "image-end"
+    }
+  ]
+}

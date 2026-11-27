@@ -1,0 +1,316 @@
+{
+  "setting": "simzyoung",
+  "title": "Little Simz · Young",
+  "description": "An older punk with a gold grill plays bass in her flat, gets into trouble on the street and takes the stage at a crowded pub. Original accompaniment with CHIMERA rap.",
+  "duration": 189.892789,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "young-simz",
+      "name": "Simz",
+      "role": "CHIMERA vocals",
+      "tele": "young-simz.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 8,
+      "end": 8.7,
+      "text": "Yeah,",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 9.58,
+      "end": 12.42,
+      "text": "my testing one, two, one, two.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 13.68,
+      "end": 14.84,
+      "text": "go.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.06,
+      "end": 22.5,
+      "text": "Who's that creeping in my window? I get to hope flash whenever the wind blows.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 23.14,
+      "end": 28.78,
+      "text": "Nothing to my name now, when everybody knows When I'm in need of cash, I go down to the bingo",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.54,
+      "end": 35.74,
+      "text": "Last night, I arched Jenny for a quid This is the fifth time I'm used to taking the piss A",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.74,
+      "end": 41.78,
+      "text": "bottle of Rio and some chicken and chips in my fuck me up pumps and my winehouse quiff",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.38,
+      "end": 44.86,
+      "text": "Who's that knocking at the front door.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.08,
+      "end": 46,
+      "text": "It's the mailman!",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.32,
+      "end": 46.82,
+      "text": "Bills, bills,",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.14,
+      "end": 47.94,
+      "text": "please no more.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.3,
+      "end": 51.18,
+      "text": "I'm twenty -something young, my priority is straight,",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.58,
+      "end": 54.42,
+      "text": "I need to buy a booze and I need to buy a drawer.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.04,
+      "end": 60.76,
+      "text": "This summer I am going out every night. Anyone can get to time scared of a fight.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.1,
+      "end": 67.44,
+      "text": "You can be down or be on the other side Cause this is my idea of the perfect life.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.46,
+      "end": 73.84,
+      "text": "living out your wildest dreams, yeah we're just young and dumb,",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.4,
+      "end": 79.56,
+      "text": "no risk for stepping left is the care you really want.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 80.66,
+      "end": 83.32,
+      "text": "Who's that over there giving it the biggum?",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.68,
+      "end": 84.54,
+      "text": "I'm sorry officer,",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.1,
+      "end": 86.36,
+      "text": "I don't want to go to prison.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.92,
+      "end": 92.66,
+      "text": "know that I was taught but I probably didn't listen but taught myself to fire when I needed ammunition.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.34,
+      "end": 96.04,
+      "text": "I taught myself to sing and I taught myself to shout,",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.52,
+      "end": 99.12,
+      "text": "I taught myself how to get by and go without,",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.72,
+      "end": 105.64,
+      "text": "I taught myself to make a proper English breakfast because I'm a little teapot short and stout.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.96,
+      "end": 112.58,
+      "text": "am. I'm that girl all alone in the crowd because all of yous are followers and do it for the clout I",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.58,
+      "end": 118.22,
+      "text": "can't afford to be what everybody's on The only way i can afford is if you do a discount",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.84,
+      "end": 125.2,
+      "text": "Next summer, I'll probably be overseas I speak a lot of French Oui oui oui",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.2,
+      "end": 131.38,
+      "text": "May you just stay hater, cause my future's bright And this is my idea of the perfect life",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.42,
+      "end": 138.62,
+      "text": "out your wildest dreams, yeah we're just young and dumb No",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.62,
+      "end": 139.86,
+      "text": "responsibilities,",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.38,
+      "end": 146.56,
+      "text": "don't care for anyone The most worth is no wonder",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.56,
+      "end": 153.02,
+      "text": "around you, it's just you and me We don't care for finer",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.02,
+      "end": 154.14,
+      "text": "things cause",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.18,
+      "end": 161.36,
+      "text": "Yeah, so don't be looking at my face weird.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.14,
+      "end": 164.54,
+      "text": "I am somebody that they feared.",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.54,
+      "end": 167.94,
+      "text": "I just want to play my bass here",
+      "speaker": "young-simz",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "young-flat"
+    },
+    {
+      "time": 18,
+      "view": "young-window"
+    },
+    {
+      "time": 37,
+      "view": "young-flat"
+    },
+    {
+      "time": 60,
+      "view": "young-street"
+    },
+    {
+      "time": 80,
+      "view": "young-chase"
+    },
+    {
+      "time": 93,
+      "view": "young-street"
+    },
+    {
+      "time": 111,
+      "view": "young-pub"
+    },
+    {
+      "time": 129,
+      "view": "young-stage"
+    },
+    {
+      "time": 148,
+      "view": "young-pub"
+    },
+    {
+      "time": 163,
+      "view": "young-stage"
+    },
+    {
+      "time": 175,
+      "view": "young-street"
+    }
+  ]
+}

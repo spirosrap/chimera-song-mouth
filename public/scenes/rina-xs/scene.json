@@ -1,0 +1,363 @@
+{
+  "setting": "rinaxs",
+  "title": "Rina Sawayama · XS",
+  "description": "A parcel-strewn storeroom, a television sales desk, a wood-panelled revue and the green-lit factory under the studio.",
+  "duration": 218.941,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "xs-rina",
+      "name": "Rina",
+      "role": "CHIMERA vocals",
+      "tele": "xs-rina.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "xs-host",
+      "name": "Host",
+      "role": "CHIMERA vocals",
+      "tele": "xs-host.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 33.42,
+      "end": 38.26,
+      "text": "I want it all, have to choose But the hard",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.26,
+      "end": 39.84,
+      "text": "ones, what it wants, can",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 41.4,
+      "end": 45.1,
+      "text": "So I think that one, that one, yeah, that one too",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.1,
+      "end": 50.24,
+      "text": "Luxury and opulence Cartier",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 50.54,
+      "end": 55,
+      "text": "Tesla XS Calabasas I",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 55,
+      "end": 59.44,
+      "text": "deserve it Call me crazy Call me",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 59.44,
+      "end": 62.16,
+      "text": "selfish I'm the baddest",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.7,
+      "end": 66.02,
+      "text": "And I'm worth it He missed us a little bit Don't",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.06,
+      "end": 69.58,
+      "text": "I don't hear,",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.18,
+      "end": 73.62,
+      "text": "oh me oh my, gimme just a little",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.62,
+      "end": 83.44,
+      "text": "bit",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.24,
+      "end": 90.44,
+      "text": "me, oh my, gimme just a little bit",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.74,
+      "end": 94.46,
+      "text": "Oh me, oh my, gimmie just a little bit",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.28,
+      "end": 97.84,
+      "text": "Thanks,",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.26,
+      "end": 101.84,
+      "text": "when all this laughter's in material",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.96,
+      "end": 105.76,
+      "text": "And the praise we paid is unbelievable",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.08,
+      "end": 110.46,
+      "text": "And I'm singing it as much as I can't",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.62,
+      "end": 115.26,
+      "text": "Everything you never know make me less",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.88,
+      "end": 120.64,
+      "text": "One more Fuck is it The",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.64,
+      "end": 121.6,
+      "text": "moon",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.88,
+      "end": 123.54,
+      "text": "Crazy",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.2,
+      "end": 129.78,
+      "text": "Selfish Neither Would you believe",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 133,
+      "end": 137.76,
+      "text": "Oh me, oh my, I don't wanna hear all you want Oh me,",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.9,
+      "end": 139.78,
+      "text": "oh my, give me just a little bit",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.2,
+      "end": 144.16,
+      "text": "Oh me, oh my, give it just a little bit",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.78,
+      "end": 148.24,
+      "text": "Oh me, oh my,",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.62,
+      "end": 153.42,
+      "text": "where did it go right We're lost time, heaven's",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.42,
+      "end": 158,
+      "text": "in our alright, so say goodnight Forget about it",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 158,
+      "end": 162.02,
+      "text": "till the end of time Yeah, I want more, more,",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.02,
+      "end": 166.2,
+      "text": "more More, more, more, more Give me just a little bit",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.2,
+      "end": 167.26,
+      "text": "more More",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.8,
+      "end": 172.64,
+      "text": "I'm me on my own Oh Me",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 172.64,
+      "end": 177.46,
+      "text": "oh I'm mine",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 177.46,
+      "end": 182.24,
+      "text": "Give to the way I need it I'm just a",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.24,
+      "end": 187.02,
+      "text": "little bit, I'm just a little I'm me, I'm mine I don't wanna hear all",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.02,
+      "end": 190.92,
+      "text": "your tears I'm me, I'm mine, me just a little bit",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 192.48,
+      "end": 195.04,
+      "text": "I'm me, I'm mine Give me just a little bit",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.94,
+      "end": 199.04,
+      "text": "more,",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.18,
+      "end": 204.34,
+      "text": "a",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    },
+    {
+      "start": 204.34,
+      "end": 208.62,
+      "text": "little bit more",
+      "speaker": "xs-rina",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "xs-parcels"
+    },
+    {
+      "time": 12,
+      "view": "xs-broadcast"
+    },
+    {
+      "time": 32,
+      "view": "xs-sales-close"
+    },
+    {
+      "time": 43,
+      "view": "xs-broadcast"
+    },
+    {
+      "time": 58,
+      "view": "xs-dance"
+    },
+    {
+      "time": 82,
+      "view": "xs-sales-close"
+    },
+    {
+      "time": 94,
+      "view": "xs-dance"
+    },
+    {
+      "time": 122,
+      "view": "xs-broadcast"
+    },
+    {
+      "time": 130,
+      "view": "xs-dance"
+    },
+    {
+      "time": 144,
+      "view": "xs-factory"
+    },
+    {
+      "time": 163,
+      "view": "xs-factory-close"
+    },
+    {
+      "time": 184,
+      "view": "xs-factory"
+    },
+    {
+      "time": 198,
+      "view": "xs-parcels"
+    },
+    {
+      "time": 211,
+      "view": "xs-end"
+    }
+  ]
+}

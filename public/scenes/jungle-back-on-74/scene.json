@@ -1,0 +1,436 @@
+{
+  "setting": "jungle74",
+  "title": "Jungle · Back On 74",
+  "description": "A timber dance floor, painted city scenery, amber spotlights and a control booth frame ensemble, pair and solo formations.",
+  "duration": 240.41941,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "jungle-lead",
+      "name": "Lead",
+      "role": "CHIMERA vocals",
+      "tele": "jungle-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "jungle-response",
+      "name": "Response",
+      "role": "CHIMERA vocals",
+      "tele": "jungle-response.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.06,
+      "text": "Give it up for sister realness.",
+      "speaker": "jungle-response",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.08,
+      "end": 26.28,
+      "text": "top in with the same crime No, don't have anyways,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.68,
+      "end": 31.26,
+      "text": "no And then why last at the same time Ooh,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.48,
+      "end": 34.08,
+      "text": "ooh, ooh, but I didn't Oh,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.88,
+      "end": 37.02,
+      "text": "there comes heaven first",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.04,
+      "end": 42.82,
+      "text": "Call this place my home Never gonna cry",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.82,
+      "end": 43.66,
+      "text": "at all",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.64,
+      "end": 48.28,
+      "text": "where did it all go?",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.64,
+      "end": 56.46,
+      "text": "Keep it working on the same time",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.88,
+      "end": 59.52,
+      "text": "When we get high on our breakdown",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.1,
+      "end": 64.98,
+      "text": "We'll just fight for the same time But that don't change",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 64.98,
+      "end": 69.56,
+      "text": "when it's down But we're talking about the same crime",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.1,
+      "end": 74.84,
+      "text": "When we don't have what it raised now And then by the last",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.84,
+      "end": 79.46,
+      "text": "move, the same time Ooh ooh ooh ooh But I did it",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.46,
+      "end": 83.88,
+      "text": "Oh There comes heaven for us all,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.88,
+      "end": 88.42,
+      "text": "God has filled my heart Never gonna",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.42,
+      "end": 92.7,
+      "text": "cry at home Where do we need our",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.7,
+      "end": 96.76,
+      "text": "love Let it go, let it go",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.76,
+      "end": 101.14,
+      "text": "Ooh, let it go Hangin'",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.08,
+      "end": 105.54,
+      "text": "let it go Ooh,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.18,
+      "end": 106.64,
+      "text": "ooh",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.44,
+      "end": 109.3,
+      "text": "There comes a better force",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.14,
+      "end": 114.72,
+      "text": "I'm this place my home Never gonna",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.72,
+      "end": 116.14,
+      "text": "cry anymore",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.1,
+      "end": 119.42,
+      "text": "Where did it all go?",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.62,
+      "end": 124.44,
+      "text": "Let me see Let me see Let",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.44,
+      "end": 126.02,
+      "text": "you see",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.74,
+      "end": 127.22,
+      "text": "Hey,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.86,
+      "end": 132.08,
+      "text": "me see Where did it all",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.08,
+      "end": 133.38,
+      "text": "home,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.9,
+      "end": 135.56,
+      "text": "there comes the red force",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.1,
+      "end": 140.96,
+      "text": "Call this place my home, then we're",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.96,
+      "end": 142.34,
+      "text": "gonna call it more",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.1,
+      "end": 146.4,
+      "text": "When will it all go?",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.88,
+      "end": 151.32,
+      "text": "Let's call this place",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 151.32,
+      "end": 155.96,
+      "text": "my home, then we'll cry at all",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.56,
+      "end": 159.6,
+      "text": "Where did it all go?",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 160.22,
+      "end": 161.4,
+      "text": "There comes everything",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.16,
+      "end": 167.76,
+      "text": "Coldest place by home Never gonna cry",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.76,
+      "end": 168.84,
+      "text": "anymore",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.7,
+      "end": 173.14,
+      "text": "Where did it all go?",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.76,
+      "end": 200.44,
+      "text": "oh, oh,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 200.44,
+      "end": 202.66,
+      "text": "oh,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 204.16,
+      "end": 206.02,
+      "text": "ooh, oooh,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 206.02,
+      "end": 221.12,
+      "text": "oooh.",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 221.12,
+      "end": 223.24,
+      "text": "bad You ain't no celebrity,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 223.74,
+      "end": 225.42,
+      "text": "honey You ain't no celebrity,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 225.86,
+      "end": 227.76,
+      "text": "honey You ain't no celebrity,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 228.18,
+      "end": 230.1,
+      "text": "honey You ain't no celebrity,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 230.5,
+      "end": 233.5,
+      "text": "honey ain't You ain't no celebrity,",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 233.96,
+      "end": 238.58,
+      "text": "honey You look like you're sad",
+      "speaker": "jungle-lead",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "jungle-opening"
+    },
+    {
+      "time": 16,
+      "view": "jungle-pair-dance"
+    },
+    {
+      "time": 34,
+      "view": "jungle-palace-dance"
+    },
+    {
+      "time": 56,
+      "view": "jungle-close"
+    },
+    {
+      "time": 76,
+      "view": "jungle-city-dance"
+    },
+    {
+      "time": 96,
+      "view": "jungle-palace-dance"
+    },
+    {
+      "time": 112,
+      "view": "jungle-city-dance"
+    },
+    {
+      "time": 130,
+      "view": "jungle-ensemble"
+    },
+    {
+      "time": 149,
+      "view": "jungle-lights-dance"
+    },
+    {
+      "time": 169,
+      "view": "jungle-line-dance"
+    },
+    {
+      "time": 192,
+      "view": "jungle-close"
+    },
+    {
+      "time": 216,
+      "view": "jungle-control"
+    },
+    {
+      "time": 232,
+      "view": "jungle-finale"
+    }
+  ]
+}

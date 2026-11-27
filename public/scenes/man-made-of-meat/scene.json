@@ -1,0 +1,444 @@
+{
+  "setting": "manmadeofmeat",
+  "title": "Viagra Boys · Man Made of Meat",
+  "description": "An abstract canvas, glaring gallery lights, a performance-art trampoline, a blue installation and an auction crowd. Original accompaniment with CHIMERA’s deadpan vocal.",
+  "duration": 278.894875,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "meat-sebastian",
+      "name": "Sebastian",
+      "role": "CHIMERA vocals",
+      "tele": "meat-sebastian.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 21.2,
+      "end": 23.36,
+      "text": "Okay.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.8,
+      "end": 25.08,
+      "text": "right,",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.34,
+      "end": 28.74,
+      "text": "all right, all right,",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.4,
+      "end": 30.02,
+      "text": "okay,",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.24,
+      "end": 31.72,
+      "text": "okay,",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.68,
+      "end": 33.3,
+      "text": "okay,",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.48,
+      "end": 42.12,
+      "text": "all right, Overweight freaks flying around on wheelchairs motorized by electric motors made my goblins and a factory overseas,",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.08,
+      "end": 49.24,
+      "text": "then of my drywall and other products that they can eat back at home on the sofa they watch",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.24,
+      "end": 55.36,
+      "text": "TV they watched TV about a man named Chandler Bing who died in a freak hot tub an accident",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.36,
+      "end": 60.84,
+      "text": "and spent his time drinking hot dog flavored water on a hot -wear TV show called Tub Girls",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 66,
+      "end": 70.66,
+      "text": "food and drugs for free If it was 1970",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.72,
+      "end": 74.44,
+      "text": "I'd have a job at a factory",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.2,
+      "end": 81.4,
+      "text": "I am a man that's made of meat You're on the internet looking at me",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.4,
+      "end": 86.88,
+      "text": "I hate almost everything that I see And I just wanna disappear",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.22,
+      "end": 90,
+      "text": "Okay.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.18,
+      "end": 91.78,
+      "text": "All right.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.94,
+      "end": 93.36,
+      "text": "Okay!",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.66,
+      "end": 95.18,
+      "text": "All right!",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.32,
+      "end": 96.64,
+      "text": "Okay!",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.92,
+      "end": 98.46,
+      "text": "All right.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.62,
+      "end": 99.92,
+      "text": "Okay.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.56,
+      "end": 107.34,
+      "text": "I stand outside of the McDonald's. I'm flexing my muscles till I explode.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.6,
+      "end": 110.76,
+      "text": "Now, they see me in the drive -thru lane.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.96,
+      "end": 114.1,
+      "text": "I hope they see me at the drive -through lane.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.26,
+      "end": 117.42,
+      "text": "I stand outside of the hello bean.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.82,
+      "end": 121.14,
+      "text": "I'm trying to get some free woman sweaters, you know what I",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.86,
+      "end": 123.92,
+      "text": "I hope they see me in the jazzy way.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.5,
+      "end": 127.84,
+      "text": "I hope, I hope they, I hope they, I hope that.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.48,
+      "end": 134.64,
+      "text": "I don't wanna pay for any of them clothes and food and drugs for free",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.08,
+      "end": 137.34,
+      "text": "If it was 1970",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.28,
+      "end": 144.56,
+      "text": "I'd have a job in the factory I am a man that's made of me",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.56,
+      "end": 150.72,
+      "text": "You're on the internet looking at free I hate almost everything that",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 150.72,
+      "end": 153.54,
+      "text": "I see That I just wanna disappear",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 155.78,
+      "end": 156.42,
+      "text": "Yes, please.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.74,
+      "end": 158.34,
+      "text": "Okay one at a time, one at a time.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.5,
+      "end": 159.74,
+      "text": "I don't know, I'm uncancelled now.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.9,
+      "end": 160.88,
+      "text": "Yeah, I'm back, thank you so much.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.1,
+      "end": 161.26,
+      "text": "Yes,",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.7,
+      "end": 162.18,
+      "text": "I'm an artist.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.32,
+      "end": 176.78,
+      "text": "course, I make art out of a...",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.78,
+      "end": 177.32,
+      "text": "is this guy?",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 177.46,
+      "end": 178.4,
+      "text": "Get him out of here right now!",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 178.68,
+      "end": 180.32,
+      "text": "What the f... I didn't do anything.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 181.12,
+      "end": 181.88,
+      "text": "She was wearing a wig.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.06,
+      "end": 183.22,
+      "text": "No, I can't answer these questions.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.6,
+      "end": 184.42,
+      "text": "No pictures.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 198,
+      "end": 204.12,
+      "text": "flappy giblets and I spent another $10 a month to chat with her on the",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 204.12,
+      "end": 205.84,
+      "text": "AI chat program.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 206.2,
+      "end": 207.86,
+      "text": "It feels great.",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 219.94,
+      "end": 226.46,
+      "text": "a job and it's back to me I am man that's made of meat You're",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 226.46,
+      "end": 232.64,
+      "text": "on the internet looking at feet I ain't almost everything that I see That",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    },
+    {
+      "start": 232.64,
+      "end": 234.32,
+      "text": "I just wanna disappear",
+      "speaker": "meat-sebastian",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "meat-canvas"
+    },
+    {
+      "time": 18,
+      "view": "meat-gallery"
+    },
+    {
+      "time": 29,
+      "view": "meat-critics"
+    },
+    {
+      "time": 44,
+      "view": "meat-gallery"
+    },
+    {
+      "time": 60,
+      "view": "meat-critics"
+    },
+    {
+      "time": 71,
+      "view": "meat-gallery"
+    },
+    {
+      "time": 91,
+      "view": "meat-trampoline"
+    },
+    {
+      "time": 113,
+      "view": "meat-party"
+    },
+    {
+      "time": 145,
+      "view": "meat-blue-room"
+    },
+    {
+      "time": 178,
+      "view": "meat-critics"
+    },
+    {
+      "time": 184,
+      "view": "meat-auction"
+    },
+    {
+      "time": 208,
+      "view": "meat-blue-room"
+    },
+    {
+      "time": 224,
+      "view": "meat-critics"
+    },
+    {
+      "time": 247,
+      "view": "meat-gallery"
+    },
+    {
+      "time": 267,
+      "view": "meat-canvas"
+    }
+  ]
+}

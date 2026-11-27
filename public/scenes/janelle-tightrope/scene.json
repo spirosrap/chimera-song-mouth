@@ -1,0 +1,550 @@
+{
+  "setting": "tightrope",
+  "title": "Janelle Monáe feat. Big Boi · Tightrope",
+  "description": "Institutional corridors, black-and-white tailoring, a dance hall and an exchange between two lead performers.",
+  "duration": 312.42449,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "tightrope-janelle",
+      "name": "Janelle",
+      "role": "CHIMERA vocals",
+      "tele": "tightrope-janelle.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "tightrope-big-boi",
+      "name": "Big Boi",
+      "role": "CHIMERA vocals",
+      "tele": "tightrope-big-boi.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 16.78,
+      "end": 18.58,
+      "text": "I'm on a left foot.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 23.06,
+      "end": 27.76,
+      "text": "I take your pain away Some",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.76,
+      "end": 32.64,
+      "text": "people talk about you like they know all about you When you get down, doubt ya And when you dib",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.64,
+      "end": 37.3,
+      "text": "it on the scene, they talking bout it Cause they can't tip on to sing what you talk about",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.3,
+      "end": 42.06,
+      "text": "it the dog and when you get elevated they love it all they hate it you",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.06,
+      "end": 46.92,
+      "text": "dance up on them haters keep your income on the scene while they jumpin' round ya They tryna take",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.92,
+      "end": 51.76,
+      "text": "all of your dreams but you can't allow it Cause baby whether you're or low",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.76,
+      "end": 56.06,
+      "text": "Or whether you're or low You got to chip on a",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.06,
+      "end": 57.1,
+      "text": "tightrope",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.78,
+      "end": 76.64,
+      "text": "I'm still dipping on it, see I'm not walking on it, I'm trying to run around it, this ain't",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.64,
+      "end": 77.54,
+      "text": "no acrobatics.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.84,
+      "end": 81.94,
+      "text": "either follow or you lead yeah I'm talking about ya, I'll keep on blaming the machine",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.3,
+      "end": 86.14,
+      "text": "I can't about it.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.42,
+      "end": 88.96,
+      "text": "gotta keep my balance and just keep dancing on it.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.28,
+      "end": 91.86,
+      "text": "getting funky on the scene and you know about it.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.08,
+      "end": 96.58,
+      "text": "Like the star on the screen watch me tip along it now baby whether I'm or",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.58,
+      "end": 97.3,
+      "text": "low,",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.02,
+      "end": 99.18,
+      "text": "maybe whether you're high",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.18,
+      "end": 111.38,
+      "text": "or",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.5,
+      "end": 113.94,
+      "text": "Did you own a tightrope?",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.82,
+      "end": 116.8,
+      "text": "Baby let me see your tightrope.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.76,
+      "end": 119.28,
+      "text": "And I'm still dipping on it.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.5,
+      "end": 124.2,
+      "text": "You gotta keep your balance when you fall into the cab. It's a challenge, but I managed cuz I'm",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.2,
+      "end": 128.98,
+      "text": "you damage to get cabbage that a doctor cannot pass See why you don't want no",
+      "speaker": "tightrope-big-boi",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.98,
+      "end": 133.62,
+      "text": "friction like the back of a match book that if SS will fold you and your Mac or close",
+      "speaker": "tightrope-big-boi",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.62,
+      "end": 138.28,
+      "text": "show shut you down before we go go back once act up and whether we hide the load we gonna get",
+      "speaker": "tightrope-big-boi",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.28,
+      "end": 141.98,
+      "text": "back up like the Dow Jones an ass back sorta like it on good Quick, come on,",
+      "speaker": "tightrope-big-boi",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.18,
+      "end": 143.26,
+      "text": "on.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.96,
+      "end": 158.84,
+      "text": "me a sinner, some calling me a winner I'm calling you to dinner and you know exactly what",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.84,
+      "end": 163.12,
+      "text": "I mean Yeah, I'm talking bout ya You can rock or you can leave Watch me tip without",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.12,
+      "end": 173.66,
+      "text": "ya",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.46,
+      "end": 174.86,
+      "text": "Baby,",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.18,
+      "end": 179.9,
+      "text": "baby, where the hell high or low",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.9,
+      "end": 182.06,
+      "text": "I got a tip on the top",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.06,
+      "end": 185.32,
+      "text": "Then baby tip on the tightrope",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 186.32,
+      "end": 191.1,
+      "text": "You can't too high We can't get too high I said you can't get too low We",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.1,
+      "end": 193.64,
+      "text": "can't get too low Cuz you get too high!",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.84,
+      "end": 198.64,
+      "text": "You can't get too high Now, you should leave me low Now, should leave me low One, two, three,",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.7,
+      "end": 199.04,
+      "text": "yeah!",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.4,
+      "end": 201.72,
+      "text": "Hah!",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.1,
+      "end": 205.64,
+      "text": "Yeah!",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 208.36,
+      "end": 208.82,
+      "text": "Yeah!",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 209.92,
+      "end": 211.08,
+      "text": "Now shout out!",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 213.04,
+      "end": 213.42,
+      "text": "Yeah!",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 215.2,
+      "end": 215.66,
+      "text": "Okay.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 216.9,
+      "end": 219.4,
+      "text": "Let's put some voodoo on it.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 219.62,
+      "end": 221.02,
+      "text": "Ladies and gentlemen,",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 221.34,
+      "end": 224.16,
+      "text": "the funky is on section in my tribalist.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.94,
+      "end": 229.52,
+      "text": "yeah, yeah, yeah, yeah, I wanna do that, I wanna do that.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 230.92,
+      "end": 233.2,
+      "text": "We call that classy brass.",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 234.06,
+      "end": 236.18,
+      "text": "gotta keep my be",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 241.98,
+      "end": 243.04,
+      "text": "thin line",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 244.82,
+      "end": 245.42,
+      "text": "Well,",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 247.36,
+      "end": 248.78,
+      "text": "it's a thin line",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 249.74,
+      "end": 251.22,
+      "text": "Now that white line",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 252.42,
+      "end": 254.5,
+      "text": "You and your right mind",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 258.1,
+      "end": 259.36,
+      "text": "Do you mind",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 260.38,
+      "end": 262.36,
+      "text": "There's no play where you're the lady",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 263.34,
+      "end": 263.94,
+      "text": "Just",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 267,
+      "end": 271.02,
+      "text": "Yeah, yeah, yeah, yeah, yeah,",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 271.4,
+      "end": 275.92,
+      "text": "there you go, there you go, there you go, there go, go, there ya go, go, there",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 275.92,
+      "end": 280.1,
+      "text": "go, go, there go, ya",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 286.18,
+      "end": 286.92,
+      "text": "birthday,",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 287.24,
+      "end": 291.78,
+      "text": "happy birthday Happy",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 291.78,
+      "end": 293.1,
+      "text": "birthday,",
+      "speaker": "tightrope-janelle",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "rope-entry"
+    },
+    {
+      "time": 17,
+      "view": "rope-room"
+    },
+    {
+      "time": 35,
+      "view": "rope-corridor"
+    },
+    {
+      "time": 51,
+      "view": "rope-close"
+    },
+    {
+      "time": 68,
+      "view": "rope-corridor"
+    },
+    {
+      "time": 88,
+      "view": "rope-floor-dance"
+    },
+    {
+      "time": 110,
+      "view": "rope-ensemble"
+    },
+    {
+      "time": 126,
+      "view": "rope-guest-close"
+    },
+    {
+      "time": 150,
+      "view": "rope-band"
+    },
+    {
+      "time": 165,
+      "view": "rope-floor-dance"
+    },
+    {
+      "time": 186,
+      "view": "rope-steps"
+    },
+    {
+      "time": 208,
+      "view": "rope-room"
+    },
+    {
+      "time": 229,
+      "view": "rope-ensemble"
+    },
+    {
+      "time": 253,
+      "view": "rope-band"
+    },
+    {
+      "time": 276,
+      "view": "rope-corridor"
+    },
+    {
+      "time": 290,
+      "view": "rope-room"
+    },
+    {
+      "time": 307,
+      "view": "rope-finale"
+    }
+  ]
+}
