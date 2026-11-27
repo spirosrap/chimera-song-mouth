@@ -109,7 +109,8 @@ pub static DEMO_SONGS: &[DemoSong] = &[
     DemoSong {
         // words by Li Shutong (李叔同, 1915; he died in 1942) to J. P. Ordway's "Dreaming of Home
         // and Mother" (1851): public domain. The first verse, one character per note; "-" holds the
-        // vowel onto the second note of a pair (1=C, from the usual numbered notation)
+        // vowel onto the second note of a pair. Notes and words from the numbered notation (1=C)
+        // commonly sung today, with 一壶浊酒 (printings differ there: some have 一瓢)
         name: "送别",
         bpm: 72.0,
         lyrics: "长亭 - 外，古道边，芳草 - 碧连 - 天。晚风 - 拂柳笛声残，夕阳 - 山外山。天之涯，地之 - 角，知 - 交 - 半 - 零 - 落。一壶 - 浊酒尽余欢，今宵 - 别梦寒。",

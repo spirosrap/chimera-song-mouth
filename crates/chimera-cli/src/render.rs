@@ -21,7 +21,7 @@ use chimera::phonetics::sing::{
     LegatoFrom, NoteOnOptions, SongOptions, SungNote, midi_to_hz, plan_note_off, plan_note_on,
     plan_song,
 };
-use chimera::phonetics::songs::DEMO_SONGS;
+use chimera::phonetics::songs::{DEMO_SONGS, DemoSong};
 use chimera::phonetics::mandarin::{MandarinLexicon, is_han};
 use chimera::phonetics::syllables::{Lang, lyrics_in, lyrics_to_syllables};
 use chimera::phonetics::turkish;
@@ -67,6 +67,25 @@ pub fn sung_lyrics(text: &str, lang: Lang) -> Result<Vec<Syllable>, String> {
     let g = g2p()?;
     let lex = if text.chars().any(is_han) { zh()? } else { MandarinLexicon::new() };
     Ok(lyrics_in(text, &g, &lex, lang))
+}
+
+/// A demo song's notes, each sung on the next of its syllables. Words that read as no syllables
+/// (a Mandarin lexicon with no usable entries for 送别's characters) are an error that names the
+/// song: dividing by the syllable count panicked (review of #157).
+fn demo_song_notes(song: &DemoSong, syl: &[Syllable], shift: f64) -> Result<Vec<SungNote>, String> {
+    if syl.is_empty() {
+        return Err(format!("demo song {}: its lyrics read as no syllables (is its front end's dictionary loaded?)", song.name));
+    }
+    Ok(song
+        .notes
+        .iter()
+        .enumerate()
+        .map(|(i, n)| SungNote {
+            midi: n[0] + shift,
+            beats: n[1],
+            syl: syl[i % syl.len()].clone(),
+        })
+        .collect())
 }
 
 /// A file name from a song's name: letters of any script, everything else as one "-".
@@ -266,7 +285,10 @@ pub fn song(ctx: &Ctx, a: &[String]) -> Result<(), String> {
     let out_dir = arg(a, 0, "out/song");
     let body_name = arg(a, 1, "male");
     let b = body(body_name)?;
+    // the dictionaries once for every song (CMUdict was read again for each of them); the
+    // Mandarin lexicon only when a demo song has Han characters
     let g = g2p()?;
+    let zh_lex = if DEMO_SONGS.iter().any(|s| s.lyrics.chars().any(is_han)) { zh()? } else { MandarinLexicon::new() };
     let syl_text = |syl: &[Syllable]| {
         syl.iter()
             .map(|s| s.text.as_str())
@@ -275,23 +297,13 @@ pub fn song(ctx: &Ctx, a: &[String]) -> Result<(), String> {
     };
 
     for song in DEMO_SONGS {
-        let syl = sung_lyrics(song.lyrics, Lang::En)?;
+        let syl = lyrics_in(song.lyrics, &g, &zh_lex, Lang::En);
         let octave = match body_name {
             "female" => song.octave.female,
             "child" => song.octave.child,
             _ => song.octave.male,
         };
-        let shift = octave * 12.0;
-        let notes: Vec<SungNote> = song
-            .notes
-            .iter()
-            .enumerate()
-            .map(|(i, n)| SungNote {
-                midi: n[0] + shift,
-                beats: n[1],
-                syl: syl[i % syl.len()].clone(),
-            })
-            .collect();
+        let notes = demo_song_notes(song, &syl, octave * 12.0)?;
         let mut v = HumanVoice::new(FS, b, 2);
         v.set_source(&SourcePatch {
             f0: Some(midi_to_hz(notes[0].midi)),
@@ -940,4 +952,31 @@ pub fn vowels(ctx: &Ctx, a: &[String]) -> Result<(), String> {
     }
     ctx.write_wav(&wav_name(name), &out)?;
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn a_demo_song_whose_words_read_as_nothing_is_an_error_naming_it() {
+        // review of #157: with a lexicon that has no entry for its characters, 送别 read as no
+        // syllables and `render song` panicked dividing by their count
+        let song = DEMO_SONGS.iter().find(|s| s.name == "送别").expect("送别");
+        let syl = lyrics_in(song.lyrics, &EnglishG2P::new(), &MandarinLexicon::new(), Lang::En);
+        assert!(syl.is_empty());
+        let e = demo_song_notes(song, &syl, 0.0).unwrap_err();
+        assert!(e.contains("送别"), "{e}");
+    }
+
+    #[test]
+    fn every_demo_song_reads_with_the_dictionaries_loaded_once() {
+        let g = g2p().unwrap();
+        let lex = zh().unwrap();
+        for song in DEMO_SONGS {
+            let syl = lyrics_in(song.lyrics, &g, &lex, Lang::En);
+            let notes = demo_song_notes(song, &syl, 0.0).unwrap();
+            assert_eq!(notes.len(), song.notes.len(), "{}", song.name);
+        }
+    }
 }
