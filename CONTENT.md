@@ -1,6 +1,6 @@
 # Included content
 
-Every prepared media file below is tracked in this repository. All 1198 public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
+Every prepared media file below is tracked in this repository. All prepared public files have SHA-256 checksums in `MEDIA-MANIFEST.json`. Durations are approximate; some include a short release.
 
 ## Songs
 
@@ -245,6 +245,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Björk — It's Oh So Quiet | 4:00 | `?scene=bjork-oh-so-quiet` | A whispered garage scene opens into a musical with storefronts and umbrellas. |
 | Missy Elliott — The Rain (Supa Dupa Fly) | 4:13 | `?scene=missy-the-rain` | Oversized costumes, circular stage lines and a rain scene. |
 | The Cardigans — My Favourite Game | 4:22 | `?scene=cardigans-favourite-game` | A dark convertible, layered desert rock and a pale highway. |
+| Massive Attack — Teardrop | 4:51 | `?scene=massive-teardrop` | Submerged glasshouse, copper seed pod and moving caustics. |
+| Radiohead — Lotus Flower (From the Basement) | 5:04 | `?scene=radiohead-lotus-flower` | Live performance in a monochrome folded-paper theater. |
+| The Prodigy — Breathe | 3:51 | `?scene=prodigy-breathe` | Furnace glow, suspended sparks and an industrial dance floor. |
+| Bat for Lashes — What's a Girl to Do? | 2:52 | `?scene=bat-for-lashes-girl` | A midnight forest of violet paper, ground mist and moving lanterns. |
+| Portishead — Glory Box | 3:32 | `?scene=portishead-glory-box` | The alternate music-video edit in a smoke-filled Art Deco theater. |
+| Basement Jaxx — Where's Your Head At | 4:10 | `?scene=basement-jaxx-head-at` | An analog sound laboratory with oscilloscopes and blue glass. |
+| M.I.A. — Bad Girls | 4:11 | `?scene=mia-bad-girls` | A terracotta valley with mirrored monoliths and rolling dust. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

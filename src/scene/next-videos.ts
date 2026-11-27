@@ -1,3 +1,4 @@
+import { isCinematic } from './cinematic-videos.ts';
 import { SHOWCASE_CAST, SHOWCASE_INFO, SHOWCASE_SETTINGS, SHOWCASE_VIEWS, isShowcase } from './showcase-videos.ts';
 import { LATER_VIDEO_CAST, LATER_VIDEO_INFO, LATER_VIDEO_SETTINGS, LATER_VIDEO_VIEWS, isLaterVideo } from './later-videos.ts';
 import { SEVEN_VIDEO_CAST, SEVEN_VIDEO_INFO, SEVEN_VIDEO_SETTINGS, SEVEN_VIDEO_VIEWS, isSevenVideo } from './seven-videos.ts';
@@ -98,5 +99,5 @@ export const NEXT_VIDEO_SCENES = Object.fromEntries(NEXT_VIDEO_SETTINGS.map(sett
 export const NEXT_VIDEO_ENTRIES = NEXT_VIDEO_SETTINGS.map(setting => {
   const { id, title, eyebrow, description } = NEXT_VIDEO_INFO[setting];
   return { id, title, eyebrow, description, assetVersion: `${id}-${isSevenVideo(setting) || isLaterVideo(setting) || isShowcase(setting) ? '20261127' : '20261126'}`, readyVideo: undefined,
-    credit: 'A stylized CHIMERA reconstruction of the supplied video. Vocal timing, individual voice assignments and scene choreography are approximate.' };
+    credit: isCinematic(setting) ? 'An original illustrated CHIMERA performance. Vocal timing and captions are approximate.' : 'A stylized CHIMERA reconstruction of the supplied video. Vocal timing, individual voice assignments and scene choreography are approximate.' };
 });

@@ -1,0 +1,320 @@
+{
+  "setting": "glorybox",
+  "title": "Portishead · Glory Box",
+  "description": "In an empty Art Deco theater, velvet, warm brass and smoke frame a quiet vocal that grows into a full spotlight.",
+  "duration": 211.819167,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "glory-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "glory-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 15.36,
+      "end": 19.46,
+      "text": "I'm so tired of playing,",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 19.92,
+      "end": 23.2,
+      "text": "playing with this bow and arrow,",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 23.9,
+      "end": 28.26,
+      "text": "gonna give my heart away Leave it to the other",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.26,
+      "end": 30.74,
+      "text": "girls to play",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 33.68,
+      "end": 37.42,
+      "text": "I've been a temptress too long",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.34,
+      "end": 40.34,
+      "text": "Yes",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 41.1,
+      "end": 45.8,
+      "text": "Give me a reason to love you,",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.8,
+      "end": 50.56,
+      "text": "give me a",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 50.56,
+      "end": 54.56,
+      "text": "reason to be",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 54.56,
+      "end": 56.38,
+      "text": "a",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.48,
+      "end": 65.48,
+      "text": "I just don't want to be a hombre.",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.36,
+      "end": 75.34,
+      "text": "From this time unchained,",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.08,
+      "end": 80.46,
+      "text": "we're all looking at a different picture through this new",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 80.46,
+      "end": 81.04,
+      "text": "frame",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.94,
+      "end": 93.8,
+      "text": "Move over and give us",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.8,
+      "end": 98.56,
+      "text": "some room, yeah Give me a",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.56,
+      "end": 101.7,
+      "text": "reason to love you",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.44,
+      "end": 108.38,
+      "text": "Give me a reason to",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.38,
+      "end": 109.52,
+      "text": "be",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.28,
+      "end": 121.16,
+      "text": "just want to be a woman.",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.54,
+      "end": 149.42,
+      "text": "So don't you smell the M",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.42,
+      "end": 150.78,
+      "text": "-O -M -E -L.",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.56,
+      "end": 156.8,
+      "text": "Just take a little look from outside",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.8,
+      "end": 160.1,
+      "text": "when you carry me",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.18,
+      "end": 165.82,
+      "text": "So when it's time to",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.82,
+      "end": 166.96,
+      "text": "nonetheless",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.7,
+      "end": 173.84,
+      "text": "No matter if you cry",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.54,
+      "end": 181.32,
+      "text": "But this is the beginning of forever,",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 181.54,
+      "end": 183.12,
+      "text": "and I'm never,",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 185.16,
+      "end": 185.48,
+      "text": "ever,",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 185.82,
+      "end": 186.16,
+      "text": "ever,",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 190.66,
+      "end": 194.06,
+      "text": "It's time to move on",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.82,
+      "end": 197.42,
+      "text": "So now",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.12,
+      "end": 203.26,
+      "text": "I'm so tired of playing,",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 203.36,
+      "end": 206.98,
+      "text": "playing with this bow and arrow.",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 207.7,
+      "end": 209.1,
+      "text": "Gonna give my heart",
+      "speaker": "glory-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "glory-curtain"
+    },
+    {
+      "time": 14,
+      "view": "glory-portrait"
+    },
+    {
+      "time": 35,
+      "view": "glory-staircase"
+    },
+    {
+      "time": 54,
+      "view": "glory-spotlight"
+    },
+    {
+      "time": 73,
+      "view": "glory-portrait"
+    },
+    {
+      "time": 92,
+      "view": "glory-curtain"
+    },
+    {
+      "time": 111,
+      "view": "glory-staircase"
+    },
+    {
+      "time": 132,
+      "view": "glory-portrait"
+    },
+    {
+      "time": 152,
+      "view": "glory-spotlight"
+    },
+    {
+      "time": 173,
+      "view": "glory-curtain"
+    },
+    {
+      "time": 191,
+      "view": "glory-portrait"
+    },
+    {
+      "time": 204,
+      "view": "glory-curtain"
+    }
+  ]
+}

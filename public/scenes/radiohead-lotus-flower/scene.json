@@ -1,0 +1,366 @@
+{
+  "setting": "lotusflower",
+  "title": "Radiohead · Lotus Flower (From the Basement)",
+  "description": "A silver-gelatin paper theater opens and closes around a single dancer, using the full From the Basement performance.",
+  "duration": 303.742676,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "lotus-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "lotus-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 60.7,
+      "end": 65.4,
+      "text": "I'll shoot myself into your pocket and",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.4,
+      "end": 65.96,
+      "text": "there's",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.14,
+      "end": 71.9,
+      "text": "do what you want, do what you",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.9,
+      "end": 73.76,
+      "text": "want",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.8,
+      "end": 79.1,
+      "text": "I was thinking of you sleeping here",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.7,
+      "end": 83.2,
+      "text": "I was slipping through the and cutting me",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.2,
+      "end": 84.68,
+      "text": "out",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.69,
+      "end": 88.42,
+      "text": "And putting me out",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.68,
+      "end": 101.88,
+      "text": "I set",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.88,
+      "end": 106.72,
+      "text": "you free,",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.2,
+      "end": 111.96,
+      "text": "set an empty space inside",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.96,
+      "end": 116.5,
+      "text": "my little witch's beard So now I'll",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.5,
+      "end": 118.3,
+      "text": "set you free",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.78,
+      "end": 122.08,
+      "text": "From the path that you've seen",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.9,
+      "end": 131.64,
+      "text": "Slowly we are found As all of",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.64,
+      "end": 136.04,
+      "text": "us flowers cause all I want to do upon",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.04,
+      "end": 137.3,
+      "text": "it's stand",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.1,
+      "end": 142.68,
+      "text": "Just to see what it is Just",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.68,
+      "end": 145.2,
+      "text": "to see what it is",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.58,
+      "end": 150.12,
+      "text": "I can't get it, just to feel your",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 150.12,
+      "end": 152.52,
+      "text": "best blue light",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.2,
+      "end": 158.86,
+      "text": "ain't true, we",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.9,
+      "end": 174.12,
+      "text": "We wish she could live as as mine",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.88,
+      "end": 179.04,
+      "text": "And while the is away, do what we want",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.64,
+      "end": 184.08,
+      "text": "Do what we want",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.34,
+      "end": 193.68,
+      "text": "There's an empty space inside my room",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.68,
+      "end": 197.98,
+      "text": "It's too nice if you keep",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.96,
+      "end": 201.14,
+      "text": "I accept you,",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 211.74,
+      "end": 215.16,
+      "text": "Is all I want is me,",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 215.66,
+      "end": 217.18,
+      "text": "for to stay",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 218.1,
+      "end": 219.72,
+      "text": "Just to see",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.28,
+      "end": 221.94,
+      "text": "it is,",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 222.52,
+      "end": 226.02,
+      "text": "just to see what it is.",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 226.12,
+      "end": 230.38,
+      "text": "I want a bar that's flowing through",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 230.38,
+      "end": 232.3,
+      "text": "my room.",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 237.14,
+      "end": 241,
+      "text": "So here we are at five o 'clock.",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 241.42,
+      "end": 246.18,
+      "text": "I'm this violence, there's all I want to rule I",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 246.18,
+      "end": 250.28,
+      "text": "promise that I'll dance around",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 250.28,
+      "end": 254.98,
+      "text": "up there The darkness is weak",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 255.86,
+      "end": 260.4,
+      "text": "But I can't kick your head It's just the feet of",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 260.4,
+      "end": 264.92,
+      "text": "my eluded head Listen",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 264.92,
+      "end": 268.76,
+      "text": "to your voice",
+      "speaker": "lotus-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "lotus-folds"
+    },
+    {
+      "time": 18,
+      "view": "lotus-shadow-dance"
+    },
+    {
+      "time": 33,
+      "view": "lotus-portrait"
+    },
+    {
+      "time": 58,
+      "view": "lotus-paper"
+    },
+    {
+      "time": 81,
+      "view": "lotus-shadow-dance"
+    },
+    {
+      "time": 108,
+      "view": "lotus-portrait"
+    },
+    {
+      "time": 131,
+      "view": "lotus-paper"
+    },
+    {
+      "time": 155,
+      "view": "lotus-shadow-dance"
+    },
+    {
+      "time": 178,
+      "view": "lotus-portrait"
+    },
+    {
+      "time": 202,
+      "view": "lotus-paper"
+    },
+    {
+      "time": 225,
+      "view": "lotus-shadow-dance"
+    },
+    {
+      "time": 250,
+      "view": "lotus-portrait"
+    },
+    {
+      "time": 279,
+      "view": "lotus-folds"
+    }
+  ]
+}

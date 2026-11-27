@@ -1,0 +1,306 @@
+{
+  "setting": "batforlashes",
+  "title": "Bat for Lashes · What's a Girl to Do?",
+  "description": "A wet ribbon of road disappears into a hand-built nocturnal forest. Moonlight, mist and small lanterns follow the singer.",
+  "duration": 172.44,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "night-road-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "night-road-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 7.38,
+      "end": 8.84,
+      "text": "walked arm in arm,",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 10.32,
+      "end": 12.02,
+      "text": "I didn't feel his touch.",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 14.44,
+      "end": 17.1,
+      "text": "desire I'd first tried to hide,",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.86,
+      "end": 20.4,
+      "text": "that tingling inside was gone.",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.28,
+      "end": 26.16,
+      "text": "And when he asked me,",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.92,
+      "end": 28.1,
+      "text": "do you still love me?",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.74,
+      "end": 30.02,
+      "text": "I had to look away.",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.48,
+      "end": 34.56,
+      "text": "didn't want to tell him",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.04,
+      "end": 38.82,
+      "text": "my heart was colder with each day",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.82,
+      "end": 41.36,
+      "text": "when you",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.1,
+      "end": 47.42,
+      "text": "That's where the thrill is going",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.42,
+      "end": 51.8,
+      "text": "And your kisses and I",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.8,
+      "end": 55.04,
+      "text": "are replaced with tears",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.55,
+      "end": 61.32,
+      "text": "When you're dreams are on I'm trained",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.32,
+      "end": 66.08,
+      "text": "to train right now Then I",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.08,
+      "end": 68.3,
+      "text": "ask you now,",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 68.8,
+      "end": 71.32,
+      "text": "what's there going to do?",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.9,
+      "end": 77.4,
+      "text": "He said he'd take me away.",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.68,
+      "end": 84.04,
+      "text": "We would work things out and I didn't want to tell him",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.5,
+      "end": 89.3,
+      "text": "it was then that I had to say,",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.86,
+      "end": 94.44,
+      "text": "over the times we shared,",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.2,
+      "end": 98.72,
+      "text": "it's all blackened out.",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.52,
+      "end": 105.08,
+      "text": "My back -lightening heart wants to fly",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.08,
+      "end": 105.6,
+      "text": "away.",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.78,
+      "end": 115.42,
+      "text": "you've lost so long that the",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.42,
+      "end": 117.22,
+      "text": "thrill is gone",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.1,
+      "end": 122.58,
+      "text": "And your kisses and I are",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.58,
+      "end": 127.14,
+      "text": "placed for tears When",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.14,
+      "end": 129.6,
+      "text": "your dreams run,",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.88,
+      "end": 132.64,
+      "text": "train to train",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.52,
+      "end": 140.94,
+      "text": "What's it good to do",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.68,
+      "end": 145.06,
+      "text": "What's it going to do",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.58,
+      "end": 158.24,
+      "text": "-ha -ha -ha",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.24,
+      "end": 160.2,
+      "text": "-ha",
+      "speaker": "night-road-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "night-road"
+    },
+    {
+      "time": 15,
+      "view": "night-portrait"
+    },
+    {
+      "time": 29,
+      "view": "night-fog"
+    },
+    {
+      "time": 45,
+      "view": "night-moon"
+    },
+    {
+      "time": 62,
+      "view": "night-portrait"
+    },
+    {
+      "time": 79,
+      "view": "night-lanterns"
+    },
+    {
+      "time": 96,
+      "view": "night-road"
+    },
+    {
+      "time": 111,
+      "view": "night-portrait"
+    },
+    {
+      "time": 126,
+      "view": "night-moon"
+    },
+    {
+      "time": 141,
+      "view": "night-lanterns"
+    },
+    {
+      "time": 156,
+      "view": "night-close"
+    },
+    {
+      "time": 166,
+      "view": "night-road"
+    }
+  ]
+}

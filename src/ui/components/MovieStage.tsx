@@ -411,12 +411,19 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
       if(recording)return gl.domElement;
       ctx.drawImage(gl.domElement,0,0,canvas.width,canvas.height);return canvas;
     };
-    onReady({capture:(width=1920,height=1080)=>{
+    const captureStage:SceneStage={capture:(width=1920,height=1080)=>{
       if(!alive||capturing)throw Error('The scene is already preparing a video.');
       capturing=true;gl.setPixelRatio(1);gl.setSize(width,height,false);room.resize(width,height);
       let released=false;
       return {draw:(time)=>draw(time,true),release:()=>{if(released)return;released=true;capturing=false;if(alive)fit();}};
-    }});
+    }};
+    if(room instanceof NextVideoStage&&room.artwork){
+      void room.artwork.load().then(()=>{
+        if(alive)onReady(captureStage);
+      }).catch(()=>{
+        if(alive)setError('The illustrated set could not load. Reload to try again. The scene audio is still available.');
+      });
+    }else onReady(captureStage);
     const frame=(now:number)=>{
       raf=requestAnimationFrame(frame);if(capturing||!visible||now-last<1000/30)return;last=now;draw(transport.time());
     };

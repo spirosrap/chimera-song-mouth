@@ -1,0 +1,282 @@
+{
+  "setting": "prodigybreathe",
+  "title": "The Prodigy · Breathe",
+  "description": "Hot steel, an open furnace and a shuttered turbine frame a rave performance. Sparks and shifting light move with the beat.",
+  "duration": 230.945646,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "breathe-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "breathe-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 14.08,
+      "end": 16.22,
+      "text": "What are doing back there?",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.88,
+      "end": 34.02,
+      "text": "I'm going my game on test, yeah.",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.92,
+      "end": 36.46,
+      "text": "Psychosomatic,",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.78,
+      "end": 37.46,
+      "text": "adequate scene.",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.2,
+      "end": 38.88,
+      "text": "Breathe the pressure.",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.74,
+      "end": 41.06,
+      "text": "You're filming my last test,",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.24,
+      "end": 45.1,
+      "text": "Psychosomatic, I can see you!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 50.02,
+      "end": 50.5,
+      "text": "Inhale!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 50.86,
+      "end": 51.34,
+      "text": "Inhale!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.66,
+      "end": 52.2,
+      "text": "Go to Victor!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.14,
+      "end": 57.78,
+      "text": "Let's say it!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.98,
+      "end": 58.56,
+      "text": "Let's say it!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.66,
+      "end": 59.46,
+      "text": "Let's Say It!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.08,
+      "end": 109.94,
+      "text": "I'm going",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.46,
+      "end": 114.96,
+      "text": "You're a victim!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.78,
+      "end": 116.86,
+      "text": "a a victim! victim!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.98,
+      "end": 120.54,
+      "text": "You're",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.52,
+      "end": 121.9,
+      "text": "You're",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.06,
+      "end": 197.62,
+      "text": "compression!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.4,
+      "end": 200.38,
+      "text": "I'm playing my game I'll test ya",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.56,
+      "end": 203.72,
+      "text": "Tachosomatic, Atticusein,",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 204.22,
+      "end": 205.04,
+      "text": "Breathe the pressure",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.6,
+      "end": 207.6,
+      "text": "You're playing my game I'll test ya",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 208.5,
+      "end": 209.08,
+      "text": "Tycho,",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 209.64,
+      "end": 211.48,
+      "text": "Somatic, Atticusein",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 212.9,
+      "end": 213.62,
+      "text": "Don't fly,",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 214.1,
+      "end": 215.4,
+      "text": "don't die",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.04,
+      "end": 223.86,
+      "text": "bye bye time PIXIE!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.2,
+      "end": 224.58,
+      "text": "PIXIE!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.86,
+      "end": 225.48,
+      "text": "PIXIE!!!",
+      "speaker": "breathe-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "breathe-turbine"
+    },
+    {
+      "time": 14,
+      "view": "breathe-close"
+    },
+    {
+      "time": 30,
+      "view": "breathe-furnace-dance"
+    },
+    {
+      "time": 46,
+      "view": "breathe-shutter"
+    },
+    {
+      "time": 64,
+      "view": "breathe-close"
+    },
+    {
+      "time": 82,
+      "view": "breathe-turbine"
+    },
+    {
+      "time": 106,
+      "view": "breathe-furnace-dance"
+    },
+    {
+      "time": 128,
+      "view": "breathe-close"
+    },
+    {
+      "time": 146,
+      "view": "breathe-shutter"
+    },
+    {
+      "time": 164,
+      "view": "breathe-furnace-dance"
+    },
+    {
+      "time": 183,
+      "view": "breathe-close"
+    },
+    {
+      "time": 206,
+      "view": "breathe-furnace-dance"
+    },
+    {
+      "time": 224,
+      "view": "breathe-turbine"
+    }
+  ]
+}

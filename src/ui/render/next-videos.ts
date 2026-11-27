@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import { isCinematic } from '../../scene/cinematic-videos.ts';
+import { CinematicBackdrop, dressCinematicFigure } from './cinematic-videos.ts';
 import { isShowcase, type ShowcaseView } from '../../scene/showcase-videos.ts';
 import { buildShowcaseSet, SHOWCASE_FIGURES, SHOWCASE_WARDROBE } from './showcase-videos.ts';
 import { isLaterVideo, type LaterVideoView } from '../../scene/later-videos.ts';
@@ -40,6 +42,7 @@ export class NextVideoStage {
   readonly scene = new THREE.Scene();
   readonly camera = new THREE.PerspectiveCamera(37, 1, 1, 2200);
   readonly figures: CastMember[];
+  readonly artwork?: CinematicBackdrop;
   private readonly props = new VideoProps();
   private readonly sets = new Map<NextVideoView, Set>();
   private readonly background = new THREE.Color();
@@ -49,6 +52,7 @@ export class NextVideoStage {
 
   constructor(readonly setting: NextVideoSetting, actors: Actor[]) {
     this.scene.background = this.background;
+    if (isCinematic(setting)) this.artwork = new CinematicBackdrop(setting, this.scene);
     const { jackets, hair } = wardrobe[setting];
     const cast: readonly CharacterId[] = NEXT_VIDEO_CAST[setting];
     const voices = cast.map(id => {
@@ -60,6 +64,7 @@ export class NextVideoStage {
       const actor = voices[i] ?? voices[0];
       const base = color(jackets, i);
       const figure = new VideoFigure(actor.model, actor.track, this.props, this.scene, base);
+      if (isCinematic(setting)) dressCinematicFigure(this.props, figure, setting);
       const ink = figure.hair;
       ink.begin();
       for (let strand = 0; strand < 23; strand++) {
@@ -427,7 +432,9 @@ export class NextVideoStage {
 
   frame(time: number, playing: boolean, epoch: number, view: CameraView, intensity: number, speaker?: CharacterId) {
     const shots = NEXT_VIDEO_INFO[this.setting].shots;
-    const sourceView = shots.filter(([start]) => start <= time).at(-1)?.[1] ?? shots[0][1];
+    const nextShot = shots.findIndex(([start]) => start > time);
+    const shot = nextShot < 0 ? shots.length - 1 : Math.max(0, nextShot - 1);
+    const sourceView = shots[shot][1];
     const stageView = this.sets.has(view as NextVideoView) ? view as NextVideoView : sourceView;
     if (this.previousView !== stageView) {
       if (this.previousView) this.sets.get(this.previousView)!.root.visible = false;
@@ -496,6 +503,17 @@ export class NextVideoStage {
     const cameraSide = tight ? -13 : group ? 14 : -24;
     this.camera.position.set(cameraSide + 9 * Math.sin(time * .31), tight ? 159 : 160, tight ? 154 : narrow ? 352 : 327);
     this.camera.lookAt(0, tight ? 134 : seated ? 104 : 111, 0);
+    if (this.artwork) {
+      const framing = stageView === sourceView ? shot : shots.findIndex(([, cut]) => cut === stageView);
+      const arrangement = Math.sin(framing * 2.38);
+      const shift = narrow ? 0 : arrangement * (tight ? 19 : 30);
+      const sway = Math.sin(time * (group ? .78 : .26)) * (group ? 11 : 4);
+      const distance = tight ? 126 : narrow ? 278 : group ? 271 : 246;
+      this.camera.fov = tight ? (narrow ? 40 : 35) : (narrow ? 51 : 43);
+      this.camera.position.set(sway - shift * .72, tight ? 155 : 143 + 8 * arrangement, distance);
+      this.camera.lookAt(-shift, tight ? 141 : 99, 0);
+      this.artwork.frame(time, this.camera.aspect, framing, tight, intensity);
+    }
     this.camera.updateProjectionMatrix();
     this.camera.updateMatrixWorld();
     for (const [i, {figure}] of this.figures.entries()) {
@@ -515,6 +533,7 @@ export class NextVideoStage {
 
   dispose() {
     for (const {figure} of this.figures) figure.dispose();
+    this.artwork?.dispose();
     this.props.dispose();
     this.scene.clear();
   }

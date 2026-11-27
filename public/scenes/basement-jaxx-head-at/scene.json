@@ -1,0 +1,310 @@
+{
+  "setting": "basementhead",
+  "title": "Basement Jaxx · Where's Your Head At",
+  "description": "Glass chambers, blue steel and phosphor-green dials form a sound lab where the chorus takes over the experiment.",
+  "duration": 249.84,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "head-at-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "head-at-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.98,
+      "end": 5.78,
+      "text": "Yeah, I know that's easy for you to say, I'm in the armpit",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 5.78,
+      "end": 6.38,
+      "text": "of nowhere.",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 7.68,
+      "end": 10.6,
+      "text": "Well, I'm meeting some guy who says he has the latest thing in music.",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 11.74,
+      "end": 12.14,
+      "text": "I know.",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.92,
+      "end": 40.64,
+      "text": "We're going to to the day.",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.82,
+      "end": 44.94,
+      "text": "We're going go back to next We're going your hair?",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.4,
+      "end": 47.28,
+      "text": "Where's your hair?",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.16,
+      "end": 49.16,
+      "text": "Where's your hair?",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 50.18,
+      "end": 52,
+      "text": "Drop it.",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.82,
+      "end": 63.02,
+      "text": "Okay, everybody.",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.58,
+      "end": 66.38,
+      "text": "Where's",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.74,
+      "end": 67.46,
+      "text": "hair?",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.88,
+      "end": 71.62,
+      "text": "Where's your hair?",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.12,
+      "end": 75.38,
+      "text": "Where's your hair? Where's hair?",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.32,
+      "end": 77.26,
+      "text": "Where's your hair?",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.34,
+      "end": 79.18,
+      "text": "Where's your hair?",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 80.72,
+      "end": 83.38,
+      "text": "Where's your hair? being on you.",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.28,
+      "end": 87.6,
+      "text": "We can't live on live on without you",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.68,
+      "end": 98,
+      "text": "You You get",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 98,
+      "end": 100.84,
+      "text": "what you give",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.42,
+      "end": 144.42,
+      "text": "You have now found yourself trapped in the",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.42,
+      "end": 146.16,
+      "text": "incomprehensible maze.",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.04,
+      "end": 158.02,
+      "text": "your life with no head",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.55,
+      "end": 160.96,
+      "text": "Don't make them ease me on yourself",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.68,
+      "end": 167.24,
+      "text": "This is what you get Whatcha get,",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.36,
+      "end": 170.1,
+      "text": "whatcha get, whatcha get",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.12,
+      "end": 222.48,
+      "text": "that the world's great in on you",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 223.1,
+      "end": 226.54,
+      "text": "We can't on without you",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 227.1,
+      "end": 230.32,
+      "text": "Don't let the world's great in on you",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 230.89,
+      "end": 235.44,
+      "text": "We can't on without you We can't",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 235.44,
+      "end": 239.78,
+      "text": "on without you We can't live on",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 239.78,
+      "end": 240.56,
+      "text": "without",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 242.62,
+      "end": 247.38,
+      "text": "can't live on without you, we can't live on",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 247.38,
+      "end": 249.04,
+      "text": "without you.",
+      "speaker": "head-at-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "lab-chambers"
+    },
+    {
+      "time": 19,
+      "view": "lab-oscillators"
+    },
+    {
+      "time": 37,
+      "view": "lab-portrait"
+    },
+    {
+      "time": 56,
+      "view": "lab-cable-dance"
+    },
+    {
+      "time": 74,
+      "view": "lab-scan"
+    },
+    {
+      "time": 92,
+      "view": "lab-close"
+    },
+    {
+      "time": 111,
+      "view": "lab-chambers"
+    },
+    {
+      "time": 128,
+      "view": "lab-cable-dance"
+    },
+    {
+      "time": 147,
+      "view": "lab-oscillators"
+    },
+    {
+      "time": 167,
+      "view": "lab-portrait"
+    },
+    {
+      "time": 186,
+      "view": "lab-scan"
+    },
+    {
+      "time": 207,
+      "view": "lab-cable-dance"
+    },
+    {
+      "time": 229,
+      "view": "lab-chambers"
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "setting": "miabadgirls",
+  "title": "M.I.A. · Bad Girls",
+  "description": "Terracotta dust and mirrored forms catch the last light over an open desert road while the rapper and her doubles trade poses.",
+  "duration": 251.04,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "bad-girls-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "bad-girls-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 43.96,
+      "end": 47.74,
+      "text": "chain it's my chest when I'm on the radio back",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.74,
+      "end": 52.36,
+      "text": "get down pull me closer if you think you can",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.36,
+      "end": 57.18,
+      "text": "hand hands up how's time done",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.18,
+      "end": 61.46,
+      "text": "got screaming if I blow you with a band ah kisuki",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.46,
+      "end": 64.94,
+      "text": "I'm coming in the Cherokee gasoline",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.04,
+      "end": 70.94,
+      "text": "unknown, the screen, take it, it Wheels bouncing like a trampoline When",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.94,
+      "end": 72.3,
+      "text": "I get to where I'm going,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.76,
+      "end": 74.92,
+      "text": "have you trampoline Lift fast,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.3,
+      "end": 75.78,
+      "text": "young,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.12,
+      "end": 78.72,
+      "text": "bad girls do it well If fast I",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.72,
+      "end": 85.84,
+      "text": "am",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.84,
+      "end": 86.22,
+      "text": "back,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.66,
+      "end": 87.5,
+      "text": "do it wild.",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 87.68,
+      "end": 92.32,
+      "text": "Chain hits my chest when I'm banging on the dash But my chain hits my chest when",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.32,
+      "end": 96.96,
+      "text": "I'm banging On the radio, yeah, it back it Yeah pull up to the bumper",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.96,
+      "end": 101.62,
+      "text": "game with the signal Cover me cause I'm changing how to handle on",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.62,
+      "end": 106.36,
+      "text": "it My life broke here when I get to where I'm going gonna",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.36,
+      "end": 107.26,
+      "text": "have you sayin'",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.56,
+      "end": 109.26,
+      "text": "that That's Guy Young,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.56,
+      "end": 114.36,
+      "text": "Bad Girls, do it wild It's fast, I am back, girls do it wild",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.36,
+      "end": 115.14,
+      "text": "It's",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.44,
+      "end": 119.7,
+      "text": "I am back Girls do it wild It's fast, I am back",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.62,
+      "end": 123.96,
+      "text": "Chain hits my chest When I'm banging on the dashboard",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.9,
+      "end": 134.9,
+      "text": "chest when I'm Get back,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.88,
+      "end": 140,
+      "text": "get down Pull me closer if you think you can hand",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.6,
+      "end": 141.6,
+      "text": "Hands up,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.6,
+      "end": 143.54,
+      "text": "hands tight",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.94,
+      "end": 146.98,
+      "text": "Dung a screamin' if I blow you with a band",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.68,
+      "end": 152.36,
+      "text": "Going out to bed, child seat 4 million Accelerating fast,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.36,
+      "end": 157.04,
+      "text": "I could do this in a suit, and looking in the web You swag and go and",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.04,
+      "end": 161.5,
+      "text": "swag Leaving boys behind Kisses legally just to kill Shift",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.5,
+      "end": 166.26,
+      "text": "gear automatic, damn diffadoo Who is gonna stop me when",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.26,
+      "end": 170.82,
+      "text": "I'm coming through What we got left is just me and you",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.82,
+      "end": 174.24,
+      "text": "But if I go to bed, baby can I take you?",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.52,
+      "end": 175.02,
+      "text": "back,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.76,
+      "end": 176.86,
+      "text": "get down,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 177.32,
+      "end": 181.8,
+      "text": "pull me closer if you think you can hand Hands up,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.48,
+      "end": 187.1,
+      "text": "hands high, don't get screaming if I play with a band",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.68,
+      "end": 191.32,
+      "text": "If that's die young bad girls live it well",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.2,
+      "end": 198.86,
+      "text": "let fast,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.22,
+      "end": 199.7,
+      "text": "young,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 200.08,
+      "end": 202.6,
+      "text": "girls still with wild Let fast, die",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.6,
+      "end": 209.72,
+      "text": "young,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 210.18,
+      "end": 210.56,
+      "text": "girls,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 214.02,
+      "end": 218.78,
+      "text": "still with wild Chain hits my chest when I'm on the dash For my chain hits",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 218.78,
+      "end": 221.3,
+      "text": "my chest when I'm banging on the radio,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 221.76,
+      "end": 224.5,
+      "text": "chain hits my chest When I'm banging on a dashboard,",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.86,
+      "end": 226.18,
+      "text": "chain hits my chest",
+      "speaker": "bad-girls-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "valley-road"
+    },
+    {
+      "time": 16,
+      "view": "valley-portrait"
+    },
+    {
+      "time": 31,
+      "view": "valley-mirror-dance"
+    },
+    {
+      "time": 50,
+      "view": "valley-dust"
+    },
+    {
+      "time": 70,
+      "view": "valley-portrait"
+    },
+    {
+      "time": 91,
+      "view": "valley-lamps"
+    },
+    {
+      "time": 109,
+      "view": "valley-mirror-dance"
+    },
+    {
+      "time": 129,
+      "view": "valley-road"
+    },
+    {
+      "time": 150,
+      "view": "valley-portrait"
+    },
+    {
+      "time": 170,
+      "view": "valley-dust"
+    },
+    {
+      "time": 189,
+      "view": "valley-mirror-dance"
+    },
+    {
+      "time": 210,
+      "view": "valley-lamps"
+    },
+    {
+      "time": 231,
+      "view": "valley-road"
+    }
+  ]
+}

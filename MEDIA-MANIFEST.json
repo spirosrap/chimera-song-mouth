@@ -2172,6 +2172,76 @@
       "sha256": "f3341dfad41ac14a44a63fd963ff93775e123426751378d14e5ca08eddc6c938"
     },
     {
+      "path": "public/scenes/basement-jaxx-head-at/backing.mp3",
+      "bytes": 7996461,
+      "sha256": "fc02e818a34270eaae48a977c6c1920eb61a24f87d9d38dab4c7169e57d7fbb8"
+    },
+    {
+      "path": "public/scenes/basement-jaxx-head-at/credits.txt",
+      "bytes": 151,
+      "sha256": "2a65ce0efba0fcff50985fb50ddcdedd232f048d431bb487dc16b1d0b9087f2c"
+    },
+    {
+      "path": "public/scenes/basement-jaxx-head-at/head-at-voice.tele.gz",
+      "bytes": 1948956,
+      "sha256": "f98b8ee54f1244ac0a1b4076b400d659c4b0f9a9e8f7708e5d3fbc7d6d990d6e"
+    },
+    {
+      "path": "public/scenes/basement-jaxx-head-at/mix.mp3",
+      "bytes": 7996460,
+      "sha256": "56294343f8786af7eeb1753251dace7976ed27250afdc365a89154751a8412d2"
+    },
+    {
+      "path": "public/scenes/basement-jaxx-head-at/performance.json",
+      "bytes": 402859,
+      "sha256": "b18d9a1af9237f0c876eafb4b89efe85f630648267a203f9e312bb7ac7502889"
+    },
+    {
+      "path": "public/scenes/basement-jaxx-head-at/scene.json",
+      "bytes": 6607,
+      "sha256": "214a431e47658a5481d2751a2ac0e702feb0a0dca985a2869413004d8155e9bc"
+    },
+    {
+      "path": "public/scenes/basement-jaxx-head-at/set-art.webp",
+      "bytes": 342748,
+      "sha256": "bbc09f41cf9431e79ecda5a2452136915f9329a387fe1978b676826f1ee3575d"
+    },
+    {
+      "path": "public/scenes/bat-for-lashes-girl/backing.mp3",
+      "bytes": 5517357,
+      "sha256": "ee0205c043669143133e15093e5a2520b3d94b867d765db2fbce9e0847906912"
+    },
+    {
+      "path": "public/scenes/bat-for-lashes-girl/credits.txt",
+      "bytes": 152,
+      "sha256": "83d76bca57309179e43c3e66c348dfd5ad6e567a8d9ada953234c0bd236a7d78"
+    },
+    {
+      "path": "public/scenes/bat-for-lashes-girl/mix.mp3",
+      "bytes": 5519660,
+      "sha256": "704d48eab03530f3621e397d0a46ed8fe1dcc79f80c7fc2f93798046c5776ccf"
+    },
+    {
+      "path": "public/scenes/bat-for-lashes-girl/night-road-voice.tele.gz",
+      "bytes": 1464140,
+      "sha256": "ab3963f4c6a26bd0938c68d392393ad34c50b411f8e4810d262e5a21ba2c2aaf"
+    },
+    {
+      "path": "public/scenes/bat-for-lashes-girl/performance.json",
+      "bytes": 335559,
+      "sha256": "5afbd3a7e63dc26f735bdfdec1e134dfa000649fc6cfae55ce5199b78ad37243"
+    },
+    {
+      "path": "public/scenes/bat-for-lashes-girl/scene.json",
+      "bytes": 6562,
+      "sha256": "986da1f7746de3bffd9d5582c89d468d42afce4ed8224885e45cd5de276c0968"
+    },
+    {
+      "path": "public/scenes/bat-for-lashes-girl/set-art.webp",
+      "bytes": 306732,
+      "sha256": "7bdbd37ce30ffece925ca5a4a617c50b38ae1e4bd5b25935518f76f6aec0c52a"
+    },
+    {
       "path": "public/scenes/bbno-two/backing.mp3",
       "bytes": 4396076,
       "sha256": "44080041655caf610164491afb522b3184da9be5348d21d5b9c39e5ca20bfc8a"
@@ -5447,6 +5517,41 @@
       "sha256": "4ec6702927d8ba52a931728e5af5b8e061679ca7695248f5b5d5be6c049242be"
     },
     {
+      "path": "public/scenes/massive-teardrop/backing.mp3",
+      "bytes": 9311277,
+      "sha256": "04ce2d17fa10a40ea4ef84bf95a0bcb402dd1eb21b6f8a2981a557c40458e2d1"
+    },
+    {
+      "path": "public/scenes/massive-teardrop/credits.txt",
+      "bytes": 139,
+      "sha256": "781ce3d9595b599d8683007a9c82ae85b9d14ad0f8f313dd6aae36e8f6a92e3d"
+    },
+    {
+      "path": "public/scenes/massive-teardrop/mix.mp3",
+      "bytes": 9313580,
+      "sha256": "a360d655aaaf1e9501c7f569c11527babf101fe5807beb1989255d57df2ba09a"
+    },
+    {
+      "path": "public/scenes/massive-teardrop/performance.json",
+      "bytes": 275840,
+      "sha256": "e55c5bea35aaadd51b01339740cf2782d58fd16d63ad8a8fcd40c91583170ef8"
+    },
+    {
+      "path": "public/scenes/massive-teardrop/scene.json",
+      "bytes": 4485,
+      "sha256": "efa65bd5e411eed8311d64362aed8b813c27c86565e916d64d1fb5028dfc23cf"
+    },
+    {
+      "path": "public/scenes/massive-teardrop/set-art.webp",
+      "bytes": 248500,
+      "sha256": "03ba39f56e9512617cec4036c1ef2a1ee40b97ea3d1870036a2bdc20a3fb85bc"
+    },
+    {
+      "path": "public/scenes/massive-teardrop/teardrop-voice.tele.gz",
+      "bytes": 1273141,
+      "sha256": "07b5cd99ce1dc5f3e6df94c99b5b53c10288673969e7af6ea1738e3546a4be3b"
+    },
+    {
       "path": "public/scenes/matrix-spoon/backing.mp3",
       "bytes": 2275628,
       "sha256": "7a667de809d8d2a573de944d641958a477e30c0488dd2a51e609b96b647c447f"
@@ -5545,6 +5650,41 @@
       "path": "public/scenes/mgmt-electric-feel/scene.json",
       "bytes": 6829,
       "sha256": "186b7a9a8f6fb2ad69092f64a1764c0a985e1b4a708025adcb9f345927907bbe"
+    },
+    {
+      "path": "public/scenes/mia-bad-girls/backing.mp3",
+      "bytes": 8032557,
+      "sha256": "b72cc6e4d083ae2e44449b0234bc305a88af0ad2ce59a92b8ebd10d7f7637cf3"
+    },
+    {
+      "path": "public/scenes/mia-bad-girls/bad-girls-voice.tele.gz",
+      "bytes": 2428148,
+      "sha256": "a3a05da97c12aae28e6d6ef3a618d4a9804f6f3e8aa542b6de79c6c369335350"
+    },
+    {
+      "path": "public/scenes/mia-bad-girls/credits.txt",
+      "bytes": 134,
+      "sha256": "0a4eb8c181837de4af24a69b8bd3836aab060a2739762e06fae256d6b2f8b48c"
+    },
+    {
+      "path": "public/scenes/mia-bad-girls/mix.mp3",
+      "bytes": 8034860,
+      "sha256": "b402ee280aab10c40d41161edeab4de45ead0f8e8a6f5ea31912188ab128d5c4"
+    },
+    {
+      "path": "public/scenes/mia-bad-girls/performance.json",
+      "bytes": 567907,
+      "sha256": "a376b4b7fad0808b59e444aaf62c00c594336cc52adfee7a3c7e5e9cdf3e36fd"
+    },
+    {
+      "path": "public/scenes/mia-bad-girls/scene.json",
+      "bytes": 9453,
+      "sha256": "711887b3c5572f5208b725328190d072e27b12903cf1ed3e80f23353227421fb"
+    },
+    {
+      "path": "public/scenes/mia-bad-girls/set-art.webp",
+      "bytes": 182004,
+      "sha256": "8c620e4d14a99357d7e415d5cb70d431ea27d7492e65395d4abe79c331b8f5bc"
     },
     {
       "path": "public/scenes/miike-snow-genghis-khan/backing.mp3",
@@ -6227,6 +6367,41 @@
       "sha256": "de5ddb04f10e4833d53747129665e8d230f4b9bf6c619d142da4c15e78f55389"
     },
     {
+      "path": "public/scenes/portishead-glory-box/backing.mp3",
+      "bytes": 6779949,
+      "sha256": "0e6e235cceb237bb3c4c51e2760182fa393c0dfafd2ff04354f7d7431b738dc4"
+    },
+    {
+      "path": "public/scenes/portishead-glory-box/credits.txt",
+      "bytes": 141,
+      "sha256": "164e23bd6c4b4f0e00fb4dd7b2a9997579d34a0f32d33b51640e54243dca1bd9"
+    },
+    {
+      "path": "public/scenes/portishead-glory-box/glory-voice.tele.gz",
+      "bytes": 1647329,
+      "sha256": "1e6fecd8890166bfb5dfa5395e6f3258601b2f36d6db82e2880bd7eae10131a6"
+    },
+    {
+      "path": "public/scenes/portishead-glory-box/mix.mp3",
+      "bytes": 6779948,
+      "sha256": "c0fdf737f2cf1fcdd05dc89435a05f9e1721872bfa9122aae712748d7c1cf599"
+    },
+    {
+      "path": "public/scenes/portishead-glory-box/performance.json",
+      "bytes": 369501,
+      "sha256": "33b0ec721f5ff579543e870b838365ae55f6d4ba5b41cc2de954854d762ae132"
+    },
+    {
+      "path": "public/scenes/portishead-glory-box/scene.json",
+      "bytes": 6618,
+      "sha256": "57585619a6374fec698353c5bdaf35e030749e609609751c4a6bbff7ee466f9b"
+    },
+    {
+      "path": "public/scenes/portishead-glory-box/set-art.webp",
+      "bytes": 138982,
+      "sha256": "2eb294848c3f81a41156fd945330ee96123745b38896b0e0767112ce1347ab60"
+    },
+    {
       "path": "public/scenes/princess-bride/credits.txt",
       "bytes": 446,
       "sha256": "a4cb80955a845c243252e3ea7923ee384259d1427b94c963431f25847ad174e1"
@@ -6257,6 +6432,41 @@
       "sha256": "7edc0431dbbcd661afbee378e1a40b54b1639b569e1b98afa31d861d31676aa9"
     },
     {
+      "path": "public/scenes/prodigy-breathe/backing.mp3",
+      "bytes": 7392045,
+      "sha256": "b19c056d071e46afbcad61ccc44de3cb709e871f9c371d01f2fc95f88331b677"
+    },
+    {
+      "path": "public/scenes/prodigy-breathe/breathe-voice.tele.gz",
+      "bytes": 816470,
+      "sha256": "9fc2cbfb0210a003d25242f282a4c6fe51ce89d438ab7fa6f9e314d7ee926a3a"
+    },
+    {
+      "path": "public/scenes/prodigy-breathe/credits.txt",
+      "bytes": 136,
+      "sha256": "d9c066b532fa8a18e327d759392770085ee9481583d3c708cb12d994c97c70a6"
+    },
+    {
+      "path": "public/scenes/prodigy-breathe/mix.mp3",
+      "bytes": 7392044,
+      "sha256": "55223e512074b1ee5fb5555cc3f2521624b03dfa012e4b0e45d83ae3fb2390ee"
+    },
+    {
+      "path": "public/scenes/prodigy-breathe/performance.json",
+      "bytes": 155109,
+      "sha256": "b873bb249a042f09f88eb111ceda9677a3de8a792fff3ef50d24ac02ac7667d1"
+    },
+    {
+      "path": "public/scenes/prodigy-breathe/scene.json",
+      "bytes": 5769,
+      "sha256": "b9cbd608e43a393b8f01ef6f9fd097f41adf71480ce0216bfad33fd9c1c8d732"
+    },
+    {
+      "path": "public/scenes/prodigy-breathe/set-art.webp",
+      "bytes": 258378,
+      "sha256": "d36c75a70887152fcb070e53c179b4ca1cee514f1a91fd7bd5f511f1c9fc77c3"
+    },
+    {
       "path": "public/scenes/project-hail-mary/backing.mp3",
       "bytes": 4581932,
       "sha256": "91cc55d9aec8804ba7e360ff7ce3e890db7d96cfeaaf40018a3fee0457d796f4"
@@ -6285,6 +6495,41 @@
       "path": "public/scenes/project-hail-mary/singer.tele.gz",
       "bytes": 1304765,
       "sha256": "fcf34c256617f9b8f85feb1591960a2c3302d59bec40f57942b6ceaf432a3cc3"
+    },
+    {
+      "path": "public/scenes/radiohead-lotus-flower/backing.mp3",
+      "bytes": 9719853,
+      "sha256": "781df1a8598996ea1b78b29b3510393d0e3a74af7cfd145ce3ff300d2c9dcb8b"
+    },
+    {
+      "path": "public/scenes/radiohead-lotus-flower/credits.txt",
+      "bytes": 160,
+      "sha256": "a3af0402de3cebe630c67b8c92f33a0b1d543d81086adb129641a974e14dda3d"
+    },
+    {
+      "path": "public/scenes/radiohead-lotus-flower/lotus-voice.tele.gz",
+      "bytes": 2381387,
+      "sha256": "c58659ef2f876180c7ed1f06c13f1cb5171ec22cf0512a7525146da4216c76a0"
+    },
+    {
+      "path": "public/scenes/radiohead-lotus-flower/mix.mp3",
+      "bytes": 9721388,
+      "sha256": "c6aa1b681e779d4e26d55f4212003aecb5244e34f829c009744fbc1d77956a62"
+    },
+    {
+      "path": "public/scenes/radiohead-lotus-flower/performance.json",
+      "bytes": 520794,
+      "sha256": "e50fd58fe25af24864a8c7d2c4a105a78de8783a40770ba1499f9d3f9f0bce05"
+    },
+    {
+      "path": "public/scenes/radiohead-lotus-flower/scene.json",
+      "bytes": 7741,
+      "sha256": "c5755de97421ab8799ea1db70994f85dcd4553314c0edd96f52f190b4ec937a2"
+    },
+    {
+      "path": "public/scenes/radiohead-lotus-flower/set-art.webp",
+      "bytes": 97502,
+      "sha256": "26029ff41746c41d530b985e75f561603412f356706b8e30dd0b73251033a247"
     },
     {
       "path": "public/scenes/ratatata/backing.mp3",

@@ -1,0 +1,219 @@
+{
+  "setting": "teardrop",
+  "title": "Massive Attack · Teardrop",
+  "description": "A copper-lit seed pod hangs in an underwater glasshouse. Ripples and drifting fragments follow the pulse of the song.",
+  "duration": 291,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "teardrop-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "teardrop-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 48.62,
+      "end": 49.7,
+      "text": "Love,",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 50,
+      "end": 52.02,
+      "text": "love is a firk,",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.6,
+      "end": 55.04,
+      "text": "love is a doom and word,",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.44,
+      "end": 60.24,
+      "text": "Fearless on my brain.",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.16,
+      "end": 66.48,
+      "text": "Gentle and potion Shakes me, makes me",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.48,
+      "end": 70.02,
+      "text": "lighter Fear lies somewhere",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.02,
+      "end": 72,
+      "text": "great",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.98,
+      "end": 78.6,
+      "text": "Teardrop on fire Fear lies",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.6,
+      "end": 82.16,
+      "text": "somewhere great",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.28,
+      "end": 96.68,
+      "text": "Night,",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.3,
+      "end": 101.62,
+      "text": "night of the day Black flowers blossom",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.62,
+      "end": 105.74,
+      "text": "Fear there is some man Brave,",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.82,
+      "end": 110.78,
+      "text": "like flowers blossom,",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.82,
+      "end": 115.26,
+      "text": "fear the summer grey",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.48,
+      "end": 123.34,
+      "text": "Tea drop and fire,",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.94,
+      "end": 125.98,
+      "text": "fear the summer",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.98,
+      "end": 165.78,
+      "text": "Thank you",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.78,
+      "end": 168.2,
+      "text": "very",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.2,
+      "end": 176.18,
+      "text": "much.",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 223.16,
+      "end": 227.4,
+      "text": "It's time for you to die",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 232.48,
+      "end": 237.32,
+      "text": "It's time for you to die",
+      "speaker": "teardrop-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "teardrop-glasshouse"
+    },
+    {
+      "time": 22,
+      "view": "teardrop-portrait"
+    },
+    {
+      "time": 41,
+      "view": "teardrop-ripples"
+    },
+    {
+      "time": 64,
+      "view": "teardrop-portrait"
+    },
+    {
+      "time": 84,
+      "view": "teardrop-seed"
+    },
+    {
+      "time": 105,
+      "view": "teardrop-ripples"
+    },
+    {
+      "time": 132,
+      "view": "teardrop-seed"
+    },
+    {
+      "time": 148,
+      "view": "teardrop-portrait"
+    },
+    {
+      "time": 178,
+      "view": "teardrop-ripples"
+    },
+    {
+      "time": 207,
+      "view": "teardrop-portrait"
+    },
+    {
+      "time": 231,
+      "view": "teardrop-seed"
+    },
+    {
+      "time": 256,
+      "view": "teardrop-glasshouse"
+    },
+    {
+      "time": 275,
+      "view": "teardrop-portrait"
+    }
+  ]
+}
