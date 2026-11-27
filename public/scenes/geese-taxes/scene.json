@@ -1,0 +1,244 @@
+{
+  "setting": "geesetaxes",
+  "title": "Geese · Taxes",
+  "description": "A backlit entrance and a tightly packed room alternate with a brick-wall band set and close-ups at the microphone.",
+  "duration": 198.02,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "taxes-cameron",
+      "name": "Cameron",
+      "role": "CHIMERA vocals",
+      "tele": "taxes-cameron.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 12.22,
+      "end": 15.78,
+      "text": "I should learn",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.12,
+      "end": 25.56,
+      "text": "know that I",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 25.56,
+      "end": 27.5,
+      "text": "am",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 32,
+      "end": 35.44,
+      "text": "But nobody's up there",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.08,
+      "end": 42.98,
+      "text": "Nobody's up there",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.76,
+      "end": 45.1,
+      "text": "don't.",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.8,
+      "end": 69.06,
+      "text": "paid by taxes,",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.08,
+      "end": 73.92,
+      "text": "everyone be",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.92,
+      "end": 77.24,
+      "text": "paid by taxes,",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.38,
+      "end": 83.02,
+      "text": "you better come over with",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.02,
+      "end": 85.16,
+      "text": "a crucifix.",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.96,
+      "end": 93.14,
+      "text": "you're gonna have to bail me",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.14,
+      "end": 95.44,
+      "text": "down.",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.48,
+      "end": 113.88,
+      "text": "Doctor!",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.5,
+      "end": 116.2,
+      "text": "Doctor!",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.02,
+      "end": 118.7,
+      "text": "Heal yourself!",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.3,
+      "end": 123.34,
+      "text": "Doctor!",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.24,
+      "end": 126.2,
+      "text": "Heal yourself!",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.58,
+      "end": 134.1,
+      "text": "And I will break my own",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 134.1,
+      "end": 138.42,
+      "text": "heart, I will break my own",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.42,
+      "end": 140.52,
+      "text": "heart from now",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.52,
+      "end": 145.28,
+      "text": "on.",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.74,
+      "end": 176.14,
+      "text": "Thank",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.06,
+      "end": 183.46,
+      "text": "OOh",
+      "speaker": "taxes-cameron",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "taxes-door"
+    },
+    {
+      "time": 12,
+      "view": "taxes-crowd"
+    },
+    {
+      "time": 29,
+      "view": "taxes-crowd-close"
+    },
+    {
+      "time": 49,
+      "view": "taxes-crowd"
+    },
+    {
+      "time": 65,
+      "view": "taxes-band"
+    },
+    {
+      "time": 79,
+      "view": "taxes-mic-close"
+    },
+    {
+      "time": 92,
+      "view": "taxes-crowd"
+    },
+    {
+      "time": 106,
+      "view": "taxes-crowd-close"
+    },
+    {
+      "time": 122,
+      "view": "taxes-band"
+    },
+    {
+      "time": 138,
+      "view": "taxes-mic-close"
+    },
+    {
+      "time": 151,
+      "view": "taxes-crowd"
+    },
+    {
+      "time": 163,
+      "view": "taxes-crowd-close"
+    },
+    {
+      "time": 181,
+      "view": "taxes-mic-close"
+    },
+    {
+      "time": 194,
+      "view": "taxes-end"
+    }
+  ]
+}

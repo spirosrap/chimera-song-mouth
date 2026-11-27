@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import { isSevenVideo, type SevenVideoView } from '../../scene/seven-videos.ts';
+import { buildSevenVideoSet, SEVEN_VIDEO_FIGURES, SEVEN_VIDEO_WARDROBE } from './seven-videos.ts';
 import { NEXT_VIDEO_CAST, NEXT_VIDEO_INFO, type NextVideoSetting, type NextVideoView } from '../../scene/next-videos.ts';
 import type { CameraView, CharacterId } from '../../scene/scene.ts';
 import type { TeleTrack } from '../../show/tele.ts';
@@ -12,6 +14,7 @@ const range = (count: number) => Array.from({ length: count }, (_, i) => i);
 const color = (colors: readonly string[], index: number) => colors[index % colors.length];
 const random = (index: number) => Math.sin(index * 12.727 + 9.73) * .5 + .5;
 const wardrobe: Record<NextVideoSetting, { jackets: string[]; hair: string[] }> = {
+  ...SEVEN_VIDEO_WARDROBE,
   jamieoliver: { jackets: ['#efe5d1', '#3bb8b3', '#66c5c1'], hair: ['#9c402a', '#e5bc7d'] },
   barabastu: { jackets: ['#522c37', '#3c2c3a', '#5e5940', '#eee7d4'], hair: ['#493b32', '#916146', '#8c6b4f'] },
   anotrlikeit: { jackets: ['#4e252d', '#e8daca', '#f1dfd8', '#442f61'], hair: ['#403021', '#b69a85'] },
@@ -20,6 +23,7 @@ const wardrobe: Record<NextVideoSetting, { jackets: string[]; hair: string[] }> 
   manmadeofmeat: { jackets: ['#9a6e5d', '#3a515e', '#574776', '#463742'], hair: ['#7c4f3d', '#1a2a36', '#524036'] },
 };
 const settings: Record<NextVideoSetting, number> = {
+  ...SEVEN_VIDEO_FIGURES,
   jamieoliver: 3, barabastu: 5, anotrlikeit: 4, pinkyup: 5, simzyoung: 4, manmadeofmeat: 5,
 };
 
@@ -89,6 +93,12 @@ export class NextVideoStage {
   }
 
   private build(view: NextVideoView): Set {
+    if (isSevenVideo(this.setting)) {
+      const scenery = buildSevenVideoSet(this.props, this.setting, view as SevenVideoView);
+      scenery.root.visible = false;
+      this.scene.add(scenery.root);
+      return scenery;
+    }
     const root = new THREE.Group();
     const features: THREE.Object3D[] = [];
     const p = this.props;
@@ -352,7 +362,7 @@ export class NextVideoStage {
     const dt = reset ? 1 / 60 : THREE.MathUtils.clamp(time - this.previousTime, 1 / 120, .05);
     const beat = Math.PI * 2 * (time * NEXT_VIDEO_INFO[this.setting].bpm / 60);
     const tight = designated >= 0 || /close|portrait|window|canvas/.test(stageView);
-    const group = /dance|choir|party|revu|finale|pub|auction|chase/.test(stageView);
+    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd/.test(stageView);
     const seated = /campfire|tea|flat/.test(stageView);
     const core = this.figures.length;
     for (const [i, member] of this.figures.entries()) {
@@ -362,10 +372,11 @@ export class NextVideoStage {
       const offset = slot ? side * (44 + Math.floor((slot - 1) / 2) * 41) : 0;
       const phase = beat + i * .52;
       const bounce = group ? 3.8 : 1.45;
+      const flying = stageView === 'doritos-flight' ? 22 + 17 * Math.sin(time * .72 + slot * .8) : 0;
       const emphasis = i === active ? Math.min(1, intensity) : .16;
       const leap = stageView === 'meat-trampoline' ? 22 * Math.max(0, Math.sin(phase * .5)) : 0;
       figure.root.visible = i === active || (!tight && (i < cast.length || group || /kitchen|service|steam/.test(stageView)));
-      figure.root.position.set(offset + Math.sin(phase * .5) * 2, (seated ? 127 : 153) + bounce * Math.cos(phase) + leap,
+      figure.root.position.set(offset + Math.sin(phase * .5) * 2, (seated ? 127 : 153) + bounce * Math.cos(phase) + leap + flying,
         slot ? -37 - 14 * Math.floor((slot - 1) / 2) : 13);
       figure.root.rotation.set(.015 * Math.sin(phase), side * Math.min(.095, Math.abs(offset) * .001) + .042 * Math.sin(phase * .5),
         .039 * Math.sin(phase * .5));

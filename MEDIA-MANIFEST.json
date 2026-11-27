@@ -2357,6 +2357,41 @@
       "sha256": "7f9b3dd736a7ab9182f98851019a0fe4f009e84ed35d6b9bc58167f2e961d7c3"
     },
     {
+      "path": "public/scenes/confidence-holiday/backing.mp3",
+      "bytes": 9225261,
+      "sha256": "c7f5fd03d47e5c99063a0000efca49b83844c8fa3910a6bedad61d0c89f96e20"
+    },
+    {
+      "path": "public/scenes/confidence-holiday/credits.txt",
+      "bytes": 81,
+      "sha256": "2dbc0a3cf28fee08646d38b0487f61fd1e0c2867a7dd30948ef57661f8c4402d"
+    },
+    {
+      "path": "public/scenes/confidence-holiday/holiday-janet.tele.gz",
+      "bytes": 2018430,
+      "sha256": "29aa836a4daab84bfe4f87d32aee09257bf7c87158145df25dfaf070b3a9fe0e"
+    },
+    {
+      "path": "public/scenes/confidence-holiday/holiday-sugar.tele.gz",
+      "bytes": 300122,
+      "sha256": "16acb91a387353fcdc6830eadc435ded765c1aca77f06afb7e072a8aa5280aae"
+    },
+    {
+      "path": "public/scenes/confidence-holiday/mix.mp3",
+      "bytes": 9225260,
+      "sha256": "e6c35a8bf12bf7ce8ba73dfb47b62dcdc4e801f7fc49abec64aa4cb9bf97656f"
+    },
+    {
+      "path": "public/scenes/confidence-holiday/performance.json",
+      "bytes": 526156,
+      "sha256": "3d96901d2769593d2447f105c95e5dbe641d411dd70d7af0ca249d92a161a194"
+    },
+    {
+      "path": "public/scenes/confidence-holiday/scene.json",
+      "bytes": 7823,
+      "sha256": "e8ae9ff2fdcab6fb7a97a55152ef1b6500e9f7b75959b70f74f5f89a42907465"
+    },
+    {
       "path": "public/scenes/contact/backing.mp3",
       "bytes": 9576236,
       "sha256": "870862f52a6ef6c4c8296027b6246fae6afa5163bf84943de6bf164f26a1ca86"
@@ -3120,6 +3155,71 @@
       "path": "public/scenes/gabriela/scene.json",
       "bytes": 13682,
       "sha256": "2a2b7fa0ba5098fac0d20fd5438027a8a66576c8b62f27c6e6ad39f25c6b7952"
+    },
+    {
+      "path": "public/scenes/gecs-doritos-fritos/backing.mp3",
+      "bytes": 6703917,
+      "sha256": "20cff73151745903b9dcda9a7773309dea25f02d9e496066f875424ae32670af"
+    },
+    {
+      "path": "public/scenes/gecs-doritos-fritos/credits.txt",
+      "bytes": 84,
+      "sha256": "ed18a9bc80e0d0fbbbe559038c529ea4be4a6b0f37a925d98030ca8fa3ea00bc"
+    },
+    {
+      "path": "public/scenes/gecs-doritos-fritos/doritos-dylan.tele.gz",
+      "bytes": 309844,
+      "sha256": "b3917cfe2d6d8f139e41a01a617e87b4546ef9a257d9da9292a20b6cc40d03d7"
+    },
+    {
+      "path": "public/scenes/gecs-doritos-fritos/doritos-laura.tele.gz",
+      "bytes": 1589302,
+      "sha256": "f2cc1ba4ebca2096274de42fd3607c35d81e9b72333bfd59076c6fd6be165b33"
+    },
+    {
+      "path": "public/scenes/gecs-doritos-fritos/mix.mp3",
+      "bytes": 6703916,
+      "sha256": "6dd00e439885a47987709d3c396c42455b3b965931fcec9247aab83156eca214"
+    },
+    {
+      "path": "public/scenes/gecs-doritos-fritos/performance.json",
+      "bytes": 455783,
+      "sha256": "5e7f926a7fef689d1213fae07907d9ef782a8be1e5a8b2e16d051e1ec8910ea1"
+    },
+    {
+      "path": "public/scenes/gecs-doritos-fritos/scene.json",
+      "bytes": 9107,
+      "sha256": "d5c1d0f2c8f2852def1bce6dd33910efadec1a9b5ff4891e282bda561011b314"
+    },
+    {
+      "path": "public/scenes/geese-taxes/backing.mp3",
+      "bytes": 6338349,
+      "sha256": "e488d48e14ed221cc611e37d9d822b88f1f1447e58fdc6ce0931c627bcab50db"
+    },
+    {
+      "path": "public/scenes/geese-taxes/credits.txt",
+      "bytes": 70,
+      "sha256": "13aeeda5ba107604bb55a7f3ecf121e9d6a73d1a60f432833b01db5246c9b51c"
+    },
+    {
+      "path": "public/scenes/geese-taxes/mix.mp3",
+      "bytes": 6338348,
+      "sha256": "755ecc1d229ead5efea256cf13d9cc51e7c5f25576783884000ab1c3d7b6e12d"
+    },
+    {
+      "path": "public/scenes/geese-taxes/performance.json",
+      "bytes": 330978,
+      "sha256": "3a5ab1d018a536398f7bcb0b05195fb3de880332a2991940e933eade0a48a475"
+    },
+    {
+      "path": "public/scenes/geese-taxes/scene.json",
+      "bytes": 4774,
+      "sha256": "81e8bffbc3f21ed47ccd681c783bf35eb84e3575442ed04e9d872845dedde64e"
+    },
+    {
+      "path": "public/scenes/geese-taxes/taxes-cameron.tele.gz",
+      "bytes": 1493936,
+      "sha256": "3c27c032de8650edbd1e645ae06bb89792ce7810105b0821b48dab49a1927f45"
     },
     {
       "path": "public/scenes/gnarly/backing.mp3",
@@ -4042,6 +4142,36 @@
       "sha256": "3a0a0295265bbbce71fe6364935eee1ee9826446edb1904ebcad1e91a42a700f"
     },
     {
+      "path": "public/scenes/magdalena-image/backing.mp3",
+      "bytes": 7044909,
+      "sha256": "8c42dd97b9c931fbb8056d82d732a2938e2fe01ca82cd9d4de1df32b96173c9c"
+    },
+    {
+      "path": "public/scenes/magdalena-image/credits.txt",
+      "bytes": 78,
+      "sha256": "5406bd40847689cbd163a4d4f707e79438e691900dfcd69a87420eb8c6b66b89"
+    },
+    {
+      "path": "public/scenes/magdalena-image/image-mica.tele.gz",
+      "bytes": 1630098,
+      "sha256": "2764c1ac6f921bf16ceca926bbc2ef4a7f1c7f4d9bec5499c00fb2b8686e2382"
+    },
+    {
+      "path": "public/scenes/magdalena-image/mix.mp3",
+      "bytes": 7044908,
+      "sha256": "0def7b87b34edd8b55738790851c12b88283bb55258cca1eea25f259ba9e3f13"
+    },
+    {
+      "path": "public/scenes/magdalena-image/performance.json",
+      "bytes": 383007,
+      "sha256": "2dea17fdb00fee71f4d02049496b62a034f08e58996da4b8a6a3e7f036eae7ad"
+    },
+    {
+      "path": "public/scenes/magdalena-image/scene.json",
+      "bytes": 6394,
+      "sha256": "896994d3aedfd657e1c2c920d3a0cc601b0dd7a787ba2f8055d4c9a2370536c1"
+    },
+    {
       "path": "public/scenes/mahna-mahna/backing.mp3",
       "bytes": 5019692,
       "sha256": "decd50f793dcb059b8172798ed460751c6d7467fa8491517aa8dd22f50d20d6f"
@@ -4290,6 +4420,36 @@
       "path": "public/scenes/milkshake-man/scene.json",
       "bytes": 10626,
       "sha256": "c29983ce63a46e0ae265674ef265501b0b335ff3406fec49ad4874930c6d49a0"
+    },
+    {
+      "path": "public/scenes/model-cinderella/backing.mp3",
+      "bytes": 9842733,
+      "sha256": "aafae70d9bdb81f41c5b905cd3cd4d964b6f040bff2b770d70ef7dcabdd4d198"
+    },
+    {
+      "path": "public/scenes/model-cinderella/cinderella-cole.tele.gz",
+      "bytes": 2656393,
+      "sha256": "3663b8066a6d34b1e61d7f1acf71d711bb5f1e1c99ab0f2eb57c82d7051b9d3f"
+    },
+    {
+      "path": "public/scenes/model-cinderella/credits.txt",
+      "bytes": 82,
+      "sha256": "ff3dd8445daaa61b3b0b1a2f63a86944d644bbd6ff29efced3fedea1d4464d4d"
+    },
+    {
+      "path": "public/scenes/model-cinderella/mix.mp3",
+      "bytes": 9842732,
+      "sha256": "c28df06e79d94c787296d7ced98ae34695e2a02bff06c5865c9b03bf9942c8fa"
+    },
+    {
+      "path": "public/scenes/model-cinderella/performance.json",
+      "bytes": 601630,
+      "sha256": "80ace78117f9241f806ff347a04f0b1827e8ce0122b760fee61aa6874f6d3074"
+    },
+    {
+      "path": "public/scenes/model-cinderella/scene.json",
+      "bytes": 11174,
+      "sha256": "f6a8430829e5575e3783c145179a841d73300282f7a582e86658404ebcd244ac"
     },
     {
       "path": "public/scenes/montero/backing.mp3",
@@ -4935,6 +5095,41 @@
       "path": "public/scenes/return-to-innocence/scene.json",
       "bytes": 9152,
       "sha256": "9f3241751c08c8be6a2ae9f6afc98b0094f1ea04b9a0f79994f726fa33a83a11"
+    },
+    {
+      "path": "public/scenes/rina-xs/backing.mp3",
+      "bytes": 7008045,
+      "sha256": "09f01643d406d2e5548cb03e8f053bc1465654a56037830a1c1d33874204a989"
+    },
+    {
+      "path": "public/scenes/rina-xs/credits.txt",
+      "bytes": 75,
+      "sha256": "264e56f8f7dba16e77939ed350ecd149342a470f94e9f756489a5dc23acf8dbd"
+    },
+    {
+      "path": "public/scenes/rina-xs/mix.mp3",
+      "bytes": 7008044,
+      "sha256": "bf4b04e450812384cfc55c3d581ddb552cabd49ebe92267151128a82b1b712a9"
+    },
+    {
+      "path": "public/scenes/rina-xs/performance.json",
+      "bytes": 527291,
+      "sha256": "1a012af7edb8c3d18b04d52a3b2d109a939cdf1f423d79c453958d89ccc842b5"
+    },
+    {
+      "path": "public/scenes/rina-xs/scene.json",
+      "bytes": 7653,
+      "sha256": "8d4b3466531f25cb0b583455818c479219df9ecc55a2d069cd12ec23de972b6c"
+    },
+    {
+      "path": "public/scenes/rina-xs/xs-host.tele.gz",
+      "bytes": 42139,
+      "sha256": "2ae4415b2f43a9736dd9d207ee9450bf46592bbec1c13e2d91390e44b8f1f364"
+    },
+    {
+      "path": "public/scenes/rina-xs/xs-rina.tele.gz",
+      "bytes": 2219502,
+      "sha256": "4452dc3d24c220a8c5949068aade1c53873d6a44a3427a16098f9a0e4782e5bc"
     },
     {
       "path": "public/scenes/rock-dj/backing.mp3",
@@ -6255,6 +6450,36 @@
       "path": "public/scenes/wizard-of-oz/tin-woodman.tele.gz",
       "bytes": 337378,
       "sha256": "d8315a6211c2f0da1bb7889cfac36d40725ce4274ac7612edc5800157f22dd85"
+    },
+    {
+      "path": "public/scenes/wolf-alice-bloom/backing.mp3",
+      "bytes": 7312941,
+      "sha256": "6d7d3bab3d6e16c19c96d9dacfc7fc235b80fec28c194b09e705af4e9d8963ef"
+    },
+    {
+      "path": "public/scenes/wolf-alice-bloom/bloom-ellie.tele.gz",
+      "bytes": 2250520,
+      "sha256": "0dd7dbc5d271fc0995dcea11b1a271a9adf18ce2c40fccaa4fb519409f573468"
+    },
+    {
+      "path": "public/scenes/wolf-alice-bloom/credits.txt",
+      "bytes": 86,
+      "sha256": "c3ebaad744e9813de2781d3bc28664585deab56334034434d01c1d8ae1d0c8a9"
+    },
+    {
+      "path": "public/scenes/wolf-alice-bloom/mix.mp3",
+      "bytes": 7312940,
+      "sha256": "900e300dea5e2ea559c117fdf04a8bec8e60c67dfde327b16bec9de7b831c7af"
+    },
+    {
+      "path": "public/scenes/wolf-alice-bloom/performance.json",
+      "bytes": 531186,
+      "sha256": "eaf1109e03a0fe77dfdce68274336434e6197329da95a67c92dfa5e73e8a38ea"
+    },
+    {
+      "path": "public/scenes/wolf-alice-bloom/scene.json",
+      "bytes": 9049,
+      "sha256": "261f959633037897dc0764fdb877fcb5b40e36bf9a22770f752a62de3fbfd569"
     },
     {
       "path": "public/scenes/wuthering-heights/backing.mp3",

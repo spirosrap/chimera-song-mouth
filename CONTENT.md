@@ -186,6 +186,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | KATSEYE — PINKY UP | 3:02 | `?scene=katseye-pinky-up` | Five physical voices, swans, claw machine, toys, red car and pinkies at tea. |
 | Little Simz — Young | 3:10 | `?scene=little-simz-young` | An older punk’s flat, bass guitar, street and pub stage with physical rap. |
 | Viagra Boys — Man Made of Meat | 4:39 | `?scene=man-made-of-meat` | Gallery, auction paddles, trampoline and a blue-lit installation. |
+| Rina Sawayama — XS | 3:39 | `?scene=rina-xs` | Shopping channel, striped wood revue, parcels and a green-lit factory with two physical voices. |
+| Magdalena Bay — Image | 3:40 | `?scene=magdalena-image` | Red-door clinic, CRT, star motes, checkerboard and turquoise runway with physical singing. |
+| Model/Actriz — Cinderella | 5:08 | `?scene=model-cinderella` | Storybook, puppet rats, city street, bass towers and a candlelit cake with one physical voice. |
+| Wolf Alice — Bloom Baby Bloom | 3:48 | `?scene=wolf-alice-bloom` | Rehearsal, band equipment, a red ensemble and amber close-up with one physical voice. |
+| Geese — Taxes | 3:18 | `?scene=geese-taxes` | A crowded room, brick set and close microphone with one physical voice. |
+| 100 gecs — Doritos & Fritos | 3:29 | `?scene=gecs-doritos-fritos` | Airborne performers, outdoor scenes, a mock newscast and a prismatic ending with two physical voices. |
+| Confidence Man — Holiday | 4:48 | `?scene=confidence-holiday` | Salt flats, balloon fabric, an aerial basket and a red night dance with two physical voices. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

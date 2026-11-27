@@ -22,7 +22,7 @@ for (const setting of NEXT_VIDEO_SETTINGS) {
     const arrangement: Arrangement = JSON.parse(readFileSync(new URL('performance.json', directory), 'utf8'));
     expect(arrangement.duration).toBe(scene.duration);
     expect(scene.characters.map(member => member.id)).toEqual([...NEXT_VIDEO_CAST[setting]]);
-    expect(scene.shots.map(shot => [shot.time, shot.view])).toEqual(shots);
+    expect(scene.shots.map(shot => [shot.time, shot.view])).toEqual(shots.map(([time, view]) => [time, view]));
     expect(arrangement.parts.some(part => part.kind === 'backing' && part.recordingType === 'instrumental')).toBe(true);
     const actors = scene.characters.map(character => {
       const performance = arrangement.parts.find(part => part.id === character.id)?.performance;

@@ -1,0 +1,506 @@
+{
+  "setting": "modelcinderella",
+  "title": "Model/Actriz · Cinderella",
+  "description": "A blue fairy-tale book opens onto a dingy room, puppet rats, a city pavement, a blue nightclub and a candlelit birthday cake.",
+  "duration": 307.525,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "cinderella-cole",
+      "name": "Cole",
+      "role": "CHIMERA vocals",
+      "tele": "cinderella-cole.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 14.04,
+      "end": 15.44,
+      "text": "Astonishing.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 21.52,
+      "end": 22.68,
+      "text": "really divine,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.74,
+      "end": 30.26,
+      "text": "exhilarating, And",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.18,
+      "end": 37.34,
+      "text": "Preciously sublime",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.94,
+      "end": 46.62,
+      "text": "Though we speak,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.12,
+      "end": 48.88,
+      "text": "makes me want to cry.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.54,
+      "end": 52.34,
+      "text": "Velvet jacket,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.4,
+      "end": 55.98,
+      "text": "lens satin resting on the thigh.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.26,
+      "end": 59.9,
+      "text": "As for my overtures,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.76,
+      "end": 65.64,
+      "text": "I might paint it on two -dimensional scenery and I taste for a",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.64,
+      "end": 66.96,
+      "text": "billion delivery.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.48,
+      "end": 70.38,
+      "text": "The way you turn your chest on me,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.7,
+      "end": 73.7,
+      "text": "I'm embarrassed to be clever when you're honest.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.2,
+      "end": 77.62,
+      "text": "You make me want to be ready.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.64,
+      "end": 83.32,
+      "text": "I feel different now than I did before. I can see",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.32,
+      "end": 88.1,
+      "text": "how my power almost mine fear of",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.1,
+      "end": 92.92,
+      "text": "betrayal in your eyes i'm naked",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.92,
+      "end": 97.68,
+      "text": "screaming like a tornado in the dark i can",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.68,
+      "end": 102.38,
+      "text": "see us lying face to face i see the lenses",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.38,
+      "end": 103.96,
+      "text": "under stars",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.45,
+      "end": 107.84,
+      "text": "and then others",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.64,
+      "end": 111.5,
+      "text": "are gentle",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.32,
+      "end": 118.84,
+      "text": "the way your posture is so elegant",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.84,
+      "end": 122.58,
+      "text": "and unnoticed. that",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.36,
+      "end": 126.1,
+      "text": "are noble,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.2,
+      "end": 128.08,
+      "text": "are kind,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.1,
+      "end": 133.58,
+      "text": "or at least entertained by your time",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.58,
+      "end": 135.28,
+      "text": "sitting here with me.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.2,
+      "end": 137.48,
+      "text": "Okay, I'll share this.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.96,
+      "end": 138.96,
+      "text": "When I was five,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 139.28,
+      "end": 143.64,
+      "text": "remember clearly my want to have a Cinderella birthday",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.64,
+      "end": 148.5,
+      "text": "party and when the moment came and I changed my mind And I",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.5,
+      "end": 151.4,
+      "text": "was quiet, alone and devastated.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.84,
+      "end": 155.2,
+      "text": "You make me want to be ready.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.16,
+      "end": 159.24,
+      "text": "I feel different now than I did before.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 160.26,
+      "end": 164.94,
+      "text": "can see how power only was my",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.94,
+      "end": 168.58,
+      "text": "fear of betrayal in the eyes.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.52,
+      "end": 170.44,
+      "text": "I'm naked,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.86,
+      "end": 174.08,
+      "text": "screaming like a tornado in the dark.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.7,
+      "end": 178.96,
+      "text": "I can see us playing face to face As St.",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.28,
+      "end": 181.58,
+      "text": "Helens is underneath the stars",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.1,
+      "end": 183.32,
+      "text": "Just know,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.86,
+      "end": 188.24,
+      "text": "I've cleared the way Just",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.24,
+      "end": 188.9,
+      "text": "know,",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.54,
+      "end": 193.68,
+      "text": "I won't leave as I",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.68,
+      "end": 198.12,
+      "text": "came I know I'll keep",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.16,
+      "end": 203,
+      "text": "the mirror you gave Just",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 203,
+      "end": 206.88,
+      "text": "know I won't",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 206.88,
+      "end": 209.94,
+      "text": "as I came",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 213.04,
+      "end": 216.94,
+      "text": "I won't leave as I came",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 219.1,
+      "end": 223.28,
+      "text": "I won't leave as I",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 223.28,
+      "end": 224.1,
+      "text": "came",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 225.78,
+      "end": 230.62,
+      "text": "You make me want to be ready I feel",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 230.62,
+      "end": 234.68,
+      "text": "different now than I did before I can see",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 234.68,
+      "end": 239.5,
+      "text": "how the power On was my fear of",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 239.5,
+      "end": 243.88,
+      "text": "betrayal In your eyes, I make",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 243.88,
+      "end": 248.1,
+      "text": "it Scream like a tornado in the dark",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 248.1,
+      "end": 252.8,
+      "text": "I can see him's laying face to face Asing",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 252.8,
+      "end": 255.34,
+      "text": "her limbs is under the stars",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 255.92,
+      "end": 260.56,
+      "text": "Just know I've cleared the way",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 260.56,
+      "end": 265.04,
+      "text": "Just know I won't",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    },
+    {
+      "start": 265.04,
+      "end": 268.46,
+      "text": "leave as it came",
+      "speaker": "cinderella-cole",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "cindy-book"
+    },
+    {
+      "time": 14,
+      "view": "cindy-room"
+    },
+    {
+      "time": 44,
+      "view": "cindy-rats"
+    },
+    {
+      "time": 69,
+      "view": "cindy-passage"
+    },
+    {
+      "time": 91,
+      "view": "cindy-street"
+    },
+    {
+      "time": 119,
+      "view": "cindy-club-close"
+    },
+    {
+      "time": 151,
+      "view": "cindy-dj"
+    },
+    {
+      "time": 172,
+      "view": "cindy-club"
+    },
+    {
+      "time": 199,
+      "view": "cindy-dj"
+    },
+    {
+      "time": 222,
+      "view": "cindy-street"
+    },
+    {
+      "time": 248,
+      "view": "cindy-cake"
+    },
+    {
+      "time": 281,
+      "view": "cindy-book"
+    },
+    {
+      "time": 288,
+      "view": "cindy-end"
+    }
+  ]
+}

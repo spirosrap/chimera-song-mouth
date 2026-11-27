@@ -1,13 +1,13 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { initEngine } from '../tests/harness.ts';
-import { NEXT_VIDEO_CAST, NEXT_VIDEO_INFO, NEXT_VIDEO_SETTINGS } from '../src/scene/next-videos.ts';
+import { NEXT_VIDEO_CAST, NEXT_VIDEO_ENTRIES, NEXT_VIDEO_INFO, NEXT_VIDEO_SETTINGS } from '../src/scene/next-videos.ts';
 import { validateScene } from '../src/scene/scene.ts';
 import { validPerformance } from '../src/band/performance.ts';
 import type { Arrangement, BandPart, VocalPerformance } from '../src/band/types.ts';
 
 type Word = { text: string; start: number; end: number; phones?: [string, number][] };
-type Group = { start: number; end: number; role: number; words: Word[]; contour: [number, number, number][] };
+type Group = { caption?: boolean; start: number; end: number; role: number; words: Word[]; contour: [number, number, number][] };
 type Prepared = { duration: number; language: 'en' | 'sv'; groups: Group[] };
 type Phones = VocalPerformance['phrases'][number]['phones'];
 
@@ -20,7 +20,7 @@ ensureEnglishDict(process.cwd());
 const { duration, language, groups } = JSON.parse(readFileSync(input, 'utf8')) as Prepared;
 const { title, description, bpm, female, child, names, shots, source } = NEXT_VIDEO_INFO[setting];
 const cast = NEXT_VIDEO_CAST[setting];
-const assetVersion = `${id}-20261126`;
+const assetVersion = NEXT_VIDEO_ENTRIES.find(entry => entry.id === id)!.assetVersion;
 const round = (value: number) => Math.round(value * 1e6) / 1e6;
 
 function swedishPhones(group: Group): Phones {
@@ -69,6 +69,10 @@ const parts: BandPart[] = cast.map((id, i) => {
       tension: .48 + (i % 4) * .027, drift: .0013 },
     vibrato: 0, pan: (i % 2 ? -.06 : .045) * i / cast.length, volume: cast.length > 1 ? 1.36 : 1.42,
     assetVersion, telemetryEncoding: 'gzip', performance,
+    melody: { name: names[i], duration, notes: featured.map(row => ({
+      start: row.start, duration: round(row.end - row.start),
+      midi: Math.round(69 + 12 * Math.log2(row.contour[Math.floor(row.contour.length / 2)][1] / 440)),
+    })), lyrics: performance.lyrics, source: 'Source vocal pitch contours' },
   };
 });
 parts.push({ id: 'backing', name: 'Original music', role: 'Separated original accompaniment',
@@ -77,7 +81,7 @@ parts.push({ id: 'backing', name: 'Original music', role: 'Separated original ac
 const scene = validateScene({
   setting, title, description, duration, audio: 'mix.mp3',
   characters: cast.map((id, i) => ({ id, name: names[i], role: parts[i].role, tele: id + '.tele', telemetryEncoding: 'gzip' })),
-  cues: roles.map(g => ({ start: g.start, end: g.end, text: g.text, speaker: cast[g.role], intensity: .85 })),
+  cues: roles.filter(g => g.caption !== false).map(g => ({ start: g.start, end: g.end, text: g.text, speaker: cast[g.role], intensity: .85 })),
   shots: shots.map(([time, view]) => ({ time, view })),
 });
 const arrangement: Arrangement = { title, description, duration, bpm, parts, sections: shots.map(([time, view]) => ({
