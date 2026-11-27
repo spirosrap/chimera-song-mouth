@@ -1,0 +1,278 @@
+{
+  "setting": "jainmakeba",
+  "title": "Jain · Makeba",
+  "description": "Painted geometry and patterned street corners give way to an avenue of trees and a zebra-striped finale.",
+  "duration": 223.050884,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "makeba-jain",
+      "name": "Jain",
+      "role": "CHIMERA vocals",
+      "tele": "makeba-jain.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 43.96,
+      "end": 47.74,
+      "text": "I get a oooing like a bomb Makes my body dance for ya",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.58,
+      "end": 53.28,
+      "text": "Oooing like a bomb, like a bomb I get the lot Can I get an oooing",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.28,
+      "end": 56.14,
+      "text": "like a bomb Makes your body dance for ya",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 63,
+      "end": 64.4,
+      "text": "What?",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.88,
+      "end": 70.64,
+      "text": "kibam, like kibam, get the light Gotta get it, oooh, in my kibam",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.64,
+      "end": 75.2,
+      "text": "Makes my body dance for you I wanna hear your breath just",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.2,
+      "end": 79.74,
+      "text": "next to my soul I want to feel oppressed without",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.74,
+      "end": 83,
+      "text": "any rest I wanna see you sing,",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.58,
+      "end": 88.44,
+      "text": "wanna see you fight Cause you are the real beauty of human",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.44,
+      "end": 89.58,
+      "text": "rights.",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.16,
+      "end": 115,
+      "text": "below the beat that she's gonna give ya a smile",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.42,
+      "end": 120.78,
+      "text": "Make it go The separation of a",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.78,
+      "end": 123.52,
+      "text": "thousand more I",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.52,
+      "end": 128.38,
+      "text": "gotta",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.98,
+      "end": 136.76,
+      "text": "get bomb, might get bomb, I'll the lock Gotta get it, ooh, it might get bomb,",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.92,
+      "end": 141.78,
+      "text": "Makes my body dance for you Ooh, it might get bomb Might get bomb",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.78,
+      "end": 146.62,
+      "text": "Might get the lock Gotta ooo -wee mikey bam, makes my body dance for",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.62,
+      "end": 151.32,
+      "text": "ya Ooo -wee mikey BAM, mikey BAM, a kippe la I've",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 151.32,
+      "end": 153.82,
+      "text": "gotta get it ooh -ee, mikey -ba, makes my",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.44,
+      "end": 171.4,
+      "text": "Makes my body dance for",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 171.4,
+      "end": 177.22,
+      "text": "you",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.38,
+      "end": 189.94,
+      "text": "kiss,",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 190.3,
+      "end": 194.1,
+      "text": "my kiss, my kiss, kiss, My kiss,",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 194.42,
+      "end": 194.86,
+      "text": "my kiss,",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.74,
+      "end": 198.98,
+      "text": "my, my gay, but I'm not gay,",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.42,
+      "end": 199.78,
+      "text": "Bella.",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 200.56,
+      "end": 204.76,
+      "text": "not gay, but I not gay, Bella. I can like, I'm gay,",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 204.76,
+      "end": 206.06,
+      "text": "Bella.",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 208.24,
+      "end": 209.46,
+      "text": "I'm not but",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    },
+    {
+      "start": 209.46,
+      "end": 221.14,
+      "text": "I...",
+      "speaker": "makeba-jain",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "makeba-street"
+    },
+    {
+      "time": 14,
+      "view": "makeba-pattern-dance"
+    },
+    {
+      "time": 30,
+      "view": "makeba-skyline"
+    },
+    {
+      "time": 47,
+      "view": "makeba-court-dance"
+    },
+    {
+      "time": 64,
+      "view": "makeba-portrait"
+    },
+    {
+      "time": 79,
+      "view": "makeba-grove"
+    },
+    {
+      "time": 107,
+      "view": "makeba-grove-dance"
+    },
+    {
+      "time": 133,
+      "view": "makeba-mono"
+    },
+    {
+      "time": 154,
+      "view": "makeba-pattern-dance"
+    },
+    {
+      "time": 175,
+      "view": "makeba-street"
+    },
+    {
+      "time": 202,
+      "view": "makeba-zebra"
+    },
+    {
+      "time": 216,
+      "view": "makeba-finale"
+    }
+  ]
+}

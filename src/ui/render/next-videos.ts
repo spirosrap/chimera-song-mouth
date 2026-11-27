@@ -400,7 +400,7 @@ export class NextVideoStage {
     const dt = reset ? 1 / 60 : THREE.MathUtils.clamp(time - this.previousTime, 1 / 120, .05);
     const beat = Math.PI * 2 * (time * NEXT_VIDEO_INFO[this.setting].bpm / 60);
     const tight = designated >= 0 || /close|portrait|window|canvas/.test(stageView);
-    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band/.test(stageView);
+    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band|look-white-stage|sweet-office|sweet-car|sweet-ufo|tessellate-steps|tessellate-table|water-tv/.test(stageView);
     const seated = /campfire|tea|flat/.test(stageView);
     const core = this.figures.length;
     for (const [i, member] of this.figures.entries()) {

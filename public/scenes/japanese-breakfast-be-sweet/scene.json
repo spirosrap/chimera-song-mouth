@@ -1,0 +1,288 @@
+{
+  "setting": "jbreakfastsweet",
+  "title": "Japanese Breakfast · Be Sweet",
+  "description": "Two investigators follow a cryptic signal through a green-lit car, a late-night interview and a wooded clearing.",
+  "duration": 206.634376,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "sweet-michelle",
+      "name": "Michelle",
+      "role": "CHIMERA vocals",
+      "tele": "sweet-michelle.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 16.12,
+      "end": 18.58,
+      "text": "I'm not",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 18.58,
+      "end": 23.4,
+      "text": "to the dates",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 25.28,
+      "end": 29.88,
+      "text": "I can feel the night passing by like a mistake",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.88,
+      "end": 31.32,
+      "text": "waiting for me",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.08,
+      "end": 36.46,
+      "text": "Caught up in my feelings",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.42,
+      "end": 40.68,
+      "text": "Oh, they think the truth",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.32,
+      "end": 47.96,
+      "text": "Famicize you left me behind and I'm turned back running",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.96,
+      "end": 49.14,
+      "text": "for you",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.24,
+      "end": 57.2,
+      "text": "Make it up to me, know it's better",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 58,
+      "end": 62.02,
+      "text": "Make it up to me, now it's better",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.42,
+      "end": 67.24,
+      "text": "Be sweet to me baby I wanna believe in you, I",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.24,
+      "end": 68.84,
+      "text": "wanna believe",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.6,
+      "end": 75.4,
+      "text": "Be sweet to me baby I wanna believe in",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.4,
+      "end": 78.78,
+      "text": "you, I want to believe in something",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.64,
+      "end": 99.48,
+      "text": "So come and get your woman, come and get your woman",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.48,
+      "end": 101.14,
+      "text": "Pass her fire,",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.68,
+      "end": 106.48,
+      "text": "pass her fire rain Take the time to undo your",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.48,
+      "end": 108.54,
+      "text": "lies Make it at once,",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.84,
+      "end": 111.1,
+      "text": "momma's feeling it",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.24,
+      "end": 118.96,
+      "text": "Recognize your mistakes",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.6,
+      "end": 123.54,
+      "text": "And I'll let you back in",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.9,
+      "end": 129.26,
+      "text": "Realize not too late Love you",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.26,
+      "end": 134.14,
+      "text": "always Make it up to me, you know",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 134.14,
+      "end": 138.6,
+      "text": "it's better Make it up to me, you'll know",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.6,
+      "end": 142.88,
+      "text": "it's better Be sweet to me baby",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.88,
+      "end": 147.16,
+      "text": "I wanna believe in you, I wanna believe",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.8,
+      "end": 153.4,
+      "text": "Be sweet to me baby I wanna belief",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.4,
+      "end": 153.96,
+      "text": "in",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.88,
+      "end": 162.7,
+      "text": "Be sweet to me, baby I wanna believe in",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.7,
+      "end": 164.5,
+      "text": "You, I wanna believe",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.94,
+      "end": 170.3,
+      "text": "Be sweet to me, baby I want to",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.3,
+      "end": 174.78,
+      "text": "believe in You, I wanna believe Be",
+      "speaker": "sweet-michelle",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "sweet-monitor-close"
+    },
+    {
+      "time": 17,
+      "view": "sweet-car"
+    },
+    {
+      "time": 36,
+      "view": "sweet-office"
+    },
+    {
+      "time": 57,
+      "view": "sweet-car"
+    },
+    {
+      "time": 72,
+      "view": "sweet-portrait"
+    },
+    {
+      "time": 92,
+      "view": "sweet-office"
+    },
+    {
+      "time": 117,
+      "view": "sweet-car"
+    },
+    {
+      "time": 135,
+      "view": "sweet-night"
+    },
+    {
+      "time": 156,
+      "view": "sweet-woods"
+    },
+    {
+      "time": 177,
+      "view": "sweet-ufo"
+    },
+    {
+      "time": 194,
+      "view": "sweet-finale"
+    }
+  ]
+}

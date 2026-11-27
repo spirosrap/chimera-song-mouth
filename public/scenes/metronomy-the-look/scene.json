@@ -1,0 +1,250 @@
+{
+  "setting": "metrolook",
+  "title": "Metronomy · The Look",
+  "description": "A spare white studio alternates between the band’s instruments and a small seaside world of paper seagulls.",
+  "duration": 237.307937,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "look-joe",
+      "name": "Joe",
+      "role": "CHIMERA vocals",
+      "tele": "look-joe.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 14.14,
+      "end": 14.88,
+      "text": "You're up,",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 15.2,
+      "end": 18.8,
+      "text": "but you'll get down You're never running from this town",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 20.14,
+      "end": 24.96,
+      "text": "And I think you'd said you'll never get anything back to",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.96,
+      "end": 29.64,
+      "text": "London cuz you're going round in circles",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.64,
+      "end": 34.34,
+      "text": "and everyone knows your",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.34,
+      "end": 39.24,
+      "text": "trouble cuz you read it in",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.24,
+      "end": 39.96,
+      "text": "a paper",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.96,
+      "end": 44.82,
+      "text": "now you're giving me",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.82,
+      "end": 45.8,
+      "text": "the low glow",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.08,
+      "end": 50.94,
+      "text": "But just remember how we shook,",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.08,
+      "end": 57.68,
+      "text": "And all the things we talked of",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.92,
+      "end": 65.2,
+      "text": "This town's the oldest friend of mine",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.8,
+      "end": 94.44,
+      "text": "We get up and we get down, we're always running on this",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.44,
+      "end": 95,
+      "text": "town.",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.72,
+      "end": 98,
+      "text": "And to think they'd say,",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.64,
+      "end": 103.52,
+      "text": "we'll never make anything better than this. Cause",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.52,
+      "end": 106.08,
+      "text": "when I was in small stuff, I felt",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.38,
+      "end": 111.18,
+      "text": "And everyone thinks we're trouble",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.84,
+      "end": 118.66,
+      "text": "We didn't read it in a bad book Didn't read it in a bad book, bad book,",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.66,
+      "end": 119.2,
+      "text": "bad book",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.74,
+      "end": 123.98,
+      "text": "And now I've given you the love book Given you the love card",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.3,
+      "end": 129.48,
+      "text": "Just remember how we shook shook Shook, shook, shook, shook",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.34,
+      "end": 133.4,
+      "text": "And all the things we tell, tell, do,",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.88,
+      "end": 135.1,
+      "text": "do, do, do",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.5,
+      "end": 141.34,
+      "text": "This time, this time This time, it's the oldest friend of mine",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.38,
+      "end": 165.68,
+      "text": "This time, this time, this time.",
+      "speaker": "look-joe",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "look-white-stage"
+    },
+    {
+      "time": 16,
+      "view": "look-birds"
+    },
+    {
+      "time": 40,
+      "view": "look-cart-birds"
+    },
+    {
+      "time": 65,
+      "view": "look-band-ensemble"
+    },
+    {
+      "time": 91,
+      "view": "look-birds"
+    },
+    {
+      "time": 115,
+      "view": "look-white-stage"
+    },
+    {
+      "time": 132,
+      "view": "look-organ-close"
+    },
+    {
+      "time": 153,
+      "view": "look-cart-birds"
+    },
+    {
+      "time": 182,
+      "view": "look-band-ensemble"
+    },
+    {
+      "time": 198,
+      "view": "look-organ-close"
+    },
+    {
+      "time": 215,
+      "view": "look-birds"
+    },
+    {
+      "time": 229,
+      "view": "look-finale"
+    }
+  ]
+}

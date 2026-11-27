@@ -18,7 +18,8 @@ test('the memory core is a third movie beside the two existing ones, without a p
   'jamie-oliver-petrol-station','bara-bada-bastu','anotr-like-it','katseye-pinky-up','little-simz-young','man-made-of-meat',
   'rina-xs','magdalena-image','model-cinderella','wolf-alice-bloom','geese-taxes','gecs-doritos-fritos','confidence-holiday',
   'amyl-should-not','st-vincent-digital-witness','yard-act-we-make-hits','jungle-back-on-74','janelle-tightrope','fever-ray-kandy','ren-animal-flow',
-  'mitski-nobody','chemical-let-forever-be','christine-tilted','caroline-welcome-island','glass-life-itself','robyn-call-girlfriend','idles-dancer']);
+  'mitski-nobody','chemical-let-forever-be','christine-tilted','caroline-welcome-island','glass-life-itself','robyn-call-girlfriend','idles-dancer',
+  'kimbra-settle-down','tuneyards-water-fountain','metronomy-the-look','jain-makeba','japanese-breakfast-be-sweet','chvrches-mother-we-share','altj-tessellate']);
  expect(movieScene('hal-9000')?.readyVideo).toBeUndefined();
 });
 test('the core accepts only its own cast and cameras',()=>{

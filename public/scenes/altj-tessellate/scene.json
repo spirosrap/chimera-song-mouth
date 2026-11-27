@@ -1,0 +1,309 @@
+{
+  "setting": "altjtessellate",
+  "title": "alt-J · Tessellate",
+  "description": "A painted vaulted hall fills with performers who gather and break into groups around steps, pillars and a long table.",
+  "duration": 188.058413,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "tessellate-joe",
+      "name": "Joe",
+      "role": "CHIMERA vocals",
+      "tele": "tessellate-joe.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 16.86,
+      "end": 19.78,
+      "text": "By chance of me,",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 21.46,
+      "end": 23.3,
+      "text": "You're a shark, and I'm swimming",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.58,
+      "end": 28.26,
+      "text": "My hostile thumbs as I bleed",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.78,
+      "end": 30.92,
+      "text": "Know your friends",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.76,
+      "end": 36.46,
+      "text": "Come sniffing triangles are my favorite shape",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.42,
+      "end": 42.02,
+      "text": "Three points, but you like me Told",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.02,
+      "end": 43.54,
+      "text": "it's all bad to bad.",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.74,
+      "end": 44.6,
+      "text": "Let go,",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.08,
+      "end": 49.26,
+      "text": "my love's very late Till",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.26,
+      "end": 50.92,
+      "text": "morning comes",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.12,
+      "end": 55.26,
+      "text": "Let's desolate",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.7,
+      "end": 76.46,
+      "text": "Go along my",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.46,
+      "end": 77.94,
+      "text": "flow,",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 80.18,
+      "end": 84.46,
+      "text": "and keep my all of",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.46,
+      "end": 85.74,
+      "text": "you,",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 87.68,
+      "end": 91.38,
+      "text": "I'll breathe stones along",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.38,
+      "end": 95,
+      "text": "my level",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.1,
+      "end": 97.44,
+      "text": "And gee,",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.2,
+      "end": 100.5,
+      "text": "I'll mourn my",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.5,
+      "end": 105.08,
+      "text": "heart",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.08,
+      "end": 108.56,
+      "text": "Three guns and one goes off",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.36,
+      "end": 110.66,
+      "text": "empty,",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.98,
+      "end": 114.72,
+      "text": "one's not quick enough One burn,",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.12,
+      "end": 115.6,
+      "text": "one red,",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.1,
+      "end": 116.7,
+      "text": "grin",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.48,
+      "end": 121.36,
+      "text": "Set a grace while the camera spins",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.36,
+      "end": 125.6,
+      "text": "Chunks of you will sit down to see you",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.21,
+      "end": 131.08,
+      "text": "Blub a rich in mourning I'm all show up,",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.28,
+      "end": 134.02,
+      "text": "yes, know, love a way, but it's sad to say",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 134.91,
+      "end": 137.54,
+      "text": "You will still haunt me",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.68,
+      "end": 141.14,
+      "text": "Triangles are my favorite shape",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.22,
+      "end": 146.94,
+      "text": "Three points where two lines meet Chow",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.94,
+      "end": 151.56,
+      "text": "-chow back the bag, let's go My love is very",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 151.56,
+      "end": 156.36,
+      "text": "late Good morning come,",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.44,
+      "end": 160.18,
+      "text": "let's desolate.",
+      "speaker": "tessellate-joe",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "tessellate-hall"
+    },
+    {
+      "time": 15,
+      "view": "tessellate-crowd-ensemble"
+    },
+    {
+      "time": 34,
+      "view": "tessellate-portrait"
+    },
+    {
+      "time": 50,
+      "view": "tessellate-steps"
+    },
+    {
+      "time": 66,
+      "view": "tessellate-table"
+    },
+    {
+      "time": 88,
+      "view": "tessellate-crowd-ensemble"
+    },
+    {
+      "time": 108,
+      "view": "tessellate-pillars"
+    },
+    {
+      "time": 129,
+      "view": "tessellate-portrait"
+    },
+    {
+      "time": 145,
+      "view": "tessellate-steps"
+    },
+    {
+      "time": 163,
+      "view": "tessellate-crowd-ensemble"
+    },
+    {
+      "time": 179,
+      "view": "tessellate-finale"
+    }
+  ]
+}

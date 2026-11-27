@@ -19,7 +19,8 @@ test('a single-speaker speech loads alongside the movies without weakening their
   'jamie-oliver-petrol-station','bara-bada-bastu','anotr-like-it','katseye-pinky-up','little-simz-young','man-made-of-meat',
   'rina-xs','magdalena-image','model-cinderella','wolf-alice-bloom','geese-taxes','gecs-doritos-fritos','confidence-holiday',
   'amyl-should-not','st-vincent-digital-witness','yard-act-we-make-hits','jungle-back-on-74','janelle-tightrope','fever-ray-kandy','ren-animal-flow',
-  'mitski-nobody','chemical-let-forever-be','christine-tilted','caroline-welcome-island','glass-life-itself','robyn-call-girlfriend','idles-dancer']);
+  'mitski-nobody','chemical-let-forever-be','christine-tilted','caroline-welcome-island','glass-life-itself','robyn-call-girlfriend','idles-dancer',
+  'kimbra-settle-down','tuneyards-water-fountain','metronomy-the-look','jain-makeba','japanese-breakfast-be-sweet','chvrches-mother-we-share','altj-tessellate']);
   expect(movieScene('fool-me-once')).toBeDefined();expect(scene.characters.map(c=>c.id)).toEqual(['bush']);
   expect(scene.setting).toBe('press');expect(track.duration).toBeCloseTo(scene.duration,1);
   expect(readFileSync(new URL('mix.mp3',base)).length).toBeGreaterThan(100_000);

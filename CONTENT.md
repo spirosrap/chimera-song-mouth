@@ -210,6 +210,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Glass Animals — Life Itself | 4:46 | `?scene=glass-life-itself` | A red car, motel curtains, roadside signs and the open desert. |
 | Robyn — Call Your Girlfriend | 3:35 | `?scene=robyn-call-girlfriend` | A solo warehouse dance under changing industrial lights. |
 | IDLES — Dancer | 3:23 | `?scene=idles-dancer` | A laundromat, street shutters, red-lit band and a physical vocal exchange. |
+| Kimbra — Settle Down | 4:08 | `?scene=kimbra-settle-down` | A staged dinner, garden picnic, red curtains and shelves of dolls. |
+| Tune-Yards — Water Fountain | 3:23 | `?scene=tuneyards-water-fountain` | A handmade television studio, puppets and broad bands of color. |
+| Metronomy — The Look | 3:57 | `?scene=metronomy-the-look` | A white band studio, an organ, paper seagulls and toy carts. |
+| Jain — Makeba | 3:43 | `?scene=jain-makeba` | Johannesburg street patterns, an avenue of trees and a zebra-striped finale. |
+| Japanese Breakfast — Be Sweet | 3:27 | `?scene=japanese-breakfast-be-sweet` | Two investigators, a green-lit car and a clearing at night. |
+| CHVRCHES — The Mother We Share | 3:15 | `?scene=chvrches-mother-we-share` | A quiet bedroom, a silhouetted trio and a suspended field of lights. |
+| alt-J — Tessellate | 3:08 | `?scene=altj-tessellate` | Performers gather around painted arches, steps and a long table. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

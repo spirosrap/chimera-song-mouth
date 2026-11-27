@@ -1,0 +1,320 @@
+{
+  "setting": "chvrchesmother",
+  "title": "CHVRCHES · The Mother We Share",
+  "description": "A quiet bedroom and a silhouetted band open into a portrait surrounded by suspended points of light.",
+  "duration": 195.140499,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "mother-lauren",
+      "name": "Lauren",
+      "role": "CHIMERA vocals",
+      "tele": "mother-lauren.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 22.02,
+      "end": 25.52,
+      "text": "oh, oh, took your sight.",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.34,
+      "end": 30.42,
+      "text": "Never cursed your name and keep my lips shut",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 30.42,
+      "end": 31.28,
+      "text": "tight.",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.22,
+      "end": 36.48,
+      "text": "Until you come as far",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.48,
+      "end": 39.68,
+      "text": "as we're ever going to get",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.18,
+      "end": 43.92,
+      "text": "until you realize that you should go.",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.18,
+      "end": 48.86,
+      "text": "oh, oh, oh, oh, in misery Where you can see as",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.86,
+      "end": 50.78,
+      "text": "old as your omens",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.17,
+      "end": 55.8,
+      "text": "And the mother we share will never keep Your proud head from",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.8,
+      "end": 60.44,
+      "text": "falling The way is long but you can make it easy",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.44,
+      "end": 65.06,
+      "text": "on me And the mother we share will never keep",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.06,
+      "end": 69.7,
+      "text": "our cold heart from calling in the dying light.",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 71,
+      "end": 72.46,
+      "text": "I'm the only one here,",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.8,
+      "end": 77.08,
+      "text": "and I will cover you until you go.",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.12,
+      "end": 78.88,
+      "text": "oh, oh.",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.98,
+      "end": 80.54,
+      "text": "If I told the truth,",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.42,
+      "end": 86.14,
+      "text": "I would always be free and keep a prize with me",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.14,
+      "end": 88.08,
+      "text": "until you grow",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.84,
+      "end": 93.58,
+      "text": "oh, oh, oh I'm in misery where you can't seem as old as",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.58,
+      "end": 94.68,
+      "text": "your romance",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.28,
+      "end": 99.9,
+      "text": "And the mother we share will never keep your proud head from",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.9,
+      "end": 104.46,
+      "text": "falling The way it's long but you can make it easy",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.46,
+      "end": 109.14,
+      "text": "on me And the mother we share will never keep",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.14,
+      "end": 112.02,
+      "text": "our cold heart from pouring",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.46,
+      "end": 124.76,
+      "text": "Into the night for once",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.62,
+      "end": 127.48,
+      "text": "We're the only ones left",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.1,
+      "end": 130.32,
+      "text": "I bet you even know",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.88,
+      "end": 135.66,
+      "text": "Where we could go, oh, oh, oh, oh When it all fucks up",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.66,
+      "end": 140.14,
+      "text": "You put your head in my hands It's a",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.14,
+      "end": 141.38,
+      "text": "souvenir",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.1,
+      "end": 146.82,
+      "text": "For when you go, oh, oh, oh From the misery where",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.82,
+      "end": 151.66,
+      "text": "we can't see as old as your omens And the mother we",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 151.66,
+      "end": 156.44,
+      "text": "share will never keep your pride hat from fallin' The",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.44,
+      "end": 160.72,
+      "text": "way is long, but you can make it easy on me",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.38,
+      "end": 166.08,
+      "text": "And the mother is sure we'll never keep our cold heart from",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.08,
+      "end": 167.4,
+      "text": "fallin'",
+      "speaker": "mother-lauren",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "mother-bedroom"
+    },
+    {
+      "time": 17,
+      "view": "mother-portrait"
+    },
+    {
+      "time": 32,
+      "view": "mother-bedroom"
+    },
+    {
+      "time": 50,
+      "view": "mother-amber-ensemble"
+    },
+    {
+      "time": 69,
+      "view": "mother-blue-close"
+    },
+    {
+      "time": 86,
+      "view": "mother-amber-ensemble"
+    },
+    {
+      "time": 103,
+      "view": "mother-portrait"
+    },
+    {
+      "time": 122,
+      "view": "mother-light-close"
+    },
+    {
+      "time": 139,
+      "view": "mother-pixels"
+    },
+    {
+      "time": 157,
+      "view": "mother-light-close"
+    },
+    {
+      "time": 175,
+      "view": "mother-finale"
+    },
+    {
+      "time": 188,
+      "view": "mother-pixels"
+    }
+  ]
+}

@@ -1,10 +1,14 @@
-export const SHOWCASE_SETTINGS = ['mitskinobody','letforeverbe','tilteddance','welcometoisland','lifeitself','robynfriend','idlesdancer'] as const;
+export const SHOWCASE_SETTINGS = ['mitskinobody','letforeverbe','tilteddance','welcometoisland','lifeitself','robynfriend','idlesdancer',
+  'kimbrasettle','tuneyardswater','metrolook','jainmakeba','jbreakfastsweet','chvrchesmother','altjtessellate'] as const;
 export type ShowcaseSetting = typeof SHOWCASE_SETTINGS[number];
 
 export const SHOWCASE_CAST = {
   mitskinobody:['nobody-mitski'], letforeverbe:['forever-noel'], tilteddance:['tilted-chris'],
   welcometoisland:['island-caroline'], lifeitself:['life-dave'], robynfriend:['girlfriend-robyn'],
   idlesdancer:['dancer-joe','dancer-response'],
+  kimbrasettle:['settle-kimbra'], tuneyardswater:['water-merrill'], metrolook:['look-joe'],
+  jainmakeba:['makeba-jain'], jbreakfastsweet:['sweet-michelle'], chvrchesmother:['mother-lauren'],
+  altjtessellate:['tessellate-joe'],
 } as const;
 
 export const SHOWCASE_INFO = {
@@ -49,6 +53,48 @@ export const SHOWCASE_INFO = {
     description:'A laundromat and its concrete storefront give way to a red-lit band and a doubled vocal close-up.',
     names:['Joe','Response'], female:[.10,.45], child:[0,.012], bpm:110, source:'A3ZZj5y6Qt4',
     shots:[[0,'idles-door'],[14,'idles-laundry-close'],[33,'idles-laundry-dance'],[56,'idles-shutters'],[79,'idles-laundry-dance'],[97,'idles-red-dance'],[118,'idles-stage-close'],[141,'idles-red-dance'],[159,'idles-violet-dance'],[178,'idles-joe-close'],[192,'idles-finale']] as const,
+  },
+  kimbrasettle: {
+    id:'kimbra-settle-down', title:'Kimbra · Settle Down', eyebrow:'PHYSICAL VOICE · A DOLLHOUSE DINNER',
+    description:'A staged dinner, a garden picnic, red curtains and ranks of dolls frame a bright domestic fantasy.',
+    names:['Kimbra'], female:[.87], child:[.015], bpm:88, source:'yHV04eSGzAA',
+    shots:[[0,'settle-solo-close'],[19,'settle-dinner'],[40,'settle-school-dance'],[64,'settle-garden'],[89,'settle-dinner'],[110,'settle-garden'],[132,'settle-dollroom'],[153,'settle-portrait'],[173,'settle-school-dance'],[194,'settle-firelight'],[215,'settle-school-dance'],[237,'settle-finale']] as const,
+  },
+  tuneyardswater: {
+    id:'tuneyards-water-fountain', title:'Tune-Yards · Water Fountain', eyebrow:'PHYSICAL VOICE · PUPPETS AND A COLOR TV STUDIO',
+    description:'A handmade television set bursts into color, with puppet shapes, studio stripes and a playful ensemble.',
+    names:['Merrill'], female:[.73], child:[.012], bpm:96, source:'jbiFcPhccu8',
+    shots:[[0,'water-stripes-dance'],[14,'water-puppet-close'],[33,'water-studio'],[50,'water-color-dance'],[71,'water-puppet-close'],[94,'water-tv'],[117,'water-stripes-dance'],[139,'water-studio'],[158,'water-color-dance'],[176,'water-tv'],[191,'water-finale']] as const,
+  },
+  metrolook: {
+    id:'metronomy-the-look', title:'Metronomy · The Look', eyebrow:'PHYSICAL VOICE · SEAGULLS AND AN EMPTY STUDIO',
+    description:'A spare white studio alternates between the band’s instruments and a small seaside world of paper seagulls.',
+    names:['Joe'], female:[.11], child:[.005], bpm:83, source:'sFrNsSnk8GM',
+    shots:[[0,'look-white-stage'],[16,'look-birds'],[40,'look-cart-birds'],[65,'look-band-ensemble'],[91,'look-birds'],[115,'look-white-stage'],[132,'look-organ-close'],[153,'look-cart-birds'],[182,'look-band-ensemble'],[198,'look-organ-close'],[215,'look-birds'],[229,'look-finale']] as const,
+  },
+  jainmakeba: {
+    id:'jain-makeba', title:'Jain · Makeba', eyebrow:'PHYSICAL VOICE · GRAPHIC PATTERNS IN JOHANNESBURG',
+    description:'Painted geometry and patterned street corners give way to an avenue of trees and a zebra-striped finale.',
+    names:['Jain'], female:[.79], child:[.009], bpm:116, source:'59Q_lhgGANc',
+    shots:[[0,'makeba-street'],[14,'makeba-pattern-dance'],[30,'makeba-skyline'],[47,'makeba-court-dance'],[64,'makeba-portrait'],[79,'makeba-grove'],[107,'makeba-grove-dance'],[133,'makeba-mono'],[154,'makeba-pattern-dance'],[175,'makeba-street'],[202,'makeba-zebra'],[216,'makeba-finale']] as const,
+  },
+  jbreakfastsweet: {
+    id:'japanese-breakfast-be-sweet', title:'Japanese Breakfast · Be Sweet', eyebrow:'PHYSICAL VOICE · A LATE-NIGHT UFO CASE',
+    description:'Two investigators follow a cryptic signal through a green-lit car, a late-night interview and a wooded clearing.',
+    names:['Michelle'], female:[.86], child:[.017], bpm:112, source:'2ZfcZEIo6Bw',
+    shots:[[0,'sweet-monitor-close'],[17,'sweet-car'],[36,'sweet-office'],[57,'sweet-car'],[72,'sweet-portrait'],[92,'sweet-office'],[117,'sweet-car'],[135,'sweet-night'],[156,'sweet-woods'],[177,'sweet-ufo'],[194,'sweet-finale']] as const,
+  },
+  chvrchesmother: {
+    id:'chvrches-mother-we-share', title:'CHVRCHES · The Mother We Share', eyebrow:'PHYSICAL VOICE · CITY LIGHTS AND A FIGURE IN BLUE',
+    description:'A quiet bedroom and a silhouetted band open into a portrait surrounded by suspended points of light.',
+    names:['Lauren'], female:[.88], child:[.026], bpm:87, source:'_mTRvJ9fugM',
+    shots:[[0,'mother-bedroom'],[17,'mother-portrait'],[32,'mother-bedroom'],[50,'mother-amber-ensemble'],[69,'mother-blue-close'],[86,'mother-amber-ensemble'],[103,'mother-portrait'],[122,'mother-light-close'],[139,'mother-pixels'],[157,'mother-light-close'],[175,'mother-finale'],[188,'mother-pixels']] as const,
+  },
+  altjtessellate: {
+    id:'altj-tessellate', title:'alt-J · Tessellate', eyebrow:'PHYSICAL VOICE · A RENAISSANCE HALL RECAST',
+    description:'A painted vaulted hall fills with performers who gather and break into groups around steps, pillars and a long table.',
+    names:['Joe'], female:[.17], child:[.006], bpm:90, source:'Qg6BwvDcANg',
+    shots:[[0,'tessellate-hall'],[15,'tessellate-crowd-ensemble'],[34,'tessellate-portrait'],[50,'tessellate-steps'],[66,'tessellate-table'],[88,'tessellate-crowd-ensemble'],[108,'tessellate-pillars'],[129,'tessellate-portrait'],[145,'tessellate-steps'],[163,'tessellate-crowd-ensemble'],[179,'tessellate-finale']] as const,
   },
 } as const;
 

@@ -172,3 +172,5 @@ The owner supplied Jack White — Archbishop Harold Holmes. The CHIMERA version 
 The owner supplied The Last Dinner Party — Knocking at the Sky. The CHIMERA version uses separated original accompaniment and ambience, synthesized vocals, synchronized captions and procedurally drawn settings. Rights in the song, recording and video remain with their respective holders.
 
 The seven scenes for Mitski, The Chemical Brothers, Christine and the Queens, Caroline Polachek, Glass Animals, Robyn, and IDLES include separated accompaniment, physical vocals, synchronized captions, and procedural sets. Rights in the compositions, lyrics, recordings, performances, and videos remain with their respective holders. Original footage and analysis data remain outside the repository.
+
+Settle Down, Water Fountain, The Look, Makeba, Be Sweet, The Mother We Share and Tessellate use separated accompaniment, physical vocal synthesis, synchronized captions and procedural scenery. Rights in the underlying compositions, lyrics, recordings, performances and videos remain with their respective holders. Original video footage and raw analysis stay outside the repository.

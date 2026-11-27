@@ -1442,6 +1442,36 @@
       "sha256": "46898b7ab06b62e4f8a93c7d9ffb1616ee8e08c9f39f91ae9b23dfa679b7da5c"
     },
     {
+      "path": "public/scenes/altj-tessellate/backing.mp3",
+      "bytes": 6019629,
+      "sha256": "73941c72c6210490873cb95d6bc51fe8d6d910d99e5b92ac2309c745b66a1ec3"
+    },
+    {
+      "path": "public/scenes/altj-tessellate/credits.txt",
+      "bytes": 75,
+      "sha256": "efd87086825673e5b26ddc1d42c6fa32481d27596ed0c9169e19e3d171a0e302"
+    },
+    {
+      "path": "public/scenes/altj-tessellate/mix.mp3",
+      "bytes": 6019628,
+      "sha256": "7ec3c98f3efacaee5eca95c54ca0ba388c21c795952ae5da0fb140656b5b6a86"
+    },
+    {
+      "path": "public/scenes/altj-tessellate/performance.json",
+      "bytes": 344295,
+      "sha256": "c775604b24ab637ff19c2789bf2e41a97587c76c564adcb1d611d75813000f41"
+    },
+    {
+      "path": "public/scenes/altj-tessellate/scene.json",
+      "bytes": 6610,
+      "sha256": "502923be4cc3879d44938a28e561899898d3af2832261bbe489c51dffc0f21d1"
+    },
+    {
+      "path": "public/scenes/altj-tessellate/tessellate-joe.tele.gz",
+      "bytes": 1522647,
+      "sha256": "cf70b0fb2a73518fc220007ca97aeab9b2a94ec3995f8415ecd5c812f45d161f"
+    },
+    {
       "path": "public/scenes/always-love-you/backing.mp3",
       "bytes": 8782124,
       "sha256": "7101e9c0fb72f14d0b4347e2c33dbc0581ea6d59738b390dc476d6ad48f79130"
@@ -2475,6 +2505,36 @@
       "path": "public/scenes/christine-tilted/tilted-chris.tele.gz",
       "bytes": 1901991,
       "sha256": "8ac2ce117569e43b627b21e502b3c526a3383b41ca22ab9c4d0ebbd9983385fe"
+    },
+    {
+      "path": "public/scenes/chvrches-mother-we-share/backing.mp3",
+      "bytes": 6246189,
+      "sha256": "2ffe336c27f38eec037a0b0f3d0f4e7884061013e00c7115be14820cf01e1893"
+    },
+    {
+      "path": "public/scenes/chvrches-mother-we-share/credits.txt",
+      "bytes": 87,
+      "sha256": "c7ff5aba2a1dbee5054e2c576119de59a7e4637fd83cd080bb5fb1546969e454"
+    },
+    {
+      "path": "public/scenes/chvrches-mother-we-share/mix.mp3",
+      "bytes": 6246188,
+      "sha256": "aadead835c6ce41001d04229eece9a874d4fb81b478bbade239759ff9452cb72"
+    },
+    {
+      "path": "public/scenes/chvrches-mother-we-share/mother-lauren.tele.gz",
+      "bytes": 1960576,
+      "sha256": "f3dda18b2cd5fbf6bf158e20f1f30cb5426583618b4708eabd04133919fa1d0c"
+    },
+    {
+      "path": "public/scenes/chvrches-mother-we-share/performance.json",
+      "bytes": 451972,
+      "sha256": "3fafaf3f2caeb15be21d034a9b712b08b6dffe16b815d2e642bbbf06fc044aa7"
+    },
+    {
+      "path": "public/scenes/chvrches-mother-we-share/scene.json",
+      "bytes": 7218,
+      "sha256": "c8beb6fb874b32492fb385e1dbdd997b0cb932f6f612ad0c34aaf2c67127f950"
     },
     {
       "path": "public/scenes/click-clack-symphony/backing.mp3",
@@ -4032,6 +4092,36 @@
       "sha256": "e344b60cf322e235bc6e5a27d67e92e4c516547f31940738dc791ca67fb91640"
     },
     {
+      "path": "public/scenes/jain-makeba/backing.mp3",
+      "bytes": 7139373,
+      "sha256": "65ea5306f86e8606d78577583bc697b4364d8ec411945f89d4cd3a35d59f5765"
+    },
+    {
+      "path": "public/scenes/jain-makeba/credits.txt",
+      "bytes": 70,
+      "sha256": "de468e4dd6cdc20c64e4bf67b973a614534578e1f57eb664f35df0250d5cbfcf"
+    },
+    {
+      "path": "public/scenes/jain-makeba/makeba-jain.tele.gz",
+      "bytes": 2003715,
+      "sha256": "6a7a13d01b219cccd21f497026367d64b460741580918a3ddd8272690150f42e"
+    },
+    {
+      "path": "public/scenes/jain-makeba/mix.mp3",
+      "bytes": 7139372,
+      "sha256": "eaee796f61bde47f7cb31fd14d0c4a67165dd835214a565149ae7621b94dc2c0"
+    },
+    {
+      "path": "public/scenes/jain-makeba/performance.json",
+      "bytes": 457161,
+      "sha256": "d30fc6bcd2addd28ccd13dfe10b21826e977710f4a2c5dc140e2dcd976a707c0"
+    },
+    {
+      "path": "public/scenes/jain-makeba/scene.json",
+      "bytes": 6104,
+      "sha256": "1cd63ecf4e8ad06a576a08d0ce756406dd89535936a831aa8fd92ad94226a165"
+    },
+    {
       "path": "public/scenes/jamie-oliver-petrol-station/backing.mp3",
       "bytes": 10959404,
       "sha256": "fabee0c37252245753ed0f0923f67b78905c107ad01c7eee343a03766e1e2e89"
@@ -4100,6 +4190,36 @@
       "path": "public/scenes/janelle-tightrope/tightrope-janelle.tele.gz",
       "bytes": 2771034,
       "sha256": "148340f196083ecc44d417bc3ff676665f1ef9bb9e29a2eb1d76fe71961085ac"
+    },
+    {
+      "path": "public/scenes/japanese-breakfast-be-sweet/backing.mp3",
+      "bytes": 6614061,
+      "sha256": "c51cd36aa2f6610a0055b87f447f4536ee7339b77c6f64e48bc7da0667eb9825"
+    },
+    {
+      "path": "public/scenes/japanese-breakfast-be-sweet/credits.txt",
+      "bytes": 86,
+      "sha256": "f299116d7997033d20421fc22dddc949ef1c88fc2962f6c27b4cb959e2ff856a"
+    },
+    {
+      "path": "public/scenes/japanese-breakfast-be-sweet/mix.mp3",
+      "bytes": 6614060,
+      "sha256": "983d7d5d19b65c2dabf0a427ad601706e73f893e50aedb6f977cee29f7e5112f"
+    },
+    {
+      "path": "public/scenes/japanese-breakfast-be-sweet/performance.json",
+      "bytes": 396716,
+      "sha256": "e4cdc15bd5a05e9ac97178c4340d62503e9b73026b2209ad2b3d4b42230e793e"
+    },
+    {
+      "path": "public/scenes/japanese-breakfast-be-sweet/scene.json",
+      "bytes": 6298,
+      "sha256": "00e8b59fa2481317526c7f1d9228c158109a6f17a1b04ff1af6ce914ce9bac87"
+    },
+    {
+      "path": "public/scenes/japanese-breakfast-be-sweet/sweet-michelle.tele.gz",
+      "bytes": 1676084,
+      "sha256": "5f1a1c14b80f54fa0b34fd0f2d32b94a858d5fda392ec9fa6d1a325848f93bbb"
     },
     {
       "path": "public/scenes/je-taime/backing.mp3",
@@ -4215,6 +4335,36 @@
       "path": "public/scenes/katseye-pinky-up/scene.json",
       "bytes": 7503,
       "sha256": "064813a9539d97f7c0c5956a389513e8baaf207bd1fae785ba9a5f8482498fea"
+    },
+    {
+      "path": "public/scenes/kimbra-settle-down/backing.mp3",
+      "bytes": 7929645,
+      "sha256": "5fa150471bf745d8bf14e37fd96bf8184000ec24a985c23e422b3c4052afdebe"
+    },
+    {
+      "path": "public/scenes/kimbra-settle-down/credits.txt",
+      "bytes": 77,
+      "sha256": "41eee4d7a320c924d6dae54d0c4876b1c955d47180cb37c72106b665fc710005"
+    },
+    {
+      "path": "public/scenes/kimbra-settle-down/mix.mp3",
+      "bytes": 7929644,
+      "sha256": "faa9aa208ed94c422c5d8831566840e2b2e506038302ba0ffed6b8e336a11f5a"
+    },
+    {
+      "path": "public/scenes/kimbra-settle-down/performance.json",
+      "bytes": 554837,
+      "sha256": "c4aca6b24cc3dd2a3b82da37123600318b60c1bdd767adf00cbe0c99b1ad9d13"
+    },
+    {
+      "path": "public/scenes/kimbra-settle-down/scene.json",
+      "bytes": 8626,
+      "sha256": "5dbd6a896be4ea65aca383669f1a95269c8659e513d64172a6eac92fdb480995"
+    },
+    {
+      "path": "public/scenes/kimbra-settle-down/settle-kimbra.tele.gz",
+      "bytes": 2377373,
+      "sha256": "23912337aef4fae216fb5713db85798a4ee1ab23855a742417730695b64d8379"
     },
     {
       "path": "public/scenes/knocking-at-the-sky/backing.mp3",
@@ -4775,6 +4925,36 @@
       "path": "public/scenes/matrix-spoon/spoon-boy.tele.gz",
       "bytes": 272193,
       "sha256": "f8b6bb59a637784744a0529dee86fc0be00a85d59c28e334c948f61e2ee43b04"
+    },
+    {
+      "path": "public/scenes/metronomy-the-look/backing.mp3",
+      "bytes": 7595565,
+      "sha256": "3f68c6258b989735e1c0b723bb862093efdcf6eaf55ee9786ba5f582f781b929"
+    },
+    {
+      "path": "public/scenes/metronomy-the-look/credits.txt",
+      "bytes": 77,
+      "sha256": "b8a413bf6a80c768a011d78765c3f3f0bd2bf21dfe007e4a7a61ee31eb36ab5c"
+    },
+    {
+      "path": "public/scenes/metronomy-the-look/look-joe.tele.gz",
+      "bytes": 1140603,
+      "sha256": "664a864a998557de0c42163dc47de131cd4303a80d2dfc84dcfe6dd4d93b064d"
+    },
+    {
+      "path": "public/scenes/metronomy-the-look/mix.mp3",
+      "bytes": 7595564,
+      "sha256": "803e0856f3b820ade4dea9e62daa3c243c0ab13e544f97594973edfa38dfaba9"
+    },
+    {
+      "path": "public/scenes/metronomy-the-look/performance.json",
+      "bytes": 262779,
+      "sha256": "2ee5df79bb6149ddc837a0809352d4ea549d17c52ab810a628f5c06b1415c737"
+    },
+    {
+      "path": "public/scenes/metronomy-the-look/scene.json",
+      "bytes": 5373,
+      "sha256": "6ac1ce3e6fe773bc770456ce5d2614fb8e787e6b9399656143c25e2075ef0a54"
     },
     {
       "path": "public/scenes/milkshake-man/backing.mp3",
@@ -6670,6 +6850,36 @@
       "path": "public/scenes/truman-show/truman.tele.gz",
       "bytes": 383992,
       "sha256": "b1205f4c4461c7061c5cb1b8a5039196d3700f3669a151e77849252963d47a6d"
+    },
+    {
+      "path": "public/scenes/tuneyards-water-fountain/backing.mp3",
+      "bytes": 6488877,
+      "sha256": "abeb03edd7a9ab3c95257c24995c844224591582f71ea135b1df84ffdef1dff2"
+    },
+    {
+      "path": "public/scenes/tuneyards-water-fountain/credits.txt",
+      "bytes": 84,
+      "sha256": "80faa7c8c24e9a6d73b6fa33eac40e7d274dc4c75a5dbbab616bc77055dc2bf7"
+    },
+    {
+      "path": "public/scenes/tuneyards-water-fountain/mix.mp3",
+      "bytes": 6488876,
+      "sha256": "95becf479d7f3952163392bb3ad72df4f064339c3744f2d6178c6357d2b63956"
+    },
+    {
+      "path": "public/scenes/tuneyards-water-fountain/performance.json",
+      "bytes": 558383,
+      "sha256": "268e9cee872ac986a47ef115aacd879b5c5d5742bab939b8452568dfca2e8165"
+    },
+    {
+      "path": "public/scenes/tuneyards-water-fountain/scene.json",
+      "bytes": 10043,
+      "sha256": "cc4d2fe9915106f3fb0b770678366371f915df9f678cc2621795b78ee5cd7184"
+    },
+    {
+      "path": "public/scenes/tuneyards-water-fountain/water-merrill.tele.gz",
+      "bytes": 2277959,
+      "sha256": "89106c18b378a51860792c3d72a9ccae912df5ce83401b946143e4330512ca60"
     },
     {
       "path": "public/scenes/unbreak-my-heart/backing.mp3",

@@ -1,0 +1,421 @@
+{
+  "setting": "tuneyardswater",
+  "title": "Tune-Yards · Water Fountain",
+  "description": "A handmade television set bursts into color, with puppet shapes, studio stripes and a playful ensemble.",
+  "duration": 202.710204,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "water-merrill",
+      "name": "Merrill",
+      "role": "CHIMERA vocals",
+      "tele": "water-merrill.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 1.06,
+      "end": 2.9,
+      "text": "No water in the water fountain,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 5.86,
+      "end": 7.18,
+      "text": "side on the side of all,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 8.94,
+      "end": 13.76,
+      "text": "if you say oh yeah whatcha doing there, nothing much to do when you're going nowhere,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 13.88,
+      "end": 15.52,
+      "text": "woohah woohah, gotcha,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 15.82,
+      "end": 18.22,
+      "text": "we're gonna get the water from your house, your house,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 18.86,
+      "end": 20.8,
+      "text": "no water in the I've founted.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.78,
+      "end": 24.54,
+      "text": "No one in the woods stop.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.38,
+      "end": 27.82,
+      "text": "And you say oh yeah,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.22,
+      "end": 29.1,
+      "text": "whatcha doin' there?",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.28,
+      "end": 31.1,
+      "text": "Nothing much to do when you go nowhere.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.28,
+      "end": 31.68,
+      "text": "Woohoo!",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.86,
+      "end": 32.14,
+      "text": "Woohoo!",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.68,
+      "end": 35.46,
+      "text": "That's it we're gonna get the one from your house, house.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.98,
+      "end": 48.78,
+      "text": "gone I can't seem to feel it I can't seem to feel it I",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.78,
+      "end": 53.44,
+      "text": "can't seem to feel, I'll kneel, I'll kneel, I 'l kneel, the cold still You",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.44,
+      "end": 58.12,
+      "text": "will ride the whip you'll ride the crack no use in fighting back You'll",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.12,
+      "end": 62.88,
+      "text": "sludge that hammer if there's no one else to take the flock. I can't seem to",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.88,
+      "end": 67.56,
+      "text": "feel it I can't seem to find it your fist clenched my neck",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.56,
+      "end": 72.32,
+      "text": "wearing again again again again again no i don't know why they found",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.32,
+      "end": 72.9,
+      "text": "ten",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.8,
+      "end": 77.14,
+      "text": "no phone in the phone booth",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.72,
+      "end": 83.4,
+      "text": "you say oh yeah what you doing there jump back jump back down your shoulder better",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.4,
+      "end": 86.54,
+      "text": "we're gonna get the water from",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 87.26,
+      "end": 92.16,
+      "text": "I saved up all my pennies and I gave them to this special guy",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.16,
+      "end": 97,
+      "text": "when he had enough of them He bought himself a cherry pie. He gave",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 97,
+      "end": 101.78,
+      "text": "me a dollar a blood -soaked dollar I cannot get",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.78,
+      "end": 105.1,
+      "text": "the spot out, but it's okay it still works in the store.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.56,
+      "end": 107.32,
+      "text": "Greasy man come and dig my wealth,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.64,
+      "end": 109.44,
+      "text": "life without your water is a burning hell.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.82,
+      "end": 113.54,
+      "text": "Suck me up with your home -bound rice and anything make me shit nice",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.56,
+      "end": 120.16,
+      "text": "and a two pound chicken taste better with friends a two pound chicken taste better with two",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.16,
+      "end": 124.92,
+      "text": "and I know where I'm you so listen to what I say steady sink",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.92,
+      "end": 128.84,
+      "text": "into your head Somebody go round and round and round How long in your bed?",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.04,
+      "end": 129.96,
+      "text": "How did I get ahead?",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.7,
+      "end": 135.38,
+      "text": "Throw your fingers through the hay, helping us through the hay",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.38,
+      "end": 137.3,
+      "text": "Give me a chance, give me a breath,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.6,
+      "end": 141.38,
+      "text": "I'll a thing into rap Watch out, watch out, watch out Listen to the words I say,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.72,
+      "end": 146.46,
+      "text": "sound like a global cat I'll even go round and round and round Up, up,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.64,
+      "end": 148.28,
+      "text": "up, up, up, down, up, up, Up, up,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.04,
+      "end": 153.6,
+      "text": "left to hide Do it to yourself Come here, come here,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.8,
+      "end": 158.66,
+      "text": "come me your hat, I'll put this hat, hat, hat, hat, hat. No, let in the",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.66,
+      "end": 159.54,
+      "text": "water from ten.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.98,
+      "end": 160.7,
+      "text": "okay!",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.28,
+      "end": 173.72,
+      "text": "We're to get the water from you.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.7,
+      "end": 180.58,
+      "text": "yachts, the water from yachts, the water water from yachts,",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.58,
+      "end": 181.53,
+      "text": "the water yachts.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.24,
+      "end": 184.36,
+      "text": "One more.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 185.16,
+      "end": 185.73,
+      "text": "Gai 'i.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.08,
+      "end": 197.82,
+      "text": "One more. of the cosmos.",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.76,
+      "end": 199.86,
+      "text": "Be with you, yes!",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.78,
+      "end": 202.1,
+      "text": "Yes!",
+      "speaker": "water-merrill",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "water-stripes-dance"
+    },
+    {
+      "time": 14,
+      "view": "water-puppet-close"
+    },
+    {
+      "time": 33,
+      "view": "water-studio"
+    },
+    {
+      "time": 50,
+      "view": "water-color-dance"
+    },
+    {
+      "time": 71,
+      "view": "water-puppet-close"
+    },
+    {
+      "time": 94,
+      "view": "water-tv"
+    },
+    {
+      "time": 117,
+      "view": "water-stripes-dance"
+    },
+    {
+      "time": 139,
+      "view": "water-studio"
+    },
+    {
+      "time": 158,
+      "view": "water-color-dance"
+    },
+    {
+      "time": 176,
+      "view": "water-tv"
+    },
+    {
+      "time": 191,
+      "view": "water-finale"
+    }
+  ]
+}
