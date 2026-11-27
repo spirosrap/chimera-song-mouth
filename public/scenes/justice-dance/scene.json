@@ -1,0 +1,369 @@
+{
+  "setting": "justicedance",
+  "title": "Justice · D.A.N.C.E.",
+  "description": "Colorful shapes march across dark shirts and neon walls through a hallway, a crossing and an emblem-filled finale.",
+  "duration": 181.069206,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "dance-chorus",
+      "name": "Chorus",
+      "role": "CHIMERA vocals",
+      "tele": "dance-chorus.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0.64,
+      "end": 2.52,
+      "text": "Just easy as ABC,",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 2.94,
+      "end": 4.44,
+      "text": "that's you make it right.",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 5.36,
+      "end": 10.22,
+      "text": "To the D -A -S -C -E -D! One two three four five Stick to the",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 10.22,
+      "end": 14.96,
+      "text": "B -E -A -C Get ready to ignite You were such a free",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 14.96,
+      "end": 17.2,
+      "text": "white tea, catching all the lights",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.85,
+      "end": 22.72,
+      "text": "Just easy and hazy sweet that's how we made you right To the",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.72,
+      "end": 23.76,
+      "text": "D -A -C,",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.2,
+      "end": 29.04,
+      "text": "speak to the V -E -A -C Just use me as ABC To the",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.04,
+      "end": 31.52,
+      "text": "test, to the test",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.7,
+      "end": 35.8,
+      "text": "The way you move is a mystery",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.8,
+      "end": 43.36,
+      "text": "To the test You always have a reason",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.36,
+      "end": 43.9,
+      "text": "to",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.34,
+      "end": 49.18,
+      "text": "You always dancing,",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.56,
+      "end": 52,
+      "text": "so where you go is for me.",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.8,
+      "end": 57.74,
+      "text": "You're the dancing,",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.42,
+      "end": 61.32,
+      "text": "you always have all of your stuff in it.",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.52,
+      "end": 67.1,
+      "text": "The D .A .L .C.",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.24,
+      "end": 69.08,
+      "text": "in it, was just before ice.",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.92,
+      "end": 72.98,
+      "text": "Skip to the B .E .H .C. get ready to embrace.",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.98,
+      "end": 75.94,
+      "text": "You must smash a pretty white bill,",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.4,
+      "end": 81.1,
+      "text": "searching for the light. Just sees me as a beast, that's how invasion",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.1,
+      "end": 81.78,
+      "text": "lies.",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.78,
+      "end": 83.4,
+      "text": "the test!",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.92,
+      "end": 85.04,
+      "text": "You're the test!",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.24,
+      "end": 87.58,
+      "text": "The way you know it's a mess to me!",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.66,
+      "end": 96.38,
+      "text": "You always have all the respect I need.",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.38,
+      "end": 104.22,
+      "text": "You always have all the I",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.22,
+      "end": 104.78,
+      "text": "made.",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.8,
+      "end": 112.64,
+      "text": "You always have all always have all of this in",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.64,
+      "end": 113.54,
+      "text": "me",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.22,
+      "end": 118.34,
+      "text": "Under the spotlight,",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.8,
+      "end": 123.3,
+      "text": "neither black nor white It doesn't matter, do the",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.3,
+      "end": 127.04,
+      "text": "dance, do the dance As strong as you might,",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.56,
+      "end": 132.4,
+      "text": "working day and night Whatever happens, do the dance,",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.42,
+      "end": 136.96,
+      "text": "to the dance All the others for the rest Not in a pack",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.96,
+      "end": 141.44,
+      "text": "number wise It doesn't matter To the dance, to the",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.44,
+      "end": 146.24,
+      "text": "dance That's all that you must What means they haven't",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.24,
+      "end": 149.18,
+      "text": "Whatever happens So intense,",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.66,
+      "end": 150.76,
+      "text": "so intense",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.42,
+      "end": 154.74,
+      "text": "So what you do is unnecessary",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.92,
+      "end": 163.68,
+      "text": "To the distance You're always the voice it can",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.68,
+      "end": 164.4,
+      "text": "be",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.24,
+      "end": 172.22,
+      "text": "The way you move is unnecessary",
+      "speaker": "dance-chorus",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "justice-hall"
+    },
+    {
+      "time": 13,
+      "view": "justice-shirts"
+    },
+    {
+      "time": 29,
+      "view": "justice-close"
+    },
+    {
+      "time": 45,
+      "view": "justice-crossing"
+    },
+    {
+      "time": 61,
+      "view": "justice-neon"
+    },
+    {
+      "time": 79,
+      "view": "justice-shirts"
+    },
+    {
+      "time": 95,
+      "view": "justice-hall"
+    },
+    {
+      "time": 112,
+      "view": "justice-emblems"
+    },
+    {
+      "time": 130,
+      "view": "justice-close"
+    },
+    {
+      "time": 146,
+      "view": "justice-crossing"
+    },
+    {
+      "time": 160,
+      "view": "justice-neon"
+    },
+    {
+      "time": 173,
+      "view": "justice-finale"
+    }
+  ]
+}

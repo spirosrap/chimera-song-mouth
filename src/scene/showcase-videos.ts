@@ -1,13 +1,15 @@
+import { INDIE_CAST, INDIE_INFO, INDIE_SETTINGS } from './indie-videos.ts';
 import { VARIETY_CAST, VARIETY_INFO, VARIETY_SETTINGS } from './variety-videos.ts';
 import { ENCORE_CAST, ENCORE_INFO, ENCORE_SETTINGS } from './encore-videos.ts';
 
 export const SHOWCASE_SETTINGS = ['mitskinobody','letforeverbe','tilteddance','welcometoisland','lifeitself','robynfriend','idlesdancer',
-  'kimbrasettle','tuneyardswater','metrolook','jainmakeba','jbreakfastsweet','chvrchesmother','altjtessellate', ...ENCORE_SETTINGS, ...VARIETY_SETTINGS] as const;
+  'kimbrasettle','tuneyardswater','metrolook','jainmakeba','jbreakfastsweet','chvrchesmother','altjtessellate', ...ENCORE_SETTINGS, ...VARIETY_SETTINGS, ...INDIE_SETTINGS] as const;
 export type ShowcaseSetting = typeof SHOWCASE_SETTINGS[number];
 
 export const SHOWCASE_CAST = {
   ...ENCORE_CAST,
   ...VARIETY_CAST,
+  ...INDIE_CAST,
   mitskinobody:['nobody-mitski'], letforeverbe:['forever-noel'], tilteddance:['tilted-chris'],
   welcometoisland:['island-caroline'], lifeitself:['life-dave'], robynfriend:['girlfriend-robyn'],
   idlesdancer:['dancer-joe','dancer-response'],
@@ -19,6 +21,7 @@ export const SHOWCASE_CAST = {
 export const SHOWCASE_INFO = {
   ...ENCORE_INFO,
   ...VARIETY_INFO,
+  ...INDIE_INFO,
   mitskinobody: {
     id:'mitski-nobody', title:'Mitski · Nobody', eyebrow:'PHYSICAL VOICE · A HOUSE OF DISGUISES',
     description:'A divided table, yellow bedroom and double portraits reveal the theatrical set behind the singer.',

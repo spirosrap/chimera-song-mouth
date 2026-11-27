@@ -1,0 +1,370 @@
+{
+  "setting": "intergalactic",
+  "title": "Beastie Boys · Intergalactic",
+  "description": "Three rappers in bright workwear cross a tiled station and a miniature city below a towering robot.",
+  "duration": 274.645624,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "intergalactic-mca",
+      "name": "MCA",
+      "role": "CHIMERA vocals",
+      "tele": "intergalactic-mca.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "intergalactic-mike",
+      "name": "Mike D",
+      "role": "CHIMERA vocals",
+      "tele": "intergalactic-mike.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "intergalactic-adrock",
+      "name": "Ad-Rock",
+      "role": "CHIMERA vocals",
+      "tele": "intergalactic-adrock.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 40.84,
+      "end": 43.9,
+      "text": "See you then, little",
+      "speaker": "intergalactic-mca",
+      "intensity": 0.85
+    },
+    {
+      "start": 68.8,
+      "end": 73.6,
+      "text": "Well, now don't you tell me to smile You speak around I'll make it",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.6,
+      "end": 78.48,
+      "text": "what you want But that would be on what you can tell Leave a speak on the soap versus",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.48,
+      "end": 83.14,
+      "text": "Style, style, profile I said, it always gets you back when I hit you",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.14,
+      "end": 87.74,
+      "text": "I said from the hunter never had jutsu Now, I broke a microphone to the very last",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 87.74,
+      "end": 90.24,
+      "text": "mile willing to out on me, I will revive,",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.64,
+      "end": 94.84,
+      "text": "people always saying my stuff is wild, you got called, you got got,",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.16,
+      "end": 97.08,
+      "text": "step to me, I'm a rapper, fire,",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.4,
+      "end": 102.2,
+      "text": "if you wanna I'm better go into now Coming from that inner jute, myself Go",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.2,
+      "end": 106.26,
+      "text": "walk and put my rounds out Chomp Guess you walking to exile",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.22,
+      "end": 132.94,
+      "text": "I'm not trying to change the world, I will plot and",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.94,
+      "end": 133.34,
+      "text": "scheme!",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 134.32,
+      "end": 135.68,
+      "text": "see like to keep being clean!",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 136,
+      "end": 137.92,
+      "text": "wanna shine like days of me!",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.02,
+      "end": 140.14,
+      "text": "Be fun, replicas, death, my dreams!",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.5,
+      "end": 143.8,
+      "text": "We're for more deep frosting! We're here when it comes to N .B.",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.92,
+      "end": 144.82,
+      "text": "Cole is green!",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.22,
+      "end": 146.94,
+      "text": "us of the rhyme and the rhyme routine!",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.22,
+      "end": 148.78,
+      "text": "another dimension new challenge!",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 150,
+      "end": 152.78,
+      "text": "Intergalactic blend of debris! AHH!",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.88,
+      "end": 157.28,
+      "text": "you, I'm gonna you I'm",
+      "speaker": "intergalactic-mca",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.28,
+      "end": 166.12,
+      "text": "I'll",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.12,
+      "end": 169.92,
+      "text": "gonna kill you",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.92,
+      "end": 174.8,
+      "text": "you I'm gonna kill you I'm",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.8,
+      "end": 175.46,
+      "text": "gonna kill you",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.74,
+      "end": 185.56,
+      "text": "I am known to do the wah -wah, I'm so known for the flintstone flop",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 185.56,
+      "end": 189.86,
+      "text": "And me be getting fins on the crop, Your beats he points don't let them beat,",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.42,
+      "end": 191.92,
+      "text": "drop?",
+      "speaker": "intergalactic-mca",
+      "intensity": 0.85
+    },
+    {
+      "start": 194.38,
+      "end": 199.14,
+      "text": "If I rap suit my pizza stock Step front nigga but when I start to chop",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.14,
+      "end": 200.82,
+      "text": "I'm moving my Jack D .J.",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 200.92,
+      "end": 205.6,
+      "text": "hair off If you tryna knock me, you'll get mine I'll stir fry you in my",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.6,
+      "end": 209.86,
+      "text": "wok You need to stop shaking and your fingers pop Like a pin to the neck of Mr.",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.24,
+      "end": 223.4,
+      "text": "you, I love you, I love",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 223.4,
+      "end": 226.64,
+      "text": "you I love you,",
+      "speaker": "intergalactic-mca",
+      "intensity": 0.85
+    },
+    {
+      "start": 226.96,
+      "end": 228.96,
+      "text": "love you",
+      "speaker": "intergalactic-mca",
+      "intensity": 0.85
+    },
+    {
+      "start": 228.96,
+      "end": 236.26,
+      "text": "love",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 236.26,
+      "end": 241,
+      "text": "you, I you I love you I love",
+      "speaker": "intergalactic-mca",
+      "intensity": 0.85
+    },
+    {
+      "start": 241,
+      "end": 242.1,
+      "text": "you, I you,",
+      "speaker": "intergalactic-mike",
+      "intensity": 0.85
+    },
+    {
+      "start": 245.88,
+      "end": 247.68,
+      "text": "Do it!",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    },
+    {
+      "start": 248.92,
+      "end": 249.62,
+      "text": "Do",
+      "speaker": "intergalactic-adrock",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "intergalactic-streets"
+    },
+    {
+      "time": 14,
+      "view": "intergalactic-robot"
+    },
+    {
+      "time": 30,
+      "view": "intergalactic-station"
+    },
+    {
+      "time": 50,
+      "view": "intergalactic-trio"
+    },
+    {
+      "time": 71,
+      "view": "intergalactic-close"
+    },
+    {
+      "time": 91,
+      "view": "intergalactic-streets"
+    },
+    {
+      "time": 110,
+      "view": "intergalactic-robot"
+    },
+    {
+      "time": 131,
+      "view": "intergalactic-station"
+    },
+    {
+      "time": 150,
+      "view": "intergalactic-trio"
+    },
+    {
+      "time": 172,
+      "view": "intergalactic-close"
+    },
+    {
+      "time": 192,
+      "view": "intergalactic-rooftop"
+    },
+    {
+      "time": 214,
+      "view": "intergalactic-trio"
+    },
+    {
+      "time": 236,
+      "view": "intergalactic-robot"
+    },
+    {
+      "time": 254,
+      "view": "intergalactic-finale"
+    }
+  ]
+}

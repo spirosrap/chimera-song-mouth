@@ -112,6 +112,19 @@ export class NextVideoStage {
         this.props.tube(figure.root,[-10.5,7,0],[0,14,0],1.05,'#817288');
         this.props.tube(figure.root,[0,14,0],[10.5,7,0],1.05,'#817288');
       }
+      if (setting === 'justicedance') {
+        const colors=['#b97199','#8eb9af','#d7b079','#a19bc0'];
+        for (let index=0;index<colors.length;index++) {
+          const block=this.props.box(figure.root,18-index*2,3.1,1.2,colors[(index+i)%colors.length],
+            [0,-25-index*5.5,10.9]);
+          block.rotation.z=.16;
+        }
+      }
+      if (setting === 'intergalactic') {
+        const color='#b8a479';
+        this.props.box(figure.root,17,4.4,13,color,[0,10.2,2.4]);
+        this.props.box(figure.root,12,1.45,7.7,color,[0,8.3,9.6]);
+      }
       if (setting === 'virtualinsanity' && i === 0) {
         this.props.oval(figure.root, [0, 14, 1], [13, 6, 12], '#312d36');
         this.props.oval(figure.root, [0, 10.5, 4], [15, 1.7, 13], '#3b353d');
@@ -422,7 +435,7 @@ export class NextVideoStage {
     const dt = reset ? 1 / 60 : THREE.MathUtils.clamp(time - this.previousTime, 1 / 120, .05);
     const beat = Math.PI * 2 * (time * NEXT_VIDEO_INFO[this.setting].bpm / 60);
     const tight = designated >= 0 || /close|portrait|window|canvas/.test(stageView);
-    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band|look-white-stage|sweet-office|sweet-car|sweet-ufo|tessellate-steps|tessellate-table|water-tv|time-meeting|genghis-house|silk-porch|silk-room|oblivion-bleachers|toxic-cabin|shack-front/.test(stageView);
+    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band|look-white-stage|sweet-office|sweet-car|sweet-ufo|tessellate-steps|tessellate-table|water-tv|time-meeting|genghis-house|silk-porch|silk-room|oblivion-bleachers|toxic-cabin|shack-front|bricks-duo|bricks-drums|take-band|artistes-parade|justice-shirts|justice-crossing|intergalactic-trio|treads-crossing|treads-line|treads-pairs/.test(stageView);
     const seated = /campfire|tea|flat/.test(stageView);
     const ensemble = this.setting === 'virtualinsanity' ? stageView === 'virtual-white-ensemble' : group;
     const core = this.figures.length;
@@ -438,8 +451,9 @@ export class NextVideoStage {
       const emphasis = i === active ? Math.min(1, intensity) : .16;
       const leap = stageView === 'meat-trampoline' ? 22 * Math.max(0, Math.sin(phase * .5)) : 0;
       figure.root.visible = i === active || (!tight && (i < cast.length || ensemble || /kitchen|service|steam/.test(stageView)));
+      const beltTravel=this.setting==='treadmills' && group && !tight ? 14*Math.sin(time*1.27+slot*1.7) : 0;
       figure.root.position.set(slide + offset + Math.sin(phase * .5) * 2, (seated ? 127 : 153) + bounce * Math.cos(phase) + leap + flying,
-        slot ? -37 - 14 * Math.floor((slot - 1) / 2) : 13);
+        (slot ? -37 - 14 * Math.floor((slot - 1) / 2) : 13) + beltTravel);
       figure.root.rotation.set(.015 * Math.sin(phase), side * Math.min(.095, Math.abs(offset) * .001) + .042 * Math.sin(phase * .5),
         .039 * Math.sin(phase * .5));
       const pinky = this.setting === 'pinkyup' && (group || stageView === 'pinky-tea');

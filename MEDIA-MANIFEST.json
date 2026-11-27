@@ -2212,6 +2212,46 @@
       "sha256": "33c7f1ba0a8573d0da6e918d83651cb0d91112657c64829da3d4d6600d24a81e"
     },
     {
+      "path": "public/scenes/beastie-intergalactic/backing.mp3",
+      "bytes": 8790573,
+      "sha256": "ac3905932ae3e5093c14678e3522c1c96bcb068e58caf99d468ed402053edbfe"
+    },
+    {
+      "path": "public/scenes/beastie-intergalactic/credits.txt",
+      "bytes": 85,
+      "sha256": "577b5dcbdeda52ec01fa7f0ae30590e80c04fa530cae968c8ca3e20d0ed55259"
+    },
+    {
+      "path": "public/scenes/beastie-intergalactic/intergalactic-adrock.tele.gz",
+      "bytes": 707048,
+      "sha256": "1a62cede23711bd7e31b6123e36ff21f1fdf9ea903f36395d2e57c8904e8bccc"
+    },
+    {
+      "path": "public/scenes/beastie-intergalactic/intergalactic-mca.tele.gz",
+      "bytes": 382669,
+      "sha256": "17537442737c30c863a115a8dfdc9c10bc23e9df3aa16e64013c14174f95a4b3"
+    },
+    {
+      "path": "public/scenes/beastie-intergalactic/intergalactic-mike.tele.gz",
+      "bytes": 1136116,
+      "sha256": "cb34758429fa4dece2f4db104263f2bef21eb4f1fb0a6886dc0222989d18c299"
+    },
+    {
+      "path": "public/scenes/beastie-intergalactic/mix.mp3",
+      "bytes": 8790572,
+      "sha256": "5afa50327d1333bdc370bc0c91b48872adf68b300e1cb5d69fa768bdcac4f921"
+    },
+    {
+      "path": "public/scenes/beastie-intergalactic/performance.json",
+      "bytes": 491278,
+      "sha256": "6894ff458d3a5238ca9eda0a47cb1bdb389c0dd7e30f823e6d01fed111810c48"
+    },
+    {
+      "path": "public/scenes/beastie-intergalactic/scene.json",
+      "bytes": 8774,
+      "sha256": "3e9b30345142a3157f155a7c8b1097e7bee1bfbef80539938c7eea2ada6b553a"
+    },
+    {
       "path": "public/scenes/beck-loser/backing.mp3",
       "bytes": 7446572,
       "sha256": "dce7235cf2ff0e0998109d80ca066948c6a5afcccaf68050c9684cb247160708"
@@ -3467,6 +3507,36 @@
       "sha256": "c3d1ad446f7f0c2915eefa543275abb2af467e159e033c970d62c929383afa49"
     },
     {
+      "path": "public/scenes/franz-take-me-out/backing.mp3",
+      "bytes": 7686957,
+      "sha256": "3a6cf6553732c3de75cd7727a9b56b708d4ccebeda3c79bdd603a3fff8f1bcc8"
+    },
+    {
+      "path": "public/scenes/franz-take-me-out/credits.txt",
+      "bytes": 86,
+      "sha256": "cee1c32662261857f5e32784910efc1701f4ebf7f7f700959cf40e315d5b19a9"
+    },
+    {
+      "path": "public/scenes/franz-take-me-out/mix.mp3",
+      "bytes": 7686956,
+      "sha256": "a27fa950dc442ea98be424b4e94a42ef7c1808207b9b979cede36b89a5c87bea"
+    },
+    {
+      "path": "public/scenes/franz-take-me-out/performance.json",
+      "bytes": 403862,
+      "sha256": "b887fbd6f32dc30d17f1666f95f847a464cc999eb8bb61e1f4ae0d2abf283440"
+    },
+    {
+      "path": "public/scenes/franz-take-me-out/scene.json",
+      "bytes": 6970,
+      "sha256": "7839f8cbf676a6494f74b5c9ffe3c0e20a7ddbae214d4dbf1627e4a6574e163b"
+    },
+    {
+      "path": "public/scenes/franz-take-me-out/takeout-alex.tele.gz",
+      "bytes": 1782423,
+      "sha256": "38b46fd824eb74a7f764baf99c2f40ce9a7ee2a510a78a5540a6369b8402e70e"
+    },
+    {
       "path": "public/scenes/frontier-psychiatrist/backing.mp3",
       "bytes": 8263724,
       "sha256": "e57392f5689f4749ba400dca4002db7a26cd84dedfc447c3d7680ed68b734759"
@@ -4505,6 +4575,36 @@
       "path": "public/scenes/jungle-back-on-74/scene.json",
       "bytes": 9402,
       "sha256": "c91716d37df5a194a24cf06edef78a2e555466af1514dda44dc80fa198f8c7a6"
+    },
+    {
+      "path": "public/scenes/justice-dance/backing.mp3",
+      "bytes": 5796141,
+      "sha256": "530e15df77d7c4d7dd5080108c133a774bb7dc25fd3867ad8bc1940cf21fe91a"
+    },
+    {
+      "path": "public/scenes/justice-dance/credits.txt",
+      "bytes": 77,
+      "sha256": "19d6e75019edc021f06e2c4a70ed504c45383965b7bc137f0e04f40f9bcd6db5"
+    },
+    {
+      "path": "public/scenes/justice-dance/dance-chorus.tele.gz",
+      "bytes": 1726891,
+      "sha256": "4e8fc11181e6755b875148010788f38350783497340927c3e5677923be8d903c"
+    },
+    {
+      "path": "public/scenes/justice-dance/mix.mp3",
+      "bytes": 5796140,
+      "sha256": "1f0ac79f3deb998c27f5a4f5d1cc2e43e27a813a11fd6c3c282db7a989d49eb3"
+    },
+    {
+      "path": "public/scenes/justice-dance/performance.json",
+      "bytes": 407507,
+      "sha256": "d749d7db4a9daae40d89ff93053a9fa1e8e33547e563a4e3419608d4e873e465"
+    },
+    {
+      "path": "public/scenes/justice-dance/scene.json",
+      "bytes": 8147,
+      "sha256": "758c9b588aaf31139e957a2a726884cc5b5d05b964a1e8a2427399f6c1566440"
     },
     {
       "path": "public/scenes/katseye-pinky-up/backing.mp3",
@@ -5712,6 +5812,36 @@
       "sha256": "9d5a1569f0675c3b9d014db35287588d0a620f18ddcd5da5ff7f44b6404a30cf"
     },
     {
+      "path": "public/scenes/ok-go-here-it-goes/backing.mp3",
+      "bytes": 5953581,
+      "sha256": "76dee802aca0aa48cfe7dc975adb23a1155166c128ecaade2120706414171bec"
+    },
+    {
+      "path": "public/scenes/ok-go-here-it-goes/credits.txt",
+      "bytes": 83,
+      "sha256": "8820712500f3214a7a55f8aca36f5e3b41b4903a4e9f71572fd77889865a87c9"
+    },
+    {
+      "path": "public/scenes/ok-go-here-it-goes/mix.mp3",
+      "bytes": 5953580,
+      "sha256": "feb5ac3ed5e071de41baed91458de3528bcca2700cb13815cdc9d629b05ceb2c"
+    },
+    {
+      "path": "public/scenes/ok-go-here-it-goes/performance.json",
+      "bytes": 382130,
+      "sha256": "b813590fc89b422ea0c76de0ad9c7bf34b7f2cca91e7c0cc1cfaa6850fdc49fe"
+    },
+    {
+      "path": "public/scenes/ok-go-here-it-goes/scene.json",
+      "bytes": 6713,
+      "sha256": "9feb45ec1f7652c346c1010d5f98506b7a82b2d8c0d7e503c32d61f1d837e498"
+    },
+    {
+      "path": "public/scenes/ok-go-here-it-goes/treads-damian.tele.gz",
+      "bytes": 1649806,
+      "sha256": "c0002262d38199af1a99bc9911296adc00840b41f0f9d5c3e8fc13a51d009d42"
+    },
+    {
       "path": "public/scenes/ok-go-love/backing.mp3",
       "bytes": 8398124,
       "sha256": "12940c0a14dffb024c1b3673865b4475ce4be224cde25957334361aa9e0ae737"
@@ -6425,6 +6555,36 @@
       "path": "public/scenes/said-i-loved-you/scene.json",
       "bytes": 5914,
       "sha256": "d16cf105a3c18c44053b3b13fec6eaf7f3fdc251af2e265a776229c7138d4da9"
+    },
+    {
+      "path": "public/scenes/santigold-les-artistes/artistes-santi.tele.gz",
+      "bytes": 2273029,
+      "sha256": "7fcfd3334e85eca22f10327e71a6a4be74b92684af6e5c6200737c52d8190a3c"
+    },
+    {
+      "path": "public/scenes/santigold-les-artistes/backing.mp3",
+      "bytes": 6687789,
+      "sha256": "1815a09c7fcb2f53c2c01dc3d03ccf7c046c4a12882b9afdf0db18c14d1e4fa6"
+    },
+    {
+      "path": "public/scenes/santigold-les-artistes/credits.txt",
+      "bytes": 84,
+      "sha256": "7051bb539da608ed68f6a11e35ee2ce3f0b1e5d4c37bea3b59f379176d2ad581"
+    },
+    {
+      "path": "public/scenes/santigold-les-artistes/mix.mp3",
+      "bytes": 6687788,
+      "sha256": "f807fb955ba4851fcc85eefae2eb4cbf3f35959e7dd177f66fe854061b7cf25c"
+    },
+    {
+      "path": "public/scenes/santigold-les-artistes/performance.json",
+      "bytes": 539660,
+      "sha256": "fb625e8253f424945b54af70187df9b883f7cf0cac5292b0a2f2384f093e90da"
+    },
+    {
+      "path": "public/scenes/santigold-les-artistes/scene.json",
+      "bytes": 8958,
+      "sha256": "80536740cd509ff75ff37d45a74faa936b2048bd95c90d88b4cebf05e663f909"
     },
     {
       "path": "public/scenes/sexy-picture/backing.mp3",
@@ -7497,6 +7657,36 @@
       "sha256": "2a5b3d9a64fcf8b609373a01f08ca6f5dbe2155691a88a068b5b8377cc1380ac"
     },
     {
+      "path": "public/scenes/white-stripes-fell-in-love/backing.mp3",
+      "bytes": 3850029,
+      "sha256": "d66b38fd94fa96398383ca9fbabb09cc89bd18c20c9eb9f87c5fe917a958829a"
+    },
+    {
+      "path": "public/scenes/white-stripes-fell-in-love/bricks-jack.tele.gz",
+      "bytes": 1313933,
+      "sha256": "aeacedac37da7f2594f43ccb3cc15583e443497966a675f0f1636d12b66389f0"
+    },
+    {
+      "path": "public/scenes/white-stripes-fell-in-love/credits.txt",
+      "bytes": 101,
+      "sha256": "c982d840e823d2243c760ca0c9abc30c6efef9b44ae304ed66313117cdd1cd17"
+    },
+    {
+      "path": "public/scenes/white-stripes-fell-in-love/mix.mp3",
+      "bytes": 3850028,
+      "sha256": "5b171db03088569909a22cbd7056a7fa1f931d5a7d058d37f6479df020982e61"
+    },
+    {
+      "path": "public/scenes/white-stripes-fell-in-love/performance.json",
+      "bytes": 320898,
+      "sha256": "7d33136d7379234da6f230a936f73a7a06b8932e35e4a32db6db2d2dd3152cbd"
+    },
+    {
+      "path": "public/scenes/white-stripes-fell-in-love/scene.json",
+      "bytes": 5681,
+      "sha256": "26bf20f1ecc380e19af06810b3f28b92552e62f33aaf5f8b0632565bdd919f66"
+    },
+    {
       "path": "public/scenes/wild-boys/backing.mp3",
       "bytes": 8101676,
       "sha256": "92eabd6a819a2803afb82a19b6966127b68f14e788055bd7559df3a26760f951"
@@ -7750,6 +7940,36 @@
       "path": "public/scenes/yard-act-we-make-hits/scene.json",
       "bytes": 8235,
       "sha256": "4b9de6313b1e3fc196220201c5bdebdb13e5ccac21b54d54cf248b8ee547ab29"
+    },
+    {
+      "path": "public/scenes/yeah-zero/backing.mp3",
+      "bytes": 9158445,
+      "sha256": "27975fa234a403eecff23e61d468ccc7742cac7b5301db396784822a66cd378c"
+    },
+    {
+      "path": "public/scenes/yeah-zero/credits.txt",
+      "bytes": 79,
+      "sha256": "15f38a1883b48066ab72c1dd6c96bc797f3d2bb93de2920390ec77848756c196"
+    },
+    {
+      "path": "public/scenes/yeah-zero/mix.mp3",
+      "bytes": 9158444,
+      "sha256": "0c8385f97bc681e89c7a8a8ae704d2e920b2e4e126038dac19fad26f873ad5c2"
+    },
+    {
+      "path": "public/scenes/yeah-zero/performance.json",
+      "bytes": 513702,
+      "sha256": "ee9a9a9526efeb29e3014012c425b0cad6b588e5a201a127b89cbd54a5e5d6da"
+    },
+    {
+      "path": "public/scenes/yeah-zero/scene.json",
+      "bytes": 12111,
+      "sha256": "a291c11121e48cbf283573ee984416a204c54fb85f92b25af7e62b50e2d2ef35"
+    },
+    {
+      "path": "public/scenes/yeah-zero/zero-karen.tele.gz",
+      "bytes": 2357130,
+      "sha256": "7af390d80f262ebcd1377934217fed433a6026fe6e44fe9079c94c727ff2f333"
     },
     {
       "path": "public/scenes/zara-blue-moon/backing.mp3",

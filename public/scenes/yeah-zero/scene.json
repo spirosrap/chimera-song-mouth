@@ -1,0 +1,594 @@
+{
+  "setting": "yeahzero",
+  "title": "Yeah Yeah Yeahs · Zero",
+  "description": "A leather-clad singer moves through a neon alley, glass shop fronts and a silver-lit nighttime performance.",
+  "duration": 286.139501,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "zero-karen",
+      "name": "Karen",
+      "role": "CHIMERA vocals",
+      "tele": "zero-karen.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 7.68,
+      "end": 8.5,
+      "text": "Five minutes.",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 10.54,
+      "end": 11.64,
+      "text": "I'm going to teach English.",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 13.42,
+      "end": 13.78,
+      "text": "I'll do it.",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 14.14,
+      "end": 14.46,
+      "text": "I'll do it.",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 14.82,
+      "end": 15.36,
+      "text": "I'll do it.",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.52,
+      "end": 33.16,
+      "text": "Shaking like a ladder to the sun",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 33.16,
+      "end": 38.02,
+      "text": "Makes me feel like",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.02,
+      "end": 41.16,
+      "text": "an admin on the run",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.82,
+      "end": 44.42,
+      "text": "Funny, me.",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.62,
+      "end": 44.84,
+      "text": "Never,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.6,
+      "end": 49.14,
+      "text": "far gone away.",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 51,
+      "end": 52.76,
+      "text": "So get your loving,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.38,
+      "end": 53.84,
+      "text": "loving,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 54.62,
+      "end": 57.6,
+      "text": "loving all along on me.",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.5,
+      "end": 60.06,
+      "text": "You're a zeroes!",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.08,
+      "end": 63.26,
+      "text": "What's your name?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 63.64,
+      "end": 68.38,
+      "text": "No one's gonna ask you better find out where they want you to go",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.22,
+      "end": 73.86,
+      "text": "Try and lift the spot Get to know her in the dark Get to know",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.86,
+      "end": 75.22,
+      "text": "where you're",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.38,
+      "end": 78.8,
+      "text": "Crying, crying Oh",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.76,
+      "end": 82.74,
+      "text": "Can ya?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.92,
+      "end": 84.52,
+      "text": "cry,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.9,
+      "end": 85.64,
+      "text": "cry",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.54,
+      "end": 87.22,
+      "text": "Help",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.74,
+      "end": 106.24,
+      "text": "Shaking like a ladder to the sun",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.24,
+      "end": 110.72,
+      "text": "Makes me",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.72,
+      "end": 113.88,
+      "text": "feel like I'm not real on the run",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.26,
+      "end": 118.48,
+      "text": "No you're never,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.18,
+      "end": 121.86,
+      "text": "never far gone",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.7,
+      "end": 126.24,
+      "text": "So get your leather,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.34,
+      "end": 130.06,
+      "text": "leather On, on,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.64,
+      "end": 131.3,
+      "text": "on, on,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.82,
+      "end": 133.42,
+      "text": "You're a zero",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.7,
+      "end": 136.76,
+      "text": "What's your name?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.22,
+      "end": 140.6,
+      "text": "one's gonna ask you better find out where they want you to",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.6,
+      "end": 142.24,
+      "text": "go",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.12,
+      "end": 144.52,
+      "text": "Tryin' at the spot,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.84,
+      "end": 149.44,
+      "text": "to knowin', die Get to know whether you're a Cream,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 150.9,
+      "end": 155.64,
+      "text": "cream, I love you! Oh",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 155.64,
+      "end": 156.24,
+      "text": "Kenya!",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.58,
+      "end": 176.52,
+      "text": "it the kill?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 177.28,
+      "end": 178.46,
+      "text": "Show of shock?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.62,
+      "end": 180.34,
+      "text": "Was it the kill?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 181.6,
+      "end": 182.26,
+      "text": "Oh no.",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.2,
+      "end": 184.24,
+      "text": "Was it the kill?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 185.14,
+      "end": 185.94,
+      "text": "Show of",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 186.74,
+      "end": 188.12,
+      "text": "Was it the killer?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.28,
+      "end": 189.92,
+      "text": "What's your name?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 190.32,
+      "end": 191.36,
+      "text": "You're zero!",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.7,
+      "end": 198.16,
+      "text": "What's an angel that's gonna ask you better find out where they want",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.16,
+      "end": 200.26,
+      "text": "you go",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.1,
+      "end": 205.92,
+      "text": "Try and hit the spot, get to know it in the dark Get to know where",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.92,
+      "end": 209.62,
+      "text": "you're going Crying, crying",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 213,
+      "end": 214.36,
+      "text": "Can ya?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 215.78,
+      "end": 217.72,
+      "text": "Crying, crying, crying",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 232.66,
+      "end": 234.48,
+      "text": "Was it the cat?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 235.58,
+      "end": 236.46,
+      "text": "Shell or shark?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 237.54,
+      "end": 238.46,
+      "text": "Was it the cat?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 241.94,
+      "end": 242.22,
+      "text": "cure?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 243.06,
+      "end": 244.06,
+      "text": "Show, show!",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 244.9,
+      "end": 246.18,
+      "text": "Was it the cure?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 249.36,
+      "end": 249.94,
+      "text": "What's your name?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 250.22,
+      "end": 250.88,
+      "text": "What's your name?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 251.14,
+      "end": 251.88,
+      "text": "What's your name?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 253.02,
+      "end": 253.78,
+      "text": "What's you name?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 254.04,
+      "end": 254.7,
+      "text": "What's your name?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 254.92,
+      "end": 255.38,
+      "text": "What's her",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 255.38,
+      "end": 263.08,
+      "text": "name?",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 263.08,
+      "end": 265.96,
+      "text": "Oh oh, oh,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 266.36,
+      "end": 267.96,
+      "text": "oh, Oh,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 268.34,
+      "end": 269.36,
+      "text": "oh,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 269.36,
+      "end": 273.52,
+      "text": "oh,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 273.52,
+      "end": 274.88,
+      "text": "Oh,",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    },
+    {
+      "start": 276.22,
+      "end": 279.6,
+      "text": "Oh, oh, oh",
+      "speaker": "zero-karen",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "zero-club"
+    },
+    {
+      "time": 17,
+      "view": "zero-close"
+    },
+    {
+      "time": 36,
+      "view": "zero-alley"
+    },
+    {
+      "time": 54,
+      "view": "zero-window"
+    },
+    {
+      "time": 73,
+      "view": "zero-club"
+    },
+    {
+      "time": 91,
+      "view": "zero-neon"
+    },
+    {
+      "time": 111,
+      "view": "zero-alley"
+    },
+    {
+      "time": 133,
+      "view": "zero-close"
+    },
+    {
+      "time": 156,
+      "view": "zero-window"
+    },
+    {
+      "time": 178,
+      "view": "zero-ensemble"
+    },
+    {
+      "time": 201,
+      "view": "zero-neon"
+    },
+    {
+      "time": 224,
+      "view": "zero-alley"
+    },
+    {
+      "time": 245,
+      "view": "zero-ensemble"
+    },
+    {
+      "time": 265,
+      "view": "zero-finale"
+    }
+  ]
+}

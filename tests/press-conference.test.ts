@@ -23,7 +23,9 @@ test('a single-speaker speech loads alongside the movies without weakening their
   'kimbra-settle-down','tuneyards-water-fountain','metronomy-the-look','jain-makeba','japanese-breakfast-be-sweet','chvrches-mother-we-share','altj-tessellate',
   'jamiroquai-virtual-insanity','miike-snow-genghis-khan','muna-silk-chiffon','aurora-cure-for-me','lizzo-about-damn-time','kylie-cant-get-you-out','roisin-overpowered',
   'florence-dog-days','grimes-oblivion','britney-toxic','gorillaz-dare','mgmt-electric-feel',
-  'passion-pit-take-a-walk','b52-love-shack']);
+  'passion-pit-take-a-walk','b52-love-shack',
+  'white-stripes-fell-in-love','yeah-zero','franz-take-me-out','santigold-les-artistes',
+  'justice-dance','beastie-intergalactic','ok-go-here-it-goes']);
   expect(movieScene('fool-me-once')).toBeDefined();expect(scene.characters.map(c=>c.id)).toEqual(['bush']);
   expect(scene.setting).toBe('press');expect(track.duration).toBeCloseTo(scene.duration,1);
   expect(readFileSync(new URL('mix.mp3',base)).length).toBeGreaterThan(100_000);

@@ -29,7 +29,9 @@ test('the complete karaoke clip appends a scene with its own singer, music and l
   'kimbra-settle-down','tuneyards-water-fountain','metronomy-the-look','jain-makeba','japanese-breakfast-be-sweet','chvrches-mother-we-share','altj-tessellate',
   'jamiroquai-virtual-insanity','miike-snow-genghis-khan','muna-silk-chiffon','aurora-cure-for-me','lizzo-about-damn-time','kylie-cant-get-you-out','roisin-overpowered',
   'florence-dog-days','grimes-oblivion','britney-toxic','gorillaz-dare','mgmt-electric-feel',
-  'passion-pit-take-a-walk','b52-love-shack']);
+  'passion-pit-take-a-walk','b52-love-shack',
+  'white-stripes-fell-in-love','yeah-zero','franz-take-me-out','santigold-les-artistes',
+  'justice-dance','beastie-intergalactic','ok-go-here-it-goes']);
  expect(movieScene('project-hail-mary')).toBeDefined();expect(scene.setting).toBe('karaoke');
  expect(scene.duration).toBeGreaterThan(143);expect(scene.duration).toBeLessThan(144);
  expect(scene.characters.map(c=>c.id)).toEqual(['karaoke-singer']);expect(track.duration).toBeCloseTo(scene.duration,1);

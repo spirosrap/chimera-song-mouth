@@ -1,0 +1,397 @@
+{
+  "setting": "lesartistes",
+  "title": "Santigold · L.E.S. Artistes",
+  "description": "A wooded gathering with a rider, quiet portraits and a courtyard gives way to painted color and still-life tableaux.",
+  "duration": 208.933152,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "artistes-santi",
+      "name": "Santi",
+      "role": "CHIMERA vocals",
+      "tele": "artistes-santi.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 8,
+      "end": 10.9,
+      "text": "What I'm searching for,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 11.82,
+      "end": 15.4,
+      "text": "tell it straight and I'm trying to build a wall.",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 16.46,
+      "end": 20.82,
+      "text": "Wapping by myself, don't ever lose",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 20.82,
+      "end": 22.92,
+      "text": "every good time to kill",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.76,
+      "end": 29.64,
+      "text": "If you see me keep blowing me up ass by a weaver Fill me",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.64,
+      "end": 34.48,
+      "text": "up bring me down to leave me out your name dropper Stop trying to catch my",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.48,
+      "end": 39.06,
+      "text": "eye I say you good you force baker Just make it easy on my",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.06,
+      "end": 43.22,
+      "text": "inner new fast talker. I can say I hope",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.22,
+      "end": 47.86,
+      "text": "it will be worth what I give up",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.86,
+      "end": 52.48,
+      "text": "If I stand on me for",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.48,
+      "end": 55.46,
+      "text": "the things that I believe",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.08,
+      "end": 61.58,
+      "text": "I can say I hope it will be worth",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.58,
+      "end": 66.32,
+      "text": "what I give up If others",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.32,
+      "end": 70.96,
+      "text": "stand up me for the things that I",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.96,
+      "end": 71.72,
+      "text": "believe.",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.46,
+      "end": 75.72,
+      "text": "What am I here for?",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.32,
+      "end": 79.78,
+      "text": "I left my home to disappear as all.",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.38,
+      "end": 83.8,
+      "text": "I'm here for myself,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.56,
+      "end": 85.88,
+      "text": "To know you,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.24,
+      "end": 87.98,
+      "text": "I don't need no one else.",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.22,
+      "end": 92.78,
+      "text": "it is so good that you cannot",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.78,
+      "end": 96.96,
+      "text": "see me later you don't know me I am an introvert and",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.96,
+      "end": 101.1,
+      "text": "extimator I'm looking up on our face and got the",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.1,
+      "end": 105.34,
+      "text": "elevators leap up and suddenly I found myself in the",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.34,
+      "end": 109.74,
+      "text": "innovator I can say it will be",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.76,
+      "end": 112.94,
+      "text": "worth what I give up,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.3,
+      "end": 118.04,
+      "text": "I stand on me for the",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.04,
+      "end": 120.52,
+      "text": "things that I believe,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.7,
+      "end": 127.3,
+      "text": "and I can say I hope it will be worth what",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.3,
+      "end": 132.14,
+      "text": "I give up and I can stand on",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.16,
+      "end": 136.8,
+      "text": "me for all the things that I believe",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.08,
+      "end": 139,
+      "text": "Change,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 139.98,
+      "end": 144.82,
+      "text": "change, change Don't wanna get up outta my skin Tell you what",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.82,
+      "end": 149,
+      "text": "if I could shake it I'm gonna make this something worth",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 149,
+      "end": 151,
+      "text": "dreaming of",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.62,
+      "end": 159.12,
+      "text": "I can say I hope it will be worth",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.12,
+      "end": 163.84,
+      "text": "what I give up, if I",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.84,
+      "end": 168.66,
+      "text": "stand on me for the things that I",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.66,
+      "end": 169.3,
+      "text": "believe",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.75,
+      "end": 175.1,
+      "text": "I say I want I where the world",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.1,
+      "end": 179.68,
+      "text": "lies I I give up, but if I shake it, I won't pay,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.92,
+      "end": 181.6,
+      "text": "just stand up and be,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.24,
+      "end": 186.76,
+      "text": "for all the things that I've been working on.",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 186.76,
+      "end": 189.66,
+      "text": "I said oh no,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 190.32,
+      "end": 191.6,
+      "text": "you will be right,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 192.04,
+      "end": 196.04,
+      "text": "said how do you open it up, take it out of way,",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    },
+    {
+      "start": 196.36,
+      "end": 197.76,
+      "text": "and stand on me",
+      "speaker": "artistes-santi",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "artistes-courtyard"
+    },
+    {
+      "time": 15,
+      "view": "artistes-close"
+    },
+    {
+      "time": 35,
+      "view": "artistes-parade"
+    },
+    {
+      "time": 53,
+      "view": "artistes-mask"
+    },
+    {
+      "time": 69,
+      "view": "artistes-close"
+    },
+    {
+      "time": 87,
+      "view": "artistes-still-life"
+    },
+    {
+      "time": 102,
+      "view": "artistes-mask"
+    },
+    {
+      "time": 121,
+      "view": "artistes-close"
+    },
+    {
+      "time": 138,
+      "view": "artistes-still-life"
+    },
+    {
+      "time": 155,
+      "view": "artistes-splashes"
+    },
+    {
+      "time": 178,
+      "view": "artistes-parade"
+    },
+    {
+      "time": 194,
+      "view": "artistes-finale"
+    }
+  ]
+}

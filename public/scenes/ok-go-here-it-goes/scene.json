@@ -1,0 +1,299 @@
+{
+  "setting": "treadmills",
+  "title": "OK Go · Here It Goes Again",
+  "description": "Four silhouettes cross, turn and regroup on moving belts in a foil-lined rehearsal room.",
+  "duration": 185.991837,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "treads-damian",
+      "name": "Damian",
+      "role": "CHIMERA vocals",
+      "tele": "treads-damian.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 21.82,
+      "end": 24.3,
+      "text": "half an hour since you called it a whole",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 25.78,
+      "end": 30.5,
+      "text": "So all your guys are second set, it's all for us And you leave me with my jaw on the",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 30.5,
+      "end": 31.14,
+      "text": "floor",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.62,
+      "end": 32.06,
+      "text": "Hey!",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.1,
+      "end": 35.54,
+      "text": "Oh,",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.88,
+      "end": 40.58,
+      "text": "just when ya think you're in control Just when you think you better hope",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.58,
+      "end": 45.4,
+      "text": "Just when you get out of it I hear it goes, hear it goes, here it goes again",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.4,
+      "end": 49.96,
+      "text": "I shoulda known, shoulda known, shoulda known",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.96,
+      "end": 50.4,
+      "text": "again",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 50.98,
+      "end": 55.5,
+      "text": "But here it goes again Oh, oh, here it goes again",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.7,
+      "end": 63.34,
+      "text": "Stacked out easy somethin' simple somethin' sleazy somethin' Inch and pass the edge of",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 63.34,
+      "end": 64.12,
+      "text": "reserve",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.18,
+      "end": 70.02,
+      "text": "Now through the lines of the cheap donation buys, your car is pulling off of the",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.02,
+      "end": 71.52,
+      "text": "curb Hey!",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.46,
+      "end": 79.2,
+      "text": "Oh Just when you think you're control Just when you think you",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.2,
+      "end": 82.36,
+      "text": "gotta hurt Just when you get on a roll Ah here",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.36,
+      "end": 89.28,
+      "text": "it",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.28,
+      "end": 94.08,
+      "text": "never get enough But here it goes again Oh, here it goes Oh, here it",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.08,
+      "end": 98.06,
+      "text": "goes Oh, now Oh, here it goes again Oh,",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.1,
+      "end": 103.08,
+      "text": "oh,",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.08,
+      "end": 107.84,
+      "text": "here it goes again",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.84,
+      "end": 109.9,
+      "text": "I'm to go!",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.98,
+      "end": 128.68,
+      "text": "I guess there's gotta be a break in the monotony, but for the reasons",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.68,
+      "end": 129.54,
+      "text": "I was told.",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.5,
+      "end": 135.22,
+      "text": "I know you cause the second sense of the rest, and you leave me",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.22,
+      "end": 137.1,
+      "text": "Yeah, you leave me",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 139.32,
+      "end": 142.36,
+      "text": "Here it goes, here it goes, here it goes again",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.1,
+      "end": 145.36,
+      "text": "Oh, here it goes again I shouldn't know",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.98,
+      "end": 156.94,
+      "text": "I should know I should know",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.6,
+      "end": 162.28,
+      "text": "I hear it cuz I should hear it it I hear",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.28,
+      "end": 166.88,
+      "text": "it cuz I should I should I should I should I should",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.88,
+      "end": 168.14,
+      "text": "should",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.84,
+      "end": 176.84,
+      "text": "ain't got scared",
+      "speaker": "treads-damian",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "treads-room"
+    },
+    {
+      "time": 15,
+      "view": "treads-crossing"
+    },
+    {
+      "time": 30,
+      "view": "treads-line"
+    },
+    {
+      "time": 45,
+      "view": "treads-close"
+    },
+    {
+      "time": 62,
+      "view": "treads-pairs"
+    },
+    {
+      "time": 78,
+      "view": "treads-crossing"
+    },
+    {
+      "time": 92,
+      "view": "treads-line"
+    },
+    {
+      "time": 107,
+      "view": "treads-room"
+    },
+    {
+      "time": 124,
+      "view": "treads-close"
+    },
+    {
+      "time": 140,
+      "view": "treads-pairs"
+    },
+    {
+      "time": 155,
+      "view": "treads-crossing"
+    },
+    {
+      "time": 170,
+      "view": "treads-finale"
+    }
+  ]
+}

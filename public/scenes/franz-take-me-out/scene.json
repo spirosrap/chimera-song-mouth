@@ -1,0 +1,338 @@
+{
+  "setting": "takemeout",
+  "title": "Franz Ferdinand · Take Me Out",
+  "description": "Constructivist graphics, halftone panels and brass mechanisms shift around a sharply dressed band.",
+  "duration": 240.163991,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "takeout-alex",
+      "name": "Alex",
+      "role": "CHIMERA vocals",
+      "tele": "takeout-alex.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 4.58,
+      "end": 7.1,
+      "text": "So if you're lonely,",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 7.52,
+      "end": 12.16,
+      "text": "you know I'm here waiting for you",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 12.16,
+      "end": 14.34,
+      "text": "I'm just a crosshair",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 15.48,
+      "end": 20.32,
+      "text": "I'm just a shard away from you And if you leave",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 20.32,
+      "end": 21.18,
+      "text": "here",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.54,
+      "end": 24.14,
+      "text": "leave me broken,",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.46,
+      "end": 27.86,
+      "text": "shattered, lie I'm just a crosshead",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.86,
+      "end": 31.68,
+      "text": "I'm just that short then we can",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.68,
+      "end": 32.94,
+      "text": "die",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.62,
+      "end": 36.74,
+      "text": "Ahh",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.64,
+      "end": 44.28,
+      "text": "I know I won't be leaving",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.28,
+      "end": 45.42,
+      "text": "here,",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.96,
+      "end": 48.34,
+      "text": "the wit of you",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.76,
+      "end": 86.14,
+      "text": "I say don't you know you say you don't",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.14,
+      "end": 90.68,
+      "text": "know I say take",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.68,
+      "end": 95.38,
+      "text": "me out I say you don't show don't move time is",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.38,
+      "end": 99.96,
+      "text": "low I say take",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.96,
+      "end": 100.86,
+      "text": "me out",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.26,
+      "end": 111.72,
+      "text": "I say you don't know,",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.28,
+      "end": 115.6,
+      "text": "you say you don't got what I say",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.42,
+      "end": 122.22,
+      "text": "Take me out if I move this could die, If I move",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.22,
+      "end": 126.92,
+      "text": "this could die I want you to",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.92,
+      "end": 129.04,
+      "text": "take me out",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.1,
+      "end": 135.48,
+      "text": "I know I won't believe in",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.48,
+      "end": 145.04,
+      "text": "here",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.04,
+      "end": 145.6,
+      "text": "with",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.6,
+      "end": 151.12,
+      "text": "you.",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.36,
+      "end": 163.76,
+      "text": "I say don't you know You say you don't",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.76,
+      "end": 168.36,
+      "text": "know I say, take",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.36,
+      "end": 172.4,
+      "text": "me out, I'll wait and this could die, I'll wait,",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 172.8,
+      "end": 173.68,
+      "text": "could die,",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.18,
+      "end": 175.52,
+      "text": "I want you",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.08,
+      "end": 180.58,
+      "text": "So take me out, I move this could die,",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.7,
+      "end": 185,
+      "text": "I move this could die Come on,",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 186.32,
+      "end": 188.1,
+      "text": "take me out",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 200.56,
+      "end": 204.82,
+      "text": "I know I won't in him",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 204.82,
+      "end": 214.34,
+      "text": "with",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    },
+    {
+      "start": 214.34,
+      "end": 214.8,
+      "text": "you.",
+      "speaker": "takeout-alex",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "take-collage"
+    },
+    {
+      "time": 15,
+      "view": "take-band"
+    },
+    {
+      "time": 36,
+      "view": "take-motor"
+    },
+    {
+      "time": 56,
+      "view": "take-pointer"
+    },
+    {
+      "time": 75,
+      "view": "take-band"
+    },
+    {
+      "time": 91,
+      "view": "take-dials"
+    },
+    {
+      "time": 111,
+      "view": "take-close"
+    },
+    {
+      "time": 132,
+      "view": "take-collage"
+    },
+    {
+      "time": 152,
+      "view": "take-motor"
+    },
+    {
+      "time": 174,
+      "view": "take-band"
+    },
+    {
+      "time": 190,
+      "view": "take-dials"
+    },
+    {
+      "time": 211,
+      "view": "take-motor"
+    },
+    {
+      "time": 227,
+      "view": "take-finale"
+    }
+  ]
+}

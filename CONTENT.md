@@ -231,6 +231,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | MGMT — Electric Feel | 3:48 | `?scene=mgmt-electric-feel` | A forest party lit by lanterns and a glowing moon. |
 | Passion Pit — Take a Walk | 4:11 | `?scene=passion-pit-take-a-walk` | A bouncing ball travels from the park to neighborhood rooftops and glass towers. |
 | The B-52's — Love Shack | 4:19 | `?scene=b52-love-shack` | A roadside convertible and tin-roof dance party with call-and-response vocals. |
+| The White Stripes — Fell In Love With A Girl | 2:00 | `?scene=white-stripes-fell-in-love` | Brick mosaics, rock duo, guitar and drums. |
+| Yeah Yeah Yeahs — Zero | 4:46 | `?scene=yeah-zero` | Leather jackets, neon signs and a nighttime street performance. |
+| Franz Ferdinand — Take Me Out | 4:00 | `?scene=franz-take-me-out` | Constructivist cut-paper panels, brass dials and a four-figure band. |
+| Santigold — L.E.S. Artistes | 3:29 | `?scene=santigold-les-artistes` | Courtyard, still-life plinths, costumed figures and splashes of color. |
+| Justice — D.A.N.C.E. | 3:01 | `?scene=justice-dance` | Multicolored graphics on costumes and a neon passage. |
+| Beastie Boys — Intergalactic | 4:35 | `?scene=beastie-intergalactic` | Three physical rap parts in a tiled station and a city with a towering robot. |
+| OK Go — Here It Goes Again | 3:06 | `?scene=ok-go-here-it-goes` | Four figures step and turn on moving belts in a foil-lined rehearsal room. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

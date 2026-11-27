@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import { isIndie, type IndieView } from '../../scene/indie-videos.ts';
+import { buildIndieSet, INDIE_FIGURES, INDIE_WARDROBE } from './indie-videos.ts';
 import { isVariety, type VarietyView } from '../../scene/variety-videos.ts';
 import { buildVarietySet, VARIETY_FIGURES, VARIETY_WARDROBE } from './variety-videos.ts';
 import { isEncore, type EncoreView } from '../../scene/encore-videos.ts';
@@ -9,6 +11,7 @@ import { VideoProps, type VideoPoint } from './videoProps.ts';
 export const SHOWCASE_WARDROBE = {
   ...ENCORE_WARDROBE,
   ...VARIETY_WARDROBE,
+  ...INDIE_WARDROBE,
   mitskinobody:{jackets:['#354667','#af4a50','#437181','#637a52'],hair:['#30262b','#493738']},
   letforeverbe:{jackets:['#ca5254','#e2b688','#ae4447','#e7c5aa'],hair:['#614636','#d1a163']},
   tilteddance:{jackets:['#282c37','#2e343c','#393a47','#2f313a'],hair:['#52433a','#2d2327']},
@@ -27,6 +30,7 @@ export const SHOWCASE_WARDROBE = {
 export const SHOWCASE_FIGURES:Record<ShowcaseSetting,number> = {
   ...ENCORE_FIGURES,
   ...VARIETY_FIGURES,
+  ...INDIE_FIGURES,
   mitskinobody:4, letforeverbe:7, tilteddance:4, welcometoisland:3, lifeitself:4, robynfriend:1, idlesdancer:5,
   kimbrasettle:3, tuneyardswater:5, metrolook:4, jainmakeba:5, jbreakfastsweet:2, chvrchesmother:3, altjtessellate:6,
 };
@@ -34,6 +38,7 @@ export const SHOWCASE_FIGURES:Record<ShowcaseSetting,number> = {
 export function buildShowcaseSet(p:VideoProps, setting:ShowcaseSetting, view:ShowcaseView) {
   if (isEncore(setting)) return buildEncoreSet(p, setting, view as EncoreView);
   if (isVariety(setting)) return buildVarietySet(p, setting, view as VarietyView);
+  if (isIndie(setting)) return buildIndieSet(p, setting, view as IndieView);
   const root=new THREE.Group();
   const features:THREE.Object3D[]=[];
   const box=(w:number,h:number,d:number,c:string,x:number,y:number,z:number)=>p.box(root,w,h,d,c,[x,y,z]);

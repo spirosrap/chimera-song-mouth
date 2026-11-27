@@ -1,0 +1,239 @@
+{
+  "setting": "brickgirl",
+  "title": "The White Stripes · Fell In Love With A Girl",
+  "description": "A red, white and black block mosaic turns into a miniature performance with guitar, drums and a scrolling wall of studs.",
+  "duration": 120.256145,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "bricks-jack",
+      "name": "Jack",
+      "role": "CHIMERA vocals",
+      "tele": "bricks-jack.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 15.02,
+      "end": 16.48,
+      "text": "She's love with the girl,",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.02,
+      "end": 19.84,
+      "text": "I feel her like one son, I'm all completely lean,",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 20.18,
+      "end": 21.4,
+      "text": "she's in the world,",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 21.78,
+      "end": 26.3,
+      "text": "or sometimes it's feelings when the sun is leaning Shit -towns I said are you",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.3,
+      "end": 26.74,
+      "text": "alright?",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 27,
+      "end": 31.76,
+      "text": "said I must be fine cause my heart still beating Come and kiss them on the river side,",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.76,
+      "end": 34.88,
+      "text": "yeah I promise that he'll his own considerate shape thing now.",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.28,
+      "end": 36.44,
+      "text": "Back here with a girl.",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.98,
+      "end": 39.68,
+      "text": "You're role of the player and the eyes will beat me.",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.02,
+      "end": 44.54,
+      "text": "Can't keep away from the girl. Two sides of my brain need to have a meeting",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.1,
+      "end": 49.46,
+      "text": "Can't think of anything to do, yeah My left brain knows that I love this painting",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.46,
+      "end": 53.82,
+      "text": "She just looking for something new, yeah Said it was me falling by the best",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.82,
+      "end": 58.7,
+      "text": "repeating now I don't",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.7,
+      "end": 63.22,
+      "text": "want them, I don't",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 63.22,
+      "end": 67.4,
+      "text": "them Crap the girls, ain't tricked her, yeah my lil'",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.74,
+      "end": 69.38,
+      "text": "knows Had a lover's bleeding,",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.06,
+      "end": 73.4,
+      "text": "she didn't look at both sides of the new house Said it was me for her money,",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.7,
+      "end": 76.58,
+      "text": "bad's repeating her I'm in love with her girl",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.76,
+      "end": 84.22,
+      "text": "She's in love with the world, but some childish feelings give me some misleading.",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.88,
+      "end": 89.02,
+      "text": "She tells us that you won't lie, I must be fine, because got my heart snooping",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.58,
+      "end": 91.9,
+      "text": "Come and kiss me by the river side Yeah,",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.22,
+      "end": 94.94,
+      "text": "Bobby said he funny Don't consider her cheating now",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.04,
+      "end": 109.56,
+      "text": "Can't take a little thing to do Yeah, left brain knows that her love is fleeting",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.56,
+      "end": 114.46,
+      "text": "She just looking for something new and I said it once before but it best repeating",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.46,
+      "end": 114.98,
+      "text": "now",
+      "speaker": "bricks-jack",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "bricks-mosaic"
+    },
+    {
+      "time": 8,
+      "view": "bricks-guitar-close"
+    },
+    {
+      "time": 19,
+      "view": "bricks-duo"
+    },
+    {
+      "time": 30,
+      "view": "bricks-drums"
+    },
+    {
+      "time": 40,
+      "view": "bricks-mosaic"
+    },
+    {
+      "time": 51,
+      "view": "bricks-guitar-close"
+    },
+    {
+      "time": 63,
+      "view": "bricks-duo"
+    },
+    {
+      "time": 74,
+      "view": "bricks-drums"
+    },
+    {
+      "time": 88,
+      "view": "bricks-mosaic"
+    },
+    {
+      "time": 103,
+      "view": "bricks-guitar-close"
+    },
+    {
+      "time": 112,
+      "view": "bricks-finale"
+    }
+  ]
+}

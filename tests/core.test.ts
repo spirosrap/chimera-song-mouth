@@ -22,7 +22,9 @@ test('the memory core is a third movie beside the two existing ones, without a p
   'kimbra-settle-down','tuneyards-water-fountain','metronomy-the-look','jain-makeba','japanese-breakfast-be-sweet','chvrches-mother-we-share','altj-tessellate',
   'jamiroquai-virtual-insanity','miike-snow-genghis-khan','muna-silk-chiffon','aurora-cure-for-me','lizzo-about-damn-time','kylie-cant-get-you-out','roisin-overpowered',
   'florence-dog-days','grimes-oblivion','britney-toxic','gorillaz-dare','mgmt-electric-feel',
-  'passion-pit-take-a-walk','b52-love-shack']);
+  'passion-pit-take-a-walk','b52-love-shack',
+  'white-stripes-fell-in-love','yeah-zero','franz-take-me-out','santigold-les-artistes',
+  'justice-dance','beastie-intergalactic','ok-go-here-it-goes']);
  expect(movieScene('hal-9000')?.readyVideo).toBeUndefined();
 });
 test('the core accepts only its own cast and cameras',()=>{
