@@ -26,7 +26,8 @@ test('the complete karaoke clip appends a scene with its own singer, music and l
   'rina-xs','magdalena-image','model-cinderella','wolf-alice-bloom','geese-taxes','gecs-doritos-fritos','confidence-holiday',
   'amyl-should-not','st-vincent-digital-witness','yard-act-we-make-hits','jungle-back-on-74','janelle-tightrope','fever-ray-kandy','ren-animal-flow',
   'mitski-nobody','chemical-let-forever-be','christine-tilted','caroline-welcome-island','glass-life-itself','robyn-call-girlfriend','idles-dancer',
-  'kimbra-settle-down','tuneyards-water-fountain','metronomy-the-look','jain-makeba','japanese-breakfast-be-sweet','chvrches-mother-we-share','altj-tessellate']);
+  'kimbra-settle-down','tuneyards-water-fountain','metronomy-the-look','jain-makeba','japanese-breakfast-be-sweet','chvrches-mother-we-share','altj-tessellate',
+  'jamiroquai-virtual-insanity','miike-snow-genghis-khan','muna-silk-chiffon','aurora-cure-for-me','lizzo-about-damn-time','kylie-cant-get-you-out','roisin-overpowered']);
  expect(movieScene('project-hail-mary')).toBeDefined();expect(scene.setting).toBe('karaoke');
  expect(scene.duration).toBeGreaterThan(143);expect(scene.duration).toBeLessThan(144);
  expect(scene.characters.map(c=>c.id)).toEqual(['karaoke-singer']);expect(track.duration).toBeCloseTo(scene.duration,1);

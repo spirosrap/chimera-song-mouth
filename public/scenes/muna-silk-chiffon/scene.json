@@ -1,0 +1,355 @@
+{
+  "setting": "silkchiffon",
+  "title": "MUNA feat. Phoebe Bridgers · Silk Chiffon",
+  "description": "A pink camp room, bright porch and improvised performance frame an exchange between Katie and Phoebe.",
+  "duration": 194.62966,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "silk-katie",
+      "name": "Katie",
+      "role": "CHIMERA vocals",
+      "tele": "silk-katie.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "silk-phoebe",
+      "name": "Phoebe",
+      "role": "CHIMERA vocals",
+      "tele": "silk-phoebe.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 6.42,
+      "end": 10.96,
+      "text": "Oh, sign down and I'm feeling lifted",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 10.96,
+      "end": 15.84,
+      "text": "Downtown cherry lipstick",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 16.68,
+      "end": 20.62,
+      "text": "Watch your silk dress dancing in the wind,",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 21,
+      "end": 25.72,
+      "text": "watch it brush against her skin Makes me wanna try her on",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.62,
+      "end": 31.38,
+      "text": "Like life's so fun, like so fun Got my miniskirt and my roller blades",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.38,
+      "end": 36.2,
+      "text": "on Bag on my side cause I'm up till dawn Keeping it light like silk chef",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.2,
+      "end": 40.86,
+      "text": "on Life's so fun. Life's so fun. Don't you worry about",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.86,
+      "end": 41.62,
+      "text": "no one?",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.02,
+      "end": 43.98,
+      "text": "said I got her if I want",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.38,
+      "end": 48.38,
+      "text": "like silk, she's fun She",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.38,
+      "end": 51.68,
+      "text": "won,",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 52,
+      "end": 56.82,
+      "text": "that's how it feels Oh when she's on",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.82,
+      "end": 61.58,
+      "text": "me She won,",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.14,
+      "end": 65.72,
+      "text": "that's how it feel Oh when",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.4,
+      "end": 67.34,
+      "text": "on me",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.94,
+      "end": 80.28,
+      "text": "I'm high and I'm feeling anxious",
+      "speaker": "silk-phoebe",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.6,
+      "end": 85.04,
+      "text": "Inside of the CVS",
+      "speaker": "silk-phoebe",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.1,
+      "end": 90.64,
+      "text": "When she turns around halfway down the aisle We fed",
+      "speaker": "silk-phoebe",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.64,
+      "end": 95.3,
+      "text": "your own camera smile Like she wants to try me on",
+      "speaker": "silk-phoebe",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.9,
+      "end": 100.7,
+      "text": "And life's so fun, life's so fun Got my mini skirt and my little glades",
+      "speaker": "silk-phoebe",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.7,
+      "end": 103.52,
+      "text": "on Back on my side cause I'm not too gone",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.1,
+      "end": 113.28,
+      "text": "She said that I got her if I want",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.28,
+      "end": 116.56,
+      "text": "She's so soft like silk chiffon",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.06,
+      "end": 121.02,
+      "text": "Silk chiffon,",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.16,
+      "end": 125.52,
+      "text": "that's how it feels Oh when she's",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.52,
+      "end": 127.8,
+      "text": "on me Silk",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.8,
+      "end": 132.44,
+      "text": "chiffon, that's how",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.44,
+      "end": 133.42,
+      "text": "it feels,",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.84,
+      "end": 138.68,
+      "text": "oh she's on me It feels good",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.68,
+      "end": 143.26,
+      "text": "to me, it feels good to me Oh I",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.26,
+      "end": 144.44,
+      "text": "wanna be,",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.18,
+      "end": 149.66,
+      "text": "oh I wanna be It feels good to me,",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.9,
+      "end": 153.58,
+      "text": "it feel good to me Oh I wanna",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.6,
+      "end": 157.14,
+      "text": "oh, I wouldn't be",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.81,
+      "end": 162.42,
+      "text": "She got love like so much of her She's",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.42,
+      "end": 166.9,
+      "text": "one that's how",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.9,
+      "end": 171.08,
+      "text": "it feels Oh and she's only",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 171.08,
+      "end": 172.54,
+      "text": "true",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.1,
+      "end": 177.98,
+      "text": "She's one that's how it feels,",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    },
+    {
+      "start": 178.86,
+      "end": 181.52,
+      "text": "oh she's on me",
+      "speaker": "silk-katie",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "silk-porch"
+    },
+    {
+      "time": 13,
+      "view": "silk-pink-close"
+    },
+    {
+      "time": 29,
+      "view": "silk-room"
+    },
+    {
+      "time": 46,
+      "view": "silk-garden"
+    },
+    {
+      "time": 62,
+      "view": "silk-ensemble"
+    },
+    {
+      "time": 78,
+      "view": "silk-porch"
+    },
+    {
+      "time": 92,
+      "view": "silk-guest-close"
+    },
+    {
+      "time": 107,
+      "view": "silk-room"
+    },
+    {
+      "time": 127,
+      "view": "silk-garden"
+    },
+    {
+      "time": 147,
+      "view": "silk-ensemble"
+    },
+    {
+      "time": 165,
+      "view": "silk-pink-close"
+    },
+    {
+      "time": 185,
+      "view": "silk-finale"
+    }
+  ]
+}

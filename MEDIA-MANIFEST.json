@@ -1887,6 +1887,36 @@
       "sha256": "941521b9f9904428691bb478a32cce50b93b9c1b013b72f011d26d452ff41eab"
     },
     {
+      "path": "public/scenes/aurora-cure-for-me/backing.mp3",
+      "bytes": 6452013,
+      "sha256": "252cca6c4e12fb916eddc05fda5dfc80d2340948651818c548b4d0d241ad97c5"
+    },
+    {
+      "path": "public/scenes/aurora-cure-for-me/credits.txt",
+      "bytes": 77,
+      "sha256": "51428ba4faaa349fad9d37e0cc9070791e3883cbe4cd8052412ba33bf966a275"
+    },
+    {
+      "path": "public/scenes/aurora-cure-for-me/cure-aurora.tele.gz",
+      "bytes": 2156603,
+      "sha256": "24afc017b57ee2fc9c53c14be4183f3caaa714206374ca0dbe28596a31fb18de"
+    },
+    {
+      "path": "public/scenes/aurora-cure-for-me/mix.mp3",
+      "bytes": 6452012,
+      "sha256": "667494d9238d8d7f63f58e2b14dededd969bc661a87c667d90204ec84260d0ed"
+    },
+    {
+      "path": "public/scenes/aurora-cure-for-me/performance.json",
+      "bytes": 502467,
+      "sha256": "77b84ff145c563ee27f5894d70544642bff0b90f53c0066e1c6cc688f69c308b"
+    },
+    {
+      "path": "public/scenes/aurora-cure-for-me/scene.json",
+      "bytes": 8080,
+      "sha256": "21c3cfd4c27c29eaa88e1368170a787aea8e6f300ed43d8d9444fb29de9874fc"
+    },
+    {
       "path": "public/scenes/autumn-leaves/backing.mp3",
       "bytes": 5101100,
       "sha256": "dc83ca2470fcbe7b60bc3869a32ab713282adc375238a65ac075f680a8f996e7"
@@ -4157,6 +4187,36 @@
       "sha256": "7e66abdb41a021050360a41c087a3e53e48666c4b7e5b0c3532d5a4c0b53d90d"
     },
     {
+      "path": "public/scenes/jamiroquai-virtual-insanity/backing.mp3",
+      "bytes": 7513389,
+      "sha256": "c929bb8d4ba0463b88235432fec48e7b2b171f53301957e672b9fb40fcf9d204"
+    },
+    {
+      "path": "public/scenes/jamiroquai-virtual-insanity/credits.txt",
+      "bytes": 86,
+      "sha256": "3173a04b3aa94f6ca231949738f2822924f461a846fffa131640f0e3db710458"
+    },
+    {
+      "path": "public/scenes/jamiroquai-virtual-insanity/mix.mp3",
+      "bytes": 7513388,
+      "sha256": "4890a55cbb59125085850f7deb4ac9e5c3c89201694f029052b9c03e11317f7d"
+    },
+    {
+      "path": "public/scenes/jamiroquai-virtual-insanity/performance.json",
+      "bytes": 591852,
+      "sha256": "7e7a1a68b89fe6eb2f795baa1aa42b6bbed47791bf88efa0956a7dff58dd4365"
+    },
+    {
+      "path": "public/scenes/jamiroquai-virtual-insanity/scene.json",
+      "bytes": 9922,
+      "sha256": "7f45c83256cb96e7f626424bb4c35cf182d73c147acef885076f40c85b8e99bd"
+    },
+    {
+      "path": "public/scenes/jamiroquai-virtual-insanity/virtual-jay.tele.gz",
+      "bytes": 2609136,
+      "sha256": "f453b36889501f56eab3d5bae4f8030c3b4d611c11616530ce7b282a5b4c8fc8"
+    },
+    {
       "path": "public/scenes/janelle-tightrope/backing.mp3",
       "bytes": 9999405,
       "sha256": "73d609e087ccfa0f029e878593f481e94dfa66ac100b0b6ab764d546ee589d48"
@@ -4402,6 +4462,36 @@
       "sha256": "c824cb7df7ef2efd006839159b87f3a6c8d37e938cbea218690e7bdc54c32967"
     },
     {
+      "path": "public/scenes/kylie-cant-get-you-out/backing.mp3",
+      "bytes": 7371309,
+      "sha256": "af223d2f2f01cc45405b6c9fd555c6fc739e728fa9b787d25b1285b43f1c54bd"
+    },
+    {
+      "path": "public/scenes/kylie-cant-get-you-out/credits.txt",
+      "bytes": 101,
+      "sha256": "2f7a99c5db17ecf340bfdea53da165beb18a2e6c35f20254ca3cb63e21f57b1b"
+    },
+    {
+      "path": "public/scenes/kylie-cant-get-you-out/head-kylie.tele.gz",
+      "bytes": 2246527,
+      "sha256": "0ec82c38d8a0d3dfc5f57fbc108056ebcb8ad31389989121440010b823b98afc"
+    },
+    {
+      "path": "public/scenes/kylie-cant-get-you-out/mix.mp3",
+      "bytes": 7371308,
+      "sha256": "da0b2eb6b183da22ef4b8bb40f42fc67240083d7fda8a3ac93922d60ff89ff9d"
+    },
+    {
+      "path": "public/scenes/kylie-cant-get-you-out/performance.json",
+      "bytes": 514842,
+      "sha256": "93288d07c35703fac72d531f2b5b615328a3ea9bfdb6b3670122fe4fa027abf8"
+    },
+    {
+      "path": "public/scenes/kylie-cant-get-you-out/scene.json",
+      "bytes": 6888,
+      "sha256": "d093fdbd9e88d85b94280232f3372286380d404a752ee3c74b8ef0df537dce86"
+    },
+    {
       "path": "public/scenes/land-confusion/backing.mp3",
       "bytes": 10527020,
       "sha256": "9ba6f59ed655c600b00aa49ae8224ce7950f072886eddc994630c29bcdadce15"
@@ -4580,6 +4670,36 @@
       "path": "public/scenes/little-simz-young/young-simz.tele.gz",
       "bytes": 1971778,
       "sha256": "89a68bd0b8b77b0da5b0f1695ce88ad8542a6b4392a2d3390139ce2d901ce937"
+    },
+    {
+      "path": "public/scenes/lizzo-about-damn-time/backing.mp3",
+      "bytes": 7850541,
+      "sha256": "1625613539da119da643bdc0bc3ca7b9619c8a91f7692f2935ce065d16a20cc2"
+    },
+    {
+      "path": "public/scenes/lizzo-about-damn-time/credits.txt",
+      "bytes": 80,
+      "sha256": "13060bce4337efb0a1b182dd8b53a710ce3deb4a9341b387736d7aeaa042a80e"
+    },
+    {
+      "path": "public/scenes/lizzo-about-damn-time/mix.mp3",
+      "bytes": 7850540,
+      "sha256": "5c13163f131ea3095eafb39f2217a2ca7813207a23ed996fb4a9db613c7da49e"
+    },
+    {
+      "path": "public/scenes/lizzo-about-damn-time/performance.json",
+      "bytes": 560631,
+      "sha256": "32cac9ec99069d7e970df2545eed0a100abe50e9ee53ae0edfa8220a329a3681"
+    },
+    {
+      "path": "public/scenes/lizzo-about-damn-time/scene.json",
+      "bytes": 10838,
+      "sha256": "722cb0d1b60e5fe7ee64206c5872e4e4cc15018d9f8f826284e123a5e35e2ddd"
+    },
+    {
+      "path": "public/scenes/lizzo-about-damn-time/time-lizzo.tele.gz",
+      "bytes": 2358318,
+      "sha256": "753263d396b62a9cb2cdd22fca4214ad6e983ddddd010f046157c3d47d68c2b5"
     },
     {
       "path": "public/scenes/lonely-in-the-future/backing.mp3",
@@ -4957,6 +5077,36 @@
       "sha256": "6ac1ce3e6fe773bc770456ce5d2614fb8e787e6b9399656143c25e2075ef0a54"
     },
     {
+      "path": "public/scenes/miike-snow-genghis-khan/backing.mp3",
+      "bytes": 7933485,
+      "sha256": "05432335ead75c6b4681778e2d7834e4acbd26d17925b98ffc577f1d304df317"
+    },
+    {
+      "path": "public/scenes/miike-snow-genghis-khan/credits.txt",
+      "bytes": 82,
+      "sha256": "51d7d1282f35916ba4076c749e70f7977c40ea43619d8a7c9f1676aed5056ca2"
+    },
+    {
+      "path": "public/scenes/miike-snow-genghis-khan/genghis-andrew.tele.gz",
+      "bytes": 2400242,
+      "sha256": "25018398c6cb16fe3cf1d3bb1c5ce67d5d0ab77858d51a605451b065ff12afd4"
+    },
+    {
+      "path": "public/scenes/miike-snow-genghis-khan/mix.mp3",
+      "bytes": 7933484,
+      "sha256": "44d1e08c231bbfcdaceea15828e63fa9bd18ae78e87240eea0c0c2d76063f57c"
+    },
+    {
+      "path": "public/scenes/miike-snow-genghis-khan/performance.json",
+      "bytes": 527179,
+      "sha256": "7d9688f9694f71ef49c7be2310bdf3cbdf72c6a466ca28cab59dc40ca0a4f18d"
+    },
+    {
+      "path": "public/scenes/miike-snow-genghis-khan/scene.json",
+      "bytes": 6939,
+      "sha256": "4276fef85f89f5f0ffbba1eabc057cfe1ed6d122aeeba34ba1809ec6930e65ec"
+    },
+    {
       "path": "public/scenes/milkshake-man/backing.mp3",
       "bytes": 4729042,
       "sha256": "e8fc875f86dc3c3eee2b28f590cd01ed113e65a424b380a7aea1ab585f59d16a"
@@ -5105,6 +5255,41 @@
       "path": "public/scenes/mr-electric-blue/scene.json",
       "bytes": 15776,
       "sha256": "9b4afc18974010129e8b3e180f9a27a52a3d9aff46a5a36088abd9ede1e2b7c5"
+    },
+    {
+      "path": "public/scenes/muna-silk-chiffon/backing.mp3",
+      "bytes": 6230061,
+      "sha256": "02092ed342ee638b98c4f184ae90512cbde2df4b40965b0e349fdcd887b37e1e"
+    },
+    {
+      "path": "public/scenes/muna-silk-chiffon/credits.txt",
+      "bytes": 98,
+      "sha256": "9cc3fca2954a919ae15d04b4babcb917ea3e148e2f7365702d7d54ef3eb91186"
+    },
+    {
+      "path": "public/scenes/muna-silk-chiffon/mix.mp3",
+      "bytes": 6230060,
+      "sha256": "febe913e1c376139060fcbca4d5943c7f7bd5f49baedcb2474a64d6be7b0ced7"
+    },
+    {
+      "path": "public/scenes/muna-silk-chiffon/performance.json",
+      "bytes": 476816,
+      "sha256": "5f6b8159a8b78106e44b5d23c61561ec9fe2ca7bfb02d99e10e3f283f2b64288"
+    },
+    {
+      "path": "public/scenes/muna-silk-chiffon/scene.json",
+      "bytes": 7676,
+      "sha256": "a3a862212b468bd14ab60e2d68cdf9874d82a1f2453c648a510b805d204297d5"
+    },
+    {
+      "path": "public/scenes/muna-silk-chiffon/silk-katie.tele.gz",
+      "bytes": 1766737,
+      "sha256": "0cfcbf05b73973c79bad86adab0688fd19229262b43446d3dd11bdc3d799c5d8"
+    },
+    {
+      "path": "public/scenes/muna-silk-chiffon/silk-phoebe.tele.gz",
+      "bytes": 280640,
+      "sha256": "6e8998cf5939065ff03c9b7a1b0009b2cfcd1749268a83fe85ef3209a5d9222c"
     },
     {
       "path": "public/scenes/my-heart-will-go-on/backing.mp3",
@@ -5855,6 +6040,36 @@
       "path": "public/scenes/rock-me-amadeus/tenor.tele.gz",
       "bytes": 1623739,
       "sha256": "3654113f9730da00ba79426076daf7da1c06bbb86ffbebd0afff612cc694d1f5"
+    },
+    {
+      "path": "public/scenes/roisin-overpowered/backing.mp3",
+      "bytes": 7568685,
+      "sha256": "76c04d29db6f1ef14d8298ca91fb3dc8cac2012e53c611242f64ec7b5eece912"
+    },
+    {
+      "path": "public/scenes/roisin-overpowered/credits.txt",
+      "bytes": 86,
+      "sha256": "fcca00c8fdcacd6f21b103f39766cfa073f3cad8ead5368f12eede7e18277d9a"
+    },
+    {
+      "path": "public/scenes/roisin-overpowered/mix.mp3",
+      "bytes": 7568684,
+      "sha256": "828d6212c2d8fd94d69f7ca577098281d8b15be125b6bb6e6f6aa7cd7ecce561"
+    },
+    {
+      "path": "public/scenes/roisin-overpowered/over-roisin.tele.gz",
+      "bytes": 1695740,
+      "sha256": "d8f3dac2eafbd8cf1d17d1531855a8833f338507c697b494900cd82266eaf4f2"
+    },
+    {
+      "path": "public/scenes/roisin-overpowered/performance.json",
+      "bytes": 367174,
+      "sha256": "b3586de387ee76493a6a9c3e1428e6f3f58eed1dd5b3c611e3863fde3a1ebf53"
+    },
+    {
+      "path": "public/scenes/roisin-overpowered/scene.json",
+      "bytes": 6615,
+      "sha256": "93c4d68bfcc7dc4c38a15edac9e01f469ac365fc2763781959f2152c51f73b22"
     },
     {
       "path": "public/scenes/runway/backing.mp3",

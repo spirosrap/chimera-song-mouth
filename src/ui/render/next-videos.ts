@@ -12,7 +12,7 @@ import type { VoiceModel } from '../analysis.ts';
 import { VideoFigure, VideoProps, type VideoPoint as Point } from './videoProps.ts';
 
 type Actor = { id: CharacterId; model: VoiceModel; track: TeleTrack };
-type Set = { root: THREE.Group; background: string; features: THREE.Object3D[] };
+type Set = { root: THREE.Group; background: string; features: THREE.Object3D[]; animate?: (time: number) => void };
 type CastMember = { figure: VideoFigure; jacket: THREE.MeshBasicMaterial; base: string; pinky?: THREE.Mesh };
 const range = (count: number) => Array.from({ length: count }, (_, i) => i);
 const color = (colors: readonly string[], index: number) => colors[index % colors.length];
@@ -105,6 +105,23 @@ export class NextVideoStage {
       if (setting === 'mitskinobody' && i === 0) {
         for (let dot=0; dot<15; dot++) {
           this.props.oval(figure.root, [(dot%3-1)*7.6+(Math.floor(dot/3)%2)*3,-24-Math.floor(dot/3)*8,11], [1.2,1.25,.6], '#ceb7a2');
+        }
+      }
+      if (setting === 'virtualinsanity' && i === 0) {
+        this.props.oval(figure.root, [0, 14, 1], [13, 6, 12], '#312d36');
+        this.props.oval(figure.root, [0, 10.5, 4], [15, 1.7, 13], '#3b353d');
+      }
+      if (setting === 'auroracure' && i > 0) {
+        const mask = '#c5b99b';
+        this.props.oval(figure.root, [0,6,10], [9,4.8,2.2], mask);
+        for(const side of [-1,1]) {
+          this.props.oval(figure.root, [side*4.1,6.4,12], [1.8,1.4,.65], '#453c42');
+        }
+      }
+      if (setting === 'roisinover' && i === 0) {
+        for (const side of [-1,1]) for (let arc=0;arc<6;arc++) {
+          this.props.oval(figure.root, [side*(17+arc*.65),-18-arc*6,3], [7+arc*1.55,4.2,5.3],
+            arc%2?'#54505d':'#d1c8ba');
         }
       }
       if (setting === 'robynfriend') {
@@ -400,9 +417,11 @@ export class NextVideoStage {
     const dt = reset ? 1 / 60 : THREE.MathUtils.clamp(time - this.previousTime, 1 / 120, .05);
     const beat = Math.PI * 2 * (time * NEXT_VIDEO_INFO[this.setting].bpm / 60);
     const tight = designated >= 0 || /close|portrait|window|canvas/.test(stageView);
-    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band|look-white-stage|sweet-office|sweet-car|sweet-ufo|tessellate-steps|tessellate-table|water-tv/.test(stageView);
+    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band|look-white-stage|sweet-office|sweet-car|sweet-ufo|tessellate-steps|tessellate-table|water-tv|time-meeting|genghis-house|silk-porch|silk-room/.test(stageView);
     const seated = /campfire|tea|flat/.test(stageView);
+    const ensemble = this.setting === 'virtualinsanity' ? stageView === 'virtual-white-ensemble' : group;
     const core = this.figures.length;
+    const slide = this.setting==='virtualinsanity' && !tight ? 13*Math.sin(time*.67) : 0;
     for (const [i, member] of this.figures.entries()) {
       const { figure, jacket, base } = member;
       const slot = (i - active + core) % core;
@@ -413,8 +432,8 @@ export class NextVideoStage {
       const flying = stageView === 'doritos-flight' ? 22 + 17 * Math.sin(time * .72 + slot * .8) : 0;
       const emphasis = i === active ? Math.min(1, intensity) : .16;
       const leap = stageView === 'meat-trampoline' ? 22 * Math.max(0, Math.sin(phase * .5)) : 0;
-      figure.root.visible = i === active || (!tight && (i < cast.length || group || /kitchen|service|steam/.test(stageView)));
-      figure.root.position.set(offset + Math.sin(phase * .5) * 2, (seated ? 127 : 153) + bounce * Math.cos(phase) + leap + flying,
+      figure.root.visible = i === active || (!tight && (i < cast.length || ensemble || /kitchen|service|steam/.test(stageView)));
+      figure.root.position.set(slide + offset + Math.sin(phase * .5) * 2, (seated ? 127 : 153) + bounce * Math.cos(phase) + leap + flying,
         slot ? -37 - 14 * Math.floor((slot - 1) / 2) : 13);
       figure.root.rotation.set(.015 * Math.sin(phase), side * Math.min(.095, Math.abs(offset) * .001) + .042 * Math.sin(phase * .5),
         .039 * Math.sin(phase * .5));
@@ -455,7 +474,9 @@ export class NextVideoStage {
     for (const [i, {figure}] of this.figures.entries()) {
       if (figure.root.visible) figure.update(i < cast.length ? time : 0, playing && i < cast.length, this.camera, dt, reset);
     }
-    for (const [i, feature] of this.sets.get(stageView)!.features.entries()) {
+    const scenery=this.sets.get(stageView)!;
+    scenery.animate?.(time);
+    for (const [i, feature] of scenery.features.entries()) {
       const pulse = Math.sin(.63 * beat + i * .71);
       const opacity = (feature as THREE.Mesh).material as THREE.MeshBasicMaterial;
       if (opacity.transparent) opacity.opacity = .1 + .07 * pulse;

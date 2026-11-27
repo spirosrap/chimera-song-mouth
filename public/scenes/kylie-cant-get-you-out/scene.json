@@ -1,0 +1,327 @@
+{
+  "setting": "kyliehead",
+  "title": "Kylie Minogue · Can't Get You Out Of My Head",
+  "description": "A car, a bright city plaza and white hoods give way to red costumes and a night-time ensemble.",
+  "duration": 230.29551,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "head-kylie",
+      "name": "Kylie",
+      "role": "CHIMERA vocals",
+      "tele": "head-kylie.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 29.8,
+      "end": 33.88,
+      "text": "I just can't you out of my head.",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.56,
+      "end": 37.98,
+      "text": "Boy, your lovin' is all I think about.",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.4,
+      "end": 43.3,
+      "text": "I just can't get you outta my head. Boy, it's more",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.3,
+      "end": 48.12,
+      "text": "than a dare you to think about La la la,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.44,
+      "end": 52.52,
+      "text": "la la la la la la la la",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.1,
+      "end": 58,
+      "text": "I just can't you out of my head Boy your",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 58,
+      "end": 62.68,
+      "text": "lovin' is all I'll think about Just can't get",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.68,
+      "end": 67.1,
+      "text": "you outta my head Boy, it's more than I dare",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.1,
+      "end": 70.82,
+      "text": "you to think about every",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.82,
+      "end": 72.92,
+      "text": "night,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.24,
+      "end": 77.58,
+      "text": "every day just",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.58,
+      "end": 81.22,
+      "text": "to be there in your",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.22,
+      "end": 83.24,
+      "text": "arms.",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.04,
+      "end": 85.84,
+      "text": "Won't you stay?",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.64,
+      "end": 92.52,
+      "text": "Won't you",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.52,
+      "end": 96.58,
+      "text": "lay,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.52,
+      "end": 100.68,
+      "text": "Stay for it,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.84,
+      "end": 106.58,
+      "text": "and then, boo, and then, yeah, and then,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.8,
+      "end": 111.68,
+      "text": "boo, and la -la -la, la -la la, la, la,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.68,
+      "end": 116.32,
+      "text": "lala, lala, lala, la, lala, lalala, la, lala,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.32,
+      "end": 121.08,
+      "text": "la, lalala, la, la, lalala, lalala, lalalala,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.08,
+      "end": 125.34,
+      "text": "lalala, I just can't get you out of my head",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.34,
+      "end": 129.94,
+      "text": "For your love and it's all I think about I",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.94,
+      "end": 132.94,
+      "text": "just can't get you outta my head,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.26,
+      "end": 137.26,
+      "text": "boy it's more than I dare to think about.",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.16,
+      "end": 141.44,
+      "text": "There is a dog,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.24,
+      "end": 145.2,
+      "text": "secret in me.",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.74,
+      "end": 149.78,
+      "text": "Don't leave me locked in your",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.78,
+      "end": 151.64,
+      "text": "heart.",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.72,
+      "end": 153.3,
+      "text": "73!",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.68,
+      "end": 179.96,
+      "text": "forever and ever and",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.96,
+      "end": 183.08,
+      "text": "ever and ever",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.64,
+      "end": 188,
+      "text": "La la la, la la la la",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 188,
+      "end": 188.56,
+      "text": "la,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.38,
+      "end": 191.3,
+      "text": "la la la la,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.6,
+      "end": 194.66,
+      "text": "la la La la la,",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.42,
+      "end": 197.72,
+      "text": "la la la la, La la",
+      "speaker": "head-kylie",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "head-road"
+    },
+    {
+      "time": 13,
+      "view": "head-car-close"
+    },
+    {
+      "time": 30,
+      "view": "head-white-dance"
+    },
+    {
+      "time": 51,
+      "view": "head-ensemble"
+    },
+    {
+      "time": 72,
+      "view": "head-hood-close"
+    },
+    {
+      "time": 92,
+      "view": "head-red-dance"
+    },
+    {
+      "time": 113,
+      "view": "head-white-dance"
+    },
+    {
+      "time": 136,
+      "view": "head-hood-close"
+    },
+    {
+      "time": 153,
+      "view": "head-night-dance"
+    },
+    {
+      "time": 176,
+      "view": "head-night-dance"
+    },
+    {
+      "time": 198,
+      "view": "head-night-close"
+    },
+    {
+      "time": 219,
+      "view": "head-finale"
+    }
+  ]
+}

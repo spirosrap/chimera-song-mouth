@@ -1,0 +1,303 @@
+{
+  "setting": "genghiskhan",
+  "title": "Miike Snow · Genghis Khan",
+  "description": "A retro lair, a warm sitting room and a blue-lit passage frame a playful dance between two rivals.",
+  "duration": 247.849796,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "genghis-andrew",
+      "name": "Andrew",
+      "role": "CHIMERA vocals",
+      "tele": "genghis-andrew.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 9.88,
+      "end": 14.56,
+      "text": "I know there's no phone and no",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 14.56,
+      "end": 18.88,
+      "text": "labels to put on to this thing we keep",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 18.88,
+      "end": 23.42,
+      "text": "and dip into when we need not so tight for",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 23.42,
+      "end": 28.28,
+      "text": "rights To ask where you call at night But the way you sit",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.28,
+      "end": 31.8,
+      "text": "at night Do you think someone's in your bed?",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.8,
+      "end": 37.5,
+      "text": "get a little bit kingus called Don't shoot to get it all with",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.5,
+      "end": 39.23,
+      "text": "nobody else but me",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.06,
+      "end": 48.86,
+      "text": "kingly strong, don't you to get it on with nobody else",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.86,
+      "end": 52.38,
+      "text": "but me with nobody else but me",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.94,
+      "end": 57.39,
+      "text": "ooh ooh ooh ooh oooh oooh oooh doo doo",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.39,
+      "end": 59.67,
+      "text": "doo doo dooo doo doo doo doo doo",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.97,
+      "end": 65.65,
+      "text": "doo doo doooo and lions stay glow like I",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.65,
+      "end": 70.5,
+      "text": "just lost the world war and the scene slips away to",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.5,
+      "end": 75.04,
+      "text": "the evens are fake it's a shit so well",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.04,
+      "end": 79.48,
+      "text": "because i don't really want you girl but you can be",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.48,
+      "end": 84.28,
+      "text": "free cuz i'm selfish i'm obscene i get",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.28,
+      "end": 88.58,
+      "text": "a little bit kingus club Don't shoot, get in all with",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.58,
+      "end": 90.28,
+      "text": "nobody else but me.",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.86,
+      "end": 93,
+      "text": "nobody else but me.",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.84,
+      "end": 96.22,
+      "text": "I'll a little bit jingy strong,",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.68,
+      "end": 101.42,
+      "text": "But there won't shoot you to get it all with nobody else but me. with",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.42,
+      "end": 104.16,
+      "text": "nobody else but me.",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.6,
+      "end": 119.66,
+      "text": "I wanna make up my mind but I don't myself",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.64,
+      "end": 132.4,
+      "text": "myself",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.92,
+      "end": 140.22,
+      "text": "I wanna make up my mind but I don't know myself",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.22,
+      "end": 143.28,
+      "text": "No, I don't know myself",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.04,
+      "end": 148.56,
+      "text": "And I get a little bit gingous cause Don't you",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.56,
+      "end": 153.1,
+      "text": "get it all with nobody else but me With nobody",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.1,
+      "end": 157.56,
+      "text": "else but me, I get a little bit kinkist -called",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.1,
+      "end": 162.68,
+      "text": "Don't you to get it all with nobody else but me With",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.68,
+      "end": 165.2,
+      "text": "nobody else but me",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.98,
+      "end": 227.4,
+      "text": "I get a little bit Genghis Khan,",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    },
+    {
+      "start": 228.02,
+      "end": 232.26,
+      "text": "I don't want you to get it on with nobody else but me.",
+      "speaker": "genghis-andrew",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "genghis-lab"
+    },
+    {
+      "time": 17,
+      "view": "genghis-machine"
+    },
+    {
+      "time": 34,
+      "view": "genghis-lab-close"
+    },
+    {
+      "time": 56,
+      "view": "genghis-passage"
+    },
+    {
+      "time": 74,
+      "view": "genghis-lab"
+    },
+    {
+      "time": 94,
+      "view": "genghis-lab-close"
+    },
+    {
+      "time": 110,
+      "view": "genghis-machine"
+    },
+    {
+      "time": 130,
+      "view": "genghis-passage"
+    },
+    {
+      "time": 148,
+      "view": "genghis-lab-dance"
+    },
+    {
+      "time": 169,
+      "view": "genghis-pair-dance"
+    },
+    {
+      "time": 191,
+      "view": "genghis-house"
+    },
+    {
+      "time": 212,
+      "view": "genghis-pair-dance"
+    },
+    {
+      "time": 228,
+      "view": "genghis-finale"
+    }
+  ]
+}

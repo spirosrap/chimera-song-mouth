@@ -1,8 +1,11 @@
 import * as THREE from 'three';
+import { isEncore, type EncoreView } from '../../scene/encore-videos.ts';
+import { buildEncoreSet, ENCORE_FIGURES, ENCORE_WARDROBE } from './encore-videos.ts';
 import type { ShowcaseSetting, ShowcaseView } from '../../scene/showcase-videos.ts';
 import { VideoProps, type VideoPoint } from './videoProps.ts';
 
 export const SHOWCASE_WARDROBE = {
+  ...ENCORE_WARDROBE,
   mitskinobody:{jackets:['#354667','#af4a50','#437181','#637a52'],hair:['#30262b','#493738']},
   letforeverbe:{jackets:['#ca5254','#e2b688','#ae4447','#e7c5aa'],hair:['#614636','#d1a163']},
   tilteddance:{jackets:['#282c37','#2e343c','#393a47','#2f313a'],hair:['#52433a','#2d2327']},
@@ -19,11 +22,13 @@ export const SHOWCASE_WARDROBE = {
   altjtessellate:{jackets:['#615c54','#8e5655','#4c6272','#877256','#725d6b'],hair:['#453935','#3a343d']},
 };
 export const SHOWCASE_FIGURES:Record<ShowcaseSetting,number> = {
+  ...ENCORE_FIGURES,
   mitskinobody:4, letforeverbe:7, tilteddance:4, welcometoisland:3, lifeitself:4, robynfriend:1, idlesdancer:5,
   kimbrasettle:3, tuneyardswater:5, metrolook:4, jainmakeba:5, jbreakfastsweet:2, chvrchesmother:3, altjtessellate:6,
 };
 
 export function buildShowcaseSet(p:VideoProps, setting:ShowcaseSetting, view:ShowcaseView) {
+  if (isEncore(setting)) return buildEncoreSet(p, setting, view as EncoreView);
   const root=new THREE.Group();
   const features:THREE.Object3D[]=[];
   const box=(w:number,h:number,d:number,c:string,x:number,y:number,z:number)=>p.box(root,w,h,d,c,[x,y,z]);

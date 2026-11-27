@@ -1,0 +1,495 @@
+{
+  "setting": "aboutdamntime",
+  "title": "Lizzo · About Damn Time",
+  "description": "A support circle, a mirror and a colored hallway lead to a night-time dance and a blue-lit pool.",
+  "duration": 245.272381,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "time-lizzo",
+      "name": "Lizzo",
+      "role": "CHIMERA vocals",
+      "tele": "time-lizzo.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 8.5,
+      "end": 13.02,
+      "text": "Thank you all so much for joining us this evening for our Stressed and Sexy Support",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 13.02,
+      "end": 13.44,
+      "text": "Group.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 14.5,
+      "end": 16.1,
+      "text": "Oh, it's so nice to see new faces!",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.9,
+      "end": 22.72,
+      "text": "When we last met I asked you guys to prepare a poem that compares something that makes you feel",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.72,
+      "end": 25.18,
+      "text": "stressed to something that makes you feel sexy.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.18,
+      "end": 27.66,
+      "text": "Lizzo,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.14,
+      "end": 30.14,
+      "text": "would you honor us by being the first?",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.44,
+      "end": 47.16,
+      "text": "Anyway,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.68,
+      "end": 60.5,
+      "text": "it's bad bitch o 'clock here is thick 30",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.5,
+      "end": 65.04,
+      "text": "I've been through a lot but I'm still flirty.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.52,
+      "end": 69.96,
+      "text": "Is everybody back up in the building It's been a minute for me how you're healing",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.96,
+      "end": 74.4,
+      "text": "Cuz I'm about to get into my feelings How ya feeling, how ya feel right",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.4,
+      "end": 75.1,
+      "text": "now",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.84,
+      "end": 76.36,
+      "text": "Oh,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.8,
+      "end": 81.56,
+      "text": "I've been so down and under pressure I'm",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.56,
+      "end": 83.94,
+      "text": "way too fine to be distressed, yeah",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.2,
+      "end": 89.1,
+      "text": "be",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.62,
+      "end": 94.16,
+      "text": "Bitch I might be better turn up the music",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.78,
+      "end": 96.38,
+      "text": "Turn down the lights",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.26,
+      "end": 98.48,
+      "text": "I've got a feeling",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.11,
+      "end": 103.54,
+      "text": "I'm gonna be all right, okay Okay All",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.54,
+      "end": 107.42,
+      "text": "right. It's about damn time Turn up the music",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.42,
+      "end": 109.24,
+      "text": "Let's celebrate.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.08,
+      "end": 111.66,
+      "text": "I got a feeling,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.28,
+      "end": 117.04,
+      "text": "I'm gonna be okay, okay, okay, alright,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.64,
+      "end": 118.96,
+      "text": "it's about damn time.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.1,
+      "end": 122.6,
+      "text": "In a minute, I'ma need a sentimental man or woman to pump",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.6,
+      "end": 132.8,
+      "text": "me",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.8,
+      "end": 133.22,
+      "text": "up,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.52,
+      "end": 137.04,
+      "text": "wanna get down, mmm, that's how I feel right now.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.38,
+      "end": 137.94,
+      "text": "Oh,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.56,
+      "end": 141.04,
+      "text": "I've been so down and under pressure,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.4,
+      "end": 144.98,
+      "text": "I'm way too fine to be distressed,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.46,
+      "end": 149.84,
+      "text": "yeah. Oh, I'm not the girl I was or used to",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.84,
+      "end": 154.12,
+      "text": "be Bitch, I might be better,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.48,
+      "end": 155.8,
+      "text": "turn up the music,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.2,
+      "end": 158,
+      "text": "turn down my lights.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.92,
+      "end": 163.22,
+      "text": "I got a feeling I'm gonna be all right, OK?",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.4,
+      "end": 165.68,
+      "text": "All right,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.2,
+      "end": 169.06,
+      "text": "it's about damn time to turn up the music.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.92,
+      "end": 170.88,
+      "text": "Let's celebrate.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 171.62,
+      "end": 175.58,
+      "text": "I got a feeling I'm gonna be okay,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.6,
+      "end": 180.12,
+      "text": "okay, all right, it's about damn",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.12,
+      "end": 181.32,
+      "text": "time, bitch.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 186.32,
+      "end": 189.24,
+      "text": "Cuz you know what time it is.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.6,
+      "end": 191.22,
+      "text": "I'm coming out tonight.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.58,
+      "end": 193,
+      "text": "I'm coming out tonight.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.78,
+      "end": 195.62,
+      "text": "I'm coming out tonight.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.98,
+      "end": 197.32,
+      "text": "I'm coming out tonight.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.14,
+      "end": 201.8,
+      "text": "I'm coming out tonight, I'm coming out tonight,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.24,
+      "end": 202.58,
+      "text": "okay",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 204.28,
+      "end": 205.08,
+      "text": "Alright,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.72,
+      "end": 210.5,
+      "text": "it's about damn time I'm coming out tonight, I 'M COMING OUT TONIGHT",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 211.1,
+      "end": 215.16,
+      "text": "I'm coming out tonight, I',M COMING OUT TONIGHT",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 215.16,
+      "end": 217.62,
+      "text": "I'm coming out tonight.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 217.72,
+      "end": 219.28,
+      "text": "I'm coming out tonight.",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 219.46,
+      "end": 224.18,
+      "text": "Okay? okay, all right, it's about damn",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.18,
+      "end": 224.68,
+      "text": "time",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 227.1,
+      "end": 228.3,
+      "text": "Bitch,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 229.6,
+      "end": 230.34,
+      "text": "yeah,",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    },
+    {
+      "start": 230.7,
+      "end": 233.64,
+      "text": "yeah, it's about damn time",
+      "speaker": "time-lizzo",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "time-meeting"
+    },
+    {
+      "time": 17,
+      "view": "time-mirror-close"
+    },
+    {
+      "time": 38,
+      "view": "time-meeting"
+    },
+    {
+      "time": 57,
+      "view": "time-hall"
+    },
+    {
+      "time": 77,
+      "view": "time-mirror-close"
+    },
+    {
+      "time": 96,
+      "view": "time-disco-dance"
+    },
+    {
+      "time": 115,
+      "view": "time-night-dance"
+    },
+    {
+      "time": 137,
+      "view": "time-disco-dance"
+    },
+    {
+      "time": 158,
+      "view": "time-hall"
+    },
+    {
+      "time": 179,
+      "view": "time-night-dance"
+    },
+    {
+      "time": 204,
+      "view": "time-water"
+    },
+    {
+      "time": 230,
+      "view": "time-finale"
+    }
+  ]
+}

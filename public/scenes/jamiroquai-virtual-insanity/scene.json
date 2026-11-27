@@ -1,0 +1,439 @@
+{
+  "setting": "virtualinsanity",
+  "title": "Jamiroquai · Virtual Insanity",
+  "description": "A dancer in a gray room moves between sliding black seats and white-panel walls.",
+  "duration": 234.730522,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "virtual-jay",
+      "name": "Jay",
+      "role": "CHIMERA vocals",
+      "tele": "virtual-jay.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 11.52,
+      "end": 16.34,
+      "text": "Let me tell you, and it's a word the man can eat at",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 16.34,
+      "end": 16.84,
+      "text": "all,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.18,
+      "end": 19.3,
+      "text": "things are big that should be small.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 19.78,
+      "end": 24.64,
+      "text": "Who can tell what magic spells? we'll be doing for us and",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.64,
+      "end": 29.1,
+      "text": "I'm giving up my life to this world only to be",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.1,
+      "end": 29.58,
+      "text": "told.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 30.44,
+      "end": 31.12,
+      "text": "can't see,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.72,
+      "end": 32.4,
+      "text": "can breathe,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.94,
+      "end": 37.38,
+      "text": "no I'm out where will be and now that's gonna change the way you live",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.38,
+      "end": 42.08,
+      "text": "because we can always take but never give and the other things are changing for",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.08,
+      "end": 46.68,
+      "text": "the wet sea why It's a crazy world we're living",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.68,
+      "end": 51.52,
+      "text": "in and I just can't it and half of us immersed in sin is",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.52,
+      "end": 55.72,
+      "text": "all we have to give this future made of.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.72,
+      "end": 58.8,
+      "text": "Put you well in ceremony now,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 59.34,
+      "end": 64.12,
+      "text": "always seem to be kind of like this love we have for",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 64.12,
+      "end": 65.76,
+      "text": "you, set twist",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.12,
+      "end": 70.48,
+      "text": "our brand new technology, oh now there is no",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.48,
+      "end": 73.32,
+      "text": "sound But we all live underground",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.88,
+      "end": 78.58,
+      "text": "And I'm thinking what a mess we're in Hard to know when to",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.58,
+      "end": 83.2,
+      "text": "begin If I could slip the secret ties of earth The man",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.2,
+      "end": 86.94,
+      "text": "has made And now every mother",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.94,
+      "end": 89.02,
+      "text": "can't choose the color,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.06,
+      "end": 93.1,
+      "text": "my fair child that's my nature's way",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.9,
+      "end": 95.52,
+      "text": "Well that's what they said yesterday",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.32,
+      "end": 98.48,
+      "text": "There's nothing left to do my brain",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.1,
+      "end": 103.5,
+      "text": "I think it's time to find a new religion And what's so",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.5,
+      "end": 106.46,
+      "text": "insane to see this as another stream.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.8,
+      "end": 110.92,
+      "text": "There's something in this future that we have to be told",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.92,
+      "end": 113.56,
+      "text": "you're just made of.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.94,
+      "end": 115.62,
+      "text": "Virtually insanity,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.1,
+      "end": 118.4,
+      "text": "now always seem to.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.92,
+      "end": 122.28,
+      "text": "Given back this love we had for a few steps,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.88,
+      "end": 126.1,
+      "text": "twisting our brand new technology.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.28,
+      "end": 128.4,
+      "text": "Boy, now there is no sound,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.82,
+      "end": 130.9,
+      "text": "but we all They'll find that ground.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.02,
+      "end": 136.44,
+      "text": "now there is no sound And we all live on the",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.44,
+      "end": 139.4,
+      "text": "ground And now it's virtual insanity",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 139.89,
+      "end": 142.78,
+      "text": "Forget you, virtue and reality Oh,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.12,
+      "end": 147.98,
+      "text": "there's nothing so bad As a mad happy man",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.98,
+      "end": 149.18,
+      "text": "Oh yeah,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.82,
+      "end": 150.4,
+      "text": "I know,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 171.86,
+      "end": 177.38,
+      "text": "much.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 177.38,
+      "end": 181.84,
+      "text": "seen you, because I'm about this love we have for you",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 181.84,
+      "end": 183.56,
+      "text": "that's twisting.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 184.1,
+      "end": 188.58,
+      "text": "I've been new technology for now there is no sound.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.08,
+      "end": 191.6,
+      "text": "But when y 'all never find that ground. Oh,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 192.56,
+      "end": 194.72,
+      "text": "yeah, they think that we live in",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.06,
+      "end": 202.56,
+      "text": "window, you know there was nothing worse than",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.56,
+      "end": 205.4,
+      "text": "a manly man.",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 206.44,
+      "end": 210.94,
+      "text": "There was nothing worse than a foolish man,",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 211.42,
+      "end": 211.76,
+      "text": "yeah!",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 219.9,
+      "end": 222.74,
+      "text": "our hearts Yeah",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    },
+    {
+      "start": 225.92,
+      "end": 228.72,
+      "text": "moon is all that I have",
+      "speaker": "virtual-jay",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "virtual-gray-room"
+    },
+    {
+      "time": 15,
+      "view": "virtual-seat-dance"
+    },
+    {
+      "time": 39,
+      "view": "virtual-white-ensemble"
+    },
+    {
+      "time": 63,
+      "view": "virtual-floor-dance"
+    },
+    {
+      "time": 82,
+      "view": "virtual-gray-room"
+    },
+    {
+      "time": 103,
+      "view": "virtual-seat-dance"
+    },
+    {
+      "time": 125,
+      "view": "virtual-floor-dance"
+    },
+    {
+      "time": 147,
+      "view": "virtual-hat-close"
+    },
+    {
+      "time": 171,
+      "view": "virtual-gray-room"
+    },
+    {
+      "time": 189,
+      "view": "virtual-hat-close"
+    },
+    {
+      "time": 210,
+      "view": "virtual-seat-dance"
+    },
+    {
+      "time": 227,
+      "view": "virtual-finale"
+    }
+  ]
+}

@@ -1,8 +1,11 @@
+import { ENCORE_CAST, ENCORE_INFO, ENCORE_SETTINGS } from './encore-videos.ts';
+
 export const SHOWCASE_SETTINGS = ['mitskinobody','letforeverbe','tilteddance','welcometoisland','lifeitself','robynfriend','idlesdancer',
-  'kimbrasettle','tuneyardswater','metrolook','jainmakeba','jbreakfastsweet','chvrchesmother','altjtessellate'] as const;
+  'kimbrasettle','tuneyardswater','metrolook','jainmakeba','jbreakfastsweet','chvrchesmother','altjtessellate', ...ENCORE_SETTINGS] as const;
 export type ShowcaseSetting = typeof SHOWCASE_SETTINGS[number];
 
 export const SHOWCASE_CAST = {
+  ...ENCORE_CAST,
   mitskinobody:['nobody-mitski'], letforeverbe:['forever-noel'], tilteddance:['tilted-chris'],
   welcometoisland:['island-caroline'], lifeitself:['life-dave'], robynfriend:['girlfriend-robyn'],
   idlesdancer:['dancer-joe','dancer-response'],
@@ -12,6 +15,7 @@ export const SHOWCASE_CAST = {
 } as const;
 
 export const SHOWCASE_INFO = {
+  ...ENCORE_INFO,
   mitskinobody: {
     id:'mitski-nobody', title:'Mitski · Nobody', eyebrow:'PHYSICAL VOICE · A HOUSE OF DISGUISES',
     description:'A divided table, yellow bedroom and double portraits reveal the theatrical set behind the singer.',

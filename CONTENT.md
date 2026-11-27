@@ -217,6 +217,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Japanese Breakfast — Be Sweet | 3:27 | `?scene=japanese-breakfast-be-sweet` | Two investigators, a green-lit car and a clearing at night. |
 | CHVRCHES — The Mother We Share | 3:15 | `?scene=chvrches-mother-we-share` | A quiet bedroom, a silhouetted trio and a suspended field of lights. |
 | alt-J — Tessellate | 3:08 | `?scene=altj-tessellate` | Performers gather around painted arches, steps and a long table. |
+| Jamiroquai — Virtual Insanity | 3:55 | `?scene=jamiroquai-virtual-insanity` | A white-paneled room, sliding furniture, a drifting floor and a coordinated ensemble. |
+| Miike Snow — Genghis Khan | 4:08 | `?scene=miike-snow-genghis-khan` | A retro lair, a blue passage and an unexpected dance duet. |
+| MUNA feat. Phoebe Bridgers — Silk Chiffon | 3:15 | `?scene=muna-silk-chiffon` | A pastel camp, garden stage and two physical voices. |
+| AURORA — Cure For Me | 3:22 | `?scene=aurora-cure-for-me` | A checkerboard floor, amber lamps and a masked ensemble. |
+| Lizzo — About Damn Time | 4:05 | `?scene=lizzo-about-damn-time` | A support circle, colored hall, disco and blue-lit pool. |
+| Kylie Minogue — Can't Get You Out Of My Head | 3:50 | `?scene=kylie-cant-get-you-out` | A car, a white city plaza and a night-time ensemble. |
+| Róisín Murphy — Overpowered | 3:56 | `?scene=roisin-overpowered` | Sculptural stagewear in a club, city street, bus and late-night counter. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

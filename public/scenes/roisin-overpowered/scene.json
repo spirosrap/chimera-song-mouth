@@ -1,0 +1,323 @@
+{
+  "setting": "roisinover",
+  "title": "Róisín Murphy · Overpowered",
+  "description": "A sculptural black-and-white costume travels from a performance space to a bus, a shop and a quiet bedroom.",
+  "duration": 236.448798,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "over-roisin",
+      "name": "Róisín",
+      "role": "CHIMERA vocals",
+      "tele": "over-roisin.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 7.34,
+      "end": 9.54,
+      "text": "I'm over you,",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 9.84,
+      "end": 14.3,
+      "text": "I'm over God for",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 14.3,
+      "end": 15.64,
+      "text": "you.",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.78,
+      "end": 19.34,
+      "text": "Thank you,",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 19.64,
+      "end": 20.32,
+      "text": "goodnight.",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.68,
+      "end": 24.04,
+      "text": "day to my daughter",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.08,
+      "end": 28.14,
+      "text": "The promisms match",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 30.1,
+      "end": 32.52,
+      "text": "Executives been battered",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.1,
+      "end": 36.58,
+      "text": "And matter of fact",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.78,
+      "end": 40.58,
+      "text": "These are our dreams",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.1,
+      "end": 43.74,
+      "text": "Our cognitive",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.06,
+      "end": 44.88,
+      "text": "of state,",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.92,
+      "end": 48.6,
+      "text": "Need a love object",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.4,
+      "end": 53.08,
+      "text": "To reciprocate",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.9,
+      "end": 83.52,
+      "text": "We don't think that I'm over you",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.52,
+      "end": 87.92,
+      "text": "I know about the",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.58,
+      "end": 92,
+      "text": "It's not over you.",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.36,
+      "end": 95.94,
+      "text": "I'm over power.",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.84,
+      "end": 99.92,
+      "text": "When I think that I have over you,",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.96,
+      "end": 106.36,
+      "text": "I'm over power. You're",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.36,
+      "end": 108.28,
+      "text": "stronger too,",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.76,
+      "end": 114.48,
+      "text": "I'm on the power of chemical reason",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.02,
+      "end": 118.44,
+      "text": "presents your gain",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.1,
+      "end": 122.78,
+      "text": "chemical meaning",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.24,
+      "end": 130.06,
+      "text": "there in the brain With pre -program",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.06,
+      "end": 134.34,
+      "text": "meanings like a little more",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 134.34,
+      "end": 135.62,
+      "text": "help,",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.46,
+      "end": 142.2,
+      "text": "any feelings we have to",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.2,
+      "end": 143.34,
+      "text": "accept.",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 146.04,
+      "end": 149.16,
+      "text": "We're thinking out over you,",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 151.28,
+      "end": 153.48,
+      "text": "I'm out of power",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.8,
+      "end": 178.04,
+      "text": "old and followed",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 178.76,
+      "end": 183.48,
+      "text": "As science struggles on to try To",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.48,
+      "end": 187.7,
+      "text": "explain All the steep",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.7,
+      "end": 192.04,
+      "text": "toggins flowing ever into my",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 192.04,
+      "end": 193.06,
+      "text": "brain",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.1,
+      "end": 197.54,
+      "text": "As science struggles",
+      "speaker": "over-roisin",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "over-portrait"
+    },
+    {
+      "time": 16,
+      "view": "over-stage"
+    },
+    {
+      "time": 41,
+      "view": "over-street"
+    },
+    {
+      "time": 64,
+      "view": "over-bus-close"
+    },
+    {
+      "time": 87,
+      "view": "over-bus-close"
+    },
+    {
+      "time": 108,
+      "view": "over-counter"
+    },
+    {
+      "time": 133,
+      "view": "over-counter"
+    },
+    {
+      "time": 154,
+      "view": "over-street"
+    },
+    {
+      "time": 176,
+      "view": "over-laundry"
+    },
+    {
+      "time": 196,
+      "view": "over-finale"
+    },
+    {
+      "time": 222,
+      "view": "over-portrait"
+    }
+  ]
+}
