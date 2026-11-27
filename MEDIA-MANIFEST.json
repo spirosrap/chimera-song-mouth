@@ -1767,6 +1767,36 @@
       "sha256": "a9c92c2bd61ff79105eee866930e9a0af497e3d37c34b88c7226d5dae6cd7996"
     },
     {
+      "path": "public/scenes/archbishop-harold-holmes/backing.mp3",
+      "bytes": 5572274,
+      "sha256": "33f4c165d3474bbd6cad165d12e47882fe012680994efaeca1b56fab92884bf0"
+    },
+    {
+      "path": "public/scenes/archbishop-harold-holmes/credits.txt",
+      "bytes": 397,
+      "sha256": "3f0a94c34aca4bbf1abf8f6b13a960539d0f0f8fa8ea52359a07c1dd05ce9e4e"
+    },
+    {
+      "path": "public/scenes/archbishop-harold-holmes/holmes-preacher.tele.gz",
+      "bytes": 1860783,
+      "sha256": "d6ad95743135de11a72fb42e7e40a013ea4028890ce19094985c55c5d4bbad86"
+    },
+    {
+      "path": "public/scenes/archbishop-harold-holmes/mix.mp3",
+      "bytes": 5571884,
+      "sha256": "5c059efeea8236a34d166f7358c85acccb85fad0240e86fbaa3a51e1bd4ce857"
+    },
+    {
+      "path": "public/scenes/archbishop-harold-holmes/performance.json",
+      "bytes": 543661,
+      "sha256": "a28a963a10234e1d2c686271e1e17eb1d498c341e5d7cedf1e2aad4f94569870"
+    },
+    {
+      "path": "public/scenes/archbishop-harold-holmes/scene.json",
+      "bytes": 11775,
+      "sha256": "8722f0b20fb7c2844c3ec9346df445791dad66b21c4e72ba5167358c912f4f9d"
+    },
+    {
       "path": "public/scenes/arrival/backing.mp3",
       "bytes": 951596,
       "sha256": "676658d11b8805b020dc395982c0161a8a45db0f1c2c77af4efc3023559bc957"
@@ -2917,6 +2947,41 @@
       "sha256": "4040affd18c1b6a8b68668fdf33c97f7389ff9afd482d8d8c15979ea90af522a"
     },
     {
+      "path": "public/scenes/emo-girl/backing.mp3",
+      "bytes": 4486417,
+      "sha256": "9002d97d5d3959eea1396647050a0c3792ec27e8c529e16b953ad8a8d129e2cf"
+    },
+    {
+      "path": "public/scenes/emo-girl/credits.txt",
+      "bytes": 422,
+      "sha256": "600a0f80d7bfaedd500bf994c9c217a5121084b9867bc30d64dff02dfde5edfb"
+    },
+    {
+      "path": "public/scenes/emo-girl/emo-fantano.tele.gz",
+      "bytes": 351111,
+      "sha256": "ce1145e7d315e6981b6d37debb469d784b92aa57627f7818d717df0c452ae0d5"
+    },
+    {
+      "path": "public/scenes/emo-girl/emo-yuno.tele.gz",
+      "bytes": 1041681,
+      "sha256": "11942afe34a80006ca05f1df3d89b6d5fdd39939e623e03d1fd533a5117ef781"
+    },
+    {
+      "path": "public/scenes/emo-girl/mix.mp3",
+      "bytes": 4485932,
+      "sha256": "e544761223157ed9dc688c28d4a53fa926b3ea2535eee951d6a25f7f80b9b78d"
+    },
+    {
+      "path": "public/scenes/emo-girl/performance.json",
+      "bytes": 351198,
+      "sha256": "21e8b895af085fa3053dd2ddf05003823db28d4bad9faed3bf486f959caa2288"
+    },
+    {
+      "path": "public/scenes/emo-girl/scene.json",
+      "bytes": 8851,
+      "sha256": "62e302adc0e41345a16ad9fa62721e6d792cc2ab66e5fa8c94f647cb0833463e"
+    },
+    {
       "path": "public/scenes/espresso-macchiato/backing.mp3",
       "bytes": 6165548,
       "sha256": "cf6f885858b394f7c3a64a26a734c7b1459c974aedee1907eac4122048ece7da"
@@ -3995,6 +4060,41 @@
       "path": "public/scenes/katseye-pinky-up/scene.json",
       "bytes": 7503,
       "sha256": "064813a9539d97f7c0c5956a389513e8baaf207bd1fae785ba9a5f8482498fea"
+    },
+    {
+      "path": "public/scenes/knocking-at-the-sky/backing.mp3",
+      "bytes": 9461804,
+      "sha256": "aae090ce13ae04b1d0e00dd71f2c105521fd3539a9364bc39bd4f31dd6cb7f33"
+    },
+    {
+      "path": "public/scenes/knocking-at-the-sky/credits.txt",
+      "bytes": 401,
+      "sha256": "69e5690a372f4c9fe97d61d0a8ec5b55e1c20c093832158e2466195e2df42622"
+    },
+    {
+      "path": "public/scenes/knocking-at-the-sky/mix.mp3",
+      "bytes": 9461805,
+      "sha256": "9d4e1fb112bd6bfe18ef49c249495487bf3e33a59fc934937cac096b9147c1b8"
+    },
+    {
+      "path": "public/scenes/knocking-at-the-sky/performance.json",
+      "bytes": 1171973,
+      "sha256": "e8c76b56fe3c972d4695739bf33f7138e0777d05b64d42989a483ba616ac9102"
+    },
+    {
+      "path": "public/scenes/knocking-at-the-sky/scene.json",
+      "bytes": 12674,
+      "sha256": "a4a50d9f90eea1e4c60cbd5972ea49cce95eccd1257d09270111737190b29181"
+    },
+    {
+      "path": "public/scenes/knocking-at-the-sky/sky-chorus.tele.gz",
+      "bytes": 1346690,
+      "sha256": "38571e7163b8eba766a960fd0b88afd742e71bfb2d7d8d4d3ffcf6e250760920"
+    },
+    {
+      "path": "public/scenes/knocking-at-the-sky/sky-lead.tele.gz",
+      "bytes": 2889373,
+      "sha256": "c824cb7df7ef2efd006839159b87f3a6c8d37e938cbea218690e7bdc54c32967"
     },
     {
       "path": "public/scenes/land-confusion/backing.mp3",

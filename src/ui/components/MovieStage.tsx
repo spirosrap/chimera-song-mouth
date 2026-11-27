@@ -1,3 +1,6 @@
+import {KnockingStage} from '../render/knocking-at-the-sky.ts';
+import {ArchbishopStage} from '../render/archbishop-harold-holmes.ts';
+import {EmoGirlStage} from '../render/emo-girl.ts';
 import {isNextVideo} from '../../scene/next-videos.ts';
 import {NextVideoStage} from '../render/next-videos.ts';
 import {LoveStage} from '../render/ok-go-love.ts';
@@ -215,6 +218,9 @@ export function MovieStage({scene,tracks,transport,camera,onReady}:{scene:SceneF
       :scene.setting==='backstabber'?new BackstabberStage(people[0].model,people[0].track,people[1].model,people[1].track)
       :scene.setting==='thegiver'?new TheGiverStage(people[0].model,people[0].track,people[1].model,people[1].track)
       :isNextVideo(scene.setting)?new NextVideoStage(scene.setting, people)
+      :scene.setting==='knocking'?new KnockingStage(people)
+      :scene.setting==='archbishop'?new ArchbishopStage(people[0])
+      :scene.setting==='emogirl'?new EmoGirlStage(people)
       :scene.setting==='xgdepends'?new DependsStage(people)
       :scene.setting==='wetlegpokemon'?new PokemonStage(people[0])
       :scene.setting==='expectations'?new ExpectationsStage(people[0],people[1],people[2],people[3])

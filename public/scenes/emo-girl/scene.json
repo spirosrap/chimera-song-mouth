@@ -1,0 +1,438 @@
+{
+  "setting": "emogirl",
+  "title": "Yuno Miles × Fantano · Emo Girl",
+  "description": "Two CHIMERA mouths sing the winter portraits, rainbow alley and dance montage over the separated stereo accompaniment.",
+  "duration": 140.132426,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "emo-yuno",
+      "name": "Yuno Miles",
+      "role": "Refrain, chopped replies and second verse",
+      "tele": "emo-yuno.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "emo-fantano",
+      "name": "Fantano",
+      "role": "Alley verse and melodic opening",
+      "tele": "emo-fantano.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 15.02,
+      "end": 20.2,
+      "text": "How did I fall in love with you?",
+      "speaker": "emo-fantano",
+      "intensity": 0.81
+    },
+    {
+      "start": 20.56,
+      "end": 22.68,
+      "text": "I'm confused,",
+      "speaker": "emo-fantano",
+      "intensity": 0.81
+    },
+    {
+      "start": 23.22,
+      "end": 25.54,
+      "text": "I'm not sure how it happened",
+      "speaker": "emo-fantano",
+      "intensity": 0.81
+    },
+    {
+      "start": 25.54,
+      "end": 28.299999999999997,
+      "text": "I'll never know, never know",
+      "speaker": "emo-fantano",
+      "intensity": 0.81
+    },
+    {
+      "start": 28.619999999999997,
+      "end": 30.96,
+      "text": "The way that you look",
+      "speaker": "emo-fantano",
+      "intensity": 0.81
+    },
+    {
+      "start": 31.82,
+      "end": 34.42,
+      "text": "It's like a book.",
+      "speaker": "emo-fantano",
+      "intensity": 0.81
+    },
+    {
+      "start": 34.7,
+      "end": 37,
+      "text": "You look like a book.",
+      "speaker": "emo-fantano",
+      "intensity": 0.81
+    },
+    {
+      "start": 37.72,
+      "end": 41.04,
+      "text": "Why would I fall in love with a book?",
+      "speaker": "emo-fantano",
+      "intensity": 0.81
+    },
+    {
+      "start": 41.44,
+      "end": 48.05,
+      "text": "How did I fall in love with a girl that looks like you?",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 48.1,
+      "end": 54.9,
+      "text": "How did I fall in love with a girl that looks like you?",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 55.167,
+      "end": 56.757000000000005,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 56.843,
+      "end": 58.43300000000001,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 58.519,
+      "end": 60.109,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 60.195,
+      "end": 61.785000000000004,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 61.871,
+      "end": 63.461000000000006,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 63.547,
+      "end": 65.137,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 65.223,
+      "end": 66.813,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 66.899,
+      "end": 68.489,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 68.6,
+      "end": 73.96000000000001,
+      "text": "How did I fall for you?",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 75.58,
+      "end": 79.72,
+      "text": "Look what you made me do",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 80.13,
+      "end": 80.77,
+      "text": "Do",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 81.07,
+      "end": 81.7,
+      "text": "Do",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 81.98,
+      "end": 82.55,
+      "text": "Do",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 82.72,
+      "end": 83.26,
+      "text": "Do",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 83.57,
+      "end": 84.28,
+      "text": "Do",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 84.77,
+      "end": 85.49,
+      "text": "Evil girl",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 85.55,
+      "end": 91.4,
+      "text": "I think I fell in love with a evil girl",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 91.44,
+      "end": 94.49,
+      "text": "I think I fell in love with a",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 94.49,
+      "end": 94.91,
+      "text": "Uh",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 94.92,
+      "end": 101.7,
+      "text": "How did I fall in love with a girl that looks like you?",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 101.91,
+      "end": 108.61,
+      "text": "How did I fall in love with a girl that looks like you?",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 108.917,
+      "end": 110.507,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 110.593,
+      "end": 112.183,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 112.269,
+      "end": 113.85900000000001,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 113.94500000000001,
+      "end": 115.53500000000001,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 115.621,
+      "end": 117.211,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 117.297,
+      "end": 118.887,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 118.973,
+      "end": 120.563,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 120.649,
+      "end": 122.239,
+      "text": "That looks like you",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 122.39,
+      "end": 123.08,
+      "text": "You",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    },
+    {
+      "start": 123.3,
+      "end": 124.1,
+      "text": "You",
+      "speaker": "emo-yuno",
+      "intensity": 0.81
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "emo-snow-portrait"
+    },
+    {
+      "time": 2.2,
+      "view": "emo-snow"
+    },
+    {
+      "time": 6.44,
+      "view": "emo-snow-portrait"
+    },
+    {
+      "time": 8.84,
+      "view": "emo-snow-profile"
+    },
+    {
+      "time": 12.16,
+      "view": "emo-snow-portrait"
+    },
+    {
+      "time": 14.16,
+      "view": "emo-rainbow"
+    },
+    {
+      "time": 22.12,
+      "view": "emo-brick-alley"
+    },
+    {
+      "time": 27.88,
+      "view": "emo-fisheye"
+    },
+    {
+      "time": 31.2,
+      "view": "emo-brick-alley"
+    },
+    {
+      "time": 33.2,
+      "view": "emo-fisheye"
+    },
+    {
+      "time": 36.6,
+      "view": "emo-snow-profile"
+    },
+    {
+      "time": 42.96,
+      "view": "emo-snow-portrait"
+    },
+    {
+      "time": 46,
+      "view": "emo-snow"
+    },
+    {
+      "time": 47.48,
+      "view": "emo-snow-portrait"
+    },
+    {
+      "time": 51,
+      "view": "emo-crowd"
+    },
+    {
+      "time": 57.76,
+      "view": "emo-dance"
+    },
+    {
+      "time": 62.08,
+      "view": "emo-crowd"
+    },
+    {
+      "time": 63.2,
+      "view": "emo-dance"
+    },
+    {
+      "time": 66.56,
+      "view": "emo-night"
+    },
+    {
+      "time": 69.2,
+      "view": "emo-storefront"
+    },
+    {
+      "time": 74.36,
+      "view": "emo-night"
+    },
+    {
+      "time": 79.84,
+      "view": "emo-living-room"
+    },
+    {
+      "time": 85.16,
+      "view": "emo-snow-portrait"
+    },
+    {
+      "time": 90.28,
+      "view": "emo-snow"
+    },
+    {
+      "time": 93.72,
+      "view": "emo-snow-profile"
+    },
+    {
+      "time": 97.48,
+      "view": "emo-snow-portrait"
+    },
+    {
+      "time": 101.2,
+      "view": "emo-night"
+    },
+    {
+      "time": 109.28,
+      "view": "emo-crowd"
+    },
+    {
+      "time": 112.32,
+      "view": "emo-dance"
+    },
+    {
+      "time": 118.08,
+      "view": "emo-backyard"
+    },
+    {
+      "time": 124.12,
+      "view": "emo-outro"
+    }
+  ]
+}

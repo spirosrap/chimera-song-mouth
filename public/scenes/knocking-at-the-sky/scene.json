@@ -1,0 +1,623 @@
+{
+  "setting": "knocking",
+  "title": "The Last Dinner Party · Knocking at the Sky",
+  "description": "Intimate portraits, a teal car, a retro broadcast intermission, a violet band stage and a ruby bedroom. The full reference clock drives the physical lead and backing voices.",
+  "duration": 295.613243,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "sky-lead",
+      "name": "Lead singer",
+      "role": "Verses, refrain and wordless vocal melody",
+      "tele": "sky-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "sky-chorus",
+      "name": "Backing singer",
+      "role": "Layered chorus and responses",
+      "tele": "sky-chorus.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 5.76,
+      "end": 9.16,
+      "text": "Standing on the windowsill",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 9.79,
+      "end": 12.64,
+      "text": "Walking in your sleep",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 13.98,
+      "end": 16.99,
+      "text": "On the streets, sirens sang",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 17.72,
+      "end": 21.08,
+      "text": "For you to take the leap.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 22.28,
+      "end": 25.3,
+      "text": "Thought that you were Icarus",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 26,
+      "end": 28.92,
+      "text": "Or at least that you were Greek",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 30.14,
+      "end": 33.49,
+      "text": "To the people down below",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 33.83,
+      "end": 36.75,
+      "text": "You're just another freak.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 37.86,
+      "end": 42,
+      "text": "I would give my eyes away",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 42,
+      "end": 45.879999999999995,
+      "text": "just to be the light.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 46.65,
+      "end": 49.86,
+      "text": "I'd burn off my fingerprints,",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 50.4,
+      "end": 53.739999999999995,
+      "text": "start a brand new life.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 53.739999999999995,
+      "end": 58.239999999999995,
+      "text": "I would trade my innocence,",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 58.9,
+      "end": 62.239999999999995,
+      "text": "choke upon my pride.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 62.66,
+      "end": 66.92,
+      "text": "You can find me every night",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 66.92,
+      "end": 69.86,
+      "text": "knocking at the sky.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 70.43,
+      "end": 73.87,
+      "text": "Singing la la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 74.6,
+      "end": 78.04,
+      "text": "Singing la la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 78.65,
+      "end": 82.09,
+      "text": "Singing la la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 82.81,
+      "end": 86.25,
+      "text": "Singing la la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 87.77,
+      "end": 91.03,
+      "text": "Women wept when you were gone",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 91.82,
+      "end": 94.74,
+      "text": "Lay naked on the shore.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 96,
+      "end": 99.88,
+      "text": "A hero's death in chiffon trenches",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 100.16,
+      "end": 103.4,
+      "text": "Who could ask for more?",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 104.1,
+      "end": 107.12,
+      "text": "And you would seek the mountains",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 107.18,
+      "end": 111,
+      "text": "Or the moon where snow is born",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 112.18,
+      "end": 115.27,
+      "text": "To gaze upon the hydra",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 115.28,
+      "end": 118.92,
+      "text": "And Athena in softcore.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 120.48,
+      "end": 123.55,
+      "text": "I would give my eyes away",
+      "speaker": "sky-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 124.23,
+      "end": 128.19,
+      "text": "Just to be the light.",
+      "speaker": "sky-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 128.98,
+      "end": 132.1,
+      "text": "I'd burn off my fingerprints",
+      "speaker": "sky-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 132.73,
+      "end": 136.52,
+      "text": "Start a brand new life.",
+      "speaker": "sky-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 137.22,
+      "end": 140.28,
+      "text": "I would trade my innocence",
+      "speaker": "sky-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 141.12,
+      "end": 144.42,
+      "text": "Choke upon my pride.",
+      "speaker": "sky-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 145.11,
+      "end": 149.12,
+      "text": "You can find me every night",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 149.43,
+      "end": 152.35999999999999,
+      "text": "Knocking at the sky.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 152.76,
+      "end": 156.2,
+      "text": "Singing la la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 156.86,
+      "end": 160.3,
+      "text": "Singing la la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 160.96,
+      "end": 164.4,
+      "text": "Singing la la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 165.07,
+      "end": 168.51,
+      "text": "Singing la la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.89
+    },
+    {
+      "start": 184.31,
+      "end": 186.44,
+      "text": "The Horror on Sunset.",
+      "speaker": "sky-lead",
+      "intensity": 0.7100000000000001
+    },
+    {
+      "start": 190.2,
+      "end": 192.96,
+      "text": "Honey, there's a seven-car pile-up",
+      "speaker": "sky-lead",
+      "intensity": 0.7000000000000001
+    },
+    {
+      "start": 192.96,
+      "end": 196.24,
+      "text": "On the highway to my heart.",
+      "speaker": "sky-lead",
+      "intensity": 0.7000000000000001
+    },
+    {
+      "start": 197.03,
+      "end": 198.8,
+      "text": "And if I give you the green light",
+      "speaker": "sky-lead",
+      "intensity": 0.7000000000000001
+    },
+    {
+      "start": 199.38,
+      "end": 200.98,
+      "text": "You promise you'll never come back?",
+      "speaker": "sky-lead",
+      "intensity": 0.7000000000000001
+    },
+    {
+      "start": 202.32,
+      "end": 202.9,
+      "text": "You promise?",
+      "speaker": "sky-lead",
+      "intensity": 0.7000000000000001
+    },
+    {
+      "start": 220.96,
+      "end": 224.62,
+      "text": "Oh, I rue the day",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 224.62,
+      "end": 228.73,
+      "text": "I ever left this place.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 229.21,
+      "end": 232.48,
+      "text": "I gave my headshots in",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 232.48,
+      "end": 236.63,
+      "text": "To Trashy's Lingerie.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 237.14,
+      "end": 241.34,
+      "text": "I want my MTV",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 241.59,
+      "end": 244.75,
+      "text": "My grass and my valet.",
+      "speaker": "sky-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 245.48,
+      "end": 249.15,
+      "text": "It never rains on me",
+      "speaker": "sky-lead",
+      "intensity": 0.88
+    },
+    {
+      "start": 249.47,
+      "end": 252.43,
+      "text": "Oh God, I love L.A.",
+      "speaker": "sky-lead",
+      "intensity": 0.9
+    },
+    {
+      "start": 252.64,
+      "end": 256.11,
+      "text": "La la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.8300000000000001
+    },
+    {
+      "start": 256.65,
+      "end": 260.12,
+      "text": "La la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.8300000000000001
+    },
+    {
+      "start": 260.73,
+      "end": 264.2,
+      "text": "La la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.8300000000000001
+    },
+    {
+      "start": 264.82,
+      "end": 268.29,
+      "text": "La la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.8300000000000001
+    },
+    {
+      "start": 268.92,
+      "end": 272.39,
+      "text": "La la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.8300000000000001
+    },
+    {
+      "start": 273.02,
+      "end": 276.49,
+      "text": "La la la la",
+      "speaker": "sky-lead",
+      "intensity": 0.8300000000000001
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "sky-interview"
+    },
+    {
+      "time": 3.36,
+      "view": "sky-passenger"
+    },
+    {
+      "time": 10.64,
+      "view": "sky-interview"
+    },
+    {
+      "time": 12.72,
+      "view": "sky-passenger"
+    },
+    {
+      "time": 21.8,
+      "view": "sky-road"
+    },
+    {
+      "time": 26.12,
+      "view": "sky-doorway"
+    },
+    {
+      "time": 35.88,
+      "view": "sky-window"
+    },
+    {
+      "time": 46.08,
+      "view": "sky-monochrome"
+    },
+    {
+      "time": 50.56,
+      "view": "sky-doorway"
+    },
+    {
+      "time": 57.52,
+      "view": "sky-interview"
+    },
+    {
+      "time": 63.4,
+      "view": "sky-portrait"
+    },
+    {
+      "time": 70.96,
+      "view": "sky-interview"
+    },
+    {
+      "time": 76.72,
+      "view": "sky-portrait"
+    },
+    {
+      "time": 82.84,
+      "view": "sky-garden"
+    },
+    {
+      "time": 91.04,
+      "view": "sky-window"
+    },
+    {
+      "time": 95.32,
+      "view": "sky-garden"
+    },
+    {
+      "time": 102.68,
+      "view": "sky-garden"
+    },
+    {
+      "time": 108.36,
+      "view": "sky-stairs"
+    },
+    {
+      "time": 117.36,
+      "view": "sky-stairs"
+    },
+    {
+      "time": 128.68,
+      "view": "sky-violet"
+    },
+    {
+      "time": 140.64,
+      "view": "sky-interview"
+    },
+    {
+      "time": 145,
+      "view": "sky-portrait"
+    },
+    {
+      "time": 153.04,
+      "view": "sky-violet"
+    },
+    {
+      "time": 161.48,
+      "view": "sky-monochrome"
+    },
+    {
+      "time": 163.76,
+      "view": "sky-violet"
+    },
+    {
+      "time": 169.8,
+      "view": "sky-intermission"
+    },
+    {
+      "time": 174.72,
+      "view": "sky-red-room"
+    },
+    {
+      "time": 180.24,
+      "view": "sky-shadow"
+    },
+    {
+      "time": 184.8,
+      "view": "sky-ruby-card"
+    },
+    {
+      "time": 187.8,
+      "view": "sky-test-card"
+    },
+    {
+      "time": 188.32,
+      "view": "sky-telephone"
+    },
+    {
+      "time": 197.04,
+      "view": "sky-monochrome"
+    },
+    {
+      "time": 203.16,
+      "view": "sky-guitar"
+    },
+    {
+      "time": 210.08,
+      "view": "sky-band"
+    },
+    {
+      "time": 217.44,
+      "view": "sky-guitar"
+    },
+    {
+      "time": 229.44,
+      "view": "sky-violet"
+    },
+    {
+      "time": 231.76,
+      "view": "sky-garden"
+    },
+    {
+      "time": 240.52,
+      "view": "sky-passenger"
+    },
+    {
+      "time": 245.64,
+      "view": "sky-red-room"
+    },
+    {
+      "time": 259.5,
+      "view": "sky-shadow"
+    },
+    {
+      "time": 266.1,
+      "view": "sky-red-room"
+    },
+    {
+      "time": 276.4,
+      "view": "sky-portrait"
+    },
+    {
+      "time": 286.3,
+      "view": "sky-shadow"
+    },
+    {
+      "time": 292.1,
+      "view": "sky-credits"
+    }
+  ]
+}
