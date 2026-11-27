@@ -1,0 +1,431 @@
+{
+  "setting": "coffeetv",
+  "title": "Blur · Coffee & TV",
+  "description": "A milk carton travels from a breakfast table through city pavements and a bus shelter to a rehearsal room.",
+  "duration": 365.331978,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "coffee-graham",
+      "name": "Graham",
+      "role": "CHIMERA vocals",
+      "tele": "coffee-graham.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 33.66,
+      "end": 38.44,
+      "text": "Do you feel like a chain store? Braco",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.44,
+      "end": 39.12,
+      "text": "Kelly,",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.5,
+      "end": 40.18,
+      "text": "Lord,",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.02,
+      "end": 44.44,
+      "text": "one of many zeroes.",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.6,
+      "end": 47.92,
+      "text": "kicked around for",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.92,
+      "end": 52.06,
+      "text": "your is a full but empty",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.06,
+      "end": 56.06,
+      "text": "holding out your heart",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.74,
+      "end": 62.5,
+      "text": "people who never really care how",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.5,
+      "end": 64.12,
+      "text": "you are",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.64,
+      "end": 68.86,
+      "text": "give me coffee and tea,",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.72,
+      "end": 75.14,
+      "text": "story I've seen",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.14,
+      "end": 79.68,
+      "text": "so much I'm going blind and I'm brain dead",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.68,
+      "end": 83.3,
+      "text": "virtually Something",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.3,
+      "end": 88,
+      "text": "watching is hard enough",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.88,
+      "end": 94.4,
+      "text": "Take me away from this big back world and",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.4,
+      "end": 98.82,
+      "text": "decrease and marry me",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.82,
+      "end": 102.12,
+      "text": "Soon we will settle again",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.92,
+      "end": 107.12,
+      "text": "Do you go to the country?",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.26,
+      "end": 111.18,
+      "text": "It isn't very far,",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.9,
+      "end": 115.84,
+      "text": "those people there will hurt you",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.86,
+      "end": 119.36,
+      "text": "versus who you are.",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.68,
+      "end": 123.3,
+      "text": "You're little full of their language,",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.22,
+      "end": 126.46,
+      "text": "that wisdom they're sure",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.62,
+      "end": 130.94,
+      "text": "till the word starts slurring",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.04,
+      "end": 135.04,
+      "text": "you can't find the door",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.54,
+      "end": 141.08,
+      "text": "So give me copy and CD",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.08,
+      "end": 145.84,
+      "text": "Please believe I've",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.84,
+      "end": 150.7,
+      "text": "seen so much I'm blind And I'm brain dead",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 150.7,
+      "end": 152.14,
+      "text": "virtually",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.1,
+      "end": 157.7,
+      "text": "So I should feel that singing is",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.7,
+      "end": 162.48,
+      "text": "hard enough for me Take me",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.48,
+      "end": 166.16,
+      "text": "away from the streetlight world and create",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.16,
+      "end": 169.42,
+      "text": "admiring me",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.84,
+      "end": 173.18,
+      "text": "So we can start over again",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 219.74,
+      "end": 223.24,
+      "text": "blind and I'm brain dead virtually",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.3,
+      "end": 227.48,
+      "text": "Some will not see",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 228.1,
+      "end": 232.22,
+      "text": "It's hard enough for me",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 232.22,
+      "end": 236.5,
+      "text": "Take me away from this big bad world And",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 236.5,
+      "end": 237.26,
+      "text": "please,",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 237.74,
+      "end": 242.28,
+      "text": "marry me So weak can",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 242.28,
+      "end": 245.02,
+      "text": "start over again.",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 249.8,
+      "end": 251.2,
+      "text": "Oh,",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 253.4,
+      "end": 256.16,
+      "text": "we can start over again.",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 261.8,
+      "end": 263.2,
+      "text": "Oh,",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 265.36,
+      "end": 267.8,
+      "text": "we can start over again.",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 273.62,
+      "end": 274.82,
+      "text": "Oh,",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 277.02,
+      "end": 279.72,
+      "text": "we can start over again",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 284.98,
+      "end": 286.38,
+      "text": "Oh",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    },
+    {
+      "start": 288.9,
+      "end": 291.54,
+      "text": "we start all together.",
+      "speaker": "coffee-graham",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "coffee-kitchen"
+    },
+    {
+      "time": 18,
+      "view": "coffee-carton"
+    },
+    {
+      "time": 36,
+      "view": "coffee-pavement"
+    },
+    {
+      "time": 56,
+      "view": "coffee-shelter"
+    },
+    {
+      "time": 79,
+      "view": "coffee-graham-close"
+    },
+    {
+      "time": 100,
+      "view": "coffee-pavement"
+    },
+    {
+      "time": 123,
+      "view": "coffee-carton"
+    },
+    {
+      "time": 147,
+      "view": "coffee-shelter"
+    },
+    {
+      "time": 169,
+      "view": "coffee-graham-close"
+    },
+    {
+      "time": 194,
+      "view": "coffee-rehearsal"
+    },
+    {
+      "time": 217,
+      "view": "coffee-pavement"
+    },
+    {
+      "time": 241,
+      "view": "coffee-rehearsal"
+    },
+    {
+      "time": 263,
+      "view": "coffee-graham-close"
+    },
+    {
+      "time": 286,
+      "view": "coffee-rehearsal"
+    },
+    {
+      "time": 306,
+      "view": "coffee-pavement"
+    },
+    {
+      "time": 327,
+      "view": "coffee-graham-close"
+    },
+    {
+      "time": 346,
+      "view": "coffee-carton"
+    }
+  ]
+}

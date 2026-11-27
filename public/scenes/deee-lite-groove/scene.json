@@ -1,0 +1,456 @@
+{
+  "setting": "deeegroove",
+  "title": "Deee-Lite · Groove Is in the Heart (live)",
+  "description": "A live-band performance under saturated violet and amber stage lights, with the singer and rhythm section trading close and wide views.",
+  "duration": 357.937644,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "groove-kier",
+      "name": "Lady Miss Kier",
+      "role": "CHIMERA vocals",
+      "tele": "groove-kier.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 36.32,
+      "end": 36.56,
+      "text": "happy,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.92,
+      "end": 39.42,
+      "text": "I'm to to be fast,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.42,
+      "end": 45.38,
+      "text": "to",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.64,
+      "end": 47.66,
+      "text": "I couldn't ask for another.",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.64,
+      "end": 51.66,
+      "text": "I couldn't, I couldn't ask for another.",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.04,
+      "end": 53.26,
+      "text": "No, no, no,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.92,
+      "end": 58.64,
+      "text": "I do deep in the dark. gonna a wall, don't believe no branch My summer dish, my",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.64,
+      "end": 59.16,
+      "text": "summer dress,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 59.5,
+      "end": 59.8,
+      "text": "yes",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.28,
+      "end": 63.36,
+      "text": "I'll make dash for another",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.38,
+      "end": 100.42,
+      "text": "go. Who was it?",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.76,
+      "end": 113.64,
+      "text": "ah, ah, Ah,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.68,
+      "end": 123.28,
+      "text": "Ah, ah,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.16,
+      "end": 136.38,
+      "text": "for another I put that for",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.38,
+      "end": 140.74,
+      "text": "another Oh, you got those I know and I",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.74,
+      "end": 142.18,
+      "text": "don't get those",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.74,
+      "end": 143.28,
+      "text": "not vicious,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.7,
+      "end": 148,
+      "text": "all the visions Don't forget the insulations I put that for",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 148,
+      "end": 148.68,
+      "text": "another",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.12,
+      "end": 180.86,
+      "text": "ah, ah, ah, Ah, ah, ah,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.98,
+      "end": 185.24,
+      "text": "Ah, ahh, ah, ah, Ah, ah, ah, Ah,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 210.86,
+      "end": 214.1,
+      "text": "I just feel like I'm back,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 214.46,
+      "end": 216.74,
+      "text": "feel satisfaction working,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 217.54,
+      "end": 217.84,
+      "text": "satisfaction",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.12,
+      "end": 221.92,
+      "text": "couldn't ask for another",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 223.1,
+      "end": 226.1,
+      "text": "I couldn't ask for another",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 227.04,
+      "end": 231.76,
+      "text": "Ooh, back into the day No balls on the big love page My",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 231.76,
+      "end": 232.28,
+      "text": "bitch,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 232.72,
+      "end": 233.82,
+      "text": "sucker test bitch",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 234.92,
+      "end": 237.98,
+      "text": "I couldn't ask for another",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 242.22,
+      "end": 245.16,
+      "text": "I couldn't ask for another.",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 250.44,
+      "end": 251.8,
+      "text": "Ladies and gentlemen,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 252.7,
+      "end": 256.88,
+      "text": "I'm happy to announce that the bony we're at",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 259.14,
+      "end": 261.86,
+      "text": "That Gary Muppa Kookbar",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 281.16,
+      "end": 282.62,
+      "text": "Here we",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 282.62,
+      "end": 287.38,
+      "text": "go.",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 290.1,
+      "end": 291.16,
+      "text": "'all can feel it.",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 291.78,
+      "end": 293.42,
+      "text": "Can you feel it?",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 293.8,
+      "end": 294.14,
+      "text": "Whoo!",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 295.86,
+      "end": 298.6,
+      "text": "We got Michael Hampton on guitar.",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 300.4,
+      "end": 300.82,
+      "text": "Romulo,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 301.38,
+      "end": 302.64,
+      "text": "get his hand off of the shirt.",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 303.4,
+      "end": 306.3,
+      "text": "We've got Trey Stone giving us all. Oh,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 308.08,
+      "end": 309.04,
+      "text": "we are tonight!",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 309.66,
+      "end": 311.14,
+      "text": "An immediate ultimide!",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 315.58,
+      "end": 315.88,
+      "text": "One,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 316.18,
+      "end": 318.14,
+      "text": "two, three, two,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 318.58,
+      "end": 318.88,
+      "text": "three, whoa!",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 323.18,
+      "end": 323.78,
+      "text": "Whoa!",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 330.36,
+      "end": 333.1,
+      "text": "ah, ah, ah, ah, Ah,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 333.1,
+      "end": 336.72,
+      "text": "ah,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    },
+    {
+      "start": 337.34,
+      "end": 337.78,
+      "text": "Ah,",
+      "speaker": "groove-kier",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "groove-disc"
+    },
+    {
+      "time": 16,
+      "view": "groove-kier-close"
+    },
+    {
+      "time": 33,
+      "view": "groove-mosaic-dance"
+    },
+    {
+      "time": 51,
+      "view": "groove-records"
+    },
+    {
+      "time": 68,
+      "view": "groove-band"
+    },
+    {
+      "time": 88,
+      "view": "groove-mosaic-dance"
+    },
+    {
+      "time": 106,
+      "view": "groove-kier-close"
+    },
+    {
+      "time": 126,
+      "view": "groove-kier-close"
+    },
+    {
+      "time": 145,
+      "view": "groove-records"
+    },
+    {
+      "time": 162,
+      "view": "groove-band"
+    },
+    {
+      "time": 182,
+      "view": "groove-mosaic-dance"
+    },
+    {
+      "time": 205,
+      "view": "groove-band"
+    },
+    {
+      "time": 229,
+      "view": "groove-kier-close"
+    },
+    {
+      "time": 253,
+      "view": "groove-records"
+    },
+    {
+      "time": 275,
+      "view": "groove-band"
+    },
+    {
+      "time": 299,
+      "view": "groove-kier-close"
+    },
+    {
+      "time": 321,
+      "view": "groove-mosaic-dance"
+    },
+    {
+      "time": 341,
+      "view": "groove-finale"
+    }
+  ]
+}

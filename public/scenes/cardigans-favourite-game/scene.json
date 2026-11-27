@@ -1,0 +1,391 @@
+{
+  "setting": "favouritegame",
+  "title": "The Cardigans · My Favourite Game",
+  "description": "A dark convertible crosses a pale highway beside layered rock ridges and roadside signs.",
+  "duration": 262.3947,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "game-nina",
+      "name": "Nina",
+      "role": "CHIMERA vocals",
+      "tele": "game-nina.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 10.44,
+      "end": 12.26,
+      "text": "Dave in the morning is here.",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 12.64,
+      "end": 13.1,
+      "text": "Good morning.",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 13.5,
+      "end": 17.66,
+      "text": "It's hotter than a pistol out there, 119 degrees right now.",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 18,
+      "end": 19.76,
+      "text": "Can't get up to 129 today.",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 20.9,
+      "end": 22.22,
+      "text": "it's hot!",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.36,
+      "end": 26.9,
+      "text": "You know, this heat can really drive you crazy so if you're behind the wheel somewhere,",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 26.9,
+      "end": 28.56,
+      "text": "please keep a cool head.",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.86,
+      "end": 30.78,
+      "text": "Be careful and fly safely.",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.2,
+      "end": 51.98,
+      "text": "I don't what you're looking for You haven't thought it,",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.26,
+      "end": 57.12,
+      "text": "that's for sure You rip me off, split me all around",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.12,
+      "end": 60.56,
+      "text": "In the dust of a seed of time",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.76,
+      "end": 71.64,
+      "text": "and this is my case of lust you see it's not a",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.64,
+      "end": 76.4,
+      "text": "matter of you versus me it's fine the way watch me and your",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.4,
+      "end": 80.82,
+      "text": "own but in the end it's not the same at all I'm",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 80.82,
+      "end": 84.38,
+      "text": "losing my favorite game",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.96,
+      "end": 90.32,
+      "text": "You're losing your mind",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.32,
+      "end": 92.04,
+      "text": "again",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.1,
+      "end": 96.82,
+      "text": "I'm losing my baby",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.82,
+      "end": 101.52,
+      "text": "Losing my favorite game",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.76,
+      "end": 120.34,
+      "text": "I only know what I've been working for Another you",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.34,
+      "end": 124.9,
+      "text": "so I could love you more I really thought that I could take",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.9,
+      "end": 129.22,
+      "text": "you there, but my experiment is not getting us anywhere",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.82,
+      "end": 140.66,
+      "text": "I had a wish and I could turn you right A stupid mission",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.66,
+      "end": 145.04,
+      "text": "in a legal spite I should've seen it when my hope was",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.04,
+      "end": 149.5,
+      "text": "new My heart is black and my body is blue And I'm",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.5,
+      "end": 153.18,
+      "text": "losing my favorite game",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.7,
+      "end": 158.48,
+      "text": "You're losing your mind",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.48,
+      "end": 163.36,
+      "text": "again I'm losing",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.36,
+      "end": 167.18,
+      "text": "my favorite game",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.18,
+      "end": 171.14,
+      "text": "You're losing your",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 171.14,
+      "end": 173.42,
+      "text": "mind again",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.18,
+      "end": 178.5,
+      "text": "I'm losing my baby,",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 178.86,
+      "end": 183.46,
+      "text": "losing my favorite kid.",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.62,
+      "end": 195.78,
+      "text": "I'm losing my favorite",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.78,
+      "end": 196.88,
+      "text": "kid.",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.28,
+      "end": 201.96,
+      "text": "I'm the mind",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.26,
+      "end": 203.74,
+      "text": "I tried,",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 204.18,
+      "end": 208.34,
+      "text": "I tried, but were",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 208.34,
+      "end": 210.84,
+      "text": "still strong",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 212.58,
+      "end": 215.44,
+      "text": "I'm losing my people,",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 216.34,
+      "end": 220.14,
+      "text": "you are losing the Savior instead",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 243.16,
+      "end": 247.94,
+      "text": "the car single i think it be state patrol",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 247.94,
+      "end": 252.52,
+      "text": "is usually a warning free high -speed out of control vehicle or to the root six six",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 252.52,
+      "end": 256.16,
+      "text": "six all states there's no quick competition",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    },
+    {
+      "start": 256.88,
+      "end": 261.4,
+      "text": "you're Come on down and weigh that diggy, you can win a life.",
+      "speaker": "game-nina",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "game-highway"
+    },
+    {
+      "time": 16,
+      "view": "game-convertible"
+    },
+    {
+      "time": 37,
+      "view": "game-nina-close"
+    },
+    {
+      "time": 56,
+      "view": "game-ridges"
+    },
+    {
+      "time": 75,
+      "view": "game-highway"
+    },
+    {
+      "time": 94,
+      "view": "game-convertible"
+    },
+    {
+      "time": 115,
+      "view": "game-nina-close"
+    },
+    {
+      "time": 136,
+      "view": "game-ridges"
+    },
+    {
+      "time": 155,
+      "view": "game-roadside"
+    },
+    {
+      "time": 175,
+      "view": "game-convertible"
+    },
+    {
+      "time": 195,
+      "view": "game-ridges"
+    },
+    {
+      "time": 215,
+      "view": "game-nina-close"
+    },
+    {
+      "time": 234,
+      "view": "game-roadside"
+    },
+    {
+      "time": 249,
+      "view": "game-finale"
+    }
+  ]
+}

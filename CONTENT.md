@@ -238,6 +238,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Justice — D.A.N.C.E. | 3:01 | `?scene=justice-dance` | Multicolored graphics on costumes and a neon passage. |
 | Beastie Boys — Intergalactic | 4:35 | `?scene=beastie-intergalactic` | Three physical rap parts in a tiled station and a city with a towering robot. |
 | OK Go — Here It Goes Again | 3:06 | `?scene=ok-go-here-it-goes` | Four figures step and turn on moving belts in a foil-lined rehearsal room. |
+| Daft Punk — Around the World | 4:02 | `?scene=daft-around-the-world` | Robot costumes and tiers of color around a circular dance floor. |
+| Deee-Lite — Groove Is in the Heart (live) | 5:58 | `?scene=deee-lite-groove` | A live band in violet and amber light, with record-like spirals. |
+| Blur — Coffee & TV | 6:05 | `?scene=blur-coffee-and-tv` | A roaming milk carton, pavements, a bus shelter and a rehearsal room. |
+| Kylie Minogue — Come Into My World | 4:20 | `?scene=kylie-come-into-my-world` | Repeated performers at a street corner with striped awnings and a crosswalk. |
+| Björk — It's Oh So Quiet | 4:00 | `?scene=bjork-oh-so-quiet` | A whispered garage scene opens into a musical with storefronts and umbrellas. |
+| Missy Elliott — The Rain (Supa Dupa Fly) | 4:13 | `?scene=missy-the-rain` | Oversized costumes, circular stage lines and a rain scene. |
+| The Cardigans — My Favourite Game | 4:22 | `?scene=cardigans-favourite-game` | A dark convertible, layered desert rock and a pale highway. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

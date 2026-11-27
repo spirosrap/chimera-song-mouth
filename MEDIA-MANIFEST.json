@@ -2367,6 +2367,36 @@
       "sha256": "777edcf05c2dc505015cd862415c662cad4864492f0414d06702baa9c5931942"
     },
     {
+      "path": "public/scenes/bjork-oh-so-quiet/backing.mp3",
+      "bytes": 7669293,
+      "sha256": "8b0349b0905ea7c3bf3c6ae37275154461d7921e20e55b1be87a7044ab7382d4"
+    },
+    {
+      "path": "public/scenes/bjork-oh-so-quiet/credits.txt",
+      "bytes": 85,
+      "sha256": "391bd24e03f549f3d8212a488120a6718466024ac54bd6c305c10d0c5801b61d"
+    },
+    {
+      "path": "public/scenes/bjork-oh-so-quiet/mix.mp3",
+      "bytes": 7673132,
+      "sha256": "433a4f85f3c53c63c64071bc0af9e6ead4c26baa78cc7ee2c5d488c89db32562"
+    },
+    {
+      "path": "public/scenes/bjork-oh-so-quiet/performance.json",
+      "bytes": 189281,
+      "sha256": "73ec7c23c1258ffac0faa575bb726f4041a9654856b63edfc385cc0a3db60413"
+    },
+    {
+      "path": "public/scenes/bjork-oh-so-quiet/quiet-bjork.tele.gz",
+      "bytes": 947224,
+      "sha256": "666924ebfd0dd5eb585b0a991bd47078eb0b9419f03d43fe3a896727e2cf65a4"
+    },
+    {
+      "path": "public/scenes/bjork-oh-so-quiet/scene.json",
+      "bytes": 6063,
+      "sha256": "fef31048817675adb2ce8ebcae79778fe6ebf66be00ffc8e0b8e4e873a575c67"
+    },
+    {
       "path": "public/scenes/black-hole-sun/backing.mp3",
       "bytes": 10256684,
       "sha256": "c1ba0a097368bb5c51f7467262addbdfcc55fe74e7e9263177233d6bd47600d6"
@@ -2395,6 +2425,36 @@
       "path": "public/scenes/black-hole-sun/scene.json",
       "bytes": 7387,
       "sha256": "9231bf9e5ba781908f109058047242733d5e783c1f1a65fade3a7cbaf67ba996"
+    },
+    {
+      "path": "public/scenes/blur-coffee-and-tv/backing.mp3",
+      "bytes": 11684397,
+      "sha256": "a516967ee15fabc5f294a9a9b71bb513667f02a10879dc380a49e1bf64b29bed"
+    },
+    {
+      "path": "public/scenes/blur-coffee-and-tv/coffee-graham.tele.gz",
+      "bytes": 2438309,
+      "sha256": "10b9c1a8b243e4c2e40e38f362fe4a1fc63783dac6a0dc03644b886db7822f54"
+    },
+    {
+      "path": "public/scenes/blur-coffee-and-tv/credits.txt",
+      "bytes": 76,
+      "sha256": "394c59100036af2dcb74b9ff4f22bdd973c8478c3ce404d7938517e289533fef"
+    },
+    {
+      "path": "public/scenes/blur-coffee-and-tv/mix.mp3",
+      "bytes": 11692844,
+      "sha256": "a77ebf0ea9b47c63be4758878294abe2874c8ca45f97f559097b69aded1e35b6"
+    },
+    {
+      "path": "public/scenes/blur-coffee-and-tv/performance.json",
+      "bytes": 540295,
+      "sha256": "b81ebf89d36da370dbe17a564fe13acacbf711bfd29b62d14dc064c80d092178"
+    },
+    {
+      "path": "public/scenes/blur-coffee-and-tv/scene.json",
+      "bytes": 9082,
+      "sha256": "361e793e39f6aedbf02f893976a6c9bdfe6135ccde0ebd2c2b9a6e5859c478f1"
     },
     {
       "path": "public/scenes/bon-jovi-always/backing.mp3",
@@ -2485,6 +2545,36 @@
       "path": "public/scenes/britney-toxic/toxic-britney.tele.gz",
       "bytes": 1673443,
       "sha256": "132ed72707513f903910f1610a7f7070268cd774be08504ee756c62b6521e02a"
+    },
+    {
+      "path": "public/scenes/cardigans-favourite-game/backing.mp3",
+      "bytes": 8391981,
+      "sha256": "97ada7d3360889a86bf244afc8223e0010da1b61a15a42462b2f4924c8c39fd2"
+    },
+    {
+      "path": "public/scenes/cardigans-favourite-game/credits.txt",
+      "bytes": 93,
+      "sha256": "a53a53bf6e91a7e4ed381dc9493640fe37467c1bfe37cb06d7894cb18ae5733e"
+    },
+    {
+      "path": "public/scenes/cardigans-favourite-game/game-nina.tele.gz",
+      "bytes": 2779635,
+      "sha256": "3f0ede8fcbdf1303745f74606a3744338e4eeefa8d2027efaf3060cc275bf6e8"
+    },
+    {
+      "path": "public/scenes/cardigans-favourite-game/mix.mp3",
+      "bytes": 8398892,
+      "sha256": "b6af6cf6ed9979316c495ae7cb6167f884dd66c6740dd0df11dbbe992a000f04"
+    },
+    {
+      "path": "public/scenes/cardigans-favourite-game/performance.json",
+      "bytes": 638684,
+      "sha256": "6d44a668f59092b3f4c3b60bb55408b753ef732fd1ff7baadc7c506752af6ab4"
+    },
+    {
+      "path": "public/scenes/cardigans-favourite-game/scene.json",
+      "bytes": 8543,
+      "sha256": "0f32b316c2fedf289a68be1d4b140633d4be2758b8475cabfc28f3c29458605c"
     },
     {
       "path": "public/scenes/caroline-welcome-island/backing.mp3",
@@ -2857,6 +2947,36 @@
       "sha256": "4e47b70766c241381198ec07a228691354d0bbb48937c7c6ef8ed1c974bad6a5"
     },
     {
+      "path": "public/scenes/daft-around-the-world/backing.mp3",
+      "bytes": 7733805,
+      "sha256": "dd58c4cb94732b18452989b07a0c59b6d5c9d6c70210a55077b2971b81af3864"
+    },
+    {
+      "path": "public/scenes/daft-around-the-world/credits.txt",
+      "bytes": 88,
+      "sha256": "500071065223c4ab0fa8f5b5227ba7832a8c085c8fffb622967bdb9b6631e4d4"
+    },
+    {
+      "path": "public/scenes/daft-around-the-world/mix.mp3",
+      "bytes": 7733804,
+      "sha256": "2a38b0123cbcf9095efbcc6c53552e77f6d82d3cdea8db8c763aad5df3d06c38"
+    },
+    {
+      "path": "public/scenes/daft-around-the-world/performance.json",
+      "bytes": 163820,
+      "sha256": "9c14d0636675e31f7f35b56048e623f52e046deeb6cd1f5254ba744ef1894163"
+    },
+    {
+      "path": "public/scenes/daft-around-the-world/scene.json",
+      "bytes": 4293,
+      "sha256": "8afce83486229cc9800501b9c28a9dc8a579fc65644a2e3deab2392e70ee4bd5"
+    },
+    {
+      "path": "public/scenes/daft-around-the-world/world-robot.tele.gz",
+      "bytes": 795910,
+      "sha256": "441a3bb67cc400363e762969cf72061a47abb331f0733f9e1296bc28f33ec9f7"
+    },
+    {
       "path": "public/scenes/danger-voltage/answer.tele.gz",
       "bytes": 852021,
       "sha256": "9f372094d90bdb009cbb2f246ff84b9c6c6eae2369a970f5ce2a43e1abab867f"
@@ -2950,6 +3070,36 @@
       "path": "public/scenes/dead-dance/scene.json",
       "bytes": 9713,
       "sha256": "5f5723fd8562ea8381c7a5ba346f590acb617965794caa72e0cb5b29b969a18d"
+    },
+    {
+      "path": "public/scenes/deee-lite-groove/backing.mp3",
+      "bytes": 11453997,
+      "sha256": "f8a2c03c20da27f22dfc669a5698b0342d273542b39bac450946dca96a236c2c"
+    },
+    {
+      "path": "public/scenes/deee-lite-groove/credits.txt",
+      "bytes": 101,
+      "sha256": "9b1cf71ab6df1bb025096bfd40643d237c8f3bee74a5bf008602110704ed0bc6"
+    },
+    {
+      "path": "public/scenes/deee-lite-groove/groove-kier.tele.gz",
+      "bytes": 2149372,
+      "sha256": "6e1d276f70467405377d03a3bec4241d59d9e9e7a394dc33970cd8ba2bd934c0"
+    },
+    {
+      "path": "public/scenes/deee-lite-groove/mix.mp3",
+      "bytes": 11456300,
+      "sha256": "0ef9eac89d32651e6648bc574befa32b3441bdbbbd77ec2ad4ed6660a631ffc8"
+    },
+    {
+      "path": "public/scenes/deee-lite-groove/performance.json",
+      "bytes": 462930,
+      "sha256": "9abcc37f9cca00ad2583a24f731053860c23d39c8be7db4ca2a7683888802999"
+    },
+    {
+      "path": "public/scenes/deee-lite-groove/scene.json",
+      "bytes": 9491,
+      "sha256": "1a9ca6bc47d61db3d80a0b99f7e3920e141f101ad5f15e4a1acb7bfd840f24b5"
     },
     {
       "path": "public/scenes/denial-river/backing.mp3",
@@ -4752,6 +4902,36 @@
       "sha256": "d093fdbd9e88d85b94280232f3372286380d404a752ee3c74b8ef0df537dce86"
     },
     {
+      "path": "public/scenes/kylie-come-into-my-world/backing.mp3",
+      "bytes": 8342061,
+      "sha256": "b844ff153f128270d172269f41811aadc57e570c769fcd6f4978f425587f78a7"
+    },
+    {
+      "path": "public/scenes/kylie-come-into-my-world/credits.txt",
+      "bytes": 93,
+      "sha256": "d53860fcbf327b803f525431858fb3ac03651b7eb0eb7c6ef423d9cbabe02384"
+    },
+    {
+      "path": "public/scenes/kylie-come-into-my-world/mix.mp3",
+      "bytes": 8342060,
+      "sha256": "e88517e8872c4927abcf65001d839482f01e91efd566bcb6afb38bd775906afa"
+    },
+    {
+      "path": "public/scenes/kylie-come-into-my-world/performance.json",
+      "bytes": 587053,
+      "sha256": "4bbbf0d09e300d19575b0d60d2c2bc70eed289173a72143a73775c6baeeed009"
+    },
+    {
+      "path": "public/scenes/kylie-come-into-my-world/scene.json",
+      "bytes": 9888,
+      "sha256": "7ed44df448544d6f0fa9ebb038aae22938b9e03f48436b763bc9af8d3755485d"
+    },
+    {
+      "path": "public/scenes/kylie-come-into-my-world/world-kylie.tele.gz",
+      "bytes": 2568426,
+      "sha256": "93e836f750495db511bad0cd19af39d7f3c7e6065b3607c6e5285a7272c3625e"
+    },
+    {
       "path": "public/scenes/land-confusion/backing.mp3",
       "bytes": 10527020,
       "sha256": "9ba6f59ed655c600b00aa49ae8224ce7950f072886eddc994630c29bcdadce15"
@@ -5425,6 +5605,36 @@
       "path": "public/scenes/milkshake-man/scene.json",
       "bytes": 10626,
       "sha256": "c29983ce63a46e0ae265674ef265501b0b335ff3406fec49ad4874930c6d49a0"
+    },
+    {
+      "path": "public/scenes/missy-the-rain/backing.mp3",
+      "bytes": 8097069,
+      "sha256": "2a04043222e346f4d7d323e1b96fe8b1f7159cfd891e3bb7a07a52342950eaa3"
+    },
+    {
+      "path": "public/scenes/missy-the-rain/credits.txt",
+      "bytes": 100,
+      "sha256": "fe365fadbdf1d98954889eae081222729c20e540d52e45ffabc7d79ce12e717a"
+    },
+    {
+      "path": "public/scenes/missy-the-rain/mix.mp3",
+      "bytes": 8098604,
+      "sha256": "dc0199429f17826eafb799e7fc4edca9054d7b5631e50ec09fe6c717045c7141"
+    },
+    {
+      "path": "public/scenes/missy-the-rain/performance.json",
+      "bytes": 532517,
+      "sha256": "ea63e622a90dd22cb69000db2067669da6b36ee075ffbc23a7684dedb2ede81c"
+    },
+    {
+      "path": "public/scenes/missy-the-rain/rain-missy.tele.gz",
+      "bytes": 2352699,
+      "sha256": "8ec9f36b9b307eed15341581c19a19646149f3b24ceac5737ca64cc176451f4f"
+    },
+    {
+      "path": "public/scenes/missy-the-rain/scene.json",
+      "bytes": 10515,
+      "sha256": "54be5ee02ef8907155b01892006c4e97627efaaef63c4a5efc7c71980b75b80d"
     },
     {
       "path": "public/scenes/mitski-nobody/backing.mp3",

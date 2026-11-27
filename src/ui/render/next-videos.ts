@@ -125,6 +125,14 @@ export class NextVideoStage {
         this.props.box(figure.root,17,4.4,13,color,[0,10.2,2.4]);
         this.props.box(figure.root,12,1.45,7.7,color,[0,8.3,9.6]);
       }
+      if (setting === 'daftworld') {
+        this.props.oval(figure.root,[0,11.9,0],[12.5,4,10.7],'#8d879b');
+        for(const side of [-1,1])this.props.oval(figure.root,[side*10,4.4,2],[2.5,6.4,3.5],'#aba0ab');
+      }
+      if (setting === 'missyrain' && i === 0) {
+        this.props.oval(figure.root,[0,-43,7],[26,29,11],'#60546b');
+        for(const side of [-1,1])this.props.oval(figure.root,[side*21,-30,5],[10,12,7],'#6f5e79');
+      }
       if (setting === 'virtualinsanity' && i === 0) {
         this.props.oval(figure.root, [0, 14, 1], [13, 6, 12], '#312d36');
         this.props.oval(figure.root, [0, 10.5, 4], [15, 1.7, 13], '#3b353d');
@@ -435,7 +443,7 @@ export class NextVideoStage {
     const dt = reset ? 1 / 60 : THREE.MathUtils.clamp(time - this.previousTime, 1 / 120, .05);
     const beat = Math.PI * 2 * (time * NEXT_VIDEO_INFO[this.setting].bpm / 60);
     const tight = designated >= 0 || /close|portrait|window|canvas/.test(stageView);
-    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band|look-white-stage|sweet-office|sweet-car|sweet-ufo|tessellate-steps|tessellate-table|water-tv|time-meeting|genghis-house|silk-porch|silk-room|oblivion-bleachers|toxic-cabin|shack-front|bricks-duo|bricks-drums|take-band|artistes-parade|justice-shirts|justice-crossing|intergalactic-trio|treads-crossing|treads-line|treads-pairs/.test(stageView);
+    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band|look-white-stage|sweet-office|sweet-car|sweet-ufo|tessellate-steps|tessellate-table|water-tv|time-meeting|genghis-house|silk-porch|silk-room|oblivion-bleachers|toxic-cabin|shack-front|bricks-duo|bricks-drums|take-band|artistes-parade|justice-shirts|justice-crossing|intergalactic-trio|treads-crossing|treads-line|treads-pairs|daft-disc|groove-band|mirror-crosswalk|mirror-awning|quiet-umbrella/.test(stageView);
     const seated = /campfire|tea|flat/.test(stageView);
     const ensemble = this.setting === 'virtualinsanity' ? stageView === 'virtual-white-ensemble' : group;
     const core = this.figures.length;

@@ -1,0 +1,492 @@
+{
+  "setting": "missyrain",
+  "title": "Missy Elliott · The Rain (Supa Dupa Fly)",
+  "description": "Oversized jackets and curved floor graphics cut between a dark circular set and a luminous rain scene.",
+  "duration": 253.0262,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "rain-missy",
+      "name": "Missy",
+      "role": "CHIMERA vocals",
+      "tele": "rain-missy.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.34,
+      "text": "Oh",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 8.44,
+      "end": 13.16,
+      "text": "Me I'm super fly super duper fly",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 13.16,
+      "end": 13.82,
+      "text": "super",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 16.15,
+      "end": 18.8,
+      "text": "medium super Medium",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 21.96,
+      "end": 23.72,
+      "text": "me I'm super fly",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 23.72,
+      "end": 30.96,
+      "text": "when",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 30.96,
+      "end": 35.32,
+      "text": "the brain it's my window I take it",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.32,
+      "end": 40.18,
+      "text": "we sing a jangle",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.18,
+      "end": 44.98,
+      "text": "we so tight that you get our styles tangle I Swag yo dosey",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.98,
+      "end": 47.7,
+      "text": "do like your loco Can we get pickin'",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.1,
+      "end": 52.36,
+      "text": "night like Coco So so, you wanna play with my yo -yo",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.36,
+      "end": 57.18,
+      "text": "I smoke my on the D -D -O I can't stand the rain,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.28,
+      "end": 60.6,
+      "text": "it's my window.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.74,
+      "end": 63.76,
+      "text": "can't stand the rain,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.28,
+      "end": 69.24,
+      "text": "It's my window, I can't stand the world.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.78,
+      "end": 72.56,
+      "text": "It's my window,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.02,
+      "end": 75.44,
+      "text": "I -I can't stand the world.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.94,
+      "end": 78.66,
+      "text": "It's my window.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 81.38,
+      "end": 82.22,
+      "text": "Beep beep,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.82,
+      "end": 84.34,
+      "text": "got the keys to the Jeep?",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.58,
+      "end": 88.34,
+      "text": "I'm driving to the beach,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.2,
+      "end": 91.14,
+      "text": "down, sound see my piece",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.77,
+      "end": 94.18,
+      "text": "Give them pounds now look who it be",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.63,
+      "end": 96.84,
+      "text": "It be me me and Timothy",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.48,
+      "end": 100.12,
+      "text": "Look like you're about to rain what a shame",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.57,
+      "end": 105.4,
+      "text": "I got the armor or the shine of the snake Ole Missy, you try to",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.4,
+      "end": 105.98,
+      "text": "maintain",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.06,
+      "end": 111.16,
+      "text": "I can't can't stand the",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.62,
+      "end": 117.4,
+      "text": "I can't stand the rain",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.02,
+      "end": 123.24,
+      "text": "It's my window I can't stand the rain",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.02,
+      "end": 129.48,
+      "text": "It's my window I can't stand the rain",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.02,
+      "end": 132.58,
+      "text": "It's my window,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.22,
+      "end": 135.42,
+      "text": "I can't stand the rain",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.1,
+      "end": 140.9,
+      "text": "I fill the wind 5, 6, 7, 8, 9, 10, 9,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.92,
+      "end": 145.74,
+      "text": "10 Begin, I sit on heels like Lauren until the rain starts Coming",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.74,
+      "end": 149.52,
+      "text": "down in correno chair I got my umbrella.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.98,
+      "end": 151.22,
+      "text": "finger waves me days.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 151.52,
+      "end": 152.84,
+      "text": "fall like trumpets.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.3,
+      "end": 157.92,
+      "text": "Trumpet. I break up with him before he done done to have me.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.02,
+      "end": 158.54,
+      "text": "Yes, you know",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 161,
+      "end": 162.78,
+      "text": "It's my window",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.02,
+      "end": 168.6,
+      "text": "It's my window",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 172.98,
+      "end": 174.76,
+      "text": "It's my window",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.8,
+      "end": 177.16,
+      "text": "can't stand the wind.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.02,
+      "end": 180.58,
+      "text": "It's my window.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 181.76,
+      "end": 183.52,
+      "text": "can't stand the wind.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.1,
+      "end": 189.72,
+      "text": "I can't stand the wind.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.1,
+      "end": 195.5,
+      "text": "I can't stand the wind.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.7,
+      "end": 201.86,
+      "text": "I can't stand the rain,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.76,
+      "end": 208.68,
+      "text": "can't stand the rain,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 209.48,
+      "end": 210.56,
+      "text": "it's my window,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 211.26,
+      "end": 213.42,
+      "text": "I can't stand the rain.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 215.16,
+      "end": 216.68,
+      "text": "It's my window,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 217.4,
+      "end": 219.32,
+      "text": "can't standing the rain,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.94,
+      "end": 225.38,
+      "text": "It's my window, I can't stand the way you",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 225.38,
+      "end": 226.1,
+      "text": "do.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 227.1,
+      "end": 228.68,
+      "text": "It's my window,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 229.78,
+      "end": 232.1,
+      "text": "can not stand the way you do.",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 235.06,
+      "end": 238.1,
+      "text": "I can't stand the way you...",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    },
+    {
+      "start": 240.92,
+      "end": 243.12,
+      "text": "I can't stand the rain,",
+      "speaker": "rain-missy",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "rain-ring"
+    },
+    {
+      "time": 17,
+      "view": "rain-inflated-close"
+    },
+    {
+      "time": 35,
+      "view": "rain-street"
+    },
+    {
+      "time": 55,
+      "view": "rain-ring"
+    },
+    {
+      "time": 74,
+      "view": "rain-glass"
+    },
+    {
+      "time": 94,
+      "view": "rain-inflated-close"
+    },
+    {
+      "time": 114,
+      "view": "rain-crew-dance"
+    },
+    {
+      "time": 135,
+      "view": "rain-street"
+    },
+    {
+      "time": 155,
+      "view": "rain-ring"
+    },
+    {
+      "time": 178,
+      "view": "rain-inflated-close"
+    },
+    {
+      "time": 199,
+      "view": "rain-glass"
+    },
+    {
+      "time": 219,
+      "view": "rain-crew-dance"
+    },
+    {
+      "time": 237,
+      "view": "rain-finale"
+    }
+  ]
+}

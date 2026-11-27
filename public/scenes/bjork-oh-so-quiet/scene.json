@@ -1,0 +1,303 @@
+{
+  "setting": "soquiet",
+  "title": "Björk · It's Oh So Quiet",
+  "description": "Muted garage and shop fronts open onto sweeping street choreography under pastel signs and an umbrella canopy.",
+  "duration": 239.72,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "quiet-bjork",
+      "name": "Björk",
+      "role": "CHIMERA vocals",
+      "tele": "quiet-bjork.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 55.68,
+      "end": 56.66,
+      "text": "peaceful",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.24,
+      "end": 63.34,
+      "text": "fall in love, SING BOO!",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 64.14,
+      "end": 68.54,
+      "text": "sky up above! simple is caving",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.62,
+      "end": 70.24,
+      "text": "WOW!",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.58,
+      "end": 70.92,
+      "text": "WOW!",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.48,
+      "end": 75.9,
+      "text": "cry?",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.58,
+      "end": 78.02,
+      "text": "die.",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.14,
+      "end": 103.24,
+      "text": "that's another big riot.",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.76,
+      "end": 108.76,
+      "text": "You blow up, you sing the horn,",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.2,
+      "end": 110.58,
+      "text": "devil cuts lose,",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.22,
+      "end": 114.38,
+      "text": "sing them so what's use?",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.78,
+      "end": 115.88,
+      "text": "Woah, bam!",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.76,
+      "end": 117.74,
+      "text": "falling",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.88,
+      "end": 152.6,
+      "text": "peaceful and tear,",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.42,
+      "end": 156.08,
+      "text": "ring the bell,",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.7,
+      "end": 159.78,
+      "text": "meow, and shout at you, yell,",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 160.22,
+      "end": 160.92,
+      "text": "Ha -ha!",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.24,
+      "end": 163.82,
+      "text": "You brought this spell.",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.58,
+      "end": 167,
+      "text": "is where we",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.82,
+      "end": 168.76,
+      "text": "fit, sky's",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.44,
+      "end": 170.8,
+      "text": "mistake,",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.12,
+      "end": 196.26,
+      "text": "That's another big riot",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.6,
+      "end": 200.1,
+      "text": "You blow a fuse,",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 200.9,
+      "end": 201.82,
+      "text": "them,",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.18,
+      "end": 203.04,
+      "text": "devil cuts",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 203.6,
+      "end": 207.36,
+      "text": "Save them so what's the use?",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 208.7,
+      "end": 211.56,
+      "text": "I'm falling in love",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 214.12,
+      "end": 217.46,
+      "text": "sky glaze and the devil cuts loose",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 217.92,
+      "end": 219.84,
+      "text": "blow, blow, blow,",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.24,
+      "end": 220.5,
+      "text": "go,",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 221.3,
+      "end": 221.86,
+      "text": "fuse",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.28,
+      "end": 224.68,
+      "text": "fall",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    },
+    {
+      "start": 225,
+      "end": 226.54,
+      "text": "love",
+      "speaker": "quiet-bjork",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "quiet-garage"
+    },
+    {
+      "time": 15,
+      "view": "quiet-whisper-close"
+    },
+    {
+      "time": 32,
+      "view": "quiet-street-dance"
+    },
+    {
+      "time": 48,
+      "view": "quiet-storefront"
+    },
+    {
+      "time": 67,
+      "view": "quiet-umbrella"
+    },
+    {
+      "time": 83,
+      "view": "quiet-whisper-close"
+    },
+    {
+      "time": 104,
+      "view": "quiet-garage"
+    },
+    {
+      "time": 125,
+      "view": "quiet-street-dance"
+    },
+    {
+      "time": 148,
+      "view": "quiet-storefront"
+    },
+    {
+      "time": 169,
+      "view": "quiet-umbrella"
+    },
+    {
+      "time": 188,
+      "view": "quiet-street-dance"
+    },
+    {
+      "time": 208,
+      "view": "quiet-storefront"
+    },
+    {
+      "time": 223,
+      "view": "quiet-finale"
+    }
+  ]
+}
