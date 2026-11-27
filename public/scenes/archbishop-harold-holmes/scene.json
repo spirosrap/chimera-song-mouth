@@ -1,0 +1,503 @@
+{
+  "setting": "archbishop",
+  "title": "Jack White · Archbishop Harold Holmes",
+  "description": "A full procedural chapel revival leading to the hospital coda. CHIMERA performs the sermon and choruses over the separated accompaniment.",
+  "duration": 174.05678,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "holmes-preacher",
+      "name": "Archbishop Harold Holmes",
+      "role": "Preached verse, sung calls and quiet coda",
+      "tele": "holmes-preacher.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 10.97,
+      "end": 12.54,
+      "text": "Dear friend, if you wanna feel better,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 12.61,
+      "end": 15.09,
+      "text": "Don't let the devil make you toss this letter.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 15.76,
+      "end": 17.98,
+      "text": "If you've been crossed up by hoodoo,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 18.12,
+      "end": 18.6,
+      "text": "the voodoo,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 18.759999999999998,
+      "end": 19.84,
+      "text": "the wizard or the lizard,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 20.54,
+      "end": 23.16,
+      "text": "You got family trouble, man trouble, woman trouble,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 23.36,
+      "end": 24.34,
+      "text": "your life has double trouble.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 25.060000000000002,
+      "end": 27.2,
+      "text": "You're looking for a true friend or a true lover,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 27.52,
+      "end": 28.92,
+      "text": "or if you've been living undercover.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 29.28,
+      "end": 31.72,
+      "text": "Well, I'm coming to your town to break it all down,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 31.72,
+      "end": 33.16,
+      "text": "and help you with all of this.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 33.58,
+      "end": 35.800000000000004,
+      "text": "I'm looking to help you find bliss.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 35.800000000000004,
+      "end": 38.620000000000005,
+      "text": "One day, one way, can't miss.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 42.92,
+      "end": 45.72,
+      "text": "I'm here to tear all the walls down.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 46.6,
+      "end": 50.660000000000004,
+      "text": "It doesn't matter if it's a large town or a small town.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 50.660000000000004,
+      "end": 54.24,
+      "text": "Just like Joshua and the fabled walls of Jericho.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 54.24,
+      "end": 56.46,
+      "text": "I'm here to tear down the institution.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 57.120000000000005,
+      "end": 59.14,
+      "text": "God spoke to me, said, listen to me.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 59.14,
+      "end": 61.64,
+      "text": "I anoint you with the power that’ll get them all moving.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 61.64,
+      "end": 63.7,
+      "text": "You agitated, you prayed and meditated,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 63.7,
+      "end": 65.94,
+      "text": "you concentrated on getting elevated.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 65.94,
+      "end": 70.42,
+      "text": "By sundown Monday, you who come will be blessed with a big money blessing.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 70.42,
+      "end": 74.88,
+      "text": "You will be doubted by all the unbelievers and all of the deceivers.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 74.88,
+      "end": 79.417,
+      "text": "But you must tell seven friends. You must first bring seven friends.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 79.41999999999999,
+      "end": 83.85,
+      "text": "And don't be selfish and keep this all to yourself. And don't eat shellfish.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 84.52,
+      "end": 87.97999999999999,
+      "text": "Hate is trying to take someone else's love for yourself.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 87.97999999999999,
+      "end": 92.61999999999999,
+      "text": "But I'm here to tell you that love is trying to help someone else.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 97.02,
+      "end": 99.46,
+      "text": "I realize that you have tried and tried",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 99.46,
+      "end": 101.05,
+      "text": "and are just about ready to give up.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 102.04,
+      "end": 104.06,
+      "text": "But I got good news for you.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 104.06,
+      "end": 106.32,
+      "text": "God has spoken to my mind and told me to tell you",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 106.32,
+      "end": 108.91999999999999,
+      "text": "to get moving in the right direction for a change.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 109.1,
+      "end": 110.91,
+      "text": "I'm gonna put you in the fast lane!",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 112.02,
+      "end": 115.24,
+      "text": "You need to see me right away, so I can fix this up.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 116.5,
+      "end": 118.46,
+      "text": "You need to see me right away.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 121.01,
+      "end": 124.13999999999999,
+      "text": "You need to see me right away, so I can fix this up.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 125.58,
+      "end": 127.89999999999999,
+      "text": "You need to see me right about now.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 129.93,
+      "end": 132.56,
+      "text": "God has said he’ll open up the windows of heaven,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 132.56,
+      "end": 133.92,
+      "text": "and pour out a rich and mighty blessing.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 134.42,
+      "end": 137.06,
+      "text": "Not on his town or her town, but your town.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 137.32,
+      "end": 138.48,
+      "text": "Are you ready for the message?",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 139.1,
+      "end": 142.5,
+      "text": "I have a special financial blessing that the Lord has placed in your hand.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 143.56,
+      "end": 145.46,
+      "text": "Now I want you to begin using this blessing",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 145.46,
+      "end": 146.88,
+      "text": "on the very first day that you can.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 147.93,
+      "end": 151.14000000000001,
+      "text": "And if you are suffering a strange sickness,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 151.14000000000001,
+      "end": 155.74,
+      "text": "or someone is blocking up all of your success,",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 157.02,
+      "end": 160.52,
+      "text": "you need to see me right away, so I can fix this up.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.88
+    },
+    {
+      "start": 164.36,
+      "end": 167.14,
+      "text": "Signed and sealed, yours in faith, love and peace.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.7100000000000001
+    },
+    {
+      "start": 167.3,
+      "end": 168.78,
+      "text": "Your friend, Archbishop Harold Holmes.",
+      "speaker": "holmes-preacher",
+      "intensity": 0.67
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "holmes-organ"
+    },
+    {
+      "time": 2.586,
+      "view": "holmes-pulpit"
+    },
+    {
+      "time": 7.549,
+      "view": "holmes-typewriter"
+    },
+    {
+      "time": 9.218,
+      "view": "holmes-pulpit"
+    },
+    {
+      "time": 11.094,
+      "view": "holmes-step"
+    },
+    {
+      "time": 28.987,
+      "view": "holmes-portrait"
+    },
+    {
+      "time": 31.573,
+      "view": "holmes-aisle"
+    },
+    {
+      "time": 33.909,
+      "view": "holmes-step"
+    },
+    {
+      "time": 36.495,
+      "view": "holmes-portrait"
+    },
+    {
+      "time": 39.456,
+      "view": "holmes-pulpit"
+    },
+    {
+      "time": 42.834,
+      "view": "holmes-aisle"
+    },
+    {
+      "time": 55.973,
+      "view": "holmes-step"
+    },
+    {
+      "time": 60.269,
+      "view": "holmes-portrait"
+    },
+    {
+      "time": 62.479,
+      "view": "holmes-aisle"
+    },
+    {
+      "time": 67.734,
+      "view": "holmes-pews"
+    },
+    {
+      "time": 71.738,
+      "view": "holmes-typewriter"
+    },
+    {
+      "time": 73.24,
+      "view": "holmes-pulpit"
+    },
+    {
+      "time": 75.075,
+      "view": "holmes-portrait"
+    },
+    {
+      "time": 82.583,
+      "view": "holmes-step"
+    },
+    {
+      "time": 86.4,
+      "view": "holmes-revival"
+    },
+    {
+      "time": 94.136,
+      "view": "holmes-charge"
+    },
+    {
+      "time": 101.184,
+      "view": "holmes-revival"
+    },
+    {
+      "time": 106.5,
+      "view": "holmes-charge"
+    },
+    {
+      "time": 112.112,
+      "view": "holmes-step"
+    },
+    {
+      "time": 116.617,
+      "view": "holmes-aisle"
+    },
+    {
+      "time": 121.079,
+      "view": "holmes-portrait"
+    },
+    {
+      "time": 125.584,
+      "view": "holmes-step"
+    },
+    {
+      "time": 128.795,
+      "view": "holmes-pulpit"
+    },
+    {
+      "time": 133.925,
+      "view": "holmes-pews"
+    },
+    {
+      "time": 136.011,
+      "view": "holmes-revival"
+    },
+    {
+      "time": 141.099,
+      "view": "holmes-pews"
+    },
+    {
+      "time": 145.52,
+      "view": "holmes-step"
+    },
+    {
+      "time": 151.234,
+      "view": "holmes-ward"
+    },
+    {
+      "time": 158.575,
+      "view": "holmes-chair"
+    },
+    {
+      "time": 164.15,
+      "view": "holmes-doors"
+    }
+  ]
+}

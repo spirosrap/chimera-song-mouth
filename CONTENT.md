@@ -180,6 +180,9 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Olivia Rodrigo feat. Chappell Roan — expectations | 4:53 | `?scene=expectations` | Retro game show with Johnny Johnson, letterboard, Sister Squabble, phone sets, yellow prize car and confetti duet |
 | Wet Leg — pokemon | 3:27 | `?scene=wet-leg-pokemon` | Giant egg in the living room, convertible and backyard, with a violet roadside hatch and one physical vocal track |
 | XG — DEPENDS | 3:33 | `?scene=xg-depends` | Seven physical singers and seven colorful insects across a service station, grocery aisle, picnic, roadside fireworks and the giant-insect portraits |
+| Yuno Miles × Fantano — Emo Girl | 2:20 | `?scene=emo-girl` | Winter portraits, rainbow alley, dance montage and two physical voices over the original accompaniment |
+| Jack White — Archbishop Harold Holmes | 2:54 | `?scene=archbishop-harold-holmes` | Chapel sermon and electric revival, hospital coda and one physical vocal over the original accompaniment |
+| The Last Dinner Party — Knocking at the Sky | 4:55 | `?scene=knocking-at-the-sky` | Portraits, teal car, broadcast intermission, violet band stage and ruby room with physical lead and backing vocals |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |
