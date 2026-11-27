@@ -1,0 +1,398 @@
+{
+  "setting": "empiredream",
+  "title": "Empire of the Sun · Walking on a Dream (live)",
+  "description": "The televised live performance unfolds above a misty river, with bronze bells, lacquered pavilions and a coral ribbon.",
+  "duration": 234.213933,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "dream-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "dream-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.46,
+      "text": "Six years ago, our next guest had a huge hit song.",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 2.56,
+      "end": 6.48,
+      "text": "And now thanks to a few television commercials, that song is back on top of the charts.",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 6.66,
+      "end": 9.96,
+      "text": "Here to perform Walking On A Dream, please welcome Empire Of The Sun.",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 11.76,
+      "end": 16.12,
+      "text": "Thank you so much",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 16.12,
+      "end": 19.8,
+      "text": "for watching.",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.1,
+      "end": 48.58,
+      "text": "We are always running for the thrill of it, thrill of it Always",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.58,
+      "end": 53.44,
+      "text": "pushing up the heels, searching for the thrill of it All I know, all know we",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.44,
+      "end": 55.54,
+      "text": "are calling out and out again",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.9,
+      "end": 60.04,
+      "text": "Never looking down just to know what's in front of me",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.04,
+      "end": 63.04,
+      "text": "It's the freedom,",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 64.46,
+      "end": 68.68,
+      "text": "do people I can",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 68.68,
+      "end": 71.3,
+      "text": "feel love,",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.08,
+      "end": 74.9,
+      "text": "you people become one.",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.6,
+      "end": 92.22,
+      "text": "I'll never see",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.54,
+      "end": 98.36,
+      "text": "love you found in me now it's changing all the",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.36,
+      "end": 102.84,
+      "text": "time living in a rhythm weather",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.84,
+      "end": 107.66,
+      "text": "minutes working over time we are always running for the thrill of it",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.66,
+      "end": 112.34,
+      "text": "three loopy always pushing up the hill searching for the three of it",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.34,
+      "end": 117.12,
+      "text": "all we are calling out now to get Never looking",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.12,
+      "end": 119.85,
+      "text": "down. I'm just an oral what's in front of me",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.28,
+      "end": 135.48,
+      "text": "can people become one",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.48,
+      "end": 140.36,
+      "text": "He's a real one, and two",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.36,
+      "end": 144.32,
+      "text": "people become one I can",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.32,
+      "end": 146.62,
+      "text": "feel it,",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.52,
+      "end": 152.36,
+      "text": "two People become one Catch",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.36,
+      "end": 153.66,
+      "text": "me, I'm falling",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.06,
+      "end": 155.56,
+      "text": "love",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 160.02,
+      "end": 163.1,
+      "text": "I'm fully in love",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.62,
+      "end": 166.64,
+      "text": "Don't stop,",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.82,
+      "end": 172.26,
+      "text": "just keep going on I am your shoulder lean",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 172.26,
+      "end": 174.5,
+      "text": "upon So come on,",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.2,
+      "end": 180,
+      "text": "deliver from inside All we got is tonight That it's right for first",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 180,
+      "end": 180.62,
+      "text": "life",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 181.48,
+      "end": 184.86,
+      "text": "Is it real or not?",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 185.34,
+      "end": 188.36,
+      "text": "When two people become one",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.96,
+      "end": 192.28,
+      "text": "I can feel it all",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 192.9,
+      "end": 197.28,
+      "text": "two people become one Is it",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.28,
+      "end": 198.58,
+      "text": "real",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 200,
+      "end": 203.52,
+      "text": "but you'll be able to become one",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 203.97,
+      "end": 207.82,
+      "text": "I can feel it all,",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 208.14,
+      "end": 211.92,
+      "text": "you'll be able to come one",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 219.88,
+      "end": 221.14,
+      "text": "Okay, good. like to know.",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 221.82,
+      "end": 223.88,
+      "text": "The name of the CD is Walking on the Green!",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.34,
+      "end": 225.9,
+      "text": "Everywhere audience will get a copy!",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 226.16,
+      "end": 226.7,
+      "text": "We'll be back!",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 228.04,
+      "end": 228.76,
+      "text": "Let's go!",
+      "speaker": "dream-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "dream-river"
+    },
+    {
+      "time": 16,
+      "view": "dream-portrait"
+    },
+    {
+      "time": 33,
+      "view": "dream-pavilion"
+    },
+    {
+      "time": 49,
+      "view": "dream-ribbon-dance"
+    },
+    {
+      "time": 67,
+      "view": "dream-close"
+    },
+    {
+      "time": 84,
+      "view": "dream-river"
+    },
+    {
+      "time": 101,
+      "view": "dream-bells"
+    },
+    {
+      "time": 117,
+      "view": "dream-portrait"
+    },
+    {
+      "time": 135,
+      "view": "dream-ribbon-dance"
+    },
+    {
+      "time": 154,
+      "view": "dream-close"
+    },
+    {
+      "time": 173,
+      "view": "dream-bells"
+    },
+    {
+      "time": 192,
+      "view": "dream-river"
+    },
+    {
+      "time": 213,
+      "view": "dream-portrait"
+    },
+    {
+      "time": 226,
+      "view": "dream-river"
+    }
+  ]
+}

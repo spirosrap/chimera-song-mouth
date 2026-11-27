@@ -92,4 +92,5 @@ mkdirSync(output, { recursive: true });
 for (const [path, object] of [['scene.json', scene], ['performance.json', arrangement]] as const) {
   writeFileSync(join(output, path), JSON.stringify(object, null, 2) + '\n');
 }
-writeFileSync(join(output, 'credits.txt'), `${title}\nReference: https://www.youtube.com/watch?v=${source}\n`);
+const reference = source.startsWith('https://') ? source : 'https://www.youtube.com/watch?v=' + source;
+writeFileSync(join(output, 'credits.txt'), `${title}\nReference: ${reference}\n`);

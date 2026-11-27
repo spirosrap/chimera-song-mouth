@@ -1,0 +1,289 @@
+{
+  "setting": "knifecabaret",
+  "title": "The Knife · Pass This On",
+  "description": "A salmon-and-mint dance hall catches the glitter of a turning mirror ball as a quiet performance becomes a dance.",
+  "duration": 236.2,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "cabaret-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "cabaret-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 36.68,
+      "end": 40.6,
+      "text": "I'm in love with your brother,",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.6,
+      "end": 42.48,
+      "text": "what's his name,",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.78,
+      "end": 47.36,
+      "text": "thought I'd by to see him again and when you two",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.36,
+      "end": 48.66,
+      "text": "dance oh",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.64,
+      "end": 52.04,
+      "text": "When you two love oh",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.48,
+      "end": 58.34,
+      "text": "Mention my age Or is it more into",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.34,
+      "end": 60.76,
+      "text": "young girls who die back here?",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.04,
+      "end": 62.58,
+      "text": "I'm in love with your brother",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.86,
+      "end": 67.28,
+      "text": "by",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.96,
+      "end": 99.66,
+      "text": "I'm in love with your brother,",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.04,
+      "end": 101.36,
+      "text": "yes I am,",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.68,
+      "end": 105.06,
+      "text": "but maybe I shouldn't ask for his name.",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.92,
+      "end": 110.42,
+      "text": "laugh,",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.92,
+      "end": 113.32,
+      "text": "oh what a laugh",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.05,
+      "end": 118.48,
+      "text": "Does he know what I do and You pass his",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.48,
+      "end": 119.32,
+      "text": "own,",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.02,
+      "end": 124.5,
+      "text": "won't you end If I ask him once, what would he say",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.1,
+      "end": 128.52,
+      "text": "Is he willing or can he play",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.52,
+      "end": 132.36,
+      "text": "queen who came for my hand",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 150.5,
+      "end": 154.06,
+      "text": "I ask you out but please say",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.8,
+      "end": 156.18,
+      "text": "it's too long,",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.64,
+      "end": 158.04,
+      "text": "I can't complain",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 172.7,
+      "end": 177.4,
+      "text": "Does he know why I do and the places",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 177.4,
+      "end": 180.38,
+      "text": "don't, I vote you and",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.8,
+      "end": 183.58,
+      "text": "If I ask some words what would he say",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 184.3,
+      "end": 187.82,
+      "text": "It's really a changing place",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.7,
+      "end": 198.5,
+      "text": "lord,",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.76,
+      "end": 203.88,
+      "text": "all that you have to be.",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.3,
+      "end": 206.26,
+      "text": "lord,",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 206.6,
+      "end": 209.76,
+      "text": "it's such a love you gave to me.",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 212.28,
+      "end": 213.04,
+      "text": "no,",
+      "speaker": "cabaret-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "cabaret-floor"
+    },
+    {
+      "time": 17,
+      "view": "cabaret-portrait"
+    },
+    {
+      "time": 39,
+      "view": "cabaret-banquette"
+    },
+    {
+      "time": 55,
+      "view": "cabaret-portrait"
+    },
+    {
+      "time": 75,
+      "view": "cabaret-mirrors"
+    },
+    {
+      "time": 96,
+      "view": "cabaret-ensemble"
+    },
+    {
+      "time": 116,
+      "view": "cabaret-close"
+    },
+    {
+      "time": 138,
+      "view": "cabaret-floor"
+    },
+    {
+      "time": 151,
+      "view": "cabaret-ensemble"
+    },
+    {
+      "time": 172,
+      "view": "cabaret-mirrors"
+    },
+    {
+      "time": 190,
+      "view": "cabaret-close"
+    },
+    {
+      "time": 211,
+      "view": "cabaret-ensemble"
+    },
+    {
+      "time": 226,
+      "view": "cabaret-floor"
+    }
+  ]
+}

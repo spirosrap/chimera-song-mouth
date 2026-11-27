@@ -1,0 +1,415 @@
+{
+  "setting": "galvanize",
+  "title": "The Chemical Brothers · Galvanize",
+  "description": "A scarlet and cerulean dance arena lights up beneath the roof of a disused tram depot.",
+  "duration": 223.468844,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "depot-voice",
+      "name": "Lead rap",
+      "role": "CHIMERA vocals",
+      "tele": "depot-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2,
+      "text": "Hello?",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 5.42,
+      "end": 7.46,
+      "text": "Hello? What's the matter with you?",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 9.04,
+      "end": 10.44,
+      "text": "Hey,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.72,
+      "end": 19.8,
+      "text": "hey Hey,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 20.88,
+      "end": 21.7,
+      "text": "hey",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.06,
+      "end": 22.46,
+      "text": "hold back.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.74,
+      "end": 23.82,
+      "text": "Don't hold back.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.02,
+      "end": 27.14,
+      "text": "Cause you woke up in the morning with initiative to move so I make it harder.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.58,
+      "end": 28.4,
+      "text": "Don't hold back.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.74,
+      "end": 31.76,
+      "text": "Cause if you think about it so many people do be cool and look smarter.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.8,
+      "end": 45.68,
+      "text": "time has come to",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.68,
+      "end": 47.8,
+      "text": "The world,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.32,
+      "end": 50.24,
+      "text": "the time has come To",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.3,
+      "end": 52.3,
+      "text": "The world,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.92,
+      "end": 55,
+      "text": "the time has come To",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.98,
+      "end": 57.68,
+      "text": "The world, world, time has",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.68,
+      "end": 61.1,
+      "text": "come",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.42,
+      "end": 77.96,
+      "text": "If you think about it too much, may stumble, up, hold on your face.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.34,
+      "end": 79.18,
+      "text": "Don't hold back.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.54,
+      "end": 82.52,
+      "text": "If you think it's time to get up, rush time, us sit up, come on keep pace.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.92,
+      "end": 83.3,
+      "text": "Don't hold",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.3,
+      "end": 89.38,
+      "text": "back.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.38,
+      "end": 89.76,
+      "text": "the gym.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.94,
+      "end": 91.7,
+      "text": "Don't be a pretty hot chick, be a thick.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.92,
+      "end": 93.16,
+      "text": "Don't hold back.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.54,
+      "end": 95.26,
+      "text": "The world is holding back.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.38,
+      "end": 96.38,
+      "text": "Time has come to.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.58,
+      "end": 101.38,
+      "text": "The world is holding back. Time's come to. a",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.38,
+      "end": 106.08,
+      "text": "world as the time has come to",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.08,
+      "end": 110.04,
+      "text": "galvanize can't the",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.04,
+      "end": 111.1,
+      "text": "way!",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.94,
+      "end": 126.26,
+      "text": "time has come to push them but... World,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.56,
+      "end": 130.84,
+      "text": "time has come to... them but... World,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.16,
+      "end": 136.76,
+      "text": "time has come to push the button world my",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.76,
+      "end": 141.36,
+      "text": "finger is on the button my",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.36,
+      "end": 145.98,
+      "text": "finger is on the button my",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.98,
+      "end": 148.26,
+      "text": "finger is on the button",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.5,
+      "end": 168.92,
+      "text": "time has come to please pray,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.02,
+      "end": 170.78,
+      "text": "pray for God with us.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 180.64,
+      "end": 185.38,
+      "text": "time has come to galvanize the home,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 186.16,
+      "end": 188.88,
+      "text": "home,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.56,
+      "end": 190.4,
+      "text": "galvanize,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.78,
+      "end": 192.28,
+      "text": "home,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.74,
+      "end": 195.76,
+      "text": "home,",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 196.66,
+      "end": 197.32,
+      "text": "galvanize",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.62,
+      "end": 199.22,
+      "text": "Home.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.48,
+      "end": 202.7,
+      "text": "Home.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.26,
+      "end": 206.08,
+      "text": "Home.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 206.62,
+      "end": 207.58,
+      "text": "Now the gas.",
+      "speaker": "depot-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "depot-girders"
+    },
+    {
+      "time": 16,
+      "view": "depot-portrait"
+    },
+    {
+      "time": 33,
+      "view": "depot-tile-dance"
+    },
+    {
+      "time": 51,
+      "view": "depot-scarlet"
+    },
+    {
+      "time": 69,
+      "view": "depot-close"
+    },
+    {
+      "time": 85,
+      "view": "depot-cerulean"
+    },
+    {
+      "time": 101,
+      "view": "depot-tile-dance"
+    },
+    {
+      "time": 119,
+      "view": "depot-portrait"
+    },
+    {
+      "time": 137,
+      "view": "depot-tile-dance"
+    },
+    {
+      "time": 155,
+      "view": "depot-cerulean"
+    },
+    {
+      "time": 176,
+      "view": "depot-close"
+    },
+    {
+      "time": 194,
+      "view": "depot-tile-dance"
+    },
+    {
+      "time": 211,
+      "view": "depot-girders"
+    }
+  ]
+}

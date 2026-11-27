@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { isCinematic } from '../../scene/cinematic-videos.ts';
+import { isElectronic } from '../../scene/electronic-videos.ts';
 import { CinematicBackdrop, dressCinematicFigure } from './cinematic-videos.ts';
 import { isShowcase, type ShowcaseView } from '../../scene/showcase-videos.ts';
 import { buildShowcaseSet, SHOWCASE_FIGURES, SHOWCASE_WARDROBE } from './showcase-videos.ts';
@@ -81,8 +82,10 @@ export class NextVideoStage {
       }
       ink.end();
       // Wide collars and seams stay below the physical head.
-      this.props.tube(figure.root, [-15, -15, 9], [0, -35, 12], 1.45, '#e9d7bd');
-      this.props.tube(figure.root, [15, -15, 9], [0, -35, 12], 1.45, '#e9d7bd');
+      if (!isElectronic(setting)) {
+        this.props.tube(figure.root, [-15, -15, 9], [0, -35, 12], 1.45, '#e9d7bd');
+        this.props.tube(figure.root, [15, -15, 9], [0, -35, 12], 1.45, '#e9d7bd');
+      }
       if (setting === 'jamieoliver' && !i) {
         for (const side of [-1, 1]) for (const j of range(11)) {
           const plume = this.props.oval(figure.root, [side * (15 + 1.8 * (j % 6)), -16 - Math.floor(j / 6) * 7, 3],

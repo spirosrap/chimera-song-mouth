@@ -1,0 +1,336 @@
+{
+  "setting": "depechesilence",
+  "title": "Depeche Mode · Enjoy the Silence (Devotional Tour)",
+  "description": "Salt flats, suspended velvet and distant quartz frame the full Devotional Tour performance.",
+  "duration": 390.048776,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "silence-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "silence-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.42,
+      "text": "Yes, yes.",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.7,
+      "end": 64.1,
+      "text": "I'm",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.46,
+      "end": 84.18,
+      "text": "I'm going do",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.18,
+      "end": 87.7,
+      "text": "bit dance,",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.04,
+      "end": 91.74,
+      "text": "can't you understand,",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.72,
+      "end": 94.12,
+      "text": "my little girl,",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.9,
+      "end": 96.34,
+      "text": "all I ever wanted,",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.94,
+      "end": 99.18,
+      "text": "all I ever needed is here",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 99.66,
+      "end": 101.92,
+      "text": "in my arms,",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.2,
+      "end": 106.22,
+      "text": "words are very unnecessary,",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.1,
+      "end": 111.98,
+      "text": "way too long to find. off Oh yeah!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.56,
+      "end": 145.8,
+      "text": "I'm going do a song",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.8,
+      "end": 151.06,
+      "text": "for",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 151.06,
+      "end": 155.6,
+      "text": "you. you",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 155.6,
+      "end": 159.76,
+      "text": "stand in my arms",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.76,
+      "end": 163.98,
+      "text": "For the pain, for the pain",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.98,
+      "end": 168.38,
+      "text": "Can only do wrong",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.92,
+      "end": 170.26,
+      "text": "And dry",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 186.08,
+      "end": 187.68,
+      "text": "Come on!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 194.14,
+      "end": 194.94,
+      "text": "right.",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.56,
+      "end": 197.2,
+      "text": "I want y 'all to say from there.",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 201,
+      "end": 202.98,
+      "text": "YEAH! COME ON!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.58,
+      "end": 221.28,
+      "text": "on now!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 225.14,
+      "end": 227.1,
+      "text": "Let's hear it!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 237.36,
+      "end": 238.02,
+      "text": "Oh yeah!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 238.72,
+      "end": 239.5,
+      "text": "That's right!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 250.62,
+      "end": 252.62,
+      "text": "Oh, yeah.",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 258.36,
+      "end": 260.74,
+      "text": "Well, let's see you.",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 261.36,
+      "end": 262.04,
+      "text": "Come on!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 266.42,
+      "end": 269.88,
+      "text": "Everybody now, come on!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 290.8,
+      "end": 292.2,
+      "text": "Oh",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 312.92,
+      "end": 314.76,
+      "text": "Let's get him!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 317.66,
+      "end": 318.5,
+      "text": "All right,",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 318.94,
+      "end": 319.32,
+      "text": "come on!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 323.18,
+      "end": 324.6,
+      "text": "Run out!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 334.18,
+      "end": 336.28,
+      "text": "Come on now, that's right!",
+      "speaker": "silence-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "silence-salt"
+    },
+    {
+      "time": 23,
+      "view": "silence-portrait"
+    },
+    {
+      "time": 42,
+      "view": "silence-quartz"
+    },
+    {
+      "time": 65,
+      "view": "silence-velvet"
+    },
+    {
+      "time": 87,
+      "view": "silence-close"
+    },
+    {
+      "time": 110,
+      "view": "silence-salt"
+    },
+    {
+      "time": 137,
+      "view": "silence-portrait"
+    },
+    {
+      "time": 160,
+      "view": "silence-quartz"
+    },
+    {
+      "time": 187,
+      "view": "silence-close"
+    },
+    {
+      "time": 213,
+      "view": "silence-velvet"
+    },
+    {
+      "time": 237,
+      "view": "silence-salt"
+    },
+    {
+      "time": 262,
+      "view": "silence-portrait"
+    },
+    {
+      "time": 288,
+      "view": "silence-quartz"
+    },
+    {
+      "time": 318,
+      "view": "silence-close"
+    },
+    {
+      "time": 347,
+      "view": "silence-velvet"
+    },
+    {
+      "time": 374,
+      "view": "silence-salt"
+    }
+  ]
+}

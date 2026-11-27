@@ -1,0 +1,450 @@
+{
+  "setting": "feelgoodinc",
+  "title": "Gorillaz · Feel Good Inc.",
+  "description": "A radio observatory floats beyond a painted dockside city while two physical voices trade verses.",
+  "duration": 253.783211,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "feel-good-lead",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "feel-good-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "feel-good-rap",
+      "name": "Guest rap",
+      "role": "CHIMERA vocals",
+      "tele": "feel-good-rap.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 5.84,
+      "end": 7.24,
+      "text": "Oh",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.18,
+      "end": 23.74,
+      "text": "ah, ah, ah, ahh, ahh,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.14,
+      "end": 24.64,
+      "text": "ahh, ahh,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 25.06,
+      "end": 29,
+      "text": "ah, ahhh, ahh, ahh, Shoo,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.16,
+      "end": 32.48,
+      "text": "shoo,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 33.88,
+      "end": 39.44,
+      "text": "shoo.",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.52,
+      "end": 47,
+      "text": "Shh, shh, shh,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.02,
+      "end": 50.48,
+      "text": "shh",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.1,
+      "end": 55.94,
+      "text": "Sitters break it down on the camel's back They just have to go",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.94,
+      "end": 57.52,
+      "text": "cause they don't know where",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.92,
+      "end": 62.16,
+      "text": "So all your Melbourne streets is appealing to see You won't get",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.16,
+      "end": 66.26,
+      "text": "undercounting cause you're near and free You got a new horizon,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.58,
+      "end": 71.38,
+      "text": "it's ephemeral style Mel and Carly Town where we never smile",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.38,
+      "end": 76.26,
+      "text": "And all I wanna hear is the message beat My dreams ain't gotta",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.26,
+      "end": 78.28,
+      "text": "kiss me cause I don't get sleep",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.28,
+      "end": 83.02,
+      "text": "We're Mel,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.36,
+      "end": 88.12,
+      "text": "we're for the land love forever hand",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.12,
+      "end": 92.28,
+      "text": "in hand, take it all out on your side",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.28,
+      "end": 96.72,
+      "text": "It is kicking, folding down Love",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.72,
+      "end": 100.92,
+      "text": "forever, love is free Left on forever",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.92,
+      "end": 105.58,
+      "text": "you and me We're mill, we're mill for the",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 105.58,
+      "end": 109.06,
+      "text": "land If everybody's here",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 112.64,
+      "end": 117.5,
+      "text": "I'm gas this has mass that's yeah, I don't know like a scratch ladies",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.5,
+      "end": 120.82,
+      "text": "ponies that check It's my chocolate attack shoot.",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.94,
+      "end": 125.82,
+      "text": "I'm spinning harder to see a bear jumping in harder this year watch me as a grab it say Ha",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.82,
+      "end": 127.54,
+      "text": "ha ha ha ha ha Yo, we gon'",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.84,
+      "end": 132.72,
+      "text": "town this moat town With Joe Sand, you in the blink You gon' the dust and fight with us with",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.72,
+      "end": 136.98,
+      "text": "your sound you kill the egg so don't stop get it until you",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.98,
+      "end": 139.32,
+      "text": "Watch the way I navigate.",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 139.6,
+      "end": 142.06,
+      "text": "ha ha ha! ha Shoo!",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.88,
+      "end": 145.3,
+      "text": "Shoo!",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.16,
+      "end": 147.4,
+      "text": "Shoo!",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.52,
+      "end": 148.98,
+      "text": "Shoo!",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.02,
+      "end": 152.4,
+      "text": "Shoo!",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.1,
+      "end": 159.52,
+      "text": "to",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.6,
+      "end": 165.48,
+      "text": "you.",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.94,
+      "end": 178.96,
+      "text": "we'll mill for the land,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.64,
+      "end": 182.5,
+      "text": "learn forever hand in hand.",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.04,
+      "end": 185.82,
+      "text": "Take it all, live on your stride.",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 186.62,
+      "end": 189.32,
+      "text": "It is taking for all.",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.5,
+      "end": 191.22,
+      "text": "Ain't that love forever?",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.5,
+      "end": 195.88,
+      "text": "Love is freely turned Forever you and",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.88,
+      "end": 197.38,
+      "text": "me We're mill,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.74,
+      "end": 201.28,
+      "text": "we're for the land is everybody",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.28,
+      "end": 204.26,
+      "text": "in",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 206.82,
+      "end": 211.54,
+      "text": "Don't stop cheating in it Beep, I get captain's in it Steady watch me",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 211.54,
+      "end": 216.34,
+      "text": "shower, beep ha ha ha Don't stop cheating in it Deep",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 216.34,
+      "end": 219.42,
+      "text": "-eyed captain's in a steady shot from Chavoque Ha,",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 219.74,
+      "end": 221.72,
+      "text": "ha, ha ha ha ha ha ha! Shh,",
+      "speaker": "feel-good-rap",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.98,
+      "end": 225.24,
+      "text": "Shh,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 226.18,
+      "end": 226.56,
+      "text": "shhh,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 236.46,
+      "end": 243.36,
+      "text": "mmm,",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 244.1,
+      "end": 246.08,
+      "text": "Thank you.",
+      "speaker": "feel-good-lead",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "dockside-roof"
+    },
+    {
+      "time": 18,
+      "view": "dockside-portrait"
+    },
+    {
+      "time": 40,
+      "view": "dockside-city"
+    },
+    {
+      "time": 60,
+      "view": "dockside-island"
+    },
+    {
+      "time": 80,
+      "view": "dockside-close"
+    },
+    {
+      "time": 100,
+      "view": "dockside-island"
+    },
+    {
+      "time": 119,
+      "view": "dockside-ensemble"
+    },
+    {
+      "time": 138,
+      "view": "dockside-portrait"
+    },
+    {
+      "time": 157,
+      "view": "dockside-city"
+    },
+    {
+      "time": 177,
+      "view": "dockside-island"
+    },
+    {
+      "time": 196,
+      "view": "dockside-close"
+    },
+    {
+      "time": 215,
+      "view": "dockside-ensemble"
+    },
+    {
+      "time": 234,
+      "view": "dockside-roof"
+    }
+  ]
+}

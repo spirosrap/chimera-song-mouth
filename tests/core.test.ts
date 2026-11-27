@@ -27,7 +27,8 @@ test('the memory core is a third movie beside the two existing ones, without a p
   'justice-dance','beastie-intergalactic','ok-go-here-it-goes',
   'daft-around-the-world','deee-lite-groove','blur-coffee-and-tv','kylie-come-into-my-world',
   'bjork-oh-so-quiet','missy-the-rain','cardigans-favourite-game',
-  'massive-teardrop','radiohead-lotus-flower','prodigy-breathe','bat-for-lashes-girl','portishead-glory-box','basement-jaxx-head-at','mia-bad-girls']);
+  'massive-teardrop','radiohead-lotus-flower','prodigy-breathe','bat-for-lashes-girl','portishead-glory-box','basement-jaxx-head-at','mia-bad-girls',
+  'royksopp-what-else','knife-pass-this-on','goldfrapp-strict-machine','empire-walking-dream','depeche-enjoy-silence','chemical-galvanize','gorillaz-feel-good-inc']);
  expect(movieScene('hal-9000')?.readyVideo).toBeUndefined();
 });
 test('the core accepts only its own cast and cameras',()=>{

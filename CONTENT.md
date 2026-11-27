@@ -252,6 +252,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Portishead — Glory Box | 3:32 | `?scene=portishead-glory-box` | The alternate music-video edit in a smoke-filled Art Deco theater. |
 | Basement Jaxx — Where's Your Head At | 4:10 | `?scene=basement-jaxx-head-at` | An analog sound laboratory with oscilloscopes and blue glass. |
 | M.I.A. — Bad Girls | 4:11 | `?scene=mia-bad-girls` | A terracotta valley with mirrored monoliths and rolling dust. |
+| Röyksopp — What Else Is There? | 3:34 | `?scene=royksopp-what-else` | A sea-facing observatory, dark slate and lighthouse beams. |
+| The Knife — Pass This On | 3:56 | `?scene=knife-pass-this-on` | A small-town dance hall in salmon and mint under a silver mirror ball. |
+| Goldfrapp — Strict Machine | 3:41 | `?scene=goldfrapp-strict-machine` | An optical theater of lacquer, glass butterflies and ivory shutters. |
+| Empire of the Sun — Walking on a Dream (live) | 3:54 | `?scene=empire-walking-dream` | A televised live performance set in a jade rooftop garden. |
+| Depeche Mode — Enjoy the Silence (Devotional Tour) | 6:30 | `?scene=depeche-enjoy-silence` | An extended live performance on salt flats with suspended velvet. |
+| The Chemical Brothers — Galvanize | 3:43 | `?scene=chemical-galvanize` | A dance floor in an old tram depot with scarlet and cerulean light. |
+| Gorillaz — Feel Good Inc. | 4:14 | `?scene=gorillaz-feel-good-inc` | A dockside city and flying observatory with separate singing and rap voices. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

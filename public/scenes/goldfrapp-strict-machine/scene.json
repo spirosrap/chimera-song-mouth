@@ -1,0 +1,310 @@
+{
+  "setting": "strictmachine",
+  "title": "Goldfrapp · Strict Machine",
+  "description": "Black lacquer, ivory shutters and colored glass butterflies glow in a theater built from optical instruments.",
+  "duration": 220.587233,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "machine-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "machine-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 7.34,
+      "end": 11.32,
+      "text": "could have both of Russia but didn't",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 11.32,
+      "end": 12.34,
+      "text": "you?",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 14.36,
+      "end": 17.3,
+      "text": "I'm like, but if Russia do,",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.68,
+      "end": 20.6,
+      "text": "I what to do.",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 23,
+      "end": 25.7,
+      "text": "Wonderful electric,",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.92,
+      "end": 33.76,
+      "text": "wonderful electric,",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 36.38,
+      "end": 39.12,
+      "text": "wonderful",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 39.12,
+      "end": 41.5,
+      "text": "electric.",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.1,
+      "end": 45.82,
+      "text": "I wonder",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.82,
+      "end": 50.64,
+      "text": "if you",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 50.64,
+      "end": 55.26,
+      "text": "will love me,",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.94,
+      "end": 59.56,
+      "text": "me, will always drink my sleep,",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 59.56,
+      "end": 61.14,
+      "text": "Help,",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 64.94,
+      "end": 65.2,
+      "text": "help,",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.54,
+      "end": 67.38,
+      "text": "strip in that sea",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.8,
+      "end": 76.06,
+      "text": "sent me a possible way when you left from",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.06,
+      "end": 76.9,
+      "text": "me",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.16,
+      "end": 83.64,
+      "text": "I'm dressed in white noise, you know just what it wants to",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.64,
+      "end": 85.04,
+      "text": "be",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 87.34,
+      "end": 91.28,
+      "text": "What it for the love dream?",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.52,
+      "end": 99.82,
+      "text": "Was it for the love dream?",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.84,
+      "end": 106.88,
+      "text": "Was it for the love dream?",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.88,
+      "end": 113.92,
+      "text": "Yeah, for me",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.1,
+      "end": 118.7,
+      "text": "I'm man,",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.18,
+      "end": 123.56,
+      "text": "I'm a man A stripped with",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.56,
+      "end": 124.48,
+      "text": "shame",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.78,
+      "end": 128.24,
+      "text": "A man, a man",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.58,
+      "end": 133.1,
+      "text": "A man stripped with shame she...",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.1,
+      "end": 168.44,
+      "text": "you.",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.86,
+      "end": 177.48,
+      "text": "just drop you a cheek",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 178.1,
+      "end": 182.58,
+      "text": "I'll just drop",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.58,
+      "end": 187.18,
+      "text": "you a I'll I'll",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.18,
+      "end": 192.02,
+      "text": "just drop just drop you",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 192.02,
+      "end": 195.34,
+      "text": "a I'll",
+      "speaker": "machine-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "machine-shutters"
+    },
+    {
+      "time": 18,
+      "view": "machine-portrait"
+    },
+    {
+      "time": 36,
+      "view": "machine-citrine"
+    },
+    {
+      "time": 53,
+      "view": "machine-glass-dance"
+    },
+    {
+      "time": 72,
+      "view": "machine-close"
+    },
+    {
+      "time": 91,
+      "view": "machine-shutters"
+    },
+    {
+      "time": 109,
+      "view": "machine-glass-dance"
+    },
+    {
+      "time": 123,
+      "view": "machine-portrait"
+    },
+    {
+      "time": 141,
+      "view": "machine-citrine"
+    },
+    {
+      "time": 156,
+      "view": "machine-glass-dance"
+    },
+    {
+      "time": 177,
+      "view": "machine-close"
+    },
+    {
+      "time": 196,
+      "view": "machine-glass-dance"
+    },
+    {
+      "time": 208,
+      "view": "machine-shutters"
+    }
+  ]
+}

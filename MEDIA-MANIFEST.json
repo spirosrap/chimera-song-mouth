@@ -2742,6 +2742,41 @@
       "sha256": "565ea48cac8bf84fdf542c2d8488c9dfa16f7b216b1c6cf4ae5e727f35420985"
     },
     {
+      "path": "public/scenes/chemical-galvanize/backing.mp3",
+      "bytes": 7153197,
+      "sha256": "d3960e11611a01e5792365ecf404bde73c537306a80571b606839db74a2bd1f3"
+    },
+    {
+      "path": "public/scenes/chemical-galvanize/credits.txt",
+      "bytes": 149,
+      "sha256": "10fb8afd0c91726ab3d99dd1cd01166fcf2b7969b0351436835ca3cb89726409"
+    },
+    {
+      "path": "public/scenes/chemical-galvanize/depot-voice.tele.gz",
+      "bytes": 1701495,
+      "sha256": "8600b191c1c3fcdcf946d1778441770de129c342ff5484bbff1f027cfe9e0eb5"
+    },
+    {
+      "path": "public/scenes/chemical-galvanize/mix.mp3",
+      "bytes": 7153196,
+      "sha256": "17e66701eb98c21e8e2088328d28a2c4148dd181dd40780102ccda8aefdb43a6"
+    },
+    {
+      "path": "public/scenes/chemical-galvanize/performance.json",
+      "bytes": 376918,
+      "sha256": "e71e08fc0a355bca56cee3f39ca74d93b4a88cd13bfea2de36bc222faeb5c512"
+    },
+    {
+      "path": "public/scenes/chemical-galvanize/scene.json",
+      "bytes": 8667,
+      "sha256": "e63f4dc540519e9850785fc889e38b25960f326d2d3c87562308912f6fc75f0d"
+    },
+    {
+      "path": "public/scenes/chemical-galvanize/set-art.webp",
+      "bytes": 420040,
+      "sha256": "810166530998e7eafc4208839d60637b08053fcb36f145d173286d0ea36565ca"
+    },
+    {
       "path": "public/scenes/chemical-let-forever-be/backing.mp3",
       "bytes": 7277613,
       "sha256": "2b2789e2bc329c49957b56b26871e2513f7836c581071fa7fa6f74f15a9156d4"
@@ -3217,6 +3252,41 @@
       "sha256": "f01fc5062923c797addb0251b57e2be67e9f9330878d147a5eec8938923f2aa9"
     },
     {
+      "path": "public/scenes/depeche-enjoy-silence/backing.mp3",
+      "bytes": 12483885,
+      "sha256": "aef07552b53ffd3de8da186bf916de952a8850ffa22aa4da03f41b0ea0ae7086"
+    },
+    {
+      "path": "public/scenes/depeche-enjoy-silence/credits.txt",
+      "bytes": 165,
+      "sha256": "4841cdb2fb889b932da96f51fa53c179611e9c6a2844981ffdff0712f2833125"
+    },
+    {
+      "path": "public/scenes/depeche-enjoy-silence/mix.mp3",
+      "bytes": 12483884,
+      "sha256": "eca9a2b0567a1b41996b9ac69dd40c64cebf568165c254b3c516737622d658c9"
+    },
+    {
+      "path": "public/scenes/depeche-enjoy-silence/performance.json",
+      "bytes": 345769,
+      "sha256": "4738444c228dbec7da4e704c5246f2ed1b6c9a1f1fd597966d40aba0ea009d9e"
+    },
+    {
+      "path": "public/scenes/depeche-enjoy-silence/scene.json",
+      "bytes": 6741,
+      "sha256": "a7fddcb6a15f44e419a16f1cf849063ece88aac07632529e5b0e660c5cb9290d"
+    },
+    {
+      "path": "public/scenes/depeche-enjoy-silence/set-art.webp",
+      "bytes": 211762,
+      "sha256": "c6c98b87031cbe9eb01513c525319dad9ac34bd5c7869bd42fbe6fce5e31484c"
+    },
+    {
+      "path": "public/scenes/depeche-enjoy-silence/silence-voice.tele.gz",
+      "bytes": 1776439,
+      "sha256": "9f3478c381839ab04b7b8ed0ce00bbb21e9878c45be4a4f6c56a55f8acaf3b65"
+    },
+    {
       "path": "public/scenes/dimash-sos/backing.mp3",
       "bytes": 7868204,
       "sha256": "a4f8e3330c5744ed1fbb5f48225fb1fa9e437ecbf46d98da2c03d188172a11e7"
@@ -3485,6 +3555,41 @@
       "path": "public/scenes/emo-girl/scene.json",
       "bytes": 8851,
       "sha256": "62e302adc0e41345a16ad9fa62721e6d792cc2ab66e5fa8c94f647cb0833463e"
+    },
+    {
+      "path": "public/scenes/empire-walking-dream/backing.mp3",
+      "bytes": 7494189,
+      "sha256": "b306f8e449274fc1222b88bd7e0cc9e9833f52167da3f60bc88ddd52a110cbb4"
+    },
+    {
+      "path": "public/scenes/empire-walking-dream/credits.txt",
+      "bytes": 161,
+      "sha256": "1dceda023f2f43924ed149178ced5bf7adae3195eea8dd618f3c7d915202c689"
+    },
+    {
+      "path": "public/scenes/empire-walking-dream/dream-voice.tele.gz",
+      "bytes": 2188403,
+      "sha256": "2b0c77141ed595113dbf582530d949f720c47bc32292c39bddfbe989cab095f1"
+    },
+    {
+      "path": "public/scenes/empire-walking-dream/mix.mp3",
+      "bytes": 7496492,
+      "sha256": "37a924f23a60a3b0c44e8da5260e6580a762f66d0ab2d05538c509cf409332d7"
+    },
+    {
+      "path": "public/scenes/empire-walking-dream/performance.json",
+      "bytes": 493838,
+      "sha256": "1e078576d3c7767e936d3274070802d4071f55830b9da9b65ef2c2738d611860"
+    },
+    {
+      "path": "public/scenes/empire-walking-dream/scene.json",
+      "bytes": 8739,
+      "sha256": "dc7b15ddc60291fe3087bd7b091edcaa9cb2147a4abaeeae6119f6a990726cd2"
+    },
+    {
+      "path": "public/scenes/empire-walking-dream/set-art.webp",
+      "bytes": 422900,
+      "sha256": "46b27a1a475bd215f00e3cc7e2d81fadc85029817a6c0340a76f0002a6e568b1"
     },
     {
       "path": "public/scenes/espresso-macchiato/backing.mp3",
@@ -4017,6 +4122,41 @@
       "sha256": "c637d0aaf402233c4a19754d3f8e216004fa56aede2e70e6a6af4eea1642223b"
     },
     {
+      "path": "public/scenes/goldfrapp-strict-machine/backing.mp3",
+      "bytes": 7060269,
+      "sha256": "ce7077798eb88015438dd09ddacd4b7737a128c93653672e294eee951a42c86b"
+    },
+    {
+      "path": "public/scenes/goldfrapp-strict-machine/credits.txt",
+      "bytes": 141,
+      "sha256": "15ec412543ec144ac1b63862aa02fbeb2771acf8d1393b6865e08bd35abfa589"
+    },
+    {
+      "path": "public/scenes/goldfrapp-strict-machine/machine-voice.tele.gz",
+      "bytes": 1837141,
+      "sha256": "095b335662b2119afa95d588f12fa63f636b9193b0b4e65452409d614bd4f1ed"
+    },
+    {
+      "path": "public/scenes/goldfrapp-strict-machine/mix.mp3",
+      "bytes": 7061036,
+      "sha256": "01e1a505540770f1577885df01adb33c60d1fa88d34976ab09a91ece83b84036"
+    },
+    {
+      "path": "public/scenes/goldfrapp-strict-machine/performance.json",
+      "bytes": 425054,
+      "sha256": "a9c69176942537efc3c83587603846ef04788d4b4d0b244ccd4193f277a77636"
+    },
+    {
+      "path": "public/scenes/goldfrapp-strict-machine/scene.json",
+      "bytes": 6365,
+      "sha256": "56b757509cb87420f3f9b2d950ffa9fb2abb872b2794b0f153d79f042ed2d523"
+    },
+    {
+      "path": "public/scenes/goldfrapp-strict-machine/set-art.webp",
+      "bytes": 228900,
+      "sha256": "8f56d7948a0276d23659875e17e58f300a34e146b88afaeb0042a001b7a676df"
+    },
+    {
       "path": "public/scenes/good-will-hunting/backing.mp3",
       "bytes": 9217580,
       "sha256": "35df0f8604d5b53591a346f9ccb012bc3936591b6b7efc579537a401538ff591"
@@ -4085,6 +4225,46 @@
       "path": "public/scenes/gorillaz-dare/scene.json",
       "bytes": 8674,
       "sha256": "275b01ae26ae123f71b5af00eaa3ab74bb656f7d2050941a4bbf11304c8827be"
+    },
+    {
+      "path": "public/scenes/gorillaz-feel-good-inc/backing.mp3",
+      "bytes": 8121645,
+      "sha256": "d0c7dcd934a10b7980caeda24f1369490e9799e573cea4158374d67ab9d16fe2"
+    },
+    {
+      "path": "public/scenes/gorillaz-feel-good-inc/credits.txt",
+      "bytes": 141,
+      "sha256": "210b6997c8e939fe45d2a4f141def10a892f0336568a8db8a3942b3e7905c360"
+    },
+    {
+      "path": "public/scenes/gorillaz-feel-good-inc/feel-good-lead.tele.gz",
+      "bytes": 1687882,
+      "sha256": "e8f6f460895379fd2e3284636e46fe77f29b30ea4b9d95f3882505adf4f3db02"
+    },
+    {
+      "path": "public/scenes/gorillaz-feel-good-inc/feel-good-rap.tele.gz",
+      "bytes": 654242,
+      "sha256": "ee50c147d024945c7684046e8266d21c04bd4ff763a16cd79766c4c37c738406"
+    },
+    {
+      "path": "public/scenes/gorillaz-feel-good-inc/mix.mp3",
+      "bytes": 8123180,
+      "sha256": "d3632503f94edb230146c02d82ac4136ff94c6f80ccc7bec6305788d905a8008"
+    },
+    {
+      "path": "public/scenes/gorillaz-feel-good-inc/performance.json",
+      "bytes": 527157,
+      "sha256": "294dc5e8b17b874b3749f2d9bcc235babc7c665d6270dbcb0e2d1d44616d200c"
+    },
+    {
+      "path": "public/scenes/gorillaz-feel-good-inc/scene.json",
+      "bytes": 10047,
+      "sha256": "df1b1eab148ab0f2b14b08a3c40a0f0bbccf0fa5014949d73e39d9b8c7cbfb6e"
+    },
+    {
+      "path": "public/scenes/gorillaz-feel-good-inc/set-art.webp",
+      "bytes": 430246,
+      "sha256": "db4c52eed02c65e85f5bd8f6ba8d224ca8d26e105f31b8f469c383bd0243eb20"
     },
     {
       "path": "public/scenes/grimes-oblivion/backing.mp3",
@@ -4905,6 +5085,41 @@
       "path": "public/scenes/kimbra-settle-down/settle-kimbra.tele.gz",
       "bytes": 2377373,
       "sha256": "23912337aef4fae216fb5713db85798a4ee1ab23855a742417730695b64d8379"
+    },
+    {
+      "path": "public/scenes/knife-pass-this-on/backing.mp3",
+      "bytes": 7555629,
+      "sha256": "e207fe58f23931e3d66cf14b612cf5cdd4ba1156fec49d3c5de9f8bfbffe0152"
+    },
+    {
+      "path": "public/scenes/knife-pass-this-on/cabaret-voice.tele.gz",
+      "bytes": 1362701,
+      "sha256": "a38a675394d185d2d9fc8bae74f698779f1bd8ae85891682dca8e8c8792c9228"
+    },
+    {
+      "path": "public/scenes/knife-pass-this-on/credits.txt",
+      "bytes": 139,
+      "sha256": "b30a7168a182603b0398d8e1de98000db36c8f45dcf03d3ab1fa2e51cd2e1c72"
+    },
+    {
+      "path": "public/scenes/knife-pass-this-on/mix.mp3",
+      "bytes": 7560236,
+      "sha256": "b0bb3e6fc55193e5ae1f21fb5b91077ae30d98645ddaf97f954c39a37fa5a41c"
+    },
+    {
+      "path": "public/scenes/knife-pass-this-on/performance.json",
+      "bytes": 289608,
+      "sha256": "904e7bfb0b7dcb37653c06aa947023b0244a2a608ea3772866e49eb2df98a8d9"
+    },
+    {
+      "path": "public/scenes/knife-pass-this-on/scene.json",
+      "bytes": 6097,
+      "sha256": "add058b3cb5f25cdda9000666c97c24c008e4b7da063a4983acead064ee98c0d"
+    },
+    {
+      "path": "public/scenes/knife-pass-this-on/set-art.webp",
+      "bytes": 315794,
+      "sha256": "08dabc53e8c9dc0256745f06a7bf9ac8bc828cf315d6363f51c32dcc26ccb726"
     },
     {
       "path": "public/scenes/knocking-at-the-sky/backing.mp3",
@@ -6875,6 +7090,41 @@
       "path": "public/scenes/roisin-overpowered/scene.json",
       "bytes": 6615,
       "sha256": "93c4d68bfcc7dc4c38a15edac9e01f469ac365fc2763781959f2152c51f73b22"
+    },
+    {
+      "path": "public/scenes/royksopp-what-else/backing.mp3",
+      "bytes": 6836781,
+      "sha256": "6bd6a2859716110163d15c69df1d5b2f02ffa5ae701282049211e5fd925df30e"
+    },
+    {
+      "path": "public/scenes/royksopp-what-else/credits.txt",
+      "bytes": 147,
+      "sha256": "9bded1233868a53c941505013be37231abc9bf5f270d72bd1ba4b96de2dc3b5e"
+    },
+    {
+      "path": "public/scenes/royksopp-what-else/mix.mp3",
+      "bytes": 6836780,
+      "sha256": "ccb98dcc21fa3f3dcf81fda9f4659f4229bb982d3ecb139363ef6bda741bc3b2"
+    },
+    {
+      "path": "public/scenes/royksopp-what-else/observatory-voice.tele.gz",
+      "bytes": 1810922,
+      "sha256": "8eff13b1260f84b445f976eb3b95b9e12dfdb693516f90a8486931c3abf1596d"
+    },
+    {
+      "path": "public/scenes/royksopp-what-else/performance.json",
+      "bytes": 402789,
+      "sha256": "07fe2b7bb8eb587257240b88037edf275191b3bb50733f39e85c00421b222e27"
+    },
+    {
+      "path": "public/scenes/royksopp-what-else/scene.json",
+      "bytes": 6152,
+      "sha256": "1b0417e71897ac5fc213aec84b95b86f26dd85080607518cf0e5129ebc993eac"
+    },
+    {
+      "path": "public/scenes/royksopp-what-else/set-art.webp",
+      "bytes": 316606,
+      "sha256": "a753a513bd5329e6c2a5cf40ea78dbb8ea2977350e9b85f04c30179035a84987"
     },
     {
       "path": "public/scenes/runway/backing.mp3",

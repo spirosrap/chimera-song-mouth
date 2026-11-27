@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { BASE_PATH } from '../../base.ts';
 import { CINEMATIC_INFO, type CinematicSetting } from '../../scene/cinematic-videos.ts';
+import { isElectronic, type ElectronicSetting } from '../../scene/electronic-videos.ts';
 import type { VideoFigure, VideoProps } from './videoProps.ts';
 
 export const CINEMATIC_WARDROBE = {
@@ -11,10 +12,19 @@ export const CINEMATIC_WARDROBE = {
   glorybox: { jackets: ['#542f42'], hair: ['#a26b70'] },
   basementhead: { jackets: ['#2b5576', '#465750', '#37476f'], hair: ['#7eaa72', '#81abc5'] },
   miabadgirls: { jackets: ['#a45342', '#665779', '#816044'], hair: ['#e7a77c', '#be7a72'] },
+  royksoppstorm: { jackets: ['#26515b'], hair: ['#afd1c4'] },
+  knifecabaret: { jackets: ['#b37687', '#526b62', '#795067'], hair: ['#6b394c', '#a9927f'] },
+  strictmachine: { jackets: ['#302834', '#4c3837', '#483b30'], hair: ['#dfa85e'] },
+  empiredream: { jackets: ['#ad4f52', '#31616c'], hair: ['#dba67d', '#aab68d'] },
+  depechesilence: { jackets: ['#5d3c51'], hair: ['#b195a0'] },
+  galvanize: { jackets: ['#31506f', '#a04e44', '#433c6d'], hair: ['#da9d72', '#94b5d0'] },
+  feelgoodinc: { jackets: ['#336568', '#65436d', '#675559', '#49687a'], hair: ['#7ead9b', '#d1a68a'] },
 };
 
 export const CINEMATIC_FIGURES: Record<CinematicSetting, number> = {
   teardrop: 1, lotusflower: 1, prodigybreathe: 3, batforlashes: 1, glorybox: 1, basementhead: 3, miabadgirls: 3,
+  royksoppstorm: 1, knifecabaret: 3, strictmachine: 3, empiredream: 2,
+  depechesilence: 1, galvanize: 3, feelgoodinc: 4,
 };
 
 const PALETTE = {
@@ -25,6 +35,13 @@ const PALETTE = {
   glorybox:      { background: '#24121a', flare: '#c68063', trim: '#e8bc88', speed: .20, drift: .024, effect: 4 },
   basementhead:  { background: '#10182e', flare: '#99c963', trim: '#a6ce9d', speed: .68, drift: .045, effect: 5 },
   miabadgirls:   { background: '#362033', flare: '#ce7769', trim: '#edbc84', speed: .62, drift: .042, effect: 6 },
+  royksoppstorm: { background: '#112632', flare: '#79b1bd', trim: '#b6d2c8', speed: .24, drift: .029, effect: 3 },
+  knifecabaret:  { background: '#352331', flare: '#cf7e95', trim: '#a8cfc2', speed: .47, drift: .042, effect: 4 },
+  strictmachine: { background: '#242026', flare: '#e6b770', trim: '#e6d4bc', speed: .73, drift: .049, effect: 5 },
+  empiredream:   { background: '#183239', flare: '#ed8267', trim: '#f0c88f', speed: .37, drift: .039, effect: 0 },
+  depechesilence:{ background: '#383446', flare: '#a8b3d3', trim: '#d7ad9f', speed: .21, drift: .025, effect: 1 },
+  galvanize:     { background: '#1e292e', flare: '#cf654b', trim: '#8fcccb', speed: .72, drift: .041, effect: 2 },
+  feelgoodinc:   { background: '#243440', flare: '#94afc0', trim: '#e3a775', speed: .47, drift: .036, effect: 6 },
 } as const;
 
 const vertex = `
@@ -142,7 +159,73 @@ export class CinematicBackdrop {
   }
 }
 
+function dressElectronicFigure(props: VideoProps, figure: VideoFigure, setting: ElectronicSetting) {
+  const { trim, flare } = PALETTE[setting];
+  const edgeLight = new THREE.Color(flare);
+  for (const mesh of [figure.torso, ...figure.arms, ...figure.legs, ...figure.feet]) {
+    const cloth = mesh.material as THREE.MeshBasicMaterial;
+    cloth.onBeforeCompile = shader => {
+      const normal = 'varying vec3 costumeNormal;\n';
+      shader.uniforms.edgeLight = { value: edgeLight };
+      shader.vertexShader = normal + shader.vertexShader.replace('#include <begin_vertex>',
+        '#include <begin_vertex>\n costumeNormal = normalize(normalMatrix * normal);');
+      shader.fragmentShader = normal + '\n uniform vec3 edgeLight;\n' + shader.fragmentShader.replace('#include <color_fragment>', `
+        #include <color_fragment>
+        vec3 clothNormal = normalize(costumeNormal);
+        float key = max(0., dot(clothNormal, vec3(-.38, .57, .72)));
+        float edge = pow(1. - abs(clothNormal.z), 2.);
+        diffuseColor.rgb = diffuseColor.rgb * (.69 + .44 * key) + edgeLight * (.10 * edge);
+      `);
+    };
+  }
+
+  const root = figure.root;
+  const cape = setting === 'royksoppstorm' || setting === 'depechesilence';
+  const metal = setting === 'strictmachine' || setting === 'galvanize';
+  const jeweled = setting === 'knifecabaret' || setting === 'empiredream';
+  for (const side of [-1, 1]) {
+    if (cape) {
+      const fold = props.oval(root, [side * 14, -31, 4], [7, 19, 4.6], flare);
+      fold.rotation.z = -side * .34;
+      props.tube(root, [side * 15, -17, 9], [side * 4, -38, 12], .95, trim);
+    } else if (metal) {
+      for (let i = 0; i < 4; i++) {
+        const plate = props.box(root, 9 + i, 2.2, 3, i % 2 ? trim : flare, [side * (14 + i), -17 - i * 5, 8]);
+        plate.rotation.z = side * (.15 + i * .04);
+      }
+    } else if (jeweled) {
+      for (let i = 0; i < 7; i++) {
+        props.oval(root, [side * (3 + i * 1.7), -40 + i * 3.3, 10], [1.5, 1.1, .8], i % 2 ? flare : trim);
+      }
+    } else {
+      props.box(root, 9, 11, 1.1, flare, [side * 10, -36, 11]);
+      props.box(root, 9, 1.8, 1, trim, [side * 10, -31, 11.8]);
+    }
+  }
+  for (let i = 0; i < 4; i++) {
+    props.oval(root, [0, -27 - 7.4 * i, 12], [1.05, 1.05, .65], trim);
+  }
+  if (setting === 'empiredream') {
+    // A translucent backing keeps the wireframe legible against the daylight sky.
+    const { y0, y1 } = figure.head.headShape(figure.model);
+    const center = (y0 + y1) / 2;
+    const backing = props.oval(root, [0, center, -15], [9.6, (y1 - y0) * .51, 1.3], '#18383d');
+    const backingPaint = backing.material as THREE.MeshBasicMaterial;
+    backingPaint.transparent = true;
+    backingPaint.depthWrite = false;
+    backingPaint.opacity = .72;
+    backing.renderOrder = -1;
+    for (let i = -2; i <= 2; i++) {
+      props.tube(root, [2 * i, 11, -2], [3.7 * i, 22 - 2 * Math.abs(i), -3], .6, trim);
+    }
+  }
+}
+
 export function dressCinematicFigure(props: VideoProps, figure: VideoFigure, setting: CinematicSetting) {
+  if (isElectronic(setting)) {
+    dressElectronicFigure(props, figure, setting);
+    return;
+  }
   const { trim, flare } = PALETTE[setting];
   const root = figure.root;
   for (const side of [-1, 1]) {
