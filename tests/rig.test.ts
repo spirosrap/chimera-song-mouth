@@ -540,6 +540,9 @@ describe("motion from other tools", () => {
 });
 
 describe("the nerve x-ray", () => {
+  // These cases each build the full nerve mesh and exercise real poses or camera sweeps.
+  const geometryTimeoutMs = 15_000;
+
   test("its nerves follow every pose without one pulled across the body (a hanging hand's once bound to the thigh beside it)", () => {
     const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
     const nerves = new M.nerves.Nerves(rig, head), camera = new THREE.PerspectiveCamera();
@@ -559,7 +562,7 @@ describe("the nerve x-ray", () => {
       });
     }
     expect(pulled).toEqual([]);
-  });
+  }, geometryTimeoutMs);
 
   test("where nerves meet they stay met in every pose, and a twig stays on its nerve as drawn (a plexus once came apart at the armpit by 11 cm, a twig off its curve by 1.5 cm)", () => {
     const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
@@ -593,7 +596,7 @@ describe("the nerve x-ray", () => {
       }
     }
     expect(apart).toEqual([]);
-  });
+  }, geometryTimeoutMs);
 
   test("the x-ray's depth colours don't jump as the camera comes in (the range once switched from the body's to the head's at 150 cm)", () => {
     const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
@@ -620,7 +623,7 @@ describe("the nerve x-ray", () => {
     expect(worst).toBeLessThan(0.05);
     // close up, the head's: ± 14 cm
     expect(last![1] - last![0]).toBeCloseTo(28, 3);
-  });
+  }, geometryTimeoutMs);
 
   test("the by-function look is calmed from the torso view in, not only at the head (its arms and cord washed out white there)", () => {
     const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
@@ -644,7 +647,7 @@ describe("the nerve x-ray", () => {
     expect(close("function", 16)).toBe(1);
     // the x-ray by depth wasn't washed out there: as it was
     expect(close("xray", 8.6)).toBeLessThan(0.01);
-  });
+  }, geometryTimeoutMs);
 
   test("its nerves are in the rig's own frame, wherever the rig's parent puts it (the head's were once moved by it twice)", () => {
     const rig = loadRig(), head = M.head.wearHead(rig, new M.VoiceModel(M.BODIES.male, 48000));
@@ -671,5 +674,5 @@ describe("the nerve x-ray", () => {
     expect(moved.radius).toBeCloseTo(0.65 * alone.radius, 6);
     expect(alone.points.every((p) => [p.x, p.y, p.z].every(Number.isFinite))).toBe(true);
     expect((view.mesh.geometry as THREE.InstancedBufferGeometry).instanceCount).toBeGreaterThan(10000);
-  });
+  }, geometryTimeoutMs);
 });

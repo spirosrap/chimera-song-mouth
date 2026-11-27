@@ -55,6 +55,7 @@ test('Country Roads follows the lead melody instead of falling onto lower chorus
   expect(state.outRms).toBeGreaterThan(.01);
  }
 });
+// Six seconds of physical WASM synthesis needs more than Bun's default 5 s on loaded hosts.
 test('the actual mouth remains audible through Virginia and Mama instead of dropping to silence',()=>{
  const gestures=planPart(lead).filter(g=>g.t1>=42&&g.t0<48).map(g=>({...g,t0:g.t0-42,t1:g.t1-42}));
  const {samples}=renderPart(wasmModule,lead,6,gestures);
@@ -64,4 +65,4 @@ test('the actual mouth remains audible through Virginia and Mama instead of drop
   expect(rms).toBeGreaterThan(.01);
  }
  expect(samples.every(Number.isFinite)).toBe(true);
-});
+},15_000);
