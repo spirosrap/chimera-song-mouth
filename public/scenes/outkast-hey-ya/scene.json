@@ -1,0 +1,609 @@
+{
+  "setting": "heyya",
+  "title": "OutKast · Hey Ya!",
+  "description": "Four performers share a mid-century color television stage built from emerald panels, chrome tubing and illuminated glass.",
+  "duration": 303.740227,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "television-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "television-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 4.76,
+      "text": "$3 ,000 for the sake of everybody in the bank act like you",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 4.76,
+      "end": 7.06,
+      "text": "got some sense. Things don't over get up there and shake his hand.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 7.92,
+      "end": 8.64,
+      "text": "What we talking about?",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 9.2,
+      "end": 11.74,
+      "text": "Don't get out there playing it okay. I out there every night.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 11.94,
+      "end": 16.84,
+      "text": "That's all I know how to do, man, you ain't flew all the way overseas in a middle seat for us to get over here",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 16.84,
+      "end": 19.26,
+      "text": "and up. Act like you got some scent.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 19.82,
+      "end": 21.06,
+      "text": "You might get a little better than yourself,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 21.58,
+      "end": 22.14,
+      "text": "not money.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 22.64,
+      "end": 23.68,
+      "text": "This is hope money.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.28,
+      "end": 26,
+      "text": "I hope you get out there and do your thing",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 30.14,
+      "end": 34.98,
+      "text": "All right easy you can pull that sweet thousand, I'm telling you don't mess it up",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.98,
+      "end": 37.3,
+      "text": "everybody great how no float on water",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 41.34,
+      "end": 44.96,
+      "text": "Here in London for the first time to perform for you live.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.88,
+      "end": 46.38,
+      "text": "Johnny Vulture,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.96,
+      "end": 47.72,
+      "text": "Benjamin André,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 48.12,
+      "end": 49.02,
+      "text": "Duquion Drums,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.44,
+      "end": 53.34,
+      "text": "Hossam Jenkins and André Ice Cold",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.34,
+      "end": 55.12,
+      "text": "3000.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.82,
+      "end": 57.9,
+      "text": "Performing their smash hit, Heya!",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.42,
+      "end": 60.6,
+      "text": "Ladies and gents I give you,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.04,
+      "end": 62.66,
+      "text": "The Love,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 63.18,
+      "end": 63.48,
+      "text": "The Love.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.08,
+      "end": 68.7,
+      "text": "two,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.08,
+      "end": 73.76,
+      "text": "three, uh My baby don't mess around She loves me so much I",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.76,
+      "end": 75.78,
+      "text": "know what to show",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.46,
+      "end": 82.06,
+      "text": "But does she really wanna catch back to see me poke",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.06,
+      "end": 83.54,
+      "text": "out the door?",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.84,
+      "end": 90.74,
+      "text": "Don't try to fight the feeling, just the thought alone is killing me",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.74,
+      "end": 92.9,
+      "text": "right now.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.14,
+      "end": 98.68,
+      "text": "Thank God for mom and dad for sticking two together cause we",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.68,
+      "end": 101.08,
+      "text": "don't know how.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.2,
+      "end": 115.6,
+      "text": "Oh",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.8,
+      "end": 135.12,
+      "text": "Hey, hey, oh, oh, oh, oh,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 136,
+      "end": 138.4,
+      "text": "think you've got it, oh, you think you've got it.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.52,
+      "end": 140.82,
+      "text": "But find it, just don't get it, cause there's nothing at",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.82,
+      "end": 150.32,
+      "text": "all,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.46,
+      "end": 157.22,
+      "text": "ah, ah, ah, Nothing's Nothing's forever Then makes, then what makes, then what makes,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.3,
+      "end": 161.74,
+      "text": "Then what makes, then makes, makes, makes, Love each other so Why yo, yo,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 162.08,
+      "end": 166.32,
+      "text": "why yo, why yo I'm so gonna deny your women that we're not happy",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 166.32,
+      "end": 167.68,
+      "text": "here.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.1,
+      "end": 170.84,
+      "text": "Y 'all don't want to hear you, you just wanna dance.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 172.68,
+      "end": 177.54,
+      "text": "oh, oh, oh, don't want to meet your daddy",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 177.54,
+      "end": 180.6,
+      "text": "Just want you in my caddy",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 184.16,
+      "end": 188.6,
+      "text": "Don't want to meet your mama Just want to make you",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 190.42,
+      "end": 195.2,
+      "text": "I am, I am, I am being",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 195.2,
+      "end": 198.72,
+      "text": "honest I am just of this.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.86,
+      "end": 199.1,
+      "text": "Hey!",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 200.06,
+      "end": 200.7,
+      "text": "I'm right now.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.44,
+      "end": 202.76,
+      "text": "I'm right now fellas.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 203.12,
+      "end": 203.54,
+      "text": "Yeah!",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 204.52,
+      "end": 206.28,
+      "text": "What's cooler than being cool?",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 206.92,
+      "end": 211.26,
+      "text": "can't hear ya I say what's cooler than being cool?",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 212.54,
+      "end": 215.5,
+      "text": "I'm right up, up, right up, right, up, right, up, right up, right,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 216.14,
+      "end": 216.98,
+      "text": "right, up, right out, right,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 218,
+      "end": 219.04,
+      "text": "in the ladies.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.7,
+      "end": 223.74,
+      "text": "We gonna break this thing down in just a few seconds.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 225.06,
+      "end": 227.42,
+      "text": "Now don't have me breaking this thing down with nothing.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 228.18,
+      "end": 230.68,
+      "text": "Now I wanna see y on y 'all baddest behavior.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 231.5,
+      "end": 232.4,
+      "text": "Let me some sugar,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 232.94,
+      "end": 233.96,
+      "text": "I am your neighbor.",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 234.6,
+      "end": 235.12,
+      "text": "Here we go!",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 241.84,
+      "end": 246.56,
+      "text": "Shake it like a Polaroid Pea Drop Take off, shake it Shake the whole,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 246.74,
+      "end": 247.36,
+      "text": "shake it Shake,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 247.88,
+      "end": 251.9,
+      "text": "it, shake it Shake it, shake it, it like a Polaroid",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 251.9,
+      "end": 260.72,
+      "text": "Peas",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 260.72,
+      "end": 263.56,
+      "text": "Drop You're about to think it,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 263.92,
+      "end": 268.48,
+      "text": "it, shake it, shake it Shake it, shake it, like a bird You I",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 268.48,
+      "end": 269.52,
+      "text": "do Shake",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 269.52,
+      "end": 282.08,
+      "text": "it,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 283.36,
+      "end": 285.02,
+      "text": "it,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 288.7,
+      "end": 290.18,
+      "text": "hey,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 290.52,
+      "end": 295.18,
+      "text": "oh, hey, oh, oh, oh, hey, hey,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 295.18,
+      "end": 296.3,
+      "text": "oh, oh,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 297.38,
+      "end": 299.3,
+      "text": "hey, oh,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 299.62,
+      "end": 300.6,
+      "text": "hey,",
+      "speaker": "television-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "television-panel"
+    },
+    {
+      "time": 17,
+      "view": "television-portrait"
+    },
+    {
+      "time": 35,
+      "view": "television-ensemble"
+    },
+    {
+      "time": 53,
+      "view": "television-close"
+    },
+    {
+      "time": 71,
+      "view": "television-tubes"
+    },
+    {
+      "time": 91,
+      "view": "television-ensemble"
+    },
+    {
+      "time": 109,
+      "view": "television-portrait"
+    },
+    {
+      "time": 131,
+      "view": "television-panel"
+    },
+    {
+      "time": 150,
+      "view": "television-close"
+    },
+    {
+      "time": 170,
+      "view": "television-ensemble"
+    },
+    {
+      "time": 191,
+      "view": "television-tubes"
+    },
+    {
+      "time": 213,
+      "view": "television-portrait"
+    },
+    {
+      "time": 231,
+      "view": "television-ensemble"
+    },
+    {
+      "time": 255,
+      "view": "television-close"
+    },
+    {
+      "time": 274,
+      "view": "television-ensemble"
+    },
+    {
+      "time": 293,
+      "view": "television-panel"
+    }
+  ]
+}

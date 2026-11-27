@@ -1,0 +1,240 @@
+{
+  "setting": "elephantstudio",
+  "title": "Tame Impala · Elephant",
+  "description": "Cables, cabinets and reels made from hand-shaped clay lean into the groove under tobacco-orange lamps.",
+  "duration": 211.201044,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "clay-studio-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "clay-studio-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 5.02,
+      "end": 9.28,
+      "text": "But it feels like an elephant shaking his feet,",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 9.74,
+      "end": 11.8,
+      "text": "great trunk for the elephant.",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 12.36,
+      "end": 16.48,
+      "text": "You know that you're dreaming of not being well by",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 16.48,
+      "end": 17.32,
+      "text": "him.",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 21.94,
+      "end": 23.54,
+      "text": "of my friend.",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.84,
+      "end": 31,
+      "text": "Man, it's not like Mr.",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.56,
+      "end": 35.34,
+      "text": "Shabiggy's show And man, crew is on rock",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 35.78,
+      "end": 36.88,
+      "text": "Come on!",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.36,
+      "end": 40.14,
+      "text": "nothing down in my family",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 44.76,
+      "end": 46.08,
+      "text": "yet.",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.92,
+      "end": 56.6,
+      "text": "These guys are friends, probably got a fear But I'm scared so",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.6,
+      "end": 60.76,
+      "text": "much if they just disappear Oh and the theory",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 60.76,
+      "end": 63.52,
+      "text": "is now coming downstairs",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.6,
+      "end": 156.68,
+      "text": "oh, oh, oh,",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.94,
+      "end": 159.58,
+      "text": "Oh,",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.3,
+      "end": 170.16,
+      "text": "oh,",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.16,
+      "end": 172.06,
+      "text": "oh, oh",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.38,
+      "end": 175.4,
+      "text": "oh, oh",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.66,
+      "end": 181.4,
+      "text": "talked like his opinion is a simple fact.",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.78,
+      "end": 188.24,
+      "text": "When somebody grabbed his collar,",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.22,
+      "end": 193.66,
+      "text": "He cried the whole way long to walk And",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.66,
+      "end": 196.46,
+      "text": "left in my soul again.",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.3,
+      "end": 202.1,
+      "text": "That's how it is,",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 204.18,
+      "end": 205.58,
+      "text": "Yeah!",
+      "speaker": "clay-studio-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "clay-studio-cabinets"
+    },
+    {
+      "time": 12,
+      "view": "clay-studio-portrait"
+    },
+    {
+      "time": 27,
+      "view": "clay-studio-reels"
+    },
+    {
+      "time": 44,
+      "view": "clay-studio-close"
+    },
+    {
+      "time": 59,
+      "view": "clay-studio-lamps"
+    },
+    {
+      "time": 73,
+      "view": "clay-studio-cabinets"
+    },
+    {
+      "time": 86,
+      "view": "clay-studio-portrait"
+    },
+    {
+      "time": 106,
+      "view": "clay-studio-reels"
+    },
+    {
+      "time": 129,
+      "view": "clay-studio-lamps"
+    },
+    {
+      "time": 152,
+      "view": "clay-studio-close"
+    },
+    {
+      "time": 171,
+      "view": "clay-studio-portrait"
+    },
+    {
+      "time": 191,
+      "view": "clay-studio-cabinets"
+    },
+    {
+      "time": 204,
+      "view": "clay-studio-reels"
+    }
+  ]
+}

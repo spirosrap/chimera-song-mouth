@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { isCinematic } from '../../scene/cinematic-videos.ts';
 import { isElectronic } from '../../scene/electronic-videos.ts';
+import { isStorybook } from '../../scene/storybook-videos.ts';
 import { CinematicBackdrop, dressCinematicFigure } from './cinematic-videos.ts';
 import { isShowcase, type ShowcaseView } from '../../scene/showcase-videos.ts';
 import { buildShowcaseSet, SHOWCASE_FIGURES, SHOWCASE_WARDROBE } from './showcase-videos.ts';
@@ -82,7 +83,7 @@ export class NextVideoStage {
       }
       ink.end();
       // Wide collars and seams stay below the physical head.
-      if (!isElectronic(setting)) {
+      if (!isElectronic(setting) && !isStorybook(setting)) {
         this.props.tube(figure.root, [-15, -15, 9], [0, -35, 12], 1.45, '#e9d7bd');
         this.props.tube(figure.root, [15, -15, 9], [0, -35, 12], 1.45, '#e9d7bd');
       }
@@ -507,14 +508,18 @@ export class NextVideoStage {
     this.camera.position.set(cameraSide + 9 * Math.sin(time * .31), tight ? 159 : 160, tight ? 154 : narrow ? 352 : 327);
     this.camera.lookAt(0, tight ? 134 : seated ? 104 : 111, 0);
     if (this.artwork) {
+      const illustratedStage = isStorybook(this.setting);
       const framing = stageView === sourceView ? shot : shots.findIndex(([, cut]) => cut === stageView);
       const arrangement = Math.sin(framing * 2.38);
       const shift = narrow ? 0 : arrangement * (tight ? 19 : 30);
       const sway = Math.sin(time * (group ? .78 : .26)) * (group ? 11 : 4);
-      const distance = tight ? 126 : narrow ? 278 : group ? 271 : 246;
+      const distance = illustratedStage
+        ? (tight ? 138 : narrow ? 290 : 275)
+        : (tight ? 126 : narrow ? 278 : group ? 271 : 246);
+      const target = illustratedStage ? (tight ? 149 : 91) : (tight ? 141 : 99);
       this.camera.fov = tight ? (narrow ? 40 : 35) : (narrow ? 51 : 43);
       this.camera.position.set(sway - shift * .72, tight ? 155 : 143 + 8 * arrangement, distance);
-      this.camera.lookAt(-shift, tight ? 141 : 99, 0);
+      this.camera.lookAt(-shift, target, 0);
       this.artwork.frame(time, this.camera.aspect, framing, tight, intensity);
     }
     this.camera.updateProjectionMatrix();

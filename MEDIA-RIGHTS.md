@@ -186,3 +186,7 @@ Around the World, Groove Is in the Heart (live), Coffee & TV, Come Into My World
 Teardrop, Lotus Flower (From the Basement), Breathe, What's a Girl to Do?, Glory Box, Where's Your Head At and Bad Girls pair separated accompaniment and synthesized CHIMERA voices with original generated set artwork. Scene credits identify the performance references. Rights in the underlying compositions, lyrics, recordings, performances and music videos remain with their respective holders.
 
 What Else Is There?, Pass This On, Strict Machine, Walking on a Dream, Enjoy the Silence, Galvanize and Feel Good Inc. use original generated set art, separated accompaniment and CHIMERA synthesized voices. Each scene credits the chosen reference performance. Rights in the compositions, lyrics, recordings, performances and music videos remain with their respective holders.
+
+## Seven illustrated performances · 27 November 2026
+
+Cornflake Girl, Down by the Water, Bachelorette, The Suburbs, Elephant, Hey Ya! and Chandelier combine separated accompaniment with a synthesized CHIMERA lead voice and newly generated stage art. Each scene records its public reference. Rights in the compositions, lyrics, source recordings and videos remain with their respective holders. Source videos and analysis caches are excluded from the release.

@@ -1,13 +1,16 @@
 import { ELECTRONIC_CAST, ELECTRONIC_INFO, ELECTRONIC_SETTINGS } from './electronic-videos.ts';
+import { STORYBOOK_CAST, STORYBOOK_INFO, STORYBOOK_SETTINGS } from './storybook-videos.ts';
 
 export const CINEMATIC_SETTINGS = [
   'teardrop', 'lotusflower', 'prodigybreathe', 'batforlashes', 'glorybox', 'basementhead', 'miabadgirls',
   ...ELECTRONIC_SETTINGS,
+  ...STORYBOOK_SETTINGS,
 ] as const;
 export type CinematicSetting = typeof CINEMATIC_SETTINGS[number];
 
 export const CINEMATIC_CAST = {
   ...ELECTRONIC_CAST,
+  ...STORYBOOK_CAST,
   teardrop: ['teardrop-voice'],
   lotusflower: ['lotus-voice'],
   prodigybreathe: ['breathe-voice'],
@@ -19,6 +22,7 @@ export const CINEMATIC_CAST = {
 
 export const CINEMATIC_INFO = {
   ...ELECTRONIC_INFO,
+  ...STORYBOOK_INFO,
   teardrop: {
     id: 'massive-teardrop', title: 'Massive Attack · Teardrop',
     eyebrow: 'PHYSICAL VOICE · THE SUBMERGED GLASSHOUSE',

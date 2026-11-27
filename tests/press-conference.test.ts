@@ -29,7 +29,8 @@ test('a single-speaker speech loads alongside the movies without weakening their
   'daft-around-the-world','deee-lite-groove','blur-coffee-and-tv','kylie-come-into-my-world',
   'bjork-oh-so-quiet','missy-the-rain','cardigans-favourite-game',
   'massive-teardrop','radiohead-lotus-flower','prodigy-breathe','bat-for-lashes-girl','portishead-glory-box','basement-jaxx-head-at','mia-bad-girls',
-  'royksopp-what-else','knife-pass-this-on','goldfrapp-strict-machine','empire-walking-dream','depeche-enjoy-silence','chemical-galvanize','gorillaz-feel-good-inc']);
+  'royksopp-what-else','knife-pass-this-on','goldfrapp-strict-machine','empire-walking-dream','depeche-enjoy-silence','chemical-galvanize','gorillaz-feel-good-inc',
+  'tori-cornflake-girl','pj-harvey-down-water','bjork-bachelorette','arcade-fire-suburbs','tame-impala-elephant','outkast-hey-ya','sia-chandelier']);
   expect(movieScene('fool-me-once')).toBeDefined();expect(scene.characters.map(c=>c.id)).toEqual(['bush']);
   expect(scene.setting).toBe('press');expect(track.duration).toBeCloseTo(scene.duration,1);
   expect(readFileSync(new URL('mix.mp3',base)).length).toBeGreaterThan(100_000);

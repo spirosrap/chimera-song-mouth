@@ -259,6 +259,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Depeche Mode — Enjoy the Silence (Devotional Tour) | 6:30 | `?scene=depeche-enjoy-silence` | An extended live performance on salt flats with suspended velvet. |
 | The Chemical Brothers — Galvanize | 3:43 | `?scene=chemical-galvanize` | A dance floor in an old tram depot with scarlet and cerulean light. |
 | Gorillaz — Feel Good Inc. | 4:14 | `?scene=gorillaz-feel-good-inc` | A dockside city and flying observatory with separate singing and rap voices. |
+| Tori Amos — Cornflake Girl | 3:57 | `?scene=tori-cornflake-girl` | U.S. video audio, brass gears, dried wheat and a burgundy piano. |
+| PJ Harvey — Down by the Water | 3:10 | `?scene=pj-harvey-down-water` | Oxblood velvet reflected in the flooded floor of a boathouse. |
+| Björk — Bachelorette | 5:26 | `?scene=bjork-bachelorette` | An opera house built from folded pages and carved paper. |
+| Arcade Fire — The Suburbs | 5:48 | `?scene=arcade-fire-suburbs` | A handmade suburban street with warm porch lamps at blue hour. |
+| Tame Impala — Elephant | 3:31 | `?scene=tame-impala-elephant` | A clay recording room with tilted amplifiers and glowing reels. |
+| OutKast — Hey Ya! | 5:04 | `?scene=outkast-hey-ya` | An emerald television studio with a four-figure stage ensemble. |
+| Sia — Chandelier | 3:51 | `?scene=sia-chandelier` | An indigo loft lit by a silver mica chandelier and a cool skylight. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

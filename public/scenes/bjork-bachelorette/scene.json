@@ -1,0 +1,508 @@
+{
+  "setting": "bachelorette",
+  "title": "Björk · Bachelorette",
+  "description": "An opera house built from folded pages surrounds the singer with carved paper balconies, ink-black trees and a red proscenium.",
+  "duration": 325.833333,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "paper-opera-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "paper-opera-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 10.64,
+      "end": 15.32,
+      "text": "One day I found a big book buried deep in the",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 15.32,
+      "end": 15.78,
+      "text": "ground.",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 17.04,
+      "end": 20.78,
+      "text": "I opened it but all the pages were blank",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 20.78,
+      "end": 23.4,
+      "text": "and to my surprise,",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.16,
+      "end": 25.92,
+      "text": "it started writing itself.",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.18,
+      "end": 31.54,
+      "text": "One day I found a big book very deep in the world.",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.4,
+      "end": 73.38,
+      "text": "All the fountain of love",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.38,
+      "end": 77.86,
+      "text": "In the shape of a rock",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.86,
+      "end": 82.28,
+      "text": "girl Sure, the bird on the",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.28,
+      "end": 86.68,
+      "text": "ribbon Hypnotized by",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 86.68,
+      "end": 88.26,
+      "text": "the well",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.78,
+      "end": 90.7,
+      "text": "drink it,",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 91.16,
+      "end": 95.66,
+      "text": "make me puree you Watch your",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 95.66,
+      "end": 100.34,
+      "text": "vegan past dream Jame",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.34,
+      "end": 103.14,
+      "text": "will play in his life",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.1,
+      "end": 106.94,
+      "text": "Love's a 283",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.84,
+      "end": 113.74,
+      "text": "Give me now,",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.18,
+      "end": 116.4,
+      "text": "return to",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.4,
+      "end": 119.92,
+      "text": "you",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.92,
+      "end": 123.96,
+      "text": "Time will show",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.96,
+      "end": 127.62,
+      "text": "you soon",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.62,
+      "end": 132.06,
+      "text": "Is it forget my",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.14,
+      "end": 133.46,
+      "text": "night,",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 134.48,
+      "end": 138.62,
+      "text": "you will go astray",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.62,
+      "end": 143.26,
+      "text": "Like a killer whale,",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.98,
+      "end": 148.76,
+      "text": "trapped in a cage",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.76,
+      "end": 153.2,
+      "text": "I'm a bomb of symptoms",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.08,
+      "end": 158.12,
+      "text": "burn it under your feet",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.94,
+      "end": 163.22,
+      "text": "You're the one who walks me",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.1,
+      "end": 167.22,
+      "text": "I'm your one -way street",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.82,
+      "end": 191.92,
+      "text": "I look whisper in the",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 191.92,
+      "end": 192.86,
+      "text": "water,",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.9,
+      "end": 197.62,
+      "text": "secret time to hear",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.62,
+      "end": 201.7,
+      "text": "You're the one who grows this",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.7,
+      "end": 206.4,
+      "text": "time When I back and root,",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 206.76,
+      "end": 207.82,
+      "text": "yeah",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 209.92,
+      "end": 214,
+      "text": "We are now a child",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 214,
+      "end": 215.32,
+      "text": "to",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 215.32,
+      "end": 219,
+      "text": "lose",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.88,
+      "end": 225.36,
+      "text": "time to show you through",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 225.36,
+      "end": 229.98,
+      "text": "the air If you forget",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 229.98,
+      "end": 234.78,
+      "text": "my name You will go",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 234.78,
+      "end": 239.3,
+      "text": "astray Like a",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 239.3,
+      "end": 241.82,
+      "text": "killer wave",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 247.86,
+      "end": 252.48,
+      "text": "I'm a tree that grows her heart",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 252.48,
+      "end": 256.72,
+      "text": "When furries that you tame",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 256.72,
+      "end": 260.92,
+      "text": "You're the intruder's",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 260.92,
+      "end": 265.4,
+      "text": "heaven I am the crunch that you",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 265.4,
+      "end": 267.32,
+      "text": "break",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 267.98,
+      "end": 272.54,
+      "text": "Hold on",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 274.54,
+      "end": 279.1,
+      "text": "You shine till I turn the deep",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 280.1,
+      "end": 282.18,
+      "text": "Hold on",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 284.18,
+      "end": 288.6,
+      "text": "I'll sun do have",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 288.6,
+      "end": 293.48,
+      "text": "to end",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 294.96,
+      "end": 298.88,
+      "text": "You shall tell everybody",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 298.88,
+      "end": 302.76,
+      "text": "it's through",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 306.72,
+      "end": 308.12,
+      "text": "And",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 308.5,
+      "end": 310.36,
+      "text": "you,",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 310.42,
+      "end": 315.86,
+      "text": "you",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 315.86,
+      "end": 319.58,
+      "text": "shall dance and do",
+      "speaker": "paper-opera-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "paper-opera-book"
+    },
+    {
+      "time": 19,
+      "view": "paper-opera-portrait"
+    },
+    {
+      "time": 37,
+      "view": "paper-opera-balcony"
+    },
+    {
+      "time": 54,
+      "view": "paper-opera-proscenium"
+    },
+    {
+      "time": 75,
+      "view": "paper-opera-close"
+    },
+    {
+      "time": 93,
+      "view": "paper-opera-trees"
+    },
+    {
+      "time": 111,
+      "view": "paper-opera-portrait"
+    },
+    {
+      "time": 130,
+      "view": "paper-opera-book"
+    },
+    {
+      "time": 151,
+      "view": "paper-opera-balcony"
+    },
+    {
+      "time": 171,
+      "view": "paper-opera-close"
+    },
+    {
+      "time": 192,
+      "view": "paper-opera-trees"
+    },
+    {
+      "time": 211,
+      "view": "paper-opera-proscenium"
+    },
+    {
+      "time": 231,
+      "view": "paper-opera-portrait"
+    },
+    {
+      "time": 252,
+      "view": "paper-opera-balcony"
+    },
+    {
+      "time": 272,
+      "view": "paper-opera-close"
+    },
+    {
+      "time": 294,
+      "view": "paper-opera-trees"
+    },
+    {
+      "time": 315,
+      "view": "paper-opera-book"
+    }
+  ]
+}

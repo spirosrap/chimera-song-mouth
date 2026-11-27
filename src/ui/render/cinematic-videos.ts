@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { BASE_PATH } from '../../base.ts';
 import { CINEMATIC_INFO, type CinematicSetting } from '../../scene/cinematic-videos.ts';
 import { isElectronic, type ElectronicSetting } from '../../scene/electronic-videos.ts';
+import { isStorybook, type StorybookSetting } from '../../scene/storybook-videos.ts';
 import type { VideoFigure, VideoProps } from './videoProps.ts';
 
 export const CINEMATIC_WARDROBE = {
@@ -19,12 +20,20 @@ export const CINEMATIC_WARDROBE = {
   depechesilence: { jackets: ['#5d3c51'], hair: ['#b195a0'] },
   galvanize: { jackets: ['#31506f', '#a04e44', '#433c6d'], hair: ['#da9d72', '#94b5d0'] },
   feelgoodinc: { jackets: ['#336568', '#65436d', '#675559', '#49687a'], hair: ['#7ead9b', '#d1a68a'] },
+  cornflake: { jackets: ['#78384a'], hair: ['#e9b775'] },
+  waterriver: { jackets: ['#591c30'], hair: ['#d7a4a6'] },
+  bachelorette: { jackets: ['#573346'], hair: ['#efbf97'] },
+  suburbs: { jackets: ['#493f66', '#394d61', '#6b4b46'], hair: ['#aabfd5', '#e1ad8d'] },
+  elephantstudio: { jackets: ['#76503d', '#3d4d46', '#665139'], hair: ['#d9a673', '#789386'] },
+  heyya: { jackets: ['#426346', '#9c5247', '#576e70', '#8b7146'], hair: ['#efcc9a', '#b0d1bf'] },
+  chandelier: { jackets: ['#3f516e'], hair: ['#daddea'] },
 };
 
 export const CINEMATIC_FIGURES: Record<CinematicSetting, number> = {
   teardrop: 1, lotusflower: 1, prodigybreathe: 3, batforlashes: 1, glorybox: 1, basementhead: 3, miabadgirls: 3,
   royksoppstorm: 1, knifecabaret: 3, strictmachine: 3, empiredream: 2,
   depechesilence: 1, galvanize: 3, feelgoodinc: 4,
+  cornflake: 1, waterriver: 1, bachelorette: 1, suburbs: 3, elephantstudio: 3, heyya: 4, chandelier: 1,
 };
 
 const PALETTE = {
@@ -42,6 +51,13 @@ const PALETTE = {
   depechesilence:{ background: '#383446', flare: '#a8b3d3', trim: '#d7ad9f', speed: .21, drift: .025, effect: 1 },
   galvanize:     { background: '#1e292e', flare: '#cf654b', trim: '#8fcccb', speed: .72, drift: .041, effect: 2 },
   feelgoodinc:   { background: '#243440', flare: '#94afc0', trim: '#e3a775', speed: .47, drift: .036, effect: 6 },
+  cornflake:     { background: '#363827', flare: '#dfa34c', trim: '#efd395', speed: .29, drift: .027, effect: 1 },
+  waterriver:    { background: '#1d1720', flare: '#b84454', trim: '#dea0a6', speed: .41, drift: .026, effect: 0 },
+  bachelorette:  { background: '#352834', flare: '#bf774d', trim: '#f2d39c', speed: .24, drift: .032, effect: 4 },
+  suburbs:       { background: '#292e45', flare: '#a9b8e2', trim: '#f0c28c', speed: .29, drift: .029, effect: 3 },
+  elephantstudio:{ background: '#372b24', flare: '#de8358', trim: '#d5ab72', speed: .59, drift: .036, effect: 2 },
+  heyya:         { background: '#20352c', flare: '#89c6a8', trim: '#ffd588', speed: .81, drift: .041, effect: 5 },
+  chandelier:    { background: '#252943', flare: '#a3afe6', trim: '#f2dcb6', speed: .38, drift: .027, effect: 6 },
 } as const;
 
 const vertex = `
@@ -60,6 +76,7 @@ const fragment = `
   uniform float elapsed;
   uniform float energy;
   uniform float effect;
+  uniform float portraitShade;
   varying vec2 vUv;
 
   float noise(vec2 p) {
@@ -89,6 +106,9 @@ const fragment = `
 
     float edge = length((vUv - .5) * vec2(1.21, 1.));
     float vignette = 1.02 - .37 * smoothstep(.14, .74, edge);
+    // Keep the wireframe readable where a practical light falls behind it.
+    vec2 portrait = (vUv - vec2(.5, .76)) * vec2(3.6, 5.6);
+    vignette *= 1. - portraitShade * exp(-dot(portrait, portrait));
     float grain = (noise(floor(vUv * vec2(1231., 687.)) + mod(floor(elapsed * 12.), 37.)) - .5) * .005;
     gl_FragColor = vec4(max(vec3(0.), paper * vignette + flare * field * .13 + grain), 1.);
     #include <colorspace_fragment>
@@ -108,6 +128,7 @@ export class CinematicBackdrop {
         art: { value: null }, crop: { value: new THREE.Vector2() }, pan: { value: new THREE.Vector2() },
         flare: { value: new THREE.Color(palette.flare) }, elapsed: { value: 0 }, energy: { value: 0 },
         effect: { value: palette.effect },
+        portraitShade: { value: setting === 'elephantstudio' || setting === 'heyya' ? .43 : 0 },
       },
       vertexShader: vertex, fragmentShader: fragment, depthTest: false, depthWrite: false, toneMapped: false,
     });
@@ -159,8 +180,7 @@ export class CinematicBackdrop {
   }
 }
 
-function dressElectronicFigure(props: VideoProps, figure: VideoFigure, setting: ElectronicSetting) {
-  const { trim, flare } = PALETTE[setting];
+function lightCinematicCloth(figure: VideoFigure, flare: string) {
   const edgeLight = new THREE.Color(flare);
   for (const mesh of [figure.torso, ...figure.arms, ...figure.legs, ...figure.feet]) {
     const cloth = mesh.material as THREE.MeshBasicMaterial;
@@ -179,6 +199,11 @@ function dressElectronicFigure(props: VideoProps, figure: VideoFigure, setting: 
     };
   }
 
+}
+
+function dressElectronicFigure(props: VideoProps, figure: VideoFigure, setting: ElectronicSetting) {
+  const { trim, flare } = PALETTE[setting];
+  lightCinematicCloth(figure, flare);
   const root = figure.root;
   const cape = setting === 'royksoppstorm' || setting === 'depechesilence';
   const metal = setting === 'strictmachine' || setting === 'galvanize';
@@ -221,7 +246,63 @@ function dressElectronicFigure(props: VideoProps, figure: VideoFigure, setting: 
   }
 }
 
+function dressStorybookFigure(props: VideoProps, figure: VideoFigure, setting: StorybookSetting) {
+  const { trim, flare } = PALETTE[setting];
+  const root = figure.root;
+  lightCinematicCloth(figure, flare);
+
+  if (setting === 'cornflake') {
+    for (const side of [-1, 1]) {
+      props.tube(root, [side * 7, -48, 12], [side * 16, -21, 10], .62, trim);
+      for (let i = 0; i < 5; i++) {
+        const kernel = props.oval(root, [side * (9 + i * 1.7), -43 + i * 4.6, 12], [1.55, 2.9, .8], trim);
+        kernel.rotation.z = side * .65;
+      }
+    }
+  } else if (setting === 'waterriver' || setting === 'bachelorette') {
+    const paper = setting === 'bachelorette';
+    for (const side of [-1, 1]) {
+      for (let i = 0; i < 4; i++) {
+        const fold = props.oval(root, [side * (14 + i * 2), -22 - i * 4, 5], [4.4, 8.4, 3],
+          paper && i % 2 === 0 ? trim : flare);
+        fold.rotation.z = -side * (.25 + i * .2);
+      }
+      props.tube(root, [side * 15, -22, 10], [side * 4, -44, 12], .72, trim);
+    }
+  } else if (setting === 'suburbs' || setting === 'elephantstudio') {
+    const stripe = setting === 'suburbs';
+    for (const side of [-1, 1]) {
+      props.box(root, 9, 7, 1.2, flare, [side * 10, -35, 11]);
+      for (let i = 0; i < 3; i++) {
+        const bar = props.box(root, stripe ? 8 : 3.4, stripe ? 1 : 2.8, 1.1, trim,
+          [side * (10 + (stripe ? 0 : i * 2)), -33 - i * 2.2, 12]);
+        bar.rotation.z = stripe ? 0 : side * .4;
+      }
+    }
+  } else if (setting === 'heyya') {
+    const diamond = props.box(root, 7, 7, 1.4, trim, [0, -29, 12]);
+    diamond.rotation.z = Math.PI / 4;
+    for (const side of [-1, 1]) {
+      const pleat = props.box(root, 12, 3.5, 1.6, flare, [side * 9, -28.5, 11.5]);
+      pleat.rotation.z = side * .2;
+      props.tube(root, [side * 14, -17, 9], [side * 8, -44, 12], .65, trim);
+    }
+  } else {
+    for (let i = -3; i <= 3; i++) {
+      const x = i * 3.8;
+      const y = -41 + Math.abs(i) * 3.8;
+      props.tube(root, [x, y + 6, 11], [x, y, 12], .38, flare);
+      const facet = props.box(root, 2.7, 2.7, 1.6, trim, [x, y, 12]);
+      facet.rotation.z = Math.PI / 4;
+    }
+  }
+}
+
 export function dressCinematicFigure(props: VideoProps, figure: VideoFigure, setting: CinematicSetting) {
+  if (isStorybook(setting)) {
+    dressStorybookFigure(props, figure, setting);
+    return;
+  }
   if (isElectronic(setting)) {
     dressElectronicFigure(props, figure, setting);
     return;

@@ -1,0 +1,355 @@
+{
+  "setting": "waterriver",
+  "title": "PJ Harvey · Down by the Water",
+  "description": "Oxblood velvet hangs over a flooded slate floor. A low red lantern and spreading ripples pick out the singer in the dark.",
+  "duration": 189.6,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "boathouse-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "boathouse-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.02,
+      "text": "I lost my heart",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 4,
+      "end": 6.56,
+      "text": "under the bridge",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 7.54,
+      "end": 10.36,
+      "text": "to that little girl",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 11.64,
+      "end": 14.18,
+      "text": "so much to me",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 15.58,
+      "end": 18.24,
+      "text": "and now I'm home",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 19.5,
+      "end": 21.6,
+      "text": "and now I holler",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 23.06,
+      "end": 27.64,
+      "text": "She'll never know just",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.64,
+      "end": 29.66,
+      "text": "what I found.",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 31.12,
+      "end": 33.28,
+      "text": "That blue eyed girl.",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.32,
+      "end": 37.06,
+      "text": "She said no more.",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.76,
+      "end": 43.5,
+      "text": "And that blue eyed girl became blue",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.5,
+      "end": 44.84,
+      "text": "eyed horse,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.88,
+      "end": 51.5,
+      "text": "down by the water I took her",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.5,
+      "end": 52.48,
+      "text": "hand,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 54.18,
+      "end": 58.98,
+      "text": "just like my daughter We'll see her",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.98,
+      "end": 61.46,
+      "text": "again",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.1,
+      "end": 96.72,
+      "text": "Oh, how may Jesus come",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.72,
+      "end": 98.46,
+      "text": "through the storm?",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.72,
+      "end": 103.28,
+      "text": "had to lose her,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.7,
+      "end": 108.48,
+      "text": "took to her harm. I",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.48,
+      "end": 109.9,
+      "text": "heard her holler",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 110.46,
+      "end": 113.66,
+      "text": "heard her moan,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.9,
+      "end": 117.5,
+      "text": "lovely daughter,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 119,
+      "end": 123.48,
+      "text": "I took her home,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.96,
+      "end": 128.06,
+      "text": "little bish, big bish, maybe in the water,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.78,
+      "end": 129.9,
+      "text": "come back here,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.24,
+      "end": 131.84,
+      "text": "man, gimme my daughter.",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.66,
+      "end": 133.24,
+      "text": "little fish,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.62,
+      "end": 135.62,
+      "text": "fish, swimming in the water.",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 136.12,
+      "end": 139.48,
+      "text": "Come back here, man, give me my daughter.",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.04,
+      "end": 141.88,
+      "text": "Little fish, big fish,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.36,
+      "end": 143.22,
+      "text": "in the water.",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.8,
+      "end": 145.26,
+      "text": "Come back here,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.82,
+      "end": 147.12,
+      "text": "give me my daughter.",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.78,
+      "end": 152.36,
+      "text": "little fish, big fish, swimming in the water Come back",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.36,
+      "end": 153.92,
+      "text": "here man, give me",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 158.52,
+      "end": 163.4,
+      "text": "Come back here, man, give me my daughter Little",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.4,
+      "end": 166.26,
+      "text": "fish, big fish, swim in the water",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.22,
+      "end": 179.2,
+      "text": "man, give me my daughter Little fish,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.62,
+      "end": 183.6,
+      "text": "fish, swimmin' in the water Come back here,",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.94,
+      "end": 185.52,
+      "text": "man, give my daughter",
+      "speaker": "boathouse-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "boathouse-flood"
+    },
+    {
+      "time": 12,
+      "view": "boathouse-portrait"
+    },
+    {
+      "time": 28,
+      "view": "boathouse-slate"
+    },
+    {
+      "time": 43,
+      "view": "boathouse-lantern"
+    },
+    {
+      "time": 59,
+      "view": "boathouse-close"
+    },
+    {
+      "time": 74,
+      "view": "boathouse-flood"
+    },
+    {
+      "time": 91,
+      "view": "boathouse-portrait"
+    },
+    {
+      "time": 111,
+      "view": "boathouse-slate"
+    },
+    {
+      "time": 129,
+      "view": "boathouse-lantern"
+    },
+    {
+      "time": 148,
+      "view": "boathouse-portrait"
+    },
+    {
+      "time": 163,
+      "view": "boathouse-close"
+    },
+    {
+      "time": 183,
+      "view": "boathouse-flood"
+    }
+  ]
+}

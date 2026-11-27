@@ -1,0 +1,470 @@
+{
+  "setting": "suburbs",
+  "title": "Arcade Fire · The Suburbs",
+  "description": "Handmade houses and miniature cars line an empty street at blue hour. Porch lamps warm the edges of the paper sky.",
+  "duration": 347.625941,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "model-street-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "model-street-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 41.66,
+      "end": 43.04,
+      "text": "with silver bazaar",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 43.58,
+      "end": 47.54,
+      "text": "long to drive",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 47.54,
+      "end": 51.66,
+      "text": "and told me you will never survive.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 53.56,
+      "end": 55.52,
+      "text": "Grab your mother's keys,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.84,
+      "end": 56.72,
+      "text": "we're leaving.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.56,
+      "end": 67.66,
+      "text": "You always seem so sure",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.66,
+      "end": 72.36,
+      "text": "that one day we",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.36,
+      "end": 76.16,
+      "text": "fight in the suburban world.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.6,
+      "end": 82.26,
+      "text": "Your part of town against mine, I saw you standing",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.26,
+      "end": 84.56,
+      "text": "on the opposite shore.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.94,
+      "end": 89.88,
+      "text": "But by the the first bombs fell,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.22,
+      "end": 92.72,
+      "text": "we were already bored.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.48,
+      "end": 96.08,
+      "text": "We were already,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.38,
+      "end": 97.8,
+      "text": "already bored.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.54,
+      "end": 102.42,
+      "text": "Sometimes I can't it.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.76,
+      "end": 107.28,
+      "text": "I'm moving past a feeling. Sometimes",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.28,
+      "end": 111.56,
+      "text": "I can't believe it, I'm",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.56,
+      "end": 115.22,
+      "text": "movin' past the feelin' again",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.94,
+      "end": 125.6,
+      "text": "kids wanna be so hard",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.1,
+      "end": 131.5,
+      "text": "But in my dreams where's the screamin' and runnin'",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.18,
+      "end": 140.06,
+      "text": "and all of the walls that they built in the 70s",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.06,
+      "end": 141.5,
+      "text": "finally fall,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.12,
+      "end": 148.73,
+      "text": "all of the houses they built in the 70s finally",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.73,
+      "end": 153.27,
+      "text": "fall it meant nothing at all it meant nothing at",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 153.27,
+      "end": 155.08,
+      "text": "all it meant nothing.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 155.64,
+      "end": 159.54,
+      "text": "Sometimes I can't it,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 160.1,
+      "end": 162.94,
+      "text": "I'm moving past the feeling.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.64,
+      "end": 167.72,
+      "text": "Sometimes I can't believe it,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.24,
+      "end": 173.06,
+      "text": "I'm moving past the feeling into the night.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.4,
+      "end": 189.6,
+      "text": "So can you understand",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.6,
+      "end": 194.4,
+      "text": "I want a daughter",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 194.4,
+      "end": 196.38,
+      "text": "while I'm still young?",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 199.52,
+      "end": 201.5,
+      "text": "won't hold her hand,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.92,
+      "end": 206.62,
+      "text": "show her some beauty before all this damage is done.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 209.32,
+      "end": 214.16,
+      "text": "But if it's too much to ask, if it's too much to ask",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 214.16,
+      "end": 217.16,
+      "text": "They sent me a son",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 219.1,
+      "end": 222.7,
+      "text": "The overpass,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 225.34,
+      "end": 227.48,
+      "text": "the parking lot was new,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 227.88,
+      "end": 230.32,
+      "text": "it's already passed.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 232.85,
+      "end": 237.66,
+      "text": "So move your feet from hot pavement into the",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 237.66,
+      "end": 238.34,
+      "text": "grass,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 239.16,
+      "end": 243.42,
+      "text": "because it's already passed. It's already, already",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 243.42,
+      "end": 244.08,
+      "text": "past.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 245.06,
+      "end": 249.92,
+      "text": "Sometimes I can't it I'm",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 249.92,
+      "end": 252.38,
+      "text": "moving past the feeling",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 253.1,
+      "end": 257.18,
+      "text": "Sometimes I can't it",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 257.18,
+      "end": 261.4,
+      "text": "I'm moving past the feeling again",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 264.78,
+      "end": 268.7,
+      "text": "I will move very fast, the finger",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 268.7,
+      "end": 271.32,
+      "text": "in I",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 271.32,
+      "end": 275.74,
+      "text": "will move very fast,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 276.18,
+      "end": 278.22,
+      "text": "figure in",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 290.62,
+      "end": 293.24,
+      "text": "We're still screaming,",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 293.96,
+      "end": 307.16,
+      "text": "we're",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 307.16,
+      "end": 310.1,
+      "text": "we're is screaming.",
+      "speaker": "model-street-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "model-street-blue-hour"
+    },
+    {
+      "time": 21,
+      "view": "model-street-portrait"
+    },
+    {
+      "time": 39,
+      "view": "model-street-porch"
+    },
+    {
+      "time": 56,
+      "view": "model-street-lanes"
+    },
+    {
+      "time": 73,
+      "view": "model-street-close"
+    },
+    {
+      "time": 93,
+      "view": "model-street-horizon"
+    },
+    {
+      "time": 111,
+      "view": "model-street-portrait"
+    },
+    {
+      "time": 130,
+      "view": "model-street-porch"
+    },
+    {
+      "time": 151,
+      "view": "model-street-lanes"
+    },
+    {
+      "time": 170,
+      "view": "model-street-close"
+    },
+    {
+      "time": 190,
+      "view": "model-street-horizon"
+    },
+    {
+      "time": 211,
+      "view": "model-street-blue-hour"
+    },
+    {
+      "time": 230,
+      "view": "model-street-portrait"
+    },
+    {
+      "time": 249,
+      "view": "model-street-lanes"
+    },
+    {
+      "time": 268,
+      "view": "model-street-close"
+    },
+    {
+      "time": 290,
+      "view": "model-street-porch"
+    },
+    {
+      "time": 310,
+      "view": "model-street-horizon"
+    },
+    {
+      "time": 334,
+      "view": "model-street-blue-hour"
+    }
+  ]
+}

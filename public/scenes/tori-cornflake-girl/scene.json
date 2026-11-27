@@ -1,0 +1,321 @@
+{
+  "setting": "cornflake",
+  "title": "Tori Amos · Cornflake Girl",
+  "description": "A burgundy piano sits in a glass conservatory of brass gears and dried wheat. Seed heads catch a blade of afternoon light.",
+  "duration": 236.836837,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "conservatory-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "conservatory-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 22.1,
+      "end": 25.32,
+      "text": "Never was a cornflake girl",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 25.32,
+      "end": 29.42,
+      "text": "Thought it was a good solution",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 29.42,
+      "end": 32.56,
+      "text": "Hanging with the raisin grills",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.56,
+      "end": 37.38,
+      "text": "She's gone to the other side Giving",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.38,
+      "end": 42.02,
+      "text": "us a yo -heavo Things are",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.02,
+      "end": 46.62,
+      "text": "getting kind of gross and when I go it's sleeping time",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.62,
+      "end": 51.42,
+      "text": "this is not really this of this this is",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.42,
+      "end": 52.96,
+      "text": "not really happening",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 66.12,
+      "end": 70.46,
+      "text": "is a peel out the watchwood Just",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 70.46,
+      "end": 74.46,
+      "text": "peel out the watchware",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.98,
+      "end": 84.04,
+      "text": "She knows what's going on",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 85.1,
+      "end": 89.72,
+      "text": "Seems we got a cheaper feel now all the sweeties",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.72,
+      "end": 94.18,
+      "text": "are gone gone to the other",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.18,
+      "end": 98.52,
+      "text": "side with my hand cyclopine be there",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 100.02,
+      "end": 104.36,
+      "text": "must appear a nice price she's known a string beat",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.36,
+      "end": 108.58,
+      "text": "love this is not really",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.58,
+      "end": 111.54,
+      "text": "this isn't really happening",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.06,
+      "end": 117.78,
+      "text": "You bet your life it is You",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.78,
+      "end": 122.26,
+      "text": "bet your life it is Honey,",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 122.72,
+      "end": 127.54,
+      "text": "you've made your life It's a peel out the",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.54,
+      "end": 131.24,
+      "text": "watchword Just a peel out the",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.24,
+      "end": 133.24,
+      "text": "watchword where",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 157.3,
+      "end": 161.16,
+      "text": "I know it's so easy",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 161.16,
+      "end": 165.82,
+      "text": "to close this door I",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.82,
+      "end": 170.08,
+      "text": "know it's so easy to close",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.08,
+      "end": 174.72,
+      "text": "this door I know it's so",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.72,
+      "end": 175.58,
+      "text": "easy",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.04,
+      "end": 178.1,
+      "text": "me",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 206.8,
+      "end": 211.68,
+      "text": "We're just gonna kiss girl, it's",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 211.68,
+      "end": 212.86,
+      "text": "a rabbit.",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 214.04,
+      "end": 217.38,
+      "text": "We're just gonna kiss girl,",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 218.12,
+      "end": 219.48,
+      "text": "gonna the rabbit",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 221.52,
+      "end": 223.86,
+      "text": "where'd you put the",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 224.46,
+      "end": 226.76,
+      "text": "Come in now, Rabbi,",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 229.02,
+      "end": 230.64,
+      "text": "where'd you put the key?",
+      "speaker": "conservatory-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "conservatory-glass"
+    },
+    {
+      "time": 17,
+      "view": "conservatory-portrait"
+    },
+    {
+      "time": 32,
+      "view": "conservatory-wheat"
+    },
+    {
+      "time": 49,
+      "view": "conservatory-piano"
+    },
+    {
+      "time": 64,
+      "view": "conservatory-close"
+    },
+    {
+      "time": 83,
+      "view": "conservatory-wheat"
+    },
+    {
+      "time": 101,
+      "view": "conservatory-portrait"
+    },
+    {
+      "time": 120,
+      "view": "conservatory-piano"
+    },
+    {
+      "time": 143,
+      "view": "conservatory-clockwork"
+    },
+    {
+      "time": 163,
+      "view": "conservatory-close"
+    },
+    {
+      "time": 179,
+      "view": "conservatory-wheat"
+    },
+    {
+      "time": 197,
+      "view": "conservatory-portrait"
+    },
+    {
+      "time": 218,
+      "view": "conservatory-clockwork"
+    },
+    {
+      "time": 230,
+      "view": "conservatory-glass"
+    }
+  ]
+}

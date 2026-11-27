@@ -1797,6 +1797,41 @@
       "sha256": "a9c92c2bd61ff79105eee866930e9a0af497e3d37c34b88c7226d5dae6cd7996"
     },
     {
+      "path": "public/scenes/arcade-fire-suburbs/backing.mp3",
+      "bytes": 11126061,
+      "sha256": "05dcd4108a93abe01d1548288c4eb25db57f5142d06f508af16c40c17dd2ceea"
+    },
+    {
+      "path": "public/scenes/arcade-fire-suburbs/credits.txt",
+      "bytes": 168,
+      "sha256": "f0159fdb52a9e3490666f62a762c69f8bfa9e436721245c3ac78f2d192b1077a"
+    },
+    {
+      "path": "public/scenes/arcade-fire-suburbs/mix.mp3",
+      "bytes": 11126060,
+      "sha256": "49cbe27355b5aacbf8b123a1fd99d873ccd9232e2244d29a1d26d14eb7b5e85a"
+    },
+    {
+      "path": "public/scenes/arcade-fire-suburbs/model-street-voice.tele.gz",
+      "bytes": 2674078,
+      "sha256": "a54bcd9508443faa182e38a68290e8b609d5f0ed3f10cbb7e4a58b9e443645f3"
+    },
+    {
+      "path": "public/scenes/arcade-fire-suburbs/performance.json",
+      "bytes": 596854,
+      "sha256": "88a4bdcbed979a08609bb5e3578f11dd66264ed5bfe2d7476989607854667f5d"
+    },
+    {
+      "path": "public/scenes/arcade-fire-suburbs/scene.json",
+      "bytes": 10496,
+      "sha256": "dc447652de057d6cd3a9be10804709f551bea44ad15e13fc1df1f2831173316b"
+    },
+    {
+      "path": "public/scenes/arcade-fire-suburbs/set-art.webp",
+      "bytes": 306694,
+      "sha256": "6563d32b4d8e6272b4cc4e76bc9f76da115d8791a3178917ac08ec7e77ff7f1d"
+    },
+    {
       "path": "public/scenes/archbishop-harold-holmes/backing.mp3",
       "bytes": 5572274,
       "sha256": "33f4c165d3474bbd6cad165d12e47882fe012680994efaeca1b56fab92884bf0"
@@ -2435,6 +2470,41 @@
       "path": "public/scenes/big-lebowski/walter.tele.gz",
       "bytes": 1190948,
       "sha256": "777edcf05c2dc505015cd862415c662cad4864492f0414d06702baa9c5931942"
+    },
+    {
+      "path": "public/scenes/bjork-bachelorette/backing.mp3",
+      "bytes": 10424877,
+      "sha256": "19fc18c309f02436e3f20c0a759a8504df16d4c1d276951023f5ec156c857fe8"
+    },
+    {
+      "path": "public/scenes/bjork-bachelorette/credits.txt",
+      "bytes": 136,
+      "sha256": "bd240a51a7886ab42b3eb5961a1ea17588c77e3fe5689221aeeef5a12919ef6a"
+    },
+    {
+      "path": "public/scenes/bjork-bachelorette/mix.mp3",
+      "bytes": 10428716,
+      "sha256": "15f4c31b8290f4dd57b17d4254fa471edd2564433750e642936b7c710217039d"
+    },
+    {
+      "path": "public/scenes/bjork-bachelorette/paper-opera-voice.tele.gz",
+      "bytes": 2702846,
+      "sha256": "a81cfd3b8e0a41a831acfcbaaefcbb0990631cf45ba7fa8e43b1b08984f0e0e8"
+    },
+    {
+      "path": "public/scenes/bjork-bachelorette/performance.json",
+      "bytes": 643980,
+      "sha256": "727459f089ccc6e70817a87053de6f32b625e766f44d2f935d811fa4b6dd6cb8"
+    },
+    {
+      "path": "public/scenes/bjork-bachelorette/scene.json",
+      "bytes": 10856,
+      "sha256": "fc246954aed18e878c0d8b0492542bf901f0f980a444477b47f250a88ff6ec26"
+    },
+    {
+      "path": "public/scenes/bjork-bachelorette/set-art.webp",
+      "bytes": 442256,
+      "sha256": "2dac44b37262fc4e836ef8f1973d65ba048c3cc422e121c39d8ca4209ada3a69"
     },
     {
       "path": "public/scenes/bjork-oh-so-quiet/backing.mp3",
@@ -6477,6 +6547,41 @@
       "sha256": "7fa8fd269275d9e449bf7a1298e008ac8251e049f827f53cb86513e15510e9bd"
     },
     {
+      "path": "public/scenes/outkast-hey-ya/backing.mp3",
+      "bytes": 9721389,
+      "sha256": "7b3938957ca8ee8fc55847d54cffae11f60983b1f32d64b130d46fd3b19e66a1"
+    },
+    {
+      "path": "public/scenes/outkast-hey-ya/credits.txt",
+      "bytes": 135,
+      "sha256": "90cd0a51745f9487223f260784329c327c688c2707358a24e89a2a6ff763b58f"
+    },
+    {
+      "path": "public/scenes/outkast-hey-ya/mix.mp3",
+      "bytes": 9721388,
+      "sha256": "872220f0a55c66ee3156b479f75f82ca6f0d19b572433bc89dd99d79845adfab"
+    },
+    {
+      "path": "public/scenes/outkast-hey-ya/performance.json",
+      "bytes": 733416,
+      "sha256": "4d5d11d13ecf1e8c5244be1c061f3af13e0fc15158536ce1876e53022a567cc0"
+    },
+    {
+      "path": "public/scenes/outkast-hey-ya/scene.json",
+      "bytes": 14041,
+      "sha256": "3e15bb05b3476618d076d6eed383b82adf4b729235cd755df9b379856b7c753c"
+    },
+    {
+      "path": "public/scenes/outkast-hey-ya/set-art.webp",
+      "bytes": 271984,
+      "sha256": "515e4e0da55a62141163eea4741f7a2be5c24f066d3fec700da093213d5d6bf0"
+    },
+    {
+      "path": "public/scenes/outkast-hey-ya/television-voice.tele.gz",
+      "bytes": 3164721,
+      "sha256": "d146b24fc24c2b4f056551e04db10ea1ef1d77d6769e2281103aeda357e9f70f"
+    },
+    {
       "path": "public/scenes/passion-pit-take-a-walk/backing.mp3",
       "bytes": 8033325,
       "sha256": "f8aa28a582be62feb7b6572bd83fd2de4fecb754b2e7d215ab517e87627230db"
@@ -6535,6 +6640,41 @@
       "path": "public/scenes/phoebe/scene.json",
       "bytes": 12713,
       "sha256": "01cbe61b081014af404b44c8b5e4d6e0c08a818c63a80827b89acbd2406f1814"
+    },
+    {
+      "path": "public/scenes/pj-harvey-down-water/backing.mp3",
+      "bytes": 6065709,
+      "sha256": "ed171ba31eacc691ba2ae1ab3e7dfe57dd709c9e263aa52080c7e86e63a98422"
+    },
+    {
+      "path": "public/scenes/pj-harvey-down-water/boathouse-voice.tele.gz",
+      "bytes": 1622692,
+      "sha256": "dcbf558bb61d6bcfc428fa2f51054a16e28f5503febec9b4d947b576f6177b22"
+    },
+    {
+      "path": "public/scenes/pj-harvey-down-water/credits.txt",
+      "bytes": 145,
+      "sha256": "798ce5501a8036855817826844c61f8d6ca569eca240bca0989e8032c198c8d1"
+    },
+    {
+      "path": "public/scenes/pj-harvey-down-water/mix.mp3",
+      "bytes": 6068780,
+      "sha256": "942bbd48f6fd6410acf5532eae02007fec40e72051f6ce2d628e838b9b0b2c17"
+    },
+    {
+      "path": "public/scenes/pj-harvey-down-water/performance.json",
+      "bytes": 362074,
+      "sha256": "8a2eb763867f6d8798098c20f8a6727407f5710ecafce6c1de9d00612bbce09e"
+    },
+    {
+      "path": "public/scenes/pj-harvey-down-water/scene.json",
+      "bytes": 7639,
+      "sha256": "45db3aa5acfa40163c239e754e296858f41f892287ed02945e1c468688a19903"
+    },
+    {
+      "path": "public/scenes/pj-harvey-down-water/set-art.webp",
+      "bytes": 161056,
+      "sha256": "e601df1d57e9a2fb6547c875e8c77847e7884607fcc37a1be5cebcaae3e68a36"
     },
     {
       "path": "public/scenes/player-baby-come-back/backing.mp3",
@@ -7387,6 +7527,41 @@
       "sha256": "8bfcb0a52922c2e3c5ec4c519af8def677c8d23f5fa1022c24c0ed517f6a3e89"
     },
     {
+      "path": "public/scenes/sia-chandelier/backing.mp3",
+      "bytes": 7402797,
+      "sha256": "d6499b10b36324d5ebe7e350caf16e91afa48d3827cbc0ea995c8ce66be91ef9"
+    },
+    {
+      "path": "public/scenes/sia-chandelier/credits.txt",
+      "bytes": 132,
+      "sha256": "75539b50279a2077e486e9bc1bc0a74dfb27fbc6bc618460c779737b5b37ab9a"
+    },
+    {
+      "path": "public/scenes/sia-chandelier/mica-loft-voice.tele.gz",
+      "bytes": 2458384,
+      "sha256": "c4f3e038657db0975fe2717f211f8fea0ef2fa42f552137761d116833efa2350"
+    },
+    {
+      "path": "public/scenes/sia-chandelier/mix.mp3",
+      "bytes": 7405868,
+      "sha256": "ceaf5286152fd305f7d9e1e668b96eba06517668003e61917694ca6ef5b9b772"
+    },
+    {
+      "path": "public/scenes/sia-chandelier/performance.json",
+      "bytes": 612410,
+      "sha256": "5e750bdce4342077658f77de0fe386d6e67d1c963ebe5ccc76aa826f73521da3"
+    },
+    {
+      "path": "public/scenes/sia-chandelier/scene.json",
+      "bytes": 9619,
+      "sha256": "85d106b70c9e087a92638b627066c10473f2e7cf4ee4697695b63b62050f5b8f"
+    },
+    {
+      "path": "public/scenes/sia-chandelier/set-art.webp",
+      "bytes": 225734,
+      "sha256": "a23a5deac1e934fc92646fe278225ecc32743dab2054590cb3657d5df09cb7dc"
+    },
+    {
       "path": "public/scenes/skibidi/backing.mp3",
       "bytes": 6183212,
       "sha256": "7a13c8d7a74b08fa416636ff7c0cfca52b7bd56610ae339675e5e6b6527bfd97"
@@ -7847,6 +8022,41 @@
       "sha256": "ecdd58ef3a72a825a8bc8baf2c4eab4079c471d5ddbf4907af28df331d63f26a"
     },
     {
+      "path": "public/scenes/tame-impala-elephant/backing.mp3",
+      "bytes": 6759213,
+      "sha256": "8d55665ea1bba7bc65986992acf6f05be68158f6b4869030f32b1ef583e3fd04"
+    },
+    {
+      "path": "public/scenes/tame-impala-elephant/clay-studio-voice.tele.gz",
+      "bytes": 1131971,
+      "sha256": "1431df7c27ed1499340ffed8a7415d60af99965b065d73dd55495e0369b78003"
+    },
+    {
+      "path": "public/scenes/tame-impala-elephant/credits.txt",
+      "bytes": 138,
+      "sha256": "fce47fdd34cb876cfaccb5a5d7944fd2d68e2ef61e4ac3fc67492fdfd4d256da"
+    },
+    {
+      "path": "public/scenes/tame-impala-elephant/mix.mp3",
+      "bytes": 6760748,
+      "sha256": "94cb3d1dcf38455cce7c141b402fd86343b1604e3cce69e60a98bace03c1fb5c"
+    },
+    {
+      "path": "public/scenes/tame-impala-elephant/performance.json",
+      "bytes": 241143,
+      "sha256": "7792382de3a2c6cda8c13c850517f9b5c1b85d9d6ddd8018564b1068cf276aee"
+    },
+    {
+      "path": "public/scenes/tame-impala-elephant/scene.json",
+      "bytes": 5151,
+      "sha256": "cb3cda0ab0a526aad5b4c1faa5368728db798cbc7521076338d5540a17661640"
+    },
+    {
+      "path": "public/scenes/tame-impala-elephant/set-art.webp",
+      "bytes": 374320,
+      "sha256": "1195437566d86a8856be4fad1d8932b25686867338153858bb006966990892f3"
+    },
+    {
       "path": "public/scenes/tars/backing.mp3",
       "bytes": 1350956,
       "sha256": "1b9a8fe28c3799026ba883884925566e507ba15c949d0a967bd1b38d3f054c16"
@@ -8055,6 +8265,41 @@
       "path": "public/scenes/the-subway/scene.json",
       "bytes": 10651,
       "sha256": "76e36f3e60a11a744624a6030c935b1468cbef8a57b765b80187be9bb8a9c8bc"
+    },
+    {
+      "path": "public/scenes/tori-cornflake-girl/backing.mp3",
+      "bytes": 7580205,
+      "sha256": "f5186e4504a4be63efc5b80c228925047fb1fba5ddefde121b4f0c920c60db0e"
+    },
+    {
+      "path": "public/scenes/tori-cornflake-girl/conservatory-voice.tele.gz",
+      "bytes": 1980144,
+      "sha256": "cff6fb53b3e423ee0a8009f5844679eaa5f6aa5ace26cc075e50294ae770e733"
+    },
+    {
+      "path": "public/scenes/tori-cornflake-girl/credits.txt",
+      "bytes": 142,
+      "sha256": "e2c3447a956e4fe354e9e72e131022cf3ae88b029e558823969da8f1610c53b2"
+    },
+    {
+      "path": "public/scenes/tori-cornflake-girl/mix.mp3",
+      "bytes": 7580972,
+      "sha256": "fe126f95853bce1a0d75a17b0ed516c40eb943f65c22a9c01116d9a9f249083c"
+    },
+    {
+      "path": "public/scenes/tori-cornflake-girl/performance.json",
+      "bytes": 455128,
+      "sha256": "aaff0be9e915e2398c9ea2a3ee1746c6410e7fd24c34fbdeb0eb4cd31b5e9a1a"
+    },
+    {
+      "path": "public/scenes/tori-cornflake-girl/scene.json",
+      "bytes": 7171,
+      "sha256": "277e18ac407f61cb04a15d83de88dd6fa9de1c466ebf9c5522438c33671ef6c0"
+    },
+    {
+      "path": "public/scenes/tori-cornflake-girl/set-art.webp",
+      "bytes": 376712,
+      "sha256": "55f853337235f3e9f37424b7f8b206969f6df1d5255ca00d79d85977d8b02d80"
     },
     {
       "path": "public/scenes/total-eclipse/answer.tele.gz",

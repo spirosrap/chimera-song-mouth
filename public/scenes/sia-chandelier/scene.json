@@ -1,0 +1,419 @@
+{
+  "setting": "chandelier",
+  "title": "Sia · Chandelier",
+  "description": "Silver mica hangs from the ceiling of an indigo loft. The singer moves between a cool skylight and the amber gleam of the chandelier.",
+  "duration": 231.361055,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "mica-loft-voice",
+      "name": "Lead voice",
+      "role": "CHIMERA vocals",
+      "tele": "mica-loft-voice.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 17.64,
+      "end": 19.7,
+      "text": "I'm the one",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 19.7,
+      "end": 24.46,
+      "text": "who's I'm the one for a good time,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.58,
+      "end": 28.94,
+      "text": "call phones blowin' up Bring on my door bell, I feel the love,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.98,
+      "end": 31.1,
+      "text": "feel the love",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 33.08,
+      "end": 37.84,
+      "text": "One two three, one two three, bring One two three, one two",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.84,
+      "end": 41.02,
+      "text": "three One two three, one two three,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 41.36,
+      "end": 44.32,
+      "text": "Come back to Lionel's by",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.1,
+      "end": 48.34,
+      "text": "I'm gonna swim",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.1,
+      "end": 50.84,
+      "text": "From the shindely",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.86,
+      "end": 54.1,
+      "text": "From the shindely",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 56.68,
+      "end": 61.48,
+      "text": "I'm gonna live Like tomorrow Frozen",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.48,
+      "end": 64.94,
+      "text": "in peace Like it doesn't exist",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 68.12,
+      "end": 72.82,
+      "text": "I'm gonna fly like a bird to",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.82,
+      "end": 77.02,
+      "text": "the night Feel my tears as if I'm",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.02,
+      "end": 78.02,
+      "text": "alive",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 80,
+      "end": 84.2,
+      "text": "Gonna swim from the chandelier,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 84.2,
+      "end": 89.06,
+      "text": "from the chandelier I am holding on for",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 89.06,
+      "end": 93.76,
+      "text": "your life Won't let go, won't open my eyes Keep my glass",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 93.76,
+      "end": 98.06,
+      "text": "full until morning light Cause I'm just holding on for tonight",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.06,
+      "end": 102.16,
+      "text": "Help me, I'm holding on for dear life Won't let go,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 102.48,
+      "end": 107.3,
+      "text": "open my eyes Keep my glass full until morning light Cause I'm",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 107.3,
+      "end": 109.06,
+      "text": "just holding on for tonight,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 109.42,
+      "end": 113.98,
+      "text": "on for night The sun is up, I'm a mess Gotta get out",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 113.98,
+      "end": 118.24,
+      "text": "now Gotta run from this Here comes the shame Here comes the",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 118.24,
+      "end": 119.76,
+      "text": "shame",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.28,
+      "end": 126.16,
+      "text": "1 -2 -3, 1 -2 -3 break 1, 2, 3, 1, 2,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 126.16,
+      "end": 129.26,
+      "text": "3, 1 2, 3, 1, 2 3,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.96,
+      "end": 132.08,
+      "text": "So I'm back till I lose",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 133.58,
+      "end": 138.32,
+      "text": "I'm gonna swim from the",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.32,
+      "end": 141.06,
+      "text": "shindelii from the",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.06,
+      "end": 143.78,
+      "text": "shindelii",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 143.78,
+      "end": 148.22,
+      "text": "I'm gonna live like",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.22,
+      "end": 152.7,
+      "text": "tomorrow frozen in peace Like it doesn't",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.7,
+      "end": 153.22,
+      "text": "exist",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 155.96,
+      "end": 160.76,
+      "text": "I'm gonna fly like a bird",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 160.76,
+      "end": 164.46,
+      "text": "through the night Feel my tears as if I'm",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.46,
+      "end": 166.1,
+      "text": "alive",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.88,
+      "end": 172.26,
+      "text": "Gonna swim from the shindely",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 173.1,
+      "end": 175.8,
+      "text": "From the shindely",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.16,
+      "end": 179.36,
+      "text": "won't let go,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.68,
+      "end": 184.26,
+      "text": "won't open my eyes Keep my glass full until morning light Cause",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 184.26,
+      "end": 188.72,
+      "text": "I'm just holding on for tonight Help me not holding on for dear",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.72,
+      "end": 190.42,
+      "text": "life Won't let go,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 190.76,
+      "end": 194.14,
+      "text": "open up eyes Keep my glass full until mornin'",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 194.44,
+      "end": 197.22,
+      "text": "light Cause I'm just holding on, tonight,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 197.8,
+      "end": 202.18,
+      "text": "oh, tonight, all for tonight The sun just turned on for",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 202.18,
+      "end": 206.98,
+      "text": "tonight The moon just turned on for tonight All for tonight,",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 207.22,
+      "end": 212.04,
+      "text": "all for tonight The sun just turned on for tonight The sun",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    },
+    {
+      "start": 212.04,
+      "end": 216.58,
+      "text": "just turned on for tonight The moon just turned on for tonight",
+      "speaker": "mica-loft-voice",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "mica-loft-skylight"
+    },
+    {
+      "time": 12,
+      "view": "mica-loft-portrait"
+    },
+    {
+      "time": 29,
+      "view": "mica-loft-close"
+    },
+    {
+      "time": 43,
+      "view": "mica-loft-chandelier"
+    },
+    {
+      "time": 61,
+      "view": "mica-loft-floor"
+    },
+    {
+      "time": 77,
+      "view": "mica-loft-portrait"
+    },
+    {
+      "time": 95,
+      "view": "mica-loft-skylight"
+    },
+    {
+      "time": 114,
+      "view": "mica-loft-close"
+    },
+    {
+      "time": 132,
+      "view": "mica-loft-chandelier"
+    },
+    {
+      "time": 152,
+      "view": "mica-loft-portrait"
+    },
+    {
+      "time": 170,
+      "view": "mica-loft-floor"
+    },
+    {
+      "time": 189,
+      "view": "mica-loft-close"
+    },
+    {
+      "time": 206,
+      "view": "mica-loft-chandelier"
+    },
+    {
+      "time": 223,
+      "view": "mica-loft-skylight"
+    }
+  ]
+}
