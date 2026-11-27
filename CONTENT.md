@@ -193,6 +193,13 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Geese — Taxes | 3:18 | `?scene=geese-taxes` | A crowded room, brick set and close microphone with one physical voice. |
 | 100 gecs — Doritos & Fritos | 3:29 | `?scene=gecs-doritos-fritos` | Airborne performers, outdoor scenes, a mock newscast and a prismatic ending with two physical voices. |
 | Confidence Man — Holiday | 4:48 | `?scene=confidence-holiday` | Salt flats, balloon fabric, an aerial basket and a red night dance with two physical voices. |
+| Amyl and The Sniffers — U Should Not Be Doing That | 3:27 | `?scene=amyl-should-not` | Neon storefront, empty pool and green runway. |
+| St. Vincent — Digital Witness | 3:25 | `?scene=st-vincent-digital-witness` | Pastel architecture, a symmetrical office and a choreographed crew. |
+| Yard Act — We Make Hits | 3:28 | `?scene=yard-act-we-make-hits` | A living room, a stereo, a brick street and a magenta club. |
+| Jungle — Back On 74 | 4:00 | `?scene=jungle-back-on-74` | An ensemble dance across a timber set, with a second physical voice and control-room monitors. |
+| Janelle Monáe feat. Big Boi — Tightrope | 5:12 | `?scene=janelle-tightrope` | A tiled institution, ensemble choreography, and two physical voices. |
+| Fever Ray — Kandy | 4:25 | `?scene=fever-ray-kandy` | A jukebox, blue curtain, green armchair and red venue. |
+| Ren — Animal Flow | 2:56 | `?scene=ren-animal-flow` | A tiled corridor and a banquet staged with animal costumes. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

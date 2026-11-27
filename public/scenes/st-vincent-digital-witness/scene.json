@@ -1,0 +1,373 @@
+{
+  "setting": "digitalwitness",
+  "title": "St. Vincent · Digital Witness",
+  "description": "A teal portrait, a mustard-yellow door, monumental buildings and workers in synchronized formations.",
+  "duration": 204.66068,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "witness-annie",
+      "name": "Annie",
+      "role": "CHIMERA vocals",
+      "tele": "witness-annie.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.54,
+      "text": "Get back to your seats,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 3.54,
+      "end": 6,
+      "text": "get back,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 6.8,
+      "end": 11.4,
+      "text": "nash and teal Ooh, ooh, ooh, ooh",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 12.5,
+      "end": 15.16,
+      "text": "I want all of your mind",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 18.6,
+      "end": 23.42,
+      "text": "People turn into the audience just like a window.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.96,
+      "end": 26.04,
+      "text": "Yeah.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 27.78,
+      "end": 32.36,
+      "text": "People tell you TV only looks just like a window.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 34.52,
+      "end": 35.18,
+      "text": "Yeah.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 38.7,
+      "end": 41.38,
+      "text": "when it's sad,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 42.24,
+      "end": 46.94,
+      "text": "What's the point of even sleeping. If I",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 46.94,
+      "end": 50.88,
+      "text": "can't show it, you can't see me.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 51.36,
+      "end": 54.74,
+      "text": "What's the point of doing and they've been.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 55.98,
+      "end": 59.78,
+      "text": "This is no time",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 59.78,
+      "end": 61.04,
+      "text": "for",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 61.04,
+      "end": 65.02,
+      "text": "confessing.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.22,
+      "end": 70.22,
+      "text": "I want all of your mind",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.76,
+      "end": 78.2,
+      "text": "People turn the TV on and it looks just like a window",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 80.18,
+      "end": 80.9,
+      "text": "Yeah",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 82.9,
+      "end": 87.42,
+      "text": "People turn the TV on and it's just like a window",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.2,
+      "end": 90.28,
+      "text": "yeah.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.28,
+      "end": 95.42,
+      "text": "Digit of witnesses.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.12,
+      "end": 100.66,
+      "text": "What's the point of even sleeping?",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.34,
+      "end": 105.7,
+      "text": "If I can't show it you can't see me.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 106.34,
+      "end": 111.2,
+      "text": "Watch me jump right up the London Bridge. This",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.2,
+      "end": 114.86,
+      "text": "is no time",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.86,
+      "end": 119.1,
+      "text": "for confessing.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 128.1,
+      "end": 132.44,
+      "text": "We pretend it's TV on, falling out the",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 132.44,
+      "end": 136.24,
+      "text": "window, yeah,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.4,
+      "end": 140.58,
+      "text": "get back to your stare.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.58,
+      "end": 145.4,
+      "text": "I can't, but I care,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 145.86,
+      "end": 147.98,
+      "text": "oh, oh, why,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 148.46,
+      "end": 152.4,
+      "text": "I want all of your mind,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 154.04,
+      "end": 156.9,
+      "text": "Give me all of your mind,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.92,
+      "end": 161.64,
+      "text": "I want all of your mind,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 163.82,
+      "end": 165.46,
+      "text": "give me all of that.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 165.7,
+      "end": 168.92,
+      "text": "Two -digit domain set,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.2,
+      "end": 175.06,
+      "text": "what's the point of even sleepin' though I",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 175.06,
+      "end": 179.16,
+      "text": "can't show it if you can't see me.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.8,
+      "end": 182.5,
+      "text": "What's the point of doing anything?",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.9,
+      "end": 187.6,
+      "text": "What's the point of even sleeping?",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 188.06,
+      "end": 189.94,
+      "text": "So I stop sleeping,",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 190.72,
+      "end": 192.48,
+      "text": "I stop sleeping.",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    },
+    {
+      "start": 193.56,
+      "end": 196.44,
+      "text": "Won't somebody send me back to me?",
+      "speaker": "witness-annie",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "witness-teal-close"
+    },
+    {
+      "time": 15,
+      "view": "witness-yellow-door"
+    },
+    {
+      "time": 31,
+      "view": "witness-plaza"
+    },
+    {
+      "time": 46,
+      "view": "witness-line"
+    },
+    {
+      "time": 61,
+      "view": "witness-desks"
+    },
+    {
+      "time": 79,
+      "view": "witness-wheels"
+    },
+    {
+      "time": 98,
+      "view": "witness-plaza"
+    },
+    {
+      "time": 115,
+      "view": "witness-desks"
+    },
+    {
+      "time": 131,
+      "view": "witness-green-close"
+    },
+    {
+      "time": 150,
+      "view": "witness-conference"
+    },
+    {
+      "time": 168,
+      "view": "witness-line"
+    },
+    {
+      "time": 183,
+      "view": "witness-dusk-close"
+    },
+    {
+      "time": 198,
+      "view": "witness-finale"
+    }
+  ]
+}

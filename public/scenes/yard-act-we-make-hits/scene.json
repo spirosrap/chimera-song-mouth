@@ -1,0 +1,344 @@
+{
+  "setting": "yardhits",
+  "title": "Yard Act · We Make Hits",
+  "description": "Two friends in a warm living room, a portable stereo, a brick alley and a purple-lit dance floor take the track from talk to performance.",
+  "duration": 207.981134,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "hits-james",
+      "name": "James",
+      "role": "CHIMERA vocals",
+      "tele": "hits-james.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 10.64,
+      "end": 15.18,
+      "text": "I'll let my friend live upstairs in the spare room",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 15.18,
+      "end": 16.38,
+      "text": "for a minute.",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 19.75,
+      "end": 24.62,
+      "text": "He needed space and he paid never relates to all that in age",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 24.62,
+      "end": 27.74,
+      "text": "and but we did it But so they go,",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.5,
+      "end": 33.18,
+      "text": "I sublet yeah I admit it, document on state the greatest,",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 33.4,
+      "end": 37.08,
+      "text": "Timeless nation saving grace, Advise the name committed",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 40.4,
+      "end": 45.22,
+      "text": "I just want to make a point that the culture would have died",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 45.22,
+      "end": 49.92,
+      "text": "and Postbox latest poster bars wouldn't have got to ride on",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 49.92,
+      "end": 54.56,
+      "text": "the coattails of the dead and claim that their derision is a",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 54.56,
+      "end": 58.64,
+      "text": "vehicle for their vision of surveying instead And now",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 58.64,
+      "end": 63.26,
+      "text": "subliminal exposures exploded in your head Cause you",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 63.26,
+      "end": 64.8,
+      "text": "know that we were golden,",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 65.24,
+      "end": 65.98,
+      "text": "yeah, yeah,",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.54,
+      "end": 72.22,
+      "text": "Yeah, one night up in the attic, listening to grammatics, drinking cans and shooting",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 72.22,
+      "end": 72.74,
+      "text": "the shit.",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.2,
+      "end": 76.14,
+      "text": "We reeled off all of our hopes and dreams and made a list.",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 76.62,
+      "end": 80.84,
+      "text": "And there was one singular ambition we had that most musicians of our ilk aren't willing",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.2,
+      "end": 92.62,
+      "text": "and we do it again every night on the back of the books, you know, it ain't no fuss",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.62,
+      "end": 97.28,
+      "text": "We're on the same wage And we ain't afraid to get paid on stage",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.28,
+      "end": 101.98,
+      "text": "Stop fiction, cutting it, act is a fact If you get your back, bite up at that You",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 101.98,
+      "end": 102.98,
+      "text": "will be missed",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.7,
+      "end": 105.22,
+      "text": "Now we make hits",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 108.12,
+      "end": 111.08,
+      "text": "We make hits, we make hiss,",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.6,
+      "end": 116.4,
+      "text": "So when we were done kissing We finally formed this band And we signed to a",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 116.4,
+      "end": 121.08,
+      "text": "subsidiary Of Universal Inc Cause the water keeps on",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.08,
+      "end": 125.74,
+      "text": "rising And we know there's no surprise anyone with eyes and ears",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 125.74,
+      "end": 130.58,
+      "text": "round here that we're all gonna sing and we just want to have some fun before",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 130.58,
+      "end": 135.48,
+      "text": "we song and if that's the attitude you exude, then you know",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.48,
+      "end": 136.66,
+      "text": "you're really poor.",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.06,
+      "end": 140.58,
+      "text": "We make hits to both millennial men,",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 140.94,
+      "end": 142,
+      "text": "but we do it again.",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 142.2,
+      "end": 146.76,
+      "text": "Every night on the back of the bus, you know there ain't no fuss. We're on the same wage",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.24,
+      "end": 152.1,
+      "text": "And we ain't afraid to get paid on spiddin' Run fiction, call me, act as a fact If you",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.1,
+      "end": 156.78,
+      "text": "get your bye -bye, stupid lad You won't be missed Now we",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 156.78,
+      "end": 157.5,
+      "text": "make hits",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 160.18,
+      "end": 164.98,
+      "text": "We make hits I'm still an M -T -C -A -P",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 164.98,
+      "end": 169.6,
+      "text": "-I -C -A -L -I -S -T It's so happens that there's all those",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 169.6,
+      "end": 171.34,
+      "text": "things that happen to me",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.88,
+      "end": 178.46,
+      "text": "And if it's not her,",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    },
+    {
+      "start": 179.42,
+      "end": 181.96,
+      "text": "you will get in on with me.",
+      "speaker": "hits-james",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "hits-lounge"
+    },
+    {
+      "time": 19,
+      "view": "hits-lounge-close"
+    },
+    {
+      "time": 45,
+      "view": "hits-neon-dance"
+    },
+    {
+      "time": 64,
+      "view": "hits-alley"
+    },
+    {
+      "time": 81,
+      "view": "hits-street"
+    },
+    {
+      "time": 99,
+      "view": "hits-stairwell-close"
+    },
+    {
+      "time": 116,
+      "view": "hits-neon-dance"
+    },
+    {
+      "time": 135,
+      "view": "hits-stage-close"
+    },
+    {
+      "time": 152,
+      "view": "hits-wall-dance"
+    },
+    {
+      "time": 172,
+      "view": "hits-street"
+    },
+    {
+      "time": 191,
+      "view": "hits-finale"
+    }
+  ]
+}

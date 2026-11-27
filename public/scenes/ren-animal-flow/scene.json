@@ -1,0 +1,306 @@
+{
+  "setting": "animalflow",
+  "title": "Ren · Animal Flow",
+  "description": "A tiled corridor and a lavish table give way to masked figures, a crown and a close rap performance.",
+  "duration": 175.867937,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "animal-ren",
+      "name": "Ren",
+      "role": "CHIMERA vocals",
+      "tele": "animal-ren.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 5.86,
+      "end": 8.9,
+      "text": "duh, duh, duh,",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 9.54,
+      "end": 14.28,
+      "text": "flow You're in the mind of a cannibal king My chaos and anarchy roam In",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 14.28,
+      "end": 19.08,
+      "text": "trouble is bubbling under the skin A certain insanity shows Whenever I pick up the mic",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 19.08,
+      "end": 23.46,
+      "text": "and begin whenever these words that I write with my pen come alive they ignite like I pulled out the pen",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 24,
+      "end": 28.86,
+      "text": "Animal slow, out in the jungle I'm ready for war I'm beating your brains with a bat I'm swinging",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 28.86,
+      "end": 31.88,
+      "text": "it back and spooky Your bag's on board Know that they're cannibals,",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 32.22,
+      "end": 37.06,
+      "text": "A murderous mind that you can't ignore Await and riabic combat on the counter Attack on the king",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 37.06,
+      "end": 38.34,
+      "text": "of the jungle, librar",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 52.78,
+      "end": 57.52,
+      "text": "I'm animal, I'm a flow CEO, I've got mountains of murderous brines Mountain volcanic,",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 57.68,
+      "end": 62.5,
+      "text": "blow and cause mayhem and panic There's nowhere to run from my mind I'm an impossible phone ever slowing Just growing",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 62.5,
+      "end": 67.26,
+      "text": "and flowing with intricate lines Yes, I will dig in my teeth when I bite like a beast. Blood, I drink it",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 67.26,
+      "end": 67.8,
+      "text": "like wine.",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 68.48,
+      "end": 69.56,
+      "text": "Animal flow, rah!",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 69.78,
+      "end": 74.64,
+      "text": "Out in the wilderness I will be king Sit on my throne on the Lord of the Rings Out on my own and my terrible",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 74.64,
+      "end": 79.4,
+      "text": "thing Animal skins, over my shoulder's like bling They will be clothing my sins I came to",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 79.4,
+      "end": 82.52,
+      "text": "win Over and over again I'll take your life with the Quinn",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 88.02,
+      "end": 92.84,
+      "text": "that, I didn't get that wrong I don't know, I didn' t get that, I",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 92.84,
+      "end": 94.16,
+      "text": "get the wrong I don't",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.16,
+      "end": 98.12,
+      "text": "know, I",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 98.12,
+      "end": 102.84,
+      "text": "didn''t that,",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 103.18,
+      "end": 111.24,
+      "text": "didn''t",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 111.24,
+      "end": 115.62,
+      "text": "blood it flows horrific explicit i be parasitic i sit there commencing your flesh",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.62,
+      "end": 120.48,
+      "text": "don't fidget on living no mentally with it i get kinda sick when im stressed yum yum yum yum i am the",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 120.48,
+      "end": 121.68,
+      "text": "eye I am the storm,",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 122,
+      "end": 123.52,
+      "text": "am the fury, am the scorn,",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.88,
+      "end": 124.4,
+      "text": "am the belly,",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 124.78,
+      "end": 129.56,
+      "text": "am the beast Yes I am, yes I am, yes I am, Yes I'm an animal, Yes I'm an animal Yes, sometimes the things",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 129.56,
+      "end": 134.22,
+      "text": "I say are irrational Yes, sometimes I think that you are quite radical Yes, will be waging war on the capital",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 134.22,
+      "end": 138.36,
+      "text": "Yes, will burn the houses of parliament down Cos hypocrites they burn quite easily Wow!",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.68,
+      "end": 142.12,
+      "text": "Burn and pillage it all to the ground Your illegitimate king lost his crown",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 144.84,
+      "end": 149.66,
+      "text": "I will be cruel, drown on my foes in a paddling pool, yes I'm",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 149.66,
+      "end": 150.24,
+      "text": "tyrannical bro,",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 151,
+      "end": 152,
+      "text": "never mistake, I'm an",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    },
+    {
+      "start": 152.62,
+      "end": 156.44,
+      "text": "I'll take your ignorance right back to school and teach you a lesson for testing my cool.",
+      "speaker": "animal-ren",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "animal-entry"
+    },
+    {
+      "time": 12,
+      "view": "animal-banquet"
+    },
+    {
+      "time": 25,
+      "view": "animal-close"
+    },
+    {
+      "time": 38,
+      "view": "animal-masks"
+    },
+    {
+      "time": 53,
+      "view": "animal-banquet"
+    },
+    {
+      "time": 66,
+      "view": "animal-close"
+    },
+    {
+      "time": 80,
+      "view": "animal-masks"
+    },
+    {
+      "time": 94,
+      "view": "animal-crown"
+    },
+    {
+      "time": 111,
+      "view": "animal-banquet"
+    },
+    {
+      "time": 125,
+      "view": "animal-close"
+    },
+    {
+      "time": 144,
+      "view": "animal-masks"
+    },
+    {
+      "time": 162,
+      "view": "animal-finale"
+    }
+  ]
+}

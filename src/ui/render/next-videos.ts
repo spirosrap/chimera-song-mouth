@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import { isLaterVideo, type LaterVideoView } from '../../scene/later-videos.ts';
+import { buildLaterVideoSet, LATER_VIDEO_FIGURES, LATER_VIDEO_WARDROBE } from './later-videos.ts';
 import { isSevenVideo, type SevenVideoView } from '../../scene/seven-videos.ts';
 import { buildSevenVideoSet, SEVEN_VIDEO_FIGURES, SEVEN_VIDEO_WARDROBE } from './seven-videos.ts';
 import { NEXT_VIDEO_CAST, NEXT_VIDEO_INFO, type NextVideoSetting, type NextVideoView } from '../../scene/next-videos.ts';
@@ -15,6 +17,7 @@ const color = (colors: readonly string[], index: number) => colors[index % color
 const random = (index: number) => Math.sin(index * 12.727 + 9.73) * .5 + .5;
 const wardrobe: Record<NextVideoSetting, { jackets: string[]; hair: string[] }> = {
   ...SEVEN_VIDEO_WARDROBE,
+  ...LATER_VIDEO_WARDROBE,
   jamieoliver: { jackets: ['#efe5d1', '#3bb8b3', '#66c5c1'], hair: ['#9c402a', '#e5bc7d'] },
   barabastu: { jackets: ['#522c37', '#3c2c3a', '#5e5940', '#eee7d4'], hair: ['#493b32', '#916146', '#8c6b4f'] },
   anotrlikeit: { jackets: ['#4e252d', '#e8daca', '#f1dfd8', '#442f61'], hair: ['#403021', '#b69a85'] },
@@ -24,6 +27,7 @@ const wardrobe: Record<NextVideoSetting, { jackets: string[]; hair: string[] }> 
 };
 const settings: Record<NextVideoSetting, number> = {
   ...SEVEN_VIDEO_FIGURES,
+  ...LATER_VIDEO_FIGURES,
   jamieoliver: 3, barabastu: 5, anotrlikeit: 4, pinkyup: 5, simzyoung: 4, manmadeofmeat: 5,
 };
 
@@ -86,6 +90,14 @@ export class NextVideoStage {
         this.props.tube(figure.root, [0, -51, 25], [30, -21, 26], 2.7, '#432c39');
         for (const j of range(4)) this.props.tube(figure.root, [j - 2, -55, 27], [28 + j, -22, 29], .19, '#f9ce93');
       }
+      if (setting === 'animalflow' && i > 0) {
+        const fur = i % 2 ? '#ded7bf' : '#443737';
+        for (const side of [-1, 1]) {
+          const ear = this.props.oval(figure.root, [side * 11.5, 13, 1], [3, 6, 2.6], fur);
+          ear.rotation.z = -side * .4;
+        }
+        this.props.oval(figure.root, [0, .5, 10.5], [6, 4, 3.6], i % 2 ? '#ae8a81' : '#66584f');
+      }
       const pinky = setting === 'pinkyup' ? this.props.oval(figure.root, [0, 0, 0], [1.05, 3.2, 1.1], '#d6bdad') : undefined;
       return { figure, base, jacket: figure.torso.material as THREE.MeshBasicMaterial, pinky };
     });
@@ -93,6 +105,12 @@ export class NextVideoStage {
   }
 
   private build(view: NextVideoView): Set {
+    if (isLaterVideo(this.setting)) {
+      const scenery = buildLaterVideoSet(this.props, this.setting, view as LaterVideoView);
+      scenery.root.visible = false;
+      this.scene.add(scenery.root);
+      return scenery;
+    }
     if (isSevenVideo(this.setting)) {
       const scenery = buildSevenVideoSet(this.props, this.setting, view as SevenVideoView);
       scenery.root.visible = false;
@@ -362,7 +380,7 @@ export class NextVideoStage {
     const dt = reset ? 1 / 60 : THREE.MathUtils.clamp(time - this.previousTime, 1 / 120, .05);
     const beat = Math.PI * 2 * (time * NEXT_VIDEO_INFO[this.setting].bpm / 60);
     const tight = designated >= 0 || /close|portrait|window|canvas/.test(stageView);
-    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd/.test(stageView);
+    const group = /dance|choir|party|revu|finale|pub|auction|chase|ensemble|rehearsal|club|runway|taxes-crowd|witness-line|witness-wheels|witness-desks|witness-conference|rope-band/.test(stageView);
     const seated = /campfire|tea|flat/.test(stageView);
     const core = this.figures.length;
     for (const [i, member] of this.figures.entries()) {
@@ -386,6 +404,16 @@ export class NextVideoStage {
         [-28, -38 + 7 * Math.sin(phase), 9], [-25 - emphasis * 9, -62 + 17 * Math.sin(phase * .5), 17],
         [30, -32 + 8 * Math.sin(phase + .4), 10], [34 + 5 * Math.sin(phase * .5), raised, 20],
       ], seated);
+      if (isLaterVideo(this.setting) && group && !tight) {
+        for (const [sideIndex, direction] of [-1, 1].entries()) {
+          const stride = Math.sin(phase + sideIndex * Math.PI);
+          const knee: Point = [direction * (14 + 4 * stride), -103 + 4 * Math.max(0,stride), 6 * stride];
+          const foot: Point = [direction * (18 + 7 * stride), -146 + 9 * Math.max(0,stride), 11 * stride];
+          this.props.segment(figure.legs[2 * sideIndex], [direction * 10, -70, 0], knee, 7);
+          this.props.segment(figure.legs[2 * sideIndex + 1], knee, foot, 5);
+          figure.feet[sideIndex].position.set(...foot);
+        }
+      }
       if (member.pinky) {
         member.pinky.visible = pinky;
         member.pinky.position.copy(figure.hands[1].position).add(new THREE.Vector3(2.5, 7, 0));
