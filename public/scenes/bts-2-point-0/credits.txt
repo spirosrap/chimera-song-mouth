@@ -1,0 +1,3 @@
+BTS · 2.0
+Reference: https://www.youtube.com/watch?v=_gyultVTesk
+Sets, lighting, wardrobe and movement modeled as CHIMERA scene geometry.

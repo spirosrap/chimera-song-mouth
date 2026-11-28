@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import type { BtsTwoView } from '../../scene/bts-2-point-0.ts';
+import { buildBtsTwoSet, BTS_TWO_WARDROBE } from './bts-2-point-0.ts';
 import { isCinematic } from '../../scene/cinematic-videos.ts';
 import { buildCinematicSet, CINEMATIC_FIGURES, CINEMATIC_WARDROBE } from './cinematic-videos.ts';
 import { isPop, type PopView } from '../../scene/pop-videos.ts';
@@ -13,6 +15,7 @@ import type { ShowcaseSetting, ShowcaseView } from '../../scene/showcase-videos.
 import { VideoProps, type VideoPoint } from './videoProps.ts';
 
 export const SHOWCASE_WARDROBE = {
+  btstwo: BTS_TWO_WARDROBE,
   ...ENCORE_WARDROBE,
   ...VARIETY_WARDROBE,
   ...INDIE_WARDROBE,
@@ -34,6 +37,7 @@ export const SHOWCASE_WARDROBE = {
   altjtessellate:{jackets:['#615c54','#8e5655','#4c6272','#877256','#725d6b'],hair:['#453935','#3a343d']},
 };
 export const SHOWCASE_FIGURES:Record<ShowcaseSetting,number> = {
+  btstwo: 7,
   ...ENCORE_FIGURES,
   ...VARIETY_FIGURES,
   ...INDIE_FIGURES,
@@ -44,6 +48,7 @@ export const SHOWCASE_FIGURES:Record<ShowcaseSetting,number> = {
 };
 
 export function buildShowcaseSet(p:VideoProps, setting:ShowcaseSetting, view:ShowcaseView) {
+  if (setting === 'btstwo') return buildBtsTwoSet(p, view as BtsTwoView);
   if (isEncore(setting)) return buildEncoreSet(p, setting, view as EncoreView);
   if (isVariety(setting)) return buildVarietySet(p, setting, view as VarietyView);
   if (isIndie(setting)) return buildIndieSet(p, setting, view as IndieView);

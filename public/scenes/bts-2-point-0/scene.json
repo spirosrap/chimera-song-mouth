@@ -1,0 +1,551 @@
+{
+  "setting": "btstwo",
+  "title": "BTS · 2.0",
+  "description": "Seven suited performers emerge from a freight elevator into a fluorescent concrete corridor. The choreography moves through a tiled washroom and a glass-fronted lobby before the record spins out.",
+  "duration": 234.521542,
+  "audio": "mix.mp3",
+  "characters": [
+    {
+      "id": "bts-two-lead",
+      "name": "Voice 1",
+      "role": "CHIMERA vocals",
+      "tele": "bts-two-lead.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "bts-two-low",
+      "name": "Voice 2",
+      "role": "CHIMERA vocals",
+      "tele": "bts-two-low.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "bts-two-bright",
+      "name": "Voice 3",
+      "role": "CHIMERA vocals",
+      "tele": "bts-two-bright.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "bts-two-mid",
+      "name": "Voice 4",
+      "role": "CHIMERA vocals",
+      "tele": "bts-two-mid.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "bts-two-edge",
+      "name": "Voice 5",
+      "role": "CHIMERA vocals",
+      "tele": "bts-two-edge.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "bts-two-air",
+      "name": "Voice 6",
+      "role": "CHIMERA vocals",
+      "tele": "bts-two-air.tele",
+      "telemetryEncoding": "gzip"
+    },
+    {
+      "id": "bts-two-warm",
+      "name": "Voice 7",
+      "role": "CHIMERA vocals",
+      "tele": "bts-two-warm.tele",
+      "telemetryEncoding": "gzip"
+    }
+  ],
+  "cues": [
+    {
+      "start": 52.135,
+      "end": 55.035,
+      "text": "그래 당장처럼 그게 말은 쉽지",
+      "speaker": "bts-two-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 59.549,
+      "end": 62.209,
+      "text": "웃기게는 안돼 사실 안 웃기지",
+      "speaker": "bts-two-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 71.552,
+      "end": 72.793556,
+      "text": "Pull up and get your block",
+      "speaker": "bts-two-edge",
+      "intensity": 0.85
+    },
+    {
+      "start": 73.165,
+      "end": 75.125,
+      "text": "gon' knock, knock, yeah",
+      "speaker": "bts-two-air",
+      "intensity": 0.85
+    },
+    {
+      "start": 75.319,
+      "end": 77.061,
+      "text": "here's your letter from fella.",
+      "speaker": "bts-two-warm",
+      "intensity": 0.85
+    },
+    {
+      "start": 77.555,
+      "end": 78.775,
+      "text": "pop, pop, pop, yeah!",
+      "speaker": "bts-two-bright",
+      "intensity": 0.85
+    },
+    {
+      "start": 78.938,
+      "end": 80.686,
+      "text": "Can't back for what's mine we don't",
+      "speaker": "bts-two-mid",
+      "intensity": 0.85
+    },
+    {
+      "start": 83.398,
+      "end": 87.171,
+      "text": "You know how I do, do, do, do, do, do",
+      "speaker": "bts-two-warm",
+      "intensity": 0.85
+    },
+    {
+      "start": 87.565,
+      "end": 90.185,
+      "text": "know how I do, do, do, do, do",
+      "speaker": "bts-two-bright",
+      "intensity": 0.85
+    },
+    {
+      "start": 90.459,
+      "end": 92.299,
+      "text": "Put it, put your brand new",
+      "speaker": "bts-two-air",
+      "intensity": 0.85
+    },
+    {
+      "start": 94.50182,
+      "end": 95.864314,
+      "text": "we on that brand new",
+      "speaker": "bts-two-low",
+      "intensity": 0.85
+    },
+    {
+      "start": 96.382,
+      "end": 97.702,
+      "text": "You know how we do",
+      "speaker": "bts-two-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 97.82,
+      "end": 99.212,
+      "text": "Aye Aye Aye",
+      "speaker": "bts-two-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 104.49,
+      "end": 105.35,
+      "text": "여기저기 또 한 번에",
+      "speaker": "bts-two-low",
+      "intensity": 0.85
+    },
+    {
+      "start": 114.484,
+      "end": 115.664,
+      "text": "yo, yo, yo, yeah",
+      "speaker": "bts-two-mid",
+      "intensity": 0.85
+    },
+    {
+      "start": 115.874,
+      "end": 117.134,
+      "text": "Pull up and get your block",
+      "speaker": "bts-two-bright",
+      "intensity": 0.85
+    },
+    {
+      "start": 117.206,
+      "end": 119.386,
+      "text": "We gon' knock, knock, knock, yeah",
+      "speaker": "bts-two-warm",
+      "intensity": 0.85
+    },
+    {
+      "start": 119.533,
+      "end": 121.37,
+      "text": "at your little farm fella.",
+      "speaker": "bts-two-edge",
+      "intensity": 0.85
+    },
+    {
+      "start": 121.404,
+      "end": 123.104,
+      "text": "Pop, pop, pop, yeah.",
+      "speaker": "bts-two-air",
+      "intensity": 0.85
+    },
+    {
+      "start": 123.223,
+      "end": 124.942,
+      "text": "Can't back for what's mine we don't",
+      "speaker": "bts-two-mid",
+      "intensity": 0.85
+    },
+    {
+      "start": 127.915,
+      "end": 131.315,
+      "text": "You know how I do, do, do, do, do, do",
+      "speaker": "bts-two-warm",
+      "intensity": 0.85
+    },
+    {
+      "start": 131.57,
+      "end": 134.51,
+      "text": "You know how I do, do, do, do, do",
+      "speaker": "bts-two-bright",
+      "intensity": 0.85
+    },
+    {
+      "start": 135.048,
+      "end": 136.548,
+      "text": "it with your brand new",
+      "speaker": "bts-two-air",
+      "intensity": 0.85
+    },
+    {
+      "start": 137.054,
+      "end": 138.354,
+      "text": "Which are brand new",
+      "speaker": "bts-two-edge",
+      "intensity": 0.85
+    },
+    {
+      "start": 138.749,
+      "end": 140.209,
+      "text": "me I'm that brand new",
+      "speaker": "bts-two-warm",
+      "intensity": 0.85
+    },
+    {
+      "start": 141.057,
+      "end": 141.997,
+      "text": "know how we do",
+      "speaker": "bts-two-air",
+      "intensity": 0.85
+    },
+    {
+      "start": 147.424,
+      "end": 147.784,
+      "text": "sick!",
+      "speaker": "bts-two-mid",
+      "intensity": 0.85
+    },
+    {
+      "start": 159.964,
+      "end": 162.484,
+      "text": "pop, pop, pop, pop, pop, pop, pop, pop, pop, pop,",
+      "speaker": "bts-two-low",
+      "intensity": 0.85
+    },
+    {
+      "start": 167.059,
+      "end": 167.999,
+      "text": "Hit em up like pop",
+      "speaker": "bts-two-edge",
+      "intensity": 0.85
+    },
+    {
+      "start": 168.851,
+      "end": 169.811,
+      "text": "him with the truth like drop",
+      "speaker": "bts-two-edge",
+      "intensity": 0.85
+    },
+    {
+      "start": 170.684,
+      "end": 171.704,
+      "text": "I'm to pay you debt.",
+      "speaker": "bts-two-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 172.43,
+      "end": 173.51,
+      "text": "feel me, feel me, not",
+      "speaker": "bts-two-lead",
+      "intensity": 0.85
+    },
+    {
+      "start": 173.714,
+      "end": 174.194,
+      "text": "Let it be",
+      "speaker": "bts-two-edge",
+      "intensity": 0.85
+    },
+    {
+      "start": 174.623,
+      "end": 175.103,
+      "text": "Let it bleed",
+      "speaker": "bts-two-edge",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.443,
+      "end": 176.904,
+      "text": "in this place",
+      "speaker": "bts-two-low",
+      "intensity": 0.85
+    },
+    {
+      "start": 176.938,
+      "end": 177.378,
+      "text": "Stop,",
+      "speaker": "bts-two-bright",
+      "intensity": 0.85
+    },
+    {
+      "start": 182.469,
+      "end": 183.723176,
+      "text": "Pull up and get your block",
+      "speaker": "bts-two-edge",
+      "intensity": 0.85
+    },
+    {
+      "start": 183.795,
+      "end": 185.983556,
+      "text": "We gon' knock, knock, knock, yeah",
+      "speaker": "bts-two-air",
+      "intensity": 0.85
+    },
+    {
+      "start": 186.404,
+      "end": 187.959,
+      "text": "your little farm fella.",
+      "speaker": "bts-two-warm",
+      "intensity": 0.85
+    },
+    {
+      "start": 187.993,
+      "end": 189.733,
+      "text": "pop -pop -pop -pop, yeah!",
+      "speaker": "bts-two-bright",
+      "intensity": 0.85
+    },
+    {
+      "start": 189.849,
+      "end": 191.561,
+      "text": "Can't back for what's mine we don't",
+      "speaker": "bts-two-mid",
+      "intensity": 0.85
+    },
+    {
+      "start": 194.434,
+      "end": 198.014,
+      "text": "You know how I do, do, do, do, do, do",
+      "speaker": "bts-two-warm",
+      "intensity": 0.85
+    },
+    {
+      "start": 198.162,
+      "end": 201.282,
+      "text": "You know how I do, do, do, do, do",
+      "speaker": "bts-two-bright",
+      "intensity": 0.85
+    },
+    {
+      "start": 201.658,
+      "end": 203.138,
+      "text": "it was a brand new",
+      "speaker": "bts-two-air",
+      "intensity": 0.85
+    },
+    {
+      "start": 203.685,
+      "end": 204.945,
+      "text": "But you're brand new",
+      "speaker": "bts-two-edge",
+      "intensity": 0.85
+    },
+    {
+      "start": 205.421,
+      "end": 206.821,
+      "text": "we on that brand new",
+      "speaker": "bts-two-warm",
+      "intensity": 0.85
+    },
+    {
+      "start": 207.352,
+      "end": 208.652,
+      "text": "You know how we do",
+      "speaker": "bts-two-air",
+      "intensity": 0.85
+    },
+    {
+      "start": 209.138,
+      "end": 212.859,
+      "text": "You know how I do, do, do, do, do, do",
+      "speaker": "bts-two-bright",
+      "intensity": 0.85
+    },
+    {
+      "start": 213.256689,
+      "end": 215.90354,
+      "text": "know how I do, do, do, do, do",
+      "speaker": "bts-two-warm",
+      "intensity": 0.85
+    },
+    {
+      "start": 220.12,
+      "end": 221.64,
+      "text": "it on that brand new",
+      "speaker": "bts-two-bright",
+      "intensity": 0.85
+    },
+    {
+      "start": 222.415,
+      "end": 223.435,
+      "text": "you know how we do?",
+      "speaker": "bts-two-warm",
+      "intensity": 0.85
+    }
+  ],
+  "shots": [
+    {
+      "time": 0,
+      "view": "bts-lift-indicator"
+    },
+    {
+      "time": 7.174,
+      "view": "bts-corridor-silhouette"
+    },
+    {
+      "time": 9.593,
+      "view": "bts-lift-indicator"
+    },
+    {
+      "time": 16.141,
+      "view": "bts-corridor-silhouette"
+    },
+    {
+      "time": 17.935,
+      "view": "bts-entrance"
+    },
+    {
+      "time": 20.8,
+      "view": "bts-lift-ensemble"
+    },
+    {
+      "time": 23.524,
+      "view": "bts-lift-portrait"
+    },
+    {
+      "time": 25.359,
+      "view": "bts-lift-portrait"
+    },
+    {
+      "time": 27.194,
+      "view": "bts-lift-portrait"
+    },
+    {
+      "time": 29.112,
+      "view": "bts-lift-portrait"
+    },
+    {
+      "time": 30.781,
+      "view": "bts-lift-portrait"
+    },
+    {
+      "time": 34.159,
+      "view": "bts-lift-portrait"
+    },
+    {
+      "time": 38.33,
+      "view": "bts-side-ensemble"
+    },
+    {
+      "time": 67.943,
+      "view": "bts-side-tracking"
+    },
+    {
+      "time": 68.944,
+      "view": "bts-side-ensemble"
+    },
+    {
+      "time": 91.508,
+      "view": "bts-corridor-ensemble"
+    },
+    {
+      "time": 97.25,
+      "view": "bts-corridor-close"
+    },
+    {
+      "time": 105.4,
+      "view": "bts-corridor-ensemble"
+    },
+    {
+      "time": 118,
+      "view": "bts-corridor-silhouette"
+    },
+    {
+      "time": 134.468,
+      "view": "bts-washroom-ensemble"
+    },
+    {
+      "time": 137.012,
+      "view": "bts-washroom-overhead"
+    },
+    {
+      "time": 144.478,
+      "view": "bts-lift-overhead"
+    },
+    {
+      "time": 152.6,
+      "view": "bts-lift-ensemble"
+    },
+    {
+      "time": 158.575,
+      "view": "bts-lobby-portrait"
+    },
+    {
+      "time": 164.25,
+      "view": "bts-lobby-ensemble"
+    },
+    {
+      "time": 171.4,
+      "view": "bts-corridor-close"
+    },
+    {
+      "time": 182,
+      "view": "bts-washroom-ensemble"
+    },
+    {
+      "time": 194.403,
+      "view": "bts-lobby-portrait"
+    },
+    {
+      "time": 195.404,
+      "view": "bts-lobby-ensemble"
+    },
+    {
+      "time": 204.25,
+      "view": "bts-lobby-tracking"
+    },
+    {
+      "time": 213.4,
+      "view": "bts-lobby-ensemble"
+    },
+    {
+      "time": 221.1,
+      "view": "bts-lobby-tracking"
+    },
+    {
+      "time": 227.352,
+      "view": "bts-record"
+    }
+  ]
+}

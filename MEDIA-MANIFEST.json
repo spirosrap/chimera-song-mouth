@@ -2687,6 +2687,66 @@
       "sha256": "132ed72707513f903910f1610a7f7070268cd774be08504ee756c62b6521e02a"
     },
     {
+      "path": "public/scenes/bts-2-point-0/backing.mp3",
+      "bytes": 7506579,
+      "sha256": "2c3fd079a855c826fa2ae3f989a0afc346fceefac572e4232a37afdfb00a74ef"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/bts-two-air.tele.gz",
+      "bytes": 319772,
+      "sha256": "9d31eabc60826592a0c145ef03210ce576ee514840bc861a900a504f49354ae8"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/bts-two-bright.tele.gz",
+      "bytes": 396909,
+      "sha256": "8e2ccd8d25889e6d186200656e6bf2087553deda23c39c5e1c4499adcc723cf5"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/bts-two-edge.tele.gz",
+      "bytes": 421377,
+      "sha256": "e8f5583bea30a59e892df1885502ef7328e6af2215947fe613f8408198424dec"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/bts-two-lead.tele.gz",
+      "bytes": 261400,
+      "sha256": "3e59bec22b0e61177088ce982fe1dfa47074c62ac7bcaf602295a444ef338d32"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/bts-two-low.tele.gz",
+      "bytes": 266934,
+      "sha256": "9bad3301093ca59772d21e893f4a4030f0499f6e6f1c8358b173180b38ad8b38"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/bts-two-mid.tele.gz",
+      "bytes": 210586,
+      "sha256": "48995c2fbd2243b5bf4ceb3d9eb1765c532c44e96641a9b0e454611b4c986996"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/bts-two-warm.tele.gz",
+      "bytes": 388410,
+      "sha256": "8ae6e3b46094207ed191c0f9309288042e8741e2ccec334b6752baa12ed02d1d"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/credits.txt",
+      "bytes": 139,
+      "sha256": "a21f51fc549d1739eb8e5011608fdd27529f3b9323c7b253fc2200645f7fb669"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/mix.mp3",
+      "bytes": 7506476,
+      "sha256": "d717f19c87d90f88f00212b57f1246c8a21c5e3b80c2eceedc886439fc573c90"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/performance.json",
+      "bytes": 484988,
+      "sha256": "d12ad34d873c95341fb9db8afd3bc08e5f3d0df1c69f2373f93fa2918d24c926"
+    },
+    {
+      "path": "public/scenes/bts-2-point-0/scene.json",
+      "bytes": 11911,
+      "sha256": "28596b7aabae9aa74e7a33c5a7de4af6d58133638ba0420043bc8f554e1a33db"
+    },
+    {
       "path": "public/scenes/cardigans-favourite-game/backing.mp3",
       "bytes": 8391981,
       "sha256": "97ada7d3360889a86bf244afc8223e0010da1b61a15a42462b2f4924c8c39fd2"

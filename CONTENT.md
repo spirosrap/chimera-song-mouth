@@ -266,6 +266,7 @@ Smile preserves the complete supplied Nat King Cole recording’s original orche
 | Tame Impala — Elephant | 3:31 | `?scene=tame-impala-elephant` | A clay recording room with tilted amplifiers and glowing reels. |
 | OutKast — Hey Ya! | 5:04 | `?scene=outkast-hey-ya` | An emerald television studio with a four-figure stage ensemble. |
 | Sia — Chandelier | 3:51 | `?scene=sia-chandelier` | An indigo loft lit by a silver mica chandelier and a cool skylight. |
+| BTS — 2.0 | 3:55 | `?scene=bts-2-point-0` | Seven physical voices, dark suits, a freight elevator and changing fluorescent corridors, with concrete, synchronized choreography and a reel-to-reel outro built in 3D. |
 | Akylas — Ferto | 3:29 | `?scene=ferto` | Original instrumental, full physical vocals, pixel platformer, Aegean island, castle, moon, lava, Vienna and concert levels |
 | Lady Gaga & Doechii — RUNWAY | 2:58 | `?scene=runway` | Complete supplied video, original backing, two physical voices, ballroom, red studio, twin-head suit, crystal catwalk and scorecards |
 | Nightwish — The Phantom of the Opera | 4:44 | `?scene=nightwish-phantom` | Original music and audience; two physical singers, high vocalise, gold coat, yellow microphone, five band heads, concert lights and crowd |

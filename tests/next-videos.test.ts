@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { gunzipSync } from 'node:zlib';
 import { expect, test } from 'bun:test';
 import * as THREE from 'three';
+import { isBtsTwoInsert } from '../src/scene/bts-2-point-0.ts';
 import { initEngine } from './harness.ts';
 import { NEXT_VIDEO_CAST, NEXT_VIDEO_INFO, NEXT_VIDEO_SETTINGS } from '../src/scene/next-videos.ts';
 import { sceneCamera, sceneCue, sceneViewChoices, validateScene } from '../src/scene/scene.ts';
@@ -44,7 +45,13 @@ for (const setting of NEXT_VIDEO_SETTINGS) {
           const singer = Math.max(0, actors.findIndex(actor => actor.id === cue?.speaker));
           expect(sceneCamera(scene, look, 'auto')).toBe(view);
           stage.frame(look, true, 1, view, cue?.intensity ?? .5, cue?.speaker);
-          const figure = stage.figures[singer].figure;
+          if (setting === 'btstwo' && isBtsTwoInsert(view)) {
+            expect(cue).toBeUndefined();
+            expect(stage.figures.every(({ figure }) => !figure.root.visible)).toBe(true);
+            continue;
+          }
+          const figure = setting === 'btstwo' && !cue
+            ? stage.figures.find(({ figure }) => figure.root.visible)!.figure : stage.figures[singer].figure;
           expect(figure.root.visible).toBe(true);
           const position = figure.head.scene.getWorldPosition(new THREE.Vector3());
           const location = position.clone().project(stage.camera);

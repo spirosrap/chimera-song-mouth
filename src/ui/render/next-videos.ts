@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import type { BtsTwoView } from '../../scene/bts-2-point-0.ts';
+import { btsTwoJacket, dressBtsTwo, frameBtsTwoCamera, placeBtsTwoFigure } from './bts-2-point-0.ts';
 import { isCinematic } from '../../scene/cinematic-videos.ts';
 import { isElectronic } from '../../scene/electronic-videos.ts';
 import { isStorybook } from '../../scene/storybook-videos.ts';
@@ -67,6 +69,7 @@ export class NextVideoStage {
       const base = color(jackets, i);
       const figure = new VideoFigure(actor.model, actor.track, this.props, this.scene, base);
       if (isCinematic(setting)) dressCinematicFigure(this.props, figure, setting);
+      if (setting === 'btstwo') dressBtsTwo(this.props, figure, i);
       const ink = figure.hair;
       ink.begin();
       for (let strand = 0; strand < 23; strand++) {
@@ -83,7 +86,7 @@ export class NextVideoStage {
       }
       ink.end();
       // Wide collars and seams stay below the physical head.
-      if (!isElectronic(setting) && !isStorybook(setting)) {
+      if (setting !== 'btstwo' && !isElectronic(setting) && !isStorybook(setting)) {
         this.props.tube(figure.root, [-15, -15, 9], [0, -35, 12], 1.45, '#e9d7bd');
         this.props.tube(figure.root, [15, -15, 9], [0, -35, 12], 1.45, '#e9d7bd');
       }
@@ -439,7 +442,12 @@ export class NextVideoStage {
     const nextShot = shots.findIndex(([start]) => start > time);
     const shot = nextShot < 0 ? shots.length - 1 : Math.max(0, nextShot - 1);
     const sourceView = shots[shot][1];
-    const stageView = this.sets.has(view as NextVideoView) ? view as NextVideoView : sourceView;
+    const cast: readonly CharacterId[] = NEXT_VIDEO_CAST[this.setting];
+    const designated = cast.indexOf(view as CharacterId);
+    const manualSet = this.setting === 'btstwo' && designated >= 0
+      ? sourceView === 'bts-lift-indicator' ? 'bts-lift-ensemble' : sourceView === 'bts-record' ? 'bts-lobby-ensemble' : sourceView
+      : sourceView;
+    const stageView = this.sets.has(view as NextVideoView) ? view as NextVideoView : manualSet;
     if (this.previousView !== stageView) {
       if (this.previousView) this.sets.get(this.previousView)!.root.visible = false;
       this.sets.get(stageView)!.root.visible = true;
@@ -447,9 +455,9 @@ export class NextVideoStage {
       this.previousView = stageView;
     }
 
-    const cast: readonly CharacterId[] = NEXT_VIDEO_CAST[this.setting];
-    const designated = cast.indexOf(view as CharacterId);
-    const active = Math.max(0, designated >= 0 ? designated : cast.indexOf(speaker as CharacterId));
+    const openingPortrait = this.setting === 'btstwo' && stageView === 'bts-lift-portrait' && !speaker
+      ? [3, 2, 6, 1, 0, 4][Math.max(0, shot - 6)] ?? 0 : 0;
+    const active = designated >= 0 ? designated : speaker ? Math.max(0, cast.indexOf(speaker)) : openingPortrait;
     const reset = epoch !== this.previousEpoch || time < this.previousTime || time - this.previousTime > .22;
     const dt = reset ? 1 / 60 : THREE.MathUtils.clamp(time - this.previousTime, 1 / 120, .05);
     const beat = Math.PI * 2 * (time * NEXT_VIDEO_INFO[this.setting].bpm / 60);
@@ -458,10 +466,16 @@ export class NextVideoStage {
     const seated = /campfire|tea|flat/.test(stageView);
     const ensemble = this.setting === 'virtualinsanity' ? stageView === 'virtual-white-ensemble' : group;
     const core = this.figures.length;
+    const narrow = this.camera.aspect < 1.05;
     const slide = this.setting==='virtualinsanity' && !tight ? 13*Math.sin(time*.67) : 0;
     for (const [i, member] of this.figures.entries()) {
       const { figure, jacket, base } = member;
       const slot = (i - active + core) % core;
+      if (this.setting === 'btstwo') {
+        placeBtsTwoFigure(this.props, figure, stageView as BtsTwoView, slot, time, beat, i === active ? Math.min(1, intensity) : .15, narrow, tight);
+        jacket.color.set(btsTwoJacket(i, time));
+        continue;
+      }
       const side = slot % 2 ? -1 : 1;
       const offset = slot ? side * (44 + Math.floor((slot - 1) / 2) * 41) : 0;
       const phase = beat + i * .52;
@@ -502,7 +516,6 @@ export class NextVideoStage {
         : this.setting === 'anotrlikeit' && stageView === 'likeit-dance' && i === active ? '#d5b861'
         : this.setting === 'simzyoung' && i === active && /flat|window/.test(stageView) ? '#765885' : base);
     }
-    const narrow = this.camera.aspect < 1.05;
     this.camera.fov = tight ? (narrow ? 42 : 33) : (narrow ? 52 : 39);
     const cameraSide = tight ? -13 : group ? 14 : -24;
     this.camera.position.set(cameraSide + 9 * Math.sin(time * .31), tight ? 159 : 160, tight ? 154 : narrow ? 352 : 327);
@@ -522,6 +535,7 @@ export class NextVideoStage {
       this.camera.lookAt(-shift, target, 0);
       this.artwork.frame(time, this.camera.aspect, framing, tight, intensity);
     }
+    if (this.setting === 'btstwo') frameBtsTwoCamera(this.camera, stageView as BtsTwoView, time, narrow, tight);
     this.camera.updateProjectionMatrix();
     this.camera.updateMatrixWorld();
     for (const [i, {figure}] of this.figures.entries()) {

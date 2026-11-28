@@ -190,3 +190,7 @@ What Else Is There?, Pass This On, Strict Machine, Walking on a Dream, Enjoy the
 ## Seven illustrated performances · 27 November 2026
 
 Cornflake Girl, Down by the Water, Bachelorette, The Suburbs, Elephant, Hey Ya! and Chandelier combine separated accompaniment with a synthesized CHIMERA lead voice and newly generated stage art. Each scene records its public reference. Rights in the compositions, lyrics, source recordings and videos remain with their respective holders. Source videos and analysis caches are excluded from the release.
+
+## BTS · 2.0
+
+The owner supplied the official music-video cut. The prepared track keeps the source ambience in the opening and ending, with the accompaniment separated under the song. Seven CHIMERA physical voices reproduce the Korean and English phrases. The scenery, costumes and choreography are newly modeled for CHIMERA from the visual reference. Rights in the composition, recording and music video remain with their owners. The supplied video and intermediate analysis are excluded from the repository.

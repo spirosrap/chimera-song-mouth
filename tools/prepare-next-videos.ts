@@ -8,14 +8,15 @@ import type { Arrangement, BandPart, VocalPerformance } from '../src/band/types.
 
 type Word = { text: string; start: number; end: number; phones?: [string, number][] };
 type Group = { caption?: boolean; start: number; end: number; role: number; words: Word[]; contour: [number, number, number][] };
-type Prepared = { duration: number; language: 'en' | 'sv'; groups: Group[] };
+type Prepared = { duration: number; language: 'en' | 'sv' | 'ko'; groups: Group[] };
 type Phones = VocalPerformance['phrases'][number]['phones'];
 
 const [id, input] = process.argv.slice(2);
 const setting = NEXT_VIDEO_SETTINGS.find(key => NEXT_VIDEO_INFO[key].id === id);
 if (!setting || !input) throw new Error('Pass a catalog scene ID and a prepared timing file.');
 await initEngine();
-const { ensureEnglishDict, buildWordTimedPhones } = await import('./lib/english-phones.ts');
+const { lyricsToSyllables } = await import('../src/wasm/engine.ts');
+const { ensureEnglishDict, buildTimedPhones, buildWordTimedPhones } = await import('./lib/english-phones.ts');
 ensureEnglishDict(process.cwd());
 const { duration, language, groups } = JSON.parse(readFileSync(input, 'utf8')) as Prepared;
 const { title, description, bpm, female, child, names, shots, source } = NEXT_VIDEO_INFO[setting];
@@ -23,14 +24,30 @@ const cast = NEXT_VIDEO_CAST[setting];
 const assetVersion = NEXT_VIDEO_ENTRIES.find(entry => entry.id === id)!.assetVersion;
 const round = (value: number) => Math.round(value * 1e6) / 1e6;
 
-function swedishPhones(group: Group): Phones {
+function referencePhones(group: Group, bilingual: boolean): Phones {
   return group.words.flatMap((word, index) => {
     const next = group.words[index + 1]?.start ?? group.end;
     const span = word.end - word.start;
     const gap = next - word.end;
-    const phones = word.phones?.length ? word.phones : [['ə', 1] satisfies [string, number]];
-    const weight = phones.reduce((sum, [, length]) => sum + length, 0);
-    const gesture = phones.map(([ipa, length]) => ({ ipa, duration: length / weight * (span + (gap < .019 ? gap : 0)) }));
+    const voicedSpan = span + (gap < .019 ? gap : 0);
+    const reference = word.phones;
+    let gesture: Phones;
+    if (reference?.length) {
+      const weight = reference.reduce((sum, [, length]) => sum + length, 0);
+      gesture = reference.map(([ipa, length]) => ({ ipa, duration: length / weight * voicedSpan }));
+    } else if (bilingual && /[가-힣]/u.test(word.text)) {
+      const syllables = lyricsToSyllables(word.text).map(syllable => ({
+        onset: syllable.onset.map(phone => phone.ipa),
+        nucleus: syllable.nucleus.ipa,
+        stress: syllable.nucleus.stress ?? 0,
+        coda: syllable.coda.map(phone => phone.ipa),
+      }));
+      gesture = buildTimedPhones(syllables, voicedSpan);
+    } else {
+      gesture = bilingual
+        ? buildWordTimedPhones([{ ...word, text: word.text === '2.0' ? 'two point oh' : word.text }], word.start, word.start + voicedSpan)
+        : [{ ipa: 'ə', duration: voicedSpan }];
+    }
     if (gap >= .019) gesture.push({ ipa: '_', duration: gap });
     return gesture;
   });
@@ -38,7 +55,7 @@ function swedishPhones(group: Group): Phones {
 
 function phrase(group: Group) {
   const span = group.end - group.start;
-  const phones = language === 'en' ? buildWordTimedPhones(group.words, group.start, group.end) : swedishPhones(group);
+  const phones = language === 'en' ? buildWordTimedPhones(group.words, group.start, group.end) : referencePhones(group, language === 'ko');
   // A release shorter than nine milliseconds cannot be represented by a prepared score.
   const playable = phones.filter(phone => phone.duration >= .0105 && phone.ipa.length <= 12);
   if (!playable.length) playable.push({ ipa: 'ə', duration: span });

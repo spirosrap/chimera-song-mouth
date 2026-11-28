@@ -98,6 +98,6 @@ export const NEXT_VIDEO_SCENES = Object.fromEntries(NEXT_VIDEO_SETTINGS.map(sett
 
 export const NEXT_VIDEO_ENTRIES = NEXT_VIDEO_SETTINGS.map(setting => {
   const { id, title, eyebrow, description } = NEXT_VIDEO_INFO[setting];
-  return { id, title, eyebrow, description, assetVersion: `${id}-${isSevenVideo(setting) || isLaterVideo(setting) || isShowcase(setting) ? '20261127' : '20261126'}`, readyVideo: undefined,
+  return { id, title, eyebrow, description, assetVersion: `${id}-${setting === 'btstwo' ? '20261128' : isSevenVideo(setting) || isLaterVideo(setting) || isShowcase(setting) ? '20261127' : '20261126'}`, readyVideo: undefined,
     credit: isCinematic(setting) ? 'An original illustrated CHIMERA performance. Vocal timing and captions are approximate.' : 'A stylized CHIMERA reconstruction of the supplied video. Vocal timing, individual voice assignments and scene choreography are approximate.' };
 });
